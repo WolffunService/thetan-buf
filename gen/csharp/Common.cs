@@ -6860,24 +6860,10 @@ namespace Core.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Data {
-      get { return HasData ? (pb::ByteString) res_ : pb::ByteString.Empty; }
+      get { return resCase_ == ResOneofCase.Data ? (pb::ByteString) res_ : pb::ByteString.Empty; }
       set {
         res_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
         resCase_ = ResOneofCase.Data;
-      }
-    }
-    /// <summary>Gets whether the "data" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasData {
-      get { return resCase_ == ResOneofCase.Data; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "data" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearData() {
-      if (HasData) {
-        ClearRes();
       }
     }
 
@@ -6889,24 +6875,10 @@ namespace Core.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ErrorCode {
-      get { return HasErrorCode ? (int) res_ : 0; }
+      get { return resCase_ == ResOneofCase.ErrorCode ? (int) res_ : 0; }
       set {
         res_ = value;
         resCase_ = ResOneofCase.ErrorCode;
-      }
-    }
-    /// <summary>Gets whether the "errorCode" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasErrorCode {
-      get { return resCase_ == ResOneofCase.ErrorCode; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "errorCode" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearErrorCode() {
-      if (HasErrorCode) {
-        ClearRes();
       }
     }
 
@@ -6958,8 +6930,8 @@ namespace Core.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Action != 0) hash ^= Action.GetHashCode();
-      if (HasData) hash ^= Data.GetHashCode();
-      if (HasErrorCode) hash ^= ErrorCode.GetHashCode();
+      if (resCase_ == ResOneofCase.Data) hash ^= Data.GetHashCode();
+      if (resCase_ == ResOneofCase.ErrorCode) hash ^= ErrorCode.GetHashCode();
       hash ^= (int) resCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -6983,11 +6955,11 @@ namespace Core.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(Action);
       }
-      if (HasData) {
+      if (resCase_ == ResOneofCase.Data) {
         output.WriteRawTag(18);
         output.WriteBytes(Data);
       }
-      if (HasErrorCode) {
+      if (resCase_ == ResOneofCase.ErrorCode) {
         output.WriteRawTag(24);
         output.WriteInt32(ErrorCode);
       }
@@ -7005,11 +6977,11 @@ namespace Core.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(Action);
       }
-      if (HasData) {
+      if (resCase_ == ResOneofCase.Data) {
         output.WriteRawTag(18);
         output.WriteBytes(Data);
       }
-      if (HasErrorCode) {
+      if (resCase_ == ResOneofCase.ErrorCode) {
         output.WriteRawTag(24);
         output.WriteInt32(ErrorCode);
       }
@@ -7026,10 +6998,10 @@ namespace Core.Proto {
       if (Action != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Action);
       }
-      if (HasData) {
+      if (resCase_ == ResOneofCase.Data) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(Data);
       }
-      if (HasErrorCode) {
+      if (resCase_ == ResOneofCase.ErrorCode) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ErrorCode);
       }
       if (_unknownFields != null) {
