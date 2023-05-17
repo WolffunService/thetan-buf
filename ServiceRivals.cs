@@ -1577,7 +1577,7 @@ namespace Services {
       if (other.Level != 0) {
         Level = other.Level;
       }
-      addIns_.MergeFrom(other.addIns_);
+      addIns_.Add(other.addIns_);
       if (other.UpdatedAt != 0L) {
         UpdatedAt = other.UpdatedAt;
       }
@@ -2418,7 +2418,7 @@ namespace Services {
       if (other.Level != 0) {
         Level = other.Level;
       }
-      addIns_.MergeFrom(other.addIns_);
+      addIns_.Add(other.addIns_);
       if (other.UpdatedAt != 0L) {
         UpdatedAt = other.UpdatedAt;
       }
@@ -4431,13 +4431,11 @@ namespace Services {
 
     /// <summary>Field number for the "playerInfo" field.</summary>
     public const int PlayerInfoFieldNumber = 1;
-    private readonly static pb::ByteString PlayerInfoDefaultValue = pb::ByteString.Empty;
-
     private pb::ByteString playerInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString PlayerInfo {
-      get { return playerInfo_ ?? PlayerInfoDefaultValue; }
+      get { return playerInfo_ ?? pb::ByteString.Empty; }
       set {
         playerInfo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
@@ -5717,7 +5715,7 @@ namespace Services {
       if (other.PlayerScore != 0F) {
         PlayerScore = other.PlayerScore;
       }
-      roundPlayed_.MergeFrom(other.roundPlayed_);
+      roundPlayed_.Add(other.roundPlayed_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

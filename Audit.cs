@@ -8040,7 +8040,7 @@ namespace Commonproto {
         }
         Event.MergeFrom(other.Event);
       }
-      metadata_.MergeFrom(other.metadata_);
+      metadata_.Add(other.metadata_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
