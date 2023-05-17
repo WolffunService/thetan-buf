@@ -87,16 +87,6 @@ message MatchFoundResponseProto {
   int32 bestRegion = 5;
   repeated MapDataProto mapIds = 6;
   repeated int32 ListMaxPlayerPerRound = 7;
-}
-
-message MatchFoundResponseExtProto {
-  string matchId = 1;
-  repeated PlayerInfoMatchProto players = 2;
-  GameMode gameMode = 3;
-  InGameMode inGameMode = 4;
-  int32 bestRegion = 5;
-  repeated MapDataProto mapIds = 6;
-  repeated int32 ListMaxPlayerPerRound = 7;
   PlayerStat playerStat = 8;
 }
 
@@ -292,7 +282,7 @@ service MatchDirectorService {
   rpc CancelTicket(MatchProtoPackage) returns (EmptyResponse) {}
   rpc GetBots(GetBotsRequest) returns (BotsResponse) {}
 
-  rpc CreateMatchOnboard(CreateMatchOnboardRequest) returns (MatchFoundResponseExtProto) {}
+  rpc CreateMatchOnboard(CreateMatchOnboardRequest) returns (MatchFoundResponseProto) {}
 }
 
 message EmptyResponse {
