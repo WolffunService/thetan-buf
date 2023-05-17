@@ -7,6 +7,9 @@ plugins:
   - plugin: buf.build/protocolbuffers/go
     out: gen/go
     opt: paths=source_relative
+  - plugin: buf.build/grpc/go
+    out: gen/go
+    opt: paths=source_relative
   - plugin: buf.build/bufbuild/connect-go
     out: gen/go
     opt: paths=source_relative
