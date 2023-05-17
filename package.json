@@ -1,0 +1,25 @@
+{
+  "name": "com.wolffun.thetan-buf",
+  "displayName": "Thetan Protocol Buffers",
+  "description": "Thetan Protocol Buffers",
+  "version": "0.0.1-preview.3",
+  "unity": "2021.3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WolffunGame/thetan-buf.git"
+  },
+  "author": {
+    "name": "WolffunGame",
+    "email": "trungdlp@wolffungame.com",
+    "url": "https://github.com/WolffunGame"
+  },
+  "dependencies": {},
+  "keywords": [
+    "proto",
+    "protobuf"
+  ],
+  "release": {
+    "branches": ["main"]
+  }
+}
