@@ -11,3 +11,8 @@ brew install buf
 buf generate proto
 ```
 
+### Unity Release Package
+```sh
+./unity/deploy.sh --semver 0.0.1-preview.4
+```
+
