@@ -456,7 +456,7 @@ namespace Core.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Core.Proto.CreateMatchOnboardRequest> __Marshaller_core_proto_CreateMatchOnboardRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Core.Proto.CreateMatchOnboardRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Core.Proto.MatchFoundResponseExtProto> __Marshaller_core_proto_MatchFoundResponseExtProto = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Core.Proto.MatchFoundResponseExtProto.Parser));
+    static readonly grpc::Marshaller<global::Core.Proto.MatchFoundResponseProto> __Marshaller_core_proto_MatchFoundResponseProto = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Core.Proto.MatchFoundResponseProto.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Core.Proto.MatchProtoPackage, global::Core.Proto.EmptyResponse> __Method_CancelTicket = new grpc::Method<global::Core.Proto.MatchProtoPackage, global::Core.Proto.EmptyResponse>(
@@ -475,12 +475,12 @@ namespace Core.Proto {
         __Marshaller_core_proto_BotsResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Core.Proto.CreateMatchOnboardRequest, global::Core.Proto.MatchFoundResponseExtProto> __Method_CreateMatchOnboard = new grpc::Method<global::Core.Proto.CreateMatchOnboardRequest, global::Core.Proto.MatchFoundResponseExtProto>(
+    static readonly grpc::Method<global::Core.Proto.CreateMatchOnboardRequest, global::Core.Proto.MatchFoundResponseProto> __Method_CreateMatchOnboard = new grpc::Method<global::Core.Proto.CreateMatchOnboardRequest, global::Core.Proto.MatchFoundResponseProto>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CreateMatchOnboard",
         __Marshaller_core_proto_CreateMatchOnboardRequest,
-        __Marshaller_core_proto_MatchFoundResponseExtProto);
+        __Marshaller_core_proto_MatchFoundResponseProto);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -505,7 +505,7 @@ namespace Core.Proto {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Core.Proto.MatchFoundResponseExtProto> CreateMatchOnboard(global::Core.Proto.CreateMatchOnboardRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Core.Proto.MatchFoundResponseProto> CreateMatchOnboard(global::Core.Proto.CreateMatchOnboardRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -580,22 +580,22 @@ namespace Core.Proto {
         return CallInvoker.AsyncUnaryCall(__Method_GetBots, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Core.Proto.MatchFoundResponseExtProto CreateMatchOnboard(global::Core.Proto.CreateMatchOnboardRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Core.Proto.MatchFoundResponseProto CreateMatchOnboard(global::Core.Proto.CreateMatchOnboardRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateMatchOnboard(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Core.Proto.MatchFoundResponseExtProto CreateMatchOnboard(global::Core.Proto.CreateMatchOnboardRequest request, grpc::CallOptions options)
+      public virtual global::Core.Proto.MatchFoundResponseProto CreateMatchOnboard(global::Core.Proto.CreateMatchOnboardRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateMatchOnboard, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Core.Proto.MatchFoundResponseExtProto> CreateMatchOnboardAsync(global::Core.Proto.CreateMatchOnboardRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Core.Proto.MatchFoundResponseProto> CreateMatchOnboardAsync(global::Core.Proto.CreateMatchOnboardRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateMatchOnboardAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Core.Proto.MatchFoundResponseExtProto> CreateMatchOnboardAsync(global::Core.Proto.CreateMatchOnboardRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Core.Proto.MatchFoundResponseProto> CreateMatchOnboardAsync(global::Core.Proto.CreateMatchOnboardRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateMatchOnboard, null, options, request);
       }
@@ -627,7 +627,7 @@ namespace Core.Proto {
     {
       serviceBinder.AddMethod(__Method_CancelTicket, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Core.Proto.MatchProtoPackage, global::Core.Proto.EmptyResponse>(serviceImpl.CancelTicket));
       serviceBinder.AddMethod(__Method_GetBots, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Core.Proto.GetBotsRequest, global::Core.Proto.BotsResponse>(serviceImpl.GetBots));
-      serviceBinder.AddMethod(__Method_CreateMatchOnboard, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Core.Proto.CreateMatchOnboardRequest, global::Core.Proto.MatchFoundResponseExtProto>(serviceImpl.CreateMatchOnboard));
+      serviceBinder.AddMethod(__Method_CreateMatchOnboard, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Core.Proto.CreateMatchOnboardRequest, global::Core.Proto.MatchFoundResponseProto>(serviceImpl.CreateMatchOnboard));
     }
 
   }

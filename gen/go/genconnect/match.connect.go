@@ -255,7 +255,7 @@ func (UnimplementedMatchHandleServiceHandler) HandleDeleteTicket(context.Context
 type MatchDirectorServiceClient interface {
 	CancelTicket(context.Context, *connect_go.Request[gen.MatchProtoPackage]) (*connect_go.Response[gen.EmptyResponse], error)
 	GetBots(context.Context, *connect_go.Request[gen.GetBotsRequest]) (*connect_go.Response[gen.BotsResponse], error)
-	CreateMatchOnboard(context.Context, *connect_go.Request[gen.CreateMatchOnboardRequest]) (*connect_go.Response[gen.MatchFoundResponseExtProto], error)
+	CreateMatchOnboard(context.Context, *connect_go.Request[gen.CreateMatchOnboardRequest]) (*connect_go.Response[gen.MatchFoundResponseProto], error)
 }
 
 // NewMatchDirectorServiceClient constructs a client for the core.proto.MatchDirectorService
@@ -278,7 +278,7 @@ func NewMatchDirectorServiceClient(httpClient connect_go.HTTPClient, baseURL str
 			baseURL+MatchDirectorServiceGetBotsProcedure,
 			opts...,
 		),
-		createMatchOnboard: connect_go.NewClient[gen.CreateMatchOnboardRequest, gen.MatchFoundResponseExtProto](
+		createMatchOnboard: connect_go.NewClient[gen.CreateMatchOnboardRequest, gen.MatchFoundResponseProto](
 			httpClient,
 			baseURL+MatchDirectorServiceCreateMatchOnboardProcedure,
 			opts...,
@@ -290,7 +290,7 @@ func NewMatchDirectorServiceClient(httpClient connect_go.HTTPClient, baseURL str
 type matchDirectorServiceClient struct {
 	cancelTicket       *connect_go.Client[gen.MatchProtoPackage, gen.EmptyResponse]
 	getBots            *connect_go.Client[gen.GetBotsRequest, gen.BotsResponse]
-	createMatchOnboard *connect_go.Client[gen.CreateMatchOnboardRequest, gen.MatchFoundResponseExtProto]
+	createMatchOnboard *connect_go.Client[gen.CreateMatchOnboardRequest, gen.MatchFoundResponseProto]
 }
 
 // CancelTicket calls core.proto.MatchDirectorService.CancelTicket.
@@ -304,7 +304,7 @@ func (c *matchDirectorServiceClient) GetBots(ctx context.Context, req *connect_g
 }
 
 // CreateMatchOnboard calls core.proto.MatchDirectorService.CreateMatchOnboard.
-func (c *matchDirectorServiceClient) CreateMatchOnboard(ctx context.Context, req *connect_go.Request[gen.CreateMatchOnboardRequest]) (*connect_go.Response[gen.MatchFoundResponseExtProto], error) {
+func (c *matchDirectorServiceClient) CreateMatchOnboard(ctx context.Context, req *connect_go.Request[gen.CreateMatchOnboardRequest]) (*connect_go.Response[gen.MatchFoundResponseProto], error) {
 	return c.createMatchOnboard.CallUnary(ctx, req)
 }
 
@@ -312,7 +312,7 @@ func (c *matchDirectorServiceClient) CreateMatchOnboard(ctx context.Context, req
 type MatchDirectorServiceHandler interface {
 	CancelTicket(context.Context, *connect_go.Request[gen.MatchProtoPackage]) (*connect_go.Response[gen.EmptyResponse], error)
 	GetBots(context.Context, *connect_go.Request[gen.GetBotsRequest]) (*connect_go.Response[gen.BotsResponse], error)
-	CreateMatchOnboard(context.Context, *connect_go.Request[gen.CreateMatchOnboardRequest]) (*connect_go.Response[gen.MatchFoundResponseExtProto], error)
+	CreateMatchOnboard(context.Context, *connect_go.Request[gen.CreateMatchOnboardRequest]) (*connect_go.Response[gen.MatchFoundResponseProto], error)
 }
 
 // NewMatchDirectorServiceHandler builds an HTTP handler from the service implementation. It returns
@@ -351,6 +351,6 @@ func (UnimplementedMatchDirectorServiceHandler) GetBots(context.Context, *connec
 	return nil, connect_go.NewError(connect_go.CodeUnimplemented, errors.New("core.proto.MatchDirectorService.GetBots is not implemented"))
 }
 
-func (UnimplementedMatchDirectorServiceHandler) CreateMatchOnboard(context.Context, *connect_go.Request[gen.CreateMatchOnboardRequest]) (*connect_go.Response[gen.MatchFoundResponseExtProto], error) {
+func (UnimplementedMatchDirectorServiceHandler) CreateMatchOnboard(context.Context, *connect_go.Request[gen.CreateMatchOnboardRequest]) (*connect_go.Response[gen.MatchFoundResponseProto], error) {
 	return nil, connect_go.NewError(connect_go.CodeUnimplemented, errors.New("core.proto.MatchDirectorService.CreateMatchOnboard is not implemented"))
 }

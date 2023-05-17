@@ -378,7 +378,7 @@ const (
 type MatchDirectorServiceClient interface {
 	CancelTicket(ctx context.Context, in *MatchProtoPackage, opts ...grpc.CallOption) (*EmptyResponse, error)
 	GetBots(ctx context.Context, in *GetBotsRequest, opts ...grpc.CallOption) (*BotsResponse, error)
-	CreateMatchOnboard(ctx context.Context, in *CreateMatchOnboardRequest, opts ...grpc.CallOption) (*MatchFoundResponseExtProto, error)
+	CreateMatchOnboard(ctx context.Context, in *CreateMatchOnboardRequest, opts ...grpc.CallOption) (*MatchFoundResponseProto, error)
 }
 
 type matchDirectorServiceClient struct {
@@ -407,8 +407,8 @@ func (c *matchDirectorServiceClient) GetBots(ctx context.Context, in *GetBotsReq
 	return out, nil
 }
 
-func (c *matchDirectorServiceClient) CreateMatchOnboard(ctx context.Context, in *CreateMatchOnboardRequest, opts ...grpc.CallOption) (*MatchFoundResponseExtProto, error) {
-	out := new(MatchFoundResponseExtProto)
+func (c *matchDirectorServiceClient) CreateMatchOnboard(ctx context.Context, in *CreateMatchOnboardRequest, opts ...grpc.CallOption) (*MatchFoundResponseProto, error) {
+	out := new(MatchFoundResponseProto)
 	err := c.cc.Invoke(ctx, MatchDirectorService_CreateMatchOnboard_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -422,7 +422,7 @@ func (c *matchDirectorServiceClient) CreateMatchOnboard(ctx context.Context, in 
 type MatchDirectorServiceServer interface {
 	CancelTicket(context.Context, *MatchProtoPackage) (*EmptyResponse, error)
 	GetBots(context.Context, *GetBotsRequest) (*BotsResponse, error)
-	CreateMatchOnboard(context.Context, *CreateMatchOnboardRequest) (*MatchFoundResponseExtProto, error)
+	CreateMatchOnboard(context.Context, *CreateMatchOnboardRequest) (*MatchFoundResponseProto, error)
 	mustEmbedUnimplementedMatchDirectorServiceServer()
 }
 
@@ -436,7 +436,7 @@ func (UnimplementedMatchDirectorServiceServer) CancelTicket(context.Context, *Ma
 func (UnimplementedMatchDirectorServiceServer) GetBots(context.Context, *GetBotsRequest) (*BotsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetBots not implemented")
 }
-func (UnimplementedMatchDirectorServiceServer) CreateMatchOnboard(context.Context, *CreateMatchOnboardRequest) (*MatchFoundResponseExtProto, error) {
+func (UnimplementedMatchDirectorServiceServer) CreateMatchOnboard(context.Context, *CreateMatchOnboardRequest) (*MatchFoundResponseProto, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateMatchOnboard not implemented")
 }
 func (UnimplementedMatchDirectorServiceServer) mustEmbedUnimplementedMatchDirectorServiceServer() {}
