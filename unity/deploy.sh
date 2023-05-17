@@ -6,7 +6,7 @@ then
 fi
 
 OPTS_SPEC="\
-release.sh   --semver  <semver>\n\
+deploy.sh   --semver  <semver>\n\
 --\n\
 s,semver    Semantic versioning: 1.2.0, 1.2.0-preview.1\n\
 h,help      https://semver.org/
@@ -35,6 +35,10 @@ done
 
 PREFIX="gen/csharp"
 BRANCH="upm"
+
+cp ./unity/package.json ./gen/csharp/package.json
+git add .
+git commit -m "Release with package.json"
 
 git subtree split --prefix="$PREFIX" --branch $BRANCH
 git tag $SEMVER $BRANCH
