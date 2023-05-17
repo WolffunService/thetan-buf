@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package services;
+
+option go_package = "./srvsupport";
+
+service SupportService {
+  rpc ProfaneContains (ProfaneRequest) returns (ProfaneResponse) {}
+}
+
+message ProfaneRequest {
+  string text = 1;
+}
+
+message ProfaneResponse {
+  bool result = 1;
+}

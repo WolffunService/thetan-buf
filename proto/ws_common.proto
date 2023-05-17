@@ -1,0 +1,136 @@
+syntax="proto3";
+
+package main;
+
+option go_package = "/wscommon";
+
+// --- waiting room ---
+message WaitingRoomInfoProto {
+  string RoomId = 1;
+  int32 CurrentPlayers = 2;
+}
+// -----------------------
+
+// --- user ---
+message UserMessage {
+  string Text = 2;
+}
+
+message UserMessageWithMetadata {
+  string Text = 1;
+  string UserId = 2;
+  string UserName = 3;
+  int32 AvatarId = 4;
+  int32 FrameId = 5;
+  int64 Timestamp = 6;
+}
+
+message Conversation {
+  string roomName = 1;
+  repeated UserMessageWithMetadata Messages = 2;
+}
+
+message UserProto {
+  string id = 1;
+  string country = 2;
+  string guild = 3;
+  string userName = 4;
+  Status status = 5;
+}
+
+message ManyUsersProto {
+  repeated UserProto Users = 1;
+}
+
+enum Status {
+  OFFLINE = 0;
+  ONLINE = 1;
+  IN_PARTY = 2;
+  IN_PARTY_READY = 3;
+  FINDING_MATCH = 4;
+  IN_MATCH = 5;
+}
+
+message UpdatedStatus {
+  string id = 1;
+  Status value = 2;
+}
+// --------------------------
+
+// --- ready ---
+message ReadyMessage {
+  string User = 1;
+  int32 FindMatchVersion = 2;
+  repeated int32 regions = 3;
+  int32 Group = 4;
+}
+
+message FindMatchResponse {
+  repeated FindMatchUserInfo users = 1;
+}
+
+message FindMatchUserInfo {
+    string UserId = 1;
+    int32 Trophy = 2;
+}
+// ---------------
+
+// --- leave room ---
+// Message->LeaveMessage
+// used by the "leaver"
+message LeaveMessage {
+  string Room = 1;
+}
+
+// used by the people who stay in the party
+message Notification {
+  string User = 1;
+  string Room = 2;
+}
+// ------------------------
+
+// --- invite ---
+message InvitationMessage {
+  string Invitee = 1;
+}
+// ----------------
+
+// --- custom error message ---
+message ErrorMessage {
+  string Text = 1;
+}
+// --------------------------
+
+// --- disconnect ---
+message Reason {
+  string Text = 1;
+}
+// ------------------
+
+// --- cancel matching ---
+message CancelMatchingMessage {
+  string User = 1;
+}
+// ----------------------
+
+// --- friend ---
+message FriendMessage {
+  string UserID = 1;
+  string Username = 2;
+  int32 UserAvatarID = 3;
+  int32 UserFrameID = 4;
+  int32 UserTrophy = 5;
+  int32 UserRank = 6;
+  string ToID = 7;
+  int32 NameColor = 8;
+}
+// ----------------------
+
+// --- lobby ---
+message LobbyMessage {
+  string UserID = 1;
+  string TownID = 2;
+  string UserLanguage = 3;
+  int32 UserAge = 4;
+}
+// ----------------------
