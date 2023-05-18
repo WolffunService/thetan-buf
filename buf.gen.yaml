@@ -1,18 +1,15 @@
 version: v1
 managed:
   enabled: true
-  go_package_prefix:
-    default: github.com/WolffunService/thetan-buf/gen
 plugins:
   - plugin: buf.build/protocolbuffers/go
     out: gen/go
-    opt: paths=source_relative
+    opt:
+      - paths=import
   - plugin: buf.build/grpc/go
     out: gen/go
-    opt: paths=source_relative
-  - plugin: buf.build/bufbuild/connect-go
-    out: gen/go
-    opt: paths=source_relative
+    opt:
+      - paths=import
 
   - plugin: buf.build/grpc/csharp:v1.54.2
     out: gen/csharp

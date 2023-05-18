@@ -135,11 +135,10 @@ namespace Commonproto {
             "HAoJZXZlbnROYW1lGAEgASgJUglldmVudE5hbWUSHAoJdGltZXN0YW1wGAIg",
             "ASgDUgl0aW1lc3RhbXASNgoLZXZlbnRQYXJhbXMYAyADKAsyFC5jb21tb25w",
             "cm90by5LZXlQYWlyUgtldmVudFBhcmFtcyIxCgdLZXlQYWlyEhAKA2tleRgB",
-            "IAEoCVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZUKTAQoPY29tLmNvbW1v",
-            "bnByb3RvQgpBdWRpdFByb3RvUAFaKGdpdGh1Yi5jb20vV29sZmZ1blNlcnZp",
-            "Y2UvdGhldGFuLWJ1Zi9nZW6iAgNDWFiqAgtDb21tb25wcm90b8oCC0NvbW1v",
-            "bnByb3Rv4gIXQ29tbW9ucHJvdG9cR1BCTWV0YWRhdGHqAgtDb21tb25wcm90",
-            "b2IGcHJvdG8z"));
+            "IAEoCVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZUJ3Cg9jb20uY29tbW9u",
+            "cHJvdG9CCkF1ZGl0UHJvdG9QAVoMLi9hdWRpdHByb3RvogIDQ1hYqgILQ29t",
+            "bW9ucHJvdG/KAgtDb21tb25wcm90b+ICF0NvbW1vbnByb3RvXEdQQk1ldGFk",
+            "YXRh6gILQ29tbW9ucHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

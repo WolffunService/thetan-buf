@@ -29,10 +29,9 @@ namespace Mmf {
             "aW50GAIgASgFUg1iZWhhdmlvclBvaW50EhwKCWlzSGVyb05GVBgDIAEoCFIJ",
             "aXNIZXJvTkZUEiIKDHRyb3BoaWVzUmFuaxgEIAEoBVIMdHJvcGhpZXNSYW5r",
             "EhgKB3JlZ2lvbnMYBSADKAVSB3JlZ2lvbnMSKAoPbWF0Y2hTZWFyY2hUeXBl",
-            "GAYgASgFUg9tYXRjaFNlYXJjaFR5cGVCcgoHY29tLm1tZkIPTW1mU2Vydmlj",
-            "ZVByb3RvSAFQAVooZ2l0aHViLmNvbS9Xb2xmZnVuU2VydmljZS90aGV0YW4t",
-            "YnVmL2dlbqICA01YWKoCA01tZsoCA01tZuICD01tZlxHUEJNZXRhZGF0YeoC",
-            "A01tZmIGcHJvdG8z"));
+            "GAYgASgFUg9tYXRjaFNlYXJjaFR5cGVCVQoHY29tLm1tZkIPTW1mU2Vydmlj",
+            "ZVByb3RvSAFQAVoLLi9jb3JlcHJvdG+iAgNNWFiqAgNNbWbKAgNNbWbiAg9N",
+            "bWZcR1BCTWV0YWRhdGHqAgNNbWZiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
