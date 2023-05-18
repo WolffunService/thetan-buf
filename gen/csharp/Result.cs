@@ -38,10 +38,7 @@ public static partial class ResultReflection {
           "cmlwbGVLaWxsEhoKCG1lZ2FLaWxsGBMgASgIUghtZWdhS2lsbCJkChBNYXRj",
           "aFJlc3VsdFJlcGx5EhgKB21hdGNoSUQYASABKAlSB21hdGNoSUQSNgoMcGxh",
           "eWVyUmVzdWx0GAIgAygLMhIuUGxheWVyUmVzdWx0TW9kZWxSDHBsYXllclJl",
-          "c3VsdDJGCgpHUlBDUmVzdWx0EjgKDkdldE1hdGNoUmVzdWx0EhMuTWF0Y2hS",
-          "ZXN1bHRSZXF1ZXN0GhEuTWF0Y2hSZXN1bHRSZXBseUI5QgtSZXN1bHRQcm90",
-          "b1ABWihnaXRodWIuY29tL1dvbGZmdW5TZXJ2aWNlL3RoZXRhbi1idWYvZ2Vu",
-          "YgZwcm90bzM="));
+          "c3VsdEIbQgtSZXN1bHRQcm90b1ABWgovY29yZXByb3RvYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

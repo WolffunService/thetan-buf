@@ -1,8 +1,8 @@
 syntax = "proto3";
 package core.proto;
 
-import "Common.proto";
-import "Match.proto";
+import "game_info.proto";
+import "match.proto";
 
 option go_package = "/coreproto";
 

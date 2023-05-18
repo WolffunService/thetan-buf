@@ -2,9 +2,9 @@ syntax = "proto3";
 
 option go_package = "/coreproto";
 
-service GRPCResult {
-  rpc GetMatchResult (MatchResultRequest) returns (MatchResultReply);
-}
+//service GRPCResult {
+//  rpc GetMatchResult (MatchResultRequest) returns (MatchResultReply);
+//}
 
 message MatchResultRequest {
   string matchID = 1;
