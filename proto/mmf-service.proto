@@ -3,7 +3,7 @@ syntax = "proto3";
 option optimize_for = SPEED;
 option java_package = "core.proto";
 option java_outer_classname = "MatchProtoService";
-option go_package = "/coreproto";
+option go_package = "./coreproto";
 
 package mmf;
 

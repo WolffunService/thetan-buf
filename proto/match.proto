@@ -3,7 +3,7 @@ package core.proto;
 
 import "game_info.proto";
 
-option go_package = "/coreproto";
+option go_package = "./coreproto";
 option csharp_namespace = "Core.Proto";
 //protoc --proto_path=Proto/ --java_out=src/main/java/ Proto/Match.proto
 

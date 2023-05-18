@@ -4,7 +4,7 @@ package core.proto;
 import "game_info.proto";
 import "match.proto";
 
-option go_package = "/coreproto";
+option go_package = "./coreproto";
 
 message RoundInfo {
   int32 roundId = 1;

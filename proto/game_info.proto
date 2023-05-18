@@ -1,6 +1,6 @@
 syntax = "proto3";
 package core.proto;
-option go_package = "/coreproto";
+option go_package = "./coreproto";
 option csharp_namespace = "Core.Proto";
 
 enum GameMode {

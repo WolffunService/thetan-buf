@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "/coreproto";
+option go_package = "./coreproto";
 
 //service GRPCResult {
 //  rpc GetMatchResult (MatchResultRequest) returns (MatchResultReply);
