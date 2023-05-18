@@ -28,11 +28,10 @@ namespace Services {
             "bkNDVVJlcXVlc3QSFgoGVG93bklEGAEgASgJUgZUb3duSUQiJwoTR2V0VG93",
             "bkNDVVJlc3Nwb25zZRIQCgNudW0YASABKAVSA251bTJiChRUaGV0YW5SaXZh",
             "bFdzU2VydmljZRJKCgpHZXRUb3duQ0NVEhsuc2VydmljZXMuR2V0VG93bkND",
-            "VVJlcXVlc3QaHS5zZXJ2aWNlcy5HZXRUb3duQ0NVUmVzc3BvbnNlIgBCjgEK",
-            "DGNvbS5zZXJ2aWNlc0IUU2VydmljZVJpdmFsc1dzUHJvdG9QAVooZ2l0aHVi",
-            "LmNvbS9Xb2xmZnVuU2VydmljZS90aGV0YW4tYnVmL2dlbqICA1NYWKoCCFNl",
-            "cnZpY2VzygIIU2VydmljZXPiAhRTZXJ2aWNlc1xHUEJNZXRhZGF0YeoCCFNl",
-            "cnZpY2VzYgZwcm90bzM="));
+            "VVJlcXVlc3QaHS5zZXJ2aWNlcy5HZXRUb3duQ0NVUmVzc3BvbnNlIgBCdAoM",
+            "Y29tLnNlcnZpY2VzQhRTZXJ2aWNlUml2YWxzV3NQcm90b1ABWg4uL3NydnJp",
+            "dmFsc193c6ICA1NYWKoCCFNlcnZpY2VzygIIU2VydmljZXPiAhRTZXJ2aWNl",
+            "c1xHUEJNZXRhZGF0YeoCCFNlcnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

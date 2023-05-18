@@ -61,10 +61,9 @@ namespace Main {
             "SUQSIgoMVXNlckxhbmd1YWdlGAMgASgJUgxVc2VyTGFuZ3VhZ2USGAoHVXNl",
             "ckFnZRgEIAEoBVIHVXNlckFnZSpkCgZTdGF0dXMSCwoHT0ZGTElORRAAEgoK",
             "Bk9OTElORRABEgwKCElOX1BBUlRZEAISEgoOSU5fUEFSVFlfUkVBRFkQAxIR",
-            "Cg1GSU5ESU5HX01BVENIEAQSDAoISU5fTUFUQ0gQBUJzCghjb20ubWFpbkIN",
-            "V3NDb21tb25Qcm90b1ABWihnaXRodWIuY29tL1dvbGZmdW5TZXJ2aWNlL3Ro",
-            "ZXRhbi1idWYvZ2VuogIDTVhYqgIETWFpbsoCBE1haW7iAhBNYWluXEdQQk1l",
-            "dGFkYXRh6gIETWFpbmIGcHJvdG8z"));
+            "Cg1GSU5ESU5HX01BVENIEAQSDAoISU5fTUFUQ0gQBUJUCghjb20ubWFpbkIN",
+            "V3NDb21tb25Qcm90b1ABWgkvd3Njb21tb26iAgNNWFiqAgRNYWluygIETWFp",
+            "buICEE1haW5cR1BCTWV0YWRhdGHqAgRNYWluYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Main.Status), }, null, new pbr::GeneratedClrTypeInfo[] {
