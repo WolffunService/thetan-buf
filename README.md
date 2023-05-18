@@ -3,12 +3,14 @@
 
 ### Install tools
 ```sh
-brew install buf
+#brew install buf
+make install
 ```
 
 ### Generate code
 ```sh
-buf generate proto
+#buf generate proto
+make generate
 ```
 
 ### Unity Release Package
