@@ -3,6 +3,9 @@ name: Release Unity
 on:
   workflow_dispatch:
 
+permissions:
+  issues: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
