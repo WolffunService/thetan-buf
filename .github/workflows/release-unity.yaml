@@ -19,7 +19,7 @@ jobs:
           enable_pr_comment: true
           pr_comment_pull_number: 2
           target_path: ./gen/csharp
-          autofix_globs: true
+          autofix_globs: .
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       - name: See how autofix did
