@@ -15,10 +15,12 @@ jobs:
         id: findPr
       - uses: DeNA/unity-meta-check@v3
         with:
+          unity-meta-autofix: true
           enable_autofix: true
           enable_pr_comment: true
           pr_comment_pull_number: 2
           target_path: ./gen/csharp
+          autofix_globs: true
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       - name: See how autofix did
