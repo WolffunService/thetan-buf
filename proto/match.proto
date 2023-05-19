@@ -1,11 +1,9 @@
 syntax = "proto3";
+import "game_info.proto";
 package core.proto;
 
-import "game_info.proto";
-
 option go_package = "./coreproto";
-option csharp_namespace = "Core.Proto";
-//protoc --proto_path=Proto/ --java_out=src/main/java/ Proto/Match.proto
+
 
 enum MatchErrorCode {
   M_SUCCESS = 0;
@@ -92,7 +90,6 @@ message PlayerStat {
   float raceScoreAll = 2;
   int32 qualifyScoreAll = 3;
   float playerScore = 4;
-  map<string, int32> roundPlayed = 5;
 }
 
 message MapDataProto {
@@ -184,6 +181,7 @@ message PlayerInfoMatchProto {
   repeated int32 MapIDs = 26;
   int32 rank = 27;
   CosmeticUsingProtoV2 cosmeticUsingV2 = 28;
+  map<string, int32> roundPlayed = 29;
 }
 
 message CosmeticUsingProto
@@ -223,6 +221,11 @@ message TicketDataCache {
   repeated string playerIds = 3;
   string ticketId = 4;
 }
+message TicketCacheWSOnly {
+  string ticketID = 1;
+  int32 inGameMode = 2;
+}
+
 
 message ListErrorPlayer {
   message ErrorPlayer {
@@ -259,6 +262,27 @@ message MatchExtension {
   int32 numBot = 7;
   int32 playerPerTeam = 8;
   int64 matchFoundTimestamp = 9;
+}
+
+// FE call request match
+service MatchService {
+  rpc CreateMatchWithVersion(MatchProtoVersionPackage) returns (stream MatchProtoPackage) {}
+  //register de nhan su kien match found
+  rpc RegisterMatchFound(MatchProtoPackage) returns (stream MatchProtoPackage) {}
+
+  rpc CancelMatchMaking(MatchProtoPackage) returns (MatchProtoPackage) {}
+}
+
+service MatchHandleService {
+  rpc HandlePlayAgain(DataPlayAgainSuccess) returns(EmptyResponse) {}
+  rpc HandleDeleteTicket(DeleteTicketSuccess) returns(EmptyResponse) {}
+}
+
+service MatchDirectorService {
+  rpc CancelTicket(MatchProtoPackage) returns (EmptyResponse) {}
+  rpc GetBots(GetBotsRequest) returns (BotsResponse) {}
+
+  rpc CreateMatchOnboard(CreateMatchOnboardRequest) returns (MatchFoundResponseProto) {}
 }
 
 message EmptyResponse {
@@ -301,14 +325,9 @@ message RoundStat {
   int32 mapDifficulty = 3;
   float timeInRound = 4;
   bool  roundComplete = 5;
-  
+
   int32 controlDoubleJump = 6;
   int32 controlMoveCamera = 7;
   int32 passedCP = 8;
   int32 maxCP = 9;
-}
-
-message TicketCacheWSOnly {
-  string ticketID = 1;
-  int32 inGameMode = 2;
 }
