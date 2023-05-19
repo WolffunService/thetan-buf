@@ -22,6 +22,8 @@ jobs:
           autofix_globs: .
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-      - name: See how autofix did
-        run: git status
-        if: always()
+#      - name: See how autofix did
+#        run: git status
+#        if: always()
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
