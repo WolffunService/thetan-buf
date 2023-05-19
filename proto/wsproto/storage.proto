@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+//protoc --proto_path= --go_out=pkg/. pkg/protos/storage.proto
+option go_package = "./wsproto";
+package wsproto;
+import "wsproto/common.proto";
+//chua may data store, ma khong phai share cho client
+
+message PlayerStorageMessage {
+  PlayerInfoProto playerInfo = 1;
+  int32 version = 2;
+  MatchInfo matchInfo = 3;
+}
+
+message PartyStorageMessage {
+  PartyInfoProto partyInfo = 1;
+  map<string, bool> playersReadyForRematch = 2;
+}
+
+message MatchInfo {
+  string ticketID = 1;
+  string matchID = 2;
+}
