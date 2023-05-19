@@ -16,9 +16,8 @@ jobs:
       - uses: DeNA/unity-meta-check@v3
         with:
           enable_autofix: true
-          autofix_globs: .cs
           enable_pr_comment: true
-          pr_comment_pull_number: 1
+          pr_comment_pull_number: 2
           target_path: ./gen/csharp
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
