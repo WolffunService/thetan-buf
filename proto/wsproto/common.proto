@@ -105,6 +105,7 @@ message ResponseChatMessageProto{
 message SharePartyInfo {
   string partyID =1;
   PartyAvailabilityStatus status = 2;
+  bool isShare = 3;//msg share or update status haha
   //
 }
 
