@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+import "match.proto";
+
+package services;
+
+option go_package = "./srvaog";
+
+service AogService {
+  // For bot
+  rpc SearchUserRanking (SearchUserRankingRequest) returns (SearchUserRankingResponse) {}
+  rpc CreateUserRanking (CreateUserRankingRequest) returns (CreateUserRankingResponse) {}
+
+  // Get find match info
+  rpc GetFindMatchInfo(FindMatchInfoRequest) returns (FindMatchInfoResponse) {}
+}
+
+message SearchUserRankingRequest {
+  repeated string userIDs = 1;
+}
+
+message SearchUserRankingResponse {
+  map<string, UserRanking> userRankingByUserID = 1;
+}
+
+message UserRanking {
+  int32 rank = 1;
+  int32 trophy = 2;
+}
+
+message CreateUserRankingRequest {
+  repeated string userIDs = 1;
+}
+
+message CreateUserRankingResponse {
+  map<string, bool> resultByUserID = 1;
+}
+
+message FindMatchInfoRequest {
+  repeated string playersID = 1;
+}
+
+message FindMatchInfoResponse {
+  repeated core.proto.PlayerInfoMatchProto players = 1;
+}
