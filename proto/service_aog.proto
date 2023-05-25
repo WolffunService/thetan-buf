@@ -30,7 +30,7 @@ message UserRanking {
 }
 
 message CreateManyUserRankingRequest {
-  repeated string UserRanking = 1;
+  repeated string ListUserRanking = 1;
 }
 
 message CreateManyUserRankingResponse {
