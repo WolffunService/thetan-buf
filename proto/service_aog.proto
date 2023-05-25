@@ -9,10 +9,10 @@ option go_package = "./srvaog";
 service AogService {
   // For bot
   rpc SearchUserRanking (SearchUserRankingRequest) returns (SearchUserRankingResponse) {}
-  rpc CreateUserRanking (CreateUserRankingRequest) returns (CreateUserRankingResponse) {}
+  rpc CreateManyUserRanking (CreateManyUserRankingRequest) returns (CreateManyUserRankingResponse) {}
 
-  // Get find match info
-  rpc GetFindMatchInfo(FindMatchInfoRequest) returns (FindMatchInfoResponse) {}
+  // Search player info
+  rpc SearchPlayerInfo(SearchPlayerInfoRequest) returns (SearchPlayerInfoResponse) {}
 }
 
 message SearchUserRankingRequest {
@@ -24,22 +24,23 @@ message SearchUserRankingResponse {
 }
 
 message UserRanking {
-  int32 rank = 1;
-  int32 trophy = 2;
+  string userID = 1;
+  int32 rank = 2;
+  int32 trophy = 3;
 }
 
-message CreateUserRankingRequest {
-  repeated string userIDs = 1;
+message CreateManyUserRankingRequest {
+  repeated string UserRanking = 1;
 }
 
-message CreateUserRankingResponse {
-  map<string, bool> resultByUserID = 1;
+message CreateManyUserRankingResponse {
+  map<string, UserRanking> userRankingByUserID = 1;
 }
 
-message FindMatchInfoRequest {
-  repeated string playersID = 1;
+message SearchPlayerInfoRequest {
+  repeated string playerIDs = 1;
 }
 
-message FindMatchInfoResponse {
+message SearchPlayerInfoResponse {
   repeated core.proto.PlayerInfoMatchProto players = 1;
 }

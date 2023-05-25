@@ -19,9 +19,9 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	AogService_SearchUserRanking_FullMethodName = "/services.AogService/SearchUserRanking"
-	AogService_CreateUserRanking_FullMethodName = "/services.AogService/CreateUserRanking"
-	AogService_GetFindMatchInfo_FullMethodName  = "/services.AogService/GetFindMatchInfo"
+	AogService_SearchUserRanking_FullMethodName     = "/services.AogService/SearchUserRanking"
+	AogService_CreateManyUserRanking_FullMethodName = "/services.AogService/CreateManyUserRanking"
+	AogService_SearchPlayerInfo_FullMethodName      = "/services.AogService/SearchPlayerInfo"
 )
 
 // AogServiceClient is the client API for AogService service.
@@ -30,9 +30,9 @@ const (
 type AogServiceClient interface {
 	// For bot
 	SearchUserRanking(ctx context.Context, in *SearchUserRankingRequest, opts ...grpc.CallOption) (*SearchUserRankingResponse, error)
-	CreateUserRanking(ctx context.Context, in *CreateUserRankingRequest, opts ...grpc.CallOption) (*CreateUserRankingResponse, error)
-	// Get find match info
-	GetFindMatchInfo(ctx context.Context, in *FindMatchInfoRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error)
+	CreateManyUserRanking(ctx context.Context, in *CreateManyUserRankingRequest, opts ...grpc.CallOption) (*CreateManyUserRankingResponse, error)
+	// Search player info
+	SearchPlayerInfo(ctx context.Context, in *SearchPlayerInfoRequest, opts ...grpc.CallOption) (*SearchPlayerInfoResponse, error)
 }
 
 type aogServiceClient struct {
@@ -52,18 +52,18 @@ func (c *aogServiceClient) SearchUserRanking(ctx context.Context, in *SearchUser
 	return out, nil
 }
 
-func (c *aogServiceClient) CreateUserRanking(ctx context.Context, in *CreateUserRankingRequest, opts ...grpc.CallOption) (*CreateUserRankingResponse, error) {
-	out := new(CreateUserRankingResponse)
-	err := c.cc.Invoke(ctx, AogService_CreateUserRanking_FullMethodName, in, out, opts...)
+func (c *aogServiceClient) CreateManyUserRanking(ctx context.Context, in *CreateManyUserRankingRequest, opts ...grpc.CallOption) (*CreateManyUserRankingResponse, error) {
+	out := new(CreateManyUserRankingResponse)
+	err := c.cc.Invoke(ctx, AogService_CreateManyUserRanking_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *aogServiceClient) GetFindMatchInfo(ctx context.Context, in *FindMatchInfoRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error) {
-	out := new(FindMatchInfoResponse)
-	err := c.cc.Invoke(ctx, AogService_GetFindMatchInfo_FullMethodName, in, out, opts...)
+func (c *aogServiceClient) SearchPlayerInfo(ctx context.Context, in *SearchPlayerInfoRequest, opts ...grpc.CallOption) (*SearchPlayerInfoResponse, error) {
+	out := new(SearchPlayerInfoResponse)
+	err := c.cc.Invoke(ctx, AogService_SearchPlayerInfo_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -76,9 +76,9 @@ func (c *aogServiceClient) GetFindMatchInfo(ctx context.Context, in *FindMatchIn
 type AogServiceServer interface {
 	// For bot
 	SearchUserRanking(context.Context, *SearchUserRankingRequest) (*SearchUserRankingResponse, error)
-	CreateUserRanking(context.Context, *CreateUserRankingRequest) (*CreateUserRankingResponse, error)
-	// Get find match info
-	GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error)
+	CreateManyUserRanking(context.Context, *CreateManyUserRankingRequest) (*CreateManyUserRankingResponse, error)
+	// Search player info
+	SearchPlayerInfo(context.Context, *SearchPlayerInfoRequest) (*SearchPlayerInfoResponse, error)
 	mustEmbedUnimplementedAogServiceServer()
 }
 
@@ -89,11 +89,11 @@ type UnimplementedAogServiceServer struct {
 func (UnimplementedAogServiceServer) SearchUserRanking(context.Context, *SearchUserRankingRequest) (*SearchUserRankingResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SearchUserRanking not implemented")
 }
-func (UnimplementedAogServiceServer) CreateUserRanking(context.Context, *CreateUserRankingRequest) (*CreateUserRankingResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CreateUserRanking not implemented")
+func (UnimplementedAogServiceServer) CreateManyUserRanking(context.Context, *CreateManyUserRankingRequest) (*CreateManyUserRankingResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateManyUserRanking not implemented")
 }
-func (UnimplementedAogServiceServer) GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetFindMatchInfo not implemented")
+func (UnimplementedAogServiceServer) SearchPlayerInfo(context.Context, *SearchPlayerInfoRequest) (*SearchPlayerInfoResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SearchPlayerInfo not implemented")
 }
 func (UnimplementedAogServiceServer) mustEmbedUnimplementedAogServiceServer() {}
 
@@ -126,38 +126,38 @@ func _AogService_SearchUserRanking_Handler(srv interface{}, ctx context.Context,
 	return interceptor(ctx, in, info, handler)
 }
 
-func _AogService_CreateUserRanking_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(CreateUserRankingRequest)
+func _AogService_CreateManyUserRanking_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CreateManyUserRankingRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(AogServiceServer).CreateUserRanking(ctx, in)
+		return srv.(AogServiceServer).CreateManyUserRanking(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: AogService_CreateUserRanking_FullMethodName,
+		FullMethod: AogService_CreateManyUserRanking_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(AogServiceServer).CreateUserRanking(ctx, req.(*CreateUserRankingRequest))
+		return srv.(AogServiceServer).CreateManyUserRanking(ctx, req.(*CreateManyUserRankingRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _AogService_GetFindMatchInfo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(FindMatchInfoRequest)
+func _AogService_SearchPlayerInfo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SearchPlayerInfoRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(AogServiceServer).GetFindMatchInfo(ctx, in)
+		return srv.(AogServiceServer).SearchPlayerInfo(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: AogService_GetFindMatchInfo_FullMethodName,
+		FullMethod: AogService_SearchPlayerInfo_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(AogServiceServer).GetFindMatchInfo(ctx, req.(*FindMatchInfoRequest))
+		return srv.(AogServiceServer).SearchPlayerInfo(ctx, req.(*SearchPlayerInfoRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -174,12 +174,12 @@ var AogService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _AogService_SearchUserRanking_Handler,
 		},
 		{
-			MethodName: "CreateUserRanking",
-			Handler:    _AogService_CreateUserRanking_Handler,
+			MethodName: "CreateManyUserRanking",
+			Handler:    _AogService_CreateManyUserRanking_Handler,
 		},
 		{
-			MethodName: "GetFindMatchInfo",
-			Handler:    _AogService_GetFindMatchInfo_Handler,
+			MethodName: "SearchPlayerInfo",
+			Handler:    _AogService_SearchPlayerInfo_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
