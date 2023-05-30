@@ -5,13 +5,44 @@ package services;
 option go_package = "./srvsupport";
 
 service SupportService {
-  rpc ProfaneContains (ProfaneRequest) returns (ProfaneResponse) {}
+  rpc GetBots(BotRequest) returns (BotResponse) {}
 }
 
-message ProfaneRequest {
-  string text = 1;
+enum GameID {
+  GAME_ID_NONE = 0;
+  GAME_ID_ARENA = 1;
+  GAME_ID_RIVAL = 2;
+  GAME_ID_AOG = 3;
 }
 
-message ProfaneResponse {
-  bool result = 1;
+enum Feature {
+  FEATURE_NONE = 0;
+  FEATURE_IN_GAME = 1;
+  FEATURE_LOBBY = 2;
+  FEATURE_LB = 3;
+  FEATURE_CHAT_SHILL = 4;
+}
+
+message BotRequest {
+  GameID GameID = 1;
+  int32 Rank = 2;
+  int32 RegionID = 3;
+  Feature Feature = 4;
+  repeated string ArrCountry = 5;
+  int64 UseTimeInSec = 6;
+  int32 BattleNumber = 7;
+  int32 Numbers = 8;
+  int32 Skip = 9;
+}
+
+message BotInfo {
+  string UserID = 1;
+  string Username = 2;
+  string CountryCode = 3;
+  int32 Rank = 4;
+  int32 Trophy = 5;
+}
+
+message BotResponse {
+  repeated BotInfo Bots = 1;
 }
