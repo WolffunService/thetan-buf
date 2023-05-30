@@ -24,35 +24,67 @@ namespace Services {
     static ServiceSupportReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVzZXJ2aWNlX3N1cHBvcnQucHJvdG8SCHNlcnZpY2VzIiQKDlByb2ZhbmVS",
-            "ZXF1ZXN0EhIKBHRleHQYASABKAlSBHRleHQiKQoPUHJvZmFuZVJlc3BvbnNl",
-            "EhYKBnJlc3VsdBgBIAEoCFIGcmVzdWx0MloKDlN1cHBvcnRTZXJ2aWNlEkgK",
-            "D1Byb2ZhbmVDb250YWlucxIYLnNlcnZpY2VzLlByb2ZhbmVSZXF1ZXN0Ghku",
-            "c2VydmljZXMuUHJvZmFuZVJlc3BvbnNlIgBCcQoMY29tLnNlcnZpY2VzQhNT",
-            "ZXJ2aWNlU3VwcG9ydFByb3RvUAFaDC4vc3J2c3VwcG9ydKICA1NYWKoCCFNl",
-            "cnZpY2VzygIIU2VydmljZXPiAhRTZXJ2aWNlc1xHUEJNZXRhZGF0YeoCCFNl",
-            "cnZpY2VzYgZwcm90bzM="));
+            "ChVzZXJ2aWNlX3N1cHBvcnQucHJvdG8SCHNlcnZpY2VzIqkCCgpCb3RSZXF1",
+            "ZXN0EigKBkdhbWVJRBgBIAEoDjIQLnNlcnZpY2VzLkdhbWVJRFIGR2FtZUlE",
+            "EhIKBFJhbmsYAiABKAVSBFJhbmsSGgoIUmVnaW9uSUQYAyABKAVSCFJlZ2lv",
+            "bklEEisKB0ZlYXR1cmUYBCABKA4yES5zZXJ2aWNlcy5GZWF0dXJlUgdGZWF0",
+            "dXJlEh4KCkFyckNvdW50cnkYBSADKAlSCkFyckNvdW50cnkSIgoMVXNlVGlt",
+            "ZUluU2VjGAYgASgDUgxVc2VUaW1lSW5TZWMSIgoMQmF0dGxlTnVtYmVyGAcg",
+            "ASgFUgxCYXR0bGVOdW1iZXISGAoHTnVtYmVycxgIIAEoBVIHTnVtYmVycxIS",
+            "CgRTa2lwGAkgASgFUgRTa2lwIosBCgdCb3RJbmZvEhYKBlVzZXJJRBgBIAEo",
+            "CVIGVXNlcklEEhoKCFVzZXJuYW1lGAIgASgJUghVc2VybmFtZRIgCgtDb3Vu",
+            "dHJ5Q29kZRgDIAEoCVILQ291bnRyeUNvZGUSEgoEUmFuaxgEIAEoBVIEUmFu",
+            "axIWCgZUcm9waHkYBSABKAVSBlRyb3BoeSI0CgtCb3RSZXNwb25zZRIlCgRC",
+            "b3RzGAEgAygLMhEuc2VydmljZXMuQm90SW5mb1IEQm90cypRCgZHYW1lSUQS",
+            "EAoMR0FNRV9JRF9OT05FEAASEQoNR0FNRV9JRF9BUkVOQRABEhEKDUdBTUVf",
+            "SURfUklWQUwQAhIPCgtHQU1FX0lEX0FPRxADKmsKB0ZlYXR1cmUSEAoMRkVB",
+            "VFVSRV9OT05FEAASEwoPRkVBVFVSRV9JTl9HQU1FEAESEQoNRkVBVFVSRV9M",
+            "T0JCWRACEg4KCkZFQVRVUkVfTEIQAxIWChJGRUFUVVJFX0NIQVRfU0hJTEwQ",
+            "BDJKCg5TdXBwb3J0U2VydmljZRI4CgdHZXRCb3RzEhQuc2VydmljZXMuQm90",
+            "UmVxdWVzdBoVLnNlcnZpY2VzLkJvdFJlc3BvbnNlIgBCcQoMY29tLnNlcnZp",
+            "Y2VzQhNTZXJ2aWNlU3VwcG9ydFByb3RvUAFaDC4vc3J2c3VwcG9ydKICA1NY",
+            "WKoCCFNlcnZpY2VzygIIU2VydmljZXPiAhRTZXJ2aWNlc1xHUEJNZXRhZGF0",
+            "YeoCCFNlcnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Services.ProfaneRequest), global::Services.ProfaneRequest.Parser, new[]{ "Text" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Services.ProfaneResponse), global::Services.ProfaneResponse.Parser, new[]{ "Result" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Services.GameID), typeof(global::Services.Feature), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Services.BotRequest), global::Services.BotRequest.Parser, new[]{ "GameID", "Rank", "RegionID", "Feature", "ArrCountry", "UseTimeInSec", "BattleNumber", "Numbers", "Skip" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Services.BotInfo), global::Services.BotInfo.Parser, new[]{ "UserID", "Username", "CountryCode", "Rank", "Trophy" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Services.BotResponse), global::Services.BotResponse.Parser, new[]{ "Bots" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum GameID {
+    [pbr::OriginalName("GAME_ID_NONE")] None = 0,
+    [pbr::OriginalName("GAME_ID_ARENA")] Arena = 1,
+    [pbr::OriginalName("GAME_ID_RIVAL")] Rival = 2,
+    [pbr::OriginalName("GAME_ID_AOG")] Aog = 3,
+  }
+
+  public enum Feature {
+    [pbr::OriginalName("FEATURE_NONE")] None = 0,
+    [pbr::OriginalName("FEATURE_IN_GAME")] InGame = 1,
+    [pbr::OriginalName("FEATURE_LOBBY")] Lobby = 2,
+    [pbr::OriginalName("FEATURE_LB")] Lb = 3,
+    [pbr::OriginalName("FEATURE_CHAT_SHILL")] ChatShill = 4,
+  }
+
+  #endregion
+
   #region Messages
-  public sealed partial class ProfaneRequest : pb::IMessage<ProfaneRequest>
+  public sealed partial class BotRequest : pb::IMessage<BotRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ProfaneRequest> _parser = new pb::MessageParser<ProfaneRequest>(() => new ProfaneRequest());
+    private static readonly pb::MessageParser<BotRequest> _parser = new pb::MessageParser<BotRequest>(() => new BotRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ProfaneRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<BotRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -68,7 +100,7 @@ namespace Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProfaneRequest() {
+    public BotRequest() {
       OnConstruction();
     }
 
@@ -76,45 +108,156 @@ namespace Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProfaneRequest(ProfaneRequest other) : this() {
-      text_ = other.text_;
+    public BotRequest(BotRequest other) : this() {
+      gameID_ = other.gameID_;
+      rank_ = other.rank_;
+      regionID_ = other.regionID_;
+      feature_ = other.feature_;
+      arrCountry_ = other.arrCountry_.Clone();
+      useTimeInSec_ = other.useTimeInSec_;
+      battleNumber_ = other.battleNumber_;
+      numbers_ = other.numbers_;
+      skip_ = other.skip_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProfaneRequest Clone() {
-      return new ProfaneRequest(this);
+    public BotRequest Clone() {
+      return new BotRequest(this);
     }
 
-    /// <summary>Field number for the "text" field.</summary>
-    public const int TextFieldNumber = 1;
-    private string text_ = "";
+    /// <summary>Field number for the "GameID" field.</summary>
+    public const int GameIDFieldNumber = 1;
+    private global::Services.GameID gameID_ = global::Services.GameID.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Text {
-      get { return text_; }
+    public global::Services.GameID GameID {
+      get { return gameID_; }
       set {
-        text_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        gameID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Rank" field.</summary>
+    public const int RankFieldNumber = 2;
+    private int rank_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Rank {
+      get { return rank_; }
+      set {
+        rank_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RegionID" field.</summary>
+    public const int RegionIDFieldNumber = 3;
+    private int regionID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int RegionID {
+      get { return regionID_; }
+      set {
+        regionID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Feature" field.</summary>
+    public const int FeatureFieldNumber = 4;
+    private global::Services.Feature feature_ = global::Services.Feature.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Services.Feature Feature {
+      get { return feature_; }
+      set {
+        feature_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ArrCountry" field.</summary>
+    public const int ArrCountryFieldNumber = 5;
+    private static readonly pb::FieldCodec<string> _repeated_arrCountry_codec
+        = pb::FieldCodec.ForString(42);
+    private readonly pbc::RepeatedField<string> arrCountry_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> ArrCountry {
+      get { return arrCountry_; }
+    }
+
+    /// <summary>Field number for the "UseTimeInSec" field.</summary>
+    public const int UseTimeInSecFieldNumber = 6;
+    private long useTimeInSec_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long UseTimeInSec {
+      get { return useTimeInSec_; }
+      set {
+        useTimeInSec_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "BattleNumber" field.</summary>
+    public const int BattleNumberFieldNumber = 7;
+    private int battleNumber_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int BattleNumber {
+      get { return battleNumber_; }
+      set {
+        battleNumber_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Numbers" field.</summary>
+    public const int NumbersFieldNumber = 8;
+    private int numbers_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Numbers {
+      get { return numbers_; }
+      set {
+        numbers_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Skip" field.</summary>
+    public const int SkipFieldNumber = 9;
+    private int skip_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Skip {
+      get { return skip_; }
+      set {
+        skip_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ProfaneRequest);
+      return Equals(other as BotRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ProfaneRequest other) {
+    public bool Equals(BotRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Text != other.Text) return false;
+      if (GameID != other.GameID) return false;
+      if (Rank != other.Rank) return false;
+      if (RegionID != other.RegionID) return false;
+      if (Feature != other.Feature) return false;
+      if(!arrCountry_.Equals(other.arrCountry_)) return false;
+      if (UseTimeInSec != other.UseTimeInSec) return false;
+      if (BattleNumber != other.BattleNumber) return false;
+      if (Numbers != other.Numbers) return false;
+      if (Skip != other.Skip) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -122,7 +265,15 @@ namespace Services {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Text.Length != 0) hash ^= Text.GetHashCode();
+      if (GameID != global::Services.GameID.None) hash ^= GameID.GetHashCode();
+      if (Rank != 0) hash ^= Rank.GetHashCode();
+      if (RegionID != 0) hash ^= RegionID.GetHashCode();
+      if (Feature != global::Services.Feature.None) hash ^= Feature.GetHashCode();
+      hash ^= arrCountry_.GetHashCode();
+      if (UseTimeInSec != 0L) hash ^= UseTimeInSec.GetHashCode();
+      if (BattleNumber != 0) hash ^= BattleNumber.GetHashCode();
+      if (Numbers != 0) hash ^= Numbers.GetHashCode();
+      if (Skip != 0) hash ^= Skip.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -141,9 +292,38 @@ namespace Services {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Text.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Text);
+      if (GameID != global::Services.GameID.None) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) GameID);
+      }
+      if (Rank != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Rank);
+      }
+      if (RegionID != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(RegionID);
+      }
+      if (Feature != global::Services.Feature.None) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) Feature);
+      }
+      arrCountry_.WriteTo(output, _repeated_arrCountry_codec);
+      if (UseTimeInSec != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(UseTimeInSec);
+      }
+      if (BattleNumber != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(BattleNumber);
+      }
+      if (Numbers != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(Numbers);
+      }
+      if (Skip != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(Skip);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -155,9 +335,38 @@ namespace Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Text.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Text);
+      if (GameID != global::Services.GameID.None) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) GameID);
+      }
+      if (Rank != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Rank);
+      }
+      if (RegionID != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(RegionID);
+      }
+      if (Feature != global::Services.Feature.None) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) Feature);
+      }
+      arrCountry_.WriteTo(ref output, _repeated_arrCountry_codec);
+      if (UseTimeInSec != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(UseTimeInSec);
+      }
+      if (BattleNumber != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(BattleNumber);
+      }
+      if (Numbers != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(Numbers);
+      }
+      if (Skip != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(Skip);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -169,8 +378,30 @@ namespace Services {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Text.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Text);
+      if (GameID != global::Services.GameID.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) GameID);
+      }
+      if (Rank != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Rank);
+      }
+      if (RegionID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RegionID);
+      }
+      if (Feature != global::Services.Feature.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Feature);
+      }
+      size += arrCountry_.CalculateSize(_repeated_arrCountry_codec);
+      if (UseTimeInSec != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(UseTimeInSec);
+      }
+      if (BattleNumber != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BattleNumber);
+      }
+      if (Numbers != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Numbers);
+      }
+      if (Skip != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Skip);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -180,12 +411,34 @@ namespace Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ProfaneRequest other) {
+    public void MergeFrom(BotRequest other) {
       if (other == null) {
         return;
       }
-      if (other.Text.Length != 0) {
-        Text = other.Text;
+      if (other.GameID != global::Services.GameID.None) {
+        GameID = other.GameID;
+      }
+      if (other.Rank != 0) {
+        Rank = other.Rank;
+      }
+      if (other.RegionID != 0) {
+        RegionID = other.RegionID;
+      }
+      if (other.Feature != global::Services.Feature.None) {
+        Feature = other.Feature;
+      }
+      arrCountry_.Add(other.arrCountry_);
+      if (other.UseTimeInSec != 0L) {
+        UseTimeInSec = other.UseTimeInSec;
+      }
+      if (other.BattleNumber != 0) {
+        BattleNumber = other.BattleNumber;
+      }
+      if (other.Numbers != 0) {
+        Numbers = other.Numbers;
+      }
+      if (other.Skip != 0) {
+        Skip = other.Skip;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -202,8 +455,40 @@ namespace Services {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            Text = input.ReadString();
+          case 8: {
+            GameID = (global::Services.GameID) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            Rank = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            RegionID = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            Feature = (global::Services.Feature) input.ReadEnum();
+            break;
+          }
+          case 42: {
+            arrCountry_.AddEntriesFrom(input, _repeated_arrCountry_codec);
+            break;
+          }
+          case 48: {
+            UseTimeInSec = input.ReadInt64();
+            break;
+          }
+          case 56: {
+            BattleNumber = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            Numbers = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            Skip = input.ReadInt32();
             break;
           }
         }
@@ -221,8 +506,40 @@ namespace Services {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            Text = input.ReadString();
+          case 8: {
+            GameID = (global::Services.GameID) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            Rank = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            RegionID = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            Feature = (global::Services.Feature) input.ReadEnum();
+            break;
+          }
+          case 42: {
+            arrCountry_.AddEntriesFrom(ref input, _repeated_arrCountry_codec);
+            break;
+          }
+          case 48: {
+            UseTimeInSec = input.ReadInt64();
+            break;
+          }
+          case 56: {
+            BattleNumber = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            Numbers = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            Skip = input.ReadInt32();
             break;
           }
         }
@@ -232,16 +549,16 @@ namespace Services {
 
   }
 
-  public sealed partial class ProfaneResponse : pb::IMessage<ProfaneResponse>
+  public sealed partial class BotInfo : pb::IMessage<BotInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ProfaneResponse> _parser = new pb::MessageParser<ProfaneResponse>(() => new ProfaneResponse());
+    private static readonly pb::MessageParser<BotInfo> _parser = new pb::MessageParser<BotInfo>(() => new BotInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ProfaneResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<BotInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -257,7 +574,7 @@ namespace Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProfaneResponse() {
+    public BotInfo() {
       OnConstruction();
     }
 
@@ -265,45 +582,101 @@ namespace Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProfaneResponse(ProfaneResponse other) : this() {
-      result_ = other.result_;
+    public BotInfo(BotInfo other) : this() {
+      userID_ = other.userID_;
+      username_ = other.username_;
+      countryCode_ = other.countryCode_;
+      rank_ = other.rank_;
+      trophy_ = other.trophy_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProfaneResponse Clone() {
-      return new ProfaneResponse(this);
+    public BotInfo Clone() {
+      return new BotInfo(this);
     }
 
-    /// <summary>Field number for the "result" field.</summary>
-    public const int ResultFieldNumber = 1;
-    private bool result_;
+    /// <summary>Field number for the "UserID" field.</summary>
+    public const int UserIDFieldNumber = 1;
+    private string userID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Result {
-      get { return result_; }
+    public string UserID {
+      get { return userID_; }
       set {
-        result_ = value;
+        userID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Username" field.</summary>
+    public const int UsernameFieldNumber = 2;
+    private string username_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Username {
+      get { return username_; }
+      set {
+        username_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "CountryCode" field.</summary>
+    public const int CountryCodeFieldNumber = 3;
+    private string countryCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CountryCode {
+      get { return countryCode_; }
+      set {
+        countryCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Rank" field.</summary>
+    public const int RankFieldNumber = 4;
+    private int rank_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Rank {
+      get { return rank_; }
+      set {
+        rank_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Trophy" field.</summary>
+    public const int TrophyFieldNumber = 5;
+    private int trophy_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Trophy {
+      get { return trophy_; }
+      set {
+        trophy_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ProfaneResponse);
+      return Equals(other as BotInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ProfaneResponse other) {
+    public bool Equals(BotInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Result != other.Result) return false;
+      if (UserID != other.UserID) return false;
+      if (Username != other.Username) return false;
+      if (CountryCode != other.CountryCode) return false;
+      if (Rank != other.Rank) return false;
+      if (Trophy != other.Trophy) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -311,7 +684,11 @@ namespace Services {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Result != false) hash ^= Result.GetHashCode();
+      if (UserID.Length != 0) hash ^= UserID.GetHashCode();
+      if (Username.Length != 0) hash ^= Username.GetHashCode();
+      if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
+      if (Rank != 0) hash ^= Rank.GetHashCode();
+      if (Trophy != 0) hash ^= Trophy.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -330,9 +707,25 @@ namespace Services {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Result != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(Result);
+      if (UserID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(UserID);
+      }
+      if (Username.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Username);
+      }
+      if (CountryCode.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CountryCode);
+      }
+      if (Rank != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(Rank);
+      }
+      if (Trophy != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(Trophy);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -344,9 +737,25 @@ namespace Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Result != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(Result);
+      if (UserID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(UserID);
+      }
+      if (Username.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Username);
+      }
+      if (CountryCode.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CountryCode);
+      }
+      if (Rank != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(Rank);
+      }
+      if (Trophy != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(Trophy);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -358,8 +767,20 @@ namespace Services {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Result != false) {
-        size += 1 + 1;
+      if (UserID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserID);
+      }
+      if (Username.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Username);
+      }
+      if (CountryCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
+      }
+      if (Rank != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Rank);
+      }
+      if (Trophy != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Trophy);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -369,12 +790,24 @@ namespace Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ProfaneResponse other) {
+    public void MergeFrom(BotInfo other) {
       if (other == null) {
         return;
       }
-      if (other.Result != false) {
-        Result = other.Result;
+      if (other.UserID.Length != 0) {
+        UserID = other.UserID;
+      }
+      if (other.Username.Length != 0) {
+        Username = other.Username;
+      }
+      if (other.CountryCode.Length != 0) {
+        CountryCode = other.CountryCode;
+      }
+      if (other.Rank != 0) {
+        Rank = other.Rank;
+      }
+      if (other.Trophy != 0) {
+        Trophy = other.Trophy;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -391,8 +824,24 @@ namespace Services {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Result = input.ReadBool();
+          case 10: {
+            UserID = input.ReadString();
+            break;
+          }
+          case 18: {
+            Username = input.ReadString();
+            break;
+          }
+          case 26: {
+            CountryCode = input.ReadString();
+            break;
+          }
+          case 32: {
+            Rank = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            Trophy = input.ReadInt32();
             break;
           }
         }
@@ -410,8 +859,202 @@ namespace Services {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            Result = input.ReadBool();
+          case 10: {
+            UserID = input.ReadString();
+            break;
+          }
+          case 18: {
+            Username = input.ReadString();
+            break;
+          }
+          case 26: {
+            CountryCode = input.ReadString();
+            break;
+          }
+          case 32: {
+            Rank = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            Trophy = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class BotResponse : pb::IMessage<BotResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<BotResponse> _parser = new pb::MessageParser<BotResponse>(() => new BotResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<BotResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Services.ServiceSupportReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BotResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BotResponse(BotResponse other) : this() {
+      bots_ = other.bots_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BotResponse Clone() {
+      return new BotResponse(this);
+    }
+
+    /// <summary>Field number for the "Bots" field.</summary>
+    public const int BotsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Services.BotInfo> _repeated_bots_codec
+        = pb::FieldCodec.ForMessage(10, global::Services.BotInfo.Parser);
+    private readonly pbc::RepeatedField<global::Services.BotInfo> bots_ = new pbc::RepeatedField<global::Services.BotInfo>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Services.BotInfo> Bots {
+      get { return bots_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as BotResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(BotResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!bots_.Equals(other.bots_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= bots_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      bots_.WriteTo(output, _repeated_bots_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      bots_.WriteTo(ref output, _repeated_bots_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += bots_.CalculateSize(_repeated_bots_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(BotResponse other) {
+      if (other == null) {
+        return;
+      }
+      bots_.Add(other.bots_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            bots_.AddEntriesFrom(input, _repeated_bots_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            bots_.AddEntriesFrom(ref input, _repeated_bots_codec);
             break;
           }
         }

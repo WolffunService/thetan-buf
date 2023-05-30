@@ -46,17 +46,17 @@ namespace Services {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Services.ProfaneRequest> __Marshaller_services_ProfaneRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.ProfaneRequest.Parser));
+    static readonly grpc::Marshaller<global::Services.BotRequest> __Marshaller_services_BotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.BotRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Services.ProfaneResponse> __Marshaller_services_ProfaneResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.ProfaneResponse.Parser));
+    static readonly grpc::Marshaller<global::Services.BotResponse> __Marshaller_services_BotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.BotResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Services.ProfaneRequest, global::Services.ProfaneResponse> __Method_ProfaneContains = new grpc::Method<global::Services.ProfaneRequest, global::Services.ProfaneResponse>(
+    static readonly grpc::Method<global::Services.BotRequest, global::Services.BotResponse> __Method_GetBots = new grpc::Method<global::Services.BotRequest, global::Services.BotResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "ProfaneContains",
-        __Marshaller_services_ProfaneRequest,
-        __Marshaller_services_ProfaneResponse);
+        "GetBots",
+        __Marshaller_services_BotRequest,
+        __Marshaller_services_BotResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -69,7 +69,7 @@ namespace Services {
     public abstract partial class SupportServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Services.ProfaneResponse> ProfaneContains(global::Services.ProfaneRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Services.BotResponse> GetBots(global::Services.BotRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -104,24 +104,24 @@ namespace Services {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Services.ProfaneResponse ProfaneContains(global::Services.ProfaneRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Services.BotResponse GetBots(global::Services.BotRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return ProfaneContains(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetBots(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Services.ProfaneResponse ProfaneContains(global::Services.ProfaneRequest request, grpc::CallOptions options)
+      public virtual global::Services.BotResponse GetBots(global::Services.BotRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_ProfaneContains, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetBots, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Services.ProfaneResponse> ProfaneContainsAsync(global::Services.ProfaneRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Services.BotResponse> GetBotsAsync(global::Services.BotRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return ProfaneContainsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetBotsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Services.ProfaneResponse> ProfaneContainsAsync(global::Services.ProfaneRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Services.BotResponse> GetBotsAsync(global::Services.BotRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_ProfaneContains, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetBots, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -137,7 +137,7 @@ namespace Services {
     public static grpc::ServerServiceDefinition BindService(SupportServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_ProfaneContains, serviceImpl.ProfaneContains).Build();
+          .AddMethod(__Method_GetBots, serviceImpl.GetBots).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -147,7 +147,7 @@ namespace Services {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, SupportServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_ProfaneContains, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Services.ProfaneRequest, global::Services.ProfaneResponse>(serviceImpl.ProfaneContains));
+      serviceBinder.AddMethod(__Method_GetBots, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Services.BotRequest, global::Services.BotResponse>(serviceImpl.GetBots));
     }
 
   }
