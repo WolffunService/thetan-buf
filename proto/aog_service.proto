@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "match.proto";
+import "aog_match.proto";
 
-package services;
+package aog;
 
-option go_package = "./srvaog";
+option go_package = "./aog";
 
 service AogService {
   // For bot
@@ -42,5 +42,5 @@ message SearchPlayerInfoRequest {
 }
 
 message SearchPlayerInfoResponse {
-  repeated core.proto.PlayerInfoMatchProto players = 1;
+  repeated AogPlayerInfoMatchProto players = 1;
 }

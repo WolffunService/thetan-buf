@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             (unknown)
-// source: service_aog.proto
+// source: aog_service.proto
 
-package srvaog
+package aog
 
 import (
 	context "context"
@@ -19,9 +19,9 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	AogService_SearchUserRanking_FullMethodName     = "/services.AogService/SearchUserRanking"
-	AogService_CreateManyUserRanking_FullMethodName = "/services.AogService/CreateManyUserRanking"
-	AogService_SearchPlayerInfo_FullMethodName      = "/services.AogService/SearchPlayerInfo"
+	AogService_SearchUserRanking_FullMethodName     = "/aog.AogService/SearchUserRanking"
+	AogService_CreateManyUserRanking_FullMethodName = "/aog.AogService/CreateManyUserRanking"
+	AogService_SearchPlayerInfo_FullMethodName      = "/aog.AogService/SearchPlayerInfo"
 )
 
 // AogServiceClient is the client API for AogService service.
@@ -166,7 +166,7 @@ func _AogService_SearchPlayerInfo_Handler(srv interface{}, ctx context.Context, 
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var AogService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "services.AogService",
+	ServiceName: "aog.AogService",
 	HandlerType: (*AogServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -183,5 +183,5 @@ var AogService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "service_aog.proto",
+	Metadata: "aog_service.proto",
 }
