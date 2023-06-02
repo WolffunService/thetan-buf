@@ -46,17 +46,17 @@ namespace Services {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Services.BotRequest> __Marshaller_services_BotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.BotRequest.Parser));
+    static readonly grpc::Marshaller<global::Services.SearchBotsRequest> __Marshaller_services_SearchBotsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.SearchBotsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Services.BotResponse> __Marshaller_services_BotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.BotResponse.Parser));
+    static readonly grpc::Marshaller<global::Services.SearchBotsResponse> __Marshaller_services_SearchBotsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.SearchBotsResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Services.BotRequest, global::Services.BotResponse> __Method_GetBots = new grpc::Method<global::Services.BotRequest, global::Services.BotResponse>(
+    static readonly grpc::Method<global::Services.SearchBotsRequest, global::Services.SearchBotsResponse> __Method_SearchBots = new grpc::Method<global::Services.SearchBotsRequest, global::Services.SearchBotsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetBots",
-        __Marshaller_services_BotRequest,
-        __Marshaller_services_BotResponse);
+        "SearchBots",
+        __Marshaller_services_SearchBotsRequest,
+        __Marshaller_services_SearchBotsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -69,7 +69,7 @@ namespace Services {
     public abstract partial class SupportServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Services.BotResponse> GetBots(global::Services.BotRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Services.SearchBotsResponse> SearchBots(global::Services.SearchBotsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -104,24 +104,24 @@ namespace Services {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Services.BotResponse GetBots(global::Services.BotRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Services.SearchBotsResponse SearchBots(global::Services.SearchBotsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetBots(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return SearchBots(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Services.BotResponse GetBots(global::Services.BotRequest request, grpc::CallOptions options)
+      public virtual global::Services.SearchBotsResponse SearchBots(global::Services.SearchBotsRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetBots, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_SearchBots, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Services.BotResponse> GetBotsAsync(global::Services.BotRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Services.SearchBotsResponse> SearchBotsAsync(global::Services.SearchBotsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetBotsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return SearchBotsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Services.BotResponse> GetBotsAsync(global::Services.BotRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Services.SearchBotsResponse> SearchBotsAsync(global::Services.SearchBotsRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetBots, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_SearchBots, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -137,7 +137,7 @@ namespace Services {
     public static grpc::ServerServiceDefinition BindService(SupportServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetBots, serviceImpl.GetBots).Build();
+          .AddMethod(__Method_SearchBots, serviceImpl.SearchBots).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -147,7 +147,7 @@ namespace Services {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, SupportServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetBots, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Services.BotRequest, global::Services.BotResponse>(serviceImpl.GetBots));
+      serviceBinder.AddMethod(__Method_SearchBots, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Services.SearchBotsRequest, global::Services.SearchBotsResponse>(serviceImpl.SearchBots));
     }
 
   }
