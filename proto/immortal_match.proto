@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-package aog;
+package immortal;
 
-option go_package = "./aog";
+option go_package = "./immortal";
 
-message AogMatchFoundResponseProto {
+message ImmortalMatchFoundResponseProto {
   string matchID = 1;
-  repeated AogPlayerInfoMatchProto players = 2;
+  repeated ImmortalPlayerInfoMatchProto players = 2;
 }
 
-message AogPlayerInfoMatchProto {
+message ImmortalPlayerInfoMatchProto {
   string playerID = 1;
   string partyID = 2;
   int32 skinID = 3;
@@ -29,17 +29,17 @@ message AogPlayerInfoMatchProto {
   repeated uint32 skills = 17;
 }
 
-service AogMatchDirectorService {
-  rpc CancelTicket(AogCancelTicketRequest) returns (AogCancelTicketResponse) {}
+service ImmortalMatchDirectorService {
+  rpc CancelTicket(ImmortalCancelTicketRequest) returns (ImmortalCancelTicketResponse) {}
 }
 
-message AogCancelTicketRequest {
+message ImmortalCancelTicketRequest {
   int32 playerID = 1;
   int32 partyID = 2;
   int32 ticketID = 3;
 }
 
-message AogCancelTicketResponse {
+message ImmortalCancelTicketResponse {
   int32 playerID = 1;
   int32 partyID = 2;
   int32 ticketID = 3;

@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-import "aog_match.proto";
+import "immortal_match.proto";
 
-package aog;
+package immortal;
 
-option go_package = "./aog";
+option go_package = "./immortal";
 
-service AogService {
+service ImmortalService {
   // For bot
   rpc SearchUserRanking (SearchUserRankingRequest) returns (SearchUserRankingResponse) {}
   rpc CreateManyUserRanking (CreateManyUserRankingRequest) returns (CreateManyUserRankingResponse) {}
@@ -42,5 +42,5 @@ message SearchPlayerInfoRequest {
 }
 
 message SearchPlayerInfoResponse {
-  repeated AogPlayerInfoMatchProto players = 1;
+  repeated ImmortalPlayerInfoMatchProto players = 1;
 }
