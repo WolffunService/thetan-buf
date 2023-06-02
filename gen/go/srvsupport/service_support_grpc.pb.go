@@ -19,14 +19,14 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	SupportService_ProfaneContains_FullMethodName = "/services.SupportService/ProfaneContains"
+	SupportService_SearchBots_FullMethodName = "/services.SupportService/SearchBots"
 )
 
 // SupportServiceClient is the client API for SupportService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type SupportServiceClient interface {
-	ProfaneContains(ctx context.Context, in *ProfaneRequest, opts ...grpc.CallOption) (*ProfaneResponse, error)
+	SearchBots(ctx context.Context, in *SearchBotsRequest, opts ...grpc.CallOption) (*SearchBotsResponse, error)
 }
 
 type supportServiceClient struct {
@@ -37,9 +37,9 @@ func NewSupportServiceClient(cc grpc.ClientConnInterface) SupportServiceClient {
 	return &supportServiceClient{cc}
 }
 
-func (c *supportServiceClient) ProfaneContains(ctx context.Context, in *ProfaneRequest, opts ...grpc.CallOption) (*ProfaneResponse, error) {
-	out := new(ProfaneResponse)
-	err := c.cc.Invoke(ctx, SupportService_ProfaneContains_FullMethodName, in, out, opts...)
+func (c *supportServiceClient) SearchBots(ctx context.Context, in *SearchBotsRequest, opts ...grpc.CallOption) (*SearchBotsResponse, error) {
+	out := new(SearchBotsResponse)
+	err := c.cc.Invoke(ctx, SupportService_SearchBots_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -50,7 +50,7 @@ func (c *supportServiceClient) ProfaneContains(ctx context.Context, in *ProfaneR
 // All implementations must embed UnimplementedSupportServiceServer
 // for forward compatibility
 type SupportServiceServer interface {
-	ProfaneContains(context.Context, *ProfaneRequest) (*ProfaneResponse, error)
+	SearchBots(context.Context, *SearchBotsRequest) (*SearchBotsResponse, error)
 	mustEmbedUnimplementedSupportServiceServer()
 }
 
@@ -58,8 +58,8 @@ type SupportServiceServer interface {
 type UnimplementedSupportServiceServer struct {
 }
 
-func (UnimplementedSupportServiceServer) ProfaneContains(context.Context, *ProfaneRequest) (*ProfaneResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method ProfaneContains not implemented")
+func (UnimplementedSupportServiceServer) SearchBots(context.Context, *SearchBotsRequest) (*SearchBotsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SearchBots not implemented")
 }
 func (UnimplementedSupportServiceServer) mustEmbedUnimplementedSupportServiceServer() {}
 
@@ -74,20 +74,20 @@ func RegisterSupportServiceServer(s grpc.ServiceRegistrar, srv SupportServiceSer
 	s.RegisterService(&SupportService_ServiceDesc, srv)
 }
 
-func _SupportService_ProfaneContains_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ProfaneRequest)
+func _SupportService_SearchBots_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SearchBotsRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(SupportServiceServer).ProfaneContains(ctx, in)
+		return srv.(SupportServiceServer).SearchBots(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: SupportService_ProfaneContains_FullMethodName,
+		FullMethod: SupportService_SearchBots_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(SupportServiceServer).ProfaneContains(ctx, req.(*ProfaneRequest))
+		return srv.(SupportServiceServer).SearchBots(ctx, req.(*SearchBotsRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -100,8 +100,8 @@ var SupportService_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*SupportServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "ProfaneContains",
-			Handler:    _SupportService_ProfaneContains_Handler,
+			MethodName: "SearchBots",
+			Handler:    _SupportService_SearchBots_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+import "immortal_match.proto";
+
+package immortal;
+
+option go_package = "./immortal";
+
+service ImmortalService {
+  // For bot
+  rpc SearchUserRanking (SearchUserRankingRequest) returns (SearchUserRankingResponse) {}
+  rpc CreateManyUserRanking (CreateManyUserRankingRequest) returns (CreateManyUserRankingResponse) {}
+
+  // Search player info
+  rpc SearchPlayerInfo(SearchPlayerInfoRequest) returns (SearchPlayerInfoResponse) {}
+}
+
+message SearchUserRankingRequest {
+  repeated string userIDs = 1;
+}
+
+message SearchUserRankingResponse {
+  map<string, UserRanking> userRankingByUserID = 1;
+}
+
+message UserRanking {
+  string userID = 1;
+  int32 rank = 2;
+  int32 trophy = 3;
+}
+
+message CreateManyUserRankingRequest {
+  repeated UserRanking ListUserRanking = 1;
+}
+
+message CreateManyUserRankingResponse {
+  map<string, UserRanking> userRankingByUserID = 1;
+}
+
+message SearchPlayerInfoRequest {
+  repeated string playerIDs = 1;
+}
+
+message SearchPlayerInfoResponse {
+  repeated ImmortalPlayerInfoMatchProto players = 1;
+}
