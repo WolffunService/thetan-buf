@@ -43,17 +43,15 @@ namespace Immortal {
             "RBIYCgdwYXJ0eUlEGAIgASgJUgdwYXJ0eUlEEkAKB3BsYXllcnMYAyADKAsy",
             "Ji5pbW1vcnRhbC5JbW1vcnRhbFBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5",
             "ZXJzEhgKB3JlZ2lvbnMYBCADKAVSB3JlZ2lvbnMibwobSW1tb3J0YWxDYW5j",
-            "ZWxUaWNrZXRSZXF1ZXN0EhoKCHBsYXllcklEGAEgASgFUghwbGF5ZXJJRBIY",
-            "CgdwYXJ0eUlEGAIgASgFUgdwYXJ0eUlEEhoKCHRpY2tldElEGAMgASgFUgh0",
-            "aWNrZXRJRCJwChxJbW1vcnRhbENhbmNlbFRpY2tldFJlc3BvbnNlEhoKCHBs",
-            "YXllcklEGAEgASgFUghwbGF5ZXJJRBIYCgdwYXJ0eUlEGAIgASgFUgdwYXJ0",
-            "eUlEEhoKCHRpY2tldElEGAMgASgFUgh0aWNrZXRJRDJ/ChxJbW1vcnRhbE1h",
-            "dGNoRGlyZWN0b3JTZXJ2aWNlEl8KDENhbmNlbFRpY2tldBIlLmltbW9ydGFs",
-            "LkltbW9ydGFsQ2FuY2VsVGlja2V0UmVxdWVzdBomLmltbW9ydGFsLkltbW9y",
-            "dGFsQ2FuY2VsVGlja2V0UmVzcG9uc2UiAEJuCgxjb20uaW1tb3J0YWxCEklt",
-            "bW9ydGFsTWF0Y2hQcm90b1ABWgouL2ltbW9ydGFsogIDSVhYqgIISW1tb3J0",
-            "YWzKAghJbW1vcnRhbOICFEltbW9ydGFsXEdQQk1ldGFkYXRh6gIISW1tb3J0",
-            "YWxiBnByb3RvMw=="));
+            "ZWxUaWNrZXRSZXF1ZXN0EhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBIY",
+            "CgdwYXJ0eUlEGAIgASgJUgdwYXJ0eUlEEhoKCHRpY2tldElEGAMgASgJUgh0",
+            "aWNrZXRJRCIeChxJbW1vcnRhbENhbmNlbFRpY2tldFJlc3BvbnNlMn8KHElt",
+            "bW9ydGFsTWF0Y2hEaXJlY3RvclNlcnZpY2USXwoMQ2FuY2VsVGlja2V0EiUu",
+            "aW1tb3J0YWwuSW1tb3J0YWxDYW5jZWxUaWNrZXRSZXF1ZXN0GiYuaW1tb3J0",
+            "YWwuSW1tb3J0YWxDYW5jZWxUaWNrZXRSZXNwb25zZSIAQm4KDGNvbS5pbW1v",
+            "cnRhbEISSW1tb3J0YWxNYXRjaFByb3RvUAFaCi4vaW1tb3J0YWyiAgNJWFiq",
+            "AghJbW1vcnRhbMoCCEltbW9ydGFs4gIUSW1tb3J0YWxcR1BCTWV0YWRhdGHq",
+            "AghJbW1vcnRhbGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -61,7 +59,7 @@ namespace Immortal {
             new pbr::GeneratedClrTypeInfo(typeof(global::Immortal.ImmortalPlayerInfoMatchProto), global::Immortal.ImmortalPlayerInfoMatchProto.Parser, new[]{ "PlayerID", "PartyID", "SkinID", "TrophyRank", "HeroLevel", "Regions", "PlayerName", "AvatarID", "FrameID", "HeroID", "TrophySearch", "BrainType", "TeamID", "BattleCount", "NameColorID", "Rank", "Skills" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Immortal.ImmortalTicketData), global::Immortal.ImmortalTicketData.Parser, new[]{ "TicketID", "PartyID", "Players", "Regions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Immortal.ImmortalCancelTicketRequest), global::Immortal.ImmortalCancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Immortal.ImmortalCancelTicketResponse), global::Immortal.ImmortalCancelTicketResponse.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Immortal.ImmortalCancelTicketResponse), global::Immortal.ImmortalCancelTicketResponse.Parser, null, null, null, null, null)
           }));
     }
     #endregion
@@ -1374,37 +1372,37 @@ namespace Immortal {
 
     /// <summary>Field number for the "playerID" field.</summary>
     public const int PlayerIDFieldNumber = 1;
-    private int playerID_;
+    private string playerID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PlayerID {
+    public string PlayerID {
       get { return playerID_; }
       set {
-        playerID_ = value;
+        playerID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "partyID" field.</summary>
     public const int PartyIDFieldNumber = 2;
-    private int partyID_;
+    private string partyID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PartyID {
+    public string PartyID {
       get { return partyID_; }
       set {
-        partyID_ = value;
+        partyID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "ticketID" field.</summary>
     public const int TicketIDFieldNumber = 3;
-    private int ticketID_;
+    private string ticketID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int TicketID {
+    public string TicketID {
       get { return ticketID_; }
       set {
-        ticketID_ = value;
+        ticketID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1433,9 +1431,9 @@ namespace Immortal {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (PlayerID != 0) hash ^= PlayerID.GetHashCode();
-      if (PartyID != 0) hash ^= PartyID.GetHashCode();
-      if (TicketID != 0) hash ^= TicketID.GetHashCode();
+      if (PlayerID.Length != 0) hash ^= PlayerID.GetHashCode();
+      if (PartyID.Length != 0) hash ^= PartyID.GetHashCode();
+      if (TicketID.Length != 0) hash ^= TicketID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1454,17 +1452,17 @@ namespace Immortal {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (PlayerID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerID);
+      if (PlayerID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerID);
       }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
       }
-      if (TicketID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TicketID);
+      if (TicketID.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TicketID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1476,17 +1474,17 @@ namespace Immortal {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerID);
+      if (PlayerID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerID);
       }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
       }
-      if (TicketID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TicketID);
+      if (TicketID.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TicketID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1498,14 +1496,14 @@ namespace Immortal {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (PlayerID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerID);
+      if (PlayerID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerID);
       }
-      if (PartyID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PartyID);
+      if (PartyID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyID);
       }
-      if (TicketID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TicketID);
+      if (TicketID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TicketID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1519,13 +1517,13 @@ namespace Immortal {
       if (other == null) {
         return;
       }
-      if (other.PlayerID != 0) {
+      if (other.PlayerID.Length != 0) {
         PlayerID = other.PlayerID;
       }
-      if (other.PartyID != 0) {
+      if (other.PartyID.Length != 0) {
         PartyID = other.PartyID;
       }
-      if (other.TicketID != 0) {
+      if (other.TicketID.Length != 0) {
         TicketID = other.TicketID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1543,16 +1541,16 @@ namespace Immortal {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            PlayerID = input.ReadInt32();
+          case 10: {
+            PlayerID = input.ReadString();
             break;
           }
-          case 16: {
-            PartyID = input.ReadInt32();
+          case 18: {
+            PartyID = input.ReadString();
             break;
           }
-          case 24: {
-            TicketID = input.ReadInt32();
+          case 26: {
+            TicketID = input.ReadString();
             break;
           }
         }
@@ -1570,16 +1568,16 @@ namespace Immortal {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            PlayerID = input.ReadInt32();
+          case 10: {
+            PlayerID = input.ReadString();
             break;
           }
-          case 16: {
-            PartyID = input.ReadInt32();
+          case 18: {
+            PartyID = input.ReadString();
             break;
           }
-          case 24: {
-            TicketID = input.ReadInt32();
+          case 26: {
+            TicketID = input.ReadString();
             break;
           }
         }
@@ -1623,9 +1621,6 @@ namespace Immortal {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ImmortalCancelTicketResponse(ImmortalCancelTicketResponse other) : this() {
-      playerID_ = other.playerID_;
-      partyID_ = other.partyID_;
-      ticketID_ = other.ticketID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1633,42 +1628,6 @@ namespace Immortal {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ImmortalCancelTicketResponse Clone() {
       return new ImmortalCancelTicketResponse(this);
-    }
-
-    /// <summary>Field number for the "playerID" field.</summary>
-    public const int PlayerIDFieldNumber = 1;
-    private int playerID_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PlayerID {
-      get { return playerID_; }
-      set {
-        playerID_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "partyID" field.</summary>
-    public const int PartyIDFieldNumber = 2;
-    private int partyID_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PartyID {
-      get { return partyID_; }
-      set {
-        partyID_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "ticketID" field.</summary>
-    public const int TicketIDFieldNumber = 3;
-    private int ticketID_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int TicketID {
-      get { return ticketID_; }
-      set {
-        ticketID_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1686,9 +1645,6 @@ namespace Immortal {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (PlayerID != other.PlayerID) return false;
-      if (PartyID != other.PartyID) return false;
-      if (TicketID != other.TicketID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1696,9 +1652,6 @@ namespace Immortal {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (PlayerID != 0) hash ^= PlayerID.GetHashCode();
-      if (PartyID != 0) hash ^= PartyID.GetHashCode();
-      if (TicketID != 0) hash ^= TicketID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1717,18 +1670,6 @@ namespace Immortal {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (PlayerID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerID);
-      }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
-      }
-      if (TicketID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TicketID);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1739,18 +1680,6 @@ namespace Immortal {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerID);
-      }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
-      }
-      if (TicketID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TicketID);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1761,15 +1690,6 @@ namespace Immortal {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (PlayerID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerID);
-      }
-      if (PartyID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PartyID);
-      }
-      if (TicketID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TicketID);
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1781,15 +1701,6 @@ namespace Immortal {
     public void MergeFrom(ImmortalCancelTicketResponse other) {
       if (other == null) {
         return;
-      }
-      if (other.PlayerID != 0) {
-        PlayerID = other.PlayerID;
-      }
-      if (other.PartyID != 0) {
-        PartyID = other.PartyID;
-      }
-      if (other.TicketID != 0) {
-        TicketID = other.TicketID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1806,18 +1717,6 @@ namespace Immortal {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            PlayerID = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            PartyID = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            TicketID = input.ReadInt32();
-            break;
-          }
         }
       }
     #endif
@@ -1833,18 +1732,6 @@ namespace Immortal {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            PlayerID = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            PartyID = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            TicketID = input.ReadInt32();
-            break;
-          }
         }
       }
     }
