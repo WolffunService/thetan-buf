@@ -5,14 +5,14 @@ package services;
 option go_package = "./srvsupport";
 
 service SupportService {
-  rpc GetBots(BotRequest) returns (BotResponse) {}
+  rpc SearchBots(SearchBotsRequest) returns (SearchBotsResponse) {}
 }
 
 enum GameID {
   GAME_ID_NONE = 0;
   GAME_ID_ARENA = 1;
   GAME_ID_RIVAL = 2;
-  GAME_ID_AOG = 3;
+  GAME_ID_IMMORTAL = 3;
 }
 
 enum Feature {
@@ -23,7 +23,7 @@ enum Feature {
   FEATURE_CHAT_SHILL = 4;
 }
 
-message BotRequest {
+message SearchBotsRequest {
   GameID GameID = 1;
   int32 Rank = 2;
   int32 RegionID = 3;
@@ -35,14 +35,14 @@ message BotRequest {
   int32 Skip = 9;
 }
 
+message SearchBotsResponse {
+  repeated BotInfo Bots = 1;
+}
+
 message BotInfo {
   string UserID = 1;
   string Username = 2;
   string CountryCode = 3;
   int32 Rank = 4;
   int32 Trophy = 5;
-}
-
-message BotResponse {
-  repeated BotInfo Bots = 1;
 }
