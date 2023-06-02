@@ -40,7 +40,7 @@ namespace Immortal {
             "bGVDb3VudBIgCgtuYW1lQ29sb3JJRBgPIAEoBVILbmFtZUNvbG9ySUQSEgoE",
             "cmFuaxgQIAEoBVIEcmFuaxIWCgZza2lsbHMYESADKA1SBnNraWxscyKmAQoS",
             "SW1tb3J0YWxUaWNrZXREYXRhEhoKCHRpY2tldElEGAEgASgJUgh0aWNrZXRJ",
-            "RBIYCgdwYXJ0eUlEGAIgASgFUgdwYXJ0eUlEEkAKB3BsYXllcnMYAyADKAsy",
+            "RBIYCgdwYXJ0eUlEGAIgASgJUgdwYXJ0eUlEEkAKB3BsYXllcnMYAyADKAsy",
             "Ji5pbW1vcnRhbC5JbW1vcnRhbFBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5",
             "ZXJzEhgKB3JlZ2lvbnMYBCADKAVSB3JlZ2lvbnMibwobSW1tb3J0YWxDYW5j",
             "ZWxUaWNrZXRSZXF1ZXN0EhoKCHBsYXllcklEGAEgASgFUghwbGF5ZXJJRBIY",
@@ -1107,13 +1107,13 @@ namespace Immortal {
 
     /// <summary>Field number for the "partyID" field.</summary>
     public const int PartyIDFieldNumber = 2;
-    private int partyID_;
+    private string partyID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PartyID {
+    public string PartyID {
       get { return partyID_; }
       set {
-        partyID_ = value;
+        partyID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1166,7 +1166,7 @@ namespace Immortal {
     public override int GetHashCode() {
       int hash = 1;
       if (TicketID.Length != 0) hash ^= TicketID.GetHashCode();
-      if (PartyID != 0) hash ^= PartyID.GetHashCode();
+      if (PartyID.Length != 0) hash ^= PartyID.GetHashCode();
       hash ^= players_.GetHashCode();
       hash ^= regions_.GetHashCode();
       if (_unknownFields != null) {
@@ -1191,9 +1191,9 @@ namespace Immortal {
         output.WriteRawTag(10);
         output.WriteString(TicketID);
       }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
       }
       players_.WriteTo(output, _repeated_players_codec);
       regions_.WriteTo(output, _repeated_regions_codec);
@@ -1211,9 +1211,9 @@ namespace Immortal {
         output.WriteRawTag(10);
         output.WriteString(TicketID);
       }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
       }
       players_.WriteTo(ref output, _repeated_players_codec);
       regions_.WriteTo(ref output, _repeated_regions_codec);
@@ -1230,8 +1230,8 @@ namespace Immortal {
       if (TicketID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(TicketID);
       }
-      if (PartyID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PartyID);
+      if (PartyID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyID);
       }
       size += players_.CalculateSize(_repeated_players_codec);
       size += regions_.CalculateSize(_repeated_regions_codec);
@@ -1250,7 +1250,7 @@ namespace Immortal {
       if (other.TicketID.Length != 0) {
         TicketID = other.TicketID;
       }
-      if (other.PartyID != 0) {
+      if (other.PartyID.Length != 0) {
         PartyID = other.PartyID;
       }
       players_.Add(other.players_);
@@ -1274,8 +1274,8 @@ namespace Immortal {
             TicketID = input.ReadString();
             break;
           }
-          case 16: {
-            PartyID = input.ReadInt32();
+          case 18: {
+            PartyID = input.ReadString();
             break;
           }
           case 26: {
@@ -1306,8 +1306,8 @@ namespace Immortal {
             TicketID = input.ReadString();
             break;
           }
-          case 16: {
-            PartyID = input.ReadInt32();
+          case 18: {
+            PartyID = input.ReadString();
             break;
           }
           case 26: {

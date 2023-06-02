@@ -31,7 +31,7 @@ message ImmortalPlayerInfoMatchProto {
 
 message ImmortalTicketData {
   string ticketID = 1;
-  int32 partyID = 2;
+  string partyID = 2;
   repeated ImmortalPlayerInfoMatchProto players = 3;
   repeated int32 regions = 4;
 }
