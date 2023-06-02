@@ -24,25 +24,25 @@ enum Feature {
 }
 
 message SearchBotsRequest {
-  GameID GameID = 1;
-  int32 Rank = 2;
-  int32 RegionID = 3;
-  Feature Feature = 4;
-  repeated string ArrCountry = 5;
-  int64 UseTimeInSec = 6;
-  int32 BattleNumber = 7;
-  int32 Numbers = 8;
-  int32 Skip = 9;
+  GameID gameID = 1;
+  int32 rank = 2;
+  int32 regionID = 3;
+  Feature feature = 4;
+  repeated string arrCountry = 5;
+  int64 useTimeInSec = 6;
+  int32 battleNumber = 7;
+  int32 numbers = 8;
+  int32 skip = 9;
 }
 
 message SearchBotsResponse {
-  repeated BotInfo Bots = 1;
+  repeated BotInfo bots = 1;
 }
 
 message BotInfo {
-  string UserID = 1;
-  string Username = 2;
-  string CountryCode = 3;
-  int32 Rank = 4;
-  int32 Trophy = 5;
+  string userID = 1;
+  string username = 2;
+  string countryCode = 3;
+  int32 rank = 4;
+  int32 trophy = 5;
 }

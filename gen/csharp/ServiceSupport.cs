@@ -25,17 +25,17 @@ namespace Services {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChVzZXJ2aWNlX3N1cHBvcnQucHJvdG8SCHNlcnZpY2VzIrACChFTZWFyY2hC",
-            "b3RzUmVxdWVzdBIoCgZHYW1lSUQYASABKA4yEC5zZXJ2aWNlcy5HYW1lSURS",
-            "BkdhbWVJRBISCgRSYW5rGAIgASgFUgRSYW5rEhoKCFJlZ2lvbklEGAMgASgF",
-            "UghSZWdpb25JRBIrCgdGZWF0dXJlGAQgASgOMhEuc2VydmljZXMuRmVhdHVy",
-            "ZVIHRmVhdHVyZRIeCgpBcnJDb3VudHJ5GAUgAygJUgpBcnJDb3VudHJ5EiIK",
-            "DFVzZVRpbWVJblNlYxgGIAEoA1IMVXNlVGltZUluU2VjEiIKDEJhdHRsZU51",
-            "bWJlchgHIAEoBVIMQmF0dGxlTnVtYmVyEhgKB051bWJlcnMYCCABKAVSB051",
-            "bWJlcnMSEgoEU2tpcBgJIAEoBVIEU2tpcCI7ChJTZWFyY2hCb3RzUmVzcG9u",
-            "c2USJQoEQm90cxgBIAMoCzIRLnNlcnZpY2VzLkJvdEluZm9SBEJvdHMiiwEK",
-            "B0JvdEluZm8SFgoGVXNlcklEGAEgASgJUgZVc2VySUQSGgoIVXNlcm5hbWUY",
-            "AiABKAlSCFVzZXJuYW1lEiAKC0NvdW50cnlDb2RlGAMgASgJUgtDb3VudHJ5",
-            "Q29kZRISCgRSYW5rGAQgASgFUgRSYW5rEhYKBlRyb3BoeRgFIAEoBVIGVHJv",
+            "b3RzUmVxdWVzdBIoCgZnYW1lSUQYASABKA4yEC5zZXJ2aWNlcy5HYW1lSURS",
+            "BmdhbWVJRBISCgRyYW5rGAIgASgFUgRyYW5rEhoKCHJlZ2lvbklEGAMgASgF",
+            "UghyZWdpb25JRBIrCgdmZWF0dXJlGAQgASgOMhEuc2VydmljZXMuRmVhdHVy",
+            "ZVIHZmVhdHVyZRIeCgphcnJDb3VudHJ5GAUgAygJUgphcnJDb3VudHJ5EiIK",
+            "DHVzZVRpbWVJblNlYxgGIAEoA1IMdXNlVGltZUluU2VjEiIKDGJhdHRsZU51",
+            "bWJlchgHIAEoBVIMYmF0dGxlTnVtYmVyEhgKB251bWJlcnMYCCABKAVSB251",
+            "bWJlcnMSEgoEc2tpcBgJIAEoBVIEc2tpcCI7ChJTZWFyY2hCb3RzUmVzcG9u",
+            "c2USJQoEYm90cxgBIAMoCzIRLnNlcnZpY2VzLkJvdEluZm9SBGJvdHMiiwEK",
+            "B0JvdEluZm8SFgoGdXNlcklEGAEgASgJUgZ1c2VySUQSGgoIdXNlcm5hbWUY",
+            "AiABKAlSCHVzZXJuYW1lEiAKC2NvdW50cnlDb2RlGAMgASgJUgtjb3VudHJ5",
+            "Q29kZRISCgRyYW5rGAQgASgFUgRyYW5rEhYKBnRyb3BoeRgFIAEoBVIGdHJv",
             "cGh5KlYKBkdhbWVJRBIQCgxHQU1FX0lEX05PTkUQABIRCg1HQU1FX0lEX0FS",
             "RU5BEAESEQoNR0FNRV9JRF9SSVZBTBACEhQKEEdBTUVfSURfSU1NT1JUQUwQ",
             "AyprCgdGZWF0dXJlEhAKDEZFQVRVUkVfTk9ORRAAEhMKD0ZFQVRVUkVfSU5f",
@@ -128,7 +128,7 @@ namespace Services {
       return new SearchBotsRequest(this);
     }
 
-    /// <summary>Field number for the "GameID" field.</summary>
+    /// <summary>Field number for the "gameID" field.</summary>
     public const int GameIDFieldNumber = 1;
     private global::Services.GameID gameID_ = global::Services.GameID.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -140,7 +140,7 @@ namespace Services {
       }
     }
 
-    /// <summary>Field number for the "Rank" field.</summary>
+    /// <summary>Field number for the "rank" field.</summary>
     public const int RankFieldNumber = 2;
     private int rank_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -152,7 +152,7 @@ namespace Services {
       }
     }
 
-    /// <summary>Field number for the "RegionID" field.</summary>
+    /// <summary>Field number for the "regionID" field.</summary>
     public const int RegionIDFieldNumber = 3;
     private int regionID_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -164,7 +164,7 @@ namespace Services {
       }
     }
 
-    /// <summary>Field number for the "Feature" field.</summary>
+    /// <summary>Field number for the "feature" field.</summary>
     public const int FeatureFieldNumber = 4;
     private global::Services.Feature feature_ = global::Services.Feature.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -176,7 +176,7 @@ namespace Services {
       }
     }
 
-    /// <summary>Field number for the "ArrCountry" field.</summary>
+    /// <summary>Field number for the "arrCountry" field.</summary>
     public const int ArrCountryFieldNumber = 5;
     private static readonly pb::FieldCodec<string> _repeated_arrCountry_codec
         = pb::FieldCodec.ForString(42);
@@ -187,7 +187,7 @@ namespace Services {
       get { return arrCountry_; }
     }
 
-    /// <summary>Field number for the "UseTimeInSec" field.</summary>
+    /// <summary>Field number for the "useTimeInSec" field.</summary>
     public const int UseTimeInSecFieldNumber = 6;
     private long useTimeInSec_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -199,7 +199,7 @@ namespace Services {
       }
     }
 
-    /// <summary>Field number for the "BattleNumber" field.</summary>
+    /// <summary>Field number for the "battleNumber" field.</summary>
     public const int BattleNumberFieldNumber = 7;
     private int battleNumber_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -211,7 +211,7 @@ namespace Services {
       }
     }
 
-    /// <summary>Field number for the "Numbers" field.</summary>
+    /// <summary>Field number for the "numbers" field.</summary>
     public const int NumbersFieldNumber = 8;
     private int numbers_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -223,7 +223,7 @@ namespace Services {
       }
     }
 
-    /// <summary>Field number for the "Skip" field.</summary>
+    /// <summary>Field number for the "skip" field.</summary>
     public const int SkipFieldNumber = 9;
     private int skip_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -594,7 +594,7 @@ namespace Services {
       return new SearchBotsResponse(this);
     }
 
-    /// <summary>Field number for the "Bots" field.</summary>
+    /// <summary>Field number for the "bots" field.</summary>
     public const int BotsFieldNumber = 1;
     private static readonly pb::FieldCodec<global::Services.BotInfo> _repeated_bots_codec
         = pb::FieldCodec.ForMessage(10, global::Services.BotInfo.Parser);
@@ -776,7 +776,7 @@ namespace Services {
       return new BotInfo(this);
     }
 
-    /// <summary>Field number for the "UserID" field.</summary>
+    /// <summary>Field number for the "userID" field.</summary>
     public const int UserIDFieldNumber = 1;
     private string userID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -788,7 +788,7 @@ namespace Services {
       }
     }
 
-    /// <summary>Field number for the "Username" field.</summary>
+    /// <summary>Field number for the "username" field.</summary>
     public const int UsernameFieldNumber = 2;
     private string username_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -800,7 +800,7 @@ namespace Services {
       }
     }
 
-    /// <summary>Field number for the "CountryCode" field.</summary>
+    /// <summary>Field number for the "countryCode" field.</summary>
     public const int CountryCodeFieldNumber = 3;
     private string countryCode_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -812,7 +812,7 @@ namespace Services {
       }
     }
 
-    /// <summary>Field number for the "Rank" field.</summary>
+    /// <summary>Field number for the "rank" field.</summary>
     public const int RankFieldNumber = 4;
     private int rank_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -824,7 +824,7 @@ namespace Services {
       }
     }
 
-    /// <summary>Field number for the "Trophy" field.</summary>
+    /// <summary>Field number for the "trophy" field.</summary>
     public const int TrophyFieldNumber = 5;
     private int trophy_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
