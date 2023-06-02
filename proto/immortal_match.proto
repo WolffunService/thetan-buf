@@ -29,6 +29,13 @@ message ImmortalPlayerInfoMatchProto {
   repeated uint32 skills = 17;
 }
 
+message ImmortalTicketData {
+  int32 ticketID = 1;
+  int32 partyID = 2;
+  repeated ImmortalPlayerInfoMatchProto players = 3;
+  repeated int32 regions = 4;
+}
+
 service ImmortalMatchDirectorService {
   rpc CancelTicket(ImmortalCancelTicketRequest) returns (ImmortalCancelTicketResponse) {}
 }

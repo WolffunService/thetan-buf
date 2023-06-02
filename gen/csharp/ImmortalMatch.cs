@@ -38,23 +38,28 @@ namespace Immortal {
             "ZWFyY2gSHAoJYnJhaW5UeXBlGAwgASgFUglicmFpblR5cGUSFgoGdGVhbUlE",
             "GA0gASgFUgZ0ZWFtSUQSIAoLYmF0dGxlQ291bnQYDiABKAVSC2JhdHRsZUNv",
             "dW50EiAKC25hbWVDb2xvcklEGA8gASgFUgtuYW1lQ29sb3JJRBISCgRyYW5r",
-            "GBAgASgFUgRyYW5rEhYKBnNraWxscxgRIAMoDVIGc2tpbGxzIm8KG0ltbW9y",
-            "dGFsQ2FuY2VsVGlja2V0UmVxdWVzdBIaCghwbGF5ZXJJRBgBIAEoBVIIcGxh",
-            "eWVySUQSGAoHcGFydHlJRBgCIAEoBVIHcGFydHlJRBIaCgh0aWNrZXRJRBgD",
-            "IAEoBVIIdGlja2V0SUQicAocSW1tb3J0YWxDYW5jZWxUaWNrZXRSZXNwb25z",
-            "ZRIaCghwbGF5ZXJJRBgBIAEoBVIIcGxheWVySUQSGAoHcGFydHlJRBgCIAEo",
-            "BVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoBVIIdGlja2V0SUQyfwocSW1t",
-            "b3J0YWxNYXRjaERpcmVjdG9yU2VydmljZRJfCgxDYW5jZWxUaWNrZXQSJS5p",
-            "bW1vcnRhbC5JbW1vcnRhbENhbmNlbFRpY2tldFJlcXVlc3QaJi5pbW1vcnRh",
-            "bC5JbW1vcnRhbENhbmNlbFRpY2tldFJlc3BvbnNlIgBCbgoMY29tLmltbW9y",
-            "dGFsQhJJbW1vcnRhbE1hdGNoUHJvdG9QAVoKLi9pbW1vcnRhbKICA0lYWKoC",
-            "CEltbW9ydGFsygIISW1tb3J0YWziAhRJbW1vcnRhbFxHUEJNZXRhZGF0YeoC",
-            "CEltbW9ydGFsYgZwcm90bzM="));
+            "GBAgASgFUgRyYW5rEhYKBnNraWxscxgRIAMoDVIGc2tpbGxzIqYBChJJbW1v",
+            "cnRhbFRpY2tldERhdGESGgoIdGlja2V0SUQYASABKAVSCHRpY2tldElEEhgK",
+            "B3BhcnR5SUQYAiABKAVSB3BhcnR5SUQSQAoHcGxheWVycxgDIAMoCzImLmlt",
+            "bW9ydGFsLkltbW9ydGFsUGxheWVySW5mb01hdGNoUHJvdG9SB3BsYXllcnMS",
+            "GAoHcmVnaW9ucxgEIAMoBVIHcmVnaW9ucyJvChtJbW1vcnRhbENhbmNlbFRp",
+            "Y2tldFJlcXVlc3QSGgoIcGxheWVySUQYASABKAVSCHBsYXllcklEEhgKB3Bh",
+            "cnR5SUQYAiABKAVSB3BhcnR5SUQSGgoIdGlja2V0SUQYAyABKAVSCHRpY2tl",
+            "dElEInAKHEltbW9ydGFsQ2FuY2VsVGlja2V0UmVzcG9uc2USGgoIcGxheWVy",
+            "SUQYASABKAVSCHBsYXllcklEEhgKB3BhcnR5SUQYAiABKAVSB3BhcnR5SUQS",
+            "GgoIdGlja2V0SUQYAyABKAVSCHRpY2tldElEMn8KHEltbW9ydGFsTWF0Y2hE",
+            "aXJlY3RvclNlcnZpY2USXwoMQ2FuY2VsVGlja2V0EiUuaW1tb3J0YWwuSW1t",
+            "b3J0YWxDYW5jZWxUaWNrZXRSZXF1ZXN0GiYuaW1tb3J0YWwuSW1tb3J0YWxD",
+            "YW5jZWxUaWNrZXRSZXNwb25zZSIAQm4KDGNvbS5pbW1vcnRhbEISSW1tb3J0",
+            "YWxNYXRjaFByb3RvUAFaCi4vaW1tb3J0YWyiAgNJWFiqAghJbW1vcnRhbMoC",
+            "CEltbW9ydGFs4gIUSW1tb3J0YWxcR1BCTWV0YWRhdGHqAghJbW1vcnRhbGIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Immortal.ImmortalMatchFoundResponseProto), global::Immortal.ImmortalMatchFoundResponseProto.Parser, new[]{ "MatchID", "Players" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Immortal.ImmortalPlayerInfoMatchProto), global::Immortal.ImmortalPlayerInfoMatchProto.Parser, new[]{ "PlayerID", "PartyID", "SkinID", "Trophies", "HeroLevel", "Regions", "PlayerName", "AvatarID", "FrameID", "HeroID", "TrophySearch", "BrainType", "TeamID", "BattleCount", "NameColorID", "Rank", "Skills" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Immortal.ImmortalTicketData), global::Immortal.ImmortalTicketData.Parser, new[]{ "TicketID", "PartyID", "Players", "Regions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Immortal.ImmortalCancelTicketRequest), global::Immortal.ImmortalCancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Immortal.ImmortalCancelTicketResponse), global::Immortal.ImmortalCancelTicketResponse.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null)
           }));
@@ -1041,6 +1046,286 @@ namespace Immortal {
 
   }
 
+  public sealed partial class ImmortalTicketData : pb::IMessage<ImmortalTicketData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ImmortalTicketData> _parser = new pb::MessageParser<ImmortalTicketData>(() => new ImmortalTicketData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ImmortalTicketData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Immortal.ImmortalMatchReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ImmortalTicketData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ImmortalTicketData(ImmortalTicketData other) : this() {
+      ticketID_ = other.ticketID_;
+      partyID_ = other.partyID_;
+      players_ = other.players_.Clone();
+      regions_ = other.regions_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ImmortalTicketData Clone() {
+      return new ImmortalTicketData(this);
+    }
+
+    /// <summary>Field number for the "ticketID" field.</summary>
+    public const int TicketIDFieldNumber = 1;
+    private int ticketID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int TicketID {
+      get { return ticketID_; }
+      set {
+        ticketID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "partyID" field.</summary>
+    public const int PartyIDFieldNumber = 2;
+    private int partyID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int PartyID {
+      get { return partyID_; }
+      set {
+        partyID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "players" field.</summary>
+    public const int PlayersFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Immortal.ImmortalPlayerInfoMatchProto> _repeated_players_codec
+        = pb::FieldCodec.ForMessage(26, global::Immortal.ImmortalPlayerInfoMatchProto.Parser);
+    private readonly pbc::RepeatedField<global::Immortal.ImmortalPlayerInfoMatchProto> players_ = new pbc::RepeatedField<global::Immortal.ImmortalPlayerInfoMatchProto>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Immortal.ImmortalPlayerInfoMatchProto> Players {
+      get { return players_; }
+    }
+
+    /// <summary>Field number for the "regions" field.</summary>
+    public const int RegionsFieldNumber = 4;
+    private static readonly pb::FieldCodec<int> _repeated_regions_codec
+        = pb::FieldCodec.ForInt32(34);
+    private readonly pbc::RepeatedField<int> regions_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<int> Regions {
+      get { return regions_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ImmortalTicketData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ImmortalTicketData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (TicketID != other.TicketID) return false;
+      if (PartyID != other.PartyID) return false;
+      if(!players_.Equals(other.players_)) return false;
+      if(!regions_.Equals(other.regions_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (TicketID != 0) hash ^= TicketID.GetHashCode();
+      if (PartyID != 0) hash ^= PartyID.GetHashCode();
+      hash ^= players_.GetHashCode();
+      hash ^= regions_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (TicketID != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(TicketID);
+      }
+      if (PartyID != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(PartyID);
+      }
+      players_.WriteTo(output, _repeated_players_codec);
+      regions_.WriteTo(output, _repeated_regions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (TicketID != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(TicketID);
+      }
+      if (PartyID != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(PartyID);
+      }
+      players_.WriteTo(ref output, _repeated_players_codec);
+      regions_.WriteTo(ref output, _repeated_regions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (TicketID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TicketID);
+      }
+      if (PartyID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PartyID);
+      }
+      size += players_.CalculateSize(_repeated_players_codec);
+      size += regions_.CalculateSize(_repeated_regions_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ImmortalTicketData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.TicketID != 0) {
+        TicketID = other.TicketID;
+      }
+      if (other.PartyID != 0) {
+        PartyID = other.PartyID;
+      }
+      players_.Add(other.players_);
+      regions_.Add(other.regions_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            TicketID = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            PartyID = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            players_.AddEntriesFrom(input, _repeated_players_codec);
+            break;
+          }
+          case 34:
+          case 32: {
+            regions_.AddEntriesFrom(input, _repeated_regions_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            TicketID = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            PartyID = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            players_.AddEntriesFrom(ref input, _repeated_players_codec);
+            break;
+          }
+          case 34:
+          case 32: {
+            regions_.AddEntriesFrom(ref input, _repeated_regions_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class ImmortalCancelTicketRequest : pb::IMessage<ImmortalCancelTicketRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1055,7 +1340,7 @@ namespace Immortal {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Immortal.ImmortalMatchReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Immortal.ImmortalMatchReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1318,7 +1603,7 @@ namespace Immortal {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Immortal.ImmortalMatchReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Immortal.ImmortalMatchReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
