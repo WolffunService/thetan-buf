@@ -77,6 +77,22 @@ namespace Services {
     static readonly grpc::Marshaller<global::Services.GetActivityRequest> __Marshaller_services_GetActivityRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.GetActivityRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Services.GetActivityResponse> __Marshaller_services_GetActivityResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.GetActivityResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Services.GetTownUserRequest> __Marshaller_services_GetTownUserRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.GetTownUserRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Services.LobbyTown> __Marshaller_services_LobbyTown = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.LobbyTown.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Services.PickTownUserRequest> __Marshaller_services_PickTownUserRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.PickTownUserRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Services.EmptyResponse> __Marshaller_services_EmptyResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.EmptyResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Services.TrackSessionRequest> __Marshaller_services_TrackSessionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.TrackSessionRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Services.TrackSessionResponse> __Marshaller_services_TrackSessionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.TrackSessionResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Services.FindMatchInfoRequest> __Marshaller_services_FindMatchInfoRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.FindMatchInfoRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Services.FindMatchInfoResponse> __Marshaller_services_FindMatchInfoResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Services.FindMatchInfoResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Services.UserProfileRequest, global::Services.UserProfileResponse> __Method_GetUserProfile = new grpc::Method<global::Services.UserProfileRequest, global::Services.UserProfileResponse>(
@@ -141,6 +157,38 @@ namespace Services {
         "GetLatestLobbyActivityInfo",
         __Marshaller_services_GetActivityRequest,
         __Marshaller_services_GetActivityResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Services.GetTownUserRequest, global::Services.LobbyTown> __Method_GetTownUser = new grpc::Method<global::Services.GetTownUserRequest, global::Services.LobbyTown>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetTownUser",
+        __Marshaller_services_GetTownUserRequest,
+        __Marshaller_services_LobbyTown);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Services.PickTownUserRequest, global::Services.EmptyResponse> __Method_PickTownForUser = new grpc::Method<global::Services.PickTownUserRequest, global::Services.EmptyResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PickTownForUser",
+        __Marshaller_services_PickTownUserRequest,
+        __Marshaller_services_EmptyResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Services.TrackSessionRequest, global::Services.TrackSessionResponse> __Method_TrackSession = new grpc::Method<global::Services.TrackSessionRequest, global::Services.TrackSessionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "TrackSession",
+        __Marshaller_services_TrackSessionRequest,
+        __Marshaller_services_TrackSessionResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Services.FindMatchInfoRequest, global::Services.FindMatchInfoResponse> __Method_GetFindMatchInfo = new grpc::Method<global::Services.FindMatchInfoRequest, global::Services.FindMatchInfoResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetFindMatchInfo",
+        __Marshaller_services_FindMatchInfoRequest,
+        __Marshaller_services_FindMatchInfoResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -220,6 +268,42 @@ namespace Services {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Services.GetActivityResponse> GetLatestLobbyActivityInfo(global::Services.GetActivityRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Services.LobbyTown> GetTownUser(global::Services.GetTownUserRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Services.EmptyResponse> PickTownForUser(global::Services.PickTownUserRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Track Action
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Services.TrackSessionResponse> TrackSession(global::Services.TrackSessionRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// GetFindMatchInfo
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Services.FindMatchInfoResponse> GetFindMatchInfo(global::Services.FindMatchInfoRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -525,6 +609,142 @@ namespace Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetLatestLobbyActivityInfo, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Services.LobbyTown GetTownUser(global::Services.GetTownUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTownUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Services.LobbyTown GetTownUser(global::Services.GetTownUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetTownUser, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Services.LobbyTown> GetTownUserAsync(global::Services.GetTownUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTownUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Services.LobbyTown> GetTownUserAsync(global::Services.GetTownUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetTownUser, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Services.EmptyResponse PickTownForUser(global::Services.PickTownUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PickTownForUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Services.EmptyResponse PickTownForUser(global::Services.PickTownUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PickTownForUser, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Services.EmptyResponse> PickTownForUserAsync(global::Services.PickTownUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PickTownForUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Services.EmptyResponse> PickTownForUserAsync(global::Services.PickTownUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PickTownForUser, null, options, request);
+      }
+      /// <summary>
+      /// Track Action
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Services.TrackSessionResponse TrackSession(global::Services.TrackSessionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return TrackSession(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Track Action
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Services.TrackSessionResponse TrackSession(global::Services.TrackSessionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_TrackSession, null, options, request);
+      }
+      /// <summary>
+      /// Track Action
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Services.TrackSessionResponse> TrackSessionAsync(global::Services.TrackSessionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return TrackSessionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Track Action
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Services.TrackSessionResponse> TrackSessionAsync(global::Services.TrackSessionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_TrackSession, null, options, request);
+      }
+      /// <summary>
+      /// GetFindMatchInfo
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Services.FindMatchInfoResponse GetFindMatchInfo(global::Services.FindMatchInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetFindMatchInfo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// GetFindMatchInfo
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Services.FindMatchInfoResponse GetFindMatchInfo(global::Services.FindMatchInfoRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetFindMatchInfo, null, options, request);
+      }
+      /// <summary>
+      /// GetFindMatchInfo
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Services.FindMatchInfoResponse> GetFindMatchInfoAsync(global::Services.FindMatchInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetFindMatchInfoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// GetFindMatchInfo
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Services.FindMatchInfoResponse> GetFindMatchInfoAsync(global::Services.FindMatchInfoRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetFindMatchInfo, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ThetanRivalServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -546,7 +766,11 @@ namespace Services {
           .AddMethod(__Method_CreateMinion, serviceImpl.CreateMinion)
           .AddMethod(__Method_GetListFriends, serviceImpl.GetListFriends)
           .AddMethod(__Method_GetMatchInfoOnboarding, serviceImpl.GetMatchInfoOnboarding)
-          .AddMethod(__Method_GetLatestLobbyActivityInfo, serviceImpl.GetLatestLobbyActivityInfo).Build();
+          .AddMethod(__Method_GetLatestLobbyActivityInfo, serviceImpl.GetLatestLobbyActivityInfo)
+          .AddMethod(__Method_GetTownUser, serviceImpl.GetTownUser)
+          .AddMethod(__Method_PickTownForUser, serviceImpl.PickTownForUser)
+          .AddMethod(__Method_TrackSession, serviceImpl.TrackSession)
+          .AddMethod(__Method_GetFindMatchInfo, serviceImpl.GetFindMatchInfo).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -564,6 +788,10 @@ namespace Services {
       serviceBinder.AddMethod(__Method_GetListFriends, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Services.GetUserFriendRequest, global::Services.GetUserFriendResponse>(serviceImpl.GetListFriends));
       serviceBinder.AddMethod(__Method_GetMatchInfoOnboarding, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Services.GetMatchInfoRequest, global::Services.GetMatchInfoResponse>(serviceImpl.GetMatchInfoOnboarding));
       serviceBinder.AddMethod(__Method_GetLatestLobbyActivityInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Services.GetActivityRequest, global::Services.GetActivityResponse>(serviceImpl.GetLatestLobbyActivityInfo));
+      serviceBinder.AddMethod(__Method_GetTownUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Services.GetTownUserRequest, global::Services.LobbyTown>(serviceImpl.GetTownUser));
+      serviceBinder.AddMethod(__Method_PickTownForUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Services.PickTownUserRequest, global::Services.EmptyResponse>(serviceImpl.PickTownForUser));
+      serviceBinder.AddMethod(__Method_TrackSession, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Services.TrackSessionRequest, global::Services.TrackSessionResponse>(serviceImpl.TrackSession));
+      serviceBinder.AddMethod(__Method_GetFindMatchInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Services.FindMatchInfoRequest, global::Services.FindMatchInfoResponse>(serviceImpl.GetFindMatchInfo));
     }
 
   }

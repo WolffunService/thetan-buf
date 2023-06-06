@@ -33,10 +33,10 @@ namespace Core.Proto {
             "EggKBEZMQUcQCBIJCgVUT1dFUhAJEhEKDUJBVFRMRV9ST1lBTEUQDBIXChNT",
             "UVVBRF9CQVRUTEVfUk9ZQUxFEA0SFQoRRFVPX0JBVFRMRV9ST1lBTEUQDhIW",
             "ChJUUklPX0JBVFRMRV9ST0FZTEUQDxIRCg1USEVUQU5fUklWQUxTEBQSFgoJ",
-            "Tk9ORV9NT0RFEP///////////wFCdQoOY29tLmNvcmUucHJvdG9CDUdhbWVJ",
-            "bmZvUHJvdG9QAVoLLi9jb3JlcHJvdG+iAgNDUFiqAgpDb3JlLlByb3RvygIK",
-            "Q29yZVxQcm90b+ICFkNvcmVcUHJvdG9cR1BCTWV0YWRhdGHqAgtDb3JlOjpQ",
-            "cm90b2IGcHJvdG8z"));
+            "Tk9ORV9NT0RFEP///////////wFCewoOY29tLmNvcmUucHJvdG9CDUdhbWVJ",
+            "bmZvUHJvdG9QAVoRdGhldGFuLWJ1Zi9nZW4vZ2+iAgNDUFiqAgpDb3JlLlBy",
+            "b3RvygIKQ29yZVxQcm90b+ICFkNvcmVcUHJvdG9cR1BCTWV0YWRhdGHqAgtD",
+            "b3JlOjpQcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Core.Proto.GameMode), typeof(global::Core.Proto.InGameMode), }, null, null));

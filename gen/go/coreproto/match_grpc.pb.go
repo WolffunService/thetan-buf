@@ -29,7 +29,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type MatchServiceClient interface {
 	CreateMatchWithVersion(ctx context.Context, in *MatchProtoVersionPackage, opts ...grpc.CallOption) (MatchService_CreateMatchWithVersionClient, error)
-	// register de nhan su kien match found
+	//register de nhan su kien match found
 	RegisterMatchFound(ctx context.Context, in *MatchProtoPackage, opts ...grpc.CallOption) (MatchService_RegisterMatchFoundClient, error)
 	CancelMatchMaking(ctx context.Context, in *MatchProtoPackage, opts ...grpc.CallOption) (*MatchProtoPackage, error)
 }
@@ -120,7 +120,7 @@ func (c *matchServiceClient) CancelMatchMaking(ctx context.Context, in *MatchPro
 // for forward compatibility
 type MatchServiceServer interface {
 	CreateMatchWithVersion(*MatchProtoVersionPackage, MatchService_CreateMatchWithVersionServer) error
-	// register de nhan su kien match found
+	//register de nhan su kien match found
 	RegisterMatchFound(*MatchProtoPackage, MatchService_RegisterMatchFoundServer) error
 	CancelMatchMaking(context.Context, *MatchProtoPackage) (*MatchProtoPackage, error)
 	mustEmbedUnimplementedMatchServiceServer()
