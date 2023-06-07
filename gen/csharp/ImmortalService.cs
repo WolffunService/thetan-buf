@@ -51,10 +51,10 @@ namespace Immortal {
             "dGVNYW55VXNlclJhbmtpbmdSZXF1ZXN0GicuaW1tb3J0YWwuQ3JlYXRlTWFu",
             "eVVzZXJSYW5raW5nUmVzcG9uc2UiABJbChBTZWFyY2hQbGF5ZXJJbmZvEiEu",
             "aW1tb3J0YWwuU2VhcmNoUGxheWVySW5mb1JlcXVlc3QaIi5pbW1vcnRhbC5T",
-            "ZWFyY2hQbGF5ZXJJbmZvUmVzcG9uc2UiAEJwCgxjb20uaW1tb3J0YWxCFElt",
-            "bW9ydGFsU2VydmljZVByb3RvUAFaCi4vaW1tb3J0YWyiAgNJWFiqAghJbW1v",
-            "cnRhbMoCCEltbW9ydGFs4gIUSW1tb3J0YWxcR1BCTWV0YWRhdGHqAghJbW1v",
-            "cnRhbGIGcHJvdG8z"));
+            "ZWFyY2hQbGF5ZXJJbmZvUmVzcG9uc2UiAEJ3Cgxjb20uaW1tb3J0YWxCFElt",
+            "bW9ydGFsU2VydmljZVByb3RvUAFaEXRoZXRhbi1idWYvZ2VuL2dvogIDSVhY",
+            "qgIISW1tb3J0YWzKAghJbW1vcnRhbOICFEltbW9ydGFsXEdQQk1ldGFkYXRh",
+            "6gIISW1tb3J0YWxiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Immortal.ImmortalMatchReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

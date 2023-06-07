@@ -36,9 +36,9 @@ namespace Wsproto {
             "aBpJChtQbGF5ZXJzUmVhZHlGb3JSZW1hdGNoRW50cnkSEAoDa2V5GAEgASgJ",
             "UgNrZXkSFAoFdmFsdWUYAiABKAhSBXZhbHVlOgI4ASJBCglNYXRjaEluZm8S",
             "GgoIdGlja2V0SUQYASABKAlSCHRpY2tldElEEhgKB21hdGNoSUQYAiABKAlS",
-            "B21hdGNoSURCYgoLY29tLndzcHJvdG9CDFN0b3JhZ2VQcm90b1ABWgkuL3dz",
-            "cHJvdG+iAgNXWFiqAgdXc3Byb3RvygIHV3Nwcm90b+ICE1dzcHJvdG9cR1BC",
-            "TWV0YWRhdGHqAgdXc3Byb3RvYgZwcm90bzM="));
+            "B21hdGNoSURCcgoLY29tLndzcHJvdG9CDFN0b3JhZ2VQcm90b1ABWhl0aGV0",
+            "YW4tYnVmL2dlbi9nby93c3Byb3RvogIDV1hYqgIHV3Nwcm90b8oCB1dzcHJv",
+            "dG/iAhNXc3Byb3RvXEdQQk1ldGFkYXRh6gIHV3Nwcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Wsproto.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

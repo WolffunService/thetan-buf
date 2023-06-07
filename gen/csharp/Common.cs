@@ -105,10 +105,10 @@ namespace Wsproto {
             "bmUQARILCgdJblBhcnR5EAISCQoFUmVhZHkQAxILCgdGaW5kaW5nEAQSDAoI",
             "SW5CYXR0bGUQBSpDChBJbnZpdGF0aW9uQWN0aW9uEgoKBkFjY2VwdBAAEgoK",
             "BkNhbmNlbBABEgsKB0RlY2xpbmUQAhIKCgZJbnZpdGUQAyorCgtTdGFnZUlu",
-            "R2FtZRINCglTcGVjdGF0b3IQABINCglFbmRCYXR0bGUQAUJhCgtjb20ud3Nw",
-            "cm90b0ILQ29tbW9uUHJvdG9QAVoJLi93c3Byb3RvogIDV1hYqgIHV3Nwcm90",
-            "b8oCB1dzcHJvdG/iAhNXc3Byb3RvXEdQQk1ldGFkYXRh6gIHV3Nwcm90b2IG",
-            "cHJvdG8z"));
+            "R2FtZRINCglTcGVjdGF0b3IQABINCglFbmRCYXR0bGUQAUJxCgtjb20ud3Nw",
+            "cm90b0ILQ29tbW9uUHJvdG9QAVoZdGhldGFuLWJ1Zi9nZW4vZ28vd3Nwcm90",
+            "b6ICA1dYWKoCB1dzcHJvdG/KAgdXc3Byb3Rv4gITV3Nwcm90b1xHUEJNZXRh",
+            "ZGF0YeoCB1dzcHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Wsproto.PartyStatus), typeof(global::Wsproto.PartyAvailabilityStatus), typeof(global::Wsproto.ChannelChatRoom), typeof(global::Wsproto.MsgType), typeof(global::Wsproto.PlayerStatus), typeof(global::Wsproto.InvitationAction), typeof(global::Wsproto.StageInGame), }, null, new pbr::GeneratedClrTypeInfo[] {

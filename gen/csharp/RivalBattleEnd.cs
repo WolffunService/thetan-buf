@@ -53,9 +53,10 @@ namespace Core.Proto {
             "IAEoBVIKYmF0dGxlUmFuaxIaCghtaW5pb25JZBgDIAEoCVIIbWluaW9uSWQS",
             "RAoNY29zbWV0aWNVc2luZxgEIAEoCzIeLmNvcmUucHJvdG8uQ29zbWV0aWNV",
             "c2luZ1Byb3RvUg1jb3NtZXRpY1VzaW5nEhQKBWJyYWluGAUgASgFUgVicmFp",
-            "bkJ7Cg5jb20uY29yZS5wcm90b0ITUml2YWxCYXR0bGVFbmRQcm90b1ABWgsu",
-            "L2NvcmVwcm90b6ICA0NQWKoCCkNvcmUuUHJvdG/KAgpDb3JlXFByb3Rv4gIW",
-            "Q29yZVxQcm90b1xHUEJNZXRhZGF0YeoCC0NvcmU6OlByb3RvYgZwcm90bzM="));
+            "bkKBAQoOY29tLmNvcmUucHJvdG9CE1JpdmFsQmF0dGxlRW5kUHJvdG9QAVoR",
+            "dGhldGFuLWJ1Zi9nZW4vZ2+iAgNDUFiqAgpDb3JlLlByb3RvygIKQ29yZVxQ",
+            "cm90b+ICFkNvcmVcUHJvdG9cR1BCTWV0YWRhdGHqAgtDb3JlOjpQcm90b2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Core.Proto.GameInfoReflection.Descriptor, global::Core.Proto.MatchReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

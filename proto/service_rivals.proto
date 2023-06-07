@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+import "match.proto";
+
 package services;
 
 option go_package = "./srvrivals";
@@ -20,8 +22,17 @@ service ThetanRivalService {
 
   // Lobby
   rpc GetLatestLobbyActivityInfo(GetActivityRequest) returns (GetActivityResponse) {}
+  rpc GetTownUser(GetTownUserRequest) returns (LobbyTown) {}
+  rpc PickTownForUser(PickTownUserRequest) returns (EmptyResponse) {}
+
+  // Track Action
+  rpc TrackSession(TrackSessionRequest) returns (TrackSessionResponse) {}
+
+  // GetFindMatchInfo
+  rpc GetFindMatchInfo(FindMatchInfoRequest) returns (FindMatchInfoResponse) {}
 }
 
+message EmptyResponse {}
 // ==== PROFILE ====
 
 message UserProfileRequest {
@@ -135,7 +146,7 @@ message GetMatchInfoRequest {
 }
 
 message GetMatchInfoResponse {
-  optional bytes playerInfo = 1; 
+  optional core.proto.PlayerInfoMatchProto playerInfo = 1;
   string matchID = 2;
   repeated MapData mapIds = 4;
   repeated int32 listMaxPlayerPerRound = 5;
@@ -148,7 +159,7 @@ message RoundStat {
   int32 mapDifficulty = 3;
   float timeInRound = 4;
   bool  roundComplete = 5;
-  
+
   int32 controlDoubleJump = 6;
   int32 controlMoveCamera = 7;
   int32 passedCP = 8;
@@ -196,4 +207,49 @@ message SimpleItem {
   int32 typeID = 2;
   double amount = 3;
   int32 inventoryKind = 4;
+}
+
+message GetTownUserRequest {
+  string userID = 1;
+  string userLanguage = 2;
+  int32 userAge = 3;
+}
+
+message LobbyTown {
+  string townID = 1;
+
+  string townName = 2;
+  int64 activeTime = 3;
+  string townCountry = 4;
+  string townRegion = 5;
+  int32 townTime = 6;
+
+  string townLanguage = 7;
+  double townScore = 8;
+}
+
+message PickTownUserRequest {
+  string userID = 1;
+  string townID = 2;
+}
+
+// ========== TrackActionRequest ==========
+
+message TrackSessionRequest {
+  string userID = 1;
+  string action = 2;
+  string sessionID = 3;
+}
+
+message TrackSessionResponse {
+}
+
+// ============== GetFindMatchInfo ==============
+
+message FindMatchInfoRequest {
+  repeated string playersID = 1;
+}
+
+message FindMatchInfoResponse {
+  repeated core.proto.PlayerInfoMatchProto players = 1;
 }

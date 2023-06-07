@@ -29,9 +29,9 @@ namespace Wsproto {
             "ckNvZGUSCwoHVW5rbm93bhAAEhoKDUludGVybmFsRXJyb3IQnf//////////",
             "ARIPCgtQYXJ0eUlzRnVsbBABEgcKA0RuZBACEg8KC0Jsb2NrSW52aXRlEAMS",
             "EAoMRmluZGluZ01hdGNoEAQSGgoWRGlmZmVyZW50VmVyc2lvbkNsaWVudBAF",
-            "QmQKC2NvbS53c3Byb3RvQg5FcnJvcmNvZGVQcm90b1ABWgkuL3dzcHJvdG+i",
-            "AgNXWFiqAgdXc3Byb3RvygIHV3Nwcm90b+ICE1dzcHJvdG9cR1BCTWV0YWRh",
-            "dGHqAgdXc3Byb3RvYgZwcm90bzM="));
+            "QnQKC2NvbS53c3Byb3RvQg5FcnJvcmNvZGVQcm90b1ABWhl0aGV0YW4tYnVm",
+            "L2dlbi9nby93c3Byb3RvogIDV1hYqgIHV3Nwcm90b8oCB1dzcHJvdG/iAhNX",
+            "c3Byb3RvXEdQQk1ldGFkYXRh6gIHV3Nwcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Wsproto.ChatErrorCode), typeof(global::Wsproto.PartyErrorCode), }, null, null));

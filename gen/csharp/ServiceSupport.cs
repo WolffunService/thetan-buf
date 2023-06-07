@@ -42,10 +42,10 @@ namespace Services {
             "R0FNRRABEhEKDUZFQVRVUkVfTE9CQlkQAhIOCgpGRUFUVVJFX0xCEAMSFgoS",
             "RkVBVFVSRV9DSEFUX1NISUxMEAQyWwoOU3VwcG9ydFNlcnZpY2USSQoKU2Vh",
             "cmNoQm90cxIbLnNlcnZpY2VzLlNlYXJjaEJvdHNSZXF1ZXN0Ghwuc2Vydmlj",
-            "ZXMuU2VhcmNoQm90c1Jlc3BvbnNlIgBCcQoMY29tLnNlcnZpY2VzQhNTZXJ2",
-            "aWNlU3VwcG9ydFByb3RvUAFaDC4vc3J2c3VwcG9ydKICA1NYWKoCCFNlcnZp",
-            "Y2VzygIIU2VydmljZXPiAhRTZXJ2aWNlc1xHUEJNZXRhZGF0YeoCCFNlcnZp",
-            "Y2VzYgZwcm90bzM="));
+            "ZXMuU2VhcmNoQm90c1Jlc3BvbnNlIgBCdgoMY29tLnNlcnZpY2VzQhNTZXJ2",
+            "aWNlU3VwcG9ydFByb3RvUAFaEXRoZXRhbi1idWYvZ2VuL2dvogIDU1hYqgII",
+            "U2VydmljZXPKAghTZXJ2aWNlc+ICFFNlcnZpY2VzXEdQQk1ldGFkYXRh6gII",
+            "U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Services.GameID), typeof(global::Services.Feature), }, null, new pbr::GeneratedClrTypeInfo[] {
