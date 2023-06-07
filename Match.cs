@@ -199,10 +199,10 @@ namespace Core.Proto {
             "ZXRCb3RzEhouY29yZS5wcm90by5HZXRCb3RzUmVxdWVzdBoYLmNvcmUucHJv",
             "dG8uQm90c1Jlc3BvbnNlIgASYgoSQ3JlYXRlTWF0Y2hPbmJvYXJkEiUuY29y",
             "ZS5wcm90by5DcmVhdGVNYXRjaE9uYm9hcmRSZXF1ZXN0GiMuY29yZS5wcm90",
-            "by5NYXRjaEZvdW5kUmVzcG9uc2VQcm90byIAQnIKDmNvbS5jb3JlLnByb3Rv",
-            "QgpNYXRjaFByb3RvUAFaCy4vY29yZXByb3RvogIDQ1BYqgIKQ29yZS5Qcm90",
-            "b8oCCkNvcmVcUHJvdG/iAhZDb3JlXFByb3RvXEdQQk1ldGFkYXRh6gILQ29y",
-            "ZTo6UHJvdG9iBnByb3RvMw=="));
+            "by5NYXRjaEZvdW5kUmVzcG9uc2VQcm90byIAQngKDmNvbS5jb3JlLnByb3Rv",
+            "QgpNYXRjaFByb3RvUAFaEXRoZXRhbi1idWYvZ2VuL2dvogIDQ1BYqgIKQ29y",
+            "ZS5Qcm90b8oCCkNvcmVcUHJvdG/iAhZDb3JlXFByb3RvXEdQQk1ldGFkYXRh",
+            "6gILQ29yZTo6UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Core.Proto.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Core.Proto.MatchErrorCode), typeof(global::Core.Proto.MapDifficultyEnum), }, null, new pbr::GeneratedClrTypeInfo[] {
