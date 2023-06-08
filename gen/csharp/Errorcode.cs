@@ -29,11 +29,12 @@ namespace Thetan.Multiplayer.V1 {
             "DQoJVGltZUxpbWl0EAEqkgEKDlBhcnR5RXJyb3JDb2RlEgsKB1Vua25vd24Q",
             "ABIaCg1JbnRlcm5hbEVycm9yEJ3//////////wESDwoLUGFydHlJc0Z1bGwQ",
             "ARIHCgNEbmQQAhIPCgtCbG9ja0ludml0ZRADEhAKDEZpbmRpbmdNYXRjaBAE",
-            "EhoKFkRpZmZlcmVudFZlcnNpb25DbGllbnQQBUK4AQoZY29tLnRoZXRhbi5t",
-            "dWx0aXBsYXllci52MUIORXJyb3Jjb2RlUHJvdG9QAVoVdGhldGFuLm11bHRp",
-            "cGxheWVyLnYxogIDVE1YqgIVVGhldGFuLk11bHRpcGxheWVyLlYxygIVVGhl",
-            "dGFuXE11bHRpcGxheWVyXFYx4gIhVGhldGFuXE11bHRpcGxheWVyXFYxXEdQ",
-            "Qk1ldGFkYXRh6gIXVGhldGFuOjpNdWx0aXBsYXllcjo6VjFiBnByb3RvMw=="));
+            "EhoKFkRpZmZlcmVudFZlcnNpb25DbGllbnQQBULgAQoZY29tLnRoZXRhbi5t",
+            "dWx0aXBsYXllci52MUIORXJyb3Jjb2RlUHJvdG9QAVo9dGhldGFuLWJ1Zi9n",
+            "ZW4vZ28vdGhldGFuL211bHRpcGxheWVyL3YxO3RoZXRhbl9tdWx0aXBsYXll",
+            "cl92MaICA1RNWKoCFVRoZXRhbi5NdWx0aXBsYXllci5WMcoCFVRoZXRhblxN",
+            "dWx0aXBsYXllclxWMeICIVRoZXRhblxNdWx0aXBsYXllclxWMVxHUEJNZXRh",
+            "ZGF0YeoCF1RoZXRhbjo6TXVsdGlwbGF5ZXI6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.ChatErrorCode), typeof(global::Thetan.Multiplayer.V1.PartyErrorCode), }, null, null));

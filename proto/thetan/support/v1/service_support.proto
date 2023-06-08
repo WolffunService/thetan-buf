@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package thetan.support.v1;
 
-option go_package = "thetan.support.v1";
+option go_package = "thetan-buf/gen/go/thetan/support/v1;thetan_support_v1";
 option csharp_namespace = "Thetan.support.V1";
 
 service SupportService {

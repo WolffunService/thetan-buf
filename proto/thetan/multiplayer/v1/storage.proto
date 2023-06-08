@@ -4,7 +4,7 @@ package thetan.multiplayer.v1;
 
 import "thetan/multiplayer/v1/common.proto";
 
-option go_package = "thetan.multiplayer.v1";
+option go_package = "thetan-buf/gen/go/thetan/multiplayer/v1;thetan_multiplayer_v1";
 option csharp_namespace = "Thetan.Multiplayer.V1";
 
 message PlayerStorageMessage {

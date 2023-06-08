@@ -4,7 +4,7 @@ package thetan.firebase.v1;
 
 import "google/protobuf/empty.proto";
 
-option go_package = "thetan.firebase.v1";
+option go_package = "thetan-buf/gen/go/thetan/firebase/v1;thetan_firebase_v1";
 option csharp_namespace = "Thetan.firebase.V1";
 
 service FirebaseService {

@@ -11,7 +11,7 @@ import (
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
-	thetan_shared_v1 "thetan.shared.v1"
+	v1 "thetan-buf/gen/go/thetan/shared/v1"
 )
 
 const (
@@ -1121,11 +1121,11 @@ type GetMatchInfoResponse struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	PlayerInfo            *thetan_shared_v1.PlayerInfoMatchProto `protobuf:"bytes,1,opt,name=playerInfo,proto3,oneof" json:"playerInfo,omitempty"`
-	MatchID               string                                 `protobuf:"bytes,2,opt,name=matchID,proto3" json:"matchID,omitempty"`
-	MapIds                []*MapData                             `protobuf:"bytes,4,rep,name=mapIds,proto3" json:"mapIds,omitempty"`
-	ListMaxPlayerPerRound []int32                                `protobuf:"varint,5,rep,packed,name=listMaxPlayerPerRound,proto3" json:"listMaxPlayerPerRound,omitempty"`
-	PlayerStat            *PlayerStat                            `protobuf:"bytes,6,opt,name=playerStat,proto3" json:"playerStat,omitempty"`
+	PlayerInfo            *v1.PlayerInfoMatchProto `protobuf:"bytes,1,opt,name=playerInfo,proto3,oneof" json:"playerInfo,omitempty"`
+	MatchID               string                   `protobuf:"bytes,2,opt,name=matchID,proto3" json:"matchID,omitempty"`
+	MapIds                []*MapData               `protobuf:"bytes,4,rep,name=mapIds,proto3" json:"mapIds,omitempty"`
+	ListMaxPlayerPerRound []int32                  `protobuf:"varint,5,rep,packed,name=listMaxPlayerPerRound,proto3" json:"listMaxPlayerPerRound,omitempty"`
+	PlayerStat            *PlayerStat              `protobuf:"bytes,6,opt,name=playerStat,proto3" json:"playerStat,omitempty"`
 }
 
 func (x *GetMatchInfoResponse) Reset() {
@@ -1160,7 +1160,7 @@ func (*GetMatchInfoResponse) Descriptor() ([]byte, []int) {
 	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{17}
 }
 
-func (x *GetMatchInfoResponse) GetPlayerInfo() *thetan_shared_v1.PlayerInfoMatchProto {
+func (x *GetMatchInfoResponse) GetPlayerInfo() *v1.PlayerInfoMatchProto {
 	if x != nil {
 		return x.PlayerInfo
 	}
@@ -2107,7 +2107,7 @@ type FindMatchInfoResponse struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Players []*thetan_shared_v1.PlayerInfoMatchProto `protobuf:"bytes,1,rep,name=players,proto3" json:"players,omitempty"`
+	Players []*v1.PlayerInfoMatchProto `protobuf:"bytes,1,rep,name=players,proto3" json:"players,omitempty"`
 }
 
 func (x *FindMatchInfoResponse) Reset() {
@@ -2142,7 +2142,7 @@ func (*FindMatchInfoResponse) Descriptor() ([]byte, []int) {
 	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{31}
 }
 
-func (x *FindMatchInfoResponse) GetPlayers() []*thetan_shared_v1.PlayerInfoMatchProto {
+func (x *FindMatchInfoResponse) GetPlayers() []*v1.PlayerInfoMatchProto {
 	if x != nil {
 		return x.Players
 	}
@@ -2514,18 +2514,20 @@ var file_thetan_rivals_v1_service_rivals_proto_rawDesc = []byte{
 	0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74,
 	0x1a, 0x27, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73,
 	0x2e, 0x76, 0x31, 0x2e, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66,
-	0x6f, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x42, 0x9e, 0x01, 0x0a, 0x14,
+	0x6f, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x42, 0xc1, 0x01, 0x0a, 0x14,
 	0x63, 0x6f, 0x6d, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c,
 	0x73, 0x2e, 0x76, 0x31, 0x42, 0x12, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x52, 0x69, 0x76,
-	0x61, 0x6c, 0x73, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x01, 0x5a, 0x10, 0x74, 0x68, 0x65, 0x74,
-	0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0xa2, 0x02, 0x03, 0x54,
-	0x52, 0x58, 0xaa, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x52, 0x69, 0x76, 0x61,
-	0x6c, 0x73, 0x2e, 0x56, 0x31, 0xca, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x5c, 0x52,
-	0x69, 0x76, 0x61, 0x6c, 0x73, 0x5c, 0x56, 0x31, 0xe2, 0x02, 0x1c, 0x54, 0x68, 0x65, 0x74, 0x61,
-	0x6e, 0x5c, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5c, 0x56, 0x31, 0x5c, 0x47, 0x50, 0x42, 0x4d,
-	0x65, 0x74, 0x61, 0x64, 0x61, 0x74, 0x61, 0xea, 0x02, 0x12, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e,
-	0x3a, 0x3a, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x3a, 0x3a, 0x56, 0x31, 0x62, 0x06, 0x70, 0x72,
-	0x6f, 0x74, 0x6f, 0x33,
+	0x61, 0x6c, 0x73, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x01, 0x5a, 0x33, 0x74, 0x68, 0x65, 0x74,
+	0x61, 0x6e, 0x2d, 0x62, 0x75, 0x66, 0x2f, 0x67, 0x65, 0x6e, 0x2f, 0x67, 0x6f, 0x2f, 0x74, 0x68,
+	0x65, 0x74, 0x61, 0x6e, 0x2f, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2f, 0x76, 0x31, 0x3b, 0x74,
+	0x68, 0x65, 0x74, 0x61, 0x6e, 0x5f, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5f, 0x76, 0x31, 0xa2,
+	0x02, 0x03, 0x54, 0x52, 0x58, 0xaa, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x52,
+	0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x56, 0x31, 0xca, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61,
+	0x6e, 0x5c, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5c, 0x56, 0x31, 0xe2, 0x02, 0x1c, 0x54, 0x68,
+	0x65, 0x74, 0x61, 0x6e, 0x5c, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5c, 0x56, 0x31, 0x5c, 0x47,
+	0x50, 0x42, 0x4d, 0x65, 0x74, 0x61, 0x64, 0x61, 0x74, 0x61, 0xea, 0x02, 0x12, 0x54, 0x68, 0x65,
+	0x74, 0x61, 0x6e, 0x3a, 0x3a, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x3a, 0x3a, 0x56, 0x31, 0x62,
+	0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -2543,43 +2545,43 @@ func file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP() []byte {
 var file_thetan_rivals_v1_service_rivals_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_thetan_rivals_v1_service_rivals_proto_msgTypes = make([]protoimpl.MessageInfo, 35)
 var file_thetan_rivals_v1_service_rivals_proto_goTypes = []interface{}{
-	(FriendInfo_FRIEND_STATUS)(0),                 // 0: thetan.rivals.v1.FriendInfo.FRIEND_STATUS
-	(*EmptyResponse)(nil),                         // 1: thetan.rivals.v1.EmptyResponse
-	(*UserProfileRequest)(nil),                    // 2: thetan.rivals.v1.UserProfileRequest
-	(*UserProfileResponse)(nil),                   // 3: thetan.rivals.v1.UserProfileResponse
-	(*UserProfileRank)(nil),                       // 4: thetan.rivals.v1.UserProfileRank
-	(*UserSelectedMinionRequest)(nil),             // 5: thetan.rivals.v1.UserSelectedMinionRequest
-	(*UserSelectedMinionResponse)(nil),            // 6: thetan.rivals.v1.UserSelectedMinionResponse
-	(*UserMinionsRequest)(nil),                    // 7: thetan.rivals.v1.UserMinionsRequest
-	(*UserMinionsResponse)(nil),                   // 8: thetan.rivals.v1.UserMinionsResponse
-	(*Minion)(nil),                                // 9: thetan.rivals.v1.Minion
-	(*MinionRequest)(nil),                         // 10: thetan.rivals.v1.MinionRequest
-	(*MinionResponse)(nil),                        // 11: thetan.rivals.v1.MinionResponse
-	(*CreateMinionRequest)(nil),                   // 12: thetan.rivals.v1.CreateMinionRequest
-	(*CreateMinionResponse)(nil),                  // 13: thetan.rivals.v1.CreateMinionResponse
-	(*GetUserFriendRequest)(nil),                  // 14: thetan.rivals.v1.GetUserFriendRequest
-	(*GetUserFriendResponse)(nil),                 // 15: thetan.rivals.v1.GetUserFriendResponse
-	(*FriendInfo)(nil),                            // 16: thetan.rivals.v1.FriendInfo
-	(*GetMatchInfoRequest)(nil),                   // 17: thetan.rivals.v1.GetMatchInfoRequest
-	(*GetMatchInfoResponse)(nil),                  // 18: thetan.rivals.v1.GetMatchInfoResponse
-	(*RoundStat)(nil),                             // 19: thetan.rivals.v1.RoundStat
-	(*MapData)(nil),                               // 20: thetan.rivals.v1.MapData
-	(*PlayerStat)(nil),                            // 21: thetan.rivals.v1.PlayerStat
-	(*GetActivityRequest)(nil),                    // 22: thetan.rivals.v1.GetActivityRequest
-	(*GetActivityResponse)(nil),                   // 23: thetan.rivals.v1.GetActivityResponse
-	(*ClassInfo)(nil),                             // 24: thetan.rivals.v1.ClassInfo
-	(*SimpleItem)(nil),                            // 25: thetan.rivals.v1.SimpleItem
-	(*GetTownUserRequest)(nil),                    // 26: thetan.rivals.v1.GetTownUserRequest
-	(*LobbyTown)(nil),                             // 27: thetan.rivals.v1.LobbyTown
-	(*PickTownUserRequest)(nil),                   // 28: thetan.rivals.v1.PickTownUserRequest
-	(*TrackSessionRequest)(nil),                   // 29: thetan.rivals.v1.TrackSessionRequest
-	(*TrackSessionResponse)(nil),                  // 30: thetan.rivals.v1.TrackSessionResponse
-	(*FindMatchInfoRequest)(nil),                  // 31: thetan.rivals.v1.FindMatchInfoRequest
-	(*FindMatchInfoResponse)(nil),                 // 32: thetan.rivals.v1.FindMatchInfoResponse
-	nil,                                           // 33: thetan.rivals.v1.UserSelectedMinionResponse.AddInsEntry
-	nil,                                           // 34: thetan.rivals.v1.Minion.AddInsEntry
-	nil,                                           // 35: thetan.rivals.v1.PlayerStat.RoundPlayedEntry
-	(*thetan_shared_v1.PlayerInfoMatchProto)(nil), // 36: thetan.shared.v1.PlayerInfoMatchProto
+	(FriendInfo_FRIEND_STATUS)(0),      // 0: thetan.rivals.v1.FriendInfo.FRIEND_STATUS
+	(*EmptyResponse)(nil),              // 1: thetan.rivals.v1.EmptyResponse
+	(*UserProfileRequest)(nil),         // 2: thetan.rivals.v1.UserProfileRequest
+	(*UserProfileResponse)(nil),        // 3: thetan.rivals.v1.UserProfileResponse
+	(*UserProfileRank)(nil),            // 4: thetan.rivals.v1.UserProfileRank
+	(*UserSelectedMinionRequest)(nil),  // 5: thetan.rivals.v1.UserSelectedMinionRequest
+	(*UserSelectedMinionResponse)(nil), // 6: thetan.rivals.v1.UserSelectedMinionResponse
+	(*UserMinionsRequest)(nil),         // 7: thetan.rivals.v1.UserMinionsRequest
+	(*UserMinionsResponse)(nil),        // 8: thetan.rivals.v1.UserMinionsResponse
+	(*Minion)(nil),                     // 9: thetan.rivals.v1.Minion
+	(*MinionRequest)(nil),              // 10: thetan.rivals.v1.MinionRequest
+	(*MinionResponse)(nil),             // 11: thetan.rivals.v1.MinionResponse
+	(*CreateMinionRequest)(nil),        // 12: thetan.rivals.v1.CreateMinionRequest
+	(*CreateMinionResponse)(nil),       // 13: thetan.rivals.v1.CreateMinionResponse
+	(*GetUserFriendRequest)(nil),       // 14: thetan.rivals.v1.GetUserFriendRequest
+	(*GetUserFriendResponse)(nil),      // 15: thetan.rivals.v1.GetUserFriendResponse
+	(*FriendInfo)(nil),                 // 16: thetan.rivals.v1.FriendInfo
+	(*GetMatchInfoRequest)(nil),        // 17: thetan.rivals.v1.GetMatchInfoRequest
+	(*GetMatchInfoResponse)(nil),       // 18: thetan.rivals.v1.GetMatchInfoResponse
+	(*RoundStat)(nil),                  // 19: thetan.rivals.v1.RoundStat
+	(*MapData)(nil),                    // 20: thetan.rivals.v1.MapData
+	(*PlayerStat)(nil),                 // 21: thetan.rivals.v1.PlayerStat
+	(*GetActivityRequest)(nil),         // 22: thetan.rivals.v1.GetActivityRequest
+	(*GetActivityResponse)(nil),        // 23: thetan.rivals.v1.GetActivityResponse
+	(*ClassInfo)(nil),                  // 24: thetan.rivals.v1.ClassInfo
+	(*SimpleItem)(nil),                 // 25: thetan.rivals.v1.SimpleItem
+	(*GetTownUserRequest)(nil),         // 26: thetan.rivals.v1.GetTownUserRequest
+	(*LobbyTown)(nil),                  // 27: thetan.rivals.v1.LobbyTown
+	(*PickTownUserRequest)(nil),        // 28: thetan.rivals.v1.PickTownUserRequest
+	(*TrackSessionRequest)(nil),        // 29: thetan.rivals.v1.TrackSessionRequest
+	(*TrackSessionResponse)(nil),       // 30: thetan.rivals.v1.TrackSessionResponse
+	(*FindMatchInfoRequest)(nil),       // 31: thetan.rivals.v1.FindMatchInfoRequest
+	(*FindMatchInfoResponse)(nil),      // 32: thetan.rivals.v1.FindMatchInfoResponse
+	nil,                                // 33: thetan.rivals.v1.UserSelectedMinionResponse.AddInsEntry
+	nil,                                // 34: thetan.rivals.v1.Minion.AddInsEntry
+	nil,                                // 35: thetan.rivals.v1.PlayerStat.RoundPlayedEntry
+	(*v1.PlayerInfoMatchProto)(nil),    // 36: thetan.shared.v1.PlayerInfoMatchProto
 }
 var file_thetan_rivals_v1_service_rivals_proto_depIdxs = []int32{
 	4,  // 0: thetan.rivals.v1.UserProfileResponse.rank:type_name -> thetan.rivals.v1.UserProfileRank

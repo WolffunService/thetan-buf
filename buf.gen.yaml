@@ -6,11 +6,11 @@ plugins:
   - plugin: buf.build/protocolbuffers/go
     out: gen/go
     opt:
-      - paths=import
+      - paths=source_relative
   - plugin: buf.build/grpc/go
     out: gen/go
     opt:
-      - paths=import
+      - paths=source_relative
 
   # Generate for CSharp
   - plugin: buf.build/grpc/csharp:v1.54.2

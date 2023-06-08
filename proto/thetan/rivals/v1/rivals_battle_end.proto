@@ -5,7 +5,7 @@ package thetan.rivals.v1;
 import "thetan/shared/v1/game_info.proto";
 import "thetan/shared/v1/match.proto";
 
-option go_package = "thetan.rivals.v1";
+option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
 option csharp_namespace = "Thetan.rivals.V1";
 
 message RoundInfo {

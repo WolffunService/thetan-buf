@@ -136,10 +136,11 @@ namespace Thetan.Arena.V1 {
             "CVIJZXZlbnROYW1lEhwKCXRpbWVzdGFtcBgCIAEoA1IJdGltZXN0YW1wEjoK",
             "C2V2ZW50UGFyYW1zGAMgAygLMhgudGhldGFuLmFyZW5hLnYxLktleVBhaXJS",
             "C2V2ZW50UGFyYW1zIjEKB0tleVBhaXISEAoDa2V5GAEgASgJUgNrZXkSFAoF",
-            "dmFsdWUYAiABKAlSBXZhbHVlQpABChNjb20udGhldGFuLmFyZW5hLnYxQgpB",
-            "dWRpdFByb3RvUAFaD3RoZXRhbi5hcmVuYS52MaICA1RBWKoCD1RoZXRhbi5B",
-            "cmVuYS5WMcoCD1RoZXRhblxBcmVuYVxWMeICG1RoZXRhblxBcmVuYVxWMVxH",
-            "UEJNZXRhZGF0YeoCEVRoZXRhbjo6QXJlbmE6OlYxYgZwcm90bzM="));
+            "dmFsdWUYAiABKAlSBXZhbHVlQrIBChNjb20udGhldGFuLmFyZW5hLnYxQgpB",
+            "dWRpdFByb3RvUAFaMXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9hcmVuYS92",
+            "MTt0aGV0YW5fYXJlbmFfdjGiAgNUQViqAg9UaGV0YW4uQXJlbmEuVjHKAg9U",
+            "aGV0YW5cQXJlbmFcVjHiAhtUaGV0YW5cQXJlbmFcVjFcR1BCTWV0YWRhdGHq",
+            "AhFUaGV0YW46OkFyZW5hOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -2,7 +2,7 @@ syntax="proto3";
 
 package thetan.arena.v1;
 
-option go_package = "thetan.arena.v1";
+option go_package = "thetan-buf/gen/go/thetan/arena/v1;thetan_arena_v1";
 option csharp_namespace = "Thetan.arena.V1";
 
 message BoxPurchaseResult {

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package thetan.mmf.v1;
 
-option go_package = "thetan.mmf.v1";
+option go_package = "thetan-buf/gen/go/thetan/mmf/v1;thetan_mmf_v1";
 option csharp_namespace = "Thetan.mmf.V1";
 
 message MmfTicketData {
