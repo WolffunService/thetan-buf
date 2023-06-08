@@ -30,11 +30,12 @@ namespace Thetan.Firebase.V1 {
             "BnVzZXJJZBIaCghzdGF0TmFtZRgCIAEoCVIIc3RhdE5hbWUSHAoJc3RhdFZh",
             "bHVlGAMgASgJUglzdGF0VmFsdWUyagoPRmlyZWJhc2VTZXJ2aWNlElcKD1Ry",
             "YWNrUGxheWVyU3RhdBIqLnRoZXRhbi5maXJlYmFzZS52MS5UcmFja1BsYXll",
-            "clN0YXRSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5IgBCrAEKFmNv",
+            "clN0YXRSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5IgBC0QEKFmNv",
             "bS50aGV0YW4uZmlyZWJhc2UudjFCFFNlcnZpY2VGaXJlYmFzZVByb3RvUAFa",
-            "EnRoZXRhbi5maXJlYmFzZS52MaICA1RGWKoCElRoZXRhbi5GaXJlYmFzZS5W",
-            "McoCElRoZXRhblxGaXJlYmFzZVxWMeICHlRoZXRhblxGaXJlYmFzZVxWMVxH",
-            "UEJNZXRhZGF0YeoCFFRoZXRhbjo6RmlyZWJhc2U6OlYxYgZwcm90bzM="));
+            "N3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9maXJlYmFzZS92MTt0aGV0YW5f",
+            "ZmlyZWJhc2VfdjGiAgNURliqAhJUaGV0YW4uRmlyZWJhc2UuVjHKAhJUaGV0",
+            "YW5cRmlyZWJhc2VcVjHiAh5UaGV0YW5cRmlyZWJhc2VcVjFcR1BCTWV0YWRh",
+            "dGHqAhRUaGV0YW46OkZpcmViYXNlOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

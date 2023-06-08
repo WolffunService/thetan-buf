@@ -44,11 +44,11 @@ namespace Thetan.Support.V1 {
             "X0xCEAMSFgoSRkVBVFVSRV9DSEFUX1NISUxMEAQybQoOU3VwcG9ydFNlcnZp",
             "Y2USWwoKU2VhcmNoQm90cxIkLnRoZXRhbi5zdXBwb3J0LnYxLlNlYXJjaEJv",
             "dHNSZXF1ZXN0GiUudGhldGFuLnN1cHBvcnQudjEuU2VhcmNoQm90c1Jlc3Bv",
-            "bnNlIgBCpQEKFWNvbS50aGV0YW4uc3VwcG9ydC52MUITU2VydmljZVN1cHBv",
-            "cnRQcm90b1ABWhF0aGV0YW4uc3VwcG9ydC52MaICA1RTWKoCEVRoZXRhbi5T",
-            "dXBwb3J0LlYxygIRVGhldGFuXFN1cHBvcnRcVjHiAh1UaGV0YW5cU3VwcG9y",
-            "dFxWMVxHUEJNZXRhZGF0YeoCE1RoZXRhbjo6U3VwcG9ydDo6VjFiBnByb3Rv",
-            "Mw=="));
+            "bnNlIgBCyQEKFWNvbS50aGV0YW4uc3VwcG9ydC52MUITU2VydmljZVN1cHBv",
+            "cnRQcm90b1ABWjV0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vc3VwcG9ydC92",
+            "MTt0aGV0YW5fc3VwcG9ydF92MaICA1RTWKoCEVRoZXRhbi5TdXBwb3J0LlYx",
+            "ygIRVGhldGFuXFN1cHBvcnRcVjHiAh1UaGV0YW5cU3VwcG9ydFxWMVxHUEJN",
+            "ZXRhZGF0YeoCE1RoZXRhbjo6U3VwcG9ydDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Support.V1.GameID), typeof(global::Thetan.Support.V1.Feature), }, null, new pbr::GeneratedClrTypeInfo[] {

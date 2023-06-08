@@ -41,11 +41,11 @@ namespace Thetan.Shared.V1 {
             "ZUtpbGwSGgoIbWVnYUtpbGwYEyABKAhSCG1lZ2FLaWxsInUKEE1hdGNoUmVz",
             "dWx0UmVwbHkSGAoHbWF0Y2hJRBgBIAEoCVIHbWF0Y2hJRBJHCgxwbGF5ZXJS",
             "ZXN1bHQYAiADKAsyIy50aGV0YW4uc2hhcmVkLnYxLlBsYXllclJlc3VsdE1v",
-            "ZGVsUgxwbGF5ZXJSZXN1bHRCnAEKFGNvbS50aGV0YW4uc2hhcmVkLnYxQhBN",
-            "YXRjaFJlc3VsdFByb3RvUAFaEHRoZXRhbi5zaGFyZWQudjGiAgNUU1iqAhBU",
-            "aGV0YW4uU2hhcmVkLlYxygIQVGhldGFuXFNoYXJlZFxWMeICHFRoZXRhblxT",
-            "aGFyZWRcVjFcR1BCTWV0YWRhdGHqAhJUaGV0YW46OlNoYXJlZDo6VjFiBnBy",
-            "b3RvMw=="));
+            "ZGVsUgxwbGF5ZXJSZXN1bHRCvwEKFGNvbS50aGV0YW4uc2hhcmVkLnYxQhBN",
+            "YXRjaFJlc3VsdFByb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9z",
+            "aGFyZWQvdjE7dGhldGFuX3NoYXJlZF92MaICA1RTWKoCEFRoZXRhbi5TaGFy",
+            "ZWQuVjHKAhBUaGV0YW5cU2hhcmVkXFYx4gIcVGhldGFuXFNoYXJlZFxWMVxH",
+            "UEJNZXRhZGF0YeoCElRoZXRhbjo6U2hhcmVkOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

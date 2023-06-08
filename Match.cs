@@ -206,11 +206,11 @@ namespace Thetan.Shared.V1 {
             "LnYxLkdldEJvdHNSZXF1ZXN0Gh4udGhldGFuLnNoYXJlZC52MS5Cb3RzUmVz",
             "cG9uc2UiABJuChJDcmVhdGVNYXRjaE9uYm9hcmQSKy50aGV0YW4uc2hhcmVk",
             "LnYxLkNyZWF0ZU1hdGNoT25ib2FyZFJlcXVlc3QaKS50aGV0YW4uc2hhcmVk",
-            "LnYxLk1hdGNoRm91bmRSZXNwb25zZVByb3RvIgBClgEKFGNvbS50aGV0YW4u",
-            "c2hhcmVkLnYxQgpNYXRjaFByb3RvUAFaEHRoZXRhbi5zaGFyZWQudjGiAgNU",
-            "U1iqAhBUaGV0YW4uU2hhcmVkLlYxygIQVGhldGFuXFNoYXJlZFxWMeICHFRo",
-            "ZXRhblxTaGFyZWRcVjFcR1BCTWV0YWRhdGHqAhJUaGV0YW46OlNoYXJlZDo6",
-            "VjFiBnByb3RvMw=="));
+            "LnYxLk1hdGNoRm91bmRSZXNwb25zZVByb3RvIgBCuQEKFGNvbS50aGV0YW4u",
+            "c2hhcmVkLnYxQgpNYXRjaFByb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dvL3Ro",
+            "ZXRhbi9zaGFyZWQvdjE7dGhldGFuX3NoYXJlZF92MaICA1RTWKoCEFRoZXRh",
+            "bi5TaGFyZWQuVjHKAhBUaGV0YW5cU2hhcmVkXFYx4gIcVGhldGFuXFNoYXJl",
+            "ZFxWMVxHUEJNZXRhZGF0YeoCElRoZXRhbjo6U2hhcmVkOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Shared.V1.MatchErrorCode), typeof(global::Thetan.Shared.V1.MapDifficultyEnum), }, null, new pbr::GeneratedClrTypeInfo[] {

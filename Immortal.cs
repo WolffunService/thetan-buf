@@ -76,11 +76,12 @@ namespace Thetan.Immortal.V1 {
             "U2VhcmNoUGxheWVySW5mb1Jlc3BvbnNlIgAykwEKHEltbW9ydGFsTWF0Y2hE",
             "aXJlY3RvclNlcnZpY2UScwoMQ2FuY2VsVGlja2V0Ei8udGhldGFuLmltbW9y",
             "dGFsLnYxLkltbW9ydGFsQ2FuY2VsVGlja2V0UmVxdWVzdBowLnRoZXRhbi5p",
-            "bW1vcnRhbC52MS5JbW1vcnRhbENhbmNlbFRpY2tldFJlc3BvbnNlIgBCpQEK",
-            "FmNvbS50aGV0YW4uaW1tb3J0YWwudjFCDUltbW9ydGFsUHJvdG9QAVoSdGhl",
-            "dGFuLmltbW9ydGFsLnYxogIDVElYqgISVGhldGFuLkltbW9ydGFsLlYxygIS",
-            "VGhldGFuXEltbW9ydGFsXFYx4gIeVGhldGFuXEltbW9ydGFsXFYxXEdQQk1l",
-            "dGFkYXRh6gIUVGhldGFuOjpJbW1vcnRhbDo6VjFiBnByb3RvMw=="));
+            "bW1vcnRhbC52MS5JbW1vcnRhbENhbmNlbFRpY2tldFJlc3BvbnNlIgBCygEK",
+            "FmNvbS50aGV0YW4uaW1tb3J0YWwudjFCDUltbW9ydGFsUHJvdG9QAVo3dGhl",
+            "dGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2ltbW9ydGFsL3YxO3RoZXRhbl9pbW1v",
+            "cnRhbF92MaICA1RJWKoCElRoZXRhbi5JbW1vcnRhbC5WMcoCElRoZXRhblxJ",
+            "bW1vcnRhbFxWMeICHlRoZXRhblxJbW1vcnRhbFxWMVxHUEJNZXRhZGF0YeoC",
+            "FFRoZXRhbjo6SW1tb3J0YWw6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

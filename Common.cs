@@ -114,12 +114,12 @@ namespace Thetan.Multiplayer.V1 {
             "ZmxpbmUQARILCgdJblBhcnR5EAISCQoFUmVhZHkQAxILCgdGaW5kaW5nEAQS",
             "DAoISW5CYXR0bGUQBSpDChBJbnZpdGF0aW9uQWN0aW9uEgoKBkFjY2VwdBAA",
             "EgoKBkNhbmNlbBABEgsKB0RlY2xpbmUQAhIKCgZJbnZpdGUQAyorCgtTdGFn",
-            "ZUluR2FtZRINCglTcGVjdGF0b3IQABINCglFbmRCYXR0bGUQAUK1AQoZY29t",
-            "LnRoZXRhbi5tdWx0aXBsYXllci52MUILQ29tbW9uUHJvdG9QAVoVdGhldGFu",
-            "Lm11bHRpcGxheWVyLnYxogIDVE1YqgIVVGhldGFuLk11bHRpcGxheWVyLlYx",
-            "ygIVVGhldGFuXE11bHRpcGxheWVyXFYx4gIhVGhldGFuXE11bHRpcGxheWVy",
-            "XFYxXEdQQk1ldGFkYXRh6gIXVGhldGFuOjpNdWx0aXBsYXllcjo6VjFiBnBy",
-            "b3RvMw=="));
+            "ZUluR2FtZRINCglTcGVjdGF0b3IQABINCglFbmRCYXR0bGUQAULdAQoZY29t",
+            "LnRoZXRhbi5tdWx0aXBsYXllci52MUILQ29tbW9uUHJvdG9QAVo9dGhldGFu",
+            "LWJ1Zi9nZW4vZ28vdGhldGFuL211bHRpcGxheWVyL3YxO3RoZXRhbl9tdWx0",
+            "aXBsYXllcl92MaICA1RNWKoCFVRoZXRhbi5NdWx0aXBsYXllci5WMcoCFVRo",
+            "ZXRhblxNdWx0aXBsYXllclxWMeICIVRoZXRhblxNdWx0aXBsYXllclxWMVxH",
+            "UEJNZXRhZGF0YeoCF1RoZXRhbjo6TXVsdGlwbGF5ZXI6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.PartyStatus), typeof(global::Thetan.Multiplayer.V1.PartyAvailabilityStatus), typeof(global::Thetan.Multiplayer.V1.ChannelChatRoom), typeof(global::Thetan.Multiplayer.V1.MsgType), typeof(global::Thetan.Multiplayer.V1.PlayerStatus), typeof(global::Thetan.Multiplayer.V1.InvitationAction), typeof(global::Thetan.Multiplayer.V1.StageInGame), }, null, new pbr::GeneratedClrTypeInfo[] {
