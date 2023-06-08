@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package thetan.support.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/support/v1;thetan_support_v1";
+option csharp_namespace = "Thetan.support.V1";
+
+service SupportService {
+  rpc SearchBots(SearchBotsRequest) returns (SearchBotsResponse) {}
+}
+
+enum GameID {
+  GAME_ID_NONE = 0;
+  GAME_ID_ARENA = 1;
+  GAME_ID_RIVAL = 2;
+  GAME_ID_IMMORTAL = 3;
+}
+
+enum Feature {
+  FEATURE_NONE = 0;
+  FEATURE_IN_GAME = 1;
+  FEATURE_LOBBY = 2;
+  FEATURE_LB = 3;
+  FEATURE_CHAT_SHILL = 4;
+}
+
+message SearchBotsRequest {
+  GameID gameID = 1;
+  int32 rank = 2;
+  int32 regionID = 3;
+  Feature feature = 4;
+  repeated string arrCountry = 5;
+  int64 useTimeInSec = 6;
+  int32 battleNumber = 7;
+  int32 numbers = 8;
+  int32 skip = 9;
+}
+
+message SearchBotsResponse {
+  repeated BotInfo bots = 1;
+}
+
+message BotInfo {
+  string userID = 1;
+  string username = 2;
+  string countryCode = 3;
+  int32 rank = 4;
+  int32 trophy = 5;
+}

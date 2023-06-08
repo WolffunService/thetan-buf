@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package thetan.multiplayer.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/multiplayer/v1;thetan_multiplayer_v1";
+option csharp_namespace = "Thetan.Multiplayer.V1";
+
+enum ChatErrorCode {
+  None = 0;
+  TimeLimit = 1;
+}
+
+enum PartyErrorCode {
+  Unknown = 0;
+  InternalError = -99;
+
+  PartyIsFull = 1;
+  Dnd = 2;
+  BlockInvite = 3;
+  FindingMatch = 4; // Join party when party is finding match
+  DifferentVersionClient = 5;//findmatch version
+
+}

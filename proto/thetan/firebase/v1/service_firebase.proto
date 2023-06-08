@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package thetan.firebase.v1;
+
+import "google/protobuf/empty.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/firebase/v1;thetan_firebase_v1";
+option csharp_namespace = "Thetan.firebase.V1";
+
+service FirebaseService {
+  rpc TrackPlayerStat (TrackPlayerStatRequest) returns (google.protobuf.Empty) {}
+}
+
+message TrackPlayerStatRequest {
+  string userId = 1;
+  string statName = 2;
+  string statValue = 3;
+}
