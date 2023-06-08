@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package thetan.multiplayer.v1;
+
+option go_package = "thetan.multiplayer.v1";
+option csharp_namespace = "Thetan.Multiplayer.V1";
+
+message RivalsPlayerInfoProto {
+  string minionId = 1;
+  int32 skin = 2;
+  map<string, int64> cosmeticInUsed = 3;
+}

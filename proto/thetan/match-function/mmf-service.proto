@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package thetan.mmf.v1;
+
+option go_package = "thetan.mmf.v1";
+option csharp_namespace = "Thetan.mmf.V1";
+
+message MmfTicketData {
+  int32 countPlayer = 1;
+  int32 behaviorPoint = 2;
+  bool isHeroNFT = 3;
+  int32 trophiesRank = 4;
+  repeated int32 regions = 5;
+  int32 matchSearchType = 6;
+}

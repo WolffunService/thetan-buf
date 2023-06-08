@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package thetan.shared.v1;
+
+option go_package = "thetan.shared.v1";
+option csharp_namespace = "Thetan.shared.V1";
+
+message MatchResultRequest {
+  string matchID = 1;
+}
+
+message PlayerResultModel {
+  string playerID = 1;
+  string heroID = 2;
+  int32 HeroTypeID = 3;
+  int32 Skill_1 = 4;
+  int32 Skill_2 = 5;
+  int32 Kill = 6;
+  int32 Death = 7;
+  int32 HeroDamageIn = 8;
+  int32 HeroDamageOut = 9;
+  int32 Skill_1_Dmg = 10;
+  int32 Skill_1_Use = 11;
+  int32 Skill_2_Dmg  = 12;
+  int32 Skill_2_Use = 13;
+  int32 FuryUse = 14;
+  int32 BattleResult = 15;
+  int32 Rank = 16;
+  bool mVP = 17;
+  bool tripleKill = 18;
+  bool megaKill = 19;
+}
+
+message MatchResultReply {
+  string matchID = 1;
+  repeated PlayerResultModel playerResult = 2;
+}
