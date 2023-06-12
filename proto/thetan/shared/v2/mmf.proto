@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option optimize_for = SPEED;
+option java_package = "core.proto";
+option java_outer_classname = "MatchProtoService";
+
+option go_package = "thetan-buf/gen/go/thetan/shared/v2;thetan_shared_v2";
+
+package mmf;
+
+message MmfTicketData {
+  int32 countPlayer = 1;
+  int32 behaviorPoint = 2;
+  bool isHeroNFT = 3;
+  int32 trophiesRank = 4;
+  repeated int32 regions = 5;
+  int32 matchSearchType = 6;
+}
