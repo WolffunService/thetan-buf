@@ -72,6 +72,12 @@ message SearchPlayerInfoResponse {
   repeated ImmortalPlayerInfoMatchProto players = 1;
 }
 
+message CancelTicketSuccess {
+  int32 playerID = 1;
+  int32 partyID = 2;
+  int32 ticketID = 3;
+}
+
 service ImmortalService {
   // For bot
   rpc SearchUserRanking (SearchUserRankingRequest) returns (SearchUserRankingResponse) {}
