@@ -31,15 +31,15 @@ message ImmortalPlayerInfoMatchProto {
 }
 
 message ImmortalCancelTicketRequest {
-  int32 playerID = 1;
-  int32 partyID = 2;
-  int32 ticketID = 3;
+  string playerID = 1;
+  string partyID = 2;
+  string ticketID = 3;
 }
 
 message ImmortalCancelTicketResponse {
-  int32 playerID = 1;
-  int32 partyID = 2;
-  int32 ticketID = 3;
+  string playerID = 1;
+  string partyID = 2;
+  string ticketID = 3;
 }
 
 message SearchUserRankingRequest {
@@ -73,9 +73,9 @@ message SearchPlayerInfoResponse {
 }
 
 message CancelTicketSuccess {
-  int32 playerID = 1;
-  int32 partyID = 2;
-  int32 ticketID = 3;
+  string playerID = 1;
+  string partyID = 2;
+  string ticketID = 3;
 }
 
 message ImmortalTicketData {

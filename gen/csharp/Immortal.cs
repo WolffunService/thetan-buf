@@ -40,11 +40,11 @@ namespace Thetan.Immortal.V1 {
             "bUlEEiAKC2JhdHRsZUNvdW50GA4gASgFUgtiYXR0bGVDb3VudBIgCgtuYW1l",
             "Q29sb3JJRBgPIAEoBVILbmFtZUNvbG9ySUQSEgoEcmFuaxgQIAEoBVIEcmFu",
             "axIWCgZza2lsbHMYESADKA1SBnNraWxscyJvChtJbW1vcnRhbENhbmNlbFRp",
-            "Y2tldFJlcXVlc3QSGgoIcGxheWVySUQYASABKAVSCHBsYXllcklEEhgKB3Bh",
-            "cnR5SUQYAiABKAVSB3BhcnR5SUQSGgoIdGlja2V0SUQYAyABKAVSCHRpY2tl",
+            "Y2tldFJlcXVlc3QSGgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEhgKB3Bh",
+            "cnR5SUQYAiABKAlSB3BhcnR5SUQSGgoIdGlja2V0SUQYAyABKAlSCHRpY2tl",
             "dElEInAKHEltbW9ydGFsQ2FuY2VsVGlja2V0UmVzcG9uc2USGgoIcGxheWVy",
-            "SUQYASABKAVSCHBsYXllcklEEhgKB3BhcnR5SUQYAiABKAVSB3BhcnR5SUQS",
-            "GgoIdGlja2V0SUQYAyABKAVSCHRpY2tldElEIjQKGFNlYXJjaFVzZXJSYW5r",
+            "SUQYASABKAlSCHBsYXllcklEEhgKB3BhcnR5SUQYAiABKAlSB3BhcnR5SUQS",
+            "GgoIdGlja2V0SUQYAyABKAlSCHRpY2tldElEIjQKGFNlYXJjaFVzZXJSYW5r",
             "aW5nUmVxdWVzdBIYCgd1c2VySURzGAEgAygJUgd1c2VySURzIv4BChlTZWFy",
             "Y2hVc2VyUmFua2luZ1Jlc3BvbnNlEngKE3VzZXJSYW5raW5nQnlVc2VySUQY",
             "ASADKAsyRi50aGV0YW4uaW1tb3J0YWwudjEuU2VhcmNoVXNlclJhbmtpbmdS",
@@ -66,8 +66,8 @@ namespace Thetan.Immortal.V1 {
             "ZWFyY2hQbGF5ZXJJbmZvUmVzcG9uc2USSgoHcGxheWVycxgBIAMoCzIwLnRo",
             "ZXRhbi5pbW1vcnRhbC52MS5JbW1vcnRhbFBsYXllckluZm9NYXRjaFByb3Rv",
             "UgdwbGF5ZXJzImcKE0NhbmNlbFRpY2tldFN1Y2Nlc3MSGgoIcGxheWVySUQY",
-            "ASABKAVSCHBsYXllcklEEhgKB3BhcnR5SUQYAiABKAVSB3BhcnR5SUQSGgoI",
-            "dGlja2V0SUQYAyABKAVSCHRpY2tldElEImAKEkltbW9ydGFsVGlja2V0RGF0",
+            "ASABKAlSCHBsYXllcklEEhgKB3BhcnR5SUQYAiABKAlSB3BhcnR5SUQSGgoI",
+            "dGlja2V0SUQYAyABKAlSCHRpY2tldElEImAKEkltbW9ydGFsVGlja2V0RGF0",
             "YRJKCgdwbGF5ZXJzGAEgAygLMjAudGhldGFuLmltbW9ydGFsLnYxLkltbW9y",
             "dGFsUGxheWVySW5mb01hdGNoUHJvdG9SB3BsYXllcnMy9gIKD0ltbW9ydGFs",
             "U2VydmljZRJyChFTZWFyY2hVc2VyUmFua2luZxIsLnRoZXRhbi5pbW1vcnRh",
@@ -1135,37 +1135,37 @@ namespace Thetan.Immortal.V1 {
 
     /// <summary>Field number for the "playerID" field.</summary>
     public const int PlayerIDFieldNumber = 1;
-    private int playerID_;
+    private string playerID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PlayerID {
+    public string PlayerID {
       get { return playerID_; }
       set {
-        playerID_ = value;
+        playerID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "partyID" field.</summary>
     public const int PartyIDFieldNumber = 2;
-    private int partyID_;
+    private string partyID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PartyID {
+    public string PartyID {
       get { return partyID_; }
       set {
-        partyID_ = value;
+        partyID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "ticketID" field.</summary>
     public const int TicketIDFieldNumber = 3;
-    private int ticketID_;
+    private string ticketID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int TicketID {
+    public string TicketID {
       get { return ticketID_; }
       set {
-        ticketID_ = value;
+        ticketID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1194,9 +1194,9 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (PlayerID != 0) hash ^= PlayerID.GetHashCode();
-      if (PartyID != 0) hash ^= PartyID.GetHashCode();
-      if (TicketID != 0) hash ^= TicketID.GetHashCode();
+      if (PlayerID.Length != 0) hash ^= PlayerID.GetHashCode();
+      if (PartyID.Length != 0) hash ^= PartyID.GetHashCode();
+      if (TicketID.Length != 0) hash ^= TicketID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1215,17 +1215,17 @@ namespace Thetan.Immortal.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (PlayerID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerID);
+      if (PlayerID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerID);
       }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
       }
-      if (TicketID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TicketID);
+      if (TicketID.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TicketID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1237,17 +1237,17 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerID);
+      if (PlayerID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerID);
       }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
       }
-      if (TicketID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TicketID);
+      if (TicketID.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TicketID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1259,14 +1259,14 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (PlayerID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerID);
+      if (PlayerID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerID);
       }
-      if (PartyID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PartyID);
+      if (PartyID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyID);
       }
-      if (TicketID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TicketID);
+      if (TicketID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TicketID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1280,13 +1280,13 @@ namespace Thetan.Immortal.V1 {
       if (other == null) {
         return;
       }
-      if (other.PlayerID != 0) {
+      if (other.PlayerID.Length != 0) {
         PlayerID = other.PlayerID;
       }
-      if (other.PartyID != 0) {
+      if (other.PartyID.Length != 0) {
         PartyID = other.PartyID;
       }
-      if (other.TicketID != 0) {
+      if (other.TicketID.Length != 0) {
         TicketID = other.TicketID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1304,16 +1304,16 @@ namespace Thetan.Immortal.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            PlayerID = input.ReadInt32();
+          case 10: {
+            PlayerID = input.ReadString();
             break;
           }
-          case 16: {
-            PartyID = input.ReadInt32();
+          case 18: {
+            PartyID = input.ReadString();
             break;
           }
-          case 24: {
-            TicketID = input.ReadInt32();
+          case 26: {
+            TicketID = input.ReadString();
             break;
           }
         }
@@ -1331,16 +1331,16 @@ namespace Thetan.Immortal.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            PlayerID = input.ReadInt32();
+          case 10: {
+            PlayerID = input.ReadString();
             break;
           }
-          case 16: {
-            PartyID = input.ReadInt32();
+          case 18: {
+            PartyID = input.ReadString();
             break;
           }
-          case 24: {
-            TicketID = input.ReadInt32();
+          case 26: {
+            TicketID = input.ReadString();
             break;
           }
         }
@@ -1398,37 +1398,37 @@ namespace Thetan.Immortal.V1 {
 
     /// <summary>Field number for the "playerID" field.</summary>
     public const int PlayerIDFieldNumber = 1;
-    private int playerID_;
+    private string playerID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PlayerID {
+    public string PlayerID {
       get { return playerID_; }
       set {
-        playerID_ = value;
+        playerID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "partyID" field.</summary>
     public const int PartyIDFieldNumber = 2;
-    private int partyID_;
+    private string partyID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PartyID {
+    public string PartyID {
       get { return partyID_; }
       set {
-        partyID_ = value;
+        partyID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "ticketID" field.</summary>
     public const int TicketIDFieldNumber = 3;
-    private int ticketID_;
+    private string ticketID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int TicketID {
+    public string TicketID {
       get { return ticketID_; }
       set {
-        ticketID_ = value;
+        ticketID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1457,9 +1457,9 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (PlayerID != 0) hash ^= PlayerID.GetHashCode();
-      if (PartyID != 0) hash ^= PartyID.GetHashCode();
-      if (TicketID != 0) hash ^= TicketID.GetHashCode();
+      if (PlayerID.Length != 0) hash ^= PlayerID.GetHashCode();
+      if (PartyID.Length != 0) hash ^= PartyID.GetHashCode();
+      if (TicketID.Length != 0) hash ^= TicketID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1478,17 +1478,17 @@ namespace Thetan.Immortal.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (PlayerID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerID);
+      if (PlayerID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerID);
       }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
       }
-      if (TicketID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TicketID);
+      if (TicketID.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TicketID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1500,17 +1500,17 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerID);
+      if (PlayerID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerID);
       }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
       }
-      if (TicketID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TicketID);
+      if (TicketID.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TicketID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1522,14 +1522,14 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (PlayerID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerID);
+      if (PlayerID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerID);
       }
-      if (PartyID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PartyID);
+      if (PartyID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyID);
       }
-      if (TicketID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TicketID);
+      if (TicketID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TicketID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1543,13 +1543,13 @@ namespace Thetan.Immortal.V1 {
       if (other == null) {
         return;
       }
-      if (other.PlayerID != 0) {
+      if (other.PlayerID.Length != 0) {
         PlayerID = other.PlayerID;
       }
-      if (other.PartyID != 0) {
+      if (other.PartyID.Length != 0) {
         PartyID = other.PartyID;
       }
-      if (other.TicketID != 0) {
+      if (other.TicketID.Length != 0) {
         TicketID = other.TicketID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1567,16 +1567,16 @@ namespace Thetan.Immortal.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            PlayerID = input.ReadInt32();
+          case 10: {
+            PlayerID = input.ReadString();
             break;
           }
-          case 16: {
-            PartyID = input.ReadInt32();
+          case 18: {
+            PartyID = input.ReadString();
             break;
           }
-          case 24: {
-            TicketID = input.ReadInt32();
+          case 26: {
+            TicketID = input.ReadString();
             break;
           }
         }
@@ -1594,16 +1594,16 @@ namespace Thetan.Immortal.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            PlayerID = input.ReadInt32();
+          case 10: {
+            PlayerID = input.ReadString();
             break;
           }
-          case 16: {
-            PartyID = input.ReadInt32();
+          case 18: {
+            PartyID = input.ReadString();
             break;
           }
-          case 24: {
-            TicketID = input.ReadInt32();
+          case 26: {
+            TicketID = input.ReadString();
             break;
           }
         }
@@ -2992,37 +2992,37 @@ namespace Thetan.Immortal.V1 {
 
     /// <summary>Field number for the "playerID" field.</summary>
     public const int PlayerIDFieldNumber = 1;
-    private int playerID_;
+    private string playerID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PlayerID {
+    public string PlayerID {
       get { return playerID_; }
       set {
-        playerID_ = value;
+        playerID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "partyID" field.</summary>
     public const int PartyIDFieldNumber = 2;
-    private int partyID_;
+    private string partyID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PartyID {
+    public string PartyID {
       get { return partyID_; }
       set {
-        partyID_ = value;
+        partyID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "ticketID" field.</summary>
     public const int TicketIDFieldNumber = 3;
-    private int ticketID_;
+    private string ticketID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int TicketID {
+    public string TicketID {
       get { return ticketID_; }
       set {
-        ticketID_ = value;
+        ticketID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -3051,9 +3051,9 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (PlayerID != 0) hash ^= PlayerID.GetHashCode();
-      if (PartyID != 0) hash ^= PartyID.GetHashCode();
-      if (TicketID != 0) hash ^= TicketID.GetHashCode();
+      if (PlayerID.Length != 0) hash ^= PlayerID.GetHashCode();
+      if (PartyID.Length != 0) hash ^= PartyID.GetHashCode();
+      if (TicketID.Length != 0) hash ^= TicketID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3072,17 +3072,17 @@ namespace Thetan.Immortal.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (PlayerID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerID);
+      if (PlayerID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerID);
       }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
       }
-      if (TicketID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TicketID);
+      if (TicketID.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TicketID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3094,17 +3094,17 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PlayerID);
+      if (PlayerID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerID);
       }
-      if (PartyID != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PartyID);
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
       }
-      if (TicketID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TicketID);
+      if (TicketID.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TicketID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3116,14 +3116,14 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (PlayerID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerID);
+      if (PlayerID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerID);
       }
-      if (PartyID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PartyID);
+      if (PartyID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyID);
       }
-      if (TicketID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TicketID);
+      if (TicketID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TicketID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3137,13 +3137,13 @@ namespace Thetan.Immortal.V1 {
       if (other == null) {
         return;
       }
-      if (other.PlayerID != 0) {
+      if (other.PlayerID.Length != 0) {
         PlayerID = other.PlayerID;
       }
-      if (other.PartyID != 0) {
+      if (other.PartyID.Length != 0) {
         PartyID = other.PartyID;
       }
-      if (other.TicketID != 0) {
+      if (other.TicketID.Length != 0) {
         TicketID = other.TicketID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3161,16 +3161,16 @@ namespace Thetan.Immortal.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            PlayerID = input.ReadInt32();
+          case 10: {
+            PlayerID = input.ReadString();
             break;
           }
-          case 16: {
-            PartyID = input.ReadInt32();
+          case 18: {
+            PartyID = input.ReadString();
             break;
           }
-          case 24: {
-            TicketID = input.ReadInt32();
+          case 26: {
+            TicketID = input.ReadString();
             break;
           }
         }
@@ -3188,16 +3188,16 @@ namespace Thetan.Immortal.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            PlayerID = input.ReadInt32();
+          case 10: {
+            PlayerID = input.ReadString();
             break;
           }
-          case 16: {
-            PartyID = input.ReadInt32();
+          case 18: {
+            PartyID = input.ReadString();
             break;
           }
-          case 24: {
-            TicketID = input.ReadInt32();
+          case 26: {
+            TicketID = input.ReadString();
             break;
           }
         }
