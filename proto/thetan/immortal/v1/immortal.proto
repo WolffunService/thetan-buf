@@ -72,6 +72,21 @@ message SearchPlayerInfoResponse {
   repeated ImmortalPlayerInfoMatchProto players = 1;
 }
 
+message GetUserProfileRequest {
+  string userID = 1;
+}
+
+message GetUserProfileResponse {
+  string userID = 1;
+  string userName = 2;
+  string country = 3;
+  int32 avatarID = 4;
+  int32 frameID = 5;
+  int32 nameColorID = 6;
+  int32 rank = 7;
+  int32 trophy = 8;
+}
+
 message CancelTicketSuccess {
   string playerID = 1;
   string partyID = 2;
@@ -87,8 +102,8 @@ service ImmortalService {
   rpc SearchUserRanking (SearchUserRankingRequest) returns (SearchUserRankingResponse) {}
   rpc CreateManyUserRanking (CreateManyUserRankingRequest) returns (CreateManyUserRankingResponse) {}
 
-  // Search player info
   rpc SearchPlayerInfo(SearchPlayerInfoRequest) returns (SearchPlayerInfoResponse) {}
+  rpc GetUserProfile(GetUserProfileRequest) returns (GetUserProfileResponse) {}
 }
 
 service ImmortalMatchDirectorService {
