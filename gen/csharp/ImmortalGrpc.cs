@@ -57,6 +57,10 @@ namespace Thetan.Immortal.V1 {
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.SearchPlayerInfoRequest> __Marshaller_thetan_immortal_v1_SearchPlayerInfoRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.SearchPlayerInfoRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.SearchPlayerInfoResponse> __Marshaller_thetan_immortal_v1_SearchPlayerInfoResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.SearchPlayerInfoResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetUserProfileRequest> __Marshaller_thetan_immortal_v1_GetUserProfileRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetUserProfileRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetUserProfileResponse> __Marshaller_thetan_immortal_v1_GetUserProfileResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetUserProfileResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Immortal.V1.SearchUserRankingRequest, global::Thetan.Immortal.V1.SearchUserRankingResponse> __Method_SearchUserRanking = new grpc::Method<global::Thetan.Immortal.V1.SearchUserRankingRequest, global::Thetan.Immortal.V1.SearchUserRankingResponse>(
@@ -81,6 +85,14 @@ namespace Thetan.Immortal.V1 {
         "SearchPlayerInfo",
         __Marshaller_thetan_immortal_v1_SearchPlayerInfoRequest,
         __Marshaller_thetan_immortal_v1_SearchPlayerInfoResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Immortal.V1.GetUserProfileRequest, global::Thetan.Immortal.V1.GetUserProfileResponse> __Method_GetUserProfile = new grpc::Method<global::Thetan.Immortal.V1.GetUserProfileRequest, global::Thetan.Immortal.V1.GetUserProfileResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetUserProfile",
+        __Marshaller_thetan_immortal_v1_GetUserProfileRequest,
+        __Marshaller_thetan_immortal_v1_GetUserProfileResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -110,14 +122,14 @@ namespace Thetan.Immortal.V1 {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      /// <summary>
-      /// Search player info
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.SearchPlayerInfoResponse> SearchPlayerInfo(global::Thetan.Immortal.V1.SearchPlayerInfoRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetUserProfileResponse> GetUserProfile(global::Thetan.Immortal.V1.GetUserProfileRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -219,53 +231,45 @@ namespace Thetan.Immortal.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateManyUserRanking, null, options, request);
       }
-      /// <summary>
-      /// Search player info
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Thetan.Immortal.V1.SearchPlayerInfoResponse SearchPlayerInfo(global::Thetan.Immortal.V1.SearchPlayerInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return SearchPlayerInfo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Search player info
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Thetan.Immortal.V1.SearchPlayerInfoResponse SearchPlayerInfo(global::Thetan.Immortal.V1.SearchPlayerInfoRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SearchPlayerInfo, null, options, request);
       }
-      /// <summary>
-      /// Search player info
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.SearchPlayerInfoResponse> SearchPlayerInfoAsync(global::Thetan.Immortal.V1.SearchPlayerInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return SearchPlayerInfoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      /// Search player info
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.SearchPlayerInfoResponse> SearchPlayerInfoAsync(global::Thetan.Immortal.V1.SearchPlayerInfoRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SearchPlayerInfo, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Immortal.V1.GetUserProfileResponse GetUserProfile(global::Thetan.Immortal.V1.GetUserProfileRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetUserProfile(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Immortal.V1.GetUserProfileResponse GetUserProfile(global::Thetan.Immortal.V1.GetUserProfileRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetUserProfile, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetUserProfileResponse> GetUserProfileAsync(global::Thetan.Immortal.V1.GetUserProfileRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetUserProfileAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetUserProfileResponse> GetUserProfileAsync(global::Thetan.Immortal.V1.GetUserProfileRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetUserProfile, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -283,7 +287,8 @@ namespace Thetan.Immortal.V1 {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_SearchUserRanking, serviceImpl.SearchUserRanking)
           .AddMethod(__Method_CreateManyUserRanking, serviceImpl.CreateManyUserRanking)
-          .AddMethod(__Method_SearchPlayerInfo, serviceImpl.SearchPlayerInfo).Build();
+          .AddMethod(__Method_SearchPlayerInfo, serviceImpl.SearchPlayerInfo)
+          .AddMethod(__Method_GetUserProfile, serviceImpl.GetUserProfile).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -296,6 +301,7 @@ namespace Thetan.Immortal.V1 {
       serviceBinder.AddMethod(__Method_SearchUserRanking, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.SearchUserRankingRequest, global::Thetan.Immortal.V1.SearchUserRankingResponse>(serviceImpl.SearchUserRanking));
       serviceBinder.AddMethod(__Method_CreateManyUserRanking, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.CreateManyUserRankingRequest, global::Thetan.Immortal.V1.CreateManyUserRankingResponse>(serviceImpl.CreateManyUserRanking));
       serviceBinder.AddMethod(__Method_SearchPlayerInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse>(serviceImpl.SearchPlayerInfo));
+      serviceBinder.AddMethod(__Method_GetUserProfile, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetUserProfileRequest, global::Thetan.Immortal.V1.GetUserProfileResponse>(serviceImpl.GetUserProfile));
     }
 
   }

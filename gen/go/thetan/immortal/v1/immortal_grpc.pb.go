@@ -22,6 +22,7 @@ const (
 	ImmortalService_SearchUserRanking_FullMethodName     = "/thetan.immortal.v1.ImmortalService/SearchUserRanking"
 	ImmortalService_CreateManyUserRanking_FullMethodName = "/thetan.immortal.v1.ImmortalService/CreateManyUserRanking"
 	ImmortalService_SearchPlayerInfo_FullMethodName      = "/thetan.immortal.v1.ImmortalService/SearchPlayerInfo"
+	ImmortalService_GetUserProfile_FullMethodName        = "/thetan.immortal.v1.ImmortalService/GetUserProfile"
 )
 
 // ImmortalServiceClient is the client API for ImmortalService service.
@@ -31,8 +32,8 @@ type ImmortalServiceClient interface {
 	// For bot
 	SearchUserRanking(ctx context.Context, in *SearchUserRankingRequest, opts ...grpc.CallOption) (*SearchUserRankingResponse, error)
 	CreateManyUserRanking(ctx context.Context, in *CreateManyUserRankingRequest, opts ...grpc.CallOption) (*CreateManyUserRankingResponse, error)
-	// Search player info
 	SearchPlayerInfo(ctx context.Context, in *SearchPlayerInfoRequest, opts ...grpc.CallOption) (*SearchPlayerInfoResponse, error)
+	GetUserProfile(ctx context.Context, in *GetUserProfileRequest, opts ...grpc.CallOption) (*GetUserProfileResponse, error)
 }
 
 type immortalServiceClient struct {
@@ -70,6 +71,15 @@ func (c *immortalServiceClient) SearchPlayerInfo(ctx context.Context, in *Search
 	return out, nil
 }
 
+func (c *immortalServiceClient) GetUserProfile(ctx context.Context, in *GetUserProfileRequest, opts ...grpc.CallOption) (*GetUserProfileResponse, error) {
+	out := new(GetUserProfileResponse)
+	err := c.cc.Invoke(ctx, ImmortalService_GetUserProfile_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ImmortalServiceServer is the server API for ImmortalService service.
 // All implementations must embed UnimplementedImmortalServiceServer
 // for forward compatibility
@@ -77,8 +87,8 @@ type ImmortalServiceServer interface {
 	// For bot
 	SearchUserRanking(context.Context, *SearchUserRankingRequest) (*SearchUserRankingResponse, error)
 	CreateManyUserRanking(context.Context, *CreateManyUserRankingRequest) (*CreateManyUserRankingResponse, error)
-	// Search player info
 	SearchPlayerInfo(context.Context, *SearchPlayerInfoRequest) (*SearchPlayerInfoResponse, error)
+	GetUserProfile(context.Context, *GetUserProfileRequest) (*GetUserProfileResponse, error)
 	mustEmbedUnimplementedImmortalServiceServer()
 }
 
@@ -94,6 +104,9 @@ func (UnimplementedImmortalServiceServer) CreateManyUserRanking(context.Context,
 }
 func (UnimplementedImmortalServiceServer) SearchPlayerInfo(context.Context, *SearchPlayerInfoRequest) (*SearchPlayerInfoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SearchPlayerInfo not implemented")
+}
+func (UnimplementedImmortalServiceServer) GetUserProfile(context.Context, *GetUserProfileRequest) (*GetUserProfileResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetUserProfile not implemented")
 }
 func (UnimplementedImmortalServiceServer) mustEmbedUnimplementedImmortalServiceServer() {}
 
@@ -162,6 +175,24 @@ func _ImmortalService_SearchPlayerInfo_Handler(srv interface{}, ctx context.Cont
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ImmortalService_GetUserProfile_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetUserProfileRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ImmortalServiceServer).GetUserProfile(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ImmortalService_GetUserProfile_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ImmortalServiceServer).GetUserProfile(ctx, req.(*GetUserProfileRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ImmortalService_ServiceDesc is the grpc.ServiceDesc for ImmortalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -180,6 +211,10 @@ var ImmortalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "SearchPlayerInfo",
 			Handler:    _ImmortalService_SearchPlayerInfo_Handler,
+		},
+		{
+			MethodName: "GetUserProfile",
+			Handler:    _ImmortalService_GetUserProfile_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
