@@ -27,7 +27,12 @@ message ImmortalPlayerInfoMatchProto {
   int32 battleCount = 14;
   int32 nameColorID = 15;
   int32 rank = 16;
-  repeated uint32 skills = 17;
+  repeated Skill skills = 17;
+}
+
+message Skill {
+  uint32 skillID = 1;
+  int32 level = 2;
 }
 
 message ImmortalCancelTicketRequest {
