@@ -8,6 +8,7 @@ option csharp_namespace = "Thetan.Immortal.V1";
 message ImmortalMatchFoundResponseProto {
   string matchID = 1;
   repeated ImmortalPlayerInfoMatchProto players = 2;
+  int32 bestRegion = 3;
 }
 
 message ImmortalPlayerInfoMatchProto {
