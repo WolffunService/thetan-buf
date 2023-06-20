@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package thetan.gateway.v1;
+import "thetan/immortal/v1/immortal.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/gateway/v1;thetan_gateway_v1";
 option csharp_namespace = "Thetan.Gateway.V1";
@@ -9,6 +10,9 @@ service ThetanGateway {
   rpc Ping(PingRequest) returns (PingResponse) {}
   rpc PlayerConnected(PlayerConnectedRequest) returns (PlayerStatusResponse) {}
   rpc PlayerDisconnected(PlayerDisconnectedRequest) returns (PlayerStatusResponse) {}
+
+  //Immortal
+  rpc Immortal_RoomAllocation(thetan.immortal.v1.ImmortalMatchFoundResponseProto) returns (Immortal_RoomAllocationResp) {}
 }
 
 message PingRequest {
@@ -32,3 +36,11 @@ message PlayerDisconnectedRequest {
 }
 
 message PlayerStatusResponse {}
+
+
+message Immortal_RoomAllocationResp{
+  //fishnet ip
+  string server_ip = 1;
+  //matchid
+  string room_id = 2;
+}
