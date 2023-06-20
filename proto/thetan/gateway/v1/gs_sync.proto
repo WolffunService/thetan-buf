@@ -16,27 +16,52 @@ service ThetanGateway {
 }
 
 message PingRequest {
-  string game_name = 1;
-  string game_server_name = 2;
-  repeated RoomInfo rooms = 3;
+  string game_server_name = 1;
+  oneof request {
+    RoomInfoRequest room_info = 2;
+    // Thêm các trường tùy thuộc vào yêu cầu của game
+  }
+}
+
+message RoomInfoRequest {
+  repeated RoomInfo rooms = 1;
+}
+
+message PlayerConnectedRequest {
+  string game_server_name = 1;
+  oneof request {
+    PlayerInfoRequest player_info = 2;
+    // Thêm các trường tùy thuộc vào yêu cầu của game
+  }
+}
+
+message PlayerDisconnectedRequest {
+  string game_server_name = 1;
+  oneof request {
+    PlayerInfoRequest player_info = 2;
+    // Thêm các trường tùy thuộc vào yêu cầu của game
+  }
+}
+
+message PlayerInfoRequest {
+  string player_id = 1;
+  int32 player_count = 2;
+}
+
+message RoomDestroyedRequest {
+  string game_server_name = 1;
+  oneof request {
+    RoomIdRequest room_id_info = 2;
+    // Thêm các trường tùy thuộc vào yêu cầu của game
+  }
+}
+
+message RoomIdRequest {
+  string room_id = 1;
 }
 
 message PingResponse {
   string message = 1;
-}
-
-message PlayerConnectedRequest {
-  string game_name = 1;
-  string game_server_name = 2;
-  string player_id = 3;
-  int32 player_count = 4;
-}
-
-message PlayerDisconnectedRequest {
-  string game_name = 1;
-  string game_server_name = 2;
-  string player_id = 3;
-  int32 player_count = 4;
 }
 
 message PlayerStatusResponse {}
@@ -44,12 +69,6 @@ message PlayerStatusResponse {}
 message RoomInfo {
   string room_id = 1;
   int32 player_count = 2;
-}
-
-message RoomDestroyedRequest {
-  string game_name = 1;
-  string game_server_name = 2;
-  string room_id = 3;
 }
 
 message RoomDestroyedResponse {
