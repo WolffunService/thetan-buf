@@ -1,20 +1,24 @@
 syntax = "proto3";
 
 package thetan.gateway.v1;
+import "thetan/immortal/v1/immortal.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/gateway/v1;thetan_gateway_v1";
 option csharp_namespace = "Thetan.Gateway.V1";
 
 service ThetanGateway {
-  rpc RivalPing(PingRequest) returns (PingResponse) {}
-  rpc RivalPlayerConnected(PlayerConnectedRequest) returns (PlayerStatusResponse) {}
-  rpc RivalPlayerDisconnected(PlayerDisconnectedRequest) returns (PlayerStatusResponse) {}
-  rpc RivalRoomDestroyed(RoomDestroyedRequest) returns (RoomDestroyedResponse) {}
+  rpc Ping(PingRequest) returns (PingResponse) {}
+  rpc PlayerConnected(PlayerConnectedRequest) returns (PlayerStatusResponse) {}
+  rpc PlayerDisconnected(PlayerDisconnectedRequest) returns (PlayerStatusResponse) {}
+  rpc RoomDestroyed(RoomDestroyedRequest) returns (RoomDestroyedResponse) {}
+
+  rpc ImmortalRoomAllocation(thetan.immortal.v1.ImmortalMatchFoundResponseProto) returns (ImmortalRoomAllocationResp) {}
 }
 
 message PingRequest {
-  string game_server_name = 1;
-  repeated RoomInfo rooms = 2;
+  string game_name = 1;
+  string game_server_name = 2;
+  repeated RoomInfo rooms = 3;
 }
 
 message PingResponse {
@@ -22,15 +26,17 @@ message PingResponse {
 }
 
 message PlayerConnectedRequest {
-  string game_server_name = 1;
-  string player_id = 2;
-  int32 player_count = 3;
+  string game_name = 1;
+  string game_server_name = 2;
+  string player_id = 3;
+  int32 player_count = 4;
 }
 
 message PlayerDisconnectedRequest {
-  string game_server_name = 1;
-  string player_id = 2;
-  int32 player_count = 3;
+  string game_name = 1;
+  string game_server_name = 2;
+  string player_id = 3;
+  int32 player_count = 4;
 }
 
 message PlayerStatusResponse {}
@@ -41,9 +47,18 @@ message RoomInfo {
 }
 
 message RoomDestroyedRequest {
-  string room_id = 1;
+  string game_name = 1;
+  string game_server_name = 2;
+  string room_id = 3;
 }
 
 message RoomDestroyedResponse {
   // Thêm các trường phản hồi tùy thuộc vào yêu cầu của bạn
+}
+
+message ImmortalRoomAllocationResp {
+  //fishnet ip
+  string server_ip = 1;
+  //matchid
+  string room_id = 2;
 }
