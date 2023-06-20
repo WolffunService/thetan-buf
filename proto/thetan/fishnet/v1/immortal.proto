@@ -6,9 +6,10 @@ option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_fishnet_immorta
 option csharp_namespace = "Thetan.FishNet.Immortal.V1";
 
 message CreateRoomResp {
-
+  bool isSuccess = 1;
 }
 
 service ThetanFishNetImmortal {
+
   rpc CreateRoom(thetan.immortal.v1.ImmortalMatchFoundResponseProto) returns (CreateRoomResp);
 }
