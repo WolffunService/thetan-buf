@@ -26,37 +26,38 @@ namespace Thetan.Fishnet.Immortal.V1 {
           string.Concat(
             "CjF0aGV0YW4vZmlzaG5ldC9pbW1vcnRhbC92MS9maXN0bmV0X2ltbW9ydGFs",
             "LnByb3RvEhp0aGV0YW4uZmlzaG5ldC5pbW1vcnRhbC52MRohdGhldGFuL2lt",
-            "bW9ydGFsL3YxL2ltbW9ydGFsLnByb3RvIi4KDkNyZWF0ZVJvb21SZXNwEhwK",
-            "CWlzU3VjY2VzcxgBIAEoCFIJaXNTdWNjZXNzMoYBChVUaGV0YW5GaXNoTmV0",
-            "SW1tb3J0YWwSbQoKQ3JlYXRlUm9vbRIzLnRoZXRhbi5pbW1vcnRhbC52MS5J",
-            "bW1vcnRhbE1hdGNoRm91bmRSZXNwb25zZVByb3RvGioudGhldGFuLmZpc2hu",
-            "ZXQuaW1tb3J0YWwudjEuQ3JlYXRlUm9vbVJlc3BCigIKHmNvbS50aGV0YW4u",
-            "ZmlzaG5ldC5pbW1vcnRhbC52MUIURmlzdG5ldEltbW9ydGFsUHJvdG9QAVpH",
-            "dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2Zpc2huZXQvaW1tb3J0YWwvdjEv",
-            "dGhldGFuX2Zpc2huZXRfaW1tb3J0YWxfdjGiAgNURkmqAhpUaGV0YW4uRmlz",
-            "aG5ldC5JbW1vcnRhbC5WMcoCGlRoZXRhblxGaXNobmV0XEltbW9ydGFsXFYx",
-            "4gImVGhldGFuXEZpc2huZXRcSW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHqAh1U",
-            "aGV0YW46OkZpc2huZXQ6OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
+            "bW9ydGFsL3YxL2ltbW9ydGFsLnByb3RvIjIKElJvb21BbGxvY2F0aW9uUmVz",
+            "cBIcCglpc1N1Y2Nlc3MYASABKAhSCWlzU3VjY2VzczKOAQoVVGhldGFuRmlz",
+            "aE5ldEltbW9ydGFsEnUKDlJvb21BbGxvY2F0aW9uEjMudGhldGFuLmltbW9y",
+            "dGFsLnYxLkltbW9ydGFsTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8aLi50aGV0",
+            "YW4uZmlzaG5ldC5pbW1vcnRhbC52MS5Sb29tQWxsb2NhdGlvblJlc3BCigIK",
+            "HmNvbS50aGV0YW4uZmlzaG5ldC5pbW1vcnRhbC52MUIURmlzdG5ldEltbW9y",
+            "dGFsUHJvdG9QAVpHdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2Zpc2huZXQv",
+            "aW1tb3J0YWwvdjEvdGhldGFuX2Zpc2huZXRfaW1tb3J0YWxfdjGiAgNURkmq",
+            "AhpUaGV0YW4uRmlzaG5ldC5JbW1vcnRhbC5WMcoCGlRoZXRhblxGaXNobmV0",
+            "XEltbW9ydGFsXFYx4gImVGhldGFuXEZpc2huZXRcSW1tb3J0YWxcVjFcR1BC",
+            "TWV0YWRhdGHqAh1UaGV0YW46OkZpc2huZXQ6OkltbW9ydGFsOjpWMWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Immortal.V1.CreateRoomResp), global::Thetan.Fishnet.Immortal.V1.CreateRoomResp.Parser, new[]{ "IsSuccess" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp), global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp.Parser, new[]{ "IsSuccess" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class CreateRoomResp : pb::IMessage<CreateRoomResp>
+  public sealed partial class RoomAllocationResp : pb::IMessage<RoomAllocationResp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<CreateRoomResp> _parser = new pb::MessageParser<CreateRoomResp>(() => new CreateRoomResp());
+    private static readonly pb::MessageParser<RoomAllocationResp> _parser = new pb::MessageParser<RoomAllocationResp>(() => new RoomAllocationResp());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<CreateRoomResp> Parser { get { return _parser; } }
+    public static pb::MessageParser<RoomAllocationResp> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -72,7 +73,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreateRoomResp() {
+    public RoomAllocationResp() {
       OnConstruction();
     }
 
@@ -80,15 +81,15 @@ namespace Thetan.Fishnet.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreateRoomResp(CreateRoomResp other) : this() {
+    public RoomAllocationResp(RoomAllocationResp other) : this() {
       isSuccess_ = other.isSuccess_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreateRoomResp Clone() {
-      return new CreateRoomResp(this);
+    public RoomAllocationResp Clone() {
+      return new RoomAllocationResp(this);
     }
 
     /// <summary>Field number for the "isSuccess" field.</summary>
@@ -106,12 +107,12 @@ namespace Thetan.Fishnet.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as CreateRoomResp);
+      return Equals(other as RoomAllocationResp);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(CreateRoomResp other) {
+    public bool Equals(RoomAllocationResp other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -184,7 +185,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(CreateRoomResp other) {
+    public void MergeFrom(RoomAllocationResp other) {
       if (other == null) {
         return;
       }
