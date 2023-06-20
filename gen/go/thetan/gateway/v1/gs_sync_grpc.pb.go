@@ -11,6 +11,7 @@ import (
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
+	v1 "thetan-buf/gen/go/thetan/immortal/v1"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -19,9 +20,10 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ThetanGateway_Ping_FullMethodName               = "/thetan.gateway.v1.ThetanGateway/Ping"
-	ThetanGateway_PlayerConnected_FullMethodName    = "/thetan.gateway.v1.ThetanGateway/PlayerConnected"
-	ThetanGateway_PlayerDisconnected_FullMethodName = "/thetan.gateway.v1.ThetanGateway/PlayerDisconnected"
+	ThetanGateway_Ping_FullMethodName                    = "/thetan.gateway.v1.ThetanGateway/Ping"
+	ThetanGateway_PlayerConnected_FullMethodName         = "/thetan.gateway.v1.ThetanGateway/PlayerConnected"
+	ThetanGateway_PlayerDisconnected_FullMethodName      = "/thetan.gateway.v1.ThetanGateway/PlayerDisconnected"
+	ThetanGateway_Immortal_RoomAllocation_FullMethodName = "/thetan.gateway.v1.ThetanGateway/Immortal_RoomAllocation"
 )
 
 // ThetanGatewayClient is the client API for ThetanGateway service.
@@ -31,6 +33,8 @@ type ThetanGatewayClient interface {
 	Ping(ctx context.Context, in *PingRequest, opts ...grpc.CallOption) (*PingResponse, error)
 	PlayerConnected(ctx context.Context, in *PlayerConnectedRequest, opts ...grpc.CallOption) (*PlayerStatusResponse, error)
 	PlayerDisconnected(ctx context.Context, in *PlayerDisconnectedRequest, opts ...grpc.CallOption) (*PlayerStatusResponse, error)
+	//Immortal
+	Immortal_RoomAllocation(ctx context.Context, in *v1.ImmortalMatchFoundResponseProto, opts ...grpc.CallOption) (*Immortal_RoomAllocationResp, error)
 }
 
 type thetanGatewayClient struct {
@@ -68,6 +72,15 @@ func (c *thetanGatewayClient) PlayerDisconnected(ctx context.Context, in *Player
 	return out, nil
 }
 
+func (c *thetanGatewayClient) Immortal_RoomAllocation(ctx context.Context, in *v1.ImmortalMatchFoundResponseProto, opts ...grpc.CallOption) (*Immortal_RoomAllocationResp, error) {
+	out := new(Immortal_RoomAllocationResp)
+	err := c.cc.Invoke(ctx, ThetanGateway_Immortal_RoomAllocation_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanGatewayServer is the server API for ThetanGateway service.
 // All implementations must embed UnimplementedThetanGatewayServer
 // for forward compatibility
@@ -75,6 +88,8 @@ type ThetanGatewayServer interface {
 	Ping(context.Context, *PingRequest) (*PingResponse, error)
 	PlayerConnected(context.Context, *PlayerConnectedRequest) (*PlayerStatusResponse, error)
 	PlayerDisconnected(context.Context, *PlayerDisconnectedRequest) (*PlayerStatusResponse, error)
+	//Immortal
+	Immortal_RoomAllocation(context.Context, *v1.ImmortalMatchFoundResponseProto) (*Immortal_RoomAllocationResp, error)
 	mustEmbedUnimplementedThetanGatewayServer()
 }
 
@@ -90,6 +105,9 @@ func (UnimplementedThetanGatewayServer) PlayerConnected(context.Context, *Player
 }
 func (UnimplementedThetanGatewayServer) PlayerDisconnected(context.Context, *PlayerDisconnectedRequest) (*PlayerStatusResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method PlayerDisconnected not implemented")
+}
+func (UnimplementedThetanGatewayServer) Immortal_RoomAllocation(context.Context, *v1.ImmortalMatchFoundResponseProto) (*Immortal_RoomAllocationResp, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Immortal_RoomAllocation not implemented")
 }
 func (UnimplementedThetanGatewayServer) mustEmbedUnimplementedThetanGatewayServer() {}
 
@@ -158,6 +176,24 @@ func _ThetanGateway_PlayerDisconnected_Handler(srv interface{}, ctx context.Cont
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanGateway_Immortal_RoomAllocation_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(v1.ImmortalMatchFoundResponseProto)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanGatewayServer).Immortal_RoomAllocation(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanGateway_Immortal_RoomAllocation_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanGatewayServer).Immortal_RoomAllocation(ctx, req.(*v1.ImmortalMatchFoundResponseProto))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanGateway_ServiceDesc is the grpc.ServiceDesc for ThetanGateway service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -176,6 +212,10 @@ var ThetanGateway_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "PlayerDisconnected",
 			Handler:    _ThetanGateway_PlayerDisconnected_Handler,
+		},
+		{
+			MethodName: "Immortal_RoomAllocation",
+			Handler:    _ThetanGateway_Immortal_RoomAllocation_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
