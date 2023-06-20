@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             (unknown)
-// source: thetan/fishnet/immortal/v1/fistnet_immortal.proto
+// source: thetan/fishnet/immortal/v1/fishnet_immortal.proto
 
 package thetan_fishnet_immortal_v1
 
@@ -106,5 +106,5 @@ var ThetanFishNetImmortal_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "thetan/fishnet/immortal/v1/fistnet_immortal.proto",
+	Metadata: "thetan/fishnet/immortal/v1/fishnet_immortal.proto",
 }

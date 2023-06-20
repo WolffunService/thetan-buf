@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.30.0
 // 	protoc        (unknown)
-// source: thetan/fishnet/immortal/v1/fistnet_immortal.proto
+// source: thetan/fishnet/immortal/v1/fishnet_immortal.proto
 
 package thetan_fishnet_immortal_v1
 
@@ -32,7 +32,7 @@ type RoomAllocationResp struct {
 func (x *RoomAllocationResp) Reset() {
 	*x = RoomAllocationResp{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_msgTypes[0]
+		mi := &file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -45,7 +45,7 @@ func (x *RoomAllocationResp) String() string {
 func (*RoomAllocationResp) ProtoMessage() {}
 
 func (x *RoomAllocationResp) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_msgTypes[0]
+	mi := &file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -58,7 +58,7 @@ func (x *RoomAllocationResp) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RoomAllocationResp.ProtoReflect.Descriptor instead.
 func (*RoomAllocationResp) Descriptor() ([]byte, []int) {
-	return file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDescGZIP(), []int{0}
+	return file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *RoomAllocationResp) GetIsSuccess() bool {
@@ -68,12 +68,12 @@ func (x *RoomAllocationResp) GetIsSuccess() bool {
 	return false
 }
 
-var File_thetan_fishnet_immortal_v1_fistnet_immortal_proto protoreflect.FileDescriptor
+var File_thetan_fishnet_immortal_v1_fishnet_immortal_proto protoreflect.FileDescriptor
 
-var file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDesc = []byte{
+var file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDesc = []byte{
 	0x0a, 0x31, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2f, 0x66, 0x69, 0x73, 0x68, 0x6e, 0x65, 0x74,
 	0x2f, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x2f, 0x76, 0x31, 0x2f, 0x66, 0x69, 0x73,
-	0x74, 0x6e, 0x65, 0x74, 0x5f, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x2e, 0x70, 0x72,
+	0x68, 0x6e, 0x65, 0x74, 0x5f, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x2e, 0x70, 0x72,
 	0x6f, 0x74, 0x6f, 0x12, 0x1a, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x66, 0x69, 0x73, 0x68,
 	0x6e, 0x65, 0x74, 0x2e, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x2e, 0x76, 0x31, 0x1a,
 	0x21, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2f, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c,
@@ -92,7 +92,7 @@ var file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDesc = []byte{
 	0x6c, 0x2e, 0x76, 0x31, 0x2e, 0x52, 0x6f, 0x6f, 0x6d, 0x41, 0x6c, 0x6c, 0x6f, 0x63, 0x61, 0x74,
 	0x69, 0x6f, 0x6e, 0x52, 0x65, 0x73, 0x70, 0x42, 0x8a, 0x02, 0x0a, 0x1e, 0x63, 0x6f, 0x6d, 0x2e,
 	0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x66, 0x69, 0x73, 0x68, 0x6e, 0x65, 0x74, 0x2e, 0x69,
-	0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x2e, 0x76, 0x31, 0x42, 0x14, 0x46, 0x69, 0x73, 0x74,
+	0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x2e, 0x76, 0x31, 0x42, 0x14, 0x46, 0x69, 0x73, 0x68,
 	0x6e, 0x65, 0x74, 0x49, 0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x50, 0x72, 0x6f, 0x74, 0x6f,
 	0x50, 0x01, 0x5a, 0x47, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2d, 0x62, 0x75, 0x66, 0x2f, 0x67,
 	0x65, 0x6e, 0x2f, 0x67, 0x6f, 0x2f, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2f, 0x66, 0x69, 0x73,
@@ -111,23 +111,23 @@ var file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDesc = []byte{
 }
 
 var (
-	file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDescOnce sync.Once
-	file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDescData = file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDesc
+	file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDescOnce sync.Once
+	file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDescData = file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDesc
 )
 
-func file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDescGZIP() []byte {
-	file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDescOnce.Do(func() {
-		file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDescData = protoimpl.X.CompressGZIP(file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDescData)
+func file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDescGZIP() []byte {
+	file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDescOnce.Do(func() {
+		file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDescData = protoimpl.X.CompressGZIP(file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDescData)
 	})
-	return file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDescData
+	return file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDescData
 }
 
-var file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_goTypes = []interface{}{
+var file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_goTypes = []interface{}{
 	(*RoomAllocationResp)(nil),                 // 0: thetan.fishnet.immortal.v1.RoomAllocationResp
 	(*v1.ImmortalMatchFoundResponseProto)(nil), // 1: thetan.immortal.v1.ImmortalMatchFoundResponseProto
 }
-var file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_depIdxs = []int32{
+var file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_depIdxs = []int32{
 	1, // 0: thetan.fishnet.immortal.v1.ThetanFishNetImmortal.RoomAllocation:input_type -> thetan.immortal.v1.ImmortalMatchFoundResponseProto
 	0, // 1: thetan.fishnet.immortal.v1.ThetanFishNetImmortal.RoomAllocation:output_type -> thetan.fishnet.immortal.v1.RoomAllocationResp
 	1, // [1:2] is the sub-list for method output_type
@@ -137,13 +137,13 @@ var file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_init() }
-func file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_init() {
-	if File_thetan_fishnet_immortal_v1_fistnet_immortal_proto != nil {
+func init() { file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_init() }
+func file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_init() {
+	if File_thetan_fishnet_immortal_v1_fishnet_immortal_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*RoomAllocationResp); i {
 			case 0:
 				return &v.state
@@ -160,18 +160,18 @@ func file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDesc,
+			RawDescriptor: file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_goTypes,
-		DependencyIndexes: file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_depIdxs,
-		MessageInfos:      file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_msgTypes,
+		GoTypes:           file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_goTypes,
+		DependencyIndexes: file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_depIdxs,
+		MessageInfos:      file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_msgTypes,
 	}.Build()
-	File_thetan_fishnet_immortal_v1_fistnet_immortal_proto = out.File
-	file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_rawDesc = nil
-	file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_goTypes = nil
-	file_thetan_fishnet_immortal_v1_fistnet_immortal_proto_depIdxs = nil
+	File_thetan_fishnet_immortal_v1_fishnet_immortal_proto = out.File
+	file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_rawDesc = nil
+	file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_goTypes = nil
+	file_thetan_fishnet_immortal_v1_fishnet_immortal_proto_depIdxs = nil
 }
