@@ -24,7 +24,7 @@ message ImmortalPlayerInfoMatchProto {
   int32 rank = 10;
   Hero hero = 11;
   repeated Skill skills = 12;
-  int32 botBrain = 13;
+  int32 botBrain = 13; // default value is human
   repeated int32 regions = 14;
 }
 
