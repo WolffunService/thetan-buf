@@ -100,7 +100,7 @@ type ImmortalPlayerInfoMatchProto struct {
 	Rank         int32    `protobuf:"varint,10,opt,name=rank,proto3" json:"rank,omitempty"`
 	Hero         *Hero    `protobuf:"bytes,11,opt,name=hero,proto3" json:"hero,omitempty"`
 	Skills       []*Skill `protobuf:"bytes,12,rep,name=skills,proto3" json:"skills,omitempty"`
-	BotBrain     int32    `protobuf:"varint,13,opt,name=botBrain,proto3" json:"botBrain,omitempty"`
+	BotBrain     int32    `protobuf:"varint,13,opt,name=botBrain,proto3" json:"botBrain,omitempty"` // default value is human
 	Regions      []int32  `protobuf:"varint,14,rep,packed,name=regions,proto3" json:"regions,omitempty"`
 }
 

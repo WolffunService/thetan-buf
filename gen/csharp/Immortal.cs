@@ -579,6 +579,9 @@ namespace Thetan.Immortal.V1 {
     /// <summary>Field number for the "botBrain" field.</summary>
     public const int BotBrainFieldNumber = 13;
     private int botBrain_;
+    /// <summary>
+    /// default value is human
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int BotBrain {
