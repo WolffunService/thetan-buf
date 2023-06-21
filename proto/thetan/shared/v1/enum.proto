@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package thetan.shared.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/shared/v1;thetan_shared_v1";
+option csharp_namespace = "Thetan.shared.V1";
+
+enum GameID {
+  GAME_ID_NONE = 0;
+  GAME_ID_ARENA = 1;
+  GAME_ID_RIVAL = 2;
+  GAME_ID_IMMORTAL = 3;
+}
