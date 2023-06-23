@@ -51,26 +51,26 @@ message ImmortalCancelTicketResponse {
   string ticketID = 3;
 }
 
-message SearchUserRankingRequest {
+message SearchBotRankingRequest {
   repeated string userIDs = 1;
 }
 
-message SearchUserRankingResponse {
-  map<string, UserRanking> userRankingByUserID = 1;
+message SearchBotRankingResponse {
+  map<string, BotRanking> userRankingByUserID = 1;
 }
 
-message UserRanking {
+message BotRanking {
   string userID = 1;
   int32 rank = 2;
   int32 trophy = 3;
 }
 
-message CreateManyUserRankingRequest {
-  repeated UserRanking ListUserRanking = 1;
+message CreateManyBotRankingRequest {
+  repeated BotRanking ListBotRanking = 1;
 }
 
-message CreateManyUserRankingResponse {
-  map<string, UserRanking> userRankingByUserID = 1;
+message CreateManyBotRankingResponse {
+  map<string, BotRanking> botRankingByBotID = 1;
 }
 
 message SearchPlayerInfoRequest {
@@ -107,12 +107,13 @@ message ImmortalTicketData {
 }
 
 service ImmortalService {
-  // For bot
-  rpc SearchUserRanking (SearchUserRankingRequest) returns (SearchUserRankingResponse) {}
-  rpc CreateManyUserRanking (CreateManyUserRankingRequest) returns (CreateManyUserRankingResponse) {}
-
   rpc SearchPlayerInfo(SearchPlayerInfoRequest) returns (SearchPlayerInfoResponse) {}
   rpc GetUserProfile(GetUserProfileRequest) returns (GetUserProfileResponse) {}
+}
+
+service BotImmortalService {
+  rpc SearchBotRanking (SearchBotRankingRequest) returns (SearchBotRankingResponse) {}
+  rpc CreateManyBotRanking (CreateManyBotRankingRequest) returns (CreateManyBotRankingResponse) {}
 }
 
 service ImmortalMatchDirectorService {

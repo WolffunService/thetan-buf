@@ -19,19 +19,14 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ImmortalService_SearchUserRanking_FullMethodName     = "/thetan.immortal.v1.ImmortalService/SearchUserRanking"
-	ImmortalService_CreateManyUserRanking_FullMethodName = "/thetan.immortal.v1.ImmortalService/CreateManyUserRanking"
-	ImmortalService_SearchPlayerInfo_FullMethodName      = "/thetan.immortal.v1.ImmortalService/SearchPlayerInfo"
-	ImmortalService_GetUserProfile_FullMethodName        = "/thetan.immortal.v1.ImmortalService/GetUserProfile"
+	ImmortalService_SearchPlayerInfo_FullMethodName = "/thetan.immortal.v1.ImmortalService/SearchPlayerInfo"
+	ImmortalService_GetUserProfile_FullMethodName   = "/thetan.immortal.v1.ImmortalService/GetUserProfile"
 )
 
 // ImmortalServiceClient is the client API for ImmortalService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ImmortalServiceClient interface {
-	// For bot
-	SearchUserRanking(ctx context.Context, in *SearchUserRankingRequest, opts ...grpc.CallOption) (*SearchUserRankingResponse, error)
-	CreateManyUserRanking(ctx context.Context, in *CreateManyUserRankingRequest, opts ...grpc.CallOption) (*CreateManyUserRankingResponse, error)
 	SearchPlayerInfo(ctx context.Context, in *SearchPlayerInfoRequest, opts ...grpc.CallOption) (*SearchPlayerInfoResponse, error)
 	GetUserProfile(ctx context.Context, in *GetUserProfileRequest, opts ...grpc.CallOption) (*GetUserProfileResponse, error)
 }
@@ -42,24 +37,6 @@ type immortalServiceClient struct {
 
 func NewImmortalServiceClient(cc grpc.ClientConnInterface) ImmortalServiceClient {
 	return &immortalServiceClient{cc}
-}
-
-func (c *immortalServiceClient) SearchUserRanking(ctx context.Context, in *SearchUserRankingRequest, opts ...grpc.CallOption) (*SearchUserRankingResponse, error) {
-	out := new(SearchUserRankingResponse)
-	err := c.cc.Invoke(ctx, ImmortalService_SearchUserRanking_FullMethodName, in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
-}
-
-func (c *immortalServiceClient) CreateManyUserRanking(ctx context.Context, in *CreateManyUserRankingRequest, opts ...grpc.CallOption) (*CreateManyUserRankingResponse, error) {
-	out := new(CreateManyUserRankingResponse)
-	err := c.cc.Invoke(ctx, ImmortalService_CreateManyUserRanking_FullMethodName, in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
 }
 
 func (c *immortalServiceClient) SearchPlayerInfo(ctx context.Context, in *SearchPlayerInfoRequest, opts ...grpc.CallOption) (*SearchPlayerInfoResponse, error) {
@@ -84,9 +61,6 @@ func (c *immortalServiceClient) GetUserProfile(ctx context.Context, in *GetUserP
 // All implementations must embed UnimplementedImmortalServiceServer
 // for forward compatibility
 type ImmortalServiceServer interface {
-	// For bot
-	SearchUserRanking(context.Context, *SearchUserRankingRequest) (*SearchUserRankingResponse, error)
-	CreateManyUserRanking(context.Context, *CreateManyUserRankingRequest) (*CreateManyUserRankingResponse, error)
 	SearchPlayerInfo(context.Context, *SearchPlayerInfoRequest) (*SearchPlayerInfoResponse, error)
 	GetUserProfile(context.Context, *GetUserProfileRequest) (*GetUserProfileResponse, error)
 	mustEmbedUnimplementedImmortalServiceServer()
@@ -96,12 +70,6 @@ type ImmortalServiceServer interface {
 type UnimplementedImmortalServiceServer struct {
 }
 
-func (UnimplementedImmortalServiceServer) SearchUserRanking(context.Context, *SearchUserRankingRequest) (*SearchUserRankingResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method SearchUserRanking not implemented")
-}
-func (UnimplementedImmortalServiceServer) CreateManyUserRanking(context.Context, *CreateManyUserRankingRequest) (*CreateManyUserRankingResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CreateManyUserRanking not implemented")
-}
 func (UnimplementedImmortalServiceServer) SearchPlayerInfo(context.Context, *SearchPlayerInfoRequest) (*SearchPlayerInfoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SearchPlayerInfo not implemented")
 }
@@ -119,42 +87,6 @@ type UnsafeImmortalServiceServer interface {
 
 func RegisterImmortalServiceServer(s grpc.ServiceRegistrar, srv ImmortalServiceServer) {
 	s.RegisterService(&ImmortalService_ServiceDesc, srv)
-}
-
-func _ImmortalService_SearchUserRanking_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(SearchUserRankingRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ImmortalServiceServer).SearchUserRanking(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ImmortalService_SearchUserRanking_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ImmortalServiceServer).SearchUserRanking(ctx, req.(*SearchUserRankingRequest))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
-func _ImmortalService_CreateManyUserRanking_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(CreateManyUserRankingRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ImmortalServiceServer).CreateManyUserRanking(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ImmortalService_CreateManyUserRanking_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ImmortalServiceServer).CreateManyUserRanking(ctx, req.(*CreateManyUserRankingRequest))
-	}
-	return interceptor(ctx, in, info, handler)
 }
 
 func _ImmortalService_SearchPlayerInfo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
@@ -201,20 +133,139 @@ var ImmortalService_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*ImmortalServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "SearchUserRanking",
-			Handler:    _ImmortalService_SearchUserRanking_Handler,
-		},
-		{
-			MethodName: "CreateManyUserRanking",
-			Handler:    _ImmortalService_CreateManyUserRanking_Handler,
-		},
-		{
 			MethodName: "SearchPlayerInfo",
 			Handler:    _ImmortalService_SearchPlayerInfo_Handler,
 		},
 		{
 			MethodName: "GetUserProfile",
 			Handler:    _ImmortalService_GetUserProfile_Handler,
+		},
+	},
+	Streams:  []grpc.StreamDesc{},
+	Metadata: "thetan/immortal/v1/immortal.proto",
+}
+
+const (
+	BotImmortalService_SearchBotRanking_FullMethodName     = "/thetan.immortal.v1.BotImmortalService/SearchBotRanking"
+	BotImmortalService_CreateManyBotRanking_FullMethodName = "/thetan.immortal.v1.BotImmortalService/CreateManyBotRanking"
+)
+
+// BotImmortalServiceClient is the client API for BotImmortalService service.
+//
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+type BotImmortalServiceClient interface {
+	SearchBotRanking(ctx context.Context, in *SearchBotRankingRequest, opts ...grpc.CallOption) (*SearchBotRankingResponse, error)
+	CreateManyBotRanking(ctx context.Context, in *CreateManyBotRankingRequest, opts ...grpc.CallOption) (*CreateManyBotRankingResponse, error)
+}
+
+type botImmortalServiceClient struct {
+	cc grpc.ClientConnInterface
+}
+
+func NewBotImmortalServiceClient(cc grpc.ClientConnInterface) BotImmortalServiceClient {
+	return &botImmortalServiceClient{cc}
+}
+
+func (c *botImmortalServiceClient) SearchBotRanking(ctx context.Context, in *SearchBotRankingRequest, opts ...grpc.CallOption) (*SearchBotRankingResponse, error) {
+	out := new(SearchBotRankingResponse)
+	err := c.cc.Invoke(ctx, BotImmortalService_SearchBotRanking_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *botImmortalServiceClient) CreateManyBotRanking(ctx context.Context, in *CreateManyBotRankingRequest, opts ...grpc.CallOption) (*CreateManyBotRankingResponse, error) {
+	out := new(CreateManyBotRankingResponse)
+	err := c.cc.Invoke(ctx, BotImmortalService_CreateManyBotRanking_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+// BotImmortalServiceServer is the server API for BotImmortalService service.
+// All implementations must embed UnimplementedBotImmortalServiceServer
+// for forward compatibility
+type BotImmortalServiceServer interface {
+	SearchBotRanking(context.Context, *SearchBotRankingRequest) (*SearchBotRankingResponse, error)
+	CreateManyBotRanking(context.Context, *CreateManyBotRankingRequest) (*CreateManyBotRankingResponse, error)
+	mustEmbedUnimplementedBotImmortalServiceServer()
+}
+
+// UnimplementedBotImmortalServiceServer must be embedded to have forward compatible implementations.
+type UnimplementedBotImmortalServiceServer struct {
+}
+
+func (UnimplementedBotImmortalServiceServer) SearchBotRanking(context.Context, *SearchBotRankingRequest) (*SearchBotRankingResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SearchBotRanking not implemented")
+}
+func (UnimplementedBotImmortalServiceServer) CreateManyBotRanking(context.Context, *CreateManyBotRankingRequest) (*CreateManyBotRankingResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateManyBotRanking not implemented")
+}
+func (UnimplementedBotImmortalServiceServer) mustEmbedUnimplementedBotImmortalServiceServer() {}
+
+// UnsafeBotImmortalServiceServer may be embedded to opt out of forward compatibility for this service.
+// Use of this interface is not recommended, as added methods to BotImmortalServiceServer will
+// result in compilation errors.
+type UnsafeBotImmortalServiceServer interface {
+	mustEmbedUnimplementedBotImmortalServiceServer()
+}
+
+func RegisterBotImmortalServiceServer(s grpc.ServiceRegistrar, srv BotImmortalServiceServer) {
+	s.RegisterService(&BotImmortalService_ServiceDesc, srv)
+}
+
+func _BotImmortalService_SearchBotRanking_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SearchBotRankingRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(BotImmortalServiceServer).SearchBotRanking(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: BotImmortalService_SearchBotRanking_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(BotImmortalServiceServer).SearchBotRanking(ctx, req.(*SearchBotRankingRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _BotImmortalService_CreateManyBotRanking_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CreateManyBotRankingRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(BotImmortalServiceServer).CreateManyBotRanking(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: BotImmortalService_CreateManyBotRanking_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(BotImmortalServiceServer).CreateManyBotRanking(ctx, req.(*CreateManyBotRankingRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+// BotImmortalService_ServiceDesc is the grpc.ServiceDesc for BotImmortalService service.
+// It's only intended for direct use with grpc.RegisterService,
+// and not to be introspected or modified (even as a copy)
+var BotImmortalService_ServiceDesc = grpc.ServiceDesc{
+	ServiceName: "thetan.immortal.v1.BotImmortalService",
+	HandlerType: (*BotImmortalServiceServer)(nil),
+	Methods: []grpc.MethodDesc{
+		{
+			MethodName: "SearchBotRanking",
+			Handler:    _BotImmortalService_SearchBotRanking_Handler,
+		},
+		{
+			MethodName: "CreateManyBotRanking",
+			Handler:    _BotImmortalService_CreateManyBotRanking_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
