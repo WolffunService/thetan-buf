@@ -45,3 +45,9 @@ message Immortal_RoomAllocationResp{
   //matchid
   string room_id = 3;
 }
+
+// nên đặt bên proto của match-director nhưng để đây để tránh import cycle
+message Immortal_MatchFoundForMultiplayer {
+  Immortal_RoomAllocationResp roomAlloc = 1;
+  repeated string partyIDs = 2;
+}
