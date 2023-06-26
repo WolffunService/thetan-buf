@@ -2,76 +2,10 @@ syntax = "proto3";
 
 package thetan.immortal.v1;
 
+import "thetan/immortal/v1/immortal_match.proto";
+
 option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_immortal_v1";
 option csharp_namespace = "Thetan.Immortal.V1";
-
-message ImmortalMatchFoundResponseProto {
-  string matchID = 1;
-  repeated ImmortalPlayerInfoMatchProto players = 2;
-  int32 bestRegion = 3;
-}
-
-message ImmortalPlayerInfoMatchProto {
-  string playerID = 1;
-  string playerName = 2;
-  int32 avatarID = 3;
-  int32 frameID = 4;
-  int32 nameColorID = 5;
-  int32 battleCount = 6;
-  string partyID = 7;
-  int32 trophyRank = 8;
-  int32 trophySearch = 9;
-  int32 rank = 10;
-  Hero hero = 11;
-  repeated Skill skills = 12;
-  int32 botBrain = 13; // default value is human
-  repeated int32 regions = 14;
-}
-
-message Hero {
-  string heroID = 1;
-  int32 skinID = 2;
-  int32 level = 3;
-}
-
-message Skill {
-  uint32 skillID = 1;
-  int32 level = 2;
-}
-
-message ImmortalCancelTicketRequest {
-  string playerID = 1;
-  string partyID = 2;
-  string ticketID = 3;
-}
-
-message ImmortalCancelTicketResponse {
-  string playerID = 1;
-  string partyID = 2;
-  string ticketID = 3;
-}
-
-message SearchUserRankingRequest {
-  repeated string userIDs = 1;
-}
-
-message SearchUserRankingResponse {
-  map<string, UserRanking> userRankingByUserID = 1;
-}
-
-message UserRanking {
-  string userID = 1;
-  int32 rank = 2;
-  int32 trophy = 3;
-}
-
-message CreateManyUserRankingRequest {
-  repeated UserRanking ListUserRanking = 1;
-}
-
-message CreateManyUserRankingResponse {
-  map<string, UserRanking> userRankingByUserID = 1;
-}
 
 message SearchPlayerInfoRequest {
   repeated string playerIDs = 1;
@@ -96,25 +30,7 @@ message GetUserProfileResponse {
   int32 trophy = 8;
 }
 
-message CancelTicketSuccess {
-  string playerID = 1;
-  string partyID = 2;
-  string ticketID = 3;
-}
-
-message ImmortalTicketData {
-  repeated ImmortalPlayerInfoMatchProto players = 1;
-}
-
 service ImmortalService {
-  // For bot
-  rpc SearchUserRanking (SearchUserRankingRequest) returns (SearchUserRankingResponse) {}
-  rpc CreateManyUserRanking (CreateManyUserRankingRequest) returns (CreateManyUserRankingResponse) {}
-
   rpc SearchPlayerInfo(SearchPlayerInfoRequest) returns (SearchPlayerInfoResponse) {}
   rpc GetUserProfile(GetUserProfileRequest) returns (GetUserProfileResponse) {}
-}
-
-service ImmortalMatchDirectorService {
-  rpc CancelTicket(ImmortalCancelTicketRequest) returns (ImmortalCancelTicketResponse) {}
 }

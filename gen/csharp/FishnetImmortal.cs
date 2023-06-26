@@ -25,21 +25,21 @@ namespace Thetan.Fishnet.Immortal.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjF0aGV0YW4vZmlzaG5ldC9pbW1vcnRhbC92MS9maXNobmV0X2ltbW9ydGFs",
-            "LnByb3RvEhp0aGV0YW4uZmlzaG5ldC5pbW1vcnRhbC52MRohdGhldGFuL2lt",
-            "bW9ydGFsL3YxL2ltbW9ydGFsLnByb3RvIjIKElJvb21BbGxvY2F0aW9uUmVz",
-            "cBIcCglpc1N1Y2Nlc3MYASABKAhSCWlzU3VjY2VzczKOAQoVVGhldGFuRmlz",
-            "aE5ldEltbW9ydGFsEnUKDlJvb21BbGxvY2F0aW9uEjMudGhldGFuLmltbW9y",
-            "dGFsLnYxLkltbW9ydGFsTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8aLi50aGV0",
-            "YW4uZmlzaG5ldC5pbW1vcnRhbC52MS5Sb29tQWxsb2NhdGlvblJlc3BCigIK",
-            "HmNvbS50aGV0YW4uZmlzaG5ldC5pbW1vcnRhbC52MUIURmlzaG5ldEltbW9y",
-            "dGFsUHJvdG9QAVpHdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2Zpc2huZXQv",
-            "aW1tb3J0YWwvdjEvdGhldGFuX2Zpc2huZXRfaW1tb3J0YWxfdjGiAgNURkmq",
-            "AhpUaGV0YW4uRmlzaG5ldC5JbW1vcnRhbC5WMcoCGlRoZXRhblxGaXNobmV0",
-            "XEltbW9ydGFsXFYx4gImVGhldGFuXEZpc2huZXRcSW1tb3J0YWxcVjFcR1BC",
-            "TWV0YWRhdGHqAh1UaGV0YW46OkZpc2huZXQ6OkltbW9ydGFsOjpWMWIGcHJv",
-            "dG8z"));
+            "LnByb3RvEhp0aGV0YW4uZmlzaG5ldC5pbW1vcnRhbC52MRondGhldGFuL2lt",
+            "bW9ydGFsL3YxL2ltbW9ydGFsX21hdGNoLnByb3RvIjIKElJvb21BbGxvY2F0",
+            "aW9uUmVzcBIcCglpc1N1Y2Nlc3MYASABKAhSCWlzU3VjY2VzczKOAQoVVGhl",
+            "dGFuRmlzaE5ldEltbW9ydGFsEnUKDlJvb21BbGxvY2F0aW9uEjMudGhldGFu",
+            "LmltbW9ydGFsLnYxLkltbW9ydGFsTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8a",
+            "Li50aGV0YW4uZmlzaG5ldC5pbW1vcnRhbC52MS5Sb29tQWxsb2NhdGlvblJl",
+            "c3BCigIKHmNvbS50aGV0YW4uZmlzaG5ldC5pbW1vcnRhbC52MUIURmlzaG5l",
+            "dEltbW9ydGFsUHJvdG9QAVpHdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2Zp",
+            "c2huZXQvaW1tb3J0YWwvdjEvdGhldGFuX2Zpc2huZXRfaW1tb3J0YWxfdjGi",
+            "AgNURkmqAhpUaGV0YW4uRmlzaG5ldC5JbW1vcnRhbC5WMcoCGlRoZXRhblxG",
+            "aXNobmV0XEltbW9ydGFsXFYx4gImVGhldGFuXEZpc2huZXRcSW1tb3J0YWxc",
+            "VjFcR1BCTWV0YWRhdGHqAh1UaGV0YW46OkZpc2huZXQ6OkltbW9ydGFsOjpW",
+            "MWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalMatchReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp), global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp.Parser, new[]{ "IsSuccess" }, null, null, null, null)
           }));
