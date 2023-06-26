@@ -37,21 +37,24 @@ namespace Thetan.Gateway.V1 {
             "cGxheWVyQ291bnQiFgoUUGxheWVyU3RhdHVzUmVzcG9uc2UidAobSW1tb3J0",
             "YWxfUm9vbUFsbG9jYXRpb25SZXNwEhsKCXNlcnZlcl9pcBgBIAEoCVIIc2Vy",
             "dmVySXASHwoLc2VydmVyX3BvcnQYAiABKA1SCnNlcnZlclBvcnQSFwoHcm9v",
-            "bV9pZBgDIAEoCVIGcm9vbUlkMrUDCg1UaGV0YW5HYXRld2F5EkkKBFBpbmcS",
-            "Hi50aGV0YW4uZ2F0ZXdheS52MS5QaW5nUmVxdWVzdBofLnRoZXRhbi5nYXRl",
-            "d2F5LnYxLlBpbmdSZXNwb25zZSIAEmcKD1BsYXllckNvbm5lY3RlZBIpLnRo",
-            "ZXRhbi5nYXRld2F5LnYxLlBsYXllckNvbm5lY3RlZFJlcXVlc3QaJy50aGV0",
-            "YW4uZ2F0ZXdheS52MS5QbGF5ZXJTdGF0dXNSZXNwb25zZSIAEm0KElBsYXll",
-            "ckRpc2Nvbm5lY3RlZBIsLnRoZXRhbi5nYXRld2F5LnYxLlBsYXllckRpc2Nv",
-            "bm5lY3RlZFJlcXVlc3QaJy50aGV0YW4uZ2F0ZXdheS52MS5QbGF5ZXJTdGF0",
-            "dXNSZXNwb25zZSIAEoABChdJbW1vcnRhbF9Sb29tQWxsb2NhdGlvbhIzLnRo",
-            "ZXRhbi5pbW1vcnRhbC52MS5JbW1vcnRhbE1hdGNoRm91bmRSZXNwb25zZVBy",
-            "b3RvGi4udGhldGFuLmdhdGV3YXkudjEuSW1tb3J0YWxfUm9vbUFsbG9jYXRp",
-            "b25SZXNwIgBCwQEKFWNvbS50aGV0YW4uZ2F0ZXdheS52MUILR3NTeW5jUHJv",
-            "dG9QAVo1dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2dhdGV3YXkvdjE7dGhl",
-            "dGFuX2dhdGV3YXlfdjGiAgNUR1iqAhFUaGV0YW4uR2F0ZXdheS5WMcoCEVRo",
-            "ZXRhblxHYXRld2F5XFYx4gIdVGhldGFuXEdhdGV3YXlcVjFcR1BCTWV0YWRh",
-            "dGHqAhNUaGV0YW46OkdhdGV3YXk6OlYxYgZwcm90bzM="));
+            "bV9pZBgDIAEoCVIGcm9vbUlkIo0BCiFJbW1vcnRhbF9NYXRjaEZvdW5kRm9y",
+            "TXVsdGlwbGF5ZXISTAoJcm9vbUFsbG9jGAEgASgLMi4udGhldGFuLmdhdGV3",
+            "YXkudjEuSW1tb3J0YWxfUm9vbUFsbG9jYXRpb25SZXNwUglyb29tQWxsb2MS",
+            "GgoIcGFydHlJRHMYAiADKAlSCHBhcnR5SURzMrUDCg1UaGV0YW5HYXRld2F5",
+            "EkkKBFBpbmcSHi50aGV0YW4uZ2F0ZXdheS52MS5QaW5nUmVxdWVzdBofLnRo",
+            "ZXRhbi5nYXRld2F5LnYxLlBpbmdSZXNwb25zZSIAEmcKD1BsYXllckNvbm5l",
+            "Y3RlZBIpLnRoZXRhbi5nYXRld2F5LnYxLlBsYXllckNvbm5lY3RlZFJlcXVl",
+            "c3QaJy50aGV0YW4uZ2F0ZXdheS52MS5QbGF5ZXJTdGF0dXNSZXNwb25zZSIA",
+            "Em0KElBsYXllckRpc2Nvbm5lY3RlZBIsLnRoZXRhbi5nYXRld2F5LnYxLlBs",
+            "YXllckRpc2Nvbm5lY3RlZFJlcXVlc3QaJy50aGV0YW4uZ2F0ZXdheS52MS5Q",
+            "bGF5ZXJTdGF0dXNSZXNwb25zZSIAEoABChdJbW1vcnRhbF9Sb29tQWxsb2Nh",
+            "dGlvbhIzLnRoZXRhbi5pbW1vcnRhbC52MS5JbW1vcnRhbE1hdGNoRm91bmRS",
+            "ZXNwb25zZVByb3RvGi4udGhldGFuLmdhdGV3YXkudjEuSW1tb3J0YWxfUm9v",
+            "bUFsbG9jYXRpb25SZXNwIgBCwQEKFWNvbS50aGV0YW4uZ2F0ZXdheS52MUIL",
+            "R3NTeW5jUHJvdG9QAVo1dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2dhdGV3",
+            "YXkvdjE7dGhldGFuX2dhdGV3YXlfdjGiAgNUR1iqAhFUaGV0YW4uR2F0ZXdh",
+            "eS5WMcoCEVRoZXRhblxHYXRld2F5XFYx4gIdVGhldGFuXEdhdGV3YXlcVjFc",
+            "R1BCTWV0YWRhdGHqAhNUaGV0YW46OkdhdGV3YXk6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalMatchReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -60,7 +63,8 @@ namespace Thetan.Gateway.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.PlayerConnectedRequest), global::Thetan.Gateway.V1.PlayerConnectedRequest.Parser, new[]{ "GameServerName", "PlayerId", "PlayerCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.PlayerDisconnectedRequest), global::Thetan.Gateway.V1.PlayerDisconnectedRequest.Parser, new[]{ "GameServerName", "PlayerId", "PlayerCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.PlayerStatusResponse), global::Thetan.Gateway.V1.PlayerStatusResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.Immortal_RoomAllocationResp), global::Thetan.Gateway.V1.Immortal_RoomAllocationResp.Parser, new[]{ "ServerIp", "ServerPort", "RoomId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.Immortal_RoomAllocationResp), global::Thetan.Gateway.V1.Immortal_RoomAllocationResp.Parser, new[]{ "ServerIp", "ServerPort", "RoomId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.Immortal_MatchFoundForMultiplayer), global::Thetan.Gateway.V1.Immortal_MatchFoundForMultiplayer.Parser, new[]{ "RoomAlloc", "PartyIDs" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1383,6 +1387,233 @@ namespace Thetan.Gateway.V1 {
           }
           case 26: {
             RoomId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// nên đặt bên proto của match-director nhưng để đây để tránh import cycle
+  /// </summary>
+  public sealed partial class Immortal_MatchFoundForMultiplayer : pb::IMessage<Immortal_MatchFoundForMultiplayer>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Immortal_MatchFoundForMultiplayer> _parser = new pb::MessageParser<Immortal_MatchFoundForMultiplayer>(() => new Immortal_MatchFoundForMultiplayer());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<Immortal_MatchFoundForMultiplayer> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Gateway.V1.GsSyncReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Immortal_MatchFoundForMultiplayer() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Immortal_MatchFoundForMultiplayer(Immortal_MatchFoundForMultiplayer other) : this() {
+      roomAlloc_ = other.roomAlloc_ != null ? other.roomAlloc_.Clone() : null;
+      partyIDs_ = other.partyIDs_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Immortal_MatchFoundForMultiplayer Clone() {
+      return new Immortal_MatchFoundForMultiplayer(this);
+    }
+
+    /// <summary>Field number for the "roomAlloc" field.</summary>
+    public const int RoomAllocFieldNumber = 1;
+    private global::Thetan.Gateway.V1.Immortal_RoomAllocationResp roomAlloc_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Gateway.V1.Immortal_RoomAllocationResp RoomAlloc {
+      get { return roomAlloc_; }
+      set {
+        roomAlloc_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "partyIDs" field.</summary>
+    public const int PartyIDsFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_partyIDs_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> partyIDs_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> PartyIDs {
+      get { return partyIDs_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as Immortal_MatchFoundForMultiplayer);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(Immortal_MatchFoundForMultiplayer other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(RoomAlloc, other.RoomAlloc)) return false;
+      if(!partyIDs_.Equals(other.partyIDs_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (roomAlloc_ != null) hash ^= RoomAlloc.GetHashCode();
+      hash ^= partyIDs_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (roomAlloc_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(RoomAlloc);
+      }
+      partyIDs_.WriteTo(output, _repeated_partyIDs_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (roomAlloc_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(RoomAlloc);
+      }
+      partyIDs_.WriteTo(ref output, _repeated_partyIDs_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (roomAlloc_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomAlloc);
+      }
+      size += partyIDs_.CalculateSize(_repeated_partyIDs_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(Immortal_MatchFoundForMultiplayer other) {
+      if (other == null) {
+        return;
+      }
+      if (other.roomAlloc_ != null) {
+        if (roomAlloc_ == null) {
+          RoomAlloc = new global::Thetan.Gateway.V1.Immortal_RoomAllocationResp();
+        }
+        RoomAlloc.MergeFrom(other.RoomAlloc);
+      }
+      partyIDs_.Add(other.partyIDs_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (roomAlloc_ == null) {
+              RoomAlloc = new global::Thetan.Gateway.V1.Immortal_RoomAllocationResp();
+            }
+            input.ReadMessage(RoomAlloc);
+            break;
+          }
+          case 18: {
+            partyIDs_.AddEntriesFrom(input, _repeated_partyIDs_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (roomAlloc_ == null) {
+              RoomAlloc = new global::Thetan.Gateway.V1.Immortal_RoomAllocationResp();
+            }
+            input.ReadMessage(RoomAlloc);
+            break;
+          }
+          case 18: {
+            partyIDs_.AddEntriesFrom(ref input, _repeated_partyIDs_codec);
             break;
           }
         }
