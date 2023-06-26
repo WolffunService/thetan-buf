@@ -36,8 +36,8 @@ namespace Thetan.Gateway.V1 {
             "ZXJfaWQYAiABKAlSCHBsYXllcklkEiEKDHBsYXllcl9jb3VudBgDIAEoBVIL",
             "cGxheWVyQ291bnQiFgoUUGxheWVyU3RhdHVzUmVzcG9uc2UidAobSW1tb3J0",
             "YWxfUm9vbUFsbG9jYXRpb25SZXNwEhsKCXNlcnZlcl9pcBgBIAEoCVIIc2Vy",
-            "dmVySXASHwoLc2VydmVyX3BvcnQYAyABKA1SCnNlcnZlclBvcnQSFwoHcm9v",
-            "bV9pZBgCIAEoCVIGcm9vbUlkMrUDCg1UaGV0YW5HYXRld2F5EkkKBFBpbmcS",
+            "dmVySXASHwoLc2VydmVyX3BvcnQYAiABKA1SCnNlcnZlclBvcnQSFwoHcm9v",
+            "bV9pZBgDIAEoCVIGcm9vbUlkMrUDCg1UaGV0YW5HYXRld2F5EkkKBFBpbmcS",
             "Hi50aGV0YW4uZ2F0ZXdheS52MS5QaW5nUmVxdWVzdBofLnRoZXRhbi5nYXRl",
             "d2F5LnYxLlBpbmdSZXNwb25zZSIAEmcKD1BsYXllckNvbm5lY3RlZBIpLnRo",
             "ZXRhbi5nYXRld2F5LnYxLlBsYXllckNvbm5lY3RlZFJlcXVlc3QaJy50aGV0",
@@ -1185,7 +1185,7 @@ namespace Thetan.Gateway.V1 {
     }
 
     /// <summary>Field number for the "server_port" field.</summary>
-    public const int ServerPortFieldNumber = 3;
+    public const int ServerPortFieldNumber = 2;
     private uint serverPort_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1197,7 +1197,7 @@ namespace Thetan.Gateway.V1 {
     }
 
     /// <summary>Field number for the "room_id" field.</summary>
-    public const int RoomIdFieldNumber = 2;
+    public const int RoomIdFieldNumber = 3;
     private string roomId_ = "";
     /// <summary>
     ///matchid
@@ -1261,13 +1261,13 @@ namespace Thetan.Gateway.V1 {
         output.WriteRawTag(10);
         output.WriteString(ServerIp);
       }
-      if (RoomId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(RoomId);
-      }
       if (ServerPort != 0) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(16);
         output.WriteUInt32(ServerPort);
+      }
+      if (RoomId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(RoomId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1283,13 +1283,13 @@ namespace Thetan.Gateway.V1 {
         output.WriteRawTag(10);
         output.WriteString(ServerIp);
       }
-      if (RoomId.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(RoomId);
-      }
       if (ServerPort != 0) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(16);
         output.WriteUInt32(ServerPort);
+      }
+      if (RoomId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(RoomId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1350,12 +1350,12 @@ namespace Thetan.Gateway.V1 {
             ServerIp = input.ReadString();
             break;
           }
-          case 18: {
-            RoomId = input.ReadString();
+          case 16: {
+            ServerPort = input.ReadUInt32();
             break;
           }
-          case 24: {
-            ServerPort = input.ReadUInt32();
+          case 26: {
+            RoomId = input.ReadString();
             break;
           }
         }
@@ -1377,12 +1377,12 @@ namespace Thetan.Gateway.V1 {
             ServerIp = input.ReadString();
             break;
           }
-          case 18: {
-            RoomId = input.ReadString();
+          case 16: {
+            ServerPort = input.ReadUInt32();
             break;
           }
-          case 24: {
-            ServerPort = input.ReadUInt32();
+          case 26: {
+            RoomId = input.ReadString();
             break;
           }
         }
