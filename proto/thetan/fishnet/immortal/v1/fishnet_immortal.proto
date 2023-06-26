@@ -1,6 +1,6 @@
 syntax = "proto3";
 package thetan.fishnet.immortal.v1;
-import "thetan/immortal/v1/immortal.proto";
+import "thetan/immortal/v1/immortal_match.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/fishnet/immortal/v1/thetan_fishnet_immortal_v1";
 option csharp_namespace = "Thetan.FishNet.Immortal.V1";

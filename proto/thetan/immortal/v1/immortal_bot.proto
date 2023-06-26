@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package thetan.immortal.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_immortal_v1";
+option csharp_namespace = "Thetan.Immortal.V1";
+
+message SearchBotRankingRequest {
+  repeated string userIDs = 1;
+}
+
+message SearchBotRankingResponse {
+  map<string, BotRanking> userRankingByUserID = 1;
+}
+
+message BotRanking {
+  string userID = 1;
+  int32 rank = 2;
+  int32 trophy = 3;
+}
+
+message CreateManyBotRankingRequest {
+  repeated BotRanking ListBotRanking = 1;
+}
+
+message CreateManyBotRankingResponse {
+  map<string, BotRanking> botRankingByBotID = 1;
+}
+
+// BotImmortalService is a grpc server for handling bot profile.
+// This grpc is implemented in thetan-immortal-service and thetan-support calls it.
+service BotImmortalService {
+  rpc SearchBotRanking (SearchBotRankingRequest) returns (SearchBotRankingResponse) {}
+  rpc CreateManyBotRanking (CreateManyBotRankingRequest) returns (CreateManyBotRankingResponse) {}
+}
