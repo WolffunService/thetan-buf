@@ -41,6 +41,7 @@ message PlayerStatusResponse {}
 message Immortal_RoomAllocationResp{
   //fishnet ip
   string server_ip = 1;
+  uint32 server_port = 3;
   //matchid
   string room_id = 2;
 }
