@@ -32,6 +32,7 @@ message Hero {
   string heroID = 1;
   int32 skinID = 2;
   int32 level = 3;
+  int32 type = 4;
 }
 
 message Skill {
