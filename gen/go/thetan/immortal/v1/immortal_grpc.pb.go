@@ -19,20 +19,16 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ImmortalService_SearchUserRanking_FullMethodName     = "/thetan.immortal.v1.ImmortalService/SearchUserRanking"
-	ImmortalService_CreateManyUserRanking_FullMethodName = "/thetan.immortal.v1.ImmortalService/CreateManyUserRanking"
-	ImmortalService_SearchPlayerInfo_FullMethodName      = "/thetan.immortal.v1.ImmortalService/SearchPlayerInfo"
+	ImmortalService_SearchPlayerInfo_FullMethodName = "/thetan.immortal.v1.ImmortalService/SearchPlayerInfo"
+	ImmortalService_GetUserProfile_FullMethodName   = "/thetan.immortal.v1.ImmortalService/GetUserProfile"
 )
 
 // ImmortalServiceClient is the client API for ImmortalService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ImmortalServiceClient interface {
-	// For bot
-	SearchUserRanking(ctx context.Context, in *SearchUserRankingRequest, opts ...grpc.CallOption) (*SearchUserRankingResponse, error)
-	CreateManyUserRanking(ctx context.Context, in *CreateManyUserRankingRequest, opts ...grpc.CallOption) (*CreateManyUserRankingResponse, error)
-	// Search player info
 	SearchPlayerInfo(ctx context.Context, in *SearchPlayerInfoRequest, opts ...grpc.CallOption) (*SearchPlayerInfoResponse, error)
+	GetUserProfile(ctx context.Context, in *GetUserProfileRequest, opts ...grpc.CallOption) (*GetUserProfileResponse, error)
 }
 
 type immortalServiceClient struct {
@@ -41,24 +37,6 @@ type immortalServiceClient struct {
 
 func NewImmortalServiceClient(cc grpc.ClientConnInterface) ImmortalServiceClient {
 	return &immortalServiceClient{cc}
-}
-
-func (c *immortalServiceClient) SearchUserRanking(ctx context.Context, in *SearchUserRankingRequest, opts ...grpc.CallOption) (*SearchUserRankingResponse, error) {
-	out := new(SearchUserRankingResponse)
-	err := c.cc.Invoke(ctx, ImmortalService_SearchUserRanking_FullMethodName, in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
-}
-
-func (c *immortalServiceClient) CreateManyUserRanking(ctx context.Context, in *CreateManyUserRankingRequest, opts ...grpc.CallOption) (*CreateManyUserRankingResponse, error) {
-	out := new(CreateManyUserRankingResponse)
-	err := c.cc.Invoke(ctx, ImmortalService_CreateManyUserRanking_FullMethodName, in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
 }
 
 func (c *immortalServiceClient) SearchPlayerInfo(ctx context.Context, in *SearchPlayerInfoRequest, opts ...grpc.CallOption) (*SearchPlayerInfoResponse, error) {
@@ -70,15 +48,21 @@ func (c *immortalServiceClient) SearchPlayerInfo(ctx context.Context, in *Search
 	return out, nil
 }
 
+func (c *immortalServiceClient) GetUserProfile(ctx context.Context, in *GetUserProfileRequest, opts ...grpc.CallOption) (*GetUserProfileResponse, error) {
+	out := new(GetUserProfileResponse)
+	err := c.cc.Invoke(ctx, ImmortalService_GetUserProfile_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ImmortalServiceServer is the server API for ImmortalService service.
 // All implementations must embed UnimplementedImmortalServiceServer
 // for forward compatibility
 type ImmortalServiceServer interface {
-	// For bot
-	SearchUserRanking(context.Context, *SearchUserRankingRequest) (*SearchUserRankingResponse, error)
-	CreateManyUserRanking(context.Context, *CreateManyUserRankingRequest) (*CreateManyUserRankingResponse, error)
-	// Search player info
 	SearchPlayerInfo(context.Context, *SearchPlayerInfoRequest) (*SearchPlayerInfoResponse, error)
+	GetUserProfile(context.Context, *GetUserProfileRequest) (*GetUserProfileResponse, error)
 	mustEmbedUnimplementedImmortalServiceServer()
 }
 
@@ -86,14 +70,11 @@ type ImmortalServiceServer interface {
 type UnimplementedImmortalServiceServer struct {
 }
 
-func (UnimplementedImmortalServiceServer) SearchUserRanking(context.Context, *SearchUserRankingRequest) (*SearchUserRankingResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method SearchUserRanking not implemented")
-}
-func (UnimplementedImmortalServiceServer) CreateManyUserRanking(context.Context, *CreateManyUserRankingRequest) (*CreateManyUserRankingResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CreateManyUserRanking not implemented")
-}
 func (UnimplementedImmortalServiceServer) SearchPlayerInfo(context.Context, *SearchPlayerInfoRequest) (*SearchPlayerInfoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SearchPlayerInfo not implemented")
+}
+func (UnimplementedImmortalServiceServer) GetUserProfile(context.Context, *GetUserProfileRequest) (*GetUserProfileResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetUserProfile not implemented")
 }
 func (UnimplementedImmortalServiceServer) mustEmbedUnimplementedImmortalServiceServer() {}
 
@@ -106,42 +87,6 @@ type UnsafeImmortalServiceServer interface {
 
 func RegisterImmortalServiceServer(s grpc.ServiceRegistrar, srv ImmortalServiceServer) {
 	s.RegisterService(&ImmortalService_ServiceDesc, srv)
-}
-
-func _ImmortalService_SearchUserRanking_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(SearchUserRankingRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ImmortalServiceServer).SearchUserRanking(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ImmortalService_SearchUserRanking_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ImmortalServiceServer).SearchUserRanking(ctx, req.(*SearchUserRankingRequest))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
-func _ImmortalService_CreateManyUserRanking_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(CreateManyUserRankingRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ImmortalServiceServer).CreateManyUserRanking(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ImmortalService_CreateManyUserRanking_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ImmortalServiceServer).CreateManyUserRanking(ctx, req.(*CreateManyUserRankingRequest))
-	}
-	return interceptor(ctx, in, info, handler)
 }
 
 func _ImmortalService_SearchPlayerInfo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
@@ -162,6 +107,24 @@ func _ImmortalService_SearchPlayerInfo_Handler(srv interface{}, ctx context.Cont
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ImmortalService_GetUserProfile_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetUserProfileRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ImmortalServiceServer).GetUserProfile(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ImmortalService_GetUserProfile_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ImmortalServiceServer).GetUserProfile(ctx, req.(*GetUserProfileRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ImmortalService_ServiceDesc is the grpc.ServiceDesc for ImmortalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -170,107 +133,12 @@ var ImmortalService_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*ImmortalServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "SearchUserRanking",
-			Handler:    _ImmortalService_SearchUserRanking_Handler,
-		},
-		{
-			MethodName: "CreateManyUserRanking",
-			Handler:    _ImmortalService_CreateManyUserRanking_Handler,
-		},
-		{
 			MethodName: "SearchPlayerInfo",
 			Handler:    _ImmortalService_SearchPlayerInfo_Handler,
 		},
-	},
-	Streams:  []grpc.StreamDesc{},
-	Metadata: "thetan/immortal/v1/immortal.proto",
-}
-
-const (
-	ImmortalMatchDirectorService_CancelTicket_FullMethodName = "/thetan.immortal.v1.ImmortalMatchDirectorService/CancelTicket"
-)
-
-// ImmortalMatchDirectorServiceClient is the client API for ImmortalMatchDirectorService service.
-//
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
-type ImmortalMatchDirectorServiceClient interface {
-	CancelTicket(ctx context.Context, in *ImmortalCancelTicketRequest, opts ...grpc.CallOption) (*ImmortalCancelTicketResponse, error)
-}
-
-type immortalMatchDirectorServiceClient struct {
-	cc grpc.ClientConnInterface
-}
-
-func NewImmortalMatchDirectorServiceClient(cc grpc.ClientConnInterface) ImmortalMatchDirectorServiceClient {
-	return &immortalMatchDirectorServiceClient{cc}
-}
-
-func (c *immortalMatchDirectorServiceClient) CancelTicket(ctx context.Context, in *ImmortalCancelTicketRequest, opts ...grpc.CallOption) (*ImmortalCancelTicketResponse, error) {
-	out := new(ImmortalCancelTicketResponse)
-	err := c.cc.Invoke(ctx, ImmortalMatchDirectorService_CancelTicket_FullMethodName, in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
-}
-
-// ImmortalMatchDirectorServiceServer is the server API for ImmortalMatchDirectorService service.
-// All implementations must embed UnimplementedImmortalMatchDirectorServiceServer
-// for forward compatibility
-type ImmortalMatchDirectorServiceServer interface {
-	CancelTicket(context.Context, *ImmortalCancelTicketRequest) (*ImmortalCancelTicketResponse, error)
-	mustEmbedUnimplementedImmortalMatchDirectorServiceServer()
-}
-
-// UnimplementedImmortalMatchDirectorServiceServer must be embedded to have forward compatible implementations.
-type UnimplementedImmortalMatchDirectorServiceServer struct {
-}
-
-func (UnimplementedImmortalMatchDirectorServiceServer) CancelTicket(context.Context, *ImmortalCancelTicketRequest) (*ImmortalCancelTicketResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CancelTicket not implemented")
-}
-func (UnimplementedImmortalMatchDirectorServiceServer) mustEmbedUnimplementedImmortalMatchDirectorServiceServer() {
-}
-
-// UnsafeImmortalMatchDirectorServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to ImmortalMatchDirectorServiceServer will
-// result in compilation errors.
-type UnsafeImmortalMatchDirectorServiceServer interface {
-	mustEmbedUnimplementedImmortalMatchDirectorServiceServer()
-}
-
-func RegisterImmortalMatchDirectorServiceServer(s grpc.ServiceRegistrar, srv ImmortalMatchDirectorServiceServer) {
-	s.RegisterService(&ImmortalMatchDirectorService_ServiceDesc, srv)
-}
-
-func _ImmortalMatchDirectorService_CancelTicket_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ImmortalCancelTicketRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ImmortalMatchDirectorServiceServer).CancelTicket(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ImmortalMatchDirectorService_CancelTicket_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ImmortalMatchDirectorServiceServer).CancelTicket(ctx, req.(*ImmortalCancelTicketRequest))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
-// ImmortalMatchDirectorService_ServiceDesc is the grpc.ServiceDesc for ImmortalMatchDirectorService service.
-// It's only intended for direct use with grpc.RegisterService,
-// and not to be introspected or modified (even as a copy)
-var ImmortalMatchDirectorService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "thetan.immortal.v1.ImmortalMatchDirectorService",
-	HandlerType: (*ImmortalMatchDirectorServiceServer)(nil),
-	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "CancelTicket",
-			Handler:    _ImmortalMatchDirectorService_CancelTicket_Handler,
+			MethodName: "GetUserProfile",
+			Handler:    _ImmortalService_GetUserProfile_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package thetan.fishnet.immortal.v1;
+import "thetan/immortal/v1/immortal_match.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/fishnet/immortal/v1/thetan_fishnet_immortal_v1";
+option csharp_namespace = "Thetan.FishNet.Immortal.V1";
+
+
+message RoomAllocationResp {
+  bool isSuccess = 1;
+}
+
+service ThetanFishNetImmortal {
+  rpc RoomAllocation(thetan.immortal.v1.ImmortalMatchFoundResponseProto) returns (RoomAllocationResp);
+}
