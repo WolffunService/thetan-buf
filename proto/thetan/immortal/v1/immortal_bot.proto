@@ -6,15 +6,15 @@ option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_immortal_v1";
 option csharp_namespace = "Thetan.Immortal.V1";
 
 message SearchBotRankingRequest {
-  repeated string userIDs = 1;
+  repeated string botIDs = 1;
 }
 
 message SearchBotRankingResponse {
-  map<string, BotRanking> userRankingByUserID = 1;
+  map<string, BotRanking> botRankingByBotID = 1;
 }
 
 message BotRanking {
-  string userID = 1;
+  string botID = 1;
   int32 rank = 2;
   int32 trophy = 3;
 }

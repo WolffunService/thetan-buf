@@ -25,40 +25,40 @@ namespace Thetan.Immortal.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiV0aGV0YW4vaW1tb3J0YWwvdjEvaW1tb3J0YWxfYm90LnByb3RvEhJ0aGV0",
-            "YW4uaW1tb3J0YWwudjEiMwoXU2VhcmNoQm90UmFua2luZ1JlcXVlc3QSGAoH",
-            "dXNlcklEcxgBIAMoCVIHdXNlcklEcyL7AQoYU2VhcmNoQm90UmFua2luZ1Jl",
-            "c3BvbnNlEncKE3VzZXJSYW5raW5nQnlVc2VySUQYASADKAsyRS50aGV0YW4u",
-            "aW1tb3J0YWwudjEuU2VhcmNoQm90UmFua2luZ1Jlc3BvbnNlLlVzZXJSYW5r",
-            "aW5nQnlVc2VySURFbnRyeVITdXNlclJhbmtpbmdCeVVzZXJJRBpmChhVc2Vy",
-            "UmFua2luZ0J5VXNlcklERW50cnkSEAoDa2V5GAEgASgJUgNrZXkSNAoFdmFs",
-            "dWUYAiABKAsyHi50aGV0YW4uaW1tb3J0YWwudjEuQm90UmFua2luZ1IFdmFs",
-            "dWU6AjgBIlAKCkJvdFJhbmtpbmcSFgoGdXNlcklEGAEgASgJUgZ1c2VySUQS",
-            "EgoEcmFuaxgCIAEoBVIEcmFuaxIWCgZ0cm9waHkYAyABKAVSBnRyb3BoeSJl",
-            "ChtDcmVhdGVNYW55Qm90UmFua2luZ1JlcXVlc3QSRgoOTGlzdEJvdFJhbmtp",
-            "bmcYASADKAsyHi50aGV0YW4uaW1tb3J0YWwudjEuQm90UmFua2luZ1IOTGlz",
-            "dEJvdFJhbmtpbmci+wEKHENyZWF0ZU1hbnlCb3RSYW5raW5nUmVzcG9uc2US",
-            "dQoRYm90UmFua2luZ0J5Qm90SUQYASADKAsyRy50aGV0YW4uaW1tb3J0YWwu",
-            "djEuQ3JlYXRlTWFueUJvdFJhbmtpbmdSZXNwb25zZS5Cb3RSYW5raW5nQnlC",
-            "b3RJREVudHJ5UhFib3RSYW5raW5nQnlCb3RJRBpkChZCb3RSYW5raW5nQnlC",
-            "b3RJREVudHJ5EhAKA2tleRgBIAEoCVIDa2V5EjQKBXZhbHVlGAIgASgLMh4u",
-            "dGhldGFuLmltbW9ydGFsLnYxLkJvdFJhbmtpbmdSBXZhbHVlOgI4ATKCAgoS",
-            "Qm90SW1tb3J0YWxTZXJ2aWNlEm8KEFNlYXJjaEJvdFJhbmtpbmcSKy50aGV0",
-            "YW4uaW1tb3J0YWwudjEuU2VhcmNoQm90UmFua2luZ1JlcXVlc3QaLC50aGV0",
-            "YW4uaW1tb3J0YWwudjEuU2VhcmNoQm90UmFua2luZ1Jlc3BvbnNlIgASewoU",
-            "Q3JlYXRlTWFueUJvdFJhbmtpbmcSLy50aGV0YW4uaW1tb3J0YWwudjEuQ3Jl",
-            "YXRlTWFueUJvdFJhbmtpbmdSZXF1ZXN0GjAudGhldGFuLmltbW9ydGFsLnYx",
-            "LkNyZWF0ZU1hbnlCb3RSYW5raW5nUmVzcG9uc2UiAELNAQoWY29tLnRoZXRh",
-            "bi5pbW1vcnRhbC52MUIQSW1tb3J0YWxCb3RQcm90b1ABWjd0aGV0YW4tYnVm",
-            "L2dlbi9nby90aGV0YW4vaW1tb3J0YWwvdjE7dGhldGFuX2ltbW9ydGFsX3Yx",
-            "ogIDVElYqgISVGhldGFuLkltbW9ydGFsLlYxygISVGhldGFuXEltbW9ydGFs",
-            "XFYx4gIeVGhldGFuXEltbW9ydGFsXFYxXEdQQk1ldGFkYXRh6gIUVGhldGFu",
-            "OjpJbW1vcnRhbDo6VjFiBnByb3RvMw=="));
+            "YW4uaW1tb3J0YWwudjEiMQoXU2VhcmNoQm90UmFua2luZ1JlcXVlc3QSFgoG",
+            "Ym90SURzGAEgAygJUgZib3RJRHMi8wEKGFNlYXJjaEJvdFJhbmtpbmdSZXNw",
+            "b25zZRJxChFib3RSYW5raW5nQnlCb3RJRBgBIAMoCzJDLnRoZXRhbi5pbW1v",
+            "cnRhbC52MS5TZWFyY2hCb3RSYW5raW5nUmVzcG9uc2UuQm90UmFua2luZ0J5",
+            "Qm90SURFbnRyeVIRYm90UmFua2luZ0J5Qm90SUQaZAoWQm90UmFua2luZ0J5",
+            "Qm90SURFbnRyeRIQCgNrZXkYASABKAlSA2tleRI0CgV2YWx1ZRgCIAEoCzIe",
+            "LnRoZXRhbi5pbW1vcnRhbC52MS5Cb3RSYW5raW5nUgV2YWx1ZToCOAEiTgoK",
+            "Qm90UmFua2luZxIUCgVib3RJRBgBIAEoCVIFYm90SUQSEgoEcmFuaxgCIAEo",
+            "BVIEcmFuaxIWCgZ0cm9waHkYAyABKAVSBnRyb3BoeSJlChtDcmVhdGVNYW55",
+            "Qm90UmFua2luZ1JlcXVlc3QSRgoOTGlzdEJvdFJhbmtpbmcYASADKAsyHi50",
+            "aGV0YW4uaW1tb3J0YWwudjEuQm90UmFua2luZ1IOTGlzdEJvdFJhbmtpbmci",
+            "+wEKHENyZWF0ZU1hbnlCb3RSYW5raW5nUmVzcG9uc2USdQoRYm90UmFua2lu",
+            "Z0J5Qm90SUQYASADKAsyRy50aGV0YW4uaW1tb3J0YWwudjEuQ3JlYXRlTWFu",
+            "eUJvdFJhbmtpbmdSZXNwb25zZS5Cb3RSYW5raW5nQnlCb3RJREVudHJ5UhFi",
+            "b3RSYW5raW5nQnlCb3RJRBpkChZCb3RSYW5raW5nQnlCb3RJREVudHJ5EhAK",
+            "A2tleRgBIAEoCVIDa2V5EjQKBXZhbHVlGAIgASgLMh4udGhldGFuLmltbW9y",
+            "dGFsLnYxLkJvdFJhbmtpbmdSBXZhbHVlOgI4ATKCAgoSQm90SW1tb3J0YWxT",
+            "ZXJ2aWNlEm8KEFNlYXJjaEJvdFJhbmtpbmcSKy50aGV0YW4uaW1tb3J0YWwu",
+            "djEuU2VhcmNoQm90UmFua2luZ1JlcXVlc3QaLC50aGV0YW4uaW1tb3J0YWwu",
+            "djEuU2VhcmNoQm90UmFua2luZ1Jlc3BvbnNlIgASewoUQ3JlYXRlTWFueUJv",
+            "dFJhbmtpbmcSLy50aGV0YW4uaW1tb3J0YWwudjEuQ3JlYXRlTWFueUJvdFJh",
+            "bmtpbmdSZXF1ZXN0GjAudGhldGFuLmltbW9ydGFsLnYxLkNyZWF0ZU1hbnlC",
+            "b3RSYW5raW5nUmVzcG9uc2UiAELNAQoWY29tLnRoZXRhbi5pbW1vcnRhbC52",
+            "MUIQSW1tb3J0YWxCb3RQcm90b1ABWjd0aGV0YW4tYnVmL2dlbi9nby90aGV0",
+            "YW4vaW1tb3J0YWwvdjE7dGhldGFuX2ltbW9ydGFsX3YxogIDVElYqgISVGhl",
+            "dGFuLkltbW9ydGFsLlYxygISVGhldGFuXEltbW9ydGFsXFYx4gIeVGhldGFu",
+            "XEltbW9ydGFsXFYxXEdQQk1ldGFkYXRh6gIUVGhldGFuOjpJbW1vcnRhbDo6",
+            "VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SearchBotRankingRequest), global::Thetan.Immortal.V1.SearchBotRankingRequest.Parser, new[]{ "UserIDs" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SearchBotRankingResponse), global::Thetan.Immortal.V1.SearchBotRankingResponse.Parser, new[]{ "UserRankingByUserID" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.BotRanking), global::Thetan.Immortal.V1.BotRanking.Parser, new[]{ "UserID", "Rank", "Trophy" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SearchBotRankingRequest), global::Thetan.Immortal.V1.SearchBotRankingRequest.Parser, new[]{ "BotIDs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SearchBotRankingResponse), global::Thetan.Immortal.V1.SearchBotRankingResponse.Parser, new[]{ "BotRankingByBotID" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.BotRanking), global::Thetan.Immortal.V1.BotRanking.Parser, new[]{ "BotID", "Rank", "Trophy" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CreateManyBotRankingRequest), global::Thetan.Immortal.V1.CreateManyBotRankingRequest.Parser, new[]{ "ListBotRanking" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CreateManyBotRankingResponse), global::Thetan.Immortal.V1.CreateManyBotRankingResponse.Parser, new[]{ "BotRankingByBotID" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
@@ -101,7 +101,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SearchBotRankingRequest(SearchBotRankingRequest other) : this() {
-      userIDs_ = other.userIDs_.Clone();
+      botIDs_ = other.botIDs_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -111,15 +111,15 @@ namespace Thetan.Immortal.V1 {
       return new SearchBotRankingRequest(this);
     }
 
-    /// <summary>Field number for the "userIDs" field.</summary>
-    public const int UserIDsFieldNumber = 1;
-    private static readonly pb::FieldCodec<string> _repeated_userIDs_codec
+    /// <summary>Field number for the "botIDs" field.</summary>
+    public const int BotIDsFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_botIDs_codec
         = pb::FieldCodec.ForString(10);
-    private readonly pbc::RepeatedField<string> userIDs_ = new pbc::RepeatedField<string>();
+    private readonly pbc::RepeatedField<string> botIDs_ = new pbc::RepeatedField<string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<string> UserIDs {
-      get { return userIDs_; }
+    public pbc::RepeatedField<string> BotIDs {
+      get { return botIDs_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -137,7 +137,7 @@ namespace Thetan.Immortal.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!userIDs_.Equals(other.userIDs_)) return false;
+      if(!botIDs_.Equals(other.botIDs_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -145,7 +145,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= userIDs_.GetHashCode();
+      hash ^= botIDs_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -164,7 +164,7 @@ namespace Thetan.Immortal.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      userIDs_.WriteTo(output, _repeated_userIDs_codec);
+      botIDs_.WriteTo(output, _repeated_botIDs_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -175,7 +175,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      userIDs_.WriteTo(ref output, _repeated_userIDs_codec);
+      botIDs_.WriteTo(ref output, _repeated_botIDs_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -186,7 +186,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += userIDs_.CalculateSize(_repeated_userIDs_codec);
+      size += botIDs_.CalculateSize(_repeated_botIDs_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -199,7 +199,7 @@ namespace Thetan.Immortal.V1 {
       if (other == null) {
         return;
       }
-      userIDs_.Add(other.userIDs_);
+      botIDs_.Add(other.botIDs_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -216,7 +216,7 @@ namespace Thetan.Immortal.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            userIDs_.AddEntriesFrom(input, _repeated_userIDs_codec);
+            botIDs_.AddEntriesFrom(input, _repeated_botIDs_codec);
             break;
           }
         }
@@ -235,7 +235,7 @@ namespace Thetan.Immortal.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            userIDs_.AddEntriesFrom(ref input, _repeated_userIDs_codec);
+            botIDs_.AddEntriesFrom(ref input, _repeated_botIDs_codec);
             break;
           }
         }
@@ -279,7 +279,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SearchBotRankingResponse(SearchBotRankingResponse other) : this() {
-      userRankingByUserID_ = other.userRankingByUserID_.Clone();
+      botRankingByBotID_ = other.botRankingByBotID_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -289,15 +289,15 @@ namespace Thetan.Immortal.V1 {
       return new SearchBotRankingResponse(this);
     }
 
-    /// <summary>Field number for the "userRankingByUserID" field.</summary>
-    public const int UserRankingByUserIDFieldNumber = 1;
-    private static readonly pbc::MapField<string, global::Thetan.Immortal.V1.BotRanking>.Codec _map_userRankingByUserID_codec
+    /// <summary>Field number for the "botRankingByBotID" field.</summary>
+    public const int BotRankingByBotIDFieldNumber = 1;
+    private static readonly pbc::MapField<string, global::Thetan.Immortal.V1.BotRanking>.Codec _map_botRankingByBotID_codec
         = new pbc::MapField<string, global::Thetan.Immortal.V1.BotRanking>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Thetan.Immortal.V1.BotRanking.Parser), 10);
-    private readonly pbc::MapField<string, global::Thetan.Immortal.V1.BotRanking> userRankingByUserID_ = new pbc::MapField<string, global::Thetan.Immortal.V1.BotRanking>();
+    private readonly pbc::MapField<string, global::Thetan.Immortal.V1.BotRanking> botRankingByBotID_ = new pbc::MapField<string, global::Thetan.Immortal.V1.BotRanking>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<string, global::Thetan.Immortal.V1.BotRanking> UserRankingByUserID {
-      get { return userRankingByUserID_; }
+    public pbc::MapField<string, global::Thetan.Immortal.V1.BotRanking> BotRankingByBotID {
+      get { return botRankingByBotID_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -315,7 +315,7 @@ namespace Thetan.Immortal.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!UserRankingByUserID.Equals(other.UserRankingByUserID)) return false;
+      if (!BotRankingByBotID.Equals(other.BotRankingByBotID)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -323,7 +323,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= UserRankingByUserID.GetHashCode();
+      hash ^= BotRankingByBotID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -342,7 +342,7 @@ namespace Thetan.Immortal.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      userRankingByUserID_.WriteTo(output, _map_userRankingByUserID_codec);
+      botRankingByBotID_.WriteTo(output, _map_botRankingByBotID_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -353,7 +353,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      userRankingByUserID_.WriteTo(ref output, _map_userRankingByUserID_codec);
+      botRankingByBotID_.WriteTo(ref output, _map_botRankingByBotID_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -364,7 +364,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += userRankingByUserID_.CalculateSize(_map_userRankingByUserID_codec);
+      size += botRankingByBotID_.CalculateSize(_map_botRankingByBotID_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -377,7 +377,7 @@ namespace Thetan.Immortal.V1 {
       if (other == null) {
         return;
       }
-      userRankingByUserID_.Add(other.userRankingByUserID_);
+      botRankingByBotID_.Add(other.botRankingByBotID_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -394,7 +394,7 @@ namespace Thetan.Immortal.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            userRankingByUserID_.AddEntriesFrom(input, _map_userRankingByUserID_codec);
+            botRankingByBotID_.AddEntriesFrom(input, _map_botRankingByBotID_codec);
             break;
           }
         }
@@ -413,7 +413,7 @@ namespace Thetan.Immortal.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            userRankingByUserID_.AddEntriesFrom(ref input, _map_userRankingByUserID_codec);
+            botRankingByBotID_.AddEntriesFrom(ref input, _map_botRankingByBotID_codec);
             break;
           }
         }
@@ -457,7 +457,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BotRanking(BotRanking other) : this() {
-      userID_ = other.userID_;
+      botID_ = other.botID_;
       rank_ = other.rank_;
       trophy_ = other.trophy_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -469,15 +469,15 @@ namespace Thetan.Immortal.V1 {
       return new BotRanking(this);
     }
 
-    /// <summary>Field number for the "userID" field.</summary>
-    public const int UserIDFieldNumber = 1;
-    private string userID_ = "";
+    /// <summary>Field number for the "botID" field.</summary>
+    public const int BotIDFieldNumber = 1;
+    private string botID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserID {
-      get { return userID_; }
+    public string BotID {
+      get { return botID_; }
       set {
-        userID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        botID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -520,7 +520,7 @@ namespace Thetan.Immortal.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (UserID != other.UserID) return false;
+      if (BotID != other.BotID) return false;
       if (Rank != other.Rank) return false;
       if (Trophy != other.Trophy) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -530,7 +530,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (UserID.Length != 0) hash ^= UserID.GetHashCode();
+      if (BotID.Length != 0) hash ^= BotID.GetHashCode();
       if (Rank != 0) hash ^= Rank.GetHashCode();
       if (Trophy != 0) hash ^= Trophy.GetHashCode();
       if (_unknownFields != null) {
@@ -551,9 +551,9 @@ namespace Thetan.Immortal.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (UserID.Length != 0) {
+      if (BotID.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(UserID);
+        output.WriteString(BotID);
       }
       if (Rank != 0) {
         output.WriteRawTag(16);
@@ -573,9 +573,9 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (UserID.Length != 0) {
+      if (BotID.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(UserID);
+        output.WriteString(BotID);
       }
       if (Rank != 0) {
         output.WriteRawTag(16);
@@ -595,8 +595,8 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (UserID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserID);
+      if (BotID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BotID);
       }
       if (Rank != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Rank);
@@ -616,8 +616,8 @@ namespace Thetan.Immortal.V1 {
       if (other == null) {
         return;
       }
-      if (other.UserID.Length != 0) {
-        UserID = other.UserID;
+      if (other.BotID.Length != 0) {
+        BotID = other.BotID;
       }
       if (other.Rank != 0) {
         Rank = other.Rank;
@@ -641,7 +641,7 @@ namespace Thetan.Immortal.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            UserID = input.ReadString();
+            BotID = input.ReadString();
             break;
           }
           case 16: {
@@ -668,7 +668,7 @@ namespace Thetan.Immortal.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            UserID = input.ReadString();
+            BotID = input.ReadString();
             break;
           }
           case 16: {
