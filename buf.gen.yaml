@@ -3,7 +3,7 @@ managed:
   enabled: true
 plugins:
   # Generate for Go
-  - plugin: buf.build/protocolbuffers/go
+  - plugin: buf.build/protocolbuffers/go:v1.30.0
     out: gen/go
     opt:
       - paths=source_relative

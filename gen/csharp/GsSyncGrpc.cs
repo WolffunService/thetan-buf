@@ -56,9 +56,9 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Gateway.V1.PlayerDisconnectedRequest> __Marshaller_thetan_gateway_v1_PlayerDisconnectedRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.PlayerDisconnectedRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto> __Marshaller_thetan_immortal_v1_ImmortalMatchFoundResponseProto = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.RoomDestroyedRequest> __Marshaller_thetan_gateway_v1_RoomDestroyedRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.RoomDestroyedRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.Immortal_RoomAllocationResp> __Marshaller_thetan_gateway_v1_Immortal_RoomAllocationResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.Immortal_RoomAllocationResp.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.RoomDestroyedResponse> __Marshaller_thetan_gateway_v1_RoomDestroyedResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.RoomDestroyedResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Gateway.V1.PingRequest, global::Thetan.Gateway.V1.PingResponse> __Method_Ping = new grpc::Method<global::Thetan.Gateway.V1.PingRequest, global::Thetan.Gateway.V1.PingResponse>(
@@ -85,12 +85,12 @@ namespace Thetan.Gateway.V1 {
         __Marshaller_thetan_gateway_v1_PlayerStatusResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Gateway.V1.Immortal_RoomAllocationResp> __Method_Immortal_RoomAllocation = new grpc::Method<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Gateway.V1.Immortal_RoomAllocationResp>(
+    static readonly grpc::Method<global::Thetan.Gateway.V1.RoomDestroyedRequest, global::Thetan.Gateway.V1.RoomDestroyedResponse> __Method_RoomDestroyed = new grpc::Method<global::Thetan.Gateway.V1.RoomDestroyedRequest, global::Thetan.Gateway.V1.RoomDestroyedResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "Immortal_RoomAllocation",
-        __Marshaller_thetan_immortal_v1_ImmortalMatchFoundResponseProto,
-        __Marshaller_thetan_gateway_v1_Immortal_RoomAllocationResp);
+        "RoomDestroyed",
+        __Marshaller_thetan_gateway_v1_RoomDestroyedRequest,
+        __Marshaller_thetan_gateway_v1_RoomDestroyedResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -120,14 +120,8 @@ namespace Thetan.Gateway.V1 {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      /// <summary>
-      ///Immortal
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Gateway.V1.Immortal_RoomAllocationResp> Immortal_RoomAllocation(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Gateway.V1.RoomDestroyedResponse> RoomDestroyed(global::Thetan.Gateway.V1.RoomDestroyedRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -221,53 +215,25 @@ namespace Thetan.Gateway.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_PlayerDisconnected, null, options, request);
       }
-      /// <summary>
-      ///Immortal
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Gateway.V1.Immortal_RoomAllocationResp Immortal_RoomAllocation(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.Gateway.V1.RoomDestroyedResponse RoomDestroyed(global::Thetan.Gateway.V1.RoomDestroyedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return Immortal_RoomAllocation(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return RoomDestroyed(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      ///Immortal
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Gateway.V1.Immortal_RoomAllocationResp Immortal_RoomAllocation(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::CallOptions options)
+      public virtual global::Thetan.Gateway.V1.RoomDestroyedResponse RoomDestroyed(global::Thetan.Gateway.V1.RoomDestroyedRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_Immortal_RoomAllocation, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_RoomDestroyed, null, options, request);
       }
-      /// <summary>
-      ///Immortal
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.Immortal_RoomAllocationResp> Immortal_RoomAllocationAsync(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.RoomDestroyedResponse> RoomDestroyedAsync(global::Thetan.Gateway.V1.RoomDestroyedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return Immortal_RoomAllocationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return RoomDestroyedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      /// <summary>
-      ///Immortal
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.Immortal_RoomAllocationResp> Immortal_RoomAllocationAsync(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.RoomDestroyedResponse> RoomDestroyedAsync(global::Thetan.Gateway.V1.RoomDestroyedRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_Immortal_RoomAllocation, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_RoomDestroyed, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -286,7 +252,7 @@ namespace Thetan.Gateway.V1 {
           .AddMethod(__Method_Ping, serviceImpl.Ping)
           .AddMethod(__Method_PlayerConnected, serviceImpl.PlayerConnected)
           .AddMethod(__Method_PlayerDisconnected, serviceImpl.PlayerDisconnected)
-          .AddMethod(__Method_Immortal_RoomAllocation, serviceImpl.Immortal_RoomAllocation).Build();
+          .AddMethod(__Method_RoomDestroyed, serviceImpl.RoomDestroyed).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -299,7 +265,7 @@ namespace Thetan.Gateway.V1 {
       serviceBinder.AddMethod(__Method_Ping, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Gateway.V1.PingRequest, global::Thetan.Gateway.V1.PingResponse>(serviceImpl.Ping));
       serviceBinder.AddMethod(__Method_PlayerConnected, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Gateway.V1.PlayerConnectedRequest, global::Thetan.Gateway.V1.PlayerStatusResponse>(serviceImpl.PlayerConnected));
       serviceBinder.AddMethod(__Method_PlayerDisconnected, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Gateway.V1.PlayerDisconnectedRequest, global::Thetan.Gateway.V1.PlayerStatusResponse>(serviceImpl.PlayerDisconnected));
-      serviceBinder.AddMethod(__Method_Immortal_RoomAllocation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Gateway.V1.Immortal_RoomAllocationResp>(serviceImpl.Immortal_RoomAllocation));
+      serviceBinder.AddMethod(__Method_RoomDestroyed, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Gateway.V1.RoomDestroyedRequest, global::Thetan.Gateway.V1.RoomDestroyedResponse>(serviceImpl.RoomDestroyed));
     }
 
   }
