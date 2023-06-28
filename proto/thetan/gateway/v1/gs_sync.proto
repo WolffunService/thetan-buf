@@ -71,10 +71,11 @@ message RoomDestroyedResponse {
 }
 
 message ImmortalRoomAllocationResp {
-  //fishnet ip
+  //fishnet ip+port
   string server_ip = 1;
+  string server_port = 2;
   //matchid
-  string room_id = 2;
+  string room_id = 3;
 }
 
 // nên đặt bên proto của match-director nhưng để đây để tránh import cycle
