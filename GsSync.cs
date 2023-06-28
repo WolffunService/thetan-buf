@@ -49,7 +49,7 @@ namespace Thetan.Gateway.V1 {
             "dGVkX3BsYXllcnMYBCADKAlSEGNvbm5lY3RlZFBsYXllcnMiFwoVUm9vbURl",
             "c3Ryb3llZFJlc3BvbnNlInMKGkltbW9ydGFsUm9vbUFsbG9jYXRpb25SZXNw",
             "EhsKCXNlcnZlcl9pcBgBIAEoCVIIc2VydmVySXASHwoLc2VydmVyX3BvcnQY",
-            "AiABKAlSCnNlcnZlclBvcnQSFwoHcm9vbV9pZBgDIAEoCVIGcm9vbUlkIosB",
+            "AiABKA1SCnNlcnZlclBvcnQSFwoHcm9vbV9pZBgDIAEoCVIGcm9vbUlkIosB",
             "CiBJbW1vcnRhbE1hdGNoRm91bmRGb3JNdWx0aXBsYXllchJLCglyb29tQWxs",
             "b2MYASABKAsyLS50aGV0YW4uZ2F0ZXdheS52MS5JbW1vcnRhbFJvb21BbGxv",
             "Y2F0aW9uUmVzcFIJcm9vbUFsbG9jEhoKCHBhcnR5SURzGAIgAygJUghwYXJ0",
@@ -2179,13 +2179,13 @@ namespace Thetan.Gateway.V1 {
 
     /// <summary>Field number for the "server_port" field.</summary>
     public const int ServerPortFieldNumber = 2;
-    private string serverPort_ = "";
+    private uint serverPort_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ServerPort {
+    public uint ServerPort {
       get { return serverPort_; }
       set {
-        serverPort_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        serverPort_ = value;
       }
     }
 
@@ -2230,7 +2230,7 @@ namespace Thetan.Gateway.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (ServerIp.Length != 0) hash ^= ServerIp.GetHashCode();
-      if (ServerPort.Length != 0) hash ^= ServerPort.GetHashCode();
+      if (ServerPort != 0) hash ^= ServerPort.GetHashCode();
       if (RoomId.Length != 0) hash ^= RoomId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2254,9 +2254,9 @@ namespace Thetan.Gateway.V1 {
         output.WriteRawTag(10);
         output.WriteString(ServerIp);
       }
-      if (ServerPort.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ServerPort);
+      if (ServerPort != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(ServerPort);
       }
       if (RoomId.Length != 0) {
         output.WriteRawTag(26);
@@ -2276,9 +2276,9 @@ namespace Thetan.Gateway.V1 {
         output.WriteRawTag(10);
         output.WriteString(ServerIp);
       }
-      if (ServerPort.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ServerPort);
+      if (ServerPort != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(ServerPort);
       }
       if (RoomId.Length != 0) {
         output.WriteRawTag(26);
@@ -2297,8 +2297,8 @@ namespace Thetan.Gateway.V1 {
       if (ServerIp.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ServerIp);
       }
-      if (ServerPort.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServerPort);
+      if (ServerPort != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ServerPort);
       }
       if (RoomId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(RoomId);
@@ -2318,7 +2318,7 @@ namespace Thetan.Gateway.V1 {
       if (other.ServerIp.Length != 0) {
         ServerIp = other.ServerIp;
       }
-      if (other.ServerPort.Length != 0) {
+      if (other.ServerPort != 0) {
         ServerPort = other.ServerPort;
       }
       if (other.RoomId.Length != 0) {
@@ -2343,8 +2343,8 @@ namespace Thetan.Gateway.V1 {
             ServerIp = input.ReadString();
             break;
           }
-          case 18: {
-            ServerPort = input.ReadString();
+          case 16: {
+            ServerPort = input.ReadUInt32();
             break;
           }
           case 26: {
@@ -2370,8 +2370,8 @@ namespace Thetan.Gateway.V1 {
             ServerIp = input.ReadString();
             break;
           }
-          case 18: {
-            ServerPort = input.ReadString();
+          case 16: {
+            ServerPort = input.ReadUInt32();
             break;
           }
           case 26: {
