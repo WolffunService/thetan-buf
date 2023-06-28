@@ -47,27 +47,27 @@ namespace Thetan.Gateway.V1 {
             "B3Jvb21faWQYASABKAlSBnJvb21JZBIfCgtyb29tX251bWJlchgCIAEoBVIK",
             "cm9vbU51bWJlchIXCgd0b3duX2lkGAMgASgJUgZ0b3duSWQSKwoRY29ubmVj",
             "dGVkX3BsYXllcnMYBCADKAlSEGNvbm5lY3RlZFBsYXllcnMiFwoVUm9vbURl",
-            "c3Ryb3llZFJlc3BvbnNlIlIKGkltbW9ydGFsUm9vbUFsbG9jYXRpb25SZXNw",
-            "EhsKCXNlcnZlcl9pcBgBIAEoCVIIc2VydmVySXASFwoHcm9vbV9pZBgCIAEo",
-            "CVIGcm9vbUlkIosBCiBJbW1vcnRhbE1hdGNoRm91bmRGb3JNdWx0aXBsYXll",
-            "chJLCglyb29tQWxsb2MYASABKAsyLS50aGV0YW4uZ2F0ZXdheS52MS5JbW1v",
-            "cnRhbFJvb21BbGxvY2F0aW9uUmVzcFIJcm9vbUFsbG9jEhoKCHBhcnR5SURz",
-            "GAIgAygJUghwYXJ0eUlEcyouCghHYW1lTmFtZRIJCgVSaXZhbBAAEgwKCElt",
-            "bW9ydGFsEAESCQoFQXJlbmEQAjKYAwoNVGhldGFuR2F0ZXdheRJJCgRQaW5n",
-            "Eh4udGhldGFuLmdhdGV3YXkudjEuUGluZ1JlcXVlc3QaHy50aGV0YW4uZ2F0",
-            "ZXdheS52MS5QaW5nUmVzcG9uc2UiABJnCg9QbGF5ZXJDb25uZWN0ZWQSKS50",
-            "aGV0YW4uZ2F0ZXdheS52MS5QbGF5ZXJDb25uZWN0ZWRSZXF1ZXN0GicudGhl",
-            "dGFuLmdhdGV3YXkudjEuUGxheWVyU3RhdHVzUmVzcG9uc2UiABJtChJQbGF5",
-            "ZXJEaXNjb25uZWN0ZWQSLC50aGV0YW4uZ2F0ZXdheS52MS5QbGF5ZXJEaXNj",
-            "b25uZWN0ZWRSZXF1ZXN0GicudGhldGFuLmdhdGV3YXkudjEuUGxheWVyU3Rh",
-            "dHVzUmVzcG9uc2UiABJkCg1Sb29tRGVzdHJveWVkEicudGhldGFuLmdhdGV3",
-            "YXkudjEuUm9vbURlc3Ryb3llZFJlcXVlc3QaKC50aGV0YW4uZ2F0ZXdheS52",
-            "MS5Sb29tRGVzdHJveWVkUmVzcG9uc2UiAELBAQoVY29tLnRoZXRhbi5nYXRl",
-            "d2F5LnYxQgtHc1N5bmNQcm90b1ABWjV0aGV0YW4tYnVmL2dlbi9nby90aGV0",
-            "YW4vZ2F0ZXdheS92MTt0aGV0YW5fZ2F0ZXdheV92MaICA1RHWKoCEVRoZXRh",
-            "bi5HYXRld2F5LlYxygIRVGhldGFuXEdhdGV3YXlcVjHiAh1UaGV0YW5cR2F0",
-            "ZXdheVxWMVxHUEJNZXRhZGF0YeoCE1RoZXRhbjo6R2F0ZXdheTo6VjFiBnBy",
-            "b3RvMw=="));
+            "c3Ryb3llZFJlc3BvbnNlInMKGkltbW9ydGFsUm9vbUFsbG9jYXRpb25SZXNw",
+            "EhsKCXNlcnZlcl9pcBgBIAEoCVIIc2VydmVySXASHwoLc2VydmVyX3BvcnQY",
+            "AiABKAlSCnNlcnZlclBvcnQSFwoHcm9vbV9pZBgDIAEoCVIGcm9vbUlkIosB",
+            "CiBJbW1vcnRhbE1hdGNoRm91bmRGb3JNdWx0aXBsYXllchJLCglyb29tQWxs",
+            "b2MYASABKAsyLS50aGV0YW4uZ2F0ZXdheS52MS5JbW1vcnRhbFJvb21BbGxv",
+            "Y2F0aW9uUmVzcFIJcm9vbUFsbG9jEhoKCHBhcnR5SURzGAIgAygJUghwYXJ0",
+            "eUlEcyouCghHYW1lTmFtZRIJCgVSaXZhbBAAEgwKCEltbW9ydGFsEAESCQoF",
+            "QXJlbmEQAjKYAwoNVGhldGFuR2F0ZXdheRJJCgRQaW5nEh4udGhldGFuLmdh",
+            "dGV3YXkudjEuUGluZ1JlcXVlc3QaHy50aGV0YW4uZ2F0ZXdheS52MS5QaW5n",
+            "UmVzcG9uc2UiABJnCg9QbGF5ZXJDb25uZWN0ZWQSKS50aGV0YW4uZ2F0ZXdh",
+            "eS52MS5QbGF5ZXJDb25uZWN0ZWRSZXF1ZXN0GicudGhldGFuLmdhdGV3YXku",
+            "djEuUGxheWVyU3RhdHVzUmVzcG9uc2UiABJtChJQbGF5ZXJEaXNjb25uZWN0",
+            "ZWQSLC50aGV0YW4uZ2F0ZXdheS52MS5QbGF5ZXJEaXNjb25uZWN0ZWRSZXF1",
+            "ZXN0GicudGhldGFuLmdhdGV3YXkudjEuUGxheWVyU3RhdHVzUmVzcG9uc2Ui",
+            "ABJkCg1Sb29tRGVzdHJveWVkEicudGhldGFuLmdhdGV3YXkudjEuUm9vbURl",
+            "c3Ryb3llZFJlcXVlc3QaKC50aGV0YW4uZ2F0ZXdheS52MS5Sb29tRGVzdHJv",
+            "eWVkUmVzcG9uc2UiAELBAQoVY29tLnRoZXRhbi5nYXRld2F5LnYxQgtHc1N5",
+            "bmNQcm90b1ABWjV0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vZ2F0ZXdheS92",
+            "MTt0aGV0YW5fZ2F0ZXdheV92MaICA1RHWKoCEVRoZXRhbi5HYXRld2F5LlYx",
+            "ygIRVGhldGFuXEdhdGV3YXlcVjHiAh1UaGV0YW5cR2F0ZXdheVxWMVxHUEJN",
+            "ZXRhZGF0YeoCE1RoZXRhbjo6R2F0ZXdheTo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Gateway.V1.GameName), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -79,7 +79,7 @@ namespace Thetan.Gateway.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.PlayerStatusResponse), global::Thetan.Gateway.V1.PlayerStatusResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.RoomInfo), global::Thetan.Gateway.V1.RoomInfo.Parser, new[]{ "RoomId", "RoomNumber", "TownId", "ConnectedPlayers" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.RoomDestroyedResponse), global::Thetan.Gateway.V1.RoomDestroyedResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.ImmortalRoomAllocationResp), global::Thetan.Gateway.V1.ImmortalRoomAllocationResp.Parser, new[]{ "ServerIp", "RoomId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.ImmortalRoomAllocationResp), global::Thetan.Gateway.V1.ImmortalRoomAllocationResp.Parser, new[]{ "ServerIp", "ServerPort", "RoomId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.ImmortalMatchFoundForMultiplayer), global::Thetan.Gateway.V1.ImmortalMatchFoundForMultiplayer.Parser, new[]{ "RoomAlloc", "PartyIDs" }, null, null, null, null)
           }));
     }
@@ -2151,6 +2151,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ImmortalRoomAllocationResp(ImmortalRoomAllocationResp other) : this() {
       serverIp_ = other.serverIp_;
+      serverPort_ = other.serverPort_;
       roomId_ = other.roomId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -2165,7 +2166,7 @@ namespace Thetan.Gateway.V1 {
     public const int ServerIpFieldNumber = 1;
     private string serverIp_ = "";
     /// <summary>
-    ///fishnet ip
+    ///fishnet ip+port
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2176,8 +2177,20 @@ namespace Thetan.Gateway.V1 {
       }
     }
 
+    /// <summary>Field number for the "server_port" field.</summary>
+    public const int ServerPortFieldNumber = 2;
+    private string serverPort_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ServerPort {
+      get { return serverPort_; }
+      set {
+        serverPort_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "room_id" field.</summary>
-    public const int RoomIdFieldNumber = 2;
+    public const int RoomIdFieldNumber = 3;
     private string roomId_ = "";
     /// <summary>
     ///matchid
@@ -2207,6 +2220,7 @@ namespace Thetan.Gateway.V1 {
         return true;
       }
       if (ServerIp != other.ServerIp) return false;
+      if (ServerPort != other.ServerPort) return false;
       if (RoomId != other.RoomId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2216,6 +2230,7 @@ namespace Thetan.Gateway.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (ServerIp.Length != 0) hash ^= ServerIp.GetHashCode();
+      if (ServerPort.Length != 0) hash ^= ServerPort.GetHashCode();
       if (RoomId.Length != 0) hash ^= RoomId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2239,8 +2254,12 @@ namespace Thetan.Gateway.V1 {
         output.WriteRawTag(10);
         output.WriteString(ServerIp);
       }
-      if (RoomId.Length != 0) {
+      if (ServerPort.Length != 0) {
         output.WriteRawTag(18);
+        output.WriteString(ServerPort);
+      }
+      if (RoomId.Length != 0) {
+        output.WriteRawTag(26);
         output.WriteString(RoomId);
       }
       if (_unknownFields != null) {
@@ -2257,8 +2276,12 @@ namespace Thetan.Gateway.V1 {
         output.WriteRawTag(10);
         output.WriteString(ServerIp);
       }
-      if (RoomId.Length != 0) {
+      if (ServerPort.Length != 0) {
         output.WriteRawTag(18);
+        output.WriteString(ServerPort);
+      }
+      if (RoomId.Length != 0) {
+        output.WriteRawTag(26);
         output.WriteString(RoomId);
       }
       if (_unknownFields != null) {
@@ -2273,6 +2296,9 @@ namespace Thetan.Gateway.V1 {
       int size = 0;
       if (ServerIp.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ServerIp);
+      }
+      if (ServerPort.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServerPort);
       }
       if (RoomId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(RoomId);
@@ -2291,6 +2317,9 @@ namespace Thetan.Gateway.V1 {
       }
       if (other.ServerIp.Length != 0) {
         ServerIp = other.ServerIp;
+      }
+      if (other.ServerPort.Length != 0) {
+        ServerPort = other.ServerPort;
       }
       if (other.RoomId.Length != 0) {
         RoomId = other.RoomId;
@@ -2315,6 +2344,10 @@ namespace Thetan.Gateway.V1 {
             break;
           }
           case 18: {
+            ServerPort = input.ReadString();
+            break;
+          }
+          case 26: {
             RoomId = input.ReadString();
             break;
           }
@@ -2338,6 +2371,10 @@ namespace Thetan.Gateway.V1 {
             break;
           }
           case 18: {
+            ServerPort = input.ReadString();
+            break;
+          }
+          case 26: {
             RoomId = input.ReadString();
             break;
           }
