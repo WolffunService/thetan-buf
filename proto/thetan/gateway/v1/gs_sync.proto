@@ -73,7 +73,7 @@ message RoomDestroyedResponse {
 message ImmortalRoomAllocationResp {
   //fishnet ip+port
   string server_ip = 1;
-  string server_port = 2;
+  uint32 server_port = 2;
   //matchid
   string room_id = 3;
 }
