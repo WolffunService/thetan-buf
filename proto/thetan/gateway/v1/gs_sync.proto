@@ -21,6 +21,11 @@ service ThetanGateway {
   //rpc ImmortalRoomAllocation(thetan.immortal.v1.ImmortalMatchFoundResponseProto) returns (ImmortalRoomAllocationResp) {}
 }
 
+message ConnectionInfo {
+  string host = 1;
+  int32 port = 2;
+}
+
 message PingRequest {
  //Bo qua field nay, 1 project 1 game thoi
   GameName game_name = 1;
