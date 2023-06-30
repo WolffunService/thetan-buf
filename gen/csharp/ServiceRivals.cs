@@ -1770,7 +1770,7 @@ namespace Thetan.Rivals.V1 {
       if (other.Level != 0) {
         Level = other.Level;
       }
-      addIns_.Add(other.addIns_);
+      addIns_.MergeFrom(other.addIns_);
       if (other.UpdatedAt != 0L) {
         UpdatedAt = other.UpdatedAt;
       }
@@ -2611,7 +2611,7 @@ namespace Thetan.Rivals.V1 {
       if (other.Level != 0) {
         Level = other.Level;
       }
-      addIns_.Add(other.addIns_);
+      addIns_.MergeFrom(other.addIns_);
       if (other.UpdatedAt != 0L) {
         UpdatedAt = other.UpdatedAt;
       }
@@ -5905,7 +5905,7 @@ namespace Thetan.Rivals.V1 {
       if (other.PlayerScore != 0F) {
         PlayerScore = other.PlayerScore;
       }
-      roundPlayed_.Add(other.roundPlayed_);
+      roundPlayed_.MergeFrom(other.roundPlayed_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

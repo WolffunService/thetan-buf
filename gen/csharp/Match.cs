@@ -3951,10 +3951,24 @@ namespace Thetan.Shared.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool MatchNotStart {
-      get { return dataMatchCase_ == DataMatchOneofCase.MatchNotStart ? (bool) dataMatch_ : false; }
+      get { return HasMatchNotStart ? (bool) dataMatch_ : false; }
       set {
         dataMatch_ = value;
         dataMatchCase_ = DataMatchOneofCase.MatchNotStart;
+      }
+    }
+    /// <summary>Gets whether the "matchNotStart" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasMatchNotStart {
+      get { return dataMatchCase_ == DataMatchOneofCase.MatchNotStart; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "matchNotStart" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearMatchNotStart() {
+      if (HasMatchNotStart) {
+        ClearDataMatch();
       }
     }
 
@@ -4036,7 +4050,7 @@ namespace Thetan.Shared.V1 {
       if (MatchId.Length != 0) hash ^= MatchId.GetHashCode();
       if (dataMatchCase_ == DataMatchOneofCase.BattleLog) hash ^= BattleLog.GetHashCode();
       if (dataMatchCase_ == DataMatchOneofCase.DataReconnect) hash ^= DataReconnect.GetHashCode();
-      if (dataMatchCase_ == DataMatchOneofCase.MatchNotStart) hash ^= MatchNotStart.GetHashCode();
+      if (HasMatchNotStart) hash ^= MatchNotStart.GetHashCode();
       if (GameMode != global::Thetan.Shared.V1.GameMode.Ranked) hash ^= GameMode.GetHashCode();
       if (InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) hash ^= InGameMode.GetHashCode();
       hash ^= (int) dataMatchCase_;
@@ -4070,7 +4084,7 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(DataReconnect);
       }
-      if (dataMatchCase_ == DataMatchOneofCase.MatchNotStart) {
+      if (HasMatchNotStart) {
         output.WriteRawTag(32);
         output.WriteBool(MatchNotStart);
       }
@@ -4104,7 +4118,7 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(DataReconnect);
       }
-      if (dataMatchCase_ == DataMatchOneofCase.MatchNotStart) {
+      if (HasMatchNotStart) {
         output.WriteRawTag(32);
         output.WriteBool(MatchNotStart);
       }
@@ -4135,7 +4149,7 @@ namespace Thetan.Shared.V1 {
       if (dataMatchCase_ == DataMatchOneofCase.DataReconnect) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DataReconnect);
       }
-      if (dataMatchCase_ == DataMatchOneofCase.MatchNotStart) {
+      if (HasMatchNotStart) {
         size += 1 + 1;
       }
       if (GameMode != global::Thetan.Shared.V1.GameMode.Ranked) {
@@ -5446,7 +5460,7 @@ namespace Thetan.Shared.V1 {
         }
         CosmeticUsingV2.MergeFrom(other.CosmeticUsingV2);
       }
-      roundPlayed_.Add(other.roundPlayed_);
+      roundPlayed_.MergeFrom(other.roundPlayed_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -6503,10 +6517,24 @@ namespace Thetan.Shared.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Data {
-      get { return resCase_ == ResOneofCase.Data ? (pb::ByteString) res_ : pb::ByteString.Empty; }
+      get { return HasData ? (pb::ByteString) res_ : pb::ByteString.Empty; }
       set {
         res_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
         resCase_ = ResOneofCase.Data;
+      }
+    }
+    /// <summary>Gets whether the "data" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasData {
+      get { return resCase_ == ResOneofCase.Data; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "data" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearData() {
+      if (HasData) {
+        ClearRes();
       }
     }
 
@@ -6527,10 +6555,24 @@ namespace Thetan.Shared.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ErrorCode {
-      get { return resCase_ == ResOneofCase.ErrorCode ? (int) res_ : 0; }
+      get { return HasErrorCode ? (int) res_ : 0; }
       set {
         res_ = value;
         resCase_ = ResOneofCase.ErrorCode;
+      }
+    }
+    /// <summary>Gets whether the "errorCode" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasErrorCode {
+      get { return resCase_ == ResOneofCase.ErrorCode; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "errorCode" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearErrorCode() {
+      if (HasErrorCode) {
+        ClearRes();
       }
     }
 
@@ -6586,9 +6628,9 @@ namespace Thetan.Shared.V1 {
       int hash = 1;
       if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (PartyId.Length != 0) hash ^= PartyId.GetHashCode();
-      if (resCase_ == ResOneofCase.Data) hash ^= Data.GetHashCode();
+      if (HasData) hash ^= Data.GetHashCode();
       if (resCase_ == ResOneofCase.ListErrorPlayer) hash ^= ListErrorPlayer.GetHashCode();
-      if (resCase_ == ResOneofCase.ErrorCode) hash ^= ErrorCode.GetHashCode();
+      if (HasErrorCode) hash ^= ErrorCode.GetHashCode();
       hash ^= (int) resCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -6612,7 +6654,7 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(10);
         output.WriteString(PlayerId);
       }
-      if (resCase_ == ResOneofCase.Data) {
+      if (HasData) {
         output.WriteRawTag(18);
         output.WriteBytes(Data);
       }
@@ -6620,7 +6662,7 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(ListErrorPlayer);
       }
-      if (resCase_ == ResOneofCase.ErrorCode) {
+      if (HasErrorCode) {
         output.WriteRawTag(32);
         output.WriteInt32(ErrorCode);
       }
@@ -6642,7 +6684,7 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(10);
         output.WriteString(PlayerId);
       }
-      if (resCase_ == ResOneofCase.Data) {
+      if (HasData) {
         output.WriteRawTag(18);
         output.WriteBytes(Data);
       }
@@ -6650,7 +6692,7 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(ListErrorPlayer);
       }
-      if (resCase_ == ResOneofCase.ErrorCode) {
+      if (HasErrorCode) {
         output.WriteRawTag(32);
         output.WriteInt32(ErrorCode);
       }
@@ -6674,13 +6716,13 @@ namespace Thetan.Shared.V1 {
       if (PartyId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyId);
       }
-      if (resCase_ == ResOneofCase.Data) {
+      if (HasData) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(Data);
       }
       if (resCase_ == ResOneofCase.ListErrorPlayer) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ListErrorPlayer);
       }
-      if (resCase_ == ResOneofCase.ErrorCode) {
+      if (HasErrorCode) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ErrorCode);
       }
       if (_unknownFields != null) {
@@ -7804,10 +7846,24 @@ namespace Thetan.Shared.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pb::ByteString Data {
-      get { return resCase_ == ResOneofCase.Data ? (pb::ByteString) res_ : pb::ByteString.Empty; }
+      get { return HasData ? (pb::ByteString) res_ : pb::ByteString.Empty; }
       set {
         res_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
         resCase_ = ResOneofCase.Data;
+      }
+    }
+    /// <summary>Gets whether the "data" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasData {
+      get { return resCase_ == ResOneofCase.Data; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "data" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearData() {
+      if (HasData) {
+        ClearRes();
       }
     }
 
@@ -7819,10 +7875,24 @@ namespace Thetan.Shared.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ErrorCode {
-      get { return resCase_ == ResOneofCase.ErrorCode ? (int) res_ : 0; }
+      get { return HasErrorCode ? (int) res_ : 0; }
       set {
         res_ = value;
         resCase_ = ResOneofCase.ErrorCode;
+      }
+    }
+    /// <summary>Gets whether the "errorCode" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasErrorCode {
+      get { return resCase_ == ResOneofCase.ErrorCode; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "errorCode" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearErrorCode() {
+      if (HasErrorCode) {
+        ClearRes();
       }
     }
 
@@ -7887,8 +7957,8 @@ namespace Thetan.Shared.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
-      if (resCase_ == ResOneofCase.Data) hash ^= Data.GetHashCode();
-      if (resCase_ == ResOneofCase.ErrorCode) hash ^= ErrorCode.GetHashCode();
+      if (HasData) hash ^= Data.GetHashCode();
+      if (HasErrorCode) hash ^= ErrorCode.GetHashCode();
       if (Version != 0) hash ^= Version.GetHashCode();
       hash ^= (int) resCase_;
       if (_unknownFields != null) {
@@ -7913,11 +7983,11 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(10);
         output.WriteString(PlayerId);
       }
-      if (resCase_ == ResOneofCase.Data) {
+      if (HasData) {
         output.WriteRawTag(18);
         output.WriteBytes(Data);
       }
-      if (resCase_ == ResOneofCase.ErrorCode) {
+      if (HasErrorCode) {
         output.WriteRawTag(24);
         output.WriteInt32(ErrorCode);
       }
@@ -7939,11 +8009,11 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(10);
         output.WriteString(PlayerId);
       }
-      if (resCase_ == ResOneofCase.Data) {
+      if (HasData) {
         output.WriteRawTag(18);
         output.WriteBytes(Data);
       }
-      if (resCase_ == ResOneofCase.ErrorCode) {
+      if (HasErrorCode) {
         output.WriteRawTag(24);
         output.WriteInt32(ErrorCode);
       }
@@ -7964,10 +8034,10 @@ namespace Thetan.Shared.V1 {
       if (PlayerId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
       }
-      if (resCase_ == ResOneofCase.Data) {
+      if (HasData) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(Data);
       }
-      if (resCase_ == ResOneofCase.ErrorCode) {
+      if (HasErrorCode) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ErrorCode);
       }
       if (Version != 0) {
@@ -9767,7 +9837,7 @@ namespace Thetan.Shared.V1 {
       if (other == null) {
         return;
       }
-      cosmeticInUsed_.Add(other.cosmeticInUsed_);
+      cosmeticInUsed_.MergeFrom(other.cosmeticInUsed_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
