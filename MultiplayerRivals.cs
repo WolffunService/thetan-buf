@@ -237,7 +237,7 @@ namespace Thetan.Multiplayer.V1 {
       if (other.Skin != 0) {
         Skin = other.Skin;
       }
-      cosmeticInUsed_.Add(other.cosmeticInUsed_);
+      cosmeticInUsed_.MergeFrom(other.cosmeticInUsed_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
