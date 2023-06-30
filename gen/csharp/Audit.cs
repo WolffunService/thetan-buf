@@ -8041,7 +8041,7 @@ namespace Thetan.Arena.V1 {
         }
         Event.MergeFrom(other.Event);
       }
-      metadata_.Add(other.metadata_);
+      metadata_.MergeFrom(other.metadata_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
