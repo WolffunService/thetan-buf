@@ -3,6 +3,7 @@ syntax = "proto3";
 package thetan.rivals.v1;
 
 import "thetan/shared/v1/match.proto";
+import "thetan/shared/v1/ugc.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
 option csharp_namespace = "Thetan.rivals.V1";
@@ -70,6 +71,7 @@ message UserSelectedMinionResponse {
   bool nft = 5;
   int32 level = 6;
   map<string, int64> addIns = 7;
+  thetan.shared.v1.HeroCustomized customized = 10;
   int64 updatedAt = 8;
   int64 createdAt = 9;
 }
@@ -90,6 +92,7 @@ message Minion {
   bool nft = 5;
   int32 level = 6;
   map<string, int64> addIns = 7;
+  thetan.shared.v1.HeroCustomized customized = 10;
   int64 updatedAt = 8;
   int64 createdAt = 9;
 }

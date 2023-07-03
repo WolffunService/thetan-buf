@@ -3,7 +3,7 @@ syntax = "proto3";
 package thetan.shared.v1;
 
 option go_package = "thetan-buf/gen/go/thetan/shared/v1;thetan_shared_v1";
-option csharp_namespace = "Thetan.shared.V1";
+option csharp_namespace = "Thetan.Shared.V1";
 
 message MatchResultRequest {
   string matchID = 1;
