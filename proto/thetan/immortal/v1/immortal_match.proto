@@ -22,22 +22,10 @@ message ImmortalPlayerInfoMatchProto {
   int32 trophyRank = 8;
   int32 trophySearch = 9;
   int32 rank = 10;
-  Hero hero = 11;
-  repeated Skill skills = 12;
+  bytes hero = 11; // 0: heroID; 1: skinID; 2: heroType; 3: level
+  repeated bytes skills = 12; // 0: skillID; 1: level
   int32 botBrain = 13; // default value is human
   repeated int32 regions = 14;
-}
-
-message Hero {
-  string heroID = 1;
-  int32 skinID = 2;
-  int32 level = 3;
-  int32 type = 4;
-}
-
-message Skill {
-  uint32 skillID = 1;
-  int32 level = 2;
 }
 
 // ImmortalTicketData is used to create ticket
