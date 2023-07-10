@@ -15,7 +15,7 @@ plugins:
       - paths=source_relative
 
   # Generate for CSharp
-  - plugin: buf.build/protocolbuffers/csharp:v23.3
+  - plugin: buf.build/protocolbuffers/csharp:v22.4
     out: gen/csharp
 
   # Generate gRPC for CSharp

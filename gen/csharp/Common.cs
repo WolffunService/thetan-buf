@@ -2487,24 +2487,10 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MsgString {
-      get { return HasMsgString ? (string) messageData_ : ""; }
+      get { return messageDataCase_ == MessageDataOneofCase.MsgString ? (string) messageData_ : ""; }
       set {
         messageData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
         messageDataCase_ = MessageDataOneofCase.MsgString;
-      }
-    }
-    /// <summary>Gets whether the "msgString" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasMsgString {
-      get { return messageDataCase_ == MessageDataOneofCase.MsgString; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "msgString" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearMsgString() {
-      if (HasMsgString) {
-        ClearMessageData();
       }
     }
 
@@ -2576,7 +2562,7 @@ namespace Thetan.Multiplayer.V1 {
       if (Timestamp != 0L) hash ^= Timestamp.GetHashCode();
       if (Channel != global::Thetan.Multiplayer.V1.ChannelChatRoom.Lobby) hash ^= Channel.GetHashCode();
       if (MsgType != global::Thetan.Multiplayer.V1.MsgType.Chat) hash ^= MsgType.GetHashCode();
-      if (HasMsgString) hash ^= MsgString.GetHashCode();
+      if (messageDataCase_ == MessageDataOneofCase.MsgString) hash ^= MsgString.GetHashCode();
       if (messageDataCase_ == MessageDataOneofCase.SharePartyInfo) hash ^= SharePartyInfo.GetHashCode();
       hash ^= (int) messageDataCase_;
       if (_unknownFields != null) {
@@ -2617,7 +2603,7 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(40);
         output.WriteEnum((int) MsgType);
       }
-      if (HasMsgString) {
+      if (messageDataCase_ == MessageDataOneofCase.MsgString) {
         output.WriteRawTag(50);
         output.WriteString(MsgString);
       }
@@ -2655,7 +2641,7 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(40);
         output.WriteEnum((int) MsgType);
       }
-      if (HasMsgString) {
+      if (messageDataCase_ == MessageDataOneofCase.MsgString) {
         output.WriteRawTag(50);
         output.WriteString(MsgString);
       }
@@ -2688,7 +2674,7 @@ namespace Thetan.Multiplayer.V1 {
       if (MsgType != global::Thetan.Multiplayer.V1.MsgType.Chat) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MsgType);
       }
-      if (HasMsgString) {
+      if (messageDataCase_ == MessageDataOneofCase.MsgString) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(MsgString);
       }
       if (messageDataCase_ == MessageDataOneofCase.SharePartyInfo) {

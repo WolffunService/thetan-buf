@@ -235,14 +235,14 @@ type PlayerStatus int32
 const (
 	PlayerStatus_Online  PlayerStatus = 0
 	PlayerStatus_Offline PlayerStatus = 1
-	//-- status in game
+	// -- status in game
 	// -- currently part of a party within the game
 	PlayerStatus_InParty PlayerStatus = 2
-	//signaled they were ready to join the battle
+	// signaled they were ready to join the battle
 	PlayerStatus_Ready PlayerStatus = 3
-	//currently searching for other players
+	// currently searching for other players
 	PlayerStatus_Finding PlayerStatus = 4
-	//battling
+	// battling
 	PlayerStatus_InBattle PlayerStatus = 5 //...
 )
 
@@ -297,11 +297,11 @@ func (PlayerStatus) EnumDescriptor() ([]byte, []int) {
 type InvitationAction int32
 
 const (
-	//accept invitation
+	// accept invitation
 	InvitationAction_Accept InvitationAction = 0
-	//Decline invitation
+	// Decline invitation
 	InvitationAction_Cancel InvitationAction = 1
-	//Decline and block with timeout
+	// Decline and block with timeout
 	InvitationAction_Decline InvitationAction = 2
 	// Gui Invite cho thang khac
 	InvitationAction_Invite InvitationAction = 3
@@ -353,9 +353,9 @@ func (InvitationAction) EnumDescriptor() ([]byte, []int) {
 type StageInGame int32
 
 const (
-	//in spectator_view
+	// in spectator_view
 	StageInGame_Spectator StageInGame = 0
-	//in battle_end_reward_view
+	// in battle_end_reward_view
 	StageInGame_EndBattle StageInGame = 1
 )
 
