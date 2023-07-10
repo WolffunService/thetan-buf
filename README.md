@@ -18,6 +18,6 @@ make generate
 
 ### Unity Release Package
 ```sh
-./unity/deploy.sh --semver 0.0.1-preview.9
+./unity/deploy.sh --semver 0.0.1-preview.10
 ```
 
