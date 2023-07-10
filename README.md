@@ -17,7 +17,25 @@ make generate
 ```
 
 ### Unity Release Package
-```sh
-./unity/deploy.sh --semver 0.0.1-preview.11
+
+#### Flow release Unity
+
+```shell
+buf generate proto
 ```
 
+```shell
+cp ./unity/package.json ./gen/csharp/package.json | cp ./unity/Wolffun.Protobuf.asmdef ./gen/csharp/Wolffun.Protobuf.asmdef
+```
+
+```shell
+git add . | git commit -m "????"
+```
+
+```shell
+./tools/unity-meta-check-darwin-amd64 ./gen/csharp | ./tools/unity-meta-autofix-darwin-amd64 -root-dir ./gen/csharp .
+```
+
+```sh
+./unity/deploy.sh --semver 0.0.1-preview.12
+```
