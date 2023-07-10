@@ -37,6 +37,7 @@ PREFIX="gen/csharp"
 BRANCH="upm"
 
 cp ./unity/package.json ./gen/csharp/package.json
+cp ./unity/Wolffun.Protobuf.asmdef ./gen/csharp/Wolffun.Protobuf.asmdef
 git add .
 git commit -m "Release with package.json"
 
