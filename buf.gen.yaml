@@ -15,7 +15,7 @@ plugins:
       - paths=source_relative
 
   # Generate for CSharp
-  # Unity allowed a version lower than v21
+  # Unity allowed a version lower or equal v21
   - plugin: buf.build/protocolbuffers/csharp:v21.12
     out: gen/csharp
 
