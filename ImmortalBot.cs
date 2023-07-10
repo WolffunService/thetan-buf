@@ -377,7 +377,7 @@ namespace Thetan.Immortal.V1 {
       if (other == null) {
         return;
       }
-      botRankingByBotID_.MergeFrom(other.botRankingByBotID_);
+      botRankingByBotID_.Add(other.botRankingByBotID_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -996,7 +996,7 @@ namespace Thetan.Immortal.V1 {
       if (other == null) {
         return;
       }
-      botRankingByBotID_.MergeFrom(other.botRankingByBotID_);
+      botRankingByBotID_.Add(other.botRankingByBotID_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
