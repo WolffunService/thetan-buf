@@ -1800,7 +1800,7 @@ namespace Thetan.Rivals.V1 {
       if (other.Level != 0) {
         Level = other.Level;
       }
-      addIns_.MergeFrom(other.addIns_);
+      addIns_.Add(other.addIns_);
       if (other.customized_ != null) {
         if (customized_ == null) {
           Customized = new global::Thetan.Shared.V1.HeroCustomized();
@@ -2687,7 +2687,7 @@ namespace Thetan.Rivals.V1 {
       if (other.Level != 0) {
         Level = other.Level;
       }
-      addIns_.MergeFrom(other.addIns_);
+      addIns_.Add(other.addIns_);
       if (other.customized_ != null) {
         if (customized_ == null) {
           Customized = new global::Thetan.Shared.V1.HeroCustomized();
@@ -6001,7 +6001,7 @@ namespace Thetan.Rivals.V1 {
       if (other.PlayerScore != 0F) {
         PlayerScore = other.PlayerScore;
       }
-      roundPlayed_.MergeFrom(other.roundPlayed_);
+      roundPlayed_.Add(other.roundPlayed_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

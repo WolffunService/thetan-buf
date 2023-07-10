@@ -265,7 +265,7 @@ namespace Thetan.Multiplayer.V1 {
       if (other.Skin != 0) {
         Skin = other.Skin;
       }
-      cosmeticInUsed_.MergeFrom(other.cosmeticInUsed_);
+      cosmeticInUsed_.Add(other.cosmeticInUsed_);
       if (other.heroCustomized_ != null) {
         if (heroCustomized_ == null) {
           HeroCustomized = new global::Thetan.Shared.V1.HeroCustomized();

@@ -1177,7 +1177,7 @@ namespace Thetan.Multiplayer.V1 {
       if (other.HostID.Length != 0) {
         HostID = other.HostID;
       }
-      members_.MergeFrom(other.members_);
+      members_.Add(other.members_);
       if (other.Status != global::Thetan.Multiplayer.V1.PartyStatus.Ppending) {
         Status = other.Status;
       }

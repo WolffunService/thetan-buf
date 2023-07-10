@@ -5475,7 +5475,7 @@ namespace Thetan.Shared.V1 {
         }
         CosmeticUsingV2.MergeFrom(other.CosmeticUsingV2);
       }
-      roundPlayed_.MergeFrom(other.roundPlayed_);
+      roundPlayed_.Add(other.roundPlayed_);
       if (other.customized_ != null) {
         if (customized_ == null) {
           Customized = new global::Thetan.Shared.V1.HeroCustomized();
@@ -9816,7 +9816,7 @@ namespace Thetan.Shared.V1 {
       if (other == null) {
         return;
       }
-      cosmeticInUsed_.MergeFrom(other.cosmeticInUsed_);
+      cosmeticInUsed_.Add(other.cosmeticInUsed_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 

@@ -501,7 +501,7 @@ namespace Thetan.Multiplayer.V1 {
         }
         PartyInfo.MergeFrom(other.PartyInfo);
       }
-      playersReadyForRematch_.MergeFrom(other.playersReadyForRematch_);
+      playersReadyForRematch_.Add(other.playersReadyForRematch_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
