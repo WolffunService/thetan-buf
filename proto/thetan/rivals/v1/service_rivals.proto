@@ -32,6 +32,28 @@ service ThetanRivalService {
 
   // GetFindMatchInfo
   rpc GetFindMatchInfo(FindMatchInfoRequest) returns (FindMatchInfoResponse) {}
+
+  // Get config for bot
+  rpc GetConfigForBot(GetConfigForBotRequest) returns (GetConfigForBotResponse) {}
+}
+
+message GetConfigForBotResponse {
+  repeated SkinInfo listSkinInfo = 1;
+  repeated CosmeticInfo listCosmeticInfo = 2;
+}
+
+message SkinInfo {
+  int32 skinID = 1;
+  int32 skinRarity = 2;
+}
+
+message CosmeticInfo {
+  int32 cosmeticID = 1;
+  string cosmeticType = 2;
+  int32 cosmeticRarity = 3;
+}
+
+message GetConfigForBotRequest {
 }
 
 message EmptyResponse {}

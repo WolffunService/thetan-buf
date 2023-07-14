@@ -31,6 +31,7 @@ const (
 	ThetanRivalService_PickTownForUser_FullMethodName            = "/thetan.rivals.v1.ThetanRivalService/PickTownForUser"
 	ThetanRivalService_TrackSession_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/TrackSession"
 	ThetanRivalService_GetFindMatchInfo_FullMethodName           = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
+	ThetanRivalService_GetConfigForBot_FullMethodName            = "/thetan.rivals.v1.ThetanRivalService/GetConfigForBot"
 )
 
 // ThetanRivalServiceClient is the client API for ThetanRivalService service.
@@ -55,6 +56,8 @@ type ThetanRivalServiceClient interface {
 	TrackSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error)
 	// GetFindMatchInfo
 	GetFindMatchInfo(ctx context.Context, in *FindMatchInfoRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error)
+	// Get config for bot
+	GetConfigForBot(ctx context.Context, in *GetConfigForBotRequest, opts ...grpc.CallOption) (*GetConfigForBotResponse, error)
 }
 
 type thetanRivalServiceClient struct {
@@ -173,6 +176,15 @@ func (c *thetanRivalServiceClient) GetFindMatchInfo(ctx context.Context, in *Fin
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) GetConfigForBot(ctx context.Context, in *GetConfigForBotRequest, opts ...grpc.CallOption) (*GetConfigForBotResponse, error) {
+	out := new(GetConfigForBotResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetConfigForBot_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanRivalServiceServer is the server API for ThetanRivalService service.
 // All implementations must embed UnimplementedThetanRivalServiceServer
 // for forward compatibility
@@ -195,6 +207,8 @@ type ThetanRivalServiceServer interface {
 	TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error)
 	// GetFindMatchInfo
 	GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error)
+	// Get config for bot
+	GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error)
 	mustEmbedUnimplementedThetanRivalServiceServer()
 }
 
@@ -237,6 +251,9 @@ func (UnimplementedThetanRivalServiceServer) TrackSession(context.Context, *Trac
 }
 func (UnimplementedThetanRivalServiceServer) GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetFindMatchInfo not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetConfigForBot not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) mustEmbedUnimplementedThetanRivalServiceServer() {}
 
@@ -467,6 +484,24 @@ func _ThetanRivalService_GetFindMatchInfo_Handler(srv interface{}, ctx context.C
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_GetConfigForBot_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetConfigForBotRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetConfigForBot(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetConfigForBot_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetConfigForBot(ctx, req.(*GetConfigForBotRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanRivalService_ServiceDesc is the grpc.ServiceDesc for ThetanRivalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -521,6 +556,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetFindMatchInfo",
 			Handler:    _ThetanRivalService_GetFindMatchInfo_Handler,
+		},
+		{
+			MethodName: "GetConfigForBot",
+			Handler:    _ThetanRivalService_GetConfigForBot_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
