@@ -21,6 +21,7 @@ const _ = grpc.SupportPackageIsVersion7
 const (
 	ImmortalService_SearchPlayerInfo_FullMethodName = "/thetan.immortal.v1.ImmortalService/SearchPlayerInfo"
 	ImmortalService_GetUserProfile_FullMethodName   = "/thetan.immortal.v1.ImmortalService/GetUserProfile"
+	ImmortalService_BattleEnd_FullMethodName        = "/thetan.immortal.v1.ImmortalService/BattleEnd"
 )
 
 // ImmortalServiceClient is the client API for ImmortalService service.
@@ -29,6 +30,7 @@ const (
 type ImmortalServiceClient interface {
 	SearchPlayerInfo(ctx context.Context, in *SearchPlayerInfoRequest, opts ...grpc.CallOption) (*SearchPlayerInfoResponse, error)
 	GetUserProfile(ctx context.Context, in *GetUserProfileRequest, opts ...grpc.CallOption) (*GetUserProfileResponse, error)
+	BattleEnd(ctx context.Context, in *BattleEndRequest, opts ...grpc.CallOption) (ImmortalService_BattleEndClient, error)
 }
 
 type immortalServiceClient struct {
@@ -57,12 +59,45 @@ func (c *immortalServiceClient) GetUserProfile(ctx context.Context, in *GetUserP
 	return out, nil
 }
 
+func (c *immortalServiceClient) BattleEnd(ctx context.Context, in *BattleEndRequest, opts ...grpc.CallOption) (ImmortalService_BattleEndClient, error) {
+	stream, err := c.cc.NewStream(ctx, &ImmortalService_ServiceDesc.Streams[0], ImmortalService_BattleEnd_FullMethodName, opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &immortalServiceBattleEndClient{stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+type ImmortalService_BattleEndClient interface {
+	Recv() (*BattleEndResponse, error)
+	grpc.ClientStream
+}
+
+type immortalServiceBattleEndClient struct {
+	grpc.ClientStream
+}
+
+func (x *immortalServiceBattleEndClient) Recv() (*BattleEndResponse, error) {
+	m := new(BattleEndResponse)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
 // ImmortalServiceServer is the server API for ImmortalService service.
 // All implementations must embed UnimplementedImmortalServiceServer
 // for forward compatibility
 type ImmortalServiceServer interface {
 	SearchPlayerInfo(context.Context, *SearchPlayerInfoRequest) (*SearchPlayerInfoResponse, error)
 	GetUserProfile(context.Context, *GetUserProfileRequest) (*GetUserProfileResponse, error)
+	BattleEnd(*BattleEndRequest, ImmortalService_BattleEndServer) error
 	mustEmbedUnimplementedImmortalServiceServer()
 }
 
@@ -75,6 +110,9 @@ func (UnimplementedImmortalServiceServer) SearchPlayerInfo(context.Context, *Sea
 }
 func (UnimplementedImmortalServiceServer) GetUserProfile(context.Context, *GetUserProfileRequest) (*GetUserProfileResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetUserProfile not implemented")
+}
+func (UnimplementedImmortalServiceServer) BattleEnd(*BattleEndRequest, ImmortalService_BattleEndServer) error {
+	return status.Errorf(codes.Unimplemented, "method BattleEnd not implemented")
 }
 func (UnimplementedImmortalServiceServer) mustEmbedUnimplementedImmortalServiceServer() {}
 
@@ -125,6 +163,27 @@ func _ImmortalService_GetUserProfile_Handler(srv interface{}, ctx context.Contex
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ImmortalService_BattleEnd_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(BattleEndRequest)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(ImmortalServiceServer).BattleEnd(m, &immortalServiceBattleEndServer{stream})
+}
+
+type ImmortalService_BattleEndServer interface {
+	Send(*BattleEndResponse) error
+	grpc.ServerStream
+}
+
+type immortalServiceBattleEndServer struct {
+	grpc.ServerStream
+}
+
+func (x *immortalServiceBattleEndServer) Send(m *BattleEndResponse) error {
+	return x.ServerStream.SendMsg(m)
+}
+
 // ImmortalService_ServiceDesc is the grpc.ServiceDesc for ImmortalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -141,6 +200,12 @@ var ImmortalService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _ImmortalService_GetUserProfile_Handler,
 		},
 	},
-	Streams:  []grpc.StreamDesc{},
+	Streams: []grpc.StreamDesc{
+		{
+			StreamName:    "BattleEnd",
+			Handler:       _ImmortalService_BattleEnd_Handler,
+			ServerStreams: true,
+		},
+	},
 	Metadata: "thetan/immortal/v1/immortal.proto",
 }

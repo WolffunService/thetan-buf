@@ -8,6 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Thetan.Immortal.V1 {
+  /// <summary>
+  ///GRPC
+  /// </summary>
   public static partial class ImmortalService
   {
     static readonly string __ServiceName = "thetan.immortal.v1.ImmortalService";
@@ -53,6 +56,10 @@ namespace Thetan.Immortal.V1 {
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetUserProfileRequest> __Marshaller_thetan_immortal_v1_GetUserProfileRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetUserProfileRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetUserProfileResponse> __Marshaller_thetan_immortal_v1_GetUserProfileResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetUserProfileResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.BattleEndRequest> __Marshaller_thetan_immortal_v1_BattleEndRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.BattleEndRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.BattleEndResponse> __Marshaller_thetan_immortal_v1_BattleEndResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.BattleEndResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse> __Method_SearchPlayerInfo = new grpc::Method<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse>(
@@ -69,6 +76,14 @@ namespace Thetan.Immortal.V1 {
         "GetUserProfile",
         __Marshaller_thetan_immortal_v1_GetUserProfileRequest,
         __Marshaller_thetan_immortal_v1_GetUserProfileResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Immortal.V1.BattleEndRequest, global::Thetan.Immortal.V1.BattleEndResponse> __Method_BattleEnd = new grpc::Method<global::Thetan.Immortal.V1.BattleEndRequest, global::Thetan.Immortal.V1.BattleEndResponse>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "BattleEnd",
+        __Marshaller_thetan_immortal_v1_BattleEndRequest,
+        __Marshaller_thetan_immortal_v1_BattleEndResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -88,6 +103,12 @@ namespace Thetan.Immortal.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetUserProfileResponse> GetUserProfile(global::Thetan.Immortal.V1.GetUserProfileRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task BattleEnd(global::Thetan.Immortal.V1.BattleEndRequest request, grpc::IServerStreamWriter<global::Thetan.Immortal.V1.BattleEndResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -161,6 +182,16 @@ namespace Thetan.Immortal.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetUserProfile, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Thetan.Immortal.V1.BattleEndResponse> BattleEnd(global::Thetan.Immortal.V1.BattleEndRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return BattleEnd(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Thetan.Immortal.V1.BattleEndResponse> BattleEnd(global::Thetan.Immortal.V1.BattleEndRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_BattleEnd, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ImmortalServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -176,7 +207,8 @@ namespace Thetan.Immortal.V1 {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_SearchPlayerInfo, serviceImpl.SearchPlayerInfo)
-          .AddMethod(__Method_GetUserProfile, serviceImpl.GetUserProfile).Build();
+          .AddMethod(__Method_GetUserProfile, serviceImpl.GetUserProfile)
+          .AddMethod(__Method_BattleEnd, serviceImpl.BattleEnd).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -188,6 +220,7 @@ namespace Thetan.Immortal.V1 {
     {
       serviceBinder.AddMethod(__Method_SearchPlayerInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse>(serviceImpl.SearchPlayerInfo));
       serviceBinder.AddMethod(__Method_GetUserProfile, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetUserProfileRequest, global::Thetan.Immortal.V1.GetUserProfileResponse>(serviceImpl.GetUserProfile));
+      serviceBinder.AddMethod(__Method_BattleEnd, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Thetan.Immortal.V1.BattleEndRequest, global::Thetan.Immortal.V1.BattleEndResponse>(serviceImpl.BattleEnd));
     }
 
   }
