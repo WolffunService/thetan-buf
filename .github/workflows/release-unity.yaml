@@ -12,19 +12,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: jwalton/gh-find-current-pr@v1
-        id: findPr
-      - uses: DeNA/unity-meta-check@v3
-        with:
-          enable_autofix: true
-          enable_pr_comment: true
-          pr_comment_pull_number: 2
-          target_path: ./gen/csharp
-          autofix_globs: .
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-      - name: See how autofix did
-        run: git status
-        if: always()
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
