@@ -27,9 +27,13 @@ jobs:
           
           cp ./unity/package.json ./gen/csharp/package.json
           cp ./unity/Wolffun.Protobuf.asmdef ./gen/csharp/Wolffun.Protobuf.asmdef
-          
+        shell: bash
+
+      - uses: EndBug/add-and-commit@v9
+
+      - name: Run build script
+        run: |
           ./tools/unity-meta-check ./gen/csharp
           ./tools/unity-meta-autofix -root-dir ./gen/csharp .
         shell: bash
-
       - uses: EndBug/add-and-commit@v9
