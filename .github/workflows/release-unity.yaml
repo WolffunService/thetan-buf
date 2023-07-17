@@ -17,7 +17,19 @@ jobs:
       - name: Run build script
         run: | 
           ./unity/increment_version.sh
-          cat ./unity/package.json
+          
           buf generate proto
+          
+          cp ./unity/package.json ./gen/csharp/package.json
+          cp ./unity/Wolffun.Protobuf.asmdef ./gen/csharp/Wolffun.Protobuf.asmdef
+          
+          ./tools/unity-meta-check ./gen/csharp
+          ./tools/unity-meta-autofix -root-dir ./gen/csharp .
+          
           git status
+          git add gen/*
+          git commit -m "bot: generated code"
+          
+          git status
+          git log
         shell: bash
