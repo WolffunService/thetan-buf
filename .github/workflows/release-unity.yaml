@@ -34,7 +34,6 @@ jobs:
       - name: Run build script
         run: |
           ./tools/unity-meta-check ./gen/csharp
-          set -x
           ./tools/unity-meta-autofix -root-dir ./gen/csharp .
-        shell: bash
+        shell: /usr/bin/bash --noprofile --norc -o pipefail {0}
       - uses: EndBug/add-and-commit@v9
