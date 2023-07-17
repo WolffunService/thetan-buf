@@ -33,6 +33,7 @@ jobs:
 
       - name: Run build script
         run: |
+          set -eo pipefail
           ./tools/unity-meta-check ./gen/csharp
           ./tools/unity-meta-autofix -root-dir ./gen/csharp .
         shell: bash
