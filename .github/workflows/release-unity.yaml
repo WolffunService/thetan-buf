@@ -12,9 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: bufbuild/buf-setup-action@v1
 
       - name: Run build script
         run: | 
           ./unity/increment_version.sh
           cat ./unity/package.json
+          buf generate proto
+          git status
         shell: bash
