@@ -11,7 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
       - uses: bufbuild/buf-setup-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -27,11 +30,6 @@ jobs:
           
           ./tools/unity-meta-check ./gen/csharp
           ./tools/unity-meta-autofix -root-dir ./gen/csharp .
-          
-          git status
-          git add gen/*
-          git commit -m "bot: generated code" --author "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
-          
-          git status
-          git log
         shell: bash
+
+      - uses: EndBug/add-and-commit@v9
