@@ -46,11 +46,12 @@ message PlayerMatchInfo{
   string playerID = 1;
   int32 gameResult = 2;
   Hero hero = 3;
-  Skill skill = 4;
+  repeated Skill skills = 4;
 }
 
 message BattleEndResponse{
   string playerID = 1;
-  int32 trophy = 2;
-  int32 exp = 3;
+  bool isWin = 2;
+  int32 trophy = 3;
+  int32 exp = 4;
 }
