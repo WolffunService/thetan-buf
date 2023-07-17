@@ -35,6 +35,7 @@ jobs:
         run: |
           set -o pipefail
           ./tools/unity-meta-check ./gen/csharp
+          set -o pipefail
           ./tools/unity-meta-autofix -root-dir ./gen/csharp .
         shell: bash
       - uses: EndBug/add-and-commit@v9
