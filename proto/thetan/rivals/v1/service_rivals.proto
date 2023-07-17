@@ -40,6 +40,7 @@ service ThetanRivalService {
 message GetConfigForBotResponse {
   repeated SkinInfo listSkinInfo = 1;
   repeated CosmeticInfo listCosmeticInfo = 2;
+  repeated string cosmeticTypeEvolveSequence = 3;
 }
 
 message SkinInfo {
