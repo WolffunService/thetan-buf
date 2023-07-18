@@ -35,6 +35,7 @@ service ThetanRivalService {
 
   // Get config for bot
   rpc GetConfigForBot(GetConfigForBotRequest) returns (GetConfigForBotResponse) {}
+  rpc GetActiveTournaments(GetActiveTournamentsRequest) returns (GetActiveTournamentsResponse) {}
 }
 
 message GetConfigForBotResponse {
@@ -55,6 +56,24 @@ message CosmeticInfo {
 }
 
 message GetConfigForBotRequest {
+}
+
+message GetActiveTournamentsRequest {
+}
+
+message GetActiveTournamentsResponse {
+  repeated TournamentInfo Tournaments = 1;
+}
+
+message TournamentInfo {
+  string tournamentID = 1;
+  string tag = 2;
+  repeated MapInfo currentMaps = 3;
+}
+
+message MapInfo {
+  int32 mapID = 1;
+  int32 mapDifficulty = 2;
 }
 
 message EmptyResponse {}

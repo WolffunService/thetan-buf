@@ -67,7 +67,7 @@ func (x FriendInfo_FRIEND_STATUS) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use FriendInfo_FRIEND_STATUS.Descriptor instead.
 func (FriendInfo_FRIEND_STATUS) EnumDescriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{19, 0}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{23, 0}
 }
 
 type GetConfigForBotResponse struct {
@@ -289,6 +289,209 @@ func (*GetConfigForBotRequest) Descriptor() ([]byte, []int) {
 	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{3}
 }
 
+type GetActiveTournamentsRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *GetActiveTournamentsRequest) Reset() {
+	*x = GetActiveTournamentsRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[4]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *GetActiveTournamentsRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*GetActiveTournamentsRequest) ProtoMessage() {}
+
+func (x *GetActiveTournamentsRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[4]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use GetActiveTournamentsRequest.ProtoReflect.Descriptor instead.
+func (*GetActiveTournamentsRequest) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{4}
+}
+
+type GetActiveTournamentsResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Tournaments []*TournamentInfo `protobuf:"bytes,1,rep,name=Tournaments,proto3" json:"Tournaments,omitempty"`
+}
+
+func (x *GetActiveTournamentsResponse) Reset() {
+	*x = GetActiveTournamentsResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[5]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *GetActiveTournamentsResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*GetActiveTournamentsResponse) ProtoMessage() {}
+
+func (x *GetActiveTournamentsResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[5]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use GetActiveTournamentsResponse.ProtoReflect.Descriptor instead.
+func (*GetActiveTournamentsResponse) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{5}
+}
+
+func (x *GetActiveTournamentsResponse) GetTournaments() []*TournamentInfo {
+	if x != nil {
+		return x.Tournaments
+	}
+	return nil
+}
+
+type TournamentInfo struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	TournamentID string     `protobuf:"bytes,1,opt,name=tournamentID,proto3" json:"tournamentID,omitempty"`
+	Tag          string     `protobuf:"bytes,2,opt,name=tag,proto3" json:"tag,omitempty"`
+	CurrentMaps  []*MapInfo `protobuf:"bytes,3,rep,name=currentMaps,proto3" json:"currentMaps,omitempty"`
+}
+
+func (x *TournamentInfo) Reset() {
+	*x = TournamentInfo{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[6]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *TournamentInfo) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*TournamentInfo) ProtoMessage() {}
+
+func (x *TournamentInfo) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[6]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use TournamentInfo.ProtoReflect.Descriptor instead.
+func (*TournamentInfo) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{6}
+}
+
+func (x *TournamentInfo) GetTournamentID() string {
+	if x != nil {
+		return x.TournamentID
+	}
+	return ""
+}
+
+func (x *TournamentInfo) GetTag() string {
+	if x != nil {
+		return x.Tag
+	}
+	return ""
+}
+
+func (x *TournamentInfo) GetCurrentMaps() []*MapInfo {
+	if x != nil {
+		return x.CurrentMaps
+	}
+	return nil
+}
+
+type MapInfo struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	MapID         int32 `protobuf:"varint,1,opt,name=mapID,proto3" json:"mapID,omitempty"`
+	MapDifficulty int32 `protobuf:"varint,2,opt,name=mapDifficulty,proto3" json:"mapDifficulty,omitempty"`
+}
+
+func (x *MapInfo) Reset() {
+	*x = MapInfo{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[7]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *MapInfo) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*MapInfo) ProtoMessage() {}
+
+func (x *MapInfo) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[7]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use MapInfo.ProtoReflect.Descriptor instead.
+func (*MapInfo) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{7}
+}
+
+func (x *MapInfo) GetMapID() int32 {
+	if x != nil {
+		return x.MapID
+	}
+	return 0
+}
+
+func (x *MapInfo) GetMapDifficulty() int32 {
+	if x != nil {
+		return x.MapDifficulty
+	}
+	return 0
+}
+
 type EmptyResponse struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -298,7 +501,7 @@ type EmptyResponse struct {
 func (x *EmptyResponse) Reset() {
 	*x = EmptyResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[4]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[8]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -311,7 +514,7 @@ func (x *EmptyResponse) String() string {
 func (*EmptyResponse) ProtoMessage() {}
 
 func (x *EmptyResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[4]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[8]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -324,7 +527,7 @@ func (x *EmptyResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EmptyResponse.ProtoReflect.Descriptor instead.
 func (*EmptyResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{4}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{8}
 }
 
 type UserProfileRequest struct {
@@ -339,7 +542,7 @@ type UserProfileRequest struct {
 func (x *UserProfileRequest) Reset() {
 	*x = UserProfileRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[5]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[9]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -352,7 +555,7 @@ func (x *UserProfileRequest) String() string {
 func (*UserProfileRequest) ProtoMessage() {}
 
 func (x *UserProfileRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[5]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[9]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -365,7 +568,7 @@ func (x *UserProfileRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserProfileRequest.ProtoReflect.Descriptor instead.
 func (*UserProfileRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{5}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *UserProfileRequest) GetUserId() string {
@@ -399,7 +602,7 @@ type UserProfileResponse struct {
 func (x *UserProfileResponse) Reset() {
 	*x = UserProfileResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[6]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[10]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -412,7 +615,7 @@ func (x *UserProfileResponse) String() string {
 func (*UserProfileResponse) ProtoMessage() {}
 
 func (x *UserProfileResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[6]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[10]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -425,7 +628,7 @@ func (x *UserProfileResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserProfileResponse.ProtoReflect.Descriptor instead.
 func (*UserProfileResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{6}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *UserProfileResponse) GetId() string {
@@ -489,7 +692,7 @@ type UserProfileRank struct {
 func (x *UserProfileRank) Reset() {
 	*x = UserProfileRank{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[7]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[11]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -502,7 +705,7 @@ func (x *UserProfileRank) String() string {
 func (*UserProfileRank) ProtoMessage() {}
 
 func (x *UserProfileRank) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[7]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[11]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -515,7 +718,7 @@ func (x *UserProfileRank) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserProfileRank.ProtoReflect.Descriptor instead.
 func (*UserProfileRank) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{7}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *UserProfileRank) GetTrophies() int32 {
@@ -543,7 +746,7 @@ type UserSelectedMinionRequest struct {
 func (x *UserSelectedMinionRequest) Reset() {
 	*x = UserSelectedMinionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[8]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[12]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -556,7 +759,7 @@ func (x *UserSelectedMinionRequest) String() string {
 func (*UserSelectedMinionRequest) ProtoMessage() {}
 
 func (x *UserSelectedMinionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[8]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[12]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -569,7 +772,7 @@ func (x *UserSelectedMinionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserSelectedMinionRequest.ProtoReflect.Descriptor instead.
 func (*UserSelectedMinionRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{8}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *UserSelectedMinionRequest) GetUserId() string {
@@ -599,7 +802,7 @@ type UserSelectedMinionResponse struct {
 func (x *UserSelectedMinionResponse) Reset() {
 	*x = UserSelectedMinionResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[9]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[13]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -612,7 +815,7 @@ func (x *UserSelectedMinionResponse) String() string {
 func (*UserSelectedMinionResponse) ProtoMessage() {}
 
 func (x *UserSelectedMinionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[9]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[13]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -625,7 +828,7 @@ func (x *UserSelectedMinionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserSelectedMinionResponse.ProtoReflect.Descriptor instead.
 func (*UserSelectedMinionResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{9}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *UserSelectedMinionResponse) GetId() string {
@@ -709,7 +912,7 @@ type UserMinionsRequest struct {
 func (x *UserMinionsRequest) Reset() {
 	*x = UserMinionsRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[10]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[14]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -722,7 +925,7 @@ func (x *UserMinionsRequest) String() string {
 func (*UserMinionsRequest) ProtoMessage() {}
 
 func (x *UserMinionsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[10]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[14]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -735,7 +938,7 @@ func (x *UserMinionsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserMinionsRequest.ProtoReflect.Descriptor instead.
 func (*UserMinionsRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{10}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *UserMinionsRequest) GetUserId() string {
@@ -756,7 +959,7 @@ type UserMinionsResponse struct {
 func (x *UserMinionsResponse) Reset() {
 	*x = UserMinionsResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[11]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[15]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -769,7 +972,7 @@ func (x *UserMinionsResponse) String() string {
 func (*UserMinionsResponse) ProtoMessage() {}
 
 func (x *UserMinionsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[11]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[15]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -782,7 +985,7 @@ func (x *UserMinionsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserMinionsResponse.ProtoReflect.Descriptor instead.
 func (*UserMinionsResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{11}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *UserMinionsResponse) GetMinions() []*Minion {
@@ -812,7 +1015,7 @@ type Minion struct {
 func (x *Minion) Reset() {
 	*x = Minion{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[12]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[16]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -825,7 +1028,7 @@ func (x *Minion) String() string {
 func (*Minion) ProtoMessage() {}
 
 func (x *Minion) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[12]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[16]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -838,7 +1041,7 @@ func (x *Minion) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Minion.ProtoReflect.Descriptor instead.
 func (*Minion) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{12}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *Minion) GetId() string {
@@ -922,7 +1125,7 @@ type MinionRequest struct {
 func (x *MinionRequest) Reset() {
 	*x = MinionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[13]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[17]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -935,7 +1138,7 @@ func (x *MinionRequest) String() string {
 func (*MinionRequest) ProtoMessage() {}
 
 func (x *MinionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[13]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[17]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -948,7 +1151,7 @@ func (x *MinionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MinionRequest.ProtoReflect.Descriptor instead.
 func (*MinionRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{13}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *MinionRequest) GetMinionID() string {
@@ -969,7 +1172,7 @@ type MinionResponse struct {
 func (x *MinionResponse) Reset() {
 	*x = MinionResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[14]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[18]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -982,7 +1185,7 @@ func (x *MinionResponse) String() string {
 func (*MinionResponse) ProtoMessage() {}
 
 func (x *MinionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[14]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[18]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -995,7 +1198,7 @@ func (x *MinionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MinionResponse.ProtoReflect.Descriptor instead.
 func (*MinionResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{14}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *MinionResponse) GetMinion() *Minion {
@@ -1018,7 +1221,7 @@ type CreateMinionRequest struct {
 func (x *CreateMinionRequest) Reset() {
 	*x = CreateMinionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[15]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[19]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1031,7 +1234,7 @@ func (x *CreateMinionRequest) String() string {
 func (*CreateMinionRequest) ProtoMessage() {}
 
 func (x *CreateMinionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[15]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[19]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1044,7 +1247,7 @@ func (x *CreateMinionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateMinionRequest.ProtoReflect.Descriptor instead.
 func (*CreateMinionRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{15}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *CreateMinionRequest) GetUserId() string {
@@ -1079,7 +1282,7 @@ type CreateMinionResponse struct {
 func (x *CreateMinionResponse) Reset() {
 	*x = CreateMinionResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[16]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[20]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1092,7 +1295,7 @@ func (x *CreateMinionResponse) String() string {
 func (*CreateMinionResponse) ProtoMessage() {}
 
 func (x *CreateMinionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[16]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[20]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1105,7 +1308,7 @@ func (x *CreateMinionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateMinionResponse.ProtoReflect.Descriptor instead.
 func (*CreateMinionResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{16}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *CreateMinionResponse) GetMinion() *Minion {
@@ -1126,7 +1329,7 @@ type GetUserFriendRequest struct {
 func (x *GetUserFriendRequest) Reset() {
 	*x = GetUserFriendRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[17]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[21]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1139,7 +1342,7 @@ func (x *GetUserFriendRequest) String() string {
 func (*GetUserFriendRequest) ProtoMessage() {}
 
 func (x *GetUserFriendRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[17]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[21]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1152,7 +1355,7 @@ func (x *GetUserFriendRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetUserFriendRequest.ProtoReflect.Descriptor instead.
 func (*GetUserFriendRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{17}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *GetUserFriendRequest) GetUserId() string {
@@ -1173,7 +1376,7 @@ type GetUserFriendResponse struct {
 func (x *GetUserFriendResponse) Reset() {
 	*x = GetUserFriendResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[18]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[22]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1186,7 +1389,7 @@ func (x *GetUserFriendResponse) String() string {
 func (*GetUserFriendResponse) ProtoMessage() {}
 
 func (x *GetUserFriendResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[18]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[22]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1199,7 +1402,7 @@ func (x *GetUserFriendResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetUserFriendResponse.ProtoReflect.Descriptor instead.
 func (*GetUserFriendResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{18}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{22}
 }
 
 func (x *GetUserFriendResponse) GetFriends() []*FriendInfo {
@@ -1223,7 +1426,7 @@ type FriendInfo struct {
 func (x *FriendInfo) Reset() {
 	*x = FriendInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[19]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[23]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1236,7 +1439,7 @@ func (x *FriendInfo) String() string {
 func (*FriendInfo) ProtoMessage() {}
 
 func (x *FriendInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[19]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[23]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1249,7 +1452,7 @@ func (x *FriendInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FriendInfo.ProtoReflect.Descriptor instead.
 func (*FriendInfo) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{19}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{23}
 }
 
 func (x *FriendInfo) GetFriendId() string {
@@ -1294,7 +1497,7 @@ type GetMatchInfoRequest struct {
 func (x *GetMatchInfoRequest) Reset() {
 	*x = GetMatchInfoRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[20]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[24]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1307,7 +1510,7 @@ func (x *GetMatchInfoRequest) String() string {
 func (*GetMatchInfoRequest) ProtoMessage() {}
 
 func (x *GetMatchInfoRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[20]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[24]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1320,7 +1523,7 @@ func (x *GetMatchInfoRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetMatchInfoRequest.ProtoReflect.Descriptor instead.
 func (*GetMatchInfoRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{20}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{24}
 }
 
 func (x *GetMatchInfoRequest) GetUserID() string {
@@ -1366,7 +1569,7 @@ type GetMatchInfoResponse struct {
 func (x *GetMatchInfoResponse) Reset() {
 	*x = GetMatchInfoResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[21]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[25]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1379,7 +1582,7 @@ func (x *GetMatchInfoResponse) String() string {
 func (*GetMatchInfoResponse) ProtoMessage() {}
 
 func (x *GetMatchInfoResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[21]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[25]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1392,7 +1595,7 @@ func (x *GetMatchInfoResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetMatchInfoResponse.ProtoReflect.Descriptor instead.
 func (*GetMatchInfoResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{21}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{25}
 }
 
 func (x *GetMatchInfoResponse) GetPlayerInfo() *v1.PlayerInfoMatchProto {
@@ -1449,7 +1652,7 @@ type RoundStat struct {
 func (x *RoundStat) Reset() {
 	*x = RoundStat{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[22]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[26]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1462,7 +1665,7 @@ func (x *RoundStat) String() string {
 func (*RoundStat) ProtoMessage() {}
 
 func (x *RoundStat) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[22]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[26]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1475,7 +1678,7 @@ func (x *RoundStat) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RoundStat.ProtoReflect.Descriptor instead.
 func (*RoundStat) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{22}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{26}
 }
 
 func (x *RoundStat) GetRoundId() int32 {
@@ -1554,7 +1757,7 @@ type MapData struct {
 func (x *MapData) Reset() {
 	*x = MapData{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[23]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[27]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1567,7 +1770,7 @@ func (x *MapData) String() string {
 func (*MapData) ProtoMessage() {}
 
 func (x *MapData) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[23]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[27]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1580,7 +1783,7 @@ func (x *MapData) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MapData.ProtoReflect.Descriptor instead.
 func (*MapData) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{23}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{27}
 }
 
 func (x *MapData) GetGamePlay() int32 {
@@ -1619,7 +1822,7 @@ type PlayerStat struct {
 func (x *PlayerStat) Reset() {
 	*x = PlayerStat{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[24]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[28]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1632,7 +1835,7 @@ func (x *PlayerStat) String() string {
 func (*PlayerStat) ProtoMessage() {}
 
 func (x *PlayerStat) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[24]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[28]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1645,7 +1848,7 @@ func (x *PlayerStat) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PlayerStat.ProtoReflect.Descriptor instead.
 func (*PlayerStat) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{24}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{28}
 }
 
 func (x *PlayerStat) GetRoundScoreAll() int32 {
@@ -1695,7 +1898,7 @@ type GetActivityRequest struct {
 func (x *GetActivityRequest) Reset() {
 	*x = GetActivityRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[25]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[29]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1708,7 +1911,7 @@ func (x *GetActivityRequest) String() string {
 func (*GetActivityRequest) ProtoMessage() {}
 
 func (x *GetActivityRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[25]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[29]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1721,7 +1924,7 @@ func (x *GetActivityRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetActivityRequest.ProtoReflect.Descriptor instead.
 func (*GetActivityRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{25}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{29}
 }
 
 func (x *GetActivityRequest) GetTownID() string {
@@ -1744,7 +1947,7 @@ type GetActivityResponse struct {
 func (x *GetActivityResponse) Reset() {
 	*x = GetActivityResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[26]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[30]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1757,7 +1960,7 @@ func (x *GetActivityResponse) String() string {
 func (*GetActivityResponse) ProtoMessage() {}
 
 func (x *GetActivityResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[26]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[30]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1770,7 +1973,7 @@ func (x *GetActivityResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetActivityResponse.ProtoReflect.Descriptor instead.
 func (*GetActivityResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{26}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{30}
 }
 
 func (x *GetActivityResponse) GetActivityID() string {
@@ -1812,7 +2015,7 @@ type ClassInfo struct {
 func (x *ClassInfo) Reset() {
 	*x = ClassInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[27]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[31]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1825,7 +2028,7 @@ func (x *ClassInfo) String() string {
 func (*ClassInfo) ProtoMessage() {}
 
 func (x *ClassInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[27]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[31]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1838,7 +2041,7 @@ func (x *ClassInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ClassInfo.ProtoReflect.Descriptor instead.
 func (*ClassInfo) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{27}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{31}
 }
 
 func (x *ClassInfo) GetClassID() int32 {
@@ -1911,7 +2114,7 @@ type SimpleItem struct {
 func (x *SimpleItem) Reset() {
 	*x = SimpleItem{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[28]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[32]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1924,7 +2127,7 @@ func (x *SimpleItem) String() string {
 func (*SimpleItem) ProtoMessage() {}
 
 func (x *SimpleItem) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[28]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[32]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1937,7 +2140,7 @@ func (x *SimpleItem) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SimpleItem.ProtoReflect.Descriptor instead.
 func (*SimpleItem) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{28}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{32}
 }
 
 func (x *SimpleItem) GetItemType() string {
@@ -1981,7 +2184,7 @@ type GetTownUserRequest struct {
 func (x *GetTownUserRequest) Reset() {
 	*x = GetTownUserRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[29]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[33]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1994,7 +2197,7 @@ func (x *GetTownUserRequest) String() string {
 func (*GetTownUserRequest) ProtoMessage() {}
 
 func (x *GetTownUserRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[29]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[33]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2007,7 +2210,7 @@ func (x *GetTownUserRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTownUserRequest.ProtoReflect.Descriptor instead.
 func (*GetTownUserRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{29}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{33}
 }
 
 func (x *GetTownUserRequest) GetUserID() string {
@@ -2049,7 +2252,7 @@ type LobbyTown struct {
 func (x *LobbyTown) Reset() {
 	*x = LobbyTown{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[30]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[34]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2062,7 +2265,7 @@ func (x *LobbyTown) String() string {
 func (*LobbyTown) ProtoMessage() {}
 
 func (x *LobbyTown) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[30]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[34]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2075,7 +2278,7 @@ func (x *LobbyTown) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LobbyTown.ProtoReflect.Descriptor instead.
 func (*LobbyTown) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{30}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{34}
 }
 
 func (x *LobbyTown) GetTownID() string {
@@ -2146,7 +2349,7 @@ type PickTownUserRequest struct {
 func (x *PickTownUserRequest) Reset() {
 	*x = PickTownUserRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[31]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[35]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2159,7 +2362,7 @@ func (x *PickTownUserRequest) String() string {
 func (*PickTownUserRequest) ProtoMessage() {}
 
 func (x *PickTownUserRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[31]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[35]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2172,7 +2375,7 @@ func (x *PickTownUserRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickTownUserRequest.ProtoReflect.Descriptor instead.
 func (*PickTownUserRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{31}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{35}
 }
 
 func (x *PickTownUserRequest) GetUserID() string {
@@ -2202,7 +2405,7 @@ type TrackSessionRequest struct {
 func (x *TrackSessionRequest) Reset() {
 	*x = TrackSessionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[32]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[36]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2215,7 +2418,7 @@ func (x *TrackSessionRequest) String() string {
 func (*TrackSessionRequest) ProtoMessage() {}
 
 func (x *TrackSessionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[32]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[36]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2228,7 +2431,7 @@ func (x *TrackSessionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TrackSessionRequest.ProtoReflect.Descriptor instead.
 func (*TrackSessionRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{32}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{36}
 }
 
 func (x *TrackSessionRequest) GetUserID() string {
@@ -2261,7 +2464,7 @@ type TrackSessionResponse struct {
 func (x *TrackSessionResponse) Reset() {
 	*x = TrackSessionResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[33]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[37]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2274,7 +2477,7 @@ func (x *TrackSessionResponse) String() string {
 func (*TrackSessionResponse) ProtoMessage() {}
 
 func (x *TrackSessionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[33]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[37]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2287,7 +2490,7 @@ func (x *TrackSessionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TrackSessionResponse.ProtoReflect.Descriptor instead.
 func (*TrackSessionResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{33}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{37}
 }
 
 type FindMatchInfoRequest struct {
@@ -2301,7 +2504,7 @@ type FindMatchInfoRequest struct {
 func (x *FindMatchInfoRequest) Reset() {
 	*x = FindMatchInfoRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[34]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[38]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2314,7 +2517,7 @@ func (x *FindMatchInfoRequest) String() string {
 func (*FindMatchInfoRequest) ProtoMessage() {}
 
 func (x *FindMatchInfoRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[34]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[38]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2327,7 +2530,7 @@ func (x *FindMatchInfoRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindMatchInfoRequest.ProtoReflect.Descriptor instead.
 func (*FindMatchInfoRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{34}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{38}
 }
 
 func (x *FindMatchInfoRequest) GetPlayersID() []string {
@@ -2348,7 +2551,7 @@ type FindMatchInfoResponse struct {
 func (x *FindMatchInfoResponse) Reset() {
 	*x = FindMatchInfoResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[35]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[39]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2361,7 +2564,7 @@ func (x *FindMatchInfoResponse) String() string {
 func (*FindMatchInfoResponse) ProtoMessage() {}
 
 func (x *FindMatchInfoResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[35]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[39]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2374,7 +2577,7 @@ func (x *FindMatchInfoResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindMatchInfoResponse.ProtoReflect.Descriptor instead.
 func (*FindMatchInfoResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{35}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{39}
 }
 
 func (x *FindMatchInfoResponse) GetPlayers() []*v1.PlayerInfoMatchProto {
@@ -2422,7 +2625,28 @@ var file_thetan_rivals_v1_service_rivals_proto_rawDesc = []byte{
 	0x61, 0x72, 0x69, 0x74, 0x79, 0x18, 0x03, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0e, 0x63, 0x6f, 0x73,
 	0x6d, 0x65, 0x74, 0x69, 0x63, 0x52, 0x61, 0x72, 0x69, 0x74, 0x79, 0x22, 0x18, 0x0a, 0x16, 0x47,
 	0x65, 0x74, 0x43, 0x6f, 0x6e, 0x66, 0x69, 0x67, 0x46, 0x6f, 0x72, 0x42, 0x6f, 0x74, 0x52, 0x65,
-	0x71, 0x75, 0x65, 0x73, 0x74, 0x22, 0x0f, 0x0a, 0x0d, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x52, 0x65,
+	0x71, 0x75, 0x65, 0x73, 0x74, 0x22, 0x1d, 0x0a, 0x1b, 0x47, 0x65, 0x74, 0x41, 0x63, 0x74, 0x69,
+	0x76, 0x65, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x73, 0x52, 0x65, 0x71,
+	0x75, 0x65, 0x73, 0x74, 0x22, 0x62, 0x0a, 0x1c, 0x47, 0x65, 0x74, 0x41, 0x63, 0x74, 0x69, 0x76,
+	0x65, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x73, 0x52, 0x65, 0x73, 0x70,
+	0x6f, 0x6e, 0x73, 0x65, 0x12, 0x42, 0x0a, 0x0b, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65,
+	0x6e, 0x74, 0x73, 0x18, 0x01, 0x20, 0x03, 0x28, 0x0b, 0x32, 0x20, 0x2e, 0x74, 0x68, 0x65, 0x74,
+	0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x54, 0x6f, 0x75,
+	0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x0b, 0x54, 0x6f, 0x75,
+	0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x73, 0x22, 0x83, 0x01, 0x0a, 0x0e, 0x54, 0x6f, 0x75,
+	0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x22, 0x0a, 0x0c, 0x74,
+	0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28,
+	0x09, 0x52, 0x0c, 0x74, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x49, 0x44, 0x12,
+	0x10, 0x0a, 0x03, 0x74, 0x61, 0x67, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x03, 0x74, 0x61,
+	0x67, 0x12, 0x3b, 0x0a, 0x0b, 0x63, 0x75, 0x72, 0x72, 0x65, 0x6e, 0x74, 0x4d, 0x61, 0x70, 0x73,
+	0x18, 0x03, 0x20, 0x03, 0x28, 0x0b, 0x32, 0x19, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
+	0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x70, 0x49, 0x6e, 0x66,
+	0x6f, 0x52, 0x0b, 0x63, 0x75, 0x72, 0x72, 0x65, 0x6e, 0x74, 0x4d, 0x61, 0x70, 0x73, 0x22, 0x45,
+	0x0a, 0x07, 0x4d, 0x61, 0x70, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x14, 0x0a, 0x05, 0x6d, 0x61, 0x70,
+	0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x05, 0x6d, 0x61, 0x70, 0x49, 0x44, 0x12,
+	0x24, 0x0a, 0x0d, 0x6d, 0x61, 0x70, 0x44, 0x69, 0x66, 0x66, 0x69, 0x63, 0x75, 0x6c, 0x74, 0x79,
+	0x18, 0x02, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0d, 0x6d, 0x61, 0x70, 0x44, 0x69, 0x66, 0x66, 0x69,
+	0x63, 0x75, 0x6c, 0x74, 0x79, 0x22, 0x0f, 0x0a, 0x0d, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x52, 0x65,
 	0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x4e, 0x0a, 0x12, 0x55, 0x73, 0x65, 0x72, 0x50, 0x72,
 	0x6f, 0x66, 0x69, 0x6c, 0x65, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x16, 0x0a, 0x06,
 	0x75, 0x73, 0x65, 0x72, 0x49, 0x64, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x75, 0x73,
@@ -2712,7 +2936,7 @@ var file_thetan_rivals_v1_service_rivals_proto_rawDesc = []byte{
 	0x20, 0x03, 0x28, 0x0b, 0x32, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68,
 	0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x49, 0x6e,
 	0x66, 0x6f, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x52, 0x07, 0x70, 0x6c,
-	0x61, 0x79, 0x65, 0x72, 0x73, 0x32, 0x9f, 0x0a, 0x0a, 0x12, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e,
+	0x61, 0x79, 0x65, 0x72, 0x73, 0x32, 0x98, 0x0b, 0x0a, 0x12, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e,
 	0x52, 0x69, 0x76, 0x61, 0x6c, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x5f, 0x0a, 0x0e,
 	0x47, 0x65, 0x74, 0x55, 0x73, 0x65, 0x72, 0x50, 0x72, 0x6f, 0x66, 0x69, 0x6c, 0x65, 0x12, 0x24,
 	0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76,
@@ -2794,20 +3018,27 @@ var file_thetan_rivals_v1_service_rivals_proto_rawDesc = []byte{
 	0x42, 0x6f, 0x74, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x29, 0x2e, 0x74, 0x68, 0x65,
 	0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65,
 	0x74, 0x43, 0x6f, 0x6e, 0x66, 0x69, 0x67, 0x46, 0x6f, 0x72, 0x42, 0x6f, 0x74, 0x52, 0x65, 0x73,
-	0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x42, 0xc1, 0x01, 0x0a, 0x14, 0x63, 0x6f, 0x6d, 0x2e,
-	0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31,
-	0x42, 0x12, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x50,
-	0x72, 0x6f, 0x74, 0x6f, 0x50, 0x01, 0x5a, 0x33, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2d, 0x62,
-	0x75, 0x66, 0x2f, 0x67, 0x65, 0x6e, 0x2f, 0x67, 0x6f, 0x2f, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e,
-	0x2f, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2f, 0x76, 0x31, 0x3b, 0x74, 0x68, 0x65, 0x74, 0x61,
-	0x6e, 0x5f, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5f, 0x76, 0x31, 0xa2, 0x02, 0x03, 0x54, 0x52,
-	0x58, 0xaa, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x52, 0x69, 0x76, 0x61, 0x6c,
-	0x73, 0x2e, 0x56, 0x31, 0xca, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x5c, 0x52, 0x69,
-	0x76, 0x61, 0x6c, 0x73, 0x5c, 0x56, 0x31, 0xe2, 0x02, 0x1c, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e,
-	0x5c, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5c, 0x56, 0x31, 0x5c, 0x47, 0x50, 0x42, 0x4d, 0x65,
-	0x74, 0x61, 0x64, 0x61, 0x74, 0x61, 0xea, 0x02, 0x12, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x3a,
-	0x3a, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x3a, 0x3a, 0x56, 0x31, 0x62, 0x06, 0x70, 0x72, 0x6f,
-	0x74, 0x6f, 0x33,
+	0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x77, 0x0a, 0x14, 0x47, 0x65, 0x74, 0x41, 0x63,
+	0x74, 0x69, 0x76, 0x65, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x73, 0x12,
+	0x2d, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e,
+	0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x41, 0x63, 0x74, 0x69, 0x76, 0x65, 0x54, 0x6f, 0x75, 0x72,
+	0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x73, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x2e,
+	0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76,
+	0x31, 0x2e, 0x47, 0x65, 0x74, 0x41, 0x63, 0x74, 0x69, 0x76, 0x65, 0x54, 0x6f, 0x75, 0x72, 0x6e,
+	0x61, 0x6d, 0x65, 0x6e, 0x74, 0x73, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00,
+	0x42, 0xc1, 0x01, 0x0a, 0x14, 0x63, 0x6f, 0x6d, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
+	0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x42, 0x12, 0x53, 0x65, 0x72, 0x76, 0x69,
+	0x63, 0x65, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x01, 0x5a,
+	0x33, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2d, 0x62, 0x75, 0x66, 0x2f, 0x67, 0x65, 0x6e, 0x2f,
+	0x67, 0x6f, 0x2f, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2f, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73,
+	0x2f, 0x76, 0x31, 0x3b, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x5f, 0x72, 0x69, 0x76, 0x61, 0x6c,
+	0x73, 0x5f, 0x76, 0x31, 0xa2, 0x02, 0x03, 0x54, 0x52, 0x58, 0xaa, 0x02, 0x10, 0x54, 0x68, 0x65,
+	0x74, 0x61, 0x6e, 0x2e, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x56, 0x31, 0xca, 0x02, 0x10,
+	0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x5c, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5c, 0x56, 0x31,
+	0xe2, 0x02, 0x1c, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x5c, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73,
+	0x5c, 0x56, 0x31, 0x5c, 0x47, 0x50, 0x42, 0x4d, 0x65, 0x74, 0x61, 0x64, 0x61, 0x74, 0x61, 0xea,
+	0x02, 0x12, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x3a, 0x3a, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73,
+	0x3a, 0x3a, 0x56, 0x31, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -2823,104 +3054,112 @@ func file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP() []byte {
 }
 
 var file_thetan_rivals_v1_service_rivals_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_thetan_rivals_v1_service_rivals_proto_msgTypes = make([]protoimpl.MessageInfo, 39)
+var file_thetan_rivals_v1_service_rivals_proto_msgTypes = make([]protoimpl.MessageInfo, 43)
 var file_thetan_rivals_v1_service_rivals_proto_goTypes = []interface{}{
-	(FriendInfo_FRIEND_STATUS)(0),      // 0: thetan.rivals.v1.FriendInfo.FRIEND_STATUS
-	(*GetConfigForBotResponse)(nil),    // 1: thetan.rivals.v1.GetConfigForBotResponse
-	(*SkinInfo)(nil),                   // 2: thetan.rivals.v1.SkinInfo
-	(*CosmeticInfo)(nil),               // 3: thetan.rivals.v1.CosmeticInfo
-	(*GetConfigForBotRequest)(nil),     // 4: thetan.rivals.v1.GetConfigForBotRequest
-	(*EmptyResponse)(nil),              // 5: thetan.rivals.v1.EmptyResponse
-	(*UserProfileRequest)(nil),         // 6: thetan.rivals.v1.UserProfileRequest
-	(*UserProfileResponse)(nil),        // 7: thetan.rivals.v1.UserProfileResponse
-	(*UserProfileRank)(nil),            // 8: thetan.rivals.v1.UserProfileRank
-	(*UserSelectedMinionRequest)(nil),  // 9: thetan.rivals.v1.UserSelectedMinionRequest
-	(*UserSelectedMinionResponse)(nil), // 10: thetan.rivals.v1.UserSelectedMinionResponse
-	(*UserMinionsRequest)(nil),         // 11: thetan.rivals.v1.UserMinionsRequest
-	(*UserMinionsResponse)(nil),        // 12: thetan.rivals.v1.UserMinionsResponse
-	(*Minion)(nil),                     // 13: thetan.rivals.v1.Minion
-	(*MinionRequest)(nil),              // 14: thetan.rivals.v1.MinionRequest
-	(*MinionResponse)(nil),             // 15: thetan.rivals.v1.MinionResponse
-	(*CreateMinionRequest)(nil),        // 16: thetan.rivals.v1.CreateMinionRequest
-	(*CreateMinionResponse)(nil),       // 17: thetan.rivals.v1.CreateMinionResponse
-	(*GetUserFriendRequest)(nil),       // 18: thetan.rivals.v1.GetUserFriendRequest
-	(*GetUserFriendResponse)(nil),      // 19: thetan.rivals.v1.GetUserFriendResponse
-	(*FriendInfo)(nil),                 // 20: thetan.rivals.v1.FriendInfo
-	(*GetMatchInfoRequest)(nil),        // 21: thetan.rivals.v1.GetMatchInfoRequest
-	(*GetMatchInfoResponse)(nil),       // 22: thetan.rivals.v1.GetMatchInfoResponse
-	(*RoundStat)(nil),                  // 23: thetan.rivals.v1.RoundStat
-	(*MapData)(nil),                    // 24: thetan.rivals.v1.MapData
-	(*PlayerStat)(nil),                 // 25: thetan.rivals.v1.PlayerStat
-	(*GetActivityRequest)(nil),         // 26: thetan.rivals.v1.GetActivityRequest
-	(*GetActivityResponse)(nil),        // 27: thetan.rivals.v1.GetActivityResponse
-	(*ClassInfo)(nil),                  // 28: thetan.rivals.v1.ClassInfo
-	(*SimpleItem)(nil),                 // 29: thetan.rivals.v1.SimpleItem
-	(*GetTownUserRequest)(nil),         // 30: thetan.rivals.v1.GetTownUserRequest
-	(*LobbyTown)(nil),                  // 31: thetan.rivals.v1.LobbyTown
-	(*PickTownUserRequest)(nil),        // 32: thetan.rivals.v1.PickTownUserRequest
-	(*TrackSessionRequest)(nil),        // 33: thetan.rivals.v1.TrackSessionRequest
-	(*TrackSessionResponse)(nil),       // 34: thetan.rivals.v1.TrackSessionResponse
-	(*FindMatchInfoRequest)(nil),       // 35: thetan.rivals.v1.FindMatchInfoRequest
-	(*FindMatchInfoResponse)(nil),      // 36: thetan.rivals.v1.FindMatchInfoResponse
-	nil,                                // 37: thetan.rivals.v1.UserSelectedMinionResponse.AddInsEntry
-	nil,                                // 38: thetan.rivals.v1.Minion.AddInsEntry
-	nil,                                // 39: thetan.rivals.v1.PlayerStat.RoundPlayedEntry
-	(*v1.HeroCustomized)(nil),          // 40: thetan.shared.v1.HeroCustomized
-	(*v1.PlayerInfoMatchProto)(nil),    // 41: thetan.shared.v1.PlayerInfoMatchProto
+	(FriendInfo_FRIEND_STATUS)(0),        // 0: thetan.rivals.v1.FriendInfo.FRIEND_STATUS
+	(*GetConfigForBotResponse)(nil),      // 1: thetan.rivals.v1.GetConfigForBotResponse
+	(*SkinInfo)(nil),                     // 2: thetan.rivals.v1.SkinInfo
+	(*CosmeticInfo)(nil),                 // 3: thetan.rivals.v1.CosmeticInfo
+	(*GetConfigForBotRequest)(nil),       // 4: thetan.rivals.v1.GetConfigForBotRequest
+	(*GetActiveTournamentsRequest)(nil),  // 5: thetan.rivals.v1.GetActiveTournamentsRequest
+	(*GetActiveTournamentsResponse)(nil), // 6: thetan.rivals.v1.GetActiveTournamentsResponse
+	(*TournamentInfo)(nil),               // 7: thetan.rivals.v1.TournamentInfo
+	(*MapInfo)(nil),                      // 8: thetan.rivals.v1.MapInfo
+	(*EmptyResponse)(nil),                // 9: thetan.rivals.v1.EmptyResponse
+	(*UserProfileRequest)(nil),           // 10: thetan.rivals.v1.UserProfileRequest
+	(*UserProfileResponse)(nil),          // 11: thetan.rivals.v1.UserProfileResponse
+	(*UserProfileRank)(nil),              // 12: thetan.rivals.v1.UserProfileRank
+	(*UserSelectedMinionRequest)(nil),    // 13: thetan.rivals.v1.UserSelectedMinionRequest
+	(*UserSelectedMinionResponse)(nil),   // 14: thetan.rivals.v1.UserSelectedMinionResponse
+	(*UserMinionsRequest)(nil),           // 15: thetan.rivals.v1.UserMinionsRequest
+	(*UserMinionsResponse)(nil),          // 16: thetan.rivals.v1.UserMinionsResponse
+	(*Minion)(nil),                       // 17: thetan.rivals.v1.Minion
+	(*MinionRequest)(nil),                // 18: thetan.rivals.v1.MinionRequest
+	(*MinionResponse)(nil),               // 19: thetan.rivals.v1.MinionResponse
+	(*CreateMinionRequest)(nil),          // 20: thetan.rivals.v1.CreateMinionRequest
+	(*CreateMinionResponse)(nil),         // 21: thetan.rivals.v1.CreateMinionResponse
+	(*GetUserFriendRequest)(nil),         // 22: thetan.rivals.v1.GetUserFriendRequest
+	(*GetUserFriendResponse)(nil),        // 23: thetan.rivals.v1.GetUserFriendResponse
+	(*FriendInfo)(nil),                   // 24: thetan.rivals.v1.FriendInfo
+	(*GetMatchInfoRequest)(nil),          // 25: thetan.rivals.v1.GetMatchInfoRequest
+	(*GetMatchInfoResponse)(nil),         // 26: thetan.rivals.v1.GetMatchInfoResponse
+	(*RoundStat)(nil),                    // 27: thetan.rivals.v1.RoundStat
+	(*MapData)(nil),                      // 28: thetan.rivals.v1.MapData
+	(*PlayerStat)(nil),                   // 29: thetan.rivals.v1.PlayerStat
+	(*GetActivityRequest)(nil),           // 30: thetan.rivals.v1.GetActivityRequest
+	(*GetActivityResponse)(nil),          // 31: thetan.rivals.v1.GetActivityResponse
+	(*ClassInfo)(nil),                    // 32: thetan.rivals.v1.ClassInfo
+	(*SimpleItem)(nil),                   // 33: thetan.rivals.v1.SimpleItem
+	(*GetTownUserRequest)(nil),           // 34: thetan.rivals.v1.GetTownUserRequest
+	(*LobbyTown)(nil),                    // 35: thetan.rivals.v1.LobbyTown
+	(*PickTownUserRequest)(nil),          // 36: thetan.rivals.v1.PickTownUserRequest
+	(*TrackSessionRequest)(nil),          // 37: thetan.rivals.v1.TrackSessionRequest
+	(*TrackSessionResponse)(nil),         // 38: thetan.rivals.v1.TrackSessionResponse
+	(*FindMatchInfoRequest)(nil),         // 39: thetan.rivals.v1.FindMatchInfoRequest
+	(*FindMatchInfoResponse)(nil),        // 40: thetan.rivals.v1.FindMatchInfoResponse
+	nil,                                  // 41: thetan.rivals.v1.UserSelectedMinionResponse.AddInsEntry
+	nil,                                  // 42: thetan.rivals.v1.Minion.AddInsEntry
+	nil,                                  // 43: thetan.rivals.v1.PlayerStat.RoundPlayedEntry
+	(*v1.HeroCustomized)(nil),            // 44: thetan.shared.v1.HeroCustomized
+	(*v1.PlayerInfoMatchProto)(nil),      // 45: thetan.shared.v1.PlayerInfoMatchProto
 }
 var file_thetan_rivals_v1_service_rivals_proto_depIdxs = []int32{
 	2,  // 0: thetan.rivals.v1.GetConfigForBotResponse.listSkinInfo:type_name -> thetan.rivals.v1.SkinInfo
 	3,  // 1: thetan.rivals.v1.GetConfigForBotResponse.listCosmeticInfo:type_name -> thetan.rivals.v1.CosmeticInfo
-	8,  // 2: thetan.rivals.v1.UserProfileResponse.rank:type_name -> thetan.rivals.v1.UserProfileRank
-	37, // 3: thetan.rivals.v1.UserSelectedMinionResponse.addIns:type_name -> thetan.rivals.v1.UserSelectedMinionResponse.AddInsEntry
-	40, // 4: thetan.rivals.v1.UserSelectedMinionResponse.customized:type_name -> thetan.shared.v1.HeroCustomized
-	13, // 5: thetan.rivals.v1.UserMinionsResponse.minions:type_name -> thetan.rivals.v1.Minion
-	38, // 6: thetan.rivals.v1.Minion.addIns:type_name -> thetan.rivals.v1.Minion.AddInsEntry
-	40, // 7: thetan.rivals.v1.Minion.customized:type_name -> thetan.shared.v1.HeroCustomized
-	13, // 8: thetan.rivals.v1.MinionResponse.minion:type_name -> thetan.rivals.v1.Minion
-	13, // 9: thetan.rivals.v1.CreateMinionResponse.minion:type_name -> thetan.rivals.v1.Minion
-	20, // 10: thetan.rivals.v1.GetUserFriendResponse.friends:type_name -> thetan.rivals.v1.FriendInfo
-	0,  // 11: thetan.rivals.v1.FriendInfo.status:type_name -> thetan.rivals.v1.FriendInfo.FRIEND_STATUS
-	7,  // 12: thetan.rivals.v1.FriendInfo.profile:type_name -> thetan.rivals.v1.UserProfileResponse
-	23, // 13: thetan.rivals.v1.GetMatchInfoRequest.lastRound:type_name -> thetan.rivals.v1.RoundStat
-	41, // 14: thetan.rivals.v1.GetMatchInfoResponse.playerInfo:type_name -> thetan.shared.v1.PlayerInfoMatchProto
-	24, // 15: thetan.rivals.v1.GetMatchInfoResponse.mapIds:type_name -> thetan.rivals.v1.MapData
-	25, // 16: thetan.rivals.v1.GetMatchInfoResponse.playerStat:type_name -> thetan.rivals.v1.PlayerStat
-	39, // 17: thetan.rivals.v1.PlayerStat.roundPlayed:type_name -> thetan.rivals.v1.PlayerStat.RoundPlayedEntry
-	28, // 18: thetan.rivals.v1.GetActivityResponse.classes:type_name -> thetan.rivals.v1.ClassInfo
-	29, // 19: thetan.rivals.v1.ClassInfo.rewards:type_name -> thetan.rivals.v1.SimpleItem
-	41, // 20: thetan.rivals.v1.FindMatchInfoResponse.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
-	6,  // 21: thetan.rivals.v1.ThetanRivalService.GetUserProfile:input_type -> thetan.rivals.v1.UserProfileRequest
-	11, // 22: thetan.rivals.v1.ThetanRivalService.GetUserMinions:input_type -> thetan.rivals.v1.UserMinionsRequest
-	9,  // 23: thetan.rivals.v1.ThetanRivalService.GetUserSelectedMinion:input_type -> thetan.rivals.v1.UserSelectedMinionRequest
-	14, // 24: thetan.rivals.v1.ThetanRivalService.GetMinion:input_type -> thetan.rivals.v1.MinionRequest
-	16, // 25: thetan.rivals.v1.ThetanRivalService.CreateMinion:input_type -> thetan.rivals.v1.CreateMinionRequest
-	18, // 26: thetan.rivals.v1.ThetanRivalService.GetListFriends:input_type -> thetan.rivals.v1.GetUserFriendRequest
-	21, // 27: thetan.rivals.v1.ThetanRivalService.GetMatchInfoOnboarding:input_type -> thetan.rivals.v1.GetMatchInfoRequest
-	26, // 28: thetan.rivals.v1.ThetanRivalService.GetLatestLobbyActivityInfo:input_type -> thetan.rivals.v1.GetActivityRequest
-	30, // 29: thetan.rivals.v1.ThetanRivalService.GetTownUser:input_type -> thetan.rivals.v1.GetTownUserRequest
-	32, // 30: thetan.rivals.v1.ThetanRivalService.PickTownForUser:input_type -> thetan.rivals.v1.PickTownUserRequest
-	33, // 31: thetan.rivals.v1.ThetanRivalService.TrackSession:input_type -> thetan.rivals.v1.TrackSessionRequest
-	35, // 32: thetan.rivals.v1.ThetanRivalService.GetFindMatchInfo:input_type -> thetan.rivals.v1.FindMatchInfoRequest
-	4,  // 33: thetan.rivals.v1.ThetanRivalService.GetConfigForBot:input_type -> thetan.rivals.v1.GetConfigForBotRequest
-	7,  // 34: thetan.rivals.v1.ThetanRivalService.GetUserProfile:output_type -> thetan.rivals.v1.UserProfileResponse
-	12, // 35: thetan.rivals.v1.ThetanRivalService.GetUserMinions:output_type -> thetan.rivals.v1.UserMinionsResponse
-	10, // 36: thetan.rivals.v1.ThetanRivalService.GetUserSelectedMinion:output_type -> thetan.rivals.v1.UserSelectedMinionResponse
-	15, // 37: thetan.rivals.v1.ThetanRivalService.GetMinion:output_type -> thetan.rivals.v1.MinionResponse
-	17, // 38: thetan.rivals.v1.ThetanRivalService.CreateMinion:output_type -> thetan.rivals.v1.CreateMinionResponse
-	19, // 39: thetan.rivals.v1.ThetanRivalService.GetListFriends:output_type -> thetan.rivals.v1.GetUserFriendResponse
-	22, // 40: thetan.rivals.v1.ThetanRivalService.GetMatchInfoOnboarding:output_type -> thetan.rivals.v1.GetMatchInfoResponse
-	27, // 41: thetan.rivals.v1.ThetanRivalService.GetLatestLobbyActivityInfo:output_type -> thetan.rivals.v1.GetActivityResponse
-	31, // 42: thetan.rivals.v1.ThetanRivalService.GetTownUser:output_type -> thetan.rivals.v1.LobbyTown
-	5,  // 43: thetan.rivals.v1.ThetanRivalService.PickTownForUser:output_type -> thetan.rivals.v1.EmptyResponse
-	34, // 44: thetan.rivals.v1.ThetanRivalService.TrackSession:output_type -> thetan.rivals.v1.TrackSessionResponse
-	36, // 45: thetan.rivals.v1.ThetanRivalService.GetFindMatchInfo:output_type -> thetan.rivals.v1.FindMatchInfoResponse
-	1,  // 46: thetan.rivals.v1.ThetanRivalService.GetConfigForBot:output_type -> thetan.rivals.v1.GetConfigForBotResponse
-	34, // [34:47] is the sub-list for method output_type
-	21, // [21:34] is the sub-list for method input_type
-	21, // [21:21] is the sub-list for extension type_name
-	21, // [21:21] is the sub-list for extension extendee
-	0,  // [0:21] is the sub-list for field type_name
+	7,  // 2: thetan.rivals.v1.GetActiveTournamentsResponse.Tournaments:type_name -> thetan.rivals.v1.TournamentInfo
+	8,  // 3: thetan.rivals.v1.TournamentInfo.currentMaps:type_name -> thetan.rivals.v1.MapInfo
+	12, // 4: thetan.rivals.v1.UserProfileResponse.rank:type_name -> thetan.rivals.v1.UserProfileRank
+	41, // 5: thetan.rivals.v1.UserSelectedMinionResponse.addIns:type_name -> thetan.rivals.v1.UserSelectedMinionResponse.AddInsEntry
+	44, // 6: thetan.rivals.v1.UserSelectedMinionResponse.customized:type_name -> thetan.shared.v1.HeroCustomized
+	17, // 7: thetan.rivals.v1.UserMinionsResponse.minions:type_name -> thetan.rivals.v1.Minion
+	42, // 8: thetan.rivals.v1.Minion.addIns:type_name -> thetan.rivals.v1.Minion.AddInsEntry
+	44, // 9: thetan.rivals.v1.Minion.customized:type_name -> thetan.shared.v1.HeroCustomized
+	17, // 10: thetan.rivals.v1.MinionResponse.minion:type_name -> thetan.rivals.v1.Minion
+	17, // 11: thetan.rivals.v1.CreateMinionResponse.minion:type_name -> thetan.rivals.v1.Minion
+	24, // 12: thetan.rivals.v1.GetUserFriendResponse.friends:type_name -> thetan.rivals.v1.FriendInfo
+	0,  // 13: thetan.rivals.v1.FriendInfo.status:type_name -> thetan.rivals.v1.FriendInfo.FRIEND_STATUS
+	11, // 14: thetan.rivals.v1.FriendInfo.profile:type_name -> thetan.rivals.v1.UserProfileResponse
+	27, // 15: thetan.rivals.v1.GetMatchInfoRequest.lastRound:type_name -> thetan.rivals.v1.RoundStat
+	45, // 16: thetan.rivals.v1.GetMatchInfoResponse.playerInfo:type_name -> thetan.shared.v1.PlayerInfoMatchProto
+	28, // 17: thetan.rivals.v1.GetMatchInfoResponse.mapIds:type_name -> thetan.rivals.v1.MapData
+	29, // 18: thetan.rivals.v1.GetMatchInfoResponse.playerStat:type_name -> thetan.rivals.v1.PlayerStat
+	43, // 19: thetan.rivals.v1.PlayerStat.roundPlayed:type_name -> thetan.rivals.v1.PlayerStat.RoundPlayedEntry
+	32, // 20: thetan.rivals.v1.GetActivityResponse.classes:type_name -> thetan.rivals.v1.ClassInfo
+	33, // 21: thetan.rivals.v1.ClassInfo.rewards:type_name -> thetan.rivals.v1.SimpleItem
+	45, // 22: thetan.rivals.v1.FindMatchInfoResponse.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
+	10, // 23: thetan.rivals.v1.ThetanRivalService.GetUserProfile:input_type -> thetan.rivals.v1.UserProfileRequest
+	15, // 24: thetan.rivals.v1.ThetanRivalService.GetUserMinions:input_type -> thetan.rivals.v1.UserMinionsRequest
+	13, // 25: thetan.rivals.v1.ThetanRivalService.GetUserSelectedMinion:input_type -> thetan.rivals.v1.UserSelectedMinionRequest
+	18, // 26: thetan.rivals.v1.ThetanRivalService.GetMinion:input_type -> thetan.rivals.v1.MinionRequest
+	20, // 27: thetan.rivals.v1.ThetanRivalService.CreateMinion:input_type -> thetan.rivals.v1.CreateMinionRequest
+	22, // 28: thetan.rivals.v1.ThetanRivalService.GetListFriends:input_type -> thetan.rivals.v1.GetUserFriendRequest
+	25, // 29: thetan.rivals.v1.ThetanRivalService.GetMatchInfoOnboarding:input_type -> thetan.rivals.v1.GetMatchInfoRequest
+	30, // 30: thetan.rivals.v1.ThetanRivalService.GetLatestLobbyActivityInfo:input_type -> thetan.rivals.v1.GetActivityRequest
+	34, // 31: thetan.rivals.v1.ThetanRivalService.GetTownUser:input_type -> thetan.rivals.v1.GetTownUserRequest
+	36, // 32: thetan.rivals.v1.ThetanRivalService.PickTownForUser:input_type -> thetan.rivals.v1.PickTownUserRequest
+	37, // 33: thetan.rivals.v1.ThetanRivalService.TrackSession:input_type -> thetan.rivals.v1.TrackSessionRequest
+	39, // 34: thetan.rivals.v1.ThetanRivalService.GetFindMatchInfo:input_type -> thetan.rivals.v1.FindMatchInfoRequest
+	4,  // 35: thetan.rivals.v1.ThetanRivalService.GetConfigForBot:input_type -> thetan.rivals.v1.GetConfigForBotRequest
+	5,  // 36: thetan.rivals.v1.ThetanRivalService.GetActiveTournaments:input_type -> thetan.rivals.v1.GetActiveTournamentsRequest
+	11, // 37: thetan.rivals.v1.ThetanRivalService.GetUserProfile:output_type -> thetan.rivals.v1.UserProfileResponse
+	16, // 38: thetan.rivals.v1.ThetanRivalService.GetUserMinions:output_type -> thetan.rivals.v1.UserMinionsResponse
+	14, // 39: thetan.rivals.v1.ThetanRivalService.GetUserSelectedMinion:output_type -> thetan.rivals.v1.UserSelectedMinionResponse
+	19, // 40: thetan.rivals.v1.ThetanRivalService.GetMinion:output_type -> thetan.rivals.v1.MinionResponse
+	21, // 41: thetan.rivals.v1.ThetanRivalService.CreateMinion:output_type -> thetan.rivals.v1.CreateMinionResponse
+	23, // 42: thetan.rivals.v1.ThetanRivalService.GetListFriends:output_type -> thetan.rivals.v1.GetUserFriendResponse
+	26, // 43: thetan.rivals.v1.ThetanRivalService.GetMatchInfoOnboarding:output_type -> thetan.rivals.v1.GetMatchInfoResponse
+	31, // 44: thetan.rivals.v1.ThetanRivalService.GetLatestLobbyActivityInfo:output_type -> thetan.rivals.v1.GetActivityResponse
+	35, // 45: thetan.rivals.v1.ThetanRivalService.GetTownUser:output_type -> thetan.rivals.v1.LobbyTown
+	9,  // 46: thetan.rivals.v1.ThetanRivalService.PickTownForUser:output_type -> thetan.rivals.v1.EmptyResponse
+	38, // 47: thetan.rivals.v1.ThetanRivalService.TrackSession:output_type -> thetan.rivals.v1.TrackSessionResponse
+	40, // 48: thetan.rivals.v1.ThetanRivalService.GetFindMatchInfo:output_type -> thetan.rivals.v1.FindMatchInfoResponse
+	1,  // 49: thetan.rivals.v1.ThetanRivalService.GetConfigForBot:output_type -> thetan.rivals.v1.GetConfigForBotResponse
+	6,  // 50: thetan.rivals.v1.ThetanRivalService.GetActiveTournaments:output_type -> thetan.rivals.v1.GetActiveTournamentsResponse
+	37, // [37:51] is the sub-list for method output_type
+	23, // [23:37] is the sub-list for method input_type
+	23, // [23:23] is the sub-list for extension type_name
+	23, // [23:23] is the sub-list for extension extendee
+	0,  // [0:23] is the sub-list for field type_name
 }
 
 func init() { file_thetan_rivals_v1_service_rivals_proto_init() }
@@ -2978,7 +3217,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*EmptyResponse); i {
+			switch v := v.(*GetActiveTournamentsRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2990,7 +3229,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserProfileRequest); i {
+			switch v := v.(*GetActiveTournamentsResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3002,7 +3241,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserProfileResponse); i {
+			switch v := v.(*TournamentInfo); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3014,7 +3253,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserProfileRank); i {
+			switch v := v.(*MapInfo); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3026,7 +3265,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserSelectedMinionRequest); i {
+			switch v := v.(*EmptyResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3038,7 +3277,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserSelectedMinionResponse); i {
+			switch v := v.(*UserProfileRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3050,7 +3289,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserMinionsRequest); i {
+			switch v := v.(*UserProfileResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3062,7 +3301,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserMinionsResponse); i {
+			switch v := v.(*UserProfileRank); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3074,7 +3313,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Minion); i {
+			switch v := v.(*UserSelectedMinionRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3086,7 +3325,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MinionRequest); i {
+			switch v := v.(*UserSelectedMinionResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3098,7 +3337,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MinionResponse); i {
+			switch v := v.(*UserMinionsRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3110,7 +3349,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*CreateMinionRequest); i {
+			switch v := v.(*UserMinionsResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3122,7 +3361,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*CreateMinionResponse); i {
+			switch v := v.(*Minion); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3134,7 +3373,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetUserFriendRequest); i {
+			switch v := v.(*MinionRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3146,7 +3385,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetUserFriendResponse); i {
+			switch v := v.(*MinionResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3158,7 +3397,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*FriendInfo); i {
+			switch v := v.(*CreateMinionRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3170,7 +3409,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetMatchInfoRequest); i {
+			switch v := v.(*CreateMinionResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3182,7 +3421,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetMatchInfoResponse); i {
+			switch v := v.(*GetUserFriendRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3194,7 +3433,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*RoundStat); i {
+			switch v := v.(*GetUserFriendResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3206,7 +3445,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MapData); i {
+			switch v := v.(*FriendInfo); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3218,7 +3457,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*PlayerStat); i {
+			switch v := v.(*GetMatchInfoRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3230,7 +3469,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetActivityRequest); i {
+			switch v := v.(*GetMatchInfoResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3242,7 +3481,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetActivityResponse); i {
+			switch v := v.(*RoundStat); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3254,7 +3493,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*ClassInfo); i {
+			switch v := v.(*MapData); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3266,7 +3505,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*SimpleItem); i {
+			switch v := v.(*PlayerStat); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3278,7 +3517,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetTownUserRequest); i {
+			switch v := v.(*GetActivityRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3290,7 +3529,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*LobbyTown); i {
+			switch v := v.(*GetActivityResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3302,7 +3541,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*PickTownUserRequest); i {
+			switch v := v.(*ClassInfo); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3314,7 +3553,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*TrackSessionRequest); i {
+			switch v := v.(*SimpleItem); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3326,7 +3565,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*TrackSessionResponse); i {
+			switch v := v.(*GetTownUserRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3338,7 +3577,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*FindMatchInfoRequest); i {
+			switch v := v.(*LobbyTown); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3350,6 +3589,54 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*PickTownUserRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*TrackSessionRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*TrackSessionResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[38].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*FindMatchInfoRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[39].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*FindMatchInfoResponse); i {
 			case 0:
 				return &v.state
@@ -3362,15 +3649,15 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 	}
-	file_thetan_rivals_v1_service_rivals_proto_msgTypes[20].OneofWrappers = []interface{}{}
-	file_thetan_rivals_v1_service_rivals_proto_msgTypes[21].OneofWrappers = []interface{}{}
+	file_thetan_rivals_v1_service_rivals_proto_msgTypes[24].OneofWrappers = []interface{}{}
+	file_thetan_rivals_v1_service_rivals_proto_msgTypes[25].OneofWrappers = []interface{}{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_thetan_rivals_v1_service_rivals_proto_rawDesc,
 			NumEnums:      1,
-			NumMessages:   39,
+			NumMessages:   43,
 			NumExtensions: 0,
 			NumServices:   1,
 		},

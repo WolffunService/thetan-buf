@@ -32,6 +32,7 @@ const (
 	ThetanRivalService_TrackSession_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/TrackSession"
 	ThetanRivalService_GetFindMatchInfo_FullMethodName           = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
 	ThetanRivalService_GetConfigForBot_FullMethodName            = "/thetan.rivals.v1.ThetanRivalService/GetConfigForBot"
+	ThetanRivalService_GetActiveTournaments_FullMethodName       = "/thetan.rivals.v1.ThetanRivalService/GetActiveTournaments"
 )
 
 // ThetanRivalServiceClient is the client API for ThetanRivalService service.
@@ -58,6 +59,7 @@ type ThetanRivalServiceClient interface {
 	GetFindMatchInfo(ctx context.Context, in *FindMatchInfoRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error)
 	// Get config for bot
 	GetConfigForBot(ctx context.Context, in *GetConfigForBotRequest, opts ...grpc.CallOption) (*GetConfigForBotResponse, error)
+	GetActiveTournaments(ctx context.Context, in *GetActiveTournamentsRequest, opts ...grpc.CallOption) (*GetActiveTournamentsResponse, error)
 }
 
 type thetanRivalServiceClient struct {
@@ -185,6 +187,15 @@ func (c *thetanRivalServiceClient) GetConfigForBot(ctx context.Context, in *GetC
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) GetActiveTournaments(ctx context.Context, in *GetActiveTournamentsRequest, opts ...grpc.CallOption) (*GetActiveTournamentsResponse, error) {
+	out := new(GetActiveTournamentsResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetActiveTournaments_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanRivalServiceServer is the server API for ThetanRivalService service.
 // All implementations must embed UnimplementedThetanRivalServiceServer
 // for forward compatibility
@@ -209,6 +220,7 @@ type ThetanRivalServiceServer interface {
 	GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error)
 	// Get config for bot
 	GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error)
+	GetActiveTournaments(context.Context, *GetActiveTournamentsRequest) (*GetActiveTournamentsResponse, error)
 	mustEmbedUnimplementedThetanRivalServiceServer()
 }
 
@@ -254,6 +266,9 @@ func (UnimplementedThetanRivalServiceServer) GetFindMatchInfo(context.Context, *
 }
 func (UnimplementedThetanRivalServiceServer) GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetConfigForBot not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetActiveTournaments(context.Context, *GetActiveTournamentsRequest) (*GetActiveTournamentsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetActiveTournaments not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) mustEmbedUnimplementedThetanRivalServiceServer() {}
 
@@ -502,6 +517,24 @@ func _ThetanRivalService_GetConfigForBot_Handler(srv interface{}, ctx context.Co
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_GetActiveTournaments_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetActiveTournamentsRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetActiveTournaments(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetActiveTournaments_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetActiveTournaments(ctx, req.(*GetActiveTournamentsRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanRivalService_ServiceDesc is the grpc.ServiceDesc for ThetanRivalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -560,6 +593,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetConfigForBot",
 			Handler:    _ThetanRivalService_GetConfigForBot_Handler,
+		},
+		{
+			MethodName: "GetActiveTournaments",
+			Handler:    _ThetanRivalService_GetActiveTournaments_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
