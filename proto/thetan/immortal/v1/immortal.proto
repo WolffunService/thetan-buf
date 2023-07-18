@@ -2,10 +2,17 @@ syntax = "proto3";
 
 package thetan.immortal.v1;
 
-import "thetan/immortal/v1/immortal_match.proto";
+import "thetan/immortal/v1/immortal_shared.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_immortal_v1";
 option csharp_namespace = "Thetan.Immortal.V1";
+
+//GRPC
+service ImmortalService {
+  rpc SearchPlayerInfo(SearchPlayerInfoRequest) returns (SearchPlayerInfoResponse) {}
+  rpc GetUserProfile(GetUserProfileRequest) returns (GetUserProfileResponse) {}
+  rpc BattleEnd(BattleEndRequest) returns (stream BattleEndResponse) {}
+}
 
 message SearchPlayerInfoRequest {
   repeated string playerIDs = 1;
@@ -30,7 +37,21 @@ message GetUserProfileResponse {
   int32 trophy = 8;
 }
 
-service ImmortalService {
-  rpc SearchPlayerInfo(SearchPlayerInfoRequest) returns (SearchPlayerInfoResponse) {}
-  rpc GetUserProfile(GetUserProfileRequest) returns (GetUserProfileResponse) {}
+message BattleEndRequest{
+  string roomName = 1;//matchID
+  repeated PlayerMatchInfo players = 2;
+}
+
+message PlayerMatchInfo{
+  string playerID = 1;
+  int32 gameResult = 2;
+  Hero hero = 3;
+  repeated Skill skills = 4;
+}
+
+message BattleEndResponse{
+  string playerID = 1;
+  bool isWin = 2;
+  int32 trophy = 3;
+  int32 gold = 4;
 }
