@@ -1,5 +1,6 @@
 syntax = "proto3";
 package thetan.fishnet.immortal.v1;
+import "google/protobuf/empty.proto";
 import "thetan/immortal/v1/immortal_match.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/fishnet/immortal/v1/thetan_fishnet_immortal_v1";
@@ -10,6 +11,13 @@ message RoomAllocationResp {
   bool isSuccess = 1;
 }
 
+message GameServerInfoResp{
+  int32 connectedPlayers = 1;
+}
+
 service ThetanFishNetImmortal {
   rpc RoomAllocation(thetan.immortal.v1.ImmortalMatchFoundResponseProto) returns (RoomAllocationResp);
+  rpc Shutdown(google.protobuf.Empty) returns (google.protobuf.Empty);
+  rpc GameServerInfo(google.protobuf.Empty) returns (GameServerInfoResp);
+
 }
