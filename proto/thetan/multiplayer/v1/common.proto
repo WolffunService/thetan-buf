@@ -256,3 +256,8 @@ message OnOtherReady{
   string playerID = 1;
   bool ready = 2;
 }
+
+message TicketCacheWSOnly {
+  string ticketID = 1;
+  int32 inGameMode = 2;
+}

@@ -105,23 +105,25 @@ namespace Thetan.Multiplayer.V1 {
             "YSJcChJSZXNPdGhlckNoYW5nZUluZm8SRgoKcGxheWVySW5mbxgBIAEoCzIm",
             "LnRoZXRhbi5tdWx0aXBsYXllci52MS5QbGF5ZXJJbmZvUHJvdG9SCnBsYXll",
             "ckluZm8iQAoMT25PdGhlclJlYWR5EhoKCHBsYXllcklEGAEgASgJUghwbGF5",
-            "ZXJJRBIUCgVyZWFkeRgCIAEoCFIFcmVhZHkqOAoLUGFydHlTdGF0dXMSDAoI",
-            "UFBlbmRpbmcQABIMCghQRmluZGluZxABEg0KCVBJbkJhdHRsZRACKn4KF1Bh",
-            "cnR5QXZhaWxhYmlsaXR5U3RhdHVzEg0KCVBBVW5rbm93bhAAEg0KCVBBRXhw",
-            "aXJlZBABEg8KC1BBRGlzYmFuZGVkEAISCgoGUEFPcGVuEAMSCgoGUEFGdWxs",
-            "EAQSDgoKUEFJbkJhdHRsZRAFEgwKCFBBSm9pbmVkEAYqQQoPQ2hhbm5lbENo",
-            "YXRSb29tEgkKBUxvYmJ5EAASCQoFUGFydHkQARILCgdDb3VudHJ5EAISCwoH",
-            "UHJpdmF0ZRADKiMKB01zZ1R5cGUSCAoEQ2hhdBAAEg4KClNoYXJlUGFydHkQ",
-            "ASpaCgxQbGF5ZXJTdGF0dXMSCgoGT25saW5lEAASCwoHT2ZmbGluZRABEgsK",
-            "B0luUGFydHkQAhIJCgVSZWFkeRADEgsKB0ZpbmRpbmcQBBIMCghJbkJhdHRs",
-            "ZRAFKkMKEEludml0YXRpb25BY3Rpb24SCgoGQWNjZXB0EAASCgoGQ2FuY2Vs",
-            "EAESCwoHRGVjbGluZRACEgoKBkludml0ZRADKisKC1N0YWdlSW5HYW1lEg0K",
-            "CVNwZWN0YXRvchAAEg0KCUVuZEJhdHRsZRABQt0BChljb20udGhldGFuLm11",
-            "bHRpcGxheWVyLnYxQgtDb21tb25Qcm90b1ABWj10aGV0YW4tYnVmL2dlbi9n",
-            "by90aGV0YW4vbXVsdGlwbGF5ZXIvdjE7dGhldGFuX211bHRpcGxheWVyX3Yx",
-            "ogIDVE1YqgIVVGhldGFuLk11bHRpcGxheWVyLlYxygIVVGhldGFuXE11bHRp",
-            "cGxheWVyXFYx4gIhVGhldGFuXE11bHRpcGxheWVyXFYxXEdQQk1ldGFkYXRh",
-            "6gIXVGhldGFuOjpNdWx0aXBsYXllcjo6VjFiBnByb3RvMw=="));
+            "ZXJJRBIUCgVyZWFkeRgCIAEoCFIFcmVhZHkiTwoRVGlja2V0Q2FjaGVXU09u",
+            "bHkSGgoIdGlja2V0SUQYASABKAlSCHRpY2tldElEEh4KCmluR2FtZU1vZGUY",
+            "AiABKAVSCmluR2FtZU1vZGUqOAoLUGFydHlTdGF0dXMSDAoIUFBlbmRpbmcQ",
+            "ABIMCghQRmluZGluZxABEg0KCVBJbkJhdHRsZRACKn4KF1BhcnR5QXZhaWxh",
+            "YmlsaXR5U3RhdHVzEg0KCVBBVW5rbm93bhAAEg0KCVBBRXhwaXJlZBABEg8K",
+            "C1BBRGlzYmFuZGVkEAISCgoGUEFPcGVuEAMSCgoGUEFGdWxsEAQSDgoKUEFJ",
+            "bkJhdHRsZRAFEgwKCFBBSm9pbmVkEAYqQQoPQ2hhbm5lbENoYXRSb29tEgkK",
+            "BUxvYmJ5EAASCQoFUGFydHkQARILCgdDb3VudHJ5EAISCwoHUHJpdmF0ZRAD",
+            "KiMKB01zZ1R5cGUSCAoEQ2hhdBAAEg4KClNoYXJlUGFydHkQASpaCgxQbGF5",
+            "ZXJTdGF0dXMSCgoGT25saW5lEAASCwoHT2ZmbGluZRABEgsKB0luUGFydHkQ",
+            "AhIJCgVSZWFkeRADEgsKB0ZpbmRpbmcQBBIMCghJbkJhdHRsZRAFKkMKEElu",
+            "dml0YXRpb25BY3Rpb24SCgoGQWNjZXB0EAASCgoGQ2FuY2VsEAESCwoHRGVj",
+            "bGluZRACEgoKBkludml0ZRADKisKC1N0YWdlSW5HYW1lEg0KCVNwZWN0YXRv",
+            "chAAEg0KCUVuZEJhdHRsZRABQt0BChljb20udGhldGFuLm11bHRpcGxheWVy",
+            "LnYxQgtDb21tb25Qcm90b1ABWj10aGV0YW4tYnVmL2dlbi9nby90aGV0YW4v",
+            "bXVsdGlwbGF5ZXIvdjE7dGhldGFuX211bHRpcGxheWVyX3YxogIDVE1YqgIV",
+            "VGhldGFuLk11bHRpcGxheWVyLlYxygIVVGhldGFuXE11bHRpcGxheWVyXFYx",
+            "4gIhVGhldGFuXE11bHRpcGxheWVyXFYxXEdQQk1ldGFkYXRh6gIXVGhldGFu",
+            "OjpNdWx0aXBsYXllcjo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.PartyStatus), typeof(global::Thetan.Multiplayer.V1.PartyAvailabilityStatus), typeof(global::Thetan.Multiplayer.V1.ChannelChatRoom), typeof(global::Thetan.Multiplayer.V1.MsgType), typeof(global::Thetan.Multiplayer.V1.PlayerStatus), typeof(global::Thetan.Multiplayer.V1.InvitationAction), typeof(global::Thetan.Multiplayer.V1.StageInGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -152,7 +154,8 @@ namespace Thetan.Multiplayer.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OnSbCancelFindMatch), global::Thetan.Multiplayer.V1.OnSbCancelFindMatch.Parser, new[]{ "CancellerID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ReqChangeGameInfo), global::Thetan.Multiplayer.V1.ReqChangeGameInfo.Parser, new[]{ "GameData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ResOtherChangeInfo), global::Thetan.Multiplayer.V1.ResOtherChangeInfo.Parser, new[]{ "PlayerInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OnOtherReady), global::Thetan.Multiplayer.V1.OnOtherReady.Parser, new[]{ "PlayerID", "Ready" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OnOtherReady), global::Thetan.Multiplayer.V1.OnOtherReady.Parser, new[]{ "PlayerID", "Ready" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.TicketCacheWSOnly), global::Thetan.Multiplayer.V1.TicketCacheWSOnly.Parser, new[]{ "TicketID", "InGameMode" }, null, null, null, null)
           }));
     }
     #endregion
@@ -7146,6 +7149,232 @@ namespace Thetan.Multiplayer.V1 {
           }
           case 16: {
             Ready = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class TicketCacheWSOnly : pb::IMessage<TicketCacheWSOnly>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TicketCacheWSOnly> _parser = new pb::MessageParser<TicketCacheWSOnly>(() => new TicketCacheWSOnly());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<TicketCacheWSOnly> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.CommonReflection.Descriptor.MessageTypes[28]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TicketCacheWSOnly() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TicketCacheWSOnly(TicketCacheWSOnly other) : this() {
+      ticketID_ = other.ticketID_;
+      inGameMode_ = other.inGameMode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TicketCacheWSOnly Clone() {
+      return new TicketCacheWSOnly(this);
+    }
+
+    /// <summary>Field number for the "ticketID" field.</summary>
+    public const int TicketIDFieldNumber = 1;
+    private string ticketID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TicketID {
+      get { return ticketID_; }
+      set {
+        ticketID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "inGameMode" field.</summary>
+    public const int InGameModeFieldNumber = 2;
+    private int inGameMode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int InGameMode {
+      get { return inGameMode_; }
+      set {
+        inGameMode_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as TicketCacheWSOnly);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(TicketCacheWSOnly other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (TicketID != other.TicketID) return false;
+      if (InGameMode != other.InGameMode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (TicketID.Length != 0) hash ^= TicketID.GetHashCode();
+      if (InGameMode != 0) hash ^= InGameMode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (TicketID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(TicketID);
+      }
+      if (InGameMode != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(InGameMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (TicketID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(TicketID);
+      }
+      if (InGameMode != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(InGameMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (TicketID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TicketID);
+      }
+      if (InGameMode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(InGameMode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(TicketCacheWSOnly other) {
+      if (other == null) {
+        return;
+      }
+      if (other.TicketID.Length != 0) {
+        TicketID = other.TicketID;
+      }
+      if (other.InGameMode != 0) {
+        InGameMode = other.InGameMode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            TicketID = input.ReadString();
+            break;
+          }
+          case 16: {
+            InGameMode = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            TicketID = input.ReadString();
+            break;
+          }
+          case 16: {
+            InGameMode = input.ReadInt32();
             break;
           }
         }
