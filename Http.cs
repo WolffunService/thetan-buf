@@ -411,6 +411,7 @@ namespace Google.Api {
   ///       string text = 2;
   ///     }
   ///
+  ///
   /// The following HTTP JSON to RPC mapping is enabled:
   ///
   /// HTTP | gRPC
