@@ -19,20 +19,21 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ThetanRivalService_GetUserProfile_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetUserProfile"
-	ThetanRivalService_GetUserMinions_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetUserMinions"
-	ThetanRivalService_GetUserSelectedMinion_FullMethodName      = "/thetan.rivals.v1.ThetanRivalService/GetUserSelectedMinion"
-	ThetanRivalService_GetMinion_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/GetMinion"
-	ThetanRivalService_CreateMinion_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/CreateMinion"
-	ThetanRivalService_GetListFriends_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetListFriends"
-	ThetanRivalService_GetMatchInfoOnboarding_FullMethodName     = "/thetan.rivals.v1.ThetanRivalService/GetMatchInfoOnboarding"
-	ThetanRivalService_GetLatestLobbyActivityInfo_FullMethodName = "/thetan.rivals.v1.ThetanRivalService/GetLatestLobbyActivityInfo"
-	ThetanRivalService_GetTownUser_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetTownUser"
-	ThetanRivalService_PickTownForUser_FullMethodName            = "/thetan.rivals.v1.ThetanRivalService/PickTownForUser"
-	ThetanRivalService_TrackSession_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/TrackSession"
-	ThetanRivalService_GetFindMatchInfo_FullMethodName           = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
-	ThetanRivalService_GetConfigForBot_FullMethodName            = "/thetan.rivals.v1.ThetanRivalService/GetConfigForBot"
-	ThetanRivalService_GetActiveTournaments_FullMethodName       = "/thetan.rivals.v1.ThetanRivalService/GetActiveTournaments"
+	ThetanRivalService_GetUserProfile_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserProfile"
+	ThetanRivalService_GetUserMinions_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserMinions"
+	ThetanRivalService_GetUserSelectedMinion_FullMethodName         = "/thetan.rivals.v1.ThetanRivalService/GetUserSelectedMinion"
+	ThetanRivalService_GetMinion_FullMethodName                     = "/thetan.rivals.v1.ThetanRivalService/GetMinion"
+	ThetanRivalService_CreateMinion_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/CreateMinion"
+	ThetanRivalService_GetListFriends_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetListFriends"
+	ThetanRivalService_GetMatchInfoOnboarding_FullMethodName        = "/thetan.rivals.v1.ThetanRivalService/GetMatchInfoOnboarding"
+	ThetanRivalService_GetLatestLobbyActivityInfo_FullMethodName    = "/thetan.rivals.v1.ThetanRivalService/GetLatestLobbyActivityInfo"
+	ThetanRivalService_GetTownUser_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownUser"
+	ThetanRivalService_PickTownForUser_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/PickTownForUser"
+	ThetanRivalService_TrackSession_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/TrackSession"
+	ThetanRivalService_GetFindMatchInfo_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
+	ThetanRivalService_GetConfigForBot_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/GetConfigForBot"
+	ThetanRivalService_GetActiveTournaments_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/GetActiveTournaments"
+	ThetanRivalService_GetFindMatchInfoForTournament_FullMethodName = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfoForTournament"
 )
 
 // ThetanRivalServiceClient is the client API for ThetanRivalService service.
@@ -59,7 +60,9 @@ type ThetanRivalServiceClient interface {
 	GetFindMatchInfo(ctx context.Context, in *FindMatchInfoRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error)
 	// Get config for bot
 	GetConfigForBot(ctx context.Context, in *GetConfigForBotRequest, opts ...grpc.CallOption) (*GetConfigForBotResponse, error)
+	// Tournament
 	GetActiveTournaments(ctx context.Context, in *GetActiveTournamentsRequest, opts ...grpc.CallOption) (*GetActiveTournamentsResponse, error)
+	GetFindMatchInfoForTournament(ctx context.Context, in *FindMatchInfoForTournamentRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error)
 }
 
 type thetanRivalServiceClient struct {
@@ -196,6 +199,15 @@ func (c *thetanRivalServiceClient) GetActiveTournaments(ctx context.Context, in 
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) GetFindMatchInfoForTournament(ctx context.Context, in *FindMatchInfoForTournamentRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error) {
+	out := new(FindMatchInfoResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetFindMatchInfoForTournament_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanRivalServiceServer is the server API for ThetanRivalService service.
 // All implementations must embed UnimplementedThetanRivalServiceServer
 // for forward compatibility
@@ -220,7 +232,9 @@ type ThetanRivalServiceServer interface {
 	GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error)
 	// Get config for bot
 	GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error)
+	// Tournament
 	GetActiveTournaments(context.Context, *GetActiveTournamentsRequest) (*GetActiveTournamentsResponse, error)
+	GetFindMatchInfoForTournament(context.Context, *FindMatchInfoForTournamentRequest) (*FindMatchInfoResponse, error)
 	mustEmbedUnimplementedThetanRivalServiceServer()
 }
 
@@ -269,6 +283,9 @@ func (UnimplementedThetanRivalServiceServer) GetConfigForBot(context.Context, *G
 }
 func (UnimplementedThetanRivalServiceServer) GetActiveTournaments(context.Context, *GetActiveTournamentsRequest) (*GetActiveTournamentsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetActiveTournaments not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetFindMatchInfoForTournament(context.Context, *FindMatchInfoForTournamentRequest) (*FindMatchInfoResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetFindMatchInfoForTournament not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) mustEmbedUnimplementedThetanRivalServiceServer() {}
 
@@ -535,6 +552,24 @@ func _ThetanRivalService_GetActiveTournaments_Handler(srv interface{}, ctx conte
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_GetFindMatchInfoForTournament_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(FindMatchInfoForTournamentRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetFindMatchInfoForTournament(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetFindMatchInfoForTournament_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetFindMatchInfoForTournament(ctx, req.(*FindMatchInfoForTournamentRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanRivalService_ServiceDesc is the grpc.ServiceDesc for ThetanRivalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -597,6 +632,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetActiveTournaments",
 			Handler:    _ThetanRivalService_GetActiveTournaments_Handler,
+		},
+		{
+			MethodName: "GetFindMatchInfoForTournament",
+			Handler:    _ThetanRivalService_GetFindMatchInfoForTournament_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
