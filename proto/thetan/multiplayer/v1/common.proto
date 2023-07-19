@@ -146,7 +146,7 @@ enum PlayerStatus {
 
 message ReadyMsg{
   bool isReady = 1;//ready or cancel ready
-  string tournamentTag = 2;
+  string tournamentID = 2; // use for tournament find match
 }
 
 message SetDNDMsg {
