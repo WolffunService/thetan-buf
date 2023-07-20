@@ -25,17 +25,24 @@ namespace Thetan.Shared.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chp0aGV0YW4vc2hhcmVkL3YxL3VnYy5wcm90bxIQdGhldGFuLnNoYXJlZC52",
-            "MSJuCg5IZXJvQ3VzdG9taXplZBIeCgpjdXN0b21OYW1lGAEgASgJUgpjdXN0",
-            "b21OYW1lEh4KCnRleHR1cmVVUkwYAiABKAlSCnRleHR1cmVVUkwSHAoJcHVi",
-            "bGlzaEF0GAMgASgDUglwdWJsaXNoQXRCtwEKFGNvbS50aGV0YW4uc2hhcmVk",
-            "LnYxQghVZ2NQcm90b1ABWjN0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vc2hh",
-            "cmVkL3YxO3RoZXRhbl9zaGFyZWRfdjGiAgNUU1iqAhBUaGV0YW4uU2hhcmVk",
-            "LlYxygIQVGhldGFuXFNoYXJlZFxWMeICHFRoZXRhblxTaGFyZWRcVjFcR1BC",
-            "TWV0YWRhdGHqAhJUaGV0YW46OlNoYXJlZDo6VjFiBnByb3RvMw=="));
+            "MRoZZ29vZ2xlL3Byb3RvYnVmL2FueS5wcm90byKmAQoOSGVyb0N1c3RvbWl6",
+            "ZWQSHgoKY3VzdG9tTmFtZRgBIAEoCVIKY3VzdG9tTmFtZRIeCgp0ZXh0dXJl",
+            "VVJMGAIgASgJUgp0ZXh0dXJlVVJMEhwKCXB1Ymxpc2hBdBgDIAEoA1IJcHVi",
+            "bGlzaEF0EjYKBnNoYWRlchgEIAEoCzIeLnRoZXRhbi5zaGFyZWQudjEuQ3Vz",
+            "dG9tU2hhZGVyUgZzaGFkZXIivwEKDEN1c3RvbVNoYWRlchIaCghzaGFkZXJJ",
+            "RBgBIAEoBVIIc2hhZGVySUQSQgoGcGFyYW1zGAIgAygLMioudGhldGFuLnNo",
+            "YXJlZC52MS5DdXN0b21TaGFkZXIuUGFyYW1zRW50cnlSBnBhcmFtcxpPCgtQ",
+            "YXJhbXNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIqCgV2YWx1ZRgCIAEoCzIU",
+            "Lmdvb2dsZS5wcm90b2J1Zi5BbnlSBXZhbHVlOgI4AUK3AQoUY29tLnRoZXRh",
+            "bi5zaGFyZWQudjFCCFVnY1Byb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dvL3Ro",
+            "ZXRhbi9zaGFyZWQvdjE7dGhldGFuX3NoYXJlZF92MaICA1RTWKoCEFRoZXRh",
+            "bi5TaGFyZWQuVjHKAhBUaGV0YW5cU2hhcmVkXFYx4gIcVGhldGFuXFNoYXJl",
+            "ZFxWMVxHUEJNZXRhZGF0YeoCElRoZXRhbjo6U2hhcmVkOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.HeroCustomized), global::Thetan.Shared.V1.HeroCustomized.Parser, new[]{ "CustomName", "TextureURL", "PublishAt" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.HeroCustomized), global::Thetan.Shared.V1.HeroCustomized.Parser, new[]{ "CustomName", "TextureURL", "PublishAt", "Shader" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.CustomShader), global::Thetan.Shared.V1.CustomShader.Parser, new[]{ "ShaderID", "Params" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -82,6 +89,7 @@ namespace Thetan.Shared.V1 {
       customName_ = other.customName_;
       textureURL_ = other.textureURL_;
       publishAt_ = other.publishAt_;
+      shader_ = other.shader_ != null ? other.shader_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -136,6 +144,18 @@ namespace Thetan.Shared.V1 {
       }
     }
 
+    /// <summary>Field number for the "shader" field.</summary>
+    public const int ShaderFieldNumber = 4;
+    private global::Thetan.Shared.V1.CustomShader shader_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Shared.V1.CustomShader Shader {
+      get { return shader_; }
+      set {
+        shader_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -154,6 +174,7 @@ namespace Thetan.Shared.V1 {
       if (CustomName != other.CustomName) return false;
       if (TextureURL != other.TextureURL) return false;
       if (PublishAt != other.PublishAt) return false;
+      if (!object.Equals(Shader, other.Shader)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -164,6 +185,7 @@ namespace Thetan.Shared.V1 {
       if (CustomName.Length != 0) hash ^= CustomName.GetHashCode();
       if (TextureURL.Length != 0) hash ^= TextureURL.GetHashCode();
       if (PublishAt != 0L) hash ^= PublishAt.GetHashCode();
+      if (shader_ != null) hash ^= Shader.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -194,6 +216,10 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(24);
         output.WriteInt64(PublishAt);
       }
+      if (shader_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Shader);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -216,6 +242,10 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(24);
         output.WriteInt64(PublishAt);
       }
+      if (shader_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Shader);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -234,6 +264,9 @@ namespace Thetan.Shared.V1 {
       }
       if (PublishAt != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(PublishAt);
+      }
+      if (shader_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Shader);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -255,6 +288,12 @@ namespace Thetan.Shared.V1 {
       }
       if (other.PublishAt != 0L) {
         PublishAt = other.PublishAt;
+      }
+      if (other.shader_ != null) {
+        if (shader_ == null) {
+          Shader = new global::Thetan.Shared.V1.CustomShader();
+        }
+        Shader.MergeFrom(other.Shader);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -283,6 +322,13 @@ namespace Thetan.Shared.V1 {
             PublishAt = input.ReadInt64();
             break;
           }
+          case 34: {
+            if (shader_ == null) {
+              Shader = new global::Thetan.Shared.V1.CustomShader();
+            }
+            input.ReadMessage(Shader);
+            break;
+          }
         }
       }
     #endif
@@ -308,6 +354,228 @@ namespace Thetan.Shared.V1 {
           }
           case 24: {
             PublishAt = input.ReadInt64();
+            break;
+          }
+          case 34: {
+            if (shader_ == null) {
+              Shader = new global::Thetan.Shared.V1.CustomShader();
+            }
+            input.ReadMessage(Shader);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CustomShader : pb::IMessage<CustomShader>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CustomShader> _parser = new pb::MessageParser<CustomShader>(() => new CustomShader());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CustomShader> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Shared.V1.UgcReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomShader() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomShader(CustomShader other) : this() {
+      shaderID_ = other.shaderID_;
+      params_ = other.params_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomShader Clone() {
+      return new CustomShader(this);
+    }
+
+    /// <summary>Field number for the "shaderID" field.</summary>
+    public const int ShaderIDFieldNumber = 1;
+    private int shaderID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ShaderID {
+      get { return shaderID_; }
+      set {
+        shaderID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "params" field.</summary>
+    public const int ParamsFieldNumber = 2;
+    private static readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec _map_params_codec
+        = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Any.Parser), 18);
+    private readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any> params_ = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any> Params {
+      get { return params_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CustomShader);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CustomShader other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ShaderID != other.ShaderID) return false;
+      if (!Params.Equals(other.Params)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ShaderID != 0) hash ^= ShaderID.GetHashCode();
+      hash ^= Params.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ShaderID != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ShaderID);
+      }
+      params_.WriteTo(output, _map_params_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ShaderID != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ShaderID);
+      }
+      params_.WriteTo(ref output, _map_params_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ShaderID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ShaderID);
+      }
+      size += params_.CalculateSize(_map_params_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CustomShader other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ShaderID != 0) {
+        ShaderID = other.ShaderID;
+      }
+      params_.Add(other.params_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ShaderID = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            params_.AddEntriesFrom(input, _map_params_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ShaderID = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            params_.AddEntriesFrom(ref input, _map_params_codec);
             break;
           }
         }
