@@ -24,6 +24,7 @@ const (
 	ThetanFishNetImmortal_RoomAllocation_FullMethodName = "/thetan.fishnet.immortal.v1.ThetanFishNetImmortal/RoomAllocation"
 	ThetanFishNetImmortal_Shutdown_FullMethodName       = "/thetan.fishnet.immortal.v1.ThetanFishNetImmortal/Shutdown"
 	ThetanFishNetImmortal_GameServerInfo_FullMethodName = "/thetan.fishnet.immortal.v1.ThetanFishNetImmortal/GameServerInfo"
+	ThetanFishNetImmortal_SetCapacity_FullMethodName    = "/thetan.fishnet.immortal.v1.ThetanFishNetImmortal/SetCapacity"
 )
 
 // ThetanFishNetImmortalClient is the client API for ThetanFishNetImmortal service.
@@ -33,6 +34,7 @@ type ThetanFishNetImmortalClient interface {
 	RoomAllocation(ctx context.Context, in *v1.ImmortalMatchFoundResponseProto, opts ...grpc.CallOption) (*RoomAllocationResp, error)
 	Shutdown(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	GameServerInfo(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*GameServerInfoResp, error)
+	SetCapacity(ctx context.Context, in *SetCapacityReq, opts ...grpc.CallOption) (*emptypb.Empty, error)
 }
 
 type thetanFishNetImmortalClient struct {
@@ -70,6 +72,15 @@ func (c *thetanFishNetImmortalClient) GameServerInfo(ctx context.Context, in *em
 	return out, nil
 }
 
+func (c *thetanFishNetImmortalClient) SetCapacity(ctx context.Context, in *SetCapacityReq, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+	out := new(emptypb.Empty)
+	err := c.cc.Invoke(ctx, ThetanFishNetImmortal_SetCapacity_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanFishNetImmortalServer is the server API for ThetanFishNetImmortal service.
 // All implementations must embed UnimplementedThetanFishNetImmortalServer
 // for forward compatibility
@@ -77,6 +88,7 @@ type ThetanFishNetImmortalServer interface {
 	RoomAllocation(context.Context, *v1.ImmortalMatchFoundResponseProto) (*RoomAllocationResp, error)
 	Shutdown(context.Context, *emptypb.Empty) (*emptypb.Empty, error)
 	GameServerInfo(context.Context, *emptypb.Empty) (*GameServerInfoResp, error)
+	SetCapacity(context.Context, *SetCapacityReq) (*emptypb.Empty, error)
 	mustEmbedUnimplementedThetanFishNetImmortalServer()
 }
 
@@ -92,6 +104,9 @@ func (UnimplementedThetanFishNetImmortalServer) Shutdown(context.Context, *empty
 }
 func (UnimplementedThetanFishNetImmortalServer) GameServerInfo(context.Context, *emptypb.Empty) (*GameServerInfoResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GameServerInfo not implemented")
+}
+func (UnimplementedThetanFishNetImmortalServer) SetCapacity(context.Context, *SetCapacityReq) (*emptypb.Empty, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SetCapacity not implemented")
 }
 func (UnimplementedThetanFishNetImmortalServer) mustEmbedUnimplementedThetanFishNetImmortalServer() {}
 
@@ -160,6 +175,24 @@ func _ThetanFishNetImmortal_GameServerInfo_Handler(srv interface{}, ctx context.
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanFishNetImmortal_SetCapacity_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SetCapacityReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanFishNetImmortalServer).SetCapacity(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanFishNetImmortal_SetCapacity_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanFishNetImmortalServer).SetCapacity(ctx, req.(*SetCapacityReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanFishNetImmortal_ServiceDesc is the grpc.ServiceDesc for ThetanFishNetImmortal service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -178,6 +211,10 @@ var ThetanFishNetImmortal_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GameServerInfo",
 			Handler:    _ThetanFishNetImmortal_GameServerInfo_Handler,
+		},
+		{
+			MethodName: "SetCapacity",
+			Handler:    _ThetanFishNetImmortal_SetCapacity_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
