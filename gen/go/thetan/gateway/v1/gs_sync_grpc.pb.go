@@ -19,20 +19,17 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ThetanGateway_Ping_FullMethodName               = "/thetan.gateway.v1.ThetanGateway/Ping"
 	ThetanGateway_PlayerConnected_FullMethodName    = "/thetan.gateway.v1.ThetanGateway/PlayerConnected"
 	ThetanGateway_PlayerDisconnected_FullMethodName = "/thetan.gateway.v1.ThetanGateway/PlayerDisconnected"
-	ThetanGateway_RoomDestroyed_FullMethodName      = "/thetan.gateway.v1.ThetanGateway/RoomDestroyed"
 )
 
 // ThetanGatewayClient is the client API for ThetanGateway service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ThetanGatewayClient interface {
-	Ping(ctx context.Context, in *PingRequest, opts ...grpc.CallOption) (*PingResponse, error)
+	// rpc Ping(PingRequest) returns (PingResponse) {}
 	PlayerConnected(ctx context.Context, in *PlayerConnectedRequest, opts ...grpc.CallOption) (*PlayerStatusResponse, error)
 	PlayerDisconnected(ctx context.Context, in *PlayerDisconnectedRequest, opts ...grpc.CallOption) (*PlayerStatusResponse, error)
-	RoomDestroyed(ctx context.Context, in *RoomDestroyedRequest, opts ...grpc.CallOption) (*RoomDestroyedResponse, error)
 }
 
 type thetanGatewayClient struct {
@@ -41,15 +38,6 @@ type thetanGatewayClient struct {
 
 func NewThetanGatewayClient(cc grpc.ClientConnInterface) ThetanGatewayClient {
 	return &thetanGatewayClient{cc}
-}
-
-func (c *thetanGatewayClient) Ping(ctx context.Context, in *PingRequest, opts ...grpc.CallOption) (*PingResponse, error) {
-	out := new(PingResponse)
-	err := c.cc.Invoke(ctx, ThetanGateway_Ping_FullMethodName, in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
 }
 
 func (c *thetanGatewayClient) PlayerConnected(ctx context.Context, in *PlayerConnectedRequest, opts ...grpc.CallOption) (*PlayerStatusResponse, error) {
@@ -70,23 +58,13 @@ func (c *thetanGatewayClient) PlayerDisconnected(ctx context.Context, in *Player
 	return out, nil
 }
 
-func (c *thetanGatewayClient) RoomDestroyed(ctx context.Context, in *RoomDestroyedRequest, opts ...grpc.CallOption) (*RoomDestroyedResponse, error) {
-	out := new(RoomDestroyedResponse)
-	err := c.cc.Invoke(ctx, ThetanGateway_RoomDestroyed_FullMethodName, in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
-}
-
 // ThetanGatewayServer is the server API for ThetanGateway service.
 // All implementations must embed UnimplementedThetanGatewayServer
 // for forward compatibility
 type ThetanGatewayServer interface {
-	Ping(context.Context, *PingRequest) (*PingResponse, error)
+	// rpc Ping(PingRequest) returns (PingResponse) {}
 	PlayerConnected(context.Context, *PlayerConnectedRequest) (*PlayerStatusResponse, error)
 	PlayerDisconnected(context.Context, *PlayerDisconnectedRequest) (*PlayerStatusResponse, error)
-	RoomDestroyed(context.Context, *RoomDestroyedRequest) (*RoomDestroyedResponse, error)
 	mustEmbedUnimplementedThetanGatewayServer()
 }
 
@@ -94,17 +72,11 @@ type ThetanGatewayServer interface {
 type UnimplementedThetanGatewayServer struct {
 }
 
-func (UnimplementedThetanGatewayServer) Ping(context.Context, *PingRequest) (*PingResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Ping not implemented")
-}
 func (UnimplementedThetanGatewayServer) PlayerConnected(context.Context, *PlayerConnectedRequest) (*PlayerStatusResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method PlayerConnected not implemented")
 }
 func (UnimplementedThetanGatewayServer) PlayerDisconnected(context.Context, *PlayerDisconnectedRequest) (*PlayerStatusResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method PlayerDisconnected not implemented")
-}
-func (UnimplementedThetanGatewayServer) RoomDestroyed(context.Context, *RoomDestroyedRequest) (*RoomDestroyedResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method RoomDestroyed not implemented")
 }
 func (UnimplementedThetanGatewayServer) mustEmbedUnimplementedThetanGatewayServer() {}
 
@@ -117,24 +89,6 @@ type UnsafeThetanGatewayServer interface {
 
 func RegisterThetanGatewayServer(s grpc.ServiceRegistrar, srv ThetanGatewayServer) {
 	s.RegisterService(&ThetanGateway_ServiceDesc, srv)
-}
-
-func _ThetanGateway_Ping_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PingRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ThetanGatewayServer).Ping(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ThetanGateway_Ping_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanGatewayServer).Ping(ctx, req.(*PingRequest))
-	}
-	return interceptor(ctx, in, info, handler)
 }
 
 func _ThetanGateway_PlayerConnected_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
@@ -173,24 +127,6 @@ func _ThetanGateway_PlayerDisconnected_Handler(srv interface{}, ctx context.Cont
 	return interceptor(ctx, in, info, handler)
 }
 
-func _ThetanGateway_RoomDestroyed_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(RoomDestroyedRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ThetanGatewayServer).RoomDestroyed(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ThetanGateway_RoomDestroyed_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanGatewayServer).RoomDestroyed(ctx, req.(*RoomDestroyedRequest))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
 // ThetanGateway_ServiceDesc is the grpc.ServiceDesc for ThetanGateway service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -199,20 +135,12 @@ var ThetanGateway_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*ThetanGatewayServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "Ping",
-			Handler:    _ThetanGateway_Ping_Handler,
-		},
-		{
 			MethodName: "PlayerConnected",
 			Handler:    _ThetanGateway_PlayerConnected_Handler,
 		},
 		{
 			MethodName: "PlayerDisconnected",
 			Handler:    _ThetanGateway_PlayerDisconnected_Handler,
-		},
-		{
-			MethodName: "RoomDestroyed",
-			Handler:    _ThetanGateway_RoomDestroyed_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
