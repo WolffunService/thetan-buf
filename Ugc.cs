@@ -25,23 +25,24 @@ namespace Thetan.Shared.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chp0aGV0YW4vc2hhcmVkL3YxL3VnYy5wcm90bxIQdGhldGFuLnNoYXJlZC52",
-            "MRoZZ29vZ2xlL3Byb3RvYnVmL2FueS5wcm90byKmAQoOSGVyb0N1c3RvbWl6",
+            "MRoZZ29vZ2xlL3Byb3RvYnVmL2FueS5wcm90byK2AQoOSGVyb0N1c3RvbWl6",
             "ZWQSHgoKY3VzdG9tTmFtZRgBIAEoCVIKY3VzdG9tTmFtZRIeCgp0ZXh0dXJl",
             "VVJMGAIgASgJUgp0ZXh0dXJlVVJMEhwKCXB1Ymxpc2hBdBgDIAEoA1IJcHVi",
-            "bGlzaEF0EjYKBnNoYWRlchgEIAEoCzIeLnRoZXRhbi5zaGFyZWQudjEuQ3Vz",
-            "dG9tU2hhZGVyUgZzaGFkZXIivwEKDEN1c3RvbVNoYWRlchIaCghzaGFkZXJJ",
-            "RBgBIAEoBVIIc2hhZGVySUQSQgoGcGFyYW1zGAIgAygLMioudGhldGFuLnNo",
-            "YXJlZC52MS5DdXN0b21TaGFkZXIuUGFyYW1zRW50cnlSBnBhcmFtcxpPCgtQ",
-            "YXJhbXNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIqCgV2YWx1ZRgCIAEoCzIU",
-            "Lmdvb2dsZS5wcm90b2J1Zi5BbnlSBXZhbHVlOgI4AUK3AQoUY29tLnRoZXRh",
-            "bi5zaGFyZWQudjFCCFVnY1Byb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dvL3Ro",
-            "ZXRhbi9zaGFyZWQvdjE7dGhldGFuX3NoYXJlZF92MaICA1RTWKoCEFRoZXRh",
-            "bi5TaGFyZWQuVjHKAhBUaGV0YW5cU2hhcmVkXFYx4gIcVGhldGFuXFNoYXJl",
-            "ZFxWMVxHUEJNZXRhZGF0YeoCElRoZXRhbjo6U2hhcmVkOjpWMWIGcHJvdG8z"));
+            "bGlzaEF0EjsKBnNoYWRlchgEIAEoCzIeLnRoZXRhbi5zaGFyZWQudjEuQ3Vz",
+            "dG9tU2hhZGVySABSBnNoYWRlcogBAUIJCgdfc2hhZGVyIr8BCgxDdXN0b21T",
+            "aGFkZXISGgoIc2hhZGVySUQYASABKAVSCHNoYWRlcklEEkIKBnBhcmFtcxgC",
+            "IAMoCzIqLnRoZXRhbi5zaGFyZWQudjEuQ3VzdG9tU2hhZGVyLlBhcmFtc0Vu",
+            "dHJ5UgZwYXJhbXMaTwoLUGFyYW1zRW50cnkSEAoDa2V5GAEgASgJUgNrZXkS",
+            "KgoFdmFsdWUYAiABKAsyFC5nb29nbGUucHJvdG9idWYuQW55UgV2YWx1ZToC",
+            "OAFCtwEKFGNvbS50aGV0YW4uc2hhcmVkLnYxQghVZ2NQcm90b1ABWjN0aGV0",
+            "YW4tYnVmL2dlbi9nby90aGV0YW4vc2hhcmVkL3YxO3RoZXRhbl9zaGFyZWRf",
+            "djGiAgNUU1iqAhBUaGV0YW4uU2hhcmVkLlYxygIQVGhldGFuXFNoYXJlZFxW",
+            "MeICHFRoZXRhblxTaGFyZWRcVjFcR1BCTWV0YWRhdGHqAhJUaGV0YW46OlNo",
+            "YXJlZDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.HeroCustomized), global::Thetan.Shared.V1.HeroCustomized.Parser, new[]{ "CustomName", "TextureURL", "PublishAt", "Shader" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.HeroCustomized), global::Thetan.Shared.V1.HeroCustomized.Parser, new[]{ "CustomName", "TextureURL", "PublishAt", "Shader" }, new[]{ "Shader" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.CustomShader), global::Thetan.Shared.V1.CustomShader.Parser, new[]{ "ShaderID", "Params" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
@@ -147,6 +148,9 @@ namespace Thetan.Shared.V1 {
     /// <summary>Field number for the "shader" field.</summary>
     public const int ShaderFieldNumber = 4;
     private global::Thetan.Shared.V1.CustomShader shader_;
+    /// <summary>
+    /// CustomShader apply shader and config parameters
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Thetan.Shared.V1.CustomShader Shader {
