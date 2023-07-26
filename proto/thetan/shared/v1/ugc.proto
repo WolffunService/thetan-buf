@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package thetan.shared.v1;
 
+import "google/protobuf/any.proto";
+
 option go_package = "thetan-buf/gen/go/thetan/shared/v1;thetan_shared_v1";
 option csharp_namespace = "Thetan.Shared.V1";
 
@@ -13,4 +15,11 @@ message HeroCustomized {
   string textureURL = 2;
   // PublishAt lần cuối user publish hero (unix time)
   int64 publishAt = 3;
+  // CustomShader apply shader and config parameters
+  optional CustomShader shader = 4;
+}
+
+message CustomShader {
+  int32 shaderID = 1;
+  map<string, google.protobuf.Any> params = 2;
 }
