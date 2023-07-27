@@ -8,9 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Thetan.Gateway.V1 {
-  public static partial class ThetanGateway
+  public static partial class ThetanGatewayTracking
   {
-    static readonly string __ServiceName = "thetan.gateway.v1.ThetanGateway";
+    static readonly string __ServiceName = "thetan.gateway.v1.ThetanGatewayTracking";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -46,27 +46,25 @@ namespace Thetan.Gateway.V1 {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.PlayerConnectedRequest> __Marshaller_thetan_gateway_v1_PlayerConnectedRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.PlayerConnectedRequest.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.RoomRequest> __Marshaller_thetan_gateway_v1_RoomRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.RoomRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.PlayerStatusResponse> __Marshaller_thetan_gateway_v1_PlayerStatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.PlayerStatusResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.PlayerDisconnectedRequest> __Marshaller_thetan_gateway_v1_PlayerDisconnectedRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.PlayerDisconnectedRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Gateway.V1.PlayerConnectedRequest, global::Thetan.Gateway.V1.PlayerStatusResponse> __Method_PlayerConnected = new grpc::Method<global::Thetan.Gateway.V1.PlayerConnectedRequest, global::Thetan.Gateway.V1.PlayerStatusResponse>(
+    static readonly grpc::Method<global::Thetan.Gateway.V1.RoomRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_RoomAllocated = new grpc::Method<global::Thetan.Gateway.V1.RoomRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "PlayerConnected",
-        __Marshaller_thetan_gateway_v1_PlayerConnectedRequest,
-        __Marshaller_thetan_gateway_v1_PlayerStatusResponse);
+        "RoomAllocated",
+        __Marshaller_thetan_gateway_v1_RoomRequest,
+        __Marshaller_google_protobuf_Empty);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Gateway.V1.PlayerDisconnectedRequest, global::Thetan.Gateway.V1.PlayerStatusResponse> __Method_PlayerDisconnected = new grpc::Method<global::Thetan.Gateway.V1.PlayerDisconnectedRequest, global::Thetan.Gateway.V1.PlayerStatusResponse>(
+    static readonly grpc::Method<global::Thetan.Gateway.V1.RoomRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_RoomRelease = new grpc::Method<global::Thetan.Gateway.V1.RoomRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "PlayerDisconnected",
-        __Marshaller_thetan_gateway_v1_PlayerDisconnectedRequest,
-        __Marshaller_thetan_gateway_v1_PlayerStatusResponse);
+        "RoomRelease",
+        __Marshaller_thetan_gateway_v1_RoomRequest,
+        __Marshaller_google_protobuf_Empty);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -74,141 +72,107 @@ namespace Thetan.Gateway.V1 {
       get { return global::Thetan.Gateway.V1.GsSyncReflection.Descriptor.Services[0]; }
     }
 
-    /// <summary>Base class for server-side implementations of ThetanGateway</summary>
-    [grpc::BindServiceMethod(typeof(ThetanGateway), "BindService")]
-    public abstract partial class ThetanGatewayBase
+    /// <summary>Base class for server-side implementations of ThetanGatewayTracking</summary>
+    [grpc::BindServiceMethod(typeof(ThetanGatewayTracking), "BindService")]
+    public abstract partial class ThetanGatewayTrackingBase
     {
-      /// <summary>
-      /// rpc Ping(PingRequest) returns (PingResponse) {}
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Gateway.V1.PlayerStatusResponse> PlayerConnected(global::Thetan.Gateway.V1.PlayerConnectedRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> RoomAllocated(global::Thetan.Gateway.V1.RoomRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Gateway.V1.PlayerStatusResponse> PlayerDisconnected(global::Thetan.Gateway.V1.PlayerDisconnectedRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> RoomRelease(global::Thetan.Gateway.V1.RoomRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
-    /// <summary>Client for ThetanGateway</summary>
-    public partial class ThetanGatewayClient : grpc::ClientBase<ThetanGatewayClient>
+    /// <summary>Client for ThetanGatewayTracking</summary>
+    public partial class ThetanGatewayTrackingClient : grpc::ClientBase<ThetanGatewayTrackingClient>
     {
-      /// <summary>Creates a new client for ThetanGateway</summary>
+      /// <summary>Creates a new client for ThetanGatewayTracking</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public ThetanGatewayClient(grpc::ChannelBase channel) : base(channel)
+      public ThetanGatewayTrackingClient(grpc::ChannelBase channel) : base(channel)
       {
       }
-      /// <summary>Creates a new client for ThetanGateway that uses a custom <c>CallInvoker</c>.</summary>
+      /// <summary>Creates a new client for ThetanGatewayTracking that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public ThetanGatewayClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      public ThetanGatewayTrackingClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected ThetanGatewayClient() : base()
+      protected ThetanGatewayTrackingClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected ThetanGatewayClient(ClientBaseConfiguration configuration) : base(configuration)
+      protected ThetanGatewayTrackingClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
-      /// <summary>
-      /// rpc Ping(PingRequest) returns (PingResponse) {}
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Gateway.V1.PlayerStatusResponse PlayerConnected(global::Thetan.Gateway.V1.PlayerConnectedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RoomAllocated(global::Thetan.Gateway.V1.RoomRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return PlayerConnected(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// rpc Ping(PingRequest) returns (PingResponse) {}
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Gateway.V1.PlayerStatusResponse PlayerConnected(global::Thetan.Gateway.V1.PlayerConnectedRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_PlayerConnected, null, options, request);
-      }
-      /// <summary>
-      /// rpc Ping(PingRequest) returns (PingResponse) {}
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.PlayerStatusResponse> PlayerConnectedAsync(global::Thetan.Gateway.V1.PlayerConnectedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return PlayerConnectedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// rpc Ping(PingRequest) returns (PingResponse) {}
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.PlayerStatusResponse> PlayerConnectedAsync(global::Thetan.Gateway.V1.PlayerConnectedRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_PlayerConnected, null, options, request);
+        return RoomAllocated(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Gateway.V1.PlayerStatusResponse PlayerDisconnected(global::Thetan.Gateway.V1.PlayerDisconnectedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RoomAllocated(global::Thetan.Gateway.V1.RoomRequest request, grpc::CallOptions options)
       {
-        return PlayerDisconnected(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return CallInvoker.BlockingUnaryCall(__Method_RoomAllocated, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Gateway.V1.PlayerStatusResponse PlayerDisconnected(global::Thetan.Gateway.V1.PlayerDisconnectedRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RoomAllocatedAsync(global::Thetan.Gateway.V1.RoomRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return CallInvoker.BlockingUnaryCall(__Method_PlayerDisconnected, null, options, request);
+        return RoomAllocatedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.PlayerStatusResponse> PlayerDisconnectedAsync(global::Thetan.Gateway.V1.PlayerDisconnectedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RoomAllocatedAsync(global::Thetan.Gateway.V1.RoomRequest request, grpc::CallOptions options)
       {
-        return PlayerDisconnectedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return CallInvoker.AsyncUnaryCall(__Method_RoomAllocated, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.PlayerStatusResponse> PlayerDisconnectedAsync(global::Thetan.Gateway.V1.PlayerDisconnectedRequest request, grpc::CallOptions options)
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RoomRelease(global::Thetan.Gateway.V1.RoomRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return CallInvoker.AsyncUnaryCall(__Method_PlayerDisconnected, null, options, request);
+        return RoomRelease(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RoomRelease(global::Thetan.Gateway.V1.RoomRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RoomRelease, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RoomReleaseAsync(global::Thetan.Gateway.V1.RoomRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RoomReleaseAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RoomReleaseAsync(global::Thetan.Gateway.V1.RoomRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RoomRelease, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected override ThetanGatewayClient NewInstance(ClientBaseConfiguration configuration)
+      protected override ThetanGatewayTrackingClient NewInstance(ClientBaseConfiguration configuration)
       {
-        return new ThetanGatewayClient(configuration);
+        return new ThetanGatewayTrackingClient(configuration);
       }
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public static grpc::ServerServiceDefinition BindService(ThetanGatewayBase serviceImpl)
+    public static grpc::ServerServiceDefinition BindService(ThetanGatewayTrackingBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_PlayerConnected, serviceImpl.PlayerConnected)
-          .AddMethod(__Method_PlayerDisconnected, serviceImpl.PlayerDisconnected).Build();
+          .AddMethod(__Method_RoomAllocated, serviceImpl.RoomAllocated)
+          .AddMethod(__Method_RoomRelease, serviceImpl.RoomRelease).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -216,10 +180,153 @@ namespace Thetan.Gateway.V1 {
     /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanGatewayBase serviceImpl)
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanGatewayTrackingBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_PlayerConnected, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Gateway.V1.PlayerConnectedRequest, global::Thetan.Gateway.V1.PlayerStatusResponse>(serviceImpl.PlayerConnected));
-      serviceBinder.AddMethod(__Method_PlayerDisconnected, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Gateway.V1.PlayerDisconnectedRequest, global::Thetan.Gateway.V1.PlayerStatusResponse>(serviceImpl.PlayerDisconnected));
+      serviceBinder.AddMethod(__Method_RoomAllocated, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Gateway.V1.RoomRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.RoomAllocated));
+      serviceBinder.AddMethod(__Method_RoomRelease, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Gateway.V1.RoomRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.RoomRelease));
+    }
+
+  }
+  public static partial class ThetanGatewayImmortal
+  {
+    static readonly string __ServiceName = "thetan.gateway.v1.ThetanGatewayImmortal";
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.ImmortalAllocateRequest> __Marshaller_thetan_gateway_v1_ImmortalAllocateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.ImmortalAllocateRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> __Marshaller_thetan_gateway_v1_ImmortalRoomAllocationResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.ImmortalRoomAllocationResp.Parser));
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Gateway.V1.ImmortalAllocateRequest, global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> __Method_AllocateGameServer = new grpc::Method<global::Thetan.Gateway.V1.ImmortalAllocateRequest, global::Thetan.Gateway.V1.ImmortalRoomAllocationResp>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AllocateGameServer",
+        __Marshaller_thetan_gateway_v1_ImmortalAllocateRequest,
+        __Marshaller_thetan_gateway_v1_ImmortalRoomAllocationResp);
+
+    /// <summary>Service descriptor</summary>
+    public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
+    {
+      get { return global::Thetan.Gateway.V1.GsSyncReflection.Descriptor.Services[1]; }
+    }
+
+    /// <summary>Base class for server-side implementations of ThetanGatewayImmortal</summary>
+    [grpc::BindServiceMethod(typeof(ThetanGatewayImmortal), "BindService")]
+    public abstract partial class ThetanGatewayImmortalBase
+    {
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> AllocateGameServer(global::Thetan.Gateway.V1.ImmortalAllocateRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+    }
+
+    /// <summary>Client for ThetanGatewayImmortal</summary>
+    public partial class ThetanGatewayImmortalClient : grpc::ClientBase<ThetanGatewayImmortalClient>
+    {
+      /// <summary>Creates a new client for ThetanGatewayImmortal</summary>
+      /// <param name="channel">The channel to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public ThetanGatewayImmortalClient(grpc::ChannelBase channel) : base(channel)
+      {
+      }
+      /// <summary>Creates a new client for ThetanGatewayImmortal that uses a custom <c>CallInvoker</c>.</summary>
+      /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public ThetanGatewayImmortalClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      {
+      }
+      /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      protected ThetanGatewayImmortalClient() : base()
+      {
+      }
+      /// <summary>Protected constructor to allow creation of configured clients.</summary>
+      /// <param name="configuration">The client configuration.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      protected ThetanGatewayImmortalClient(ClientBaseConfiguration configuration) : base(configuration)
+      {
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Gateway.V1.ImmortalRoomAllocationResp AllocateGameServer(global::Thetan.Gateway.V1.ImmortalAllocateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AllocateGameServer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Gateway.V1.ImmortalRoomAllocationResp AllocateGameServer(global::Thetan.Gateway.V1.ImmortalAllocateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AllocateGameServer, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> AllocateGameServerAsync(global::Thetan.Gateway.V1.ImmortalAllocateRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AllocateGameServerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> AllocateGameServerAsync(global::Thetan.Gateway.V1.ImmortalAllocateRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AllocateGameServer, null, options, request);
+      }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      protected override ThetanGatewayImmortalClient NewInstance(ClientBaseConfiguration configuration)
+      {
+        return new ThetanGatewayImmortalClient(configuration);
+      }
+    }
+
+    /// <summary>Creates service definition that can be registered with a server</summary>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public static grpc::ServerServiceDefinition BindService(ThetanGatewayImmortalBase serviceImpl)
+    {
+      return grpc::ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_AllocateGameServer, serviceImpl.AllocateGameServer).Build();
+    }
+
+    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
+    /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+    /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanGatewayImmortalBase serviceImpl)
+    {
+      serviceBinder.AddMethod(__Method_AllocateGameServer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Gateway.V1.ImmortalAllocateRequest, global::Thetan.Gateway.V1.ImmortalRoomAllocationResp>(serviceImpl.AllocateGameServer));
     }
 
   }

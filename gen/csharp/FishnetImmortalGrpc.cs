@@ -53,8 +53,6 @@ namespace Thetan.Fishnet.Immortal.V1 {
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp> __Marshaller_thetan_fishnet_immortal_v1_GameServerInfoResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Fishnet.Immortal.V1.SetCapacityReq> __Marshaller_thetan_fishnet_immortal_v1_SetCapacityReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Fishnet.Immortal.V1.SetCapacityReq.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp> __Method_RoomAllocation = new grpc::Method<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp>(
@@ -80,14 +78,6 @@ namespace Thetan.Fishnet.Immortal.V1 {
         __Marshaller_google_protobuf_Empty,
         __Marshaller_thetan_fishnet_immortal_v1_GameServerInfoResp);
 
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Fishnet.Immortal.V1.SetCapacityReq, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetCapacity = new grpc::Method<global::Thetan.Fishnet.Immortal.V1.SetCapacityReq, global::Google.Protobuf.WellKnownTypes.Empty>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "SetCapacity",
-        __Marshaller_thetan_fishnet_immortal_v1_SetCapacityReq,
-        __Marshaller_google_protobuf_Empty);
-
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -112,12 +102,6 @@ namespace Thetan.Fishnet.Immortal.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp> GameServerInfo(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetCapacity(global::Thetan.Fishnet.Immortal.V1.SetCapacityReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -211,26 +195,6 @@ namespace Thetan.Fishnet.Immortal.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GameServerInfo, null, options, request);
       }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetCapacity(global::Thetan.Fishnet.Immortal.V1.SetCapacityReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return SetCapacity(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetCapacity(global::Thetan.Fishnet.Immortal.V1.SetCapacityReq request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_SetCapacity, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetCapacityAsync(global::Thetan.Fishnet.Immortal.V1.SetCapacityReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return SetCapacityAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetCapacityAsync(global::Thetan.Fishnet.Immortal.V1.SetCapacityReq request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_SetCapacity, null, options, request);
-      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ThetanFishNetImmortalClient NewInstance(ClientBaseConfiguration configuration)
@@ -247,8 +211,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_RoomAllocation, serviceImpl.RoomAllocation)
           .AddMethod(__Method_Shutdown, serviceImpl.Shutdown)
-          .AddMethod(__Method_GameServerInfo, serviceImpl.GameServerInfo)
-          .AddMethod(__Method_SetCapacity, serviceImpl.SetCapacity).Build();
+          .AddMethod(__Method_GameServerInfo, serviceImpl.GameServerInfo).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -261,7 +224,6 @@ namespace Thetan.Fishnet.Immortal.V1 {
       serviceBinder.AddMethod(__Method_RoomAllocation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp>(serviceImpl.RoomAllocation));
       serviceBinder.AddMethod(__Method_Shutdown, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.Shutdown));
       serviceBinder.AddMethod(__Method_GameServerInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp>(serviceImpl.GameServerInfo));
-      serviceBinder.AddMethod(__Method_SetCapacity, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Fishnet.Immortal.V1.SetCapacityReq, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.SetCapacity));
     }
 
   }

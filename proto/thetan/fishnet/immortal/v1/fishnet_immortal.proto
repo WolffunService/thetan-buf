@@ -12,16 +12,13 @@ message RoomAllocationResp {
 }
 
 message GameServerInfoResp{
-  int32 connectedPlayers = 1;
-}
-
-message SetCapacityReq{
-  int32 connectedPlayers = 1;
+  int32 maxRoom = 1;
+  int32 roomSize = 2;
+  map<string,int32> rooms = 3;
 }
 
 service ThetanFishNetImmortal {
   rpc RoomAllocation(thetan.immortal.v1.ImmortalMatchFoundResponseProto) returns (RoomAllocationResp);
   rpc Shutdown(google.protobuf.Empty) returns (google.protobuf.Empty);
   rpc GameServerInfo(google.protobuf.Empty) returns (GameServerInfoResp);
-  rpc SetCapacity(SetCapacityReq) returns (google.protobuf.Empty);
 }
