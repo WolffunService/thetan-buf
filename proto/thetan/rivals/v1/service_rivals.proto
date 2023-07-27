@@ -218,6 +218,8 @@ message RoundStat {
   int32 controlMoveCamera = 7;
   int32 passedCP = 8;
   int32 maxCP = 9;
+
+  int32 Death = 10;
 }
 
 message MapData {
