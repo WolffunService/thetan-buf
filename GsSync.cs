@@ -25,35 +25,35 @@ namespace Thetan.Gateway.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch90aGV0YW4vZ2F0ZXdheS92MS9nc19zeW5jLnByb3RvEhF0aGV0YW4uZ2F0",
-            "ZXdheS52MSJfChZQbGF5ZXJDb25uZWN0ZWRSZXF1ZXN0EigKEGdhbWVfc2Vy",
-            "dmVyX25hbWUYASABKAlSDmdhbWVTZXJ2ZXJOYW1lEhsKCXBsYXllcl9pZBgC",
-            "IAEoCVIIcGxheWVySWQiYgoZUGxheWVyRGlzY29ubmVjdGVkUmVxdWVzdBIo",
-            "ChBnYW1lX3NlcnZlcl9uYW1lGAEgASgJUg5nYW1lU2VydmVyTmFtZRIbCglw",
-            "bGF5ZXJfaWQYAiABKAlSCHBsYXllcklkIhYKFFBsYXllclN0YXR1c1Jlc3Bv",
-            "bnNlInMKGkltbW9ydGFsUm9vbUFsbG9jYXRpb25SZXNwEhsKCXNlcnZlcl9p",
-            "cBgBIAEoCVIIc2VydmVySXASHwoLc2VydmVyX3BvcnQYAiABKA1SCnNlcnZl",
-            "clBvcnQSFwoHcm9vbV9pZBgDIAEoCVIGcm9vbUlkIosBCiBJbW1vcnRhbE1h",
-            "dGNoRm91bmRGb3JNdWx0aXBsYXllchJLCglyb29tQWxsb2MYASABKAsyLS50",
-            "aGV0YW4uZ2F0ZXdheS52MS5JbW1vcnRhbFJvb21BbGxvY2F0aW9uUmVzcFIJ",
-            "cm9vbUFsbG9jEhoKCHBhcnR5SURzGAIgAygJUghwYXJ0eUlEcyouCghHYW1l",
-            "TmFtZRIJCgVSaXZhbBAAEgwKCEltbW9ydGFsEAESCQoFQXJlbmEQAjLnAQoN",
-            "VGhldGFuR2F0ZXdheRJnCg9QbGF5ZXJDb25uZWN0ZWQSKS50aGV0YW4uZ2F0",
-            "ZXdheS52MS5QbGF5ZXJDb25uZWN0ZWRSZXF1ZXN0GicudGhldGFuLmdhdGV3",
-            "YXkudjEuUGxheWVyU3RhdHVzUmVzcG9uc2UiABJtChJQbGF5ZXJEaXNjb25u",
-            "ZWN0ZWQSLC50aGV0YW4uZ2F0ZXdheS52MS5QbGF5ZXJEaXNjb25uZWN0ZWRS",
-            "ZXF1ZXN0GicudGhldGFuLmdhdGV3YXkudjEuUGxheWVyU3RhdHVzUmVzcG9u",
-            "c2UiAELBAQoVY29tLnRoZXRhbi5nYXRld2F5LnYxQgtHc1N5bmNQcm90b1AB",
-            "WjV0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vZ2F0ZXdheS92MTt0aGV0YW5f",
-            "Z2F0ZXdheV92MaICA1RHWKoCEVRoZXRhbi5HYXRld2F5LlYxygIRVGhldGFu",
-            "XEdhdGV3YXlcVjHiAh1UaGV0YW5cR2F0ZXdheVxWMVxHUEJNZXRhZGF0YeoC",
-            "E1RoZXRhbjo6R2F0ZXdheTo6VjFiBnByb3RvMw=="));
+            "ZXdheS52MRobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3RvIk0KC1Jvb21S",
+            "ZXF1ZXN0EiYKDmdhbWVTZXJ2ZXJOYW1lGAEgASgJUg5nYW1lU2VydmVyTmFt",
+            "ZRIWCgZyb29tSUQYAiABKAlSBnJvb21JRCJLChdJbW1vcnRhbEFsbG9jYXRl",
+            "UmVxdWVzdBIYCgdtYXRjaElEGAEgASgJUgdtYXRjaElEEhYKBnJlZ2lvbhgC",
+            "IAEoCVIGcmVnaW9uInAKGkltbW9ydGFsUm9vbUFsbG9jYXRpb25SZXNwEhoK",
+            "CHNlcnZlcklQGAEgASgJUghzZXJ2ZXJJUBIeCgpzZXJ2ZXJQb3J0GAIgASgN",
+            "UgpzZXJ2ZXJQb3J0EhYKBnJvb21JRBgDIAEoCVIGcm9vbUlEIosBCiBJbW1v",
+            "cnRhbE1hdGNoRm91bmRGb3JNdWx0aXBsYXllchJLCglyb29tQWxsb2MYASAB",
+            "KAsyLS50aGV0YW4uZ2F0ZXdheS52MS5JbW1vcnRhbFJvb21BbGxvY2F0aW9u",
+            "UmVzcFIJcm9vbUFsbG9jEhoKCHBhcnR5SURzGAIgAygJUghwYXJ0eUlEcyou",
+            "CghHYW1lTmFtZRIJCgVSaXZhbBAAEgwKCEltbW9ydGFsEAESCQoFQXJlbmEQ",
+            "AjKrAQoVVGhldGFuR2F0ZXdheVRyYWNraW5nEkkKDVJvb21BbGxvY2F0ZWQS",
+            "Hi50aGV0YW4uZ2F0ZXdheS52MS5Sb29tUmVxdWVzdBoWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eSIAEkcKC1Jvb21SZWxlYXNlEh4udGhldGFuLmdhdGV3YXku",
+            "djEuUm9vbVJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiADKKAQoV",
+            "VGhldGFuR2F0ZXdheUltbW9ydGFsEnEKEkFsbG9jYXRlR2FtZVNlcnZlchIq",
+            "LnRoZXRhbi5nYXRld2F5LnYxLkltbW9ydGFsQWxsb2NhdGVSZXF1ZXN0Gi0u",
+            "dGhldGFuLmdhdGV3YXkudjEuSW1tb3J0YWxSb29tQWxsb2NhdGlvblJlc3Ai",
+            "AELBAQoVY29tLnRoZXRhbi5nYXRld2F5LnYxQgtHc1N5bmNQcm90b1ABWjV0",
+            "aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vZ2F0ZXdheS92MTt0aGV0YW5fZ2F0",
+            "ZXdheV92MaICA1RHWKoCEVRoZXRhbi5HYXRld2F5LlYxygIRVGhldGFuXEdh",
+            "dGV3YXlcVjHiAh1UaGV0YW5cR2F0ZXdheVxWMVxHUEJNZXRhZGF0YeoCE1Ro",
+            "ZXRhbjo6R2F0ZXdheTo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Gateway.V1.GameName), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.PlayerConnectedRequest), global::Thetan.Gateway.V1.PlayerConnectedRequest.Parser, new[]{ "GameServerName", "PlayerId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.PlayerDisconnectedRequest), global::Thetan.Gateway.V1.PlayerDisconnectedRequest.Parser, new[]{ "GameServerName", "PlayerId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.PlayerStatusResponse), global::Thetan.Gateway.V1.PlayerStatusResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.ImmortalRoomAllocationResp), global::Thetan.Gateway.V1.ImmortalRoomAllocationResp.Parser, new[]{ "ServerIp", "ServerPort", "RoomId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.RoomRequest), global::Thetan.Gateway.V1.RoomRequest.Parser, new[]{ "GameServerName", "RoomID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.ImmortalAllocateRequest), global::Thetan.Gateway.V1.ImmortalAllocateRequest.Parser, new[]{ "MatchID", "Region" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.ImmortalRoomAllocationResp), global::Thetan.Gateway.V1.ImmortalRoomAllocationResp.Parser, new[]{ "ServerIP", "ServerPort", "RoomID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.ImmortalMatchFoundForMultiplayer), global::Thetan.Gateway.V1.ImmortalMatchFoundForMultiplayer.Parser, new[]{ "RoomAlloc", "PartyIDs" }, null, null, null, null)
           }));
     }
@@ -73,16 +73,16 @@ namespace Thetan.Gateway.V1 {
   #endregion
 
   #region Messages
-  public sealed partial class PlayerConnectedRequest : pb::IMessage<PlayerConnectedRequest>
+  public sealed partial class RoomRequest : pb::IMessage<RoomRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<PlayerConnectedRequest> _parser = new pb::MessageParser<PlayerConnectedRequest>(() => new PlayerConnectedRequest());
+    private static readonly pb::MessageParser<RoomRequest> _parser = new pb::MessageParser<RoomRequest>(() => new RoomRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<PlayerConnectedRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<RoomRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -98,7 +98,7 @@ namespace Thetan.Gateway.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerConnectedRequest() {
+    public RoomRequest() {
       OnConstruction();
     }
 
@@ -106,19 +106,19 @@ namespace Thetan.Gateway.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerConnectedRequest(PlayerConnectedRequest other) : this() {
+    public RoomRequest(RoomRequest other) : this() {
       gameServerName_ = other.gameServerName_;
-      playerId_ = other.playerId_;
+      roomID_ = other.roomID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerConnectedRequest Clone() {
-      return new PlayerConnectedRequest(this);
+    public RoomRequest Clone() {
+      return new RoomRequest(this);
     }
 
-    /// <summary>Field number for the "game_server_name" field.</summary>
+    /// <summary>Field number for the "gameServerName" field.</summary>
     public const int GameServerNameFieldNumber = 1;
     private string gameServerName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -130,27 +130,27 @@ namespace Thetan.Gateway.V1 {
       }
     }
 
-    /// <summary>Field number for the "player_id" field.</summary>
-    public const int PlayerIdFieldNumber = 2;
-    private string playerId_ = "";
+    /// <summary>Field number for the "roomID" field.</summary>
+    public const int RoomIDFieldNumber = 2;
+    private string roomID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string PlayerId {
-      get { return playerId_; }
+    public string RoomID {
+      get { return roomID_; }
       set {
-        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        roomID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as PlayerConnectedRequest);
+      return Equals(other as RoomRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(PlayerConnectedRequest other) {
+    public bool Equals(RoomRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -158,7 +158,7 @@ namespace Thetan.Gateway.V1 {
         return true;
       }
       if (GameServerName != other.GameServerName) return false;
-      if (PlayerId != other.PlayerId) return false;
+      if (RoomID != other.RoomID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -167,7 +167,7 @@ namespace Thetan.Gateway.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (GameServerName.Length != 0) hash ^= GameServerName.GetHashCode();
-      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (RoomID.Length != 0) hash ^= RoomID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -190,9 +190,9 @@ namespace Thetan.Gateway.V1 {
         output.WriteRawTag(10);
         output.WriteString(GameServerName);
       }
-      if (PlayerId.Length != 0) {
+      if (RoomID.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(PlayerId);
+        output.WriteString(RoomID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -208,9 +208,9 @@ namespace Thetan.Gateway.V1 {
         output.WriteRawTag(10);
         output.WriteString(GameServerName);
       }
-      if (PlayerId.Length != 0) {
+      if (RoomID.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(PlayerId);
+        output.WriteString(RoomID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -225,8 +225,8 @@ namespace Thetan.Gateway.V1 {
       if (GameServerName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(GameServerName);
       }
-      if (PlayerId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      if (RoomID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RoomID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -236,15 +236,15 @@ namespace Thetan.Gateway.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(PlayerConnectedRequest other) {
+    public void MergeFrom(RoomRequest other) {
       if (other == null) {
         return;
       }
       if (other.GameServerName.Length != 0) {
         GameServerName = other.GameServerName;
       }
-      if (other.PlayerId.Length != 0) {
-        PlayerId = other.PlayerId;
+      if (other.RoomID.Length != 0) {
+        RoomID = other.RoomID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -266,7 +266,7 @@ namespace Thetan.Gateway.V1 {
             break;
           }
           case 18: {
-            PlayerId = input.ReadString();
+            RoomID = input.ReadString();
             break;
           }
         }
@@ -289,7 +289,7 @@ namespace Thetan.Gateway.V1 {
             break;
           }
           case 18: {
-            PlayerId = input.ReadString();
+            RoomID = input.ReadString();
             break;
           }
         }
@@ -299,16 +299,16 @@ namespace Thetan.Gateway.V1 {
 
   }
 
-  public sealed partial class PlayerDisconnectedRequest : pb::IMessage<PlayerDisconnectedRequest>
+  public sealed partial class ImmortalAllocateRequest : pb::IMessage<ImmortalAllocateRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<PlayerDisconnectedRequest> _parser = new pb::MessageParser<PlayerDisconnectedRequest>(() => new PlayerDisconnectedRequest());
+    private static readonly pb::MessageParser<ImmortalAllocateRequest> _parser = new pb::MessageParser<ImmortalAllocateRequest>(() => new ImmortalAllocateRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<PlayerDisconnectedRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<ImmortalAllocateRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -324,7 +324,7 @@ namespace Thetan.Gateway.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerDisconnectedRequest() {
+    public ImmortalAllocateRequest() {
       OnConstruction();
     }
 
@@ -332,59 +332,59 @@ namespace Thetan.Gateway.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerDisconnectedRequest(PlayerDisconnectedRequest other) : this() {
-      gameServerName_ = other.gameServerName_;
-      playerId_ = other.playerId_;
+    public ImmortalAllocateRequest(ImmortalAllocateRequest other) : this() {
+      matchID_ = other.matchID_;
+      region_ = other.region_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerDisconnectedRequest Clone() {
-      return new PlayerDisconnectedRequest(this);
+    public ImmortalAllocateRequest Clone() {
+      return new ImmortalAllocateRequest(this);
     }
 
-    /// <summary>Field number for the "game_server_name" field.</summary>
-    public const int GameServerNameFieldNumber = 1;
-    private string gameServerName_ = "";
+    /// <summary>Field number for the "matchID" field.</summary>
+    public const int MatchIDFieldNumber = 1;
+    private string matchID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string GameServerName {
-      get { return gameServerName_; }
+    public string MatchID {
+      get { return matchID_; }
       set {
-        gameServerName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        matchID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "player_id" field.</summary>
-    public const int PlayerIdFieldNumber = 2;
-    private string playerId_ = "";
+    /// <summary>Field number for the "region" field.</summary>
+    public const int RegionFieldNumber = 2;
+    private string region_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string PlayerId {
-      get { return playerId_; }
+    public string Region {
+      get { return region_; }
       set {
-        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        region_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as PlayerDisconnectedRequest);
+      return Equals(other as ImmortalAllocateRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(PlayerDisconnectedRequest other) {
+    public bool Equals(ImmortalAllocateRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (GameServerName != other.GameServerName) return false;
-      if (PlayerId != other.PlayerId) return false;
+      if (MatchID != other.MatchID) return false;
+      if (Region != other.Region) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -392,8 +392,8 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (GameServerName.Length != 0) hash ^= GameServerName.GetHashCode();
-      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (MatchID.Length != 0) hash ^= MatchID.GetHashCode();
+      if (Region.Length != 0) hash ^= Region.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -412,13 +412,13 @@ namespace Thetan.Gateway.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (GameServerName.Length != 0) {
+      if (MatchID.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(GameServerName);
+        output.WriteString(MatchID);
       }
-      if (PlayerId.Length != 0) {
+      if (Region.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(PlayerId);
+        output.WriteString(Region);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -430,13 +430,13 @@ namespace Thetan.Gateway.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (GameServerName.Length != 0) {
+      if (MatchID.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(GameServerName);
+        output.WriteString(MatchID);
       }
-      if (PlayerId.Length != 0) {
+      if (Region.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(PlayerId);
+        output.WriteString(Region);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -448,11 +448,11 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (GameServerName.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(GameServerName);
+      if (MatchID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MatchID);
       }
-      if (PlayerId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      if (Region.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Region);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -462,15 +462,15 @@ namespace Thetan.Gateway.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(PlayerDisconnectedRequest other) {
+    public void MergeFrom(ImmortalAllocateRequest other) {
       if (other == null) {
         return;
       }
-      if (other.GameServerName.Length != 0) {
-        GameServerName = other.GameServerName;
+      if (other.MatchID.Length != 0) {
+        MatchID = other.MatchID;
       }
-      if (other.PlayerId.Length != 0) {
-        PlayerId = other.PlayerId;
+      if (other.Region.Length != 0) {
+        Region = other.Region;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -488,11 +488,11 @@ namespace Thetan.Gateway.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            GameServerName = input.ReadString();
+            MatchID = input.ReadString();
             break;
           }
           case 18: {
-            PlayerId = input.ReadString();
+            Region = input.ReadString();
             break;
           }
         }
@@ -511,165 +511,13 @@ namespace Thetan.Gateway.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            GameServerName = input.ReadString();
+            MatchID = input.ReadString();
             break;
           }
           case 18: {
-            PlayerId = input.ReadString();
+            Region = input.ReadString();
             break;
           }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class PlayerStatusResponse : pb::IMessage<PlayerStatusResponse>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<PlayerStatusResponse> _parser = new pb::MessageParser<PlayerStatusResponse>(() => new PlayerStatusResponse());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<PlayerStatusResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Gateway.V1.GsSyncReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerStatusResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerStatusResponse(PlayerStatusResponse other) : this() {
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PlayerStatusResponse Clone() {
-      return new PlayerStatusResponse(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as PlayerStatusResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(PlayerStatusResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(PlayerStatusResponse other) {
-      if (other == null) {
-        return;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
         }
       }
     }
@@ -691,7 +539,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Gateway.V1.GsSyncReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Thetan.Gateway.V1.GsSyncReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -711,9 +559,9 @@ namespace Thetan.Gateway.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ImmortalRoomAllocationResp(ImmortalRoomAllocationResp other) : this() {
-      serverIp_ = other.serverIp_;
+      serverIP_ = other.serverIP_;
       serverPort_ = other.serverPort_;
-      roomId_ = other.roomId_;
+      roomID_ = other.roomID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -723,22 +571,22 @@ namespace Thetan.Gateway.V1 {
       return new ImmortalRoomAllocationResp(this);
     }
 
-    /// <summary>Field number for the "server_ip" field.</summary>
-    public const int ServerIpFieldNumber = 1;
-    private string serverIp_ = "";
+    /// <summary>Field number for the "serverIP" field.</summary>
+    public const int ServerIPFieldNumber = 1;
+    private string serverIP_ = "";
     /// <summary>
     ///fishnet ip+port
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ServerIp {
-      get { return serverIp_; }
+    public string ServerIP {
+      get { return serverIP_; }
       set {
-        serverIp_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        serverIP_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "server_port" field.</summary>
+    /// <summary>Field number for the "serverPort" field.</summary>
     public const int ServerPortFieldNumber = 2;
     private uint serverPort_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -750,18 +598,18 @@ namespace Thetan.Gateway.V1 {
       }
     }
 
-    /// <summary>Field number for the "room_id" field.</summary>
-    public const int RoomIdFieldNumber = 3;
-    private string roomId_ = "";
+    /// <summary>Field number for the "roomID" field.</summary>
+    public const int RoomIDFieldNumber = 3;
+    private string roomID_ = "";
     /// <summary>
     ///matchid
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string RoomId {
-      get { return roomId_; }
+    public string RoomID {
+      get { return roomID_; }
       set {
-        roomId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        roomID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -780,9 +628,9 @@ namespace Thetan.Gateway.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ServerIp != other.ServerIp) return false;
+      if (ServerIP != other.ServerIP) return false;
       if (ServerPort != other.ServerPort) return false;
-      if (RoomId != other.RoomId) return false;
+      if (RoomID != other.RoomID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -790,9 +638,9 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (ServerIp.Length != 0) hash ^= ServerIp.GetHashCode();
+      if (ServerIP.Length != 0) hash ^= ServerIP.GetHashCode();
       if (ServerPort != 0) hash ^= ServerPort.GetHashCode();
-      if (RoomId.Length != 0) hash ^= RoomId.GetHashCode();
+      if (RoomID.Length != 0) hash ^= RoomID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -811,17 +659,17 @@ namespace Thetan.Gateway.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ServerIp.Length != 0) {
+      if (ServerIP.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(ServerIp);
+        output.WriteString(ServerIP);
       }
       if (ServerPort != 0) {
         output.WriteRawTag(16);
         output.WriteUInt32(ServerPort);
       }
-      if (RoomId.Length != 0) {
+      if (RoomID.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(RoomId);
+        output.WriteString(RoomID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -833,17 +681,17 @@ namespace Thetan.Gateway.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ServerIp.Length != 0) {
+      if (ServerIP.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(ServerIp);
+        output.WriteString(ServerIP);
       }
       if (ServerPort != 0) {
         output.WriteRawTag(16);
         output.WriteUInt32(ServerPort);
       }
-      if (RoomId.Length != 0) {
+      if (RoomID.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(RoomId);
+        output.WriteString(RoomID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -855,14 +703,14 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (ServerIp.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServerIp);
+      if (ServerIP.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ServerIP);
       }
       if (ServerPort != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ServerPort);
       }
-      if (RoomId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(RoomId);
+      if (RoomID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RoomID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -876,14 +724,14 @@ namespace Thetan.Gateway.V1 {
       if (other == null) {
         return;
       }
-      if (other.ServerIp.Length != 0) {
-        ServerIp = other.ServerIp;
+      if (other.ServerIP.Length != 0) {
+        ServerIP = other.ServerIP;
       }
       if (other.ServerPort != 0) {
         ServerPort = other.ServerPort;
       }
-      if (other.RoomId.Length != 0) {
-        RoomId = other.RoomId;
+      if (other.RoomID.Length != 0) {
+        RoomID = other.RoomID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -901,7 +749,7 @@ namespace Thetan.Gateway.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            ServerIp = input.ReadString();
+            ServerIP = input.ReadString();
             break;
           }
           case 16: {
@@ -909,7 +757,7 @@ namespace Thetan.Gateway.V1 {
             break;
           }
           case 26: {
-            RoomId = input.ReadString();
+            RoomID = input.ReadString();
             break;
           }
         }
@@ -928,7 +776,7 @@ namespace Thetan.Gateway.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            ServerIp = input.ReadString();
+            ServerIP = input.ReadString();
             break;
           }
           case 16: {
@@ -936,7 +784,7 @@ namespace Thetan.Gateway.V1 {
             break;
           }
           case 26: {
-            RoomId = input.ReadString();
+            RoomID = input.ReadString();
             break;
           }
         }
@@ -963,7 +811,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Gateway.V1.GsSyncReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Thetan.Gateway.V1.GsSyncReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
