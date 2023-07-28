@@ -3,6 +3,7 @@ syntax = "proto3";
 package thetan.gateway.v1;
 
 import "google/protobuf/empty.proto";
+import "thetan/immortal/v1/immortal_match.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/gateway/v1;thetan_gateway_v1";
 option csharp_namespace = "Thetan.Gateway.V1";
@@ -21,16 +22,10 @@ service ThetanGatewayTracking {
 
 message RoomRequest {
   string gameServerName = 1;
-  string roomID = 2;
 }
 
 service ThetanGatewayImmortal {
-  rpc AllocateGameServer(ImmortalAllocateRequest) returns (ImmortalRoomAllocationResp) {}
-}
-
-message ImmortalAllocateRequest {
-  string matchID = 1;
-  string region = 2;
+  rpc AllocateGameServer(thetan.immortal.v1.ImmortalMatchFoundResponseProto) returns (ImmortalRoomAllocationResp) {}
 }
 
 message ImmortalRoomAllocationResp {

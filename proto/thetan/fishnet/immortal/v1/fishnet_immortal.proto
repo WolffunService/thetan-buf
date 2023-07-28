@@ -12,9 +12,7 @@ message RoomAllocationResp {
 }
 
 message GameServerInfoResp{
-  int32 maxRoom = 1;
-  int32 roomSize = 2;
-  map<string,int32> rooms = 3;
+  int32 roomAllocate = 1;
 }
 
 service ThetanFishNetImmortal {

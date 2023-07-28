@@ -28,29 +28,26 @@ namespace Thetan.Fishnet.Immortal.V1 {
             "LnByb3RvEhp0aGV0YW4uZmlzaG5ldC5pbW1vcnRhbC52MRobZ29vZ2xlL3By",
             "b3RvYnVmL2VtcHR5LnByb3RvGid0aGV0YW4vaW1tb3J0YWwvdjEvaW1tb3J0",
             "YWxfbWF0Y2gucHJvdG8iMgoSUm9vbUFsbG9jYXRpb25SZXNwEhwKCWlzU3Vj",
-            "Y2VzcxgBIAEoCFIJaXNTdWNjZXNzItUBChJHYW1lU2VydmVySW5mb1Jlc3AS",
-            "GAoHbWF4Um9vbRgBIAEoBVIHbWF4Um9vbRIaCghyb29tU2l6ZRgCIAEoBVII",
-            "cm9vbVNpemUSTwoFcm9vbXMYAyADKAsyOS50aGV0YW4uZmlzaG5ldC5pbW1v",
-            "cnRhbC52MS5HYW1lU2VydmVySW5mb1Jlc3AuUm9vbXNFbnRyeVIFcm9vbXMa",
-            "OAoKUm9vbXNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEo",
-            "BVIFdmFsdWU6AjgBMqQCChVUaGV0YW5GaXNoTmV0SW1tb3J0YWwSdQoOUm9v",
-            "bUFsbG9jYXRpb24SMy50aGV0YW4uaW1tb3J0YWwudjEuSW1tb3J0YWxNYXRj",
-            "aEZvdW5kUmVzcG9uc2VQcm90bxouLnRoZXRhbi5maXNobmV0LmltbW9ydGFs",
-            "LnYxLlJvb21BbGxvY2F0aW9uUmVzcBI6CghTaHV0ZG93bhIWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJYCg5HYW1l",
-            "U2VydmVySW5mbxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRouLnRoZXRhbi5m",
-            "aXNobmV0LmltbW9ydGFsLnYxLkdhbWVTZXJ2ZXJJbmZvUmVzcEKKAgoeY29t",
-            "LnRoZXRhbi5maXNobmV0LmltbW9ydGFsLnYxQhRGaXNobmV0SW1tb3J0YWxQ",
-            "cm90b1ABWkd0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vZmlzaG5ldC9pbW1v",
-            "cnRhbC92MS90aGV0YW5fZmlzaG5ldF9pbW1vcnRhbF92MaICA1RGSaoCGlRo",
-            "ZXRhbi5GaXNobmV0LkltbW9ydGFsLlYxygIaVGhldGFuXEZpc2huZXRcSW1t",
-            "b3J0YWxcVjHiAiZUaGV0YW5cRmlzaG5ldFxJbW1vcnRhbFxWMVxHUEJNZXRh",
-            "ZGF0YeoCHVRoZXRhbjo6RmlzaG5ldDo6SW1tb3J0YWw6OlYxYgZwcm90bzM="));
+            "Y2VzcxgBIAEoCFIJaXNTdWNjZXNzIjgKEkdhbWVTZXJ2ZXJJbmZvUmVzcBIi",
+            "Cgxyb29tQWxsb2NhdGUYASABKAVSDHJvb21BbGxvY2F0ZTKkAgoVVGhldGFu",
+            "RmlzaE5ldEltbW9ydGFsEnUKDlJvb21BbGxvY2F0aW9uEjMudGhldGFuLmlt",
+            "bW9ydGFsLnYxLkltbW9ydGFsTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8aLi50",
+            "aGV0YW4uZmlzaG5ldC5pbW1vcnRhbC52MS5Sb29tQWxsb2NhdGlvblJlc3AS",
+            "OgoIU2h1dGRvd24SFi5nb29nbGUucHJvdG9idWYuRW1wdHkaFi5nb29nbGUu",
+            "cHJvdG9idWYuRW1wdHkSWAoOR2FtZVNlcnZlckluZm8SFi5nb29nbGUucHJv",
+            "dG9idWYuRW1wdHkaLi50aGV0YW4uZmlzaG5ldC5pbW1vcnRhbC52MS5HYW1l",
+            "U2VydmVySW5mb1Jlc3BCigIKHmNvbS50aGV0YW4uZmlzaG5ldC5pbW1vcnRh",
+            "bC52MUIURmlzaG5ldEltbW9ydGFsUHJvdG9QAVpHdGhldGFuLWJ1Zi9nZW4v",
+            "Z28vdGhldGFuL2Zpc2huZXQvaW1tb3J0YWwvdjEvdGhldGFuX2Zpc2huZXRf",
+            "aW1tb3J0YWxfdjGiAgNURkmqAhpUaGV0YW4uRmlzaG5ldC5JbW1vcnRhbC5W",
+            "McoCGlRoZXRhblxGaXNobmV0XEltbW9ydGFsXFYx4gImVGhldGFuXEZpc2hu",
+            "ZXRcSW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHqAh1UaGV0YW46OkZpc2huZXQ6",
+            "OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Thetan.Immortal.V1.ImmortalMatchReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp), global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp.Parser, new[]{ "IsSuccess" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp), global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp.Parser, new[]{ "MaxRoom", "RoomSize", "Rooms" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp), global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp.Parser, new[]{ "RoomAllocate" }, null, null, null, null)
           }));
     }
     #endregion
@@ -280,9 +277,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameServerInfoResp(GameServerInfoResp other) : this() {
-      maxRoom_ = other.maxRoom_;
-      roomSize_ = other.roomSize_;
-      rooms_ = other.rooms_.Clone();
+      roomAllocate_ = other.roomAllocate_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -292,39 +287,16 @@ namespace Thetan.Fishnet.Immortal.V1 {
       return new GameServerInfoResp(this);
     }
 
-    /// <summary>Field number for the "maxRoom" field.</summary>
-    public const int MaxRoomFieldNumber = 1;
-    private int maxRoom_;
+    /// <summary>Field number for the "roomAllocate" field.</summary>
+    public const int RoomAllocateFieldNumber = 1;
+    private int roomAllocate_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MaxRoom {
-      get { return maxRoom_; }
+    public int RoomAllocate {
+      get { return roomAllocate_; }
       set {
-        maxRoom_ = value;
+        roomAllocate_ = value;
       }
-    }
-
-    /// <summary>Field number for the "roomSize" field.</summary>
-    public const int RoomSizeFieldNumber = 2;
-    private int roomSize_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int RoomSize {
-      get { return roomSize_; }
-      set {
-        roomSize_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "rooms" field.</summary>
-    public const int RoomsFieldNumber = 3;
-    private static readonly pbc::MapField<string, int>.Codec _map_rooms_codec
-        = new pbc::MapField<string, int>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForInt32(16, 0), 26);
-    private readonly pbc::MapField<string, int> rooms_ = new pbc::MapField<string, int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<string, int> Rooms {
-      get { return rooms_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -342,9 +314,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (MaxRoom != other.MaxRoom) return false;
-      if (RoomSize != other.RoomSize) return false;
-      if (!Rooms.Equals(other.Rooms)) return false;
+      if (RoomAllocate != other.RoomAllocate) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -352,9 +322,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (MaxRoom != 0) hash ^= MaxRoom.GetHashCode();
-      if (RoomSize != 0) hash ^= RoomSize.GetHashCode();
-      hash ^= Rooms.GetHashCode();
+      if (RoomAllocate != 0) hash ^= RoomAllocate.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -373,15 +341,10 @@ namespace Thetan.Fishnet.Immortal.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (MaxRoom != 0) {
+      if (RoomAllocate != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(MaxRoom);
+        output.WriteInt32(RoomAllocate);
       }
-      if (RoomSize != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(RoomSize);
-      }
-      rooms_.WriteTo(output, _map_rooms_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -392,15 +355,10 @@ namespace Thetan.Fishnet.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MaxRoom != 0) {
+      if (RoomAllocate != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(MaxRoom);
+        output.WriteInt32(RoomAllocate);
       }
-      if (RoomSize != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(RoomSize);
-      }
-      rooms_.WriteTo(ref output, _map_rooms_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -411,13 +369,9 @@ namespace Thetan.Fishnet.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (MaxRoom != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxRoom);
+      if (RoomAllocate != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoomAllocate);
       }
-      if (RoomSize != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoomSize);
-      }
-      size += rooms_.CalculateSize(_map_rooms_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -430,13 +384,9 @@ namespace Thetan.Fishnet.Immortal.V1 {
       if (other == null) {
         return;
       }
-      if (other.MaxRoom != 0) {
-        MaxRoom = other.MaxRoom;
+      if (other.RoomAllocate != 0) {
+        RoomAllocate = other.RoomAllocate;
       }
-      if (other.RoomSize != 0) {
-        RoomSize = other.RoomSize;
-      }
-      rooms_.Add(other.rooms_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -453,15 +403,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            MaxRoom = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            RoomSize = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            rooms_.AddEntriesFrom(input, _map_rooms_codec);
+            RoomAllocate = input.ReadInt32();
             break;
           }
         }
@@ -480,15 +422,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            MaxRoom = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            RoomSize = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            rooms_.AddEntriesFrom(ref input, _map_rooms_codec);
+            RoomAllocate = input.ReadInt32();
             break;
           }
         }
