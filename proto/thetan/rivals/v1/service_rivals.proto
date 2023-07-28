@@ -39,6 +39,15 @@ service ThetanRivalService {
   // Tournament
   rpc GetActiveTournaments(GetActiveTournamentsRequest) returns (GetActiveTournamentsResponse) {}
   rpc GetFindMatchInfoForTournament(FindMatchInfoForTournamentRequest) returns (FindMatchInfoResponse) {}
+  rpc MatchFoundTournament(MatchFoundTournamentRequest) returns (MatchFoundTournamentResponse) {}
+}
+
+message MatchFoundTournamentRequest {
+  string tournamentID = 1;
+  repeated string playerIDs = 2;
+}
+
+message MatchFoundTournamentResponse {
 }
 
 message FindMatchInfoForTournamentRequest {
