@@ -87,7 +87,7 @@ message TournamentInfo {
   string tag = 2;
   repeated MapInfo currentMaps = 3;
   int32 maxPlayersInBattle = 4;
-  int32 maxTimeInBattle = 5;
+  int32 maxTimeInBattleSec = 5;
 }
 
 message MapInfo {
