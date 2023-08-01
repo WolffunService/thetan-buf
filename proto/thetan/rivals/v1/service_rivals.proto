@@ -204,7 +204,7 @@ message FriendInfo {
 message GetMatchInfoRequest {
   string userID = 1;
 
-  optional thetan.shared.v1.RoundStat lastRound = 2;
+  optional RoundStat lastRound = 2;
 
   string operationSystem = 3;
   string appVersion = 4;
@@ -218,6 +218,20 @@ message GetMatchInfoResponse {
   PlayerStat playerStat = 6;
 }
 
+message RoundStat {
+  int32 roundId = 1;
+  int32 mapId = 2;
+  int32 mapDifficulty = 3;
+  float timeInRound = 4;
+  bool  roundComplete = 5;
+
+  int32 controlDoubleJump = 6;
+  int32 controlMoveCamera = 7;
+  int32 passedCP = 8;
+  int32 maxCP = 9;
+
+  int32 Death = 10;
+}
 
 message MapData {
   int32 gamePlay = 1;
