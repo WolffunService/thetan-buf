@@ -166,54 +166,54 @@ namespace Thetan.Shared.V1 {
             "BnVzZXJJRBgBIAEoCVIGdXNlcklEEj4KCWxhc3RSb3VuZBgCIAEoCzIbLnRo",
             "ZXRhbi5zaGFyZWQudjEuUm91bmRTdGF0SABSCWxhc3RSb3VuZIgBARIoCg9v",
             "cGVyYXRpb25TeXN0ZW0YAyABKAlSD29wZXJhdGlvblN5c3RlbRIeCgphcHBW",
-            "ZXJzaW9uGAQgASgJUgphcHBWZXJzaW9uQgwKCl9sYXN0Um91bmQitwIKCVJv",
+            "ZXJzaW9uGAQgASgJUgphcHBWZXJzaW9uQgwKCl9sYXN0Um91bmQizQIKCVJv",
             "dW5kU3RhdBIYCgdyb3VuZElkGAEgASgFUgdyb3VuZElkEhQKBW1hcElkGAIg",
             "ASgFUgVtYXBJZBIkCg1tYXBEaWZmaWN1bHR5GAMgASgFUg1tYXBEaWZmaWN1",
             "bHR5EiAKC3RpbWVJblJvdW5kGAQgASgCUgt0aW1lSW5Sb3VuZBIkCg1yb3Vu",
             "ZENvbXBsZXRlGAUgASgIUg1yb3VuZENvbXBsZXRlEiwKEWNvbnRyb2xEb3Vi",
             "bGVKdW1wGAYgASgFUhFjb250cm9sRG91YmxlSnVtcBIsChFjb250cm9sTW92",
             "ZUNhbWVyYRgHIAEoBVIRY29udHJvbE1vdmVDYW1lcmESGgoIcGFzc2VkQ1AY",
-            "CCABKAVSCHBhc3NlZENQEhQKBW1heENQGAkgASgFUgVtYXhDUCqXBQoOTWF0",
-            "Y2hFcnJvckNvZGUSDQoJTV9TVUNDRVNTEAASCwoHTV9FUlJPUhBjEiMKH0NB",
-            "Tk5PVF9DQU5DRUxfV0hFTl9OT1RfTUFUQ0hJTkcQARIUChBBTFJFQURZX01B",
-            "VENISU5HEAISJQohQ0FOTk9UX0NBTkNFTF9CRUNBVVNFX01BVENIX0ZPVU5E",
-            "EAMSEQoNTUFUQ0hfSU5WQUxJRBAEEhkKFU1BVENIX0FMUkVBRFlfU1RBUlRF",
-            "RBAFEhUKEU1BVENIX0FMUkVBRFlfRU5EEAcSFwoTRklORF9NQVRDSF9USU1F",
-            "X09VVBAIEhoKFkZJTkRfTUFUQ0hfUEFSVFlfRVJST1IQCRIdChlSRUFMX0NB",
-            "TkNFTF9NQVRDSF9TVUNDRVNTEGQSIQodVVNFUl9IQVZFX0JFRU5fQkFOTkVE",
-            "X0ZPUkVWRVIQeRIjCh9VU0VSX0hBVkVfQkVFTl9CQU5ORURfRklORE1BVENI",
-            "EHoSGwoXSEVST19JU19PTl9NQVJLRVRfUExBQ0UQexIrCidPTkVfT0ZfVEhF",
-            "X1BMQVlFUlNfRElEX05PVF9TRU5UX1JFUVVFU1QQfBIxCi1BQ0NPVU5UX0lT",
-            "X0NVUlJFTlRMWV9PTkxJTkVfT05fQU5PVEhFUl9ERVZJQ0UQfRITCg5IRVJP",
-            "X05PVF9PV05FUhDCFxIXChJIRVJPX05PVF9BVkFJTEFCTEUQwxcSFQoQV1JP",
-            "TkdfSEVST19NT0RFTBDOFxIVChBIRVJPX1JFTlRFRF9JVEVNELAYEhUKEEhF",
-            "Uk9fSVNfRk9SX1JFTlQQtBgSGwoWSEVST19NQVhfQkFUVExFX1JFTlRFRBC1",
-            "GBIZChRIRVJPX1JFVFVSTklOR19PV05FUhC3GCo9ChFNYXBEaWZmaWN1bHR5",
-            "RW51bRIICgROb25lEAASCAoERWFzeRABEgoKBk1lZGl1bRACEggKBEhhcmQQ",
-            "AzLCAgoMTWF0Y2hTZXJ2aWNlEm0KFkNyZWF0ZU1hdGNoV2l0aFZlcnNpb24S",
-            "Ki50aGV0YW4uc2hhcmVkLnYxLk1hdGNoUHJvdG9WZXJzaW9uUGFja2FnZRoj",
-            "LnRoZXRhbi5zaGFyZWQudjEuTWF0Y2hQcm90b1BhY2thZ2UiADABEmIKElJl",
-            "Z2lzdGVyTWF0Y2hGb3VuZBIjLnRoZXRhbi5zaGFyZWQudjEuTWF0Y2hQcm90",
-            "b1BhY2thZ2UaIy50aGV0YW4uc2hhcmVkLnYxLk1hdGNoUHJvdG9QYWNrYWdl",
-            "IgAwARJfChFDYW5jZWxNYXRjaE1ha2luZxIjLnRoZXRhbi5zaGFyZWQudjEu",
-            "TWF0Y2hQcm90b1BhY2thZ2UaIy50aGV0YW4uc2hhcmVkLnYxLk1hdGNoUHJv",
-            "dG9QYWNrYWdlIgAy0gEKEk1hdGNoSGFuZGxlU2VydmljZRJcCg9IYW5kbGVQ",
-            "bGF5QWdhaW4SJi50aGV0YW4uc2hhcmVkLnYxLkRhdGFQbGF5QWdhaW5TdWNj",
-            "ZXNzGh8udGhldGFuLnNoYXJlZC52MS5FbXB0eVJlc3BvbnNlIgASXgoSSGFu",
-            "ZGxlRGVsZXRlVGlja2V0EiUudGhldGFuLnNoYXJlZC52MS5EZWxldGVUaWNr",
-            "ZXRTdWNjZXNzGh8udGhldGFuLnNoYXJlZC52MS5FbXB0eVJlc3BvbnNlIgAy",
-            "rQIKFE1hdGNoRGlyZWN0b3JTZXJ2aWNlElYKDENhbmNlbFRpY2tldBIjLnRo",
-            "ZXRhbi5zaGFyZWQudjEuTWF0Y2hQcm90b1BhY2thZ2UaHy50aGV0YW4uc2hh",
-            "cmVkLnYxLkVtcHR5UmVzcG9uc2UiABJNCgdHZXRCb3RzEiAudGhldGFuLnNo",
-            "YXJlZC52MS5HZXRCb3RzUmVxdWVzdBoeLnRoZXRhbi5zaGFyZWQudjEuQm90",
-            "c1Jlc3BvbnNlIgASbgoSQ3JlYXRlTWF0Y2hPbmJvYXJkEisudGhldGFuLnNo",
-            "YXJlZC52MS5DcmVhdGVNYXRjaE9uYm9hcmRSZXF1ZXN0GikudGhldGFuLnNo",
-            "YXJlZC52MS5NYXRjaEZvdW5kUmVzcG9uc2VQcm90byIAQrkBChRjb20udGhl",
-            "dGFuLnNoYXJlZC52MUIKTWF0Y2hQcm90b1ABWjN0aGV0YW4tYnVmL2dlbi9n",
-            "by90aGV0YW4vc2hhcmVkL3YxO3RoZXRhbl9zaGFyZWRfdjGiAgNUU1iqAhBU",
-            "aGV0YW4uU2hhcmVkLlYxygIQVGhldGFuXFNoYXJlZFxWMeICHFRoZXRhblxT",
-            "aGFyZWRcVjFcR1BCTWV0YWRhdGHqAhJUaGV0YW46OlNoYXJlZDo6VjFiBnBy",
-            "b3RvMw=="));
+            "CCABKAVSCHBhc3NlZENQEhQKBW1heENQGAkgASgFUgVtYXhDUBIUCgVEZWF0",
+            "aBgKIAEoBVIFRGVhdGgqlwUKDk1hdGNoRXJyb3JDb2RlEg0KCU1fU1VDQ0VT",
+            "UxAAEgsKB01fRVJST1IQYxIjCh9DQU5OT1RfQ0FOQ0VMX1dIRU5fTk9UX01B",
+            "VENISU5HEAESFAoQQUxSRUFEWV9NQVRDSElORxACEiUKIUNBTk5PVF9DQU5D",
+            "RUxfQkVDQVVTRV9NQVRDSF9GT1VORBADEhEKDU1BVENIX0lOVkFMSUQQBBIZ",
+            "ChVNQVRDSF9BTFJFQURZX1NUQVJURUQQBRIVChFNQVRDSF9BTFJFQURZX0VO",
+            "RBAHEhcKE0ZJTkRfTUFUQ0hfVElNRV9PVVQQCBIaChZGSU5EX01BVENIX1BB",
+            "UlRZX0VSUk9SEAkSHQoZUkVBTF9DQU5DRUxfTUFUQ0hfU1VDQ0VTUxBkEiEK",
+            "HVVTRVJfSEFWRV9CRUVOX0JBTk5FRF9GT1JFVkVSEHkSIwofVVNFUl9IQVZF",
+            "X0JFRU5fQkFOTkVEX0ZJTkRNQVRDSBB6EhsKF0hFUk9fSVNfT05fTUFSS0VU",
+            "X1BMQUNFEHsSKwonT05FX09GX1RIRV9QTEFZRVJTX0RJRF9OT1RfU0VOVF9S",
+            "RVFVRVNUEHwSMQotQUNDT1VOVF9JU19DVVJSRU5UTFlfT05MSU5FX09OX0FO",
+            "T1RIRVJfREVWSUNFEH0SEwoOSEVST19OT1RfT1dORVIQwhcSFwoSSEVST19O",
+            "T1RfQVZBSUxBQkxFEMMXEhUKEFdST05HX0hFUk9fTU9ERUwQzhcSFQoQSEVS",
+            "T19SRU5URURfSVRFTRCwGBIVChBIRVJPX0lTX0ZPUl9SRU5UELQYEhsKFkhF",
+            "Uk9fTUFYX0JBVFRMRV9SRU5URUQQtRgSGQoUSEVST19SRVRVUk5JTkdfT1dO",
+            "RVIQtxgqPQoRTWFwRGlmZmljdWx0eUVudW0SCAoETm9uZRAAEggKBEVhc3kQ",
+            "ARIKCgZNZWRpdW0QAhIICgRIYXJkEAMywgIKDE1hdGNoU2VydmljZRJtChZD",
+            "cmVhdGVNYXRjaFdpdGhWZXJzaW9uEioudGhldGFuLnNoYXJlZC52MS5NYXRj",
+            "aFByb3RvVmVyc2lvblBhY2thZ2UaIy50aGV0YW4uc2hhcmVkLnYxLk1hdGNo",
+            "UHJvdG9QYWNrYWdlIgAwARJiChJSZWdpc3Rlck1hdGNoRm91bmQSIy50aGV0",
+            "YW4uc2hhcmVkLnYxLk1hdGNoUHJvdG9QYWNrYWdlGiMudGhldGFuLnNoYXJl",
+            "ZC52MS5NYXRjaFByb3RvUGFja2FnZSIAMAESXwoRQ2FuY2VsTWF0Y2hNYWtp",
+            "bmcSIy50aGV0YW4uc2hhcmVkLnYxLk1hdGNoUHJvdG9QYWNrYWdlGiMudGhl",
+            "dGFuLnNoYXJlZC52MS5NYXRjaFByb3RvUGFja2FnZSIAMtIBChJNYXRjaEhh",
+            "bmRsZVNlcnZpY2USXAoPSGFuZGxlUGxheUFnYWluEiYudGhldGFuLnNoYXJl",
+            "ZC52MS5EYXRhUGxheUFnYWluU3VjY2VzcxofLnRoZXRhbi5zaGFyZWQudjEu",
+            "RW1wdHlSZXNwb25zZSIAEl4KEkhhbmRsZURlbGV0ZVRpY2tldBIlLnRoZXRh",
+            "bi5zaGFyZWQudjEuRGVsZXRlVGlja2V0U3VjY2VzcxofLnRoZXRhbi5zaGFy",
+            "ZWQudjEuRW1wdHlSZXNwb25zZSIAMq0CChRNYXRjaERpcmVjdG9yU2Vydmlj",
+            "ZRJWCgxDYW5jZWxUaWNrZXQSIy50aGV0YW4uc2hhcmVkLnYxLk1hdGNoUHJv",
+            "dG9QYWNrYWdlGh8udGhldGFuLnNoYXJlZC52MS5FbXB0eVJlc3BvbnNlIgAS",
+            "TQoHR2V0Qm90cxIgLnRoZXRhbi5zaGFyZWQudjEuR2V0Qm90c1JlcXVlc3Qa",
+            "Hi50aGV0YW4uc2hhcmVkLnYxLkJvdHNSZXNwb25zZSIAEm4KEkNyZWF0ZU1h",
+            "dGNoT25ib2FyZBIrLnRoZXRhbi5zaGFyZWQudjEuQ3JlYXRlTWF0Y2hPbmJv",
+            "YXJkUmVxdWVzdBopLnRoZXRhbi5zaGFyZWQudjEuTWF0Y2hGb3VuZFJlc3Bv",
+            "bnNlUHJvdG8iAEK5AQoUY29tLnRoZXRhbi5zaGFyZWQudjFCCk1hdGNoUHJv",
+            "dG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3NoYXJlZC92MTt0aGV0",
+            "YW5fc2hhcmVkX3YxogIDVFNYqgIQVGhldGFuLlNoYXJlZC5WMcoCEFRoZXRh",
+            "blxTaGFyZWRcVjHiAhxUaGV0YW5cU2hhcmVkXFYxXEdQQk1ldGFkYXRh6gIS",
+            "VGhldGFuOjpTaGFyZWQ6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.GameInfoReflection.Descriptor, global::Thetan.Shared.V1.UgcReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Shared.V1.MatchErrorCode), typeof(global::Thetan.Shared.V1.MapDifficultyEnum), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -245,7 +245,7 @@ namespace Thetan.Shared.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.GetBotsRequest), global::Thetan.Shared.V1.GetBotsRequest.Parser, new[]{ "GameId", "IsNewbie", "Numbers", "TrophyRank", "Region", "Battle" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.CosmeticUsingProtoV2), global::Thetan.Shared.V1.CosmeticUsingProtoV2.Parser, new[]{ "CosmeticInUsed" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.CreateMatchOnboardRequest), global::Thetan.Shared.V1.CreateMatchOnboardRequest.Parser, new[]{ "UserID", "LastRound", "OperationSystem", "AppVersion" }, new[]{ "LastRound" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.RoundStat), global::Thetan.Shared.V1.RoundStat.Parser, new[]{ "RoundId", "MapId", "MapDifficulty", "TimeInRound", "RoundComplete", "ControlDoubleJump", "ControlMoveCamera", "PassedCP", "MaxCP" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.RoundStat), global::Thetan.Shared.V1.RoundStat.Parser, new[]{ "RoundId", "MapId", "MapDifficulty", "TimeInRound", "RoundComplete", "ControlDoubleJump", "ControlMoveCamera", "PassedCP", "MaxCP", "Death" }, null, null, null, null)
           }));
     }
     #endregion
@@ -10214,6 +10214,7 @@ namespace Thetan.Shared.V1 {
       controlMoveCamera_ = other.controlMoveCamera_;
       passedCP_ = other.passedCP_;
       maxCP_ = other.maxCP_;
+      death_ = other.death_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -10331,6 +10332,18 @@ namespace Thetan.Shared.V1 {
       }
     }
 
+    /// <summary>Field number for the "Death" field.</summary>
+    public const int DeathFieldNumber = 10;
+    private int death_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Death {
+      get { return death_; }
+      set {
+        death_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -10355,6 +10368,7 @@ namespace Thetan.Shared.V1 {
       if (ControlMoveCamera != other.ControlMoveCamera) return false;
       if (PassedCP != other.PassedCP) return false;
       if (MaxCP != other.MaxCP) return false;
+      if (Death != other.Death) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -10371,6 +10385,7 @@ namespace Thetan.Shared.V1 {
       if (ControlMoveCamera != 0) hash ^= ControlMoveCamera.GetHashCode();
       if (PassedCP != 0) hash ^= PassedCP.GetHashCode();
       if (MaxCP != 0) hash ^= MaxCP.GetHashCode();
+      if (Death != 0) hash ^= Death.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -10425,6 +10440,10 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(72);
         output.WriteInt32(MaxCP);
       }
+      if (Death != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(Death);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -10471,6 +10490,10 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(72);
         output.WriteInt32(MaxCP);
       }
+      if (Death != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(Death);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -10507,6 +10530,9 @@ namespace Thetan.Shared.V1 {
       }
       if (MaxCP != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxCP);
+      }
+      if (Death != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Death);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -10546,6 +10572,9 @@ namespace Thetan.Shared.V1 {
       }
       if (other.MaxCP != 0) {
         MaxCP = other.MaxCP;
+      }
+      if (other.Death != 0) {
+        Death = other.Death;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -10598,6 +10627,10 @@ namespace Thetan.Shared.V1 {
             MaxCP = input.ReadInt32();
             break;
           }
+          case 80: {
+            Death = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -10647,6 +10680,10 @@ namespace Thetan.Shared.V1 {
           }
           case 72: {
             MaxCP = input.ReadInt32();
+            break;
+          }
+          case 80: {
+            Death = input.ReadInt32();
             break;
           }
         }
