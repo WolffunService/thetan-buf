@@ -74,7 +74,7 @@ namespace Thetan.Rivals.V1 {
             "A1ILcmVxdWVzdGVkQXQiPQoNRlJJRU5EX1NUQVRVUxINCglSRVFVRVNURUQQ",
             "ABIOCgpSRVFVRVNUSU5HEAESDQoJQ09ORklSTUVEEAIixQEKE0dldE1hdGNo",
             "SW5mb1JlcXVlc3QSFgoGdXNlcklEGAEgASgJUgZ1c2VySUQSPgoJbGFzdFJv",
-            "dW5kGAIgASgLMhsudGhldGFuLnJpdmFscy52MS5Sb3VuZFN0YXRIAFIJbGFz",
+            "dW5kGAIgASgLMhsudGhldGFuLnNoYXJlZC52MS5Sb3VuZFN0YXRIAFIJbGFz",
             "dFJvdW5kiAEBEigKD29wZXJhdGlvblN5c3RlbRgDIAEoCVIPb3BlcmF0aW9u",
             "U3lzdGVtEh4KCmFwcFZlcnNpb24YBCABKAlSCmFwcFZlcnNpb25CDAoKX2xh",
             "c3RSb3VuZCKzAgoUR2V0TWF0Y2hJbmZvUmVzcG9uc2USSwoKcGxheWVySW5m",
@@ -84,84 +84,77 @@ namespace Thetan.Rivals.V1 {
             "bWFwSWRzEjQKFWxpc3RNYXhQbGF5ZXJQZXJSb3VuZBgFIAMoBVIVbGlzdE1h",
             "eFBsYXllclBlclJvdW5kEjwKCnBsYXllclN0YXQYBiABKAsyHC50aGV0YW4u",
             "cml2YWxzLnYxLlBsYXllclN0YXRSCnBsYXllclN0YXRCDQoLX3BsYXllcklu",
-            "Zm8itwIKCVJvdW5kU3RhdBIYCgdyb3VuZElkGAEgASgFUgdyb3VuZElkEhQK",
-            "BW1hcElkGAIgASgFUgVtYXBJZBIkCg1tYXBEaWZmaWN1bHR5GAMgASgFUg1t",
-            "YXBEaWZmaWN1bHR5EiAKC3RpbWVJblJvdW5kGAQgASgCUgt0aW1lSW5Sb3Vu",
-            "ZBIkCg1yb3VuZENvbXBsZXRlGAUgASgIUg1yb3VuZENvbXBsZXRlEiwKEWNv",
-            "bnRyb2xEb3VibGVKdW1wGAYgASgFUhFjb250cm9sRG91YmxlSnVtcBIsChFj",
-            "b250cm9sTW92ZUNhbWVyYRgHIAEoBVIRY29udHJvbE1vdmVDYW1lcmESGgoI",
-            "cGFzc2VkQ1AYCCABKAVSCHBhc3NlZENQEhQKBW1heENQGAkgASgFUgVtYXhD",
-            "UCJhCgdNYXBEYXRhEhoKCGdhbWVQbGF5GAEgASgFUghnYW1lUGxheRIUCgVt",
-            "YXBJZBgCIAEoBVIFbWFwSWQSJAoNbWFwRGlmZmljdWx0eRgDIAEoBVINbWFw",
-            "RGlmZmljdWx0eSKzAgoKUGxheWVyU3RhdBIkCg1yb3VuZFNjb3JlQWxsGAEg",
-            "ASgFUg1yb3VuZFNjb3JlQWxsEiIKDHJhY2VTY29yZUFsbBgCIAEoAlIMcmFj",
-            "ZVNjb3JlQWxsEigKD3F1YWxpZnlTY29yZUFsbBgDIAEoBVIPcXVhbGlmeVNj",
-            "b3JlQWxsEiAKC3BsYXllclNjb3JlGAQgASgCUgtwbGF5ZXJTY29yZRJPCgty",
-            "b3VuZFBsYXllZBgFIAMoCzItLnRoZXRhbi5yaXZhbHMudjEuUGxheWVyU3Rh",
-            "dC5Sb3VuZFBsYXllZEVudHJ5Ugtyb3VuZFBsYXllZBo+ChBSb3VuZFBsYXll",
-            "ZEVudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgFUgV2YWx1",
-            "ZToCOAEiLAoSR2V0QWN0aXZpdHlSZXF1ZXN0EhYKBnRvd25JRBgBIAEoCVIG",
-            "dG93bklEIoQBChNHZXRBY3Rpdml0eVJlc3BvbnNlEh4KCmFjdGl2aXR5SUQY",
-            "ASABKAlSCmFjdGl2aXR5SUQSFgoGdG93bklEGAIgASgJUgZ0b3duSUQSNQoH",
-            "Y2xhc3NlcxgDIAMoCzIbLnRoZXRhbi5yaXZhbHMudjEuQ2xhc3NJbmZvUgdj",
-            "bGFzc2VzIrcCCglDbGFzc0luZm8SGAoHY2xhc3NJRBgBIAEoBVIHY2xhc3NJ",
-            "RBIcCgljbGFzc05hbWUYAiABKAlSCWNsYXNzTmFtZRIUCgVsZXZlbBgDIAEo",
-            "BVIFbGV2ZWwSLgoSZGFpbHlBY3Rpdml0eUxpbWl0GAQgASgFUhJkYWlseUFj",
-            "dGl2aXR5TGltaXQSJgoObWVtYmVyUGVyQ2xhc3MYBSABKAVSDm1lbWJlclBl",
-            "ckNsYXNzEiIKDHRpbWVQZXJDbGFzcxgGIAEoAVIMdGltZVBlckNsYXNzEigK",
-            "D2NsYXNzUGVyTWFzdGVyTBgHIAEoAVIPY2xhc3NQZXJNYXN0ZXJMEjYKB3Jl",
-            "d2FyZHMYCCADKAsyHC50aGV0YW4ucml2YWxzLnYxLlNpbXBsZUl0ZW1SB3Jl",
-            "d2FyZHMifgoKU2ltcGxlSXRlbRIaCghpdGVtVHlwZRgBIAEoCVIIaXRlbVR5",
-            "cGUSFgoGdHlwZUlEGAIgASgFUgZ0eXBlSUQSFgoGYW1vdW50GAMgASgBUgZh",
-            "bW91bnQSJAoNaW52ZW50b3J5S2luZBgEIAEoBVINaW52ZW50b3J5S2luZCJq",
-            "ChJHZXRUb3duVXNlclJlcXVlc3QSFgoGdXNlcklEGAEgASgJUgZ1c2VySUQS",
-            "IgoMdXNlckxhbmd1YWdlGAIgASgJUgx1c2VyTGFuZ3VhZ2USGAoHdXNlckFn",
-            "ZRgDIAEoBVIHdXNlckFnZSL/AQoJTG9iYnlUb3duEhYKBnRvd25JRBgBIAEo",
-            "CVIGdG93bklEEhoKCHRvd25OYW1lGAIgASgJUgh0b3duTmFtZRIeCgphY3Rp",
-            "dmVUaW1lGAMgASgDUgphY3RpdmVUaW1lEiAKC3Rvd25Db3VudHJ5GAQgASgJ",
-            "Ugt0b3duQ291bnRyeRIeCgp0b3duUmVnaW9uGAUgASgJUgp0b3duUmVnaW9u",
-            "EhoKCHRvd25UaW1lGAYgASgFUgh0b3duVGltZRIiCgx0b3duTGFuZ3VhZ2UY",
-            "ByABKAlSDHRvd25MYW5ndWFnZRIcCgl0b3duU2NvcmUYCCABKAFSCXRvd25T",
-            "Y29yZSJFChNQaWNrVG93blVzZXJSZXF1ZXN0EhYKBnVzZXJJRBgBIAEoCVIG",
-            "dXNlcklEEhYKBnRvd25JRBgCIAEoCVIGdG93bklEImMKE1RyYWNrU2Vzc2lv",
-            "blJlcXVlc3QSFgoGdXNlcklEGAEgASgJUgZ1c2VySUQSFgoGYWN0aW9uGAIg",
-            "ASgJUgZhY3Rpb24SHAoJc2Vzc2lvbklEGAMgASgJUglzZXNzaW9uSUQiFgoU",
-            "VHJhY2tTZXNzaW9uUmVzcG9uc2UiNAoURmluZE1hdGNoSW5mb1JlcXVlc3QS",
-            "HAoJcGxheWVyc0lEGAEgAygJUglwbGF5ZXJzSUQiWQoVRmluZE1hdGNoSW5m",
-            "b1Jlc3BvbnNlEkAKB3BsYXllcnMYASADKAsyJi50aGV0YW4uc2hhcmVkLnYx",
-            "LlBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzMrUJChJUaGV0YW5SaXZh",
-            "bFNlcnZpY2USXwoOR2V0VXNlclByb2ZpbGUSJC50aGV0YW4ucml2YWxzLnYx",
-            "LlVzZXJQcm9maWxlUmVxdWVzdBolLnRoZXRhbi5yaXZhbHMudjEuVXNlclBy",
-            "b2ZpbGVSZXNwb25zZSIAEl8KDkdldFVzZXJNaW5pb25zEiQudGhldGFuLnJp",
-            "dmFscy52MS5Vc2VyTWluaW9uc1JlcXVlc3QaJS50aGV0YW4ucml2YWxzLnYx",
-            "LlVzZXJNaW5pb25zUmVzcG9uc2UiABJ0ChVHZXRVc2VyU2VsZWN0ZWRNaW5p",
-            "b24SKy50aGV0YW4ucml2YWxzLnYxLlVzZXJTZWxlY3RlZE1pbmlvblJlcXVl",
-            "c3QaLC50aGV0YW4ucml2YWxzLnYxLlVzZXJTZWxlY3RlZE1pbmlvblJlc3Bv",
-            "bnNlIgASUAoJR2V0TWluaW9uEh8udGhldGFuLnJpdmFscy52MS5NaW5pb25S",
-            "ZXF1ZXN0GiAudGhldGFuLnJpdmFscy52MS5NaW5pb25SZXNwb25zZSIAEl8K",
-            "DENyZWF0ZU1pbmlvbhIlLnRoZXRhbi5yaXZhbHMudjEuQ3JlYXRlTWluaW9u",
-            "UmVxdWVzdBomLnRoZXRhbi5yaXZhbHMudjEuQ3JlYXRlTWluaW9uUmVzcG9u",
-            "c2UiABJjCg5HZXRMaXN0RnJpZW5kcxImLnRoZXRhbi5yaXZhbHMudjEuR2V0",
-            "VXNlckZyaWVuZFJlcXVlc3QaJy50aGV0YW4ucml2YWxzLnYxLkdldFVzZXJG",
-            "cmllbmRSZXNwb25zZSIAEmkKFkdldE1hdGNoSW5mb09uYm9hcmRpbmcSJS50",
-            "aGV0YW4ucml2YWxzLnYxLkdldE1hdGNoSW5mb1JlcXVlc3QaJi50aGV0YW4u",
-            "cml2YWxzLnYxLkdldE1hdGNoSW5mb1Jlc3BvbnNlIgASawoaR2V0TGF0ZXN0",
-            "TG9iYnlBY3Rpdml0eUluZm8SJC50aGV0YW4ucml2YWxzLnYxLkdldEFjdGl2",
-            "aXR5UmVxdWVzdBolLnRoZXRhbi5yaXZhbHMudjEuR2V0QWN0aXZpdHlSZXNw",
-            "b25zZSIAElIKC0dldFRvd25Vc2VyEiQudGhldGFuLnJpdmFscy52MS5HZXRU",
-            "b3duVXNlclJlcXVlc3QaGy50aGV0YW4ucml2YWxzLnYxLkxvYmJ5VG93biIA",
-            "ElsKD1BpY2tUb3duRm9yVXNlchIlLnRoZXRhbi5yaXZhbHMudjEuUGlja1Rv",
-            "d25Vc2VyUmVxdWVzdBofLnRoZXRhbi5yaXZhbHMudjEuRW1wdHlSZXNwb25z",
-            "ZSIAEl8KDFRyYWNrU2Vzc2lvbhIlLnRoZXRhbi5yaXZhbHMudjEuVHJhY2tT",
-            "ZXNzaW9uUmVxdWVzdBomLnRoZXRhbi5yaXZhbHMudjEuVHJhY2tTZXNzaW9u",
-            "UmVzcG9uc2UiABJlChBHZXRGaW5kTWF0Y2hJbmZvEiYudGhldGFuLnJpdmFs",
-            "cy52MS5GaW5kTWF0Y2hJbmZvUmVxdWVzdBonLnRoZXRhbi5yaXZhbHMudjEu",
-            "RmluZE1hdGNoSW5mb1Jlc3BvbnNlIgBCwQEKFGNvbS50aGV0YW4ucml2YWxz",
-            "LnYxQhJTZXJ2aWNlUml2YWxzUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28v",
-            "dGhldGFuL3JpdmFscy92MTt0aGV0YW5fcml2YWxzX3YxogIDVFJYqgIQVGhl",
-            "dGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5cUml2",
-            "YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZwcm90",
-            "bzM="));
+            "Zm8iYQoHTWFwRGF0YRIaCghnYW1lUGxheRgBIAEoBVIIZ2FtZVBsYXkSFAoF",
+            "bWFwSWQYAiABKAVSBW1hcElkEiQKDW1hcERpZmZpY3VsdHkYAyABKAVSDW1h",
+            "cERpZmZpY3VsdHkiswIKClBsYXllclN0YXQSJAoNcm91bmRTY29yZUFsbBgB",
+            "IAEoBVINcm91bmRTY29yZUFsbBIiCgxyYWNlU2NvcmVBbGwYAiABKAJSDHJh",
+            "Y2VTY29yZUFsbBIoCg9xdWFsaWZ5U2NvcmVBbGwYAyABKAVSD3F1YWxpZnlT",
+            "Y29yZUFsbBIgCgtwbGF5ZXJTY29yZRgEIAEoAlILcGxheWVyU2NvcmUSTwoL",
+            "cm91bmRQbGF5ZWQYBSADKAsyLS50aGV0YW4ucml2YWxzLnYxLlBsYXllclN0",
+            "YXQuUm91bmRQbGF5ZWRFbnRyeVILcm91bmRQbGF5ZWQaPgoQUm91bmRQbGF5",
+            "ZWRFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEoBVIFdmFs",
+            "dWU6AjgBIiwKEkdldEFjdGl2aXR5UmVxdWVzdBIWCgZ0b3duSUQYASABKAlS",
+            "BnRvd25JRCKEAQoTR2V0QWN0aXZpdHlSZXNwb25zZRIeCgphY3Rpdml0eUlE",
+            "GAEgASgJUgphY3Rpdml0eUlEEhYKBnRvd25JRBgCIAEoCVIGdG93bklEEjUK",
+            "B2NsYXNzZXMYAyADKAsyGy50aGV0YW4ucml2YWxzLnYxLkNsYXNzSW5mb1IH",
+            "Y2xhc3NlcyK3AgoJQ2xhc3NJbmZvEhgKB2NsYXNzSUQYASABKAVSB2NsYXNz",
+            "SUQSHAoJY2xhc3NOYW1lGAIgASgJUgljbGFzc05hbWUSFAoFbGV2ZWwYAyAB",
+            "KAVSBWxldmVsEi4KEmRhaWx5QWN0aXZpdHlMaW1pdBgEIAEoBVISZGFpbHlB",
+            "Y3Rpdml0eUxpbWl0EiYKDm1lbWJlclBlckNsYXNzGAUgASgFUg5tZW1iZXJQ",
+            "ZXJDbGFzcxIiCgx0aW1lUGVyQ2xhc3MYBiABKAFSDHRpbWVQZXJDbGFzcxIo",
+            "Cg9jbGFzc1Blck1hc3RlckwYByABKAFSD2NsYXNzUGVyTWFzdGVyTBI2Cgdy",
+            "ZXdhcmRzGAggAygLMhwudGhldGFuLnJpdmFscy52MS5TaW1wbGVJdGVtUgdy",
+            "ZXdhcmRzIn4KClNpbXBsZUl0ZW0SGgoIaXRlbVR5cGUYASABKAlSCGl0ZW1U",
+            "eXBlEhYKBnR5cGVJRBgCIAEoBVIGdHlwZUlEEhYKBmFtb3VudBgDIAEoAVIG",
+            "YW1vdW50EiQKDWludmVudG9yeUtpbmQYBCABKAVSDWludmVudG9yeUtpbmQi",
+            "agoSR2V0VG93blVzZXJSZXF1ZXN0EhYKBnVzZXJJRBgBIAEoCVIGdXNlcklE",
+            "EiIKDHVzZXJMYW5ndWFnZRgCIAEoCVIMdXNlckxhbmd1YWdlEhgKB3VzZXJB",
+            "Z2UYAyABKAVSB3VzZXJBZ2Ui/wEKCUxvYmJ5VG93bhIWCgZ0b3duSUQYASAB",
+            "KAlSBnRvd25JRBIaCgh0b3duTmFtZRgCIAEoCVIIdG93bk5hbWUSHgoKYWN0",
+            "aXZlVGltZRgDIAEoA1IKYWN0aXZlVGltZRIgCgt0b3duQ291bnRyeRgEIAEo",
+            "CVILdG93bkNvdW50cnkSHgoKdG93blJlZ2lvbhgFIAEoCVIKdG93blJlZ2lv",
+            "bhIaCgh0b3duVGltZRgGIAEoBVIIdG93blRpbWUSIgoMdG93bkxhbmd1YWdl",
+            "GAcgASgJUgx0b3duTGFuZ3VhZ2USHAoJdG93blNjb3JlGAggASgBUgl0b3du",
+            "U2NvcmUiRQoTUGlja1Rvd25Vc2VyUmVxdWVzdBIWCgZ1c2VySUQYASABKAlS",
+            "BnVzZXJJRBIWCgZ0b3duSUQYAiABKAlSBnRvd25JRCJjChNUcmFja1Nlc3Np",
+            "b25SZXF1ZXN0EhYKBnVzZXJJRBgBIAEoCVIGdXNlcklEEhYKBmFjdGlvbhgC",
+            "IAEoCVIGYWN0aW9uEhwKCXNlc3Npb25JRBgDIAEoCVIJc2Vzc2lvbklEIhYK",
+            "FFRyYWNrU2Vzc2lvblJlc3BvbnNlIjQKFEZpbmRNYXRjaEluZm9SZXF1ZXN0",
+            "EhwKCXBsYXllcnNJRBgBIAMoCVIJcGxheWVyc0lEIlkKFUZpbmRNYXRjaElu",
+            "Zm9SZXNwb25zZRJACgdwbGF5ZXJzGAEgAygLMiYudGhldGFuLnNoYXJlZC52",
+            "MS5QbGF5ZXJJbmZvTWF0Y2hQcm90b1IHcGxheWVyczK1CQoSVGhldGFuUml2",
+            "YWxTZXJ2aWNlEl8KDkdldFVzZXJQcm9maWxlEiQudGhldGFuLnJpdmFscy52",
+            "MS5Vc2VyUHJvZmlsZVJlcXVlc3QaJS50aGV0YW4ucml2YWxzLnYxLlVzZXJQ",
+            "cm9maWxlUmVzcG9uc2UiABJfCg5HZXRVc2VyTWluaW9ucxIkLnRoZXRhbi5y",
+            "aXZhbHMudjEuVXNlck1pbmlvbnNSZXF1ZXN0GiUudGhldGFuLnJpdmFscy52",
+            "MS5Vc2VyTWluaW9uc1Jlc3BvbnNlIgASdAoVR2V0VXNlclNlbGVjdGVkTWlu",
+            "aW9uEisudGhldGFuLnJpdmFscy52MS5Vc2VyU2VsZWN0ZWRNaW5pb25SZXF1",
+            "ZXN0GiwudGhldGFuLnJpdmFscy52MS5Vc2VyU2VsZWN0ZWRNaW5pb25SZXNw",
+            "b25zZSIAElAKCUdldE1pbmlvbhIfLnRoZXRhbi5yaXZhbHMudjEuTWluaW9u",
+            "UmVxdWVzdBogLnRoZXRhbi5yaXZhbHMudjEuTWluaW9uUmVzcG9uc2UiABJf",
+            "CgxDcmVhdGVNaW5pb24SJS50aGV0YW4ucml2YWxzLnYxLkNyZWF0ZU1pbmlv",
+            "blJlcXVlc3QaJi50aGV0YW4ucml2YWxzLnYxLkNyZWF0ZU1pbmlvblJlc3Bv",
+            "bnNlIgASYwoOR2V0TGlzdEZyaWVuZHMSJi50aGV0YW4ucml2YWxzLnYxLkdl",
+            "dFVzZXJGcmllbmRSZXF1ZXN0GicudGhldGFuLnJpdmFscy52MS5HZXRVc2Vy",
+            "RnJpZW5kUmVzcG9uc2UiABJpChZHZXRNYXRjaEluZm9PbmJvYXJkaW5nEiUu",
+            "dGhldGFuLnJpdmFscy52MS5HZXRNYXRjaEluZm9SZXF1ZXN0GiYudGhldGFu",
+            "LnJpdmFscy52MS5HZXRNYXRjaEluZm9SZXNwb25zZSIAEmsKGkdldExhdGVz",
+            "dExvYmJ5QWN0aXZpdHlJbmZvEiQudGhldGFuLnJpdmFscy52MS5HZXRBY3Rp",
+            "dml0eVJlcXVlc3QaJS50aGV0YW4ucml2YWxzLnYxLkdldEFjdGl2aXR5UmVz",
+            "cG9uc2UiABJSCgtHZXRUb3duVXNlchIkLnRoZXRhbi5yaXZhbHMudjEuR2V0",
+            "VG93blVzZXJSZXF1ZXN0GhsudGhldGFuLnJpdmFscy52MS5Mb2JieVRvd24i",
+            "ABJbCg9QaWNrVG93bkZvclVzZXISJS50aGV0YW4ucml2YWxzLnYxLlBpY2tU",
+            "b3duVXNlclJlcXVlc3QaHy50aGV0YW4ucml2YWxzLnYxLkVtcHR5UmVzcG9u",
+            "c2UiABJfCgxUcmFja1Nlc3Npb24SJS50aGV0YW4ucml2YWxzLnYxLlRyYWNr",
+            "U2Vzc2lvblJlcXVlc3QaJi50aGV0YW4ucml2YWxzLnYxLlRyYWNrU2Vzc2lv",
+            "blJlc3BvbnNlIgASZQoQR2V0RmluZE1hdGNoSW5mbxImLnRoZXRhbi5yaXZh",
+            "bHMudjEuRmluZE1hdGNoSW5mb1JlcXVlc3QaJy50aGV0YW4ucml2YWxzLnYx",
+            "LkZpbmRNYXRjaEluZm9SZXNwb25zZSIAQsEBChRjb20udGhldGFuLnJpdmFs",
+            "cy52MUISU2VydmljZVJpdmFsc1Byb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dv",
+            "L3RoZXRhbi9yaXZhbHMvdjE7dGhldGFuX3JpdmFsc192MaICA1RSWKoCEFRo",
+            "ZXRhbi5SaXZhbHMuVjHKAhBUaGV0YW5cUml2YWxzXFYx4gIcVGhldGFuXFJp",
+            "dmFsc1xWMVxHUEJNZXRhZGF0YeoCElRoZXRhbjo6Uml2YWxzOjpWMWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.MatchReflection.Descriptor, global::Thetan.Shared.V1.UgcReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -183,7 +176,6 @@ namespace Thetan.Rivals.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.FriendInfo), global::Thetan.Rivals.V1.FriendInfo.Parser, new[]{ "FriendId", "Status", "Profile", "RequestedAt" }, null, new[]{ typeof(global::Thetan.Rivals.V1.FriendInfo.Types.FRIEND_STATUS) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetMatchInfoRequest), global::Thetan.Rivals.V1.GetMatchInfoRequest.Parser, new[]{ "UserID", "LastRound", "OperationSystem", "AppVersion" }, new[]{ "LastRound" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetMatchInfoResponse), global::Thetan.Rivals.V1.GetMatchInfoResponse.Parser, new[]{ "PlayerInfo", "MatchID", "MapIds", "ListMaxPlayerPerRound", "PlayerStat" }, new[]{ "PlayerInfo" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RoundStat), global::Thetan.Rivals.V1.RoundStat.Parser, new[]{ "RoundId", "MapId", "MapDifficulty", "TimeInRound", "RoundComplete", "ControlDoubleJump", "ControlMoveCamera", "PassedCP", "MaxCP" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.MapData), global::Thetan.Rivals.V1.MapData.Parser, new[]{ "GamePlay", "MapId", "MapDifficulty" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.PlayerStat), global::Thetan.Rivals.V1.PlayerStat.Parser, new[]{ "RoundScoreAll", "RaceScoreAll", "QualifyScoreAll", "PlayerScore", "RoundPlayed" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetActivityRequest), global::Thetan.Rivals.V1.GetActivityRequest.Parser, new[]{ "TownID" }, null, null, null, null),
@@ -4422,10 +4414,10 @@ namespace Thetan.Rivals.V1 {
 
     /// <summary>Field number for the "lastRound" field.</summary>
     public const int LastRoundFieldNumber = 2;
-    private global::Thetan.Rivals.V1.RoundStat lastRound_;
+    private global::Thetan.Shared.V1.RoundStat lastRound_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Thetan.Rivals.V1.RoundStat LastRound {
+    public global::Thetan.Shared.V1.RoundStat LastRound {
       get { return lastRound_; }
       set {
         lastRound_ = value;
@@ -4585,7 +4577,7 @@ namespace Thetan.Rivals.V1 {
       }
       if (other.lastRound_ != null) {
         if (lastRound_ == null) {
-          LastRound = new global::Thetan.Rivals.V1.RoundStat();
+          LastRound = new global::Thetan.Shared.V1.RoundStat();
         }
         LastRound.MergeFrom(other.LastRound);
       }
@@ -4616,7 +4608,7 @@ namespace Thetan.Rivals.V1 {
           }
           case 18: {
             if (lastRound_ == null) {
-              LastRound = new global::Thetan.Rivals.V1.RoundStat();
+              LastRound = new global::Thetan.Shared.V1.RoundStat();
             }
             input.ReadMessage(LastRound);
             break;
@@ -4650,7 +4642,7 @@ namespace Thetan.Rivals.V1 {
           }
           case 18: {
             if (lastRound_ == null) {
-              LastRound = new global::Thetan.Rivals.V1.RoundStat();
+              LastRound = new global::Thetan.Shared.V1.RoundStat();
             }
             input.ReadMessage(LastRound);
             break;
@@ -5005,491 +4997,6 @@ namespace Thetan.Rivals.V1 {
 
   }
 
-  public sealed partial class RoundStat : pb::IMessage<RoundStat>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<RoundStat> _parser = new pb::MessageParser<RoundStat>(() => new RoundStat());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<RoundStat> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[18]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RoundStat() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RoundStat(RoundStat other) : this() {
-      roundId_ = other.roundId_;
-      mapId_ = other.mapId_;
-      mapDifficulty_ = other.mapDifficulty_;
-      timeInRound_ = other.timeInRound_;
-      roundComplete_ = other.roundComplete_;
-      controlDoubleJump_ = other.controlDoubleJump_;
-      controlMoveCamera_ = other.controlMoveCamera_;
-      passedCP_ = other.passedCP_;
-      maxCP_ = other.maxCP_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RoundStat Clone() {
-      return new RoundStat(this);
-    }
-
-    /// <summary>Field number for the "roundId" field.</summary>
-    public const int RoundIdFieldNumber = 1;
-    private int roundId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int RoundId {
-      get { return roundId_; }
-      set {
-        roundId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mapId" field.</summary>
-    public const int MapIdFieldNumber = 2;
-    private int mapId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MapId {
-      get { return mapId_; }
-      set {
-        mapId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mapDifficulty" field.</summary>
-    public const int MapDifficultyFieldNumber = 3;
-    private int mapDifficulty_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MapDifficulty {
-      get { return mapDifficulty_; }
-      set {
-        mapDifficulty_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "timeInRound" field.</summary>
-    public const int TimeInRoundFieldNumber = 4;
-    private float timeInRound_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float TimeInRound {
-      get { return timeInRound_; }
-      set {
-        timeInRound_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "roundComplete" field.</summary>
-    public const int RoundCompleteFieldNumber = 5;
-    private bool roundComplete_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool RoundComplete {
-      get { return roundComplete_; }
-      set {
-        roundComplete_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "controlDoubleJump" field.</summary>
-    public const int ControlDoubleJumpFieldNumber = 6;
-    private int controlDoubleJump_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ControlDoubleJump {
-      get { return controlDoubleJump_; }
-      set {
-        controlDoubleJump_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "controlMoveCamera" field.</summary>
-    public const int ControlMoveCameraFieldNumber = 7;
-    private int controlMoveCamera_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ControlMoveCamera {
-      get { return controlMoveCamera_; }
-      set {
-        controlMoveCamera_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "passedCP" field.</summary>
-    public const int PassedCPFieldNumber = 8;
-    private int passedCP_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PassedCP {
-      get { return passedCP_; }
-      set {
-        passedCP_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "maxCP" field.</summary>
-    public const int MaxCPFieldNumber = 9;
-    private int maxCP_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MaxCP {
-      get { return maxCP_; }
-      set {
-        maxCP_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as RoundStat);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(RoundStat other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (RoundId != other.RoundId) return false;
-      if (MapId != other.MapId) return false;
-      if (MapDifficulty != other.MapDifficulty) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(TimeInRound, other.TimeInRound)) return false;
-      if (RoundComplete != other.RoundComplete) return false;
-      if (ControlDoubleJump != other.ControlDoubleJump) return false;
-      if (ControlMoveCamera != other.ControlMoveCamera) return false;
-      if (PassedCP != other.PassedCP) return false;
-      if (MaxCP != other.MaxCP) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (RoundId != 0) hash ^= RoundId.GetHashCode();
-      if (MapId != 0) hash ^= MapId.GetHashCode();
-      if (MapDifficulty != 0) hash ^= MapDifficulty.GetHashCode();
-      if (TimeInRound != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(TimeInRound);
-      if (RoundComplete != false) hash ^= RoundComplete.GetHashCode();
-      if (ControlDoubleJump != 0) hash ^= ControlDoubleJump.GetHashCode();
-      if (ControlMoveCamera != 0) hash ^= ControlMoveCamera.GetHashCode();
-      if (PassedCP != 0) hash ^= PassedCP.GetHashCode();
-      if (MaxCP != 0) hash ^= MaxCP.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (RoundId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(RoundId);
-      }
-      if (MapId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(MapId);
-      }
-      if (MapDifficulty != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(MapDifficulty);
-      }
-      if (TimeInRound != 0F) {
-        output.WriteRawTag(37);
-        output.WriteFloat(TimeInRound);
-      }
-      if (RoundComplete != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(RoundComplete);
-      }
-      if (ControlDoubleJump != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(ControlDoubleJump);
-      }
-      if (ControlMoveCamera != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(ControlMoveCamera);
-      }
-      if (PassedCP != 0) {
-        output.WriteRawTag(64);
-        output.WriteInt32(PassedCP);
-      }
-      if (MaxCP != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(MaxCP);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (RoundId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(RoundId);
-      }
-      if (MapId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(MapId);
-      }
-      if (MapDifficulty != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(MapDifficulty);
-      }
-      if (TimeInRound != 0F) {
-        output.WriteRawTag(37);
-        output.WriteFloat(TimeInRound);
-      }
-      if (RoundComplete != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(RoundComplete);
-      }
-      if (ControlDoubleJump != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(ControlDoubleJump);
-      }
-      if (ControlMoveCamera != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(ControlMoveCamera);
-      }
-      if (PassedCP != 0) {
-        output.WriteRawTag(64);
-        output.WriteInt32(PassedCP);
-      }
-      if (MaxCP != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(MaxCP);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (RoundId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoundId);
-      }
-      if (MapId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MapId);
-      }
-      if (MapDifficulty != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MapDifficulty);
-      }
-      if (TimeInRound != 0F) {
-        size += 1 + 4;
-      }
-      if (RoundComplete != false) {
-        size += 1 + 1;
-      }
-      if (ControlDoubleJump != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ControlDoubleJump);
-      }
-      if (ControlMoveCamera != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ControlMoveCamera);
-      }
-      if (PassedCP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PassedCP);
-      }
-      if (MaxCP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxCP);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(RoundStat other) {
-      if (other == null) {
-        return;
-      }
-      if (other.RoundId != 0) {
-        RoundId = other.RoundId;
-      }
-      if (other.MapId != 0) {
-        MapId = other.MapId;
-      }
-      if (other.MapDifficulty != 0) {
-        MapDifficulty = other.MapDifficulty;
-      }
-      if (other.TimeInRound != 0F) {
-        TimeInRound = other.TimeInRound;
-      }
-      if (other.RoundComplete != false) {
-        RoundComplete = other.RoundComplete;
-      }
-      if (other.ControlDoubleJump != 0) {
-        ControlDoubleJump = other.ControlDoubleJump;
-      }
-      if (other.ControlMoveCamera != 0) {
-        ControlMoveCamera = other.ControlMoveCamera;
-      }
-      if (other.PassedCP != 0) {
-        PassedCP = other.PassedCP;
-      }
-      if (other.MaxCP != 0) {
-        MaxCP = other.MaxCP;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            RoundId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            MapId = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            MapDifficulty = input.ReadInt32();
-            break;
-          }
-          case 37: {
-            TimeInRound = input.ReadFloat();
-            break;
-          }
-          case 40: {
-            RoundComplete = input.ReadBool();
-            break;
-          }
-          case 48: {
-            ControlDoubleJump = input.ReadInt32();
-            break;
-          }
-          case 56: {
-            ControlMoveCamera = input.ReadInt32();
-            break;
-          }
-          case 64: {
-            PassedCP = input.ReadInt32();
-            break;
-          }
-          case 72: {
-            MaxCP = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            RoundId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            MapId = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            MapDifficulty = input.ReadInt32();
-            break;
-          }
-          case 37: {
-            TimeInRound = input.ReadFloat();
-            break;
-          }
-          case 40: {
-            RoundComplete = input.ReadBool();
-            break;
-          }
-          case 48: {
-            ControlDoubleJump = input.ReadInt32();
-            break;
-          }
-          case 56: {
-            ControlMoveCamera = input.ReadInt32();
-            break;
-          }
-          case 64: {
-            PassedCP = input.ReadInt32();
-            break;
-          }
-          case 72: {
-            MaxCP = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   public sealed partial class MapData : pb::IMessage<MapData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5504,7 +5011,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5767,7 +5274,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6096,7 +5603,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6285,7 +5792,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[22]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6537,7 +6044,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[23]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6974,7 +6481,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[24]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7274,7 +6781,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[25]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7537,7 +7044,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[26]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7985,7 +7492,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[27]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8211,7 +7718,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[28]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8474,7 +7981,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[29]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8626,7 +8133,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[30]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8804,7 +8311,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[31]; }
+      get { return global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
