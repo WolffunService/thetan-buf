@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package thetan.gateway.v1;
+
+import "thetan/shared/v1/match.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/gateway/v1;thetan_gateway_v1";
+option csharp_namespace = "Thetan.Gateway.V1";
+
+service ThetanGatewaySpectator {
+  rpc AllocateSpectator(thetan.shared.v1.MatchFoundResponseProto) returns (RoomAllocationResp) {}
+}
+
+message RoomAllocationResp {
+  //fishnet ip+port
+  string serverIP = 1;
+  uint32 serverPort = 2;
+  //matchid
+  string roomID = 3;
+}
