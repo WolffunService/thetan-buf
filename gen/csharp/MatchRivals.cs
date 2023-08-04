@@ -25,36 +25,29 @@ namespace Thetan.Match.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiJ0aGV0YW4vbWF0Y2gvdjEvbWF0Y2hfcml2YWxzLnByb3RvEg90aGV0YW4u",
-            "bWF0Y2gudjEaG2dvb2dsZS9wcm90b2J1Zi9lbXB0eS5wcm90bxoadGhldGFu",
-            "L3NoYXJlZC92MS91Z2MucHJvdG8iiAEKCk1hdGNoUm91bmQSFAoFbWFwSUQY",
-            "ASABKAVSBW1hcElEEiQKDW1hcERpZmZpY3VsdHkYAiABKAVSDW1hcERpZmZp",
-            "Y3VsdHkSJgoOcGxheWVySW5Sb3VuZHMYAyADKAlSDnBsYXllckluUm91bmRz",
-            "EhYKBmlucHV0cxgEIAEoDFIGaW5wdXRzIuYCCgtNYXRjaFBsYXllchIaCghw",
-            "bGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSFgoGaGVyb0lEGAIgASgJUgZoZXJv",
-            "SUQSGgoIaGVyb1NraW4YAyABKAVSCGhlcm9Ta2luEhwKCWhlcm9MZXZlbBgE",
-            "IAEoBVIJaGVyb0xldmVsEkkKCWNvc21ldGljcxgFIAMoCzIrLnRoZXRhbi5t",
-            "YXRjaC52MS5NYXRjaFBsYXllci5Db3NtZXRpY3NFbnRyeVIJY29zbWV0aWNz",
-            "EkAKCmN1c3RvbWl6ZWQYBiABKAsyIC50aGV0YW4uc2hhcmVkLnYxLkhlcm9D",
-            "dXN0b21pemVkUgpjdXN0b21pemVkEh4KCmJhdHRsZVJhbmsYByABKAVSCmJh",
-            "dHRsZVJhbmsaPAoOQ29zbWV0aWNzRW50cnkSEAoDa2V5GAEgASgJUgNrZXkS",
-            "FAoFdmFsdWUYAiABKAVSBXZhbHVlOgI4ASLCAQoJTWF0Y2hEYXRhEhgKB21h",
-            "dGNoSUQYASABKAlSB21hdGNoSUQSMwoGcm91bmRzGAIgAygLMhsudGhldGFu",
-            "Lm1hdGNoLnYxLk1hdGNoUm91bmRSBnJvdW5kcxI2CgdwbGF5ZXJzGAMgAygL",
-            "MhwudGhldGFuLm1hdGNoLnYxLk1hdGNoUGxheWVyUgdwbGF5ZXJzEhgKB3N0",
-            "YXJ0QXQYBCABKANSB3N0YXJ0QXQSFAoFZW5kQXQYBSABKANSBWVuZEF0Ml8K",
-            "EVRoZXRhbk1hdGNoUml2YWxzEkoKElNwZWN0YXRvckJhdHRsZUVuZBIaLnRo",
-            "ZXRhbi5tYXRjaC52MS5NYXRjaERhdGEaFi5nb29nbGUucHJvdG9idWYuRW1w",
-            "dHkiAEK6AQoTY29tLnRoZXRhbi5tYXRjaC52MUIQTWF0Y2hSaXZhbHNQcm90",
-            "b1ABWjF0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vbWF0Y2gvdjE7dGhldGFu",
-            "X21hdGNoX3YxogIDVE1YqgIPVGhldGFuLk1hdGNoLlYxygIQVGhldGFuXE1h",
-            "dGNoX1xWMeICHFRoZXRhblxNYXRjaF9cVjFcR1BCTWV0YWRhdGHqAhFUaGV0",
-            "YW46Ok1hdGNoOjpWMWIGcHJvdG8z"));
+            "bWF0Y2gudjEaGWdvb2dsZS9wcm90b2J1Zi9hbnkucHJvdG8iVAoKTWF0Y2hS",
+            "b3VuZBImCg5wbGF5ZXJJblJvdW5kcxgBIAMoCVIOcGxheWVySW5Sb3VuZHMS",
+            "HgoKZ2FtZUlucHV0cxgCIAEoDFIKZ2FtZUlucHV0cyLcAQoLTWF0Y2hQbGF5",
+            "ZXISGgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEh4KCmJhdHRsZVJhbmsY",
+            "AiABKAVSCmJhdHRsZVJhbmsSQAoGZXh0cmFzGAMgAygLMigudGhldGFuLm1h",
+            "dGNoLnYxLk1hdGNoUGxheWVyLkV4dHJhc0VudHJ5UgZleHRyYXMaTwoLRXh0",
+            "cmFzRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSKgoFdmFsdWUYAiABKAsyFC5n",
+            "b29nbGUucHJvdG9idWYuQW55UgV2YWx1ZToCOAEisQEKElNwZWN0YXRvckJh",
+            "dHRsZUVuZBIYCgdtYXRjaElEGAEgASgJUgdtYXRjaElEEjMKBnJvdW5kcxgC",
+            "IAMoCzIbLnRoZXRhbi5tYXRjaC52MS5NYXRjaFJvdW5kUgZyb3VuZHMSNgoH",
+            "cGxheWVycxgDIAMoCzIcLnRoZXRhbi5tYXRjaC52MS5NYXRjaFBsYXllclIH",
+            "cGxheWVycxIUCgVlbmRBdBgEIAEoA1IFZW5kQXRCugEKE2NvbS50aGV0YW4u",
+            "bWF0Y2gudjFCEE1hdGNoUml2YWxzUHJvdG9QAVoxdGhldGFuLWJ1Zi9nZW4v",
+            "Z28vdGhldGFuL21hdGNoL3YxO3RoZXRhbl9tYXRjaF92MaICA1RNWKoCD1Ro",
+            "ZXRhbi5NYXRjaC5WMcoCEFRoZXRhblxNYXRjaF9cVjHiAhxUaGV0YW5cTWF0",
+            "Y2hfXFYxXEdQQk1ldGFkYXRh6gIRVGhldGFuOjpNYXRjaDo6VjFiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Thetan.Shared.V1.UgcReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.MatchRound), global::Thetan.Match.V1.MatchRound.Parser, new[]{ "MapID", "MapDifficulty", "PlayerInRounds", "Inputs" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.MatchPlayer), global::Thetan.Match.V1.MatchPlayer.Parser, new[]{ "PlayerID", "HeroID", "HeroSkin", "HeroLevel", "Cosmetics", "Customized", "BattleRank" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.MatchData), global::Thetan.Match.V1.MatchData.Parser, new[]{ "MatchID", "Rounds", "Players", "StartAt", "EndAt" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.MatchRound), global::Thetan.Match.V1.MatchRound.Parser, new[]{ "PlayerInRounds", "GameInputs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.MatchPlayer), global::Thetan.Match.V1.MatchPlayer.Parser, new[]{ "PlayerID", "BattleRank", "Extras" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.SpectatorBattleEnd), global::Thetan.Match.V1.SpectatorBattleEnd.Parser, new[]{ "MatchID", "Rounds", "Players", "EndAt" }, null, null, null, null)
           }));
     }
     #endregion
@@ -95,10 +88,8 @@ namespace Thetan.Match.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MatchRound(MatchRound other) : this() {
-      mapID_ = other.mapID_;
-      mapDifficulty_ = other.mapDifficulty_;
       playerInRounds_ = other.playerInRounds_.Clone();
-      inputs_ = other.inputs_;
+      gameInputs_ = other.gameInputs_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -108,34 +99,10 @@ namespace Thetan.Match.V1 {
       return new MatchRound(this);
     }
 
-    /// <summary>Field number for the "mapID" field.</summary>
-    public const int MapIDFieldNumber = 1;
-    private int mapID_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MapID {
-      get { return mapID_; }
-      set {
-        mapID_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mapDifficulty" field.</summary>
-    public const int MapDifficultyFieldNumber = 2;
-    private int mapDifficulty_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int MapDifficulty {
-      get { return mapDifficulty_; }
-      set {
-        mapDifficulty_ = value;
-      }
-    }
-
     /// <summary>Field number for the "playerInRounds" field.</summary>
-    public const int PlayerInRoundsFieldNumber = 3;
+    public const int PlayerInRoundsFieldNumber = 1;
     private static readonly pb::FieldCodec<string> _repeated_playerInRounds_codec
-        = pb::FieldCodec.ForString(26);
+        = pb::FieldCodec.ForString(10);
     private readonly pbc::RepeatedField<string> playerInRounds_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// List of players played in this round, playerID (ObjectID)
@@ -146,15 +113,18 @@ namespace Thetan.Match.V1 {
       get { return playerInRounds_; }
     }
 
-    /// <summary>Field number for the "inputs" field.</summary>
-    public const int InputsFieldNumber = 4;
-    private pb::ByteString inputs_ = pb::ByteString.Empty;
+    /// <summary>Field number for the "gameInputs" field.</summary>
+    public const int GameInputsFieldNumber = 2;
+    private pb::ByteString gameInputs_ = pb::ByteString.Empty;
+    /// <summary>
+    /// Game inputs contains Message Pack (compressed) data for all players in this round.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pb::ByteString Inputs {
-      get { return inputs_; }
+    public pb::ByteString GameInputs {
+      get { return gameInputs_; }
       set {
-        inputs_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        gameInputs_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -173,10 +143,8 @@ namespace Thetan.Match.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (MapID != other.MapID) return false;
-      if (MapDifficulty != other.MapDifficulty) return false;
       if(!playerInRounds_.Equals(other.playerInRounds_)) return false;
-      if (Inputs != other.Inputs) return false;
+      if (GameInputs != other.GameInputs) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -184,10 +152,8 @@ namespace Thetan.Match.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (MapID != 0) hash ^= MapID.GetHashCode();
-      if (MapDifficulty != 0) hash ^= MapDifficulty.GetHashCode();
       hash ^= playerInRounds_.GetHashCode();
-      if (Inputs.Length != 0) hash ^= Inputs.GetHashCode();
+      if (GameInputs.Length != 0) hash ^= GameInputs.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -206,18 +172,10 @@ namespace Thetan.Match.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (MapID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MapID);
-      }
-      if (MapDifficulty != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(MapDifficulty);
-      }
       playerInRounds_.WriteTo(output, _repeated_playerInRounds_codec);
-      if (Inputs.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteBytes(Inputs);
+      if (GameInputs.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(GameInputs);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -229,18 +187,10 @@ namespace Thetan.Match.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MapID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(MapID);
-      }
-      if (MapDifficulty != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(MapDifficulty);
-      }
       playerInRounds_.WriteTo(ref output, _repeated_playerInRounds_codec);
-      if (Inputs.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteBytes(Inputs);
+      if (GameInputs.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(GameInputs);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -252,15 +202,9 @@ namespace Thetan.Match.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (MapID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MapID);
-      }
-      if (MapDifficulty != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MapDifficulty);
-      }
       size += playerInRounds_.CalculateSize(_repeated_playerInRounds_codec);
-      if (Inputs.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Inputs);
+      if (GameInputs.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(GameInputs);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -274,15 +218,9 @@ namespace Thetan.Match.V1 {
       if (other == null) {
         return;
       }
-      if (other.MapID != 0) {
-        MapID = other.MapID;
-      }
-      if (other.MapDifficulty != 0) {
-        MapDifficulty = other.MapDifficulty;
-      }
       playerInRounds_.Add(other.playerInRounds_);
-      if (other.Inputs.Length != 0) {
-        Inputs = other.Inputs;
+      if (other.GameInputs.Length != 0) {
+        GameInputs = other.GameInputs;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -299,20 +237,12 @@ namespace Thetan.Match.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            MapID = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            MapDifficulty = input.ReadInt32();
-            break;
-          }
-          case 26: {
+          case 10: {
             playerInRounds_.AddEntriesFrom(input, _repeated_playerInRounds_codec);
             break;
           }
-          case 34: {
-            Inputs = input.ReadBytes();
+          case 18: {
+            GameInputs = input.ReadBytes();
             break;
           }
         }
@@ -330,20 +260,12 @@ namespace Thetan.Match.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            MapID = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            MapDifficulty = input.ReadInt32();
-            break;
-          }
-          case 26: {
+          case 10: {
             playerInRounds_.AddEntriesFrom(ref input, _repeated_playerInRounds_codec);
             break;
           }
-          case 34: {
-            Inputs = input.ReadBytes();
+          case 18: {
+            GameInputs = input.ReadBytes();
             break;
           }
         }
@@ -388,12 +310,8 @@ namespace Thetan.Match.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MatchPlayer(MatchPlayer other) : this() {
       playerID_ = other.playerID_;
-      heroID_ = other.heroID_;
-      heroSkin_ = other.heroSkin_;
-      heroLevel_ = other.heroLevel_;
-      cosmetics_ = other.cosmetics_.Clone();
-      customized_ = other.customized_ != null ? other.customized_.Clone() : null;
       battleRank_ = other.battleRank_;
+      extras_ = other.extras_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -415,67 +333,8 @@ namespace Thetan.Match.V1 {
       }
     }
 
-    /// <summary>Field number for the "heroID" field.</summary>
-    public const int HeroIDFieldNumber = 2;
-    private string heroID_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string HeroID {
-      get { return heroID_; }
-      set {
-        heroID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "heroSkin" field.</summary>
-    public const int HeroSkinFieldNumber = 3;
-    private int heroSkin_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HeroSkin {
-      get { return heroSkin_; }
-      set {
-        heroSkin_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "heroLevel" field.</summary>
-    public const int HeroLevelFieldNumber = 4;
-    private int heroLevel_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HeroLevel {
-      get { return heroLevel_; }
-      set {
-        heroLevel_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cosmetics" field.</summary>
-    public const int CosmeticsFieldNumber = 5;
-    private static readonly pbc::MapField<string, int>.Codec _map_cosmetics_codec
-        = new pbc::MapField<string, int>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForInt32(16, 0), 42);
-    private readonly pbc::MapField<string, int> cosmetics_ = new pbc::MapField<string, int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<string, int> Cosmetics {
-      get { return cosmetics_; }
-    }
-
-    /// <summary>Field number for the "customized" field.</summary>
-    public const int CustomizedFieldNumber = 6;
-    private global::Thetan.Shared.V1.HeroCustomized customized_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Thetan.Shared.V1.HeroCustomized Customized {
-      get { return customized_; }
-      set {
-        customized_ = value;
-      }
-    }
-
     /// <summary>Field number for the "battleRank" field.</summary>
-    public const int BattleRankFieldNumber = 7;
+    public const int BattleRankFieldNumber = 2;
     private int battleRank_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -484,6 +343,17 @@ namespace Thetan.Match.V1 {
       set {
         battleRank_ = value;
       }
+    }
+
+    /// <summary>Field number for the "extras" field.</summary>
+    public const int ExtrasFieldNumber = 3;
+    private static readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec _map_extras_codec
+        = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Any.Parser), 26);
+    private readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any> extras_ = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any> Extras {
+      get { return extras_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -502,12 +372,8 @@ namespace Thetan.Match.V1 {
         return true;
       }
       if (PlayerID != other.PlayerID) return false;
-      if (HeroID != other.HeroID) return false;
-      if (HeroSkin != other.HeroSkin) return false;
-      if (HeroLevel != other.HeroLevel) return false;
-      if (!Cosmetics.Equals(other.Cosmetics)) return false;
-      if (!object.Equals(Customized, other.Customized)) return false;
       if (BattleRank != other.BattleRank) return false;
+      if (!Extras.Equals(other.Extras)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -516,12 +382,8 @@ namespace Thetan.Match.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (PlayerID.Length != 0) hash ^= PlayerID.GetHashCode();
-      if (HeroID.Length != 0) hash ^= HeroID.GetHashCode();
-      if (HeroSkin != 0) hash ^= HeroSkin.GetHashCode();
-      if (HeroLevel != 0) hash ^= HeroLevel.GetHashCode();
-      hash ^= Cosmetics.GetHashCode();
-      if (customized_ != null) hash ^= Customized.GetHashCode();
       if (BattleRank != 0) hash ^= BattleRank.GetHashCode();
+      hash ^= Extras.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -544,27 +406,11 @@ namespace Thetan.Match.V1 {
         output.WriteRawTag(10);
         output.WriteString(PlayerID);
       }
-      if (HeroID.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(HeroID);
-      }
-      if (HeroSkin != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(HeroSkin);
-      }
-      if (HeroLevel != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(HeroLevel);
-      }
-      cosmetics_.WriteTo(output, _map_cosmetics_codec);
-      if (customized_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(Customized);
-      }
       if (BattleRank != 0) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(16);
         output.WriteInt32(BattleRank);
       }
+      extras_.WriteTo(output, _map_extras_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -579,27 +425,11 @@ namespace Thetan.Match.V1 {
         output.WriteRawTag(10);
         output.WriteString(PlayerID);
       }
-      if (HeroID.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(HeroID);
-      }
-      if (HeroSkin != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(HeroSkin);
-      }
-      if (HeroLevel != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(HeroLevel);
-      }
-      cosmetics_.WriteTo(ref output, _map_cosmetics_codec);
-      if (customized_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(Customized);
-      }
       if (BattleRank != 0) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(16);
         output.WriteInt32(BattleRank);
       }
+      extras_.WriteTo(ref output, _map_extras_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -613,22 +443,10 @@ namespace Thetan.Match.V1 {
       if (PlayerID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerID);
       }
-      if (HeroID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(HeroID);
-      }
-      if (HeroSkin != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroSkin);
-      }
-      if (HeroLevel != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroLevel);
-      }
-      size += cosmetics_.CalculateSize(_map_cosmetics_codec);
-      if (customized_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Customized);
-      }
       if (BattleRank != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BattleRank);
       }
+      size += extras_.CalculateSize(_map_extras_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -644,25 +462,10 @@ namespace Thetan.Match.V1 {
       if (other.PlayerID.Length != 0) {
         PlayerID = other.PlayerID;
       }
-      if (other.HeroID.Length != 0) {
-        HeroID = other.HeroID;
-      }
-      if (other.HeroSkin != 0) {
-        HeroSkin = other.HeroSkin;
-      }
-      if (other.HeroLevel != 0) {
-        HeroLevel = other.HeroLevel;
-      }
-      cosmetics_.Add(other.cosmetics_);
-      if (other.customized_ != null) {
-        if (customized_ == null) {
-          Customized = new global::Thetan.Shared.V1.HeroCustomized();
-        }
-        Customized.MergeFrom(other.Customized);
-      }
       if (other.BattleRank != 0) {
         BattleRank = other.BattleRank;
       }
+      extras_.Add(other.extras_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -682,31 +485,12 @@ namespace Thetan.Match.V1 {
             PlayerID = input.ReadString();
             break;
           }
-          case 18: {
-            HeroID = input.ReadString();
-            break;
-          }
-          case 24: {
-            HeroSkin = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            HeroLevel = input.ReadInt32();
-            break;
-          }
-          case 42: {
-            cosmetics_.AddEntriesFrom(input, _map_cosmetics_codec);
-            break;
-          }
-          case 50: {
-            if (customized_ == null) {
-              Customized = new global::Thetan.Shared.V1.HeroCustomized();
-            }
-            input.ReadMessage(Customized);
-            break;
-          }
-          case 56: {
+          case 16: {
             BattleRank = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            extras_.AddEntriesFrom(input, _map_extras_codec);
             break;
           }
         }
@@ -728,31 +512,12 @@ namespace Thetan.Match.V1 {
             PlayerID = input.ReadString();
             break;
           }
-          case 18: {
-            HeroID = input.ReadString();
-            break;
-          }
-          case 24: {
-            HeroSkin = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            HeroLevel = input.ReadInt32();
-            break;
-          }
-          case 42: {
-            cosmetics_.AddEntriesFrom(ref input, _map_cosmetics_codec);
-            break;
-          }
-          case 50: {
-            if (customized_ == null) {
-              Customized = new global::Thetan.Shared.V1.HeroCustomized();
-            }
-            input.ReadMessage(Customized);
-            break;
-          }
-          case 56: {
+          case 16: {
             BattleRank = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            extras_.AddEntriesFrom(ref input, _map_extras_codec);
             break;
           }
         }
@@ -762,16 +527,16 @@ namespace Thetan.Match.V1 {
 
   }
 
-  public sealed partial class MatchData : pb::IMessage<MatchData>
+  public sealed partial class SpectatorBattleEnd : pb::IMessage<SpectatorBattleEnd>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MatchData> _parser = new pb::MessageParser<MatchData>(() => new MatchData());
+    private static readonly pb::MessageParser<SpectatorBattleEnd> _parser = new pb::MessageParser<SpectatorBattleEnd>(() => new SpectatorBattleEnd());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<MatchData> Parser { get { return _parser; } }
+    public static pb::MessageParser<SpectatorBattleEnd> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -787,7 +552,7 @@ namespace Thetan.Match.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MatchData() {
+    public SpectatorBattleEnd() {
       OnConstruction();
     }
 
@@ -795,19 +560,18 @@ namespace Thetan.Match.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MatchData(MatchData other) : this() {
+    public SpectatorBattleEnd(SpectatorBattleEnd other) : this() {
       matchID_ = other.matchID_;
       rounds_ = other.rounds_.Clone();
       players_ = other.players_.Clone();
-      startAt_ = other.startAt_;
       endAt_ = other.endAt_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MatchData Clone() {
-      return new MatchData(this);
+    public SpectatorBattleEnd Clone() {
+      return new SpectatorBattleEnd(this);
     }
 
     /// <summary>Field number for the "matchID" field.</summary>
@@ -844,20 +608,8 @@ namespace Thetan.Match.V1 {
       get { return players_; }
     }
 
-    /// <summary>Field number for the "startAt" field.</summary>
-    public const int StartAtFieldNumber = 4;
-    private long startAt_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long StartAt {
-      get { return startAt_; }
-      set {
-        startAt_ = value;
-      }
-    }
-
     /// <summary>Field number for the "endAt" field.</summary>
-    public const int EndAtFieldNumber = 5;
+    public const int EndAtFieldNumber = 4;
     private long endAt_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -871,12 +623,12 @@ namespace Thetan.Match.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as MatchData);
+      return Equals(other as SpectatorBattleEnd);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(MatchData other) {
+    public bool Equals(SpectatorBattleEnd other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -886,7 +638,6 @@ namespace Thetan.Match.V1 {
       if (MatchID != other.MatchID) return false;
       if(!rounds_.Equals(other.rounds_)) return false;
       if(!players_.Equals(other.players_)) return false;
-      if (StartAt != other.StartAt) return false;
       if (EndAt != other.EndAt) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -898,7 +649,6 @@ namespace Thetan.Match.V1 {
       if (MatchID.Length != 0) hash ^= MatchID.GetHashCode();
       hash ^= rounds_.GetHashCode();
       hash ^= players_.GetHashCode();
-      if (StartAt != 0L) hash ^= StartAt.GetHashCode();
       if (EndAt != 0L) hash ^= EndAt.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -924,12 +674,8 @@ namespace Thetan.Match.V1 {
       }
       rounds_.WriteTo(output, _repeated_rounds_codec);
       players_.WriteTo(output, _repeated_players_codec);
-      if (StartAt != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(StartAt);
-      }
       if (EndAt != 0L) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(32);
         output.WriteInt64(EndAt);
       }
       if (_unknownFields != null) {
@@ -948,12 +694,8 @@ namespace Thetan.Match.V1 {
       }
       rounds_.WriteTo(ref output, _repeated_rounds_codec);
       players_.WriteTo(ref output, _repeated_players_codec);
-      if (StartAt != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(StartAt);
-      }
       if (EndAt != 0L) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(32);
         output.WriteInt64(EndAt);
       }
       if (_unknownFields != null) {
@@ -971,9 +713,6 @@ namespace Thetan.Match.V1 {
       }
       size += rounds_.CalculateSize(_repeated_rounds_codec);
       size += players_.CalculateSize(_repeated_players_codec);
-      if (StartAt != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(StartAt);
-      }
       if (EndAt != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(EndAt);
       }
@@ -985,7 +724,7 @@ namespace Thetan.Match.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(MatchData other) {
+    public void MergeFrom(SpectatorBattleEnd other) {
       if (other == null) {
         return;
       }
@@ -994,9 +733,6 @@ namespace Thetan.Match.V1 {
       }
       rounds_.Add(other.rounds_);
       players_.Add(other.players_);
-      if (other.StartAt != 0L) {
-        StartAt = other.StartAt;
-      }
       if (other.EndAt != 0L) {
         EndAt = other.EndAt;
       }
@@ -1028,10 +764,6 @@ namespace Thetan.Match.V1 {
             break;
           }
           case 32: {
-            StartAt = input.ReadInt64();
-            break;
-          }
-          case 40: {
             EndAt = input.ReadInt64();
             break;
           }
@@ -1063,10 +795,6 @@ namespace Thetan.Match.V1 {
             break;
           }
           case 32: {
-            StartAt = input.ReadInt64();
-            break;
-          }
-          case 40: {
             EndAt = input.ReadInt64();
             break;
           }

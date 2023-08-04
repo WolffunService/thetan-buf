@@ -2,38 +2,28 @@ syntax = "proto3";
 
 package thetan.match.v1;
 
-import "google/protobuf/empty.proto";
-import "thetan/shared/v1/ugc.proto";
+import "google/protobuf/any.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/match/v1;thetan_match_v1";
 option csharp_namespace = "Thetan.Match.V1";
 
-service ThetanMatchRivals {
-  rpc SpectatorBattleEnd(MatchData) returns (google.protobuf.Empty) {}
-}
-
 message MatchRound {
-  int32 mapID = 1;
-  int32 mapDifficulty = 2;
   // List of players played in this round, playerID (ObjectID)
-  repeated string playerInRounds = 3;
-  bytes inputs = 4;
+  repeated string playerInRounds = 1;
+
+  // Game inputs contains Message Pack (compressed) data for all players in this round.
+  bytes gameInputs = 2;
 }
 
 message MatchPlayer {
   string playerID = 1;
-  string heroID = 2;
-  int32 heroSkin = 3;
-  int32 heroLevel = 4;
-  map<string, int32> cosmetics = 5;
-  thetan.shared.v1.HeroCustomized customized = 6;
-  int32 battleRank = 7;
+  int32 battleRank = 2;
+  map<string, google.protobuf.Any> extras = 3;
 }
 
-message MatchData {
+message SpectatorBattleEnd {
   string matchID = 1;
   repeated MatchRound rounds = 2;
   repeated MatchPlayer players = 3;
-  int64 startAt = 4;
-  int64 endAt = 5;
+  int64 endAt = 4;
 }
