@@ -6,7 +6,7 @@ import "thetan/shared/v1/match.proto";
 import "thetan/shared/v1/ugc.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
-option csharp_namespace = "Thetan.rivals.V1";
+option csharp_namespace = "Thetan.Rivals.V1";
 
 service ThetanRivalService {
   // Profile

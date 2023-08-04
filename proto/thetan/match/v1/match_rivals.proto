@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package thetan.match.v1;
+
+import "google/protobuf/any.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/match/v1;thetan_match_v1";
+option csharp_namespace = "Thetan.Match.V1";
+
+message MatchRound {
+  // List of players played in this round, playerID (ObjectID)
+  repeated string playerInRounds = 1;
+
+  // Game inputs contains Message Pack (compressed) data for all players in this round.
+  bytes gameInputs = 2;
+}
+
+message MatchPlayer {
+  string playerID = 1;
+  int32 battleRank = 2;
+  map<string, google.protobuf.Any> extras = 3;
+}
+
+message SpectatorBattleEnd {
+  string matchID = 1;
+  repeated MatchRound rounds = 2;
+  repeated MatchPlayer players = 3;
+  int64 endAt = 4;
+}

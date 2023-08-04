@@ -1,5 +1,9 @@
-## Thetan Buf
-`Azzzzzzzzzzzzzzzzzz`
+# Thetan Buf
+
+This repository contains Protocol Buffers (.proto) definitions for Thetan ecosystem.
+The protobuf definitions are used
+to define the data structure and communication protocol between different components of the project.
+
 
 ### Formatting Protobuf files
 - https://buf.build/docs/format/style/
