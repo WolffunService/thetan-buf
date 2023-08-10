@@ -38,7 +38,7 @@ namespace Thetan.Rivals.V1 {
             "Ug1oYXNUcmlwbGVLaWxsEiAKC2hhc01lZ2FLaWxsGAcgASgIUgtoYXNNZWdh",
             "S2lsbBJcChNwbGF5ZXJCYXR0bGVFbmREYXRhGAggAygLMioudGhldGFuLnJp",
             "dmFscy52MS5SaXZhbFBsYXllckJhdHRsZUVuZERhdGFSE3BsYXllckJhdHRs",
-            "ZUVuZERhdGEiogQKEVJpdmFsQmF0dGxlTG9nTXNnEhgKB21hdGNoSWQYASAB",
+            "ZUVuZERhdGEiwAQKEVJpdmFsQmF0dGxlTG9nTXNnEhgKB21hdGNoSWQYASAB",
             "KAlSB21hdGNoSWQSGgoIcGxheWVySWQYAiABKAlSCHBsYXllcklkEh4KCnRp",
             "bWVTdWJtaXQYAyABKANSCnRpbWVTdWJtaXQSKAoPb3BlcmF0aW9uU3lzdGVt",
             "GAQgASgJUg9vcGVyYXRpb25TeXN0ZW0SHgoKYXBwVmVyc2lvbhgFIAEoCVIK",
@@ -50,22 +50,23 @@ namespace Thetan.Rivals.V1 {
             "EhgKB2NvdW50cnkYCiABKAlSB2NvdW50cnkSFgoGYmF0dGxlGAsgASgFUgZi",
             "YXR0bGUSIgoMdGltZUluQmF0dGxlGAwgASgDUgx0aW1lSW5CYXR0bGUSHgoK",
             "dHJvcGh5UmFuaxgNIAEoBVIKdHJvcGh5UmFuaxIgCgt1c2VyUmFua2luZxgO",
-            "IAEoBVILdXNlclJhbmtpbmci1AEKGFJpdmFsUGxheWVyQmF0dGxlRW5kRGF0",
-            "YRIaCghwbGF5ZXJJZBgBIAEoCVIIcGxheWVySWQSHgoKYmF0dGxlUmFuaxgC",
-            "IAEoBVIKYmF0dGxlUmFuaxIaCghtaW5pb25JZBgDIAEoCVIIbWluaW9uSWQS",
-            "SgoNY29zbWV0aWNVc2luZxgEIAEoCzIkLnRoZXRhbi5zaGFyZWQudjEuQ29z",
-            "bWV0aWNVc2luZ1Byb3RvUg1jb3NtZXRpY1VzaW5nEhQKBWJyYWluGAUgASgF",
-            "UgVicmFpbkLDAQoUY29tLnRoZXRhbi5yaXZhbHMudjFCFFJpdmFsc0JhdHRs",
-            "ZUVuZFByb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9yaXZhbHMv",
-            "djE7dGhldGFuX3JpdmFsc192MaICA1RSWKoCEFRoZXRhbi5SaXZhbHMuVjHK",
-            "AhBUaGV0YW5cUml2YWxzXFYx4gIcVGhldGFuXFJpdmFsc1xWMVxHUEJNZXRh",
-            "ZGF0YeoCElRoZXRhbjo6Uml2YWxzOjpWMWIGcHJvdG8z"));
+            "IAEoBVILdXNlclJhbmtpbmcSHAoJbWF0Y2hUeXBlGA8gASgJUgltYXRjaFR5",
+            "cGUi1AEKGFJpdmFsUGxheWVyQmF0dGxlRW5kRGF0YRIaCghwbGF5ZXJJZBgB",
+            "IAEoCVIIcGxheWVySWQSHgoKYmF0dGxlUmFuaxgCIAEoBVIKYmF0dGxlUmFu",
+            "axIaCghtaW5pb25JZBgDIAEoCVIIbWluaW9uSWQSSgoNY29zbWV0aWNVc2lu",
+            "ZxgEIAEoCzIkLnRoZXRhbi5zaGFyZWQudjEuQ29zbWV0aWNVc2luZ1Byb3Rv",
+            "Ug1jb3NtZXRpY1VzaW5nEhQKBWJyYWluGAUgASgFUgVicmFpbkLDAQoUY29t",
+            "LnRoZXRhbi5yaXZhbHMudjFCFFJpdmFsc0JhdHRsZUVuZFByb3RvUAFaM3Ro",
+            "ZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9yaXZhbHMvdjE7dGhldGFuX3JpdmFs",
+            "c192MaICA1RSWKoCEFRoZXRhbi5SaXZhbHMuVjHKAhBUaGV0YW5cUml2YWxz",
+            "XFYx4gIcVGhldGFuXFJpdmFsc1xWMVxHUEJNZXRhZGF0YeoCElRoZXRhbjo6",
+            "Uml2YWxzOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.GameInfoReflection.Descriptor, global::Thetan.Shared.V1.MatchReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RoundInfo), global::Thetan.Rivals.V1.RoundInfo.Parser, new[]{ "RoundId", "MapId", "DifficultLevel", "TimeInRound" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalBattleEndRequest), global::Thetan.Rivals.V1.RivalBattleEndRequest.Parser, new[]{ "MatchId", "GameMode", "InGameMode", "IsMvp", "Rank", "HasTripleKill", "HasMegaKill", "PlayerBattleEndData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalBattleLogMsg), global::Thetan.Rivals.V1.RivalBattleLogMsg.Parser, new[]{ "MatchId", "PlayerId", "TimeSubmit", "OperationSystem", "AppVersion", "TrophyReward", "Exp", "PlayerBattleEndData", "ListRoundInfo", "Country", "Battle", "TimeInBattle", "TrophyRank", "UserRanking" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalBattleLogMsg), global::Thetan.Rivals.V1.RivalBattleLogMsg.Parser, new[]{ "MatchId", "PlayerId", "TimeSubmit", "OperationSystem", "AppVersion", "TrophyReward", "Exp", "PlayerBattleEndData", "ListRoundInfo", "Country", "Battle", "TimeInBattle", "TrophyRank", "UserRanking", "MatchType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalPlayerBattleEndData), global::Thetan.Rivals.V1.RivalPlayerBattleEndData.Parser, new[]{ "PlayerId", "BattleRank", "MinionId", "CosmeticUsing", "Brain" }, null, null, null, null)
           }));
     }
@@ -858,6 +859,7 @@ namespace Thetan.Rivals.V1 {
       timeInBattle_ = other.timeInBattle_;
       trophyRank_ = other.trophyRank_;
       userRanking_ = other.userRanking_;
+      matchType_ = other.matchType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1033,6 +1035,21 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
+    /// <summary>Field number for the "matchType" field.</summary>
+    public const int MatchTypeFieldNumber = 15;
+    private string matchType_ = "";
+    /// <summary>
+    /// "" = > danh thuong, "tournament_1" => tournament mua 1
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string MatchType {
+      get { return matchType_; }
+      set {
+        matchType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1062,6 +1079,7 @@ namespace Thetan.Rivals.V1 {
       if (TimeInBattle != other.TimeInBattle) return false;
       if (TrophyRank != other.TrophyRank) return false;
       if (UserRanking != other.UserRanking) return false;
+      if (MatchType != other.MatchType) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1083,6 +1101,7 @@ namespace Thetan.Rivals.V1 {
       if (TimeInBattle != 0L) hash ^= TimeInBattle.GetHashCode();
       if (TrophyRank != 0) hash ^= TrophyRank.GetHashCode();
       if (UserRanking != 0) hash ^= UserRanking.GetHashCode();
+      if (MatchType.Length != 0) hash ^= MatchType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1151,6 +1170,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(112);
         output.WriteInt32(UserRanking);
       }
+      if (MatchType.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(MatchType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1211,6 +1234,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(112);
         output.WriteInt32(UserRanking);
       }
+      if (MatchType.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(MatchType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1258,6 +1285,9 @@ namespace Thetan.Rivals.V1 {
       }
       if (UserRanking != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserRanking);
+      }
+      if (MatchType.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MatchType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1308,6 +1338,9 @@ namespace Thetan.Rivals.V1 {
       }
       if (other.UserRanking != 0) {
         UserRanking = other.UserRanking;
+      }
+      if (other.MatchType.Length != 0) {
+        MatchType = other.MatchType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1380,6 +1413,10 @@ namespace Thetan.Rivals.V1 {
             UserRanking = input.ReadInt32();
             break;
           }
+          case 122: {
+            MatchType = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1449,6 +1486,10 @@ namespace Thetan.Rivals.V1 {
           }
           case 112: {
             UserRanking = input.ReadInt32();
+            break;
+          }
+          case 122: {
+            MatchType = input.ReadString();
             break;
           }
         }
