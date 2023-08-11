@@ -104,6 +104,8 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest> __Marshaller_thetan_rivals_v1_FindMatchInfoForTournamentRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.FindMatchInfoForTournamentResponse> __Marshaller_thetan_rivals_v1_FindMatchInfoForTournamentResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.FindMatchInfoForTournamentResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.MatchFoundTournamentRequest> __Marshaller_thetan_rivals_v1_MatchFoundTournamentRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.MatchFoundTournamentRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.MatchFoundTournamentResponse> __Marshaller_thetan_rivals_v1_MatchFoundTournamentResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.MatchFoundTournamentResponse.Parser));
@@ -221,12 +223,12 @@ namespace Thetan.Rivals.V1 {
         __Marshaller_thetan_rivals_v1_GetActiveTournamentsResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest, global::Thetan.Rivals.V1.FindMatchInfoResponse> __Method_GetFindMatchInfoForTournament = new grpc::Method<global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest, global::Thetan.Rivals.V1.FindMatchInfoResponse>(
+    static readonly grpc::Method<global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest, global::Thetan.Rivals.V1.FindMatchInfoForTournamentResponse> __Method_GetFindMatchInfoForTournament = new grpc::Method<global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest, global::Thetan.Rivals.V1.FindMatchInfoForTournamentResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetFindMatchInfoForTournament",
         __Marshaller_thetan_rivals_v1_FindMatchInfoForTournamentRequest,
-        __Marshaller_thetan_rivals_v1_FindMatchInfoResponse);
+        __Marshaller_thetan_rivals_v1_FindMatchInfoForTournamentResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.MatchFoundTournamentRequest, global::Thetan.Rivals.V1.MatchFoundTournamentResponse> __Method_MatchFoundTournament = new grpc::Method<global::Thetan.Rivals.V1.MatchFoundTournamentRequest, global::Thetan.Rivals.V1.MatchFoundTournamentResponse>(
@@ -379,7 +381,7 @@ namespace Thetan.Rivals.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.FindMatchInfoResponse> GetFindMatchInfoForTournament(global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.FindMatchInfoForTournamentResponse> GetFindMatchInfoForTournament(global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -924,22 +926,22 @@ namespace Thetan.Rivals.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetActiveTournaments, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Rivals.V1.FindMatchInfoResponse GetFindMatchInfoForTournament(global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.Rivals.V1.FindMatchInfoForTournamentResponse GetFindMatchInfoForTournament(global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetFindMatchInfoForTournament(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Rivals.V1.FindMatchInfoResponse GetFindMatchInfoForTournament(global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest request, grpc::CallOptions options)
+      public virtual global::Thetan.Rivals.V1.FindMatchInfoForTournamentResponse GetFindMatchInfoForTournament(global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetFindMatchInfoForTournament, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.FindMatchInfoResponse> GetFindMatchInfoForTournamentAsync(global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.FindMatchInfoForTournamentResponse> GetFindMatchInfoForTournamentAsync(global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetFindMatchInfoForTournamentAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.FindMatchInfoResponse> GetFindMatchInfoForTournamentAsync(global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.FindMatchInfoForTournamentResponse> GetFindMatchInfoForTournamentAsync(global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetFindMatchInfoForTournament, null, options, request);
       }
@@ -1016,7 +1018,7 @@ namespace Thetan.Rivals.V1 {
       serviceBinder.AddMethod(__Method_GetFindMatchInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.FindMatchInfoRequest, global::Thetan.Rivals.V1.FindMatchInfoResponse>(serviceImpl.GetFindMatchInfo));
       serviceBinder.AddMethod(__Method_GetConfigForBot, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetConfigForBotRequest, global::Thetan.Rivals.V1.GetConfigForBotResponse>(serviceImpl.GetConfigForBot));
       serviceBinder.AddMethod(__Method_GetActiveTournaments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetActiveTournamentsRequest, global::Thetan.Rivals.V1.GetActiveTournamentsResponse>(serviceImpl.GetActiveTournaments));
-      serviceBinder.AddMethod(__Method_GetFindMatchInfoForTournament, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest, global::Thetan.Rivals.V1.FindMatchInfoResponse>(serviceImpl.GetFindMatchInfoForTournament));
+      serviceBinder.AddMethod(__Method_GetFindMatchInfoForTournament, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest, global::Thetan.Rivals.V1.FindMatchInfoForTournamentResponse>(serviceImpl.GetFindMatchInfoForTournament));
       serviceBinder.AddMethod(__Method_MatchFoundTournament, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.MatchFoundTournamentRequest, global::Thetan.Rivals.V1.MatchFoundTournamentResponse>(serviceImpl.MatchFoundTournament));
     }
 
