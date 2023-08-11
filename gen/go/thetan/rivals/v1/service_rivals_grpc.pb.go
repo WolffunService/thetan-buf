@@ -63,7 +63,7 @@ type ThetanRivalServiceClient interface {
 	GetConfigForBot(ctx context.Context, in *GetConfigForBotRequest, opts ...grpc.CallOption) (*GetConfigForBotResponse, error)
 	// Tournament
 	GetActiveTournaments(ctx context.Context, in *GetActiveTournamentsRequest, opts ...grpc.CallOption) (*GetActiveTournamentsResponse, error)
-	GetFindMatchInfoForTournament(ctx context.Context, in *FindMatchInfoForTournamentRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error)
+	GetFindMatchInfoForTournament(ctx context.Context, in *FindMatchInfoForTournamentRequest, opts ...grpc.CallOption) (*FindMatchInfoForTournamentResponse, error)
 	MatchFoundTournament(ctx context.Context, in *MatchFoundTournamentRequest, opts ...grpc.CallOption) (*MatchFoundTournamentResponse, error)
 }
 
@@ -201,8 +201,8 @@ func (c *thetanRivalServiceClient) GetActiveTournaments(ctx context.Context, in 
 	return out, nil
 }
 
-func (c *thetanRivalServiceClient) GetFindMatchInfoForTournament(ctx context.Context, in *FindMatchInfoForTournamentRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error) {
-	out := new(FindMatchInfoResponse)
+func (c *thetanRivalServiceClient) GetFindMatchInfoForTournament(ctx context.Context, in *FindMatchInfoForTournamentRequest, opts ...grpc.CallOption) (*FindMatchInfoForTournamentResponse, error) {
+	out := new(FindMatchInfoForTournamentResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetFindMatchInfoForTournament_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -245,7 +245,7 @@ type ThetanRivalServiceServer interface {
 	GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error)
 	// Tournament
 	GetActiveTournaments(context.Context, *GetActiveTournamentsRequest) (*GetActiveTournamentsResponse, error)
-	GetFindMatchInfoForTournament(context.Context, *FindMatchInfoForTournamentRequest) (*FindMatchInfoResponse, error)
+	GetFindMatchInfoForTournament(context.Context, *FindMatchInfoForTournamentRequest) (*FindMatchInfoForTournamentResponse, error)
 	MatchFoundTournament(context.Context, *MatchFoundTournamentRequest) (*MatchFoundTournamentResponse, error)
 	mustEmbedUnimplementedThetanRivalServiceServer()
 }
@@ -296,7 +296,7 @@ func (UnimplementedThetanRivalServiceServer) GetConfigForBot(context.Context, *G
 func (UnimplementedThetanRivalServiceServer) GetActiveTournaments(context.Context, *GetActiveTournamentsRequest) (*GetActiveTournamentsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetActiveTournaments not implemented")
 }
-func (UnimplementedThetanRivalServiceServer) GetFindMatchInfoForTournament(context.Context, *FindMatchInfoForTournamentRequest) (*FindMatchInfoResponse, error) {
+func (UnimplementedThetanRivalServiceServer) GetFindMatchInfoForTournament(context.Context, *FindMatchInfoForTournamentRequest) (*FindMatchInfoForTournamentResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetFindMatchInfoForTournament not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) MatchFoundTournament(context.Context, *MatchFoundTournamentRequest) (*MatchFoundTournamentResponse, error) {
