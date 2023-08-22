@@ -191,7 +191,7 @@ message ClassInfo {
   int32 memberPerClass = 5;
   double timePerClass = 6;
   double classPerMasterL = 7;
-  repeated SimpleItem rewards = 8;
+  map<int32,SimpleItem> rewards = 8;
 }
 
 message SimpleItem {
