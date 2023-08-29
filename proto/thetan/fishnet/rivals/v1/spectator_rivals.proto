@@ -3,7 +3,7 @@ package thetan.fishnet.spectator_rivals.v1;
 import "google/protobuf/empty.proto";
 import "thetan/shared/v1/match.proto";
 
-option go_package = "thetan-buf/gen/go/thetan/fishnet/immortal/v1/thetan_fishnet_spectator_rivals_v1";
+option go_package = "thetan-buf/gen/go/thetan/fishnet/rivals/v1/thetan_fishnet_spectator_rivals_v1";
 option csharp_namespace = "Thetan.FishNet.Spectator_Rivals.V1";
 
 
@@ -15,7 +15,7 @@ message GameServerInfoResp{
   int32 roomAllocate = 1;
 }
 
-service ThetanFishNetImmortal {
+service ThetanSpectatorRivals {
   rpc RoomAllocation(thetan.shared.v1.MatchFoundResponseProto) returns (RoomAllocationResp);
   rpc Shutdown(google.protobuf.Empty) returns (google.protobuf.Empty);
   rpc GameServerInfo(google.protobuf.Empty) returns (GameServerInfoResp);

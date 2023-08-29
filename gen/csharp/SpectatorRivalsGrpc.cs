@@ -8,9 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Thetan.Fishnet.SpectatorRivals.V1 {
-  public static partial class ThetanFishNetImmortal
+  public static partial class ThetanSpectatorRivals
   {
-    static readonly string __ServiceName = "thetan.fishnet.spectator_rivals.v1.ThetanFishNetImmortal";
+    static readonly string __ServiceName = "thetan.fishnet.spectator_rivals.v1.ThetanSpectatorRivals";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -84,9 +84,9 @@ namespace Thetan.Fishnet.SpectatorRivals.V1 {
       get { return global::Thetan.Fishnet.SpectatorRivals.V1.SpectatorRivalsReflection.Descriptor.Services[0]; }
     }
 
-    /// <summary>Base class for server-side implementations of ThetanFishNetImmortal</summary>
-    [grpc::BindServiceMethod(typeof(ThetanFishNetImmortal), "BindService")]
-    public abstract partial class ThetanFishNetImmortalBase
+    /// <summary>Base class for server-side implementations of ThetanSpectatorRivals</summary>
+    [grpc::BindServiceMethod(typeof(ThetanSpectatorRivals), "BindService")]
+    public abstract partial class ThetanSpectatorRivalsBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Fishnet.SpectatorRivals.V1.RoomAllocationResp> RoomAllocation(global::Thetan.Shared.V1.MatchFoundResponseProto request, grpc::ServerCallContext context)
@@ -108,30 +108,30 @@ namespace Thetan.Fishnet.SpectatorRivals.V1 {
 
     }
 
-    /// <summary>Client for ThetanFishNetImmortal</summary>
-    public partial class ThetanFishNetImmortalClient : grpc::ClientBase<ThetanFishNetImmortalClient>
+    /// <summary>Client for ThetanSpectatorRivals</summary>
+    public partial class ThetanSpectatorRivalsClient : grpc::ClientBase<ThetanSpectatorRivalsClient>
     {
-      /// <summary>Creates a new client for ThetanFishNetImmortal</summary>
+      /// <summary>Creates a new client for ThetanSpectatorRivals</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public ThetanFishNetImmortalClient(grpc::ChannelBase channel) : base(channel)
+      public ThetanSpectatorRivalsClient(grpc::ChannelBase channel) : base(channel)
       {
       }
-      /// <summary>Creates a new client for ThetanFishNetImmortal that uses a custom <c>CallInvoker</c>.</summary>
+      /// <summary>Creates a new client for ThetanSpectatorRivals that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public ThetanFishNetImmortalClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      public ThetanSpectatorRivalsClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected ThetanFishNetImmortalClient() : base()
+      protected ThetanSpectatorRivalsClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected ThetanFishNetImmortalClient(ClientBaseConfiguration configuration) : base(configuration)
+      protected ThetanSpectatorRivalsClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
@@ -197,16 +197,16 @@ namespace Thetan.Fishnet.SpectatorRivals.V1 {
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected override ThetanFishNetImmortalClient NewInstance(ClientBaseConfiguration configuration)
+      protected override ThetanSpectatorRivalsClient NewInstance(ClientBaseConfiguration configuration)
       {
-        return new ThetanFishNetImmortalClient(configuration);
+        return new ThetanSpectatorRivalsClient(configuration);
       }
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public static grpc::ServerServiceDefinition BindService(ThetanFishNetImmortalBase serviceImpl)
+    public static grpc::ServerServiceDefinition BindService(ThetanSpectatorRivalsBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_RoomAllocation, serviceImpl.RoomAllocation)
@@ -219,7 +219,7 @@ namespace Thetan.Fishnet.SpectatorRivals.V1 {
     /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanFishNetImmortalBase serviceImpl)
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanSpectatorRivalsBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_RoomAllocation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Shared.V1.MatchFoundResponseProto, global::Thetan.Fishnet.SpectatorRivals.V1.RoomAllocationResp>(serviceImpl.RoomAllocation));
       serviceBinder.AddMethod(__Method_Shutdown, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.Shutdown));

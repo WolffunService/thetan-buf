@@ -21,163 +21,163 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ThetanFishNetImmortal_RoomAllocation_FullMethodName = "/thetan.fishnet.spectator_rivals.v1.ThetanFishNetImmortal/RoomAllocation"
-	ThetanFishNetImmortal_Shutdown_FullMethodName       = "/thetan.fishnet.spectator_rivals.v1.ThetanFishNetImmortal/Shutdown"
-	ThetanFishNetImmortal_GameServerInfo_FullMethodName = "/thetan.fishnet.spectator_rivals.v1.ThetanFishNetImmortal/GameServerInfo"
+	ThetanSpectatorRivals_RoomAllocation_FullMethodName = "/thetan.fishnet.spectator_rivals.v1.ThetanSpectatorRivals/RoomAllocation"
+	ThetanSpectatorRivals_Shutdown_FullMethodName       = "/thetan.fishnet.spectator_rivals.v1.ThetanSpectatorRivals/Shutdown"
+	ThetanSpectatorRivals_GameServerInfo_FullMethodName = "/thetan.fishnet.spectator_rivals.v1.ThetanSpectatorRivals/GameServerInfo"
 )
 
-// ThetanFishNetImmortalClient is the client API for ThetanFishNetImmortal service.
+// ThetanSpectatorRivalsClient is the client API for ThetanSpectatorRivals service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
-type ThetanFishNetImmortalClient interface {
+type ThetanSpectatorRivalsClient interface {
 	RoomAllocation(ctx context.Context, in *v1.MatchFoundResponseProto, opts ...grpc.CallOption) (*RoomAllocationResp, error)
 	Shutdown(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	GameServerInfo(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*GameServerInfoResp, error)
 }
 
-type thetanFishNetImmortalClient struct {
+type thetanSpectatorRivalsClient struct {
 	cc grpc.ClientConnInterface
 }
 
-func NewThetanFishNetImmortalClient(cc grpc.ClientConnInterface) ThetanFishNetImmortalClient {
-	return &thetanFishNetImmortalClient{cc}
+func NewThetanSpectatorRivalsClient(cc grpc.ClientConnInterface) ThetanSpectatorRivalsClient {
+	return &thetanSpectatorRivalsClient{cc}
 }
 
-func (c *thetanFishNetImmortalClient) RoomAllocation(ctx context.Context, in *v1.MatchFoundResponseProto, opts ...grpc.CallOption) (*RoomAllocationResp, error) {
+func (c *thetanSpectatorRivalsClient) RoomAllocation(ctx context.Context, in *v1.MatchFoundResponseProto, opts ...grpc.CallOption) (*RoomAllocationResp, error) {
 	out := new(RoomAllocationResp)
-	err := c.cc.Invoke(ctx, ThetanFishNetImmortal_RoomAllocation_FullMethodName, in, out, opts...)
+	err := c.cc.Invoke(ctx, ThetanSpectatorRivals_RoomAllocation_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *thetanFishNetImmortalClient) Shutdown(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+func (c *thetanSpectatorRivalsClient) Shutdown(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error) {
 	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ThetanFishNetImmortal_Shutdown_FullMethodName, in, out, opts...)
+	err := c.cc.Invoke(ctx, ThetanSpectatorRivals_Shutdown_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *thetanFishNetImmortalClient) GameServerInfo(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*GameServerInfoResp, error) {
+func (c *thetanSpectatorRivalsClient) GameServerInfo(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*GameServerInfoResp, error) {
 	out := new(GameServerInfoResp)
-	err := c.cc.Invoke(ctx, ThetanFishNetImmortal_GameServerInfo_FullMethodName, in, out, opts...)
+	err := c.cc.Invoke(ctx, ThetanSpectatorRivals_GameServerInfo_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-// ThetanFishNetImmortalServer is the server API for ThetanFishNetImmortal service.
-// All implementations must embed UnimplementedThetanFishNetImmortalServer
+// ThetanSpectatorRivalsServer is the server API for ThetanSpectatorRivals service.
+// All implementations must embed UnimplementedThetanSpectatorRivalsServer
 // for forward compatibility
-type ThetanFishNetImmortalServer interface {
+type ThetanSpectatorRivalsServer interface {
 	RoomAllocation(context.Context, *v1.MatchFoundResponseProto) (*RoomAllocationResp, error)
 	Shutdown(context.Context, *emptypb.Empty) (*emptypb.Empty, error)
 	GameServerInfo(context.Context, *emptypb.Empty) (*GameServerInfoResp, error)
-	mustEmbedUnimplementedThetanFishNetImmortalServer()
+	mustEmbedUnimplementedThetanSpectatorRivalsServer()
 }
 
-// UnimplementedThetanFishNetImmortalServer must be embedded to have forward compatible implementations.
-type UnimplementedThetanFishNetImmortalServer struct {
+// UnimplementedThetanSpectatorRivalsServer must be embedded to have forward compatible implementations.
+type UnimplementedThetanSpectatorRivalsServer struct {
 }
 
-func (UnimplementedThetanFishNetImmortalServer) RoomAllocation(context.Context, *v1.MatchFoundResponseProto) (*RoomAllocationResp, error) {
+func (UnimplementedThetanSpectatorRivalsServer) RoomAllocation(context.Context, *v1.MatchFoundResponseProto) (*RoomAllocationResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method RoomAllocation not implemented")
 }
-func (UnimplementedThetanFishNetImmortalServer) Shutdown(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
+func (UnimplementedThetanSpectatorRivalsServer) Shutdown(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Shutdown not implemented")
 }
-func (UnimplementedThetanFishNetImmortalServer) GameServerInfo(context.Context, *emptypb.Empty) (*GameServerInfoResp, error) {
+func (UnimplementedThetanSpectatorRivalsServer) GameServerInfo(context.Context, *emptypb.Empty) (*GameServerInfoResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GameServerInfo not implemented")
 }
-func (UnimplementedThetanFishNetImmortalServer) mustEmbedUnimplementedThetanFishNetImmortalServer() {}
+func (UnimplementedThetanSpectatorRivalsServer) mustEmbedUnimplementedThetanSpectatorRivalsServer() {}
 
-// UnsafeThetanFishNetImmortalServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to ThetanFishNetImmortalServer will
+// UnsafeThetanSpectatorRivalsServer may be embedded to opt out of forward compatibility for this service.
+// Use of this interface is not recommended, as added methods to ThetanSpectatorRivalsServer will
 // result in compilation errors.
-type UnsafeThetanFishNetImmortalServer interface {
-	mustEmbedUnimplementedThetanFishNetImmortalServer()
+type UnsafeThetanSpectatorRivalsServer interface {
+	mustEmbedUnimplementedThetanSpectatorRivalsServer()
 }
 
-func RegisterThetanFishNetImmortalServer(s grpc.ServiceRegistrar, srv ThetanFishNetImmortalServer) {
-	s.RegisterService(&ThetanFishNetImmortal_ServiceDesc, srv)
+func RegisterThetanSpectatorRivalsServer(s grpc.ServiceRegistrar, srv ThetanSpectatorRivalsServer) {
+	s.RegisterService(&ThetanSpectatorRivals_ServiceDesc, srv)
 }
 
-func _ThetanFishNetImmortal_RoomAllocation_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _ThetanSpectatorRivals_RoomAllocation_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(v1.MatchFoundResponseProto)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ThetanFishNetImmortalServer).RoomAllocation(ctx, in)
+		return srv.(ThetanSpectatorRivalsServer).RoomAllocation(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: ThetanFishNetImmortal_RoomAllocation_FullMethodName,
+		FullMethod: ThetanSpectatorRivals_RoomAllocation_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanFishNetImmortalServer).RoomAllocation(ctx, req.(*v1.MatchFoundResponseProto))
+		return srv.(ThetanSpectatorRivalsServer).RoomAllocation(ctx, req.(*v1.MatchFoundResponseProto))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _ThetanFishNetImmortal_Shutdown_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _ThetanSpectatorRivals_Shutdown_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(emptypb.Empty)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ThetanFishNetImmortalServer).Shutdown(ctx, in)
+		return srv.(ThetanSpectatorRivalsServer).Shutdown(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: ThetanFishNetImmortal_Shutdown_FullMethodName,
+		FullMethod: ThetanSpectatorRivals_Shutdown_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanFishNetImmortalServer).Shutdown(ctx, req.(*emptypb.Empty))
+		return srv.(ThetanSpectatorRivalsServer).Shutdown(ctx, req.(*emptypb.Empty))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _ThetanFishNetImmortal_GameServerInfo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _ThetanSpectatorRivals_GameServerInfo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(emptypb.Empty)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ThetanFishNetImmortalServer).GameServerInfo(ctx, in)
+		return srv.(ThetanSpectatorRivalsServer).GameServerInfo(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: ThetanFishNetImmortal_GameServerInfo_FullMethodName,
+		FullMethod: ThetanSpectatorRivals_GameServerInfo_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanFishNetImmortalServer).GameServerInfo(ctx, req.(*emptypb.Empty))
+		return srv.(ThetanSpectatorRivalsServer).GameServerInfo(ctx, req.(*emptypb.Empty))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-// ThetanFishNetImmortal_ServiceDesc is the grpc.ServiceDesc for ThetanFishNetImmortal service.
+// ThetanSpectatorRivals_ServiceDesc is the grpc.ServiceDesc for ThetanSpectatorRivals service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
-var ThetanFishNetImmortal_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "thetan.fishnet.spectator_rivals.v1.ThetanFishNetImmortal",
-	HandlerType: (*ThetanFishNetImmortalServer)(nil),
+var ThetanSpectatorRivals_ServiceDesc = grpc.ServiceDesc{
+	ServiceName: "thetan.fishnet.spectator_rivals.v1.ThetanSpectatorRivals",
+	HandlerType: (*ThetanSpectatorRivalsServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
 			MethodName: "RoomAllocation",
-			Handler:    _ThetanFishNetImmortal_RoomAllocation_Handler,
+			Handler:    _ThetanSpectatorRivals_RoomAllocation_Handler,
 		},
 		{
 			MethodName: "Shutdown",
-			Handler:    _ThetanFishNetImmortal_Shutdown_Handler,
+			Handler:    _ThetanSpectatorRivals_Shutdown_Handler,
 		},
 		{
 			MethodName: "GameServerInfo",
-			Handler:    _ThetanFishNetImmortal_GameServerInfo_Handler,
+			Handler:    _ThetanSpectatorRivals_GameServerInfo_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
