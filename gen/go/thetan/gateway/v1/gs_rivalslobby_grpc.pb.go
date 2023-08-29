@@ -11,6 +11,7 @@ import (
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
+	v1 "thetan-buf/gen/go/thetan/rivals/v1"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -26,7 +27,7 @@ const (
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ThetanGatewayRivalsLobbyClient interface {
-	AllocateTown(ctx context.Context, in *TownAllocationReq, opts ...grpc.CallOption) (*TownAllocationResp, error)
+	AllocateTown(ctx context.Context, in *v1.LobbyTown, opts ...grpc.CallOption) (*TownAllocationResp, error)
 }
 
 type thetanGatewayRivalsLobbyClient struct {
@@ -37,7 +38,7 @@ func NewThetanGatewayRivalsLobbyClient(cc grpc.ClientConnInterface) ThetanGatewa
 	return &thetanGatewayRivalsLobbyClient{cc}
 }
 
-func (c *thetanGatewayRivalsLobbyClient) AllocateTown(ctx context.Context, in *TownAllocationReq, opts ...grpc.CallOption) (*TownAllocationResp, error) {
+func (c *thetanGatewayRivalsLobbyClient) AllocateTown(ctx context.Context, in *v1.LobbyTown, opts ...grpc.CallOption) (*TownAllocationResp, error) {
 	out := new(TownAllocationResp)
 	err := c.cc.Invoke(ctx, ThetanGatewayRivalsLobby_AllocateTown_FullMethodName, in, out, opts...)
 	if err != nil {
@@ -50,7 +51,7 @@ func (c *thetanGatewayRivalsLobbyClient) AllocateTown(ctx context.Context, in *T
 // All implementations must embed UnimplementedThetanGatewayRivalsLobbyServer
 // for forward compatibility
 type ThetanGatewayRivalsLobbyServer interface {
-	AllocateTown(context.Context, *TownAllocationReq) (*TownAllocationResp, error)
+	AllocateTown(context.Context, *v1.LobbyTown) (*TownAllocationResp, error)
 	mustEmbedUnimplementedThetanGatewayRivalsLobbyServer()
 }
 
@@ -58,7 +59,7 @@ type ThetanGatewayRivalsLobbyServer interface {
 type UnimplementedThetanGatewayRivalsLobbyServer struct {
 }
 
-func (UnimplementedThetanGatewayRivalsLobbyServer) AllocateTown(context.Context, *TownAllocationReq) (*TownAllocationResp, error) {
+func (UnimplementedThetanGatewayRivalsLobbyServer) AllocateTown(context.Context, *v1.LobbyTown) (*TownAllocationResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method AllocateTown not implemented")
 }
 func (UnimplementedThetanGatewayRivalsLobbyServer) mustEmbedUnimplementedThetanGatewayRivalsLobbyServer() {
@@ -76,7 +77,7 @@ func RegisterThetanGatewayRivalsLobbyServer(s grpc.ServiceRegistrar, srv ThetanG
 }
 
 func _ThetanGatewayRivalsLobby_AllocateTown_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(TownAllocationReq)
+	in := new(v1.LobbyTown)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -88,7 +89,7 @@ func _ThetanGatewayRivalsLobby_AllocateTown_Handler(srv interface{}, ctx context
 		FullMethod: ThetanGatewayRivalsLobby_AllocateTown_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanGatewayRivalsLobbyServer).AllocateTown(ctx, req.(*TownAllocationReq))
+		return srv.(ThetanGatewayRivalsLobbyServer).AllocateTown(ctx, req.(*v1.LobbyTown))
 	}
 	return interceptor(ctx, in, info, handler)
 }

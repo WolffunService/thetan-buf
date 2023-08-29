@@ -46,16 +46,16 @@ namespace Thetan.Gateway.V1 {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.TownAllocationReq> __Marshaller_thetan_gateway_v1_TownAllocationReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.TownAllocationReq.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.LobbyTown> __Marshaller_thetan_rivals_v1_LobbyTown = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.LobbyTown.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Gateway.V1.TownAllocationResp> __Marshaller_thetan_gateway_v1_TownAllocationResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.TownAllocationResp.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Gateway.V1.TownAllocationReq, global::Thetan.Gateway.V1.TownAllocationResp> __Method_AllocateTown = new grpc::Method<global::Thetan.Gateway.V1.TownAllocationReq, global::Thetan.Gateway.V1.TownAllocationResp>(
+    static readonly grpc::Method<global::Thetan.Rivals.V1.LobbyTown, global::Thetan.Gateway.V1.TownAllocationResp> __Method_AllocateTown = new grpc::Method<global::Thetan.Rivals.V1.LobbyTown, global::Thetan.Gateway.V1.TownAllocationResp>(
         grpc::MethodType.Unary,
         __ServiceName,
         "AllocateTown",
-        __Marshaller_thetan_gateway_v1_TownAllocationReq,
+        __Marshaller_thetan_rivals_v1_LobbyTown,
         __Marshaller_thetan_gateway_v1_TownAllocationResp);
 
     /// <summary>Service descriptor</summary>
@@ -69,7 +69,7 @@ namespace Thetan.Gateway.V1 {
     public abstract partial class ThetanGatewayRivalsLobbyBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Gateway.V1.TownAllocationResp> AllocateTown(global::Thetan.Gateway.V1.TownAllocationReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Gateway.V1.TownAllocationResp> AllocateTown(global::Thetan.Rivals.V1.LobbyTown request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -104,22 +104,22 @@ namespace Thetan.Gateway.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Gateway.V1.TownAllocationResp AllocateTown(global::Thetan.Gateway.V1.TownAllocationReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.Gateway.V1.TownAllocationResp AllocateTown(global::Thetan.Rivals.V1.LobbyTown request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AllocateTown(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Gateway.V1.TownAllocationResp AllocateTown(global::Thetan.Gateway.V1.TownAllocationReq request, grpc::CallOptions options)
+      public virtual global::Thetan.Gateway.V1.TownAllocationResp AllocateTown(global::Thetan.Rivals.V1.LobbyTown request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AllocateTown, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.TownAllocationResp> AllocateTownAsync(global::Thetan.Gateway.V1.TownAllocationReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.TownAllocationResp> AllocateTownAsync(global::Thetan.Rivals.V1.LobbyTown request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AllocateTownAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.TownAllocationResp> AllocateTownAsync(global::Thetan.Gateway.V1.TownAllocationReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.TownAllocationResp> AllocateTownAsync(global::Thetan.Rivals.V1.LobbyTown request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AllocateTown, null, options, request);
       }
@@ -147,7 +147,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanGatewayRivalsLobbyBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_AllocateTown, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Gateway.V1.TownAllocationReq, global::Thetan.Gateway.V1.TownAllocationResp>(serviceImpl.AllocateTown));
+      serviceBinder.AddMethod(__Method_AllocateTown, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.LobbyTown, global::Thetan.Gateway.V1.TownAllocationResp>(serviceImpl.AllocateTown));
     }
 
   }
