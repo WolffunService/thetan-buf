@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package thetan.gateway.v1;
+
+
+option go_package = "thetan-buf/gen/go/thetan/gateway/v1;thetan_gateway_v1";
+option csharp_namespace = "Thetan.Gateway.V1";
+
+service ThetanGatewayRivalsLobby {
+  rpc AllocateTown(TownAllocationReq) returns (TownAllocationResp) {}
+}
+
+message TownAllocationReq {
+  string userID = 1;
+  string town = 2;
+}
+
+message TownAllocationResp {
+  //fishnet ip+port
+  string serverIP = 1;
+  uint32 serverPort = 2;
+  //town info
+  string town = 3;
+  string subTown = 4;
+}
