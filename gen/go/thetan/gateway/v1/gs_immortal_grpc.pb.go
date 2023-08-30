@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             (unknown)
-// source: thetan/gateway/v1/gs_sync.proto
+// source: thetan/gateway/v1/gs_immortal.proto
 
 package thetan_gateway_v1
 
@@ -144,7 +144,7 @@ var ThetanGatewayTracking_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "thetan/gateway/v1/gs_sync.proto",
+	Metadata: "thetan/gateway/v1/gs_immortal.proto",
 }
 
 const (
@@ -234,5 +234,5 @@ var ThetanGatewayImmortal_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "thetan/gateway/v1/gs_sync.proto",
+	Metadata: "thetan/gateway/v1/gs_immortal.proto",
 }
