@@ -26,21 +26,20 @@ namespace Thetan.Gateway.V1 {
           string.Concat(
             "CiZ0aGV0YW4vZ2F0ZXdheS92MS9nc19yaXZhbHNsb2JieS5wcm90bxIRdGhl",
             "dGFuLmdhdGV3YXkudjEaJXRoZXRhbi9yaXZhbHMvdjEvc2VydmljZV9yaXZh",
-            "bHMucHJvdG8ifgoSVG93bkFsbG9jYXRpb25SZXNwEhoKCHNlcnZlcklQGAEg",
+            "bHMucHJvdG8iZAoSVG93bkFsbG9jYXRpb25SZXNwEhoKCHNlcnZlcklQGAEg",
             "ASgJUghzZXJ2ZXJJUBIeCgpzZXJ2ZXJQb3J0GAIgASgNUgpzZXJ2ZXJQb3J0",
-            "EhIKBHRvd24YAyABKAlSBHRvd24SGAoHc3ViVG93bhgEIAEoCVIHc3ViVG93",
-            "bjJwChhUaGV0YW5HYXRld2F5Uml2YWxzTG9iYnkSVAoMQWxsb2NhdGVUb3du",
-            "EhsudGhldGFuLnJpdmFscy52MS5Mb2JieVRvd24aJS50aGV0YW4uZ2F0ZXdh",
-            "eS52MS5Ub3duQWxsb2NhdGlvblJlc3AiAELIAQoVY29tLnRoZXRhbi5nYXRl",
-            "d2F5LnYxQhJHc1JpdmFsc2xvYmJ5UHJvdG9QAVo1dGhldGFuLWJ1Zi9nZW4v",
-            "Z28vdGhldGFuL2dhdGV3YXkvdjE7dGhldGFuX2dhdGV3YXlfdjGiAgNUR1iq",
-            "AhFUaGV0YW4uR2F0ZXdheS5WMcoCEVRoZXRhblxHYXRld2F5XFYx4gIdVGhl",
-            "dGFuXEdhdGV3YXlcVjFcR1BCTWV0YWRhdGHqAhNUaGV0YW46OkdhdGV3YXk6",
-            "OlYxYgZwcm90bzM="));
+            "EhIKBHRvd24YAyABKAlSBHRvd24ycAoYVGhldGFuR2F0ZXdheVJpdmFsc0xv",
+            "YmJ5ElQKDEFsbG9jYXRlVG93bhIbLnRoZXRhbi5yaXZhbHMudjEuTG9iYnlU",
+            "b3duGiUudGhldGFuLmdhdGV3YXkudjEuVG93bkFsbG9jYXRpb25SZXNwIgBC",
+            "yAEKFWNvbS50aGV0YW4uZ2F0ZXdheS52MUISR3NSaXZhbHNsb2JieVByb3Rv",
+            "UAFaNXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9nYXRld2F5L3YxO3RoZXRh",
+            "bl9nYXRld2F5X3YxogIDVEdYqgIRVGhldGFuLkdhdGV3YXkuVjHKAhFUaGV0",
+            "YW5cR2F0ZXdheVxWMeICHVRoZXRhblxHYXRld2F5XFYxXEdQQk1ldGFkYXRh",
+            "6gITVGhldGFuOjpHYXRld2F5OjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.TownAllocationResp), global::Thetan.Gateway.V1.TownAllocationResp.Parser, new[]{ "ServerIP", "ServerPort", "Town", "SubTown" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.TownAllocationResp), global::Thetan.Gateway.V1.TownAllocationResp.Parser, new[]{ "ServerIP", "ServerPort", "Town" }, null, null, null, null)
           }));
     }
     #endregion
@@ -84,7 +83,6 @@ namespace Thetan.Gateway.V1 {
       serverIP_ = other.serverIP_;
       serverPort_ = other.serverPort_;
       town_ = other.town_;
-      subTown_ = other.subTown_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -136,18 +134,6 @@ namespace Thetan.Gateway.V1 {
       }
     }
 
-    /// <summary>Field number for the "subTown" field.</summary>
-    public const int SubTownFieldNumber = 4;
-    private string subTown_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string SubTown {
-      get { return subTown_; }
-      set {
-        subTown_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -166,7 +152,6 @@ namespace Thetan.Gateway.V1 {
       if (ServerIP != other.ServerIP) return false;
       if (ServerPort != other.ServerPort) return false;
       if (Town != other.Town) return false;
-      if (SubTown != other.SubTown) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -177,7 +162,6 @@ namespace Thetan.Gateway.V1 {
       if (ServerIP.Length != 0) hash ^= ServerIP.GetHashCode();
       if (ServerPort != 0) hash ^= ServerPort.GetHashCode();
       if (Town.Length != 0) hash ^= Town.GetHashCode();
-      if (SubTown.Length != 0) hash ^= SubTown.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -208,10 +192,6 @@ namespace Thetan.Gateway.V1 {
         output.WriteRawTag(26);
         output.WriteString(Town);
       }
-      if (SubTown.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(SubTown);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -234,10 +214,6 @@ namespace Thetan.Gateway.V1 {
         output.WriteRawTag(26);
         output.WriteString(Town);
       }
-      if (SubTown.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(SubTown);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -256,9 +232,6 @@ namespace Thetan.Gateway.V1 {
       }
       if (Town.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Town);
-      }
-      if (SubTown.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(SubTown);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -280,9 +253,6 @@ namespace Thetan.Gateway.V1 {
       }
       if (other.Town.Length != 0) {
         Town = other.Town;
-      }
-      if (other.SubTown.Length != 0) {
-        SubTown = other.SubTown;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -311,10 +281,6 @@ namespace Thetan.Gateway.V1 {
             Town = input.ReadString();
             break;
           }
-          case 34: {
-            SubTown = input.ReadString();
-            break;
-          }
         }
       }
     #endif
@@ -340,10 +306,6 @@ namespace Thetan.Gateway.V1 {
           }
           case 26: {
             Town = input.ReadString();
-            break;
-          }
-          case 34: {
-            SubTown = input.ReadString();
             break;
           }
         }
