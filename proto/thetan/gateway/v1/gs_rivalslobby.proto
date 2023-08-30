@@ -18,5 +18,4 @@ message TownAllocationResp {
   uint32 serverPort = 2;
   //town info
   string town = 3;
-  string subTown = 4;
 }
