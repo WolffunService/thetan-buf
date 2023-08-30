@@ -203,7 +203,7 @@ message SimpleItem {
 
 message GetTownUserRequest {
   string userID = 1;
-  string userLanguage = 2;
+  int32 userLanguage = 2;
   int32 userAge = 3;
 }
 
@@ -216,7 +216,7 @@ message LobbyTown {
   string townRegion = 5;
   int32 townTime = 6;
 
-  string townLanguage = 7;
+  int32 townLanguage = 7;
   double townScore = 8;
 }
 
