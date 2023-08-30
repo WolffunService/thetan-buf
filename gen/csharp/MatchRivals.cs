@@ -27,26 +27,26 @@ namespace Thetan.Match.V1 {
             "CiJ0aGV0YW4vbWF0Y2gvdjEvbWF0Y2hfcml2YWxzLnByb3RvEg90aGV0YW4u",
             "bWF0Y2gudjEaGWdvb2dsZS9wcm90b2J1Zi9hbnkucHJvdG8iVAoKTWF0Y2hS",
             "b3VuZBImCg5wbGF5ZXJJblJvdW5kcxgBIAMoCVIOcGxheWVySW5Sb3VuZHMS",
-            "HgoKZ2FtZUlucHV0cxgCIAEoDFIKZ2FtZUlucHV0cyLcAQoLTWF0Y2hQbGF5",
+            "HgoKZ2FtZUlucHV0cxgCIAEoDFIKZ2FtZUlucHV0cyL8AQoLTWF0Y2hQbGF5",
             "ZXISGgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEh4KCmJhdHRsZVJhbmsY",
-            "AiABKAVSCmJhdHRsZVJhbmsSQAoGZXh0cmFzGAMgAygLMigudGhldGFuLm1h",
-            "dGNoLnYxLk1hdGNoUGxheWVyLkV4dHJhc0VudHJ5UgZleHRyYXMaTwoLRXh0",
-            "cmFzRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSKgoFdmFsdWUYAiABKAsyFC5n",
-            "b29nbGUucHJvdG9idWYuQW55UgV2YWx1ZToCOAEisQEKElNwZWN0YXRvckJh",
-            "dHRsZUVuZBIYCgdtYXRjaElEGAEgASgJUgdtYXRjaElEEjMKBnJvdW5kcxgC",
-            "IAMoCzIbLnRoZXRhbi5tYXRjaC52MS5NYXRjaFJvdW5kUgZyb3VuZHMSNgoH",
-            "cGxheWVycxgDIAMoCzIcLnRoZXRhbi5tYXRjaC52MS5NYXRjaFBsYXllclIH",
-            "cGxheWVycxIUCgVlbmRBdBgEIAEoA1IFZW5kQXRCugEKE2NvbS50aGV0YW4u",
-            "bWF0Y2gudjFCEE1hdGNoUml2YWxzUHJvdG9QAVoxdGhldGFuLWJ1Zi9nZW4v",
-            "Z28vdGhldGFuL21hdGNoL3YxO3RoZXRhbl9tYXRjaF92MaICA1RNWKoCD1Ro",
-            "ZXRhbi5NYXRjaC5WMcoCEFRoZXRhblxNYXRjaF9cVjHiAhxUaGV0YW5cTWF0",
-            "Y2hfXFYxXEdQQk1ldGFkYXRh6gIRVGhldGFuOjpNYXRjaDo6VjFiBnByb3Rv",
-            "Mw=="));
+            "AiABKAVSCmJhdHRsZVJhbmsSHgoKcm91bmRUaW1lcxgDIAMoAlIKcm91bmRU",
+            "aW1lcxJACgZleHRyYXMYBCADKAsyKC50aGV0YW4ubWF0Y2gudjEuTWF0Y2hQ",
+            "bGF5ZXIuRXh0cmFzRW50cnlSBmV4dHJhcxpPCgtFeHRyYXNFbnRyeRIQCgNr",
+            "ZXkYASABKAlSA2tleRIqCgV2YWx1ZRgCIAEoCzIULmdvb2dsZS5wcm90b2J1",
+            "Zi5BbnlSBXZhbHVlOgI4ASKxAQoSU3BlY3RhdG9yQmF0dGxlRW5kEhgKB21h",
+            "dGNoSUQYASABKAlSB21hdGNoSUQSMwoGcm91bmRzGAIgAygLMhsudGhldGFu",
+            "Lm1hdGNoLnYxLk1hdGNoUm91bmRSBnJvdW5kcxI2CgdwbGF5ZXJzGAMgAygL",
+            "MhwudGhldGFuLm1hdGNoLnYxLk1hdGNoUGxheWVyUgdwbGF5ZXJzEhQKBWVu",
+            "ZEF0GAQgASgDUgVlbmRBdEK6AQoTY29tLnRoZXRhbi5tYXRjaC52MUIQTWF0",
+            "Y2hSaXZhbHNQcm90b1ABWjF0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vbWF0",
+            "Y2gvdjE7dGhldGFuX21hdGNoX3YxogIDVE1YqgIPVGhldGFuLk1hdGNoLlYx",
+            "ygIQVGhldGFuXE1hdGNoX1xWMeICHFRoZXRhblxNYXRjaF9cVjFcR1BCTWV0",
+            "YWRhdGHqAhFUaGV0YW46Ok1hdGNoOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.MatchRound), global::Thetan.Match.V1.MatchRound.Parser, new[]{ "PlayerInRounds", "GameInputs" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.MatchPlayer), global::Thetan.Match.V1.MatchPlayer.Parser, new[]{ "PlayerID", "BattleRank", "Extras" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.MatchPlayer), global::Thetan.Match.V1.MatchPlayer.Parser, new[]{ "PlayerID", "BattleRank", "RoundTimes", "Extras" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.SpectatorBattleEnd), global::Thetan.Match.V1.SpectatorBattleEnd.Parser, new[]{ "MatchID", "Rounds", "Players", "EndAt" }, null, null, null, null)
           }));
     }
@@ -311,6 +311,7 @@ namespace Thetan.Match.V1 {
     public MatchPlayer(MatchPlayer other) : this() {
       playerID_ = other.playerID_;
       battleRank_ = other.battleRank_;
+      roundTimes_ = other.roundTimes_.Clone();
       extras_ = other.extras_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -345,10 +346,21 @@ namespace Thetan.Match.V1 {
       }
     }
 
+    /// <summary>Field number for the "roundTimes" field.</summary>
+    public const int RoundTimesFieldNumber = 3;
+    private static readonly pb::FieldCodec<float> _repeated_roundTimes_codec
+        = pb::FieldCodec.ForFloat(26);
+    private readonly pbc::RepeatedField<float> roundTimes_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> RoundTimes {
+      get { return roundTimes_; }
+    }
+
     /// <summary>Field number for the "extras" field.</summary>
-    public const int ExtrasFieldNumber = 3;
+    public const int ExtrasFieldNumber = 4;
     private static readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec _map_extras_codec
-        = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Any.Parser), 26);
+        = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Any.Parser), 34);
     private readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any> extras_ = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -373,6 +385,7 @@ namespace Thetan.Match.V1 {
       }
       if (PlayerID != other.PlayerID) return false;
       if (BattleRank != other.BattleRank) return false;
+      if(!roundTimes_.Equals(other.roundTimes_)) return false;
       if (!Extras.Equals(other.Extras)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -383,6 +396,7 @@ namespace Thetan.Match.V1 {
       int hash = 1;
       if (PlayerID.Length != 0) hash ^= PlayerID.GetHashCode();
       if (BattleRank != 0) hash ^= BattleRank.GetHashCode();
+      hash ^= roundTimes_.GetHashCode();
       hash ^= Extras.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -410,6 +424,7 @@ namespace Thetan.Match.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(BattleRank);
       }
+      roundTimes_.WriteTo(output, _repeated_roundTimes_codec);
       extras_.WriteTo(output, _map_extras_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -429,6 +444,7 @@ namespace Thetan.Match.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(BattleRank);
       }
+      roundTimes_.WriteTo(ref output, _repeated_roundTimes_codec);
       extras_.WriteTo(ref output, _map_extras_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -446,6 +462,7 @@ namespace Thetan.Match.V1 {
       if (BattleRank != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BattleRank);
       }
+      size += roundTimes_.CalculateSize(_repeated_roundTimes_codec);
       size += extras_.CalculateSize(_map_extras_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -465,6 +482,7 @@ namespace Thetan.Match.V1 {
       if (other.BattleRank != 0) {
         BattleRank = other.BattleRank;
       }
+      roundTimes_.Add(other.roundTimes_);
       extras_.Add(other.extras_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -489,7 +507,12 @@ namespace Thetan.Match.V1 {
             BattleRank = input.ReadInt32();
             break;
           }
-          case 26: {
+          case 26:
+          case 29: {
+            roundTimes_.AddEntriesFrom(input, _repeated_roundTimes_codec);
+            break;
+          }
+          case 34: {
             extras_.AddEntriesFrom(input, _map_extras_codec);
             break;
           }
@@ -516,7 +539,12 @@ namespace Thetan.Match.V1 {
             BattleRank = input.ReadInt32();
             break;
           }
-          case 26: {
+          case 26:
+          case 29: {
+            roundTimes_.AddEntriesFrom(ref input, _repeated_roundTimes_codec);
+            break;
+          }
+          case 34: {
             extras_.AddEntriesFrom(ref input, _map_extras_codec);
             break;
           }
