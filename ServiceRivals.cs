@@ -110,13 +110,13 @@ namespace Thetan.Rivals.V1 {
             "ASABKAlSCGl0ZW1UeXBlEhYKBnR5cGVJRBgCIAEoBVIGdHlwZUlEEhYKBmFt",
             "b3VudBgDIAEoAVIGYW1vdW50EiQKDWludmVudG9yeUtpbmQYBCABKAVSDWlu",
             "dmVudG9yeUtpbmQiagoSR2V0VG93blVzZXJSZXF1ZXN0EhYKBnVzZXJJRBgB",
-            "IAEoCVIGdXNlcklEEiIKDHVzZXJMYW5ndWFnZRgCIAEoCVIMdXNlckxhbmd1",
+            "IAEoCVIGdXNlcklEEiIKDHVzZXJMYW5ndWFnZRgCIAEoBVIMdXNlckxhbmd1",
             "YWdlEhgKB3VzZXJBZ2UYAyABKAVSB3VzZXJBZ2Ui/wEKCUxvYmJ5VG93bhIW",
             "CgZ0b3duSUQYASABKAlSBnRvd25JRBIaCgh0b3duTmFtZRgCIAEoCVIIdG93",
             "bk5hbWUSHgoKYWN0aXZlVGltZRgDIAEoA1IKYWN0aXZlVGltZRIgCgt0b3du",
             "Q291bnRyeRgEIAEoCVILdG93bkNvdW50cnkSHgoKdG93blJlZ2lvbhgFIAEo",
             "CVIKdG93blJlZ2lvbhIaCgh0b3duVGltZRgGIAEoBVIIdG93blRpbWUSIgoM",
-            "dG93bkxhbmd1YWdlGAcgASgJUgx0b3duTGFuZ3VhZ2USHAoJdG93blNjb3Jl",
+            "dG93bkxhbmd1YWdlGAcgASgFUgx0b3duTGFuZ3VhZ2USHAoJdG93blNjb3Jl",
             "GAggASgBUgl0b3duU2NvcmUiRQoTUGlja1Rvd25Vc2VyUmVxdWVzdBIWCgZ1",
             "c2VySUQYASABKAlSBnVzZXJJRBIWCgZ0b3duSUQYAiABKAlSBnRvd25JRCJj",
             "ChNUcmFja1Nlc3Npb25SZXF1ZXN0EhYKBnVzZXJJRBgBIAEoCVIGdXNlcklE",
@@ -6829,13 +6829,13 @@ namespace Thetan.Rivals.V1 {
 
     /// <summary>Field number for the "userLanguage" field.</summary>
     public const int UserLanguageFieldNumber = 2;
-    private string userLanguage_ = "";
+    private int userLanguage_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserLanguage {
+    public int UserLanguage {
       get { return userLanguage_; }
       set {
-        userLanguage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        userLanguage_ = value;
       }
     }
 
@@ -6877,7 +6877,7 @@ namespace Thetan.Rivals.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (UserID.Length != 0) hash ^= UserID.GetHashCode();
-      if (UserLanguage.Length != 0) hash ^= UserLanguage.GetHashCode();
+      if (UserLanguage != 0) hash ^= UserLanguage.GetHashCode();
       if (UserAge != 0) hash ^= UserAge.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -6901,9 +6901,9 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(10);
         output.WriteString(UserID);
       }
-      if (UserLanguage.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(UserLanguage);
+      if (UserLanguage != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(UserLanguage);
       }
       if (UserAge != 0) {
         output.WriteRawTag(24);
@@ -6923,9 +6923,9 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(10);
         output.WriteString(UserID);
       }
-      if (UserLanguage.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(UserLanguage);
+      if (UserLanguage != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(UserLanguage);
       }
       if (UserAge != 0) {
         output.WriteRawTag(24);
@@ -6944,8 +6944,8 @@ namespace Thetan.Rivals.V1 {
       if (UserID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(UserID);
       }
-      if (UserLanguage.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserLanguage);
+      if (UserLanguage != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserLanguage);
       }
       if (UserAge != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAge);
@@ -6965,7 +6965,7 @@ namespace Thetan.Rivals.V1 {
       if (other.UserID.Length != 0) {
         UserID = other.UserID;
       }
-      if (other.UserLanguage.Length != 0) {
+      if (other.UserLanguage != 0) {
         UserLanguage = other.UserLanguage;
       }
       if (other.UserAge != 0) {
@@ -6990,8 +6990,8 @@ namespace Thetan.Rivals.V1 {
             UserID = input.ReadString();
             break;
           }
-          case 18: {
-            UserLanguage = input.ReadString();
+          case 16: {
+            UserLanguage = input.ReadInt32();
             break;
           }
           case 24: {
@@ -7017,8 +7017,8 @@ namespace Thetan.Rivals.V1 {
             UserID = input.ReadString();
             break;
           }
-          case 18: {
-            UserLanguage = input.ReadString();
+          case 16: {
+            UserLanguage = input.ReadInt32();
             break;
           }
           case 24: {
@@ -7157,13 +7157,13 @@ namespace Thetan.Rivals.V1 {
 
     /// <summary>Field number for the "townLanguage" field.</summary>
     public const int TownLanguageFieldNumber = 7;
-    private string townLanguage_ = "";
+    private int townLanguage_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TownLanguage {
+    public int TownLanguage {
       get { return townLanguage_; }
       set {
-        townLanguage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        townLanguage_ = value;
       }
     }
 
@@ -7215,7 +7215,7 @@ namespace Thetan.Rivals.V1 {
       if (TownCountry.Length != 0) hash ^= TownCountry.GetHashCode();
       if (TownRegion.Length != 0) hash ^= TownRegion.GetHashCode();
       if (TownTime != 0) hash ^= TownTime.GetHashCode();
-      if (TownLanguage.Length != 0) hash ^= TownLanguage.GetHashCode();
+      if (TownLanguage != 0) hash ^= TownLanguage.GetHashCode();
       if (TownScore != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TownScore);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -7259,9 +7259,9 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(48);
         output.WriteInt32(TownTime);
       }
-      if (TownLanguage.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(TownLanguage);
+      if (TownLanguage != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(TownLanguage);
       }
       if (TownScore != 0D) {
         output.WriteRawTag(65);
@@ -7301,9 +7301,9 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(48);
         output.WriteInt32(TownTime);
       }
-      if (TownLanguage.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(TownLanguage);
+      if (TownLanguage != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(TownLanguage);
       }
       if (TownScore != 0D) {
         output.WriteRawTag(65);
@@ -7337,8 +7337,8 @@ namespace Thetan.Rivals.V1 {
       if (TownTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TownTime);
       }
-      if (TownLanguage.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TownLanguage);
+      if (TownLanguage != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TownLanguage);
       }
       if (TownScore != 0D) {
         size += 1 + 8;
@@ -7373,7 +7373,7 @@ namespace Thetan.Rivals.V1 {
       if (other.TownTime != 0) {
         TownTime = other.TownTime;
       }
-      if (other.TownLanguage.Length != 0) {
+      if (other.TownLanguage != 0) {
         TownLanguage = other.TownLanguage;
       }
       if (other.TownScore != 0D) {
@@ -7418,8 +7418,8 @@ namespace Thetan.Rivals.V1 {
             TownTime = input.ReadInt32();
             break;
           }
-          case 58: {
-            TownLanguage = input.ReadString();
+          case 56: {
+            TownLanguage = input.ReadInt32();
             break;
           }
           case 65: {
@@ -7465,8 +7465,8 @@ namespace Thetan.Rivals.V1 {
             TownTime = input.ReadInt32();
             break;
           }
-          case 58: {
-            TownLanguage = input.ReadString();
+          case 56: {
+            TownLanguage = input.ReadInt32();
             break;
           }
           case 65: {
