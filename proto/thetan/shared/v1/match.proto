@@ -199,6 +199,7 @@ message CosmeticUsingProto
   int32 glow = 5;
   int32 spray = 6;
   int32 voice = 7;
+  int32 vehicle = 8;
 }
 
 //khi delete ticket thanh cong
