@@ -49,6 +49,10 @@ namespace Thetan.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.RivalCancelTicketRequest> __Marshaller_thetan_rivals_v1_RivalCancelTicketRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.RivalCancelTicketRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.RivalCancelTicketResponse> __Marshaller_thetan_rivals_v1_RivalCancelTicketResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.RivalCancelTicketResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetMatchInfoRequest> __Marshaller_thetan_rivals_v1_GetMatchInfoRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetMatchInfoRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Shared.V1.MatchFoundResponseProto> __Marshaller_thetan_shared_v1_MatchFoundResponseProto = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Shared.V1.MatchFoundResponseProto.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.RivalCancelTicketRequest, global::Thetan.Rivals.V1.RivalCancelTicketResponse> __Method_CancelTicket = new grpc::Method<global::Thetan.Rivals.V1.RivalCancelTicketRequest, global::Thetan.Rivals.V1.RivalCancelTicketResponse>(
@@ -57,6 +61,14 @@ namespace Thetan.Rivals.V1 {
         "CancelTicket",
         __Marshaller_thetan_rivals_v1_RivalCancelTicketRequest,
         __Marshaller_thetan_rivals_v1_RivalCancelTicketResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.GetMatchInfoRequest, global::Thetan.Shared.V1.MatchFoundResponseProto> __Method_CreateMatchOnboard = new grpc::Method<global::Thetan.Rivals.V1.GetMatchInfoRequest, global::Thetan.Shared.V1.MatchFoundResponseProto>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateMatchOnboard",
+        __Marshaller_thetan_rivals_v1_GetMatchInfoRequest,
+        __Marshaller_thetan_shared_v1_MatchFoundResponseProto);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -70,6 +82,12 @@ namespace Thetan.Rivals.V1 {
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.RivalCancelTicketResponse> CancelTicket(global::Thetan.Rivals.V1.RivalCancelTicketRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Shared.V1.MatchFoundResponseProto> CreateMatchOnboard(global::Thetan.Rivals.V1.GetMatchInfoRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -123,6 +141,26 @@ namespace Thetan.Rivals.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_CancelTicket, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Shared.V1.MatchFoundResponseProto CreateMatchOnboard(global::Thetan.Rivals.V1.GetMatchInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateMatchOnboard(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Shared.V1.MatchFoundResponseProto CreateMatchOnboard(global::Thetan.Rivals.V1.GetMatchInfoRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreateMatchOnboard, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Shared.V1.MatchFoundResponseProto> CreateMatchOnboardAsync(global::Thetan.Rivals.V1.GetMatchInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateMatchOnboardAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Shared.V1.MatchFoundResponseProto> CreateMatchOnboardAsync(global::Thetan.Rivals.V1.GetMatchInfoRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreateMatchOnboard, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override RivalMatchDirectorServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -137,7 +175,8 @@ namespace Thetan.Rivals.V1 {
     public static grpc::ServerServiceDefinition BindService(RivalMatchDirectorServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_CancelTicket, serviceImpl.CancelTicket).Build();
+          .AddMethod(__Method_CancelTicket, serviceImpl.CancelTicket)
+          .AddMethod(__Method_CreateMatchOnboard, serviceImpl.CreateMatchOnboard).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -148,6 +187,7 @@ namespace Thetan.Rivals.V1 {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, RivalMatchDirectorServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_CancelTicket, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.RivalCancelTicketRequest, global::Thetan.Rivals.V1.RivalCancelTicketResponse>(serviceImpl.CancelTicket));
+      serviceBinder.AddMethod(__Method_CreateMatchOnboard, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetMatchInfoRequest, global::Thetan.Shared.V1.MatchFoundResponseProto>(serviceImpl.CreateMatchOnboard));
     }
 
   }
