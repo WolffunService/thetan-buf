@@ -25,19 +25,23 @@ namespace Thetan.Rivals.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiN0aGV0YW4vcml2YWxzL3YxL3JpdmFsc19tYXRjaC5wcm90bxIQdGhldGFu",
-            "LnJpdmFscy52MSJsChhSaXZhbENhbmNlbFRpY2tldFJlcXVlc3QSGgoIcGxh",
-            "eWVySUQYASABKAlSCHBsYXllcklEEhgKB3BhcnR5SUQYAiABKAlSB3BhcnR5",
-            "SUQSGgoIdGlja2V0SUQYAyABKAlSCHRpY2tldElEIhsKGVJpdmFsQ2FuY2Vs",
-            "VGlja2V0UmVzcG9uc2UyhgEKGVJpdmFsTWF0Y2hEaXJlY3RvclNlcnZpY2US",
-            "aQoMQ2FuY2VsVGlja2V0EioudGhldGFuLnJpdmFscy52MS5SaXZhbENhbmNl",
-            "bFRpY2tldFJlcXVlc3QaKy50aGV0YW4ucml2YWxzLnYxLlJpdmFsQ2FuY2Vs",
-            "VGlja2V0UmVzcG9uc2UiAEK/AQoUY29tLnRoZXRhbi5yaXZhbHMudjFCEFJp",
-            "dmFsc01hdGNoUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3Jp",
-            "dmFscy92MTt0aGV0YW5fcml2YWxzX3YxogIDVFJYqgIQVGhldGFuLlJpdmFs",
-            "cy5WMcoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5cUml2YWxzXFYxXEdQ",
-            "Qk1ldGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZwcm90bzM="));
+            "LnJpdmFscy52MRoldGhldGFuL3JpdmFscy92MS9zZXJ2aWNlX3JpdmFscy5w",
+            "cm90bxocdGhldGFuL3NoYXJlZC92MS9tYXRjaC5wcm90byJsChhSaXZhbENh",
+            "bmNlbFRpY2tldFJlcXVlc3QSGgoIcGxheWVySUQYASABKAlSCHBsYXllcklE",
+            "EhgKB3BhcnR5SUQYAiABKAlSB3BhcnR5SUQSGgoIdGlja2V0SUQYAyABKAlS",
+            "CHRpY2tldElEIhsKGVJpdmFsQ2FuY2VsVGlja2V0UmVzcG9uc2Uy8AEKGVJp",
+            "dmFsTWF0Y2hEaXJlY3RvclNlcnZpY2USaQoMQ2FuY2VsVGlja2V0EioudGhl",
+            "dGFuLnJpdmFscy52MS5SaXZhbENhbmNlbFRpY2tldFJlcXVlc3QaKy50aGV0",
+            "YW4ucml2YWxzLnYxLlJpdmFsQ2FuY2VsVGlja2V0UmVzcG9uc2UiABJoChJD",
+            "cmVhdGVNYXRjaE9uYm9hcmQSJS50aGV0YW4ucml2YWxzLnYxLkdldE1hdGNo",
+            "SW5mb1JlcXVlc3QaKS50aGV0YW4uc2hhcmVkLnYxLk1hdGNoRm91bmRSZXNw",
+            "b25zZVByb3RvIgBCvwEKFGNvbS50aGV0YW4ucml2YWxzLnYxQhBSaXZhbHNN",
+            "YXRjaFByb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9yaXZhbHMv",
+            "djE7dGhldGFuX3JpdmFsc192MaICA1RSWKoCEFRoZXRhbi5SaXZhbHMuVjHK",
+            "AhBUaGV0YW5cUml2YWxzXFYx4gIcVGhldGFuXFJpdmFsc1xWMVxHUEJNZXRh",
+            "ZGF0YeoCElRoZXRhbjo6Uml2YWxzOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, global::Thetan.Shared.V1.MatchReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketRequest), global::Thetan.Rivals.V1.RivalCancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketResponse), global::Thetan.Rivals.V1.RivalCancelTicketResponse.Parser, null, null, null, null, null)

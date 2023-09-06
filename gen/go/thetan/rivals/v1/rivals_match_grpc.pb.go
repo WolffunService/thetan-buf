@@ -11,6 +11,7 @@ import (
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
+	v1 "thetan-buf/gen/go/thetan/shared/v1"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -19,7 +20,8 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RivalMatchDirectorService_CancelTicket_FullMethodName = "/thetan.rivals.v1.RivalMatchDirectorService/CancelTicket"
+	RivalMatchDirectorService_CancelTicket_FullMethodName       = "/thetan.rivals.v1.RivalMatchDirectorService/CancelTicket"
+	RivalMatchDirectorService_CreateMatchOnboard_FullMethodName = "/thetan.rivals.v1.RivalMatchDirectorService/CreateMatchOnboard"
 )
 
 // RivalMatchDirectorServiceClient is the client API for RivalMatchDirectorService service.
@@ -27,6 +29,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type RivalMatchDirectorServiceClient interface {
 	CancelTicket(ctx context.Context, in *RivalCancelTicketRequest, opts ...grpc.CallOption) (*RivalCancelTicketResponse, error)
+	CreateMatchOnboard(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*v1.MatchFoundResponseProto, error)
 }
 
 type rivalMatchDirectorServiceClient struct {
@@ -46,11 +49,21 @@ func (c *rivalMatchDirectorServiceClient) CancelTicket(ctx context.Context, in *
 	return out, nil
 }
 
+func (c *rivalMatchDirectorServiceClient) CreateMatchOnboard(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*v1.MatchFoundResponseProto, error) {
+	out := new(v1.MatchFoundResponseProto)
+	err := c.cc.Invoke(ctx, RivalMatchDirectorService_CreateMatchOnboard_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // RivalMatchDirectorServiceServer is the server API for RivalMatchDirectorService service.
 // All implementations must embed UnimplementedRivalMatchDirectorServiceServer
 // for forward compatibility
 type RivalMatchDirectorServiceServer interface {
 	CancelTicket(context.Context, *RivalCancelTicketRequest) (*RivalCancelTicketResponse, error)
+	CreateMatchOnboard(context.Context, *GetMatchInfoRequest) (*v1.MatchFoundResponseProto, error)
 	mustEmbedUnimplementedRivalMatchDirectorServiceServer()
 }
 
@@ -60,6 +73,9 @@ type UnimplementedRivalMatchDirectorServiceServer struct {
 
 func (UnimplementedRivalMatchDirectorServiceServer) CancelTicket(context.Context, *RivalCancelTicketRequest) (*RivalCancelTicketResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CancelTicket not implemented")
+}
+func (UnimplementedRivalMatchDirectorServiceServer) CreateMatchOnboard(context.Context, *GetMatchInfoRequest) (*v1.MatchFoundResponseProto, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateMatchOnboard not implemented")
 }
 func (UnimplementedRivalMatchDirectorServiceServer) mustEmbedUnimplementedRivalMatchDirectorServiceServer() {
 }
@@ -93,6 +109,24 @@ func _RivalMatchDirectorService_CancelTicket_Handler(srv interface{}, ctx contex
 	return interceptor(ctx, in, info, handler)
 }
 
+func _RivalMatchDirectorService_CreateMatchOnboard_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetMatchInfoRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(RivalMatchDirectorServiceServer).CreateMatchOnboard(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: RivalMatchDirectorService_CreateMatchOnboard_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(RivalMatchDirectorServiceServer).CreateMatchOnboard(ctx, req.(*GetMatchInfoRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // RivalMatchDirectorService_ServiceDesc is the grpc.ServiceDesc for RivalMatchDirectorService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -103,6 +137,10 @@ var RivalMatchDirectorService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "CancelTicket",
 			Handler:    _RivalMatchDirectorService_CancelTicket_Handler,
+		},
+		{
+			MethodName: "CreateMatchOnboard",
+			Handler:    _RivalMatchDirectorService_CreateMatchOnboard_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
