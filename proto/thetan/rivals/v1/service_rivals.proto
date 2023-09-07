@@ -211,9 +211,10 @@ message LobbyTown {
   string townID = 1;
 
   string townName = 2;
-  int64 activeTime = 3;
-  string townCountry = 4;
-  string townRegion = 5;
+  string description = 3;
+  int64 activeTime = 4;
+
+  string townCountry = 5;
   int32 townTime = 6;
 
   int32 townLanguage = 7;
