@@ -125,75 +125,78 @@ namespace Thetan.Rivals.V1 {
             "EkdldEFjdGl2aXR5UmVxdWVzdBIWCgZ0b3duSUQYASABKAlSBnRvd25JRCKE",
             "AQoTR2V0QWN0aXZpdHlSZXNwb25zZRIeCgphY3Rpdml0eUlEGAEgASgJUgph",
             "Y3Rpdml0eUlEEhYKBnRvd25JRBgCIAEoCVIGdG93bklEEjUKB2NsYXNzZXMY",
-            "AyADKAsyGy50aGV0YW4ucml2YWxzLnYxLkNsYXNzSW5mb1IHY2xhc3NlcyK3",
-            "AgoJQ2xhc3NJbmZvEhgKB2NsYXNzSUQYASABKAVSB2NsYXNzSUQSHAoJY2xh",
+            "AyADKAsyGy50aGV0YW4ucml2YWxzLnYxLkNsYXNzSW5mb1IHY2xhc3NlcyKd",
+            "AwoJQ2xhc3NJbmZvEhgKB2NsYXNzSUQYASABKAVSB2NsYXNzSUQSHAoJY2xh",
             "c3NOYW1lGAIgASgJUgljbGFzc05hbWUSFAoFbGV2ZWwYAyABKAVSBWxldmVs",
             "Ei4KEmRhaWx5QWN0aXZpdHlMaW1pdBgEIAEoBVISZGFpbHlBY3Rpdml0eUxp",
             "bWl0EiYKDm1lbWJlclBlckNsYXNzGAUgASgFUg5tZW1iZXJQZXJDbGFzcxIi",
             "Cgx0aW1lUGVyQ2xhc3MYBiABKAFSDHRpbWVQZXJDbGFzcxIoCg9jbGFzc1Bl",
-            "ck1hc3RlckwYByABKAFSD2NsYXNzUGVyTWFzdGVyTBI2CgdyZXdhcmRzGAgg",
-            "AygLMhwudGhldGFuLnJpdmFscy52MS5TaW1wbGVJdGVtUgdyZXdhcmRzIn4K",
-            "ClNpbXBsZUl0ZW0SGgoIaXRlbVR5cGUYASABKAlSCGl0ZW1UeXBlEhYKBnR5",
-            "cGVJRBgCIAEoBVIGdHlwZUlEEhYKBmFtb3VudBgDIAEoAVIGYW1vdW50EiQK",
-            "DWludmVudG9yeUtpbmQYBCABKAVSDWludmVudG9yeUtpbmQiagoSR2V0VG93",
-            "blVzZXJSZXF1ZXN0EhYKBnVzZXJJRBgBIAEoCVIGdXNlcklEEiIKDHVzZXJM",
-            "YW5ndWFnZRgCIAEoCVIMdXNlckxhbmd1YWdlEhgKB3VzZXJBZ2UYAyABKAVS",
-            "B3VzZXJBZ2Ui/wEKCUxvYmJ5VG93bhIWCgZ0b3duSUQYASABKAlSBnRvd25J",
-            "RBIaCgh0b3duTmFtZRgCIAEoCVIIdG93bk5hbWUSHgoKYWN0aXZlVGltZRgD",
-            "IAEoA1IKYWN0aXZlVGltZRIgCgt0b3duQ291bnRyeRgEIAEoCVILdG93bkNv",
-            "dW50cnkSHgoKdG93blJlZ2lvbhgFIAEoCVIKdG93blJlZ2lvbhIaCgh0b3du",
-            "VGltZRgGIAEoBVIIdG93blRpbWUSIgoMdG93bkxhbmd1YWdlGAcgASgJUgx0",
-            "b3duTGFuZ3VhZ2USHAoJdG93blNjb3JlGAggASgBUgl0b3duU2NvcmUiRQoT",
-            "UGlja1Rvd25Vc2VyUmVxdWVzdBIWCgZ1c2VySUQYASABKAlSBnVzZXJJRBIW",
-            "CgZ0b3duSUQYAiABKAlSBnRvd25JRCJjChNUcmFja1Nlc3Npb25SZXF1ZXN0",
-            "EhYKBnVzZXJJRBgBIAEoCVIGdXNlcklEEhYKBmFjdGlvbhgCIAEoCVIGYWN0",
-            "aW9uEhwKCXNlc3Npb25JRBgDIAEoCVIJc2Vzc2lvbklEIhYKFFRyYWNrU2Vz",
-            "c2lvblJlc3BvbnNlIjQKFEZpbmRNYXRjaEluZm9SZXF1ZXN0EhwKCXBsYXll",
-            "cnNJRBgBIAMoCVIJcGxheWVyc0lEIlkKFUZpbmRNYXRjaEluZm9SZXNwb25z",
-            "ZRJACgdwbGF5ZXJzGAEgAygLMiYudGhldGFuLnNoYXJlZC52MS5QbGF5ZXJJ",
-            "bmZvTWF0Y2hQcm90b1IHcGxheWVyczKgDQoSVGhldGFuUml2YWxTZXJ2aWNl",
-            "El8KDkdldFVzZXJQcm9maWxlEiQudGhldGFuLnJpdmFscy52MS5Vc2VyUHJv",
-            "ZmlsZVJlcXVlc3QaJS50aGV0YW4ucml2YWxzLnYxLlVzZXJQcm9maWxlUmVz",
-            "cG9uc2UiABJfCg5HZXRVc2VyTWluaW9ucxIkLnRoZXRhbi5yaXZhbHMudjEu",
-            "VXNlck1pbmlvbnNSZXF1ZXN0GiUudGhldGFuLnJpdmFscy52MS5Vc2VyTWlu",
-            "aW9uc1Jlc3BvbnNlIgASdAoVR2V0VXNlclNlbGVjdGVkTWluaW9uEisudGhl",
-            "dGFuLnJpdmFscy52MS5Vc2VyU2VsZWN0ZWRNaW5pb25SZXF1ZXN0GiwudGhl",
-            "dGFuLnJpdmFscy52MS5Vc2VyU2VsZWN0ZWRNaW5pb25SZXNwb25zZSIAElAK",
-            "CUdldE1pbmlvbhIfLnRoZXRhbi5yaXZhbHMudjEuTWluaW9uUmVxdWVzdBog",
-            "LnRoZXRhbi5yaXZhbHMudjEuTWluaW9uUmVzcG9uc2UiABJfCgxDcmVhdGVN",
-            "aW5pb24SJS50aGV0YW4ucml2YWxzLnYxLkNyZWF0ZU1pbmlvblJlcXVlc3Qa",
-            "Ji50aGV0YW4ucml2YWxzLnYxLkNyZWF0ZU1pbmlvblJlc3BvbnNlIgASYwoO",
-            "R2V0TGlzdEZyaWVuZHMSJi50aGV0YW4ucml2YWxzLnYxLkdldFVzZXJGcmll",
-            "bmRSZXF1ZXN0GicudGhldGFuLnJpdmFscy52MS5HZXRVc2VyRnJpZW5kUmVz",
-            "cG9uc2UiABJpChZHZXRNYXRjaEluZm9PbmJvYXJkaW5nEiUudGhldGFuLnJp",
-            "dmFscy52MS5HZXRNYXRjaEluZm9SZXF1ZXN0GiYudGhldGFuLnJpdmFscy52",
-            "MS5HZXRNYXRjaEluZm9SZXNwb25zZSIAEmsKGkdldExhdGVzdExvYmJ5QWN0",
-            "aXZpdHlJbmZvEiQudGhldGFuLnJpdmFscy52MS5HZXRBY3Rpdml0eVJlcXVl",
-            "c3QaJS50aGV0YW4ucml2YWxzLnYxLkdldEFjdGl2aXR5UmVzcG9uc2UiABJS",
-            "CgtHZXRUb3duVXNlchIkLnRoZXRhbi5yaXZhbHMudjEuR2V0VG93blVzZXJS",
-            "ZXF1ZXN0GhsudGhldGFuLnJpdmFscy52MS5Mb2JieVRvd24iABJbCg9QaWNr",
-            "VG93bkZvclVzZXISJS50aGV0YW4ucml2YWxzLnYxLlBpY2tUb3duVXNlclJl",
-            "cXVlc3QaHy50aGV0YW4ucml2YWxzLnYxLkVtcHR5UmVzcG9uc2UiABJfCgxU",
-            "cmFja1Nlc3Npb24SJS50aGV0YW4ucml2YWxzLnYxLlRyYWNrU2Vzc2lvblJl",
-            "cXVlc3QaJi50aGV0YW4ucml2YWxzLnYxLlRyYWNrU2Vzc2lvblJlc3BvbnNl",
-            "IgASZQoQR2V0RmluZE1hdGNoSW5mbxImLnRoZXRhbi5yaXZhbHMudjEuRmlu",
-            "ZE1hdGNoSW5mb1JlcXVlc3QaJy50aGV0YW4ucml2YWxzLnYxLkZpbmRNYXRj",
-            "aEluZm9SZXNwb25zZSIAEmgKD0dldENvbmZpZ0ZvckJvdBIoLnRoZXRhbi5y",
-            "aXZhbHMudjEuR2V0Q29uZmlnRm9yQm90UmVxdWVzdBopLnRoZXRhbi5yaXZh",
-            "bHMudjEuR2V0Q29uZmlnRm9yQm90UmVzcG9uc2UiABJ3ChRHZXRBY3RpdmVU",
-            "b3VybmFtZW50cxItLnRoZXRhbi5yaXZhbHMudjEuR2V0QWN0aXZlVG91cm5h",
-            "bWVudHNSZXF1ZXN0Gi4udGhldGFuLnJpdmFscy52MS5HZXRBY3RpdmVUb3Vy",
-            "bmFtZW50c1Jlc3BvbnNlIgASjAEKHUdldEZpbmRNYXRjaEluZm9Gb3JUb3Vy",
-            "bmFtZW50EjMudGhldGFuLnJpdmFscy52MS5GaW5kTWF0Y2hJbmZvRm9yVG91",
-            "cm5hbWVudFJlcXVlc3QaNC50aGV0YW4ucml2YWxzLnYxLkZpbmRNYXRjaElu",
-            "Zm9Gb3JUb3VybmFtZW50UmVzcG9uc2UiABJ3ChRNYXRjaEZvdW5kVG91cm5h",
-            "bWVudBItLnRoZXRhbi5yaXZhbHMudjEuTWF0Y2hGb3VuZFRvdXJuYW1lbnRS",
-            "ZXF1ZXN0Gi4udGhldGFuLnJpdmFscy52MS5NYXRjaEZvdW5kVG91cm5hbWVu",
-            "dFJlc3BvbnNlIgBCwQEKFGNvbS50aGV0YW4ucml2YWxzLnYxQhJTZXJ2aWNl",
-            "Uml2YWxzUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3JpdmFs",
-            "cy92MTt0aGV0YW5fcml2YWxzX3YxogIDVFJYqgIQVGhldGFuLlJpdmFscy5W",
-            "McoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5cUml2YWxzXFYxXEdQQk1l",
-            "dGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZwcm90bzM="));
+            "ck1hc3RlckwYByABKAFSD2NsYXNzUGVyTWFzdGVyTBJCCgdyZXdhcmRzGAgg",
+            "AygLMigudGhldGFuLnJpdmFscy52MS5DbGFzc0luZm8uUmV3YXJkc0VudHJ5",
+            "UgdyZXdhcmRzGlgKDFJld2FyZHNFbnRyeRIQCgNrZXkYASABKAVSA2tleRIy",
+            "CgV2YWx1ZRgCIAEoCzIcLnRoZXRhbi5yaXZhbHMudjEuU2ltcGxlSXRlbVIF",
+            "dmFsdWU6AjgBIn4KClNpbXBsZUl0ZW0SGgoIaXRlbVR5cGUYASABKAlSCGl0",
+            "ZW1UeXBlEhYKBnR5cGVJRBgCIAEoBVIGdHlwZUlEEhYKBmFtb3VudBgDIAEo",
+            "AVIGYW1vdW50EiQKDWludmVudG9yeUtpbmQYBCABKAVSDWludmVudG9yeUtp",
+            "bmQiagoSR2V0VG93blVzZXJSZXF1ZXN0EhYKBnVzZXJJRBgBIAEoCVIGdXNl",
+            "cklEEiIKDHVzZXJMYW5ndWFnZRgCIAEoBVIMdXNlckxhbmd1YWdlEhgKB3Vz",
+            "ZXJBZ2UYAyABKAVSB3VzZXJBZ2UigQIKCUxvYmJ5VG93bhIWCgZ0b3duSUQY",
+            "ASABKAlSBnRvd25JRBIaCgh0b3duTmFtZRgCIAEoCVIIdG93bk5hbWUSIAoL",
+            "ZGVzY3JpcHRpb24YAyABKAlSC2Rlc2NyaXB0aW9uEh4KCmFjdGl2ZVRpbWUY",
+            "BCABKANSCmFjdGl2ZVRpbWUSIAoLdG93bkNvdW50cnkYBSABKAlSC3Rvd25D",
+            "b3VudHJ5EhoKCHRvd25UaW1lGAYgASgFUgh0b3duVGltZRIiCgx0b3duTGFu",
+            "Z3VhZ2UYByABKAVSDHRvd25MYW5ndWFnZRIcCgl0b3duU2NvcmUYCCABKAFS",
+            "CXRvd25TY29yZSJFChNQaWNrVG93blVzZXJSZXF1ZXN0EhYKBnVzZXJJRBgB",
+            "IAEoCVIGdXNlcklEEhYKBnRvd25JRBgCIAEoCVIGdG93bklEImMKE1RyYWNr",
+            "U2Vzc2lvblJlcXVlc3QSFgoGdXNlcklEGAEgASgJUgZ1c2VySUQSFgoGYWN0",
+            "aW9uGAIgASgJUgZhY3Rpb24SHAoJc2Vzc2lvbklEGAMgASgJUglzZXNzaW9u",
+            "SUQiFgoUVHJhY2tTZXNzaW9uUmVzcG9uc2UiNAoURmluZE1hdGNoSW5mb1Jl",
+            "cXVlc3QSHAoJcGxheWVyc0lEGAEgAygJUglwbGF5ZXJzSUQiWQoVRmluZE1h",
+            "dGNoSW5mb1Jlc3BvbnNlEkAKB3BsYXllcnMYASADKAsyJi50aGV0YW4uc2hh",
+            "cmVkLnYxLlBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzMqANChJUaGV0",
+            "YW5SaXZhbFNlcnZpY2USXwoOR2V0VXNlclByb2ZpbGUSJC50aGV0YW4ucml2",
+            "YWxzLnYxLlVzZXJQcm9maWxlUmVxdWVzdBolLnRoZXRhbi5yaXZhbHMudjEu",
+            "VXNlclByb2ZpbGVSZXNwb25zZSIAEl8KDkdldFVzZXJNaW5pb25zEiQudGhl",
+            "dGFuLnJpdmFscy52MS5Vc2VyTWluaW9uc1JlcXVlc3QaJS50aGV0YW4ucml2",
+            "YWxzLnYxLlVzZXJNaW5pb25zUmVzcG9uc2UiABJ0ChVHZXRVc2VyU2VsZWN0",
+            "ZWRNaW5pb24SKy50aGV0YW4ucml2YWxzLnYxLlVzZXJTZWxlY3RlZE1pbmlv",
+            "blJlcXVlc3QaLC50aGV0YW4ucml2YWxzLnYxLlVzZXJTZWxlY3RlZE1pbmlv",
+            "blJlc3BvbnNlIgASUAoJR2V0TWluaW9uEh8udGhldGFuLnJpdmFscy52MS5N",
+            "aW5pb25SZXF1ZXN0GiAudGhldGFuLnJpdmFscy52MS5NaW5pb25SZXNwb25z",
+            "ZSIAEl8KDENyZWF0ZU1pbmlvbhIlLnRoZXRhbi5yaXZhbHMudjEuQ3JlYXRl",
+            "TWluaW9uUmVxdWVzdBomLnRoZXRhbi5yaXZhbHMudjEuQ3JlYXRlTWluaW9u",
+            "UmVzcG9uc2UiABJjCg5HZXRMaXN0RnJpZW5kcxImLnRoZXRhbi5yaXZhbHMu",
+            "djEuR2V0VXNlckZyaWVuZFJlcXVlc3QaJy50aGV0YW4ucml2YWxzLnYxLkdl",
+            "dFVzZXJGcmllbmRSZXNwb25zZSIAEmkKFkdldE1hdGNoSW5mb09uYm9hcmRp",
+            "bmcSJS50aGV0YW4ucml2YWxzLnYxLkdldE1hdGNoSW5mb1JlcXVlc3QaJi50",
+            "aGV0YW4ucml2YWxzLnYxLkdldE1hdGNoSW5mb1Jlc3BvbnNlIgASawoaR2V0",
+            "TGF0ZXN0TG9iYnlBY3Rpdml0eUluZm8SJC50aGV0YW4ucml2YWxzLnYxLkdl",
+            "dEFjdGl2aXR5UmVxdWVzdBolLnRoZXRhbi5yaXZhbHMudjEuR2V0QWN0aXZp",
+            "dHlSZXNwb25zZSIAElIKC0dldFRvd25Vc2VyEiQudGhldGFuLnJpdmFscy52",
+            "MS5HZXRUb3duVXNlclJlcXVlc3QaGy50aGV0YW4ucml2YWxzLnYxLkxvYmJ5",
+            "VG93biIAElsKD1BpY2tUb3duRm9yVXNlchIlLnRoZXRhbi5yaXZhbHMudjEu",
+            "UGlja1Rvd25Vc2VyUmVxdWVzdBofLnRoZXRhbi5yaXZhbHMudjEuRW1wdHlS",
+            "ZXNwb25zZSIAEl8KDFRyYWNrU2Vzc2lvbhIlLnRoZXRhbi5yaXZhbHMudjEu",
+            "VHJhY2tTZXNzaW9uUmVxdWVzdBomLnRoZXRhbi5yaXZhbHMudjEuVHJhY2tT",
+            "ZXNzaW9uUmVzcG9uc2UiABJlChBHZXRGaW5kTWF0Y2hJbmZvEiYudGhldGFu",
+            "LnJpdmFscy52MS5GaW5kTWF0Y2hJbmZvUmVxdWVzdBonLnRoZXRhbi5yaXZh",
+            "bHMudjEuRmluZE1hdGNoSW5mb1Jlc3BvbnNlIgASaAoPR2V0Q29uZmlnRm9y",
+            "Qm90EigudGhldGFuLnJpdmFscy52MS5HZXRDb25maWdGb3JCb3RSZXF1ZXN0",
+            "GikudGhldGFuLnJpdmFscy52MS5HZXRDb25maWdGb3JCb3RSZXNwb25zZSIA",
+            "EncKFEdldEFjdGl2ZVRvdXJuYW1lbnRzEi0udGhldGFuLnJpdmFscy52MS5H",
+            "ZXRBY3RpdmVUb3VybmFtZW50c1JlcXVlc3QaLi50aGV0YW4ucml2YWxzLnYx",
+            "LkdldEFjdGl2ZVRvdXJuYW1lbnRzUmVzcG9uc2UiABKMAQodR2V0RmluZE1h",
+            "dGNoSW5mb0ZvclRvdXJuYW1lbnQSMy50aGV0YW4ucml2YWxzLnYxLkZpbmRN",
+            "YXRjaEluZm9Gb3JUb3VybmFtZW50UmVxdWVzdBo0LnRoZXRhbi5yaXZhbHMu",
+            "djEuRmluZE1hdGNoSW5mb0ZvclRvdXJuYW1lbnRSZXNwb25zZSIAEncKFE1h",
+            "dGNoRm91bmRUb3VybmFtZW50Ei0udGhldGFuLnJpdmFscy52MS5NYXRjaEZv",
+            "dW5kVG91cm5hbWVudFJlcXVlc3QaLi50aGV0YW4ucml2YWxzLnYxLk1hdGNo",
+            "Rm91bmRUb3VybmFtZW50UmVzcG9uc2UiAELBAQoUY29tLnRoZXRhbi5yaXZh",
+            "bHMudjFCElNlcnZpY2VSaXZhbHNQcm90b1ABWjN0aGV0YW4tYnVmL2dlbi9n",
+            "by90aGV0YW4vcml2YWxzL3YxO3RoZXRhbl9yaXZhbHNfdjGiAgNUUliqAhBU",
+            "aGV0YW4uUml2YWxzLlYxygIQVGhldGFuXFJpdmFsc1xWMeICHFRoZXRhblxS",
+            "aXZhbHNcVjFcR1BCTWV0YWRhdGHqAhJUaGV0YW46OlJpdmFsczo6VjFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.MatchReflection.Descriptor, global::Thetan.Shared.V1.UgcReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -231,10 +234,10 @@ namespace Thetan.Rivals.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.PlayerStat), global::Thetan.Rivals.V1.PlayerStat.Parser, new[]{ "RoundScoreAll", "RaceScoreAll", "QualifyScoreAll", "PlayerScore", "RoundPlayed" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetActivityRequest), global::Thetan.Rivals.V1.GetActivityRequest.Parser, new[]{ "TownID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetActivityResponse), global::Thetan.Rivals.V1.GetActivityResponse.Parser, new[]{ "ActivityID", "TownID", "Classes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.ClassInfo), global::Thetan.Rivals.V1.ClassInfo.Parser, new[]{ "ClassID", "ClassName", "Level", "DailyActivityLimit", "MemberPerClass", "TimePerClass", "ClassPerMasterL", "Rewards" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.ClassInfo), global::Thetan.Rivals.V1.ClassInfo.Parser, new[]{ "ClassID", "ClassName", "Level", "DailyActivityLimit", "MemberPerClass", "TimePerClass", "ClassPerMasterL", "Rewards" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SimpleItem), global::Thetan.Rivals.V1.SimpleItem.Parser, new[]{ "ItemType", "TypeID", "Amount", "InventoryKind" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetTownUserRequest), global::Thetan.Rivals.V1.GetTownUserRequest.Parser, new[]{ "UserID", "UserLanguage", "UserAge" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.LobbyTown), global::Thetan.Rivals.V1.LobbyTown.Parser, new[]{ "TownID", "TownName", "ActiveTime", "TownCountry", "TownRegion", "TownTime", "TownLanguage", "TownScore" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.LobbyTown), global::Thetan.Rivals.V1.LobbyTown.Parser, new[]{ "TownID", "TownName", "Description", "ActiveTime", "TownCountry", "TownTime", "TownLanguage", "TownScore" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.PickTownUserRequest), global::Thetan.Rivals.V1.PickTownUserRequest.Parser, new[]{ "UserID", "TownID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.TrackSessionRequest), global::Thetan.Rivals.V1.TrackSessionRequest.Parser, new[]{ "UserID", "Action", "SessionID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.TrackSessionResponse), global::Thetan.Rivals.V1.TrackSessionResponse.Parser, null, null, null, null, null),
@@ -8825,12 +8828,12 @@ namespace Thetan.Rivals.V1 {
 
     /// <summary>Field number for the "rewards" field.</summary>
     public const int RewardsFieldNumber = 8;
-    private static readonly pb::FieldCodec<global::Thetan.Rivals.V1.SimpleItem> _repeated_rewards_codec
-        = pb::FieldCodec.ForMessage(66, global::Thetan.Rivals.V1.SimpleItem.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Rivals.V1.SimpleItem> rewards_ = new pbc::RepeatedField<global::Thetan.Rivals.V1.SimpleItem>();
+    private static readonly pbc::MapField<int, global::Thetan.Rivals.V1.SimpleItem>.Codec _map_rewards_codec
+        = new pbc::MapField<int, global::Thetan.Rivals.V1.SimpleItem>.Codec(pb::FieldCodec.ForInt32(8, 0), pb::FieldCodec.ForMessage(18, global::Thetan.Rivals.V1.SimpleItem.Parser), 66);
+    private readonly pbc::MapField<int, global::Thetan.Rivals.V1.SimpleItem> rewards_ = new pbc::MapField<int, global::Thetan.Rivals.V1.SimpleItem>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Rivals.V1.SimpleItem> Rewards {
+    public pbc::MapField<int, global::Thetan.Rivals.V1.SimpleItem> Rewards {
       get { return rewards_; }
     }
 
@@ -8856,7 +8859,7 @@ namespace Thetan.Rivals.V1 {
       if (MemberPerClass != other.MemberPerClass) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TimePerClass, other.TimePerClass)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ClassPerMasterL, other.ClassPerMasterL)) return false;
-      if(!rewards_.Equals(other.rewards_)) return false;
+      if (!Rewards.Equals(other.Rewards)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -8871,7 +8874,7 @@ namespace Thetan.Rivals.V1 {
       if (MemberPerClass != 0) hash ^= MemberPerClass.GetHashCode();
       if (TimePerClass != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TimePerClass);
       if (ClassPerMasterL != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ClassPerMasterL);
-      hash ^= rewards_.GetHashCode();
+      hash ^= Rewards.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8918,7 +8921,7 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(57);
         output.WriteDouble(ClassPerMasterL);
       }
-      rewards_.WriteTo(output, _repeated_rewards_codec);
+      rewards_.WriteTo(output, _map_rewards_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -8957,7 +8960,7 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(57);
         output.WriteDouble(ClassPerMasterL);
       }
-      rewards_.WriteTo(ref output, _repeated_rewards_codec);
+      rewards_.WriteTo(ref output, _map_rewards_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -8989,7 +8992,7 @@ namespace Thetan.Rivals.V1 {
       if (ClassPerMasterL != 0D) {
         size += 1 + 8;
       }
-      size += rewards_.CalculateSize(_repeated_rewards_codec);
+      size += rewards_.CalculateSize(_map_rewards_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -9068,7 +9071,7 @@ namespace Thetan.Rivals.V1 {
             break;
           }
           case 66: {
-            rewards_.AddEntriesFrom(input, _repeated_rewards_codec);
+            rewards_.AddEntriesFrom(input, _map_rewards_codec);
             break;
           }
         }
@@ -9115,7 +9118,7 @@ namespace Thetan.Rivals.V1 {
             break;
           }
           case 66: {
-            rewards_.AddEntriesFrom(ref input, _repeated_rewards_codec);
+            rewards_.AddEntriesFrom(ref input, _map_rewards_codec);
             break;
           }
         }
@@ -9485,13 +9488,13 @@ namespace Thetan.Rivals.V1 {
 
     /// <summary>Field number for the "userLanguage" field.</summary>
     public const int UserLanguageFieldNumber = 2;
-    private string userLanguage_ = "";
+    private int userLanguage_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserLanguage {
+    public int UserLanguage {
       get { return userLanguage_; }
       set {
-        userLanguage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        userLanguage_ = value;
       }
     }
 
@@ -9533,7 +9536,7 @@ namespace Thetan.Rivals.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (UserID.Length != 0) hash ^= UserID.GetHashCode();
-      if (UserLanguage.Length != 0) hash ^= UserLanguage.GetHashCode();
+      if (UserLanguage != 0) hash ^= UserLanguage.GetHashCode();
       if (UserAge != 0) hash ^= UserAge.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -9557,9 +9560,9 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(10);
         output.WriteString(UserID);
       }
-      if (UserLanguage.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(UserLanguage);
+      if (UserLanguage != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(UserLanguage);
       }
       if (UserAge != 0) {
         output.WriteRawTag(24);
@@ -9579,9 +9582,9 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(10);
         output.WriteString(UserID);
       }
-      if (UserLanguage.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(UserLanguage);
+      if (UserLanguage != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(UserLanguage);
       }
       if (UserAge != 0) {
         output.WriteRawTag(24);
@@ -9600,8 +9603,8 @@ namespace Thetan.Rivals.V1 {
       if (UserID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(UserID);
       }
-      if (UserLanguage.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserLanguage);
+      if (UserLanguage != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserLanguage);
       }
       if (UserAge != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserAge);
@@ -9621,7 +9624,7 @@ namespace Thetan.Rivals.V1 {
       if (other.UserID.Length != 0) {
         UserID = other.UserID;
       }
-      if (other.UserLanguage.Length != 0) {
+      if (other.UserLanguage != 0) {
         UserLanguage = other.UserLanguage;
       }
       if (other.UserAge != 0) {
@@ -9646,8 +9649,8 @@ namespace Thetan.Rivals.V1 {
             UserID = input.ReadString();
             break;
           }
-          case 18: {
-            UserLanguage = input.ReadString();
+          case 16: {
+            UserLanguage = input.ReadInt32();
             break;
           }
           case 24: {
@@ -9673,8 +9676,8 @@ namespace Thetan.Rivals.V1 {
             UserID = input.ReadString();
             break;
           }
-          case 18: {
-            UserLanguage = input.ReadString();
+          case 16: {
+            UserLanguage = input.ReadInt32();
             break;
           }
           case 24: {
@@ -9724,9 +9727,9 @@ namespace Thetan.Rivals.V1 {
     public LobbyTown(LobbyTown other) : this() {
       townID_ = other.townID_;
       townName_ = other.townName_;
+      description_ = other.description_;
       activeTime_ = other.activeTime_;
       townCountry_ = other.townCountry_;
-      townRegion_ = other.townRegion_;
       townTime_ = other.townTime_;
       townLanguage_ = other.townLanguage_;
       townScore_ = other.townScore_;
@@ -9763,8 +9766,20 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 3;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "activeTime" field.</summary>
-    public const int ActiveTimeFieldNumber = 3;
+    public const int ActiveTimeFieldNumber = 4;
     private long activeTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -9776,7 +9791,7 @@ namespace Thetan.Rivals.V1 {
     }
 
     /// <summary>Field number for the "townCountry" field.</summary>
-    public const int TownCountryFieldNumber = 4;
+    public const int TownCountryFieldNumber = 5;
     private string townCountry_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -9784,18 +9799,6 @@ namespace Thetan.Rivals.V1 {
       get { return townCountry_; }
       set {
         townCountry_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "townRegion" field.</summary>
-    public const int TownRegionFieldNumber = 5;
-    private string townRegion_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TownRegion {
-      get { return townRegion_; }
-      set {
-        townRegion_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -9813,13 +9816,13 @@ namespace Thetan.Rivals.V1 {
 
     /// <summary>Field number for the "townLanguage" field.</summary>
     public const int TownLanguageFieldNumber = 7;
-    private string townLanguage_ = "";
+    private int townLanguage_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TownLanguage {
+    public int TownLanguage {
       get { return townLanguage_; }
       set {
-        townLanguage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        townLanguage_ = value;
       }
     }
 
@@ -9852,9 +9855,9 @@ namespace Thetan.Rivals.V1 {
       }
       if (TownID != other.TownID) return false;
       if (TownName != other.TownName) return false;
+      if (Description != other.Description) return false;
       if (ActiveTime != other.ActiveTime) return false;
       if (TownCountry != other.TownCountry) return false;
-      if (TownRegion != other.TownRegion) return false;
       if (TownTime != other.TownTime) return false;
       if (TownLanguage != other.TownLanguage) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TownScore, other.TownScore)) return false;
@@ -9867,11 +9870,11 @@ namespace Thetan.Rivals.V1 {
       int hash = 1;
       if (TownID.Length != 0) hash ^= TownID.GetHashCode();
       if (TownName.Length != 0) hash ^= TownName.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (ActiveTime != 0L) hash ^= ActiveTime.GetHashCode();
       if (TownCountry.Length != 0) hash ^= TownCountry.GetHashCode();
-      if (TownRegion.Length != 0) hash ^= TownRegion.GetHashCode();
       if (TownTime != 0) hash ^= TownTime.GetHashCode();
-      if (TownLanguage.Length != 0) hash ^= TownLanguage.GetHashCode();
+      if (TownLanguage != 0) hash ^= TownLanguage.GetHashCode();
       if (TownScore != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TownScore);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -9899,25 +9902,25 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(18);
         output.WriteString(TownName);
       }
+      if (Description.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Description);
+      }
       if (ActiveTime != 0L) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(32);
         output.WriteInt64(ActiveTime);
       }
       if (TownCountry.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(TownCountry);
-      }
-      if (TownRegion.Length != 0) {
         output.WriteRawTag(42);
-        output.WriteString(TownRegion);
+        output.WriteString(TownCountry);
       }
       if (TownTime != 0) {
         output.WriteRawTag(48);
         output.WriteInt32(TownTime);
       }
-      if (TownLanguage.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(TownLanguage);
+      if (TownLanguage != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(TownLanguage);
       }
       if (TownScore != 0D) {
         output.WriteRawTag(65);
@@ -9941,25 +9944,25 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(18);
         output.WriteString(TownName);
       }
+      if (Description.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Description);
+      }
       if (ActiveTime != 0L) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(32);
         output.WriteInt64(ActiveTime);
       }
       if (TownCountry.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(TownCountry);
-      }
-      if (TownRegion.Length != 0) {
         output.WriteRawTag(42);
-        output.WriteString(TownRegion);
+        output.WriteString(TownCountry);
       }
       if (TownTime != 0) {
         output.WriteRawTag(48);
         output.WriteInt32(TownTime);
       }
-      if (TownLanguage.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(TownLanguage);
+      if (TownLanguage != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(TownLanguage);
       }
       if (TownScore != 0D) {
         output.WriteRawTag(65);
@@ -9981,20 +9984,20 @@ namespace Thetan.Rivals.V1 {
       if (TownName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(TownName);
       }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
       if (ActiveTime != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(ActiveTime);
       }
       if (TownCountry.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(TownCountry);
       }
-      if (TownRegion.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TownRegion);
-      }
       if (TownTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TownTime);
       }
-      if (TownLanguage.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TownLanguage);
+      if (TownLanguage != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TownLanguage);
       }
       if (TownScore != 0D) {
         size += 1 + 8;
@@ -10017,19 +10020,19 @@ namespace Thetan.Rivals.V1 {
       if (other.TownName.Length != 0) {
         TownName = other.TownName;
       }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
       if (other.ActiveTime != 0L) {
         ActiveTime = other.ActiveTime;
       }
       if (other.TownCountry.Length != 0) {
         TownCountry = other.TownCountry;
       }
-      if (other.TownRegion.Length != 0) {
-        TownRegion = other.TownRegion;
-      }
       if (other.TownTime != 0) {
         TownTime = other.TownTime;
       }
-      if (other.TownLanguage.Length != 0) {
+      if (other.TownLanguage != 0) {
         TownLanguage = other.TownLanguage;
       }
       if (other.TownScore != 0D) {
@@ -10058,24 +10061,24 @@ namespace Thetan.Rivals.V1 {
             TownName = input.ReadString();
             break;
           }
-          case 24: {
+          case 26: {
+            Description = input.ReadString();
+            break;
+          }
+          case 32: {
             ActiveTime = input.ReadInt64();
             break;
           }
-          case 34: {
-            TownCountry = input.ReadString();
-            break;
-          }
           case 42: {
-            TownRegion = input.ReadString();
+            TownCountry = input.ReadString();
             break;
           }
           case 48: {
             TownTime = input.ReadInt32();
             break;
           }
-          case 58: {
-            TownLanguage = input.ReadString();
+          case 56: {
+            TownLanguage = input.ReadInt32();
             break;
           }
           case 65: {
@@ -10105,24 +10108,24 @@ namespace Thetan.Rivals.V1 {
             TownName = input.ReadString();
             break;
           }
-          case 24: {
+          case 26: {
+            Description = input.ReadString();
+            break;
+          }
+          case 32: {
             ActiveTime = input.ReadInt64();
             break;
           }
-          case 34: {
-            TownCountry = input.ReadString();
-            break;
-          }
           case 42: {
-            TownRegion = input.ReadString();
+            TownCountry = input.ReadString();
             break;
           }
           case 48: {
             TownTime = input.ReadInt32();
             break;
           }
-          case 58: {
-            TownLanguage = input.ReadString();
+          case 56: {
+            TownLanguage = input.ReadInt32();
             break;
           }
           case 65: {
