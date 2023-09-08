@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package thetan.rivals.v1;
+import "thetan/rivals/v1/service_rivals.proto";
+import "thetan/shared/v1/match.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
+option csharp_namespace = "Thetan.rivals.V1";
+
+service RivalMatchDirectorService {
+  rpc CancelTicket(RivalCancelTicketRequest) returns (RivalCancelTicketResponse) {}
+
+  rpc CreateMatchOnboard(thetan.rivals.v1.GetMatchInfoRequest) returns (thetan.shared.v1.MatchFoundResponseProto) {}
+}
+
+message RivalCancelTicketRequest {
+  string playerID = 1;
+  string partyID = 2;
+  string ticketID = 3;
+}
+
+message RivalCancelTicketResponse {
+}

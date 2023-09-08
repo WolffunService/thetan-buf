@@ -283,13 +283,6 @@ service MatchHandleService {
   rpc HandleDeleteTicket(DeleteTicketSuccess) returns(EmptyResponse) {}
 }
 
-service MatchDirectorService {
-  rpc CancelTicket(MatchProtoPackage) returns (EmptyResponse) {}
-  rpc GetBots(GetBotsRequest) returns (BotsResponse) {}
-
-  rpc CreateMatchOnboard(CreateMatchOnboardRequest) returns (MatchFoundResponseProto) {}
-}
-
 message EmptyResponse {
   int32 errorCode = 1;
 }

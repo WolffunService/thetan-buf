@@ -5,7 +5,7 @@ package thetan.multiplayer.v1;
 option go_package = "thetan-buf/gen/go/thetan/multiplayer/v1;thetan_multiplayer_v1";
 option csharp_namespace = "Thetan.Multiplayer.V1";
 
-// full info
+//full info
 message PlayerProto {
   PlayerInfoProto playerInfo = 1;
   FriendsProto friends = 2;
@@ -16,26 +16,26 @@ message FriendsProto {
   repeated PlayerInfoProto friends =1;
 }
 
-// request message proto with ID : playerID, partyID, room ID... only need ID
+//request message proto with ID : playerID, partyID, room ID... only need ID
 message IDProto {
   string ID = 1;
 }
 
-// PartyStatus P
+//PartyStatus P
 enum PartyStatus {
   PPending = 0;
   PFinding = 1;
   PInBattle = 2;
 }
 
-// Party Status khi share len chat PA_
+//Party Status khi share len chat PA_
 enum PartyAvailabilityStatus {
   PAUnknown = 0;
   PAExpired = 1;
-  PADisbanded = 2;
-  PAOpen = 3;
-  PAFull = 4;
-  PAInBattle = 5;
+  PADisbanded = 2;//khi khong con ai trong party nay
+  PAOpen = 3;//duoc phep join party nay
+  PAFull = 4;//party da day du nguoi, khong join duoc nua
+  PAInBattle = 5;//da bat dau tran dau
   PAJoined = 6;
 }
 
@@ -46,6 +46,7 @@ message PartyInfoProto {
   string hostID = 3;
   map<string, PlayerInfoProto> members = 4;
   PartyStatus status = 5;
+  int64 findmatchVersion = 6;
 
   // tùy từng game mà cục nay có thể khác nhau
   bytes gameData = 99;
@@ -89,7 +90,7 @@ message RequestChatMessageProto{
   ChannelChatRoom channel = 2;
 }
 
-// response data
+//response data
 message ResponseChatMessageProto{
   PlayerInfoProto sender = 1;
   string message = 2 [deprecated = true];
@@ -98,15 +99,16 @@ message ResponseChatMessageProto{
   MsgType msgType = 5[deprecated = true];
 
   oneof messageData {
-      string msgString = 6;
-      SharePartyInfo sharePartyInfo = 7;
+    string msgString = 6;
+    SharePartyInfo sharePartyInfo = 7;
   }
 }
 
 message SharePartyInfo {
   string partyID =1;
   PartyAvailabilityStatus status = 2;
-  bool isShare = 3;//msg share or update status haha
+  bool isShare = 3; //msg share or update status
+  //
 }
 
 
@@ -144,6 +146,7 @@ enum PlayerStatus {
 
 message ReadyMsg{
   bool isReady = 1;//ready or cancel ready
+  string tournamentID = 2; // use for tournament find match
 }
 
 message SetDNDMsg {
@@ -252,4 +255,9 @@ message ResOtherChangeInfo {
 message OnOtherReady{
   string playerID = 1;
   bool ready = 2;
+}
+
+message TicketCacheWSOnly {
+  string ticketID = 1;
+  int32 inGameMode = 2;
 }

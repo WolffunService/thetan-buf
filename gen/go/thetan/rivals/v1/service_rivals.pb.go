@@ -67,7 +67,656 @@ func (x FriendInfo_FRIEND_STATUS) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use FriendInfo_FRIEND_STATUS.Descriptor instead.
 func (FriendInfo_FRIEND_STATUS) EnumDescriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{15, 0}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{27, 0}
+}
+
+type MatchFoundTournamentRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	TournamentID string   `protobuf:"bytes,1,opt,name=tournamentID,proto3" json:"tournamentID,omitempty"`
+	PlayerIDs    []string `protobuf:"bytes,2,rep,name=playerIDs,proto3" json:"playerIDs,omitempty"`
+	MatchID      string   `protobuf:"bytes,3,opt,name=matchID,proto3" json:"matchID,omitempty"`
+}
+
+func (x *MatchFoundTournamentRequest) Reset() {
+	*x = MatchFoundTournamentRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[0]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *MatchFoundTournamentRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*MatchFoundTournamentRequest) ProtoMessage() {}
+
+func (x *MatchFoundTournamentRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[0]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use MatchFoundTournamentRequest.ProtoReflect.Descriptor instead.
+func (*MatchFoundTournamentRequest) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{0}
+}
+
+func (x *MatchFoundTournamentRequest) GetTournamentID() string {
+	if x != nil {
+		return x.TournamentID
+	}
+	return ""
+}
+
+func (x *MatchFoundTournamentRequest) GetPlayerIDs() []string {
+	if x != nil {
+		return x.PlayerIDs
+	}
+	return nil
+}
+
+func (x *MatchFoundTournamentRequest) GetMatchID() string {
+	if x != nil {
+		return x.MatchID
+	}
+	return ""
+}
+
+type MatchFoundTournamentResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *MatchFoundTournamentResponse) Reset() {
+	*x = MatchFoundTournamentResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[1]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *MatchFoundTournamentResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*MatchFoundTournamentResponse) ProtoMessage() {}
+
+func (x *MatchFoundTournamentResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[1]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use MatchFoundTournamentResponse.ProtoReflect.Descriptor instead.
+func (*MatchFoundTournamentResponse) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{1}
+}
+
+type FindMatchInfoForTournamentRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	TournamentID string   `protobuf:"bytes,1,opt,name=tournamentID,proto3" json:"tournamentID,omitempty"`
+	PlayerIDs    []string `protobuf:"bytes,2,rep,name=playerIDs,proto3" json:"playerIDs,omitempty"`
+}
+
+func (x *FindMatchInfoForTournamentRequest) Reset() {
+	*x = FindMatchInfoForTournamentRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[2]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *FindMatchInfoForTournamentRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*FindMatchInfoForTournamentRequest) ProtoMessage() {}
+
+func (x *FindMatchInfoForTournamentRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[2]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use FindMatchInfoForTournamentRequest.ProtoReflect.Descriptor instead.
+func (*FindMatchInfoForTournamentRequest) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{2}
+}
+
+func (x *FindMatchInfoForTournamentRequest) GetTournamentID() string {
+	if x != nil {
+		return x.TournamentID
+	}
+	return ""
+}
+
+func (x *FindMatchInfoForTournamentRequest) GetPlayerIDs() []string {
+	if x != nil {
+		return x.PlayerIDs
+	}
+	return nil
+}
+
+type FindMatchInfoForTournamentResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	FindMatchInfo *FindMatchInfoResponse `protobuf:"bytes,1,opt,name=findMatchInfo,proto3" json:"findMatchInfo,omitempty"`
+	TournamentTag string                 `protobuf:"bytes,2,opt,name=tournamentTag,proto3" json:"tournamentTag,omitempty"`
+}
+
+func (x *FindMatchInfoForTournamentResponse) Reset() {
+	*x = FindMatchInfoForTournamentResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[3]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *FindMatchInfoForTournamentResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*FindMatchInfoForTournamentResponse) ProtoMessage() {}
+
+func (x *FindMatchInfoForTournamentResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[3]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use FindMatchInfoForTournamentResponse.ProtoReflect.Descriptor instead.
+func (*FindMatchInfoForTournamentResponse) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{3}
+}
+
+func (x *FindMatchInfoForTournamentResponse) GetFindMatchInfo() *FindMatchInfoResponse {
+	if x != nil {
+		return x.FindMatchInfo
+	}
+	return nil
+}
+
+func (x *FindMatchInfoForTournamentResponse) GetTournamentTag() string {
+	if x != nil {
+		return x.TournamentTag
+	}
+	return ""
+}
+
+type GetConfigForBotResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	ListSkinInfo               []*SkinInfo     `protobuf:"bytes,1,rep,name=listSkinInfo,proto3" json:"listSkinInfo,omitempty"`
+	ListCosmeticInfo           []*CosmeticInfo `protobuf:"bytes,2,rep,name=listCosmeticInfo,proto3" json:"listCosmeticInfo,omitempty"`
+	CosmeticTypeEvolveSequence []string        `protobuf:"bytes,3,rep,name=cosmeticTypeEvolveSequence,proto3" json:"cosmeticTypeEvolveSequence,omitempty"`
+}
+
+func (x *GetConfigForBotResponse) Reset() {
+	*x = GetConfigForBotResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[4]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *GetConfigForBotResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*GetConfigForBotResponse) ProtoMessage() {}
+
+func (x *GetConfigForBotResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[4]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use GetConfigForBotResponse.ProtoReflect.Descriptor instead.
+func (*GetConfigForBotResponse) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{4}
+}
+
+func (x *GetConfigForBotResponse) GetListSkinInfo() []*SkinInfo {
+	if x != nil {
+		return x.ListSkinInfo
+	}
+	return nil
+}
+
+func (x *GetConfigForBotResponse) GetListCosmeticInfo() []*CosmeticInfo {
+	if x != nil {
+		return x.ListCosmeticInfo
+	}
+	return nil
+}
+
+func (x *GetConfigForBotResponse) GetCosmeticTypeEvolveSequence() []string {
+	if x != nil {
+		return x.CosmeticTypeEvolveSequence
+	}
+	return nil
+}
+
+type SkinInfo struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	SkinID     int32 `protobuf:"varint,1,opt,name=skinID,proto3" json:"skinID,omitempty"`
+	SkinRarity int32 `protobuf:"varint,2,opt,name=skinRarity,proto3" json:"skinRarity,omitempty"`
+}
+
+func (x *SkinInfo) Reset() {
+	*x = SkinInfo{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[5]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *SkinInfo) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*SkinInfo) ProtoMessage() {}
+
+func (x *SkinInfo) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[5]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use SkinInfo.ProtoReflect.Descriptor instead.
+func (*SkinInfo) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{5}
+}
+
+func (x *SkinInfo) GetSkinID() int32 {
+	if x != nil {
+		return x.SkinID
+	}
+	return 0
+}
+
+func (x *SkinInfo) GetSkinRarity() int32 {
+	if x != nil {
+		return x.SkinRarity
+	}
+	return 0
+}
+
+type CosmeticInfo struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	CosmeticID     int32  `protobuf:"varint,1,opt,name=cosmeticID,proto3" json:"cosmeticID,omitempty"`
+	CosmeticType   string `protobuf:"bytes,2,opt,name=cosmeticType,proto3" json:"cosmeticType,omitempty"`
+	CosmeticRarity int32  `protobuf:"varint,3,opt,name=cosmeticRarity,proto3" json:"cosmeticRarity,omitempty"`
+}
+
+func (x *CosmeticInfo) Reset() {
+	*x = CosmeticInfo{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[6]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *CosmeticInfo) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*CosmeticInfo) ProtoMessage() {}
+
+func (x *CosmeticInfo) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[6]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use CosmeticInfo.ProtoReflect.Descriptor instead.
+func (*CosmeticInfo) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{6}
+}
+
+func (x *CosmeticInfo) GetCosmeticID() int32 {
+	if x != nil {
+		return x.CosmeticID
+	}
+	return 0
+}
+
+func (x *CosmeticInfo) GetCosmeticType() string {
+	if x != nil {
+		return x.CosmeticType
+	}
+	return ""
+}
+
+func (x *CosmeticInfo) GetCosmeticRarity() int32 {
+	if x != nil {
+		return x.CosmeticRarity
+	}
+	return 0
+}
+
+type GetConfigForBotRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *GetConfigForBotRequest) Reset() {
+	*x = GetConfigForBotRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[7]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *GetConfigForBotRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*GetConfigForBotRequest) ProtoMessage() {}
+
+func (x *GetConfigForBotRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[7]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use GetConfigForBotRequest.ProtoReflect.Descriptor instead.
+func (*GetConfigForBotRequest) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{7}
+}
+
+type GetActiveTournamentsRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *GetActiveTournamentsRequest) Reset() {
+	*x = GetActiveTournamentsRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[8]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *GetActiveTournamentsRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*GetActiveTournamentsRequest) ProtoMessage() {}
+
+func (x *GetActiveTournamentsRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[8]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use GetActiveTournamentsRequest.ProtoReflect.Descriptor instead.
+func (*GetActiveTournamentsRequest) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{8}
+}
+
+type GetActiveTournamentsResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Tournaments []*TournamentInfo `protobuf:"bytes,1,rep,name=Tournaments,proto3" json:"Tournaments,omitempty"`
+}
+
+func (x *GetActiveTournamentsResponse) Reset() {
+	*x = GetActiveTournamentsResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[9]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *GetActiveTournamentsResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*GetActiveTournamentsResponse) ProtoMessage() {}
+
+func (x *GetActiveTournamentsResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[9]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use GetActiveTournamentsResponse.ProtoReflect.Descriptor instead.
+func (*GetActiveTournamentsResponse) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{9}
+}
+
+func (x *GetActiveTournamentsResponse) GetTournaments() []*TournamentInfo {
+	if x != nil {
+		return x.Tournaments
+	}
+	return nil
+}
+
+type TournamentInfo struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	TournamentID       string     `protobuf:"bytes,1,opt,name=tournamentID,proto3" json:"tournamentID,omitempty"`
+	Tag                string     `protobuf:"bytes,2,opt,name=tag,proto3" json:"tag,omitempty"`
+	CurrentMaps        []*MapInfo `protobuf:"bytes,3,rep,name=currentMaps,proto3" json:"currentMaps,omitempty"`
+	MaxPlayersInBattle int32      `protobuf:"varint,4,opt,name=maxPlayersInBattle,proto3" json:"maxPlayersInBattle,omitempty"`
+	MaxTimeInBattleSec int32      `protobuf:"varint,5,opt,name=maxTimeInBattleSec,proto3" json:"maxTimeInBattleSec,omitempty"`
+}
+
+func (x *TournamentInfo) Reset() {
+	*x = TournamentInfo{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[10]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *TournamentInfo) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*TournamentInfo) ProtoMessage() {}
+
+func (x *TournamentInfo) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[10]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use TournamentInfo.ProtoReflect.Descriptor instead.
+func (*TournamentInfo) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{10}
+}
+
+func (x *TournamentInfo) GetTournamentID() string {
+	if x != nil {
+		return x.TournamentID
+	}
+	return ""
+}
+
+func (x *TournamentInfo) GetTag() string {
+	if x != nil {
+		return x.Tag
+	}
+	return ""
+}
+
+func (x *TournamentInfo) GetCurrentMaps() []*MapInfo {
+	if x != nil {
+		return x.CurrentMaps
+	}
+	return nil
+}
+
+func (x *TournamentInfo) GetMaxPlayersInBattle() int32 {
+	if x != nil {
+		return x.MaxPlayersInBattle
+	}
+	return 0
+}
+
+func (x *TournamentInfo) GetMaxTimeInBattleSec() int32 {
+	if x != nil {
+		return x.MaxTimeInBattleSec
+	}
+	return 0
+}
+
+type MapInfo struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	MapID         int32 `protobuf:"varint,1,opt,name=mapID,proto3" json:"mapID,omitempty"`
+	MapDifficulty int32 `protobuf:"varint,2,opt,name=mapDifficulty,proto3" json:"mapDifficulty,omitempty"`
+}
+
+func (x *MapInfo) Reset() {
+	*x = MapInfo{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[11]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *MapInfo) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*MapInfo) ProtoMessage() {}
+
+func (x *MapInfo) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[11]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use MapInfo.ProtoReflect.Descriptor instead.
+func (*MapInfo) Descriptor() ([]byte, []int) {
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{11}
+}
+
+func (x *MapInfo) GetMapID() int32 {
+	if x != nil {
+		return x.MapID
+	}
+	return 0
+}
+
+func (x *MapInfo) GetMapDifficulty() int32 {
+	if x != nil {
+		return x.MapDifficulty
+	}
+	return 0
 }
 
 type EmptyResponse struct {
@@ -79,7 +728,7 @@ type EmptyResponse struct {
 func (x *EmptyResponse) Reset() {
 	*x = EmptyResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[0]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[12]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -92,7 +741,7 @@ func (x *EmptyResponse) String() string {
 func (*EmptyResponse) ProtoMessage() {}
 
 func (x *EmptyResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[0]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[12]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -105,7 +754,7 @@ func (x *EmptyResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EmptyResponse.ProtoReflect.Descriptor instead.
 func (*EmptyResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{0}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{12}
 }
 
 type UserProfileRequest struct {
@@ -120,7 +769,7 @@ type UserProfileRequest struct {
 func (x *UserProfileRequest) Reset() {
 	*x = UserProfileRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[1]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[13]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -133,7 +782,7 @@ func (x *UserProfileRequest) String() string {
 func (*UserProfileRequest) ProtoMessage() {}
 
 func (x *UserProfileRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[1]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[13]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -146,7 +795,7 @@ func (x *UserProfileRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserProfileRequest.ProtoReflect.Descriptor instead.
 func (*UserProfileRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{1}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *UserProfileRequest) GetUserId() string {
@@ -180,7 +829,7 @@ type UserProfileResponse struct {
 func (x *UserProfileResponse) Reset() {
 	*x = UserProfileResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[2]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[14]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -193,7 +842,7 @@ func (x *UserProfileResponse) String() string {
 func (*UserProfileResponse) ProtoMessage() {}
 
 func (x *UserProfileResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[2]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[14]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -206,7 +855,7 @@ func (x *UserProfileResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserProfileResponse.ProtoReflect.Descriptor instead.
 func (*UserProfileResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{2}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *UserProfileResponse) GetId() string {
@@ -270,7 +919,7 @@ type UserProfileRank struct {
 func (x *UserProfileRank) Reset() {
 	*x = UserProfileRank{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[3]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[15]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -283,7 +932,7 @@ func (x *UserProfileRank) String() string {
 func (*UserProfileRank) ProtoMessage() {}
 
 func (x *UserProfileRank) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[3]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[15]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -296,7 +945,7 @@ func (x *UserProfileRank) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserProfileRank.ProtoReflect.Descriptor instead.
 func (*UserProfileRank) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{3}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *UserProfileRank) GetTrophies() int32 {
@@ -324,7 +973,7 @@ type UserSelectedMinionRequest struct {
 func (x *UserSelectedMinionRequest) Reset() {
 	*x = UserSelectedMinionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[4]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[16]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -337,7 +986,7 @@ func (x *UserSelectedMinionRequest) String() string {
 func (*UserSelectedMinionRequest) ProtoMessage() {}
 
 func (x *UserSelectedMinionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[4]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[16]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -350,7 +999,7 @@ func (x *UserSelectedMinionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserSelectedMinionRequest.ProtoReflect.Descriptor instead.
 func (*UserSelectedMinionRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{4}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *UserSelectedMinionRequest) GetUserId() string {
@@ -380,7 +1029,7 @@ type UserSelectedMinionResponse struct {
 func (x *UserSelectedMinionResponse) Reset() {
 	*x = UserSelectedMinionResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[5]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[17]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -393,7 +1042,7 @@ func (x *UserSelectedMinionResponse) String() string {
 func (*UserSelectedMinionResponse) ProtoMessage() {}
 
 func (x *UserSelectedMinionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[5]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[17]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -406,7 +1055,7 @@ func (x *UserSelectedMinionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserSelectedMinionResponse.ProtoReflect.Descriptor instead.
 func (*UserSelectedMinionResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{5}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *UserSelectedMinionResponse) GetId() string {
@@ -490,7 +1139,7 @@ type UserMinionsRequest struct {
 func (x *UserMinionsRequest) Reset() {
 	*x = UserMinionsRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[6]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[18]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -503,7 +1152,7 @@ func (x *UserMinionsRequest) String() string {
 func (*UserMinionsRequest) ProtoMessage() {}
 
 func (x *UserMinionsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[6]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[18]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -516,7 +1165,7 @@ func (x *UserMinionsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserMinionsRequest.ProtoReflect.Descriptor instead.
 func (*UserMinionsRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{6}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *UserMinionsRequest) GetUserId() string {
@@ -537,7 +1186,7 @@ type UserMinionsResponse struct {
 func (x *UserMinionsResponse) Reset() {
 	*x = UserMinionsResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[7]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[19]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -550,7 +1199,7 @@ func (x *UserMinionsResponse) String() string {
 func (*UserMinionsResponse) ProtoMessage() {}
 
 func (x *UserMinionsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[7]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[19]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -563,7 +1212,7 @@ func (x *UserMinionsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UserMinionsResponse.ProtoReflect.Descriptor instead.
 func (*UserMinionsResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{7}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *UserMinionsResponse) GetMinions() []*Minion {
@@ -593,7 +1242,7 @@ type Minion struct {
 func (x *Minion) Reset() {
 	*x = Minion{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[8]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[20]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -606,7 +1255,7 @@ func (x *Minion) String() string {
 func (*Minion) ProtoMessage() {}
 
 func (x *Minion) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[8]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[20]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -619,7 +1268,7 @@ func (x *Minion) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Minion.ProtoReflect.Descriptor instead.
 func (*Minion) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{8}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *Minion) GetId() string {
@@ -703,7 +1352,7 @@ type MinionRequest struct {
 func (x *MinionRequest) Reset() {
 	*x = MinionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[9]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[21]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -716,7 +1365,7 @@ func (x *MinionRequest) String() string {
 func (*MinionRequest) ProtoMessage() {}
 
 func (x *MinionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[9]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[21]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -729,7 +1378,7 @@ func (x *MinionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MinionRequest.ProtoReflect.Descriptor instead.
 func (*MinionRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{9}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *MinionRequest) GetMinionID() string {
@@ -750,7 +1399,7 @@ type MinionResponse struct {
 func (x *MinionResponse) Reset() {
 	*x = MinionResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[10]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[22]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -763,7 +1412,7 @@ func (x *MinionResponse) String() string {
 func (*MinionResponse) ProtoMessage() {}
 
 func (x *MinionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[10]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[22]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -776,7 +1425,7 @@ func (x *MinionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MinionResponse.ProtoReflect.Descriptor instead.
 func (*MinionResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{10}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{22}
 }
 
 func (x *MinionResponse) GetMinion() *Minion {
@@ -799,7 +1448,7 @@ type CreateMinionRequest struct {
 func (x *CreateMinionRequest) Reset() {
 	*x = CreateMinionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[11]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[23]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -812,7 +1461,7 @@ func (x *CreateMinionRequest) String() string {
 func (*CreateMinionRequest) ProtoMessage() {}
 
 func (x *CreateMinionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[11]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[23]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -825,7 +1474,7 @@ func (x *CreateMinionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateMinionRequest.ProtoReflect.Descriptor instead.
 func (*CreateMinionRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{11}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{23}
 }
 
 func (x *CreateMinionRequest) GetUserId() string {
@@ -860,7 +1509,7 @@ type CreateMinionResponse struct {
 func (x *CreateMinionResponse) Reset() {
 	*x = CreateMinionResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[12]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[24]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -873,7 +1522,7 @@ func (x *CreateMinionResponse) String() string {
 func (*CreateMinionResponse) ProtoMessage() {}
 
 func (x *CreateMinionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[12]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[24]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -886,7 +1535,7 @@ func (x *CreateMinionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateMinionResponse.ProtoReflect.Descriptor instead.
 func (*CreateMinionResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{12}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{24}
 }
 
 func (x *CreateMinionResponse) GetMinion() *Minion {
@@ -907,7 +1556,7 @@ type GetUserFriendRequest struct {
 func (x *GetUserFriendRequest) Reset() {
 	*x = GetUserFriendRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[13]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[25]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -920,7 +1569,7 @@ func (x *GetUserFriendRequest) String() string {
 func (*GetUserFriendRequest) ProtoMessage() {}
 
 func (x *GetUserFriendRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[13]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[25]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -933,7 +1582,7 @@ func (x *GetUserFriendRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetUserFriendRequest.ProtoReflect.Descriptor instead.
 func (*GetUserFriendRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{13}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{25}
 }
 
 func (x *GetUserFriendRequest) GetUserId() string {
@@ -954,7 +1603,7 @@ type GetUserFriendResponse struct {
 func (x *GetUserFriendResponse) Reset() {
 	*x = GetUserFriendResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[14]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[26]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -967,7 +1616,7 @@ func (x *GetUserFriendResponse) String() string {
 func (*GetUserFriendResponse) ProtoMessage() {}
 
 func (x *GetUserFriendResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[14]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[26]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -980,7 +1629,7 @@ func (x *GetUserFriendResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetUserFriendResponse.ProtoReflect.Descriptor instead.
 func (*GetUserFriendResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{14}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{26}
 }
 
 func (x *GetUserFriendResponse) GetFriends() []*FriendInfo {
@@ -1004,7 +1653,7 @@ type FriendInfo struct {
 func (x *FriendInfo) Reset() {
 	*x = FriendInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[15]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[27]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1017,7 +1666,7 @@ func (x *FriendInfo) String() string {
 func (*FriendInfo) ProtoMessage() {}
 
 func (x *FriendInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[15]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[27]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1030,7 +1679,7 @@ func (x *FriendInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FriendInfo.ProtoReflect.Descriptor instead.
 func (*FriendInfo) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{15}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{27}
 }
 
 func (x *FriendInfo) GetFriendId() string {
@@ -1075,7 +1724,7 @@ type GetMatchInfoRequest struct {
 func (x *GetMatchInfoRequest) Reset() {
 	*x = GetMatchInfoRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[16]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[28]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1088,7 +1737,7 @@ func (x *GetMatchInfoRequest) String() string {
 func (*GetMatchInfoRequest) ProtoMessage() {}
 
 func (x *GetMatchInfoRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[16]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[28]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1101,7 +1750,7 @@ func (x *GetMatchInfoRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetMatchInfoRequest.ProtoReflect.Descriptor instead.
 func (*GetMatchInfoRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{16}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{28}
 }
 
 func (x *GetMatchInfoRequest) GetUserID() string {
@@ -1147,7 +1796,7 @@ type GetMatchInfoResponse struct {
 func (x *GetMatchInfoResponse) Reset() {
 	*x = GetMatchInfoResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[17]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[29]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1160,7 +1809,7 @@ func (x *GetMatchInfoResponse) String() string {
 func (*GetMatchInfoResponse) ProtoMessage() {}
 
 func (x *GetMatchInfoResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[17]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[29]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1173,7 +1822,7 @@ func (x *GetMatchInfoResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetMatchInfoResponse.ProtoReflect.Descriptor instead.
 func (*GetMatchInfoResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{17}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{29}
 }
 
 func (x *GetMatchInfoResponse) GetPlayerInfo() *v1.PlayerInfoMatchProto {
@@ -1224,7 +1873,7 @@ type MapData struct {
 func (x *MapData) Reset() {
 	*x = MapData{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[18]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[30]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1237,7 +1886,7 @@ func (x *MapData) String() string {
 func (*MapData) ProtoMessage() {}
 
 func (x *MapData) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[18]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[30]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1250,7 +1899,7 @@ func (x *MapData) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MapData.ProtoReflect.Descriptor instead.
 func (*MapData) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{18}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{30}
 }
 
 func (x *MapData) GetGamePlay() int32 {
@@ -1289,7 +1938,7 @@ type PlayerStat struct {
 func (x *PlayerStat) Reset() {
 	*x = PlayerStat{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[19]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[31]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1302,7 +1951,7 @@ func (x *PlayerStat) String() string {
 func (*PlayerStat) ProtoMessage() {}
 
 func (x *PlayerStat) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[19]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[31]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1315,7 +1964,7 @@ func (x *PlayerStat) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PlayerStat.ProtoReflect.Descriptor instead.
 func (*PlayerStat) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{19}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{31}
 }
 
 func (x *PlayerStat) GetRoundScoreAll() int32 {
@@ -1365,7 +2014,7 @@ type GetActivityRequest struct {
 func (x *GetActivityRequest) Reset() {
 	*x = GetActivityRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[20]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[32]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1378,7 +2027,7 @@ func (x *GetActivityRequest) String() string {
 func (*GetActivityRequest) ProtoMessage() {}
 
 func (x *GetActivityRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[20]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[32]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1391,7 +2040,7 @@ func (x *GetActivityRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetActivityRequest.ProtoReflect.Descriptor instead.
 func (*GetActivityRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{20}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{32}
 }
 
 func (x *GetActivityRequest) GetTownID() string {
@@ -1414,7 +2063,7 @@ type GetActivityResponse struct {
 func (x *GetActivityResponse) Reset() {
 	*x = GetActivityResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[21]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[33]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1427,7 +2076,7 @@ func (x *GetActivityResponse) String() string {
 func (*GetActivityResponse) ProtoMessage() {}
 
 func (x *GetActivityResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[21]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[33]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1440,7 +2089,7 @@ func (x *GetActivityResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetActivityResponse.ProtoReflect.Descriptor instead.
 func (*GetActivityResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{21}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{33}
 }
 
 func (x *GetActivityResponse) GetActivityID() string {
@@ -1469,20 +2118,20 @@ type ClassInfo struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	ClassID            int32                 `protobuf:"varint,1,opt,name=classID,proto3" json:"classID,omitempty"`
-	ClassName          string                `protobuf:"bytes,2,opt,name=className,proto3" json:"className,omitempty"`
-	Level              int32                 `protobuf:"varint,3,opt,name=level,proto3" json:"level,omitempty"`
-	DailyActivityLimit int32                 `protobuf:"varint,4,opt,name=dailyActivityLimit,proto3" json:"dailyActivityLimit,omitempty"`
-	MemberPerClass     int32                 `protobuf:"varint,5,opt,name=memberPerClass,proto3" json:"memberPerClass,omitempty"`
-	TimePerClass       float64               `protobuf:"fixed64,6,opt,name=timePerClass,proto3" json:"timePerClass,omitempty"`
-	ClassPerMasterL    float64               `protobuf:"fixed64,7,opt,name=classPerMasterL,proto3" json:"classPerMasterL,omitempty"`
-	Rewards            map[int32]*SimpleItem `protobuf:"bytes,8,rep,name=rewards,proto3" json:"rewards,omitempty" protobuf_key:"varint,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"`
+	ClassID            int32         `protobuf:"varint,1,opt,name=classID,proto3" json:"classID,omitempty"`
+	ClassName          string        `protobuf:"bytes,2,opt,name=className,proto3" json:"className,omitempty"`
+	Level              int32         `protobuf:"varint,3,opt,name=level,proto3" json:"level,omitempty"`
+	DailyActivityLimit int32         `protobuf:"varint,4,opt,name=dailyActivityLimit,proto3" json:"dailyActivityLimit,omitempty"`
+	MemberPerClass     int32         `protobuf:"varint,5,opt,name=memberPerClass,proto3" json:"memberPerClass,omitempty"`
+	TimePerClass       float64       `protobuf:"fixed64,6,opt,name=timePerClass,proto3" json:"timePerClass,omitempty"`
+	ClassPerMasterL    float64       `protobuf:"fixed64,7,opt,name=classPerMasterL,proto3" json:"classPerMasterL,omitempty"`
+	Rewards            []*SimpleItem `protobuf:"bytes,8,rep,name=rewards,proto3" json:"rewards,omitempty"`
 }
 
 func (x *ClassInfo) Reset() {
 	*x = ClassInfo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[22]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[34]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1495,7 +2144,7 @@ func (x *ClassInfo) String() string {
 func (*ClassInfo) ProtoMessage() {}
 
 func (x *ClassInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[22]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[34]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1508,7 +2157,7 @@ func (x *ClassInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ClassInfo.ProtoReflect.Descriptor instead.
 func (*ClassInfo) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{22}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{34}
 }
 
 func (x *ClassInfo) GetClassID() int32 {
@@ -1560,7 +2209,7 @@ func (x *ClassInfo) GetClassPerMasterL() float64 {
 	return 0
 }
 
-func (x *ClassInfo) GetRewards() map[int32]*SimpleItem {
+func (x *ClassInfo) GetRewards() []*SimpleItem {
 	if x != nil {
 		return x.Rewards
 	}
@@ -1581,7 +2230,7 @@ type SimpleItem struct {
 func (x *SimpleItem) Reset() {
 	*x = SimpleItem{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[23]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[35]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1594,7 +2243,7 @@ func (x *SimpleItem) String() string {
 func (*SimpleItem) ProtoMessage() {}
 
 func (x *SimpleItem) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[23]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[35]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1607,7 +2256,7 @@ func (x *SimpleItem) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SimpleItem.ProtoReflect.Descriptor instead.
 func (*SimpleItem) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{23}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{35}
 }
 
 func (x *SimpleItem) GetItemType() string {
@@ -1644,14 +2293,14 @@ type GetTownUserRequest struct {
 	unknownFields protoimpl.UnknownFields
 
 	UserID       string `protobuf:"bytes,1,opt,name=userID,proto3" json:"userID,omitempty"`
-	UserLanguage int32  `protobuf:"varint,2,opt,name=userLanguage,proto3" json:"userLanguage,omitempty"`
+	UserLanguage string `protobuf:"bytes,2,opt,name=userLanguage,proto3" json:"userLanguage,omitempty"`
 	UserAge      int32  `protobuf:"varint,3,opt,name=userAge,proto3" json:"userAge,omitempty"`
 }
 
 func (x *GetTownUserRequest) Reset() {
 	*x = GetTownUserRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[24]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[36]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1664,7 +2313,7 @@ func (x *GetTownUserRequest) String() string {
 func (*GetTownUserRequest) ProtoMessage() {}
 
 func (x *GetTownUserRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[24]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[36]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1677,7 +2326,7 @@ func (x *GetTownUserRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetTownUserRequest.ProtoReflect.Descriptor instead.
 func (*GetTownUserRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{24}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{36}
 }
 
 func (x *GetTownUserRequest) GetUserID() string {
@@ -1687,11 +2336,11 @@ func (x *GetTownUserRequest) GetUserID() string {
 	return ""
 }
 
-func (x *GetTownUserRequest) GetUserLanguage() int32 {
+func (x *GetTownUserRequest) GetUserLanguage() string {
 	if x != nil {
 		return x.UserLanguage
 	}
-	return 0
+	return ""
 }
 
 func (x *GetTownUserRequest) GetUserAge() int32 {
@@ -1708,18 +2357,18 @@ type LobbyTown struct {
 
 	TownID       string  `protobuf:"bytes,1,opt,name=townID,proto3" json:"townID,omitempty"`
 	TownName     string  `protobuf:"bytes,2,opt,name=townName,proto3" json:"townName,omitempty"`
-	Description  string  `protobuf:"bytes,3,opt,name=description,proto3" json:"description,omitempty"`
-	ActiveTime   int64   `protobuf:"varint,4,opt,name=activeTime,proto3" json:"activeTime,omitempty"`
-	TownCountry  string  `protobuf:"bytes,5,opt,name=townCountry,proto3" json:"townCountry,omitempty"`
+	ActiveTime   int64   `protobuf:"varint,3,opt,name=activeTime,proto3" json:"activeTime,omitempty"`
+	TownCountry  string  `protobuf:"bytes,4,opt,name=townCountry,proto3" json:"townCountry,omitempty"`
+	TownRegion   string  `protobuf:"bytes,5,opt,name=townRegion,proto3" json:"townRegion,omitempty"`
 	TownTime     int32   `protobuf:"varint,6,opt,name=townTime,proto3" json:"townTime,omitempty"`
-	TownLanguage int32   `protobuf:"varint,7,opt,name=townLanguage,proto3" json:"townLanguage,omitempty"`
+	TownLanguage string  `protobuf:"bytes,7,opt,name=townLanguage,proto3" json:"townLanguage,omitempty"`
 	TownScore    float64 `protobuf:"fixed64,8,opt,name=townScore,proto3" json:"townScore,omitempty"`
 }
 
 func (x *LobbyTown) Reset() {
 	*x = LobbyTown{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[25]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[37]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1732,7 +2381,7 @@ func (x *LobbyTown) String() string {
 func (*LobbyTown) ProtoMessage() {}
 
 func (x *LobbyTown) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[25]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[37]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1745,7 +2394,7 @@ func (x *LobbyTown) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LobbyTown.ProtoReflect.Descriptor instead.
 func (*LobbyTown) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{25}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{37}
 }
 
 func (x *LobbyTown) GetTownID() string {
@@ -1758,13 +2407,6 @@ func (x *LobbyTown) GetTownID() string {
 func (x *LobbyTown) GetTownName() string {
 	if x != nil {
 		return x.TownName
-	}
-	return ""
-}
-
-func (x *LobbyTown) GetDescription() string {
-	if x != nil {
-		return x.Description
 	}
 	return ""
 }
@@ -1783,6 +2425,13 @@ func (x *LobbyTown) GetTownCountry() string {
 	return ""
 }
 
+func (x *LobbyTown) GetTownRegion() string {
+	if x != nil {
+		return x.TownRegion
+	}
+	return ""
+}
+
 func (x *LobbyTown) GetTownTime() int32 {
 	if x != nil {
 		return x.TownTime
@@ -1790,11 +2439,11 @@ func (x *LobbyTown) GetTownTime() int32 {
 	return 0
 }
 
-func (x *LobbyTown) GetTownLanguage() int32 {
+func (x *LobbyTown) GetTownLanguage() string {
 	if x != nil {
 		return x.TownLanguage
 	}
-	return 0
+	return ""
 }
 
 func (x *LobbyTown) GetTownScore() float64 {
@@ -1816,7 +2465,7 @@ type PickTownUserRequest struct {
 func (x *PickTownUserRequest) Reset() {
 	*x = PickTownUserRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[26]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[38]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1829,7 +2478,7 @@ func (x *PickTownUserRequest) String() string {
 func (*PickTownUserRequest) ProtoMessage() {}
 
 func (x *PickTownUserRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[26]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[38]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1842,7 +2491,7 @@ func (x *PickTownUserRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PickTownUserRequest.ProtoReflect.Descriptor instead.
 func (*PickTownUserRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{26}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{38}
 }
 
 func (x *PickTownUserRequest) GetUserID() string {
@@ -1872,7 +2521,7 @@ type TrackSessionRequest struct {
 func (x *TrackSessionRequest) Reset() {
 	*x = TrackSessionRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[27]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[39]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1885,7 +2534,7 @@ func (x *TrackSessionRequest) String() string {
 func (*TrackSessionRequest) ProtoMessage() {}
 
 func (x *TrackSessionRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[27]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[39]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1898,7 +2547,7 @@ func (x *TrackSessionRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TrackSessionRequest.ProtoReflect.Descriptor instead.
 func (*TrackSessionRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{27}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{39}
 }
 
 func (x *TrackSessionRequest) GetUserID() string {
@@ -1931,7 +2580,7 @@ type TrackSessionResponse struct {
 func (x *TrackSessionResponse) Reset() {
 	*x = TrackSessionResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[28]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[40]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1944,7 +2593,7 @@ func (x *TrackSessionResponse) String() string {
 func (*TrackSessionResponse) ProtoMessage() {}
 
 func (x *TrackSessionResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[28]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[40]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1957,7 +2606,7 @@ func (x *TrackSessionResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TrackSessionResponse.ProtoReflect.Descriptor instead.
 func (*TrackSessionResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{28}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{40}
 }
 
 type FindMatchInfoRequest struct {
@@ -1971,7 +2620,7 @@ type FindMatchInfoRequest struct {
 func (x *FindMatchInfoRequest) Reset() {
 	*x = FindMatchInfoRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[29]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[41]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1984,7 +2633,7 @@ func (x *FindMatchInfoRequest) String() string {
 func (*FindMatchInfoRequest) ProtoMessage() {}
 
 func (x *FindMatchInfoRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[29]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[41]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1997,7 +2646,7 @@ func (x *FindMatchInfoRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindMatchInfoRequest.ProtoReflect.Descriptor instead.
 func (*FindMatchInfoRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{29}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{41}
 }
 
 func (x *FindMatchInfoRequest) GetPlayersID() []string {
@@ -2018,7 +2667,7 @@ type FindMatchInfoResponse struct {
 func (x *FindMatchInfoResponse) Reset() {
 	*x = FindMatchInfoResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[30]
+		mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[42]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2031,7 +2680,7 @@ func (x *FindMatchInfoResponse) String() string {
 func (*FindMatchInfoResponse) ProtoMessage() {}
 
 func (x *FindMatchInfoResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[30]
+	mi := &file_thetan_rivals_v1_service_rivals_proto_msgTypes[42]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2044,7 +2693,7 @@ func (x *FindMatchInfoResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FindMatchInfoResponse.ProtoReflect.Descriptor instead.
 func (*FindMatchInfoResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{30}
+	return file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP(), []int{42}
 }
 
 func (x *FindMatchInfoResponse) GetPlayers() []*v1.PlayerInfoMatchProto {
@@ -2064,7 +2713,88 @@ var file_thetan_rivals_v1_service_rivals_proto_rawDesc = []byte{
 	0x6e, 0x2f, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2f, 0x76, 0x31, 0x2f, 0x6d, 0x61, 0x74, 0x63,
 	0x68, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x1a, 0x1a, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2f,
 	0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2f, 0x76, 0x31, 0x2f, 0x75, 0x67, 0x63, 0x2e, 0x70, 0x72,
-	0x6f, 0x74, 0x6f, 0x22, 0x0f, 0x0a, 0x0d, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x52, 0x65, 0x73, 0x70,
+	0x6f, 0x74, 0x6f, 0x22, 0x79, 0x0a, 0x1b, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x46, 0x6f, 0x75, 0x6e,
+	0x64, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x52, 0x65, 0x71, 0x75, 0x65,
+	0x73, 0x74, 0x12, 0x22, 0x0a, 0x0c, 0x74, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74,
+	0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x0c, 0x74, 0x6f, 0x75, 0x72, 0x6e, 0x61,
+	0x6d, 0x65, 0x6e, 0x74, 0x49, 0x44, 0x12, 0x1c, 0x0a, 0x09, 0x70, 0x6c, 0x61, 0x79, 0x65, 0x72,
+	0x49, 0x44, 0x73, 0x18, 0x02, 0x20, 0x03, 0x28, 0x09, 0x52, 0x09, 0x70, 0x6c, 0x61, 0x79, 0x65,
+	0x72, 0x49, 0x44, 0x73, 0x12, 0x18, 0x0a, 0x07, 0x6d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x44, 0x18,
+	0x03, 0x20, 0x01, 0x28, 0x09, 0x52, 0x07, 0x6d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x44, 0x22, 0x1e,
+	0x0a, 0x1c, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x46, 0x6f, 0x75, 0x6e, 0x64, 0x54, 0x6f, 0x75, 0x72,
+	0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x65,
+	0x0a, 0x21, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x46,
+	0x6f, 0x72, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x52, 0x65, 0x71, 0x75,
+	0x65, 0x73, 0x74, 0x12, 0x22, 0x0a, 0x0c, 0x74, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e,
+	0x74, 0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x0c, 0x74, 0x6f, 0x75, 0x72, 0x6e,
+	0x61, 0x6d, 0x65, 0x6e, 0x74, 0x49, 0x44, 0x12, 0x1c, 0x0a, 0x09, 0x70, 0x6c, 0x61, 0x79, 0x65,
+	0x72, 0x49, 0x44, 0x73, 0x18, 0x02, 0x20, 0x03, 0x28, 0x09, 0x52, 0x09, 0x70, 0x6c, 0x61, 0x79,
+	0x65, 0x72, 0x49, 0x44, 0x73, 0x22, 0x99, 0x01, 0x0a, 0x22, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61,
+	0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x46, 0x6f, 0x72, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61,
+	0x6d, 0x65, 0x6e, 0x74, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x4d, 0x0a, 0x0d,
+	0x66, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x18, 0x01, 0x20,
+	0x01, 0x28, 0x0b, 0x32, 0x27, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76,
+	0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x74, 0x63, 0x68,
+	0x49, 0x6e, 0x66, 0x6f, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x52, 0x0d, 0x66, 0x69,
+	0x6e, 0x64, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x24, 0x0a, 0x0d, 0x74,
+	0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x54, 0x61, 0x67, 0x18, 0x02, 0x20, 0x01,
+	0x28, 0x09, 0x52, 0x0d, 0x74, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x54, 0x61,
+	0x67, 0x22, 0xe5, 0x01, 0x0a, 0x17, 0x47, 0x65, 0x74, 0x43, 0x6f, 0x6e, 0x66, 0x69, 0x67, 0x46,
+	0x6f, 0x72, 0x42, 0x6f, 0x74, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x3e, 0x0a,
+	0x0c, 0x6c, 0x69, 0x73, 0x74, 0x53, 0x6b, 0x69, 0x6e, 0x49, 0x6e, 0x66, 0x6f, 0x18, 0x01, 0x20,
+	0x03, 0x28, 0x0b, 0x32, 0x1a, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76,
+	0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x53, 0x6b, 0x69, 0x6e, 0x49, 0x6e, 0x66, 0x6f, 0x52,
+	0x0c, 0x6c, 0x69, 0x73, 0x74, 0x53, 0x6b, 0x69, 0x6e, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x4a, 0x0a,
+	0x10, 0x6c, 0x69, 0x73, 0x74, 0x43, 0x6f, 0x73, 0x6d, 0x65, 0x74, 0x69, 0x63, 0x49, 0x6e, 0x66,
+	0x6f, 0x18, 0x02, 0x20, 0x03, 0x28, 0x0b, 0x32, 0x1e, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e,
+	0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x43, 0x6f, 0x73, 0x6d, 0x65,
+	0x74, 0x69, 0x63, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x10, 0x6c, 0x69, 0x73, 0x74, 0x43, 0x6f, 0x73,
+	0x6d, 0x65, 0x74, 0x69, 0x63, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x3e, 0x0a, 0x1a, 0x63, 0x6f, 0x73,
+	0x6d, 0x65, 0x74, 0x69, 0x63, 0x54, 0x79, 0x70, 0x65, 0x45, 0x76, 0x6f, 0x6c, 0x76, 0x65, 0x53,
+	0x65, 0x71, 0x75, 0x65, 0x6e, 0x63, 0x65, 0x18, 0x03, 0x20, 0x03, 0x28, 0x09, 0x52, 0x1a, 0x63,
+	0x6f, 0x73, 0x6d, 0x65, 0x74, 0x69, 0x63, 0x54, 0x79, 0x70, 0x65, 0x45, 0x76, 0x6f, 0x6c, 0x76,
+	0x65, 0x53, 0x65, 0x71, 0x75, 0x65, 0x6e, 0x63, 0x65, 0x22, 0x42, 0x0a, 0x08, 0x53, 0x6b, 0x69,
+	0x6e, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x16, 0x0a, 0x06, 0x73, 0x6b, 0x69, 0x6e, 0x49, 0x44, 0x18,
+	0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x06, 0x73, 0x6b, 0x69, 0x6e, 0x49, 0x44, 0x12, 0x1e, 0x0a,
+	0x0a, 0x73, 0x6b, 0x69, 0x6e, 0x52, 0x61, 0x72, 0x69, 0x74, 0x79, 0x18, 0x02, 0x20, 0x01, 0x28,
+	0x05, 0x52, 0x0a, 0x73, 0x6b, 0x69, 0x6e, 0x52, 0x61, 0x72, 0x69, 0x74, 0x79, 0x22, 0x7a, 0x0a,
+	0x0c, 0x43, 0x6f, 0x73, 0x6d, 0x65, 0x74, 0x69, 0x63, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x1e, 0x0a,
+	0x0a, 0x63, 0x6f, 0x73, 0x6d, 0x65, 0x74, 0x69, 0x63, 0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28,
+	0x05, 0x52, 0x0a, 0x63, 0x6f, 0x73, 0x6d, 0x65, 0x74, 0x69, 0x63, 0x49, 0x44, 0x12, 0x22, 0x0a,
+	0x0c, 0x63, 0x6f, 0x73, 0x6d, 0x65, 0x74, 0x69, 0x63, 0x54, 0x79, 0x70, 0x65, 0x18, 0x02, 0x20,
+	0x01, 0x28, 0x09, 0x52, 0x0c, 0x63, 0x6f, 0x73, 0x6d, 0x65, 0x74, 0x69, 0x63, 0x54, 0x79, 0x70,
+	0x65, 0x12, 0x26, 0x0a, 0x0e, 0x63, 0x6f, 0x73, 0x6d, 0x65, 0x74, 0x69, 0x63, 0x52, 0x61, 0x72,
+	0x69, 0x74, 0x79, 0x18, 0x03, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0e, 0x63, 0x6f, 0x73, 0x6d, 0x65,
+	0x74, 0x69, 0x63, 0x52, 0x61, 0x72, 0x69, 0x74, 0x79, 0x22, 0x18, 0x0a, 0x16, 0x47, 0x65, 0x74,
+	0x43, 0x6f, 0x6e, 0x66, 0x69, 0x67, 0x46, 0x6f, 0x72, 0x42, 0x6f, 0x74, 0x52, 0x65, 0x71, 0x75,
+	0x65, 0x73, 0x74, 0x22, 0x1d, 0x0a, 0x1b, 0x47, 0x65, 0x74, 0x41, 0x63, 0x74, 0x69, 0x76, 0x65,
+	0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x73, 0x52, 0x65, 0x71, 0x75, 0x65,
+	0x73, 0x74, 0x22, 0x62, 0x0a, 0x1c, 0x47, 0x65, 0x74, 0x41, 0x63, 0x74, 0x69, 0x76, 0x65, 0x54,
+	0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x73, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e,
+	0x73, 0x65, 0x12, 0x42, 0x0a, 0x0b, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74,
+	0x73, 0x18, 0x01, 0x20, 0x03, 0x28, 0x0b, 0x32, 0x20, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e,
+	0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x54, 0x6f, 0x75, 0x72, 0x6e,
+	0x61, 0x6d, 0x65, 0x6e, 0x74, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x0b, 0x54, 0x6f, 0x75, 0x72, 0x6e,
+	0x61, 0x6d, 0x65, 0x6e, 0x74, 0x73, 0x22, 0xe3, 0x01, 0x0a, 0x0e, 0x54, 0x6f, 0x75, 0x72, 0x6e,
+	0x61, 0x6d, 0x65, 0x6e, 0x74, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x22, 0x0a, 0x0c, 0x74, 0x6f, 0x75,
+	0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52,
+	0x0c, 0x74, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x49, 0x44, 0x12, 0x10, 0x0a,
+	0x03, 0x74, 0x61, 0x67, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x03, 0x74, 0x61, 0x67, 0x12,
+	0x3b, 0x0a, 0x0b, 0x63, 0x75, 0x72, 0x72, 0x65, 0x6e, 0x74, 0x4d, 0x61, 0x70, 0x73, 0x18, 0x03,
+	0x20, 0x03, 0x28, 0x0b, 0x32, 0x19, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69,
+	0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x70, 0x49, 0x6e, 0x66, 0x6f, 0x52,
+	0x0b, 0x63, 0x75, 0x72, 0x72, 0x65, 0x6e, 0x74, 0x4d, 0x61, 0x70, 0x73, 0x12, 0x2e, 0x0a, 0x12,
+	0x6d, 0x61, 0x78, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x73, 0x49, 0x6e, 0x42, 0x61, 0x74, 0x74,
+	0x6c, 0x65, 0x18, 0x04, 0x20, 0x01, 0x28, 0x05, 0x52, 0x12, 0x6d, 0x61, 0x78, 0x50, 0x6c, 0x61,
+	0x79, 0x65, 0x72, 0x73, 0x49, 0x6e, 0x42, 0x61, 0x74, 0x74, 0x6c, 0x65, 0x12, 0x2e, 0x0a, 0x12,
+	0x6d, 0x61, 0x78, 0x54, 0x69, 0x6d, 0x65, 0x49, 0x6e, 0x42, 0x61, 0x74, 0x74, 0x6c, 0x65, 0x53,
+	0x65, 0x63, 0x18, 0x05, 0x20, 0x01, 0x28, 0x05, 0x52, 0x12, 0x6d, 0x61, 0x78, 0x54, 0x69, 0x6d,
+	0x65, 0x49, 0x6e, 0x42, 0x61, 0x74, 0x74, 0x6c, 0x65, 0x53, 0x65, 0x63, 0x22, 0x45, 0x0a, 0x07,
+	0x4d, 0x61, 0x70, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x14, 0x0a, 0x05, 0x6d, 0x61, 0x70, 0x49, 0x44,
+	0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x05, 0x6d, 0x61, 0x70, 0x49, 0x44, 0x12, 0x24, 0x0a,
+	0x0d, 0x6d, 0x61, 0x70, 0x44, 0x69, 0x66, 0x66, 0x69, 0x63, 0x75, 0x6c, 0x74, 0x79, 0x18, 0x02,
+	0x20, 0x01, 0x28, 0x05, 0x52, 0x0d, 0x6d, 0x61, 0x70, 0x44, 0x69, 0x66, 0x66, 0x69, 0x63, 0x75,
+	0x6c, 0x74, 0x79, 0x22, 0x0f, 0x0a, 0x0d, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x52, 0x65, 0x73, 0x70,
 	0x6f, 0x6e, 0x73, 0x65, 0x22, 0x4e, 0x0a, 0x12, 0x55, 0x73, 0x65, 0x72, 0x50, 0x72, 0x6f, 0x66,
 	0x69, 0x6c, 0x65, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x16, 0x0a, 0x06, 0x75, 0x73,
 	0x65, 0x72, 0x49, 0x64, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x75, 0x73, 0x65, 0x72,
@@ -2262,7 +2992,7 @@ var file_thetan_rivals_v1_service_rivals_proto_rawDesc = []byte{
 	0x6f, 0x77, 0x6e, 0x49, 0x44, 0x12, 0x35, 0x0a, 0x07, 0x63, 0x6c, 0x61, 0x73, 0x73, 0x65, 0x73,
 	0x18, 0x03, 0x20, 0x03, 0x28, 0x0b, 0x32, 0x1b, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
 	0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x43, 0x6c, 0x61, 0x73, 0x73, 0x49,
-	0x6e, 0x66, 0x6f, 0x52, 0x07, 0x63, 0x6c, 0x61, 0x73, 0x73, 0x65, 0x73, 0x22, 0x9d, 0x03, 0x0a,
+	0x6e, 0x66, 0x6f, 0x52, 0x07, 0x63, 0x6c, 0x61, 0x73, 0x73, 0x65, 0x73, 0x22, 0xb7, 0x02, 0x0a,
 	0x09, 0x43, 0x6c, 0x61, 0x73, 0x73, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x18, 0x0a, 0x07, 0x63, 0x6c,
 	0x61, 0x73, 0x73, 0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x07, 0x63, 0x6c, 0x61,
 	0x73, 0x73, 0x49, 0x44, 0x12, 0x1c, 0x0a, 0x09, 0x63, 0x6c, 0x61, 0x73, 0x73, 0x4e, 0x61, 0x6d,
@@ -2278,158 +3008,182 @@ var file_thetan_rivals_v1_service_rivals_proto_rawDesc = []byte{
 	0x18, 0x06, 0x20, 0x01, 0x28, 0x01, 0x52, 0x0c, 0x74, 0x69, 0x6d, 0x65, 0x50, 0x65, 0x72, 0x43,
 	0x6c, 0x61, 0x73, 0x73, 0x12, 0x28, 0x0a, 0x0f, 0x63, 0x6c, 0x61, 0x73, 0x73, 0x50, 0x65, 0x72,
 	0x4d, 0x61, 0x73, 0x74, 0x65, 0x72, 0x4c, 0x18, 0x07, 0x20, 0x01, 0x28, 0x01, 0x52, 0x0f, 0x63,
-	0x6c, 0x61, 0x73, 0x73, 0x50, 0x65, 0x72, 0x4d, 0x61, 0x73, 0x74, 0x65, 0x72, 0x4c, 0x12, 0x42,
+	0x6c, 0x61, 0x73, 0x73, 0x50, 0x65, 0x72, 0x4d, 0x61, 0x73, 0x74, 0x65, 0x72, 0x4c, 0x12, 0x36,
 	0x0a, 0x07, 0x72, 0x65, 0x77, 0x61, 0x72, 0x64, 0x73, 0x18, 0x08, 0x20, 0x03, 0x28, 0x0b, 0x32,
-	0x28, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e,
-	0x76, 0x31, 0x2e, 0x43, 0x6c, 0x61, 0x73, 0x73, 0x49, 0x6e, 0x66, 0x6f, 0x2e, 0x52, 0x65, 0x77,
-	0x61, 0x72, 0x64, 0x73, 0x45, 0x6e, 0x74, 0x72, 0x79, 0x52, 0x07, 0x72, 0x65, 0x77, 0x61, 0x72,
-	0x64, 0x73, 0x1a, 0x58, 0x0a, 0x0c, 0x52, 0x65, 0x77, 0x61, 0x72, 0x64, 0x73, 0x45, 0x6e, 0x74,
-	0x72, 0x79, 0x12, 0x10, 0x0a, 0x03, 0x6b, 0x65, 0x79, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52,
-	0x03, 0x6b, 0x65, 0x79, 0x12, 0x32, 0x0a, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x18, 0x02, 0x20,
-	0x01, 0x28, 0x0b, 0x32, 0x1c, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76,
-	0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x53, 0x69, 0x6d, 0x70, 0x6c, 0x65, 0x49, 0x74, 0x65,
-	0x6d, 0x52, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x3a, 0x02, 0x38, 0x01, 0x22, 0x7e, 0x0a, 0x0a,
-	0x53, 0x69, 0x6d, 0x70, 0x6c, 0x65, 0x49, 0x74, 0x65, 0x6d, 0x12, 0x1a, 0x0a, 0x08, 0x69, 0x74,
-	0x65, 0x6d, 0x54, 0x79, 0x70, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x69, 0x74,
-	0x65, 0x6d, 0x54, 0x79, 0x70, 0x65, 0x12, 0x16, 0x0a, 0x06, 0x74, 0x79, 0x70, 0x65, 0x49, 0x44,
-	0x18, 0x02, 0x20, 0x01, 0x28, 0x05, 0x52, 0x06, 0x74, 0x79, 0x70, 0x65, 0x49, 0x44, 0x12, 0x16,
-	0x0a, 0x06, 0x61, 0x6d, 0x6f, 0x75, 0x6e, 0x74, 0x18, 0x03, 0x20, 0x01, 0x28, 0x01, 0x52, 0x06,
-	0x61, 0x6d, 0x6f, 0x75, 0x6e, 0x74, 0x12, 0x24, 0x0a, 0x0d, 0x69, 0x6e, 0x76, 0x65, 0x6e, 0x74,
-	0x6f, 0x72, 0x79, 0x4b, 0x69, 0x6e, 0x64, 0x18, 0x04, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0d, 0x69,
-	0x6e, 0x76, 0x65, 0x6e, 0x74, 0x6f, 0x72, 0x79, 0x4b, 0x69, 0x6e, 0x64, 0x22, 0x6a, 0x0a, 0x12,
-	0x47, 0x65, 0x74, 0x54, 0x6f, 0x77, 0x6e, 0x55, 0x73, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65,
+	0x1c, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e,
+	0x76, 0x31, 0x2e, 0x53, 0x69, 0x6d, 0x70, 0x6c, 0x65, 0x49, 0x74, 0x65, 0x6d, 0x52, 0x07, 0x72,
+	0x65, 0x77, 0x61, 0x72, 0x64, 0x73, 0x22, 0x7e, 0x0a, 0x0a, 0x53, 0x69, 0x6d, 0x70, 0x6c, 0x65,
+	0x49, 0x74, 0x65, 0x6d, 0x12, 0x1a, 0x0a, 0x08, 0x69, 0x74, 0x65, 0x6d, 0x54, 0x79, 0x70, 0x65,
+	0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x69, 0x74, 0x65, 0x6d, 0x54, 0x79, 0x70, 0x65,
+	0x12, 0x16, 0x0a, 0x06, 0x74, 0x79, 0x70, 0x65, 0x49, 0x44, 0x18, 0x02, 0x20, 0x01, 0x28, 0x05,
+	0x52, 0x06, 0x74, 0x79, 0x70, 0x65, 0x49, 0x44, 0x12, 0x16, 0x0a, 0x06, 0x61, 0x6d, 0x6f, 0x75,
+	0x6e, 0x74, 0x18, 0x03, 0x20, 0x01, 0x28, 0x01, 0x52, 0x06, 0x61, 0x6d, 0x6f, 0x75, 0x6e, 0x74,
+	0x12, 0x24, 0x0a, 0x0d, 0x69, 0x6e, 0x76, 0x65, 0x6e, 0x74, 0x6f, 0x72, 0x79, 0x4b, 0x69, 0x6e,
+	0x64, 0x18, 0x04, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0d, 0x69, 0x6e, 0x76, 0x65, 0x6e, 0x74, 0x6f,
+	0x72, 0x79, 0x4b, 0x69, 0x6e, 0x64, 0x22, 0x6a, 0x0a, 0x12, 0x47, 0x65, 0x74, 0x54, 0x6f, 0x77,
+	0x6e, 0x55, 0x73, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x16, 0x0a, 0x06,
+	0x75, 0x73, 0x65, 0x72, 0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x75, 0x73,
+	0x65, 0x72, 0x49, 0x44, 0x12, 0x22, 0x0a, 0x0c, 0x75, 0x73, 0x65, 0x72, 0x4c, 0x61, 0x6e, 0x67,
+	0x75, 0x61, 0x67, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x0c, 0x75, 0x73, 0x65, 0x72,
+	0x4c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x12, 0x18, 0x0a, 0x07, 0x75, 0x73, 0x65, 0x72,
+	0x41, 0x67, 0x65, 0x18, 0x03, 0x20, 0x01, 0x28, 0x05, 0x52, 0x07, 0x75, 0x73, 0x65, 0x72, 0x41,
+	0x67, 0x65, 0x22, 0xff, 0x01, 0x0a, 0x09, 0x4c, 0x6f, 0x62, 0x62, 0x79, 0x54, 0x6f, 0x77, 0x6e,
+	0x12, 0x16, 0x0a, 0x06, 0x74, 0x6f, 0x77, 0x6e, 0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09,
+	0x52, 0x06, 0x74, 0x6f, 0x77, 0x6e, 0x49, 0x44, 0x12, 0x1a, 0x0a, 0x08, 0x74, 0x6f, 0x77, 0x6e,
+	0x4e, 0x61, 0x6d, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x74, 0x6f, 0x77, 0x6e,
+	0x4e, 0x61, 0x6d, 0x65, 0x12, 0x1e, 0x0a, 0x0a, 0x61, 0x63, 0x74, 0x69, 0x76, 0x65, 0x54, 0x69,
+	0x6d, 0x65, 0x18, 0x03, 0x20, 0x01, 0x28, 0x03, 0x52, 0x0a, 0x61, 0x63, 0x74, 0x69, 0x76, 0x65,
+	0x54, 0x69, 0x6d, 0x65, 0x12, 0x20, 0x0a, 0x0b, 0x74, 0x6f, 0x77, 0x6e, 0x43, 0x6f, 0x75, 0x6e,
+	0x74, 0x72, 0x79, 0x18, 0x04, 0x20, 0x01, 0x28, 0x09, 0x52, 0x0b, 0x74, 0x6f, 0x77, 0x6e, 0x43,
+	0x6f, 0x75, 0x6e, 0x74, 0x72, 0x79, 0x12, 0x1e, 0x0a, 0x0a, 0x74, 0x6f, 0x77, 0x6e, 0x52, 0x65,
+	0x67, 0x69, 0x6f, 0x6e, 0x18, 0x05, 0x20, 0x01, 0x28, 0x09, 0x52, 0x0a, 0x74, 0x6f, 0x77, 0x6e,
+	0x52, 0x65, 0x67, 0x69, 0x6f, 0x6e, 0x12, 0x1a, 0x0a, 0x08, 0x74, 0x6f, 0x77, 0x6e, 0x54, 0x69,
+	0x6d, 0x65, 0x18, 0x06, 0x20, 0x01, 0x28, 0x05, 0x52, 0x08, 0x74, 0x6f, 0x77, 0x6e, 0x54, 0x69,
+	0x6d, 0x65, 0x12, 0x22, 0x0a, 0x0c, 0x74, 0x6f, 0x77, 0x6e, 0x4c, 0x61, 0x6e, 0x67, 0x75, 0x61,
+	0x67, 0x65, 0x18, 0x07, 0x20, 0x01, 0x28, 0x09, 0x52, 0x0c, 0x74, 0x6f, 0x77, 0x6e, 0x4c, 0x61,
+	0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x12, 0x1c, 0x0a, 0x09, 0x74, 0x6f, 0x77, 0x6e, 0x53, 0x63,
+	0x6f, 0x72, 0x65, 0x18, 0x08, 0x20, 0x01, 0x28, 0x01, 0x52, 0x09, 0x74, 0x6f, 0x77, 0x6e, 0x53,
+	0x63, 0x6f, 0x72, 0x65, 0x22, 0x45, 0x0a, 0x13, 0x50, 0x69, 0x63, 0x6b, 0x54, 0x6f, 0x77, 0x6e,
+	0x55, 0x73, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x16, 0x0a, 0x06, 0x75,
+	0x73, 0x65, 0x72, 0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x75, 0x73, 0x65,
+	0x72, 0x49, 0x44, 0x12, 0x16, 0x0a, 0x06, 0x74, 0x6f, 0x77, 0x6e, 0x49, 0x44, 0x18, 0x02, 0x20,
+	0x01, 0x28, 0x09, 0x52, 0x06, 0x74, 0x6f, 0x77, 0x6e, 0x49, 0x44, 0x22, 0x63, 0x0a, 0x13, 0x54,
+	0x72, 0x61, 0x63, 0x6b, 0x53, 0x65, 0x73, 0x73, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x71, 0x75, 0x65,
 	0x73, 0x74, 0x12, 0x16, 0x0a, 0x06, 0x75, 0x73, 0x65, 0x72, 0x49, 0x44, 0x18, 0x01, 0x20, 0x01,
-	0x28, 0x09, 0x52, 0x06, 0x75, 0x73, 0x65, 0x72, 0x49, 0x44, 0x12, 0x22, 0x0a, 0x0c, 0x75, 0x73,
-	0x65, 0x72, 0x4c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x05,
-	0x52, 0x0c, 0x75, 0x73, 0x65, 0x72, 0x4c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x12, 0x18,
-	0x0a, 0x07, 0x75, 0x73, 0x65, 0x72, 0x41, 0x67, 0x65, 0x18, 0x03, 0x20, 0x01, 0x28, 0x05, 0x52,
-	0x07, 0x75, 0x73, 0x65, 0x72, 0x41, 0x67, 0x65, 0x22, 0x81, 0x02, 0x0a, 0x09, 0x4c, 0x6f, 0x62,
-	0x62, 0x79, 0x54, 0x6f, 0x77, 0x6e, 0x12, 0x16, 0x0a, 0x06, 0x74, 0x6f, 0x77, 0x6e, 0x49, 0x44,
-	0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x74, 0x6f, 0x77, 0x6e, 0x49, 0x44, 0x12, 0x1a,
-	0x0a, 0x08, 0x74, 0x6f, 0x77, 0x6e, 0x4e, 0x61, 0x6d, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09,
-	0x52, 0x08, 0x74, 0x6f, 0x77, 0x6e, 0x4e, 0x61, 0x6d, 0x65, 0x12, 0x20, 0x0a, 0x0b, 0x64, 0x65,
-	0x73, 0x63, 0x72, 0x69, 0x70, 0x74, 0x69, 0x6f, 0x6e, 0x18, 0x03, 0x20, 0x01, 0x28, 0x09, 0x52,
-	0x0b, 0x64, 0x65, 0x73, 0x63, 0x72, 0x69, 0x70, 0x74, 0x69, 0x6f, 0x6e, 0x12, 0x1e, 0x0a, 0x0a,
-	0x61, 0x63, 0x74, 0x69, 0x76, 0x65, 0x54, 0x69, 0x6d, 0x65, 0x18, 0x04, 0x20, 0x01, 0x28, 0x03,
-	0x52, 0x0a, 0x61, 0x63, 0x74, 0x69, 0x76, 0x65, 0x54, 0x69, 0x6d, 0x65, 0x12, 0x20, 0x0a, 0x0b,
-	0x74, 0x6f, 0x77, 0x6e, 0x43, 0x6f, 0x75, 0x6e, 0x74, 0x72, 0x79, 0x18, 0x05, 0x20, 0x01, 0x28,
-	0x09, 0x52, 0x0b, 0x74, 0x6f, 0x77, 0x6e, 0x43, 0x6f, 0x75, 0x6e, 0x74, 0x72, 0x79, 0x12, 0x1a,
-	0x0a, 0x08, 0x74, 0x6f, 0x77, 0x6e, 0x54, 0x69, 0x6d, 0x65, 0x18, 0x06, 0x20, 0x01, 0x28, 0x05,
-	0x52, 0x08, 0x74, 0x6f, 0x77, 0x6e, 0x54, 0x69, 0x6d, 0x65, 0x12, 0x22, 0x0a, 0x0c, 0x74, 0x6f,
-	0x77, 0x6e, 0x4c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x18, 0x07, 0x20, 0x01, 0x28, 0x05,
-	0x52, 0x0c, 0x74, 0x6f, 0x77, 0x6e, 0x4c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x12, 0x1c,
-	0x0a, 0x09, 0x74, 0x6f, 0x77, 0x6e, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x18, 0x08, 0x20, 0x01, 0x28,
-	0x01, 0x52, 0x09, 0x74, 0x6f, 0x77, 0x6e, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x22, 0x45, 0x0a, 0x13,
-	0x50, 0x69, 0x63, 0x6b, 0x54, 0x6f, 0x77, 0x6e, 0x55, 0x73, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75,
-	0x65, 0x73, 0x74, 0x12, 0x16, 0x0a, 0x06, 0x75, 0x73, 0x65, 0x72, 0x49, 0x44, 0x18, 0x01, 0x20,
-	0x01, 0x28, 0x09, 0x52, 0x06, 0x75, 0x73, 0x65, 0x72, 0x49, 0x44, 0x12, 0x16, 0x0a, 0x06, 0x74,
-	0x6f, 0x77, 0x6e, 0x49, 0x44, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x74, 0x6f, 0x77,
-	0x6e, 0x49, 0x44, 0x22, 0x63, 0x0a, 0x13, 0x54, 0x72, 0x61, 0x63, 0x6b, 0x53, 0x65, 0x73, 0x73,
-	0x69, 0x6f, 0x6e, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x16, 0x0a, 0x06, 0x75, 0x73,
-	0x65, 0x72, 0x49, 0x44, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x75, 0x73, 0x65, 0x72,
-	0x49, 0x44, 0x12, 0x16, 0x0a, 0x06, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x18, 0x02, 0x20, 0x01,
-	0x28, 0x09, 0x52, 0x06, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x12, 0x1c, 0x0a, 0x09, 0x73, 0x65,
-	0x73, 0x73, 0x69, 0x6f, 0x6e, 0x49, 0x44, 0x18, 0x03, 0x20, 0x01, 0x28, 0x09, 0x52, 0x09, 0x73,
-	0x65, 0x73, 0x73, 0x69, 0x6f, 0x6e, 0x49, 0x44, 0x22, 0x16, 0x0a, 0x14, 0x54, 0x72, 0x61, 0x63,
-	0x6b, 0x53, 0x65, 0x73, 0x73, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
-	0x22, 0x34, 0x0a, 0x14, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66,
-	0x6f, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x1c, 0x0a, 0x09, 0x70, 0x6c, 0x61, 0x79,
-	0x65, 0x72, 0x73, 0x49, 0x44, 0x18, 0x01, 0x20, 0x03, 0x28, 0x09, 0x52, 0x09, 0x70, 0x6c, 0x61,
-	0x79, 0x65, 0x72, 0x73, 0x49, 0x44, 0x22, 0x59, 0x0a, 0x15, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61,
-	0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12,
-	0x40, 0x0a, 0x07, 0x70, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x73, 0x18, 0x01, 0x20, 0x03, 0x28, 0x0b,
-	0x32, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64,
-	0x2e, 0x76, 0x31, 0x2e, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x49, 0x6e, 0x66, 0x6f, 0x4d, 0x61,
-	0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x52, 0x07, 0x70, 0x6c, 0x61, 0x79, 0x65, 0x72,
-	0x73, 0x32, 0xb5, 0x09, 0x0a, 0x12, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x52, 0x69, 0x76, 0x61,
-	0x6c, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x5f, 0x0a, 0x0e, 0x47, 0x65, 0x74, 0x55,
-	0x73, 0x65, 0x72, 0x50, 0x72, 0x6f, 0x66, 0x69, 0x6c, 0x65, 0x12, 0x24, 0x2e, 0x74, 0x68, 0x65,
-	0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x55, 0x73,
-	0x65, 0x72, 0x50, 0x72, 0x6f, 0x66, 0x69, 0x6c, 0x65, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74,
-	0x1a, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73,
-	0x2e, 0x76, 0x31, 0x2e, 0x55, 0x73, 0x65, 0x72, 0x50, 0x72, 0x6f, 0x66, 0x69, 0x6c, 0x65, 0x52,
-	0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x5f, 0x0a, 0x0e, 0x47, 0x65, 0x74,
-	0x55, 0x73, 0x65, 0x72, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x73, 0x12, 0x24, 0x2e, 0x74, 0x68,
+	0x28, 0x09, 0x52, 0x06, 0x75, 0x73, 0x65, 0x72, 0x49, 0x44, 0x12, 0x16, 0x0a, 0x06, 0x61, 0x63,
+	0x74, 0x69, 0x6f, 0x6e, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x61, 0x63, 0x74, 0x69,
+	0x6f, 0x6e, 0x12, 0x1c, 0x0a, 0x09, 0x73, 0x65, 0x73, 0x73, 0x69, 0x6f, 0x6e, 0x49, 0x44, 0x18,
+	0x03, 0x20, 0x01, 0x28, 0x09, 0x52, 0x09, 0x73, 0x65, 0x73, 0x73, 0x69, 0x6f, 0x6e, 0x49, 0x44,
+	0x22, 0x16, 0x0a, 0x14, 0x54, 0x72, 0x61, 0x63, 0x6b, 0x53, 0x65, 0x73, 0x73, 0x69, 0x6f, 0x6e,
+	0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x34, 0x0a, 0x14, 0x46, 0x69, 0x6e, 0x64,
+	0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74,
+	0x12, 0x1c, 0x0a, 0x09, 0x70, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x73, 0x49, 0x44, 0x18, 0x01, 0x20,
+	0x03, 0x28, 0x09, 0x52, 0x09, 0x70, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x73, 0x49, 0x44, 0x22, 0x59,
+	0x0a, 0x15, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x52,
+	0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x40, 0x0a, 0x07, 0x70, 0x6c, 0x61, 0x79, 0x65,
+	0x72, 0x73, 0x18, 0x01, 0x20, 0x03, 0x28, 0x0b, 0x32, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61,
+	0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x50, 0x6c, 0x61, 0x79,
+	0x65, 0x72, 0x49, 0x6e, 0x66, 0x6f, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74, 0x6f,
+	0x52, 0x07, 0x70, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x73, 0x32, 0xa0, 0x0d, 0x0a, 0x12, 0x54, 0x68,
+	0x65, 0x74, 0x61, 0x6e, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65,
+	0x12, 0x5f, 0x0a, 0x0e, 0x47, 0x65, 0x74, 0x55, 0x73, 0x65, 0x72, 0x50, 0x72, 0x6f, 0x66, 0x69,
+	0x6c, 0x65, 0x12, 0x24, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61,
+	0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x55, 0x73, 0x65, 0x72, 0x50, 0x72, 0x6f, 0x66, 0x69, 0x6c,
+	0x65, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61,
+	0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x55, 0x73, 0x65, 0x72,
+	0x50, 0x72, 0x6f, 0x66, 0x69, 0x6c, 0x65, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22,
+	0x00, 0x12, 0x5f, 0x0a, 0x0e, 0x47, 0x65, 0x74, 0x55, 0x73, 0x65, 0x72, 0x4d, 0x69, 0x6e, 0x69,
+	0x6f, 0x6e, 0x73, 0x12, 0x24, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76,
+	0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x55, 0x73, 0x65, 0x72, 0x4d, 0x69, 0x6e, 0x69, 0x6f,
+	0x6e, 0x73, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74,
+	0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x55, 0x73, 0x65,
+	0x72, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x73, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
+	0x22, 0x00, 0x12, 0x74, 0x0a, 0x15, 0x47, 0x65, 0x74, 0x55, 0x73, 0x65, 0x72, 0x53, 0x65, 0x6c,
+	0x65, 0x63, 0x74, 0x65, 0x64, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x12, 0x2b, 0x2e, 0x74, 0x68,
 	0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x55,
-	0x73, 0x65, 0x72, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x73, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73,
-	0x74, 0x1a, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c,
-	0x73, 0x2e, 0x76, 0x31, 0x2e, 0x55, 0x73, 0x65, 0x72, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x73,
-	0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x74, 0x0a, 0x15, 0x47, 0x65,
-	0x74, 0x55, 0x73, 0x65, 0x72, 0x53, 0x65, 0x6c, 0x65, 0x63, 0x74, 0x65, 0x64, 0x4d, 0x69, 0x6e,
-	0x69, 0x6f, 0x6e, 0x12, 0x2b, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76,
-	0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x55, 0x73, 0x65, 0x72, 0x53, 0x65, 0x6c, 0x65, 0x63,
-	0x74, 0x65, 0x64, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74,
-	0x1a, 0x2c, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73,
-	0x2e, 0x76, 0x31, 0x2e, 0x55, 0x73, 0x65, 0x72, 0x53, 0x65, 0x6c, 0x65, 0x63, 0x74, 0x65, 0x64,
-	0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00,
-	0x12, 0x50, 0x0a, 0x09, 0x47, 0x65, 0x74, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x12, 0x1f, 0x2e,
-	0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31,
-	0x2e, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x20,
-	0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76,
-	0x31, 0x2e, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
-	0x22, 0x00, 0x12, 0x5f, 0x0a, 0x0c, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x4d, 0x69, 0x6e, 0x69,
-	0x6f, 0x6e, 0x12, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61,
-	0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x4d, 0x69, 0x6e, 0x69,
-	0x6f, 0x6e, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74,
-	0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x43, 0x72, 0x65,
-	0x61, 0x74, 0x65, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73,
-	0x65, 0x22, 0x00, 0x12, 0x63, 0x0a, 0x0e, 0x47, 0x65, 0x74, 0x4c, 0x69, 0x73, 0x74, 0x46, 0x72,
-	0x69, 0x65, 0x6e, 0x64, 0x73, 0x12, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72,
-	0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x55, 0x73, 0x65, 0x72,
-	0x46, 0x72, 0x69, 0x65, 0x6e, 0x64, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x27, 0x2e,
+	0x73, 0x65, 0x72, 0x53, 0x65, 0x6c, 0x65, 0x63, 0x74, 0x65, 0x64, 0x4d, 0x69, 0x6e, 0x69, 0x6f,
+	0x6e, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x2c, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61,
+	0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x55, 0x73, 0x65, 0x72,
+	0x53, 0x65, 0x6c, 0x65, 0x63, 0x74, 0x65, 0x64, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x52, 0x65,
+	0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x50, 0x0a, 0x09, 0x47, 0x65, 0x74, 0x4d,
+	0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x12, 0x1f, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72,
+	0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x52,
+	0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x20, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
+	0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e,
+	0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x5f, 0x0a, 0x0c, 0x43, 0x72,
+	0x65, 0x61, 0x74, 0x65, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x12, 0x25, 0x2e, 0x74, 0x68, 0x65,
+	0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x43, 0x72,
+	0x65, 0x61, 0x74, 0x65, 0x4d, 0x69, 0x6e, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73,
+	0x74, 0x1a, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c,
+	0x73, 0x2e, 0x76, 0x31, 0x2e, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x4d, 0x69, 0x6e, 0x69, 0x6f,
+	0x6e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x63, 0x0a, 0x0e, 0x47,
+	0x65, 0x74, 0x4c, 0x69, 0x73, 0x74, 0x46, 0x72, 0x69, 0x65, 0x6e, 0x64, 0x73, 0x12, 0x26, 0x2e,
 	0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31,
 	0x2e, 0x47, 0x65, 0x74, 0x55, 0x73, 0x65, 0x72, 0x46, 0x72, 0x69, 0x65, 0x6e, 0x64, 0x52, 0x65,
-	0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x69, 0x0a, 0x16, 0x47, 0x65, 0x74, 0x4d,
-	0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x4f, 0x6e, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x69,
-	0x6e, 0x67, 0x12, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61,
-	0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e,
-	0x66, 0x6f, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74,
+	0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x27, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72,
+	0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x55, 0x73, 0x65, 0x72,
+	0x46, 0x72, 0x69, 0x65, 0x6e, 0x64, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00,
+	0x12, 0x69, 0x0a, 0x16, 0x47, 0x65, 0x74, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f,
+	0x4f, 0x6e, 0x62, 0x6f, 0x61, 0x72, 0x64, 0x69, 0x6e, 0x67, 0x12, 0x25, 0x2e, 0x74, 0x68, 0x65,
+	0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65,
+	0x74, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73,
+	0x74, 0x1a, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c,
+	0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66,
+	0x6f, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x6b, 0x0a, 0x1a, 0x47,
+	0x65, 0x74, 0x4c, 0x61, 0x74, 0x65, 0x73, 0x74, 0x4c, 0x6f, 0x62, 0x62, 0x79, 0x41, 0x63, 0x74,
+	0x69, 0x76, 0x69, 0x74, 0x79, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x24, 0x2e, 0x74, 0x68, 0x65, 0x74,
 	0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74,
-	0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73,
-	0x65, 0x22, 0x00, 0x12, 0x6b, 0x0a, 0x1a, 0x47, 0x65, 0x74, 0x4c, 0x61, 0x74, 0x65, 0x73, 0x74,
-	0x4c, 0x6f, 0x62, 0x62, 0x79, 0x41, 0x63, 0x74, 0x69, 0x76, 0x69, 0x74, 0x79, 0x49, 0x6e, 0x66,
-	0x6f, 0x12, 0x24, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c,
-	0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x41, 0x63, 0x74, 0x69, 0x76, 0x69, 0x74, 0x79,
-	0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e,
-	0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x41, 0x63,
-	0x74, 0x69, 0x76, 0x69, 0x74, 0x79, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00,
-	0x12, 0x52, 0x0a, 0x0b, 0x47, 0x65, 0x74, 0x54, 0x6f, 0x77, 0x6e, 0x55, 0x73, 0x65, 0x72, 0x12,
-	0x24, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e,
-	0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x54, 0x6f, 0x77, 0x6e, 0x55, 0x73, 0x65, 0x72, 0x52, 0x65,
-	0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x1b, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72,
-	0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x4c, 0x6f, 0x62, 0x62, 0x79, 0x54, 0x6f,
-	0x77, 0x6e, 0x22, 0x00, 0x12, 0x5b, 0x0a, 0x0f, 0x50, 0x69, 0x63, 0x6b, 0x54, 0x6f, 0x77, 0x6e,
-	0x46, 0x6f, 0x72, 0x55, 0x73, 0x65, 0x72, 0x12, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e,
-	0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x50, 0x69, 0x63, 0x6b, 0x54,
-	0x6f, 0x77, 0x6e, 0x55, 0x73, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x1f,
-	0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76,
-	0x31, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22,
-	0x00, 0x12, 0x5f, 0x0a, 0x0c, 0x54, 0x72, 0x61, 0x63, 0x6b, 0x53, 0x65, 0x73, 0x73, 0x69, 0x6f,
-	0x6e, 0x12, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c,
-	0x73, 0x2e, 0x76, 0x31, 0x2e, 0x54, 0x72, 0x61, 0x63, 0x6b, 0x53, 0x65, 0x73, 0x73, 0x69, 0x6f,
-	0x6e, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61,
-	0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x54, 0x72, 0x61, 0x63,
-	0x6b, 0x53, 0x65, 0x73, 0x73, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
-	0x22, 0x00, 0x12, 0x65, 0x0a, 0x10, 0x47, 0x65, 0x74, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x74,
-	0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
-	0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61,
-	0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x27,
+	0x41, 0x63, 0x74, 0x69, 0x76, 0x69, 0x74, 0x79, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a,
+	0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e,
+	0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x41, 0x63, 0x74, 0x69, 0x76, 0x69, 0x74, 0x79, 0x52, 0x65,
+	0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x52, 0x0a, 0x0b, 0x47, 0x65, 0x74, 0x54,
+	0x6f, 0x77, 0x6e, 0x55, 0x73, 0x65, 0x72, 0x12, 0x24, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e,
+	0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x54, 0x6f,
+	0x77, 0x6e, 0x55, 0x73, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x1b, 0x2e,
+	0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31,
+	0x2e, 0x4c, 0x6f, 0x62, 0x62, 0x79, 0x54, 0x6f, 0x77, 0x6e, 0x22, 0x00, 0x12, 0x5b, 0x0a, 0x0f,
+	0x50, 0x69, 0x63, 0x6b, 0x54, 0x6f, 0x77, 0x6e, 0x46, 0x6f, 0x72, 0x55, 0x73, 0x65, 0x72, 0x12,
+	0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e,
+	0x76, 0x31, 0x2e, 0x50, 0x69, 0x63, 0x6b, 0x54, 0x6f, 0x77, 0x6e, 0x55, 0x73, 0x65, 0x72, 0x52,
+	0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x1f, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
+	0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x52,
+	0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x5f, 0x0a, 0x0c, 0x54, 0x72, 0x61,
+	0x63, 0x6b, 0x53, 0x65, 0x73, 0x73, 0x69, 0x6f, 0x6e, 0x12, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74,
+	0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x54, 0x72, 0x61,
+	0x63, 0x6b, 0x53, 0x65, 0x73, 0x73, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74,
+	0x1a, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73,
+	0x2e, 0x76, 0x31, 0x2e, 0x54, 0x72, 0x61, 0x63, 0x6b, 0x53, 0x65, 0x73, 0x73, 0x69, 0x6f, 0x6e,
+	0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x65, 0x0a, 0x10, 0x47, 0x65,
+	0x74, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x12, 0x26,
 	0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76,
 	0x31, 0x2e, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x52,
-	0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x42, 0xc1, 0x01, 0x0a, 0x14, 0x63, 0x6f,
-	0x6d, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e,
-	0x76, 0x31, 0x42, 0x12, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x52, 0x69, 0x76, 0x61, 0x6c,
-	0x73, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x01, 0x5a, 0x33, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e,
-	0x2d, 0x62, 0x75, 0x66, 0x2f, 0x67, 0x65, 0x6e, 0x2f, 0x67, 0x6f, 0x2f, 0x74, 0x68, 0x65, 0x74,
-	0x61, 0x6e, 0x2f, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2f, 0x76, 0x31, 0x3b, 0x74, 0x68, 0x65,
-	0x74, 0x61, 0x6e, 0x5f, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5f, 0x76, 0x31, 0xa2, 0x02, 0x03,
-	0x54, 0x52, 0x58, 0xaa, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x52, 0x69, 0x76,
-	0x61, 0x6c, 0x73, 0x2e, 0x56, 0x31, 0xca, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x5c,
-	0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5c, 0x56, 0x31, 0xe2, 0x02, 0x1c, 0x54, 0x68, 0x65, 0x74,
-	0x61, 0x6e, 0x5c, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5c, 0x56, 0x31, 0x5c, 0x47, 0x50, 0x42,
-	0x4d, 0x65, 0x74, 0x61, 0x64, 0x61, 0x74, 0x61, 0xea, 0x02, 0x12, 0x54, 0x68, 0x65, 0x74, 0x61,
-	0x6e, 0x3a, 0x3a, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x3a, 0x3a, 0x56, 0x31, 0x62, 0x06, 0x70,
-	0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x27, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
+	0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61,
+	0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22,
+	0x00, 0x12, 0x68, 0x0a, 0x0f, 0x47, 0x65, 0x74, 0x43, 0x6f, 0x6e, 0x66, 0x69, 0x67, 0x46, 0x6f,
+	0x72, 0x42, 0x6f, 0x74, 0x12, 0x28, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69,
+	0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x43, 0x6f, 0x6e, 0x66, 0x69,
+	0x67, 0x46, 0x6f, 0x72, 0x42, 0x6f, 0x74, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x29,
+	0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76,
+	0x31, 0x2e, 0x47, 0x65, 0x74, 0x43, 0x6f, 0x6e, 0x66, 0x69, 0x67, 0x46, 0x6f, 0x72, 0x42, 0x6f,
+	0x74, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x77, 0x0a, 0x14, 0x47,
+	0x65, 0x74, 0x41, 0x63, 0x74, 0x69, 0x76, 0x65, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65,
+	0x6e, 0x74, 0x73, 0x12, 0x2d, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76,
+	0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x41, 0x63, 0x74, 0x69, 0x76, 0x65,
+	0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x73, 0x52, 0x65, 0x71, 0x75, 0x65,
+	0x73, 0x74, 0x1a, 0x2e, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61,
+	0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x41, 0x63, 0x74, 0x69, 0x76, 0x65, 0x54,
+	0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x73, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e,
+	0x73, 0x65, 0x22, 0x00, 0x12, 0x8c, 0x01, 0x0a, 0x1d, 0x47, 0x65, 0x74, 0x46, 0x69, 0x6e, 0x64,
+	0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x46, 0x6f, 0x72, 0x54, 0x6f, 0x75, 0x72,
+	0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x12, 0x33, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
+	0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x46, 0x69, 0x6e, 0x64, 0x4d, 0x61,
+	0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x46, 0x6f, 0x72, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61,
+	0x6d, 0x65, 0x6e, 0x74, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x34, 0x2e, 0x74, 0x68,
+	0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x46,
+	0x69, 0x6e, 0x64, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x49, 0x6e, 0x66, 0x6f, 0x46, 0x6f, 0x72, 0x54,
+	0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73,
+	0x65, 0x22, 0x00, 0x12, 0x77, 0x0a, 0x14, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x46, 0x6f, 0x75, 0x6e,
+	0x64, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x6e, 0x74, 0x12, 0x2d, 0x2e, 0x74, 0x68,
+	0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x4d,
+	0x61, 0x74, 0x63, 0x68, 0x46, 0x6f, 0x75, 0x6e, 0x64, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d,
+	0x65, 0x6e, 0x74, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x2e, 0x2e, 0x74, 0x68, 0x65,
+	0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61,
+	0x74, 0x63, 0x68, 0x46, 0x6f, 0x75, 0x6e, 0x64, 0x54, 0x6f, 0x75, 0x72, 0x6e, 0x61, 0x6d, 0x65,
+	0x6e, 0x74, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x42, 0xc1, 0x01, 0x0a,
+	0x14, 0x63, 0x6f, 0x6d, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x72, 0x69, 0x76, 0x61,
+	0x6c, 0x73, 0x2e, 0x76, 0x31, 0x42, 0x12, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x52, 0x69,
+	0x76, 0x61, 0x6c, 0x73, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x01, 0x5a, 0x33, 0x74, 0x68, 0x65,
+	0x74, 0x61, 0x6e, 0x2d, 0x62, 0x75, 0x66, 0x2f, 0x67, 0x65, 0x6e, 0x2f, 0x67, 0x6f, 0x2f, 0x74,
+	0x68, 0x65, 0x74, 0x61, 0x6e, 0x2f, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2f, 0x76, 0x31, 0x3b,
+	0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x5f, 0x72, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5f, 0x76, 0x31,
+	0xa2, 0x02, 0x03, 0x54, 0x52, 0x58, 0xaa, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
+	0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x2e, 0x56, 0x31, 0xca, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74,
+	0x61, 0x6e, 0x5c, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5c, 0x56, 0x31, 0xe2, 0x02, 0x1c, 0x54,
+	0x68, 0x65, 0x74, 0x61, 0x6e, 0x5c, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x5c, 0x56, 0x31, 0x5c,
+	0x47, 0x50, 0x42, 0x4d, 0x65, 0x74, 0x61, 0x64, 0x61, 0x74, 0x61, 0xea, 0x02, 0x12, 0x54, 0x68,
+	0x65, 0x74, 0x61, 0x6e, 0x3a, 0x3a, 0x52, 0x69, 0x76, 0x61, 0x6c, 0x73, 0x3a, 0x3a, 0x56, 0x31,
+	0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -2445,98 +3199,121 @@ func file_thetan_rivals_v1_service_rivals_proto_rawDescGZIP() []byte {
 }
 
 var file_thetan_rivals_v1_service_rivals_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_thetan_rivals_v1_service_rivals_proto_msgTypes = make([]protoimpl.MessageInfo, 35)
+var file_thetan_rivals_v1_service_rivals_proto_msgTypes = make([]protoimpl.MessageInfo, 46)
 var file_thetan_rivals_v1_service_rivals_proto_goTypes = []interface{}{
-	(FriendInfo_FRIEND_STATUS)(0),      // 0: thetan.rivals.v1.FriendInfo.FRIEND_STATUS
-	(*EmptyResponse)(nil),              // 1: thetan.rivals.v1.EmptyResponse
-	(*UserProfileRequest)(nil),         // 2: thetan.rivals.v1.UserProfileRequest
-	(*UserProfileResponse)(nil),        // 3: thetan.rivals.v1.UserProfileResponse
-	(*UserProfileRank)(nil),            // 4: thetan.rivals.v1.UserProfileRank
-	(*UserSelectedMinionRequest)(nil),  // 5: thetan.rivals.v1.UserSelectedMinionRequest
-	(*UserSelectedMinionResponse)(nil), // 6: thetan.rivals.v1.UserSelectedMinionResponse
-	(*UserMinionsRequest)(nil),         // 7: thetan.rivals.v1.UserMinionsRequest
-	(*UserMinionsResponse)(nil),        // 8: thetan.rivals.v1.UserMinionsResponse
-	(*Minion)(nil),                     // 9: thetan.rivals.v1.Minion
-	(*MinionRequest)(nil),              // 10: thetan.rivals.v1.MinionRequest
-	(*MinionResponse)(nil),             // 11: thetan.rivals.v1.MinionResponse
-	(*CreateMinionRequest)(nil),        // 12: thetan.rivals.v1.CreateMinionRequest
-	(*CreateMinionResponse)(nil),       // 13: thetan.rivals.v1.CreateMinionResponse
-	(*GetUserFriendRequest)(nil),       // 14: thetan.rivals.v1.GetUserFriendRequest
-	(*GetUserFriendResponse)(nil),      // 15: thetan.rivals.v1.GetUserFriendResponse
-	(*FriendInfo)(nil),                 // 16: thetan.rivals.v1.FriendInfo
-	(*GetMatchInfoRequest)(nil),        // 17: thetan.rivals.v1.GetMatchInfoRequest
-	(*GetMatchInfoResponse)(nil),       // 18: thetan.rivals.v1.GetMatchInfoResponse
-	(*MapData)(nil),                    // 19: thetan.rivals.v1.MapData
-	(*PlayerStat)(nil),                 // 20: thetan.rivals.v1.PlayerStat
-	(*GetActivityRequest)(nil),         // 21: thetan.rivals.v1.GetActivityRequest
-	(*GetActivityResponse)(nil),        // 22: thetan.rivals.v1.GetActivityResponse
-	(*ClassInfo)(nil),                  // 23: thetan.rivals.v1.ClassInfo
-	(*SimpleItem)(nil),                 // 24: thetan.rivals.v1.SimpleItem
-	(*GetTownUserRequest)(nil),         // 25: thetan.rivals.v1.GetTownUserRequest
-	(*LobbyTown)(nil),                  // 26: thetan.rivals.v1.LobbyTown
-	(*PickTownUserRequest)(nil),        // 27: thetan.rivals.v1.PickTownUserRequest
-	(*TrackSessionRequest)(nil),        // 28: thetan.rivals.v1.TrackSessionRequest
-	(*TrackSessionResponse)(nil),       // 29: thetan.rivals.v1.TrackSessionResponse
-	(*FindMatchInfoRequest)(nil),       // 30: thetan.rivals.v1.FindMatchInfoRequest
-	(*FindMatchInfoResponse)(nil),      // 31: thetan.rivals.v1.FindMatchInfoResponse
-	nil,                                // 32: thetan.rivals.v1.UserSelectedMinionResponse.AddInsEntry
-	nil,                                // 33: thetan.rivals.v1.Minion.AddInsEntry
-	nil,                                // 34: thetan.rivals.v1.PlayerStat.RoundPlayedEntry
-	nil,                                // 35: thetan.rivals.v1.ClassInfo.RewardsEntry
-	(*v1.HeroCustomized)(nil),          // 36: thetan.shared.v1.HeroCustomized
-	(*v1.RoundStat)(nil),               // 37: thetan.shared.v1.RoundStat
-	(*v1.PlayerInfoMatchProto)(nil),    // 38: thetan.shared.v1.PlayerInfoMatchProto
+	(FriendInfo_FRIEND_STATUS)(0),              // 0: thetan.rivals.v1.FriendInfo.FRIEND_STATUS
+	(*MatchFoundTournamentRequest)(nil),        // 1: thetan.rivals.v1.MatchFoundTournamentRequest
+	(*MatchFoundTournamentResponse)(nil),       // 2: thetan.rivals.v1.MatchFoundTournamentResponse
+	(*FindMatchInfoForTournamentRequest)(nil),  // 3: thetan.rivals.v1.FindMatchInfoForTournamentRequest
+	(*FindMatchInfoForTournamentResponse)(nil), // 4: thetan.rivals.v1.FindMatchInfoForTournamentResponse
+	(*GetConfigForBotResponse)(nil),            // 5: thetan.rivals.v1.GetConfigForBotResponse
+	(*SkinInfo)(nil),                           // 6: thetan.rivals.v1.SkinInfo
+	(*CosmeticInfo)(nil),                       // 7: thetan.rivals.v1.CosmeticInfo
+	(*GetConfigForBotRequest)(nil),             // 8: thetan.rivals.v1.GetConfigForBotRequest
+	(*GetActiveTournamentsRequest)(nil),        // 9: thetan.rivals.v1.GetActiveTournamentsRequest
+	(*GetActiveTournamentsResponse)(nil),       // 10: thetan.rivals.v1.GetActiveTournamentsResponse
+	(*TournamentInfo)(nil),                     // 11: thetan.rivals.v1.TournamentInfo
+	(*MapInfo)(nil),                            // 12: thetan.rivals.v1.MapInfo
+	(*EmptyResponse)(nil),                      // 13: thetan.rivals.v1.EmptyResponse
+	(*UserProfileRequest)(nil),                 // 14: thetan.rivals.v1.UserProfileRequest
+	(*UserProfileResponse)(nil),                // 15: thetan.rivals.v1.UserProfileResponse
+	(*UserProfileRank)(nil),                    // 16: thetan.rivals.v1.UserProfileRank
+	(*UserSelectedMinionRequest)(nil),          // 17: thetan.rivals.v1.UserSelectedMinionRequest
+	(*UserSelectedMinionResponse)(nil),         // 18: thetan.rivals.v1.UserSelectedMinionResponse
+	(*UserMinionsRequest)(nil),                 // 19: thetan.rivals.v1.UserMinionsRequest
+	(*UserMinionsResponse)(nil),                // 20: thetan.rivals.v1.UserMinionsResponse
+	(*Minion)(nil),                             // 21: thetan.rivals.v1.Minion
+	(*MinionRequest)(nil),                      // 22: thetan.rivals.v1.MinionRequest
+	(*MinionResponse)(nil),                     // 23: thetan.rivals.v1.MinionResponse
+	(*CreateMinionRequest)(nil),                // 24: thetan.rivals.v1.CreateMinionRequest
+	(*CreateMinionResponse)(nil),               // 25: thetan.rivals.v1.CreateMinionResponse
+	(*GetUserFriendRequest)(nil),               // 26: thetan.rivals.v1.GetUserFriendRequest
+	(*GetUserFriendResponse)(nil),              // 27: thetan.rivals.v1.GetUserFriendResponse
+	(*FriendInfo)(nil),                         // 28: thetan.rivals.v1.FriendInfo
+	(*GetMatchInfoRequest)(nil),                // 29: thetan.rivals.v1.GetMatchInfoRequest
+	(*GetMatchInfoResponse)(nil),               // 30: thetan.rivals.v1.GetMatchInfoResponse
+	(*MapData)(nil),                            // 31: thetan.rivals.v1.MapData
+	(*PlayerStat)(nil),                         // 32: thetan.rivals.v1.PlayerStat
+	(*GetActivityRequest)(nil),                 // 33: thetan.rivals.v1.GetActivityRequest
+	(*GetActivityResponse)(nil),                // 34: thetan.rivals.v1.GetActivityResponse
+	(*ClassInfo)(nil),                          // 35: thetan.rivals.v1.ClassInfo
+	(*SimpleItem)(nil),                         // 36: thetan.rivals.v1.SimpleItem
+	(*GetTownUserRequest)(nil),                 // 37: thetan.rivals.v1.GetTownUserRequest
+	(*LobbyTown)(nil),                          // 38: thetan.rivals.v1.LobbyTown
+	(*PickTownUserRequest)(nil),                // 39: thetan.rivals.v1.PickTownUserRequest
+	(*TrackSessionRequest)(nil),                // 40: thetan.rivals.v1.TrackSessionRequest
+	(*TrackSessionResponse)(nil),               // 41: thetan.rivals.v1.TrackSessionResponse
+	(*FindMatchInfoRequest)(nil),               // 42: thetan.rivals.v1.FindMatchInfoRequest
+	(*FindMatchInfoResponse)(nil),              // 43: thetan.rivals.v1.FindMatchInfoResponse
+	nil,                                        // 44: thetan.rivals.v1.UserSelectedMinionResponse.AddInsEntry
+	nil,                                        // 45: thetan.rivals.v1.Minion.AddInsEntry
+	nil,                                        // 46: thetan.rivals.v1.PlayerStat.RoundPlayedEntry
+	(*v1.HeroCustomized)(nil),                  // 47: thetan.shared.v1.HeroCustomized
+	(*v1.RoundStat)(nil),                       // 48: thetan.shared.v1.RoundStat
+	(*v1.PlayerInfoMatchProto)(nil),            // 49: thetan.shared.v1.PlayerInfoMatchProto
 }
 var file_thetan_rivals_v1_service_rivals_proto_depIdxs = []int32{
-	4,  // 0: thetan.rivals.v1.UserProfileResponse.rank:type_name -> thetan.rivals.v1.UserProfileRank
-	32, // 1: thetan.rivals.v1.UserSelectedMinionResponse.addIns:type_name -> thetan.rivals.v1.UserSelectedMinionResponse.AddInsEntry
-	36, // 2: thetan.rivals.v1.UserSelectedMinionResponse.customized:type_name -> thetan.shared.v1.HeroCustomized
-	9,  // 3: thetan.rivals.v1.UserMinionsResponse.minions:type_name -> thetan.rivals.v1.Minion
-	33, // 4: thetan.rivals.v1.Minion.addIns:type_name -> thetan.rivals.v1.Minion.AddInsEntry
-	36, // 5: thetan.rivals.v1.Minion.customized:type_name -> thetan.shared.v1.HeroCustomized
-	9,  // 6: thetan.rivals.v1.MinionResponse.minion:type_name -> thetan.rivals.v1.Minion
-	9,  // 7: thetan.rivals.v1.CreateMinionResponse.minion:type_name -> thetan.rivals.v1.Minion
-	16, // 8: thetan.rivals.v1.GetUserFriendResponse.friends:type_name -> thetan.rivals.v1.FriendInfo
-	0,  // 9: thetan.rivals.v1.FriendInfo.status:type_name -> thetan.rivals.v1.FriendInfo.FRIEND_STATUS
-	3,  // 10: thetan.rivals.v1.FriendInfo.profile:type_name -> thetan.rivals.v1.UserProfileResponse
-	37, // 11: thetan.rivals.v1.GetMatchInfoRequest.lastRound:type_name -> thetan.shared.v1.RoundStat
-	38, // 12: thetan.rivals.v1.GetMatchInfoResponse.playerInfo:type_name -> thetan.shared.v1.PlayerInfoMatchProto
-	19, // 13: thetan.rivals.v1.GetMatchInfoResponse.mapIds:type_name -> thetan.rivals.v1.MapData
-	20, // 14: thetan.rivals.v1.GetMatchInfoResponse.playerStat:type_name -> thetan.rivals.v1.PlayerStat
-	34, // 15: thetan.rivals.v1.PlayerStat.roundPlayed:type_name -> thetan.rivals.v1.PlayerStat.RoundPlayedEntry
-	23, // 16: thetan.rivals.v1.GetActivityResponse.classes:type_name -> thetan.rivals.v1.ClassInfo
-	35, // 17: thetan.rivals.v1.ClassInfo.rewards:type_name -> thetan.rivals.v1.ClassInfo.RewardsEntry
-	38, // 18: thetan.rivals.v1.FindMatchInfoResponse.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
-	24, // 19: thetan.rivals.v1.ClassInfo.RewardsEntry.value:type_name -> thetan.rivals.v1.SimpleItem
-	2,  // 20: thetan.rivals.v1.ThetanRivalService.GetUserProfile:input_type -> thetan.rivals.v1.UserProfileRequest
-	7,  // 21: thetan.rivals.v1.ThetanRivalService.GetUserMinions:input_type -> thetan.rivals.v1.UserMinionsRequest
-	5,  // 22: thetan.rivals.v1.ThetanRivalService.GetUserSelectedMinion:input_type -> thetan.rivals.v1.UserSelectedMinionRequest
-	10, // 23: thetan.rivals.v1.ThetanRivalService.GetMinion:input_type -> thetan.rivals.v1.MinionRequest
-	12, // 24: thetan.rivals.v1.ThetanRivalService.CreateMinion:input_type -> thetan.rivals.v1.CreateMinionRequest
-	14, // 25: thetan.rivals.v1.ThetanRivalService.GetListFriends:input_type -> thetan.rivals.v1.GetUserFriendRequest
-	17, // 26: thetan.rivals.v1.ThetanRivalService.GetMatchInfoOnboarding:input_type -> thetan.rivals.v1.GetMatchInfoRequest
-	21, // 27: thetan.rivals.v1.ThetanRivalService.GetLatestLobbyActivityInfo:input_type -> thetan.rivals.v1.GetActivityRequest
-	25, // 28: thetan.rivals.v1.ThetanRivalService.GetTownUser:input_type -> thetan.rivals.v1.GetTownUserRequest
-	27, // 29: thetan.rivals.v1.ThetanRivalService.PickTownForUser:input_type -> thetan.rivals.v1.PickTownUserRequest
-	28, // 30: thetan.rivals.v1.ThetanRivalService.TrackSession:input_type -> thetan.rivals.v1.TrackSessionRequest
-	30, // 31: thetan.rivals.v1.ThetanRivalService.GetFindMatchInfo:input_type -> thetan.rivals.v1.FindMatchInfoRequest
-	3,  // 32: thetan.rivals.v1.ThetanRivalService.GetUserProfile:output_type -> thetan.rivals.v1.UserProfileResponse
-	8,  // 33: thetan.rivals.v1.ThetanRivalService.GetUserMinions:output_type -> thetan.rivals.v1.UserMinionsResponse
-	6,  // 34: thetan.rivals.v1.ThetanRivalService.GetUserSelectedMinion:output_type -> thetan.rivals.v1.UserSelectedMinionResponse
-	11, // 35: thetan.rivals.v1.ThetanRivalService.GetMinion:output_type -> thetan.rivals.v1.MinionResponse
-	13, // 36: thetan.rivals.v1.ThetanRivalService.CreateMinion:output_type -> thetan.rivals.v1.CreateMinionResponse
-	15, // 37: thetan.rivals.v1.ThetanRivalService.GetListFriends:output_type -> thetan.rivals.v1.GetUserFriendResponse
-	18, // 38: thetan.rivals.v1.ThetanRivalService.GetMatchInfoOnboarding:output_type -> thetan.rivals.v1.GetMatchInfoResponse
-	22, // 39: thetan.rivals.v1.ThetanRivalService.GetLatestLobbyActivityInfo:output_type -> thetan.rivals.v1.GetActivityResponse
-	26, // 40: thetan.rivals.v1.ThetanRivalService.GetTownUser:output_type -> thetan.rivals.v1.LobbyTown
-	1,  // 41: thetan.rivals.v1.ThetanRivalService.PickTownForUser:output_type -> thetan.rivals.v1.EmptyResponse
-	29, // 42: thetan.rivals.v1.ThetanRivalService.TrackSession:output_type -> thetan.rivals.v1.TrackSessionResponse
-	31, // 43: thetan.rivals.v1.ThetanRivalService.GetFindMatchInfo:output_type -> thetan.rivals.v1.FindMatchInfoResponse
-	32, // [32:44] is the sub-list for method output_type
-	20, // [20:32] is the sub-list for method input_type
-	20, // [20:20] is the sub-list for extension type_name
-	20, // [20:20] is the sub-list for extension extendee
-	0,  // [0:20] is the sub-list for field type_name
+	43, // 0: thetan.rivals.v1.FindMatchInfoForTournamentResponse.findMatchInfo:type_name -> thetan.rivals.v1.FindMatchInfoResponse
+	6,  // 1: thetan.rivals.v1.GetConfigForBotResponse.listSkinInfo:type_name -> thetan.rivals.v1.SkinInfo
+	7,  // 2: thetan.rivals.v1.GetConfigForBotResponse.listCosmeticInfo:type_name -> thetan.rivals.v1.CosmeticInfo
+	11, // 3: thetan.rivals.v1.GetActiveTournamentsResponse.Tournaments:type_name -> thetan.rivals.v1.TournamentInfo
+	12, // 4: thetan.rivals.v1.TournamentInfo.currentMaps:type_name -> thetan.rivals.v1.MapInfo
+	16, // 5: thetan.rivals.v1.UserProfileResponse.rank:type_name -> thetan.rivals.v1.UserProfileRank
+	44, // 6: thetan.rivals.v1.UserSelectedMinionResponse.addIns:type_name -> thetan.rivals.v1.UserSelectedMinionResponse.AddInsEntry
+	47, // 7: thetan.rivals.v1.UserSelectedMinionResponse.customized:type_name -> thetan.shared.v1.HeroCustomized
+	21, // 8: thetan.rivals.v1.UserMinionsResponse.minions:type_name -> thetan.rivals.v1.Minion
+	45, // 9: thetan.rivals.v1.Minion.addIns:type_name -> thetan.rivals.v1.Minion.AddInsEntry
+	47, // 10: thetan.rivals.v1.Minion.customized:type_name -> thetan.shared.v1.HeroCustomized
+	21, // 11: thetan.rivals.v1.MinionResponse.minion:type_name -> thetan.rivals.v1.Minion
+	21, // 12: thetan.rivals.v1.CreateMinionResponse.minion:type_name -> thetan.rivals.v1.Minion
+	28, // 13: thetan.rivals.v1.GetUserFriendResponse.friends:type_name -> thetan.rivals.v1.FriendInfo
+	0,  // 14: thetan.rivals.v1.FriendInfo.status:type_name -> thetan.rivals.v1.FriendInfo.FRIEND_STATUS
+	15, // 15: thetan.rivals.v1.FriendInfo.profile:type_name -> thetan.rivals.v1.UserProfileResponse
+	48, // 16: thetan.rivals.v1.GetMatchInfoRequest.lastRound:type_name -> thetan.shared.v1.RoundStat
+	49, // 17: thetan.rivals.v1.GetMatchInfoResponse.playerInfo:type_name -> thetan.shared.v1.PlayerInfoMatchProto
+	31, // 18: thetan.rivals.v1.GetMatchInfoResponse.mapIds:type_name -> thetan.rivals.v1.MapData
+	32, // 19: thetan.rivals.v1.GetMatchInfoResponse.playerStat:type_name -> thetan.rivals.v1.PlayerStat
+	46, // 20: thetan.rivals.v1.PlayerStat.roundPlayed:type_name -> thetan.rivals.v1.PlayerStat.RoundPlayedEntry
+	35, // 21: thetan.rivals.v1.GetActivityResponse.classes:type_name -> thetan.rivals.v1.ClassInfo
+	36, // 22: thetan.rivals.v1.ClassInfo.rewards:type_name -> thetan.rivals.v1.SimpleItem
+	49, // 23: thetan.rivals.v1.FindMatchInfoResponse.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
+	14, // 24: thetan.rivals.v1.ThetanRivalService.GetUserProfile:input_type -> thetan.rivals.v1.UserProfileRequest
+	19, // 25: thetan.rivals.v1.ThetanRivalService.GetUserMinions:input_type -> thetan.rivals.v1.UserMinionsRequest
+	17, // 26: thetan.rivals.v1.ThetanRivalService.GetUserSelectedMinion:input_type -> thetan.rivals.v1.UserSelectedMinionRequest
+	22, // 27: thetan.rivals.v1.ThetanRivalService.GetMinion:input_type -> thetan.rivals.v1.MinionRequest
+	24, // 28: thetan.rivals.v1.ThetanRivalService.CreateMinion:input_type -> thetan.rivals.v1.CreateMinionRequest
+	26, // 29: thetan.rivals.v1.ThetanRivalService.GetListFriends:input_type -> thetan.rivals.v1.GetUserFriendRequest
+	29, // 30: thetan.rivals.v1.ThetanRivalService.GetMatchInfoOnboarding:input_type -> thetan.rivals.v1.GetMatchInfoRequest
+	33, // 31: thetan.rivals.v1.ThetanRivalService.GetLatestLobbyActivityInfo:input_type -> thetan.rivals.v1.GetActivityRequest
+	37, // 32: thetan.rivals.v1.ThetanRivalService.GetTownUser:input_type -> thetan.rivals.v1.GetTownUserRequest
+	39, // 33: thetan.rivals.v1.ThetanRivalService.PickTownForUser:input_type -> thetan.rivals.v1.PickTownUserRequest
+	40, // 34: thetan.rivals.v1.ThetanRivalService.TrackSession:input_type -> thetan.rivals.v1.TrackSessionRequest
+	42, // 35: thetan.rivals.v1.ThetanRivalService.GetFindMatchInfo:input_type -> thetan.rivals.v1.FindMatchInfoRequest
+	8,  // 36: thetan.rivals.v1.ThetanRivalService.GetConfigForBot:input_type -> thetan.rivals.v1.GetConfigForBotRequest
+	9,  // 37: thetan.rivals.v1.ThetanRivalService.GetActiveTournaments:input_type -> thetan.rivals.v1.GetActiveTournamentsRequest
+	3,  // 38: thetan.rivals.v1.ThetanRivalService.GetFindMatchInfoForTournament:input_type -> thetan.rivals.v1.FindMatchInfoForTournamentRequest
+	1,  // 39: thetan.rivals.v1.ThetanRivalService.MatchFoundTournament:input_type -> thetan.rivals.v1.MatchFoundTournamentRequest
+	15, // 40: thetan.rivals.v1.ThetanRivalService.GetUserProfile:output_type -> thetan.rivals.v1.UserProfileResponse
+	20, // 41: thetan.rivals.v1.ThetanRivalService.GetUserMinions:output_type -> thetan.rivals.v1.UserMinionsResponse
+	18, // 42: thetan.rivals.v1.ThetanRivalService.GetUserSelectedMinion:output_type -> thetan.rivals.v1.UserSelectedMinionResponse
+	23, // 43: thetan.rivals.v1.ThetanRivalService.GetMinion:output_type -> thetan.rivals.v1.MinionResponse
+	25, // 44: thetan.rivals.v1.ThetanRivalService.CreateMinion:output_type -> thetan.rivals.v1.CreateMinionResponse
+	27, // 45: thetan.rivals.v1.ThetanRivalService.GetListFriends:output_type -> thetan.rivals.v1.GetUserFriendResponse
+	30, // 46: thetan.rivals.v1.ThetanRivalService.GetMatchInfoOnboarding:output_type -> thetan.rivals.v1.GetMatchInfoResponse
+	34, // 47: thetan.rivals.v1.ThetanRivalService.GetLatestLobbyActivityInfo:output_type -> thetan.rivals.v1.GetActivityResponse
+	38, // 48: thetan.rivals.v1.ThetanRivalService.GetTownUser:output_type -> thetan.rivals.v1.LobbyTown
+	13, // 49: thetan.rivals.v1.ThetanRivalService.PickTownForUser:output_type -> thetan.rivals.v1.EmptyResponse
+	41, // 50: thetan.rivals.v1.ThetanRivalService.TrackSession:output_type -> thetan.rivals.v1.TrackSessionResponse
+	43, // 51: thetan.rivals.v1.ThetanRivalService.GetFindMatchInfo:output_type -> thetan.rivals.v1.FindMatchInfoResponse
+	5,  // 52: thetan.rivals.v1.ThetanRivalService.GetConfigForBot:output_type -> thetan.rivals.v1.GetConfigForBotResponse
+	10, // 53: thetan.rivals.v1.ThetanRivalService.GetActiveTournaments:output_type -> thetan.rivals.v1.GetActiveTournamentsResponse
+	4,  // 54: thetan.rivals.v1.ThetanRivalService.GetFindMatchInfoForTournament:output_type -> thetan.rivals.v1.FindMatchInfoForTournamentResponse
+	2,  // 55: thetan.rivals.v1.ThetanRivalService.MatchFoundTournament:output_type -> thetan.rivals.v1.MatchFoundTournamentResponse
+	40, // [40:56] is the sub-list for method output_type
+	24, // [24:40] is the sub-list for method input_type
+	24, // [24:24] is the sub-list for extension type_name
+	24, // [24:24] is the sub-list for extension extendee
+	0,  // [0:24] is the sub-list for field type_name
 }
 
 func init() { file_thetan_rivals_v1_service_rivals_proto_init() }
@@ -2546,7 +3323,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 	}
 	if !protoimpl.UnsafeEnabled {
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*EmptyResponse); i {
+			switch v := v.(*MatchFoundTournamentRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2558,7 +3335,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserProfileRequest); i {
+			switch v := v.(*MatchFoundTournamentResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2570,7 +3347,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserProfileResponse); i {
+			switch v := v.(*FindMatchInfoForTournamentRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2582,7 +3359,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserProfileRank); i {
+			switch v := v.(*FindMatchInfoForTournamentResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2594,7 +3371,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserSelectedMinionRequest); i {
+			switch v := v.(*GetConfigForBotResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2606,7 +3383,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserSelectedMinionResponse); i {
+			switch v := v.(*SkinInfo); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2618,7 +3395,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserMinionsRequest); i {
+			switch v := v.(*CosmeticInfo); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2630,7 +3407,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*UserMinionsResponse); i {
+			switch v := v.(*GetConfigForBotRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2642,7 +3419,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*Minion); i {
+			switch v := v.(*GetActiveTournamentsRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2654,7 +3431,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MinionRequest); i {
+			switch v := v.(*GetActiveTournamentsResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2666,7 +3443,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MinionResponse); i {
+			switch v := v.(*TournamentInfo); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2678,7 +3455,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*CreateMinionRequest); i {
+			switch v := v.(*MapInfo); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2690,7 +3467,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*CreateMinionResponse); i {
+			switch v := v.(*EmptyResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2702,7 +3479,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetUserFriendRequest); i {
+			switch v := v.(*UserProfileRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2714,7 +3491,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetUserFriendResponse); i {
+			switch v := v.(*UserProfileResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2726,7 +3503,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*FriendInfo); i {
+			switch v := v.(*UserProfileRank); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2738,7 +3515,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetMatchInfoRequest); i {
+			switch v := v.(*UserSelectedMinionRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2750,7 +3527,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetMatchInfoResponse); i {
+			switch v := v.(*UserSelectedMinionResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2762,7 +3539,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MapData); i {
+			switch v := v.(*UserMinionsRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2774,7 +3551,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*PlayerStat); i {
+			switch v := v.(*UserMinionsResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2786,7 +3563,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetActivityRequest); i {
+			switch v := v.(*Minion); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2798,7 +3575,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetActivityResponse); i {
+			switch v := v.(*MinionRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2810,7 +3587,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*ClassInfo); i {
+			switch v := v.(*MinionResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2822,7 +3599,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*SimpleItem); i {
+			switch v := v.(*CreateMinionRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2834,7 +3611,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetTownUserRequest); i {
+			switch v := v.(*CreateMinionResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2846,7 +3623,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*LobbyTown); i {
+			switch v := v.(*GetUserFriendRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2858,7 +3635,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*PickTownUserRequest); i {
+			switch v := v.(*GetUserFriendResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2870,7 +3647,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*TrackSessionRequest); i {
+			switch v := v.(*FriendInfo); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2882,7 +3659,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*TrackSessionResponse); i {
+			switch v := v.(*GetMatchInfoRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2894,7 +3671,7 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*FindMatchInfoRequest); i {
+			switch v := v.(*GetMatchInfoResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2906,6 +3683,150 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 		file_thetan_rivals_v1_service_rivals_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*MapData); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*PlayerStat); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*GetActivityRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*GetActivityResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*ClassInfo); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*SimpleItem); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*GetTownUserRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*LobbyTown); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[38].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*PickTownUserRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[39].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*TrackSessionRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[40].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*TrackSessionResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[41].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*FindMatchInfoRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_rivals_v1_service_rivals_proto_msgTypes[42].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*FindMatchInfoResponse); i {
 			case 0:
 				return &v.state
@@ -2918,15 +3839,15 @@ func file_thetan_rivals_v1_service_rivals_proto_init() {
 			}
 		}
 	}
-	file_thetan_rivals_v1_service_rivals_proto_msgTypes[16].OneofWrappers = []interface{}{}
-	file_thetan_rivals_v1_service_rivals_proto_msgTypes[17].OneofWrappers = []interface{}{}
+	file_thetan_rivals_v1_service_rivals_proto_msgTypes[28].OneofWrappers = []interface{}{}
+	file_thetan_rivals_v1_service_rivals_proto_msgTypes[29].OneofWrappers = []interface{}{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_thetan_rivals_v1_service_rivals_proto_rawDesc,
 			NumEnums:      1,
-			NumMessages:   35,
+			NumMessages:   46,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
