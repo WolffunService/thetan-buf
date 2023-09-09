@@ -145,6 +145,7 @@ message UserSelectedMinionResponse {
 
 message UserMinionsRequest {
   string userId = 1;
+  optional int32 gameType = 2;
 }
 
 message UserMinionsResponse {
