@@ -199,6 +199,7 @@ message CosmeticUsingProto
   int32 glow = 5;
   int32 spray = 6;
   int32 voice = 7;
+  int32 vehicle = 8;
 }
 
 //khi delete ticket thanh cong
@@ -281,13 +282,6 @@ service MatchService {
 service MatchHandleService {
   rpc HandlePlayAgain(DataPlayAgainSuccess) returns(EmptyResponse) {}
   rpc HandleDeleteTicket(DeleteTicketSuccess) returns(EmptyResponse) {}
-}
-
-service MatchDirectorService {
-  rpc CancelTicket(MatchProtoPackage) returns (EmptyResponse) {}
-  rpc GetBots(GetBotsRequest) returns (BotsResponse) {}
-
-  rpc CreateMatchOnboard(CreateMatchOnboardRequest) returns (MatchFoundResponseProto) {}
 }
 
 message EmptyResponse {

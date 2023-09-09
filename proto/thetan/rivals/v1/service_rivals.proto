@@ -32,6 +32,73 @@ service ThetanRivalService {
 
   // GetFindMatchInfo
   rpc GetFindMatchInfo(FindMatchInfoRequest) returns (FindMatchInfoResponse) {}
+
+  // Get config for bot
+  rpc GetConfigForBot(GetConfigForBotRequest) returns (GetConfigForBotResponse) {}
+
+  // Tournament
+  rpc GetActiveTournaments(GetActiveTournamentsRequest) returns (GetActiveTournamentsResponse) {}
+  rpc GetFindMatchInfoForTournament(FindMatchInfoForTournamentRequest) returns (FindMatchInfoForTournamentResponse) {}
+  rpc MatchFoundTournament(MatchFoundTournamentRequest) returns (MatchFoundTournamentResponse) {}
+}
+
+message MatchFoundTournamentRequest {
+  string tournamentID = 1;
+  repeated string playerIDs = 2;
+  string matchID = 3;
+}
+
+message MatchFoundTournamentResponse {
+}
+
+message FindMatchInfoForTournamentRequest {
+  string tournamentID = 1;
+  repeated string playerIDs = 2;
+}
+
+message FindMatchInfoForTournamentResponse {
+  FindMatchInfoResponse findMatchInfo = 1;
+  string tournamentTag = 2;
+}
+
+message GetConfigForBotResponse {
+  repeated SkinInfo listSkinInfo = 1;
+  repeated CosmeticInfo listCosmeticInfo = 2;
+  repeated string cosmeticTypeEvolveSequence = 3;
+}
+
+message SkinInfo {
+  int32 skinID = 1;
+  int32 skinRarity = 2;
+}
+
+message CosmeticInfo {
+  int32 cosmeticID = 1;
+  string cosmeticType = 2;
+  int32 cosmeticRarity = 3;
+}
+
+message GetConfigForBotRequest {
+}
+
+message GetActiveTournamentsRequest {
+}
+
+message GetActiveTournamentsResponse {
+  repeated TournamentInfo Tournaments = 1;
+}
+
+message TournamentInfo {
+  string tournamentID = 1;
+  string tag = 2;
+  repeated MapInfo currentMaps = 3;
+  int32 maxPlayersInBattle = 4;
+  int32 maxTimeInBattleSec = 5;
+}
+
+message MapInfo {
+  int32 mapID = 1;
+  int32 mapDifficulty = 2;
 }
 
 message EmptyResponse {}
@@ -78,6 +145,7 @@ message UserSelectedMinionResponse {
 
 message UserMinionsRequest {
   string userId = 1;
+  optional int32 gameType = 2;
 }
 
 message UserMinionsResponse {
@@ -156,7 +224,6 @@ message GetMatchInfoResponse {
   repeated int32 listMaxPlayerPerRound = 5;
   PlayerStat playerStat = 6;
 }
-
 
 message MapData {
   int32 gamePlay = 1;
