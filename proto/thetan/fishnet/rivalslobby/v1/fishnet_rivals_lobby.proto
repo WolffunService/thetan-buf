@@ -12,6 +12,7 @@ message RoomAllocationResp {
 
 message GameServerInfoResp{
   int32 CCU = 1;
+  string TownID = 2;
 }
 
 service ThetanFishNetRivalsLobby {
