@@ -27,26 +27,26 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
             "Cjh0aGV0YW4vZmlzaG5ldC9yaXZhbHNsb2JieS92MS9maXNobmV0X3JpdmFs",
             "c19sb2JieS5wcm90bxIddGhldGFuLmZpc2huZXQucml2YWxzbG9iYnkudjEa",
             "G2dvb2dsZS9wcm90b2J1Zi9lbXB0eS5wcm90byIyChJSb29tQWxsb2NhdGlv",
-            "blJlc3ASHAoJaXNTdWNjZXNzGAEgASgIUglpc1N1Y2Nlc3MiJgoSR2FtZVNl",
-            "cnZlckluZm9SZXNwEhAKA0NDVRgBIAEoBVIDQ0NVMpACChhUaGV0YW5GaXNo",
-            "TmV0Uml2YWxzTG9iYnkSWwoOUm9vbUFsbG9jYXRpb24SFi5nb29nbGUucHJv",
-            "dG9idWYuRW1wdHkaMS50aGV0YW4uZmlzaG5ldC5yaXZhbHNsb2JieS52MS5S",
-            "b29tQWxsb2NhdGlvblJlc3ASOgoIU2h1dGRvd24SFi5nb29nbGUucHJvdG9i",
-            "dWYuRW1wdHkaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSWwoOR2FtZVNlcnZl",
-            "ckluZm8SFi5nb29nbGUucHJvdG9idWYuRW1wdHkaMS50aGV0YW4uZmlzaG5l",
-            "dC5yaXZhbHNsb2JieS52MS5HYW1lU2VydmVySW5mb1Jlc3BCogIKIWNvbS50",
-            "aGV0YW4uZmlzaG5ldC5yaXZhbHNsb2JieS52MUIXRmlzaG5ldFJpdmFsc0xv",
-            "YmJ5UHJvdG9QAVpNdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2Zpc2huZXQv",
-            "cml2YWxzbG9iYnkvdjEvdGhldGFuX2Zpc2huZXRfcml2YWxzbG9iYnlfdjGi",
-            "AgNURlKqAh1UaGV0YW4uRmlzaG5ldC5SaXZhbHNsb2JieS5WMcoCHVRoZXRh",
-            "blxGaXNobmV0XFJpdmFsc2xvYmJ5XFYx4gIpVGhldGFuXEZpc2huZXRcUml2",
-            "YWxzbG9iYnlcVjFcR1BCTWV0YWRhdGHqAiBUaGV0YW46OkZpc2huZXQ6OlJp",
-            "dmFsc2xvYmJ5OjpWMWIGcHJvdG8z"));
+            "blJlc3ASHAoJaXNTdWNjZXNzGAEgASgIUglpc1N1Y2Nlc3MiPgoSR2FtZVNl",
+            "cnZlckluZm9SZXNwEhAKA0NDVRgBIAEoBVIDQ0NVEhYKBlRvd25JRBgCIAEo",
+            "CVIGVG93bklEMpACChhUaGV0YW5GaXNoTmV0Uml2YWxzTG9iYnkSWwoOUm9v",
+            "bUFsbG9jYXRpb24SFi5nb29nbGUucHJvdG9idWYuRW1wdHkaMS50aGV0YW4u",
+            "ZmlzaG5ldC5yaXZhbHNsb2JieS52MS5Sb29tQWxsb2NhdGlvblJlc3ASOgoI",
+            "U2h1dGRvd24SFi5nb29nbGUucHJvdG9idWYuRW1wdHkaFi5nb29nbGUucHJv",
+            "dG9idWYuRW1wdHkSWwoOR2FtZVNlcnZlckluZm8SFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHkaMS50aGV0YW4uZmlzaG5ldC5yaXZhbHNsb2JieS52MS5HYW1l",
+            "U2VydmVySW5mb1Jlc3BCogIKIWNvbS50aGV0YW4uZmlzaG5ldC5yaXZhbHNs",
+            "b2JieS52MUIXRmlzaG5ldFJpdmFsc0xvYmJ5UHJvdG9QAVpNdGhldGFuLWJ1",
+            "Zi9nZW4vZ28vdGhldGFuL2Zpc2huZXQvcml2YWxzbG9iYnkvdjEvdGhldGFu",
+            "X2Zpc2huZXRfcml2YWxzbG9iYnlfdjGiAgNURlKqAh1UaGV0YW4uRmlzaG5l",
+            "dC5SaXZhbHNsb2JieS5WMcoCHVRoZXRhblxGaXNobmV0XFJpdmFsc2xvYmJ5",
+            "XFYx4gIpVGhldGFuXEZpc2huZXRcUml2YWxzbG9iYnlcVjFcR1BCTWV0YWRh",
+            "dGHqAiBUaGV0YW46OkZpc2huZXQ6OlJpdmFsc2xvYmJ5OjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Rivalslobby.V1.RoomAllocationResp), global::Thetan.Fishnet.Rivalslobby.V1.RoomAllocationResp.Parser, new[]{ "IsSuccess" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Rivalslobby.V1.GameServerInfoResp), global::Thetan.Fishnet.Rivalslobby.V1.GameServerInfoResp.Parser, new[]{ "CCU" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Rivalslobby.V1.GameServerInfoResp), global::Thetan.Fishnet.Rivalslobby.V1.GameServerInfoResp.Parser, new[]{ "CCU", "TownID" }, null, null, null, null)
           }));
     }
     #endregion
@@ -277,6 +277,7 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GameServerInfoResp(GameServerInfoResp other) : this() {
       cCU_ = other.cCU_;
+      townID_ = other.townID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -298,6 +299,18 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
       }
     }
 
+    /// <summary>Field number for the "TownID" field.</summary>
+    public const int TownIDFieldNumber = 2;
+    private string townID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TownID {
+      get { return townID_; }
+      set {
+        townID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -314,6 +327,7 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
         return true;
       }
       if (CCU != other.CCU) return false;
+      if (TownID != other.TownID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -322,6 +336,7 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (CCU != 0) hash ^= CCU.GetHashCode();
+      if (TownID.Length != 0) hash ^= TownID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -344,6 +359,10 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(CCU);
       }
+      if (TownID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(TownID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -358,6 +377,10 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(CCU);
       }
+      if (TownID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(TownID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -370,6 +393,9 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
       int size = 0;
       if (CCU != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CCU);
+      }
+      if (TownID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TownID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -385,6 +411,9 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
       }
       if (other.CCU != 0) {
         CCU = other.CCU;
+      }
+      if (other.TownID.Length != 0) {
+        TownID = other.TownID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -405,6 +434,10 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
             CCU = input.ReadInt32();
             break;
           }
+          case 18: {
+            TownID = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -422,6 +455,10 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
             break;
           case 8: {
             CCU = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            TownID = input.ReadString();
             break;
           }
         }
