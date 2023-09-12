@@ -249,6 +249,7 @@ message GetActivityRequest {
 message GetActivityResponse {
   string activityID = 1;
   string townID = 2;
+  string createTime = 4;
   repeated ClassInfo classes = 3;
 }
 
