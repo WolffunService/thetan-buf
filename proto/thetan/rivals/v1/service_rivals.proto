@@ -4,6 +4,7 @@ package thetan.rivals.v1;
 
 import "thetan/shared/v1/match.proto";
 import "thetan/shared/v1/ugc.proto";
+import "google/protobuf/empty.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
 option csharp_namespace = "Thetan.Rivals.V1";
@@ -29,6 +30,7 @@ service ThetanRivalService {
 
   // Track Action
   rpc TrackSession(TrackSessionRequest) returns (TrackSessionResponse) {}
+  rpc TrackSessionLobby(TrackSessionLobbyRequest) returns (google.protobuf.Empty) {}
 
   // GetFindMatchInfo
   rpc GetFindMatchInfo(FindMatchInfoRequest) returns (FindMatchInfoResponse) {}
@@ -311,4 +313,15 @@ message FindMatchInfoRequest {
 
 message FindMatchInfoResponse {
   repeated thetan.shared.v1.PlayerInfoMatchProto players = 1;
+}
+
+enum SessionLobby {
+  SessionLobbyNone = 0;
+  JoinLobby = 1;
+  LeaveLobby = 2;
+}
+
+message TrackSessionLobbyRequest {
+  string userID = 1;
+  SessionLobby status = 2;
 }
