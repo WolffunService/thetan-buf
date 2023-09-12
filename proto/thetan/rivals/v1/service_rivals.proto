@@ -260,14 +260,15 @@ message ClassInfo {
   int32 memberPerClass = 5;
   double timePerClass = 6;
   double classPerMasterL = 7;
+  string timeCloseEntry = 9;
   map<int32,SimpleItem> rewards = 8;
 }
 
 message SimpleItem {
-  string itemType = 1;
-  int32 typeID = 2;
-  double amount = 3;
-  int32 inventoryKind = 4;
+  int32 kind = 1;
+  int32 type = 2;
+  int64 amount = 3;
+  int32 decimals = 4;
 }
 
 message GetTownUserRequest {
