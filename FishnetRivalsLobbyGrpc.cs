@@ -51,6 +51,8 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
     static readonly grpc::Marshaller<global::Thetan.Fishnet.Rivalslobby.V1.RoomAllocationResp> __Marshaller_thetan_fishnet_rivalslobby_v1_RoomAllocationResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Fishnet.Rivalslobby.V1.RoomAllocationResp.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Fishnet.Rivalslobby.V1.GameServerInfoResp> __Marshaller_thetan_fishnet_rivalslobby_v1_GameServerInfoResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Fishnet.Rivalslobby.V1.GameServerInfoResp.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Fishnet.Rivalslobby.V1.SetTownRequest> __Marshaller_thetan_fishnet_rivalslobby_v1_SetTownRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Fishnet.Rivalslobby.V1.SetTownRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Thetan.Fishnet.Rivalslobby.V1.RoomAllocationResp> __Method_RoomAllocation = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Thetan.Fishnet.Rivalslobby.V1.RoomAllocationResp>(
@@ -75,6 +77,14 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
         "GameServerInfo",
         __Marshaller_google_protobuf_Empty,
         __Marshaller_thetan_fishnet_rivalslobby_v1_GameServerInfoResp);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Fishnet.Rivalslobby.V1.SetTownRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetTown = new grpc::Method<global::Thetan.Fishnet.Rivalslobby.V1.SetTownRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SetTown",
+        __Marshaller_thetan_fishnet_rivalslobby_v1_SetTownRequest,
+        __Marshaller_google_protobuf_Empty);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -106,6 +116,12 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Fishnet.Rivalslobby.V1.GameServerInfoResp> GameServerInfo(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetTown(global::Thetan.Fishnet.Rivalslobby.V1.SetTownRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -227,6 +243,26 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GameServerInfo, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetTown(global::Thetan.Fishnet.Rivalslobby.V1.SetTownRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetTown(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetTown(global::Thetan.Fishnet.Rivalslobby.V1.SetTownRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SetTown, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetTownAsync(global::Thetan.Fishnet.Rivalslobby.V1.SetTownRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetTownAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetTownAsync(global::Thetan.Fishnet.Rivalslobby.V1.SetTownRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SetTown, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ThetanFishNetRivalsLobbyClient NewInstance(ClientBaseConfiguration configuration)
@@ -243,7 +279,8 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_RoomAllocation, serviceImpl.RoomAllocation)
           .AddMethod(__Method_Shutdown, serviceImpl.Shutdown)
-          .AddMethod(__Method_GameServerInfo, serviceImpl.GameServerInfo).Build();
+          .AddMethod(__Method_GameServerInfo, serviceImpl.GameServerInfo)
+          .AddMethod(__Method_SetTown, serviceImpl.SetTown).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -256,6 +293,7 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
       serviceBinder.AddMethod(__Method_RoomAllocation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Thetan.Fishnet.Rivalslobby.V1.RoomAllocationResp>(serviceImpl.RoomAllocation));
       serviceBinder.AddMethod(__Method_Shutdown, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.Shutdown));
       serviceBinder.AddMethod(__Method_GameServerInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Thetan.Fishnet.Rivalslobby.V1.GameServerInfoResp>(serviceImpl.GameServerInfo));
+      serviceBinder.AddMethod(__Method_SetTown, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Fishnet.Rivalslobby.V1.SetTownRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.SetTown));
     }
 
   }
