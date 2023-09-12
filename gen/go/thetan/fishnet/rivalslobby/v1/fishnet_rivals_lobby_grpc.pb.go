@@ -23,6 +23,7 @@ const (
 	ThetanFishNetRivalsLobby_RoomAllocation_FullMethodName = "/thetan.fishnet.rivalslobby.v1.ThetanFishNetRivalsLobby/RoomAllocation"
 	ThetanFishNetRivalsLobby_Shutdown_FullMethodName       = "/thetan.fishnet.rivalslobby.v1.ThetanFishNetRivalsLobby/Shutdown"
 	ThetanFishNetRivalsLobby_GameServerInfo_FullMethodName = "/thetan.fishnet.rivalslobby.v1.ThetanFishNetRivalsLobby/GameServerInfo"
+	ThetanFishNetRivalsLobby_SetTown_FullMethodName        = "/thetan.fishnet.rivalslobby.v1.ThetanFishNetRivalsLobby/SetTown"
 )
 
 // ThetanFishNetRivalsLobbyClient is the client API for ThetanFishNetRivalsLobby service.
@@ -32,6 +33,7 @@ type ThetanFishNetRivalsLobbyClient interface {
 	RoomAllocation(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*RoomAllocationResp, error)
 	Shutdown(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	GameServerInfo(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*GameServerInfoResp, error)
+	SetTown(ctx context.Context, in *SetTownRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
 }
 
 type thetanFishNetRivalsLobbyClient struct {
@@ -69,6 +71,15 @@ func (c *thetanFishNetRivalsLobbyClient) GameServerInfo(ctx context.Context, in 
 	return out, nil
 }
 
+func (c *thetanFishNetRivalsLobbyClient) SetTown(ctx context.Context, in *SetTownRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+	out := new(emptypb.Empty)
+	err := c.cc.Invoke(ctx, ThetanFishNetRivalsLobby_SetTown_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanFishNetRivalsLobbyServer is the server API for ThetanFishNetRivalsLobby service.
 // All implementations must embed UnimplementedThetanFishNetRivalsLobbyServer
 // for forward compatibility
@@ -76,6 +87,7 @@ type ThetanFishNetRivalsLobbyServer interface {
 	RoomAllocation(context.Context, *emptypb.Empty) (*RoomAllocationResp, error)
 	Shutdown(context.Context, *emptypb.Empty) (*emptypb.Empty, error)
 	GameServerInfo(context.Context, *emptypb.Empty) (*GameServerInfoResp, error)
+	SetTown(context.Context, *SetTownRequest) (*emptypb.Empty, error)
 	mustEmbedUnimplementedThetanFishNetRivalsLobbyServer()
 }
 
@@ -91,6 +103,9 @@ func (UnimplementedThetanFishNetRivalsLobbyServer) Shutdown(context.Context, *em
 }
 func (UnimplementedThetanFishNetRivalsLobbyServer) GameServerInfo(context.Context, *emptypb.Empty) (*GameServerInfoResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GameServerInfo not implemented")
+}
+func (UnimplementedThetanFishNetRivalsLobbyServer) SetTown(context.Context, *SetTownRequest) (*emptypb.Empty, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SetTown not implemented")
 }
 func (UnimplementedThetanFishNetRivalsLobbyServer) mustEmbedUnimplementedThetanFishNetRivalsLobbyServer() {
 }
@@ -160,6 +175,24 @@ func _ThetanFishNetRivalsLobby_GameServerInfo_Handler(srv interface{}, ctx conte
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanFishNetRivalsLobby_SetTown_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SetTownRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanFishNetRivalsLobbyServer).SetTown(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanFishNetRivalsLobby_SetTown_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanFishNetRivalsLobbyServer).SetTown(ctx, req.(*SetTownRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanFishNetRivalsLobby_ServiceDesc is the grpc.ServiceDesc for ThetanFishNetRivalsLobby service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -178,6 +211,10 @@ var ThetanFishNetRivalsLobby_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GameServerInfo",
 			Handler:    _ThetanFishNetRivalsLobby_GameServerInfo_Handler,
+		},
+		{
+			MethodName: "SetTown",
+			Handler:    _ThetanFishNetRivalsLobby_SetTown_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
