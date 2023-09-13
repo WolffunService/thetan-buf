@@ -26,28 +26,29 @@ namespace Thetan.Multiplayer.Rivals.V1 {
           string.Concat(
             "Cj10aGV0YW4vbXVsdGlwbGF5ZXIvcml2YWxzL3YxL3NlcnZpY2VfbXVsdGlw",
             "bGF5ZXJfcml2YWxzLnByb3RvEhx0aGV0YW4ubXVsdGlwbGF5ZXIucml2YWxz",
-            "LnYxGiJ0aGV0YW4vbXVsdGlwbGF5ZXIvdjEvY29tbW9uLnByb3RvIjIKFkdl",
+            "LnYxGiJ0aGV0YW4vbXVsdGlwbGF5ZXIvdjEvY29tbW9uLnByb3RvIl4KFkdl",
             "dE9ubGluZVN0YXR1c1JlcXVlc3QSGAoHdXNlcklEcxgBIAMoCVIHdXNlcklE",
-            "cyJtChdHZXRPbmxpbmVTdGF0dXNSZXNwb25zZRJSCg5PbmxpbmVTdGF0dXNl",
-            "cxgBIAMoCzIqLnRoZXRhbi5tdWx0aXBsYXllci5yaXZhbHMudjEuT25saW5l",
-            "U3RhdHVzUg5PbmxpbmVTdGF0dXNlcyKDAQoMT25saW5lU3RhdHVzEhYKBnVz",
-            "ZXJJRBgBIAEoCVIGdXNlcklEEh4KCmxhc3RPbmxpbmUYAiABKANSCmxhc3RP",
-            "bmxpbmUSOwoGc3RhdHVzGAMgASgOMiMudGhldGFuLm11bHRpcGxheWVyLnYx",
-            "LlBsYXllclN0YXR1c1IGc3RhdHVzMp0BChhSaXZhbHNNdWx0aXBsYXllclNl",
-            "cnZpY2USgAEKD0dldE9ubGluZVN0YXR1cxI0LnRoZXRhbi5tdWx0aXBsYXll",
-            "ci5yaXZhbHMudjEuR2V0T25saW5lU3RhdHVzUmVxdWVzdBo1LnRoZXRhbi5t",
-            "dWx0aXBsYXllci5yaXZhbHMudjEuR2V0T25saW5lU3RhdHVzUmVzcG9uc2Ui",
-            "AEKhAgogY29tLnRoZXRhbi5tdWx0aXBsYXllci5yaXZhbHMudjFCHVNlcnZp",
-            "Y2VNdWx0aXBsYXllclJpdmFsc1Byb3RvUAFaS3RoZXRhbi1idWYvZ2VuL2dv",
-            "L3RoZXRhbi9tdWx0aXBsYXllci9yaXZhbHMvdjE7dGhldGFuX211bHRpcGxh",
-            "eWVyX3JpdmFsc192MaICA1RNUqoCHFRoZXRhbi5NdWx0aXBsYXllci5SaXZh",
-            "bHMuVjHKAhxUaGV0YW5cTXVsdGlwbGF5ZXJcUml2YWxzXFYx4gIoVGhldGFu",
-            "XE11bHRpcGxheWVyXFJpdmFsc1xWMVxHUEJNZXRhZGF0YeoCH1RoZXRhbjo6",
-            "TXVsdGlwbGF5ZXI6OlJpdmFsczo6VjFiBnByb3RvMw=="));
+            "cxIqChBza2lwRW50cnlPbkVycm9yGAIgASgIUhBza2lwRW50cnlPbkVycm9y",
+            "Im0KF0dldE9ubGluZVN0YXR1c1Jlc3BvbnNlElIKDk9ubGluZVN0YXR1c2Vz",
+            "GAEgAygLMioudGhldGFuLm11bHRpcGxheWVyLnJpdmFscy52MS5PbmxpbmVT",
+            "dGF0dXNSDk9ubGluZVN0YXR1c2VzIoMBCgxPbmxpbmVTdGF0dXMSFgoGdXNl",
+            "cklEGAEgASgJUgZ1c2VySUQSHgoKbGFzdE9ubGluZRgCIAEoA1IKbGFzdE9u",
+            "bGluZRI7CgZzdGF0dXMYAyABKA4yIy50aGV0YW4ubXVsdGlwbGF5ZXIudjEu",
+            "UGxheWVyU3RhdHVzUgZzdGF0dXMynQEKGFJpdmFsc011bHRpcGxheWVyU2Vy",
+            "dmljZRKAAQoPR2V0T25saW5lU3RhdHVzEjQudGhldGFuLm11bHRpcGxheWVy",
+            "LnJpdmFscy52MS5HZXRPbmxpbmVTdGF0dXNSZXF1ZXN0GjUudGhldGFuLm11",
+            "bHRpcGxheWVyLnJpdmFscy52MS5HZXRPbmxpbmVTdGF0dXNSZXNwb25zZSIA",
+            "QqECCiBjb20udGhldGFuLm11bHRpcGxheWVyLnJpdmFscy52MUIdU2Vydmlj",
+            "ZU11bHRpcGxheWVyUml2YWxzUHJvdG9QAVpLdGhldGFuLWJ1Zi9nZW4vZ28v",
+            "dGhldGFuL211bHRpcGxheWVyL3JpdmFscy92MTt0aGV0YW5fbXVsdGlwbGF5",
+            "ZXJfcml2YWxzX3YxogIDVE1SqgIcVGhldGFuLk11bHRpcGxheWVyLlJpdmFs",
+            "cy5WMcoCHFRoZXRhblxNdWx0aXBsYXllclxSaXZhbHNcVjHiAihUaGV0YW5c",
+            "TXVsdGlwbGF5ZXJcUml2YWxzXFYxXEdQQk1ldGFkYXRh6gIfVGhldGFuOjpN",
+            "dWx0aXBsYXllcjo6Uml2YWxzOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Multiplayer.V1.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest), global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest.Parser, new[]{ "UserIDs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest), global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest.Parser, new[]{ "UserIDs", "SkipEntryOnError" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse), global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse.Parser, new[]{ "OnlineStatuses" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.OnlineStatus), global::Thetan.Multiplayer.Rivals.V1.OnlineStatus.Parser, new[]{ "UserID", "LastOnline", "Status" }, null, null, null, null)
           }));
@@ -91,6 +92,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetOnlineStatusRequest(GetOnlineStatusRequest other) : this() {
       userIDs_ = other.userIDs_.Clone();
+      skipEntryOnError_ = other.skipEntryOnError_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -111,6 +113,18 @@ namespace Thetan.Multiplayer.Rivals.V1 {
       get { return userIDs_; }
     }
 
+    /// <summary>Field number for the "skipEntryOnError" field.</summary>
+    public const int SkipEntryOnErrorFieldNumber = 2;
+    private bool skipEntryOnError_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool SkipEntryOnError {
+      get { return skipEntryOnError_; }
+      set {
+        skipEntryOnError_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -127,6 +141,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
         return true;
       }
       if(!userIDs_.Equals(other.userIDs_)) return false;
+      if (SkipEntryOnError != other.SkipEntryOnError) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -135,6 +150,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= userIDs_.GetHashCode();
+      if (SkipEntryOnError != false) hash ^= SkipEntryOnError.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -154,6 +170,10 @@ namespace Thetan.Multiplayer.Rivals.V1 {
       output.WriteRawMessage(this);
     #else
       userIDs_.WriteTo(output, _repeated_userIDs_codec);
+      if (SkipEntryOnError != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(SkipEntryOnError);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -165,6 +185,10 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       userIDs_.WriteTo(ref output, _repeated_userIDs_codec);
+      if (SkipEntryOnError != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(SkipEntryOnError);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -176,6 +200,9 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     public int CalculateSize() {
       int size = 0;
       size += userIDs_.CalculateSize(_repeated_userIDs_codec);
+      if (SkipEntryOnError != false) {
+        size += 1 + 1;
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -189,6 +216,9 @@ namespace Thetan.Multiplayer.Rivals.V1 {
         return;
       }
       userIDs_.Add(other.userIDs_);
+      if (other.SkipEntryOnError != false) {
+        SkipEntryOnError = other.SkipEntryOnError;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -208,6 +238,10 @@ namespace Thetan.Multiplayer.Rivals.V1 {
             userIDs_.AddEntriesFrom(input, _repeated_userIDs_codec);
             break;
           }
+          case 16: {
+            SkipEntryOnError = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -225,6 +259,10 @@ namespace Thetan.Multiplayer.Rivals.V1 {
             break;
           case 10: {
             userIDs_.AddEntriesFrom(ref input, _repeated_userIDs_codec);
+            break;
+          }
+          case 16: {
+            SkipEntryOnError = input.ReadBool();
             break;
           }
         }

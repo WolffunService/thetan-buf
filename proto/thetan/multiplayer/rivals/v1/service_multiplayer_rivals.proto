@@ -13,6 +13,7 @@ service RivalsMultiplayerService {
 
 message GetOnlineStatusRequest {
     repeated string userIDs = 1;
+    bool skipEntryOnError = 2;
 }
 
 message GetOnlineStatusResponse {
