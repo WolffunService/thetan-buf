@@ -49,6 +49,10 @@ namespace Thetan.Gateway.V1 {
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.LobbyTown> __Marshaller_thetan_rivals_v1_LobbyTown = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.LobbyTown.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Gateway.V1.TownAllocationResp> __Marshaller_thetan_gateway_v1_TownAllocationResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.TownAllocationResp.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.GetTownCCURequest> __Marshaller_thetan_gateway_v1_GetTownCCURequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.GetTownCCURequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Gateway.V1.GetTownCCUResponse> __Marshaller_thetan_gateway_v1_GetTownCCUResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.GetTownCCUResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.LobbyTown, global::Thetan.Gateway.V1.TownAllocationResp> __Method_AllocateTown = new grpc::Method<global::Thetan.Rivals.V1.LobbyTown, global::Thetan.Gateway.V1.TownAllocationResp>(
@@ -57,6 +61,14 @@ namespace Thetan.Gateway.V1 {
         "AllocateTown",
         __Marshaller_thetan_rivals_v1_LobbyTown,
         __Marshaller_thetan_gateway_v1_TownAllocationResp);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Gateway.V1.GetTownCCURequest, global::Thetan.Gateway.V1.GetTownCCUResponse> __Method_GetTownCCU = new grpc::Method<global::Thetan.Gateway.V1.GetTownCCURequest, global::Thetan.Gateway.V1.GetTownCCUResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetTownCCU",
+        __Marshaller_thetan_gateway_v1_GetTownCCURequest,
+        __Marshaller_thetan_gateway_v1_GetTownCCUResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -70,6 +82,12 @@ namespace Thetan.Gateway.V1 {
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Gateway.V1.TownAllocationResp> AllocateTown(global::Thetan.Rivals.V1.LobbyTown request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Gateway.V1.GetTownCCUResponse> GetTownCCU(global::Thetan.Gateway.V1.GetTownCCURequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -123,6 +141,26 @@ namespace Thetan.Gateway.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AllocateTown, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Gateway.V1.GetTownCCUResponse GetTownCCU(global::Thetan.Gateway.V1.GetTownCCURequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTownCCU(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Gateway.V1.GetTownCCUResponse GetTownCCU(global::Thetan.Gateway.V1.GetTownCCURequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetTownCCU, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.GetTownCCUResponse> GetTownCCUAsync(global::Thetan.Gateway.V1.GetTownCCURequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTownCCUAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.GetTownCCUResponse> GetTownCCUAsync(global::Thetan.Gateway.V1.GetTownCCURequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetTownCCU, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ThetanGatewayRivalsLobbyClient NewInstance(ClientBaseConfiguration configuration)
@@ -137,7 +175,8 @@ namespace Thetan.Gateway.V1 {
     public static grpc::ServerServiceDefinition BindService(ThetanGatewayRivalsLobbyBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_AllocateTown, serviceImpl.AllocateTown).Build();
+          .AddMethod(__Method_AllocateTown, serviceImpl.AllocateTown)
+          .AddMethod(__Method_GetTownCCU, serviceImpl.GetTownCCU).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -148,6 +187,7 @@ namespace Thetan.Gateway.V1 {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanGatewayRivalsLobbyBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_AllocateTown, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.LobbyTown, global::Thetan.Gateway.V1.TownAllocationResp>(serviceImpl.AllocateTown));
+      serviceBinder.AddMethod(__Method_GetTownCCU, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Gateway.V1.GetTownCCURequest, global::Thetan.Gateway.V1.GetTownCCUResponse>(serviceImpl.GetTownCCU));
     }
 
   }

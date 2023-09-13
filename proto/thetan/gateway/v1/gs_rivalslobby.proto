@@ -9,8 +9,17 @@ option csharp_namespace = "Thetan.Gateway.V1";
 
 service ThetanGatewayRivalsLobby {
   rpc AllocateTown(thetan.rivals.v1.LobbyTown) returns (TownAllocationResp) {}
+
+  rpc GetTownCCU(GetTownCCURequest) returns (GetTownCCUResponse) {}
 }
 
+message GetTownCCURequest {
+  string townID = 1;
+}
+
+message GetTownCCUResponse {
+  string ccu = 1;
+}
 
 message TownAllocationResp {
   //fishnet ip+port

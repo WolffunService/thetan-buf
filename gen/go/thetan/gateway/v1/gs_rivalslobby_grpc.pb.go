@@ -21,6 +21,7 @@ const _ = grpc.SupportPackageIsVersion7
 
 const (
 	ThetanGatewayRivalsLobby_AllocateTown_FullMethodName = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/AllocateTown"
+	ThetanGatewayRivalsLobby_GetTownCCU_FullMethodName   = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/GetTownCCU"
 )
 
 // ThetanGatewayRivalsLobbyClient is the client API for ThetanGatewayRivalsLobby service.
@@ -28,6 +29,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ThetanGatewayRivalsLobbyClient interface {
 	AllocateTown(ctx context.Context, in *v1.LobbyTown, opts ...grpc.CallOption) (*TownAllocationResp, error)
+	GetTownCCU(ctx context.Context, in *GetTownCCURequest, opts ...grpc.CallOption) (*GetTownCCUResponse, error)
 }
 
 type thetanGatewayRivalsLobbyClient struct {
@@ -47,11 +49,21 @@ func (c *thetanGatewayRivalsLobbyClient) AllocateTown(ctx context.Context, in *v
 	return out, nil
 }
 
+func (c *thetanGatewayRivalsLobbyClient) GetTownCCU(ctx context.Context, in *GetTownCCURequest, opts ...grpc.CallOption) (*GetTownCCUResponse, error) {
+	out := new(GetTownCCUResponse)
+	err := c.cc.Invoke(ctx, ThetanGatewayRivalsLobby_GetTownCCU_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanGatewayRivalsLobbyServer is the server API for ThetanGatewayRivalsLobby service.
 // All implementations must embed UnimplementedThetanGatewayRivalsLobbyServer
 // for forward compatibility
 type ThetanGatewayRivalsLobbyServer interface {
 	AllocateTown(context.Context, *v1.LobbyTown) (*TownAllocationResp, error)
+	GetTownCCU(context.Context, *GetTownCCURequest) (*GetTownCCUResponse, error)
 	mustEmbedUnimplementedThetanGatewayRivalsLobbyServer()
 }
 
@@ -61,6 +73,9 @@ type UnimplementedThetanGatewayRivalsLobbyServer struct {
 
 func (UnimplementedThetanGatewayRivalsLobbyServer) AllocateTown(context.Context, *v1.LobbyTown) (*TownAllocationResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method AllocateTown not implemented")
+}
+func (UnimplementedThetanGatewayRivalsLobbyServer) GetTownCCU(context.Context, *GetTownCCURequest) (*GetTownCCUResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetTownCCU not implemented")
 }
 func (UnimplementedThetanGatewayRivalsLobbyServer) mustEmbedUnimplementedThetanGatewayRivalsLobbyServer() {
 }
@@ -94,6 +109,24 @@ func _ThetanGatewayRivalsLobby_AllocateTown_Handler(srv interface{}, ctx context
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanGatewayRivalsLobby_GetTownCCU_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetTownCCURequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanGatewayRivalsLobbyServer).GetTownCCU(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanGatewayRivalsLobby_GetTownCCU_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanGatewayRivalsLobbyServer).GetTownCCU(ctx, req.(*GetTownCCURequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanGatewayRivalsLobby_ServiceDesc is the grpc.ServiceDesc for ThetanGatewayRivalsLobby service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -104,6 +137,10 @@ var ThetanGatewayRivalsLobby_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "AllocateTown",
 			Handler:    _ThetanGatewayRivalsLobby_AllocateTown_Handler,
+		},
+		{
+			MethodName: "GetTownCCU",
+			Handler:    _ThetanGatewayRivalsLobby_GetTownCCU_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
