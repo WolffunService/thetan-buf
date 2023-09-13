@@ -19,14 +19,14 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RivalsMultiplayerService_GetLastOnline_FullMethodName = "/thetan.multiplayer.rivals.v1.RivalsMultiplayerService/GetLastOnline"
+	RivalsMultiplayerService_GetOnlineStatus_FullMethodName = "/thetan.multiplayer.rivals.v1.RivalsMultiplayerService/GetOnlineStatus"
 )
 
 // RivalsMultiplayerServiceClient is the client API for RivalsMultiplayerService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type RivalsMultiplayerServiceClient interface {
-	GetLastOnline(ctx context.Context, in *GetLastOnlineRequest, opts ...grpc.CallOption) (*GetLastOnlineResponse, error)
+	GetOnlineStatus(ctx context.Context, in *GetOnlineStatusRequest, opts ...grpc.CallOption) (*GetOnlineStatusResponse, error)
 }
 
 type rivalsMultiplayerServiceClient struct {
@@ -37,9 +37,9 @@ func NewRivalsMultiplayerServiceClient(cc grpc.ClientConnInterface) RivalsMultip
 	return &rivalsMultiplayerServiceClient{cc}
 }
 
-func (c *rivalsMultiplayerServiceClient) GetLastOnline(ctx context.Context, in *GetLastOnlineRequest, opts ...grpc.CallOption) (*GetLastOnlineResponse, error) {
-	out := new(GetLastOnlineResponse)
-	err := c.cc.Invoke(ctx, RivalsMultiplayerService_GetLastOnline_FullMethodName, in, out, opts...)
+func (c *rivalsMultiplayerServiceClient) GetOnlineStatus(ctx context.Context, in *GetOnlineStatusRequest, opts ...grpc.CallOption) (*GetOnlineStatusResponse, error) {
+	out := new(GetOnlineStatusResponse)
+	err := c.cc.Invoke(ctx, RivalsMultiplayerService_GetOnlineStatus_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -50,7 +50,7 @@ func (c *rivalsMultiplayerServiceClient) GetLastOnline(ctx context.Context, in *
 // All implementations must embed UnimplementedRivalsMultiplayerServiceServer
 // for forward compatibility
 type RivalsMultiplayerServiceServer interface {
-	GetLastOnline(context.Context, *GetLastOnlineRequest) (*GetLastOnlineResponse, error)
+	GetOnlineStatus(context.Context, *GetOnlineStatusRequest) (*GetOnlineStatusResponse, error)
 	mustEmbedUnimplementedRivalsMultiplayerServiceServer()
 }
 
@@ -58,8 +58,8 @@ type RivalsMultiplayerServiceServer interface {
 type UnimplementedRivalsMultiplayerServiceServer struct {
 }
 
-func (UnimplementedRivalsMultiplayerServiceServer) GetLastOnline(context.Context, *GetLastOnlineRequest) (*GetLastOnlineResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetLastOnline not implemented")
+func (UnimplementedRivalsMultiplayerServiceServer) GetOnlineStatus(context.Context, *GetOnlineStatusRequest) (*GetOnlineStatusResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetOnlineStatus not implemented")
 }
 func (UnimplementedRivalsMultiplayerServiceServer) mustEmbedUnimplementedRivalsMultiplayerServiceServer() {
 }
@@ -75,20 +75,20 @@ func RegisterRivalsMultiplayerServiceServer(s grpc.ServiceRegistrar, srv RivalsM
 	s.RegisterService(&RivalsMultiplayerService_ServiceDesc, srv)
 }
 
-func _RivalsMultiplayerService_GetLastOnline_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(GetLastOnlineRequest)
+func _RivalsMultiplayerService_GetOnlineStatus_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetOnlineStatusRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(RivalsMultiplayerServiceServer).GetLastOnline(ctx, in)
+		return srv.(RivalsMultiplayerServiceServer).GetOnlineStatus(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: RivalsMultiplayerService_GetLastOnline_FullMethodName,
+		FullMethod: RivalsMultiplayerService_GetOnlineStatus_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(RivalsMultiplayerServiceServer).GetLastOnline(ctx, req.(*GetLastOnlineRequest))
+		return srv.(RivalsMultiplayerServiceServer).GetOnlineStatus(ctx, req.(*GetOnlineStatusRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -101,8 +101,8 @@ var RivalsMultiplayerService_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*RivalsMultiplayerServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "GetLastOnline",
-			Handler:    _RivalsMultiplayerService_GetLastOnline_Handler,
+			MethodName: "GetOnlineStatus",
+			Handler:    _RivalsMultiplayerService_GetOnlineStatus_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
