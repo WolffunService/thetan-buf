@@ -26,25 +26,28 @@ namespace Thetan.Gateway.V1 {
           string.Concat(
             "CiZ0aGV0YW4vZ2F0ZXdheS92MS9nc19yaXZhbHNsb2JieS5wcm90bxIRdGhl",
             "dGFuLmdhdGV3YXkudjEaJXRoZXRhbi9yaXZhbHMvdjEvc2VydmljZV9yaXZh",
-            "bHMucHJvdG8iKwoRR2V0VG93bkNDVVJlcXVlc3QSFgoGdG93bklEGAEgASgJ",
-            "UgZ0b3duSUQiJgoSR2V0VG93bkNDVVJlc3BvbnNlEhAKA2NjdRgBIAEoCVID",
-            "Y2N1ImQKElRvd25BbGxvY2F0aW9uUmVzcBIaCghzZXJ2ZXJJUBgBIAEoCVII",
-            "c2VydmVySVASHgoKc2VydmVyUG9ydBgCIAEoDVIKc2VydmVyUG9ydBISCgR0",
-            "b3duGAMgASgJUgR0b3duMs0BChhUaGV0YW5HYXRld2F5Uml2YWxzTG9iYnkS",
-            "VAoMQWxsb2NhdGVUb3duEhsudGhldGFuLnJpdmFscy52MS5Mb2JieVRvd24a",
-            "JS50aGV0YW4uZ2F0ZXdheS52MS5Ub3duQWxsb2NhdGlvblJlc3AiABJbCgpH",
-            "ZXRUb3duQ0NVEiQudGhldGFuLmdhdGV3YXkudjEuR2V0VG93bkNDVVJlcXVl",
-            "c3QaJS50aGV0YW4uZ2F0ZXdheS52MS5HZXRUb3duQ0NVUmVzcG9uc2UiAELI",
-            "AQoVY29tLnRoZXRhbi5nYXRld2F5LnYxQhJHc1JpdmFsc2xvYmJ5UHJvdG9Q",
-            "AVo1dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2dhdGV3YXkvdjE7dGhldGFu",
-            "X2dhdGV3YXlfdjGiAgNUR1iqAhFUaGV0YW4uR2F0ZXdheS5WMcoCEVRoZXRh",
-            "blxHYXRld2F5XFYx4gIdVGhldGFuXEdhdGV3YXlcVjFcR1BCTWV0YWRhdGHq",
-            "AhNUaGV0YW46OkdhdGV3YXk6OlYxYgZwcm90bzM="));
+            "bHMucHJvdG8iLQoRR2V0VG93bkNDVVJlcXVlc3QSGAoHdG93bklEcxgBIAMo",
+            "CVIHdG93bklEcyKOAQoSR2V0VG93bkNDVVJlc3BvbnNlEkAKA2NjdRgBIAMo",
+            "CzIuLnRoZXRhbi5nYXRld2F5LnYxLkdldFRvd25DQ1VSZXNwb25zZS5DY3VF",
+            "bnRyeVIDY2N1GjYKCENjdUVudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZh",
+            "bHVlGAIgASgFUgV2YWx1ZToCOAEiZAoSVG93bkFsbG9jYXRpb25SZXNwEhoK",
+            "CHNlcnZlcklQGAEgASgJUghzZXJ2ZXJJUBIeCgpzZXJ2ZXJQb3J0GAIgASgN",
+            "UgpzZXJ2ZXJQb3J0EhIKBHRvd24YAyABKAlSBHRvd24yzQEKGFRoZXRhbkdh",
+            "dGV3YXlSaXZhbHNMb2JieRJUCgxBbGxvY2F0ZVRvd24SGy50aGV0YW4ucml2",
+            "YWxzLnYxLkxvYmJ5VG93bholLnRoZXRhbi5nYXRld2F5LnYxLlRvd25BbGxv",
+            "Y2F0aW9uUmVzcCIAElsKCkdldFRvd25DQ1USJC50aGV0YW4uZ2F0ZXdheS52",
+            "MS5HZXRUb3duQ0NVUmVxdWVzdBolLnRoZXRhbi5nYXRld2F5LnYxLkdldFRv",
+            "d25DQ1VSZXNwb25zZSIAQsgBChVjb20udGhldGFuLmdhdGV3YXkudjFCEkdz",
+            "Uml2YWxzbG9iYnlQcm90b1ABWjV0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4v",
+            "Z2F0ZXdheS92MTt0aGV0YW5fZ2F0ZXdheV92MaICA1RHWKoCEVRoZXRhbi5H",
+            "YXRld2F5LlYxygIRVGhldGFuXEdhdGV3YXlcVjHiAh1UaGV0YW5cR2F0ZXdh",
+            "eVxWMVxHUEJNZXRhZGF0YeoCE1RoZXRhbjo6R2F0ZXdheTo6VjFiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.GetTownCCURequest), global::Thetan.Gateway.V1.GetTownCCURequest.Parser, new[]{ "TownID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.GetTownCCUResponse), global::Thetan.Gateway.V1.GetTownCCUResponse.Parser, new[]{ "Ccu" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.GetTownCCURequest), global::Thetan.Gateway.V1.GetTownCCURequest.Parser, new[]{ "TownIDs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.GetTownCCUResponse), global::Thetan.Gateway.V1.GetTownCCUResponse.Parser, new[]{ "Ccu" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.TownAllocationResp), global::Thetan.Gateway.V1.TownAllocationResp.Parser, new[]{ "ServerIP", "ServerPort", "Town" }, null, null, null, null)
           }));
     }
@@ -86,7 +89,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetTownCCURequest(GetTownCCURequest other) : this() {
-      townID_ = other.townID_;
+      townIDs_ = other.townIDs_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -96,16 +99,15 @@ namespace Thetan.Gateway.V1 {
       return new GetTownCCURequest(this);
     }
 
-    /// <summary>Field number for the "townID" field.</summary>
-    public const int TownIDFieldNumber = 1;
-    private string townID_ = "";
+    /// <summary>Field number for the "townIDs" field.</summary>
+    public const int TownIDsFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_townIDs_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> townIDs_ = new pbc::RepeatedField<string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TownID {
-      get { return townID_; }
-      set {
-        townID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
+    public pbc::RepeatedField<string> TownIDs {
+      get { return townIDs_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -123,7 +125,7 @@ namespace Thetan.Gateway.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (TownID != other.TownID) return false;
+      if(!townIDs_.Equals(other.townIDs_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -131,7 +133,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (TownID.Length != 0) hash ^= TownID.GetHashCode();
+      hash ^= townIDs_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -150,10 +152,7 @@ namespace Thetan.Gateway.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (TownID.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TownID);
-      }
+      townIDs_.WriteTo(output, _repeated_townIDs_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -164,10 +163,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TownID.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TownID);
-      }
+      townIDs_.WriteTo(ref output, _repeated_townIDs_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -178,9 +174,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (TownID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TownID);
-      }
+      size += townIDs_.CalculateSize(_repeated_townIDs_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -193,9 +187,7 @@ namespace Thetan.Gateway.V1 {
       if (other == null) {
         return;
       }
-      if (other.TownID.Length != 0) {
-        TownID = other.TownID;
-      }
+      townIDs_.Add(other.townIDs_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -212,7 +204,7 @@ namespace Thetan.Gateway.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            TownID = input.ReadString();
+            townIDs_.AddEntriesFrom(input, _repeated_townIDs_codec);
             break;
           }
         }
@@ -231,7 +223,7 @@ namespace Thetan.Gateway.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            TownID = input.ReadString();
+            townIDs_.AddEntriesFrom(ref input, _repeated_townIDs_codec);
             break;
           }
         }
@@ -275,7 +267,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetTownCCUResponse(GetTownCCUResponse other) : this() {
-      ccu_ = other.ccu_;
+      ccu_ = other.ccu_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -287,14 +279,13 @@ namespace Thetan.Gateway.V1 {
 
     /// <summary>Field number for the "ccu" field.</summary>
     public const int CcuFieldNumber = 1;
-    private string ccu_ = "";
+    private static readonly pbc::MapField<string, int>.Codec _map_ccu_codec
+        = new pbc::MapField<string, int>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForInt32(16, 0), 10);
+    private readonly pbc::MapField<string, int> ccu_ = new pbc::MapField<string, int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Ccu {
+    public pbc::MapField<string, int> Ccu {
       get { return ccu_; }
-      set {
-        ccu_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -312,7 +303,7 @@ namespace Thetan.Gateway.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Ccu != other.Ccu) return false;
+      if (!Ccu.Equals(other.Ccu)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -320,7 +311,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Ccu.Length != 0) hash ^= Ccu.GetHashCode();
+      hash ^= Ccu.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -339,10 +330,7 @@ namespace Thetan.Gateway.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Ccu.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Ccu);
-      }
+      ccu_.WriteTo(output, _map_ccu_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -353,10 +341,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Ccu.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Ccu);
-      }
+      ccu_.WriteTo(ref output, _map_ccu_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -367,9 +352,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Ccu.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Ccu);
-      }
+      size += ccu_.CalculateSize(_map_ccu_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -382,9 +365,7 @@ namespace Thetan.Gateway.V1 {
       if (other == null) {
         return;
       }
-      if (other.Ccu.Length != 0) {
-        Ccu = other.Ccu;
-      }
+      ccu_.Add(other.ccu_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -401,7 +382,7 @@ namespace Thetan.Gateway.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            Ccu = input.ReadString();
+            ccu_.AddEntriesFrom(input, _map_ccu_codec);
             break;
           }
         }
@@ -420,7 +401,7 @@ namespace Thetan.Gateway.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            Ccu = input.ReadString();
+            ccu_.AddEntriesFrom(ref input, _map_ccu_codec);
             break;
           }
         }
