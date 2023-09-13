@@ -46,17 +46,17 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest> __Marshaller_thetan_multiplayer_rivals_v1_GetLastOnlineRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest> __Marshaller_thetan_multiplayer_rivals_v1_GetOnlineStatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse> __Marshaller_thetan_multiplayer_rivals_v1_GetLastOnlineResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse> __Marshaller_thetan_multiplayer_rivals_v1_GetOnlineStatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest, global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse> __Method_GetLastOnline = new grpc::Method<global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest, global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse>(
+    static readonly grpc::Method<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse> __Method_GetOnlineStatus = new grpc::Method<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetLastOnline",
-        __Marshaller_thetan_multiplayer_rivals_v1_GetLastOnlineRequest,
-        __Marshaller_thetan_multiplayer_rivals_v1_GetLastOnlineResponse);
+        "GetOnlineStatus",
+        __Marshaller_thetan_multiplayer_rivals_v1_GetOnlineStatusRequest,
+        __Marshaller_thetan_multiplayer_rivals_v1_GetOnlineStatusResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -69,7 +69,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     public abstract partial class RivalsMultiplayerServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse> GetLastOnline(global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse> GetOnlineStatus(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -104,24 +104,24 @@ namespace Thetan.Multiplayer.Rivals.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse GetLastOnline(global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse GetOnlineStatus(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetLastOnline(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetOnlineStatus(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse GetLastOnline(global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest request, grpc::CallOptions options)
+      public virtual global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse GetOnlineStatus(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetLastOnline, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetOnlineStatus, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse> GetLastOnlineAsync(global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse> GetOnlineStatusAsync(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetLastOnlineAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetOnlineStatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse> GetLastOnlineAsync(global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse> GetOnlineStatusAsync(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetLastOnline, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetOnlineStatus, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -137,7 +137,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     public static grpc::ServerServiceDefinition BindService(RivalsMultiplayerServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetLastOnline, serviceImpl.GetLastOnline).Build();
+          .AddMethod(__Method_GetOnlineStatus, serviceImpl.GetOnlineStatus).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -147,7 +147,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, RivalsMultiplayerServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetLastOnline, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest, global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse>(serviceImpl.GetLastOnline));
+      serviceBinder.AddMethod(__Method_GetOnlineStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse>(serviceImpl.GetOnlineStatus));
     }
 
   }

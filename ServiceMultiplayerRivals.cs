@@ -26,44 +26,46 @@ namespace Thetan.Multiplayer.Rivals.V1 {
           string.Concat(
             "Cj10aGV0YW4vbXVsdGlwbGF5ZXIvcml2YWxzL3YxL3NlcnZpY2VfbXVsdGlw",
             "bGF5ZXJfcml2YWxzLnByb3RvEhx0aGV0YW4ubXVsdGlwbGF5ZXIucml2YWxz",
-            "LnYxIjAKFEdldExhc3RPbmxpbmVSZXF1ZXN0EhgKB3VzZXJJRHMYASADKAlS",
-            "B3VzZXJJRHMiYwoVR2V0TGFzdE9ubGluZVJlc3BvbnNlEkoKC2xhc3RPbmxp",
-            "bmVzGAEgAygLMigudGhldGFuLm11bHRpcGxheWVyLnJpdmFscy52MS5MYXN0",
-            "T25saW5lUgtsYXN0T25saW5lcyJECgpMYXN0T25saW5lEhYKBnVzZXJJRBgB",
-            "IAEoCVIGdXNlcklEEh4KCmxhc3RPbmxpbmUYAiABKANSCmxhc3RPbmxpbmUy",
-            "lgEKGFJpdmFsc011bHRpcGxheWVyU2VydmljZRJ6Cg1HZXRMYXN0T25saW5l",
-            "EjIudGhldGFuLm11bHRpcGxheWVyLnJpdmFscy52MS5HZXRMYXN0T25saW5l",
-            "UmVxdWVzdBozLnRoZXRhbi5tdWx0aXBsYXllci5yaXZhbHMudjEuR2V0TGFz",
-            "dE9ubGluZVJlc3BvbnNlIgBCoQIKIGNvbS50aGV0YW4ubXVsdGlwbGF5ZXIu",
-            "cml2YWxzLnYxQh1TZXJ2aWNlTXVsdGlwbGF5ZXJSaXZhbHNQcm90b1ABWkt0",
-            "aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vbXVsdGlwbGF5ZXIvcml2YWxzL3Yx",
-            "O3RoZXRhbl9tdWx0aXBsYXllcl9yaXZhbHNfdjGiAgNUTVKqAhxUaGV0YW4u",
-            "TXVsdGlwbGF5ZXIuUml2YWxzLlYxygIcVGhldGFuXE11bHRpcGxheWVyXFJp",
-            "dmFsc1xWMeICKFRoZXRhblxNdWx0aXBsYXllclxSaXZhbHNcVjFcR1BCTWV0",
-            "YWRhdGHqAh9UaGV0YW46Ok11bHRpcGxheWVyOjpSaXZhbHM6OlYxYgZwcm90",
-            "bzM="));
+            "LnYxGiJ0aGV0YW4vbXVsdGlwbGF5ZXIvdjEvY29tbW9uLnByb3RvIjIKFkdl",
+            "dE9ubGluZVN0YXR1c1JlcXVlc3QSGAoHdXNlcklEcxgBIAMoCVIHdXNlcklE",
+            "cyJtChdHZXRPbmxpbmVTdGF0dXNSZXNwb25zZRJSCg5PbmxpbmVTdGF0dXNl",
+            "cxgBIAMoCzIqLnRoZXRhbi5tdWx0aXBsYXllci5yaXZhbHMudjEuT25saW5l",
+            "U3RhdHVzUg5PbmxpbmVTdGF0dXNlcyKDAQoMT25saW5lU3RhdHVzEhYKBnVz",
+            "ZXJJRBgBIAEoCVIGdXNlcklEEh4KCmxhc3RPbmxpbmUYAiABKANSCmxhc3RP",
+            "bmxpbmUSOwoGc3RhdHVzGAMgASgOMiMudGhldGFuLm11bHRpcGxheWVyLnYx",
+            "LlBsYXllclN0YXR1c1IGc3RhdHVzMp0BChhSaXZhbHNNdWx0aXBsYXllclNl",
+            "cnZpY2USgAEKD0dldE9ubGluZVN0YXR1cxI0LnRoZXRhbi5tdWx0aXBsYXll",
+            "ci5yaXZhbHMudjEuR2V0T25saW5lU3RhdHVzUmVxdWVzdBo1LnRoZXRhbi5t",
+            "dWx0aXBsYXllci5yaXZhbHMudjEuR2V0T25saW5lU3RhdHVzUmVzcG9uc2Ui",
+            "AEKhAgogY29tLnRoZXRhbi5tdWx0aXBsYXllci5yaXZhbHMudjFCHVNlcnZp",
+            "Y2VNdWx0aXBsYXllclJpdmFsc1Byb3RvUAFaS3RoZXRhbi1idWYvZ2VuL2dv",
+            "L3RoZXRhbi9tdWx0aXBsYXllci9yaXZhbHMvdjE7dGhldGFuX211bHRpcGxh",
+            "eWVyX3JpdmFsc192MaICA1RNUqoCHFRoZXRhbi5NdWx0aXBsYXllci5SaXZh",
+            "bHMuVjHKAhxUaGV0YW5cTXVsdGlwbGF5ZXJcUml2YWxzXFYx4gIoVGhldGFu",
+            "XE11bHRpcGxheWVyXFJpdmFsc1xWMVxHUEJNZXRhZGF0YeoCH1RoZXRhbjo6",
+            "TXVsdGlwbGF5ZXI6OlJpdmFsczo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Thetan.Multiplayer.V1.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest), global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineRequest.Parser, new[]{ "UserIDs" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse), global::Thetan.Multiplayer.Rivals.V1.GetLastOnlineResponse.Parser, new[]{ "LastOnlines" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.LastOnline), global::Thetan.Multiplayer.Rivals.V1.LastOnline.Parser, new[]{ "UserID", "LastOnline_" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest), global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest.Parser, new[]{ "UserIDs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse), global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse.Parser, new[]{ "OnlineStatuses" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.OnlineStatus), global::Thetan.Multiplayer.Rivals.V1.OnlineStatus.Parser, new[]{ "UserID", "LastOnline", "Status" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class GetLastOnlineRequest : pb::IMessage<GetLastOnlineRequest>
+  public sealed partial class GetOnlineStatusRequest : pb::IMessage<GetOnlineStatusRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<GetLastOnlineRequest> _parser = new pb::MessageParser<GetLastOnlineRequest>(() => new GetLastOnlineRequest());
+    private static readonly pb::MessageParser<GetOnlineStatusRequest> _parser = new pb::MessageParser<GetOnlineStatusRequest>(() => new GetOnlineStatusRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GetLastOnlineRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetOnlineStatusRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -79,7 +81,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLastOnlineRequest() {
+    public GetOnlineStatusRequest() {
       OnConstruction();
     }
 
@@ -87,15 +89,15 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLastOnlineRequest(GetLastOnlineRequest other) : this() {
+    public GetOnlineStatusRequest(GetOnlineStatusRequest other) : this() {
       userIDs_ = other.userIDs_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLastOnlineRequest Clone() {
-      return new GetLastOnlineRequest(this);
+    public GetOnlineStatusRequest Clone() {
+      return new GetOnlineStatusRequest(this);
     }
 
     /// <summary>Field number for the "userIDs" field.</summary>
@@ -112,12 +114,12 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as GetLastOnlineRequest);
+      return Equals(other as GetOnlineStatusRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GetLastOnlineRequest other) {
+    public bool Equals(GetOnlineStatusRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -182,7 +184,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GetLastOnlineRequest other) {
+    public void MergeFrom(GetOnlineStatusRequest other) {
       if (other == null) {
         return;
       }
@@ -232,16 +234,16 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
   }
 
-  public sealed partial class GetLastOnlineResponse : pb::IMessage<GetLastOnlineResponse>
+  public sealed partial class GetOnlineStatusResponse : pb::IMessage<GetOnlineStatusResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<GetLastOnlineResponse> _parser = new pb::MessageParser<GetLastOnlineResponse>(() => new GetLastOnlineResponse());
+    private static readonly pb::MessageParser<GetOnlineStatusResponse> _parser = new pb::MessageParser<GetOnlineStatusResponse>(() => new GetOnlineStatusResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GetLastOnlineResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetOnlineStatusResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -257,7 +259,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLastOnlineResponse() {
+    public GetOnlineStatusResponse() {
       OnConstruction();
     }
 
@@ -265,44 +267,44 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLastOnlineResponse(GetLastOnlineResponse other) : this() {
-      lastOnlines_ = other.lastOnlines_.Clone();
+    public GetOnlineStatusResponse(GetOnlineStatusResponse other) : this() {
+      onlineStatuses_ = other.onlineStatuses_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLastOnlineResponse Clone() {
-      return new GetLastOnlineResponse(this);
+    public GetOnlineStatusResponse Clone() {
+      return new GetOnlineStatusResponse(this);
     }
 
-    /// <summary>Field number for the "lastOnlines" field.</summary>
-    public const int LastOnlinesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Thetan.Multiplayer.Rivals.V1.LastOnline> _repeated_lastOnlines_codec
-        = pb::FieldCodec.ForMessage(10, global::Thetan.Multiplayer.Rivals.V1.LastOnline.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Multiplayer.Rivals.V1.LastOnline> lastOnlines_ = new pbc::RepeatedField<global::Thetan.Multiplayer.Rivals.V1.LastOnline>();
+    /// <summary>Field number for the "OnlineStatuses" field.</summary>
+    public const int OnlineStatusesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Thetan.Multiplayer.Rivals.V1.OnlineStatus> _repeated_onlineStatuses_codec
+        = pb::FieldCodec.ForMessage(10, global::Thetan.Multiplayer.Rivals.V1.OnlineStatus.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Multiplayer.Rivals.V1.OnlineStatus> onlineStatuses_ = new pbc::RepeatedField<global::Thetan.Multiplayer.Rivals.V1.OnlineStatus>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Multiplayer.Rivals.V1.LastOnline> LastOnlines {
-      get { return lastOnlines_; }
+    public pbc::RepeatedField<global::Thetan.Multiplayer.Rivals.V1.OnlineStatus> OnlineStatuses {
+      get { return onlineStatuses_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as GetLastOnlineResponse);
+      return Equals(other as GetOnlineStatusResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GetLastOnlineResponse other) {
+    public bool Equals(GetOnlineStatusResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!lastOnlines_.Equals(other.lastOnlines_)) return false;
+      if(!onlineStatuses_.Equals(other.onlineStatuses_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -310,7 +312,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= lastOnlines_.GetHashCode();
+      hash ^= onlineStatuses_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -329,7 +331,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      lastOnlines_.WriteTo(output, _repeated_lastOnlines_codec);
+      onlineStatuses_.WriteTo(output, _repeated_onlineStatuses_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -340,7 +342,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      lastOnlines_.WriteTo(ref output, _repeated_lastOnlines_codec);
+      onlineStatuses_.WriteTo(ref output, _repeated_onlineStatuses_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -351,7 +353,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += lastOnlines_.CalculateSize(_repeated_lastOnlines_codec);
+      size += onlineStatuses_.CalculateSize(_repeated_onlineStatuses_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -360,11 +362,11 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GetLastOnlineResponse other) {
+    public void MergeFrom(GetOnlineStatusResponse other) {
       if (other == null) {
         return;
       }
-      lastOnlines_.Add(other.lastOnlines_);
+      onlineStatuses_.Add(other.onlineStatuses_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -381,7 +383,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            lastOnlines_.AddEntriesFrom(input, _repeated_lastOnlines_codec);
+            onlineStatuses_.AddEntriesFrom(input, _repeated_onlineStatuses_codec);
             break;
           }
         }
@@ -400,7 +402,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            lastOnlines_.AddEntriesFrom(ref input, _repeated_lastOnlines_codec);
+            onlineStatuses_.AddEntriesFrom(ref input, _repeated_onlineStatuses_codec);
             break;
           }
         }
@@ -410,16 +412,16 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
   }
 
-  public sealed partial class LastOnline : pb::IMessage<LastOnline>
+  public sealed partial class OnlineStatus : pb::IMessage<OnlineStatus>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<LastOnline> _parser = new pb::MessageParser<LastOnline>(() => new LastOnline());
+    private static readonly pb::MessageParser<OnlineStatus> _parser = new pb::MessageParser<OnlineStatus>(() => new OnlineStatus());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<LastOnline> Parser { get { return _parser; } }
+    public static pb::MessageParser<OnlineStatus> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -435,7 +437,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public LastOnline() {
+    public OnlineStatus() {
       OnConstruction();
     }
 
@@ -443,16 +445,17 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public LastOnline(LastOnline other) : this() {
+    public OnlineStatus(OnlineStatus other) : this() {
       userID_ = other.userID_;
       lastOnline_ = other.lastOnline_;
+      status_ = other.status_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public LastOnline Clone() {
-      return new LastOnline(this);
+    public OnlineStatus Clone() {
+      return new OnlineStatus(this);
     }
 
     /// <summary>Field number for the "userID" field.</summary>
@@ -468,26 +471,38 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     }
 
     /// <summary>Field number for the "lastOnline" field.</summary>
-    public const int LastOnline_FieldNumber = 2;
+    public const int LastOnlineFieldNumber = 2;
     private long lastOnline_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long LastOnline_ {
+    public long LastOnline {
       get { return lastOnline_; }
       set {
         lastOnline_ = value;
       }
     }
 
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 3;
+    private global::Thetan.Multiplayer.V1.PlayerStatus status_ = global::Thetan.Multiplayer.V1.PlayerStatus.Online;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as LastOnline);
+    public global::Thetan.Multiplayer.V1.PlayerStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(LastOnline other) {
+    public override bool Equals(object other) {
+      return Equals(other as OnlineStatus);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(OnlineStatus other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -495,7 +510,8 @@ namespace Thetan.Multiplayer.Rivals.V1 {
         return true;
       }
       if (UserID != other.UserID) return false;
-      if (LastOnline_ != other.LastOnline_) return false;
+      if (LastOnline != other.LastOnline) return false;
+      if (Status != other.Status) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -504,7 +520,8 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (UserID.Length != 0) hash ^= UserID.GetHashCode();
-      if (LastOnline_ != 0L) hash ^= LastOnline_.GetHashCode();
+      if (LastOnline != 0L) hash ^= LastOnline.GetHashCode();
+      if (Status != global::Thetan.Multiplayer.V1.PlayerStatus.Online) hash ^= Status.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -527,9 +544,13 @@ namespace Thetan.Multiplayer.Rivals.V1 {
         output.WriteRawTag(10);
         output.WriteString(UserID);
       }
-      if (LastOnline_ != 0L) {
+      if (LastOnline != 0L) {
         output.WriteRawTag(16);
-        output.WriteInt64(LastOnline_);
+        output.WriteInt64(LastOnline);
+      }
+      if (Status != global::Thetan.Multiplayer.V1.PlayerStatus.Online) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Status);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -545,9 +566,13 @@ namespace Thetan.Multiplayer.Rivals.V1 {
         output.WriteRawTag(10);
         output.WriteString(UserID);
       }
-      if (LastOnline_ != 0L) {
+      if (LastOnline != 0L) {
         output.WriteRawTag(16);
-        output.WriteInt64(LastOnline_);
+        output.WriteInt64(LastOnline);
+      }
+      if (Status != global::Thetan.Multiplayer.V1.PlayerStatus.Online) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Status);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -562,8 +587,11 @@ namespace Thetan.Multiplayer.Rivals.V1 {
       if (UserID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(UserID);
       }
-      if (LastOnline_ != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(LastOnline_);
+      if (LastOnline != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(LastOnline);
+      }
+      if (Status != global::Thetan.Multiplayer.V1.PlayerStatus.Online) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -573,15 +601,18 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(LastOnline other) {
+    public void MergeFrom(OnlineStatus other) {
       if (other == null) {
         return;
       }
       if (other.UserID.Length != 0) {
         UserID = other.UserID;
       }
-      if (other.LastOnline_ != 0L) {
-        LastOnline_ = other.LastOnline_;
+      if (other.LastOnline != 0L) {
+        LastOnline = other.LastOnline;
+      }
+      if (other.Status != global::Thetan.Multiplayer.V1.PlayerStatus.Online) {
+        Status = other.Status;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -603,7 +634,11 @@ namespace Thetan.Multiplayer.Rivals.V1 {
             break;
           }
           case 16: {
-            LastOnline_ = input.ReadInt64();
+            LastOnline = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            Status = (global::Thetan.Multiplayer.V1.PlayerStatus) input.ReadEnum();
             break;
           }
         }
@@ -626,7 +661,11 @@ namespace Thetan.Multiplayer.Rivals.V1 {
             break;
           }
           case 16: {
-            LastOnline_ = input.ReadInt64();
+            LastOnline = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            Status = (global::Thetan.Multiplayer.V1.PlayerStatus) input.ReadEnum();
             break;
           }
         }
