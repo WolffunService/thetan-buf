@@ -14,11 +14,11 @@ service ThetanGatewayRivalsLobby {
 }
 
 message GetTownCCURequest {
-  string townID = 1;
+  repeated string townIDs = 1;
 }
 
 message GetTownCCUResponse {
-  string ccu = 1;
+  map<string,int32> ccu = 1;
 }
 
 message TownAllocationResp {
