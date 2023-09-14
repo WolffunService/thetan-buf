@@ -178,6 +178,7 @@ message MinionResponse {
 message CreateMinionRequest {
   string userId = 1;
   int32 skinId = 2;
+  int32 gameType = 3;
   int32 changeSource = 4;
 }
 
