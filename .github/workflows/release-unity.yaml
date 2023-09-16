@@ -39,7 +39,7 @@ jobs:
       - uses: EndBug/add-and-commit@v9
       - name: Tag and push
         run: |
-          echo "VERSION" >> $VERSION
+          echo $VERSION
           git subtree split --prefix="gen/csharp" --branch upm
           git tag $VERSION
           git push origin upm --tags
