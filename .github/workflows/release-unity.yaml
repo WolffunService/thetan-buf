@@ -35,4 +35,12 @@ jobs:
         run: |
           ./unity/fix_meta.sh
         shell: bash
+      
       - uses: EndBug/add-and-commit@v9
+      - name: Tag and push
+        run: |
+          git subtree split --prefix="gen/csharp" --branch upm
+          git tag ${{ github.ref }}
+          git push origin upm --tags
+          git push origin --delete upm
+          git branch -D upm
