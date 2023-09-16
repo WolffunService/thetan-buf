@@ -10,6 +10,6 @@ new_version=$(echo "$current_version" | awk -F. -v OFS=. '{$NF++;print}')
 
 # Update the version in package.json
 jq --arg new_version "$new_version" '.version = $new_version' package.json > tmp.json && mv tmp.json package.json
-
+export VERSION="$new_version"
 echo "Version incremented to $new_version"
 
