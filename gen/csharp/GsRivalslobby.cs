@@ -26,19 +26,28 @@ namespace Thetan.Gateway.V1 {
           string.Concat(
             "CiZ0aGV0YW4vZ2F0ZXdheS92MS9nc19yaXZhbHNsb2JieS5wcm90bxIRdGhl",
             "dGFuLmdhdGV3YXkudjEaJXRoZXRhbi9yaXZhbHMvdjEvc2VydmljZV9yaXZh",
-            "bHMucHJvdG8iZAoSVG93bkFsbG9jYXRpb25SZXNwEhoKCHNlcnZlcklQGAEg",
-            "ASgJUghzZXJ2ZXJJUBIeCgpzZXJ2ZXJQb3J0GAIgASgNUgpzZXJ2ZXJQb3J0",
-            "EhIKBHRvd24YAyABKAlSBHRvd24ycAoYVGhldGFuR2F0ZXdheVJpdmFsc0xv",
-            "YmJ5ElQKDEFsbG9jYXRlVG93bhIbLnRoZXRhbi5yaXZhbHMudjEuTG9iYnlU",
-            "b3duGiUudGhldGFuLmdhdGV3YXkudjEuVG93bkFsbG9jYXRpb25SZXNwIgBC",
-            "yAEKFWNvbS50aGV0YW4uZ2F0ZXdheS52MUISR3NSaXZhbHNsb2JieVByb3Rv",
-            "UAFaNXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9nYXRld2F5L3YxO3RoZXRh",
-            "bl9nYXRld2F5X3YxogIDVEdYqgIRVGhldGFuLkdhdGV3YXkuVjHKAhFUaGV0",
-            "YW5cR2F0ZXdheVxWMeICHVRoZXRhblxHYXRld2F5XFYxXEdQQk1ldGFkYXRh",
-            "6gITVGhldGFuOjpHYXRld2F5OjpWMWIGcHJvdG8z"));
+            "bHMucHJvdG8iLQoRR2V0VG93bkNDVVJlcXVlc3QSGAoHdG93bklEcxgBIAMo",
+            "CVIHdG93bklEcyKOAQoSR2V0VG93bkNDVVJlc3BvbnNlEkAKA2NjdRgBIAMo",
+            "CzIuLnRoZXRhbi5nYXRld2F5LnYxLkdldFRvd25DQ1VSZXNwb25zZS5DY3VF",
+            "bnRyeVIDY2N1GjYKCENjdUVudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZh",
+            "bHVlGAIgASgFUgV2YWx1ZToCOAEiZAoSVG93bkFsbG9jYXRpb25SZXNwEhoK",
+            "CHNlcnZlcklQGAEgASgJUghzZXJ2ZXJJUBIeCgpzZXJ2ZXJQb3J0GAIgASgN",
+            "UgpzZXJ2ZXJQb3J0EhIKBHRvd24YAyABKAlSBHRvd24yzQEKGFRoZXRhbkdh",
+            "dGV3YXlSaXZhbHNMb2JieRJUCgxBbGxvY2F0ZVRvd24SGy50aGV0YW4ucml2",
+            "YWxzLnYxLkxvYmJ5VG93bholLnRoZXRhbi5nYXRld2F5LnYxLlRvd25BbGxv",
+            "Y2F0aW9uUmVzcCIAElsKCkdldFRvd25DQ1USJC50aGV0YW4uZ2F0ZXdheS52",
+            "MS5HZXRUb3duQ0NVUmVxdWVzdBolLnRoZXRhbi5nYXRld2F5LnYxLkdldFRv",
+            "d25DQ1VSZXNwb25zZSIAQsgBChVjb20udGhldGFuLmdhdGV3YXkudjFCEkdz",
+            "Uml2YWxzbG9iYnlQcm90b1ABWjV0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4v",
+            "Z2F0ZXdheS92MTt0aGV0YW5fZ2F0ZXdheV92MaICA1RHWKoCEVRoZXRhbi5H",
+            "YXRld2F5LlYxygIRVGhldGFuXEdhdGV3YXlcVjHiAh1UaGV0YW5cR2F0ZXdh",
+            "eVxWMVxHUEJNZXRhZGF0YeoCE1RoZXRhbjo6R2F0ZXdheTo6VjFiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.GetTownCCURequest), global::Thetan.Gateway.V1.GetTownCCURequest.Parser, new[]{ "TownIDs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.GetTownCCUResponse), global::Thetan.Gateway.V1.GetTownCCUResponse.Parser, new[]{ "Ccu" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.TownAllocationResp), global::Thetan.Gateway.V1.TownAllocationResp.Parser, new[]{ "ServerIP", "ServerPort", "Town" }, null, null, null, null)
           }));
     }
@@ -46,6 +55,362 @@ namespace Thetan.Gateway.V1 {
 
   }
   #region Messages
+  public sealed partial class GetTownCCURequest : pb::IMessage<GetTownCCURequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetTownCCURequest> _parser = new pb::MessageParser<GetTownCCURequest>(() => new GetTownCCURequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetTownCCURequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Gateway.V1.GsRivalslobbyReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetTownCCURequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetTownCCURequest(GetTownCCURequest other) : this() {
+      townIDs_ = other.townIDs_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetTownCCURequest Clone() {
+      return new GetTownCCURequest(this);
+    }
+
+    /// <summary>Field number for the "townIDs" field.</summary>
+    public const int TownIDsFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_townIDs_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> townIDs_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> TownIDs {
+      get { return townIDs_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetTownCCURequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetTownCCURequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!townIDs_.Equals(other.townIDs_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= townIDs_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      townIDs_.WriteTo(output, _repeated_townIDs_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      townIDs_.WriteTo(ref output, _repeated_townIDs_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += townIDs_.CalculateSize(_repeated_townIDs_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetTownCCURequest other) {
+      if (other == null) {
+        return;
+      }
+      townIDs_.Add(other.townIDs_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            townIDs_.AddEntriesFrom(input, _repeated_townIDs_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            townIDs_.AddEntriesFrom(ref input, _repeated_townIDs_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetTownCCUResponse : pb::IMessage<GetTownCCUResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetTownCCUResponse> _parser = new pb::MessageParser<GetTownCCUResponse>(() => new GetTownCCUResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetTownCCUResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Gateway.V1.GsRivalslobbyReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetTownCCUResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetTownCCUResponse(GetTownCCUResponse other) : this() {
+      ccu_ = other.ccu_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetTownCCUResponse Clone() {
+      return new GetTownCCUResponse(this);
+    }
+
+    /// <summary>Field number for the "ccu" field.</summary>
+    public const int CcuFieldNumber = 1;
+    private static readonly pbc::MapField<string, int>.Codec _map_ccu_codec
+        = new pbc::MapField<string, int>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForInt32(16, 0), 10);
+    private readonly pbc::MapField<string, int> ccu_ = new pbc::MapField<string, int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, int> Ccu {
+      get { return ccu_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetTownCCUResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetTownCCUResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!Ccu.Equals(other.Ccu)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= Ccu.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      ccu_.WriteTo(output, _map_ccu_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      ccu_.WriteTo(ref output, _map_ccu_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += ccu_.CalculateSize(_map_ccu_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetTownCCUResponse other) {
+      if (other == null) {
+        return;
+      }
+      ccu_.Add(other.ccu_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ccu_.AddEntriesFrom(input, _map_ccu_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ccu_.AddEntriesFrom(ref input, _map_ccu_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class TownAllocationResp : pb::IMessage<TownAllocationResp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -60,7 +425,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Gateway.V1.GsRivalslobbyReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Thetan.Gateway.V1.GsRivalslobbyReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

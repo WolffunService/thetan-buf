@@ -12,10 +12,16 @@ message RoomAllocationResp {
 
 message GameServerInfoResp{
   int32 CCU = 1;
+  string TownID = 2;
+}
+
+message SetTownRequest {
+  string TownID = 1;
 }
 
 service ThetanFishNetRivalsLobby {
   rpc RoomAllocation(google.protobuf.Empty) returns (RoomAllocationResp); // TODO @Tinh update request neu can
   rpc Shutdown(google.protobuf.Empty) returns (google.protobuf.Empty);
   rpc GameServerInfo(google.protobuf.Empty) returns (GameServerInfoResp);
+  rpc SetTown(SetTownRequest) returns (google.protobuf.Empty);
 }
