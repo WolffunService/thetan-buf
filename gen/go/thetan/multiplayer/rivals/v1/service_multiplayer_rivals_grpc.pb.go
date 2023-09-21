@@ -20,6 +20,7 @@ const _ = grpc.SupportPackageIsVersion7
 
 const (
 	RivalsMultiplayerService_GetOnlineStatus_FullMethodName = "/thetan.multiplayer.rivals.v1.RivalsMultiplayerService/GetOnlineStatus"
+	RivalsMultiplayerService_Notify_FullMethodName          = "/thetan.multiplayer.rivals.v1.RivalsMultiplayerService/Notify"
 )
 
 // RivalsMultiplayerServiceClient is the client API for RivalsMultiplayerService service.
@@ -27,6 +28,9 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type RivalsMultiplayerServiceClient interface {
 	GetOnlineStatus(ctx context.Context, in *GetOnlineStatusRequest, opts ...grpc.CallOption) (*GetOnlineStatusResponse, error)
+	// dùng để bắn event websocket trực tiếp đến user.
+	// nếu cần bắn event thường xuyên, nên để user subscribe vào channel và bắn event vào channel đó.
+	Notify(ctx context.Context, in *NotifyRequest, opts ...grpc.CallOption) (*NotifyResponse, error)
 }
 
 type rivalsMultiplayerServiceClient struct {
@@ -46,11 +50,23 @@ func (c *rivalsMultiplayerServiceClient) GetOnlineStatus(ctx context.Context, in
 	return out, nil
 }
 
+func (c *rivalsMultiplayerServiceClient) Notify(ctx context.Context, in *NotifyRequest, opts ...grpc.CallOption) (*NotifyResponse, error) {
+	out := new(NotifyResponse)
+	err := c.cc.Invoke(ctx, RivalsMultiplayerService_Notify_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // RivalsMultiplayerServiceServer is the server API for RivalsMultiplayerService service.
 // All implementations must embed UnimplementedRivalsMultiplayerServiceServer
 // for forward compatibility
 type RivalsMultiplayerServiceServer interface {
 	GetOnlineStatus(context.Context, *GetOnlineStatusRequest) (*GetOnlineStatusResponse, error)
+	// dùng để bắn event websocket trực tiếp đến user.
+	// nếu cần bắn event thường xuyên, nên để user subscribe vào channel và bắn event vào channel đó.
+	Notify(context.Context, *NotifyRequest) (*NotifyResponse, error)
 	mustEmbedUnimplementedRivalsMultiplayerServiceServer()
 }
 
@@ -60,6 +76,9 @@ type UnimplementedRivalsMultiplayerServiceServer struct {
 
 func (UnimplementedRivalsMultiplayerServiceServer) GetOnlineStatus(context.Context, *GetOnlineStatusRequest) (*GetOnlineStatusResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetOnlineStatus not implemented")
+}
+func (UnimplementedRivalsMultiplayerServiceServer) Notify(context.Context, *NotifyRequest) (*NotifyResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Notify not implemented")
 }
 func (UnimplementedRivalsMultiplayerServiceServer) mustEmbedUnimplementedRivalsMultiplayerServiceServer() {
 }
@@ -93,6 +112,24 @@ func _RivalsMultiplayerService_GetOnlineStatus_Handler(srv interface{}, ctx cont
 	return interceptor(ctx, in, info, handler)
 }
 
+func _RivalsMultiplayerService_Notify_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(NotifyRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(RivalsMultiplayerServiceServer).Notify(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: RivalsMultiplayerService_Notify_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(RivalsMultiplayerServiceServer).Notify(ctx, req.(*NotifyRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // RivalsMultiplayerService_ServiceDesc is the grpc.ServiceDesc for RivalsMultiplayerService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -103,6 +140,10 @@ var RivalsMultiplayerService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetOnlineStatus",
 			Handler:    _RivalsMultiplayerService_GetOnlineStatus_Handler,
+		},
+		{
+			MethodName: "Notify",
+			Handler:    _RivalsMultiplayerService_Notify_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
