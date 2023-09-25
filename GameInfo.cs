@@ -27,18 +27,19 @@ namespace Thetan.Shared.V1 {
             "CiB0aGV0YW4vc2hhcmVkL3YxL2dhbWVfaW5mby5wcm90bxIQdGhldGFuLnNo",
             "YXJlZC52MSpSCghHYW1lTW9kZRIKCgZSQU5LRUQQABIRCg1TUEVDSUFMX0VW",
             "RU5UEAESDwoLQ1VTVE9NX01PREUQAhIWChJUSEVUQU5fUklWQUxTX01PREUQ",
-            "Ayq1AgoKSW5HYW1lTW9kZRIVChFURUFNX0NPTExFQ1RfU1RBUhAAEhEKDVNP",
+            "AyrTAgoKSW5HYW1lTW9kZRIVChFURUFNX0NPTExFQ1RfU1RBUhAAEhEKDVNP",
             "TE9fU1VSVklWQUwQARIRCg1EVUFMX1NVUlZJVkFMEAISHAoYVEVBTV9DT0xM",
             "RUNUX1NUQVJfNF9WU180EAMSCAoES0lORxAFEg8KC0RFQVRIX01BVENIEAYS",
             "FgoSREVBVEhfTUFUQ0hfM19WU18zEAcSCAoERkxBRxAIEgkKBVRPV0VSEAkS",
             "EQoNQkFUVExFX1JPWUFMRRAMEhcKE1NRVUFEX0JBVFRMRV9ST1lBTEUQDRIV",
             "ChFEVU9fQkFUVExFX1JPWUFMRRAOEhYKElRSSU9fQkFUVExFX1JPQVlMRRAP",
-            "EhEKDVRIRVRBTl9SSVZBTFMQFBIWCglOT05FX01PREUQ////////////AUK8",
-            "AQoUY29tLnRoZXRhbi5zaGFyZWQudjFCDUdhbWVJbmZvUHJvdG9QAVozdGhl",
-            "dGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3NoYXJlZC92MTt0aGV0YW5fc2hhcmVk",
-            "X3YxogIDVFNYqgIQVGhldGFuLlNoYXJlZC5WMcoCEFRoZXRhblxTaGFyZWRc",
-            "VjHiAhxUaGV0YW5cU2hhcmVkXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpT",
-            "aGFyZWQ6OlYxYgZwcm90bzM="));
+            "EhEKDVRIRVRBTl9SSVZBTFMQFBIcChhUSEVUQU5fUklWQUxTX1RPVVJOQU1F",
+            "TlQQFRIWCglOT05FX01PREUQ////////////AUK8AQoUY29tLnRoZXRhbi5z",
+            "aGFyZWQudjFCDUdhbWVJbmZvUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28v",
+            "dGhldGFuL3NoYXJlZC92MTt0aGV0YW5fc2hhcmVkX3YxogIDVFNYqgIQVGhl",
+            "dGFuLlNoYXJlZC5WMcoCEFRoZXRhblxTaGFyZWRcVjHiAhxUaGV0YW5cU2hh",
+            "cmVkXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpTaGFyZWQ6OlYxYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Shared.V1.GameMode), typeof(global::Thetan.Shared.V1.InGameMode), }, null, null));
@@ -69,6 +70,7 @@ namespace Thetan.Shared.V1 {
     [pbr::OriginalName("DUO_BATTLE_ROYALE")] DuoBattleRoyale = 14,
     [pbr::OriginalName("TRIO_BATTLE_ROAYLE")] TrioBattleRoayle = 15,
     [pbr::OriginalName("THETAN_RIVALS")] ThetanRivals = 20,
+    [pbr::OriginalName("THETAN_RIVALS_TOURNAMENT")] ThetanRivalsTournament = 21,
     [pbr::OriginalName("NONE_MODE")] NoneMode = -1,
   }
 
