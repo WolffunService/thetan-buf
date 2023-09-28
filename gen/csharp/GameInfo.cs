@@ -27,19 +27,20 @@ namespace Thetan.Shared.V1 {
             "CiB0aGV0YW4vc2hhcmVkL3YxL2dhbWVfaW5mby5wcm90bxIQdGhldGFuLnNo",
             "YXJlZC52MSpSCghHYW1lTW9kZRIKCgZSQU5LRUQQABIRCg1TUEVDSUFMX0VW",
             "RU5UEAESDwoLQ1VTVE9NX01PREUQAhIWChJUSEVUQU5fUklWQUxTX01PREUQ",
-            "AyrTAgoKSW5HYW1lTW9kZRIVChFURUFNX0NPTExFQ1RfU1RBUhAAEhEKDVNP",
+            "AyqNAwoKSW5HYW1lTW9kZRIVChFURUFNX0NPTExFQ1RfU1RBUhAAEhEKDVNP",
             "TE9fU1VSVklWQUwQARIRCg1EVUFMX1NVUlZJVkFMEAISHAoYVEVBTV9DT0xM",
             "RUNUX1NUQVJfNF9WU180EAMSCAoES0lORxAFEg8KC0RFQVRIX01BVENIEAYS",
             "FgoSREVBVEhfTUFUQ0hfM19WU18zEAcSCAoERkxBRxAIEgkKBVRPV0VSEAkS",
             "EQoNQkFUVExFX1JPWUFMRRAMEhcKE1NRVUFEX0JBVFRMRV9ST1lBTEUQDRIV",
             "ChFEVU9fQkFUVExFX1JPWUFMRRAOEhYKElRSSU9fQkFUVExFX1JPQVlMRRAP",
             "EhEKDVRIRVRBTl9SSVZBTFMQFBIcChhUSEVUQU5fUklWQUxTX1RPVVJOQU1F",
-            "TlQQFRIWCglOT05FX01PREUQ////////////AUK8AQoUY29tLnRoZXRhbi5z",
-            "aGFyZWQudjFCDUdhbWVJbmZvUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28v",
-            "dGhldGFuL3NoYXJlZC92MTt0aGV0YW5fc2hhcmVkX3YxogIDVFNYqgIQVGhl",
-            "dGFuLlNoYXJlZC5WMcoCEFRoZXRhblxTaGFyZWRcVjHiAhxUaGV0YW5cU2hh",
-            "cmVkXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpTaGFyZWQ6OlYxYgZwcm90",
-            "bzM="));
+            "TlQQFRIcChhUSEVUQU5fUklWQUxTX1FVSUNLX01PREUQFhIaChZUSEVUQU5f",
+            "UklWQUxTX0RVT19NT0RFEBcSFgoJTk9ORV9NT0RFEP///////////wFCvAEK",
+            "FGNvbS50aGV0YW4uc2hhcmVkLnYxQg1HYW1lSW5mb1Byb3RvUAFaM3RoZXRh",
+            "bi1idWYvZ2VuL2dvL3RoZXRhbi9zaGFyZWQvdjE7dGhldGFuX3NoYXJlZF92",
+            "MaICA1RTWKoCEFRoZXRhbi5TaGFyZWQuVjHKAhBUaGV0YW5cU2hhcmVkXFYx",
+            "4gIcVGhldGFuXFNoYXJlZFxWMVxHUEJNZXRhZGF0YeoCElRoZXRhbjo6U2hh",
+            "cmVkOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Shared.V1.GameMode), typeof(global::Thetan.Shared.V1.InGameMode), }, null, null));
@@ -71,6 +72,8 @@ namespace Thetan.Shared.V1 {
     [pbr::OriginalName("TRIO_BATTLE_ROAYLE")] TrioBattleRoayle = 15,
     [pbr::OriginalName("THETAN_RIVALS")] ThetanRivals = 20,
     [pbr::OriginalName("THETAN_RIVALS_TOURNAMENT")] ThetanRivalsTournament = 21,
+    [pbr::OriginalName("THETAN_RIVALS_QUICK_MODE")] ThetanRivalsQuickMode = 22,
+    [pbr::OriginalName("THETAN_RIVALS_DUO_MODE")] ThetanRivalsDuoMode = 23,
     [pbr::OriginalName("NONE_MODE")] NoneMode = -1,
   }
 
