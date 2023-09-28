@@ -4,6 +4,7 @@ package thetan.rivals.v1;
 
 import "thetan/shared/v1/match.proto";
 import "thetan/shared/v1/ugc.proto";
+import "google/protobuf/empty.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
 option csharp_namespace = "Thetan.Rivals.V1";
@@ -29,6 +30,7 @@ service ThetanRivalService {
 
   // Track Action
   rpc TrackSession(TrackSessionRequest) returns (TrackSessionResponse) {}
+  rpc TrackSessionLobby(TrackSessionLobbyRequest) returns (google.protobuf.Empty) {}
 
   // GetFindMatchInfo
   rpc GetFindMatchInfo(FindMatchInfoRequest) returns (FindMatchInfoResponse) {}
@@ -248,6 +250,7 @@ message GetActivityRequest {
 message GetActivityResponse {
   string activityID = 1;
   string townID = 2;
+  string createTime = 4;
   repeated ClassInfo classes = 3;
 }
 
@@ -259,19 +262,20 @@ message ClassInfo {
   int32 memberPerClass = 5;
   double timePerClass = 6;
   double classPerMasterL = 7;
-  repeated SimpleItem rewards = 8;
+  string timeCloseEntry = 9;
+  map<int32,SimpleItem> rewards = 8;
 }
 
 message SimpleItem {
-  string itemType = 1;
-  int32 typeID = 2;
-  double amount = 3;
-  int32 inventoryKind = 4;
+  int32 kind = 1;
+  int32 type = 2;
+  int64 amount = 3;
+  int32 decimals = 4;
 }
 
 message GetTownUserRequest {
   string userID = 1;
-  string userLanguage = 2;
+  int32 userLanguage = 2;
   int32 userAge = 3;
 }
 
@@ -279,12 +283,13 @@ message LobbyTown {
   string townID = 1;
 
   string townName = 2;
-  int64 activeTime = 3;
-  string townCountry = 4;
-  string townRegion = 5;
+  string description = 3;
+  int64 activeTime = 4;
+
+  string townCountry = 5;
   int32 townTime = 6;
 
-  string townLanguage = 7;
+  int32 townLanguage = 7;
   double townScore = 8;
 }
 
@@ -312,4 +317,15 @@ message FindMatchInfoRequest {
 
 message FindMatchInfoResponse {
   repeated thetan.shared.v1.PlayerInfoMatchProto players = 1;
+}
+
+enum SessionLobby {
+  SessionLobbyNone = 0;
+  JoinLobby = 1;
+  LeaveLobby = 2;
+}
+
+message TrackSessionLobbyRequest {
+  string userID = 1;
+  SessionLobby status = 2;
 }

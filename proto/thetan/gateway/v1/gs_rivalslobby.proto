@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package thetan.gateway.v1;
+
+import "thetan/rivals/v1/service_rivals.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/gateway/v1;thetan_gateway_v1";
+option csharp_namespace = "Thetan.Gateway.V1";
+
+service ThetanGatewayRivalsLobby {
+  rpc AllocateTown(thetan.rivals.v1.LobbyTown) returns (TownAllocationResp) {}
+
+  rpc GetTownCCU(GetTownCCURequest) returns (GetTownCCUResponse) {}
+}
+
+message GetTownCCURequest {
+  repeated string townIDs = 1;
+}
+
+message GetTownCCUResponse {
+  map<string,int32> ccu = 1;
+}
+
+message TownAllocationResp {
+  //fishnet ip+port
+  string serverIP = 1;
+  uint32 serverPort = 2;
+  //town info
+  string town = 3;
+}

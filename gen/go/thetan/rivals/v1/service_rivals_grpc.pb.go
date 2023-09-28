@@ -11,6 +11,7 @@ import (
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
+	emptypb "google.golang.org/protobuf/types/known/emptypb"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -30,6 +31,7 @@ const (
 	ThetanRivalService_GetTownUser_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownUser"
 	ThetanRivalService_PickTownForUser_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/PickTownForUser"
 	ThetanRivalService_TrackSession_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/TrackSession"
+	ThetanRivalService_TrackSessionLobby_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/TrackSessionLobby"
 	ThetanRivalService_GetFindMatchInfo_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
 	ThetanRivalService_GetConfigForBot_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/GetConfigForBot"
 	ThetanRivalService_GetActiveTournaments_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/GetActiveTournaments"
@@ -57,6 +59,7 @@ type ThetanRivalServiceClient interface {
 	PickTownForUser(ctx context.Context, in *PickTownUserRequest, opts ...grpc.CallOption) (*EmptyResponse, error)
 	// Track Action
 	TrackSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error)
+	TrackSessionLobby(ctx context.Context, in *TrackSessionLobbyRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	// GetFindMatchInfo
 	GetFindMatchInfo(ctx context.Context, in *FindMatchInfoRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error)
 	// Get config for bot
@@ -174,6 +177,15 @@ func (c *thetanRivalServiceClient) TrackSession(ctx context.Context, in *TrackSe
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) TrackSessionLobby(ctx context.Context, in *TrackSessionLobbyRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+	out := new(emptypb.Empty)
+	err := c.cc.Invoke(ctx, ThetanRivalService_TrackSessionLobby_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 func (c *thetanRivalServiceClient) GetFindMatchInfo(ctx context.Context, in *FindMatchInfoRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error) {
 	out := new(FindMatchInfoResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetFindMatchInfo_FullMethodName, in, out, opts...)
@@ -239,6 +251,7 @@ type ThetanRivalServiceServer interface {
 	PickTownForUser(context.Context, *PickTownUserRequest) (*EmptyResponse, error)
 	// Track Action
 	TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error)
+	TrackSessionLobby(context.Context, *TrackSessionLobbyRequest) (*emptypb.Empty, error)
 	// GetFindMatchInfo
 	GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error)
 	// Get config for bot
@@ -286,6 +299,9 @@ func (UnimplementedThetanRivalServiceServer) PickTownForUser(context.Context, *P
 }
 func (UnimplementedThetanRivalServiceServer) TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TrackSession not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) TrackSessionLobby(context.Context, *TrackSessionLobbyRequest) (*emptypb.Empty, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method TrackSessionLobby not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetFindMatchInfo not implemented")
@@ -513,6 +529,24 @@ func _ThetanRivalService_TrackSession_Handler(srv interface{}, ctx context.Conte
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_TrackSessionLobby_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(TrackSessionLobbyRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).TrackSessionLobby(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_TrackSessionLobby_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).TrackSessionLobby(ctx, req.(*TrackSessionLobbyRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _ThetanRivalService_GetFindMatchInfo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(FindMatchInfoRequest)
 	if err := dec(in); err != nil {
@@ -653,6 +687,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "TrackSession",
 			Handler:    _ThetanRivalService_TrackSession_Handler,
+		},
+		{
+			MethodName: "TrackSessionLobby",
+			Handler:    _ThetanRivalService_TrackSessionLobby_Handler,
 		},
 		{
 			MethodName: "GetFindMatchInfo",

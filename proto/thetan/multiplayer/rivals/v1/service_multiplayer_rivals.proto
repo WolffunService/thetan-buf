@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package thetan.multiplayer.rivals.v1;
+
+import "thetan/multiplayer/v1/common.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/multiplayer/rivals/v1;thetan_multiplayer_rivals_v1";
+option csharp_namespace = "Thetan.Multiplayer.Rivals.V1";
+
+service RivalsMultiplayerService {
+  rpc GetOnlineStatus (GetOnlineStatusRequest) returns (GetOnlineStatusResponse) {}
+}
+
+message GetOnlineStatusRequest {
+    repeated string userIDs = 1;
+    bool skipEntryOnError = 2;
+}
+
+message GetOnlineStatusResponse {
+    repeated OnlineStatus OnlineStatuses = 1;
+}
+
+message OnlineStatus {
+    string userID = 1;
+    int64 lastOnline = 2;
+    thetan.multiplayer.v1.PlayerStatus status = 3;
+}

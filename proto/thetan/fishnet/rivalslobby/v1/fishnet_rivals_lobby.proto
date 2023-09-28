@@ -1,0 +1,27 @@
+syntax = "proto3";
+package thetan.fishnet.rivalslobby.v1;
+import "google/protobuf/empty.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/fishnet/rivalslobby/v1/thetan_fishnet_rivalslobby_v1";
+option csharp_namespace = "Thetan.FishNet.Rivalslobby.V1";
+
+
+message RoomAllocationResp {
+  bool isSuccess = 1;
+}
+
+message GameServerInfoResp{
+  int32 CCU = 1;
+  string TownID = 2;
+}
+
+message SetTownRequest {
+  string TownID = 1;
+}
+
+service ThetanFishNetRivalsLobby {
+  rpc RoomAllocation(google.protobuf.Empty) returns (RoomAllocationResp); // TODO @Tinh update request neu can
+  rpc Shutdown(google.protobuf.Empty) returns (google.protobuf.Empty);
+  rpc GameServerInfo(google.protobuf.Empty) returns (GameServerInfoResp);
+  rpc SetTown(SetTownRequest) returns (google.protobuf.Empty);
+}
