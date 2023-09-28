@@ -16,9 +16,9 @@ plugins:
 
   # Generate gPRC Mock for Go
   # `go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest`
-  - plugin: go-grpc-mock
-    out: gen/go
-    opt: paths=source_relative
+  # - plugin: go-grpc-mock
+  #   out: gen/go
+  #   opt: paths=source_relative
 
   # Generate for CSharp
   # Unity allowed a version lower or equal v21
