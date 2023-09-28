@@ -9,6 +9,7 @@ import (
 
 	gomock "go.uber.org/mock/gomock"
 	grpc "google.golang.org/grpc"
+	emptypb "google.golang.org/protobuf/types/known/emptypb"
 )
 
 // MockThetanRivalServiceClient is a mock of ThetanRivalServiceClient interface.
@@ -214,6 +215,26 @@ func (mr *MockThetanRivalServiceClientMockRecorder) GetMinion(ctx, in interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMinion", reflect.TypeOf((*MockThetanRivalServiceClient)(nil).GetMinion), varargs...)
 }
 
+// GetProfile mocks base method.
+func (m *MockThetanRivalServiceClient) GetProfile(ctx context.Context, in *ProfileRequest, opts ...grpc.CallOption) (*ProfileResponse, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{ctx, in}
+	for _, a := range opts {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "GetProfile", varargs...)
+	ret0, _ := ret[0].(*ProfileResponse)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProfile indicates an expected call of GetProfile.
+func (mr *MockThetanRivalServiceClientMockRecorder) GetProfile(ctx, in interface{}, opts ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{ctx, in}, opts...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfile", reflect.TypeOf((*MockThetanRivalServiceClient)(nil).GetProfile), varargs...)
+}
+
 // GetTownUser mocks base method.
 func (m *MockThetanRivalServiceClient) GetTownUser(ctx context.Context, in *GetTownUserRequest, opts ...grpc.CallOption) (*LobbyTown, error) {
 	m.ctrl.T.Helper()
@@ -352,6 +373,26 @@ func (mr *MockThetanRivalServiceClientMockRecorder) TrackSession(ctx, in interfa
 	mr.mock.ctrl.T.Helper()
 	varargs := append([]interface{}{ctx, in}, opts...)
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TrackSession", reflect.TypeOf((*MockThetanRivalServiceClient)(nil).TrackSession), varargs...)
+}
+
+// TrackSessionLobby mocks base method.
+func (m *MockThetanRivalServiceClient) TrackSessionLobby(ctx context.Context, in *TrackSessionLobbyRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+	m.ctrl.T.Helper()
+	varargs := []interface{}{ctx, in}
+	for _, a := range opts {
+		varargs = append(varargs, a)
+	}
+	ret := m.ctrl.Call(m, "TrackSessionLobby", varargs...)
+	ret0, _ := ret[0].(*emptypb.Empty)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TrackSessionLobby indicates an expected call of TrackSessionLobby.
+func (mr *MockThetanRivalServiceClientMockRecorder) TrackSessionLobby(ctx, in interface{}, opts ...interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	varargs := append([]interface{}{ctx, in}, opts...)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TrackSessionLobby", reflect.TypeOf((*MockThetanRivalServiceClient)(nil).TrackSessionLobby), varargs...)
 }
 
 // MockThetanRivalServiceServer is a mock of ThetanRivalServiceServer interface.
@@ -512,6 +553,21 @@ func (mr *MockThetanRivalServiceServerMockRecorder) GetMinion(ctx, in interface{
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMinion", reflect.TypeOf((*MockThetanRivalServiceServer)(nil).GetMinion), ctx, in)
 }
 
+// GetProfile mocks base method.
+func (m *MockThetanRivalServiceServer) GetProfile(ctx context.Context, in *ProfileRequest) (*ProfileResponse, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetProfile", ctx, in)
+	ret0, _ := ret[0].(*ProfileResponse)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetProfile indicates an expected call of GetProfile.
+func (mr *MockThetanRivalServiceServerMockRecorder) GetProfile(ctx, in interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetProfile", reflect.TypeOf((*MockThetanRivalServiceServer)(nil).GetProfile), ctx, in)
+}
+
 // GetTownUser mocks base method.
 func (m *MockThetanRivalServiceServer) GetTownUser(ctx context.Context, in *GetTownUserRequest) (*LobbyTown, error) {
 	m.ctrl.T.Helper()
@@ -615,4 +671,19 @@ func (m *MockThetanRivalServiceServer) TrackSession(ctx context.Context, in *Tra
 func (mr *MockThetanRivalServiceServerMockRecorder) TrackSession(ctx, in interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TrackSession", reflect.TypeOf((*MockThetanRivalServiceServer)(nil).TrackSession), ctx, in)
+}
+
+// TrackSessionLobby mocks base method.
+func (m *MockThetanRivalServiceServer) TrackSessionLobby(ctx context.Context, in *TrackSessionLobbyRequest) (*emptypb.Empty, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "TrackSessionLobby", ctx, in)
+	ret0, _ := ret[0].(*emptypb.Empty)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// TrackSessionLobby indicates an expected call of TrackSessionLobby.
+func (mr *MockThetanRivalServiceServerMockRecorder) TrackSessionLobby(ctx, in interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "TrackSessionLobby", reflect.TypeOf((*MockThetanRivalServiceServer)(nil).TrackSessionLobby), ctx, in)
 }
