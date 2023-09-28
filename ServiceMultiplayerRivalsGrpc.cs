@@ -49,6 +49,10 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest> __Marshaller_thetan_multiplayer_rivals_v1_GetOnlineStatusRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse> __Marshaller_thetan_multiplayer_rivals_v1_GetOnlineStatusResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.NotifyRequest> __Marshaller_thetan_multiplayer_rivals_v1_NotifyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.NotifyRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.NotifyResponse> __Marshaller_thetan_multiplayer_rivals_v1_NotifyResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.NotifyResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse> __Method_GetOnlineStatus = new grpc::Method<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse>(
@@ -57,6 +61,14 @@ namespace Thetan.Multiplayer.Rivals.V1 {
         "GetOnlineStatus",
         __Marshaller_thetan_multiplayer_rivals_v1_GetOnlineStatusRequest,
         __Marshaller_thetan_multiplayer_rivals_v1_GetOnlineStatusResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Multiplayer.Rivals.V1.NotifyRequest, global::Thetan.Multiplayer.Rivals.V1.NotifyResponse> __Method_Notify = new grpc::Method<global::Thetan.Multiplayer.Rivals.V1.NotifyRequest, global::Thetan.Multiplayer.Rivals.V1.NotifyResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Notify",
+        __Marshaller_thetan_multiplayer_rivals_v1_NotifyRequest,
+        __Marshaller_thetan_multiplayer_rivals_v1_NotifyResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -70,6 +82,19 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse> GetOnlineStatus(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// dùng để bắn event websocket trực tiếp đến user.
+      /// nếu cần bắn event thường xuyên, nên để user subscribe vào channel và bắn event vào channel đó.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Multiplayer.Rivals.V1.NotifyResponse> Notify(global::Thetan.Multiplayer.Rivals.V1.NotifyRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -123,6 +148,58 @@ namespace Thetan.Multiplayer.Rivals.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetOnlineStatus, null, options, request);
       }
+      /// <summary>
+      /// dùng để bắn event websocket trực tiếp đến user.
+      /// nếu cần bắn event thường xuyên, nên để user subscribe vào channel và bắn event vào channel đó.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Multiplayer.Rivals.V1.NotifyResponse Notify(global::Thetan.Multiplayer.Rivals.V1.NotifyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Notify(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// dùng để bắn event websocket trực tiếp đến user.
+      /// nếu cần bắn event thường xuyên, nên để user subscribe vào channel và bắn event vào channel đó.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Multiplayer.Rivals.V1.NotifyResponse Notify(global::Thetan.Multiplayer.Rivals.V1.NotifyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Notify, null, options, request);
+      }
+      /// <summary>
+      /// dùng để bắn event websocket trực tiếp đến user.
+      /// nếu cần bắn event thường xuyên, nên để user subscribe vào channel và bắn event vào channel đó.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Multiplayer.Rivals.V1.NotifyResponse> NotifyAsync(global::Thetan.Multiplayer.Rivals.V1.NotifyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return NotifyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// dùng để bắn event websocket trực tiếp đến user.
+      /// nếu cần bắn event thường xuyên, nên để user subscribe vào channel và bắn event vào channel đó.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Multiplayer.Rivals.V1.NotifyResponse> NotifyAsync(global::Thetan.Multiplayer.Rivals.V1.NotifyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Notify, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override RivalsMultiplayerServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -137,7 +214,8 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     public static grpc::ServerServiceDefinition BindService(RivalsMultiplayerServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetOnlineStatus, serviceImpl.GetOnlineStatus).Build();
+          .AddMethod(__Method_GetOnlineStatus, serviceImpl.GetOnlineStatus)
+          .AddMethod(__Method_Notify, serviceImpl.Notify).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -148,6 +226,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, RivalsMultiplayerServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetOnlineStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse>(serviceImpl.GetOnlineStatus));
+      serviceBinder.AddMethod(__Method_Notify, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Multiplayer.Rivals.V1.NotifyRequest, global::Thetan.Multiplayer.Rivals.V1.NotifyResponse>(serviceImpl.Notify));
     }
 
   }
