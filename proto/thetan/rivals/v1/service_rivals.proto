@@ -12,6 +12,7 @@ option csharp_namespace = "Thetan.Rivals.V1";
 service ThetanRivalService {
   // Profile
   rpc GetUserProfile (UserProfileRequest) returns (UserProfileResponse) {}
+  rpc GetProfile(ProfileRequest) returns (ProfileResponse) {}
 
   // Minions
   rpc GetUserMinions(UserMinionsRequest) returns (UserMinionsResponse) {}
@@ -328,4 +329,21 @@ enum SessionLobby {
 message TrackSessionLobbyRequest {
   string userID = 1;
   SessionLobby status = 2;
+}
+
+message ProfileRequest {
+  repeated string userIds = 1;
+}
+
+message ProfileResponse {
+  repeated Profile profiles = 1;
+}
+
+message Profile {
+  int32 minion = 1;
+  int32 battle = 2;
+  int32 victory = 3;
+  int32 streak = 4;
+  int32 curStreak = 5;
+  int32 winRound = 6;
 }

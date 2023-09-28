@@ -8,7 +8,10 @@ option go_package = "thetan-buf/gen/go/thetan/multiplayer/rivals/v1;thetan_multi
 option csharp_namespace = "Thetan.Multiplayer.Rivals.V1";
 
 service RivalsMultiplayerService {
-  rpc GetOnlineStatus (GetOnlineStatusRequest) returns (GetOnlineStatusResponse) {}
+    rpc GetOnlineStatus (GetOnlineStatusRequest) returns (GetOnlineStatusResponse) {}
+    // dùng để bắn event websocket trực tiếp đến user.
+    // nếu cần bắn event thường xuyên, nên để user subscribe vào channel và bắn event vào channel đó.
+    rpc Notify(NotifyRequest) returns (NotifyResponse) {}
 }
 
 message GetOnlineStatusRequest {
@@ -24,4 +27,13 @@ message OnlineStatus {
     string userID = 1;
     int64 lastOnline = 2;
     thetan.multiplayer.v1.PlayerStatus status = 3;
+}
+
+message NotifyRequest {
+    repeated string userIDs = 1;
+    string event = 2;
+    // co the them field any de truyen data cho event https://pkg.go.dev/google.golang.org/protobuf@v1.27.1/types/known/anypb#hdr-Unmarshaling_an_Any
+}
+
+message NotifyResponse {
 }
