@@ -103,7 +103,7 @@ namespace Thetan.Rivals.V1 {
             "ASgDUgl1cGRhdGVkQXQSHAoJY3JlYXRlZEF0GAogASgDUgljcmVhdGVkQXQS",
             "QAoKY3VzdG9taXplZBgLIAEoCzIgLnRoZXRhbi5zaGFyZWQudjEuSGVyb0N1",
             "c3RvbWl6ZWRSCmN1c3RvbWl6ZWQiMgoYR2V0QWRkSW5zQnlVc2VySURSZXF1",
-            "ZXN0EhYKBnVzZXJJZBgBIAEoCVIGdXNlcklkIkwKGUdldEFkZEluc0J5VXNl",
+            "ZXN0EhYKBnVzZXJJRBgBIAEoCVIGdXNlcklEIkwKGUdldEFkZEluc0J5VXNl",
             "cklEUmVzcG9uc2USLwoGYWRkSW5zGAEgAygLMhcudGhldGFuLnJpdmFscy52",
             "MS5BZGRJblIGYWRkSW5zIi8KE0dldEFkZEluQnlJRFJlcXVlc3QSGAoHYWRk",
             "SW5JRBgBIAEoCVIHYWRkSW5JRCJFChRHZXRBZGRJbkJ5SURSZXNwb25zZRIt",
@@ -268,7 +268,7 @@ namespace Thetan.Rivals.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMinionRequest), global::Thetan.Rivals.V1.CreateMinionRequest.Parser, new[]{ "UserId", "SkinId", "GameType", "ChangeSource" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMinionResponse), global::Thetan.Rivals.V1.CreateMinionResponse.Parser, new[]{ "Minion" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.AddIn), global::Thetan.Rivals.V1.AddIn.Parser, new[]{ "Id", "UserID", "AddInID", "AddInType", "UsedByMinionID", "Nft", "Status", "TokenID", "UpdatedAt", "CreatedAt", "Customized" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetAddInsByUserIDRequest), global::Thetan.Rivals.V1.GetAddInsByUserIDRequest.Parser, new[]{ "UserId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetAddInsByUserIDRequest), global::Thetan.Rivals.V1.GetAddInsByUserIDRequest.Parser, new[]{ "UserID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetAddInsByUserIDResponse), global::Thetan.Rivals.V1.GetAddInsByUserIDResponse.Parser, new[]{ "AddIns" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetAddInByIDRequest), global::Thetan.Rivals.V1.GetAddInByIDRequest.Parser, new[]{ "AddInID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetAddInByIDResponse), global::Thetan.Rivals.V1.GetAddInByIDResponse.Parser, new[]{ "AddIn" }, null, null, null, null),
@@ -7077,7 +7077,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetAddInsByUserIDRequest(GetAddInsByUserIDRequest other) : this() {
-      userId_ = other.userId_;
+      userID_ = other.userID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -7087,15 +7087,15 @@ namespace Thetan.Rivals.V1 {
       return new GetAddInsByUserIDRequest(this);
     }
 
-    /// <summary>Field number for the "userId" field.</summary>
-    public const int UserIdFieldNumber = 1;
-    private string userId_ = "";
+    /// <summary>Field number for the "userID" field.</summary>
+    public const int UserIDFieldNumber = 1;
+    private string userID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserId {
-      get { return userId_; }
+    public string UserID {
+      get { return userID_; }
       set {
-        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        userID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -7114,7 +7114,7 @@ namespace Thetan.Rivals.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (UserId != other.UserId) return false;
+      if (UserID != other.UserID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -7122,7 +7122,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (UserID.Length != 0) hash ^= UserID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -7141,9 +7141,9 @@ namespace Thetan.Rivals.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (UserId.Length != 0) {
+      if (UserID.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(UserId);
+        output.WriteString(UserID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -7155,9 +7155,9 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (UserId.Length != 0) {
+      if (UserID.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(UserId);
+        output.WriteString(UserID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -7169,8 +7169,8 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (UserId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      if (UserID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -7184,8 +7184,8 @@ namespace Thetan.Rivals.V1 {
       if (other == null) {
         return;
       }
-      if (other.UserId.Length != 0) {
-        UserId = other.UserId;
+      if (other.UserID.Length != 0) {
+        UserID = other.UserID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -7203,7 +7203,7 @@ namespace Thetan.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            UserId = input.ReadString();
+            UserID = input.ReadString();
             break;
           }
         }
@@ -7222,7 +7222,7 @@ namespace Thetan.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            UserId = input.ReadString();
+            UserID = input.ReadString();
             break;
           }
         }
