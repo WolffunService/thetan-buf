@@ -20,6 +20,11 @@ service ThetanRivalService {
   rpc GetMinion(MinionRequest) returns (MinionResponse) {}
   rpc CreateMinion(CreateMinionRequest) returns (CreateMinionResponse) {}
 
+  // Cosmetics
+  rpc GetAddInsByUserID(GetAddInsByUserIDRequest) returns (GetAddInsByUserIDResponse) {}
+  rpc GetAddInByID(GetAddInByIDRequest) returns (GetAddInByIDResponse) {}
+  rpc CreateAddIn(CreateAddInRequest) returns (CreateAddInResponse) {}
+
   // Friends
   rpc GetListFriends(GetUserFriendRequest) returns (GetUserFriendResponse) {}
   rpc GetMatchInfoOnboarding(GetMatchInfoRequest) returns (GetMatchInfoResponse) {}
@@ -185,6 +190,49 @@ message CreateMinionRequest {
 
 message CreateMinionResponse {
   Minion minion = 1;
+}
+
+// ==== COSMETICS ====
+
+message AddIn {
+  string id = 1;
+  string userID = 2;
+  int32 addInID = 3;
+  string addInType = 4;
+  string usedByMinionID = 5;
+  bool nft = 6;
+  int32 status = 7;
+  string tokenID = 8;
+  int64 updatedAt = 9;
+  int64 createdAt = 10;
+  thetan.shared.v1.HeroCustomized customized = 11;
+}
+
+message GetAddInsByUserIDRequest {
+  string userId = 1;
+}
+
+message GetAddInsByUserIDResponse {
+  repeated AddIn addIns = 1;
+}
+
+message GetAddInByIDRequest {
+  string addInID = 1;
+}
+
+message GetAddInByIDResponse {
+  AddIn addIn = 1;
+}
+
+message CreateAddInRequest {
+  string userID = 1;
+  int32 addInID = 2;
+  int32 sourceGame = 3;
+  int32 sourceFeature = 4;
+}
+
+message CreateAddInResponse {
+  AddIn addIn = 1;
 }
 
 // ==== FRIENDS ====

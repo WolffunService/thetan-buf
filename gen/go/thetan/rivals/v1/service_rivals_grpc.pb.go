@@ -26,6 +26,9 @@ const (
 	ThetanRivalService_GetUserSelectedMinion_FullMethodName         = "/thetan.rivals.v1.ThetanRivalService/GetUserSelectedMinion"
 	ThetanRivalService_GetMinion_FullMethodName                     = "/thetan.rivals.v1.ThetanRivalService/GetMinion"
 	ThetanRivalService_CreateMinion_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/CreateMinion"
+	ThetanRivalService_GetAddInsByUserID_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetAddInsByUserID"
+	ThetanRivalService_GetAddInByID_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/GetAddInByID"
+	ThetanRivalService_CreateAddIn_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/CreateAddIn"
 	ThetanRivalService_GetListFriends_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetListFriends"
 	ThetanRivalService_GetMatchInfoOnboarding_FullMethodName        = "/thetan.rivals.v1.ThetanRivalService/GetMatchInfoOnboarding"
 	ThetanRivalService_GetLatestLobbyActivityInfo_FullMethodName    = "/thetan.rivals.v1.ThetanRivalService/GetLatestLobbyActivityInfo"
@@ -52,6 +55,10 @@ type ThetanRivalServiceClient interface {
 	GetUserSelectedMinion(ctx context.Context, in *UserSelectedMinionRequest, opts ...grpc.CallOption) (*UserSelectedMinionResponse, error)
 	GetMinion(ctx context.Context, in *MinionRequest, opts ...grpc.CallOption) (*MinionResponse, error)
 	CreateMinion(ctx context.Context, in *CreateMinionRequest, opts ...grpc.CallOption) (*CreateMinionResponse, error)
+	// Cosmetics
+	GetAddInsByUserID(ctx context.Context, in *GetAddInsByUserIDRequest, opts ...grpc.CallOption) (*GetAddInsByUserIDResponse, error)
+	GetAddInByID(ctx context.Context, in *GetAddInByIDRequest, opts ...grpc.CallOption) (*GetAddInByIDResponse, error)
+	CreateAddIn(ctx context.Context, in *CreateAddInRequest, opts ...grpc.CallOption) (*CreateAddInResponse, error)
 	// Friends
 	GetListFriends(ctx context.Context, in *GetUserFriendRequest, opts ...grpc.CallOption) (*GetUserFriendResponse, error)
 	GetMatchInfoOnboarding(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*GetMatchInfoResponse, error)
@@ -128,6 +135,33 @@ func (c *thetanRivalServiceClient) GetMinion(ctx context.Context, in *MinionRequ
 func (c *thetanRivalServiceClient) CreateMinion(ctx context.Context, in *CreateMinionRequest, opts ...grpc.CallOption) (*CreateMinionResponse, error) {
 	out := new(CreateMinionResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_CreateMinion_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) GetAddInsByUserID(ctx context.Context, in *GetAddInsByUserIDRequest, opts ...grpc.CallOption) (*GetAddInsByUserIDResponse, error) {
+	out := new(GetAddInsByUserIDResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetAddInsByUserID_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) GetAddInByID(ctx context.Context, in *GetAddInByIDRequest, opts ...grpc.CallOption) (*GetAddInByIDResponse, error) {
+	out := new(GetAddInByIDResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetAddInByID_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) CreateAddIn(ctx context.Context, in *CreateAddInRequest, opts ...grpc.CallOption) (*CreateAddInResponse, error) {
+	out := new(CreateAddInResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_CreateAddIn_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -254,6 +288,10 @@ type ThetanRivalServiceServer interface {
 	GetUserSelectedMinion(context.Context, *UserSelectedMinionRequest) (*UserSelectedMinionResponse, error)
 	GetMinion(context.Context, *MinionRequest) (*MinionResponse, error)
 	CreateMinion(context.Context, *CreateMinionRequest) (*CreateMinionResponse, error)
+	// Cosmetics
+	GetAddInsByUserID(context.Context, *GetAddInsByUserIDRequest) (*GetAddInsByUserIDResponse, error)
+	GetAddInByID(context.Context, *GetAddInByIDRequest) (*GetAddInByIDResponse, error)
+	CreateAddIn(context.Context, *CreateAddInRequest) (*CreateAddInResponse, error)
 	// Friends
 	GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error)
 	GetMatchInfoOnboarding(context.Context, *GetMatchInfoRequest) (*GetMatchInfoResponse, error)
@@ -296,6 +334,15 @@ func (UnimplementedThetanRivalServiceServer) GetMinion(context.Context, *MinionR
 }
 func (UnimplementedThetanRivalServiceServer) CreateMinion(context.Context, *CreateMinionRequest) (*CreateMinionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateMinion not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetAddInsByUserID(context.Context, *GetAddInsByUserIDRequest) (*GetAddInsByUserIDResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetAddInsByUserID not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetAddInByID(context.Context, *GetAddInByIDRequest) (*GetAddInByIDResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetAddInByID not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) CreateAddIn(context.Context, *CreateAddInRequest) (*CreateAddInResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateAddIn not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetListFriends not implemented")
@@ -450,6 +497,60 @@ func _ThetanRivalService_CreateMinion_Handler(srv interface{}, ctx context.Conte
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ThetanRivalServiceServer).CreateMinion(ctx, req.(*CreateMinionRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_GetAddInsByUserID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetAddInsByUserIDRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetAddInsByUserID(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetAddInsByUserID_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetAddInsByUserID(ctx, req.(*GetAddInsByUserIDRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_GetAddInByID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetAddInByIDRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetAddInByID(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetAddInByID_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetAddInByID(ctx, req.(*GetAddInByIDRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_CreateAddIn_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CreateAddInRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).CreateAddIn(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_CreateAddIn_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).CreateAddIn(ctx, req.(*CreateAddInRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -700,6 +801,18 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "CreateMinion",
 			Handler:    _ThetanRivalService_CreateMinion_Handler,
+		},
+		{
+			MethodName: "GetAddInsByUserID",
+			Handler:    _ThetanRivalService_GetAddInsByUserID_Handler,
+		},
+		{
+			MethodName: "GetAddInByID",
+			Handler:    _ThetanRivalService_GetAddInByID_Handler,
+		},
+		{
+			MethodName: "CreateAddIn",
+			Handler:    _ThetanRivalService_CreateAddIn_Handler,
 		},
 		{
 			MethodName: "GetListFriends",
