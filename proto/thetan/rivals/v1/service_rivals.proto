@@ -209,7 +209,7 @@ message AddIn {
 }
 
 message GetAddInsByUserIDRequest {
-  string userId = 1;
+  string userID = 1;
 }
 
 message GetAddInsByUserIDResponse {
