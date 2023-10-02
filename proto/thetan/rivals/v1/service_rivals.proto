@@ -13,6 +13,7 @@ service ThetanRivalService {
   // Profile
   rpc GetUserProfile (UserProfileRequest) returns (UserProfileResponse) {}
   rpc GetProfile(ProfileRequest) returns (ProfileResponse) {}
+  rpc TrackFriendlyAct(FriendlyActRequest) returns (google.protobuf.Empty) {}
 
   // Minions
   rpc GetUserMinions(UserMinionsRequest) returns (UserMinionsResponse) {}
@@ -124,6 +125,17 @@ message UserProfileResponse {
 message UserProfileRank {
   int32 trophies = 1;
   int32 rankLevel = 2;
+}
+
+message FriendlyActRequest {
+  enum FriendlyActEnum {
+    None = 0;
+    Hug = 1;
+    Talk = 2;
+    GameInParty = 3;
+  } 
+  string userID = 1;
+  FriendlyActEnum type = 2;
 }
 
 // ==== MINIONS ====

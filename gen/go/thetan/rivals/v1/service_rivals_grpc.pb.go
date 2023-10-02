@@ -22,6 +22,7 @@ const _ = grpc.SupportPackageIsVersion7
 const (
 	ThetanRivalService_GetUserProfile_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserProfile"
 	ThetanRivalService_GetProfile_FullMethodName                    = "/thetan.rivals.v1.ThetanRivalService/GetProfile"
+	ThetanRivalService_TrackFriendlyAct_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/TrackFriendlyAct"
 	ThetanRivalService_GetUserMinions_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserMinions"
 	ThetanRivalService_GetUserSelectedMinion_FullMethodName         = "/thetan.rivals.v1.ThetanRivalService/GetUserSelectedMinion"
 	ThetanRivalService_GetMinion_FullMethodName                     = "/thetan.rivals.v1.ThetanRivalService/GetMinion"
@@ -47,6 +48,7 @@ type ThetanRivalServiceClient interface {
 	// Profile
 	GetUserProfile(ctx context.Context, in *UserProfileRequest, opts ...grpc.CallOption) (*UserProfileResponse, error)
 	GetProfile(ctx context.Context, in *ProfileRequest, opts ...grpc.CallOption) (*ProfileResponse, error)
+	TrackFriendlyAct(ctx context.Context, in *FriendlyActRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	// Minions
 	GetUserMinions(ctx context.Context, in *UserMinionsRequest, opts ...grpc.CallOption) (*UserMinionsResponse, error)
 	GetUserSelectedMinion(ctx context.Context, in *UserSelectedMinionRequest, opts ...grpc.CallOption) (*UserSelectedMinionResponse, error)
@@ -92,6 +94,15 @@ func (c *thetanRivalServiceClient) GetUserProfile(ctx context.Context, in *UserP
 func (c *thetanRivalServiceClient) GetProfile(ctx context.Context, in *ProfileRequest, opts ...grpc.CallOption) (*ProfileResponse, error) {
 	out := new(ProfileResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetProfile_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) TrackFriendlyAct(ctx context.Context, in *FriendlyActRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+	out := new(emptypb.Empty)
+	err := c.cc.Invoke(ctx, ThetanRivalService_TrackFriendlyAct_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -249,6 +260,7 @@ type ThetanRivalServiceServer interface {
 	// Profile
 	GetUserProfile(context.Context, *UserProfileRequest) (*UserProfileResponse, error)
 	GetProfile(context.Context, *ProfileRequest) (*ProfileResponse, error)
+	TrackFriendlyAct(context.Context, *FriendlyActRequest) (*emptypb.Empty, error)
 	// Minions
 	GetUserMinions(context.Context, *UserMinionsRequest) (*UserMinionsResponse, error)
 	GetUserSelectedMinion(context.Context, *UserSelectedMinionRequest) (*UserSelectedMinionResponse, error)
@@ -284,6 +296,9 @@ func (UnimplementedThetanRivalServiceServer) GetUserProfile(context.Context, *Us
 }
 func (UnimplementedThetanRivalServiceServer) GetProfile(context.Context, *ProfileRequest) (*ProfileResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetProfile not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) TrackFriendlyAct(context.Context, *FriendlyActRequest) (*emptypb.Empty, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method TrackFriendlyAct not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetUserMinions(context.Context, *UserMinionsRequest) (*UserMinionsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetUserMinions not implemented")
@@ -378,6 +393,24 @@ func _ThetanRivalService_GetProfile_Handler(srv interface{}, ctx context.Context
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ThetanRivalServiceServer).GetProfile(ctx, req.(*ProfileRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_TrackFriendlyAct_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(FriendlyActRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).TrackFriendlyAct(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_TrackFriendlyAct_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).TrackFriendlyAct(ctx, req.(*FriendlyActRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -684,6 +717,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetProfile",
 			Handler:    _ThetanRivalService_GetProfile_Handler,
+		},
+		{
+			MethodName: "TrackFriendlyAct",
+			Handler:    _ThetanRivalService_TrackFriendlyAct_Handler,
 		},
 		{
 			MethodName: "GetUserMinions",
