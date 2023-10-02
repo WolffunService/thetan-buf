@@ -320,7 +320,13 @@ message GuildInfo {
   int32 icon = 4;
   int32 guildType = 5;
   int32 requiredTrophy = 6;
-  map<int32, string> selectedDeco = 7;
+  map<uint32, DecoInfo> selectedDeco = 7;
+}
+
+message DecoInfo {
+  string id = 1;
+  uint32 decoID = 2;
+  thetan.shared.v1.HeroCustomized customized = 3;
 }
 
 message GetTownRequest {
