@@ -23,6 +23,7 @@ jobs:
         run: | 
           ./unity/increment_version.sh
           
+          go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest
           buf generate proto
           
           cp ./unity/package.json ./gen/csharp/package.json

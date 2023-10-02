@@ -80,6 +80,7 @@ message DataPlayAgainSuccess {
 
 message MatchFoundResponseProto {
   string matchId = 1;
+  string matchVersion = 9;
   repeated PlayerInfoMatchProto players = 2;
   GameMode gameMode = 3;
   InGameMode inGameMode = 4;

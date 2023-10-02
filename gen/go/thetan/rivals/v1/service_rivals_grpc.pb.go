@@ -21,6 +21,8 @@ const _ = grpc.SupportPackageIsVersion7
 
 const (
 	ThetanRivalService_GetUserProfile_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserProfile"
+	ThetanRivalService_GetProfile_FullMethodName                    = "/thetan.rivals.v1.ThetanRivalService/GetProfile"
+	ThetanRivalService_TrackFriendlyAct_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/TrackFriendlyAct"
 	ThetanRivalService_GetUserMinions_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserMinions"
 	ThetanRivalService_GetUserSelectedMinion_FullMethodName         = "/thetan.rivals.v1.ThetanRivalService/GetUserSelectedMinion"
 	ThetanRivalService_GetMinion_FullMethodName                     = "/thetan.rivals.v1.ThetanRivalService/GetMinion"
@@ -29,7 +31,7 @@ const (
 	ThetanRivalService_GetMatchInfoOnboarding_FullMethodName        = "/thetan.rivals.v1.ThetanRivalService/GetMatchInfoOnboarding"
 	ThetanRivalService_GetLatestLobbyActivityInfo_FullMethodName    = "/thetan.rivals.v1.ThetanRivalService/GetLatestLobbyActivityInfo"
 	ThetanRivalService_GetTownUser_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownUser"
-	ThetanRivalService_PickTownForUser_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/PickTownForUser"
+	ThetanRivalService_GetTownByID_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownByID"
 	ThetanRivalService_TrackSession_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/TrackSession"
 	ThetanRivalService_TrackSessionLobby_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/TrackSessionLobby"
 	ThetanRivalService_GetFindMatchInfo_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
@@ -45,6 +47,8 @@ const (
 type ThetanRivalServiceClient interface {
 	// Profile
 	GetUserProfile(ctx context.Context, in *UserProfileRequest, opts ...grpc.CallOption) (*UserProfileResponse, error)
+	GetProfile(ctx context.Context, in *ProfileRequest, opts ...grpc.CallOption) (*ProfileResponse, error)
+	TrackFriendlyAct(ctx context.Context, in *FriendlyActRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	// Minions
 	GetUserMinions(ctx context.Context, in *UserMinionsRequest, opts ...grpc.CallOption) (*UserMinionsResponse, error)
 	GetUserSelectedMinion(ctx context.Context, in *UserSelectedMinionRequest, opts ...grpc.CallOption) (*UserSelectedMinionResponse, error)
@@ -56,7 +60,7 @@ type ThetanRivalServiceClient interface {
 	// Lobby
 	GetLatestLobbyActivityInfo(ctx context.Context, in *GetActivityRequest, opts ...grpc.CallOption) (*GetActivityResponse, error)
 	GetTownUser(ctx context.Context, in *GetTownUserRequest, opts ...grpc.CallOption) (*LobbyTown, error)
-	PickTownForUser(ctx context.Context, in *PickTownUserRequest, opts ...grpc.CallOption) (*EmptyResponse, error)
+	GetTownByID(ctx context.Context, in *GetTownRequest, opts ...grpc.CallOption) (*LobbyTown, error)
 	// Track Action
 	TrackSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error)
 	TrackSessionLobby(ctx context.Context, in *TrackSessionLobbyRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
@@ -81,6 +85,24 @@ func NewThetanRivalServiceClient(cc grpc.ClientConnInterface) ThetanRivalService
 func (c *thetanRivalServiceClient) GetUserProfile(ctx context.Context, in *UserProfileRequest, opts ...grpc.CallOption) (*UserProfileResponse, error) {
 	out := new(UserProfileResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetUserProfile_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) GetProfile(ctx context.Context, in *ProfileRequest, opts ...grpc.CallOption) (*ProfileResponse, error) {
+	out := new(ProfileResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetProfile_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) TrackFriendlyAct(ctx context.Context, in *FriendlyActRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+	out := new(emptypb.Empty)
+	err := c.cc.Invoke(ctx, ThetanRivalService_TrackFriendlyAct_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -159,9 +181,9 @@ func (c *thetanRivalServiceClient) GetTownUser(ctx context.Context, in *GetTownU
 	return out, nil
 }
 
-func (c *thetanRivalServiceClient) PickTownForUser(ctx context.Context, in *PickTownUserRequest, opts ...grpc.CallOption) (*EmptyResponse, error) {
-	out := new(EmptyResponse)
-	err := c.cc.Invoke(ctx, ThetanRivalService_PickTownForUser_FullMethodName, in, out, opts...)
+func (c *thetanRivalServiceClient) GetTownByID(ctx context.Context, in *GetTownRequest, opts ...grpc.CallOption) (*LobbyTown, error) {
+	out := new(LobbyTown)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetTownByID_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -237,6 +259,8 @@ func (c *thetanRivalServiceClient) MatchFoundTournament(ctx context.Context, in 
 type ThetanRivalServiceServer interface {
 	// Profile
 	GetUserProfile(context.Context, *UserProfileRequest) (*UserProfileResponse, error)
+	GetProfile(context.Context, *ProfileRequest) (*ProfileResponse, error)
+	TrackFriendlyAct(context.Context, *FriendlyActRequest) (*emptypb.Empty, error)
 	// Minions
 	GetUserMinions(context.Context, *UserMinionsRequest) (*UserMinionsResponse, error)
 	GetUserSelectedMinion(context.Context, *UserSelectedMinionRequest) (*UserSelectedMinionResponse, error)
@@ -248,7 +272,7 @@ type ThetanRivalServiceServer interface {
 	// Lobby
 	GetLatestLobbyActivityInfo(context.Context, *GetActivityRequest) (*GetActivityResponse, error)
 	GetTownUser(context.Context, *GetTownUserRequest) (*LobbyTown, error)
-	PickTownForUser(context.Context, *PickTownUserRequest) (*EmptyResponse, error)
+	GetTownByID(context.Context, *GetTownRequest) (*LobbyTown, error)
 	// Track Action
 	TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error)
 	TrackSessionLobby(context.Context, *TrackSessionLobbyRequest) (*emptypb.Empty, error)
@@ -269,6 +293,12 @@ type UnimplementedThetanRivalServiceServer struct {
 
 func (UnimplementedThetanRivalServiceServer) GetUserProfile(context.Context, *UserProfileRequest) (*UserProfileResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetUserProfile not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetProfile(context.Context, *ProfileRequest) (*ProfileResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetProfile not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) TrackFriendlyAct(context.Context, *FriendlyActRequest) (*emptypb.Empty, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method TrackFriendlyAct not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetUserMinions(context.Context, *UserMinionsRequest) (*UserMinionsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetUserMinions not implemented")
@@ -294,8 +324,8 @@ func (UnimplementedThetanRivalServiceServer) GetLatestLobbyActivityInfo(context.
 func (UnimplementedThetanRivalServiceServer) GetTownUser(context.Context, *GetTownUserRequest) (*LobbyTown, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTownUser not implemented")
 }
-func (UnimplementedThetanRivalServiceServer) PickTownForUser(context.Context, *PickTownUserRequest) (*EmptyResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method PickTownForUser not implemented")
+func (UnimplementedThetanRivalServiceServer) GetTownByID(context.Context, *GetTownRequest) (*LobbyTown, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetTownByID not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TrackSession not implemented")
@@ -345,6 +375,42 @@ func _ThetanRivalService_GetUserProfile_Handler(srv interface{}, ctx context.Con
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ThetanRivalServiceServer).GetUserProfile(ctx, req.(*UserProfileRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_GetProfile_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(ProfileRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetProfile(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetProfile_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetProfile(ctx, req.(*ProfileRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_TrackFriendlyAct_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(FriendlyActRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).TrackFriendlyAct(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_TrackFriendlyAct_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).TrackFriendlyAct(ctx, req.(*FriendlyActRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -493,20 +559,20 @@ func _ThetanRivalService_GetTownUser_Handler(srv interface{}, ctx context.Contex
 	return interceptor(ctx, in, info, handler)
 }
 
-func _ThetanRivalService_PickTownForUser_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PickTownUserRequest)
+func _ThetanRivalService_GetTownByID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetTownRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ThetanRivalServiceServer).PickTownForUser(ctx, in)
+		return srv.(ThetanRivalServiceServer).GetTownByID(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: ThetanRivalService_PickTownForUser_FullMethodName,
+		FullMethod: ThetanRivalService_GetTownByID_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanRivalServiceServer).PickTownForUser(ctx, req.(*PickTownUserRequest))
+		return srv.(ThetanRivalServiceServer).GetTownByID(ctx, req.(*GetTownRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -649,6 +715,14 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _ThetanRivalService_GetUserProfile_Handler,
 		},
 		{
+			MethodName: "GetProfile",
+			Handler:    _ThetanRivalService_GetProfile_Handler,
+		},
+		{
+			MethodName: "TrackFriendlyAct",
+			Handler:    _ThetanRivalService_TrackFriendlyAct_Handler,
+		},
+		{
 			MethodName: "GetUserMinions",
 			Handler:    _ThetanRivalService_GetUserMinions_Handler,
 		},
@@ -681,8 +755,8 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _ThetanRivalService_GetTownUser_Handler,
 		},
 		{
-			MethodName: "PickTownForUser",
-			Handler:    _ThetanRivalService_PickTownForUser_Handler,
+			MethodName: "GetTownByID",
+			Handler:    _ThetanRivalService_GetTownByID_Handler,
 		},
 		{
 			MethodName: "TrackSession",
