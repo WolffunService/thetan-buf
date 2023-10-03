@@ -3,7 +3,7 @@ syntax = "proto3";
 package thetan.shared.v1;
 
 import "thetan/shared/v1/game_info.proto";
-import "thetan/shared/v1/ugc.proto";
+import "thetan/shared/v1/customized.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/shared/v1;thetan_shared_v1";
 option csharp_namespace = "Thetan.Shared.V1";
@@ -187,7 +187,7 @@ message PlayerInfoMatchProto {
   int32 rank = 27;
   CosmeticUsingProtoV2 cosmeticUsingV2 = 28;
   map<string, int32> roundPlayed = 29;
-  HeroCustomized customized = 30;
+  Customized customized = 30;
 }
 
 message CosmeticUsingProto
