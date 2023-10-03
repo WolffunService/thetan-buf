@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package thetan.shared.v1;
+
+import "google/protobuf/any.proto";
+import "tagger/tagger.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/shared/v1;thetan_shared_v1";
+option csharp_namespace = "Thetan.Shared.V1";
+
+// Customized dùng để gắn vào các item để cho phép app Thetan Creator có thể lưu được bản vẽ.
+message Customized {
+  // Name cho phép user tự đặt tên cho item của mình ở Thetan Creator
+  string name = 1 [(tagger.tags) = "bson:\"name\""];
+  // TextureURL đường dẫn tuyệt đối đến file texture lưu trên cloud
+  string textureURL = 2 [(tagger.tags) = "bson:\"textureURL\""];
+  // PublishAt thời điểm publish item customized này
+  int64 publishAt = 3 [(tagger.tags) = "bson:\"publishAt\""];
+  // CustomShader shader và các cấu hình của shader đó
+  optional CustomizedShader shader = 4 [(tagger.tags) = "bson:\"shader\""];
+}
+
+message CustomizedShader {
+  int32 shaderID = 1 [(tagger.tags) = "bson:\"shaderID\""];
+  map<string, google.protobuf.Any> params = 2 [(tagger.tags) = "bson:\"params\""];
+}

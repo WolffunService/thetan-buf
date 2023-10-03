@@ -2,5 +2,6 @@ install :
 #if macos - Darwin
 	brew install buf
 
-generate :
+generate:
 	buf generate proto
+	buf generate --template buf.gen.tag.yaml proto

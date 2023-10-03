@@ -3,7 +3,7 @@ syntax = "proto3";
 package thetan.rivals.v1;
 
 import "thetan/shared/v1/match.proto";
-import "thetan/shared/v1/ugc.proto";
+import "thetan/shared/v1/customized.proto";
 import "google/protobuf/empty.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
@@ -146,7 +146,7 @@ message UserSelectedMinionResponse {
   bool nft = 5;
   int32 level = 6;
   map<string, int64> addIns = 7;
-  thetan.shared.v1.HeroCustomized customized = 10;
+  thetan.shared.v1.Customized customized = 10;
   int64 updatedAt = 8;
   int64 createdAt = 9;
 }
@@ -168,7 +168,7 @@ message Minion {
   bool nft = 5;
   int32 level = 6;
   map<string, int64> addIns = 7;
-  thetan.shared.v1.HeroCustomized customized = 10;
+  thetan.shared.v1.Customized customized = 10;
   int64 updatedAt = 8;
   int64 createdAt = 9;
 }
@@ -205,7 +205,7 @@ message AddIn {
   string tokenID = 8;
   int64 updatedAt = 9;
   int64 createdAt = 10;
-  thetan.shared.v1.HeroCustomized customized = 11;
+  thetan.shared.v1.Customized customized = 11;
 }
 
 message GetAddInsByUserIDRequest {
