@@ -26,26 +26,28 @@ namespace Thetan.Shared.V1 {
           string.Concat(
             "CiF0aGV0YW4vc2hhcmVkL3YxL2N1c3RvbWl6ZWQucHJvdG8SEHRoZXRhbi5z",
             "aGFyZWQudjEaGWdvb2dsZS9wcm90b2J1Zi9hbnkucHJvdG8aE3RhZ2dlci90",
-            "YWdnZXIucHJvdG8i/wEKCkN1c3RvbWl6ZWQSJAoEbmFtZRgBIAEoCUIQmoSe",
+            "YWdnZXIucHJvdG8ivQIKCkN1c3RvbWl6ZWQSJAoEbmFtZRgBIAEoCUIQmoSe",
             "Awtic29uOiJuYW1lIlIEbmFtZRI2Cgp0ZXh0dXJlVVJMGAIgASgJQhaahJ4D",
-            "EWJzb246InRleHR1cmVVUkwiUgp0ZXh0dXJlVVJMEjMKCXB1Ymxpc2hBdBgD",
-            "IAEoA0IVmoSeAxBic29uOiJwdWJsaXNoQXQiUglwdWJsaXNoQXQSUwoGc2hh",
-            "ZGVyGAQgASgLMiIudGhldGFuLnNoYXJlZC52MS5DdXN0b21pemVkU2hhZGVy",
-            "QhKahJ4DDWJzb246InNoYWRlciJIAFIGc2hhZGVyiAEBQgkKB19zaGFkZXIi",
-            "8QEKEEN1c3RvbWl6ZWRTaGFkZXISMAoIc2hhZGVySUQYASABKAVCFJqEngMP",
-            "YnNvbjoic2hhZGVySUQiUghzaGFkZXJJRBJaCgZwYXJhbXMYAiADKAsyLi50",
-            "aGV0YW4uc2hhcmVkLnYxLkN1c3RvbWl6ZWRTaGFkZXIuUGFyYW1zRW50cnlC",
-            "EpqEngMNYnNvbjoicGFyYW1zIlIGcGFyYW1zGk8KC1BhcmFtc0VudHJ5EhAK",
-            "A2tleRgBIAEoCVIDa2V5EioKBXZhbHVlGAIgASgLMhQuZ29vZ2xlLnByb3Rv",
-            "YnVmLkFueVIFdmFsdWU6AjgBQr4BChRjb20udGhldGFuLnNoYXJlZC52MUIP",
-            "Q3VzdG9taXplZFByb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9z",
-            "aGFyZWQvdjE7dGhldGFuX3NoYXJlZF92MaICA1RTWKoCEFRoZXRhbi5TaGFy",
-            "ZWQuVjHKAhBUaGV0YW5cU2hhcmVkXFYx4gIcVGhldGFuXFNoYXJlZFxWMVxH",
-            "UEJNZXRhZGF0YeoCElRoZXRhbjo6U2hhcmVkOjpWMWIGcHJvdG8z"));
+            "EWJzb246InRleHR1cmVVUkwiUgp0ZXh0dXJlVVJMEjwKDHRodW1ibmFpbFVS",
+            "TBgFIAEoCUIYmoSeAxNic29uOiJ0aHVtYm5haWxVUkwiUgx0aHVtYm5haWxV",
+            "UkwSMwoJcHVibGlzaEF0GAMgASgDQhWahJ4DEGJzb246InB1Ymxpc2hBdCJS",
+            "CXB1Ymxpc2hBdBJTCgZzaGFkZXIYBCABKAsyIi50aGV0YW4uc2hhcmVkLnYx",
+            "LkN1c3RvbWl6ZWRTaGFkZXJCEpqEngMNYnNvbjoic2hhZGVyIkgAUgZzaGFk",
+            "ZXKIAQFCCQoHX3NoYWRlciLxAQoQQ3VzdG9taXplZFNoYWRlchIwCghzaGFk",
+            "ZXJJRBgBIAEoBUIUmoSeAw9ic29uOiJzaGFkZXJJRCJSCHNoYWRlcklEEloK",
+            "BnBhcmFtcxgCIAMoCzIuLnRoZXRhbi5zaGFyZWQudjEuQ3VzdG9taXplZFNo",
+            "YWRlci5QYXJhbXNFbnRyeUISmoSeAw1ic29uOiJwYXJhbXMiUgZwYXJhbXMa",
+            "TwoLUGFyYW1zRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSKgoFdmFsdWUYAiAB",
+            "KAsyFC5nb29nbGUucHJvdG9idWYuQW55UgV2YWx1ZToCOAFCvgEKFGNvbS50",
+            "aGV0YW4uc2hhcmVkLnYxQg9DdXN0b21pemVkUHJvdG9QAVozdGhldGFuLWJ1",
+            "Zi9nZW4vZ28vdGhldGFuL3NoYXJlZC92MTt0aGV0YW5fc2hhcmVkX3YxogID",
+            "VFNYqgIQVGhldGFuLlNoYXJlZC5WMcoCEFRoZXRhblxTaGFyZWRcVjHiAhxU",
+            "aGV0YW5cU2hhcmVkXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpTaGFyZWQ6",
+            "OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Tagger.TaggerReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.Customized), global::Thetan.Shared.V1.Customized.Parser, new[]{ "Name", "TextureURL", "PublishAt", "Shader" }, new[]{ "Shader" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.Customized), global::Thetan.Shared.V1.Customized.Parser, new[]{ "Name", "TextureURL", "ThumbnailURL", "PublishAt", "Shader" }, new[]{ "Shader" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.CustomizedShader), global::Thetan.Shared.V1.CustomizedShader.Parser, new[]{ "ShaderID", "Params" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
@@ -92,6 +94,7 @@ namespace Thetan.Shared.V1 {
     public Customized(Customized other) : this() {
       name_ = other.name_;
       textureURL_ = other.textureURL_;
+      thumbnailURL_ = other.thumbnailURL_;
       publishAt_ = other.publishAt_;
       shader_ = other.shader_ != null ? other.shader_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -130,6 +133,21 @@ namespace Thetan.Shared.V1 {
       get { return textureURL_; }
       set {
         textureURL_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "thumbnailURL" field.</summary>
+    public const int ThumbnailURLFieldNumber = 5;
+    private string thumbnailURL_ = "";
+    /// <summary>
+    /// ThumbnailURL đường dẫn tuyệt đối đến file thumbnail lưu trên cloud
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ThumbnailURL {
+      get { return thumbnailURL_; }
+      set {
+        thumbnailURL_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -180,6 +198,7 @@ namespace Thetan.Shared.V1 {
       }
       if (Name != other.Name) return false;
       if (TextureURL != other.TextureURL) return false;
+      if (ThumbnailURL != other.ThumbnailURL) return false;
       if (PublishAt != other.PublishAt) return false;
       if (!object.Equals(Shader, other.Shader)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -191,6 +210,7 @@ namespace Thetan.Shared.V1 {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (TextureURL.Length != 0) hash ^= TextureURL.GetHashCode();
+      if (ThumbnailURL.Length != 0) hash ^= ThumbnailURL.GetHashCode();
       if (PublishAt != 0L) hash ^= PublishAt.GetHashCode();
       if (shader_ != null) hash ^= Shader.GetHashCode();
       if (_unknownFields != null) {
@@ -227,6 +247,10 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Shader);
       }
+      if (ThumbnailURL.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ThumbnailURL);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -253,6 +277,10 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Shader);
       }
+      if (ThumbnailURL.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ThumbnailURL);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -268,6 +296,9 @@ namespace Thetan.Shared.V1 {
       }
       if (TextureURL.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(TextureURL);
+      }
+      if (ThumbnailURL.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ThumbnailURL);
       }
       if (PublishAt != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(PublishAt);
@@ -292,6 +323,9 @@ namespace Thetan.Shared.V1 {
       }
       if (other.TextureURL.Length != 0) {
         TextureURL = other.TextureURL;
+      }
+      if (other.ThumbnailURL.Length != 0) {
+        ThumbnailURL = other.ThumbnailURL;
       }
       if (other.PublishAt != 0L) {
         PublishAt = other.PublishAt;
@@ -336,6 +370,10 @@ namespace Thetan.Shared.V1 {
             input.ReadMessage(Shader);
             break;
           }
+          case 42: {
+            ThumbnailURL = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -368,6 +406,10 @@ namespace Thetan.Shared.V1 {
               Shader = new global::Thetan.Shared.V1.CustomizedShader();
             }
             input.ReadMessage(Shader);
+            break;
+          }
+          case 42: {
+            ThumbnailURL = input.ReadString();
             break;
           }
         }
