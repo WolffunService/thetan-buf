@@ -29,6 +29,10 @@ buf generate proto
 ```
 
 ```shell
+buf generate --template buf.gen.tag.yaml proto
+```
+
+```shell
 cp ./unity/package.json ./gen/csharp/package.json | cp ./unity/Wolffun.Protobuf.asmdef ./gen/csharp/Wolffun.Protobuf.asmdef
 ```
 

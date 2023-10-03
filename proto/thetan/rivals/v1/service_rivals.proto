@@ -3,7 +3,7 @@ syntax = "proto3";
 package thetan.rivals.v1;
 
 import "thetan/shared/v1/match.proto";
-import "thetan/shared/v1/ugc.proto";
+import "thetan/shared/v1/customized.proto";
 import "google/protobuf/empty.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
@@ -20,6 +20,11 @@ service ThetanRivalService {
   rpc GetUserSelectedMinion (UserSelectedMinionRequest) returns (UserSelectedMinionResponse) {}
   rpc GetMinion(MinionRequest) returns (MinionResponse) {}
   rpc CreateMinion(CreateMinionRequest) returns (CreateMinionResponse) {}
+
+  // Cosmetics
+  rpc GetAddInsByUserID(GetAddInsByUserIDRequest) returns (GetAddInsByUserIDResponse) {}
+  rpc GetAddInByID(GetAddInByIDRequest) returns (GetAddInByIDResponse) {}
+  rpc CreateAddIn(CreateAddInRequest) returns (CreateAddInResponse) {}
 
   // Friends
   rpc GetListFriends(GetUserFriendRequest) returns (GetUserFriendResponse) {}
@@ -152,7 +157,7 @@ message UserSelectedMinionResponse {
   bool nft = 5;
   int32 level = 6;
   map<string, int64> addIns = 7;
-  thetan.shared.v1.HeroCustomized customized = 10;
+  thetan.shared.v1.Customized customized = 10;
   int64 updatedAt = 8;
   int64 createdAt = 9;
 }
@@ -174,7 +179,7 @@ message Minion {
   bool nft = 5;
   int32 level = 6;
   map<string, int64> addIns = 7;
-  thetan.shared.v1.HeroCustomized customized = 10;
+  thetan.shared.v1.Customized customized = 10;
   int64 updatedAt = 8;
   int64 createdAt = 9;
 }
@@ -196,6 +201,49 @@ message CreateMinionRequest {
 
 message CreateMinionResponse {
   Minion minion = 1;
+}
+
+// ==== COSMETICS ====
+
+message AddIn {
+  string id = 1;
+  string userID = 2;
+  int32 addInID = 3;
+  string addInType = 4;
+  string usedByMinionID = 5;
+  bool nft = 6;
+  int32 status = 7;
+  string tokenID = 8;
+  int64 updatedAt = 9;
+  int64 createdAt = 10;
+  thetan.shared.v1.Customized customized = 11;
+}
+
+message GetAddInsByUserIDRequest {
+  string userID = 1;
+}
+
+message GetAddInsByUserIDResponse {
+  repeated AddIn addIns = 1;
+}
+
+message GetAddInByIDRequest {
+  string addInID = 1;
+}
+
+message GetAddInByIDResponse {
+  AddIn addIn = 1;
+}
+
+message CreateAddInRequest {
+  string userID = 1;
+  int32 addInID = 2;
+  int32 sourceGame = 3;
+  int32 sourceFeature = 4;
+}
+
+message CreateAddInResponse {
+  AddIn addIn = 1;
 }
 
 // ==== FRIENDS ====
@@ -326,7 +374,7 @@ message GuildInfo {
 message DecoInfo {
   string id = 1;
   uint32 decoID = 2;
-  thetan.shared.v1.HeroCustomized customized = 3;
+  thetan.shared.v1.Customized customized = 3;
 }
 
 message GetTownRequest {

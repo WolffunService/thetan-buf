@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package thetan.ugc.v1;
 
-import "thetan/shared/v1/ugc.proto";
+import "thetan/shared/v1/customized.proto";
 import "google/protobuf/any.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/ugc/v1;thetan_ugc_v1";
