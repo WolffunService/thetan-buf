@@ -4,7 +4,6 @@ package thetan.rivals.v1;
 
 import "thetan/shared/v1/match.proto";
 import "thetan/shared/v1/customized.proto";
-import "thetan/shared/v1/item.proto";
 import "google/protobuf/empty.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
