@@ -38,17 +38,22 @@ namespace Thetan.Shared.V1 {
             "BnBhcmFtcxgCIAMoCzIuLnRoZXRhbi5zaGFyZWQudjEuQ3VzdG9taXplZFNo",
             "YWRlci5QYXJhbXNFbnRyeUISmoSeAw1ic29uOiJwYXJhbXMiUgZwYXJhbXMa",
             "TwoLUGFyYW1zRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSKgoFdmFsdWUYAiAB",
-            "KAsyFC5nb29nbGUucHJvdG9idWYuQW55UgV2YWx1ZToCOAFCvgEKFGNvbS50",
-            "aGV0YW4uc2hhcmVkLnYxQg9DdXN0b21pemVkUHJvdG9QAVozdGhldGFuLWJ1",
-            "Zi9nZW4vZ28vdGhldGFuL3NoYXJlZC92MTt0aGV0YW5fc2hhcmVkX3YxogID",
-            "VFNYqgIQVGhldGFuLlNoYXJlZC5WMcoCEFRoZXRhblxTaGFyZWRcVjHiAhxU",
-            "aGV0YW5cU2hhcmVkXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpTaGFyZWQ6",
-            "OlYxYgZwcm90bzM="));
+            "KAsyFC5nb29nbGUucHJvdG9idWYuQW55UgV2YWx1ZToCOAEiyAEKBEl0ZW0S",
+            "JAoEdHlwZRgBIAEoBUIQmoSeAwtic29uOiJ0eXBlIlIEdHlwZRIkCgRraW5k",
+            "GAIgASgDQhCahJ4DC2Jzb246ImtpbmQiUgRraW5kEh4KAmlkGAMgASgJQg6a",
+            "hJ4DCWJzb246ImlkIlICaWQSVAoKY3VzdG9taXplZBgEIAEoCzIcLnRoZXRh",
+            "bi5zaGFyZWQudjEuQ3VzdG9taXplZEIWmoSeAxFic29uOiJjdXN0b21pemVk",
+            "IlIKY3VzdG9taXplZEK+AQoUY29tLnRoZXRhbi5zaGFyZWQudjFCD0N1c3Rv",
+            "bWl6ZWRQcm90b1ABWjN0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vc2hhcmVk",
+            "L3YxO3RoZXRhbl9zaGFyZWRfdjGiAgNUU1iqAhBUaGV0YW4uU2hhcmVkLlYx",
+            "ygIQVGhldGFuXFNoYXJlZFxWMeICHFRoZXRhblxTaGFyZWRcVjFcR1BCTWV0",
+            "YWRhdGHqAhJUaGV0YW46OlNoYXJlZDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Tagger.TaggerReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.Customized), global::Thetan.Shared.V1.Customized.Parser, new[]{ "Name", "TextureURL", "ThumbnailURL", "PublishAt", "Shader" }, new[]{ "Shader" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.CustomizedShader), global::Thetan.Shared.V1.CustomizedShader.Parser, new[]{ "ShaderID", "Params" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.CustomizedShader), global::Thetan.Shared.V1.CustomizedShader.Parser, new[]{ "ShaderID", "Params" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.Item), global::Thetan.Shared.V1.Item.Parser, new[]{ "Type", "Kind", "Id", "Customized" }, null, null, null, null)
           }));
     }
     #endregion
@@ -625,6 +630,315 @@ namespace Thetan.Shared.V1 {
           }
           case 18: {
             params_.AddEntriesFrom(ref input, _map_params_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class Item : pb::IMessage<Item>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Item> _parser = new pb::MessageParser<Item>(() => new Item());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<Item> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Shared.V1.CustomizedReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Item() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Item(Item other) : this() {
+      type_ = other.type_;
+      kind_ = other.kind_;
+      id_ = other.id_;
+      customized_ = other.customized_ != null ? other.customized_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Item Clone() {
+      return new Item(this);
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 1;
+    private int type_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "kind" field.</summary>
+    public const int KindFieldNumber = 2;
+    private long kind_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long Kind {
+      get { return kind_; }
+      set {
+        kind_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 3;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "customized" field.</summary>
+    public const int CustomizedFieldNumber = 4;
+    private global::Thetan.Shared.V1.Customized customized_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Shared.V1.Customized Customized {
+      get { return customized_; }
+      set {
+        customized_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as Item);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(Item other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Type != other.Type) return false;
+      if (Kind != other.Kind) return false;
+      if (Id != other.Id) return false;
+      if (!object.Equals(Customized, other.Customized)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Kind != 0L) hash ^= Kind.GetHashCode();
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (customized_ != null) hash ^= Customized.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Type != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Type);
+      }
+      if (Kind != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(Kind);
+      }
+      if (Id.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Id);
+      }
+      if (customized_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Customized);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Type != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Type);
+      }
+      if (Kind != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(Kind);
+      }
+      if (Id.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Id);
+      }
+      if (customized_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Customized);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Type != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
+      }
+      if (Kind != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Kind);
+      }
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (customized_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Customized);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(Item other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Type != 0) {
+        Type = other.Type;
+      }
+      if (other.Kind != 0L) {
+        Kind = other.Kind;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.customized_ != null) {
+        if (customized_ == null) {
+          Customized = new global::Thetan.Shared.V1.Customized();
+        }
+        Customized.MergeFrom(other.Customized);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Type = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Kind = input.ReadInt64();
+            break;
+          }
+          case 26: {
+            Id = input.ReadString();
+            break;
+          }
+          case 34: {
+            if (customized_ == null) {
+              Customized = new global::Thetan.Shared.V1.Customized();
+            }
+            input.ReadMessage(Customized);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Type = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Kind = input.ReadInt64();
+            break;
+          }
+          case 26: {
+            Id = input.ReadString();
+            break;
+          }
+          case 34: {
+            if (customized_ == null) {
+              Customized = new global::Thetan.Shared.V1.Customized();
+            }
+            input.ReadMessage(Customized);
             break;
           }
         }
