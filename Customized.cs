@@ -39,8 +39,8 @@ namespace Thetan.Shared.V1 {
             "YWRlci5QYXJhbXNFbnRyeUISmoSeAw1ic29uOiJwYXJhbXMiUgZwYXJhbXMa",
             "TwoLUGFyYW1zRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSKgoFdmFsdWUYAiAB",
             "KAsyFC5nb29nbGUucHJvdG9idWYuQW55UgV2YWx1ZToCOAEiyAEKBEl0ZW0S",
-            "JAoEdHlwZRgBIAEoBUIQmoSeAwtic29uOiJ0eXBlIlIEdHlwZRIkCgRraW5k",
-            "GAIgASgDQhCahJ4DC2Jzb246ImtpbmQiUgRraW5kEh4KAmlkGAMgASgJQg6a",
+            "JAoEdHlwZRgBIAEoA0IQmoSeAwtic29uOiJ0eXBlIlIEdHlwZRIkCgRraW5k",
+            "GAIgASgFQhCahJ4DC2Jzb246ImtpbmQiUgRraW5kEh4KAmlkGAMgASgJQg6a",
             "hJ4DCWJzb246ImlkIlICaWQSVAoKY3VzdG9taXplZBgEIAEoCzIcLnRoZXRh",
             "bi5zaGFyZWQudjEuQ3VzdG9taXplZEIWmoSeAxFic29uOiJjdXN0b21pemVk",
             "IlIKY3VzdG9taXplZEK+AQoUY29tLnRoZXRhbi5zaGFyZWQudjFCD0N1c3Rv",
@@ -688,10 +688,10 @@ namespace Thetan.Shared.V1 {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private int type_;
+    private long type_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Type {
+    public long Type {
       get { return type_; }
       set {
         type_ = value;
@@ -700,10 +700,10 @@ namespace Thetan.Shared.V1 {
 
     /// <summary>Field number for the "kind" field.</summary>
     public const int KindFieldNumber = 2;
-    private long kind_;
+    private int kind_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long Kind {
+    public int Kind {
       get { return kind_; }
       set {
         kind_ = value;
@@ -760,8 +760,8 @@ namespace Thetan.Shared.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
-      if (Kind != 0L) hash ^= Kind.GetHashCode();
+      if (Type != 0L) hash ^= Type.GetHashCode();
+      if (Kind != 0) hash ^= Kind.GetHashCode();
       if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (customized_ != null) hash ^= Customized.GetHashCode();
       if (_unknownFields != null) {
@@ -782,13 +782,13 @@ namespace Thetan.Shared.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Type != 0) {
+      if (Type != 0L) {
         output.WriteRawTag(8);
-        output.WriteInt32(Type);
+        output.WriteInt64(Type);
       }
-      if (Kind != 0L) {
+      if (Kind != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Kind);
+        output.WriteInt32(Kind);
       }
       if (Id.Length != 0) {
         output.WriteRawTag(26);
@@ -808,13 +808,13 @@ namespace Thetan.Shared.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Type != 0) {
+      if (Type != 0L) {
         output.WriteRawTag(8);
-        output.WriteInt32(Type);
+        output.WriteInt64(Type);
       }
-      if (Kind != 0L) {
+      if (Kind != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Kind);
+        output.WriteInt32(Kind);
       }
       if (Id.Length != 0) {
         output.WriteRawTag(26);
@@ -834,11 +834,11 @@ namespace Thetan.Shared.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
+      if (Type != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Type);
       }
-      if (Kind != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Kind);
+      if (Kind != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Kind);
       }
       if (Id.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
@@ -858,10 +858,10 @@ namespace Thetan.Shared.V1 {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != 0L) {
         Type = other.Type;
       }
-      if (other.Kind != 0L) {
+      if (other.Kind != 0) {
         Kind = other.Kind;
       }
       if (other.Id.Length != 0) {
@@ -889,11 +889,11 @@ namespace Thetan.Shared.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Type = input.ReadInt32();
+            Type = input.ReadInt64();
             break;
           }
           case 16: {
-            Kind = input.ReadInt64();
+            Kind = input.ReadInt32();
             break;
           }
           case 26: {
@@ -923,11 +923,11 @@ namespace Thetan.Shared.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Type = input.ReadInt32();
+            Type = input.ReadInt64();
             break;
           }
           case 16: {
-            Kind = input.ReadInt64();
+            Kind = input.ReadInt32();
             break;
           }
           case 26: {
