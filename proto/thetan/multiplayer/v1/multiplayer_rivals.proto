@@ -11,5 +11,5 @@ message RivalsPlayerInfoProto {
   string minionId = 1;
   int32 skin = 2;
   map<string, int64> cosmeticInUsed = 3;
-  thetan.shared.v1.Customized heroCustomized = 4;
+  thetan.shared.v1.Customized customized = 4;
 }

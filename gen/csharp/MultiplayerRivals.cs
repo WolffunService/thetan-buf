@@ -26,23 +26,23 @@ namespace Thetan.Multiplayer.V1 {
           string.Concat(
             "Ci50aGV0YW4vbXVsdGlwbGF5ZXIvdjEvbXVsdGlwbGF5ZXJfcml2YWxzLnBy",
             "b3RvEhV0aGV0YW4ubXVsdGlwbGF5ZXIudjEaIXRoZXRhbi9zaGFyZWQvdjEv",
-            "Y3VzdG9taXplZC5wcm90byK6AgoVUml2YWxzUGxheWVySW5mb1Byb3RvEhoK",
+            "Y3VzdG9taXplZC5wcm90byKyAgoVUml2YWxzUGxheWVySW5mb1Byb3RvEhoK",
             "CG1pbmlvbklkGAEgASgJUghtaW5pb25JZBISCgRza2luGAIgASgFUgRza2lu",
             "EmgKDmNvc21ldGljSW5Vc2VkGAMgAygLMkAudGhldGFuLm11bHRpcGxheWVy",
             "LnYxLlJpdmFsc1BsYXllckluZm9Qcm90by5Db3NtZXRpY0luVXNlZEVudHJ5",
-            "Ug5jb3NtZXRpY0luVXNlZBJECg5oZXJvQ3VzdG9taXplZBgEIAEoCzIcLnRo",
-            "ZXRhbi5zaGFyZWQudjEuQ3VzdG9taXplZFIOaGVyb0N1c3RvbWl6ZWQaQQoT",
-            "Q29zbWV0aWNJblVzZWRFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1",
-            "ZRgCIAEoA1IFdmFsdWU6AjgBQugBChljb20udGhldGFuLm11bHRpcGxheWVy",
-            "LnYxQhZNdWx0aXBsYXllclJpdmFsc1Byb3RvUAFaPXRoZXRhbi1idWYvZ2Vu",
-            "L2dvL3RoZXRhbi9tdWx0aXBsYXllci92MTt0aGV0YW5fbXVsdGlwbGF5ZXJf",
-            "djGiAgNUTViqAhVUaGV0YW4uTXVsdGlwbGF5ZXIuVjHKAhVUaGV0YW5cTXVs",
-            "dGlwbGF5ZXJcVjHiAiFUaGV0YW5cTXVsdGlwbGF5ZXJcVjFcR1BCTWV0YWRh",
-            "dGHqAhdUaGV0YW46Ok11bHRpcGxheWVyOjpWMWIGcHJvdG8z"));
+            "Ug5jb3NtZXRpY0luVXNlZBI8CgpjdXN0b21pemVkGAQgASgLMhwudGhldGFu",
+            "LnNoYXJlZC52MS5DdXN0b21pemVkUgpjdXN0b21pemVkGkEKE0Nvc21ldGlj",
+            "SW5Vc2VkRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdWUYAiABKANS",
+            "BXZhbHVlOgI4AULoAQoZY29tLnRoZXRhbi5tdWx0aXBsYXllci52MUIWTXVs",
+            "dGlwbGF5ZXJSaXZhbHNQcm90b1ABWj10aGV0YW4tYnVmL2dlbi9nby90aGV0",
+            "YW4vbXVsdGlwbGF5ZXIvdjE7dGhldGFuX211bHRpcGxheWVyX3YxogIDVE1Y",
+            "qgIVVGhldGFuLk11bHRpcGxheWVyLlYxygIVVGhldGFuXE11bHRpcGxheWVy",
+            "XFYx4gIhVGhldGFuXE11bHRpcGxheWVyXFYxXEdQQk1ldGFkYXRh6gIXVGhl",
+            "dGFuOjpNdWx0aXBsYXllcjo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RivalsPlayerInfoProto), global::Thetan.Multiplayer.V1.RivalsPlayerInfoProto.Parser, new[]{ "MinionId", "Skin", "CosmeticInUsed", "HeroCustomized" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RivalsPlayerInfoProto), global::Thetan.Multiplayer.V1.RivalsPlayerInfoProto.Parser, new[]{ "MinionId", "Skin", "CosmeticInUsed", "Customized" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -86,7 +86,7 @@ namespace Thetan.Multiplayer.V1 {
       minionId_ = other.minionId_;
       skin_ = other.skin_;
       cosmeticInUsed_ = other.cosmeticInUsed_.Clone();
-      heroCustomized_ = other.heroCustomized_ != null ? other.heroCustomized_.Clone() : null;
+      customized_ = other.customized_ != null ? other.customized_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -131,15 +131,15 @@ namespace Thetan.Multiplayer.V1 {
       get { return cosmeticInUsed_; }
     }
 
-    /// <summary>Field number for the "heroCustomized" field.</summary>
-    public const int HeroCustomizedFieldNumber = 4;
-    private global::Thetan.Shared.V1.Customized heroCustomized_;
+    /// <summary>Field number for the "customized" field.</summary>
+    public const int CustomizedFieldNumber = 4;
+    private global::Thetan.Shared.V1.Customized customized_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Thetan.Shared.V1.Customized HeroCustomized {
-      get { return heroCustomized_; }
+    public global::Thetan.Shared.V1.Customized Customized {
+      get { return customized_; }
       set {
-        heroCustomized_ = value;
+        customized_ = value;
       }
     }
 
@@ -161,7 +161,7 @@ namespace Thetan.Multiplayer.V1 {
       if (MinionId != other.MinionId) return false;
       if (Skin != other.Skin) return false;
       if (!CosmeticInUsed.Equals(other.CosmeticInUsed)) return false;
-      if (!object.Equals(HeroCustomized, other.HeroCustomized)) return false;
+      if (!object.Equals(Customized, other.Customized)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -172,7 +172,7 @@ namespace Thetan.Multiplayer.V1 {
       if (MinionId.Length != 0) hash ^= MinionId.GetHashCode();
       if (Skin != 0) hash ^= Skin.GetHashCode();
       hash ^= CosmeticInUsed.GetHashCode();
-      if (heroCustomized_ != null) hash ^= HeroCustomized.GetHashCode();
+      if (customized_ != null) hash ^= Customized.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -200,9 +200,9 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteInt32(Skin);
       }
       cosmeticInUsed_.WriteTo(output, _map_cosmeticInUsed_codec);
-      if (heroCustomized_ != null) {
+      if (customized_ != null) {
         output.WriteRawTag(34);
-        output.WriteMessage(HeroCustomized);
+        output.WriteMessage(Customized);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -223,9 +223,9 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteInt32(Skin);
       }
       cosmeticInUsed_.WriteTo(ref output, _map_cosmeticInUsed_codec);
-      if (heroCustomized_ != null) {
+      if (customized_ != null) {
         output.WriteRawTag(34);
-        output.WriteMessage(HeroCustomized);
+        output.WriteMessage(Customized);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -244,8 +244,8 @@ namespace Thetan.Multiplayer.V1 {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Skin);
       }
       size += cosmeticInUsed_.CalculateSize(_map_cosmeticInUsed_codec);
-      if (heroCustomized_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HeroCustomized);
+      if (customized_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Customized);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -266,11 +266,11 @@ namespace Thetan.Multiplayer.V1 {
         Skin = other.Skin;
       }
       cosmeticInUsed_.Add(other.cosmeticInUsed_);
-      if (other.heroCustomized_ != null) {
-        if (heroCustomized_ == null) {
-          HeroCustomized = new global::Thetan.Shared.V1.Customized();
+      if (other.customized_ != null) {
+        if (customized_ == null) {
+          Customized = new global::Thetan.Shared.V1.Customized();
         }
-        HeroCustomized.MergeFrom(other.HeroCustomized);
+        Customized.MergeFrom(other.Customized);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -300,10 +300,10 @@ namespace Thetan.Multiplayer.V1 {
             break;
           }
           case 34: {
-            if (heroCustomized_ == null) {
-              HeroCustomized = new global::Thetan.Shared.V1.Customized();
+            if (customized_ == null) {
+              Customized = new global::Thetan.Shared.V1.Customized();
             }
-            input.ReadMessage(HeroCustomized);
+            input.ReadMessage(Customized);
             break;
           }
         }
@@ -334,10 +334,10 @@ namespace Thetan.Multiplayer.V1 {
             break;
           }
           case 34: {
-            if (heroCustomized_ == null) {
-              HeroCustomized = new global::Thetan.Shared.V1.Customized();
+            if (customized_ == null) {
+              Customized = new global::Thetan.Shared.V1.Customized();
             }
-            input.ReadMessage(HeroCustomized);
+            input.ReadMessage(Customized);
             break;
           }
         }

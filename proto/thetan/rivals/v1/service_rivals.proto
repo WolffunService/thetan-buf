@@ -13,6 +13,7 @@ service ThetanRivalService {
   // Profile
   rpc GetUserProfile (UserProfileRequest) returns (UserProfileResponse) {}
   rpc GetProfile(ProfileRequest) returns (ProfileResponse) {}
+  rpc TrackFriendlyAct(FriendlyActRequest) returns (google.protobuf.Empty) {}
 
   // Minions
   rpc GetUserMinions(UserMinionsRequest) returns (UserMinionsResponse) {}
@@ -32,7 +33,7 @@ service ThetanRivalService {
   // Lobby
   rpc GetLatestLobbyActivityInfo(GetActivityRequest) returns (GetActivityResponse) {}
   rpc GetTownUser(GetTownUserRequest) returns (LobbyTown) {}
-  rpc PickTownForUser(PickTownUserRequest) returns (EmptyResponse) {}
+  rpc GetTownByID(GetTownRequest) returns (LobbyTown) {}
 
   // Track Action
   rpc TrackSession(TrackSessionRequest) returns (TrackSessionResponse) {}
@@ -113,7 +114,6 @@ message MapInfo {
   int32 mapDifficulty = 2;
 }
 
-message EmptyResponse {}
 // ==== PROFILE ====
 
 message UserProfileRequest {
@@ -134,6 +134,17 @@ message UserProfileResponse {
 message UserProfileRank {
   int32 trophies = 1;
   int32 rankLevel = 2;
+}
+
+message FriendlyActRequest {
+  enum FriendlyActEnum {
+    None = 0;
+    Hug = 1;
+    Talk = 2;
+    GameInParty = 3;
+  } 
+  string userID = 1;
+  FriendlyActEnum type = 2;
 }
 
 // ==== MINIONS ====
@@ -344,10 +355,33 @@ message LobbyTown {
 
   int32 townLanguage = 7;
   double townScore = 8;
+
+  repeated LotInfo lots = 9;
 }
 
-message PickTownUserRequest {
-  string userID = 1;
+message LotInfo {
+  int32 lotID = 1;
+  GuildInfo guildRent = 2;
+  int64 rentExpired = 3;
+}
+
+message GuildInfo {
+  string id = 1;
+  string guildName = 2;
+  string guildMotto = 3;
+  int32 icon = 4;
+  int32 guildType = 5;
+  int32 requiredTrophy = 6;
+  map<uint32, DecoInfo> selectedDeco = 7;
+}
+
+message DecoInfo {
+  string id = 1;
+  uint32 decoID = 2;
+  thetan.shared.v1.Customized customized = 3;
+}
+
+message GetTownRequest {
   string townID = 2;
 }
 

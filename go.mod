@@ -11,7 +11,10 @@ require (
 )
 
 require (
+	github.com/fatih/structtag v1.2.0 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/lyft/protoc-gen-star v0.5.3 // indirect
+	github.com/spf13/afero v1.5.1 // indirect
 	golang.org/x/net v0.8.0 // indirect
 	golang.org/x/sys v0.6.0 // indirect
 	golang.org/x/text v0.8.0 // indirect

@@ -101,6 +101,8 @@ message ResponseChatMessageProto{
   oneof messageData {
     string msgString = 6;
     SharePartyInfo sharePartyInfo = 7;
+    int32 emoteId = 8;
+    int32 promptId = 9;
   }
 }
 
