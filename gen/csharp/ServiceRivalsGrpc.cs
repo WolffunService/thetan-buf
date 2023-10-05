@@ -129,6 +129,14 @@ namespace Thetan.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.MatchFoundTournamentRequest> __Marshaller_thetan_rivals_v1_MatchFoundTournamentRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.MatchFoundTournamentRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.MatchFoundTournamentResponse> __Marshaller_thetan_rivals_v1_MatchFoundTournamentResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.MatchFoundTournamentResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.PublishDesignRequest> __Marshaller_thetan_rivals_v1_PublishDesignRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.PublishDesignRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.PublishDesignResponse> __Marshaller_thetan_rivals_v1_PublishDesignResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.PublishDesignResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetContestDesignsRequest> __Marshaller_thetan_rivals_v1_GetContestDesignsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetContestDesignsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetContestDesignsResponse> __Marshaller_thetan_rivals_v1_GetContestDesignsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetContestDesignsResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.UserProfileRequest, global::Thetan.Rivals.V1.UserProfileResponse> __Method_GetUserProfile = new grpc::Method<global::Thetan.Rivals.V1.UserProfileRequest, global::Thetan.Rivals.V1.UserProfileResponse>(
@@ -305,6 +313,22 @@ namespace Thetan.Rivals.V1 {
         "MatchFoundTournament",
         __Marshaller_thetan_rivals_v1_MatchFoundTournamentRequest,
         __Marshaller_thetan_rivals_v1_MatchFoundTournamentResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.PublishDesignRequest, global::Thetan.Rivals.V1.PublishDesignResponse> __Method_PublishDesign = new grpc::Method<global::Thetan.Rivals.V1.PublishDesignRequest, global::Thetan.Rivals.V1.PublishDesignResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PublishDesign",
+        __Marshaller_thetan_rivals_v1_PublishDesignRequest,
+        __Marshaller_thetan_rivals_v1_PublishDesignResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.GetContestDesignsRequest, global::Thetan.Rivals.V1.GetContestDesignsResponse> __Method_GetContestDesigns = new grpc::Method<global::Thetan.Rivals.V1.GetContestDesignsRequest, global::Thetan.Rivals.V1.GetContestDesignsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetContestDesigns",
+        __Marshaller_thetan_rivals_v1_GetContestDesignsRequest,
+        __Marshaller_thetan_rivals_v1_GetContestDesignsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -498,6 +522,24 @@ namespace Thetan.Rivals.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.MatchFoundTournamentResponse> MatchFoundTournament(global::Thetan.Rivals.V1.MatchFoundTournamentRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Design contest
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.PublishDesignResponse> PublishDesign(global::Thetan.Rivals.V1.PublishDesignRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.GetContestDesignsResponse> GetContestDesigns(global::Thetan.Rivals.V1.GetContestDesignsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1223,6 +1265,74 @@ namespace Thetan.Rivals.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_MatchFoundTournament, null, options, request);
       }
+      /// <summary>
+      /// Design contest
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.PublishDesignResponse PublishDesign(global::Thetan.Rivals.V1.PublishDesignRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PublishDesign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Design contest
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.PublishDesignResponse PublishDesign(global::Thetan.Rivals.V1.PublishDesignRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PublishDesign, null, options, request);
+      }
+      /// <summary>
+      /// Design contest
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.PublishDesignResponse> PublishDesignAsync(global::Thetan.Rivals.V1.PublishDesignRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PublishDesignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Design contest
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.PublishDesignResponse> PublishDesignAsync(global::Thetan.Rivals.V1.PublishDesignRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PublishDesign, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GetContestDesignsResponse GetContestDesigns(global::Thetan.Rivals.V1.GetContestDesignsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetContestDesigns(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GetContestDesignsResponse GetContestDesigns(global::Thetan.Rivals.V1.GetContestDesignsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetContestDesigns, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GetContestDesignsResponse> GetContestDesignsAsync(global::Thetan.Rivals.V1.GetContestDesignsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetContestDesignsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GetContestDesignsResponse> GetContestDesignsAsync(global::Thetan.Rivals.V1.GetContestDesignsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetContestDesigns, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ThetanRivalServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -1258,7 +1368,9 @@ namespace Thetan.Rivals.V1 {
           .AddMethod(__Method_GetConfigForBot, serviceImpl.GetConfigForBot)
           .AddMethod(__Method_GetActiveTournaments, serviceImpl.GetActiveTournaments)
           .AddMethod(__Method_GetFindMatchInfoForTournament, serviceImpl.GetFindMatchInfoForTournament)
-          .AddMethod(__Method_MatchFoundTournament, serviceImpl.MatchFoundTournament).Build();
+          .AddMethod(__Method_MatchFoundTournament, serviceImpl.MatchFoundTournament)
+          .AddMethod(__Method_PublishDesign, serviceImpl.PublishDesign)
+          .AddMethod(__Method_GetContestDesigns, serviceImpl.GetContestDesigns).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -1290,6 +1402,8 @@ namespace Thetan.Rivals.V1 {
       serviceBinder.AddMethod(__Method_GetActiveTournaments, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetActiveTournamentsRequest, global::Thetan.Rivals.V1.GetActiveTournamentsResponse>(serviceImpl.GetActiveTournaments));
       serviceBinder.AddMethod(__Method_GetFindMatchInfoForTournament, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.FindMatchInfoForTournamentRequest, global::Thetan.Rivals.V1.FindMatchInfoForTournamentResponse>(serviceImpl.GetFindMatchInfoForTournament));
       serviceBinder.AddMethod(__Method_MatchFoundTournament, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.MatchFoundTournamentRequest, global::Thetan.Rivals.V1.MatchFoundTournamentResponse>(serviceImpl.MatchFoundTournament));
+      serviceBinder.AddMethod(__Method_PublishDesign, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.PublishDesignRequest, global::Thetan.Rivals.V1.PublishDesignResponse>(serviceImpl.PublishDesign));
+      serviceBinder.AddMethod(__Method_GetContestDesigns, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetContestDesignsRequest, global::Thetan.Rivals.V1.GetContestDesignsResponse>(serviceImpl.GetContestDesigns));
     }
 
   }

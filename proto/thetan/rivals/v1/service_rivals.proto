@@ -49,6 +49,10 @@ service ThetanRivalService {
   rpc GetActiveTournaments(GetActiveTournamentsRequest) returns (GetActiveTournamentsResponse) {}
   rpc GetFindMatchInfoForTournament(FindMatchInfoForTournamentRequest) returns (FindMatchInfoForTournamentResponse) {}
   rpc MatchFoundTournament(MatchFoundTournamentRequest) returns (MatchFoundTournamentResponse) {}
+
+  // Design contest
+  rpc PublishDesign(PublishDesignRequest) returns (PublishDesignResponse) {}
+  rpc GetContestDesigns(GetContestDesignsRequest) returns (GetContestDesignsResponse) {}
 }
 
 message MatchFoundTournamentRequest {
@@ -428,4 +432,23 @@ message Profile {
   int32 streak = 4;
   int32 curStreak = 5;
   int32 winRound = 6;
+}
+
+// ============== Design Contest ==============
+
+message PublishDesignRequest {
+  string userID = 1;
+  string contestID = 2;
+  thetan.shared.v1.Item design = 3;
+}
+
+message PublishDesignResponse {
+}
+
+message GetContestDesignsRequest {
+  string userID = 1;
+}
+
+message GetContestDesignsResponse {
+  map<string, thetan.shared.v1.Item> designs = 1;
 }
