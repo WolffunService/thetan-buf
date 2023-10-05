@@ -450,5 +450,10 @@ message GetContestDesignsRequest {
 }
 
 message GetContestDesignsResponse {
-  map<string, thetan.shared.v1.Item> designs = 1;
+  map<string, Design> designs = 1;
+}
+
+message Design {
+  thetan.shared.v1.Item design = 1;
+  int64 poseID = 2;
 }

@@ -28,8 +28,8 @@ message CustomizedShader {
 }
 
 message Item {
-  int32 type = 1 [(tagger.tags) = "bson:\"type\""];;
-  int64 kind = 2 [(tagger.tags) = "bson:\"kind\""];;
+  int64 type = 1 [(tagger.tags) = "bson:\"type\""];;
+  int32 kind = 2 [(tagger.tags) = "bson:\"kind\""];;
   string id = 3 [(tagger.tags) = "bson:\"id\""];;
   Customized customized = 4 [(tagger.tags) = "bson:\"customized\""];
 }
