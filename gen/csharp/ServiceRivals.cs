@@ -129,7 +129,7 @@ namespace Thetan.Rivals.V1 {
             "cklEGAEgASgJUgZ1c2VySUQSPgoJbGFzdFJvdW5kGAIgASgLMhsudGhldGFu",
             "LnNoYXJlZC52MS5Sb3VuZFN0YXRIAFIJbGFzdFJvdW5kiAEBEigKD29wZXJh",
             "dGlvblN5c3RlbRgDIAEoCVIPb3BlcmF0aW9uU3lzdGVtEh4KCmFwcFZlcnNp",
-            "b24YBCABKAlSCmFwcFZlcnNpb24SGAoHcmVnaW9ucxgFIAMoCVIHcmVnaW9u",
+            "b24YBCABKAlSCmFwcFZlcnNpb24SGAoHcmVnaW9ucxgFIAMoBVIHcmVnaW9u",
             "c0IMCgpfbGFzdFJvdW5kIrMCChRHZXRNYXRjaEluZm9SZXNwb25zZRJLCgpw",
             "bGF5ZXJJbmZvGAEgASgLMiYudGhldGFuLnNoYXJlZC52MS5QbGF5ZXJJbmZv",
             "TWF0Y2hQcm90b0gAUgpwbGF5ZXJJbmZviAEBEhgKB21hdGNoSUQYAiABKAlS",
@@ -9215,12 +9215,12 @@ namespace Thetan.Rivals.V1 {
 
     /// <summary>Field number for the "regions" field.</summary>
     public const int RegionsFieldNumber = 5;
-    private static readonly pb::FieldCodec<string> _repeated_regions_codec
-        = pb::FieldCodec.ForString(42);
-    private readonly pbc::RepeatedField<string> regions_ = new pbc::RepeatedField<string>();
+    private static readonly pb::FieldCodec<int> _repeated_regions_codec
+        = pb::FieldCodec.ForInt32(42);
+    private readonly pbc::RepeatedField<int> regions_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<string> Regions {
+    public pbc::RepeatedField<int> Regions {
       get { return regions_; }
     }
 
@@ -9403,7 +9403,8 @@ namespace Thetan.Rivals.V1 {
             AppVersion = input.ReadString();
             break;
           }
-          case 42: {
+          case 42:
+          case 40: {
             regions_.AddEntriesFrom(input, _repeated_regions_codec);
             break;
           }
@@ -9441,7 +9442,8 @@ namespace Thetan.Rivals.V1 {
             AppVersion = input.ReadString();
             break;
           }
-          case 42: {
+          case 42:
+          case 40: {
             regions_.AddEntriesFrom(ref input, _repeated_regions_codec);
             break;
           }

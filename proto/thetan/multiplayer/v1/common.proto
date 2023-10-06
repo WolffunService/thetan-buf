@@ -150,7 +150,7 @@ enum PlayerStatus {
 message ReadyMsg{
   bool isReady = 1;//ready or cancel ready
   string tournamentID = 2; // use for tournament find match
-  repeated string regions = 3;
+  repeated int32 regions = 3;
   thetan.shared.v1.InGameMode inGameMode = 4;
 }
 

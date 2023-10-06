@@ -282,7 +282,7 @@ message GetMatchInfoRequest {
 
   string operationSystem = 3;
   string appVersion = 4;
-  repeated string regions = 5;
+  repeated int32 regions = 5;
 }
 
 message GetMatchInfoResponse {
