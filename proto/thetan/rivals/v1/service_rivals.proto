@@ -142,9 +142,13 @@ message FriendlyActRequest {
     Hug = 1;
     Talk = 2;
     GameInParty = 3;
-  } 
-  string userID = 1;
+    CheckoutGuildBooks = 4;
+    CheckoutProfiles = 5;
+    UseVehicleOnTown = 6;
+  }
+  repeated string userIDs = 1;
   FriendlyActEnum type = 2;
+  repeated string targetUserIDs = 3;
 }
 
 // ==== MINIONS ====
@@ -450,5 +454,10 @@ message GetContestDesignsRequest {
 }
 
 message GetContestDesignsResponse {
-  map<string, thetan.shared.v1.Item> designs = 1;
+  map<string, Design> designs = 1;
+}
+
+message Design {
+  thetan.shared.v1.Item design = 1;
+  int64 poseID = 2;
 }
