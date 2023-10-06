@@ -26,8 +26,9 @@ jobs:
           go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest
           go install github.com/srikrsna/protoc-gen-gotag@latest
 
+          $PATH=$PATH:/usr/local/go/bin 
           echo $PATH
-          echo $GOPATH/bin
+          cd /usr/local/go/bin
           ls -a
 
           buf generate proto
