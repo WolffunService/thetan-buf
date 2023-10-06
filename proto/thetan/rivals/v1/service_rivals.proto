@@ -142,9 +142,13 @@ message FriendlyActRequest {
     Hug = 1;
     Talk = 2;
     GameInParty = 3;
-  } 
-  string userID = 1;
+    CheckoutGuildBooks = 4;
+    CheckoutProfiles = 5;
+    UseVehicleOnTown = 6;
+  }
+  repeated string userIDs = 1;
   FriendlyActEnum type = 2;
+  repeated string targetUserIDs = 3;
 }
 
 // ==== MINIONS ====
