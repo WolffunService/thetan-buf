@@ -75,7 +75,7 @@ namespace Thetan.Multiplayer.V1 {
             "GAEgAygLMi8udGhldGFuLm11bHRpcGxheWVyLnYxLlJlc3BvbnNlQ2hhdE1l",
             "c3NhZ2VQcm90b1IEbXNncyKgAQoIUmVhZHlNc2cSGAoHaXNSZWFkeRgBIAEo",
             "CFIHaXNSZWFkeRIiCgx0b3VybmFtZW50SUQYAiABKAlSDHRvdXJuYW1lbnRJ",
-            "RBIYCgdyZWdpb25zGAMgAygJUgdyZWdpb25zEjwKCmluR2FtZU1vZGUYBCAB",
+            "RBIYCgdyZWdpb25zGAMgAygFUgdyZWdpb25zEjwKCmluR2FtZU1vZGUYBCAB",
             "KA4yHC50aGV0YW4uc2hhcmVkLnYxLkluR2FtZU1vZGVSCmluR2FtZU1vZGUi",
             "IQoJU2V0RE5ETXNnEhQKBWlzRG5kGAEgASgIUgVpc0RuZCJKCg5Tb21lb25l",
             "TGVmdE1zZxIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSHAoJbmV3SG9z",
@@ -3681,12 +3681,12 @@ namespace Thetan.Multiplayer.V1 {
 
     /// <summary>Field number for the "regions" field.</summary>
     public const int RegionsFieldNumber = 3;
-    private static readonly pb::FieldCodec<string> _repeated_regions_codec
-        = pb::FieldCodec.ForString(26);
-    private readonly pbc::RepeatedField<string> regions_ = new pbc::RepeatedField<string>();
+    private static readonly pb::FieldCodec<int> _repeated_regions_codec
+        = pb::FieldCodec.ForInt32(26);
+    private readonly pbc::RepeatedField<int> regions_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<string> Regions {
+    public pbc::RepeatedField<int> Regions {
       get { return regions_; }
     }
 
@@ -3851,7 +3851,8 @@ namespace Thetan.Multiplayer.V1 {
             TournamentID = input.ReadString();
             break;
           }
-          case 26: {
+          case 26:
+          case 24: {
             regions_.AddEntriesFrom(input, _repeated_regions_codec);
             break;
           }
@@ -3882,7 +3883,8 @@ namespace Thetan.Multiplayer.V1 {
             TournamentID = input.ReadString();
             break;
           }
-          case 26: {
+          case 26:
+          case 24: {
             regions_.AddEntriesFrom(ref input, _repeated_regions_codec);
             break;
           }
