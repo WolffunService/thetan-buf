@@ -27,6 +27,7 @@ jobs:
           go install github.com/srikrsna/protoc-gen-gotag@latest
 
           echo $PATH
+          echo $GOPATH/bin
           ls -a
 
           buf generate proto
