@@ -23,10 +23,10 @@ jobs:
         run: | 
           ./unity/increment_version.sh
           
-          go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest
-          buf generate proto
-          
+          go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest          
           go install github.com/srikrsna/protoc-gen-gotag@latest
+          
+          buf generate proto
           buf generate --template buf.gen.tag.yaml proto
           
           cp ./unity/package.json ./gen/csharp/package.json
