@@ -119,6 +119,7 @@ message MapInfo {
 message UserProfileRequest {
   string userId = 1;
   bool withRanking = 2;
+  bool withGuild = 3;
 }
 
 message UserProfileResponse {
@@ -129,6 +130,8 @@ message UserProfileResponse {
   int32 nameColor = 7;
   string country = 5;
   UserProfileRank rank = 6;
+  GuildInfo guild = 8;
+  int32 guildRole = 9;
 }
 
 message UserProfileRank {
