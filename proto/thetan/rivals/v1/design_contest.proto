@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package thetan.rivals.v1;
+
+import "thetan/shared/v1/customized.proto";
+import "tagger/tagger.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
+option csharp_namespace = "Thetan.Rivals.V1";
+
+message Design {
+  thetan.shared.v1.ItemCustomized item = 1 [(tagger.tags) = "bson:\"item\""];
+  int32 poseID = 2 [(tagger.tags) = "bson:\"poseId\""];
+  int32 skinID = 3 [(tagger.tags) = "bson:\"-\""];
+}
+
+message SyncDesign {
+  Design design = 1;
+  string userID = 2;
+}

@@ -4,6 +4,7 @@ package thetan.rivals.v1;
 
 import "thetan/shared/v1/match.proto";
 import "thetan/shared/v1/customized.proto";
+import "thetan/rivals/v1/design_contest.proto";
 import "google/protobuf/empty.proto";
 import "tagger/tagger.proto";
 
@@ -455,12 +456,7 @@ message GetContestDesignsResponse {
 
   message ContestDesign {
     string contestID = 1;
-    repeated  Design designs = 2;
+    repeated thetan.rivals.v1.Design designs = 2;
   }
 }
 
-message Design {
-  thetan.shared.v1.ItemCustomized item = 1 [(tagger.tags) = "bson:\"item\""];
-  int32 poseID = 2 [(tagger.tags) = "bson:\"poseId\""];
-  int32 skinID = 3 [(tagger.tags) = "bson:\"-\""];
-}
