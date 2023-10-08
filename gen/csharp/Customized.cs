@@ -38,22 +38,22 @@ namespace Thetan.Shared.V1 {
             "BnBhcmFtcxgCIAMoCzIuLnRoZXRhbi5zaGFyZWQudjEuQ3VzdG9taXplZFNo",
             "YWRlci5QYXJhbXNFbnRyeUISmoSeAw1ic29uOiJwYXJhbXMiUgZwYXJhbXMa",
             "TwoLUGFyYW1zRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSKgoFdmFsdWUYAiAB",
-            "KAsyFC5nb29nbGUucHJvdG9idWYuQW55UgV2YWx1ZToCOAEiyAEKBEl0ZW0S",
-            "JAoEdHlwZRgBIAEoA0IQmoSeAwtic29uOiJ0eXBlIlIEdHlwZRIkCgRraW5k",
-            "GAIgASgFQhCahJ4DC2Jzb246ImtpbmQiUgRraW5kEh4KAmlkGAMgASgJQg6a",
-            "hJ4DCWJzb246ImlkIlICaWQSVAoKY3VzdG9taXplZBgEIAEoCzIcLnRoZXRh",
-            "bi5zaGFyZWQudjEuQ3VzdG9taXplZEIWmoSeAxFic29uOiJjdXN0b21pemVk",
-            "IlIKY3VzdG9taXplZEK+AQoUY29tLnRoZXRhbi5zaGFyZWQudjFCD0N1c3Rv",
-            "bWl6ZWRQcm90b1ABWjN0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vc2hhcmVk",
-            "L3YxO3RoZXRhbl9zaGFyZWRfdjGiAgNUU1iqAhBUaGV0YW4uU2hhcmVkLlYx",
-            "ygIQVGhldGFuXFNoYXJlZFxWMeICHFRoZXRhblxTaGFyZWRcVjFcR1BCTWV0",
-            "YWRhdGHqAhJUaGV0YW46OlNoYXJlZDo6VjFiBnByb3RvMw=="));
+            "KAsyFC5nb29nbGUucHJvdG9idWYuQW55UgV2YWx1ZToCOAEi0gEKDkl0ZW1D",
+            "dXN0b21pemVkEiQKBHR5cGUYASABKAVCEJqEngMLYnNvbjoidHlwZSJSBHR5",
+            "cGUSJAoEa2luZBgCIAEoBUIQmoSeAwtic29uOiJraW5kIlIEa2luZBIeCgJp",
+            "ZBgDIAEoCUIOmoSeAwlic29uOiJpZCJSAmlkElQKCmN1c3RvbWl6ZWQYBCAB",
+            "KAsyHC50aGV0YW4uc2hhcmVkLnYxLkN1c3RvbWl6ZWRCFpqEngMRYnNvbjoi",
+            "Y3VzdG9taXplZCJSCmN1c3RvbWl6ZWRCvgEKFGNvbS50aGV0YW4uc2hhcmVk",
+            "LnYxQg9DdXN0b21pemVkUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhl",
+            "dGFuL3NoYXJlZC92MTt0aGV0YW5fc2hhcmVkX3YxogIDVFNYqgIQVGhldGFu",
+            "LlNoYXJlZC5WMcoCEFRoZXRhblxTaGFyZWRcVjHiAhxUaGV0YW5cU2hhcmVk",
+            "XFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpTaGFyZWQ6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Tagger.TaggerReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.Customized), global::Thetan.Shared.V1.Customized.Parser, new[]{ "Name", "TextureURL", "ThumbnailURL", "PublishAt", "Shader" }, new[]{ "Shader" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.CustomizedShader), global::Thetan.Shared.V1.CustomizedShader.Parser, new[]{ "ShaderID", "Params" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.Item), global::Thetan.Shared.V1.Item.Parser, new[]{ "Type", "Kind", "Id", "Customized" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.ItemCustomized), global::Thetan.Shared.V1.ItemCustomized.Parser, new[]{ "Type", "Kind", "Id", "Customized" }, null, null, null, null)
           }));
     }
     #endregion
@@ -639,16 +639,16 @@ namespace Thetan.Shared.V1 {
 
   }
 
-  public sealed partial class Item : pb::IMessage<Item>
+  public sealed partial class ItemCustomized : pb::IMessage<ItemCustomized>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<Item> _parser = new pb::MessageParser<Item>(() => new Item());
+    private static readonly pb::MessageParser<ItemCustomized> _parser = new pb::MessageParser<ItemCustomized>(() => new ItemCustomized());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<Item> Parser { get { return _parser; } }
+    public static pb::MessageParser<ItemCustomized> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -664,7 +664,7 @@ namespace Thetan.Shared.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Item() {
+    public ItemCustomized() {
       OnConstruction();
     }
 
@@ -672,7 +672,7 @@ namespace Thetan.Shared.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Item(Item other) : this() {
+    public ItemCustomized(ItemCustomized other) : this() {
       type_ = other.type_;
       kind_ = other.kind_;
       id_ = other.id_;
@@ -682,16 +682,16 @@ namespace Thetan.Shared.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Item Clone() {
-      return new Item(this);
+    public ItemCustomized Clone() {
+      return new ItemCustomized(this);
     }
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private long type_;
+    private int type_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long Type {
+    public int Type {
       get { return type_; }
       set {
         type_ = value;
@@ -737,12 +737,12 @@ namespace Thetan.Shared.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as Item);
+      return Equals(other as ItemCustomized);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(Item other) {
+    public bool Equals(ItemCustomized other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -760,7 +760,7 @@ namespace Thetan.Shared.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0L) hash ^= Type.GetHashCode();
+      if (Type != 0) hash ^= Type.GetHashCode();
       if (Kind != 0) hash ^= Kind.GetHashCode();
       if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (customized_ != null) hash ^= Customized.GetHashCode();
@@ -782,9 +782,9 @@ namespace Thetan.Shared.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Type != 0L) {
+      if (Type != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Type);
+        output.WriteInt32(Type);
       }
       if (Kind != 0) {
         output.WriteRawTag(16);
@@ -808,9 +808,9 @@ namespace Thetan.Shared.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Type != 0L) {
+      if (Type != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Type);
+        output.WriteInt32(Type);
       }
       if (Kind != 0) {
         output.WriteRawTag(16);
@@ -834,8 +834,8 @@ namespace Thetan.Shared.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Type);
+      if (Type != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
       }
       if (Kind != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Kind);
@@ -854,11 +854,11 @@ namespace Thetan.Shared.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(Item other) {
+    public void MergeFrom(ItemCustomized other) {
       if (other == null) {
         return;
       }
-      if (other.Type != 0L) {
+      if (other.Type != 0) {
         Type = other.Type;
       }
       if (other.Kind != 0) {
@@ -889,7 +889,7 @@ namespace Thetan.Shared.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Type = input.ReadInt64();
+            Type = input.ReadInt32();
             break;
           }
           case 16: {
@@ -923,7 +923,7 @@ namespace Thetan.Shared.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Type = input.ReadInt64();
+            Type = input.ReadInt32();
             break;
           }
           case 16: {
