@@ -19,6 +19,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
+      - uses: arduino/setup-protoc@v1
+
       - name: Run build script
         run: | 
           ./unity/increment_version.sh
