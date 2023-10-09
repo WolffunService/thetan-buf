@@ -134,6 +134,9 @@ message UserProfileResponse {
   UserProfileRank rank = 6;
   GuildInfo guild = 8;
   int32 guildRole = 9;
+
+  int32 activityRole = 10;
+  string townID = 11;
 }
 
 message UserProfileRank {
