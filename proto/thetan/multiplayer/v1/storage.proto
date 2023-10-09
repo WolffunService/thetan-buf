@@ -16,6 +16,11 @@ message PlayerStorageMessage {
 message PartyStorageMessage {
   PartyInfoProto partyInfo = 1;
   map<string, bool> playersReadyForRematch = 2;
+  map<string, Regions> playersRegions = 3;
+}
+
+message Regions {
+  repeated int32 regions = 1;
 }
 
 message MatchInfo {

@@ -27,9 +27,9 @@ message CustomizedShader {
   map<string, google.protobuf.Any> params = 2 [(tagger.tags) = "bson:\"params\""];
 }
 
-message Item {
-  int64 type = 1 [(tagger.tags) = "bson:\"type\""];;
-  int32 kind = 2 [(tagger.tags) = "bson:\"kind\""];;
-  string id = 3 [(tagger.tags) = "bson:\"id\""];;
+message ItemCustomized {
+  int32 type = 1 [(tagger.tags) = "bson:\"type\""];
+  int32 kind = 2 [(tagger.tags) = "bson:\"kind\""];
+  string id = 3 [(tagger.tags) = "bson:\"id\""];
   Customized customized = 4 [(tagger.tags) = "bson:\"customized\""];
 }
