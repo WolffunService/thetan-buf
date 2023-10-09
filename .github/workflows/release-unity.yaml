@@ -25,9 +25,11 @@ jobs:
         run: | 
           ./unity/increment_version.sh
           
-          go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest          
+          go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest
           go install github.com/srikrsna/protoc-gen-gotag@latest
-          
+
+          export PATH=${PATH}:`go env GOPATH`/bin
+
           buf generate proto
           buf generate --template buf.gen.tag.yaml proto
           
