@@ -4,6 +4,7 @@ package thetan.ugc.v1;
 
 import "thetan/shared/v1/customized.proto";
 import "google/protobuf/any.proto";
+import "google/protobuf/struct.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/ugc/v1;thetan_ugc_v1";
 option csharp_namespace = "Thetan.UGC.V1";
@@ -44,7 +45,7 @@ message FileAttrs {
 
 message ShaderAttrs {
   int32 shader_id = 1;
-  map<string, google.protobuf.Any> params = 2;
+  google.protobuf.Struct params = 2;
 }
 
 message UserColoring {
@@ -62,7 +63,7 @@ message UserColoring {
   FileAttrs thumbnailLastSaved = 12;
   ShaderAttrs shaderLastPublished = 13;
   ShaderAttrs shaderLastSaved = 14;
-  map<string, google.protobuf.Any> props = 15;
+  google.protobuf.Struct props = 15;
   int64 updated_at = 16;
   int64 created_at = 17;
 }
