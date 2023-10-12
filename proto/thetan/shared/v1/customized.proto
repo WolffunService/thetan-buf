@@ -23,8 +23,8 @@ message Customized {
 }
 
 message CustomizedShader {
-  int32 shaderID = 1 [(tagger.tags) = "bson:\"shaderID\""];
   reserved 2;
+  int32 shaderID = 1 [(tagger.tags) = "bson:\"shaderID\""];
   google.protobuf.Struct params = 3 [(tagger.tags) = "bson:\"params\""];
 }
 
