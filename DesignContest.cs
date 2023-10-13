@@ -26,21 +26,22 @@ namespace Thetan.Rivals.V1 {
           string.Concat(
             "CiV0aGV0YW4vcml2YWxzL3YxL2Rlc2lnbl9jb250ZXN0LnByb3RvEhB0aGV0",
             "YW4ucml2YWxzLnYxGiF0aGV0YW4vc2hhcmVkL3YxL2N1c3RvbWl6ZWQucHJv",
-            "dG8aE3RhZ2dlci90YWdnZXIucHJvdG8iowEKBkRlc2lnbhJGCgRpdGVtGAEg",
+            "dG8aE3RhZ2dlci90YWdnZXIucHJvdG8itwEKBkRlc2lnbhJGCgRpdGVtGAEg",
             "ASgLMiAudGhldGFuLnNoYXJlZC52MS5JdGVtQ3VzdG9taXplZEIQmoSeAwti",
             "c29uOiJpdGVtIlIEaXRlbRIqCgZwb3NlSUQYAiABKAVCEpqEngMNYnNvbjoi",
-            "cG9zZUlkIlIGcG9zZUlEEiUKBnNraW5JRBgDIAEoBUINmoSeAwhic29uOiIt",
-            "IlIGc2tpbklEIlYKClN5bmNEZXNpZ24SMAoGZGVzaWduGAEgASgLMhgudGhl",
-            "dGFuLnJpdmFscy52MS5EZXNpZ25SBmRlc2lnbhIWCgZ1c2VySUQYAiABKAlS",
-            "BnVzZXJJRELBAQoUY29tLnRoZXRhbi5yaXZhbHMudjFCEkRlc2lnbkNvbnRl",
-            "c3RQcm90b1ABWjN0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vcml2YWxzL3Yx",
-            "O3RoZXRhbl9yaXZhbHNfdjGiAgNUUliqAhBUaGV0YW4uUml2YWxzLlYxygIQ",
-            "VGhldGFuXFJpdmFsc1xWMeICHFRoZXRhblxSaXZhbHNcVjFcR1BCTWV0YWRh",
-            "dGHqAhJUaGV0YW46OlJpdmFsczo6VjFiBnByb3RvMw=="));
+            "cG9zZUlkIlIGcG9zZUlEEjkKC2Rlc2NyaXB0aW9uGAQgASgJQheahJ4DEmJz",
+            "b246ImRlc2NyaXB0aW9uIlILZGVzY3JpcHRpb24iVgoKU3luY0Rlc2lnbhIw",
+            "CgZkZXNpZ24YASABKAsyGC50aGV0YW4ucml2YWxzLnYxLkRlc2lnblIGZGVz",
+            "aWduEhYKBnVzZXJJRBgCIAEoCVIGdXNlcklEQsEBChRjb20udGhldGFuLnJp",
+            "dmFscy52MUISRGVzaWduQ29udGVzdFByb3RvUAFaM3RoZXRhbi1idWYvZ2Vu",
+            "L2dvL3RoZXRhbi9yaXZhbHMvdjE7dGhldGFuX3JpdmFsc192MaICA1RSWKoC",
+            "EFRoZXRhbi5SaXZhbHMuVjHKAhBUaGV0YW5cUml2YWxzXFYx4gIcVGhldGFu",
+            "XFJpdmFsc1xWMVxHUEJNZXRhZGF0YeoCElRoZXRhbjo6Uml2YWxzOjpWMWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, global::Tagger.TaggerReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.Design), global::Thetan.Rivals.V1.Design.Parser, new[]{ "Item", "PoseID", "SkinID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.Design), global::Thetan.Rivals.V1.Design.Parser, new[]{ "Item", "PoseID", "Description" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SyncDesign), global::Thetan.Rivals.V1.SyncDesign.Parser, new[]{ "Design", "UserID" }, null, null, null, null)
           }));
     }
@@ -84,7 +85,7 @@ namespace Thetan.Rivals.V1 {
     public Design(Design other) : this() {
       item_ = other.item_ != null ? other.item_.Clone() : null;
       poseID_ = other.poseID_;
-      skinID_ = other.skinID_;
+      description_ = other.description_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -118,15 +119,15 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
-    /// <summary>Field number for the "skinID" field.</summary>
-    public const int SkinIDFieldNumber = 3;
-    private int skinID_;
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 4;
+    private string description_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int SkinID {
-      get { return skinID_; }
+    public string Description {
+      get { return description_; }
       set {
-        skinID_ = value;
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -147,7 +148,7 @@ namespace Thetan.Rivals.V1 {
       }
       if (!object.Equals(Item, other.Item)) return false;
       if (PoseID != other.PoseID) return false;
-      if (SkinID != other.SkinID) return false;
+      if (Description != other.Description) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -157,7 +158,7 @@ namespace Thetan.Rivals.V1 {
       int hash = 1;
       if (item_ != null) hash ^= Item.GetHashCode();
       if (PoseID != 0) hash ^= PoseID.GetHashCode();
-      if (SkinID != 0) hash ^= SkinID.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -184,9 +185,9 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(PoseID);
       }
-      if (SkinID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(SkinID);
+      if (Description.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Description);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -206,9 +207,9 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(PoseID);
       }
-      if (SkinID != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(SkinID);
+      if (Description.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Description);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -226,8 +227,8 @@ namespace Thetan.Rivals.V1 {
       if (PoseID != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PoseID);
       }
-      if (SkinID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SkinID);
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -250,8 +251,8 @@ namespace Thetan.Rivals.V1 {
       if (other.PoseID != 0) {
         PoseID = other.PoseID;
       }
-      if (other.SkinID != 0) {
-        SkinID = other.SkinID;
+      if (other.Description.Length != 0) {
+        Description = other.Description;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -279,8 +280,8 @@ namespace Thetan.Rivals.V1 {
             PoseID = input.ReadInt32();
             break;
           }
-          case 24: {
-            SkinID = input.ReadInt32();
+          case 34: {
+            Description = input.ReadString();
             break;
           }
         }
@@ -309,8 +310,8 @@ namespace Thetan.Rivals.V1 {
             PoseID = input.ReadInt32();
             break;
           }
-          case 24: {
-            SkinID = input.ReadInt32();
+          case 34: {
+            Description = input.ReadString();
             break;
           }
         }
