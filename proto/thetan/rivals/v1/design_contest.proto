@@ -11,7 +11,7 @@ option csharp_namespace = "Thetan.Rivals.V1";
 message Design {
   thetan.shared.v1.ItemCustomized item = 1 [(tagger.tags) = "bson:\"item\""];
   int32 poseID = 2 [(tagger.tags) = "bson:\"poseId\""];
-  int32 skinID = 3 [(tagger.tags) = "bson:\"-\""];
+  string description = 4 [(tagger.tags) = "bson:\"description\""];
 }
 
 message SyncDesign {
