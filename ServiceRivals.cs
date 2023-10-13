@@ -72,30 +72,46 @@ namespace Thetan.Rivals.V1 {
             "QWN0UmVxdWVzdBIYCgd1c2VySURzGAEgAygJUgd1c2VySURzEkgKBHR5cGUY",
             "AiABKA4yNC50aGV0YW4ucml2YWxzLnYxLkZyaWVuZGx5QWN0UmVxdWVzdC5G",
             "cmllbmRseUFjdEVudW1SBHR5cGUiPwoPRnJpZW5kbHlBY3RFbnVtEggKBE5v",
-            "bmUQABIHCgNIdWcQARIICgRUYWxrEAISDwoLR2FtZUluUGFydHkQAyIzChlV",
+            "bmUQABIHCgNIdWcQARIICgRUYWxrEAISDwoLR2FtZUluUGFydHkQAyJjChlV",
             "c2VyU2VsZWN0ZWRNaW5pb25SZXF1ZXN0EhYKBnVzZXJJZBgBIAEoCVIGdXNl",
-            "cklkIpsDChpVc2VyU2VsZWN0ZWRNaW5pb25SZXNwb25zZRIOCgJpZBgBIAEo",
-            "CVICaWQSFgoGdXNlcklkGAIgASgJUgZ1c2VySWQSEgoEdHlwZRgDIAEoBVIE",
-            "dHlwZRISCgRza2luGAQgASgFUgRza2luEhAKA25mdBgFIAEoCFIDbmZ0EhQK",
-            "BWxldmVsGAYgASgFUgVsZXZlbBJQCgZhZGRJbnMYByADKAsyOC50aGV0YW4u",
-            "cml2YWxzLnYxLlVzZXJTZWxlY3RlZE1pbmlvblJlc3BvbnNlLkFkZEluc0Vu",
-            "dHJ5UgZhZGRJbnMSPAoKY3VzdG9taXplZBgKIAEoCzIcLnRoZXRhbi5zaGFy",
-            "ZWQudjEuQ3VzdG9taXplZFIKY3VzdG9taXplZBIcCgl1cGRhdGVkQXQYCCAB",
-            "KANSCXVwZGF0ZWRBdBIcCgljcmVhdGVkQXQYCSABKANSCWNyZWF0ZWRBdBo5",
-            "CgtBZGRJbnNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEo",
-            "A1IFdmFsdWU6AjgBIloKElVzZXJNaW5pb25zUmVxdWVzdBIWCgZ1c2VySWQY",
-            "ASABKAlSBnVzZXJJZBIfCghnYW1lVHlwZRgCIAEoBUgAUghnYW1lVHlwZYgB",
-            "AUILCglfZ2FtZVR5cGUiSQoTVXNlck1pbmlvbnNSZXNwb25zZRIyCgdtaW5p",
-            "b25zGAEgAygLMhgudGhldGFuLnJpdmFscy52MS5NaW5pb25SB21pbmlvbnMi",
-            "8wIKBk1pbmlvbhIOCgJpZBgBIAEoCVICaWQSFgoGdXNlcklkGAIgASgJUgZ1",
-            "c2VySWQSEgoEdHlwZRgDIAEoBVIEdHlwZRISCgRza2luGAQgASgFUgRza2lu",
-            "EhAKA25mdBgFIAEoCFIDbmZ0EhQKBWxldmVsGAYgASgFUgVsZXZlbBI8CgZh",
-            "ZGRJbnMYByADKAsyJC50aGV0YW4ucml2YWxzLnYxLk1pbmlvbi5BZGRJbnNF",
-            "bnRyeVIGYWRkSW5zEjwKCmN1c3RvbWl6ZWQYCiABKAsyHC50aGV0YW4uc2hh",
-            "cmVkLnYxLkN1c3RvbWl6ZWRSCmN1c3RvbWl6ZWQSHAoJdXBkYXRlZEF0GAgg",
-            "ASgDUgl1cGRhdGVkQXQSHAoJY3JlYXRlZEF0GAkgASgDUgljcmVhdGVkQXQa",
-            "OQoLQWRkSW5zRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdWUYAiAB",
-            "KANSBXZhbHVlOgI4ASIrCg1NaW5pb25SZXF1ZXN0EhoKCG1pbmlvbklEGAEg",
+            "cklkEi4KEm5lZWRJbmZvQ3VzdG9taXplZBgCIAEoCFISbmVlZEluZm9DdXN0",
+            "b21pemVkIv8FChpVc2VyU2VsZWN0ZWRNaW5pb25SZXNwb25zZRIOCgJpZBgB",
+            "IAEoCVICaWQSFgoGdXNlcklkGAIgASgJUgZ1c2VySWQSEgoEdHlwZRgDIAEo",
+            "BVIEdHlwZRISCgRza2luGAQgASgFUgRza2luEhAKA25mdBgFIAEoCFIDbmZ0",
+            "EhQKBWxldmVsGAYgASgFUgVsZXZlbBJQCgZhZGRJbnMYByADKAsyOC50aGV0",
+            "YW4ucml2YWxzLnYxLlVzZXJTZWxlY3RlZE1pbmlvblJlc3BvbnNlLkFkZElu",
+            "c0VudHJ5UgZhZGRJbnMSVgoIYWRkSW5JRHMYCyADKAsyOi50aGV0YW4ucml2",
+            "YWxzLnYxLlVzZXJTZWxlY3RlZE1pbmlvblJlc3BvbnNlLkFkZEluSURzRW50",
+            "cnlSCGFkZEluSURzEmsKD2FkZEluQ3VzdG9taXplcxgMIAMoCzJBLnRoZXRh",
+            "bi5yaXZhbHMudjEuVXNlclNlbGVjdGVkTWluaW9uUmVzcG9uc2UuQWRkSW5D",
+            "dXN0b21pemVzRW50cnlSD2FkZEluQ3VzdG9taXplcxI8CgpjdXN0b21pemVk",
+            "GAogASgLMhwudGhldGFuLnNoYXJlZC52MS5DdXN0b21pemVkUgpjdXN0b21p",
+            "emVkEhwKCXVwZGF0ZWRBdBgIIAEoA1IJdXBkYXRlZEF0EhwKCWNyZWF0ZWRB",
+            "dBgJIAEoA1IJY3JlYXRlZEF0GjkKC0FkZEluc0VudHJ5EhAKA2tleRgBIAEo",
+            "CVIDa2V5EhQKBXZhbHVlGAIgASgDUgV2YWx1ZToCOAEaOwoNQWRkSW5JRHNF",
+            "bnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEoCVIFdmFsdWU6",
+            "AjgBGmAKFEFkZEluQ3VzdG9taXplc0VudHJ5EhAKA2tleRgBIAEoCVIDa2V5",
+            "EjIKBXZhbHVlGAIgASgLMhwudGhldGFuLnNoYXJlZC52MS5DdXN0b21pemVk",
+            "UgV2YWx1ZToCOAEiWgoSVXNlck1pbmlvbnNSZXF1ZXN0EhYKBnVzZXJJZBgB",
+            "IAEoCVIGdXNlcklkEh8KCGdhbWVUeXBlGAIgASgFSABSCGdhbWVUeXBliAEB",
+            "QgsKCV9nYW1lVHlwZSJJChNVc2VyTWluaW9uc1Jlc3BvbnNlEjIKB21pbmlv",
+            "bnMYASADKAsyGC50aGV0YW4ucml2YWxzLnYxLk1pbmlvblIHbWluaW9ucyKv",
+            "BQoGTWluaW9uEg4KAmlkGAEgASgJUgJpZBIWCgZ1c2VySWQYAiABKAlSBnVz",
+            "ZXJJZBISCgR0eXBlGAMgASgFUgR0eXBlEhIKBHNraW4YBCABKAVSBHNraW4S",
+            "EAoDbmZ0GAUgASgIUgNuZnQSFAoFbGV2ZWwYBiABKAVSBWxldmVsEjwKBmFk",
+            "ZElucxgHIAMoCzIkLnRoZXRhbi5yaXZhbHMudjEuTWluaW9uLkFkZEluc0Vu",
+            "dHJ5UgZhZGRJbnMSQgoIYWRkSW5JRHMYCyADKAsyJi50aGV0YW4ucml2YWxz",
+            "LnYxLk1pbmlvbi5BZGRJbklEc0VudHJ5UghhZGRJbklEcxJXCg9hZGRJbkN1",
+            "c3RvbWl6ZXMYDCADKAsyLS50aGV0YW4ucml2YWxzLnYxLk1pbmlvbi5BZGRJ",
+            "bkN1c3RvbWl6ZXNFbnRyeVIPYWRkSW5DdXN0b21pemVzEjwKCmN1c3RvbWl6",
+            "ZWQYCiABKAsyHC50aGV0YW4uc2hhcmVkLnYxLkN1c3RvbWl6ZWRSCmN1c3Rv",
+            "bWl6ZWQSHAoJdXBkYXRlZEF0GAggASgDUgl1cGRhdGVkQXQSHAoJY3JlYXRl",
+            "ZEF0GAkgASgDUgljcmVhdGVkQXQaOQoLQWRkSW5zRW50cnkSEAoDa2V5GAEg",
+            "ASgJUgNrZXkSFAoFdmFsdWUYAiABKANSBXZhbHVlOgI4ARo7Cg1BZGRJbklE",
+            "c0VudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1",
+            "ZToCOAEaYAoUQWRkSW5DdXN0b21pemVzRW50cnkSEAoDa2V5GAEgASgJUgNr",
+            "ZXkSMgoFdmFsdWUYAiABKAsyHC50aGV0YW4uc2hhcmVkLnYxLkN1c3RvbWl6",
+            "ZWRSBXZhbHVlOgI4ASIrCg1NaW5pb25SZXF1ZXN0EhoKCG1pbmlvbklEGAEg",
             "ASgJUghtaW5pb25JRCJCCg5NaW5pb25SZXNwb25zZRIwCgZtaW5pb24YASAB",
             "KAsyGC50aGV0YW4ucml2YWxzLnYxLk1pbmlvblIGbWluaW9uIoUBChNDcmVh",
             "dGVNaW5pb25SZXF1ZXN0EhYKBnVzZXJJZBgBIAEoCVIGdXNlcklkEhYKBnNr",
@@ -296,11 +312,11 @@ namespace Thetan.Rivals.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.UserProfileResponse), global::Thetan.Rivals.V1.UserProfileResponse.Parser, new[]{ "Id", "Nickname", "Avatar", "AvatarFrame", "NameColor", "Country", "Rank", "Guild", "GuildRole" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.UserProfileRank), global::Thetan.Rivals.V1.UserProfileRank.Parser, new[]{ "Trophies", "RankLevel" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.FriendlyActRequest), global::Thetan.Rivals.V1.FriendlyActRequest.Parser, new[]{ "UserIDs", "Type" }, null, new[]{ typeof(global::Thetan.Rivals.V1.FriendlyActRequest.Types.FriendlyActEnum) }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.UserSelectedMinionRequest), global::Thetan.Rivals.V1.UserSelectedMinionRequest.Parser, new[]{ "UserId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.UserSelectedMinionResponse), global::Thetan.Rivals.V1.UserSelectedMinionResponse.Parser, new[]{ "Id", "UserId", "Type", "Skin", "Nft", "Level", "AddIns", "Customized", "UpdatedAt", "CreatedAt" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.UserSelectedMinionRequest), global::Thetan.Rivals.V1.UserSelectedMinionRequest.Parser, new[]{ "UserId", "NeedInfoCustomized" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.UserSelectedMinionResponse), global::Thetan.Rivals.V1.UserSelectedMinionResponse.Parser, new[]{ "Id", "UserId", "Type", "Skin", "Nft", "Level", "AddIns", "AddInIDs", "AddInCustomizes", "Customized", "UpdatedAt", "CreatedAt" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.UserMinionsRequest), global::Thetan.Rivals.V1.UserMinionsRequest.Parser, new[]{ "UserId", "GameType" }, new[]{ "GameType" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.UserMinionsResponse), global::Thetan.Rivals.V1.UserMinionsResponse.Parser, new[]{ "Minions" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.Minion), global::Thetan.Rivals.V1.Minion.Parser, new[]{ "Id", "UserId", "Type", "Skin", "Nft", "Level", "AddIns", "Customized", "UpdatedAt", "CreatedAt" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.Minion), global::Thetan.Rivals.V1.Minion.Parser, new[]{ "Id", "UserId", "Type", "Skin", "Nft", "Level", "AddIns", "AddInIDs", "AddInCustomizes", "Customized", "UpdatedAt", "CreatedAt" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.MinionRequest), global::Thetan.Rivals.V1.MinionRequest.Parser, new[]{ "MinionID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.MinionResponse), global::Thetan.Rivals.V1.MinionResponse.Parser, new[]{ "Minion" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMinionRequest), global::Thetan.Rivals.V1.CreateMinionRequest.Parser, new[]{ "UserId", "SkinId", "GameType", "ChangeSource" }, null, null, null, null),
@@ -4220,6 +4236,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UserSelectedMinionRequest(UserSelectedMinionRequest other) : this() {
       userId_ = other.userId_;
+      needInfoCustomized_ = other.needInfoCustomized_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4241,6 +4258,18 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
+    /// <summary>Field number for the "needInfoCustomized" field.</summary>
+    public const int NeedInfoCustomizedFieldNumber = 2;
+    private bool needInfoCustomized_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool NeedInfoCustomized {
+      get { return needInfoCustomized_; }
+      set {
+        needInfoCustomized_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -4257,6 +4286,7 @@ namespace Thetan.Rivals.V1 {
         return true;
       }
       if (UserId != other.UserId) return false;
+      if (NeedInfoCustomized != other.NeedInfoCustomized) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4265,6 +4295,7 @@ namespace Thetan.Rivals.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (NeedInfoCustomized != false) hash ^= NeedInfoCustomized.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4287,6 +4318,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(10);
         output.WriteString(UserId);
       }
+      if (NeedInfoCustomized != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(NeedInfoCustomized);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4301,6 +4336,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(10);
         output.WriteString(UserId);
       }
+      if (NeedInfoCustomized != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(NeedInfoCustomized);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4313,6 +4352,9 @@ namespace Thetan.Rivals.V1 {
       int size = 0;
       if (UserId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      }
+      if (NeedInfoCustomized != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4328,6 +4370,9 @@ namespace Thetan.Rivals.V1 {
       }
       if (other.UserId.Length != 0) {
         UserId = other.UserId;
+      }
+      if (other.NeedInfoCustomized != false) {
+        NeedInfoCustomized = other.NeedInfoCustomized;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4348,6 +4393,10 @@ namespace Thetan.Rivals.V1 {
             UserId = input.ReadString();
             break;
           }
+          case 16: {
+            NeedInfoCustomized = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -4365,6 +4414,10 @@ namespace Thetan.Rivals.V1 {
             break;
           case 10: {
             UserId = input.ReadString();
+            break;
+          }
+          case 16: {
+            NeedInfoCustomized = input.ReadBool();
             break;
           }
         }
@@ -4415,6 +4468,8 @@ namespace Thetan.Rivals.V1 {
       nft_ = other.nft_;
       level_ = other.level_;
       addIns_ = other.addIns_.Clone();
+      addInIDs_ = other.addInIDs_.Clone();
+      addInCustomizes_ = other.addInCustomizes_.Clone();
       customized_ = other.customized_ != null ? other.customized_.Clone() : null;
       updatedAt_ = other.updatedAt_;
       createdAt_ = other.createdAt_;
@@ -4510,6 +4565,31 @@ namespace Thetan.Rivals.V1 {
       get { return addIns_; }
     }
 
+    /// <summary>Field number for the "addInIDs" field.</summary>
+    public const int AddInIDsFieldNumber = 11;
+    private static readonly pbc::MapField<string, string>.Codec _map_addInIDs_codec
+        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 90);
+    private readonly pbc::MapField<string, string> addInIDs_ = new pbc::MapField<string, string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, string> AddInIDs {
+      get { return addInIDs_; }
+    }
+
+    /// <summary>Field number for the "addInCustomizes" field.</summary>
+    public const int AddInCustomizesFieldNumber = 12;
+    private static readonly pbc::MapField<string, global::Thetan.Shared.V1.Customized>.Codec _map_addInCustomizes_codec
+        = new pbc::MapField<string, global::Thetan.Shared.V1.Customized>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Thetan.Shared.V1.Customized.Parser), 98);
+    private readonly pbc::MapField<string, global::Thetan.Shared.V1.Customized> addInCustomizes_ = new pbc::MapField<string, global::Thetan.Shared.V1.Customized>();
+    /// <summary>
+    /// co the co hoac khong, tuy theo yeu cau
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, global::Thetan.Shared.V1.Customized> AddInCustomizes {
+      get { return addInCustomizes_; }
+    }
+
     /// <summary>Field number for the "customized" field.</summary>
     public const int CustomizedFieldNumber = 10;
     private global::Thetan.Shared.V1.Customized customized_;
@@ -4568,6 +4648,8 @@ namespace Thetan.Rivals.V1 {
       if (Nft != other.Nft) return false;
       if (Level != other.Level) return false;
       if (!AddIns.Equals(other.AddIns)) return false;
+      if (!AddInIDs.Equals(other.AddInIDs)) return false;
+      if (!AddInCustomizes.Equals(other.AddInCustomizes)) return false;
       if (!object.Equals(Customized, other.Customized)) return false;
       if (UpdatedAt != other.UpdatedAt) return false;
       if (CreatedAt != other.CreatedAt) return false;
@@ -4585,6 +4667,8 @@ namespace Thetan.Rivals.V1 {
       if (Nft != false) hash ^= Nft.GetHashCode();
       if (Level != 0) hash ^= Level.GetHashCode();
       hash ^= AddIns.GetHashCode();
+      hash ^= AddInIDs.GetHashCode();
+      hash ^= AddInCustomizes.GetHashCode();
       if (customized_ != null) hash ^= Customized.GetHashCode();
       if (UpdatedAt != 0L) hash ^= UpdatedAt.GetHashCode();
       if (CreatedAt != 0L) hash ^= CreatedAt.GetHashCode();
@@ -4643,6 +4727,8 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(82);
         output.WriteMessage(Customized);
       }
+      addInIDs_.WriteTo(output, _map_addInIDs_codec);
+      addInCustomizes_.WriteTo(output, _map_addInCustomizes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4690,6 +4776,8 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(82);
         output.WriteMessage(Customized);
       }
+      addInIDs_.WriteTo(ref output, _map_addInIDs_codec);
+      addInCustomizes_.WriteTo(ref output, _map_addInCustomizes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4719,6 +4807,8 @@ namespace Thetan.Rivals.V1 {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Level);
       }
       size += addIns_.CalculateSize(_map_addIns_codec);
+      size += addInIDs_.CalculateSize(_map_addInIDs_codec);
+      size += addInCustomizes_.CalculateSize(_map_addInCustomizes_codec);
       if (customized_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Customized);
       }
@@ -4759,6 +4849,8 @@ namespace Thetan.Rivals.V1 {
         Level = other.Level;
       }
       addIns_.Add(other.addIns_);
+      addInIDs_.Add(other.addInIDs_);
+      addInCustomizes_.Add(other.addInCustomizes_);
       if (other.customized_ != null) {
         if (customized_ == null) {
           Customized = new global::Thetan.Shared.V1.Customized();
@@ -4829,6 +4921,14 @@ namespace Thetan.Rivals.V1 {
             input.ReadMessage(Customized);
             break;
           }
+          case 90: {
+            addInIDs_.AddEntriesFrom(input, _map_addInIDs_codec);
+            break;
+          }
+          case 98: {
+            addInCustomizes_.AddEntriesFrom(input, _map_addInCustomizes_codec);
+            break;
+          }
         }
       }
     #endif
@@ -4885,6 +4985,14 @@ namespace Thetan.Rivals.V1 {
               Customized = new global::Thetan.Shared.V1.Customized();
             }
             input.ReadMessage(Customized);
+            break;
+          }
+          case 90: {
+            addInIDs_.AddEntriesFrom(ref input, _map_addInIDs_codec);
+            break;
+          }
+          case 98: {
+            addInCustomizes_.AddEntriesFrom(ref input, _map_addInCustomizes_codec);
             break;
           }
         }
@@ -5354,6 +5462,8 @@ namespace Thetan.Rivals.V1 {
       nft_ = other.nft_;
       level_ = other.level_;
       addIns_ = other.addIns_.Clone();
+      addInIDs_ = other.addInIDs_.Clone();
+      addInCustomizes_ = other.addInCustomizes_.Clone();
       customized_ = other.customized_ != null ? other.customized_.Clone() : null;
       updatedAt_ = other.updatedAt_;
       createdAt_ = other.createdAt_;
@@ -5449,6 +5559,31 @@ namespace Thetan.Rivals.V1 {
       get { return addIns_; }
     }
 
+    /// <summary>Field number for the "addInIDs" field.</summary>
+    public const int AddInIDsFieldNumber = 11;
+    private static readonly pbc::MapField<string, string>.Codec _map_addInIDs_codec
+        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 90);
+    private readonly pbc::MapField<string, string> addInIDs_ = new pbc::MapField<string, string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, string> AddInIDs {
+      get { return addInIDs_; }
+    }
+
+    /// <summary>Field number for the "addInCustomizes" field.</summary>
+    public const int AddInCustomizesFieldNumber = 12;
+    private static readonly pbc::MapField<string, global::Thetan.Shared.V1.Customized>.Codec _map_addInCustomizes_codec
+        = new pbc::MapField<string, global::Thetan.Shared.V1.Customized>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Thetan.Shared.V1.Customized.Parser), 98);
+    private readonly pbc::MapField<string, global::Thetan.Shared.V1.Customized> addInCustomizes_ = new pbc::MapField<string, global::Thetan.Shared.V1.Customized>();
+    /// <summary>
+    /// co the co hoac khong, tuy theo yeu cau
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, global::Thetan.Shared.V1.Customized> AddInCustomizes {
+      get { return addInCustomizes_; }
+    }
+
     /// <summary>Field number for the "customized" field.</summary>
     public const int CustomizedFieldNumber = 10;
     private global::Thetan.Shared.V1.Customized customized_;
@@ -5507,6 +5642,8 @@ namespace Thetan.Rivals.V1 {
       if (Nft != other.Nft) return false;
       if (Level != other.Level) return false;
       if (!AddIns.Equals(other.AddIns)) return false;
+      if (!AddInIDs.Equals(other.AddInIDs)) return false;
+      if (!AddInCustomizes.Equals(other.AddInCustomizes)) return false;
       if (!object.Equals(Customized, other.Customized)) return false;
       if (UpdatedAt != other.UpdatedAt) return false;
       if (CreatedAt != other.CreatedAt) return false;
@@ -5524,6 +5661,8 @@ namespace Thetan.Rivals.V1 {
       if (Nft != false) hash ^= Nft.GetHashCode();
       if (Level != 0) hash ^= Level.GetHashCode();
       hash ^= AddIns.GetHashCode();
+      hash ^= AddInIDs.GetHashCode();
+      hash ^= AddInCustomizes.GetHashCode();
       if (customized_ != null) hash ^= Customized.GetHashCode();
       if (UpdatedAt != 0L) hash ^= UpdatedAt.GetHashCode();
       if (CreatedAt != 0L) hash ^= CreatedAt.GetHashCode();
@@ -5582,6 +5721,8 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(82);
         output.WriteMessage(Customized);
       }
+      addInIDs_.WriteTo(output, _map_addInIDs_codec);
+      addInCustomizes_.WriteTo(output, _map_addInCustomizes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5629,6 +5770,8 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(82);
         output.WriteMessage(Customized);
       }
+      addInIDs_.WriteTo(ref output, _map_addInIDs_codec);
+      addInCustomizes_.WriteTo(ref output, _map_addInCustomizes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5658,6 +5801,8 @@ namespace Thetan.Rivals.V1 {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Level);
       }
       size += addIns_.CalculateSize(_map_addIns_codec);
+      size += addInIDs_.CalculateSize(_map_addInIDs_codec);
+      size += addInCustomizes_.CalculateSize(_map_addInCustomizes_codec);
       if (customized_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Customized);
       }
@@ -5698,6 +5843,8 @@ namespace Thetan.Rivals.V1 {
         Level = other.Level;
       }
       addIns_.Add(other.addIns_);
+      addInIDs_.Add(other.addInIDs_);
+      addInCustomizes_.Add(other.addInCustomizes_);
       if (other.customized_ != null) {
         if (customized_ == null) {
           Customized = new global::Thetan.Shared.V1.Customized();
@@ -5768,6 +5915,14 @@ namespace Thetan.Rivals.V1 {
             input.ReadMessage(Customized);
             break;
           }
+          case 90: {
+            addInIDs_.AddEntriesFrom(input, _map_addInIDs_codec);
+            break;
+          }
+          case 98: {
+            addInCustomizes_.AddEntriesFrom(input, _map_addInCustomizes_codec);
+            break;
+          }
         }
       }
     #endif
@@ -5824,6 +5979,14 @@ namespace Thetan.Rivals.V1 {
               Customized = new global::Thetan.Shared.V1.Customized();
             }
             input.ReadMessage(Customized);
+            break;
+          }
+          case 90: {
+            addInIDs_.AddEntriesFrom(ref input, _map_addInIDs_codec);
+            break;
+          }
+          case 98: {
+            addInCustomizes_.AddEntriesFrom(ref input, _map_addInCustomizes_codec);
             break;
           }
         }
