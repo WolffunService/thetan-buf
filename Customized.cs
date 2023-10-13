@@ -25,34 +25,32 @@ namespace Thetan.Shared.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiF0aGV0YW4vc2hhcmVkL3YxL2N1c3RvbWl6ZWQucHJvdG8SEHRoZXRhbi5z",
-            "aGFyZWQudjEaGWdvb2dsZS9wcm90b2J1Zi9hbnkucHJvdG8aE3RhZ2dlci90",
-            "YWdnZXIucHJvdG8ivQIKCkN1c3RvbWl6ZWQSJAoEbmFtZRgBIAEoCUIQmoSe",
-            "Awtic29uOiJuYW1lIlIEbmFtZRI2Cgp0ZXh0dXJlVVJMGAIgASgJQhaahJ4D",
-            "EWJzb246InRleHR1cmVVUkwiUgp0ZXh0dXJlVVJMEjwKDHRodW1ibmFpbFVS",
-            "TBgFIAEoCUIYmoSeAxNic29uOiJ0aHVtYm5haWxVUkwiUgx0aHVtYm5haWxV",
-            "UkwSMwoJcHVibGlzaEF0GAMgASgDQhWahJ4DEGJzb246InB1Ymxpc2hBdCJS",
-            "CXB1Ymxpc2hBdBJTCgZzaGFkZXIYBCABKAsyIi50aGV0YW4uc2hhcmVkLnYx",
-            "LkN1c3RvbWl6ZWRTaGFkZXJCEpqEngMNYnNvbjoic2hhZGVyIkgAUgZzaGFk",
-            "ZXKIAQFCCQoHX3NoYWRlciLxAQoQQ3VzdG9taXplZFNoYWRlchIwCghzaGFk",
-            "ZXJJRBgBIAEoBUIUmoSeAw9ic29uOiJzaGFkZXJJRCJSCHNoYWRlcklEEloK",
-            "BnBhcmFtcxgCIAMoCzIuLnRoZXRhbi5zaGFyZWQudjEuQ3VzdG9taXplZFNo",
-            "YWRlci5QYXJhbXNFbnRyeUISmoSeAw1ic29uOiJwYXJhbXMiUgZwYXJhbXMa",
-            "TwoLUGFyYW1zRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSKgoFdmFsdWUYAiAB",
-            "KAsyFC5nb29nbGUucHJvdG9idWYuQW55UgV2YWx1ZToCOAEi0gEKDkl0ZW1D",
-            "dXN0b21pemVkEiQKBHR5cGUYASABKAVCEJqEngMLYnNvbjoidHlwZSJSBHR5",
-            "cGUSJAoEa2luZBgCIAEoBUIQmoSeAwtic29uOiJraW5kIlIEa2luZBIeCgJp",
-            "ZBgDIAEoCUIOmoSeAwlic29uOiJpZCJSAmlkElQKCmN1c3RvbWl6ZWQYBCAB",
-            "KAsyHC50aGV0YW4uc2hhcmVkLnYxLkN1c3RvbWl6ZWRCFpqEngMRYnNvbjoi",
-            "Y3VzdG9taXplZCJSCmN1c3RvbWl6ZWRCvgEKFGNvbS50aGV0YW4uc2hhcmVk",
-            "LnYxQg9DdXN0b21pemVkUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhl",
-            "dGFuL3NoYXJlZC92MTt0aGV0YW5fc2hhcmVkX3YxogIDVFNYqgIQVGhldGFu",
-            "LlNoYXJlZC5WMcoCEFRoZXRhblxTaGFyZWRcVjHiAhxUaGV0YW5cU2hhcmVk",
-            "XFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpTaGFyZWQ6OlYxYgZwcm90bzM="));
+            "aGFyZWQudjEaHGdvb2dsZS9wcm90b2J1Zi9zdHJ1Y3QucHJvdG8aE3RhZ2dl",
+            "ci90YWdnZXIucHJvdG8ivQIKCkN1c3RvbWl6ZWQSJAoEbmFtZRgBIAEoCUIQ",
+            "moSeAwtic29uOiJuYW1lIlIEbmFtZRI2Cgp0ZXh0dXJlVVJMGAIgASgJQhaa",
+            "hJ4DEWJzb246InRleHR1cmVVUkwiUgp0ZXh0dXJlVVJMEjwKDHRodW1ibmFp",
+            "bFVSTBgFIAEoCUIYmoSeAxNic29uOiJ0aHVtYm5haWxVUkwiUgx0aHVtYm5h",
+            "aWxVUkwSMwoJcHVibGlzaEF0GAMgASgDQhWahJ4DEGJzb246InB1Ymxpc2hB",
+            "dCJSCXB1Ymxpc2hBdBJTCgZzaGFkZXIYBCABKAsyIi50aGV0YW4uc2hhcmVk",
+            "LnYxLkN1c3RvbWl6ZWRTaGFkZXJCEpqEngMNYnNvbjoic2hhZGVyIkgAUgZz",
+            "aGFkZXKIAQFCCQoHX3NoYWRlciKPAQoQQ3VzdG9taXplZFNoYWRlchIwCghz",
+            "aGFkZXJJRBgBIAEoBUIUmoSeAw9ic29uOiJzaGFkZXJJRCJSCHNoYWRlcklE",
+            "EkMKBnBhcmFtcxgDIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RCEpqE",
+            "ngMNYnNvbjoicGFyYW1zIlIGcGFyYW1zSgQIAhADItIBCg5JdGVtQ3VzdG9t",
+            "aXplZBIkCgR0eXBlGAEgASgFQhCahJ4DC2Jzb246InR5cGUiUgR0eXBlEiQK",
+            "BGtpbmQYAiABKAVCEJqEngMLYnNvbjoia2luZCJSBGtpbmQSHgoCaWQYAyAB",
+            "KAlCDpqEngMJYnNvbjoiaWQiUgJpZBJUCgpjdXN0b21pemVkGAQgASgLMhwu",
+            "dGhldGFuLnNoYXJlZC52MS5DdXN0b21pemVkQhaahJ4DEWJzb246ImN1c3Rv",
+            "bWl6ZWQiUgpjdXN0b21pemVkQr4BChRjb20udGhldGFuLnNoYXJlZC52MUIP",
+            "Q3VzdG9taXplZFByb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9z",
+            "aGFyZWQvdjE7dGhldGFuX3NoYXJlZF92MaICA1RTWKoCEFRoZXRhbi5TaGFy",
+            "ZWQuVjHKAhBUaGV0YW5cU2hhcmVkXFYx4gIcVGhldGFuXFNoYXJlZFxWMVxH",
+            "UEJNZXRhZGF0YeoCElRoZXRhbjo6U2hhcmVkOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Tagger.TaggerReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Tagger.TaggerReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.Customized), global::Thetan.Shared.V1.Customized.Parser, new[]{ "Name", "TextureURL", "ThumbnailURL", "PublishAt", "Shader" }, new[]{ "Shader" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.CustomizedShader), global::Thetan.Shared.V1.CustomizedShader.Parser, new[]{ "ShaderID", "Params" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.CustomizedShader), global::Thetan.Shared.V1.CustomizedShader.Parser, new[]{ "ShaderID", "Params" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.ItemCustomized), global::Thetan.Shared.V1.ItemCustomized.Parser, new[]{ "Type", "Kind", "Id", "Customized" }, null, null, null, null)
           }));
     }
@@ -459,7 +457,7 @@ namespace Thetan.Shared.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CustomizedShader(CustomizedShader other) : this() {
       shaderID_ = other.shaderID_;
-      params_ = other.params_.Clone();
+      params_ = other.params_ != null ? other.params_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -482,14 +480,15 @@ namespace Thetan.Shared.V1 {
     }
 
     /// <summary>Field number for the "params" field.</summary>
-    public const int ParamsFieldNumber = 2;
-    private static readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec _map_params_codec
-        = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Any.Parser), 18);
-    private readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any> params_ = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>();
+    public const int ParamsFieldNumber = 3;
+    private global::Google.Protobuf.WellKnownTypes.Struct params_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any> Params {
+    public global::Google.Protobuf.WellKnownTypes.Struct Params {
       get { return params_; }
+      set {
+        params_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -508,7 +507,7 @@ namespace Thetan.Shared.V1 {
         return true;
       }
       if (ShaderID != other.ShaderID) return false;
-      if (!Params.Equals(other.Params)) return false;
+      if (!object.Equals(Params, other.Params)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -517,7 +516,7 @@ namespace Thetan.Shared.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (ShaderID != 0) hash ^= ShaderID.GetHashCode();
-      hash ^= Params.GetHashCode();
+      if (params_ != null) hash ^= Params.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -540,7 +539,10 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(ShaderID);
       }
-      params_.WriteTo(output, _map_params_codec);
+      if (params_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Params);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -555,7 +557,10 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(ShaderID);
       }
-      params_.WriteTo(ref output, _map_params_codec);
+      if (params_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Params);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -569,7 +574,9 @@ namespace Thetan.Shared.V1 {
       if (ShaderID != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ShaderID);
       }
-      size += params_.CalculateSize(_map_params_codec);
+      if (params_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Params);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -585,7 +592,12 @@ namespace Thetan.Shared.V1 {
       if (other.ShaderID != 0) {
         ShaderID = other.ShaderID;
       }
-      params_.Add(other.params_);
+      if (other.params_ != null) {
+        if (params_ == null) {
+          Params = new global::Google.Protobuf.WellKnownTypes.Struct();
+        }
+        Params.MergeFrom(other.Params);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -605,8 +617,11 @@ namespace Thetan.Shared.V1 {
             ShaderID = input.ReadInt32();
             break;
           }
-          case 18: {
-            params_.AddEntriesFrom(input, _map_params_codec);
+          case 26: {
+            if (params_ == null) {
+              Params = new global::Google.Protobuf.WellKnownTypes.Struct();
+            }
+            input.ReadMessage(Params);
             break;
           }
         }
@@ -628,8 +643,11 @@ namespace Thetan.Shared.V1 {
             ShaderID = input.ReadInt32();
             break;
           }
-          case 18: {
-            params_.AddEntriesFrom(ref input, _map_params_codec);
+          case 26: {
+            if (params_ == null) {
+              Params = new global::Google.Protobuf.WellKnownTypes.Struct();
+            }
+            input.ReadMessage(Params);
             break;
           }
         }
