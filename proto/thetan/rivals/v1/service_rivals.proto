@@ -156,7 +156,7 @@ message FriendlyActRequest {
 
 message UserSelectedMinionRequest {
   string userId = 1;
-  bool needInfoCustomized = 2;
+  optional bool needInfoCustomized = 2;
 }
 
 message UserSelectedMinionResponse {
@@ -177,6 +177,7 @@ message UserSelectedMinionResponse {
 message UserMinionsRequest {
   string userId = 1;
   optional int32 gameType = 2;
+  optional bool needInfoCustomized = 3;
 }
 
 message UserMinionsResponse {
@@ -200,6 +201,7 @@ message Minion {
 
 message MinionRequest {
   string minionID = 1;
+  optional bool needInfoCustomized = 2;
 }
 
 message MinionResponse {
