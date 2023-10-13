@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package thetan.match.v1;
 
-import "google/protobuf/any.proto";
+import "google/protobuf/struct.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/match/v1;thetan_match_v1";
 option csharp_namespace = "Thetan.Match.V1";
@@ -19,7 +19,7 @@ message MatchPlayer {
   string playerID = 1;
   int32 battleRank = 2;
   repeated float roundTimes = 3;
-  map<string, google.protobuf.Any> extras = 4;
+  google.protobuf.Struct extras = 4;
 }
 
 message SpectatorBattleEnd {

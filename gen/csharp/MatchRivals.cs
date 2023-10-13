@@ -25,28 +25,26 @@ namespace Thetan.Match.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiJ0aGV0YW4vbWF0Y2gvdjEvbWF0Y2hfcml2YWxzLnByb3RvEg90aGV0YW4u",
-            "bWF0Y2gudjEaGWdvb2dsZS9wcm90b2J1Zi9hbnkucHJvdG8iVAoKTWF0Y2hS",
-            "b3VuZBImCg5wbGF5ZXJJblJvdW5kcxgBIAMoCVIOcGxheWVySW5Sb3VuZHMS",
-            "HgoKZ2FtZUlucHV0cxgCIAEoDFIKZ2FtZUlucHV0cyL8AQoLTWF0Y2hQbGF5",
-            "ZXISGgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEh4KCmJhdHRsZVJhbmsY",
-            "AiABKAVSCmJhdHRsZVJhbmsSHgoKcm91bmRUaW1lcxgDIAMoAlIKcm91bmRU",
-            "aW1lcxJACgZleHRyYXMYBCADKAsyKC50aGV0YW4ubWF0Y2gudjEuTWF0Y2hQ",
-            "bGF5ZXIuRXh0cmFzRW50cnlSBmV4dHJhcxpPCgtFeHRyYXNFbnRyeRIQCgNr",
-            "ZXkYASABKAlSA2tleRIqCgV2YWx1ZRgCIAEoCzIULmdvb2dsZS5wcm90b2J1",
-            "Zi5BbnlSBXZhbHVlOgI4ASKxAQoSU3BlY3RhdG9yQmF0dGxlRW5kEhgKB21h",
-            "dGNoSUQYASABKAlSB21hdGNoSUQSMwoGcm91bmRzGAIgAygLMhsudGhldGFu",
-            "Lm1hdGNoLnYxLk1hdGNoUm91bmRSBnJvdW5kcxI2CgdwbGF5ZXJzGAMgAygL",
-            "MhwudGhldGFuLm1hdGNoLnYxLk1hdGNoUGxheWVyUgdwbGF5ZXJzEhQKBWVu",
-            "ZEF0GAQgASgDUgVlbmRBdEK6AQoTY29tLnRoZXRhbi5tYXRjaC52MUIQTWF0",
-            "Y2hSaXZhbHNQcm90b1ABWjF0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vbWF0",
-            "Y2gvdjE7dGhldGFuX21hdGNoX3YxogIDVE1YqgIPVGhldGFuLk1hdGNoLlYx",
-            "ygIQVGhldGFuXE1hdGNoX1xWMeICHFRoZXRhblxNYXRjaF9cVjFcR1BCTWV0",
-            "YWRhdGHqAhFUaGV0YW46Ok1hdGNoOjpWMWIGcHJvdG8z"));
+            "bWF0Y2gudjEaHGdvb2dsZS9wcm90b2J1Zi9zdHJ1Y3QucHJvdG8iVAoKTWF0",
+            "Y2hSb3VuZBImCg5wbGF5ZXJJblJvdW5kcxgBIAMoCVIOcGxheWVySW5Sb3Vu",
+            "ZHMSHgoKZ2FtZUlucHV0cxgCIAEoDFIKZ2FtZUlucHV0cyKaAQoLTWF0Y2hQ",
+            "bGF5ZXISGgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEh4KCmJhdHRsZVJh",
+            "bmsYAiABKAVSCmJhdHRsZVJhbmsSHgoKcm91bmRUaW1lcxgDIAMoAlIKcm91",
+            "bmRUaW1lcxIvCgZleHRyYXMYBCABKAsyFy5nb29nbGUucHJvdG9idWYuU3Ry",
+            "dWN0UgZleHRyYXMisQEKElNwZWN0YXRvckJhdHRsZUVuZBIYCgdtYXRjaElE",
+            "GAEgASgJUgdtYXRjaElEEjMKBnJvdW5kcxgCIAMoCzIbLnRoZXRhbi5tYXRj",
+            "aC52MS5NYXRjaFJvdW5kUgZyb3VuZHMSNgoHcGxheWVycxgDIAMoCzIcLnRo",
+            "ZXRhbi5tYXRjaC52MS5NYXRjaFBsYXllclIHcGxheWVycxIUCgVlbmRBdBgE",
+            "IAEoA1IFZW5kQXRCugEKE2NvbS50aGV0YW4ubWF0Y2gudjFCEE1hdGNoUml2",
+            "YWxzUHJvdG9QAVoxdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL21hdGNoL3Yx",
+            "O3RoZXRhbl9tYXRjaF92MaICA1RNWKoCD1RoZXRhbi5NYXRjaC5WMcoCEFRo",
+            "ZXRhblxNYXRjaF9cVjHiAhxUaGV0YW5cTWF0Y2hfXFYxXEdQQk1ldGFkYXRh",
+            "6gIRVGhldGFuOjpNYXRjaDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.MatchRound), global::Thetan.Match.V1.MatchRound.Parser, new[]{ "PlayerInRounds", "GameInputs" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.MatchPlayer), global::Thetan.Match.V1.MatchPlayer.Parser, new[]{ "PlayerID", "BattleRank", "RoundTimes", "Extras" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.MatchPlayer), global::Thetan.Match.V1.MatchPlayer.Parser, new[]{ "PlayerID", "BattleRank", "RoundTimes", "Extras" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Match.V1.SpectatorBattleEnd), global::Thetan.Match.V1.SpectatorBattleEnd.Parser, new[]{ "MatchID", "Rounds", "Players", "EndAt" }, null, null, null, null)
           }));
     }
@@ -312,7 +310,7 @@ namespace Thetan.Match.V1 {
       playerID_ = other.playerID_;
       battleRank_ = other.battleRank_;
       roundTimes_ = other.roundTimes_.Clone();
-      extras_ = other.extras_.Clone();
+      extras_ = other.extras_ != null ? other.extras_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -359,13 +357,14 @@ namespace Thetan.Match.V1 {
 
     /// <summary>Field number for the "extras" field.</summary>
     public const int ExtrasFieldNumber = 4;
-    private static readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec _map_extras_codec
-        = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Google.Protobuf.WellKnownTypes.Any.Parser), 34);
-    private readonly pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any> extras_ = new pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any>();
+    private global::Google.Protobuf.WellKnownTypes.Struct extras_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<string, global::Google.Protobuf.WellKnownTypes.Any> Extras {
+    public global::Google.Protobuf.WellKnownTypes.Struct Extras {
       get { return extras_; }
+      set {
+        extras_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -386,7 +385,7 @@ namespace Thetan.Match.V1 {
       if (PlayerID != other.PlayerID) return false;
       if (BattleRank != other.BattleRank) return false;
       if(!roundTimes_.Equals(other.roundTimes_)) return false;
-      if (!Extras.Equals(other.Extras)) return false;
+      if (!object.Equals(Extras, other.Extras)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -397,7 +396,7 @@ namespace Thetan.Match.V1 {
       if (PlayerID.Length != 0) hash ^= PlayerID.GetHashCode();
       if (BattleRank != 0) hash ^= BattleRank.GetHashCode();
       hash ^= roundTimes_.GetHashCode();
-      hash ^= Extras.GetHashCode();
+      if (extras_ != null) hash ^= Extras.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -425,7 +424,10 @@ namespace Thetan.Match.V1 {
         output.WriteInt32(BattleRank);
       }
       roundTimes_.WriteTo(output, _repeated_roundTimes_codec);
-      extras_.WriteTo(output, _map_extras_codec);
+      if (extras_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Extras);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -445,7 +447,10 @@ namespace Thetan.Match.V1 {
         output.WriteInt32(BattleRank);
       }
       roundTimes_.WriteTo(ref output, _repeated_roundTimes_codec);
-      extras_.WriteTo(ref output, _map_extras_codec);
+      if (extras_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Extras);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -463,7 +468,9 @@ namespace Thetan.Match.V1 {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BattleRank);
       }
       size += roundTimes_.CalculateSize(_repeated_roundTimes_codec);
-      size += extras_.CalculateSize(_map_extras_codec);
+      if (extras_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Extras);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -483,7 +490,12 @@ namespace Thetan.Match.V1 {
         BattleRank = other.BattleRank;
       }
       roundTimes_.Add(other.roundTimes_);
-      extras_.Add(other.extras_);
+      if (other.extras_ != null) {
+        if (extras_ == null) {
+          Extras = new global::Google.Protobuf.WellKnownTypes.Struct();
+        }
+        Extras.MergeFrom(other.Extras);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -513,7 +525,10 @@ namespace Thetan.Match.V1 {
             break;
           }
           case 34: {
-            extras_.AddEntriesFrom(input, _map_extras_codec);
+            if (extras_ == null) {
+              Extras = new global::Google.Protobuf.WellKnownTypes.Struct();
+            }
+            input.ReadMessage(Extras);
             break;
           }
         }
@@ -545,7 +560,10 @@ namespace Thetan.Match.V1 {
             break;
           }
           case 34: {
-            extras_.AddEntriesFrom(ref input, _map_extras_codec);
+            if (extras_ == null) {
+              Extras = new global::Google.Protobuf.WellKnownTypes.Struct();
+            }
+            input.ReadMessage(Extras);
             break;
           }
         }
