@@ -308,6 +308,7 @@ message GetBotsRequest
 message CosmeticUsingProtoV2
 {
   map<string, int64> cosmeticInUsed = 1;
+  map<string, Customized> customized = 2;
 }
 
 message CreateMatchOnboardRequest {

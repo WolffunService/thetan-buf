@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package thetan.shared.v1;
 
-import "google/protobuf/any.proto";
+import "google/protobuf/struct.proto";
 import "tagger/tagger.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/shared/v1;thetan_shared_v1";
@@ -23,8 +23,9 @@ message Customized {
 }
 
 message CustomizedShader {
+  reserved 2;
   int32 shaderID = 1 [(tagger.tags) = "bson:\"shaderID\""];
-  map<string, google.protobuf.Any> params = 2 [(tagger.tags) = "bson:\"params\""];
+  google.protobuf.Struct params = 3 [(tagger.tags) = "bson:\"params\""];
 }
 
 message ItemCustomized {
