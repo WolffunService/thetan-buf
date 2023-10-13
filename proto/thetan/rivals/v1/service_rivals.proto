@@ -156,6 +156,7 @@ message FriendlyActRequest {
 
 message UserSelectedMinionRequest {
   string userId = 1;
+  bool needInfoCustomized = 2;
 }
 
 message UserSelectedMinionResponse {
@@ -166,6 +167,8 @@ message UserSelectedMinionResponse {
   bool nft = 5;
   int32 level = 6;
   map<string, int64> addIns = 7;
+  map<string, string> addInIDs = 11;
+  map<string, thetan.shared.v1.Customized> addInCustomizes = 12; // co the co hoac khong, tuy theo yeu cau
   thetan.shared.v1.Customized customized = 10;
   int64 updatedAt = 8;
   int64 createdAt = 9;
@@ -188,6 +191,8 @@ message Minion {
   bool nft = 5;
   int32 level = 6;
   map<string, int64> addIns = 7;
+  map<string, string> addInIDs = 11;
+  map<string, thetan.shared.v1.Customized> addInCustomizes = 12; // co the co hoac khong, tuy theo yeu cau
   thetan.shared.v1.Customized customized = 10;
   int64 updatedAt = 8;
   int64 createdAt = 9;
