@@ -38,7 +38,7 @@ namespace Thetan.Rivals.V1 {
             "Ug1oYXNUcmlwbGVLaWxsEiAKC2hhc01lZ2FLaWxsGAcgASgIUgtoYXNNZWdh",
             "S2lsbBJcChNwbGF5ZXJCYXR0bGVFbmREYXRhGAggAygLMioudGhldGFuLnJp",
             "dmFscy52MS5SaXZhbFBsYXllckJhdHRsZUVuZERhdGFSE3BsYXllckJhdHRs",
-            "ZUVuZERhdGEiwAQKEVJpdmFsQmF0dGxlTG9nTXNnEhgKB21hdGNoSWQYASAB",
+            "ZUVuZERhdGEihAUKEVJpdmFsQmF0dGxlTG9nTXNnEhgKB21hdGNoSWQYASAB",
             "KAlSB21hdGNoSWQSGgoIcGxheWVySWQYAiABKAlSCHBsYXllcklkEh4KCnRp",
             "bWVTdWJtaXQYAyABKANSCnRpbWVTdWJtaXQSKAoPb3BlcmF0aW9uU3lzdGVt",
             "GAQgASgJUg9vcGVyYXRpb25TeXN0ZW0SHgoKYXBwVmVyc2lvbhgFIAEoCVIK",
@@ -50,23 +50,24 @@ namespace Thetan.Rivals.V1 {
             "EhgKB2NvdW50cnkYCiABKAlSB2NvdW50cnkSFgoGYmF0dGxlGAsgASgFUgZi",
             "YXR0bGUSIgoMdGltZUluQmF0dGxlGAwgASgDUgx0aW1lSW5CYXR0bGUSHgoK",
             "dHJvcGh5UmFuaxgNIAEoBVIKdHJvcGh5UmFuaxIgCgt1c2VyUmFua2luZxgO",
-            "IAEoBVILdXNlclJhbmtpbmcSHAoJbWF0Y2hUeXBlGA8gASgJUgltYXRjaFR5",
-            "cGUi1AEKGFJpdmFsUGxheWVyQmF0dGxlRW5kRGF0YRIaCghwbGF5ZXJJZBgB",
-            "IAEoCVIIcGxheWVySWQSHgoKYmF0dGxlUmFuaxgCIAEoBVIKYmF0dGxlUmFu",
-            "axIaCghtaW5pb25JZBgDIAEoCVIIbWluaW9uSWQSSgoNY29zbWV0aWNVc2lu",
-            "ZxgEIAEoCzIkLnRoZXRhbi5zaGFyZWQudjEuQ29zbWV0aWNVc2luZ1Byb3Rv",
-            "Ug1jb3NtZXRpY1VzaW5nEhQKBWJyYWluGAUgASgFUgVicmFpbkLDAQoUY29t",
-            "LnRoZXRhbi5yaXZhbHMudjFCFFJpdmFsc0JhdHRsZUVuZFByb3RvUAFaM3Ro",
-            "ZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9yaXZhbHMvdjE7dGhldGFuX3JpdmFs",
-            "c192MaICA1RSWKoCEFRoZXRhbi5SaXZhbHMuVjHKAhBUaGV0YW5cUml2YWxz",
-            "XFYx4gIcVGhldGFuXFJpdmFsc1xWMVxHUEJNZXRhZGF0YeoCElRoZXRhbjo6",
-            "Uml2YWxzOjpWMWIGcHJvdG8z"));
+            "IAEoBVILdXNlclJhbmtpbmcSPAoKaW5HYW1lTW9kZRgPIAEoDjIcLnRoZXRh",
+            "bi5zaGFyZWQudjEuSW5HYW1lTW9kZVIKaW5HYW1lTW9kZRIiCgx0b3VybmFt",
+            "ZW50SUQYECABKAlSDHRvdXJuYW1lbnRJRCLUAQoYUml2YWxQbGF5ZXJCYXR0",
+            "bGVFbmREYXRhEhoKCHBsYXllcklkGAEgASgJUghwbGF5ZXJJZBIeCgpiYXR0",
+            "bGVSYW5rGAIgASgFUgpiYXR0bGVSYW5rEhoKCG1pbmlvbklkGAMgASgJUght",
+            "aW5pb25JZBJKCg1jb3NtZXRpY1VzaW5nGAQgASgLMiQudGhldGFuLnNoYXJl",
+            "ZC52MS5Db3NtZXRpY1VzaW5nUHJvdG9SDWNvc21ldGljVXNpbmcSFAoFYnJh",
+            "aW4YBSABKAVSBWJyYWluQsMBChRjb20udGhldGFuLnJpdmFscy52MUIUUml2",
+            "YWxzQmF0dGxlRW5kUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFu",
+            "L3JpdmFscy92MTt0aGV0YW5fcml2YWxzX3YxogIDVFJYqgIQVGhldGFuLlJp",
+            "dmFscy5WMcoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5cUml2YWxzXFYx",
+            "XEdQQk1ldGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.GameInfoReflection.Descriptor, global::Thetan.Shared.V1.MatchReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RoundInfo), global::Thetan.Rivals.V1.RoundInfo.Parser, new[]{ "RoundId", "MapId", "DifficultLevel", "TimeInRound" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalBattleEndRequest), global::Thetan.Rivals.V1.RivalBattleEndRequest.Parser, new[]{ "MatchId", "GameMode", "InGameMode", "IsMvp", "Rank", "HasTripleKill", "HasMegaKill", "PlayerBattleEndData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalBattleLogMsg), global::Thetan.Rivals.V1.RivalBattleLogMsg.Parser, new[]{ "MatchId", "PlayerId", "TimeSubmit", "OperationSystem", "AppVersion", "TrophyReward", "Exp", "PlayerBattleEndData", "ListRoundInfo", "Country", "Battle", "TimeInBattle", "TrophyRank", "UserRanking", "MatchType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalBattleLogMsg), global::Thetan.Rivals.V1.RivalBattleLogMsg.Parser, new[]{ "MatchId", "PlayerId", "TimeSubmit", "OperationSystem", "AppVersion", "TrophyReward", "Exp", "PlayerBattleEndData", "ListRoundInfo", "Country", "Battle", "TimeInBattle", "TrophyRank", "UserRanking", "InGameMode", "TournamentID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalPlayerBattleEndData), global::Thetan.Rivals.V1.RivalPlayerBattleEndData.Parser, new[]{ "PlayerId", "BattleRank", "MinionId", "CosmeticUsing", "Brain" }, null, null, null, null)
           }));
     }
@@ -859,7 +860,8 @@ namespace Thetan.Rivals.V1 {
       timeInBattle_ = other.timeInBattle_;
       trophyRank_ = other.trophyRank_;
       userRanking_ = other.userRanking_;
-      matchType_ = other.matchType_;
+      inGameMode_ = other.inGameMode_;
+      tournamentID_ = other.tournamentID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1035,18 +1037,27 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
-    /// <summary>Field number for the "matchType" field.</summary>
-    public const int MatchTypeFieldNumber = 15;
-    private string matchType_ = "";
-    /// <summary>
-    /// "" = > danh thuong, "tournament_1" => tournament mua 1
-    /// </summary>
+    /// <summary>Field number for the "inGameMode" field.</summary>
+    public const int InGameModeFieldNumber = 15;
+    private global::Thetan.Shared.V1.InGameMode inGameMode_ = global::Thetan.Shared.V1.InGameMode.TeamCollectStar;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string MatchType {
-      get { return matchType_; }
+    public global::Thetan.Shared.V1.InGameMode InGameMode {
+      get { return inGameMode_; }
       set {
-        matchType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        inGameMode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tournamentID" field.</summary>
+    public const int TournamentIDFieldNumber = 16;
+    private string tournamentID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TournamentID {
+      get { return tournamentID_; }
+      set {
+        tournamentID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1079,7 +1090,8 @@ namespace Thetan.Rivals.V1 {
       if (TimeInBattle != other.TimeInBattle) return false;
       if (TrophyRank != other.TrophyRank) return false;
       if (UserRanking != other.UserRanking) return false;
-      if (MatchType != other.MatchType) return false;
+      if (InGameMode != other.InGameMode) return false;
+      if (TournamentID != other.TournamentID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1101,7 +1113,8 @@ namespace Thetan.Rivals.V1 {
       if (TimeInBattle != 0L) hash ^= TimeInBattle.GetHashCode();
       if (TrophyRank != 0) hash ^= TrophyRank.GetHashCode();
       if (UserRanking != 0) hash ^= UserRanking.GetHashCode();
-      if (MatchType.Length != 0) hash ^= MatchType.GetHashCode();
+      if (InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) hash ^= InGameMode.GetHashCode();
+      if (TournamentID.Length != 0) hash ^= TournamentID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1170,9 +1183,13 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(112);
         output.WriteInt32(UserRanking);
       }
-      if (MatchType.Length != 0) {
-        output.WriteRawTag(122);
-        output.WriteString(MatchType);
+      if (InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        output.WriteRawTag(120);
+        output.WriteEnum((int) InGameMode);
+      }
+      if (TournamentID.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(TournamentID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1234,9 +1251,13 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(112);
         output.WriteInt32(UserRanking);
       }
-      if (MatchType.Length != 0) {
-        output.WriteRawTag(122);
-        output.WriteString(MatchType);
+      if (InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        output.WriteRawTag(120);
+        output.WriteEnum((int) InGameMode);
+      }
+      if (TournamentID.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(TournamentID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1286,8 +1307,11 @@ namespace Thetan.Rivals.V1 {
       if (UserRanking != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserRanking);
       }
-      if (MatchType.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MatchType);
+      if (InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InGameMode);
+      }
+      if (TournamentID.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(TournamentID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1339,8 +1363,11 @@ namespace Thetan.Rivals.V1 {
       if (other.UserRanking != 0) {
         UserRanking = other.UserRanking;
       }
-      if (other.MatchType.Length != 0) {
-        MatchType = other.MatchType;
+      if (other.InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        InGameMode = other.InGameMode;
+      }
+      if (other.TournamentID.Length != 0) {
+        TournamentID = other.TournamentID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1413,8 +1440,12 @@ namespace Thetan.Rivals.V1 {
             UserRanking = input.ReadInt32();
             break;
           }
-          case 122: {
-            MatchType = input.ReadString();
+          case 120: {
+            InGameMode = (global::Thetan.Shared.V1.InGameMode) input.ReadEnum();
+            break;
+          }
+          case 130: {
+            TournamentID = input.ReadString();
             break;
           }
         }
@@ -1488,8 +1519,12 @@ namespace Thetan.Rivals.V1 {
             UserRanking = input.ReadInt32();
             break;
           }
-          case 122: {
-            MatchType = input.ReadString();
+          case 120: {
+            InGameMode = (global::Thetan.Shared.V1.InGameMode) input.ReadEnum();
+            break;
+          }
+          case 130: {
+            TournamentID = input.ReadString();
             break;
           }
         }
