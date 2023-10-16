@@ -19,12 +19,19 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
+      - uses: arduino/setup-protoc@v1
+
       - name: Run build script
         run: | 
           ./unity/increment_version.sh
           
           go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest
+          go install github.com/srikrsna/protoc-gen-gotag@latest
+
+          export PATH=${PATH}:`go env GOPATH`/bin
+
           buf generate proto
+          buf generate --template buf.gen.tag.yaml proto
           
           cp ./unity/package.json ./gen/csharp/package.json
           cp ./unity/Wolffun.Protobuf.asmdef ./gen/csharp/Wolffun.Protobuf.asmdef

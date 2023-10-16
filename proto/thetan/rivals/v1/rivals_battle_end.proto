@@ -42,7 +42,8 @@ message RivalBattleLogMsg {
   int64 timeInBattle = 12;
   int32 trophyRank = 13;
   int32 userRanking = 14;
-  string matchType = 15; // "" = > danh thuong, "tournament_1" => tournament mua 1
+  thetan.shared.v1.InGameMode inGameMode = 15;
+  string tournamentID = 16;
 }
 
 message RivalPlayerBattleEndData {

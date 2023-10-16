@@ -3,8 +3,10 @@ syntax = "proto3";
 package thetan.rivals.v1;
 
 import "thetan/shared/v1/match.proto";
-import "thetan/shared/v1/ugc.proto";
+import "thetan/shared/v1/customized.proto";
+import "thetan/rivals/v1/design_contest.proto";
 import "google/protobuf/empty.proto";
+import "tagger/tagger.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
 option csharp_namespace = "Thetan.Rivals.V1";
@@ -13,12 +15,18 @@ service ThetanRivalService {
   // Profile
   rpc GetUserProfile (UserProfileRequest) returns (UserProfileResponse) {}
   rpc GetProfile(ProfileRequest) returns (ProfileResponse) {}
+  rpc TrackFriendlyAct(FriendlyActRequest) returns (google.protobuf.Empty) {}
 
   // Minions
   rpc GetUserMinions(UserMinionsRequest) returns (UserMinionsResponse) {}
   rpc GetUserSelectedMinion (UserSelectedMinionRequest) returns (UserSelectedMinionResponse) {}
   rpc GetMinion(MinionRequest) returns (MinionResponse) {}
   rpc CreateMinion(CreateMinionRequest) returns (CreateMinionResponse) {}
+
+  // Cosmetics
+  rpc GetAddInsByUserID(GetAddInsByUserIDRequest) returns (GetAddInsByUserIDResponse) {}
+  rpc GetAddInByID(GetAddInByIDRequest) returns (GetAddInByIDResponse) {}
+  rpc CreateAddIn(CreateAddInRequest) returns (CreateAddInResponse) {}
 
   // Friends
   rpc GetListFriends(GetUserFriendRequest) returns (GetUserFriendResponse) {}
@@ -27,7 +35,7 @@ service ThetanRivalService {
   // Lobby
   rpc GetLatestLobbyActivityInfo(GetActivityRequest) returns (GetActivityResponse) {}
   rpc GetTownUser(GetTownUserRequest) returns (LobbyTown) {}
-  rpc PickTownForUser(PickTownUserRequest) returns (EmptyResponse) {}
+  rpc GetTownByID(GetTownRequest) returns (LobbyTown) {}
 
   // Track Action
   rpc TrackSession(TrackSessionRequest) returns (TrackSessionResponse) {}
@@ -43,6 +51,10 @@ service ThetanRivalService {
   rpc GetActiveTournaments(GetActiveTournamentsRequest) returns (GetActiveTournamentsResponse) {}
   rpc GetFindMatchInfoForTournament(FindMatchInfoForTournamentRequest) returns (FindMatchInfoForTournamentResponse) {}
   rpc MatchFoundTournament(MatchFoundTournamentRequest) returns (MatchFoundTournamentResponse) {}
+
+  // Design contest
+  rpc PublishDesign(PublishDesignRequest) returns (PublishDesignResponse) {}
+  rpc GetContestDesigns(GetContestDesignsRequest) returns (GetContestDesignsResponse) {}
 }
 
 message MatchFoundTournamentRequest {
@@ -104,12 +116,12 @@ message MapInfo {
   int32 mapDifficulty = 2;
 }
 
-message EmptyResponse {}
 // ==== PROFILE ====
 
 message UserProfileRequest {
   string userId = 1;
   bool withRanking = 2;
+  bool withGuild = 3;
 }
 
 message UserProfileResponse {
@@ -120,6 +132,11 @@ message UserProfileResponse {
   int32 nameColor = 7;
   string country = 5;
   UserProfileRank rank = 6;
+  GuildInfo guild = 8;
+  int32 guildRole = 9;
+
+  int32 activityRole = 10;
+  string townID = 11;
 }
 
 message UserProfileRank {
@@ -127,10 +144,22 @@ message UserProfileRank {
   int32 rankLevel = 2;
 }
 
+message FriendlyActRequest {
+  enum FriendlyActEnum {
+    None = 0;
+    Hug = 1;
+    Talk = 2;
+    GameInParty = 3;
+  }
+  repeated string userIDs = 1;
+  FriendlyActEnum type = 2;
+}
+
 // ==== MINIONS ====
 
 message UserSelectedMinionRequest {
   string userId = 1;
+  optional bool needInfoCustomized = 2;
 }
 
 message UserSelectedMinionResponse {
@@ -141,7 +170,9 @@ message UserSelectedMinionResponse {
   bool nft = 5;
   int32 level = 6;
   map<string, int64> addIns = 7;
-  thetan.shared.v1.HeroCustomized customized = 10;
+  map<string, string> addInIDs = 11;
+  map<string, thetan.shared.v1.Customized> addInCustomizes = 12; // co the co hoac khong, tuy theo yeu cau
+  thetan.shared.v1.Customized customized = 10;
   int64 updatedAt = 8;
   int64 createdAt = 9;
 }
@@ -149,6 +180,7 @@ message UserSelectedMinionResponse {
 message UserMinionsRequest {
   string userId = 1;
   optional int32 gameType = 2;
+  optional bool needInfoCustomized = 3;
 }
 
 message UserMinionsResponse {
@@ -163,13 +195,16 @@ message Minion {
   bool nft = 5;
   int32 level = 6;
   map<string, int64> addIns = 7;
-  thetan.shared.v1.HeroCustomized customized = 10;
+  map<string, string> addInIDs = 11;
+  map<string, thetan.shared.v1.Customized> addInCustomizes = 12; // co the co hoac khong, tuy theo yeu cau
+  thetan.shared.v1.Customized customized = 10;
   int64 updatedAt = 8;
   int64 createdAt = 9;
 }
 
 message MinionRequest {
   string minionID = 1;
+  optional bool needInfoCustomized = 2;
 }
 
 message MinionResponse {
@@ -185,6 +220,49 @@ message CreateMinionRequest {
 
 message CreateMinionResponse {
   Minion minion = 1;
+}
+
+// ==== COSMETICS ====
+
+message AddIn {
+  string id = 1;
+  string userID = 2;
+  int32 addInID = 3;
+  string addInType = 4;
+  string usedByMinionID = 5;
+  bool nft = 6;
+  int32 status = 7;
+  string tokenID = 8;
+  int64 updatedAt = 9;
+  int64 createdAt = 10;
+  thetan.shared.v1.Customized customized = 11;
+}
+
+message GetAddInsByUserIDRequest {
+  string userID = 1;
+}
+
+message GetAddInsByUserIDResponse {
+  repeated AddIn addIns = 1;
+}
+
+message GetAddInByIDRequest {
+  string addInID = 1;
+}
+
+message GetAddInByIDResponse {
+  AddIn addIn = 1;
+}
+
+message CreateAddInRequest {
+  string userID = 1;
+  int32 addInID = 2;
+  int32 sourceGame = 3;
+  int32 sourceFeature = 4;
+}
+
+message CreateAddInResponse {
+  AddIn addIn = 1;
 }
 
 // ==== FRIENDS ====
@@ -219,6 +297,7 @@ message GetMatchInfoRequest {
 
   string operationSystem = 3;
   string appVersion = 4;
+  repeated int32 regions = 5;
 }
 
 message GetMatchInfoResponse {
@@ -292,10 +371,33 @@ message LobbyTown {
 
   int32 townLanguage = 7;
   double townScore = 8;
+
+  repeated LotInfo lots = 9;
 }
 
-message PickTownUserRequest {
-  string userID = 1;
+message LotInfo {
+  int32 lotID = 1;
+  GuildInfo guildRent = 2;
+  int64 rentExpired = 3;
+}
+
+message GuildInfo {
+  string id = 1;
+  string guildName = 2;
+  string guildMotto = 3;
+  int32 icon = 4;
+  int32 guildType = 5;
+  int32 requiredTrophy = 6;
+  map<uint32, DecoInfo> selectedDeco = 7;
+}
+
+message DecoInfo {
+  string id = 1;
+  uint32 decoID = 2;
+  thetan.shared.v1.Customized customized = 3;
+}
+
+message GetTownRequest {
   string townID = 2;
 }
 
@@ -347,3 +449,28 @@ message Profile {
   int32 curStreak = 5;
   int32 winRound = 6;
 }
+
+// ============== Design Contest ==============
+
+message PublishDesignRequest {
+  string userID = 1;
+  string contestID = 2;
+  thetan.shared.v1.ItemCustomized item = 3;
+}
+
+message PublishDesignResponse {
+}
+
+message GetContestDesignsRequest {
+  string userID = 1;
+}
+
+message GetContestDesignsResponse {
+  repeated ContestDesign contestDesigns = 1;
+
+  message ContestDesign {
+    string contestID = 1;
+    repeated thetan.rivals.v1.Design designs = 2;
+  }
+}
+

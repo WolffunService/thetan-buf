@@ -22,15 +22,19 @@ const _ = grpc.SupportPackageIsVersion7
 const (
 	ThetanRivalService_GetUserProfile_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserProfile"
 	ThetanRivalService_GetProfile_FullMethodName                    = "/thetan.rivals.v1.ThetanRivalService/GetProfile"
+	ThetanRivalService_TrackFriendlyAct_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/TrackFriendlyAct"
 	ThetanRivalService_GetUserMinions_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserMinions"
 	ThetanRivalService_GetUserSelectedMinion_FullMethodName         = "/thetan.rivals.v1.ThetanRivalService/GetUserSelectedMinion"
 	ThetanRivalService_GetMinion_FullMethodName                     = "/thetan.rivals.v1.ThetanRivalService/GetMinion"
 	ThetanRivalService_CreateMinion_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/CreateMinion"
+	ThetanRivalService_GetAddInsByUserID_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetAddInsByUserID"
+	ThetanRivalService_GetAddInByID_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/GetAddInByID"
+	ThetanRivalService_CreateAddIn_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/CreateAddIn"
 	ThetanRivalService_GetListFriends_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetListFriends"
 	ThetanRivalService_GetMatchInfoOnboarding_FullMethodName        = "/thetan.rivals.v1.ThetanRivalService/GetMatchInfoOnboarding"
 	ThetanRivalService_GetLatestLobbyActivityInfo_FullMethodName    = "/thetan.rivals.v1.ThetanRivalService/GetLatestLobbyActivityInfo"
 	ThetanRivalService_GetTownUser_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownUser"
-	ThetanRivalService_PickTownForUser_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/PickTownForUser"
+	ThetanRivalService_GetTownByID_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownByID"
 	ThetanRivalService_TrackSession_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/TrackSession"
 	ThetanRivalService_TrackSessionLobby_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/TrackSessionLobby"
 	ThetanRivalService_GetFindMatchInfo_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
@@ -38,6 +42,8 @@ const (
 	ThetanRivalService_GetActiveTournaments_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/GetActiveTournaments"
 	ThetanRivalService_GetFindMatchInfoForTournament_FullMethodName = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfoForTournament"
 	ThetanRivalService_MatchFoundTournament_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/MatchFoundTournament"
+	ThetanRivalService_PublishDesign_FullMethodName                 = "/thetan.rivals.v1.ThetanRivalService/PublishDesign"
+	ThetanRivalService_GetContestDesigns_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetContestDesigns"
 )
 
 // ThetanRivalServiceClient is the client API for ThetanRivalService service.
@@ -47,18 +53,23 @@ type ThetanRivalServiceClient interface {
 	// Profile
 	GetUserProfile(ctx context.Context, in *UserProfileRequest, opts ...grpc.CallOption) (*UserProfileResponse, error)
 	GetProfile(ctx context.Context, in *ProfileRequest, opts ...grpc.CallOption) (*ProfileResponse, error)
+	TrackFriendlyAct(ctx context.Context, in *FriendlyActRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	// Minions
 	GetUserMinions(ctx context.Context, in *UserMinionsRequest, opts ...grpc.CallOption) (*UserMinionsResponse, error)
 	GetUserSelectedMinion(ctx context.Context, in *UserSelectedMinionRequest, opts ...grpc.CallOption) (*UserSelectedMinionResponse, error)
 	GetMinion(ctx context.Context, in *MinionRequest, opts ...grpc.CallOption) (*MinionResponse, error)
 	CreateMinion(ctx context.Context, in *CreateMinionRequest, opts ...grpc.CallOption) (*CreateMinionResponse, error)
+	// Cosmetics
+	GetAddInsByUserID(ctx context.Context, in *GetAddInsByUserIDRequest, opts ...grpc.CallOption) (*GetAddInsByUserIDResponse, error)
+	GetAddInByID(ctx context.Context, in *GetAddInByIDRequest, opts ...grpc.CallOption) (*GetAddInByIDResponse, error)
+	CreateAddIn(ctx context.Context, in *CreateAddInRequest, opts ...grpc.CallOption) (*CreateAddInResponse, error)
 	// Friends
 	GetListFriends(ctx context.Context, in *GetUserFriendRequest, opts ...grpc.CallOption) (*GetUserFriendResponse, error)
 	GetMatchInfoOnboarding(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*GetMatchInfoResponse, error)
 	// Lobby
 	GetLatestLobbyActivityInfo(ctx context.Context, in *GetActivityRequest, opts ...grpc.CallOption) (*GetActivityResponse, error)
 	GetTownUser(ctx context.Context, in *GetTownUserRequest, opts ...grpc.CallOption) (*LobbyTown, error)
-	PickTownForUser(ctx context.Context, in *PickTownUserRequest, opts ...grpc.CallOption) (*EmptyResponse, error)
+	GetTownByID(ctx context.Context, in *GetTownRequest, opts ...grpc.CallOption) (*LobbyTown, error)
 	// Track Action
 	TrackSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error)
 	TrackSessionLobby(ctx context.Context, in *TrackSessionLobbyRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
@@ -70,6 +81,9 @@ type ThetanRivalServiceClient interface {
 	GetActiveTournaments(ctx context.Context, in *GetActiveTournamentsRequest, opts ...grpc.CallOption) (*GetActiveTournamentsResponse, error)
 	GetFindMatchInfoForTournament(ctx context.Context, in *FindMatchInfoForTournamentRequest, opts ...grpc.CallOption) (*FindMatchInfoForTournamentResponse, error)
 	MatchFoundTournament(ctx context.Context, in *MatchFoundTournamentRequest, opts ...grpc.CallOption) (*MatchFoundTournamentResponse, error)
+	// Design contest
+	PublishDesign(ctx context.Context, in *PublishDesignRequest, opts ...grpc.CallOption) (*PublishDesignResponse, error)
+	GetContestDesigns(ctx context.Context, in *GetContestDesignsRequest, opts ...grpc.CallOption) (*GetContestDesignsResponse, error)
 }
 
 type thetanRivalServiceClient struct {
@@ -92,6 +106,15 @@ func (c *thetanRivalServiceClient) GetUserProfile(ctx context.Context, in *UserP
 func (c *thetanRivalServiceClient) GetProfile(ctx context.Context, in *ProfileRequest, opts ...grpc.CallOption) (*ProfileResponse, error) {
 	out := new(ProfileResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetProfile_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) TrackFriendlyAct(ctx context.Context, in *FriendlyActRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+	out := new(emptypb.Empty)
+	err := c.cc.Invoke(ctx, ThetanRivalService_TrackFriendlyAct_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -134,6 +157,33 @@ func (c *thetanRivalServiceClient) CreateMinion(ctx context.Context, in *CreateM
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) GetAddInsByUserID(ctx context.Context, in *GetAddInsByUserIDRequest, opts ...grpc.CallOption) (*GetAddInsByUserIDResponse, error) {
+	out := new(GetAddInsByUserIDResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetAddInsByUserID_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) GetAddInByID(ctx context.Context, in *GetAddInByIDRequest, opts ...grpc.CallOption) (*GetAddInByIDResponse, error) {
+	out := new(GetAddInByIDResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetAddInByID_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) CreateAddIn(ctx context.Context, in *CreateAddInRequest, opts ...grpc.CallOption) (*CreateAddInResponse, error) {
+	out := new(CreateAddInResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_CreateAddIn_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 func (c *thetanRivalServiceClient) GetListFriends(ctx context.Context, in *GetUserFriendRequest, opts ...grpc.CallOption) (*GetUserFriendResponse, error) {
 	out := new(GetUserFriendResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetListFriends_FullMethodName, in, out, opts...)
@@ -170,9 +220,9 @@ func (c *thetanRivalServiceClient) GetTownUser(ctx context.Context, in *GetTownU
 	return out, nil
 }
 
-func (c *thetanRivalServiceClient) PickTownForUser(ctx context.Context, in *PickTownUserRequest, opts ...grpc.CallOption) (*EmptyResponse, error) {
-	out := new(EmptyResponse)
-	err := c.cc.Invoke(ctx, ThetanRivalService_PickTownForUser_FullMethodName, in, out, opts...)
+func (c *thetanRivalServiceClient) GetTownByID(ctx context.Context, in *GetTownRequest, opts ...grpc.CallOption) (*LobbyTown, error) {
+	out := new(LobbyTown)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetTownByID_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -242,6 +292,24 @@ func (c *thetanRivalServiceClient) MatchFoundTournament(ctx context.Context, in 
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) PublishDesign(ctx context.Context, in *PublishDesignRequest, opts ...grpc.CallOption) (*PublishDesignResponse, error) {
+	out := new(PublishDesignResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_PublishDesign_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) GetContestDesigns(ctx context.Context, in *GetContestDesignsRequest, opts ...grpc.CallOption) (*GetContestDesignsResponse, error) {
+	out := new(GetContestDesignsResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetContestDesigns_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanRivalServiceServer is the server API for ThetanRivalService service.
 // All implementations must embed UnimplementedThetanRivalServiceServer
 // for forward compatibility
@@ -249,18 +317,23 @@ type ThetanRivalServiceServer interface {
 	// Profile
 	GetUserProfile(context.Context, *UserProfileRequest) (*UserProfileResponse, error)
 	GetProfile(context.Context, *ProfileRequest) (*ProfileResponse, error)
+	TrackFriendlyAct(context.Context, *FriendlyActRequest) (*emptypb.Empty, error)
 	// Minions
 	GetUserMinions(context.Context, *UserMinionsRequest) (*UserMinionsResponse, error)
 	GetUserSelectedMinion(context.Context, *UserSelectedMinionRequest) (*UserSelectedMinionResponse, error)
 	GetMinion(context.Context, *MinionRequest) (*MinionResponse, error)
 	CreateMinion(context.Context, *CreateMinionRequest) (*CreateMinionResponse, error)
+	// Cosmetics
+	GetAddInsByUserID(context.Context, *GetAddInsByUserIDRequest) (*GetAddInsByUserIDResponse, error)
+	GetAddInByID(context.Context, *GetAddInByIDRequest) (*GetAddInByIDResponse, error)
+	CreateAddIn(context.Context, *CreateAddInRequest) (*CreateAddInResponse, error)
 	// Friends
 	GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error)
 	GetMatchInfoOnboarding(context.Context, *GetMatchInfoRequest) (*GetMatchInfoResponse, error)
 	// Lobby
 	GetLatestLobbyActivityInfo(context.Context, *GetActivityRequest) (*GetActivityResponse, error)
 	GetTownUser(context.Context, *GetTownUserRequest) (*LobbyTown, error)
-	PickTownForUser(context.Context, *PickTownUserRequest) (*EmptyResponse, error)
+	GetTownByID(context.Context, *GetTownRequest) (*LobbyTown, error)
 	// Track Action
 	TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error)
 	TrackSessionLobby(context.Context, *TrackSessionLobbyRequest) (*emptypb.Empty, error)
@@ -272,6 +345,9 @@ type ThetanRivalServiceServer interface {
 	GetActiveTournaments(context.Context, *GetActiveTournamentsRequest) (*GetActiveTournamentsResponse, error)
 	GetFindMatchInfoForTournament(context.Context, *FindMatchInfoForTournamentRequest) (*FindMatchInfoForTournamentResponse, error)
 	MatchFoundTournament(context.Context, *MatchFoundTournamentRequest) (*MatchFoundTournamentResponse, error)
+	// Design contest
+	PublishDesign(context.Context, *PublishDesignRequest) (*PublishDesignResponse, error)
+	GetContestDesigns(context.Context, *GetContestDesignsRequest) (*GetContestDesignsResponse, error)
 	mustEmbedUnimplementedThetanRivalServiceServer()
 }
 
@@ -285,6 +361,9 @@ func (UnimplementedThetanRivalServiceServer) GetUserProfile(context.Context, *Us
 func (UnimplementedThetanRivalServiceServer) GetProfile(context.Context, *ProfileRequest) (*ProfileResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetProfile not implemented")
 }
+func (UnimplementedThetanRivalServiceServer) TrackFriendlyAct(context.Context, *FriendlyActRequest) (*emptypb.Empty, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method TrackFriendlyAct not implemented")
+}
 func (UnimplementedThetanRivalServiceServer) GetUserMinions(context.Context, *UserMinionsRequest) (*UserMinionsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetUserMinions not implemented")
 }
@@ -296,6 +375,15 @@ func (UnimplementedThetanRivalServiceServer) GetMinion(context.Context, *MinionR
 }
 func (UnimplementedThetanRivalServiceServer) CreateMinion(context.Context, *CreateMinionRequest) (*CreateMinionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateMinion not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetAddInsByUserID(context.Context, *GetAddInsByUserIDRequest) (*GetAddInsByUserIDResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetAddInsByUserID not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetAddInByID(context.Context, *GetAddInByIDRequest) (*GetAddInByIDResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetAddInByID not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) CreateAddIn(context.Context, *CreateAddInRequest) (*CreateAddInResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateAddIn not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetListFriends not implemented")
@@ -309,8 +397,8 @@ func (UnimplementedThetanRivalServiceServer) GetLatestLobbyActivityInfo(context.
 func (UnimplementedThetanRivalServiceServer) GetTownUser(context.Context, *GetTownUserRequest) (*LobbyTown, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTownUser not implemented")
 }
-func (UnimplementedThetanRivalServiceServer) PickTownForUser(context.Context, *PickTownUserRequest) (*EmptyResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method PickTownForUser not implemented")
+func (UnimplementedThetanRivalServiceServer) GetTownByID(context.Context, *GetTownRequest) (*LobbyTown, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetTownByID not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TrackSession not implemented")
@@ -332,6 +420,12 @@ func (UnimplementedThetanRivalServiceServer) GetFindMatchInfoForTournament(conte
 }
 func (UnimplementedThetanRivalServiceServer) MatchFoundTournament(context.Context, *MatchFoundTournamentRequest) (*MatchFoundTournamentResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method MatchFoundTournament not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) PublishDesign(context.Context, *PublishDesignRequest) (*PublishDesignResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method PublishDesign not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetContestDesigns(context.Context, *GetContestDesignsRequest) (*GetContestDesignsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetContestDesigns not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) mustEmbedUnimplementedThetanRivalServiceServer() {}
 
@@ -378,6 +472,24 @@ func _ThetanRivalService_GetProfile_Handler(srv interface{}, ctx context.Context
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ThetanRivalServiceServer).GetProfile(ctx, req.(*ProfileRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_TrackFriendlyAct_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(FriendlyActRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).TrackFriendlyAct(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_TrackFriendlyAct_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).TrackFriendlyAct(ctx, req.(*FriendlyActRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -454,6 +566,60 @@ func _ThetanRivalService_CreateMinion_Handler(srv interface{}, ctx context.Conte
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_GetAddInsByUserID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetAddInsByUserIDRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetAddInsByUserID(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetAddInsByUserID_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetAddInsByUserID(ctx, req.(*GetAddInsByUserIDRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_GetAddInByID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetAddInByIDRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetAddInByID(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetAddInByID_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetAddInByID(ctx, req.(*GetAddInByIDRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_CreateAddIn_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CreateAddInRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).CreateAddIn(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_CreateAddIn_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).CreateAddIn(ctx, req.(*CreateAddInRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _ThetanRivalService_GetListFriends_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(GetUserFriendRequest)
 	if err := dec(in); err != nil {
@@ -526,20 +692,20 @@ func _ThetanRivalService_GetTownUser_Handler(srv interface{}, ctx context.Contex
 	return interceptor(ctx, in, info, handler)
 }
 
-func _ThetanRivalService_PickTownForUser_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(PickTownUserRequest)
+func _ThetanRivalService_GetTownByID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetTownRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ThetanRivalServiceServer).PickTownForUser(ctx, in)
+		return srv.(ThetanRivalServiceServer).GetTownByID(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: ThetanRivalService_PickTownForUser_FullMethodName,
+		FullMethod: ThetanRivalService_GetTownByID_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanRivalServiceServer).PickTownForUser(ctx, req.(*PickTownUserRequest))
+		return srv.(ThetanRivalServiceServer).GetTownByID(ctx, req.(*GetTownRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -670,6 +836,42 @@ func _ThetanRivalService_MatchFoundTournament_Handler(srv interface{}, ctx conte
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_PublishDesign_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(PublishDesignRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).PublishDesign(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_PublishDesign_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).PublishDesign(ctx, req.(*PublishDesignRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_GetContestDesigns_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetContestDesignsRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetContestDesigns(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetContestDesigns_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetContestDesigns(ctx, req.(*GetContestDesignsRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanRivalService_ServiceDesc is the grpc.ServiceDesc for ThetanRivalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -684,6 +886,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetProfile",
 			Handler:    _ThetanRivalService_GetProfile_Handler,
+		},
+		{
+			MethodName: "TrackFriendlyAct",
+			Handler:    _ThetanRivalService_TrackFriendlyAct_Handler,
 		},
 		{
 			MethodName: "GetUserMinions",
@@ -702,6 +908,18 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _ThetanRivalService_CreateMinion_Handler,
 		},
 		{
+			MethodName: "GetAddInsByUserID",
+			Handler:    _ThetanRivalService_GetAddInsByUserID_Handler,
+		},
+		{
+			MethodName: "GetAddInByID",
+			Handler:    _ThetanRivalService_GetAddInByID_Handler,
+		},
+		{
+			MethodName: "CreateAddIn",
+			Handler:    _ThetanRivalService_CreateAddIn_Handler,
+		},
+		{
 			MethodName: "GetListFriends",
 			Handler:    _ThetanRivalService_GetListFriends_Handler,
 		},
@@ -718,8 +936,8 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _ThetanRivalService_GetTownUser_Handler,
 		},
 		{
-			MethodName: "PickTownForUser",
-			Handler:    _ThetanRivalService_PickTownForUser_Handler,
+			MethodName: "GetTownByID",
+			Handler:    _ThetanRivalService_GetTownByID_Handler,
 		},
 		{
 			MethodName: "TrackSession",
@@ -748,6 +966,14 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "MatchFoundTournament",
 			Handler:    _ThetanRivalService_MatchFoundTournament_Handler,
+		},
+		{
+			MethodName: "PublishDesign",
+			Handler:    _ThetanRivalService_PublishDesign_Handler,
+		},
+		{
+			MethodName: "GetContestDesigns",
+			Handler:    _ThetanRivalService_GetContestDesigns_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
