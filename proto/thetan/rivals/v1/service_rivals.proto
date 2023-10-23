@@ -373,6 +373,10 @@ message LobbyTown {
   double townScore = 8;
 
   repeated LotInfo lots = 9;
+
+  int32 townCCU = 10;
+  int32 peak24hCCU = 11;
+  int32 bottom24hCCU = 12;
 }
 
 message LotInfo {
