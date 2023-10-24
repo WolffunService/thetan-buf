@@ -3,6 +3,7 @@ syntax = "proto3";
 package thetan.rivals.v1;
 
 import "thetan/shared/v1/match.proto";
+import "thetan/shared/v1/game_info.proto";
 import "thetan/shared/v1/customized.proto";
 import "thetan/rivals/v1/design_contest.proto";
 import "google/protobuf/empty.proto";
@@ -420,6 +421,7 @@ message TrackSessionResponse {
 
 message FindMatchInfoRequest {
   repeated string playersID = 1;
+  thetan.shared.v1.InGameMode inGameMode = 2;
 }
 
 message FindMatchInfoResponse {
