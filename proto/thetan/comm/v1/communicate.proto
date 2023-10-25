@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package thetan.comm.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/comm/v1;thetan_comm_v1";
+option csharp_namespace = "Thetan.Comm.V1";
+
+message CreatorAddItemRequest {
+  string userID = 1;
+  int32 kind = 2;
+  int32 type = 3;
+  int32 amount = 4;
+  int32 source = 5;
+  int32 reqFromGameID = 6;
+}
+
+message CreatorAddItemResponse {
+}
