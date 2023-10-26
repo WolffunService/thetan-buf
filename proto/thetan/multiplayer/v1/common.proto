@@ -48,6 +48,7 @@ message PartyInfoProto {
   map<string, PlayerInfoProto> members = 4;
   PartyStatus status = 5;
   int64 findmatchVersion = 6;
+  thetan.shared.v1.InGameMode inGameMode = 7;
 
   // tùy từng game mà cục nay có thể khác nhau
   bytes gameData = 99;
