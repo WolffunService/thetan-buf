@@ -147,11 +147,14 @@ enum PlayerStatus {
   //...
 }
 
+message SetInGameModeMsg{
+  thetan.shared.v1.InGameMode inGameMode = 1;
+}
+
 message ReadyMsg{
   bool isReady = 1;//ready or cancel ready
   string tournamentID = 2; // use for tournament find match
   repeated int32 regions = 3;
-  thetan.shared.v1.InGameMode inGameMode = 4;
 }
 
 message SetDNDMsg {
