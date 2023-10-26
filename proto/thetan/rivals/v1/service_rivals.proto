@@ -36,6 +36,7 @@ service ThetanRivalService {
   rpc GetLatestLobbyActivityInfo(GetActivityRequest) returns (GetActivityResponse) {}
   rpc GetTownUser(GetTownUserRequest) returns (LobbyTown) {}
   rpc GetTownByID(GetTownRequest) returns (LobbyTown) {}
+  rpc JoinTown(JoinTownRequest) returns (LobbyTown) {}
 
   // Track Action
   rpc TrackSession(TrackSessionRequest) returns (TrackSessionResponse) {}
@@ -354,9 +355,15 @@ message SimpleItem {
 }
 
 message GetTownUserRequest {
+  enum GetTownUserType {
+    Default = 0;
+    BackHomeTown  = 1;
+  }
+
   string userID = 1;
   int32 userLanguage = 2;
   int32 userAge = 3;
+  GetTownUserType type = 4; 
 }
 
 message LobbyTown {
@@ -403,6 +410,17 @@ message DecoInfo {
 
 message GetTownRequest {
   string townID = 2;
+}
+
+message JoinTownRequest {
+  enum JoinTownType {
+    Visit = 0;
+    Migrate = 1;  
+  }
+
+  string userID = 1;
+  string townID = 2;
+  JoinTownType joinTownType = 3;
 }
 
 // ========== TrackActionRequest ==========
