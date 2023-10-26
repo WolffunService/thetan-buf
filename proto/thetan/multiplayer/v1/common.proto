@@ -152,6 +152,11 @@ message SetInGameModeMsg{
   thetan.shared.v1.InGameMode inGameMode = 1;
 }
 
+message OtherSetInGameModeMsg{
+  string playerID = 1;
+  thetan.shared.v1.InGameMode inGameMode = 2;
+}
+
 message ReadyMsg{
   bool isReady = 1;//ready or cancel ready
   string tournamentID = 2; // use for tournament find match
