@@ -21,9 +21,9 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ThetanGatewayRivalsLobby_AllocateTown_FullMethodName       = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/AllocateTown"
-	ThetanGatewayRivalsLobby_GetTownCCU_FullMethodName         = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/GetTownCCU"
-	ThetanGatewayRivalsLobby_GetAvailbleRegions_FullMethodName = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/GetAvailbleRegions"
+	ThetanGatewayRivalsLobby_AllocateTown_FullMethodName        = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/AllocateTown"
+	ThetanGatewayRivalsLobby_GetTownCCU_FullMethodName          = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/GetTownCCU"
+	ThetanGatewayRivalsLobby_GetAvailableRegions_FullMethodName = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/GetAvailableRegions"
 )
 
 // ThetanGatewayRivalsLobbyClient is the client API for ThetanGatewayRivalsLobby service.
@@ -32,7 +32,7 @@ const (
 type ThetanGatewayRivalsLobbyClient interface {
 	AllocateTown(ctx context.Context, in *v1.LobbyTown, opts ...grpc.CallOption) (*TownAllocationResp, error)
 	GetTownCCU(ctx context.Context, in *GetTownCCURequest, opts ...grpc.CallOption) (*GetTownCCUResponse, error)
-	GetAvailbleRegions(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*AvailableRegionsResponse, error)
+	GetAvailableRegions(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*AvailableRegionsResponse, error)
 }
 
 type thetanGatewayRivalsLobbyClient struct {
@@ -61,9 +61,9 @@ func (c *thetanGatewayRivalsLobbyClient) GetTownCCU(ctx context.Context, in *Get
 	return out, nil
 }
 
-func (c *thetanGatewayRivalsLobbyClient) GetAvailbleRegions(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*AvailableRegionsResponse, error) {
+func (c *thetanGatewayRivalsLobbyClient) GetAvailableRegions(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*AvailableRegionsResponse, error) {
 	out := new(AvailableRegionsResponse)
-	err := c.cc.Invoke(ctx, ThetanGatewayRivalsLobby_GetAvailbleRegions_FullMethodName, in, out, opts...)
+	err := c.cc.Invoke(ctx, ThetanGatewayRivalsLobby_GetAvailableRegions_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -76,7 +76,7 @@ func (c *thetanGatewayRivalsLobbyClient) GetAvailbleRegions(ctx context.Context,
 type ThetanGatewayRivalsLobbyServer interface {
 	AllocateTown(context.Context, *v1.LobbyTown) (*TownAllocationResp, error)
 	GetTownCCU(context.Context, *GetTownCCURequest) (*GetTownCCUResponse, error)
-	GetAvailbleRegions(context.Context, *emptypb.Empty) (*AvailableRegionsResponse, error)
+	GetAvailableRegions(context.Context, *emptypb.Empty) (*AvailableRegionsResponse, error)
 	mustEmbedUnimplementedThetanGatewayRivalsLobbyServer()
 }
 
@@ -90,8 +90,8 @@ func (UnimplementedThetanGatewayRivalsLobbyServer) AllocateTown(context.Context,
 func (UnimplementedThetanGatewayRivalsLobbyServer) GetTownCCU(context.Context, *GetTownCCURequest) (*GetTownCCUResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTownCCU not implemented")
 }
-func (UnimplementedThetanGatewayRivalsLobbyServer) GetAvailbleRegions(context.Context, *emptypb.Empty) (*AvailableRegionsResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetAvailbleRegions not implemented")
+func (UnimplementedThetanGatewayRivalsLobbyServer) GetAvailableRegions(context.Context, *emptypb.Empty) (*AvailableRegionsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetAvailableRegions not implemented")
 }
 func (UnimplementedThetanGatewayRivalsLobbyServer) mustEmbedUnimplementedThetanGatewayRivalsLobbyServer() {
 }
@@ -143,20 +143,20 @@ func _ThetanGatewayRivalsLobby_GetTownCCU_Handler(srv interface{}, ctx context.C
 	return interceptor(ctx, in, info, handler)
 }
 
-func _ThetanGatewayRivalsLobby_GetAvailbleRegions_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _ThetanGatewayRivalsLobby_GetAvailableRegions_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(emptypb.Empty)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ThetanGatewayRivalsLobbyServer).GetAvailbleRegions(ctx, in)
+		return srv.(ThetanGatewayRivalsLobbyServer).GetAvailableRegions(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: ThetanGatewayRivalsLobby_GetAvailbleRegions_FullMethodName,
+		FullMethod: ThetanGatewayRivalsLobby_GetAvailableRegions_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanGatewayRivalsLobbyServer).GetAvailbleRegions(ctx, req.(*emptypb.Empty))
+		return srv.(ThetanGatewayRivalsLobbyServer).GetAvailableRegions(ctx, req.(*emptypb.Empty))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -177,8 +177,8 @@ var ThetanGatewayRivalsLobby_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _ThetanGatewayRivalsLobby_GetTownCCU_Handler,
 		},
 		{
-			MethodName: "GetAvailbleRegions",
-			Handler:    _ThetanGatewayRivalsLobby_GetAvailbleRegions_Handler,
+			MethodName: "GetAvailableRegions",
+			Handler:    _ThetanGatewayRivalsLobby_GetAvailableRegions_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

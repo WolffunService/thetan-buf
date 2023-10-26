@@ -13,7 +13,7 @@ service ThetanGatewayRivalsLobby {
 
   rpc GetTownCCU(GetTownCCURequest) returns (GetTownCCUResponse) {}
 
-  rpc GetAvailbleRegions(google.protobuf.Empty) returns (AvailableRegionsResponse) {}
+  rpc GetAvailableRegions(google.protobuf.Empty) returns (AvailableRegionsResponse) {}
 }
 
 message GetTownCCURequest {
