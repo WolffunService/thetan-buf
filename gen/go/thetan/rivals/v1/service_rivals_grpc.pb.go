@@ -44,6 +44,7 @@ const (
 	ThetanRivalService_MatchFoundTournament_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/MatchFoundTournament"
 	ThetanRivalService_PublishDesign_FullMethodName                 = "/thetan.rivals.v1.ThetanRivalService/PublishDesign"
 	ThetanRivalService_GetContestDesigns_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetContestDesigns"
+	ThetanRivalService_SearchGameMode_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/SearchGameMode"
 )
 
 // ThetanRivalServiceClient is the client API for ThetanRivalService service.
@@ -84,6 +85,8 @@ type ThetanRivalServiceClient interface {
 	// Design contest
 	PublishDesign(ctx context.Context, in *PublishDesignRequest, opts ...grpc.CallOption) (*PublishDesignResponse, error)
 	GetContestDesigns(ctx context.Context, in *GetContestDesignsRequest, opts ...grpc.CallOption) (*GetContestDesignsResponse, error)
+	// Game mode
+	SearchGameMode(ctx context.Context, in *SearchGameModeRequest, opts ...grpc.CallOption) (*SearchGameModeResponse, error)
 }
 
 type thetanRivalServiceClient struct {
@@ -310,6 +313,15 @@ func (c *thetanRivalServiceClient) GetContestDesigns(ctx context.Context, in *Ge
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) SearchGameMode(ctx context.Context, in *SearchGameModeRequest, opts ...grpc.CallOption) (*SearchGameModeResponse, error) {
+	out := new(SearchGameModeResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_SearchGameMode_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanRivalServiceServer is the server API for ThetanRivalService service.
 // All implementations must embed UnimplementedThetanRivalServiceServer
 // for forward compatibility
@@ -348,6 +360,8 @@ type ThetanRivalServiceServer interface {
 	// Design contest
 	PublishDesign(context.Context, *PublishDesignRequest) (*PublishDesignResponse, error)
 	GetContestDesigns(context.Context, *GetContestDesignsRequest) (*GetContestDesignsResponse, error)
+	// Game mode
+	SearchGameMode(context.Context, *SearchGameModeRequest) (*SearchGameModeResponse, error)
 	mustEmbedUnimplementedThetanRivalServiceServer()
 }
 
@@ -426,6 +440,9 @@ func (UnimplementedThetanRivalServiceServer) PublishDesign(context.Context, *Pub
 }
 func (UnimplementedThetanRivalServiceServer) GetContestDesigns(context.Context, *GetContestDesignsRequest) (*GetContestDesignsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetContestDesigns not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) SearchGameMode(context.Context, *SearchGameModeRequest) (*SearchGameModeResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SearchGameMode not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) mustEmbedUnimplementedThetanRivalServiceServer() {}
 
@@ -872,6 +889,24 @@ func _ThetanRivalService_GetContestDesigns_Handler(srv interface{}, ctx context.
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_SearchGameMode_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SearchGameModeRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).SearchGameMode(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_SearchGameMode_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).SearchGameMode(ctx, req.(*SearchGameModeRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanRivalService_ServiceDesc is the grpc.ServiceDesc for ThetanRivalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -974,6 +1009,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetContestDesigns",
 			Handler:    _ThetanRivalService_GetContestDesigns_Handler,
+		},
+		{
+			MethodName: "SearchGameMode",
+			Handler:    _ThetanRivalService_SearchGameMode_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
