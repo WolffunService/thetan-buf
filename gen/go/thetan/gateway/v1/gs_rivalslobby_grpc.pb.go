@@ -11,6 +11,7 @@ import (
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
+	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	v1 "thetan-buf/gen/go/thetan/rivals/v1"
 )
 
@@ -20,8 +21,9 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ThetanGatewayRivalsLobby_AllocateTown_FullMethodName = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/AllocateTown"
-	ThetanGatewayRivalsLobby_GetTownCCU_FullMethodName   = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/GetTownCCU"
+	ThetanGatewayRivalsLobby_AllocateTown_FullMethodName       = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/AllocateTown"
+	ThetanGatewayRivalsLobby_GetTownCCU_FullMethodName         = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/GetTownCCU"
+	ThetanGatewayRivalsLobby_GetAvailbleRegions_FullMethodName = "/thetan.gateway.v1.ThetanGatewayRivalsLobby/GetAvailbleRegions"
 )
 
 // ThetanGatewayRivalsLobbyClient is the client API for ThetanGatewayRivalsLobby service.
@@ -30,6 +32,7 @@ const (
 type ThetanGatewayRivalsLobbyClient interface {
 	AllocateTown(ctx context.Context, in *v1.LobbyTown, opts ...grpc.CallOption) (*TownAllocationResp, error)
 	GetTownCCU(ctx context.Context, in *GetTownCCURequest, opts ...grpc.CallOption) (*GetTownCCUResponse, error)
+	GetAvailbleRegions(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*AvailableRegionsResponse, error)
 }
 
 type thetanGatewayRivalsLobbyClient struct {
@@ -58,12 +61,22 @@ func (c *thetanGatewayRivalsLobbyClient) GetTownCCU(ctx context.Context, in *Get
 	return out, nil
 }
 
+func (c *thetanGatewayRivalsLobbyClient) GetAvailbleRegions(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*AvailableRegionsResponse, error) {
+	out := new(AvailableRegionsResponse)
+	err := c.cc.Invoke(ctx, ThetanGatewayRivalsLobby_GetAvailbleRegions_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanGatewayRivalsLobbyServer is the server API for ThetanGatewayRivalsLobby service.
 // All implementations must embed UnimplementedThetanGatewayRivalsLobbyServer
 // for forward compatibility
 type ThetanGatewayRivalsLobbyServer interface {
 	AllocateTown(context.Context, *v1.LobbyTown) (*TownAllocationResp, error)
 	GetTownCCU(context.Context, *GetTownCCURequest) (*GetTownCCUResponse, error)
+	GetAvailbleRegions(context.Context, *emptypb.Empty) (*AvailableRegionsResponse, error)
 	mustEmbedUnimplementedThetanGatewayRivalsLobbyServer()
 }
 
@@ -76,6 +89,9 @@ func (UnimplementedThetanGatewayRivalsLobbyServer) AllocateTown(context.Context,
 }
 func (UnimplementedThetanGatewayRivalsLobbyServer) GetTownCCU(context.Context, *GetTownCCURequest) (*GetTownCCUResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTownCCU not implemented")
+}
+func (UnimplementedThetanGatewayRivalsLobbyServer) GetAvailbleRegions(context.Context, *emptypb.Empty) (*AvailableRegionsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetAvailbleRegions not implemented")
 }
 func (UnimplementedThetanGatewayRivalsLobbyServer) mustEmbedUnimplementedThetanGatewayRivalsLobbyServer() {
 }
@@ -127,6 +143,24 @@ func _ThetanGatewayRivalsLobby_GetTownCCU_Handler(srv interface{}, ctx context.C
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanGatewayRivalsLobby_GetAvailbleRegions_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(emptypb.Empty)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanGatewayRivalsLobbyServer).GetAvailbleRegions(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanGatewayRivalsLobby_GetAvailbleRegions_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanGatewayRivalsLobbyServer).GetAvailbleRegions(ctx, req.(*emptypb.Empty))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanGatewayRivalsLobby_ServiceDesc is the grpc.ServiceDesc for ThetanGatewayRivalsLobby service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -141,6 +175,10 @@ var ThetanGatewayRivalsLobby_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetTownCCU",
 			Handler:    _ThetanGatewayRivalsLobby_GetTownCCU_Handler,
+		},
+		{
+			MethodName: "GetAvailbleRegions",
+			Handler:    _ThetanGatewayRivalsLobby_GetAvailbleRegions_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
