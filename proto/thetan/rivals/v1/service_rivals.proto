@@ -3,6 +3,7 @@ syntax = "proto3";
 package thetan.rivals.v1;
 
 import "thetan/shared/v1/match.proto";
+import "thetan/shared/v1/game_info.proto";
 import "thetan/shared/v1/customized.proto";
 import "thetan/rivals/v1/design_contest.proto";
 import "google/protobuf/empty.proto";
@@ -55,6 +56,21 @@ service ThetanRivalService {
   // Design contest
   rpc PublishDesign(PublishDesignRequest) returns (PublishDesignResponse) {}
   rpc GetContestDesigns(GetContestDesignsRequest) returns (GetContestDesignsResponse) {}
+
+  // Game mode
+  rpc SearchGameMode(SearchGameModeRequest) returns (SearchGameModeResponse) {}
+}
+
+message SearchGameModeRequest {
+}
+
+message SearchGameModeResponse {
+  repeated GameModeInfo listGameMode = 1;
+}
+
+message GameModeInfo {
+  thetan.shared.v1.InGameMode inGameMode = 1;
+  map<int32, int32> weightByMapID = 2;
 }
 
 message MatchFoundTournamentRequest {
@@ -420,6 +436,7 @@ message TrackSessionResponse {
 
 message FindMatchInfoRequest {
   repeated string playersID = 1;
+  thetan.shared.v1.InGameMode inGameMode = 2;
 }
 
 message FindMatchInfoResponse {

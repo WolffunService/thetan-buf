@@ -48,6 +48,7 @@ message PartyInfoProto {
   map<string, PlayerInfoProto> members = 4;
   PartyStatus status = 5;
   int64 findmatchVersion = 6;
+  thetan.shared.v1.InGameMode inGameMode = 7;
 
   // tùy từng game mà cục nay có thể khác nhau
   bytes gameData = 99;
@@ -147,11 +148,19 @@ enum PlayerStatus {
   //...
 }
 
+message SetInGameModeMsg{
+  thetan.shared.v1.InGameMode inGameMode = 1;
+}
+
+message OtherSetInGameModeMsg{
+  string playerID = 1;
+  thetan.shared.v1.InGameMode inGameMode = 2;
+}
+
 message ReadyMsg{
   bool isReady = 1;//ready or cancel ready
   string tournamentID = 2; // use for tournament find match
   repeated int32 regions = 3;
-  thetan.shared.v1.InGameMode inGameMode = 4;
 }
 
 message SetDNDMsg {
