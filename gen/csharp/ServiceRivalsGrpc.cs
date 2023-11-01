@@ -139,6 +139,10 @@ namespace Thetan.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetContestDesignsRequest> __Marshaller_thetan_rivals_v1_GetContestDesignsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetContestDesignsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetContestDesignsResponse> __Marshaller_thetan_rivals_v1_GetContestDesignsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetContestDesignsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.SearchGameModeRequest> __Marshaller_thetan_rivals_v1_SearchGameModeRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.SearchGameModeRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.SearchGameModeResponse> __Marshaller_thetan_rivals_v1_SearchGameModeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.SearchGameModeResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.UserProfileRequest, global::Thetan.Rivals.V1.UserProfileResponse> __Method_GetUserProfile = new grpc::Method<global::Thetan.Rivals.V1.UserProfileRequest, global::Thetan.Rivals.V1.UserProfileResponse>(
@@ -339,6 +343,14 @@ namespace Thetan.Rivals.V1 {
         "GetContestDesigns",
         __Marshaller_thetan_rivals_v1_GetContestDesignsRequest,
         __Marshaller_thetan_rivals_v1_GetContestDesignsResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.SearchGameModeRequest, global::Thetan.Rivals.V1.SearchGameModeResponse> __Method_SearchGameMode = new grpc::Method<global::Thetan.Rivals.V1.SearchGameModeRequest, global::Thetan.Rivals.V1.SearchGameModeResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SearchGameMode",
+        __Marshaller_thetan_rivals_v1_SearchGameModeRequest,
+        __Marshaller_thetan_rivals_v1_SearchGameModeResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -556,6 +568,18 @@ namespace Thetan.Rivals.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.GetContestDesignsResponse> GetContestDesigns(global::Thetan.Rivals.V1.GetContestDesignsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Game mode
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.SearchGameModeResponse> SearchGameMode(global::Thetan.Rivals.V1.SearchGameModeRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1369,6 +1393,54 @@ namespace Thetan.Rivals.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetContestDesigns, null, options, request);
       }
+      /// <summary>
+      /// Game mode
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.SearchGameModeResponse SearchGameMode(global::Thetan.Rivals.V1.SearchGameModeRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SearchGameMode(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Game mode
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.SearchGameModeResponse SearchGameMode(global::Thetan.Rivals.V1.SearchGameModeRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SearchGameMode, null, options, request);
+      }
+      /// <summary>
+      /// Game mode
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.SearchGameModeResponse> SearchGameModeAsync(global::Thetan.Rivals.V1.SearchGameModeRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SearchGameModeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Game mode
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.SearchGameModeResponse> SearchGameModeAsync(global::Thetan.Rivals.V1.SearchGameModeRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SearchGameMode, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ThetanRivalServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -1407,7 +1479,8 @@ namespace Thetan.Rivals.V1 {
           .AddMethod(__Method_GetFindMatchInfoForTournament, serviceImpl.GetFindMatchInfoForTournament)
           .AddMethod(__Method_MatchFoundTournament, serviceImpl.MatchFoundTournament)
           .AddMethod(__Method_PublishDesign, serviceImpl.PublishDesign)
-          .AddMethod(__Method_GetContestDesigns, serviceImpl.GetContestDesigns).Build();
+          .AddMethod(__Method_GetContestDesigns, serviceImpl.GetContestDesigns)
+          .AddMethod(__Method_SearchGameMode, serviceImpl.SearchGameMode).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -1442,6 +1515,7 @@ namespace Thetan.Rivals.V1 {
       serviceBinder.AddMethod(__Method_MatchFoundTournament, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.MatchFoundTournamentRequest, global::Thetan.Rivals.V1.MatchFoundTournamentResponse>(serviceImpl.MatchFoundTournament));
       serviceBinder.AddMethod(__Method_PublishDesign, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.PublishDesignRequest, global::Thetan.Rivals.V1.PublishDesignResponse>(serviceImpl.PublishDesign));
       serviceBinder.AddMethod(__Method_GetContestDesigns, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetContestDesignsRequest, global::Thetan.Rivals.V1.GetContestDesignsResponse>(serviceImpl.GetContestDesigns));
+      serviceBinder.AddMethod(__Method_SearchGameMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.SearchGameModeRequest, global::Thetan.Rivals.V1.SearchGameModeResponse>(serviceImpl.SearchGameMode));
     }
 
   }
