@@ -14,7 +14,10 @@ option csharp_namespace = "Thetan.Rivals.V1";
 
 service ThetanRivalService {
   // Profile
-  rpc GetUserProfile (UserProfileRequest) returns (UserProfileResponse) {}
+  rpc GetUserProfile (UserProfileRequest) returns (UserProfileResponse) {
+    option deprecated = true;
+  }
+  rpc GetManyUserProfiles (ManyUserProfilesRequest) returns (ManyUserProfileResponse) {}
   rpc GetProfile(ProfileRequest) returns (ProfileResponse) {}
   rpc TrackFriendlyAct(FriendlyActRequest) returns (google.protobuf.Empty) {}
 
@@ -140,6 +143,13 @@ message UserProfileRequest {
   bool withGuild = 3;
 }
 
+message ManyUserProfilesRequest {
+  repeated string userIds = 1;
+  bool withStat = 2;
+  bool withRanking = 3;
+  bool withGuild = 4;
+}
+
 message UserProfileResponse {
   string id = 1;
   string nickname = 2;
@@ -158,6 +168,10 @@ message UserProfileResponse {
 message UserProfileRank {
   int32 trophies = 1;
   int32 rankLevel = 2;
+}
+
+message ManyUserProfileResponse {
+  map<string,UserProfileResponse> profiles = 1;
 }
 
 message FriendlyActRequest {

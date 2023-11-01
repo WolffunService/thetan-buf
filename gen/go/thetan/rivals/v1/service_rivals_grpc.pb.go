@@ -21,6 +21,7 @@ const _ = grpc.SupportPackageIsVersion7
 
 const (
 	ThetanRivalService_GetUserProfile_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserProfile"
+	ThetanRivalService_GetManyUserProfiles_FullMethodName           = "/thetan.rivals.v1.ThetanRivalService/GetManyUserProfiles"
 	ThetanRivalService_GetProfile_FullMethodName                    = "/thetan.rivals.v1.ThetanRivalService/GetProfile"
 	ThetanRivalService_TrackFriendlyAct_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/TrackFriendlyAct"
 	ThetanRivalService_GetUserMinions_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserMinions"
@@ -51,8 +52,10 @@ const (
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ThetanRivalServiceClient interface {
+	// Deprecated: Do not use.
 	// Profile
 	GetUserProfile(ctx context.Context, in *UserProfileRequest, opts ...grpc.CallOption) (*UserProfileResponse, error)
+	GetManyUserProfiles(ctx context.Context, in *ManyUserProfilesRequest, opts ...grpc.CallOption) (*ManyUserProfileResponse, error)
 	GetProfile(ctx context.Context, in *ProfileRequest, opts ...grpc.CallOption) (*ProfileResponse, error)
 	TrackFriendlyAct(ctx context.Context, in *FriendlyActRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	// Minions
@@ -97,9 +100,19 @@ func NewThetanRivalServiceClient(cc grpc.ClientConnInterface) ThetanRivalService
 	return &thetanRivalServiceClient{cc}
 }
 
+// Deprecated: Do not use.
 func (c *thetanRivalServiceClient) GetUserProfile(ctx context.Context, in *UserProfileRequest, opts ...grpc.CallOption) (*UserProfileResponse, error) {
 	out := new(UserProfileResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetUserProfile_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) GetManyUserProfiles(ctx context.Context, in *ManyUserProfilesRequest, opts ...grpc.CallOption) (*ManyUserProfileResponse, error) {
+	out := new(ManyUserProfileResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetManyUserProfiles_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -326,8 +339,10 @@ func (c *thetanRivalServiceClient) SearchGameMode(ctx context.Context, in *Searc
 // All implementations must embed UnimplementedThetanRivalServiceServer
 // for forward compatibility
 type ThetanRivalServiceServer interface {
+	// Deprecated: Do not use.
 	// Profile
 	GetUserProfile(context.Context, *UserProfileRequest) (*UserProfileResponse, error)
+	GetManyUserProfiles(context.Context, *ManyUserProfilesRequest) (*ManyUserProfileResponse, error)
 	GetProfile(context.Context, *ProfileRequest) (*ProfileResponse, error)
 	TrackFriendlyAct(context.Context, *FriendlyActRequest) (*emptypb.Empty, error)
 	// Minions
@@ -371,6 +386,9 @@ type UnimplementedThetanRivalServiceServer struct {
 
 func (UnimplementedThetanRivalServiceServer) GetUserProfile(context.Context, *UserProfileRequest) (*UserProfileResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetUserProfile not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetManyUserProfiles(context.Context, *ManyUserProfilesRequest) (*ManyUserProfileResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetManyUserProfiles not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetProfile(context.Context, *ProfileRequest) (*ProfileResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetProfile not implemented")
@@ -471,6 +489,24 @@ func _ThetanRivalService_GetUserProfile_Handler(srv interface{}, ctx context.Con
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ThetanRivalServiceServer).GetUserProfile(ctx, req.(*UserProfileRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_GetManyUserProfiles_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(ManyUserProfilesRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetManyUserProfiles(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetManyUserProfiles_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetManyUserProfiles(ctx, req.(*ManyUserProfilesRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -917,6 +953,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetUserProfile",
 			Handler:    _ThetanRivalService_GetUserProfile_Handler,
+		},
+		{
+			MethodName: "GetManyUserProfiles",
+			Handler:    _ThetanRivalService_GetManyUserProfiles_Handler,
 		},
 		{
 			MethodName: "GetProfile",
