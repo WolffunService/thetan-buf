@@ -28,5 +28,5 @@ message CreateMatchOfflineRequest {
   thetan.shared.v1.InGameMode inGameMode = 1;
   repeated thetan.shared.v1.PlayerInfoMatchProto players = 2;
   repeated int32 regions = 3;
-  string matchVersion = 4;
+  int32 findMatchVersion = 4;
 }

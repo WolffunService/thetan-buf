@@ -30,30 +30,31 @@ namespace Thetan.Rivals.V1 {
             "YXJlZC92MS9nYW1lX2luZm8ucHJvdG8ibAoYUml2YWxDYW5jZWxUaWNrZXRS",
             "ZXF1ZXN0EhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBIYCgdwYXJ0eUlE",
             "GAIgASgJUgdwYXJ0eUlEEhoKCHRpY2tldElEGAMgASgJUgh0aWNrZXRJRCIb",
-            "ChlSaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlItkBChlDcmVhdGVNYXRjaE9m",
+            "ChlSaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlIuEBChlDcmVhdGVNYXRjaE9m",
             "ZmxpbmVSZXF1ZXN0EjwKCmluR2FtZU1vZGUYASABKA4yHC50aGV0YW4uc2hh",
             "cmVkLnYxLkluR2FtZU1vZGVSCmluR2FtZU1vZGUSQAoHcGxheWVycxgCIAMo",
             "CzImLnRoZXRhbi5zaGFyZWQudjEuUGxheWVySW5mb01hdGNoUHJvdG9SB3Bs",
-            "YXllcnMSGAoHcmVnaW9ucxgDIAMoBVIHcmVnaW9ucxIiCgxtYXRjaFZlcnNp",
-            "b24YBCABKAlSDG1hdGNoVmVyc2lvbjLgAgoZUml2YWxNYXRjaERpcmVjdG9y",
-            "U2VydmljZRJpCgxDYW5jZWxUaWNrZXQSKi50aGV0YW4ucml2YWxzLnYxLlJp",
-            "dmFsQ2FuY2VsVGlja2V0UmVxdWVzdBorLnRoZXRhbi5yaXZhbHMudjEuUml2",
-            "YWxDYW5jZWxUaWNrZXRSZXNwb25zZSIAEmgKEkNyZWF0ZU1hdGNoT25ib2Fy",
-            "ZBIlLnRoZXRhbi5yaXZhbHMudjEuR2V0TWF0Y2hJbmZvUmVxdWVzdBopLnRo",
-            "ZXRhbi5zaGFyZWQudjEuTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8iABJuChJD",
-            "cmVhdGVNYXRjaE9mZmxpbmUSKy50aGV0YW4ucml2YWxzLnYxLkNyZWF0ZU1h",
-            "dGNoT2ZmbGluZVJlcXVlc3QaKS50aGV0YW4uc2hhcmVkLnYxLk1hdGNoRm91",
-            "bmRSZXNwb25zZVByb3RvIgBCvwEKFGNvbS50aGV0YW4ucml2YWxzLnYxQhBS",
-            "aXZhbHNNYXRjaFByb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9y",
-            "aXZhbHMvdjE7dGhldGFuX3JpdmFsc192MaICA1RSWKoCEFRoZXRhbi5SaXZh",
-            "bHMuVjHKAhBUaGV0YW5cUml2YWxzXFYx4gIcVGhldGFuXFJpdmFsc1xWMVxH",
-            "UEJNZXRhZGF0YeoCElRoZXRhbjo6Uml2YWxzOjpWMWIGcHJvdG8z"));
+            "YXllcnMSGAoHcmVnaW9ucxgDIAMoBVIHcmVnaW9ucxIqChBmaW5kTWF0Y2hW",
+            "ZXJzaW9uGAQgASgFUhBmaW5kTWF0Y2hWZXJzaW9uMuACChlSaXZhbE1hdGNo",
+            "RGlyZWN0b3JTZXJ2aWNlEmkKDENhbmNlbFRpY2tldBIqLnRoZXRhbi5yaXZh",
+            "bHMudjEuUml2YWxDYW5jZWxUaWNrZXRSZXF1ZXN0GisudGhldGFuLnJpdmFs",
+            "cy52MS5SaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlIgASaAoSQ3JlYXRlTWF0",
+            "Y2hPbmJvYXJkEiUudGhldGFuLnJpdmFscy52MS5HZXRNYXRjaEluZm9SZXF1",
+            "ZXN0GikudGhldGFuLnNoYXJlZC52MS5NYXRjaEZvdW5kUmVzcG9uc2VQcm90",
+            "byIAEm4KEkNyZWF0ZU1hdGNoT2ZmbGluZRIrLnRoZXRhbi5yaXZhbHMudjEu",
+            "Q3JlYXRlTWF0Y2hPZmZsaW5lUmVxdWVzdBopLnRoZXRhbi5zaGFyZWQudjEu",
+            "TWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8iAEK/AQoUY29tLnRoZXRhbi5yaXZh",
+            "bHMudjFCEFJpdmFsc01hdGNoUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28v",
+            "dGhldGFuL3JpdmFscy92MTt0aGV0YW5fcml2YWxzX3YxogIDVFJYqgIQVGhl",
+            "dGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5cUml2",
+            "YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, global::Thetan.Shared.V1.MatchReflection.Descriptor, global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketRequest), global::Thetan.Rivals.V1.RivalCancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketResponse), global::Thetan.Rivals.V1.RivalCancelTicketResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchOfflineRequest), global::Thetan.Rivals.V1.CreateMatchOfflineRequest.Parser, new[]{ "InGameMode", "Players", "Regions", "MatchVersion" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchOfflineRequest), global::Thetan.Rivals.V1.CreateMatchOfflineRequest.Parser, new[]{ "InGameMode", "Players", "Regions", "FindMatchVersion" }, null, null, null, null)
           }));
     }
     #endregion
@@ -512,7 +513,7 @@ namespace Thetan.Rivals.V1 {
       inGameMode_ = other.inGameMode_;
       players_ = other.players_.Clone();
       regions_ = other.regions_.Clone();
-      matchVersion_ = other.matchVersion_;
+      findMatchVersion_ = other.findMatchVersion_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -556,15 +557,15 @@ namespace Thetan.Rivals.V1 {
       get { return regions_; }
     }
 
-    /// <summary>Field number for the "matchVersion" field.</summary>
-    public const int MatchVersionFieldNumber = 4;
-    private string matchVersion_ = "";
+    /// <summary>Field number for the "findMatchVersion" field.</summary>
+    public const int FindMatchVersionFieldNumber = 4;
+    private int findMatchVersion_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string MatchVersion {
-      get { return matchVersion_; }
+    public int FindMatchVersion {
+      get { return findMatchVersion_; }
       set {
-        matchVersion_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        findMatchVersion_ = value;
       }
     }
 
@@ -586,7 +587,7 @@ namespace Thetan.Rivals.V1 {
       if (InGameMode != other.InGameMode) return false;
       if(!players_.Equals(other.players_)) return false;
       if(!regions_.Equals(other.regions_)) return false;
-      if (MatchVersion != other.MatchVersion) return false;
+      if (FindMatchVersion != other.FindMatchVersion) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -597,7 +598,7 @@ namespace Thetan.Rivals.V1 {
       if (InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) hash ^= InGameMode.GetHashCode();
       hash ^= players_.GetHashCode();
       hash ^= regions_.GetHashCode();
-      if (MatchVersion.Length != 0) hash ^= MatchVersion.GetHashCode();
+      if (FindMatchVersion != 0) hash ^= FindMatchVersion.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -622,9 +623,9 @@ namespace Thetan.Rivals.V1 {
       }
       players_.WriteTo(output, _repeated_players_codec);
       regions_.WriteTo(output, _repeated_regions_codec);
-      if (MatchVersion.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(MatchVersion);
+      if (FindMatchVersion != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(FindMatchVersion);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -642,9 +643,9 @@ namespace Thetan.Rivals.V1 {
       }
       players_.WriteTo(ref output, _repeated_players_codec);
       regions_.WriteTo(ref output, _repeated_regions_codec);
-      if (MatchVersion.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(MatchVersion);
+      if (FindMatchVersion != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(FindMatchVersion);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -661,8 +662,8 @@ namespace Thetan.Rivals.V1 {
       }
       size += players_.CalculateSize(_repeated_players_codec);
       size += regions_.CalculateSize(_repeated_regions_codec);
-      if (MatchVersion.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MatchVersion);
+      if (FindMatchVersion != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FindMatchVersion);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -681,8 +682,8 @@ namespace Thetan.Rivals.V1 {
       }
       players_.Add(other.players_);
       regions_.Add(other.regions_);
-      if (other.MatchVersion.Length != 0) {
-        MatchVersion = other.MatchVersion;
+      if (other.FindMatchVersion != 0) {
+        FindMatchVersion = other.FindMatchVersion;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -712,8 +713,8 @@ namespace Thetan.Rivals.V1 {
             regions_.AddEntriesFrom(input, _repeated_regions_codec);
             break;
           }
-          case 34: {
-            MatchVersion = input.ReadString();
+          case 32: {
+            FindMatchVersion = input.ReadInt32();
             break;
           }
         }
@@ -744,8 +745,8 @@ namespace Thetan.Rivals.V1 {
             regions_.AddEntriesFrom(ref input, _repeated_regions_codec);
             break;
           }
-          case 34: {
-            MatchVersion = input.ReadString();
+          case 32: {
+            FindMatchVersion = input.ReadInt32();
             break;
           }
         }
