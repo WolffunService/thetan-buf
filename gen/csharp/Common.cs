@@ -116,7 +116,7 @@ namespace Thetan.Multiplayer.V1 {
             "eWVySUQYASABKAlSCHBsYXllcklEEhQKBXJlYWR5GAIgASgIUgVyZWFkeSJP",
             "ChFUaWNrZXRDYWNoZVdTT25seRIaCgh0aWNrZXRJRBgBIAEoCVIIdGlja2V0",
             "SUQSHgoKaW5HYW1lTW9kZRgCIAEoBVIKaW5HYW1lTW9kZSIfCglHdWlsZE1h",
-            "aWwSEgoEQ29kZRgBIAEoBVIEQ29kZSo4CgtQYXJ0eVN0YXR1cxIMCghQUGVu",
+            "aWwSEgoEY29kZRgBIAEoBVIEY29kZSo4CgtQYXJ0eVN0YXR1cxIMCghQUGVu",
             "ZGluZxAAEgwKCFBGaW5kaW5nEAESDQoJUEluQmF0dGxlEAIqfgoXUGFydHlB",
             "dmFpbGFiaWxpdHlTdGF0dXMSDQoJUEFVbmtub3duEAASDQoJUEFFeHBpcmVk",
             "EAESDwoLUEFEaXNiYW5kZWQQAhIKCgZQQU9wZW4QAxIKCgZQQUZ1bGwQBBIO",
@@ -8000,7 +8000,7 @@ namespace Thetan.Multiplayer.V1 {
       return new GuildMail(this);
     }
 
-    /// <summary>Field number for the "Code" field.</summary>
+    /// <summary>Field number for the "code" field.</summary>
     public const int CodeFieldNumber = 1;
     private int code_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
