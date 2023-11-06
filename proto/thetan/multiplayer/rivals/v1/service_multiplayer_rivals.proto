@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package thetan.multiplayer.rivals.v1;
 
-import "google/protobuf/struct.proto";
+import "google/protobuf/any.proto";
 import "thetan/multiplayer/v1/common.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/multiplayer/rivals/v1;thetan_multiplayer_rivals_v1";
@@ -33,7 +33,7 @@ message OnlineStatus {
 message NotifyRequest {
     repeated string userIDs = 1;
     string event = 2;
-    google.protobuf.Struct msgBody = 3;
+    google.protobuf.Any msgBody = 3;
 }
 
 message NotifyResponse {
