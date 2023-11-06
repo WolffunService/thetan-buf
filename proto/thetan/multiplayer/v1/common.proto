@@ -277,5 +277,5 @@ message TicketCacheWSOnly {
 }
 
 message GuildMail {
-  int32 code = 1;
+  int32 Code = 1;
 }
