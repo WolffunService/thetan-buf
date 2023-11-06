@@ -26,33 +26,33 @@ namespace Thetan.Multiplayer.Rivals.V1 {
           string.Concat(
             "Cj10aGV0YW4vbXVsdGlwbGF5ZXIvcml2YWxzL3YxL3NlcnZpY2VfbXVsdGlw",
             "bGF5ZXJfcml2YWxzLnByb3RvEhx0aGV0YW4ubXVsdGlwbGF5ZXIucml2YWxz",
-            "LnYxGhxnb29nbGUvcHJvdG9idWYvc3RydWN0LnByb3RvGiJ0aGV0YW4vbXVs",
-            "dGlwbGF5ZXIvdjEvY29tbW9uLnByb3RvIl4KFkdldE9ubGluZVN0YXR1c1Jl",
-            "cXVlc3QSGAoHdXNlcklEcxgBIAMoCVIHdXNlcklEcxIqChBza2lwRW50cnlP",
-            "bkVycm9yGAIgASgIUhBza2lwRW50cnlPbkVycm9yIm0KF0dldE9ubGluZVN0",
-            "YXR1c1Jlc3BvbnNlElIKDk9ubGluZVN0YXR1c2VzGAEgAygLMioudGhldGFu",
-            "Lm11bHRpcGxheWVyLnJpdmFscy52MS5PbmxpbmVTdGF0dXNSDk9ubGluZVN0",
-            "YXR1c2VzIoMBCgxPbmxpbmVTdGF0dXMSFgoGdXNlcklEGAEgASgJUgZ1c2Vy",
-            "SUQSHgoKbGFzdE9ubGluZRgCIAEoA1IKbGFzdE9ubGluZRI7CgZzdGF0dXMY",
-            "AyABKA4yIy50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGxheWVyU3RhdHVzUgZz",
-            "dGF0dXMicgoNTm90aWZ5UmVxdWVzdBIYCgd1c2VySURzGAEgAygJUgd1c2Vy",
-            "SURzEhQKBWV2ZW50GAIgASgJUgVldmVudBIxCgdtc2dCb2R5GAMgASgLMhcu",
-            "Z29vZ2xlLnByb3RvYnVmLlN0cnVjdFIHbXNnQm9keSIQCg5Ob3RpZnlSZXNw",
-            "b25zZTKEAgoYUml2YWxzTXVsdGlwbGF5ZXJTZXJ2aWNlEoABCg9HZXRPbmxp",
-            "bmVTdGF0dXMSNC50aGV0YW4ubXVsdGlwbGF5ZXIucml2YWxzLnYxLkdldE9u",
-            "bGluZVN0YXR1c1JlcXVlc3QaNS50aGV0YW4ubXVsdGlwbGF5ZXIucml2YWxz",
-            "LnYxLkdldE9ubGluZVN0YXR1c1Jlc3BvbnNlIgASZQoGTm90aWZ5EisudGhl",
-            "dGFuLm11bHRpcGxheWVyLnJpdmFscy52MS5Ob3RpZnlSZXF1ZXN0GiwudGhl",
-            "dGFuLm11bHRpcGxheWVyLnJpdmFscy52MS5Ob3RpZnlSZXNwb25zZSIAQqEC",
-            "CiBjb20udGhldGFuLm11bHRpcGxheWVyLnJpdmFscy52MUIdU2VydmljZU11",
-            "bHRpcGxheWVyUml2YWxzUHJvdG9QAVpLdGhldGFuLWJ1Zi9nZW4vZ28vdGhl",
-            "dGFuL211bHRpcGxheWVyL3JpdmFscy92MTt0aGV0YW5fbXVsdGlwbGF5ZXJf",
-            "cml2YWxzX3YxogIDVE1SqgIcVGhldGFuLk11bHRpcGxheWVyLlJpdmFscy5W",
-            "McoCHFRoZXRhblxNdWx0aXBsYXllclxSaXZhbHNcVjHiAihUaGV0YW5cTXVs",
-            "dGlwbGF5ZXJcUml2YWxzXFYxXEdQQk1ldGFkYXRh6gIfVGhldGFuOjpNdWx0",
-            "aXBsYXllcjo6Uml2YWxzOjpWMWIGcHJvdG8z"));
+            "LnYxGhlnb29nbGUvcHJvdG9idWYvYW55LnByb3RvGiJ0aGV0YW4vbXVsdGlw",
+            "bGF5ZXIvdjEvY29tbW9uLnByb3RvIl4KFkdldE9ubGluZVN0YXR1c1JlcXVl",
+            "c3QSGAoHdXNlcklEcxgBIAMoCVIHdXNlcklEcxIqChBza2lwRW50cnlPbkVy",
+            "cm9yGAIgASgIUhBza2lwRW50cnlPbkVycm9yIm0KF0dldE9ubGluZVN0YXR1",
+            "c1Jlc3BvbnNlElIKDk9ubGluZVN0YXR1c2VzGAEgAygLMioudGhldGFuLm11",
+            "bHRpcGxheWVyLnJpdmFscy52MS5PbmxpbmVTdGF0dXNSDk9ubGluZVN0YXR1",
+            "c2VzIoMBCgxPbmxpbmVTdGF0dXMSFgoGdXNlcklEGAEgASgJUgZ1c2VySUQS",
+            "HgoKbGFzdE9ubGluZRgCIAEoA1IKbGFzdE9ubGluZRI7CgZzdGF0dXMYAyAB",
+            "KA4yIy50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGxheWVyU3RhdHVzUgZzdGF0",
+            "dXMibwoNTm90aWZ5UmVxdWVzdBIYCgd1c2VySURzGAEgAygJUgd1c2VySURz",
+            "EhQKBWV2ZW50GAIgASgJUgVldmVudBIuCgdtc2dCb2R5GAMgASgLMhQuZ29v",
+            "Z2xlLnByb3RvYnVmLkFueVIHbXNnQm9keSIQCg5Ob3RpZnlSZXNwb25zZTKE",
+            "AgoYUml2YWxzTXVsdGlwbGF5ZXJTZXJ2aWNlEoABCg9HZXRPbmxpbmVTdGF0",
+            "dXMSNC50aGV0YW4ubXVsdGlwbGF5ZXIucml2YWxzLnYxLkdldE9ubGluZVN0",
+            "YXR1c1JlcXVlc3QaNS50aGV0YW4ubXVsdGlwbGF5ZXIucml2YWxzLnYxLkdl",
+            "dE9ubGluZVN0YXR1c1Jlc3BvbnNlIgASZQoGTm90aWZ5EisudGhldGFuLm11",
+            "bHRpcGxheWVyLnJpdmFscy52MS5Ob3RpZnlSZXF1ZXN0GiwudGhldGFuLm11",
+            "bHRpcGxheWVyLnJpdmFscy52MS5Ob3RpZnlSZXNwb25zZSIAQqECCiBjb20u",
+            "dGhldGFuLm11bHRpcGxheWVyLnJpdmFscy52MUIdU2VydmljZU11bHRpcGxh",
+            "eWVyUml2YWxzUHJvdG9QAVpLdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL211",
+            "bHRpcGxheWVyL3JpdmFscy92MTt0aGV0YW5fbXVsdGlwbGF5ZXJfcml2YWxz",
+            "X3YxogIDVE1SqgIcVGhldGFuLk11bHRpcGxheWVyLlJpdmFscy5WMcoCHFRo",
+            "ZXRhblxNdWx0aXBsYXllclxSaXZhbHNcVjHiAihUaGV0YW5cTXVsdGlwbGF5",
+            "ZXJcUml2YWxzXFYxXEdQQk1ldGFkYXRh6gIfVGhldGFuOjpNdWx0aXBsYXll",
+            "cjo6Uml2YWxzOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Thetan.Multiplayer.V1.CommonReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Thetan.Multiplayer.V1.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest), global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest.Parser, new[]{ "UserIDs", "SkipEntryOnError" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse), global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse.Parser, new[]{ "OnlineStatuses" }, null, null, null, null),
@@ -792,10 +792,10 @@ namespace Thetan.Multiplayer.Rivals.V1 {
 
     /// <summary>Field number for the "msgBody" field.</summary>
     public const int MsgBodyFieldNumber = 3;
-    private global::Google.Protobuf.WellKnownTypes.Struct msgBody_;
+    private global::Google.Protobuf.WellKnownTypes.Any msgBody_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Google.Protobuf.WellKnownTypes.Struct MsgBody {
+    public global::Google.Protobuf.WellKnownTypes.Any MsgBody {
       get { return msgBody_; }
       set {
         msgBody_ = value;
@@ -911,7 +911,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
       }
       if (other.msgBody_ != null) {
         if (msgBody_ == null) {
-          MsgBody = new global::Google.Protobuf.WellKnownTypes.Struct();
+          MsgBody = new global::Google.Protobuf.WellKnownTypes.Any();
         }
         MsgBody.MergeFrom(other.MsgBody);
       }
@@ -940,7 +940,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
           }
           case 26: {
             if (msgBody_ == null) {
-              MsgBody = new global::Google.Protobuf.WellKnownTypes.Struct();
+              MsgBody = new global::Google.Protobuf.WellKnownTypes.Any();
             }
             input.ReadMessage(MsgBody);
             break;
@@ -970,7 +970,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
           }
           case 26: {
             if (msgBody_ == null) {
-              MsgBody = new global::Google.Protobuf.WellKnownTypes.Struct();
+              MsgBody = new global::Google.Protobuf.WellKnownTypes.Any();
             }
             input.ReadMessage(MsgBody);
             break;
