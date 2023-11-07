@@ -279,3 +279,7 @@ message TicketCacheWSOnly {
 message GuildMail {
   int32 code = 1;
 }
+
+message BalanceChanged {
+  bool doNotify = 1;
+}
