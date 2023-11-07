@@ -25,34 +25,34 @@ namespace Thetan.Rivals.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch10aGV0YW4vcml2YWxzL3YxL2FkZF9pbi5wcm90bxIQdGhldGFuLnJpdmFs",
-            "cy52MRohdGhldGFuL3NoYXJlZC92MS9jdXN0b21pemVkLnByb3RvImgKDE1p",
-            "Z3JhdGVBZGRJbhIcCglvbGRJdGVtSUQYASABKAlSCW9sZEl0ZW1JRBIcCglu",
-            "ZXdJdGVtSUQYAiABKAlSCW5ld0l0ZW1JRBIcCgluZXdVc2VySUQYAyABKAlS",
-            "CW5ld1VzZXJJREK5AQoUY29tLnRoZXRhbi5yaXZhbHMudjFCCkFkZEluUHJv",
-            "dG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3JpdmFscy92MTt0aGV0",
-            "YW5fcml2YWxzX3YxogIDVFJYqgIQVGhldGFuLlJpdmFscy5WMcoCEFRoZXRh",
-            "blxSaXZhbHNcVjHiAhxUaGV0YW5cUml2YWxzXFYxXEdQQk1ldGFkYXRh6gIS",
-            "VGhldGFuOjpSaXZhbHM6OlYxYgZwcm90bzM="));
+            "cy52MRohdGhldGFuL3NoYXJlZC92MS9jdXN0b21pemVkLnByb3RvImcKC01p",
+            "Z3JhdGVJdGVtEhwKCW9sZEl0ZW1JRBgBIAEoCVIJb2xkSXRlbUlEEhwKCW5l",
+            "d0l0ZW1JRBgCIAEoCVIJbmV3SXRlbUlEEhwKCW5ld1VzZXJJRBgDIAEoCVIJ",
+            "bmV3VXNlcklEQrkBChRjb20udGhldGFuLnJpdmFscy52MUIKQWRkSW5Qcm90",
+            "b1ABWjN0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vcml2YWxzL3YxO3RoZXRh",
+            "bl9yaXZhbHNfdjGiAgNUUliqAhBUaGV0YW4uUml2YWxzLlYxygIQVGhldGFu",
+            "XFJpdmFsc1xWMeICHFRoZXRhblxSaXZhbHNcVjFcR1BCTWV0YWRhdGHqAhJU",
+            "aGV0YW46OlJpdmFsczo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.MigrateAddIn), global::Thetan.Rivals.V1.MigrateAddIn.Parser, new[]{ "OldItemID", "NewItemID", "NewUserID" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.MigrateItem), global::Thetan.Rivals.V1.MigrateItem.Parser, new[]{ "OldItemID", "NewItemID", "NewUserID" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class MigrateAddIn : pb::IMessage<MigrateAddIn>
+  public sealed partial class MigrateItem : pb::IMessage<MigrateItem>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MigrateAddIn> _parser = new pb::MessageParser<MigrateAddIn>(() => new MigrateAddIn());
+    private static readonly pb::MessageParser<MigrateItem> _parser = new pb::MessageParser<MigrateItem>(() => new MigrateItem());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<MigrateAddIn> Parser { get { return _parser; } }
+    public static pb::MessageParser<MigrateItem> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -68,7 +68,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MigrateAddIn() {
+    public MigrateItem() {
       OnConstruction();
     }
 
@@ -76,7 +76,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MigrateAddIn(MigrateAddIn other) : this() {
+    public MigrateItem(MigrateItem other) : this() {
       oldItemID_ = other.oldItemID_;
       newItemID_ = other.newItemID_;
       newUserID_ = other.newUserID_;
@@ -85,8 +85,8 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MigrateAddIn Clone() {
-      return new MigrateAddIn(this);
+    public MigrateItem Clone() {
+      return new MigrateItem(this);
     }
 
     /// <summary>Field number for the "oldItemID" field.</summary>
@@ -128,12 +128,12 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as MigrateAddIn);
+      return Equals(other as MigrateItem);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(MigrateAddIn other) {
+    public bool Equals(MigrateItem other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -232,7 +232,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(MigrateAddIn other) {
+    public void MergeFrom(MigrateItem other) {
       if (other == null) {
         return;
       }
