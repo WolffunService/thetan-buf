@@ -280,6 +280,6 @@ message GuildMail {
   int32 code = 1;
 }
 
-message BalanceChanged {
+message TreasureBalanceChanged {
   bool doNotify = 1;
 }
