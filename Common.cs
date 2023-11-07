@@ -116,23 +116,24 @@ namespace Thetan.Multiplayer.V1 {
             "eWVySUQYASABKAlSCHBsYXllcklEEhQKBXJlYWR5GAIgASgIUgVyZWFkeSJP",
             "ChFUaWNrZXRDYWNoZVdTT25seRIaCgh0aWNrZXRJRBgBIAEoCVIIdGlja2V0",
             "SUQSHgoKaW5HYW1lTW9kZRgCIAEoBVIKaW5HYW1lTW9kZSIfCglHdWlsZE1h",
-            "aWwSEgoEY29kZRgBIAEoBVIEY29kZSo4CgtQYXJ0eVN0YXR1cxIMCghQUGVu",
-            "ZGluZxAAEgwKCFBGaW5kaW5nEAESDQoJUEluQmF0dGxlEAIqfgoXUGFydHlB",
-            "dmFpbGFiaWxpdHlTdGF0dXMSDQoJUEFVbmtub3duEAASDQoJUEFFeHBpcmVk",
-            "EAESDwoLUEFEaXNiYW5kZWQQAhIKCgZQQU9wZW4QAxIKCgZQQUZ1bGwQBBIO",
-            "CgpQQUluQmF0dGxlEAUSDAoIUEFKb2luZWQQBipBCg9DaGFubmVsQ2hhdFJv",
-            "b20SCQoFTG9iYnkQABIJCgVQYXJ0eRABEgsKB0NvdW50cnkQAhILCgdQcml2",
-            "YXRlEAMqIwoHTXNnVHlwZRIICgRDaGF0EAASDgoKU2hhcmVQYXJ0eRABKloK",
-            "DFBsYXllclN0YXR1cxIKCgZPbmxpbmUQABILCgdPZmZsaW5lEAESCwoHSW5Q",
-            "YXJ0eRACEgkKBVJlYWR5EAMSCwoHRmluZGluZxAEEgwKCEluQmF0dGxlEAUq",
-            "QwoQSW52aXRhdGlvbkFjdGlvbhIKCgZBY2NlcHQQABIKCgZDYW5jZWwQARIL",
-            "CgdEZWNsaW5lEAISCgoGSW52aXRlEAMqKwoLU3RhZ2VJbkdhbWUSDQoJU3Bl",
-            "Y3RhdG9yEAASDQoJRW5kQmF0dGxlEAFC3QEKGWNvbS50aGV0YW4ubXVsdGlw",
-            "bGF5ZXIudjFCC0NvbW1vblByb3RvUAFaPXRoZXRhbi1idWYvZ2VuL2dvL3Ro",
-            "ZXRhbi9tdWx0aXBsYXllci92MTt0aGV0YW5fbXVsdGlwbGF5ZXJfdjGiAgNU",
-            "TViqAhVUaGV0YW4uTXVsdGlwbGF5ZXIuVjHKAhVUaGV0YW5cTXVsdGlwbGF5",
-            "ZXJcVjHiAiFUaGV0YW5cTXVsdGlwbGF5ZXJcVjFcR1BCTWV0YWRhdGHqAhdU",
-            "aGV0YW46Ok11bHRpcGxheWVyOjpWMWIGcHJvdG8z"));
+            "aWwSEgoEY29kZRgBIAEoBVIEY29kZSIsCg5CYWxhbmNlQ2hhbmdlZBIaCghk",
+            "b05vdGlmeRgBIAEoCFIIZG9Ob3RpZnkqOAoLUGFydHlTdGF0dXMSDAoIUFBl",
+            "bmRpbmcQABIMCghQRmluZGluZxABEg0KCVBJbkJhdHRsZRACKn4KF1BhcnR5",
+            "QXZhaWxhYmlsaXR5U3RhdHVzEg0KCVBBVW5rbm93bhAAEg0KCVBBRXhwaXJl",
+            "ZBABEg8KC1BBRGlzYmFuZGVkEAISCgoGUEFPcGVuEAMSCgoGUEFGdWxsEAQS",
+            "DgoKUEFJbkJhdHRsZRAFEgwKCFBBSm9pbmVkEAYqQQoPQ2hhbm5lbENoYXRS",
+            "b29tEgkKBUxvYmJ5EAASCQoFUGFydHkQARILCgdDb3VudHJ5EAISCwoHUHJp",
+            "dmF0ZRADKiMKB01zZ1R5cGUSCAoEQ2hhdBAAEg4KClNoYXJlUGFydHkQASpa",
+            "CgxQbGF5ZXJTdGF0dXMSCgoGT25saW5lEAASCwoHT2ZmbGluZRABEgsKB0lu",
+            "UGFydHkQAhIJCgVSZWFkeRADEgsKB0ZpbmRpbmcQBBIMCghJbkJhdHRsZRAF",
+            "KkMKEEludml0YXRpb25BY3Rpb24SCgoGQWNjZXB0EAASCgoGQ2FuY2VsEAES",
+            "CwoHRGVjbGluZRACEgoKBkludml0ZRADKisKC1N0YWdlSW5HYW1lEg0KCVNw",
+            "ZWN0YXRvchAAEg0KCUVuZEJhdHRsZRABQt0BChljb20udGhldGFuLm11bHRp",
+            "cGxheWVyLnYxQgtDb21tb25Qcm90b1ABWj10aGV0YW4tYnVmL2dlbi9nby90",
+            "aGV0YW4vbXVsdGlwbGF5ZXIvdjE7dGhldGFuX211bHRpcGxheWVyX3YxogID",
+            "VE1YqgIVVGhldGFuLk11bHRpcGxheWVyLlYxygIVVGhldGFuXE11bHRpcGxh",
+            "eWVyXFYx4gIhVGhldGFuXE11bHRpcGxheWVyXFYxXEdQQk1ldGFkYXRh6gIX",
+            "VGhldGFuOjpNdWx0aXBsYXllcjo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.PartyStatus), typeof(global::Thetan.Multiplayer.V1.PartyAvailabilityStatus), typeof(global::Thetan.Multiplayer.V1.ChannelChatRoom), typeof(global::Thetan.Multiplayer.V1.MsgType), typeof(global::Thetan.Multiplayer.V1.PlayerStatus), typeof(global::Thetan.Multiplayer.V1.InvitationAction), typeof(global::Thetan.Multiplayer.V1.StageInGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -167,7 +168,8 @@ namespace Thetan.Multiplayer.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ResOtherChangeInfo), global::Thetan.Multiplayer.V1.ResOtherChangeInfo.Parser, new[]{ "PlayerInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OnOtherReady), global::Thetan.Multiplayer.V1.OnOtherReady.Parser, new[]{ "PlayerID", "Ready" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.TicketCacheWSOnly), global::Thetan.Multiplayer.V1.TicketCacheWSOnly.Parser, new[]{ "TicketID", "InGameMode" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.GuildMail), global::Thetan.Multiplayer.V1.GuildMail.Parser, new[]{ "Code" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.GuildMail), global::Thetan.Multiplayer.V1.GuildMail.Parser, new[]{ "Code" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.BalanceChanged), global::Thetan.Multiplayer.V1.BalanceChanged.Parser, new[]{ "DoNotify" }, null, null, null, null)
           }));
     }
     #endregion
@@ -8136,6 +8138,195 @@ namespace Thetan.Multiplayer.V1 {
             break;
           case 8: {
             Code = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class BalanceChanged : pb::IMessage<BalanceChanged>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<BalanceChanged> _parser = new pb::MessageParser<BalanceChanged>(() => new BalanceChanged());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<BalanceChanged> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.CommonReflection.Descriptor.MessageTypes[32]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BalanceChanged() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BalanceChanged(BalanceChanged other) : this() {
+      doNotify_ = other.doNotify_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BalanceChanged Clone() {
+      return new BalanceChanged(this);
+    }
+
+    /// <summary>Field number for the "doNotify" field.</summary>
+    public const int DoNotifyFieldNumber = 1;
+    private bool doNotify_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool DoNotify {
+      get { return doNotify_; }
+      set {
+        doNotify_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as BalanceChanged);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(BalanceChanged other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (DoNotify != other.DoNotify) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (DoNotify != false) hash ^= DoNotify.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (DoNotify != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(DoNotify);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (DoNotify != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(DoNotify);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (DoNotify != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(BalanceChanged other) {
+      if (other == null) {
+        return;
+      }
+      if (other.DoNotify != false) {
+        DoNotify = other.DoNotify;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            DoNotify = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            DoNotify = input.ReadBool();
             break;
           }
         }
