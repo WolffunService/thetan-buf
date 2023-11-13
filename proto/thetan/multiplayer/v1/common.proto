@@ -275,3 +275,11 @@ message TicketCacheWSOnly {
   string ticketID = 1;
   int32 inGameMode = 2;
 }
+
+message GuildMail {
+  int32 code = 1;
+}
+
+message TreasureBalanceChanged {
+  bool doNotify = 1;
+}
