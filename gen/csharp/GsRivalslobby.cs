@@ -33,30 +33,31 @@ namespace Thetan.Gateway.V1 {
             "RW50cnkSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdWUYAiABKAVSBXZhbHVl",
             "OgI4ASJkChJUb3duQWxsb2NhdGlvblJlc3ASGgoIc2VydmVySVAYASABKAlS",
             "CHNlcnZlcklQEh4KCnNlcnZlclBvcnQYAiABKA1SCnNlcnZlclBvcnQSEgoE",
-            "dG93bhgDIAEoCVIEdG93biLdAQoYQXZhaWxhYmxlUmVnaW9uc1Jlc3BvbnNl",
+            "dG93bhgDIAEoCVIEdG93biL+AQoYQXZhaWxhYmxlUmVnaW9uc1Jlc3BvbnNl",
             "EksKBGRhdGEYASADKAsyNy50aGV0YW4uZ2F0ZXdheS52MS5BdmFpbGFibGVS",
-            "ZWdpb25zUmVzcG9uc2UuUmVnaW9uc0RhdGFSBGRhdGEadAoLUmVnaW9uc0Rh",
-            "dGESTQoOZ2FtZVNlcnZlckluZm8YASABKAsyJS50aGV0YW4uZ2F0ZXdheS52",
-            "MS5Ub3duQWxsb2NhdGlvblJlc3BSDmdhbWVTZXJ2ZXJJbmZvEhYKBnJlZ2lv",
-            "bhgCIAEoCVIGcmVnaW9uMqsCChhUaGV0YW5HYXRld2F5Uml2YWxzTG9iYnkS",
-            "VAoMQWxsb2NhdGVUb3duEhsudGhldGFuLnJpdmFscy52MS5Mb2JieVRvd24a",
-            "JS50aGV0YW4uZ2F0ZXdheS52MS5Ub3duQWxsb2NhdGlvblJlc3AiABJbCgpH",
-            "ZXRUb3duQ0NVEiQudGhldGFuLmdhdGV3YXkudjEuR2V0VG93bkNDVVJlcXVl",
-            "c3QaJS50aGV0YW4uZ2F0ZXdheS52MS5HZXRUb3duQ0NVUmVzcG9uc2UiABJc",
-            "ChNHZXRBdmFpbGFibGVSZWdpb25zEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5",
-            "GisudGhldGFuLmdhdGV3YXkudjEuQXZhaWxhYmxlUmVnaW9uc1Jlc3BvbnNl",
-            "IgBCyAEKFWNvbS50aGV0YW4uZ2F0ZXdheS52MUISR3NSaXZhbHNsb2JieVBy",
-            "b3RvUAFaNXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9nYXRld2F5L3YxO3Ro",
-            "ZXRhbl9nYXRld2F5X3YxogIDVEdYqgIRVGhldGFuLkdhdGV3YXkuVjHKAhFU",
-            "aGV0YW5cR2F0ZXdheVxWMeICHVRoZXRhblxHYXRld2F5XFYxXEdQQk1ldGFk",
-            "YXRh6gITVGhldGFuOjpHYXRld2F5OjpWMWIGcHJvdG8z"));
+            "ZWdpb25zUmVzcG9uc2UuUmVnaW9uc0RhdGFSBGRhdGEalAEKC1JlZ2lvbnNE",
+            "YXRhEk0KDmdhbWVTZXJ2ZXJJbmZvGAEgASgLMiUudGhldGFuLmdhdGV3YXku",
+            "djEuVG93bkFsbG9jYXRpb25SZXNwUg5nYW1lU2VydmVySW5mbxIWCgZyZWdp",
+            "b24YAiABKAlSBnJlZ2lvbhIeCgpyZWdpb25Db2RlGAMgASgJUgpyZWdpb25D",
+            "b2RlMqsCChhUaGV0YW5HYXRld2F5Uml2YWxzTG9iYnkSVAoMQWxsb2NhdGVU",
+            "b3duEhsudGhldGFuLnJpdmFscy52MS5Mb2JieVRvd24aJS50aGV0YW4uZ2F0",
+            "ZXdheS52MS5Ub3duQWxsb2NhdGlvblJlc3AiABJbCgpHZXRUb3duQ0NVEiQu",
+            "dGhldGFuLmdhdGV3YXkudjEuR2V0VG93bkNDVVJlcXVlc3QaJS50aGV0YW4u",
+            "Z2F0ZXdheS52MS5HZXRUb3duQ0NVUmVzcG9uc2UiABJcChNHZXRBdmFpbGFi",
+            "bGVSZWdpb25zEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GisudGhldGFuLmdh",
+            "dGV3YXkudjEuQXZhaWxhYmxlUmVnaW9uc1Jlc3BvbnNlIgBCyAEKFWNvbS50",
+            "aGV0YW4uZ2F0ZXdheS52MUISR3NSaXZhbHNsb2JieVByb3RvUAFaNXRoZXRh",
+            "bi1idWYvZ2VuL2dvL3RoZXRhbi9nYXRld2F5L3YxO3RoZXRhbl9nYXRld2F5",
+            "X3YxogIDVEdYqgIRVGhldGFuLkdhdGV3YXkuVjHKAhFUaGV0YW5cR2F0ZXdh",
+            "eVxWMeICHVRoZXRhblxHYXRld2F5XFYxXEdQQk1ldGFkYXRh6gITVGhldGFu",
+            "OjpHYXRld2F5OjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.GetTownCCURequest), global::Thetan.Gateway.V1.GetTownCCURequest.Parser, new[]{ "TownIDs" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.GetTownCCUResponse), global::Thetan.Gateway.V1.GetTownCCUResponse.Parser, new[]{ "Ccu" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.TownAllocationResp), global::Thetan.Gateway.V1.TownAllocationResp.Parser, new[]{ "ServerIP", "ServerPort", "Town" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.AvailableRegionsResponse), global::Thetan.Gateway.V1.AvailableRegionsResponse.Parser, new[]{ "Data" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.AvailableRegionsResponse.Types.RegionsData), global::Thetan.Gateway.V1.AvailableRegionsResponse.Types.RegionsData.Parser, new[]{ "GameServerInfo", "Region" }, null, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.AvailableRegionsResponse), global::Thetan.Gateway.V1.AvailableRegionsResponse.Parser, new[]{ "Data" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Gateway.V1.AvailableRegionsResponse.Types.RegionsData), global::Thetan.Gateway.V1.AvailableRegionsResponse.Types.RegionsData.Parser, new[]{ "GameServerInfo", "Region", "RegionCode" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -905,6 +906,7 @@ namespace Thetan.Gateway.V1 {
         public RegionsData(RegionsData other) : this() {
           gameServerInfo_ = other.gameServerInfo_ != null ? other.gameServerInfo_.Clone() : null;
           region_ = other.region_;
+          regionCode_ = other.regionCode_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -938,6 +940,18 @@ namespace Thetan.Gateway.V1 {
           }
         }
 
+        /// <summary>Field number for the "regionCode" field.</summary>
+        public const int RegionCodeFieldNumber = 3;
+        private string regionCode_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public string RegionCode {
+          get { return regionCode_; }
+          set {
+            regionCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
@@ -955,6 +969,7 @@ namespace Thetan.Gateway.V1 {
           }
           if (!object.Equals(GameServerInfo, other.GameServerInfo)) return false;
           if (Region != other.Region) return false;
+          if (RegionCode != other.RegionCode) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -964,6 +979,7 @@ namespace Thetan.Gateway.V1 {
           int hash = 1;
           if (gameServerInfo_ != null) hash ^= GameServerInfo.GetHashCode();
           if (Region.Length != 0) hash ^= Region.GetHashCode();
+          if (RegionCode.Length != 0) hash ^= RegionCode.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -990,6 +1006,10 @@ namespace Thetan.Gateway.V1 {
             output.WriteRawTag(18);
             output.WriteString(Region);
           }
+          if (RegionCode.Length != 0) {
+            output.WriteRawTag(26);
+            output.WriteString(RegionCode);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -1008,6 +1028,10 @@ namespace Thetan.Gateway.V1 {
             output.WriteRawTag(18);
             output.WriteString(Region);
           }
+          if (RegionCode.Length != 0) {
+            output.WriteRawTag(26);
+            output.WriteString(RegionCode);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -1023,6 +1047,9 @@ namespace Thetan.Gateway.V1 {
           }
           if (Region.Length != 0) {
             size += 1 + pb::CodedOutputStream.ComputeStringSize(Region);
+          }
+          if (RegionCode.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(RegionCode);
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -1044,6 +1071,9 @@ namespace Thetan.Gateway.V1 {
           }
           if (other.Region.Length != 0) {
             Region = other.Region;
+          }
+          if (other.RegionCode.Length != 0) {
+            RegionCode = other.RegionCode;
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
@@ -1071,6 +1101,10 @@ namespace Thetan.Gateway.V1 {
                 Region = input.ReadString();
                 break;
               }
+              case 26: {
+                RegionCode = input.ReadString();
+                break;
+              }
             }
           }
         #endif
@@ -1095,6 +1129,10 @@ namespace Thetan.Gateway.V1 {
               }
               case 18: {
                 Region = input.ReadString();
+                break;
+              }
+              case 26: {
+                RegionCode = input.ReadString();
                 break;
               }
             }
