@@ -17,7 +17,8 @@ enum PartyErrorCode {
   PartyIsFull = 1;
   Dnd = 2;
   BlockInvite = 3;
-  FindingMatch = 4; // Join party when party is finding match
+  PartyAlreadyStarted = 4; // Join party when party is finding match
   DifferentVersionClient = 5;//findmatch version
+  PartyIDInvalid = 6;
 
 }
