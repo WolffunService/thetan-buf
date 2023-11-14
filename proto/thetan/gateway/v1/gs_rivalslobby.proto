@@ -34,7 +34,7 @@ message TownAllocationResp {
 
 message AvailableRegionsResponse {
   message RegionsData { 
-    TownAllocationResp gameServerInfo = 1;
+    string host = 1;
     string region = 2;
     string regionCode = 3;
   }
