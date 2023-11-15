@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package thetan.rivals.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/bot/v1;thetan_bot_v1";
+option csharp_namespace = "Thetan.Bot.V1";
+
+service BotRivalsService {
+    rpc GetLobbyBots(GetLobbyBotsRequest) returns (GetLobbyBotsResponse) {}
+}
+
+message GetLobbyBotsRequest {
+    string townID = 1;
+}
+
+message GetLobbyBotsResponse {
+    repeated BotInfo bots = 1;
+}
+
+message BotInfo {
+    string botID = 1;
+    int64 expiresAt = 2;
+}
