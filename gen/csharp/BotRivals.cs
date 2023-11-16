@@ -25,23 +25,23 @@ namespace Thetan.Rivals.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch50aGV0YW4vYm90L3YxL2JvdF9yaXZhbHMucHJvdG8SEHRoZXRhbi5yaXZh",
-            "bHMudjEiLQoTR2V0TG9iYnlCb3RzUmVxdWVzdBIWCgZ0b3duSUQYASABKAlS",
-            "BnRvd25JRCJFChRHZXRMb2JieUJvdHNSZXNwb25zZRItCgRib3RzGAEgAygL",
-            "MhkudGhldGFuLnJpdmFscy52MS5Cb3RJbmZvUgRib3RzIj0KB0JvdEluZm8S",
-            "FAoFYm90SUQYASABKAlSBWJvdElEEhwKCWV4cGlyZXNBdBgCIAEoA1IJZXhw",
-            "aXJlc0F0MnMKEEJvdFJpdmFsc1NlcnZpY2USXwoMR2V0TG9iYnlCb3RzEiUu",
-            "dGhldGFuLnJpdmFscy52MS5HZXRMb2JieUJvdHNSZXF1ZXN0GiYudGhldGFu",
-            "LnJpdmFscy52MS5HZXRMb2JieUJvdHNSZXNwb25zZSIAQrcBChRjb20udGhl",
-            "dGFuLnJpdmFscy52MUIOQm90Uml2YWxzUHJvdG9QAVotdGhldGFuLWJ1Zi9n",
-            "ZW4vZ28vdGhldGFuL2JvdC92MTt0aGV0YW5fYm90X3YxogIDVFJYqgIQVGhl",
-            "dGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5cUml2",
-            "YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZwcm90",
-            "bzM="));
+            "bHMudjEiMAoWU2VhcmNoTG9iYnlCb3RzUmVxdWVzdBIWCgZ0b3duSUQYASAB",
+            "KAlSBnRvd25JRCJIChdTZWFyY2hMb2JieUJvdHNSZXNwb25zZRItCgRib3Rz",
+            "GAEgAygLMhkudGhldGFuLnJpdmFscy52MS5Cb3RJbmZvUgRib3RzIj0KB0Jv",
+            "dEluZm8SFAoFYm90SUQYASABKAlSBWJvdElEEhwKCWV4cGlyZXNBdBgCIAEo",
+            "A1IJZXhwaXJlc0F0MnwKEEJvdFJpdmFsc1NlcnZpY2USaAoPU2VhcmNoTG9i",
+            "YnlCb3RzEigudGhldGFuLnJpdmFscy52MS5TZWFyY2hMb2JieUJvdHNSZXF1",
+            "ZXN0GikudGhldGFuLnJpdmFscy52MS5TZWFyY2hMb2JieUJvdHNSZXNwb25z",
+            "ZSIAQrcBChRjb20udGhldGFuLnJpdmFscy52MUIOQm90Uml2YWxzUHJvdG9Q",
+            "AVotdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2JvdC92MTt0aGV0YW5fYm90",
+            "X3YxogIDVFJYqgIQVGhldGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNc",
+            "VjHiAhxUaGV0YW5cUml2YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpS",
+            "aXZhbHM6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetLobbyBotsRequest), global::Thetan.Rivals.V1.GetLobbyBotsRequest.Parser, new[]{ "TownID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetLobbyBotsResponse), global::Thetan.Rivals.V1.GetLobbyBotsResponse.Parser, new[]{ "Bots" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchLobbyBotsRequest), global::Thetan.Rivals.V1.SearchLobbyBotsRequest.Parser, new[]{ "TownID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchLobbyBotsResponse), global::Thetan.Rivals.V1.SearchLobbyBotsResponse.Parser, new[]{ "Bots" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.BotInfo), global::Thetan.Rivals.V1.BotInfo.Parser, new[]{ "BotID", "ExpiresAt" }, null, null, null, null)
           }));
     }
@@ -49,16 +49,16 @@ namespace Thetan.Rivals.V1 {
 
   }
   #region Messages
-  public sealed partial class GetLobbyBotsRequest : pb::IMessage<GetLobbyBotsRequest>
+  public sealed partial class SearchLobbyBotsRequest : pb::IMessage<SearchLobbyBotsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<GetLobbyBotsRequest> _parser = new pb::MessageParser<GetLobbyBotsRequest>(() => new GetLobbyBotsRequest());
+    private static readonly pb::MessageParser<SearchLobbyBotsRequest> _parser = new pb::MessageParser<SearchLobbyBotsRequest>(() => new SearchLobbyBotsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GetLobbyBotsRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<SearchLobbyBotsRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -74,7 +74,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLobbyBotsRequest() {
+    public SearchLobbyBotsRequest() {
       OnConstruction();
     }
 
@@ -82,15 +82,15 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLobbyBotsRequest(GetLobbyBotsRequest other) : this() {
+    public SearchLobbyBotsRequest(SearchLobbyBotsRequest other) : this() {
       townID_ = other.townID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLobbyBotsRequest Clone() {
-      return new GetLobbyBotsRequest(this);
+    public SearchLobbyBotsRequest Clone() {
+      return new SearchLobbyBotsRequest(this);
     }
 
     /// <summary>Field number for the "townID" field.</summary>
@@ -108,12 +108,12 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as GetLobbyBotsRequest);
+      return Equals(other as SearchLobbyBotsRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GetLobbyBotsRequest other) {
+    public bool Equals(SearchLobbyBotsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -186,7 +186,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GetLobbyBotsRequest other) {
+    public void MergeFrom(SearchLobbyBotsRequest other) {
       if (other == null) {
         return;
       }
@@ -238,16 +238,16 @@ namespace Thetan.Rivals.V1 {
 
   }
 
-  public sealed partial class GetLobbyBotsResponse : pb::IMessage<GetLobbyBotsResponse>
+  public sealed partial class SearchLobbyBotsResponse : pb::IMessage<SearchLobbyBotsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<GetLobbyBotsResponse> _parser = new pb::MessageParser<GetLobbyBotsResponse>(() => new GetLobbyBotsResponse());
+    private static readonly pb::MessageParser<SearchLobbyBotsResponse> _parser = new pb::MessageParser<SearchLobbyBotsResponse>(() => new SearchLobbyBotsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GetLobbyBotsResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<SearchLobbyBotsResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -263,7 +263,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLobbyBotsResponse() {
+    public SearchLobbyBotsResponse() {
       OnConstruction();
     }
 
@@ -271,15 +271,15 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLobbyBotsResponse(GetLobbyBotsResponse other) : this() {
+    public SearchLobbyBotsResponse(SearchLobbyBotsResponse other) : this() {
       bots_ = other.bots_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetLobbyBotsResponse Clone() {
-      return new GetLobbyBotsResponse(this);
+    public SearchLobbyBotsResponse Clone() {
+      return new SearchLobbyBotsResponse(this);
     }
 
     /// <summary>Field number for the "bots" field.</summary>
@@ -296,12 +296,12 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as GetLobbyBotsResponse);
+      return Equals(other as SearchLobbyBotsResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GetLobbyBotsResponse other) {
+    public bool Equals(SearchLobbyBotsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -366,7 +366,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GetLobbyBotsResponse other) {
+    public void MergeFrom(SearchLobbyBotsResponse other) {
       if (other == null) {
         return;
       }
