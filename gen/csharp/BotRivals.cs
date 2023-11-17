@@ -25,22 +25,23 @@ namespace Thetan.Rivals.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch50aGV0YW4vYm90L3YxL2JvdF9yaXZhbHMucHJvdG8SEHRoZXRhbi5yaXZh",
-            "bHMudjEiMAoWU2VhcmNoTG9iYnlCb3RzUmVxdWVzdBIWCgZ0b3duSUQYASAB",
-            "KAlSBnRvd25JRCJIChdTZWFyY2hMb2JieUJvdHNSZXNwb25zZRItCgRib3Rz",
-            "GAEgAygLMhkudGhldGFuLnJpdmFscy52MS5Cb3RJbmZvUgRib3RzIj0KB0Jv",
-            "dEluZm8SFAoFYm90SUQYASABKAlSBWJvdElEEhwKCWV4cGlyZXNBdBgCIAEo",
-            "A1IJZXhwaXJlc0F0MnwKEEJvdFJpdmFsc1NlcnZpY2USaAoPU2VhcmNoTG9i",
-            "YnlCb3RzEigudGhldGFuLnJpdmFscy52MS5TZWFyY2hMb2JieUJvdHNSZXF1",
-            "ZXN0GikudGhldGFuLnJpdmFscy52MS5TZWFyY2hMb2JieUJvdHNSZXNwb25z",
-            "ZSIAQrcBChRjb20udGhldGFuLnJpdmFscy52MUIOQm90Uml2YWxzUHJvdG9Q",
-            "AVotdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2JvdC92MTt0aGV0YW5fYm90",
-            "X3YxogIDVFJYqgIQVGhldGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNc",
-            "VjHiAhxUaGV0YW5cUml2YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpS",
-            "aXZhbHM6OlYxYgZwcm90bzM="));
+            "bHMudjEiagoWU2VhcmNoTG9iYnlCb3RzUmVxdWVzdBIWCgZ0b3duSUQYASAB",
+            "KAlSBnRvd25JRBIgCgtjb3VudHJ5Q29kZRgCIAEoCVILY291bnRyeUNvZGUS",
+            "FgoGYW1vdW50GAMgASgFUgZhbW91bnQiSAoXU2VhcmNoTG9iYnlCb3RzUmVz",
+            "cG9uc2USLQoEYm90cxgBIAMoCzIZLnRoZXRhbi5yaXZhbHMudjEuQm90SW5m",
+            "b1IEYm90cyI9CgdCb3RJbmZvEhQKBWJvdElEGAEgASgJUgVib3RJRBIcCgll",
+            "eHBpcmVzQXQYAiABKANSCWV4cGlyZXNBdDJ8ChBCb3RSaXZhbHNTZXJ2aWNl",
+            "EmgKD1NlYXJjaExvYmJ5Qm90cxIoLnRoZXRhbi5yaXZhbHMudjEuU2VhcmNo",
+            "TG9iYnlCb3RzUmVxdWVzdBopLnRoZXRhbi5yaXZhbHMudjEuU2VhcmNoTG9i",
+            "YnlCb3RzUmVzcG9uc2UiAEK3AQoUY29tLnRoZXRhbi5yaXZhbHMudjFCDkJv",
+            "dFJpdmFsc1Byb3RvUAFaLXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9ib3Qv",
+            "djE7dGhldGFuX2JvdF92MaICA1RSWKoCEFRoZXRhbi5SaXZhbHMuVjHKAhBU",
+            "aGV0YW5cUml2YWxzXFYx4gIcVGhldGFuXFJpdmFsc1xWMVxHUEJNZXRhZGF0",
+            "YeoCElRoZXRhbjo6Uml2YWxzOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchLobbyBotsRequest), global::Thetan.Rivals.V1.SearchLobbyBotsRequest.Parser, new[]{ "TownID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchLobbyBotsRequest), global::Thetan.Rivals.V1.SearchLobbyBotsRequest.Parser, new[]{ "TownID", "CountryCode", "Amount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchLobbyBotsResponse), global::Thetan.Rivals.V1.SearchLobbyBotsResponse.Parser, new[]{ "Bots" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.BotInfo), global::Thetan.Rivals.V1.BotInfo.Parser, new[]{ "BotID", "ExpiresAt" }, null, null, null, null)
           }));
@@ -84,6 +85,8 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SearchLobbyBotsRequest(SearchLobbyBotsRequest other) : this() {
       townID_ = other.townID_;
+      countryCode_ = other.countryCode_;
+      amount_ = other.amount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -105,6 +108,30 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
+    /// <summary>Field number for the "countryCode" field.</summary>
+    public const int CountryCodeFieldNumber = 2;
+    private string countryCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CountryCode {
+      get { return countryCode_; }
+      set {
+        countryCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "amount" field.</summary>
+    public const int AmountFieldNumber = 3;
+    private int amount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Amount {
+      get { return amount_; }
+      set {
+        amount_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -121,6 +148,8 @@ namespace Thetan.Rivals.V1 {
         return true;
       }
       if (TownID != other.TownID) return false;
+      if (CountryCode != other.CountryCode) return false;
+      if (Amount != other.Amount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -129,6 +158,8 @@ namespace Thetan.Rivals.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (TownID.Length != 0) hash ^= TownID.GetHashCode();
+      if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
+      if (Amount != 0) hash ^= Amount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -151,6 +182,14 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(10);
         output.WriteString(TownID);
       }
+      if (CountryCode.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CountryCode);
+      }
+      if (Amount != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Amount);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -165,6 +204,14 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(10);
         output.WriteString(TownID);
       }
+      if (CountryCode.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CountryCode);
+      }
+      if (Amount != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Amount);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -177,6 +224,12 @@ namespace Thetan.Rivals.V1 {
       int size = 0;
       if (TownID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(TownID);
+      }
+      if (CountryCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
+      }
+      if (Amount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Amount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -192,6 +245,12 @@ namespace Thetan.Rivals.V1 {
       }
       if (other.TownID.Length != 0) {
         TownID = other.TownID;
+      }
+      if (other.CountryCode.Length != 0) {
+        CountryCode = other.CountryCode;
+      }
+      if (other.Amount != 0) {
+        Amount = other.Amount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -212,6 +271,14 @@ namespace Thetan.Rivals.V1 {
             TownID = input.ReadString();
             break;
           }
+          case 18: {
+            CountryCode = input.ReadString();
+            break;
+          }
+          case 24: {
+            Amount = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -229,6 +296,14 @@ namespace Thetan.Rivals.V1 {
             break;
           case 10: {
             TownID = input.ReadString();
+            break;
+          }
+          case 18: {
+            CountryCode = input.ReadString();
+            break;
+          }
+          case 24: {
+            Amount = input.ReadInt32();
             break;
           }
         }

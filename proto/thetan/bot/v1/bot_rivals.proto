@@ -11,6 +11,8 @@ service BotRivalsService {
 
 message SearchLobbyBotsRequest {
     string townID = 1;
+    string countryCode = 2;
+    int32 amount = 3;
 }
 
 message SearchLobbyBotsResponse {
