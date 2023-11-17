@@ -31,6 +31,7 @@ const (
 	ThetanRivalService_GetAddInsByUserID_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetAddInsByUserID"
 	ThetanRivalService_GetAddInByID_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/GetAddInByID"
 	ThetanRivalService_CreateAddIn_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/CreateAddIn"
+	ThetanRivalService_FilterUserItems_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/FilterUserItems"
 	ThetanRivalService_GetListFriends_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetListFriends"
 	ThetanRivalService_GetMatchInfoOnboarding_FullMethodName        = "/thetan.rivals.v1.ThetanRivalService/GetMatchInfoOnboarding"
 	ThetanRivalService_GetLatestLobbyActivityInfo_FullMethodName    = "/thetan.rivals.v1.ThetanRivalService/GetLatestLobbyActivityInfo"
@@ -67,6 +68,7 @@ type ThetanRivalServiceClient interface {
 	GetAddInsByUserID(ctx context.Context, in *GetAddInsByUserIDRequest, opts ...grpc.CallOption) (*GetAddInsByUserIDResponse, error)
 	GetAddInByID(ctx context.Context, in *GetAddInByIDRequest, opts ...grpc.CallOption) (*GetAddInByIDResponse, error)
 	CreateAddIn(ctx context.Context, in *CreateAddInRequest, opts ...grpc.CallOption) (*CreateAddInResponse, error)
+	FilterUserItems(ctx context.Context, in *FilterUserItemsRequest, opts ...grpc.CallOption) (*FilterUserItemsResponse, error)
 	// Friends
 	GetListFriends(ctx context.Context, in *GetUserFriendRequest, opts ...grpc.CallOption) (*GetUserFriendResponse, error)
 	GetMatchInfoOnboarding(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*GetMatchInfoResponse, error)
@@ -194,6 +196,15 @@ func (c *thetanRivalServiceClient) GetAddInByID(ctx context.Context, in *GetAddI
 func (c *thetanRivalServiceClient) CreateAddIn(ctx context.Context, in *CreateAddInRequest, opts ...grpc.CallOption) (*CreateAddInResponse, error) {
 	out := new(CreateAddInResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_CreateAddIn_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) FilterUserItems(ctx context.Context, in *FilterUserItemsRequest, opts ...grpc.CallOption) (*FilterUserItemsResponse, error) {
+	out := new(FilterUserItemsResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_FilterUserItems_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -354,6 +365,7 @@ type ThetanRivalServiceServer interface {
 	GetAddInsByUserID(context.Context, *GetAddInsByUserIDRequest) (*GetAddInsByUserIDResponse, error)
 	GetAddInByID(context.Context, *GetAddInByIDRequest) (*GetAddInByIDResponse, error)
 	CreateAddIn(context.Context, *CreateAddInRequest) (*CreateAddInResponse, error)
+	FilterUserItems(context.Context, *FilterUserItemsRequest) (*FilterUserItemsResponse, error)
 	// Friends
 	GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error)
 	GetMatchInfoOnboarding(context.Context, *GetMatchInfoRequest) (*GetMatchInfoResponse, error)
@@ -416,6 +428,9 @@ func (UnimplementedThetanRivalServiceServer) GetAddInByID(context.Context, *GetA
 }
 func (UnimplementedThetanRivalServiceServer) CreateAddIn(context.Context, *CreateAddInRequest) (*CreateAddInResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateAddIn not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) FilterUserItems(context.Context, *FilterUserItemsRequest) (*FilterUserItemsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method FilterUserItems not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetListFriends not implemented")
@@ -669,6 +684,24 @@ func _ThetanRivalService_CreateAddIn_Handler(srv interface{}, ctx context.Contex
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ThetanRivalServiceServer).CreateAddIn(ctx, req.(*CreateAddInRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_FilterUserItems_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(FilterUserItemsRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).FilterUserItems(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_FilterUserItems_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).FilterUserItems(ctx, req.(*FilterUserItemsRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -993,6 +1026,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "CreateAddIn",
 			Handler:    _ThetanRivalService_CreateAddIn_Handler,
+		},
+		{
+			MethodName: "FilterUserItems",
+			Handler:    _ThetanRivalService_FilterUserItems_Handler,
 		},
 		{
 			MethodName: "GetListFriends",
