@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package thetan.rivals.v1;
+import "thetan/rivals/v1/service_rivals.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/bot/v1;thetan_bot_v1";
 option csharp_namespace = "Thetan.Bot.V1";
@@ -14,7 +15,15 @@ message FetchLobbyBotsRequest {
 }
 
 message FetchLobbyBotsResponse{
-    repeated BotInfo bots = 1;
+    repeated LobbyBotInfo bots = 1;
+    float randomRateSolo =2;
+    float randomRatePair =3;
+}
+
+message LobbyBotInfo {
+    UserProfileResponse profile = 1;
+    UserSelectedMinionResponse selectedMinion = 2;
+    int64 expiresAt = 3;
 }
 
 message SearchLobbyBotsRequest {
