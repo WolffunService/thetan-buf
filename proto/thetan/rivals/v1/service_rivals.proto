@@ -298,13 +298,21 @@ message CreateAddInResponse {
 
 message FilterUserItemsRequest{
   string userID = 1;
-  string exclusiveFor = 2;
-  string itemType = 3;
+  repeated string exclusiveFor = 2;
 
 }
 
 message FilterUserItemsResponse{
-  repeated int64 ids = 1;
+  //item_type : items
+  map<string, FilterUserItemResponse> items = 1;
+}
+
+message FilterUserItemResponse{
+  repeated ItemResponse item = 1;
+}
+message ItemResponse{
+  int64 itemId = 1;
+  bool isPremiumItem =2;
 }
 
 // ==== FRIENDS ====
