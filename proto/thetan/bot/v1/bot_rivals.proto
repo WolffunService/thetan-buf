@@ -6,7 +6,15 @@ option go_package = "thetan-buf/gen/go/thetan/bot/v1;thetan_bot_v1";
 option csharp_namespace = "Thetan.Bot.V1";
 
 service BotRivalsService {
-    rpc SearchLobbyBots(SearchLobbyBotsRequest) returns (SearchLobbyBotsResponse) {}
+    rpc FetchLobbyBots(FetchLobbyBotsRequest) returns (FetchLobbyBotsResponse) {}
+}
+
+message FetchLobbyBotsRequest {
+    string townID = 1;
+}
+
+message FetchLobbyBotsResponse{
+    repeated BotInfo bots = 1;
 }
 
 message SearchLobbyBotsRequest {
