@@ -303,7 +303,16 @@ message FilterUserItemsRequest{
 }
 
 message FilterUserItemsResponse{
-  map<string, int64> items = 1;
+  //item_type : items
+  map<string, FilterUserItemResponse> items = 1;
+}
+
+message FilterUserItemResponse{
+  repeated ItemResponse item = 1;
+}
+message ItemResponse{
+  int64 itemId = 1;
+  bool isPremiumItem =2;
 }
 
 // ==== FRIENDS ====
