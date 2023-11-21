@@ -298,13 +298,12 @@ message CreateAddInResponse {
 
 message FilterUserItemsRequest{
   string userID = 1;
-  string exclusiveFor = 2;
-  string itemType = 3;
+  repeated string exclusiveFor = 2;
 
 }
 
 message FilterUserItemsResponse{
-  repeated int64 ids = 1;
+  map<string, int64> items = 1;
 }
 
 // ==== FRIENDS ====
