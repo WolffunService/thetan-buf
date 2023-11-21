@@ -19,14 +19,14 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	BotRivalsService_SearchLobbyBots_FullMethodName = "/thetan.rivals.v1.BotRivalsService/SearchLobbyBots"
+	BotRivalsService_FetchLobbyBots_FullMethodName = "/thetan.rivals.v1.BotRivalsService/FetchLobbyBots"
 )
 
 // BotRivalsServiceClient is the client API for BotRivalsService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type BotRivalsServiceClient interface {
-	SearchLobbyBots(ctx context.Context, in *SearchLobbyBotsRequest, opts ...grpc.CallOption) (*SearchLobbyBotsResponse, error)
+	FetchLobbyBots(ctx context.Context, in *FetchLobbyBotsRequest, opts ...grpc.CallOption) (*FetchLobbyBotsResponse, error)
 }
 
 type botRivalsServiceClient struct {
@@ -37,9 +37,9 @@ func NewBotRivalsServiceClient(cc grpc.ClientConnInterface) BotRivalsServiceClie
 	return &botRivalsServiceClient{cc}
 }
 
-func (c *botRivalsServiceClient) SearchLobbyBots(ctx context.Context, in *SearchLobbyBotsRequest, opts ...grpc.CallOption) (*SearchLobbyBotsResponse, error) {
-	out := new(SearchLobbyBotsResponse)
-	err := c.cc.Invoke(ctx, BotRivalsService_SearchLobbyBots_FullMethodName, in, out, opts...)
+func (c *botRivalsServiceClient) FetchLobbyBots(ctx context.Context, in *FetchLobbyBotsRequest, opts ...grpc.CallOption) (*FetchLobbyBotsResponse, error) {
+	out := new(FetchLobbyBotsResponse)
+	err := c.cc.Invoke(ctx, BotRivalsService_FetchLobbyBots_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -50,7 +50,7 @@ func (c *botRivalsServiceClient) SearchLobbyBots(ctx context.Context, in *Search
 // All implementations must embed UnimplementedBotRivalsServiceServer
 // for forward compatibility
 type BotRivalsServiceServer interface {
-	SearchLobbyBots(context.Context, *SearchLobbyBotsRequest) (*SearchLobbyBotsResponse, error)
+	FetchLobbyBots(context.Context, *FetchLobbyBotsRequest) (*FetchLobbyBotsResponse, error)
 	mustEmbedUnimplementedBotRivalsServiceServer()
 }
 
@@ -58,8 +58,8 @@ type BotRivalsServiceServer interface {
 type UnimplementedBotRivalsServiceServer struct {
 }
 
-func (UnimplementedBotRivalsServiceServer) SearchLobbyBots(context.Context, *SearchLobbyBotsRequest) (*SearchLobbyBotsResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method SearchLobbyBots not implemented")
+func (UnimplementedBotRivalsServiceServer) FetchLobbyBots(context.Context, *FetchLobbyBotsRequest) (*FetchLobbyBotsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method FetchLobbyBots not implemented")
 }
 func (UnimplementedBotRivalsServiceServer) mustEmbedUnimplementedBotRivalsServiceServer() {}
 
@@ -74,20 +74,20 @@ func RegisterBotRivalsServiceServer(s grpc.ServiceRegistrar, srv BotRivalsServic
 	s.RegisterService(&BotRivalsService_ServiceDesc, srv)
 }
 
-func _BotRivalsService_SearchLobbyBots_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(SearchLobbyBotsRequest)
+func _BotRivalsService_FetchLobbyBots_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(FetchLobbyBotsRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(BotRivalsServiceServer).SearchLobbyBots(ctx, in)
+		return srv.(BotRivalsServiceServer).FetchLobbyBots(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: BotRivalsService_SearchLobbyBots_FullMethodName,
+		FullMethod: BotRivalsService_FetchLobbyBots_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(BotRivalsServiceServer).SearchLobbyBots(ctx, req.(*SearchLobbyBotsRequest))
+		return srv.(BotRivalsServiceServer).FetchLobbyBots(ctx, req.(*FetchLobbyBotsRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -100,8 +100,8 @@ var BotRivalsService_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*BotRivalsServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "SearchLobbyBots",
-			Handler:    _BotRivalsService_SearchLobbyBots_Handler,
+			MethodName: "FetchLobbyBots",
+			Handler:    _BotRivalsService_FetchLobbyBots_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
