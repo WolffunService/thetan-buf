@@ -30,29 +30,29 @@ namespace Thetan.Rivals.V1 {
             "bklEIpwBChZGZXRjaExvYmJ5Qm90c1Jlc3BvbnNlEjIKBGJvdHMYASADKAsy",
             "Hi50aGV0YW4ucml2YWxzLnYxLkxvYmJ5Qm90SW5mb1IEYm90cxImCg5yYW5k",
             "b21SYXRlU29sbxgCIAEoAlIOcmFuZG9tUmF0ZVNvbG8SJgoOcmFuZG9tUmF0",
-            "ZVBhaXIYAyABKAJSDnJhbmRvbVJhdGVQYWlyIsMBCgxMb2JieUJvdEluZm8S",
+            "ZVBhaXIYAyABKAJSDnJhbmRvbVJhdGVQYWlyIuEBCgxMb2JieUJvdEluZm8S",
             "PwoHcHJvZmlsZRgBIAEoCzIlLnRoZXRhbi5yaXZhbHMudjEuVXNlclByb2Zp",
             "bGVSZXNwb25zZVIHcHJvZmlsZRJUCg5zZWxlY3RlZE1pbmlvbhgCIAEoCzIs",
             "LnRoZXRhbi5yaXZhbHMudjEuVXNlclNlbGVjdGVkTWluaW9uUmVzcG9uc2VS",
             "DnNlbGVjdGVkTWluaW9uEhwKCWV4cGlyZXNBdBgDIAEoA1IJZXhwaXJlc0F0",
-            "In4KB0JvdEluZm8SFAoFYm90SUQYASABKAlSBWJvdElEEhwKCWV4cGlyZXNB",
-            "dBgCIAEoA1IJZXhwaXJlc0F0Ej8KC3NwZW5kZXJUeXBlGAMgASgOMh0udGhl",
-            "dGFuLnJpdmFscy52MS5TcGVuZGVyVHlwZVILc3BlbmRlclR5cGUqPgoLU3Bl",
-            "bmRlclR5cGUSFQoRU1BFTkRFUl9UWVBFX05PTkUQABIYChRTUEVOREVSX1RZ",
-            "UEVfU1BFTkRFUhABMnkKEEJvdFJpdmFsc1NlcnZpY2USZQoORmV0Y2hMb2Ji",
-            "eUJvdHMSJy50aGV0YW4ucml2YWxzLnYxLkZldGNoTG9iYnlCb3RzUmVxdWVz",
-            "dBooLnRoZXRhbi5yaXZhbHMudjEuRmV0Y2hMb2JieUJvdHNSZXNwb25zZSIA",
-            "QrcBChRjb20udGhldGFuLnJpdmFscy52MUIOQm90Uml2YWxzUHJvdG9QAVot",
-            "dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2JvdC92MTt0aGV0YW5fYm90X3Yx",
-            "ogIDVFJYqgIQVGhldGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNcVjHi",
-            "AhxUaGV0YW5cUml2YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpSaXZh",
-            "bHM6OlYxYgZwcm90bzM="));
+            "EhwKCWlzU3BlbmRlchgEIAEoCFIJaXNTcGVuZGVyIn4KB0JvdEluZm8SFAoF",
+            "Ym90SUQYASABKAlSBWJvdElEEhwKCWV4cGlyZXNBdBgCIAEoA1IJZXhwaXJl",
+            "c0F0Ej8KC3NwZW5kZXJUeXBlGAMgASgOMh0udGhldGFuLnJpdmFscy52MS5T",
+            "cGVuZGVyVHlwZVILc3BlbmRlclR5cGUqPgoLU3BlbmRlclR5cGUSFQoRU1BF",
+            "TkRFUl9UWVBFX05PTkUQABIYChRTUEVOREVSX1RZUEVfU1BFTkRFUhABMnkK",
+            "EEJvdFJpdmFsc1NlcnZpY2USZQoORmV0Y2hMb2JieUJvdHMSJy50aGV0YW4u",
+            "cml2YWxzLnYxLkZldGNoTG9iYnlCb3RzUmVxdWVzdBooLnRoZXRhbi5yaXZh",
+            "bHMudjEuRmV0Y2hMb2JieUJvdHNSZXNwb25zZSIAQrcBChRjb20udGhldGFu",
+            "LnJpdmFscy52MUIOQm90Uml2YWxzUHJvdG9QAVotdGhldGFuLWJ1Zi9nZW4v",
+            "Z28vdGhldGFuL2JvdC92MTt0aGV0YW5fYm90X3YxogIDVFJYqgIQVGhldGFu",
+            "LlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5cUml2YWxz",
+            "XFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Rivals.V1.SpenderType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.FetchLobbyBotsRequest), global::Thetan.Rivals.V1.FetchLobbyBotsRequest.Parser, new[]{ "TownID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.FetchLobbyBotsResponse), global::Thetan.Rivals.V1.FetchLobbyBotsResponse.Parser, new[]{ "Bots", "RandomRateSolo", "RandomRatePair" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.LobbyBotInfo), global::Thetan.Rivals.V1.LobbyBotInfo.Parser, new[]{ "Profile", "SelectedMinion", "ExpiresAt" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.LobbyBotInfo), global::Thetan.Rivals.V1.LobbyBotInfo.Parser, new[]{ "Profile", "SelectedMinion", "ExpiresAt", "IsSpender" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.BotInfo), global::Thetan.Rivals.V1.BotInfo.Parser, new[]{ "BotID", "ExpiresAt", "SpenderType" }, null, null, null, null)
           }));
     }
@@ -546,6 +546,7 @@ namespace Thetan.Rivals.V1 {
       profile_ = other.profile_ != null ? other.profile_.Clone() : null;
       selectedMinion_ = other.selectedMinion_ != null ? other.selectedMinion_.Clone() : null;
       expiresAt_ = other.expiresAt_;
+      isSpender_ = other.isSpender_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -591,6 +592,18 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
+    /// <summary>Field number for the "isSpender" field.</summary>
+    public const int IsSpenderFieldNumber = 4;
+    private bool isSpender_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsSpender {
+      get { return isSpender_; }
+      set {
+        isSpender_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -609,6 +622,7 @@ namespace Thetan.Rivals.V1 {
       if (!object.Equals(Profile, other.Profile)) return false;
       if (!object.Equals(SelectedMinion, other.SelectedMinion)) return false;
       if (ExpiresAt != other.ExpiresAt) return false;
+      if (IsSpender != other.IsSpender) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -619,6 +633,7 @@ namespace Thetan.Rivals.V1 {
       if (profile_ != null) hash ^= Profile.GetHashCode();
       if (selectedMinion_ != null) hash ^= SelectedMinion.GetHashCode();
       if (ExpiresAt != 0L) hash ^= ExpiresAt.GetHashCode();
+      if (IsSpender != false) hash ^= IsSpender.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -649,6 +664,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(24);
         output.WriteInt64(ExpiresAt);
       }
+      if (IsSpender != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsSpender);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -671,6 +690,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(24);
         output.WriteInt64(ExpiresAt);
       }
+      if (IsSpender != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsSpender);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -689,6 +712,9 @@ namespace Thetan.Rivals.V1 {
       }
       if (ExpiresAt != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(ExpiresAt);
+      }
+      if (IsSpender != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -716,6 +742,9 @@ namespace Thetan.Rivals.V1 {
       }
       if (other.ExpiresAt != 0L) {
         ExpiresAt = other.ExpiresAt;
+      }
+      if (other.IsSpender != false) {
+        IsSpender = other.IsSpender;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -750,6 +779,10 @@ namespace Thetan.Rivals.V1 {
             ExpiresAt = input.ReadInt64();
             break;
           }
+          case 32: {
+            IsSpender = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -781,6 +814,10 @@ namespace Thetan.Rivals.V1 {
           }
           case 24: {
             ExpiresAt = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            IsSpender = input.ReadBool();
             break;
           }
         }
