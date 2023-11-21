@@ -35,33 +35,38 @@ namespace Thetan.Rivals.V1 {
             "bGVSZXNwb25zZVIHcHJvZmlsZRJUCg5zZWxlY3RlZE1pbmlvbhgCIAEoCzIs",
             "LnRoZXRhbi5yaXZhbHMudjEuVXNlclNlbGVjdGVkTWluaW9uUmVzcG9uc2VS",
             "DnNlbGVjdGVkTWluaW9uEhwKCWV4cGlyZXNBdBgDIAEoA1IJZXhwaXJlc0F0",
-            "ImoKFlNlYXJjaExvYmJ5Qm90c1JlcXVlc3QSFgoGdG93bklEGAEgASgJUgZ0",
-            "b3duSUQSIAoLY291bnRyeUNvZGUYAiABKAlSC2NvdW50cnlDb2RlEhYKBmFt",
-            "b3VudBgDIAEoBVIGYW1vdW50IkgKF1NlYXJjaExvYmJ5Qm90c1Jlc3BvbnNl",
-            "Ei0KBGJvdHMYASADKAsyGS50aGV0YW4ucml2YWxzLnYxLkJvdEluZm9SBGJv",
-            "dHMiPQoHQm90SW5mbxIUCgVib3RJRBgBIAEoCVIFYm90SUQSHAoJZXhwaXJl",
-            "c0F0GAIgASgDUglleHBpcmVzQXQyeQoQQm90Uml2YWxzU2VydmljZRJlCg5G",
-            "ZXRjaExvYmJ5Qm90cxInLnRoZXRhbi5yaXZhbHMudjEuRmV0Y2hMb2JieUJv",
-            "dHNSZXF1ZXN0GigudGhldGFuLnJpdmFscy52MS5GZXRjaExvYmJ5Qm90c1Jl",
-            "c3BvbnNlIgBCtwEKFGNvbS50aGV0YW4ucml2YWxzLnYxQg5Cb3RSaXZhbHNQ",
-            "cm90b1ABWi10aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vYm90L3YxO3RoZXRh",
-            "bl9ib3RfdjGiAgNUUliqAhBUaGV0YW4uUml2YWxzLlYxygIQVGhldGFuXFJp",
-            "dmFsc1xWMeICHFRoZXRhblxSaXZhbHNcVjFcR1BCTWV0YWRhdGHqAhJUaGV0",
-            "YW46OlJpdmFsczo6VjFiBnByb3RvMw=="));
+            "In4KB0JvdEluZm8SFAoFYm90SUQYASABKAlSBWJvdElEEhwKCWV4cGlyZXNB",
+            "dBgCIAEoA1IJZXhwaXJlc0F0Ej8KC3NwZW5kZXJUeXBlGAMgASgOMh0udGhl",
+            "dGFuLnJpdmFscy52MS5TcGVuZGVyVHlwZVILc3BlbmRlclR5cGUqPgoLU3Bl",
+            "bmRlclR5cGUSFQoRU1BFTkRFUl9UWVBFX05PTkUQABIYChRTUEVOREVSX1RZ",
+            "UEVfU1BFTkRFUhABMnkKEEJvdFJpdmFsc1NlcnZpY2USZQoORmV0Y2hMb2Ji",
+            "eUJvdHMSJy50aGV0YW4ucml2YWxzLnYxLkZldGNoTG9iYnlCb3RzUmVxdWVz",
+            "dBooLnRoZXRhbi5yaXZhbHMudjEuRmV0Y2hMb2JieUJvdHNSZXNwb25zZSIA",
+            "QrcBChRjb20udGhldGFuLnJpdmFscy52MUIOQm90Uml2YWxzUHJvdG9QAVot",
+            "dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2JvdC92MTt0aGV0YW5fYm90X3Yx",
+            "ogIDVFJYqgIQVGhldGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNcVjHi",
+            "AhxUaGV0YW5cUml2YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpSaXZh",
+            "bHM6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Rivals.V1.SpenderType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.FetchLobbyBotsRequest), global::Thetan.Rivals.V1.FetchLobbyBotsRequest.Parser, new[]{ "TownID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.FetchLobbyBotsResponse), global::Thetan.Rivals.V1.FetchLobbyBotsResponse.Parser, new[]{ "Bots", "RandomRateSolo", "RandomRatePair" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.LobbyBotInfo), global::Thetan.Rivals.V1.LobbyBotInfo.Parser, new[]{ "Profile", "SelectedMinion", "ExpiresAt" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchLobbyBotsRequest), global::Thetan.Rivals.V1.SearchLobbyBotsRequest.Parser, new[]{ "TownID", "CountryCode", "Amount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchLobbyBotsResponse), global::Thetan.Rivals.V1.SearchLobbyBotsResponse.Parser, new[]{ "Bots" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.BotInfo), global::Thetan.Rivals.V1.BotInfo.Parser, new[]{ "BotID", "ExpiresAt" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.BotInfo), global::Thetan.Rivals.V1.BotInfo.Parser, new[]{ "BotID", "ExpiresAt", "SpenderType" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum SpenderType {
+    [pbr::OriginalName("SPENDER_TYPE_NONE")] None = 0,
+    [pbr::OriginalName("SPENDER_TYPE_SPENDER")] Spender = 1,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class FetchLobbyBotsRequest : pb::IMessage<FetchLobbyBotsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -785,447 +790,6 @@ namespace Thetan.Rivals.V1 {
 
   }
 
-  public sealed partial class SearchLobbyBotsRequest : pb::IMessage<SearchLobbyBotsRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<SearchLobbyBotsRequest> _parser = new pb::MessageParser<SearchLobbyBotsRequest>(() => new SearchLobbyBotsRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<SearchLobbyBotsRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[3]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SearchLobbyBotsRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SearchLobbyBotsRequest(SearchLobbyBotsRequest other) : this() {
-      townID_ = other.townID_;
-      countryCode_ = other.countryCode_;
-      amount_ = other.amount_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SearchLobbyBotsRequest Clone() {
-      return new SearchLobbyBotsRequest(this);
-    }
-
-    /// <summary>Field number for the "townID" field.</summary>
-    public const int TownIDFieldNumber = 1;
-    private string townID_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TownID {
-      get { return townID_; }
-      set {
-        townID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "countryCode" field.</summary>
-    public const int CountryCodeFieldNumber = 2;
-    private string countryCode_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string CountryCode {
-      get { return countryCode_; }
-      set {
-        countryCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "amount" field.</summary>
-    public const int AmountFieldNumber = 3;
-    private int amount_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Amount {
-      get { return amount_; }
-      set {
-        amount_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as SearchLobbyBotsRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(SearchLobbyBotsRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (TownID != other.TownID) return false;
-      if (CountryCode != other.CountryCode) return false;
-      if (Amount != other.Amount) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (TownID.Length != 0) hash ^= TownID.GetHashCode();
-      if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
-      if (Amount != 0) hash ^= Amount.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (TownID.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TownID);
-      }
-      if (CountryCode.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(CountryCode);
-      }
-      if (Amount != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Amount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TownID.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TownID);
-      }
-      if (CountryCode.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(CountryCode);
-      }
-      if (Amount != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Amount);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (TownID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TownID);
-      }
-      if (CountryCode.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
-      }
-      if (Amount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Amount);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(SearchLobbyBotsRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.TownID.Length != 0) {
-        TownID = other.TownID;
-      }
-      if (other.CountryCode.Length != 0) {
-        CountryCode = other.CountryCode;
-      }
-      if (other.Amount != 0) {
-        Amount = other.Amount;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            TownID = input.ReadString();
-            break;
-          }
-          case 18: {
-            CountryCode = input.ReadString();
-            break;
-          }
-          case 24: {
-            Amount = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            TownID = input.ReadString();
-            break;
-          }
-          case 18: {
-            CountryCode = input.ReadString();
-            break;
-          }
-          case 24: {
-            Amount = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class SearchLobbyBotsResponse : pb::IMessage<SearchLobbyBotsResponse>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<SearchLobbyBotsResponse> _parser = new pb::MessageParser<SearchLobbyBotsResponse>(() => new SearchLobbyBotsResponse());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<SearchLobbyBotsResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[4]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SearchLobbyBotsResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SearchLobbyBotsResponse(SearchLobbyBotsResponse other) : this() {
-      bots_ = other.bots_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SearchLobbyBotsResponse Clone() {
-      return new SearchLobbyBotsResponse(this);
-    }
-
-    /// <summary>Field number for the "bots" field.</summary>
-    public const int BotsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Thetan.Rivals.V1.BotInfo> _repeated_bots_codec
-        = pb::FieldCodec.ForMessage(10, global::Thetan.Rivals.V1.BotInfo.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Rivals.V1.BotInfo> bots_ = new pbc::RepeatedField<global::Thetan.Rivals.V1.BotInfo>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Rivals.V1.BotInfo> Bots {
-      get { return bots_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as SearchLobbyBotsResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(SearchLobbyBotsResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!bots_.Equals(other.bots_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= bots_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      bots_.WriteTo(output, _repeated_bots_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      bots_.WriteTo(ref output, _repeated_bots_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      size += bots_.CalculateSize(_repeated_bots_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(SearchLobbyBotsResponse other) {
-      if (other == null) {
-        return;
-      }
-      bots_.Add(other.bots_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            bots_.AddEntriesFrom(input, _repeated_bots_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            bots_.AddEntriesFrom(ref input, _repeated_bots_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   public sealed partial class BotInfo : pb::IMessage<BotInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1240,7 +804,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1262,6 +826,7 @@ namespace Thetan.Rivals.V1 {
     public BotInfo(BotInfo other) : this() {
       botID_ = other.botID_;
       expiresAt_ = other.expiresAt_;
+      spenderType_ = other.spenderType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1295,6 +860,18 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
+    /// <summary>Field number for the "spenderType" field.</summary>
+    public const int SpenderTypeFieldNumber = 3;
+    private global::Thetan.Rivals.V1.SpenderType spenderType_ = global::Thetan.Rivals.V1.SpenderType.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Rivals.V1.SpenderType SpenderType {
+      get { return spenderType_; }
+      set {
+        spenderType_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1312,6 +889,7 @@ namespace Thetan.Rivals.V1 {
       }
       if (BotID != other.BotID) return false;
       if (ExpiresAt != other.ExpiresAt) return false;
+      if (SpenderType != other.SpenderType) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1321,6 +899,7 @@ namespace Thetan.Rivals.V1 {
       int hash = 1;
       if (BotID.Length != 0) hash ^= BotID.GetHashCode();
       if (ExpiresAt != 0L) hash ^= ExpiresAt.GetHashCode();
+      if (SpenderType != global::Thetan.Rivals.V1.SpenderType.None) hash ^= SpenderType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1347,6 +926,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(16);
         output.WriteInt64(ExpiresAt);
       }
+      if (SpenderType != global::Thetan.Rivals.V1.SpenderType.None) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) SpenderType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1365,6 +948,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(16);
         output.WriteInt64(ExpiresAt);
       }
+      if (SpenderType != global::Thetan.Rivals.V1.SpenderType.None) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) SpenderType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1380,6 +967,9 @@ namespace Thetan.Rivals.V1 {
       }
       if (ExpiresAt != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(ExpiresAt);
+      }
+      if (SpenderType != global::Thetan.Rivals.V1.SpenderType.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SpenderType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1398,6 +988,9 @@ namespace Thetan.Rivals.V1 {
       }
       if (other.ExpiresAt != 0L) {
         ExpiresAt = other.ExpiresAt;
+      }
+      if (other.SpenderType != global::Thetan.Rivals.V1.SpenderType.None) {
+        SpenderType = other.SpenderType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1422,6 +1015,10 @@ namespace Thetan.Rivals.V1 {
             ExpiresAt = input.ReadInt64();
             break;
           }
+          case 24: {
+            SpenderType = (global::Thetan.Rivals.V1.SpenderType) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -1443,6 +1040,10 @@ namespace Thetan.Rivals.V1 {
           }
           case 16: {
             ExpiresAt = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            SpenderType = (global::Thetan.Rivals.V1.SpenderType) input.ReadEnum();
             break;
           }
         }
