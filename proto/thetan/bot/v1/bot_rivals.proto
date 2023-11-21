@@ -19,7 +19,13 @@ message SearchLobbyBotsResponse {
     repeated BotInfo bots = 1;
 }
 
+enum SpenderType {
+    SPENDER_TYPE_NONE = 0;
+    SPENDER_TYPE_SPENDER = 1;
+}
+
 message BotInfo {
     string botID = 1;
     int64 expiresAt = 2;
+    SpenderType spenderType = 3;
 }

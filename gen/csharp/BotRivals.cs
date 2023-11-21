@@ -29,26 +29,37 @@ namespace Thetan.Rivals.V1 {
             "KAlSBnRvd25JRBIgCgtjb3VudHJ5Q29kZRgCIAEoCVILY291bnRyeUNvZGUS",
             "FgoGYW1vdW50GAMgASgFUgZhbW91bnQiSAoXU2VhcmNoTG9iYnlCb3RzUmVz",
             "cG9uc2USLQoEYm90cxgBIAMoCzIZLnRoZXRhbi5yaXZhbHMudjEuQm90SW5m",
-            "b1IEYm90cyI9CgdCb3RJbmZvEhQKBWJvdElEGAEgASgJUgVib3RJRBIcCgll",
-            "eHBpcmVzQXQYAiABKANSCWV4cGlyZXNBdDJ8ChBCb3RSaXZhbHNTZXJ2aWNl",
-            "EmgKD1NlYXJjaExvYmJ5Qm90cxIoLnRoZXRhbi5yaXZhbHMudjEuU2VhcmNo",
-            "TG9iYnlCb3RzUmVxdWVzdBopLnRoZXRhbi5yaXZhbHMudjEuU2VhcmNoTG9i",
-            "YnlCb3RzUmVzcG9uc2UiAEK3AQoUY29tLnRoZXRhbi5yaXZhbHMudjFCDkJv",
-            "dFJpdmFsc1Byb3RvUAFaLXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9ib3Qv",
-            "djE7dGhldGFuX2JvdF92MaICA1RSWKoCEFRoZXRhbi5SaXZhbHMuVjHKAhBU",
-            "aGV0YW5cUml2YWxzXFYx4gIcVGhldGFuXFJpdmFsc1xWMVxHUEJNZXRhZGF0",
-            "YeoCElRoZXRhbjo6Uml2YWxzOjpWMWIGcHJvdG8z"));
+            "b1IEYm90cyJ+CgdCb3RJbmZvEhQKBWJvdElEGAEgASgJUgVib3RJRBIcCgll",
+            "eHBpcmVzQXQYAiABKANSCWV4cGlyZXNBdBI/CgtzcGVuZGVyVHlwZRgDIAEo",
+            "DjIdLnRoZXRhbi5yaXZhbHMudjEuU3BlbmRlclR5cGVSC3NwZW5kZXJUeXBl",
+            "Kj4KC1NwZW5kZXJUeXBlEhUKEVNQRU5ERVJfVFlQRV9OT05FEAASGAoUU1BF",
+            "TkRFUl9UWVBFX1NQRU5ERVIQATJ8ChBCb3RSaXZhbHNTZXJ2aWNlEmgKD1Nl",
+            "YXJjaExvYmJ5Qm90cxIoLnRoZXRhbi5yaXZhbHMudjEuU2VhcmNoTG9iYnlC",
+            "b3RzUmVxdWVzdBopLnRoZXRhbi5yaXZhbHMudjEuU2VhcmNoTG9iYnlCb3Rz",
+            "UmVzcG9uc2UiAEK3AQoUY29tLnRoZXRhbi5yaXZhbHMudjFCDkJvdFJpdmFs",
+            "c1Byb3RvUAFaLXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9ib3QvdjE7dGhl",
+            "dGFuX2JvdF92MaICA1RSWKoCEFRoZXRhbi5SaXZhbHMuVjHKAhBUaGV0YW5c",
+            "Uml2YWxzXFYx4gIcVGhldGFuXFJpdmFsc1xWMVxHUEJNZXRhZGF0YeoCElRo",
+            "ZXRhbjo6Uml2YWxzOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Rivals.V1.SpenderType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchLobbyBotsRequest), global::Thetan.Rivals.V1.SearchLobbyBotsRequest.Parser, new[]{ "TownID", "CountryCode", "Amount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchLobbyBotsResponse), global::Thetan.Rivals.V1.SearchLobbyBotsResponse.Parser, new[]{ "Bots" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.BotInfo), global::Thetan.Rivals.V1.BotInfo.Parser, new[]{ "BotID", "ExpiresAt" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.BotInfo), global::Thetan.Rivals.V1.BotInfo.Parser, new[]{ "BotID", "ExpiresAt", "SpenderType" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum SpenderType {
+    [pbr::OriginalName("SPENDER_TYPE_NONE")] None = 0,
+    [pbr::OriginalName("SPENDER_TYPE_SPENDER")] Spender = 1,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class SearchLobbyBotsRequest : pb::IMessage<SearchLobbyBotsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -527,6 +538,7 @@ namespace Thetan.Rivals.V1 {
     public BotInfo(BotInfo other) : this() {
       botID_ = other.botID_;
       expiresAt_ = other.expiresAt_;
+      spenderType_ = other.spenderType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -560,6 +572,18 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
+    /// <summary>Field number for the "spenderType" field.</summary>
+    public const int SpenderTypeFieldNumber = 3;
+    private global::Thetan.Rivals.V1.SpenderType spenderType_ = global::Thetan.Rivals.V1.SpenderType.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Rivals.V1.SpenderType SpenderType {
+      get { return spenderType_; }
+      set {
+        spenderType_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -577,6 +601,7 @@ namespace Thetan.Rivals.V1 {
       }
       if (BotID != other.BotID) return false;
       if (ExpiresAt != other.ExpiresAt) return false;
+      if (SpenderType != other.SpenderType) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -586,6 +611,7 @@ namespace Thetan.Rivals.V1 {
       int hash = 1;
       if (BotID.Length != 0) hash ^= BotID.GetHashCode();
       if (ExpiresAt != 0L) hash ^= ExpiresAt.GetHashCode();
+      if (SpenderType != global::Thetan.Rivals.V1.SpenderType.None) hash ^= SpenderType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -612,6 +638,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(16);
         output.WriteInt64(ExpiresAt);
       }
+      if (SpenderType != global::Thetan.Rivals.V1.SpenderType.None) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) SpenderType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -630,6 +660,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(16);
         output.WriteInt64(ExpiresAt);
       }
+      if (SpenderType != global::Thetan.Rivals.V1.SpenderType.None) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) SpenderType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -645,6 +679,9 @@ namespace Thetan.Rivals.V1 {
       }
       if (ExpiresAt != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(ExpiresAt);
+      }
+      if (SpenderType != global::Thetan.Rivals.V1.SpenderType.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SpenderType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -663,6 +700,9 @@ namespace Thetan.Rivals.V1 {
       }
       if (other.ExpiresAt != 0L) {
         ExpiresAt = other.ExpiresAt;
+      }
+      if (other.SpenderType != global::Thetan.Rivals.V1.SpenderType.None) {
+        SpenderType = other.SpenderType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -687,6 +727,10 @@ namespace Thetan.Rivals.V1 {
             ExpiresAt = input.ReadInt64();
             break;
           }
+          case 24: {
+            SpenderType = (global::Thetan.Rivals.V1.SpenderType) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -708,6 +752,10 @@ namespace Thetan.Rivals.V1 {
           }
           case 16: {
             ExpiresAt = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            SpenderType = (global::Thetan.Rivals.V1.SpenderType) input.ReadEnum();
             break;
           }
         }
