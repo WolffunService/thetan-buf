@@ -24,6 +24,7 @@ message LobbyBotInfo {
     UserProfileResponse profile = 1;
     UserSelectedMinionResponse selectedMinion = 2;
     int64 expiresAt = 3;
+    bool isSpender = 4;
 }
 
 enum SpenderType {
