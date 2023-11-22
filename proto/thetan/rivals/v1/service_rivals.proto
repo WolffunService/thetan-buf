@@ -309,21 +309,25 @@ message CreateAddInResponse {
 }
 
 message FilterSystemItemsRequest{
-  repeated string exclusiveFor = 2;
-
+  repeated string exclusiveFor = 1;
 }
 
 message FilterSystemItemsResponse{
-  //item_type : items
-  map<string, FilterSystemItemResponse> items = 1;
+  repeated FilterSystemItems filterSystemItems = 1;
+}
+
+message FilterSystemItems{
+  string exclusiveFor = 1;
+  repeated ItemResponse items = 2;
 }
 
 message FilterSystemItemResponse{
   repeated ItemResponse item = 1;
 }
 message ItemResponse{
-  int64 itemId = 1;
-  bool isPremiumItem =2;
+  string itemType = 1;
+  int64 itemId = 2;
+  bool isPremiumItem =3;
 }
 
 // ==== FRIENDS ====
