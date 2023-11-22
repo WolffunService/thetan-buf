@@ -336,6 +336,7 @@ message GetMatchInfoResponse {
   repeated MapData mapIds = 4;
   repeated int32 listMaxPlayerPerRound = 5;
   PlayerStat playerStat = 6;
+  int32 numPlayer = 7;
 }
 
 message MapData {
