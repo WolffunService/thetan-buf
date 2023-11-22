@@ -20,6 +20,8 @@ service ThetanRivalService {
   rpc GetManyUserProfiles (ManyUserProfilesRequest) returns (ManyUserProfileResponse) {}
   rpc GetProfile(ProfileRequest) returns (ProfileResponse) {}
   rpc TrackFriendlyAct(FriendlyActRequest) returns (google.protobuf.Empty) {}
+  rpc ReactUser(ReactUserRequest) returns (google.protobuf.Empty) {}
+  rpc VoteGuild(VoteGuildRequest) returns (google.protobuf.Empty) {}
 
   // Minions
   rpc GetUserMinions(UserMinionsRequest) returns (UserMinionsResponse) {}
@@ -137,6 +139,16 @@ message MapInfo {
 }
 
 // ==== PROFILE ====
+message ReactUserRequest {
+  string userIDReact = 1;
+  string targetID = 2;
+  int32 reactType = 3;
+}
+
+message VoteGuildRequest {
+  string userIDVote = 1;
+  string guildID = 2;
+}
 
 message UserProfileRequest {
   string userId = 1;
