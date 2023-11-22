@@ -24,6 +24,8 @@ const (
 	ThetanRivalService_GetManyUserProfiles_FullMethodName           = "/thetan.rivals.v1.ThetanRivalService/GetManyUserProfiles"
 	ThetanRivalService_GetProfile_FullMethodName                    = "/thetan.rivals.v1.ThetanRivalService/GetProfile"
 	ThetanRivalService_TrackFriendlyAct_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/TrackFriendlyAct"
+	ThetanRivalService_ReactUser_FullMethodName                     = "/thetan.rivals.v1.ThetanRivalService/ReactUser"
+	ThetanRivalService_VoteGuild_FullMethodName                     = "/thetan.rivals.v1.ThetanRivalService/VoteGuild"
 	ThetanRivalService_GetUserMinions_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserMinions"
 	ThetanRivalService_GetUserSelectedMinion_FullMethodName         = "/thetan.rivals.v1.ThetanRivalService/GetUserSelectedMinion"
 	ThetanRivalService_GetMinion_FullMethodName                     = "/thetan.rivals.v1.ThetanRivalService/GetMinion"
@@ -59,6 +61,8 @@ type ThetanRivalServiceClient interface {
 	GetManyUserProfiles(ctx context.Context, in *ManyUserProfilesRequest, opts ...grpc.CallOption) (*ManyUserProfileResponse, error)
 	GetProfile(ctx context.Context, in *ProfileRequest, opts ...grpc.CallOption) (*ProfileResponse, error)
 	TrackFriendlyAct(ctx context.Context, in *FriendlyActRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
+	ReactUser(ctx context.Context, in *ReactUserRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
+	VoteGuild(ctx context.Context, in *VoteGuildRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	// Minions
 	GetUserMinions(ctx context.Context, in *UserMinionsRequest, opts ...grpc.CallOption) (*UserMinionsResponse, error)
 	GetUserSelectedMinion(ctx context.Context, in *UserSelectedMinionRequest, opts ...grpc.CallOption) (*UserSelectedMinionResponse, error)
@@ -133,6 +137,24 @@ func (c *thetanRivalServiceClient) GetProfile(ctx context.Context, in *ProfileRe
 func (c *thetanRivalServiceClient) TrackFriendlyAct(ctx context.Context, in *FriendlyActRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
 	out := new(emptypb.Empty)
 	err := c.cc.Invoke(ctx, ThetanRivalService_TrackFriendlyAct_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) ReactUser(ctx context.Context, in *ReactUserRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+	out := new(emptypb.Empty)
+	err := c.cc.Invoke(ctx, ThetanRivalService_ReactUser_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) VoteGuild(ctx context.Context, in *VoteGuildRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+	out := new(emptypb.Empty)
+	err := c.cc.Invoke(ctx, ThetanRivalService_VoteGuild_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -356,6 +378,8 @@ type ThetanRivalServiceServer interface {
 	GetManyUserProfiles(context.Context, *ManyUserProfilesRequest) (*ManyUserProfileResponse, error)
 	GetProfile(context.Context, *ProfileRequest) (*ProfileResponse, error)
 	TrackFriendlyAct(context.Context, *FriendlyActRequest) (*emptypb.Empty, error)
+	ReactUser(context.Context, *ReactUserRequest) (*emptypb.Empty, error)
+	VoteGuild(context.Context, *VoteGuildRequest) (*emptypb.Empty, error)
 	// Minions
 	GetUserMinions(context.Context, *UserMinionsRequest) (*UserMinionsResponse, error)
 	GetUserSelectedMinion(context.Context, *UserSelectedMinionRequest) (*UserSelectedMinionResponse, error)
@@ -407,6 +431,12 @@ func (UnimplementedThetanRivalServiceServer) GetProfile(context.Context, *Profil
 }
 func (UnimplementedThetanRivalServiceServer) TrackFriendlyAct(context.Context, *FriendlyActRequest) (*emptypb.Empty, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TrackFriendlyAct not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) ReactUser(context.Context, *ReactUserRequest) (*emptypb.Empty, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method ReactUser not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) VoteGuild(context.Context, *VoteGuildRequest) (*emptypb.Empty, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method VoteGuild not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetUserMinions(context.Context, *UserMinionsRequest) (*UserMinionsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetUserMinions not implemented")
@@ -558,6 +588,42 @@ func _ThetanRivalService_TrackFriendlyAct_Handler(srv interface{}, ctx context.C
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ThetanRivalServiceServer).TrackFriendlyAct(ctx, req.(*FriendlyActRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_ReactUser_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(ReactUserRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).ReactUser(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_ReactUser_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).ReactUser(ctx, req.(*ReactUserRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_VoteGuild_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(VoteGuildRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).VoteGuild(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_VoteGuild_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).VoteGuild(ctx, req.(*VoteGuildRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -998,6 +1064,14 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "TrackFriendlyAct",
 			Handler:    _ThetanRivalService_TrackFriendlyAct_Handler,
+		},
+		{
+			MethodName: "ReactUser",
+			Handler:    _ThetanRivalService_ReactUser_Handler,
+		},
+		{
+			MethodName: "VoteGuild",
+			Handler:    _ThetanRivalService_VoteGuild_Handler,
 		},
 		{
 			MethodName: "GetUserMinions",
