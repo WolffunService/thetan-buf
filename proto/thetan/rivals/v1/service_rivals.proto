@@ -176,6 +176,7 @@ message UserProfileResponse {
 
   int32 activityRole = 10;
   string townID = 11;
+  int32 gender = 12;
 }
 
 message UserProfileRank {
