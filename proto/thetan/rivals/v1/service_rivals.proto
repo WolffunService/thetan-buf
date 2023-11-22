@@ -31,7 +31,7 @@ service ThetanRivalService {
   rpc GetAddInsByUserID(GetAddInsByUserIDRequest) returns (GetAddInsByUserIDResponse) {}
   rpc GetAddInByID(GetAddInByIDRequest) returns (GetAddInByIDResponse) {}
   rpc CreateAddIn(CreateAddInRequest) returns (CreateAddInResponse) {}
-  rpc FilterUserItems(FilterUserItemsRequest) returns(FilterUserItemsResponse){}
+  rpc FilterSystemItems(FilterSystemItemsRequest) returns(FilterSystemItemsResponse){}
 
   // Friends
   rpc GetListFriends(GetUserFriendRequest) returns (GetUserFriendResponse) {}
@@ -296,18 +296,17 @@ message CreateAddInResponse {
   AddIn addIn = 1;
 }
 
-message FilterUserItemsRequest{
-  string userID = 1;
+message FilterSystemItemsRequest{
   repeated string exclusiveFor = 2;
 
 }
 
-message FilterUserItemsResponse{
+message FilterSystemItemsResponse{
   //item_type : items
-  map<string, FilterUserItemResponse> items = 1;
+  map<string, FilterSystemItemResponse> items = 1;
 }
 
-message FilterUserItemResponse{
+message FilterSystemItemResponse{
   repeated ItemResponse item = 1;
 }
 message ItemResponse{
