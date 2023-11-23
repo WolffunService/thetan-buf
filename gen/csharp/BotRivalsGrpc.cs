@@ -49,6 +49,10 @@ namespace Thetan.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.FetchLobbyBotsRequest> __Marshaller_thetan_rivals_v1_FetchLobbyBotsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.FetchLobbyBotsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.FetchLobbyBotsResponse> __Marshaller_thetan_rivals_v1_FetchLobbyBotsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.FetchLobbyBotsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.LobbyBotActionRequest> __Marshaller_thetan_rivals_v1_LobbyBotActionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.LobbyBotActionRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.LobbyBotActionResponse> __Marshaller_thetan_rivals_v1_LobbyBotActionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.LobbyBotActionResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.FetchLobbyBotsRequest, global::Thetan.Rivals.V1.FetchLobbyBotsResponse> __Method_FetchLobbyBots = new grpc::Method<global::Thetan.Rivals.V1.FetchLobbyBotsRequest, global::Thetan.Rivals.V1.FetchLobbyBotsResponse>(
@@ -57,6 +61,14 @@ namespace Thetan.Rivals.V1 {
         "FetchLobbyBots",
         __Marshaller_thetan_rivals_v1_FetchLobbyBotsRequest,
         __Marshaller_thetan_rivals_v1_FetchLobbyBotsResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.LobbyBotActionRequest, global::Thetan.Rivals.V1.LobbyBotActionResponse> __Method_LobbyBotAction = new grpc::Method<global::Thetan.Rivals.V1.LobbyBotActionRequest, global::Thetan.Rivals.V1.LobbyBotActionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "LobbyBotAction",
+        __Marshaller_thetan_rivals_v1_LobbyBotActionRequest,
+        __Marshaller_thetan_rivals_v1_LobbyBotActionResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -70,6 +82,12 @@ namespace Thetan.Rivals.V1 {
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.FetchLobbyBotsResponse> FetchLobbyBots(global::Thetan.Rivals.V1.FetchLobbyBotsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.LobbyBotActionResponse> LobbyBotAction(global::Thetan.Rivals.V1.LobbyBotActionRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -123,6 +141,26 @@ namespace Thetan.Rivals.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_FetchLobbyBots, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.LobbyBotActionResponse LobbyBotAction(global::Thetan.Rivals.V1.LobbyBotActionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return LobbyBotAction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.LobbyBotActionResponse LobbyBotAction(global::Thetan.Rivals.V1.LobbyBotActionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_LobbyBotAction, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.LobbyBotActionResponse> LobbyBotActionAsync(global::Thetan.Rivals.V1.LobbyBotActionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return LobbyBotActionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.LobbyBotActionResponse> LobbyBotActionAsync(global::Thetan.Rivals.V1.LobbyBotActionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_LobbyBotAction, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override BotRivalsServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -137,7 +175,8 @@ namespace Thetan.Rivals.V1 {
     public static grpc::ServerServiceDefinition BindService(BotRivalsServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_FetchLobbyBots, serviceImpl.FetchLobbyBots).Build();
+          .AddMethod(__Method_FetchLobbyBots, serviceImpl.FetchLobbyBots)
+          .AddMethod(__Method_LobbyBotAction, serviceImpl.LobbyBotAction).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -148,6 +187,7 @@ namespace Thetan.Rivals.V1 {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, BotRivalsServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_FetchLobbyBots, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.FetchLobbyBotsRequest, global::Thetan.Rivals.V1.FetchLobbyBotsResponse>(serviceImpl.FetchLobbyBots));
+      serviceBinder.AddMethod(__Method_LobbyBotAction, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.LobbyBotActionRequest, global::Thetan.Rivals.V1.LobbyBotActionResponse>(serviceImpl.LobbyBotAction));
     }
 
   }

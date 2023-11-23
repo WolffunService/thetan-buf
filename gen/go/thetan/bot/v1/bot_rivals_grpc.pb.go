@@ -20,6 +20,7 @@ const _ = grpc.SupportPackageIsVersion7
 
 const (
 	BotRivalsService_FetchLobbyBots_FullMethodName = "/thetan.rivals.v1.BotRivalsService/FetchLobbyBots"
+	BotRivalsService_LobbyBotAction_FullMethodName = "/thetan.rivals.v1.BotRivalsService/LobbyBotAction"
 )
 
 // BotRivalsServiceClient is the client API for BotRivalsService service.
@@ -27,6 +28,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type BotRivalsServiceClient interface {
 	FetchLobbyBots(ctx context.Context, in *FetchLobbyBotsRequest, opts ...grpc.CallOption) (*FetchLobbyBotsResponse, error)
+	LobbyBotAction(ctx context.Context, in *LobbyBotActionRequest, opts ...grpc.CallOption) (*LobbyBotActionResponse, error)
 }
 
 type botRivalsServiceClient struct {
@@ -46,11 +48,21 @@ func (c *botRivalsServiceClient) FetchLobbyBots(ctx context.Context, in *FetchLo
 	return out, nil
 }
 
+func (c *botRivalsServiceClient) LobbyBotAction(ctx context.Context, in *LobbyBotActionRequest, opts ...grpc.CallOption) (*LobbyBotActionResponse, error) {
+	out := new(LobbyBotActionResponse)
+	err := c.cc.Invoke(ctx, BotRivalsService_LobbyBotAction_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // BotRivalsServiceServer is the server API for BotRivalsService service.
 // All implementations must embed UnimplementedBotRivalsServiceServer
 // for forward compatibility
 type BotRivalsServiceServer interface {
 	FetchLobbyBots(context.Context, *FetchLobbyBotsRequest) (*FetchLobbyBotsResponse, error)
+	LobbyBotAction(context.Context, *LobbyBotActionRequest) (*LobbyBotActionResponse, error)
 	mustEmbedUnimplementedBotRivalsServiceServer()
 }
 
@@ -60,6 +72,9 @@ type UnimplementedBotRivalsServiceServer struct {
 
 func (UnimplementedBotRivalsServiceServer) FetchLobbyBots(context.Context, *FetchLobbyBotsRequest) (*FetchLobbyBotsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method FetchLobbyBots not implemented")
+}
+func (UnimplementedBotRivalsServiceServer) LobbyBotAction(context.Context, *LobbyBotActionRequest) (*LobbyBotActionResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method LobbyBotAction not implemented")
 }
 func (UnimplementedBotRivalsServiceServer) mustEmbedUnimplementedBotRivalsServiceServer() {}
 
@@ -92,6 +107,24 @@ func _BotRivalsService_FetchLobbyBots_Handler(srv interface{}, ctx context.Conte
 	return interceptor(ctx, in, info, handler)
 }
 
+func _BotRivalsService_LobbyBotAction_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(LobbyBotActionRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(BotRivalsServiceServer).LobbyBotAction(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: BotRivalsService_LobbyBotAction_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(BotRivalsServiceServer).LobbyBotAction(ctx, req.(*LobbyBotActionRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // BotRivalsService_ServiceDesc is the grpc.ServiceDesc for BotRivalsService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -102,6 +135,10 @@ var BotRivalsService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "FetchLobbyBots",
 			Handler:    _BotRivalsService_FetchLobbyBots_Handler,
+		},
+		{
+			MethodName: "LobbyBotAction",
+			Handler:    _BotRivalsService_LobbyBotAction_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

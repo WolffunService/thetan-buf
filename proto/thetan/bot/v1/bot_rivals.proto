@@ -8,6 +8,7 @@ option csharp_namespace = "Thetan.Bot.V1";
 
 service BotRivalsService {
     rpc FetchLobbyBots(FetchLobbyBotsRequest) returns (FetchLobbyBotsResponse) {}
+    rpc LobbyBotAction(LobbyBotActionRequest) returns (LobbyBotActionResponse) {}
 }
 
 message FetchLobbyBotsRequest {
@@ -36,4 +37,64 @@ message BotInfo {
     string botID = 1;
     int64 expiresAt = 2;
     SpenderType spenderType = 3;
+}
+
+enum BotActionType {
+    None = 0;
+    CheckClass = 1;
+    CheckMines = 2;
+    CheckShop= 3;
+    CheckContest= 4;
+
+    HugZone= 5;
+    TalkingBench= 6;
+    RunAround= 7;
+    PushBack= 8;
+    DancePlay= 9;
+    EmotePlay= 10;
+    VehicleRunAround= 11;
+    VehiclePushBack= 12;
+
+    ReactProfile= 13;
+    ReactGuildbook= 14;
+//    WriteGuestbook= 00;
+//    Email= 00;
+    AddFriend= 15;
+
+    UseVehicle= 16;
+    UseFlycraft= 17;
+    UseDance= 18;
+    UseEmoji= 19;
+
+    ChangeThenion= 20;
+    ChangeBackbling= 21;
+    ChangeFootprint= 22;
+    ChangeGlow= 23;
+    ChangeVoice= 24;
+    ChangeFlycraft= 25;
+    ChangeVehicle= 26;
+    CopyThenion= 27;
+    CopyVehicle= 28;
+    CopyFlycraft= 29;
+
+
+    Findmatch= 30;
+    InviteParty= 31;
+    ShareParty= 32;
+
+    StayIdle= 33;
+}
+
+message LobbyBotActionRequest{
+   string botId = 1;
+   string targetId = 2;
+   BotActionType action = 3;
+   //more
+}
+
+message LobbyBotActionResponse{
+    oneof data{
+        int64 id = 1;
+        UserSelectedMinionResponse minion = 2;
+    }
 }
