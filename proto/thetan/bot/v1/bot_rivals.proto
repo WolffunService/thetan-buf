@@ -26,6 +26,7 @@ message LobbyBotInfo {
     UserSelectedMinionResponse selectedMinion = 2;
     int64 expiresAt = 3;
     bool isSpender = 4;
+    string townId = 5;
 }
 
 enum SpenderType {
@@ -83,13 +84,21 @@ enum BotActionType {
     ShareParty= 32;
 
     StayIdle= 33;
+
+    RollBackThenion = 99;
 }
 
 message LobbyBotActionRequest{
-   string botId = 1;
-   string targetId = 2;
-   BotActionType action = 3;
+   string townId = 1;
+   string botId = 2;
+   string targetId = 3;
+   BotActionType action = 4;
+   ActionOptions options = 5;
    //more
+}
+
+message ActionOptions{
+    optional int32 cacheSeconds = 1;
 }
 
 message LobbyBotActionResponse{
