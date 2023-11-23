@@ -34,7 +34,10 @@ service ThetanRivalService {
 
   // Friends
   rpc GetListFriends(GetUserFriendRequest) returns (GetUserFriendResponse) {}
+
+  // Onboarding
   rpc GetMatchInfoOnboarding(GetMatchInfoRequest) returns (GetMatchInfoResponse) {}
+  rpc GetOnboardingConfig(GetOnboardingConfigRequest) returns (GetOnboardingConfigResponse) {}
 
   // Lobby
   rpc GetLatestLobbyActivityInfo(GetActivityRequest) returns (GetActivityResponse) {}
@@ -510,3 +513,10 @@ message GetContestDesignsResponse {
   }
 }
 
+message GetOnboardingConfigRequest {
+  string userID = 1;
+}
+
+message GetOnboardingConfigResponse {
+  int32 newbieDuration = 1;
+}
