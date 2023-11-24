@@ -33,6 +33,7 @@ const (
 	ThetanRivalService_CreateAddIn_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/CreateAddIn"
 	ThetanRivalService_GetListFriends_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetListFriends"
 	ThetanRivalService_GetMatchInfoOnboarding_FullMethodName        = "/thetan.rivals.v1.ThetanRivalService/GetMatchInfoOnboarding"
+	ThetanRivalService_GetOnboardingConfig_FullMethodName           = "/thetan.rivals.v1.ThetanRivalService/GetOnboardingConfig"
 	ThetanRivalService_GetLatestLobbyActivityInfo_FullMethodName    = "/thetan.rivals.v1.ThetanRivalService/GetLatestLobbyActivityInfo"
 	ThetanRivalService_GetTownUser_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownUser"
 	ThetanRivalService_GetTownByID_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownByID"
@@ -70,7 +71,9 @@ type ThetanRivalServiceClient interface {
 	CreateAddIn(ctx context.Context, in *CreateAddInRequest, opts ...grpc.CallOption) (*CreateAddInResponse, error)
 	// Friends
 	GetListFriends(ctx context.Context, in *GetUserFriendRequest, opts ...grpc.CallOption) (*GetUserFriendResponse, error)
+	// Onboarding
 	GetMatchInfoOnboarding(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*GetMatchInfoResponse, error)
+	GetOnboardingConfig(ctx context.Context, in *GetOnboardingConfigRequest, opts ...grpc.CallOption) (*GetOnboardingConfigResponse, error)
 	// Lobby
 	GetLatestLobbyActivityInfo(ctx context.Context, in *GetActivityRequest, opts ...grpc.CallOption) (*GetActivityResponse, error)
 	GetTownUser(ctx context.Context, in *GetTownUserRequest, opts ...grpc.CallOption) (*LobbyTown, error)
@@ -214,6 +217,15 @@ func (c *thetanRivalServiceClient) GetListFriends(ctx context.Context, in *GetUs
 func (c *thetanRivalServiceClient) GetMatchInfoOnboarding(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*GetMatchInfoResponse, error) {
 	out := new(GetMatchInfoResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetMatchInfoOnboarding_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) GetOnboardingConfig(ctx context.Context, in *GetOnboardingConfigRequest, opts ...grpc.CallOption) (*GetOnboardingConfigResponse, error) {
+	out := new(GetOnboardingConfigResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetOnboardingConfig_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -367,7 +379,9 @@ type ThetanRivalServiceServer interface {
 	CreateAddIn(context.Context, *CreateAddInRequest) (*CreateAddInResponse, error)
 	// Friends
 	GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error)
+	// Onboarding
 	GetMatchInfoOnboarding(context.Context, *GetMatchInfoRequest) (*GetMatchInfoResponse, error)
+	GetOnboardingConfig(context.Context, *GetOnboardingConfigRequest) (*GetOnboardingConfigResponse, error)
 	// Lobby
 	GetLatestLobbyActivityInfo(context.Context, *GetActivityRequest) (*GetActivityResponse, error)
 	GetTownUser(context.Context, *GetTownUserRequest) (*LobbyTown, error)
@@ -434,6 +448,9 @@ func (UnimplementedThetanRivalServiceServer) GetListFriends(context.Context, *Ge
 }
 func (UnimplementedThetanRivalServiceServer) GetMatchInfoOnboarding(context.Context, *GetMatchInfoRequest) (*GetMatchInfoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetMatchInfoOnboarding not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetOnboardingConfig(context.Context, *GetOnboardingConfigRequest) (*GetOnboardingConfigResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetOnboardingConfig not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetLatestLobbyActivityInfo(context.Context, *GetActivityRequest) (*GetActivityResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetLatestLobbyActivityInfo not implemented")
@@ -720,6 +737,24 @@ func _ThetanRivalService_GetMatchInfoOnboarding_Handler(srv interface{}, ctx con
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ThetanRivalServiceServer).GetMatchInfoOnboarding(ctx, req.(*GetMatchInfoRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_GetOnboardingConfig_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetOnboardingConfigRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetOnboardingConfig(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetOnboardingConfig_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetOnboardingConfig(ctx, req.(*GetOnboardingConfigRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -1034,6 +1069,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetMatchInfoOnboarding",
 			Handler:    _ThetanRivalService_GetMatchInfoOnboarding_Handler,
+		},
+		{
+			MethodName: "GetOnboardingConfig",
+			Handler:    _ThetanRivalService_GetOnboardingConfig_Handler,
 		},
 		{
 			MethodName: "GetLatestLobbyActivityInfo",
