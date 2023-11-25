@@ -20,9 +20,9 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RivalMatchDirectorService_CancelTicket_FullMethodName       = "/thetan.rivals.v1.RivalMatchDirectorService/CancelTicket"
-	RivalMatchDirectorService_CreateMatchOnboard_FullMethodName = "/thetan.rivals.v1.RivalMatchDirectorService/CreateMatchOnboard"
-	RivalMatchDirectorService_CreateMatchOffline_FullMethodName = "/thetan.rivals.v1.RivalMatchDirectorService/CreateMatchOffline"
+	RivalMatchDirectorService_CancelTicket_FullMethodName           = "/thetan.rivals.v1.RivalMatchDirectorService/CancelTicket"
+	RivalMatchDirectorService_CreateMatchOnboard_FullMethodName     = "/thetan.rivals.v1.RivalMatchDirectorService/CreateMatchOnboard"
+	RivalMatchDirectorService_CreateMatchNonMatching_FullMethodName = "/thetan.rivals.v1.RivalMatchDirectorService/CreateMatchNonMatching"
 )
 
 // RivalMatchDirectorServiceClient is the client API for RivalMatchDirectorService service.
@@ -31,7 +31,7 @@ const (
 type RivalMatchDirectorServiceClient interface {
 	CancelTicket(ctx context.Context, in *RivalCancelTicketRequest, opts ...grpc.CallOption) (*RivalCancelTicketResponse, error)
 	CreateMatchOnboard(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*v1.MatchFoundResponseProto, error)
-	CreateMatchOffline(ctx context.Context, in *CreateMatchOfflineRequest, opts ...grpc.CallOption) (*CreateMatchOfflineResponse, error)
+	CreateMatchNonMatching(ctx context.Context, in *CreateMatchNonMatchingRequest, opts ...grpc.CallOption) (*CreateMatchNonMatchingResponse, error)
 }
 
 type rivalMatchDirectorServiceClient struct {
@@ -60,9 +60,9 @@ func (c *rivalMatchDirectorServiceClient) CreateMatchOnboard(ctx context.Context
 	return out, nil
 }
 
-func (c *rivalMatchDirectorServiceClient) CreateMatchOffline(ctx context.Context, in *CreateMatchOfflineRequest, opts ...grpc.CallOption) (*CreateMatchOfflineResponse, error) {
-	out := new(CreateMatchOfflineResponse)
-	err := c.cc.Invoke(ctx, RivalMatchDirectorService_CreateMatchOffline_FullMethodName, in, out, opts...)
+func (c *rivalMatchDirectorServiceClient) CreateMatchNonMatching(ctx context.Context, in *CreateMatchNonMatchingRequest, opts ...grpc.CallOption) (*CreateMatchNonMatchingResponse, error) {
+	out := new(CreateMatchNonMatchingResponse)
+	err := c.cc.Invoke(ctx, RivalMatchDirectorService_CreateMatchNonMatching_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -75,7 +75,7 @@ func (c *rivalMatchDirectorServiceClient) CreateMatchOffline(ctx context.Context
 type RivalMatchDirectorServiceServer interface {
 	CancelTicket(context.Context, *RivalCancelTicketRequest) (*RivalCancelTicketResponse, error)
 	CreateMatchOnboard(context.Context, *GetMatchInfoRequest) (*v1.MatchFoundResponseProto, error)
-	CreateMatchOffline(context.Context, *CreateMatchOfflineRequest) (*CreateMatchOfflineResponse, error)
+	CreateMatchNonMatching(context.Context, *CreateMatchNonMatchingRequest) (*CreateMatchNonMatchingResponse, error)
 	mustEmbedUnimplementedRivalMatchDirectorServiceServer()
 }
 
@@ -89,8 +89,8 @@ func (UnimplementedRivalMatchDirectorServiceServer) CancelTicket(context.Context
 func (UnimplementedRivalMatchDirectorServiceServer) CreateMatchOnboard(context.Context, *GetMatchInfoRequest) (*v1.MatchFoundResponseProto, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateMatchOnboard not implemented")
 }
-func (UnimplementedRivalMatchDirectorServiceServer) CreateMatchOffline(context.Context, *CreateMatchOfflineRequest) (*CreateMatchOfflineResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CreateMatchOffline not implemented")
+func (UnimplementedRivalMatchDirectorServiceServer) CreateMatchNonMatching(context.Context, *CreateMatchNonMatchingRequest) (*CreateMatchNonMatchingResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateMatchNonMatching not implemented")
 }
 func (UnimplementedRivalMatchDirectorServiceServer) mustEmbedUnimplementedRivalMatchDirectorServiceServer() {
 }
@@ -142,20 +142,20 @@ func _RivalMatchDirectorService_CreateMatchOnboard_Handler(srv interface{}, ctx 
 	return interceptor(ctx, in, info, handler)
 }
 
-func _RivalMatchDirectorService_CreateMatchOffline_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(CreateMatchOfflineRequest)
+func _RivalMatchDirectorService_CreateMatchNonMatching_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CreateMatchNonMatchingRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(RivalMatchDirectorServiceServer).CreateMatchOffline(ctx, in)
+		return srv.(RivalMatchDirectorServiceServer).CreateMatchNonMatching(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: RivalMatchDirectorService_CreateMatchOffline_FullMethodName,
+		FullMethod: RivalMatchDirectorService_CreateMatchNonMatching_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(RivalMatchDirectorServiceServer).CreateMatchOffline(ctx, req.(*CreateMatchOfflineRequest))
+		return srv.(RivalMatchDirectorServiceServer).CreateMatchNonMatching(ctx, req.(*CreateMatchNonMatchingRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -176,8 +176,8 @@ var RivalMatchDirectorService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _RivalMatchDirectorService_CreateMatchOnboard_Handler,
 		},
 		{
-			MethodName: "CreateMatchOffline",
-			Handler:    _RivalMatchDirectorService_CreateMatchOffline_Handler,
+			MethodName: "CreateMatchNonMatching",
+			Handler:    _RivalMatchDirectorService_CreateMatchNonMatching_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

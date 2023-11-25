@@ -88,6 +88,7 @@ message MatchFoundResponseProto {
   repeated MapDataProto mapIds = 6;
   repeated int32 ListMaxPlayerPerRound = 7;
   PlayerStat playerStat = 8;
+  bool isOnline = 10;
 }
 
 message PlayerStat {

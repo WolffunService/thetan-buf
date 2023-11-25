@@ -20,6 +20,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: arduino/setup-protoc@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run build script
         run: | 
