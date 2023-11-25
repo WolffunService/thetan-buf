@@ -48,6 +48,7 @@ const (
 	ThetanRivalService_PublishDesign_FullMethodName                 = "/thetan.rivals.v1.ThetanRivalService/PublishDesign"
 	ThetanRivalService_GetContestDesigns_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetContestDesigns"
 	ThetanRivalService_SearchGameMode_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/SearchGameMode"
+	ThetanRivalService_CachePlayedMap_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/CachePlayedMap"
 )
 
 // ThetanRivalServiceClient is the client API for ThetanRivalService service.
@@ -95,6 +96,7 @@ type ThetanRivalServiceClient interface {
 	GetContestDesigns(ctx context.Context, in *GetContestDesignsRequest, opts ...grpc.CallOption) (*GetContestDesignsResponse, error)
 	// Game mode
 	SearchGameMode(ctx context.Context, in *SearchGameModeRequest, opts ...grpc.CallOption) (*SearchGameModeResponse, error)
+	CachePlayedMap(ctx context.Context, in *CachePlayedMapRequest, opts ...grpc.CallOption) (*CachePlayedMapResponse, error)
 }
 
 type thetanRivalServiceClient struct {
@@ -358,6 +360,15 @@ func (c *thetanRivalServiceClient) SearchGameMode(ctx context.Context, in *Searc
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) CachePlayedMap(ctx context.Context, in *CachePlayedMapRequest, opts ...grpc.CallOption) (*CachePlayedMapResponse, error) {
+	out := new(CachePlayedMapResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_CachePlayedMap_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanRivalServiceServer is the server API for ThetanRivalService service.
 // All implementations must embed UnimplementedThetanRivalServiceServer
 // for forward compatibility
@@ -403,6 +414,7 @@ type ThetanRivalServiceServer interface {
 	GetContestDesigns(context.Context, *GetContestDesignsRequest) (*GetContestDesignsResponse, error)
 	// Game mode
 	SearchGameMode(context.Context, *SearchGameModeRequest) (*SearchGameModeResponse, error)
+	CachePlayedMap(context.Context, *CachePlayedMapRequest) (*CachePlayedMapResponse, error)
 	mustEmbedUnimplementedThetanRivalServiceServer()
 }
 
@@ -493,6 +505,9 @@ func (UnimplementedThetanRivalServiceServer) GetContestDesigns(context.Context, 
 }
 func (UnimplementedThetanRivalServiceServer) SearchGameMode(context.Context, *SearchGameModeRequest) (*SearchGameModeResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SearchGameMode not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) CachePlayedMap(context.Context, *CachePlayedMapRequest) (*CachePlayedMapResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CachePlayedMap not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) mustEmbedUnimplementedThetanRivalServiceServer() {}
 
@@ -1011,6 +1026,24 @@ func _ThetanRivalService_SearchGameMode_Handler(srv interface{}, ctx context.Con
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_CachePlayedMap_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CachePlayedMapRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).CachePlayedMap(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_CachePlayedMap_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).CachePlayedMap(ctx, req.(*CachePlayedMapRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanRivalService_ServiceDesc is the grpc.ServiceDesc for ThetanRivalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -1129,6 +1162,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "SearchGameMode",
 			Handler:    _ThetanRivalService_SearchGameMode_Handler,
+		},
+		{
+			MethodName: "CachePlayedMap",
+			Handler:    _ThetanRivalService_CachePlayedMap_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
