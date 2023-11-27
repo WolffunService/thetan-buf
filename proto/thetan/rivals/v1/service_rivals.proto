@@ -69,6 +69,16 @@ service ThetanRivalService {
   // Game mode
   rpc SearchGameMode(SearchGameModeRequest) returns (SearchGameModeResponse) {}
   rpc CachePlayedMap(CachePlayedMapRequest) returns (CachePlayedMapResponse) {}
+
+  // Metric
+  rpc GetMetricConfig(GetMetricConfigRequest) returns (GetMetricConfigResponse) {}
+}
+
+message GetMetricConfigRequest {
+}
+
+message GetMetricConfigResponse {
+  double TrophyPerBattle = 1;
 }
 
 message SearchGameModeRequest {

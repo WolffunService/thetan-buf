@@ -51,6 +51,7 @@ const (
 	ThetanRivalService_GetContestDesigns_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetContestDesigns"
 	ThetanRivalService_SearchGameMode_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/SearchGameMode"
 	ThetanRivalService_CachePlayedMap_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/CachePlayedMap"
+	ThetanRivalService_GetMetricConfig_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/GetMetricConfig"
 )
 
 // ThetanRivalServiceClient is the client API for ThetanRivalService service.
@@ -101,6 +102,8 @@ type ThetanRivalServiceClient interface {
 	// Game mode
 	SearchGameMode(ctx context.Context, in *SearchGameModeRequest, opts ...grpc.CallOption) (*SearchGameModeResponse, error)
 	CachePlayedMap(ctx context.Context, in *CachePlayedMapRequest, opts ...grpc.CallOption) (*CachePlayedMapResponse, error)
+	// Metric
+	GetMetricConfig(ctx context.Context, in *GetMetricConfigRequest, opts ...grpc.CallOption) (*GetMetricConfigResponse, error)
 }
 
 type thetanRivalServiceClient struct {
@@ -391,6 +394,15 @@ func (c *thetanRivalServiceClient) CachePlayedMap(ctx context.Context, in *Cache
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) GetMetricConfig(ctx context.Context, in *GetMetricConfigRequest, opts ...grpc.CallOption) (*GetMetricConfigResponse, error) {
+	out := new(GetMetricConfigResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetMetricConfig_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanRivalServiceServer is the server API for ThetanRivalService service.
 // All implementations must embed UnimplementedThetanRivalServiceServer
 // for forward compatibility
@@ -439,6 +451,8 @@ type ThetanRivalServiceServer interface {
 	// Game mode
 	SearchGameMode(context.Context, *SearchGameModeRequest) (*SearchGameModeResponse, error)
 	CachePlayedMap(context.Context, *CachePlayedMapRequest) (*CachePlayedMapResponse, error)
+	// Metric
+	GetMetricConfig(context.Context, *GetMetricConfigRequest) (*GetMetricConfigResponse, error)
 	mustEmbedUnimplementedThetanRivalServiceServer()
 }
 
@@ -538,6 +552,9 @@ func (UnimplementedThetanRivalServiceServer) SearchGameMode(context.Context, *Se
 }
 func (UnimplementedThetanRivalServiceServer) CachePlayedMap(context.Context, *CachePlayedMapRequest) (*CachePlayedMapResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CachePlayedMap not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetMetricConfig(context.Context, *GetMetricConfigRequest) (*GetMetricConfigResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetMetricConfig not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) mustEmbedUnimplementedThetanRivalServiceServer() {}
 
@@ -1110,6 +1127,24 @@ func _ThetanRivalService_CachePlayedMap_Handler(srv interface{}, ctx context.Con
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_GetMetricConfig_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetMetricConfigRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetMetricConfig(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetMetricConfig_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetMetricConfig(ctx, req.(*GetMetricConfigRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanRivalService_ServiceDesc is the grpc.ServiceDesc for ThetanRivalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -1240,6 +1275,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "CachePlayedMap",
 			Handler:    _ThetanRivalService_CachePlayedMap_Handler,
+		},
+		{
+			MethodName: "GetMetricConfig",
+			Handler:    _ThetanRivalService_GetMetricConfig_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
