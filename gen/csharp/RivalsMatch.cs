@@ -30,32 +30,33 @@ namespace Thetan.Rivals.V1 {
             "YXJlZC92MS9nYW1lX2luZm8ucHJvdG8ibAoYUml2YWxDYW5jZWxUaWNrZXRS",
             "ZXF1ZXN0EhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBIYCgdwYXJ0eUlE",
             "GAIgASgJUgdwYXJ0eUlEEhoKCHRpY2tldElEGAMgASgJUgh0aWNrZXRJRCIb",
-            "ChlSaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlIuEBChlDcmVhdGVNYXRjaE9m",
-            "ZmxpbmVSZXF1ZXN0EjwKCmluR2FtZU1vZGUYASABKA4yHC50aGV0YW4uc2hh",
-            "cmVkLnYxLkluR2FtZU1vZGVSCmluR2FtZU1vZGUSQAoHcGxheWVycxgCIAMo",
-            "CzImLnRoZXRhbi5zaGFyZWQudjEuUGxheWVySW5mb01hdGNoUHJvdG9SB3Bs",
-            "YXllcnMSGAoHcmVnaW9ucxgDIAMoBVIHcmVnaW9ucxIqChBmaW5kTWF0Y2hW",
-            "ZXJzaW9uGAQgASgFUhBmaW5kTWF0Y2hWZXJzaW9uIhwKGkNyZWF0ZU1hdGNo",
-            "T2ZmbGluZVJlc3BvbnNlMuMCChlSaXZhbE1hdGNoRGlyZWN0b3JTZXJ2aWNl",
-            "EmkKDENhbmNlbFRpY2tldBIqLnRoZXRhbi5yaXZhbHMudjEuUml2YWxDYW5j",
-            "ZWxUaWNrZXRSZXF1ZXN0GisudGhldGFuLnJpdmFscy52MS5SaXZhbENhbmNl",
-            "bFRpY2tldFJlc3BvbnNlIgASaAoSQ3JlYXRlTWF0Y2hPbmJvYXJkEiUudGhl",
-            "dGFuLnJpdmFscy52MS5HZXRNYXRjaEluZm9SZXF1ZXN0GikudGhldGFuLnNo",
-            "YXJlZC52MS5NYXRjaEZvdW5kUmVzcG9uc2VQcm90byIAEnEKEkNyZWF0ZU1h",
-            "dGNoT2ZmbGluZRIrLnRoZXRhbi5yaXZhbHMudjEuQ3JlYXRlTWF0Y2hPZmZs",
-            "aW5lUmVxdWVzdBosLnRoZXRhbi5yaXZhbHMudjEuQ3JlYXRlTWF0Y2hPZmZs",
-            "aW5lUmVzcG9uc2UiAEK/AQoUY29tLnRoZXRhbi5yaXZhbHMudjFCEFJpdmFs",
-            "c01hdGNoUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3JpdmFs",
-            "cy92MTt0aGV0YW5fcml2YWxzX3YxogIDVFJYqgIQVGhldGFuLlJpdmFscy5W",
-            "McoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5cUml2YWxzXFYxXEdQQk1l",
-            "dGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZwcm90bzM="));
+            "ChlSaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlIuUBCh1DcmVhdGVNYXRjaE5v",
+            "bk1hdGNoaW5nUmVxdWVzdBI8CgppbkdhbWVNb2RlGAEgASgOMhwudGhldGFu",
+            "LnNoYXJlZC52MS5JbkdhbWVNb2RlUgppbkdhbWVNb2RlEkAKB3BsYXllcnMY",
+            "AiADKAsyJi50aGV0YW4uc2hhcmVkLnYxLlBsYXllckluZm9NYXRjaFByb3Rv",
+            "UgdwbGF5ZXJzEhgKB3JlZ2lvbnMYAyADKAVSB3JlZ2lvbnMSKgoQZmluZE1h",
+            "dGNoVmVyc2lvbhgEIAEoBVIQZmluZE1hdGNoVmVyc2lvbiIgCh5DcmVhdGVN",
+            "YXRjaE5vbk1hdGNoaW5nUmVzcG9uc2Uy7wIKGVJpdmFsTWF0Y2hEaXJlY3Rv",
+            "clNlcnZpY2USaQoMQ2FuY2VsVGlja2V0EioudGhldGFuLnJpdmFscy52MS5S",
+            "aXZhbENhbmNlbFRpY2tldFJlcXVlc3QaKy50aGV0YW4ucml2YWxzLnYxLlJp",
+            "dmFsQ2FuY2VsVGlja2V0UmVzcG9uc2UiABJoChJDcmVhdGVNYXRjaE9uYm9h",
+            "cmQSJS50aGV0YW4ucml2YWxzLnYxLkdldE1hdGNoSW5mb1JlcXVlc3QaKS50",
+            "aGV0YW4uc2hhcmVkLnYxLk1hdGNoRm91bmRSZXNwb25zZVByb3RvIgASfQoW",
+            "Q3JlYXRlTWF0Y2hOb25NYXRjaGluZxIvLnRoZXRhbi5yaXZhbHMudjEuQ3Jl",
+            "YXRlTWF0Y2hOb25NYXRjaGluZ1JlcXVlc3QaMC50aGV0YW4ucml2YWxzLnYx",
+            "LkNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXNwb25zZSIAQr8BChRjb20udGhl",
+            "dGFuLnJpdmFscy52MUIQUml2YWxzTWF0Y2hQcm90b1ABWjN0aGV0YW4tYnVm",
+            "L2dlbi9nby90aGV0YW4vcml2YWxzL3YxO3RoZXRhbl9yaXZhbHNfdjGiAgNU",
+            "UliqAhBUaGV0YW4uUml2YWxzLlYxygIQVGhldGFuXFJpdmFsc1xWMeICHFRo",
+            "ZXRhblxSaXZhbHNcVjFcR1BCTWV0YWRhdGHqAhJUaGV0YW46OlJpdmFsczo6",
+            "VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, global::Thetan.Shared.V1.MatchReflection.Descriptor, global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketRequest), global::Thetan.Rivals.V1.RivalCancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketResponse), global::Thetan.Rivals.V1.RivalCancelTicketResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchOfflineRequest), global::Thetan.Rivals.V1.CreateMatchOfflineRequest.Parser, new[]{ "InGameMode", "Players", "Regions", "FindMatchVersion" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchOfflineResponse), global::Thetan.Rivals.V1.CreateMatchOfflineResponse.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest), global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest.Parser, new[]{ "InGameMode", "Players", "Regions", "FindMatchVersion" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse), global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse.Parser, null, null, null, null, null)
           }));
     }
     #endregion
@@ -477,16 +478,16 @@ namespace Thetan.Rivals.V1 {
 
   }
 
-  public sealed partial class CreateMatchOfflineRequest : pb::IMessage<CreateMatchOfflineRequest>
+  public sealed partial class CreateMatchNonMatchingRequest : pb::IMessage<CreateMatchNonMatchingRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<CreateMatchOfflineRequest> _parser = new pb::MessageParser<CreateMatchOfflineRequest>(() => new CreateMatchOfflineRequest());
+    private static readonly pb::MessageParser<CreateMatchNonMatchingRequest> _parser = new pb::MessageParser<CreateMatchNonMatchingRequest>(() => new CreateMatchNonMatchingRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<CreateMatchOfflineRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<CreateMatchNonMatchingRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -502,7 +503,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreateMatchOfflineRequest() {
+    public CreateMatchNonMatchingRequest() {
       OnConstruction();
     }
 
@@ -510,7 +511,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreateMatchOfflineRequest(CreateMatchOfflineRequest other) : this() {
+    public CreateMatchNonMatchingRequest(CreateMatchNonMatchingRequest other) : this() {
       inGameMode_ = other.inGameMode_;
       players_ = other.players_.Clone();
       regions_ = other.regions_.Clone();
@@ -520,8 +521,8 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreateMatchOfflineRequest Clone() {
-      return new CreateMatchOfflineRequest(this);
+    public CreateMatchNonMatchingRequest Clone() {
+      return new CreateMatchNonMatchingRequest(this);
     }
 
     /// <summary>Field number for the "inGameMode" field.</summary>
@@ -573,12 +574,12 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as CreateMatchOfflineRequest);
+      return Equals(other as CreateMatchNonMatchingRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(CreateMatchOfflineRequest other) {
+    public bool Equals(CreateMatchNonMatchingRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -674,7 +675,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(CreateMatchOfflineRequest other) {
+    public void MergeFrom(CreateMatchNonMatchingRequest other) {
       if (other == null) {
         return;
       }
@@ -757,16 +758,16 @@ namespace Thetan.Rivals.V1 {
 
   }
 
-  public sealed partial class CreateMatchOfflineResponse : pb::IMessage<CreateMatchOfflineResponse>
+  public sealed partial class CreateMatchNonMatchingResponse : pb::IMessage<CreateMatchNonMatchingResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<CreateMatchOfflineResponse> _parser = new pb::MessageParser<CreateMatchOfflineResponse>(() => new CreateMatchOfflineResponse());
+    private static readonly pb::MessageParser<CreateMatchNonMatchingResponse> _parser = new pb::MessageParser<CreateMatchNonMatchingResponse>(() => new CreateMatchNonMatchingResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<CreateMatchOfflineResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<CreateMatchNonMatchingResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -782,7 +783,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreateMatchOfflineResponse() {
+    public CreateMatchNonMatchingResponse() {
       OnConstruction();
     }
 
@@ -790,25 +791,25 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreateMatchOfflineResponse(CreateMatchOfflineResponse other) : this() {
+    public CreateMatchNonMatchingResponse(CreateMatchNonMatchingResponse other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CreateMatchOfflineResponse Clone() {
-      return new CreateMatchOfflineResponse(this);
+    public CreateMatchNonMatchingResponse Clone() {
+      return new CreateMatchNonMatchingResponse(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as CreateMatchOfflineResponse);
+      return Equals(other as CreateMatchNonMatchingResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(CreateMatchOfflineResponse other) {
+    public bool Equals(CreateMatchNonMatchingResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -868,7 +869,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(CreateMatchOfflineResponse other) {
+    public void MergeFrom(CreateMatchNonMatchingResponse other) {
       if (other == null) {
         return;
       }

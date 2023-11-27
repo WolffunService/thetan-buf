@@ -12,7 +12,7 @@ service RivalMatchDirectorService {
   rpc CancelTicket(RivalCancelTicketRequest) returns (RivalCancelTicketResponse) {}
 
   rpc CreateMatchOnboard(thetan.rivals.v1.GetMatchInfoRequest) returns (thetan.shared.v1.MatchFoundResponseProto) {}
-  rpc CreateMatchOffline(CreateMatchOfflineRequest) returns (CreateMatchOfflineResponse) {}
+  rpc CreateMatchNonMatching(CreateMatchNonMatchingRequest) returns (CreateMatchNonMatchingResponse) {}
 }
 
 message RivalCancelTicketRequest {
@@ -24,12 +24,12 @@ message RivalCancelTicketRequest {
 message RivalCancelTicketResponse {
 }
 
-message CreateMatchOfflineRequest {
+message CreateMatchNonMatchingRequest {
   thetan.shared.v1.InGameMode inGameMode = 1;
   repeated thetan.shared.v1.PlayerInfoMatchProto players = 2;
   repeated int32 regions = 3;
   int32 findMatchVersion = 4;
 }
 
-message CreateMatchOfflineResponse {
+message CreateMatchNonMatchingResponse {
 }
