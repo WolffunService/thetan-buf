@@ -12,4 +12,5 @@ message RivalsPlayerInfoProto {
   int32 skin = 2;
   map<string, int64> cosmeticInUsed = 3;
   thetan.shared.v1.Customized customized = 4;
+  map<string, thetan.shared.v1.Customized> addInCustomized = 5;
 }

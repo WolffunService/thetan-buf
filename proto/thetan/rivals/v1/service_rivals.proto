@@ -37,7 +37,10 @@ service ThetanRivalService {
 
   // Friends
   rpc GetListFriends(GetUserFriendRequest) returns (GetUserFriendResponse) {}
+
+  // Onboarding
   rpc GetMatchInfoOnboarding(GetMatchInfoRequest) returns (GetMatchInfoResponse) {}
+  rpc GetOnboardingConfig(GetOnboardingConfigRequest) returns (GetOnboardingConfigResponse) {}
 
   // Lobby
   rpc GetLatestLobbyActivityInfo(GetActivityRequest) returns (GetActivityResponse) {}
@@ -65,6 +68,7 @@ service ThetanRivalService {
 
   // Game mode
   rpc SearchGameMode(SearchGameModeRequest) returns (SearchGameModeResponse) {}
+  rpc CachePlayedMap(CachePlayedMapRequest) returns (CachePlayedMapResponse) {}
 }
 
 message SearchGameModeRequest {
@@ -546,3 +550,19 @@ message GetContestDesignsResponse {
   }
 }
 
+message GetOnboardingConfigRequest {
+  string userID = 1;
+}
+
+message GetOnboardingConfigResponse {
+  int32 newbieDuration = 1;
+}
+
+message CachePlayedMapRequest {
+  repeated string userIDs = 1;
+  thetan.shared.v1.InGameMode inGameMode = 2;
+  int32 mapID = 3;
+}
+
+message CachePlayedMapResponse {
+}
