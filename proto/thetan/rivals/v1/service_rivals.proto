@@ -20,6 +20,8 @@ service ThetanRivalService {
   rpc GetManyUserProfiles (ManyUserProfilesRequest) returns (ManyUserProfileResponse) {}
   rpc GetProfile(ProfileRequest) returns (ProfileResponse) {}
   rpc TrackFriendlyAct(FriendlyActRequest) returns (google.protobuf.Empty) {}
+  rpc ReactUser(ReactUserRequest) returns (google.protobuf.Empty) {}
+  rpc VoteGuild(VoteGuildRequest) returns (google.protobuf.Empty) {}
 
   // Minions
   rpc GetUserMinions(UserMinionsRequest) returns (UserMinionsResponse) {}
@@ -31,6 +33,7 @@ service ThetanRivalService {
   rpc GetAddInsByUserID(GetAddInsByUserIDRequest) returns (GetAddInsByUserIDResponse) {}
   rpc GetAddInByID(GetAddInByIDRequest) returns (GetAddInByIDResponse) {}
   rpc CreateAddIn(CreateAddInRequest) returns (CreateAddInResponse) {}
+  rpc FilterSystemItems(FilterSystemItemsRequest) returns(FilterSystemItemsResponse){}
 
   // Friends
   rpc GetListFriends(GetUserFriendRequest) returns (GetUserFriendResponse) {}
@@ -66,6 +69,16 @@ service ThetanRivalService {
   // Game mode
   rpc SearchGameMode(SearchGameModeRequest) returns (SearchGameModeResponse) {}
   rpc CachePlayedMap(CachePlayedMapRequest) returns (CachePlayedMapResponse) {}
+
+  // Metric
+  rpc GetMetricConfig(GetMetricConfigRequest) returns (GetMetricConfigResponse) {}
+}
+
+message GetMetricConfigRequest {
+}
+
+message GetMetricConfigResponse {
+  double TrophyPerBattle = 1;
 }
 
 message SearchGameModeRequest {
@@ -140,6 +153,16 @@ message MapInfo {
 }
 
 // ==== PROFILE ====
+message ReactUserRequest {
+  string userIDReact = 1;
+  string targetID = 2;
+  int32 reactType = 3;
+}
+
+message VoteGuildRequest {
+  string userIDVote = 1;
+  string guildID = 2;
+}
 
 message UserProfileRequest {
   string userId = 1;
@@ -167,6 +190,7 @@ message UserProfileResponse {
 
   int32 activityRole = 10;
   string townID = 11;
+  int32 gender = 12;
 }
 
 message UserProfileRank {
@@ -297,6 +321,28 @@ message CreateAddInRequest {
 
 message CreateAddInResponse {
   AddIn addIn = 1;
+}
+
+message FilterSystemItemsRequest{
+  repeated string exclusiveFor = 1;
+}
+
+message FilterSystemItemsResponse{
+  repeated FilterSystemItems filterSystemItems = 1;
+}
+
+message FilterSystemItems{
+  string exclusiveFor = 1;
+  repeated ItemResponse items = 2;
+}
+
+message FilterSystemItemResponse{
+  repeated ItemResponse item = 1;
+}
+message ItemResponse{
+  string itemType = 1;
+  int64 itemId = 2;
+  bool isPremiumItem =3;
 }
 
 // ==== FRIENDS ====

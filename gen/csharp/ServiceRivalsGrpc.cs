@@ -62,6 +62,10 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.ReactUserRequest> __Marshaller_thetan_rivals_v1_ReactUserRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.ReactUserRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.VoteGuildRequest> __Marshaller_thetan_rivals_v1_VoteGuildRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.VoteGuildRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.UserMinionsRequest> __Marshaller_thetan_rivals_v1_UserMinionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.UserMinionsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.UserMinionsResponse> __Marshaller_thetan_rivals_v1_UserMinionsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.UserMinionsResponse.Parser));
@@ -89,6 +93,10 @@ namespace Thetan.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.CreateAddInRequest> __Marshaller_thetan_rivals_v1_CreateAddInRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.CreateAddInRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.CreateAddInResponse> __Marshaller_thetan_rivals_v1_CreateAddInResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.CreateAddInResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.FilterSystemItemsRequest> __Marshaller_thetan_rivals_v1_FilterSystemItemsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.FilterSystemItemsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.FilterSystemItemsResponse> __Marshaller_thetan_rivals_v1_FilterSystemItemsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.FilterSystemItemsResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetUserFriendRequest> __Marshaller_thetan_rivals_v1_GetUserFriendRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetUserFriendRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -153,6 +161,10 @@ namespace Thetan.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.CachePlayedMapRequest> __Marshaller_thetan_rivals_v1_CachePlayedMapRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.CachePlayedMapRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.CachePlayedMapResponse> __Marshaller_thetan_rivals_v1_CachePlayedMapResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.CachePlayedMapResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetMetricConfigRequest> __Marshaller_thetan_rivals_v1_GetMetricConfigRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetMetricConfigRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetMetricConfigResponse> __Marshaller_thetan_rivals_v1_GetMetricConfigResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetMetricConfigResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.UserProfileRequest, global::Thetan.Rivals.V1.UserProfileResponse> __Method_GetUserProfile = new grpc::Method<global::Thetan.Rivals.V1.UserProfileRequest, global::Thetan.Rivals.V1.UserProfileResponse>(
@@ -184,6 +196,22 @@ namespace Thetan.Rivals.V1 {
         __ServiceName,
         "TrackFriendlyAct",
         __Marshaller_thetan_rivals_v1_FriendlyActRequest,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.ReactUserRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_ReactUser = new grpc::Method<global::Thetan.Rivals.V1.ReactUserRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ReactUser",
+        __Marshaller_thetan_rivals_v1_ReactUserRequest,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.VoteGuildRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_VoteGuild = new grpc::Method<global::Thetan.Rivals.V1.VoteGuildRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "VoteGuild",
+        __Marshaller_thetan_rivals_v1_VoteGuildRequest,
         __Marshaller_google_protobuf_Empty);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -241,6 +269,14 @@ namespace Thetan.Rivals.V1 {
         "CreateAddIn",
         __Marshaller_thetan_rivals_v1_CreateAddInRequest,
         __Marshaller_thetan_rivals_v1_CreateAddInResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.FilterSystemItemsRequest, global::Thetan.Rivals.V1.FilterSystemItemsResponse> __Method_FilterSystemItems = new grpc::Method<global::Thetan.Rivals.V1.FilterSystemItemsRequest, global::Thetan.Rivals.V1.FilterSystemItemsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "FilterSystemItems",
+        __Marshaller_thetan_rivals_v1_FilterSystemItemsRequest,
+        __Marshaller_thetan_rivals_v1_FilterSystemItemsResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.GetUserFriendRequest, global::Thetan.Rivals.V1.GetUserFriendResponse> __Method_GetListFriends = new grpc::Method<global::Thetan.Rivals.V1.GetUserFriendRequest, global::Thetan.Rivals.V1.GetUserFriendResponse>(
@@ -378,6 +414,14 @@ namespace Thetan.Rivals.V1 {
         __Marshaller_thetan_rivals_v1_CachePlayedMapRequest,
         __Marshaller_thetan_rivals_v1_CachePlayedMapResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.GetMetricConfigRequest, global::Thetan.Rivals.V1.GetMetricConfigResponse> __Method_GetMetricConfig = new grpc::Method<global::Thetan.Rivals.V1.GetMetricConfigRequest, global::Thetan.Rivals.V1.GetMetricConfigResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMetricConfig",
+        __Marshaller_thetan_rivals_v1_GetMetricConfigRequest,
+        __Marshaller_thetan_rivals_v1_GetMetricConfigResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -415,6 +459,18 @@ namespace Thetan.Rivals.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> TrackFriendlyAct(global::Thetan.Rivals.V1.FriendlyActRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> ReactUser(global::Thetan.Rivals.V1.ReactUserRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> VoteGuild(global::Thetan.Rivals.V1.VoteGuildRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -469,6 +525,12 @@ namespace Thetan.Rivals.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.CreateAddInResponse> CreateAddIn(global::Thetan.Rivals.V1.CreateAddInRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.FilterSystemItemsResponse> FilterSystemItems(global::Thetan.Rivals.V1.FilterSystemItemsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -629,6 +691,18 @@ namespace Thetan.Rivals.V1 {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// Metric
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.GetMetricConfigResponse> GetMetricConfig(global::Thetan.Rivals.V1.GetMetricConfigRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Client for ThetanRivalService</summary>
@@ -769,6 +843,46 @@ namespace Thetan.Rivals.V1 {
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> TrackFriendlyActAsync(global::Thetan.Rivals.V1.FriendlyActRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_TrackFriendlyAct, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty ReactUser(global::Thetan.Rivals.V1.ReactUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReactUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty ReactUser(global::Thetan.Rivals.V1.ReactUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ReactUser, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> ReactUserAsync(global::Thetan.Rivals.V1.ReactUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ReactUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> ReactUserAsync(global::Thetan.Rivals.V1.ReactUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ReactUser, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty VoteGuild(global::Thetan.Rivals.V1.VoteGuildRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return VoteGuild(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty VoteGuild(global::Thetan.Rivals.V1.VoteGuildRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_VoteGuild, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> VoteGuildAsync(global::Thetan.Rivals.V1.VoteGuildRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return VoteGuildAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> VoteGuildAsync(global::Thetan.Rivals.V1.VoteGuildRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_VoteGuild, null, options, request);
       }
       /// <summary>
       /// Minions
@@ -965,6 +1079,26 @@ namespace Thetan.Rivals.V1 {
       public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.CreateAddInResponse> CreateAddInAsync(global::Thetan.Rivals.V1.CreateAddInRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateAddIn, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.FilterSystemItemsResponse FilterSystemItems(global::Thetan.Rivals.V1.FilterSystemItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FilterSystemItems(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.FilterSystemItemsResponse FilterSystemItems(global::Thetan.Rivals.V1.FilterSystemItemsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_FilterSystemItems, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.FilterSystemItemsResponse> FilterSystemItemsAsync(global::Thetan.Rivals.V1.FilterSystemItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FilterSystemItemsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.FilterSystemItemsResponse> FilterSystemItemsAsync(global::Thetan.Rivals.V1.FilterSystemItemsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_FilterSystemItems, null, options, request);
       }
       /// <summary>
       /// Friends
@@ -1558,6 +1692,54 @@ namespace Thetan.Rivals.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_CachePlayedMap, null, options, request);
       }
+      /// <summary>
+      /// Metric
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GetMetricConfigResponse GetMetricConfig(global::Thetan.Rivals.V1.GetMetricConfigRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMetricConfig(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Metric
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GetMetricConfigResponse GetMetricConfig(global::Thetan.Rivals.V1.GetMetricConfigRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMetricConfig, null, options, request);
+      }
+      /// <summary>
+      /// Metric
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GetMetricConfigResponse> GetMetricConfigAsync(global::Thetan.Rivals.V1.GetMetricConfigRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMetricConfigAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Metric
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GetMetricConfigResponse> GetMetricConfigAsync(global::Thetan.Rivals.V1.GetMetricConfigRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMetricConfig, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ThetanRivalServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -1576,6 +1758,8 @@ namespace Thetan.Rivals.V1 {
           .AddMethod(__Method_GetManyUserProfiles, serviceImpl.GetManyUserProfiles)
           .AddMethod(__Method_GetProfile, serviceImpl.GetProfile)
           .AddMethod(__Method_TrackFriendlyAct, serviceImpl.TrackFriendlyAct)
+          .AddMethod(__Method_ReactUser, serviceImpl.ReactUser)
+          .AddMethod(__Method_VoteGuild, serviceImpl.VoteGuild)
           .AddMethod(__Method_GetUserMinions, serviceImpl.GetUserMinions)
           .AddMethod(__Method_GetUserSelectedMinion, serviceImpl.GetUserSelectedMinion)
           .AddMethod(__Method_GetMinion, serviceImpl.GetMinion)
@@ -1583,6 +1767,7 @@ namespace Thetan.Rivals.V1 {
           .AddMethod(__Method_GetAddInsByUserID, serviceImpl.GetAddInsByUserID)
           .AddMethod(__Method_GetAddInByID, serviceImpl.GetAddInByID)
           .AddMethod(__Method_CreateAddIn, serviceImpl.CreateAddIn)
+          .AddMethod(__Method_FilterSystemItems, serviceImpl.FilterSystemItems)
           .AddMethod(__Method_GetListFriends, serviceImpl.GetListFriends)
           .AddMethod(__Method_GetMatchInfoOnboarding, serviceImpl.GetMatchInfoOnboarding)
           .AddMethod(__Method_GetOnboardingConfig, serviceImpl.GetOnboardingConfig)
@@ -1599,7 +1784,8 @@ namespace Thetan.Rivals.V1 {
           .AddMethod(__Method_PublishDesign, serviceImpl.PublishDesign)
           .AddMethod(__Method_GetContestDesigns, serviceImpl.GetContestDesigns)
           .AddMethod(__Method_SearchGameMode, serviceImpl.SearchGameMode)
-          .AddMethod(__Method_CachePlayedMap, serviceImpl.CachePlayedMap).Build();
+          .AddMethod(__Method_CachePlayedMap, serviceImpl.CachePlayedMap)
+          .AddMethod(__Method_GetMetricConfig, serviceImpl.GetMetricConfig).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -1613,6 +1799,8 @@ namespace Thetan.Rivals.V1 {
       serviceBinder.AddMethod(__Method_GetManyUserProfiles, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.ManyUserProfilesRequest, global::Thetan.Rivals.V1.ManyUserProfileResponse>(serviceImpl.GetManyUserProfiles));
       serviceBinder.AddMethod(__Method_GetProfile, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.ProfileRequest, global::Thetan.Rivals.V1.ProfileResponse>(serviceImpl.GetProfile));
       serviceBinder.AddMethod(__Method_TrackFriendlyAct, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.FriendlyActRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.TrackFriendlyAct));
+      serviceBinder.AddMethod(__Method_ReactUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.ReactUserRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.ReactUser));
+      serviceBinder.AddMethod(__Method_VoteGuild, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.VoteGuildRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.VoteGuild));
       serviceBinder.AddMethod(__Method_GetUserMinions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.UserMinionsRequest, global::Thetan.Rivals.V1.UserMinionsResponse>(serviceImpl.GetUserMinions));
       serviceBinder.AddMethod(__Method_GetUserSelectedMinion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.UserSelectedMinionRequest, global::Thetan.Rivals.V1.UserSelectedMinionResponse>(serviceImpl.GetUserSelectedMinion));
       serviceBinder.AddMethod(__Method_GetMinion, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.MinionRequest, global::Thetan.Rivals.V1.MinionResponse>(serviceImpl.GetMinion));
@@ -1620,6 +1808,7 @@ namespace Thetan.Rivals.V1 {
       serviceBinder.AddMethod(__Method_GetAddInsByUserID, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetAddInsByUserIDRequest, global::Thetan.Rivals.V1.GetAddInsByUserIDResponse>(serviceImpl.GetAddInsByUserID));
       serviceBinder.AddMethod(__Method_GetAddInByID, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetAddInByIDRequest, global::Thetan.Rivals.V1.GetAddInByIDResponse>(serviceImpl.GetAddInByID));
       serviceBinder.AddMethod(__Method_CreateAddIn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.CreateAddInRequest, global::Thetan.Rivals.V1.CreateAddInResponse>(serviceImpl.CreateAddIn));
+      serviceBinder.AddMethod(__Method_FilterSystemItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.FilterSystemItemsRequest, global::Thetan.Rivals.V1.FilterSystemItemsResponse>(serviceImpl.FilterSystemItems));
       serviceBinder.AddMethod(__Method_GetListFriends, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetUserFriendRequest, global::Thetan.Rivals.V1.GetUserFriendResponse>(serviceImpl.GetListFriends));
       serviceBinder.AddMethod(__Method_GetMatchInfoOnboarding, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetMatchInfoRequest, global::Thetan.Rivals.V1.GetMatchInfoResponse>(serviceImpl.GetMatchInfoOnboarding));
       serviceBinder.AddMethod(__Method_GetOnboardingConfig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetOnboardingConfigRequest, global::Thetan.Rivals.V1.GetOnboardingConfigResponse>(serviceImpl.GetOnboardingConfig));
@@ -1637,6 +1826,7 @@ namespace Thetan.Rivals.V1 {
       serviceBinder.AddMethod(__Method_GetContestDesigns, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetContestDesignsRequest, global::Thetan.Rivals.V1.GetContestDesignsResponse>(serviceImpl.GetContestDesigns));
       serviceBinder.AddMethod(__Method_SearchGameMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.SearchGameModeRequest, global::Thetan.Rivals.V1.SearchGameModeResponse>(serviceImpl.SearchGameMode));
       serviceBinder.AddMethod(__Method_CachePlayedMap, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.CachePlayedMapRequest, global::Thetan.Rivals.V1.CachePlayedMapResponse>(serviceImpl.CachePlayedMap));
+      serviceBinder.AddMethod(__Method_GetMetricConfig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetMetricConfigRequest, global::Thetan.Rivals.V1.GetMetricConfigResponse>(serviceImpl.GetMetricConfig));
     }
 
   }
