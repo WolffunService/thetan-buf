@@ -166,6 +166,10 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetMetricConfigResponse> __Marshaller_thetan_rivals_v1_GetMetricConfigResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetMetricConfigResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.CreateBotsInfoRequest> __Marshaller_thetan_rivals_v1_CreateBotsInfoRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.CreateBotsInfoRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.CreateBotsInfoResponse> __Marshaller_thetan_rivals_v1_CreateBotsInfoResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.CreateBotsInfoResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.UpdateBotsInfoRequest> __Marshaller_thetan_rivals_v1_UpdateBotsInfoRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.UpdateBotsInfoRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.UpdateBotsInfoResponse> __Marshaller_thetan_rivals_v1_UpdateBotsInfoResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.UpdateBotsInfoResponse.Parser));
@@ -425,6 +429,14 @@ namespace Thetan.Rivals.V1 {
         "GetMetricConfig",
         __Marshaller_thetan_rivals_v1_GetMetricConfigRequest,
         __Marshaller_thetan_rivals_v1_GetMetricConfigResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.CreateBotsInfoRequest, global::Thetan.Rivals.V1.CreateBotsInfoResponse> __Method_CreateBotsInfo = new grpc::Method<global::Thetan.Rivals.V1.CreateBotsInfoRequest, global::Thetan.Rivals.V1.CreateBotsInfoResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateBotsInfo",
+        __Marshaller_thetan_rivals_v1_CreateBotsInfoRequest,
+        __Marshaller_thetan_rivals_v1_CreateBotsInfoResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.UpdateBotsInfoRequest, global::Thetan.Rivals.V1.UpdateBotsInfoResponse> __Method_UpdateBotsInfo = new grpc::Method<global::Thetan.Rivals.V1.UpdateBotsInfoRequest, global::Thetan.Rivals.V1.UpdateBotsInfoResponse>(
@@ -711,6 +723,12 @@ namespace Thetan.Rivals.V1 {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.GetMetricConfigResponse> GetMetricConfig(global::Thetan.Rivals.V1.GetMetricConfigRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.CreateBotsInfoResponse> CreateBotsInfo(global::Thetan.Rivals.V1.CreateBotsInfoRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1759,6 +1777,26 @@ namespace Thetan.Rivals.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetMetricConfig, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.CreateBotsInfoResponse CreateBotsInfo(global::Thetan.Rivals.V1.CreateBotsInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateBotsInfo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.CreateBotsInfoResponse CreateBotsInfo(global::Thetan.Rivals.V1.CreateBotsInfoRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreateBotsInfo, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.CreateBotsInfoResponse> CreateBotsInfoAsync(global::Thetan.Rivals.V1.CreateBotsInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateBotsInfoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.CreateBotsInfoResponse> CreateBotsInfoAsync(global::Thetan.Rivals.V1.CreateBotsInfoRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreateBotsInfo, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Thetan.Rivals.V1.UpdateBotsInfoResponse UpdateBotsInfo(global::Thetan.Rivals.V1.UpdateBotsInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return UpdateBotsInfo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -1824,6 +1862,7 @@ namespace Thetan.Rivals.V1 {
           .AddMethod(__Method_SearchGameMode, serviceImpl.SearchGameMode)
           .AddMethod(__Method_CachePlayedMap, serviceImpl.CachePlayedMap)
           .AddMethod(__Method_GetMetricConfig, serviceImpl.GetMetricConfig)
+          .AddMethod(__Method_CreateBotsInfo, serviceImpl.CreateBotsInfo)
           .AddMethod(__Method_UpdateBotsInfo, serviceImpl.UpdateBotsInfo).Build();
     }
 
@@ -1866,6 +1905,7 @@ namespace Thetan.Rivals.V1 {
       serviceBinder.AddMethod(__Method_SearchGameMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.SearchGameModeRequest, global::Thetan.Rivals.V1.SearchGameModeResponse>(serviceImpl.SearchGameMode));
       serviceBinder.AddMethod(__Method_CachePlayedMap, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.CachePlayedMapRequest, global::Thetan.Rivals.V1.CachePlayedMapResponse>(serviceImpl.CachePlayedMap));
       serviceBinder.AddMethod(__Method_GetMetricConfig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetMetricConfigRequest, global::Thetan.Rivals.V1.GetMetricConfigResponse>(serviceImpl.GetMetricConfig));
+      serviceBinder.AddMethod(__Method_CreateBotsInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.CreateBotsInfoRequest, global::Thetan.Rivals.V1.CreateBotsInfoResponse>(serviceImpl.CreateBotsInfo));
       serviceBinder.AddMethod(__Method_UpdateBotsInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.UpdateBotsInfoRequest, global::Thetan.Rivals.V1.UpdateBotsInfoResponse>(serviceImpl.UpdateBotsInfo));
     }
 
