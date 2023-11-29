@@ -52,6 +52,7 @@ const (
 	ThetanRivalService_SearchGameMode_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/SearchGameMode"
 	ThetanRivalService_CachePlayedMap_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/CachePlayedMap"
 	ThetanRivalService_GetMetricConfig_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/GetMetricConfig"
+	ThetanRivalService_UpdateBotsInfo_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/UpdateBotsInfo"
 )
 
 // ThetanRivalServiceClient is the client API for ThetanRivalService service.
@@ -104,6 +105,7 @@ type ThetanRivalServiceClient interface {
 	CachePlayedMap(ctx context.Context, in *CachePlayedMapRequest, opts ...grpc.CallOption) (*CachePlayedMapResponse, error)
 	// Metric
 	GetMetricConfig(ctx context.Context, in *GetMetricConfigRequest, opts ...grpc.CallOption) (*GetMetricConfigResponse, error)
+	UpdateBotsInfo(ctx context.Context, in *UpdateBotsInfoRequest, opts ...grpc.CallOption) (*UpdateBotsInfoResponse, error)
 }
 
 type thetanRivalServiceClient struct {
@@ -403,6 +405,15 @@ func (c *thetanRivalServiceClient) GetMetricConfig(ctx context.Context, in *GetM
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) UpdateBotsInfo(ctx context.Context, in *UpdateBotsInfoRequest, opts ...grpc.CallOption) (*UpdateBotsInfoResponse, error) {
+	out := new(UpdateBotsInfoResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_UpdateBotsInfo_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanRivalServiceServer is the server API for ThetanRivalService service.
 // All implementations must embed UnimplementedThetanRivalServiceServer
 // for forward compatibility
@@ -453,6 +464,7 @@ type ThetanRivalServiceServer interface {
 	CachePlayedMap(context.Context, *CachePlayedMapRequest) (*CachePlayedMapResponse, error)
 	// Metric
 	GetMetricConfig(context.Context, *GetMetricConfigRequest) (*GetMetricConfigResponse, error)
+	UpdateBotsInfo(context.Context, *UpdateBotsInfoRequest) (*UpdateBotsInfoResponse, error)
 	mustEmbedUnimplementedThetanRivalServiceServer()
 }
 
@@ -555,6 +567,9 @@ func (UnimplementedThetanRivalServiceServer) CachePlayedMap(context.Context, *Ca
 }
 func (UnimplementedThetanRivalServiceServer) GetMetricConfig(context.Context, *GetMetricConfigRequest) (*GetMetricConfigResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetMetricConfig not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) UpdateBotsInfo(context.Context, *UpdateBotsInfoRequest) (*UpdateBotsInfoResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method UpdateBotsInfo not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) mustEmbedUnimplementedThetanRivalServiceServer() {}
 
@@ -1145,6 +1160,24 @@ func _ThetanRivalService_GetMetricConfig_Handler(srv interface{}, ctx context.Co
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_UpdateBotsInfo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(UpdateBotsInfoRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).UpdateBotsInfo(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_UpdateBotsInfo_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).UpdateBotsInfo(ctx, req.(*UpdateBotsInfoRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanRivalService_ServiceDesc is the grpc.ServiceDesc for ThetanRivalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -1279,6 +1312,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetMetricConfig",
 			Handler:    _ThetanRivalService_GetMetricConfig_Handler,
+		},
+		{
+			MethodName: "UpdateBotsInfo",
+			Handler:    _ThetanRivalService_UpdateBotsInfo_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
