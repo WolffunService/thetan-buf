@@ -33,8 +33,3 @@ message CreateMatchNonMatchingRequest {
 
 message CreateMatchNonMatchingResponse {
 }
-
-message Buddy {
-  string town = 1;
-  string country = 2;
-}

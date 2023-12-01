@@ -72,6 +72,9 @@ service ThetanRivalService {
 
   // Metric
   rpc GetMetricConfig(GetMetricConfigRequest) returns (GetMetricConfigResponse) {}
+
+  // Buddy Match
+  rpc GetFindBuddyInfo(GetFindBuddyInfoRequest) returns (GetFindBuddyInfoResponse) {}
 }
 
 message GetMetricConfigRequest {
@@ -575,4 +578,19 @@ message CachePlayedMapRequest {
 }
 
 message CachePlayedMapResponse {
+}
+
+message GetFindBuddyInfoRequest {
+  string userID = 1;
+}
+
+message GetFindBuddyInfoResponse {
+  Buddy buddy = 1;
+  int32 errorCode = 2;
+}
+
+message Buddy {
+  string userID = 1;
+  string town = 2;
+  string country = 3;
 }

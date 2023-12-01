@@ -165,6 +165,10 @@ namespace Thetan.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetMetricConfigRequest> __Marshaller_thetan_rivals_v1_GetMetricConfigRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetMetricConfigRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetMetricConfigResponse> __Marshaller_thetan_rivals_v1_GetMetricConfigResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetMetricConfigResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetFindBuddyInfoRequest> __Marshaller_thetan_rivals_v1_GetFindBuddyInfoRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetFindBuddyInfoRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetFindBuddyInfoResponse> __Marshaller_thetan_rivals_v1_GetFindBuddyInfoResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetFindBuddyInfoResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.UserProfileRequest, global::Thetan.Rivals.V1.UserProfileResponse> __Method_GetUserProfile = new grpc::Method<global::Thetan.Rivals.V1.UserProfileRequest, global::Thetan.Rivals.V1.UserProfileResponse>(
@@ -421,6 +425,14 @@ namespace Thetan.Rivals.V1 {
         "GetMetricConfig",
         __Marshaller_thetan_rivals_v1_GetMetricConfigRequest,
         __Marshaller_thetan_rivals_v1_GetMetricConfigResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.GetFindBuddyInfoRequest, global::Thetan.Rivals.V1.GetFindBuddyInfoResponse> __Method_GetFindBuddyInfo = new grpc::Method<global::Thetan.Rivals.V1.GetFindBuddyInfoRequest, global::Thetan.Rivals.V1.GetFindBuddyInfoResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetFindBuddyInfo",
+        __Marshaller_thetan_rivals_v1_GetFindBuddyInfoRequest,
+        __Marshaller_thetan_rivals_v1_GetFindBuddyInfoResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -699,6 +711,18 @@ namespace Thetan.Rivals.V1 {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.GetMetricConfigResponse> GetMetricConfig(global::Thetan.Rivals.V1.GetMetricConfigRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Buddy Match
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.GetFindBuddyInfoResponse> GetFindBuddyInfo(global::Thetan.Rivals.V1.GetFindBuddyInfoRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -1740,6 +1764,54 @@ namespace Thetan.Rivals.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetMetricConfig, null, options, request);
       }
+      /// <summary>
+      /// Buddy Match
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GetFindBuddyInfoResponse GetFindBuddyInfo(global::Thetan.Rivals.V1.GetFindBuddyInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetFindBuddyInfo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Buddy Match
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GetFindBuddyInfoResponse GetFindBuddyInfo(global::Thetan.Rivals.V1.GetFindBuddyInfoRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetFindBuddyInfo, null, options, request);
+      }
+      /// <summary>
+      /// Buddy Match
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GetFindBuddyInfoResponse> GetFindBuddyInfoAsync(global::Thetan.Rivals.V1.GetFindBuddyInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetFindBuddyInfoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Buddy Match
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GetFindBuddyInfoResponse> GetFindBuddyInfoAsync(global::Thetan.Rivals.V1.GetFindBuddyInfoRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetFindBuddyInfo, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ThetanRivalServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -1785,7 +1857,8 @@ namespace Thetan.Rivals.V1 {
           .AddMethod(__Method_GetContestDesigns, serviceImpl.GetContestDesigns)
           .AddMethod(__Method_SearchGameMode, serviceImpl.SearchGameMode)
           .AddMethod(__Method_CachePlayedMap, serviceImpl.CachePlayedMap)
-          .AddMethod(__Method_GetMetricConfig, serviceImpl.GetMetricConfig).Build();
+          .AddMethod(__Method_GetMetricConfig, serviceImpl.GetMetricConfig)
+          .AddMethod(__Method_GetFindBuddyInfo, serviceImpl.GetFindBuddyInfo).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -1827,6 +1900,7 @@ namespace Thetan.Rivals.V1 {
       serviceBinder.AddMethod(__Method_SearchGameMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.SearchGameModeRequest, global::Thetan.Rivals.V1.SearchGameModeResponse>(serviceImpl.SearchGameMode));
       serviceBinder.AddMethod(__Method_CachePlayedMap, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.CachePlayedMapRequest, global::Thetan.Rivals.V1.CachePlayedMapResponse>(serviceImpl.CachePlayedMap));
       serviceBinder.AddMethod(__Method_GetMetricConfig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetMetricConfigRequest, global::Thetan.Rivals.V1.GetMetricConfigResponse>(serviceImpl.GetMetricConfig));
+      serviceBinder.AddMethod(__Method_GetFindBuddyInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetFindBuddyInfoRequest, global::Thetan.Rivals.V1.GetFindBuddyInfoResponse>(serviceImpl.GetFindBuddyInfo));
     }
 
   }
