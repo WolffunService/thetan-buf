@@ -585,12 +585,11 @@ message GetFindBuddyInfoRequest {
 }
 
 message GetFindBuddyInfoResponse {
-  Buddy buddy = 1;
+  UserProfileResponse user = 1;
   int32 errorCode = 2;
 }
 
-message Buddy {
-  string userID = 1;
-  string town = 2;
-  string country = 3;
+message BuddyMatchFoundResult {
+  repeated UserProfileResponse buddies = 1;
+  int32 errorCode = 2;
 }
