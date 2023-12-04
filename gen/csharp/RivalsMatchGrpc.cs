@@ -46,7 +46,7 @@ namespace Thetan.Rivals.V1 {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.RivalCancelTicketRequest> __Marshaller_thetan_rivals_v1_RivalCancelTicketRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.RivalCancelTicketRequest.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.RivalCancelTicket> __Marshaller_thetan_rivals_v1_RivalCancelTicket = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.RivalCancelTicket.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.RivalCancelTicketResponse> __Marshaller_thetan_rivals_v1_RivalCancelTicketResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.RivalCancelTicketResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -59,11 +59,11 @@ namespace Thetan.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse> __Marshaller_thetan_rivals_v1_CreateMatchNonMatchingResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Rivals.V1.RivalCancelTicketRequest, global::Thetan.Rivals.V1.RivalCancelTicketResponse> __Method_CancelTicket = new grpc::Method<global::Thetan.Rivals.V1.RivalCancelTicketRequest, global::Thetan.Rivals.V1.RivalCancelTicketResponse>(
+    static readonly grpc::Method<global::Thetan.Rivals.V1.RivalCancelTicket, global::Thetan.Rivals.V1.RivalCancelTicketResponse> __Method_CancelTicket = new grpc::Method<global::Thetan.Rivals.V1.RivalCancelTicket, global::Thetan.Rivals.V1.RivalCancelTicketResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CancelTicket",
-        __Marshaller_thetan_rivals_v1_RivalCancelTicketRequest,
+        __Marshaller_thetan_rivals_v1_RivalCancelTicket,
         __Marshaller_thetan_rivals_v1_RivalCancelTicketResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -93,7 +93,7 @@ namespace Thetan.Rivals.V1 {
     public abstract partial class RivalMatchDirectorServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.RivalCancelTicketResponse> CancelTicket(global::Thetan.Rivals.V1.RivalCancelTicketRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.RivalCancelTicketResponse> CancelTicket(global::Thetan.Rivals.V1.RivalCancelTicket request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -140,22 +140,22 @@ namespace Thetan.Rivals.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Rivals.V1.RivalCancelTicketResponse CancelTicket(global::Thetan.Rivals.V1.RivalCancelTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.Rivals.V1.RivalCancelTicketResponse CancelTicket(global::Thetan.Rivals.V1.RivalCancelTicket request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CancelTicket(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Rivals.V1.RivalCancelTicketResponse CancelTicket(global::Thetan.Rivals.V1.RivalCancelTicketRequest request, grpc::CallOptions options)
+      public virtual global::Thetan.Rivals.V1.RivalCancelTicketResponse CancelTicket(global::Thetan.Rivals.V1.RivalCancelTicket request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CancelTicket, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.RivalCancelTicketResponse> CancelTicketAsync(global::Thetan.Rivals.V1.RivalCancelTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.RivalCancelTicketResponse> CancelTicketAsync(global::Thetan.Rivals.V1.RivalCancelTicket request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CancelTicketAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.RivalCancelTicketResponse> CancelTicketAsync(global::Thetan.Rivals.V1.RivalCancelTicketRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.RivalCancelTicketResponse> CancelTicketAsync(global::Thetan.Rivals.V1.RivalCancelTicket request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CancelTicket, null, options, request);
       }
@@ -225,7 +225,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, RivalMatchDirectorServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_CancelTicket, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.RivalCancelTicketRequest, global::Thetan.Rivals.V1.RivalCancelTicketResponse>(serviceImpl.CancelTicket));
+      serviceBinder.AddMethod(__Method_CancelTicket, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.RivalCancelTicket, global::Thetan.Rivals.V1.RivalCancelTicketResponse>(serviceImpl.CancelTicket));
       serviceBinder.AddMethod(__Method_CreateMatchOnboard, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetMatchInfoRequest, global::Thetan.Shared.V1.MatchFoundResponseProto>(serviceImpl.CreateMatchOnboard));
       serviceBinder.AddMethod(__Method_CreateMatchNonMatching, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest, global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse>(serviceImpl.CreateMatchNonMatching));
     }

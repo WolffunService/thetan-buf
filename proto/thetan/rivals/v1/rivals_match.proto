@@ -4,21 +4,29 @@ package thetan.rivals.v1;
 import "thetan/rivals/v1/service_rivals.proto";
 import "thetan/shared/v1/match.proto";
 import "thetan/shared/v1/game_info.proto";
+import "google/protobuf/any.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
 option csharp_namespace = "Thetan.rivals.V1";
 
 service RivalMatchDirectorService {
-  rpc CancelTicket(RivalCancelTicketRequest) returns (RivalCancelTicketResponse) {}
+  rpc CancelTicket(RivalCancelTicket) returns (RivalCancelTicketResponse) {}
 
   rpc CreateMatchOnboard(thetan.rivals.v1.GetMatchInfoRequest) returns (thetan.shared.v1.MatchFoundResponseProto) {}
   rpc CreateMatchNonMatching(CreateMatchNonMatchingRequest) returns (CreateMatchNonMatchingResponse) {}
 }
 
-message RivalCancelTicketRequest {
+message RivalCancelTicket {
+  string ticketID = 1;
+  google.protobuf.Any extraData = 2;
+}
+
+message CancelTicketBattle {
   string playerID = 1;
   string partyID = 2;
-  string ticketID = 3;
+}
+
+message CancelTicketBuddy {
 }
 
 message RivalCancelTicketResponse {

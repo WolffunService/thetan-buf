@@ -29,7 +29,7 @@ const (
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type RivalMatchDirectorServiceClient interface {
-	CancelTicket(ctx context.Context, in *RivalCancelTicketRequest, opts ...grpc.CallOption) (*RivalCancelTicketResponse, error)
+	CancelTicket(ctx context.Context, in *RivalCancelTicket, opts ...grpc.CallOption) (*RivalCancelTicketResponse, error)
 	CreateMatchOnboard(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*v1.MatchFoundResponseProto, error)
 	CreateMatchNonMatching(ctx context.Context, in *CreateMatchNonMatchingRequest, opts ...grpc.CallOption) (*CreateMatchNonMatchingResponse, error)
 }
@@ -42,7 +42,7 @@ func NewRivalMatchDirectorServiceClient(cc grpc.ClientConnInterface) RivalMatchD
 	return &rivalMatchDirectorServiceClient{cc}
 }
 
-func (c *rivalMatchDirectorServiceClient) CancelTicket(ctx context.Context, in *RivalCancelTicketRequest, opts ...grpc.CallOption) (*RivalCancelTicketResponse, error) {
+func (c *rivalMatchDirectorServiceClient) CancelTicket(ctx context.Context, in *RivalCancelTicket, opts ...grpc.CallOption) (*RivalCancelTicketResponse, error) {
 	out := new(RivalCancelTicketResponse)
 	err := c.cc.Invoke(ctx, RivalMatchDirectorService_CancelTicket_FullMethodName, in, out, opts...)
 	if err != nil {
@@ -73,7 +73,7 @@ func (c *rivalMatchDirectorServiceClient) CreateMatchNonMatching(ctx context.Con
 // All implementations must embed UnimplementedRivalMatchDirectorServiceServer
 // for forward compatibility
 type RivalMatchDirectorServiceServer interface {
-	CancelTicket(context.Context, *RivalCancelTicketRequest) (*RivalCancelTicketResponse, error)
+	CancelTicket(context.Context, *RivalCancelTicket) (*RivalCancelTicketResponse, error)
 	CreateMatchOnboard(context.Context, *GetMatchInfoRequest) (*v1.MatchFoundResponseProto, error)
 	CreateMatchNonMatching(context.Context, *CreateMatchNonMatchingRequest) (*CreateMatchNonMatchingResponse, error)
 	mustEmbedUnimplementedRivalMatchDirectorServiceServer()
@@ -83,7 +83,7 @@ type RivalMatchDirectorServiceServer interface {
 type UnimplementedRivalMatchDirectorServiceServer struct {
 }
 
-func (UnimplementedRivalMatchDirectorServiceServer) CancelTicket(context.Context, *RivalCancelTicketRequest) (*RivalCancelTicketResponse, error) {
+func (UnimplementedRivalMatchDirectorServiceServer) CancelTicket(context.Context, *RivalCancelTicket) (*RivalCancelTicketResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CancelTicket not implemented")
 }
 func (UnimplementedRivalMatchDirectorServiceServer) CreateMatchOnboard(context.Context, *GetMatchInfoRequest) (*v1.MatchFoundResponseProto, error) {
@@ -107,7 +107,7 @@ func RegisterRivalMatchDirectorServiceServer(s grpc.ServiceRegistrar, srv RivalM
 }
 
 func _RivalMatchDirectorService_CancelTicket_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(RivalCancelTicketRequest)
+	in := new(RivalCancelTicket)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -119,7 +119,7 @@ func _RivalMatchDirectorService_CancelTicket_Handler(srv interface{}, ctx contex
 		FullMethod: RivalMatchDirectorService_CancelTicket_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(RivalMatchDirectorServiceServer).CancelTicket(ctx, req.(*RivalCancelTicketRequest))
+		return srv.(RivalMatchDirectorServiceServer).CancelTicket(ctx, req.(*RivalCancelTicket))
 	}
 	return interceptor(ctx, in, info, handler)
 }
