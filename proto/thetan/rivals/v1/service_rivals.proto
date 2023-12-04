@@ -580,16 +580,21 @@ message CachePlayedMapRequest {
 message CachePlayedMapResponse {
 }
 
+message Buddy {
+  UserProfileResponse userInfo = 1;
+}
+
 message GetFindBuddyInfoRequest {
   string userID = 1;
 }
 
 message GetFindBuddyInfoResponse {
-  UserProfileResponse user = 1;
+  Buddy buddy = 1;
   int32 errorCode = 2;
 }
 
 message BuddyMatchFoundResult {
-  repeated UserProfileResponse buddies = 1;
-  int32 errorCode = 2;
+  string matchID = 1;
+  repeated Buddy buddies = 2;
+  int32 errorCode = 3;
 }
