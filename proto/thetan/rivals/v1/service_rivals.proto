@@ -596,5 +596,4 @@ message GetFindBuddyInfoResponse {
 message BuddyMatchFoundResult {
   string matchID = 1;
   repeated Buddy buddies = 2;
-  int32 errorCode = 3;
 }
