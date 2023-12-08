@@ -145,6 +145,7 @@ message TournamentInfo {
   repeated MapInfo currentMaps = 3;
   int32 maxPlayersInBattle = 4;
   int32 maxTimeInBattleSec = 5;
+  int32 currentStage = 6;
 }
 
 message MapInfo {
