@@ -99,6 +99,7 @@ message MatchFoundResponseProto {
   repeated int32 ListMaxPlayerPerRound = 7;
   PlayerStat playerStat = 8;
   bool isOnline = 10;
+  bool enableSpectator = 11;
 }
 
 message PlayerStat {
