@@ -52,7 +52,7 @@ message TicketData {
 message TournamentInfo {
   string tournamentID = 1;
   string tournamentTag = 2;
-  int32 currentStage = 3;
+  bool enableSpectator = 3;
   repeated MapDataProto maps = 4;
   int32 maxPlayers = 5;
   int32 maxDurationInMatch = 6;
