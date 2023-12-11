@@ -46,6 +46,16 @@ message TicketData {
   string ticketId = 8;
   int64 createTime = 9;
   int32 group = 10;
+  TournamentInfo tournamentInfo = 11;
+}
+
+message TournamentInfo {
+  string tournamentID = 1;
+  string tournamentTag = 2;
+  int32 currentStage = 3;
+  repeated MapDataProto maps = 4;
+  int32 maxPlayers = 5;
+  int32 maxDurationInMatch = 6;
 }
 
 //message MmfTicketData {
