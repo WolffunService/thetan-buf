@@ -46,6 +46,16 @@ message TicketData {
   string ticketId = 8;
   int64 createTime = 9;
   int32 group = 10;
+  TournamentInfo tournamentInfo = 11;
+}
+
+message TournamentInfo {
+  string tournamentID = 1;
+  string tournamentTag = 2;
+  bool enableSpectator = 3;
+  repeated MapDataProto maps = 4;
+  int32 maxPlayers = 5;
+  int32 maxDurationInMatch = 6;
 }
 
 //message MmfTicketData {
@@ -89,6 +99,7 @@ message MatchFoundResponseProto {
   repeated int32 ListMaxPlayerPerRound = 7;
   PlayerStat playerStat = 8;
   bool isOnline = 10;
+  bool enableSpectator = 11;
 }
 
 message PlayerStat {
