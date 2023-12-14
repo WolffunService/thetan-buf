@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package thetan.rivals.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
+option csharp_namespace = "Thetan.Rivals.V1";
+
+service ThetanRivalsPlayerService {
+    rpc CreatePlayersInfo(CreatePlayersInfoRequest) returns (CreatePlayersInfoResponse) {}
+    rpc UpdatePlayersInfo(UpdatePlayersInfoRequest) returns (UpdatePlayersInfoResponse) {}
+}
+
+message CreatePlayersInfoRequest {
+    repeated CreatePlayerInfo listPlayerInfo = 1;
+  }
+
+message CreatePlayerInfo {
+    string playerID = 1;
+    int32 trophy = 2;
+}
+
+message CreatePlayersInfoResponse {
+}
+
+message UpdatePlayersInfoRequest {
+    repeated UpdatePlayerInfo listPlayerInfo = 1;
+}
+
+message UpdatePlayerInfo {
+    string playerID = 1;
+    int32 trophy = 2;
+}
+
+message UpdatePlayersInfoResponse {
+}

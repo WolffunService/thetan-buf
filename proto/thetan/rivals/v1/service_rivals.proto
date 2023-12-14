@@ -73,33 +73,6 @@ service ThetanRivalService {
 
   // Metric
   rpc GetMetricConfig(GetMetricConfigRequest) returns (GetMetricConfigResponse) {}
-
-  rpc CreateBotsInfo(CreateBotsInfoRequest) returns (CreateBotsInfoResponse) {}
-  rpc UpdateBotsInfo(UpdateBotsInfoRequest) returns (UpdateBotsInfoResponse) {}
-}
-
-message CreateBotsInfoRequest {
-  repeated CreateBotInfo listBotInfo = 1;
-}
-
-message CreateBotInfo {
-  string botID = 1;
-  int32 trophy = 2;
-}
-
-message CreateBotsInfoResponse {
-}
-
-message UpdateBotsInfoRequest {
-  repeated UpdateBotInfo listBotInfo = 1;
-}
-
-message UpdateBotInfo {
-  string botID = 1;
-  int32 trophy = 2;
-}
-
-message UpdateBotsInfoResponse {
 }
 
 message GetMetricConfigRequest {
