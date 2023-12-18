@@ -9,6 +9,8 @@ option csharp_namespace = "Thetan.Bot.V1";
 service BotRivalsService {
     rpc FetchLobbyBots(FetchLobbyBotsRequest) returns (FetchLobbyBotsResponse) {}
     rpc LobbyBotAction(LobbyBotActionRequest) returns (LobbyBotActionResponse) {}
+
+    rpc SearchLeaderboardPlayers(SearchLeaderboardPlayersRequest) returns (SearchLeaderboardPlayersResponse) {}
 }
 
 message FetchLobbyBotsRequest {
@@ -107,4 +109,19 @@ message LobbyBotActionResponse{
         int64 id = 1;
         UserSelectedMinionResponse minion = 2;
     }
+}
+
+message SearchLeaderboardPlayersRequest {
+    int32 amount = 1;
+    repeated string countryCodes = 2;
+    int32 rank = 3;
+    int64 usageDurationInSeconds = 4;
+}
+
+message SearchLeaderboardPlayersResponse {
+    repeated Player players = 1;
+}
+
+message Player {
+    string playerID = 1;
 }

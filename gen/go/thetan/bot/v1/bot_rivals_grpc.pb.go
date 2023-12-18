@@ -19,8 +19,9 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	BotRivalsService_FetchLobbyBots_FullMethodName = "/thetan.rivals.v1.BotRivalsService/FetchLobbyBots"
-	BotRivalsService_LobbyBotAction_FullMethodName = "/thetan.rivals.v1.BotRivalsService/LobbyBotAction"
+	BotRivalsService_FetchLobbyBots_FullMethodName           = "/thetan.rivals.v1.BotRivalsService/FetchLobbyBots"
+	BotRivalsService_LobbyBotAction_FullMethodName           = "/thetan.rivals.v1.BotRivalsService/LobbyBotAction"
+	BotRivalsService_SearchLeaderboardPlayers_FullMethodName = "/thetan.rivals.v1.BotRivalsService/SearchLeaderboardPlayers"
 )
 
 // BotRivalsServiceClient is the client API for BotRivalsService service.
@@ -29,6 +30,7 @@ const (
 type BotRivalsServiceClient interface {
 	FetchLobbyBots(ctx context.Context, in *FetchLobbyBotsRequest, opts ...grpc.CallOption) (*FetchLobbyBotsResponse, error)
 	LobbyBotAction(ctx context.Context, in *LobbyBotActionRequest, opts ...grpc.CallOption) (*LobbyBotActionResponse, error)
+	SearchLeaderboardPlayers(ctx context.Context, in *SearchLeaderboardPlayersRequest, opts ...grpc.CallOption) (*SearchLeaderboardPlayersResponse, error)
 }
 
 type botRivalsServiceClient struct {
@@ -57,12 +59,22 @@ func (c *botRivalsServiceClient) LobbyBotAction(ctx context.Context, in *LobbyBo
 	return out, nil
 }
 
+func (c *botRivalsServiceClient) SearchLeaderboardPlayers(ctx context.Context, in *SearchLeaderboardPlayersRequest, opts ...grpc.CallOption) (*SearchLeaderboardPlayersResponse, error) {
+	out := new(SearchLeaderboardPlayersResponse)
+	err := c.cc.Invoke(ctx, BotRivalsService_SearchLeaderboardPlayers_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // BotRivalsServiceServer is the server API for BotRivalsService service.
 // All implementations must embed UnimplementedBotRivalsServiceServer
 // for forward compatibility
 type BotRivalsServiceServer interface {
 	FetchLobbyBots(context.Context, *FetchLobbyBotsRequest) (*FetchLobbyBotsResponse, error)
 	LobbyBotAction(context.Context, *LobbyBotActionRequest) (*LobbyBotActionResponse, error)
+	SearchLeaderboardPlayers(context.Context, *SearchLeaderboardPlayersRequest) (*SearchLeaderboardPlayersResponse, error)
 	mustEmbedUnimplementedBotRivalsServiceServer()
 }
 
@@ -75,6 +87,9 @@ func (UnimplementedBotRivalsServiceServer) FetchLobbyBots(context.Context, *Fetc
 }
 func (UnimplementedBotRivalsServiceServer) LobbyBotAction(context.Context, *LobbyBotActionRequest) (*LobbyBotActionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method LobbyBotAction not implemented")
+}
+func (UnimplementedBotRivalsServiceServer) SearchLeaderboardPlayers(context.Context, *SearchLeaderboardPlayersRequest) (*SearchLeaderboardPlayersResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SearchLeaderboardPlayers not implemented")
 }
 func (UnimplementedBotRivalsServiceServer) mustEmbedUnimplementedBotRivalsServiceServer() {}
 
@@ -125,6 +140,24 @@ func _BotRivalsService_LobbyBotAction_Handler(srv interface{}, ctx context.Conte
 	return interceptor(ctx, in, info, handler)
 }
 
+func _BotRivalsService_SearchLeaderboardPlayers_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SearchLeaderboardPlayersRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(BotRivalsServiceServer).SearchLeaderboardPlayers(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: BotRivalsService_SearchLeaderboardPlayers_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(BotRivalsServiceServer).SearchLeaderboardPlayers(ctx, req.(*SearchLeaderboardPlayersRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // BotRivalsService_ServiceDesc is the grpc.ServiceDesc for BotRivalsService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -139,6 +172,10 @@ var BotRivalsService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "LobbyBotAction",
 			Handler:    _BotRivalsService_LobbyBotAction_Handler,
+		},
+		{
+			MethodName: "SearchLeaderboardPlayers",
+			Handler:    _BotRivalsService_SearchLeaderboardPlayers_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
