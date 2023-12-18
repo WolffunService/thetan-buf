@@ -109,7 +109,6 @@ message MapSkills {
 
 message SkillInfo {
   int32 skillID = 1;
-  int32 level = 2;
 }
 
 enum SkillTypeEnum {
