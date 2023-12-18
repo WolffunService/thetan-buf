@@ -100,10 +100,9 @@ message MatchFoundResponseProto {
   PlayerStat playerStat = 8;
   bool isOnline = 10;
   bool enableSpectator = 11;
-  map<int32, MatchSkills> matchSkills = 12; // key: SkillTypeEnum
 }
 
-message MatchSkills {
+message MapSkills {
   repeated SkillInfo skills = 1;
   int32 rollLimit = 2;
 }
@@ -129,6 +128,7 @@ message PlayerStat {
 message MapDataProto {
   int32 mapId = 1;
   MapDifficultyEnum mapDifficulty = 2;
+  map<int32, MapSkills> mapSkills = 12; // key: SkillTypeEnum
 }
 
 enum MapDifficultyEnum {
