@@ -29,23 +29,23 @@ namespace Thetan.Simulator.V1 {
             "YXRjaF9pZBgBIAEoCVIHbWF0Y2hJZBIfCgtnYW1lX2lucHV0cxgCIAEoDFIK",
             "Z2FtZUlucHV0cyJsChBTaW11bGF0ZVJlc3BvbnNlEhkKCG1hdGNoX2lkGAEg",
             "ASgJUgdtYXRjaElkEj0KB3BsYXllcnMYAiADKAsyIy50aGV0YW4uc2ltdWxh",
-            "dG9yLnYxLlNpbXVsYXRlUGxheWVyUgdwbGF5ZXJzIm8KDlNpbXVsYXRlUGxh",
+            "dG9yLnYxLlNpbXVsYXRlUGxheWVyUgdwbGF5ZXJzIm0KDlNpbXVsYXRlUGxh",
             "eWVyEhsKCXBsYXllcl9pZBgBIAEoCVIIcGxheWVySWQSHwoLYmF0dGxlX3Jh",
-            "bmsYAiABKAVSCmJhdHRsZVJhbmsSHwoLcm91bmRfdGltZXMYAyADKAJSCnJv",
-            "dW5kVGltZXMycwoWVGhldGFuU2ltdWxhdG9yU2VydmljZRJZCghTaW11bGF0",
-            "ZRIkLnRoZXRhbi5zaW11bGF0b3IudjEuU2ltdWxhdGVSZXF1ZXN0GiUudGhl",
-            "dGFuLnNpbXVsYXRvci52MS5TaW11bGF0ZVJlc3BvbnNlIgBC2QEKF2NvbS50",
-            "aGV0YW4uc2ltdWxhdG9yLnYxQhVTZXJ2aWNlU2ltdWxhdG9yUHJvdG9QAVo5",
-            "dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3NpbXVsYXRvci92MTt0aGV0YW5f",
-            "c2ltdWxhdG9yX3YxogIDVFNYqgITVGhldGFuLlNpbXVsYXRvci5WMcoCE1Ro",
-            "ZXRhblxTaW11bGF0b3JcVjHiAh9UaGV0YW5cU2ltdWxhdG9yXFYxXEdQQk1l",
-            "dGFkYXRh6gIVVGhldGFuOjpTaW11bGF0b3I6OlYxYgZwcm90bzM="));
+            "bmsYAiABKAVSCmJhdHRsZVJhbmsSHQoKcm91bmRfdGltZRgDIAEoAlIJcm91",
+            "bmRUaW1lMnMKFlRoZXRhblNpbXVsYXRvclNlcnZpY2USWQoIU2ltdWxhdGUS",
+            "JC50aGV0YW4uc2ltdWxhdG9yLnYxLlNpbXVsYXRlUmVxdWVzdBolLnRoZXRh",
+            "bi5zaW11bGF0b3IudjEuU2ltdWxhdGVSZXNwb25zZSIAQtkBChdjb20udGhl",
+            "dGFuLnNpbXVsYXRvci52MUIVU2VydmljZVNpbXVsYXRvclByb3RvUAFaOXRo",
+            "ZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9zaW11bGF0b3IvdjE7dGhldGFuX3Np",
+            "bXVsYXRvcl92MaICA1RTWKoCE1RoZXRhbi5TaW11bGF0b3IuVjHKAhNUaGV0",
+            "YW5cU2ltdWxhdG9yXFYx4gIfVGhldGFuXFNpbXVsYXRvclxWMVxHUEJNZXRh",
+            "ZGF0YeoCFVRoZXRhbjo6U2ltdWxhdG9yOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Simulator.V1.SimulateRequest), global::Thetan.Simulator.V1.SimulateRequest.Parser, new[]{ "MatchId", "GameInputs" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Simulator.V1.SimulateResponse), global::Thetan.Simulator.V1.SimulateResponse.Parser, new[]{ "MatchId", "Players" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Simulator.V1.SimulatePlayer), global::Thetan.Simulator.V1.SimulatePlayer.Parser, new[]{ "PlayerId", "BattleRank", "RoundTimes" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Simulator.V1.SimulatePlayer), global::Thetan.Simulator.V1.SimulatePlayer.Parser, new[]{ "PlayerId", "BattleRank", "RoundTime" }, null, null, null, null)
           }));
     }
     #endregion
@@ -529,7 +529,7 @@ namespace Thetan.Simulator.V1 {
     public SimulatePlayer(SimulatePlayer other) : this() {
       playerId_ = other.playerId_;
       battleRank_ = other.battleRank_;
-      roundTimes_ = other.roundTimes_.Clone();
+      roundTime_ = other.roundTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -563,15 +563,16 @@ namespace Thetan.Simulator.V1 {
       }
     }
 
-    /// <summary>Field number for the "round_times" field.</summary>
-    public const int RoundTimesFieldNumber = 3;
-    private static readonly pb::FieldCodec<float> _repeated_roundTimes_codec
-        = pb::FieldCodec.ForFloat(26);
-    private readonly pbc::RepeatedField<float> roundTimes_ = new pbc::RepeatedField<float>();
+    /// <summary>Field number for the "round_time" field.</summary>
+    public const int RoundTimeFieldNumber = 3;
+    private float roundTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<float> RoundTimes {
-      get { return roundTimes_; }
+    public float RoundTime {
+      get { return roundTime_; }
+      set {
+        roundTime_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -591,7 +592,7 @@ namespace Thetan.Simulator.V1 {
       }
       if (PlayerId != other.PlayerId) return false;
       if (BattleRank != other.BattleRank) return false;
-      if(!roundTimes_.Equals(other.roundTimes_)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(RoundTime, other.RoundTime)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -601,7 +602,7 @@ namespace Thetan.Simulator.V1 {
       int hash = 1;
       if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (BattleRank != 0) hash ^= BattleRank.GetHashCode();
-      hash ^= roundTimes_.GetHashCode();
+      if (RoundTime != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(RoundTime);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -628,7 +629,10 @@ namespace Thetan.Simulator.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(BattleRank);
       }
-      roundTimes_.WriteTo(output, _repeated_roundTimes_codec);
+      if (RoundTime != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(RoundTime);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -647,7 +651,10 @@ namespace Thetan.Simulator.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(BattleRank);
       }
-      roundTimes_.WriteTo(ref output, _repeated_roundTimes_codec);
+      if (RoundTime != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(RoundTime);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -664,7 +671,9 @@ namespace Thetan.Simulator.V1 {
       if (BattleRank != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BattleRank);
       }
-      size += roundTimes_.CalculateSize(_repeated_roundTimes_codec);
+      if (RoundTime != 0F) {
+        size += 1 + 4;
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -683,7 +692,9 @@ namespace Thetan.Simulator.V1 {
       if (other.BattleRank != 0) {
         BattleRank = other.BattleRank;
       }
-      roundTimes_.Add(other.roundTimes_);
+      if (other.RoundTime != 0F) {
+        RoundTime = other.RoundTime;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -707,9 +718,8 @@ namespace Thetan.Simulator.V1 {
             BattleRank = input.ReadInt32();
             break;
           }
-          case 26:
           case 29: {
-            roundTimes_.AddEntriesFrom(input, _repeated_roundTimes_codec);
+            RoundTime = input.ReadFloat();
             break;
           }
         }
@@ -735,9 +745,8 @@ namespace Thetan.Simulator.V1 {
             BattleRank = input.ReadInt32();
             break;
           }
-          case 26:
           case 29: {
-            roundTimes_.AddEntriesFrom(ref input, _repeated_roundTimes_codec);
+            RoundTime = input.ReadFloat();
             break;
           }
         }
