@@ -112,7 +112,7 @@ message SkillInfo {
 enum SkillTypeEnum {
   SKILLTYPE_NONE = 0;
   SKILLTYPE_ATTACK = 1;
-  SKILLTYPE_DEFENSE = 2;
+  SKILLTYPE_SUPPORT = 2;
 }
 
 message PlayerStat {

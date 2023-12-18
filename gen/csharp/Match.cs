@@ -209,7 +209,7 @@ namespace Thetan.Shared.V1 {
             "RVJPX0lTX0ZPUl9SRU5UELQYEhsKFkhFUk9fTUFYX0JBVFRMRV9SRU5URUQQ",
             "tRgSGQoUSEVST19SRVRVUk5JTkdfT1dORVIQtxgqUAoNU2tpbGxUeXBlRW51",
             "bRISCg5TS0lMTFRZUEVfTk9ORRAAEhQKEFNLSUxMVFlQRV9BVFRBQ0sQARIV",
-            "ChFTS0lMTFRZUEVfREVGRU5TRRACKj0KEU1hcERpZmZpY3VsdHlFbnVtEggK",
+            "ChFTS0lMTFRZUEVfU1VQUE9SVBACKj0KEU1hcERpZmZpY3VsdHlFbnVtEggK",
             "BE5vbmUQABIICgRFYXN5EAESCgoGTWVkaXVtEAISCAoESGFyZBADMsICCgxN",
             "YXRjaFNlcnZpY2USbQoWQ3JlYXRlTWF0Y2hXaXRoVmVyc2lvbhIqLnRoZXRh",
             "bi5zaGFyZWQudjEuTWF0Y2hQcm90b1ZlcnNpb25QYWNrYWdlGiMudGhldGFu",
@@ -300,7 +300,7 @@ namespace Thetan.Shared.V1 {
   public enum SkillTypeEnum {
     [pbr::OriginalName("SKILLTYPE_NONE")] SkilltypeNone = 0,
     [pbr::OriginalName("SKILLTYPE_ATTACK")] SkilltypeAttack = 1,
-    [pbr::OriginalName("SKILLTYPE_DEFENSE")] SkilltypeDefense = 2,
+    [pbr::OriginalName("SKILLTYPE_SUPPORT")] SkilltypeSupport = 2,
   }
 
   public enum MapDifficultyEnum {
