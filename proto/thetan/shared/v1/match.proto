@@ -100,6 +100,19 @@ message MatchFoundResponseProto {
   PlayerStat playerStat = 8;
   bool isOnline = 10;
   bool enableSpectator = 11;
+  repeated SkillInfo skills = 12;
+}
+
+message SkillInfo {
+  int32 skillID = 1;
+  SkillTypeEnum skillType = 2;
+  int32 level = 3;
+}
+
+enum SkillTypeEnum {
+  SKILLTYPE_NONE = 0;
+  SKILLTYPE_ATTACK = 1;
+  SKILLTYPE_DEFENSE = 2;
 }
 
 message PlayerStat {
