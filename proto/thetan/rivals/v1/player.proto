@@ -9,6 +9,7 @@ service ThetanRivalsPlayerService {
     rpc CreatePlayersInfo(CreatePlayersInfoRequest) returns (CreatePlayersInfoResponse) {}
     rpc UpdatePlayersInfo(UpdatePlayersInfoRequest) returns (UpdatePlayersInfoResponse) {}
     rpc FindEligibleGuildForPlayerJoin(FindEligibleGuildForPlayerJoinRequest) returns (FindEligibleGuildForPlayerJoinResponse) {}
+    rpc GuildAction(GuildActionRequest) returns (GuildActionResponse){}
 }
 
 message CreatePlayersInfoRequest {
@@ -43,4 +44,33 @@ message FindEligibleGuildForPlayerJoinRequest {
 
 message FindEligibleGuildForPlayerJoinResponse {
     string guildID = 1;
+}
+
+message GuildActionRequest {
+   string userID = 1;
+   string targetID = 2;
+   int32  value = 3;
+   GuildBotActionType actionType = 4;
+}
+
+message GuildActionResponse{
+    bool isSuccess = 1;
+}
+
+enum GuildBotActionType{
+    G_None                 = 0;
+    DoGuildQuest         = 1;
+    DonateToGuild        = 2;
+    LootForGuild         = 3;
+    GuildLooted          = 4;
+    KickMember           = 5;
+    LeaveGuild           = 6;
+    GuildLotRent         = 7;
+    GuildLotRent_Leader  = 8;
+    BuyDecor_Member      = 9;
+    BuyDecor_Leader      = 10;
+    SendInvite           = 11;
+    AssignLeaderRole     = 12;
+    SendMail             = 13;
+    JoinGuild            = 14;
 }
