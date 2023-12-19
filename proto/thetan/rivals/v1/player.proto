@@ -8,6 +8,7 @@ option csharp_namespace = "Thetan.Rivals.V1";
 service ThetanRivalsPlayerService {
     rpc CreatePlayersInfo(CreatePlayersInfoRequest) returns (CreatePlayersInfoResponse) {}
     rpc UpdatePlayersInfo(UpdatePlayersInfoRequest) returns (UpdatePlayersInfoResponse) {}
+    rpc FindEligibleGuildForPlayerJoin(FindEligibleGuildForPlayerJoinRequest) returns (FindEligibleGuildForPlayerJoinResponse) {}
 }
 
 message CreatePlayersInfoRequest {
@@ -32,4 +33,14 @@ message UpdatePlayerInfo {
 }
 
 message UpdatePlayersInfoResponse {
+}
+
+message FindEligibleGuildForPlayerJoinRequest {
+    string townID = 1;
+    string botID = 2;
+    float botBalanceRate = 3;
+}
+
+message FindEligibleGuildForPlayerJoinResponse {
+    string guildID = 1;
 }

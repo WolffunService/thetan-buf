@@ -19,8 +19,9 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ThetanRivalsPlayerService_CreatePlayersInfo_FullMethodName = "/thetan.rivals.v1.ThetanRivalsPlayerService/CreatePlayersInfo"
-	ThetanRivalsPlayerService_UpdatePlayersInfo_FullMethodName = "/thetan.rivals.v1.ThetanRivalsPlayerService/UpdatePlayersInfo"
+	ThetanRivalsPlayerService_CreatePlayersInfo_FullMethodName              = "/thetan.rivals.v1.ThetanRivalsPlayerService/CreatePlayersInfo"
+	ThetanRivalsPlayerService_UpdatePlayersInfo_FullMethodName              = "/thetan.rivals.v1.ThetanRivalsPlayerService/UpdatePlayersInfo"
+	ThetanRivalsPlayerService_FindEligibleGuildForPlayerJoin_FullMethodName = "/thetan.rivals.v1.ThetanRivalsPlayerService/FindEligibleGuildForPlayerJoin"
 )
 
 // ThetanRivalsPlayerServiceClient is the client API for ThetanRivalsPlayerService service.
@@ -29,6 +30,7 @@ const (
 type ThetanRivalsPlayerServiceClient interface {
 	CreatePlayersInfo(ctx context.Context, in *CreatePlayersInfoRequest, opts ...grpc.CallOption) (*CreatePlayersInfoResponse, error)
 	UpdatePlayersInfo(ctx context.Context, in *UpdatePlayersInfoRequest, opts ...grpc.CallOption) (*UpdatePlayersInfoResponse, error)
+	FindEligibleGuildForPlayerJoin(ctx context.Context, in *FindEligibleGuildForPlayerJoinRequest, opts ...grpc.CallOption) (*FindEligibleGuildForPlayerJoinResponse, error)
 }
 
 type thetanRivalsPlayerServiceClient struct {
@@ -57,12 +59,22 @@ func (c *thetanRivalsPlayerServiceClient) UpdatePlayersInfo(ctx context.Context,
 	return out, nil
 }
 
+func (c *thetanRivalsPlayerServiceClient) FindEligibleGuildForPlayerJoin(ctx context.Context, in *FindEligibleGuildForPlayerJoinRequest, opts ...grpc.CallOption) (*FindEligibleGuildForPlayerJoinResponse, error) {
+	out := new(FindEligibleGuildForPlayerJoinResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalsPlayerService_FindEligibleGuildForPlayerJoin_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanRivalsPlayerServiceServer is the server API for ThetanRivalsPlayerService service.
 // All implementations must embed UnimplementedThetanRivalsPlayerServiceServer
 // for forward compatibility
 type ThetanRivalsPlayerServiceServer interface {
 	CreatePlayersInfo(context.Context, *CreatePlayersInfoRequest) (*CreatePlayersInfoResponse, error)
 	UpdatePlayersInfo(context.Context, *UpdatePlayersInfoRequest) (*UpdatePlayersInfoResponse, error)
+	FindEligibleGuildForPlayerJoin(context.Context, *FindEligibleGuildForPlayerJoinRequest) (*FindEligibleGuildForPlayerJoinResponse, error)
 	mustEmbedUnimplementedThetanRivalsPlayerServiceServer()
 }
 
@@ -75,6 +87,9 @@ func (UnimplementedThetanRivalsPlayerServiceServer) CreatePlayersInfo(context.Co
 }
 func (UnimplementedThetanRivalsPlayerServiceServer) UpdatePlayersInfo(context.Context, *UpdatePlayersInfoRequest) (*UpdatePlayersInfoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdatePlayersInfo not implemented")
+}
+func (UnimplementedThetanRivalsPlayerServiceServer) FindEligibleGuildForPlayerJoin(context.Context, *FindEligibleGuildForPlayerJoinRequest) (*FindEligibleGuildForPlayerJoinResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method FindEligibleGuildForPlayerJoin not implemented")
 }
 func (UnimplementedThetanRivalsPlayerServiceServer) mustEmbedUnimplementedThetanRivalsPlayerServiceServer() {
 }
@@ -126,6 +141,24 @@ func _ThetanRivalsPlayerService_UpdatePlayersInfo_Handler(srv interface{}, ctx c
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalsPlayerService_FindEligibleGuildForPlayerJoin_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(FindEligibleGuildForPlayerJoinRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalsPlayerServiceServer).FindEligibleGuildForPlayerJoin(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalsPlayerService_FindEligibleGuildForPlayerJoin_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalsPlayerServiceServer).FindEligibleGuildForPlayerJoin(ctx, req.(*FindEligibleGuildForPlayerJoinRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanRivalsPlayerService_ServiceDesc is the grpc.ServiceDesc for ThetanRivalsPlayerService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -140,6 +173,10 @@ var ThetanRivalsPlayerService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "UpdatePlayersInfo",
 			Handler:    _ThetanRivalsPlayerService_UpdatePlayersInfo_Handler,
+		},
+		{
+			MethodName: "FindEligibleGuildForPlayerJoin",
+			Handler:    _ThetanRivalsPlayerService_FindEligibleGuildForPlayerJoin_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
