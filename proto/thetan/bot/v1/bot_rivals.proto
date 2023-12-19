@@ -10,7 +10,8 @@ service BotRivalsService {
     rpc FetchLobbyBots(FetchLobbyBotsRequest) returns (FetchLobbyBotsResponse) {}
     rpc LobbyBotAction(LobbyBotActionRequest) returns (LobbyBotActionResponse) {}
 
-    rpc SearchLeaderboardPlayers(SearchLeaderboardPlayersRequest) returns (SearchLeaderboardPlayersResponse) {}
+    rpc SearchSpecialEventPlayers(SearchSpecialEventPlayersRequest) returns (SearchSpecialEventPlayersResponse) {}
+    rpc SearchIngamePlayers(SearchIngamePlayersRequest) returns (SearchIngamePlayersResponse) {}
 }
 
 message FetchLobbyBotsRequest {
@@ -111,17 +112,34 @@ message LobbyBotActionResponse{
     }
 }
 
-message SearchLeaderboardPlayersRequest {
+message SearchSpecialEventPlayersRequest {
     int32 amount = 1;
     repeated string countryCodes = 2;
     int32 rank = 3;
     int64 usageDurationInSeconds = 4;
 }
 
-message SearchLeaderboardPlayersResponse {
-    repeated Player players = 1;
+message SearchSpecialEventPlayersResponse {
+    repeated SpecialEventPlayer players = 1;
 }
 
-message Player {
+message SpecialEventPlayer {
     string playerID = 1;
+}
+
+message SearchIngamePlayersRequest {
+    int32 amount = 1;
+    int32 region = 2;
+    int32 rank = 3;
+}
+
+message SearchIngamePlayersResponse {
+    repeated IngamePlayer players = 1;
+}
+
+message IngamePlayer {
+    string playerID = 1;
+    string playerName = 2;
+    int32 rank = 3;
+    int32 trophy = 4;
 }
