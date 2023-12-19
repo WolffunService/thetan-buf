@@ -53,6 +53,14 @@ namespace Thetan.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.UpdatePlayersInfoRequest> __Marshaller_thetan_rivals_v1_UpdatePlayersInfoRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.UpdatePlayersInfoRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.UpdatePlayersInfoResponse> __Marshaller_thetan_rivals_v1_UpdatePlayersInfoResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.UpdatePlayersInfoResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest> __Marshaller_thetan_rivals_v1_FindEligibleGuildForPlayerJoinRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse> __Marshaller_thetan_rivals_v1_FindEligibleGuildForPlayerJoinResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GuildActionRequest> __Marshaller_thetan_rivals_v1_GuildActionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GuildActionRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GuildActionResponse> __Marshaller_thetan_rivals_v1_GuildActionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GuildActionResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.CreatePlayersInfoRequest, global::Thetan.Rivals.V1.CreatePlayersInfoResponse> __Method_CreatePlayersInfo = new grpc::Method<global::Thetan.Rivals.V1.CreatePlayersInfoRequest, global::Thetan.Rivals.V1.CreatePlayersInfoResponse>(
@@ -69,6 +77,22 @@ namespace Thetan.Rivals.V1 {
         "UpdatePlayersInfo",
         __Marshaller_thetan_rivals_v1_UpdatePlayersInfoRequest,
         __Marshaller_thetan_rivals_v1_UpdatePlayersInfoResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest, global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse> __Method_FindEligibleGuildForPlayerJoin = new grpc::Method<global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest, global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "FindEligibleGuildForPlayerJoin",
+        __Marshaller_thetan_rivals_v1_FindEligibleGuildForPlayerJoinRequest,
+        __Marshaller_thetan_rivals_v1_FindEligibleGuildForPlayerJoinResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.GuildActionRequest, global::Thetan.Rivals.V1.GuildActionResponse> __Method_GuildAction = new grpc::Method<global::Thetan.Rivals.V1.GuildActionRequest, global::Thetan.Rivals.V1.GuildActionResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GuildAction",
+        __Marshaller_thetan_rivals_v1_GuildActionRequest,
+        __Marshaller_thetan_rivals_v1_GuildActionResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -88,6 +112,18 @@ namespace Thetan.Rivals.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.UpdatePlayersInfoResponse> UpdatePlayersInfo(global::Thetan.Rivals.V1.UpdatePlayersInfoRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse> FindEligibleGuildForPlayerJoin(global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.GuildActionResponse> GuildAction(global::Thetan.Rivals.V1.GuildActionRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -161,6 +197,46 @@ namespace Thetan.Rivals.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_UpdatePlayersInfo, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse FindEligibleGuildForPlayerJoin(global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FindEligibleGuildForPlayerJoin(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse FindEligibleGuildForPlayerJoin(global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_FindEligibleGuildForPlayerJoin, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse> FindEligibleGuildForPlayerJoinAsync(global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return FindEligibleGuildForPlayerJoinAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse> FindEligibleGuildForPlayerJoinAsync(global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_FindEligibleGuildForPlayerJoin, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GuildActionResponse GuildAction(global::Thetan.Rivals.V1.GuildActionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GuildAction(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GuildActionResponse GuildAction(global::Thetan.Rivals.V1.GuildActionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GuildAction, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GuildActionResponse> GuildActionAsync(global::Thetan.Rivals.V1.GuildActionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GuildActionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GuildActionResponse> GuildActionAsync(global::Thetan.Rivals.V1.GuildActionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GuildAction, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ThetanRivalsPlayerServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -176,7 +252,9 @@ namespace Thetan.Rivals.V1 {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_CreatePlayersInfo, serviceImpl.CreatePlayersInfo)
-          .AddMethod(__Method_UpdatePlayersInfo, serviceImpl.UpdatePlayersInfo).Build();
+          .AddMethod(__Method_UpdatePlayersInfo, serviceImpl.UpdatePlayersInfo)
+          .AddMethod(__Method_FindEligibleGuildForPlayerJoin, serviceImpl.FindEligibleGuildForPlayerJoin)
+          .AddMethod(__Method_GuildAction, serviceImpl.GuildAction).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -188,6 +266,8 @@ namespace Thetan.Rivals.V1 {
     {
       serviceBinder.AddMethod(__Method_CreatePlayersInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.CreatePlayersInfoRequest, global::Thetan.Rivals.V1.CreatePlayersInfoResponse>(serviceImpl.CreatePlayersInfo));
       serviceBinder.AddMethod(__Method_UpdatePlayersInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.UpdatePlayersInfoRequest, global::Thetan.Rivals.V1.UpdatePlayersInfoResponse>(serviceImpl.UpdatePlayersInfo));
+      serviceBinder.AddMethod(__Method_FindEligibleGuildForPlayerJoin, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest, global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse>(serviceImpl.FindEligibleGuildForPlayerJoin));
+      serviceBinder.AddMethod(__Method_GuildAction, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GuildActionRequest, global::Thetan.Rivals.V1.GuildActionResponse>(serviceImpl.GuildAction));
     }
 
   }
