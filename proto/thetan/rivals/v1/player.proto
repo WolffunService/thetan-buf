@@ -41,10 +41,15 @@ message FindEligibleGuildForPlayerJoinRequest {
     string botID = 2;
     float botBalanceRate = 3;
     float botLowGate = 4;
+    int32 limitSize = 5;
 }
 
 message FindEligibleGuildForPlayerJoinResponse {
-    repeated string eligibleGuilds = 1;
+    repeated EligibleGuildForPlayerJoin eligibleGuilds = 1;
+}
+message EligibleGuildForPlayerJoin {
+    string guildID = 1;
+    int32 requireTrophy =2;
 }
 
 message GuildActionRequest {
