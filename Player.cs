@@ -34,38 +34,39 @@ namespace Thetan.Rivals.V1 {
             "LnJpdmFscy52MS5VcGRhdGVQbGF5ZXJJbmZvUg5saXN0UGxheWVySW5mbyJG",
             "ChBVcGRhdGVQbGF5ZXJJbmZvEhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJ",
             "RBIWCgZ0cm9waHkYAiABKAVSBnRyb3BoeSIbChlVcGRhdGVQbGF5ZXJzSW5m",
-            "b1Jlc3BvbnNlIn0KJUZpbmRFbGlnaWJsZUd1aWxkRm9yUGxheWVySm9pblJl",
-            "cXVlc3QSFgoGdG93bklEGAEgASgJUgZ0b3duSUQSFAoFYm90SUQYAiABKAlS",
-            "BWJvdElEEiYKDmJvdEJhbGFuY2VSYXRlGAMgASgCUg5ib3RCYWxhbmNlUmF0",
-            "ZSJCCiZGaW5kRWxpZ2libGVHdWlsZEZvclBsYXllckpvaW5SZXNwb25zZRIY",
-            "CgdndWlsZElEGAEgASgJUgdndWlsZElEIqQBChJHdWlsZEFjdGlvblJlcXVl",
-            "c3QSFgoGdXNlcklEGAEgASgJUgZ1c2VySUQSGgoIdGFyZ2V0SUQYAiABKAlS",
-            "CHRhcmdldElEEhQKBXZhbHVlGAMgASgFUgV2YWx1ZRJECgphY3Rpb25UeXBl",
-            "GAQgASgOMiQudGhldGFuLnJpdmFscy52MS5HdWlsZEJvdEFjdGlvblR5cGVS",
-            "CmFjdGlvblR5cGUiMwoTR3VpbGRBY3Rpb25SZXNwb25zZRIcCglpc1N1Y2Nl",
-            "c3MYASABKAhSCWlzU3VjY2VzcyqgAgoSR3VpbGRCb3RBY3Rpb25UeXBlEgoK",
-            "BkdfTm9uZRAAEhAKDERvR3VpbGRRdWVzdBABEhEKDURvbmF0ZVRvR3VpbGQQ",
-            "AhIQCgxMb290Rm9yR3VpbGQQAxIPCgtHdWlsZExvb3RlZBAEEg4KCktpY2tN",
-            "ZW1iZXIQBRIOCgpMZWF2ZUd1aWxkEAYSEAoMR3VpbGRMb3RSZW50EAcSFwoT",
-            "R3VpbGRMb3RSZW50X0xlYWRlchAIEhMKD0J1eURlY29yX01lbWJlchAJEhMK",
-            "D0J1eURlY29yX0xlYWRlchAKEg4KClNlbmRJbnZpdGUQCxIUChBBc3NpZ25M",
-            "ZWFkZXJSb2xlEAwSDAoIU2VuZE1haWwQDRINCglKb2luR3VpbGQQDjLxAwoZ",
-            "VGhldGFuUml2YWxzUGxheWVyU2VydmljZRJuChFDcmVhdGVQbGF5ZXJzSW5m",
-            "bxIqLnRoZXRhbi5yaXZhbHMudjEuQ3JlYXRlUGxheWVyc0luZm9SZXF1ZXN0",
-            "GisudGhldGFuLnJpdmFscy52MS5DcmVhdGVQbGF5ZXJzSW5mb1Jlc3BvbnNl",
-            "IgASbgoRVXBkYXRlUGxheWVyc0luZm8SKi50aGV0YW4ucml2YWxzLnYxLlVw",
-            "ZGF0ZVBsYXllcnNJbmZvUmVxdWVzdBorLnRoZXRhbi5yaXZhbHMudjEuVXBk",
-            "YXRlUGxheWVyc0luZm9SZXNwb25zZSIAEpUBCh5GaW5kRWxpZ2libGVHdWls",
-            "ZEZvclBsYXllckpvaW4SNy50aGV0YW4ucml2YWxzLnYxLkZpbmRFbGlnaWJs",
-            "ZUd1aWxkRm9yUGxheWVySm9pblJlcXVlc3QaOC50aGV0YW4ucml2YWxzLnYx",
-            "LkZpbmRFbGlnaWJsZUd1aWxkRm9yUGxheWVySm9pblJlc3BvbnNlIgASXAoL",
-            "R3VpbGRBY3Rpb24SJC50aGV0YW4ucml2YWxzLnYxLkd1aWxkQWN0aW9uUmVx",
-            "dWVzdBolLnRoZXRhbi5yaXZhbHMudjEuR3VpbGRBY3Rpb25SZXNwb25zZSIA",
-            "QroBChRjb20udGhldGFuLnJpdmFscy52MUILUGxheWVyUHJvdG9QAVozdGhl",
-            "dGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3JpdmFscy92MTt0aGV0YW5fcml2YWxz",
-            "X3YxogIDVFJYqgIQVGhldGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNc",
-            "VjHiAhxUaGV0YW5cUml2YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpS",
-            "aXZhbHM6OlYxYgZwcm90bzM="));
+            "b1Jlc3BvbnNlIp0BCiVGaW5kRWxpZ2libGVHdWlsZEZvclBsYXllckpvaW5S",
+            "ZXF1ZXN0EhYKBnRvd25JRBgBIAEoCVIGdG93bklEEhQKBWJvdElEGAIgASgJ",
+            "UgVib3RJRBImCg5ib3RCYWxhbmNlUmF0ZRgDIAEoAlIOYm90QmFsYW5jZVJh",
+            "dGUSHgoKYm90TG93R2F0ZRgEIAEoAlIKYm90TG93R2F0ZSJQCiZGaW5kRWxp",
+            "Z2libGVHdWlsZEZvclBsYXllckpvaW5SZXNwb25zZRImCg5lbGlnaWJsZUd1",
+            "aWxkcxgBIAMoCVIOZWxpZ2libGVHdWlsZHMipAEKEkd1aWxkQWN0aW9uUmVx",
+            "dWVzdBIWCgZ1c2VySUQYASABKAlSBnVzZXJJRBIaCgh0YXJnZXRJRBgCIAEo",
+            "CVIIdGFyZ2V0SUQSFAoFdmFsdWUYAyABKAVSBXZhbHVlEkQKCmFjdGlvblR5",
+            "cGUYBCABKA4yJC50aGV0YW4ucml2YWxzLnYxLkd1aWxkQm90QWN0aW9uVHlw",
+            "ZVIKYWN0aW9uVHlwZSIzChNHdWlsZEFjdGlvblJlc3BvbnNlEhwKCWlzU3Vj",
+            "Y2VzcxgBIAEoCFIJaXNTdWNjZXNzKqACChJHdWlsZEJvdEFjdGlvblR5cGUS",
+            "CgoGR19Ob25lEAASEAoMRG9HdWlsZFF1ZXN0EAESEQoNRG9uYXRlVG9HdWls",
+            "ZBACEhAKDExvb3RGb3JHdWlsZBADEg8KC0d1aWxkTG9vdGVkEAQSDgoKS2lj",
+            "a01lbWJlchAFEg4KCkxlYXZlR3VpbGQQBhIQCgxHdWlsZExvdFJlbnQQBxIX",
+            "ChNHdWlsZExvdFJlbnRfTGVhZGVyEAgSEwoPQnV5RGVjb3JfTWVtYmVyEAkS",
+            "EwoPQnV5RGVjb3JfTGVhZGVyEAoSDgoKU2VuZEludml0ZRALEhQKEEFzc2ln",
+            "bkxlYWRlclJvbGUQDBIMCghTZW5kTWFpbBANEg0KCUpvaW5HdWlsZBAOMvED",
+            "ChlUaGV0YW5SaXZhbHNQbGF5ZXJTZXJ2aWNlEm4KEUNyZWF0ZVBsYXllcnNJ",
+            "bmZvEioudGhldGFuLnJpdmFscy52MS5DcmVhdGVQbGF5ZXJzSW5mb1JlcXVl",
+            "c3QaKy50aGV0YW4ucml2YWxzLnYxLkNyZWF0ZVBsYXllcnNJbmZvUmVzcG9u",
+            "c2UiABJuChFVcGRhdGVQbGF5ZXJzSW5mbxIqLnRoZXRhbi5yaXZhbHMudjEu",
+            "VXBkYXRlUGxheWVyc0luZm9SZXF1ZXN0GisudGhldGFuLnJpdmFscy52MS5V",
+            "cGRhdGVQbGF5ZXJzSW5mb1Jlc3BvbnNlIgASlQEKHkZpbmRFbGlnaWJsZUd1",
+            "aWxkRm9yUGxheWVySm9pbhI3LnRoZXRhbi5yaXZhbHMudjEuRmluZEVsaWdp",
+            "YmxlR3VpbGRGb3JQbGF5ZXJKb2luUmVxdWVzdBo4LnRoZXRhbi5yaXZhbHMu",
+            "djEuRmluZEVsaWdpYmxlR3VpbGRGb3JQbGF5ZXJKb2luUmVzcG9uc2UiABJc",
+            "CgtHdWlsZEFjdGlvbhIkLnRoZXRhbi5yaXZhbHMudjEuR3VpbGRBY3Rpb25S",
+            "ZXF1ZXN0GiUudGhldGFuLnJpdmFscy52MS5HdWlsZEFjdGlvblJlc3BvbnNl",
+            "IgBCugEKFGNvbS50aGV0YW4ucml2YWxzLnYxQgtQbGF5ZXJQcm90b1ABWjN0",
+            "aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vcml2YWxzL3YxO3RoZXRhbl9yaXZh",
+            "bHNfdjGiAgNUUliqAhBUaGV0YW4uUml2YWxzLlYxygIQVGhldGFuXFJpdmFs",
+            "c1xWMeICHFRoZXRhblxSaXZhbHNcVjFcR1BCTWV0YWRhdGHqAhJUaGV0YW46",
+            "OlJpdmFsczo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Rivals.V1.GuildBotActionType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -75,8 +76,8 @@ namespace Thetan.Rivals.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.UpdatePlayersInfoRequest), global::Thetan.Rivals.V1.UpdatePlayersInfoRequest.Parser, new[]{ "ListPlayerInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.UpdatePlayerInfo), global::Thetan.Rivals.V1.UpdatePlayerInfo.Parser, new[]{ "PlayerID", "Trophy" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.UpdatePlayersInfoResponse), global::Thetan.Rivals.V1.UpdatePlayersInfoResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest), global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest.Parser, new[]{ "TownID", "BotID", "BotBalanceRate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse), global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse.Parser, new[]{ "GuildID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest), global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinRequest.Parser, new[]{ "TownID", "BotID", "BotBalanceRate", "BotLowGate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse), global::Thetan.Rivals.V1.FindEligibleGuildForPlayerJoinResponse.Parser, new[]{ "EligibleGuilds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GuildActionRequest), global::Thetan.Rivals.V1.GuildActionRequest.Parser, new[]{ "UserID", "TargetID", "Value", "ActionType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GuildActionResponse), global::Thetan.Rivals.V1.GuildActionResponse.Parser, new[]{ "IsSuccess" }, null, null, null, null)
           }));
@@ -1255,6 +1256,7 @@ namespace Thetan.Rivals.V1 {
       townID_ = other.townID_;
       botID_ = other.botID_;
       botBalanceRate_ = other.botBalanceRate_;
+      botLowGate_ = other.botLowGate_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1300,6 +1302,18 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
+    /// <summary>Field number for the "botLowGate" field.</summary>
+    public const int BotLowGateFieldNumber = 4;
+    private float botLowGate_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float BotLowGate {
+      get { return botLowGate_; }
+      set {
+        botLowGate_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1318,6 +1332,7 @@ namespace Thetan.Rivals.V1 {
       if (TownID != other.TownID) return false;
       if (BotID != other.BotID) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(BotBalanceRate, other.BotBalanceRate)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(BotLowGate, other.BotLowGate)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1328,6 +1343,7 @@ namespace Thetan.Rivals.V1 {
       if (TownID.Length != 0) hash ^= TownID.GetHashCode();
       if (BotID.Length != 0) hash ^= BotID.GetHashCode();
       if (BotBalanceRate != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(BotBalanceRate);
+      if (BotLowGate != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(BotLowGate);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1358,6 +1374,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(29);
         output.WriteFloat(BotBalanceRate);
       }
+      if (BotLowGate != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(BotLowGate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1380,6 +1400,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(29);
         output.WriteFloat(BotBalanceRate);
       }
+      if (BotLowGate != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(BotLowGate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1397,6 +1421,9 @@ namespace Thetan.Rivals.V1 {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(BotID);
       }
       if (BotBalanceRate != 0F) {
+        size += 1 + 4;
+      }
+      if (BotLowGate != 0F) {
         size += 1 + 4;
       }
       if (_unknownFields != null) {
@@ -1419,6 +1446,9 @@ namespace Thetan.Rivals.V1 {
       }
       if (other.BotBalanceRate != 0F) {
         BotBalanceRate = other.BotBalanceRate;
+      }
+      if (other.BotLowGate != 0F) {
+        BotLowGate = other.BotLowGate;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1447,6 +1477,10 @@ namespace Thetan.Rivals.V1 {
             BotBalanceRate = input.ReadFloat();
             break;
           }
+          case 37: {
+            BotLowGate = input.ReadFloat();
+            break;
+          }
         }
       }
     #endif
@@ -1472,6 +1506,10 @@ namespace Thetan.Rivals.V1 {
           }
           case 29: {
             BotBalanceRate = input.ReadFloat();
+            break;
+          }
+          case 37: {
+            BotLowGate = input.ReadFloat();
             break;
           }
         }
@@ -1515,7 +1553,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FindEligibleGuildForPlayerJoinResponse(FindEligibleGuildForPlayerJoinResponse other) : this() {
-      guildID_ = other.guildID_;
+      eligibleGuilds_ = other.eligibleGuilds_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1525,16 +1563,15 @@ namespace Thetan.Rivals.V1 {
       return new FindEligibleGuildForPlayerJoinResponse(this);
     }
 
-    /// <summary>Field number for the "guildID" field.</summary>
-    public const int GuildIDFieldNumber = 1;
-    private string guildID_ = "";
+    /// <summary>Field number for the "eligibleGuilds" field.</summary>
+    public const int EligibleGuildsFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_eligibleGuilds_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> eligibleGuilds_ = new pbc::RepeatedField<string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string GuildID {
-      get { return guildID_; }
-      set {
-        guildID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
+    public pbc::RepeatedField<string> EligibleGuilds {
+      get { return eligibleGuilds_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1552,7 +1589,7 @@ namespace Thetan.Rivals.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (GuildID != other.GuildID) return false;
+      if(!eligibleGuilds_.Equals(other.eligibleGuilds_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1560,7 +1597,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (GuildID.Length != 0) hash ^= GuildID.GetHashCode();
+      hash ^= eligibleGuilds_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1579,10 +1616,7 @@ namespace Thetan.Rivals.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (GuildID.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(GuildID);
-      }
+      eligibleGuilds_.WriteTo(output, _repeated_eligibleGuilds_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1593,10 +1627,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (GuildID.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(GuildID);
-      }
+      eligibleGuilds_.WriteTo(ref output, _repeated_eligibleGuilds_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1607,9 +1638,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (GuildID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(GuildID);
-      }
+      size += eligibleGuilds_.CalculateSize(_repeated_eligibleGuilds_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1622,9 +1651,7 @@ namespace Thetan.Rivals.V1 {
       if (other == null) {
         return;
       }
-      if (other.GuildID.Length != 0) {
-        GuildID = other.GuildID;
-      }
+      eligibleGuilds_.Add(other.eligibleGuilds_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1641,7 +1668,7 @@ namespace Thetan.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            GuildID = input.ReadString();
+            eligibleGuilds_.AddEntriesFrom(input, _repeated_eligibleGuilds_codec);
             break;
           }
         }
@@ -1660,7 +1687,7 @@ namespace Thetan.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            GuildID = input.ReadString();
+            eligibleGuilds_.AddEntriesFrom(ref input, _repeated_eligibleGuilds_codec);
             break;
           }
         }
