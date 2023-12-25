@@ -19,6 +19,7 @@ message FetchLobbyBotsResponse{
     repeated LobbyBotInfo bots = 1;
     float randomRateSolo =2;
     float randomRatePair =3;
+    int64 nextFetchTimestamp = 4;
 }
 
 message LobbyBotInfo {
