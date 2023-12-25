@@ -40,10 +40,11 @@ message FindEligibleGuildForPlayerJoinRequest {
     string townID = 1;
     string botID = 2;
     float botBalanceRate = 3;
+    float botLowGate = 4;
 }
 
 message FindEligibleGuildForPlayerJoinResponse {
-    string guildID = 1;
+    repeated string eligibleGuilds = 1;
 }
 
 message GuildActionRequest {
