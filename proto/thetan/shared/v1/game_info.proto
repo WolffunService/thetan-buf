@@ -33,3 +33,12 @@ enum InGameMode {
   THETAN_RIVALS_CLIMB_UP_MODE = 24;
   NONE_MODE = -1;
 }
+
+enum TRArena {
+  NONE = 0;
+  NOVICE = 1;
+  FIGHTER = 2;
+  WARRIOR = 3;
+  MASTER = 4;
+  ELITE = 5;
+}
