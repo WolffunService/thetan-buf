@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package thetan.simulator.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/simulator/v1;thetan_simulator_v1";
+option csharp_namespace = "Thetan.Simulator.V1";
+
+service ThetanSimulatorService {
+  rpc Simulate (SimulateRequest) returns (SimulateResponse) {}
+}
+
+message SimulateRequest {
+  string match_id = 1;
+  bytes game_inputs = 2;
+}
+
+message SimulateResponse {
+  string match_id = 1;
+  repeated SimulatePlayer players = 2;
+}
+
+message SimulatePlayer {
+  string player_id = 1;
+  int32 battle_rank = 2;
+  float round_time = 3;
+}
