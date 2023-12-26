@@ -59,9 +59,10 @@ service ThetanRivalService {
   rpc GetConfigForBot(GetConfigForBotRequest) returns (GetConfigForBotResponse) {}
 
   // Tournament
-  rpc GetActiveTournaments(GetActiveTournamentsRequest) returns (GetActiveTournamentsResponse) {}
   rpc GetFindMatchInfoForTournament(FindMatchInfoForTournamentRequest) returns (FindMatchInfoForTournamentResponse) {}
-  rpc MatchFoundTournament(MatchFoundTournamentRequest) returns (MatchFoundTournamentResponse) {}
+  rpc MatchFoundTournament(MatchFoundTournamentRequest) returns (MatchFoundTournamentResponse) {
+    option deprecated = true;
+  }
 
   // Design contest
   rpc PublishDesign(PublishDesignRequest) returns (PublishDesignResponse) {}
@@ -110,7 +111,7 @@ message FindMatchInfoForTournamentRequest {
 
 message FindMatchInfoForTournamentResponse {
   FindMatchInfoResponse findMatchInfo = 1;
-  string tournamentTag = 2;
+  thetan.shared.v1.TournamentInfo tournamentInfo = 2;
 }
 
 message GetConfigForBotResponse {
@@ -131,26 +132,6 @@ message CosmeticInfo {
 }
 
 message GetConfigForBotRequest {
-}
-
-message GetActiveTournamentsRequest {
-}
-
-message GetActiveTournamentsResponse {
-  repeated TournamentInfo Tournaments = 1;
-}
-
-message TournamentInfo {
-  string tournamentID = 1;
-  string tag = 2;
-  repeated MapInfo currentMaps = 3;
-  int32 maxPlayersInBattle = 4;
-  int32 maxTimeInBattleSec = 5;
-}
-
-message MapInfo {
-  int32 mapID = 1;
-  int32 mapDifficulty = 2;
 }
 
 // ==== PROFILE ====

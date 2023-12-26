@@ -45,7 +45,6 @@ const (
 	ThetanRivalService_TrackSessionLobby_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/TrackSessionLobby"
 	ThetanRivalService_GetFindMatchInfo_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
 	ThetanRivalService_GetConfigForBot_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/GetConfigForBot"
-	ThetanRivalService_GetActiveTournaments_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/GetActiveTournaments"
 	ThetanRivalService_GetFindMatchInfoForTournament_FullMethodName = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfoForTournament"
 	ThetanRivalService_MatchFoundTournament_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/MatchFoundTournament"
 	ThetanRivalService_PublishDesign_FullMethodName                 = "/thetan.rivals.v1.ThetanRivalService/PublishDesign"
@@ -95,8 +94,8 @@ type ThetanRivalServiceClient interface {
 	// Get config for bot
 	GetConfigForBot(ctx context.Context, in *GetConfigForBotRequest, opts ...grpc.CallOption) (*GetConfigForBotResponse, error)
 	// Tournament
-	GetActiveTournaments(ctx context.Context, in *GetActiveTournamentsRequest, opts ...grpc.CallOption) (*GetActiveTournamentsResponse, error)
 	GetFindMatchInfoForTournament(ctx context.Context, in *FindMatchInfoForTournamentRequest, opts ...grpc.CallOption) (*FindMatchInfoForTournamentResponse, error)
+	// Deprecated: Do not use.
 	MatchFoundTournament(ctx context.Context, in *MatchFoundTournamentRequest, opts ...grpc.CallOption) (*MatchFoundTournamentResponse, error)
 	// Design contest
 	PublishDesign(ctx context.Context, in *PublishDesignRequest, opts ...grpc.CallOption) (*PublishDesignResponse, error)
@@ -342,15 +341,6 @@ func (c *thetanRivalServiceClient) GetConfigForBot(ctx context.Context, in *GetC
 	return out, nil
 }
 
-func (c *thetanRivalServiceClient) GetActiveTournaments(ctx context.Context, in *GetActiveTournamentsRequest, opts ...grpc.CallOption) (*GetActiveTournamentsResponse, error) {
-	out := new(GetActiveTournamentsResponse)
-	err := c.cc.Invoke(ctx, ThetanRivalService_GetActiveTournaments_FullMethodName, in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
-}
-
 func (c *thetanRivalServiceClient) GetFindMatchInfoForTournament(ctx context.Context, in *FindMatchInfoForTournamentRequest, opts ...grpc.CallOption) (*FindMatchInfoForTournamentResponse, error) {
 	out := new(FindMatchInfoForTournamentResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetFindMatchInfoForTournament_FullMethodName, in, out, opts...)
@@ -360,6 +350,7 @@ func (c *thetanRivalServiceClient) GetFindMatchInfoForTournament(ctx context.Con
 	return out, nil
 }
 
+// Deprecated: Do not use.
 func (c *thetanRivalServiceClient) MatchFoundTournament(ctx context.Context, in *MatchFoundTournamentRequest, opts ...grpc.CallOption) (*MatchFoundTournamentResponse, error) {
 	out := new(MatchFoundTournamentResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_MatchFoundTournament_FullMethodName, in, out, opts...)
@@ -454,8 +445,8 @@ type ThetanRivalServiceServer interface {
 	// Get config for bot
 	GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error)
 	// Tournament
-	GetActiveTournaments(context.Context, *GetActiveTournamentsRequest) (*GetActiveTournamentsResponse, error)
 	GetFindMatchInfoForTournament(context.Context, *FindMatchInfoForTournamentRequest) (*FindMatchInfoForTournamentResponse, error)
+	// Deprecated: Do not use.
 	MatchFoundTournament(context.Context, *MatchFoundTournamentRequest) (*MatchFoundTournamentResponse, error)
 	// Design contest
 	PublishDesign(context.Context, *PublishDesignRequest) (*PublishDesignResponse, error)
@@ -546,9 +537,6 @@ func (UnimplementedThetanRivalServiceServer) GetFindMatchInfo(context.Context, *
 }
 func (UnimplementedThetanRivalServiceServer) GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetConfigForBot not implemented")
-}
-func (UnimplementedThetanRivalServiceServer) GetActiveTournaments(context.Context, *GetActiveTournamentsRequest) (*GetActiveTournamentsResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetActiveTournaments not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetFindMatchInfoForTournament(context.Context, *FindMatchInfoForTournamentRequest) (*FindMatchInfoForTournamentResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetFindMatchInfoForTournament not implemented")
@@ -1034,24 +1022,6 @@ func _ThetanRivalService_GetConfigForBot_Handler(srv interface{}, ctx context.Co
 	return interceptor(ctx, in, info, handler)
 }
 
-func _ThetanRivalService_GetActiveTournaments_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(GetActiveTournamentsRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ThetanRivalServiceServer).GetActiveTournaments(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ThetanRivalService_GetActiveTournaments_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanRivalServiceServer).GetActiveTournaments(ctx, req.(*GetActiveTournamentsRequest))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
 func _ThetanRivalService_GetFindMatchInfoForTournament_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(FindMatchInfoForTournamentRequest)
 	if err := dec(in); err != nil {
@@ -1284,10 +1254,6 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetConfigForBot",
 			Handler:    _ThetanRivalService_GetConfigForBot_Handler,
-		},
-		{
-			MethodName: "GetActiveTournaments",
-			Handler:    _ThetanRivalService_GetActiveTournaments_Handler,
 		},
 		{
 			MethodName: "GetFindMatchInfoForTournament",
