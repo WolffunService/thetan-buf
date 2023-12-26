@@ -40,6 +40,7 @@ const (
 	ThetanRivalService_GetLatestLobbyActivityInfo_FullMethodName    = "/thetan.rivals.v1.ThetanRivalService/GetLatestLobbyActivityInfo"
 	ThetanRivalService_GetTownUser_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownUser"
 	ThetanRivalService_GetTownByID_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownByID"
+	ThetanRivalService_JoinTown_FullMethodName                      = "/thetan.rivals.v1.ThetanRivalService/JoinTown"
 	ThetanRivalService_TrackSession_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/TrackSession"
 	ThetanRivalService_TrackSessionLobby_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/TrackSessionLobby"
 	ThetanRivalService_GetFindMatchInfo_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
@@ -84,6 +85,7 @@ type ThetanRivalServiceClient interface {
 	GetLatestLobbyActivityInfo(ctx context.Context, in *GetActivityRequest, opts ...grpc.CallOption) (*GetActivityResponse, error)
 	GetTownUser(ctx context.Context, in *GetTownUserRequest, opts ...grpc.CallOption) (*LobbyTown, error)
 	GetTownByID(ctx context.Context, in *GetTownRequest, opts ...grpc.CallOption) (*LobbyTown, error)
+	JoinTown(ctx context.Context, in *JoinTownRequest, opts ...grpc.CallOption) (*LobbyTown, error)
 	// Track Action
 	TrackSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error)
 	TrackSessionLobby(ctx context.Context, in *TrackSessionLobbyRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
@@ -294,6 +296,15 @@ func (c *thetanRivalServiceClient) GetTownByID(ctx context.Context, in *GetTownR
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) JoinTown(ctx context.Context, in *JoinTownRequest, opts ...grpc.CallOption) (*LobbyTown, error) {
+	out := new(LobbyTown)
+	err := c.cc.Invoke(ctx, ThetanRivalService_JoinTown_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 func (c *thetanRivalServiceClient) TrackSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error) {
 	out := new(TrackSessionResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_TrackSession_FullMethodName, in, out, opts...)
@@ -425,6 +436,7 @@ type ThetanRivalServiceServer interface {
 	GetLatestLobbyActivityInfo(context.Context, *GetActivityRequest) (*GetActivityResponse, error)
 	GetTownUser(context.Context, *GetTownUserRequest) (*LobbyTown, error)
 	GetTownByID(context.Context, *GetTownRequest) (*LobbyTown, error)
+	JoinTown(context.Context, *JoinTownRequest) (*LobbyTown, error)
 	// Track Action
 	TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error)
 	TrackSessionLobby(context.Context, *TrackSessionLobbyRequest) (*emptypb.Empty, error)
@@ -510,6 +522,9 @@ func (UnimplementedThetanRivalServiceServer) GetTownUser(context.Context, *GetTo
 }
 func (UnimplementedThetanRivalServiceServer) GetTownByID(context.Context, *GetTownRequest) (*LobbyTown, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTownByID not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) JoinTown(context.Context, *JoinTownRequest) (*LobbyTown, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method JoinTown not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TrackSession not implemented")
@@ -917,6 +932,24 @@ func _ThetanRivalService_GetTownByID_Handler(srv interface{}, ctx context.Contex
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_JoinTown_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(JoinTownRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).JoinTown(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_JoinTown_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).JoinTown(ctx, req.(*JoinTownRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _ThetanRivalService_TrackSession_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(TrackSessionRequest)
 	if err := dec(in); err != nil {
@@ -1201,6 +1234,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetTownByID",
 			Handler:    _ThetanRivalService_GetTownByID_Handler,
+		},
+		{
+			MethodName: "JoinTown",
+			Handler:    _ThetanRivalService_JoinTown_Handler,
 		},
 		{
 			MethodName: "TrackSession",

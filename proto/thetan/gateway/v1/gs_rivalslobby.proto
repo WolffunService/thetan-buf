@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package thetan.gateway.v1;
 
+import "google/protobuf/empty.proto";
 import "thetan/rivals/v1/service_rivals.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/gateway/v1;thetan_gateway_v1";
@@ -11,6 +12,8 @@ service ThetanGatewayRivalsLobby {
   rpc AllocateTown(thetan.rivals.v1.LobbyTown) returns (TownAllocationResp) {}
 
   rpc GetTownCCU(GetTownCCURequest) returns (GetTownCCUResponse) {}
+
+  rpc GetAvailableRegions(google.protobuf.Empty) returns (AvailableRegionsResponse) {}
 }
 
 message GetTownCCURequest {
@@ -27,4 +30,13 @@ message TownAllocationResp {
   uint32 serverPort = 2;
   //town info
   string town = 3;
+}
+
+message AvailableRegionsResponse {
+  message RegionsData { 
+    string host = 1;
+    string region = 2;
+    string regionCode = 3;
+  }
+  repeated RegionsData data = 1; 
 }
