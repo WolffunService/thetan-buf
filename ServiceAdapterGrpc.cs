@@ -50,7 +50,7 @@ namespace Thetan.World.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.World.V1.AvailableItem> __Marshaller_thetan_world_v1_AvailableItem = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.AvailableItem.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.World.V1.SimpleItem> __Marshaller_thetan_world_v1_SimpleItem = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.SimpleItem.Parser));
+    static readonly grpc::Marshaller<global::Thetan.World.V1.IsValidItemsRequest> __Marshaller_thetan_world_v1_IsValidItemsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.IsValidItemsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.World.V1.CheckItemResponse> __Marshaller_thetan_world_v1_CheckItemResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.CheckItemResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -67,11 +67,11 @@ namespace Thetan.World.V1 {
         __Marshaller_thetan_world_v1_AvailableItem);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.World.V1.SimpleItem, global::Thetan.World.V1.CheckItemResponse> __Method_IsValidItems = new grpc::Method<global::Thetan.World.V1.SimpleItem, global::Thetan.World.V1.CheckItemResponse>(
+    static readonly grpc::Method<global::Thetan.World.V1.IsValidItemsRequest, global::Thetan.World.V1.CheckItemResponse> __Method_IsValidItems = new grpc::Method<global::Thetan.World.V1.IsValidItemsRequest, global::Thetan.World.V1.CheckItemResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "IsValidItems",
-        __Marshaller_thetan_world_v1_SimpleItem,
+        __Marshaller_thetan_world_v1_IsValidItemsRequest,
         __Marshaller_thetan_world_v1_CheckItemResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -99,7 +99,7 @@ namespace Thetan.World.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.World.V1.CheckItemResponse> IsValidItems(global::Thetan.World.V1.SimpleItem request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.World.V1.CheckItemResponse> IsValidItems(global::Thetan.World.V1.IsValidItemsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -160,22 +160,22 @@ namespace Thetan.World.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetAvailableItems, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.World.V1.CheckItemResponse IsValidItems(global::Thetan.World.V1.SimpleItem request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.World.V1.CheckItemResponse IsValidItems(global::Thetan.World.V1.IsValidItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsValidItems(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.World.V1.CheckItemResponse IsValidItems(global::Thetan.World.V1.SimpleItem request, grpc::CallOptions options)
+      public virtual global::Thetan.World.V1.CheckItemResponse IsValidItems(global::Thetan.World.V1.IsValidItemsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_IsValidItems, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.CheckItemResponse> IsValidItemsAsync(global::Thetan.World.V1.SimpleItem request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.CheckItemResponse> IsValidItemsAsync(global::Thetan.World.V1.IsValidItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsValidItemsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.CheckItemResponse> IsValidItemsAsync(global::Thetan.World.V1.SimpleItem request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.CheckItemResponse> IsValidItemsAsync(global::Thetan.World.V1.IsValidItemsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_IsValidItems, null, options, request);
       }
@@ -226,7 +226,7 @@ namespace Thetan.World.V1 {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanWorldAdapterServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetAvailableItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Thetan.World.V1.AvailableItem>(serviceImpl.GetAvailableItems));
-      serviceBinder.AddMethod(__Method_IsValidItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.SimpleItem, global::Thetan.World.V1.CheckItemResponse>(serviceImpl.IsValidItems));
+      serviceBinder.AddMethod(__Method_IsValidItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.IsValidItemsRequest, global::Thetan.World.V1.CheckItemResponse>(serviceImpl.IsValidItems));
       serviceBinder.AddMethod(__Method_SendItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.SendItemsRequest, global::Thetan.World.V1.SendItemsResponse>(serviceImpl.SendItems));
     }
 
