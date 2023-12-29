@@ -30,7 +30,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ThetanWorldAdapterServiceClient interface {
 	GetAvailableItems(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*AvailableItem, error)
-	IsValidItems(ctx context.Context, in *SimpleItem, opts ...grpc.CallOption) (*CheckItemResponse, error)
+	IsValidItems(ctx context.Context, in *IsValidItemsRequest, opts ...grpc.CallOption) (*CheckItemResponse, error)
 	SendItems(ctx context.Context, in *SendItemsRequest, opts ...grpc.CallOption) (*SendItemsResponse, error)
 }
 
@@ -51,7 +51,7 @@ func (c *thetanWorldAdapterServiceClient) GetAvailableItems(ctx context.Context,
 	return out, nil
 }
 
-func (c *thetanWorldAdapterServiceClient) IsValidItems(ctx context.Context, in *SimpleItem, opts ...grpc.CallOption) (*CheckItemResponse, error) {
+func (c *thetanWorldAdapterServiceClient) IsValidItems(ctx context.Context, in *IsValidItemsRequest, opts ...grpc.CallOption) (*CheckItemResponse, error) {
 	out := new(CheckItemResponse)
 	err := c.cc.Invoke(ctx, ThetanWorldAdapterService_IsValidItems_FullMethodName, in, out, opts...)
 	if err != nil {
@@ -74,7 +74,7 @@ func (c *thetanWorldAdapterServiceClient) SendItems(ctx context.Context, in *Sen
 // for forward compatibility
 type ThetanWorldAdapterServiceServer interface {
 	GetAvailableItems(context.Context, *emptypb.Empty) (*AvailableItem, error)
-	IsValidItems(context.Context, *SimpleItem) (*CheckItemResponse, error)
+	IsValidItems(context.Context, *IsValidItemsRequest) (*CheckItemResponse, error)
 	SendItems(context.Context, *SendItemsRequest) (*SendItemsResponse, error)
 	mustEmbedUnimplementedThetanWorldAdapterServiceServer()
 }
@@ -86,7 +86,7 @@ type UnimplementedThetanWorldAdapterServiceServer struct {
 func (UnimplementedThetanWorldAdapterServiceServer) GetAvailableItems(context.Context, *emptypb.Empty) (*AvailableItem, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetAvailableItems not implemented")
 }
-func (UnimplementedThetanWorldAdapterServiceServer) IsValidItems(context.Context, *SimpleItem) (*CheckItemResponse, error) {
+func (UnimplementedThetanWorldAdapterServiceServer) IsValidItems(context.Context, *IsValidItemsRequest) (*CheckItemResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method IsValidItems not implemented")
 }
 func (UnimplementedThetanWorldAdapterServiceServer) SendItems(context.Context, *SendItemsRequest) (*SendItemsResponse, error) {
@@ -125,7 +125,7 @@ func _ThetanWorldAdapterService_GetAvailableItems_Handler(srv interface{}, ctx c
 }
 
 func _ThetanWorldAdapterService_IsValidItems_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(SimpleItem)
+	in := new(IsValidItemsRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -137,7 +137,7 @@ func _ThetanWorldAdapterService_IsValidItems_Handler(srv interface{}, ctx contex
 		FullMethod: ThetanWorldAdapterService_IsValidItems_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanWorldAdapterServiceServer).IsValidItems(ctx, req.(*SimpleItem))
+		return srv.(ThetanWorldAdapterServiceServer).IsValidItems(ctx, req.(*IsValidItemsRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }

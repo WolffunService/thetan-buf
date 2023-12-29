@@ -10,7 +10,7 @@ import "google/protobuf/empty.proto";
 
 service ThetanWorldAdapterService {
     rpc GetAvailableItems(google.protobuf.Empty) returns (AvailableItem);
-    rpc IsValidItems(SimpleItem) returns (CheckItemResponse);
+    rpc IsValidItems(IsValidItemsRequest) returns (CheckItemResponse);
     rpc SendItems(SendItemsRequest) returns (SendItemsResponse);
 }
 
