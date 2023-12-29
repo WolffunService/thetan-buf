@@ -25,34 +25,34 @@ namespace Thetan.World.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiV0aGV0YW4vd29ybGQvdjEvc2VydmljZV9hZGFwdGVyLnByb3RvEg90aGV0",
-            "YW4ud29ybGQudjEaG2dvb2dsZS9wcm90b2J1Zi9lbXB0eS5wcm90byJiCghJ",
+            "YW4ud29ybGQudjEaG2dvb2dsZS9wcm90b2J1Zi9lbXB0eS5wcm90byJ6CghJ",
             "dGVtUmVzcBISCgRraW5kGAEgASgFUgRraW5kEhIKBHR5cGUYAiABKAVSBHR5",
             "cGUSGgoIaXRlbVR5cGUYAyABKAlSCGl0ZW1UeXBlEhIKBG5hbWUYBCABKAlS",
-            "BG5hbWUiQAoNQXZhaWxhYmxlSXRlbRIvCgVpdGVtcxgBIAMoCzIZLnRoZXRh",
-            "bi53b3JsZC52MS5JdGVtUmVzcFIFaXRlbXMiTAoKU2ltcGxlSXRlbRISCgRr",
-            "aW5kGAEgASgFUgRraW5kEhIKBHR5cGUYAiABKAVSBHR5cGUSFgoGYW1vdW50",
-            "GAMgASgCUgZhbW91bnQiSAoTSXNWYWxpZEl0ZW1zUmVxdWVzdBIxCgVpdGVt",
-            "cxgBIAMoCzIbLnRoZXRhbi53b3JsZC52MS5TaW1wbGVJdGVtUgVpdGVtcyIn",
-            "ChFDaGVja0l0ZW1SZXNwb25zZRISCgRkYXRhGAEgASgIUgRkYXRhIl0KEFNl",
-            "bmRJdGVtc1JlcXVlc3QSFgoGdXNlcklEGAEgASgJUgZ1c2VySUQSMQoFaXRl",
-            "bXMYAiADKAsyGy50aGV0YW4ud29ybGQudjEuU2ltcGxlSXRlbVIFaXRlbXMi",
-            "RAoRU2VuZEl0ZW1zUmVzcG9uc2USLwoFaXRlbXMYAiADKAsyGS50aGV0YW4u",
-            "d29ybGQudjEuSXRlbVJlc3BSBWl0ZW1zMpYCChlUaGV0YW5Xb3JsZEFkYXB0",
-            "ZXJTZXJ2aWNlEksKEUdldEF2YWlsYWJsZUl0ZW1zEhYuZ29vZ2xlLnByb3Rv",
-            "YnVmLkVtcHR5Gh4udGhldGFuLndvcmxkLnYxLkF2YWlsYWJsZUl0ZW0SWAoM",
-            "SXNWYWxpZEl0ZW1zEiQudGhldGFuLndvcmxkLnYxLklzVmFsaWRJdGVtc1Jl",
-            "cXVlc3QaIi50aGV0YW4ud29ybGQudjEuQ2hlY2tJdGVtUmVzcG9uc2USUgoJ",
-            "U2VuZEl0ZW1zEiEudGhldGFuLndvcmxkLnYxLlNlbmRJdGVtc1JlcXVlc3Qa",
-            "Ii50aGV0YW4ud29ybGQudjEuU2VuZEl0ZW1zUmVzcG9uc2VCuwEKE2NvbS50",
-            "aGV0YW4ud29ybGQudjFCE1NlcnZpY2VBZGFwdGVyUHJvdG9QAVoxdGhldGFu",
-            "LWJ1Zi9nZW4vZ28vdGhldGFuL3dvcmxkL3YxO3RoZXRhbl93b3JsZF92MaIC",
-            "A1RXWKoCD1RoZXRhbi5Xb3JsZC5WMcoCD1RoZXRhblxXb3JsZFxWMeICG1Ro",
-            "ZXRhblxXb3JsZFxWMVxHUEJNZXRhZGF0YeoCEVRoZXRhbjo6V29ybGQ6OlYx",
-            "YgZwcm90bzM="));
+            "BG5hbWUSFgoGYW1vdW50GAUgASgCUgZhbW91bnQiQAoNQXZhaWxhYmxlSXRl",
+            "bRIvCgVpdGVtcxgBIAMoCzIZLnRoZXRhbi53b3JsZC52MS5JdGVtUmVzcFIF",
+            "aXRlbXMiTAoKU2ltcGxlSXRlbRISCgRraW5kGAEgASgFUgRraW5kEhIKBHR5",
+            "cGUYAiABKAVSBHR5cGUSFgoGYW1vdW50GAMgASgCUgZhbW91bnQiSAoTSXNW",
+            "YWxpZEl0ZW1zUmVxdWVzdBIxCgVpdGVtcxgBIAMoCzIbLnRoZXRhbi53b3Js",
+            "ZC52MS5TaW1wbGVJdGVtUgVpdGVtcyInChFDaGVja0l0ZW1SZXNwb25zZRIS",
+            "CgRkYXRhGAEgASgIUgRkYXRhIl0KEFNlbmRJdGVtc1JlcXVlc3QSFgoGdXNl",
+            "cklEGAEgASgJUgZ1c2VySUQSMQoFaXRlbXMYAiADKAsyGy50aGV0YW4ud29y",
+            "bGQudjEuU2ltcGxlSXRlbVIFaXRlbXMiRAoRU2VuZEl0ZW1zUmVzcG9uc2US",
+            "LwoFaXRlbXMYAiADKAsyGS50aGV0YW4ud29ybGQudjEuSXRlbVJlc3BSBWl0",
+            "ZW1zMpYCChlUaGV0YW5Xb3JsZEFkYXB0ZXJTZXJ2aWNlEksKEUdldEF2YWls",
+            "YWJsZUl0ZW1zEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gh4udGhldGFuLndv",
+            "cmxkLnYxLkF2YWlsYWJsZUl0ZW0SWAoMSXNWYWxpZEl0ZW1zEiQudGhldGFu",
+            "LndvcmxkLnYxLklzVmFsaWRJdGVtc1JlcXVlc3QaIi50aGV0YW4ud29ybGQu",
+            "djEuQ2hlY2tJdGVtUmVzcG9uc2USUgoJU2VuZEl0ZW1zEiEudGhldGFuLndv",
+            "cmxkLnYxLlNlbmRJdGVtc1JlcXVlc3QaIi50aGV0YW4ud29ybGQudjEuU2Vu",
+            "ZEl0ZW1zUmVzcG9uc2VCuwEKE2NvbS50aGV0YW4ud29ybGQudjFCE1NlcnZp",
+            "Y2VBZGFwdGVyUHJvdG9QAVoxdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3dv",
+            "cmxkL3YxO3RoZXRhbl93b3JsZF92MaICA1RXWKoCD1RoZXRhbi5Xb3JsZC5W",
+            "McoCD1RoZXRhblxXb3JsZFxWMeICG1RoZXRhblxXb3JsZFxWMVxHUEJNZXRh",
+            "ZGF0YeoCEVRoZXRhbjo6V29ybGQ6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.ItemResp), global::Thetan.World.V1.ItemResp.Parser, new[]{ "Kind", "Type", "ItemType", "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.ItemResp), global::Thetan.World.V1.ItemResp.Parser, new[]{ "Kind", "Type", "ItemType", "Name", "Amount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.AvailableItem), global::Thetan.World.V1.AvailableItem.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.SimpleItem), global::Thetan.World.V1.SimpleItem.Parser, new[]{ "Kind", "Type", "Amount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.IsValidItemsRequest), global::Thetan.World.V1.IsValidItemsRequest.Parser, new[]{ "Items" }, null, null, null, null),
@@ -103,6 +103,7 @@ namespace Thetan.World.V1 {
       type_ = other.type_;
       itemType_ = other.itemType_;
       name_ = other.name_;
+      amount_ = other.amount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -160,6 +161,18 @@ namespace Thetan.World.V1 {
       }
     }
 
+    /// <summary>Field number for the "amount" field.</summary>
+    public const int AmountFieldNumber = 5;
+    private float amount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Amount {
+      get { return amount_; }
+      set {
+        amount_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -179,6 +192,7 @@ namespace Thetan.World.V1 {
       if (Type != other.Type) return false;
       if (ItemType != other.ItemType) return false;
       if (Name != other.Name) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Amount, other.Amount)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -190,6 +204,7 @@ namespace Thetan.World.V1 {
       if (Type != 0) hash ^= Type.GetHashCode();
       if (ItemType.Length != 0) hash ^= ItemType.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Amount != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Amount);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -224,6 +239,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(34);
         output.WriteString(Name);
       }
+      if (Amount != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(Amount);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -250,6 +269,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(34);
         output.WriteString(Name);
       }
+      if (Amount != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(Amount);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -271,6 +294,9 @@ namespace Thetan.World.V1 {
       }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Amount != 0F) {
+        size += 1 + 4;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -295,6 +321,9 @@ namespace Thetan.World.V1 {
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
+      }
+      if (other.Amount != 0F) {
+        Amount = other.Amount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -327,6 +356,10 @@ namespace Thetan.World.V1 {
             Name = input.ReadString();
             break;
           }
+          case 45: {
+            Amount = input.ReadFloat();
+            break;
+          }
         }
       }
     #endif
@@ -356,6 +389,10 @@ namespace Thetan.World.V1 {
           }
           case 34: {
             Name = input.ReadString();
+            break;
+          }
+          case 45: {
+            Amount = input.ReadFloat();
             break;
           }
         }

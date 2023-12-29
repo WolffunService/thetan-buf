@@ -19,6 +19,7 @@ message ItemResp {
     int32 type = 2;
     string itemType = 3;
     string name = 4;
+    float amount = 5;
 }
 
 message AvailableItem {
