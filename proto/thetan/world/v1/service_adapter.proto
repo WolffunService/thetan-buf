@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package thetan.world.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/world/v1;thetan_world_v1";
+option csharp_namespace = "Thetan.World.V1";
+
+import "google/protobuf/empty.proto";
+
+
+service ThetanWorldAdapterService {
+    rpc GetAvailableItems(google.protobuf.Empty) returns (AvailableItem);
+    rpc IsValidItems(SimpleItem) returns (CheckItemResponse);
+    rpc SendItems(SendItemsRequest) returns (SendItemsResponse);
+}
+
+message ItemResp {
+    int32 kind = 1;
+    int32 type = 2;
+    string itemType = 3;
+    string name = 4;
+}
+
+message AvailableItem {
+    repeated ItemResp items = 1;
+}
+
+message SimpleItem {
+    int32 kind = 1;
+    int32 type = 2;
+    float amount = 3;
+}
+
+message IsValidItemsRequest {
+    repeated SimpleItem items = 1;
+}
+
+message CheckItemResponse {
+    bool data = 1;
+}
+
+message SendItemsRequest {
+    string userID = 1;
+    repeated SimpleItem items = 2;
+}
+
+message SendItemsResponse {
+    repeated ItemResp items = 2;
+}
