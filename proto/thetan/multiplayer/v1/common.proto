@@ -150,6 +150,8 @@ enum PlayerStatus {
 
 message SetInGameModeMsg{
   thetan.shared.v1.InGameMode inGameMode = 1;
+  thetan.shared.v1.TRArena arena = 2;
+  string id = 3;
 }
 
 message OtherSetInGameModeMsg{
