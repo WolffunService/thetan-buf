@@ -47,6 +47,8 @@ message TicketData {
   int64 createTime = 9;
   int32 group = 10;
   TournamentInfo tournamentInfo = 11;
+  TRArena arena = 12;
+  string modeId = 13;
 }
 
 message TournamentInfo {
@@ -100,6 +102,7 @@ message MatchFoundResponseProto {
   PlayerStat playerStat = 8;
   bool isOnline = 10;
   bool enableSpectator = 11;
+  thetan.shared.v1.TRArena arena = 12;
 }
 
 message PlayerStat {
