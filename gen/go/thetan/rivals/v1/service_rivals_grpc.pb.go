@@ -43,6 +43,7 @@ const (
 	ThetanRivalService_TrackSession_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/TrackSession"
 	ThetanRivalService_TrackSessionLobby_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/TrackSessionLobby"
 	ThetanRivalService_GetFindMatchInfo_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
+	ThetanRivalService_CanChangeMode_FullMethodName                 = "/thetan.rivals.v1.ThetanRivalService/CanChangeMode"
 	ThetanRivalService_GetConfigForBot_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/GetConfigForBot"
 	ThetanRivalService_GetFindMatchInfoForTournament_FullMethodName = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfoForTournament"
 	ThetanRivalService_MatchFoundTournament_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/MatchFoundTournament"
@@ -89,6 +90,7 @@ type ThetanRivalServiceClient interface {
 	TrackSessionLobby(ctx context.Context, in *TrackSessionLobbyRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	// GetFindMatchInfo
 	GetFindMatchInfo(ctx context.Context, in *FindMatchInfoRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error)
+	CanChangeMode(ctx context.Context, in *CanChangeModeRequest, opts ...grpc.CallOption) (*CanChangeModeResponse, error)
 	// Get config for bot
 	GetConfigForBot(ctx context.Context, in *GetConfigForBotRequest, opts ...grpc.CallOption) (*GetConfigForBotResponse, error)
 	// Tournament
@@ -321,6 +323,15 @@ func (c *thetanRivalServiceClient) GetFindMatchInfo(ctx context.Context, in *Fin
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) CanChangeMode(ctx context.Context, in *CanChangeModeRequest, opts ...grpc.CallOption) (*CanChangeModeResponse, error) {
+	out := new(CanChangeModeResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_CanChangeMode_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 func (c *thetanRivalServiceClient) GetConfigForBot(ctx context.Context, in *GetConfigForBotRequest, opts ...grpc.CallOption) (*GetConfigForBotResponse, error) {
 	out := new(GetConfigForBotResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetConfigForBot_FullMethodName, in, out, opts...)
@@ -430,6 +441,7 @@ type ThetanRivalServiceServer interface {
 	TrackSessionLobby(context.Context, *TrackSessionLobbyRequest) (*emptypb.Empty, error)
 	// GetFindMatchInfo
 	GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error)
+	CanChangeMode(context.Context, *CanChangeModeRequest) (*CanChangeModeResponse, error)
 	// Get config for bot
 	GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error)
 	// Tournament
@@ -519,6 +531,9 @@ func (UnimplementedThetanRivalServiceServer) TrackSessionLobby(context.Context, 
 }
 func (UnimplementedThetanRivalServiceServer) GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetFindMatchInfo not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) CanChangeMode(context.Context, *CanChangeModeRequest) (*CanChangeModeResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CanChangeMode not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetConfigForBot not implemented")
@@ -971,6 +986,24 @@ func _ThetanRivalService_GetFindMatchInfo_Handler(srv interface{}, ctx context.C
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_CanChangeMode_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CanChangeModeRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).CanChangeMode(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_CanChangeMode_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).CanChangeMode(ctx, req.(*CanChangeModeRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _ThetanRivalService_GetConfigForBot_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(GetConfigForBotRequest)
 	if err := dec(in); err != nil {
@@ -1213,6 +1246,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetFindMatchInfo",
 			Handler:    _ThetanRivalService_GetFindMatchInfo_Handler,
+		},
+		{
+			MethodName: "CanChangeMode",
+			Handler:    _ThetanRivalService_CanChangeMode_Handler,
 		},
 		{
 			MethodName: "GetConfigForBot",

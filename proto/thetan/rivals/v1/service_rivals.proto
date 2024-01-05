@@ -53,6 +53,7 @@ service ThetanRivalService {
 
   // GetFindMatchInfo
   rpc GetFindMatchInfo(FindMatchInfoRequest) returns (FindMatchInfoResponse) {}
+  rpc CanChangeMode(CanChangeModeRequest) returns (CanChangeModeResponse) {}
 
   // Get config for bot
   rpc GetConfigForBot(GetConfigForBotRequest) returns (GetConfigForBotResponse) {}
@@ -556,4 +557,15 @@ message CachePlayedMapRequest {
 }
 
 message CachePlayedMapResponse {
+}
+
+message CanChangeModeRequest {
+  string userID = 1;
+  thetan.shared.v1.InGameMode inGameMode = 2;
+  thetan.shared.v1.TRArena arena = 3;
+  string modeID = 4;
+}
+
+message CanChangeModeResponse {
+  bool canChange = 1;
 }
