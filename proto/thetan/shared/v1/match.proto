@@ -102,6 +102,21 @@ message MatchFoundResponseProto {
   bool enableSpectator = 11;
 }
 
+message MapSkills {
+  repeated SkillInfo skills = 1;
+  int32 rollLimit = 2;
+}
+
+message SkillInfo {
+  int32 skillID = 1;
+}
+
+enum SkillTypeEnum {
+  SKILLTYPE_NONE = 0;
+  SKILLTYPE_ATTACK = 1;
+  SKILLTYPE_SUPPORT = 2;
+}
+
 message PlayerStat {
   int32 roundScoreAll = 1;
   float raceScoreAll = 2;
@@ -112,6 +127,7 @@ message PlayerStat {
 message MapDataProto {
   int32 mapId = 1;
   MapDifficultyEnum mapDifficulty = 2;
+  map<int32, MapSkills> mapSkills = 12; // key: SkillTypeEnum
 }
 
 enum MapDifficultyEnum {

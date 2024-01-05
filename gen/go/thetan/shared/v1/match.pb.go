@@ -129,6 +129,55 @@ func (MatchErrorCode) EnumDescriptor() ([]byte, []int) {
 	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{0}
 }
 
+type SkillTypeEnum int32
+
+const (
+	SkillTypeEnum_SKILLTYPE_NONE    SkillTypeEnum = 0
+	SkillTypeEnum_SKILLTYPE_ATTACK  SkillTypeEnum = 1
+	SkillTypeEnum_SKILLTYPE_SUPPORT SkillTypeEnum = 2
+)
+
+// Enum value maps for SkillTypeEnum.
+var (
+	SkillTypeEnum_name = map[int32]string{
+		0: "SKILLTYPE_NONE",
+		1: "SKILLTYPE_ATTACK",
+		2: "SKILLTYPE_SUPPORT",
+	}
+	SkillTypeEnum_value = map[string]int32{
+		"SKILLTYPE_NONE":    0,
+		"SKILLTYPE_ATTACK":  1,
+		"SKILLTYPE_SUPPORT": 2,
+	}
+)
+
+func (x SkillTypeEnum) Enum() *SkillTypeEnum {
+	p := new(SkillTypeEnum)
+	*p = x
+	return p
+}
+
+func (x SkillTypeEnum) String() string {
+	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+}
+
+func (SkillTypeEnum) Descriptor() protoreflect.EnumDescriptor {
+	return file_thetan_shared_v1_match_proto_enumTypes[1].Descriptor()
+}
+
+func (SkillTypeEnum) Type() protoreflect.EnumType {
+	return &file_thetan_shared_v1_match_proto_enumTypes[1]
+}
+
+func (x SkillTypeEnum) Number() protoreflect.EnumNumber {
+	return protoreflect.EnumNumber(x)
+}
+
+// Deprecated: Use SkillTypeEnum.Descriptor instead.
+func (SkillTypeEnum) EnumDescriptor() ([]byte, []int) {
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{1}
+}
+
 type MapDifficultyEnum int32
 
 const (
@@ -165,11 +214,11 @@ func (x MapDifficultyEnum) String() string {
 }
 
 func (MapDifficultyEnum) Descriptor() protoreflect.EnumDescriptor {
-	return file_thetan_shared_v1_match_proto_enumTypes[1].Descriptor()
+	return file_thetan_shared_v1_match_proto_enumTypes[2].Descriptor()
 }
 
 func (MapDifficultyEnum) Type() protoreflect.EnumType {
-	return &file_thetan_shared_v1_match_proto_enumTypes[1]
+	return &file_thetan_shared_v1_match_proto_enumTypes[2]
 }
 
 func (x MapDifficultyEnum) Number() protoreflect.EnumNumber {
@@ -178,7 +227,7 @@ func (x MapDifficultyEnum) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use MapDifficultyEnum.Descriptor instead.
 func (MapDifficultyEnum) EnumDescriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{1}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{2}
 }
 
 type TicketData struct {
@@ -744,6 +793,108 @@ func (x *MatchFoundResponseProto) GetEnableSpectator() bool {
 	return false
 }
 
+type MapSkills struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Skills    []*SkillInfo `protobuf:"bytes,1,rep,name=skills,proto3" json:"skills,omitempty"`
+	RollLimit int32        `protobuf:"varint,2,opt,name=rollLimit,proto3" json:"rollLimit,omitempty"`
+}
+
+func (x *MapSkills) Reset() {
+	*x = MapSkills{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[6]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *MapSkills) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*MapSkills) ProtoMessage() {}
+
+func (x *MapSkills) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[6]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use MapSkills.ProtoReflect.Descriptor instead.
+func (*MapSkills) Descriptor() ([]byte, []int) {
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{6}
+}
+
+func (x *MapSkills) GetSkills() []*SkillInfo {
+	if x != nil {
+		return x.Skills
+	}
+	return nil
+}
+
+func (x *MapSkills) GetRollLimit() int32 {
+	if x != nil {
+		return x.RollLimit
+	}
+	return 0
+}
+
+type SkillInfo struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	SkillID int32 `protobuf:"varint,1,opt,name=skillID,proto3" json:"skillID,omitempty"`
+}
+
+func (x *SkillInfo) Reset() {
+	*x = SkillInfo{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[7]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *SkillInfo) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*SkillInfo) ProtoMessage() {}
+
+func (x *SkillInfo) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[7]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use SkillInfo.ProtoReflect.Descriptor instead.
+func (*SkillInfo) Descriptor() ([]byte, []int) {
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{7}
+}
+
+func (x *SkillInfo) GetSkillID() int32 {
+	if x != nil {
+		return x.SkillID
+	}
+	return 0
+}
+
 type PlayerStat struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -758,7 +909,7 @@ type PlayerStat struct {
 func (x *PlayerStat) Reset() {
 	*x = PlayerStat{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[6]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[8]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -771,7 +922,7 @@ func (x *PlayerStat) String() string {
 func (*PlayerStat) ProtoMessage() {}
 
 func (x *PlayerStat) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[6]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[8]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -784,7 +935,7 @@ func (x *PlayerStat) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PlayerStat.ProtoReflect.Descriptor instead.
 func (*PlayerStat) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{6}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *PlayerStat) GetRoundScoreAll() int32 {
@@ -820,14 +971,15 @@ type MapDataProto struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	MapId         int32             `protobuf:"varint,1,opt,name=mapId,proto3" json:"mapId,omitempty"`
-	MapDifficulty MapDifficultyEnum `protobuf:"varint,2,opt,name=mapDifficulty,proto3,enum=thetan.shared.v1.MapDifficultyEnum" json:"mapDifficulty,omitempty"`
+	MapId         int32                `protobuf:"varint,1,opt,name=mapId,proto3" json:"mapId,omitempty"`
+	MapDifficulty MapDifficultyEnum    `protobuf:"varint,2,opt,name=mapDifficulty,proto3,enum=thetan.shared.v1.MapDifficultyEnum" json:"mapDifficulty,omitempty"`
+	MapSkills     map[int32]*MapSkills `protobuf:"bytes,12,rep,name=mapSkills,proto3" json:"mapSkills,omitempty" protobuf_key:"varint,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"` // key: SkillTypeEnum
 }
 
 func (x *MapDataProto) Reset() {
 	*x = MapDataProto{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[7]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[9]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -840,7 +992,7 @@ func (x *MapDataProto) String() string {
 func (*MapDataProto) ProtoMessage() {}
 
 func (x *MapDataProto) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[7]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[9]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -853,7 +1005,7 @@ func (x *MapDataProto) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MapDataProto.ProtoReflect.Descriptor instead.
 func (*MapDataProto) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{7}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *MapDataProto) GetMapId() int32 {
@@ -870,6 +1022,13 @@ func (x *MapDataProto) GetMapDifficulty() MapDifficultyEnum {
 	return MapDifficultyEnum_None
 }
 
+func (x *MapDataProto) GetMapSkills() map[int32]*MapSkills {
+	if x != nil {
+		return x.MapSkills
+	}
+	return nil
+}
+
 type MatchDataBattleLogProto struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -882,7 +1041,7 @@ type MatchDataBattleLogProto struct {
 func (x *MatchDataBattleLogProto) Reset() {
 	*x = MatchDataBattleLogProto{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[8]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[10]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -895,7 +1054,7 @@ func (x *MatchDataBattleLogProto) String() string {
 func (*MatchDataBattleLogProto) ProtoMessage() {}
 
 func (x *MatchDataBattleLogProto) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[8]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[10]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -908,7 +1067,7 @@ func (x *MatchDataBattleLogProto) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MatchDataBattleLogProto.ProtoReflect.Descriptor instead.
 func (*MatchDataBattleLogProto) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{8}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *MatchDataBattleLogProto) GetTimeEndGame() int32 {
@@ -936,7 +1095,7 @@ type MatchStartRequestProto struct {
 func (x *MatchStartRequestProto) Reset() {
 	*x = MatchStartRequestProto{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[9]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[11]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -949,7 +1108,7 @@ func (x *MatchStartRequestProto) String() string {
 func (*MatchStartRequestProto) ProtoMessage() {}
 
 func (x *MatchStartRequestProto) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[9]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[11]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -962,7 +1121,7 @@ func (x *MatchStartRequestProto) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MatchStartRequestProto.ProtoReflect.Descriptor instead.
 func (*MatchStartRequestProto) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{9}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *MatchStartRequestProto) GetBestRegion() int32 {
@@ -984,7 +1143,7 @@ type MatchEndRequestProto struct {
 func (x *MatchEndRequestProto) Reset() {
 	*x = MatchEndRequestProto{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[10]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[12]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -997,7 +1156,7 @@ func (x *MatchEndRequestProto) String() string {
 func (*MatchEndRequestProto) ProtoMessage() {}
 
 func (x *MatchEndRequestProto) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[10]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[12]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1010,7 +1169,7 @@ func (x *MatchEndRequestProto) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MatchEndRequestProto.ProtoReflect.Descriptor instead.
 func (*MatchEndRequestProto) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{10}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *MatchEndRequestProto) GetMatchId() string {
@@ -1050,7 +1209,7 @@ type PlayerInfoEndMatchProto struct {
 func (x *PlayerInfoEndMatchProto) Reset() {
 	*x = PlayerInfoEndMatchProto{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[11]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[13]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1063,7 +1222,7 @@ func (x *PlayerInfoEndMatchProto) String() string {
 func (*PlayerInfoEndMatchProto) ProtoMessage() {}
 
 func (x *PlayerInfoEndMatchProto) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[11]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[13]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1076,7 +1235,7 @@ func (x *PlayerInfoEndMatchProto) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PlayerInfoEndMatchProto.ProtoReflect.Descriptor instead.
 func (*PlayerInfoEndMatchProto) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{11}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *PlayerInfoEndMatchProto) GetPlayerId() string {
@@ -1182,7 +1341,7 @@ type MatchDataResponseProto struct {
 func (x *MatchDataResponseProto) Reset() {
 	*x = MatchDataResponseProto{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[12]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[14]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1195,7 +1354,7 @@ func (x *MatchDataResponseProto) String() string {
 func (*MatchDataResponseProto) ProtoMessage() {}
 
 func (x *MatchDataResponseProto) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[12]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[14]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1208,7 +1367,7 @@ func (x *MatchDataResponseProto) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MatchDataResponseProto.ProtoReflect.Descriptor instead.
 func (*MatchDataResponseProto) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{12}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{14}
 }
 
 func (x *MatchDataResponseProto) GetMatchId() string {
@@ -1294,7 +1453,7 @@ type MatchDataReconnect struct {
 func (x *MatchDataReconnect) Reset() {
 	*x = MatchDataReconnect{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[13]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[15]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1307,7 +1466,7 @@ func (x *MatchDataReconnect) String() string {
 func (*MatchDataReconnect) ProtoMessage() {}
 
 func (x *MatchDataReconnect) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[13]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[15]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1320,7 +1479,7 @@ func (x *MatchDataReconnect) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MatchDataReconnect.ProtoReflect.Descriptor instead.
 func (*MatchDataReconnect) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{13}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *MatchDataReconnect) GetTimeStart() int32 {
@@ -1379,7 +1538,7 @@ type PlayerInfoMatchProto struct {
 func (x *PlayerInfoMatchProto) Reset() {
 	*x = PlayerInfoMatchProto{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[14]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[16]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1392,7 +1551,7 @@ func (x *PlayerInfoMatchProto) String() string {
 func (*PlayerInfoMatchProto) ProtoMessage() {}
 
 func (x *PlayerInfoMatchProto) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[14]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[16]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1405,7 +1564,7 @@ func (x *PlayerInfoMatchProto) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PlayerInfoMatchProto.ProtoReflect.Descriptor instead.
 func (*PlayerInfoMatchProto) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{14}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *PlayerInfoMatchProto) GetPlayerId() string {
@@ -1638,7 +1797,7 @@ type CosmeticUsingProto struct {
 func (x *CosmeticUsingProto) Reset() {
 	*x = CosmeticUsingProto{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[15]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[17]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1651,7 +1810,7 @@ func (x *CosmeticUsingProto) String() string {
 func (*CosmeticUsingProto) ProtoMessage() {}
 
 func (x *CosmeticUsingProto) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[15]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[17]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1664,7 +1823,7 @@ func (x *CosmeticUsingProto) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CosmeticUsingProto.ProtoReflect.Descriptor instead.
 func (*CosmeticUsingProto) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{15}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *CosmeticUsingProto) GetBackBling() int32 {
@@ -1738,7 +1897,7 @@ type DeleteTicketSuccess struct {
 func (x *DeleteTicketSuccess) Reset() {
 	*x = DeleteTicketSuccess{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[16]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[18]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1751,7 +1910,7 @@ func (x *DeleteTicketSuccess) String() string {
 func (*DeleteTicketSuccess) ProtoMessage() {}
 
 func (x *DeleteTicketSuccess) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[16]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[18]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1764,7 +1923,7 @@ func (x *DeleteTicketSuccess) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DeleteTicketSuccess.ProtoReflect.Descriptor instead.
 func (*DeleteTicketSuccess) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{16}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *DeleteTicketSuccess) GetPlayerId() string {
@@ -1807,7 +1966,7 @@ type MatchProtoPackage struct {
 func (x *MatchProtoPackage) Reset() {
 	*x = MatchProtoPackage{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[17]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[19]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1820,7 +1979,7 @@ func (x *MatchProtoPackage) String() string {
 func (*MatchProtoPackage) ProtoMessage() {}
 
 func (x *MatchProtoPackage) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[17]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[19]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1833,7 +1992,7 @@ func (x *MatchProtoPackage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MatchProtoPackage.ProtoReflect.Descriptor instead.
 func (*MatchProtoPackage) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{17}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *MatchProtoPackage) GetPlayerId() string {
@@ -1914,7 +2073,7 @@ type TicketDataCache struct {
 func (x *TicketDataCache) Reset() {
 	*x = TicketDataCache{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[18]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[20]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1927,7 +2086,7 @@ func (x *TicketDataCache) String() string {
 func (*TicketDataCache) ProtoMessage() {}
 
 func (x *TicketDataCache) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[18]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[20]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1940,7 +2099,7 @@ func (x *TicketDataCache) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TicketDataCache.ProtoReflect.Descriptor instead.
 func (*TicketDataCache) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{18}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *TicketDataCache) GetInGameMode() InGameMode {
@@ -1983,7 +2142,7 @@ type TicketCacheWSOnly struct {
 func (x *TicketCacheWSOnly) Reset() {
 	*x = TicketCacheWSOnly{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[19]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[21]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -1996,7 +2155,7 @@ func (x *TicketCacheWSOnly) String() string {
 func (*TicketCacheWSOnly) ProtoMessage() {}
 
 func (x *TicketCacheWSOnly) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[19]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[21]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2009,7 +2168,7 @@ func (x *TicketCacheWSOnly) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use TicketCacheWSOnly.ProtoReflect.Descriptor instead.
 func (*TicketCacheWSOnly) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{19}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *TicketCacheWSOnly) GetTicketID() string {
@@ -2037,7 +2196,7 @@ type ListErrorPlayer struct {
 func (x *ListErrorPlayer) Reset() {
 	*x = ListErrorPlayer{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[20]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[22]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2050,7 +2209,7 @@ func (x *ListErrorPlayer) String() string {
 func (*ListErrorPlayer) ProtoMessage() {}
 
 func (x *ListErrorPlayer) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[20]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[22]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2063,7 +2222,7 @@ func (x *ListErrorPlayer) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListErrorPlayer.ProtoReflect.Descriptor instead.
 func (*ListErrorPlayer) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{20}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{22}
 }
 
 func (x *ListErrorPlayer) GetErrorPlayers() []*ListErrorPlayer_ErrorPlayer {
@@ -2090,7 +2249,7 @@ type MatchProtoVersionPackage struct {
 func (x *MatchProtoVersionPackage) Reset() {
 	*x = MatchProtoVersionPackage{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[21]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[23]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2103,7 +2262,7 @@ func (x *MatchProtoVersionPackage) String() string {
 func (*MatchProtoVersionPackage) ProtoMessage() {}
 
 func (x *MatchProtoVersionPackage) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[21]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[23]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2116,7 +2275,7 @@ func (x *MatchProtoVersionPackage) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MatchProtoVersionPackage.ProtoReflect.Descriptor instead.
 func (*MatchProtoVersionPackage) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{21}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{23}
 }
 
 func (x *MatchProtoVersionPackage) GetPlayerId() string {
@@ -2185,7 +2344,7 @@ type CancelMatchRequest struct {
 func (x *CancelMatchRequest) Reset() {
 	*x = CancelMatchRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[22]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[24]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2198,7 +2357,7 @@ func (x *CancelMatchRequest) String() string {
 func (*CancelMatchRequest) ProtoMessage() {}
 
 func (x *CancelMatchRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[22]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[24]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2211,7 +2370,7 @@ func (x *CancelMatchRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CancelMatchRequest.ProtoReflect.Descriptor instead.
 func (*CancelMatchRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{22}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{24}
 }
 
 func (x *CancelMatchRequest) GetPlayerId() string {
@@ -2261,7 +2420,7 @@ type MatchExtension struct {
 func (x *MatchExtension) Reset() {
 	*x = MatchExtension{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[23]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[25]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2274,7 +2433,7 @@ func (x *MatchExtension) String() string {
 func (*MatchExtension) ProtoMessage() {}
 
 func (x *MatchExtension) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[23]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[25]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2287,7 +2446,7 @@ func (x *MatchExtension) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MatchExtension.ProtoReflect.Descriptor instead.
 func (*MatchExtension) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{23}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{25}
 }
 
 func (x *MatchExtension) GetMinTrophies() int32 {
@@ -2364,7 +2523,7 @@ type EmptyResponse struct {
 func (x *EmptyResponse) Reset() {
 	*x = EmptyResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[24]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[26]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2377,7 +2536,7 @@ func (x *EmptyResponse) String() string {
 func (*EmptyResponse) ProtoMessage() {}
 
 func (x *EmptyResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[24]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[26]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2390,7 +2549,7 @@ func (x *EmptyResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use EmptyResponse.ProtoReflect.Descriptor instead.
 func (*EmptyResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{24}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{26}
 }
 
 func (x *EmptyResponse) GetErrorCode() int32 {
@@ -2412,7 +2571,7 @@ type BotsResponse struct {
 func (x *BotsResponse) Reset() {
 	*x = BotsResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[25]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[27]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2425,7 +2584,7 @@ func (x *BotsResponse) String() string {
 func (*BotsResponse) ProtoMessage() {}
 
 func (x *BotsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[25]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[27]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2438,7 +2597,7 @@ func (x *BotsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BotsResponse.ProtoReflect.Descriptor instead.
 func (*BotsResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{25}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{27}
 }
 
 func (x *BotsResponse) GetErrorCode() int32 {
@@ -2471,7 +2630,7 @@ type GetBotsRequest struct {
 func (x *GetBotsRequest) Reset() {
 	*x = GetBotsRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[26]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[28]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2484,7 +2643,7 @@ func (x *GetBotsRequest) String() string {
 func (*GetBotsRequest) ProtoMessage() {}
 
 func (x *GetBotsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[26]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[28]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2497,7 +2656,7 @@ func (x *GetBotsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetBotsRequest.ProtoReflect.Descriptor instead.
 func (*GetBotsRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{26}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{28}
 }
 
 func (x *GetBotsRequest) GetGameId() int32 {
@@ -2554,7 +2713,7 @@ type CosmeticUsingProtoV2 struct {
 func (x *CosmeticUsingProtoV2) Reset() {
 	*x = CosmeticUsingProtoV2{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[27]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[29]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2567,7 +2726,7 @@ func (x *CosmeticUsingProtoV2) String() string {
 func (*CosmeticUsingProtoV2) ProtoMessage() {}
 
 func (x *CosmeticUsingProtoV2) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[27]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[29]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2580,7 +2739,7 @@ func (x *CosmeticUsingProtoV2) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CosmeticUsingProtoV2.ProtoReflect.Descriptor instead.
 func (*CosmeticUsingProtoV2) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{27}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{29}
 }
 
 func (x *CosmeticUsingProtoV2) GetCosmeticInUsed() map[string]int64 {
@@ -2611,7 +2770,7 @@ type CreateMatchOnboardRequest struct {
 func (x *CreateMatchOnboardRequest) Reset() {
 	*x = CreateMatchOnboardRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[28]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[30]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2624,7 +2783,7 @@ func (x *CreateMatchOnboardRequest) String() string {
 func (*CreateMatchOnboardRequest) ProtoMessage() {}
 
 func (x *CreateMatchOnboardRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[28]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[30]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2637,7 +2796,7 @@ func (x *CreateMatchOnboardRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CreateMatchOnboardRequest.ProtoReflect.Descriptor instead.
 func (*CreateMatchOnboardRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{28}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{30}
 }
 
 func (x *CreateMatchOnboardRequest) GetUserID() string {
@@ -2688,7 +2847,7 @@ type RoundStat struct {
 func (x *RoundStat) Reset() {
 	*x = RoundStat{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[29]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[31]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2701,7 +2860,7 @@ func (x *RoundStat) String() string {
 func (*RoundStat) ProtoMessage() {}
 
 func (x *RoundStat) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[29]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[31]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2714,7 +2873,7 @@ func (x *RoundStat) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RoundStat.ProtoReflect.Descriptor instead.
 func (*RoundStat) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{29}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{31}
 }
 
 func (x *RoundStat) GetRoundId() int32 {
@@ -2799,7 +2958,7 @@ type ListErrorPlayer_ErrorPlayer struct {
 func (x *ListErrorPlayer_ErrorPlayer) Reset() {
 	*x = ListErrorPlayer_ErrorPlayer{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_shared_v1_match_proto_msgTypes[31]
+		mi := &file_thetan_shared_v1_match_proto_msgTypes[34]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2812,7 +2971,7 @@ func (x *ListErrorPlayer_ErrorPlayer) String() string {
 func (*ListErrorPlayer_ErrorPlayer) ProtoMessage() {}
 
 func (x *ListErrorPlayer_ErrorPlayer) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_shared_v1_match_proto_msgTypes[31]
+	mi := &file_thetan_shared_v1_match_proto_msgTypes[34]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2825,7 +2984,7 @@ func (x *ListErrorPlayer_ErrorPlayer) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ListErrorPlayer_ErrorPlayer.ProtoReflect.Descriptor instead.
 func (*ListErrorPlayer_ErrorPlayer) Descriptor() ([]byte, []int) {
-	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{20, 0}
+	return file_thetan_shared_v1_match_proto_rawDescGZIP(), []int{22, 0}
 }
 
 func (x *ListErrorPlayer_ErrorPlayer) GetUserId() string {
@@ -2971,24 +3130,43 @@ var file_thetan_shared_v1_match_proto_rawDesc = []byte{
 	0x28, 0x08, 0x52, 0x08, 0x69, 0x73, 0x4f, 0x6e, 0x6c, 0x69, 0x6e, 0x65, 0x12, 0x28, 0x0a, 0x0f,
 	0x65, 0x6e, 0x61, 0x62, 0x6c, 0x65, 0x53, 0x70, 0x65, 0x63, 0x74, 0x61, 0x74, 0x6f, 0x72, 0x18,
 	0x0b, 0x20, 0x01, 0x28, 0x08, 0x52, 0x0f, 0x65, 0x6e, 0x61, 0x62, 0x6c, 0x65, 0x53, 0x70, 0x65,
-	0x63, 0x74, 0x61, 0x74, 0x6f, 0x72, 0x22, 0xa2, 0x01, 0x0a, 0x0a, 0x50, 0x6c, 0x61, 0x79, 0x65,
-	0x72, 0x53, 0x74, 0x61, 0x74, 0x12, 0x24, 0x0a, 0x0d, 0x72, 0x6f, 0x75, 0x6e, 0x64, 0x53, 0x63,
-	0x6f, 0x72, 0x65, 0x41, 0x6c, 0x6c, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0d, 0x72, 0x6f,
-	0x75, 0x6e, 0x64, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x41, 0x6c, 0x6c, 0x12, 0x22, 0x0a, 0x0c, 0x72,
-	0x61, 0x63, 0x65, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x41, 0x6c, 0x6c, 0x18, 0x02, 0x20, 0x01, 0x28,
-	0x02, 0x52, 0x0c, 0x72, 0x61, 0x63, 0x65, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x41, 0x6c, 0x6c, 0x12,
-	0x28, 0x0a, 0x0f, 0x71, 0x75, 0x61, 0x6c, 0x69, 0x66, 0x79, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x41,
-	0x6c, 0x6c, 0x18, 0x03, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0f, 0x71, 0x75, 0x61, 0x6c, 0x69, 0x66,
-	0x79, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x41, 0x6c, 0x6c, 0x12, 0x20, 0x0a, 0x0b, 0x70, 0x6c, 0x61,
-	0x79, 0x65, 0x72, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x18, 0x04, 0x20, 0x01, 0x28, 0x02, 0x52, 0x0b,
-	0x70, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x22, 0x6f, 0x0a, 0x0c, 0x4d,
-	0x61, 0x70, 0x44, 0x61, 0x74, 0x61, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x14, 0x0a, 0x05, 0x6d,
-	0x61, 0x70, 0x49, 0x64, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x05, 0x6d, 0x61, 0x70, 0x49,
-	0x64, 0x12, 0x49, 0x0a, 0x0d, 0x6d, 0x61, 0x70, 0x44, 0x69, 0x66, 0x66, 0x69, 0x63, 0x75, 0x6c,
-	0x74, 0x79, 0x18, 0x02, 0x20, 0x01, 0x28, 0x0e, 0x32, 0x23, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61,
-	0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x70, 0x44,
-	0x69, 0x66, 0x66, 0x69, 0x63, 0x75, 0x6c, 0x74, 0x79, 0x45, 0x6e, 0x75, 0x6d, 0x52, 0x0d, 0x6d,
-	0x61, 0x70, 0x44, 0x69, 0x66, 0x66, 0x69, 0x63, 0x75, 0x6c, 0x74, 0x79, 0x22, 0x80, 0x01, 0x0a,
+	0x63, 0x74, 0x61, 0x74, 0x6f, 0x72, 0x22, 0x5e, 0x0a, 0x09, 0x4d, 0x61, 0x70, 0x53, 0x6b, 0x69,
+	0x6c, 0x6c, 0x73, 0x12, 0x33, 0x0a, 0x06, 0x73, 0x6b, 0x69, 0x6c, 0x6c, 0x73, 0x18, 0x01, 0x20,
+	0x03, 0x28, 0x0b, 0x32, 0x1b, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61,
+	0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x53, 0x6b, 0x69, 0x6c, 0x6c, 0x49, 0x6e, 0x66, 0x6f,
+	0x52, 0x06, 0x73, 0x6b, 0x69, 0x6c, 0x6c, 0x73, 0x12, 0x1c, 0x0a, 0x09, 0x72, 0x6f, 0x6c, 0x6c,
+	0x4c, 0x69, 0x6d, 0x69, 0x74, 0x18, 0x02, 0x20, 0x01, 0x28, 0x05, 0x52, 0x09, 0x72, 0x6f, 0x6c,
+	0x6c, 0x4c, 0x69, 0x6d, 0x69, 0x74, 0x22, 0x25, 0x0a, 0x09, 0x53, 0x6b, 0x69, 0x6c, 0x6c, 0x49,
+	0x6e, 0x66, 0x6f, 0x12, 0x18, 0x0a, 0x07, 0x73, 0x6b, 0x69, 0x6c, 0x6c, 0x49, 0x44, 0x18, 0x01,
+	0x20, 0x01, 0x28, 0x05, 0x52, 0x07, 0x73, 0x6b, 0x69, 0x6c, 0x6c, 0x49, 0x44, 0x22, 0xa2, 0x01,
+	0x0a, 0x0a, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x53, 0x74, 0x61, 0x74, 0x12, 0x24, 0x0a, 0x0d,
+	0x72, 0x6f, 0x75, 0x6e, 0x64, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x41, 0x6c, 0x6c, 0x18, 0x01, 0x20,
+	0x01, 0x28, 0x05, 0x52, 0x0d, 0x72, 0x6f, 0x75, 0x6e, 0x64, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x41,
+	0x6c, 0x6c, 0x12, 0x22, 0x0a, 0x0c, 0x72, 0x61, 0x63, 0x65, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x41,
+	0x6c, 0x6c, 0x18, 0x02, 0x20, 0x01, 0x28, 0x02, 0x52, 0x0c, 0x72, 0x61, 0x63, 0x65, 0x53, 0x63,
+	0x6f, 0x72, 0x65, 0x41, 0x6c, 0x6c, 0x12, 0x28, 0x0a, 0x0f, 0x71, 0x75, 0x61, 0x6c, 0x69, 0x66,
+	0x79, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x41, 0x6c, 0x6c, 0x18, 0x03, 0x20, 0x01, 0x28, 0x05, 0x52,
+	0x0f, 0x71, 0x75, 0x61, 0x6c, 0x69, 0x66, 0x79, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x41, 0x6c, 0x6c,
+	0x12, 0x20, 0x0a, 0x0b, 0x70, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x53, 0x63, 0x6f, 0x72, 0x65, 0x18,
+	0x04, 0x20, 0x01, 0x28, 0x02, 0x52, 0x0b, 0x70, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x53, 0x63, 0x6f,
+	0x72, 0x65, 0x22, 0x97, 0x02, 0x0a, 0x0c, 0x4d, 0x61, 0x70, 0x44, 0x61, 0x74, 0x61, 0x50, 0x72,
+	0x6f, 0x74, 0x6f, 0x12, 0x14, 0x0a, 0x05, 0x6d, 0x61, 0x70, 0x49, 0x64, 0x18, 0x01, 0x20, 0x01,
+	0x28, 0x05, 0x52, 0x05, 0x6d, 0x61, 0x70, 0x49, 0x64, 0x12, 0x49, 0x0a, 0x0d, 0x6d, 0x61, 0x70,
+	0x44, 0x69, 0x66, 0x66, 0x69, 0x63, 0x75, 0x6c, 0x74, 0x79, 0x18, 0x02, 0x20, 0x01, 0x28, 0x0e,
+	0x32, 0x23, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64,
+	0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x70, 0x44, 0x69, 0x66, 0x66, 0x69, 0x63, 0x75, 0x6c, 0x74,
+	0x79, 0x45, 0x6e, 0x75, 0x6d, 0x52, 0x0d, 0x6d, 0x61, 0x70, 0x44, 0x69, 0x66, 0x66, 0x69, 0x63,
+	0x75, 0x6c, 0x74, 0x79, 0x12, 0x4b, 0x0a, 0x09, 0x6d, 0x61, 0x70, 0x53, 0x6b, 0x69, 0x6c, 0x6c,
+	0x73, 0x18, 0x0c, 0x20, 0x03, 0x28, 0x0b, 0x32, 0x2d, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e,
+	0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x70, 0x44, 0x61,
+	0x74, 0x61, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x4d, 0x61, 0x70, 0x53, 0x6b, 0x69, 0x6c, 0x6c,
+	0x73, 0x45, 0x6e, 0x74, 0x72, 0x79, 0x52, 0x09, 0x6d, 0x61, 0x70, 0x53, 0x6b, 0x69, 0x6c, 0x6c,
+	0x73, 0x1a, 0x59, 0x0a, 0x0e, 0x4d, 0x61, 0x70, 0x53, 0x6b, 0x69, 0x6c, 0x6c, 0x73, 0x45, 0x6e,
+	0x74, 0x72, 0x79, 0x12, 0x10, 0x0a, 0x03, 0x6b, 0x65, 0x79, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05,
+	0x52, 0x03, 0x6b, 0x65, 0x79, 0x12, 0x31, 0x0a, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x18, 0x02,
+	0x20, 0x01, 0x28, 0x0b, 0x32, 0x1b, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68,
+	0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x70, 0x53, 0x6b, 0x69, 0x6c, 0x6c,
+	0x73, 0x52, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x3a, 0x02, 0x38, 0x01, 0x22, 0x80, 0x01, 0x0a,
 	0x17, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x44, 0x61, 0x74, 0x61, 0x42, 0x61, 0x74, 0x74, 0x6c, 0x65,
 	0x4c, 0x6f, 0x67, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x20, 0x0a, 0x0b, 0x74, 0x69, 0x6d, 0x65,
 	0x45, 0x6e, 0x64, 0x47, 0x61, 0x6d, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0b, 0x74,
@@ -3350,57 +3528,62 @@ var file_thetan_shared_v1_match_proto_rawDesc = []byte{
 	0x1b, 0x0a, 0x16, 0x48, 0x45, 0x52, 0x4f, 0x5f, 0x4d, 0x41, 0x58, 0x5f, 0x42, 0x41, 0x54, 0x54,
 	0x4c, 0x45, 0x5f, 0x52, 0x45, 0x4e, 0x54, 0x45, 0x44, 0x10, 0xb5, 0x18, 0x12, 0x19, 0x0a, 0x14,
 	0x48, 0x45, 0x52, 0x4f, 0x5f, 0x52, 0x45, 0x54, 0x55, 0x52, 0x4e, 0x49, 0x4e, 0x47, 0x5f, 0x4f,
-	0x57, 0x4e, 0x45, 0x52, 0x10, 0xb7, 0x18, 0x2a, 0x3d, 0x0a, 0x11, 0x4d, 0x61, 0x70, 0x44, 0x69,
-	0x66, 0x66, 0x69, 0x63, 0x75, 0x6c, 0x74, 0x79, 0x45, 0x6e, 0x75, 0x6d, 0x12, 0x08, 0x0a, 0x04,
-	0x4e, 0x6f, 0x6e, 0x65, 0x10, 0x00, 0x12, 0x08, 0x0a, 0x04, 0x45, 0x61, 0x73, 0x79, 0x10, 0x01,
-	0x12, 0x0a, 0x0a, 0x06, 0x4d, 0x65, 0x64, 0x69, 0x75, 0x6d, 0x10, 0x02, 0x12, 0x08, 0x0a, 0x04,
-	0x48, 0x61, 0x72, 0x64, 0x10, 0x03, 0x32, 0xc2, 0x02, 0x0a, 0x0c, 0x4d, 0x61, 0x74, 0x63, 0x68,
-	0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x6d, 0x0a, 0x16, 0x43, 0x72, 0x65, 0x61, 0x74,
-	0x65, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x57, 0x69, 0x74, 0x68, 0x56, 0x65, 0x72, 0x73, 0x69, 0x6f,
-	0x6e, 0x12, 0x2a, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65,
-	0x64, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x56,
-	0x65, 0x72, 0x73, 0x69, 0x6f, 0x6e, 0x50, 0x61, 0x63, 0x6b, 0x61, 0x67, 0x65, 0x1a, 0x23, 0x2e,
-	0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31,
-	0x2e, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x61, 0x63, 0x6b, 0x61,
-	0x67, 0x65, 0x22, 0x00, 0x30, 0x01, 0x12, 0x62, 0x0a, 0x12, 0x52, 0x65, 0x67, 0x69, 0x73, 0x74,
-	0x65, 0x72, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x46, 0x6f, 0x75, 0x6e, 0x64, 0x12, 0x23, 0x2e, 0x74,
-	0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e,
-	0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x61, 0x63, 0x6b, 0x61, 0x67,
-	0x65, 0x1a, 0x23, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65,
-	0x64, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50,
-	0x61, 0x63, 0x6b, 0x61, 0x67, 0x65, 0x22, 0x00, 0x30, 0x01, 0x12, 0x5f, 0x0a, 0x11, 0x43, 0x61,
-	0x6e, 0x63, 0x65, 0x6c, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x4d, 0x61, 0x6b, 0x69, 0x6e, 0x67, 0x12,
+	0x57, 0x4e, 0x45, 0x52, 0x10, 0xb7, 0x18, 0x2a, 0x50, 0x0a, 0x0d, 0x53, 0x6b, 0x69, 0x6c, 0x6c,
+	0x54, 0x79, 0x70, 0x65, 0x45, 0x6e, 0x75, 0x6d, 0x12, 0x12, 0x0a, 0x0e, 0x53, 0x4b, 0x49, 0x4c,
+	0x4c, 0x54, 0x59, 0x50, 0x45, 0x5f, 0x4e, 0x4f, 0x4e, 0x45, 0x10, 0x00, 0x12, 0x14, 0x0a, 0x10,
+	0x53, 0x4b, 0x49, 0x4c, 0x4c, 0x54, 0x59, 0x50, 0x45, 0x5f, 0x41, 0x54, 0x54, 0x41, 0x43, 0x4b,
+	0x10, 0x01, 0x12, 0x15, 0x0a, 0x11, 0x53, 0x4b, 0x49, 0x4c, 0x4c, 0x54, 0x59, 0x50, 0x45, 0x5f,
+	0x53, 0x55, 0x50, 0x50, 0x4f, 0x52, 0x54, 0x10, 0x02, 0x2a, 0x3d, 0x0a, 0x11, 0x4d, 0x61, 0x70,
+	0x44, 0x69, 0x66, 0x66, 0x69, 0x63, 0x75, 0x6c, 0x74, 0x79, 0x45, 0x6e, 0x75, 0x6d, 0x12, 0x08,
+	0x0a, 0x04, 0x4e, 0x6f, 0x6e, 0x65, 0x10, 0x00, 0x12, 0x08, 0x0a, 0x04, 0x45, 0x61, 0x73, 0x79,
+	0x10, 0x01, 0x12, 0x0a, 0x0a, 0x06, 0x4d, 0x65, 0x64, 0x69, 0x75, 0x6d, 0x10, 0x02, 0x12, 0x08,
+	0x0a, 0x04, 0x48, 0x61, 0x72, 0x64, 0x10, 0x03, 0x32, 0xc2, 0x02, 0x0a, 0x0c, 0x4d, 0x61, 0x74,
+	0x63, 0x68, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x6d, 0x0a, 0x16, 0x43, 0x72, 0x65,
+	0x61, 0x74, 0x65, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x57, 0x69, 0x74, 0x68, 0x56, 0x65, 0x72, 0x73,
+	0x69, 0x6f, 0x6e, 0x12, 0x2a, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61,
+	0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74,
+	0x6f, 0x56, 0x65, 0x72, 0x73, 0x69, 0x6f, 0x6e, 0x50, 0x61, 0x63, 0x6b, 0x61, 0x67, 0x65, 0x1a,
 	0x23, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e,
 	0x76, 0x31, 0x2e, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x61, 0x63,
-	0x6b, 0x61, 0x67, 0x65, 0x1a, 0x23, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68,
-	0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f,
-	0x74, 0x6f, 0x50, 0x61, 0x63, 0x6b, 0x61, 0x67, 0x65, 0x22, 0x00, 0x32, 0xd2, 0x01, 0x0a, 0x12,
-	0x4d, 0x61, 0x74, 0x63, 0x68, 0x48, 0x61, 0x6e, 0x64, 0x6c, 0x65, 0x53, 0x65, 0x72, 0x76, 0x69,
-	0x63, 0x65, 0x12, 0x5c, 0x0a, 0x0f, 0x48, 0x61, 0x6e, 0x64, 0x6c, 0x65, 0x50, 0x6c, 0x61, 0x79,
-	0x41, 0x67, 0x61, 0x69, 0x6e, 0x12, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73,
-	0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x44, 0x61, 0x74, 0x61, 0x50, 0x6c, 0x61,
-	0x79, 0x41, 0x67, 0x61, 0x69, 0x6e, 0x53, 0x75, 0x63, 0x63, 0x65, 0x73, 0x73, 0x1a, 0x1f, 0x2e,
-	0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31,
-	0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00,
-	0x12, 0x5e, 0x0a, 0x12, 0x48, 0x61, 0x6e, 0x64, 0x6c, 0x65, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65,
-	0x54, 0x69, 0x63, 0x6b, 0x65, 0x74, 0x12, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
-	0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65,
-	0x54, 0x69, 0x63, 0x6b, 0x65, 0x74, 0x53, 0x75, 0x63, 0x63, 0x65, 0x73, 0x73, 0x1a, 0x1f, 0x2e,
-	0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31,
-	0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00,
-	0x42, 0xb9, 0x01, 0x0a, 0x14, 0x63, 0x6f, 0x6d, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
-	0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x42, 0x0a, 0x4d, 0x61, 0x74, 0x63, 0x68,
-	0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x01, 0x5a, 0x33, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2d,
-	0x62, 0x75, 0x66, 0x2f, 0x67, 0x65, 0x6e, 0x2f, 0x67, 0x6f, 0x2f, 0x74, 0x68, 0x65, 0x74, 0x61,
-	0x6e, 0x2f, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2f, 0x76, 0x31, 0x3b, 0x74, 0x68, 0x65, 0x74,
-	0x61, 0x6e, 0x5f, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x5f, 0x76, 0x31, 0xa2, 0x02, 0x03, 0x54,
-	0x53, 0x58, 0xaa, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x53, 0x68, 0x61, 0x72,
-	0x65, 0x64, 0x2e, 0x56, 0x31, 0xca, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x5c, 0x53,
-	0x68, 0x61, 0x72, 0x65, 0x64, 0x5c, 0x56, 0x31, 0xe2, 0x02, 0x1c, 0x54, 0x68, 0x65, 0x74, 0x61,
-	0x6e, 0x5c, 0x53, 0x68, 0x61, 0x72, 0x65, 0x64, 0x5c, 0x56, 0x31, 0x5c, 0x47, 0x50, 0x42, 0x4d,
-	0x65, 0x74, 0x61, 0x64, 0x61, 0x74, 0x61, 0xea, 0x02, 0x12, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e,
-	0x3a, 0x3a, 0x53, 0x68, 0x61, 0x72, 0x65, 0x64, 0x3a, 0x3a, 0x56, 0x31, 0x62, 0x06, 0x70, 0x72,
-	0x6f, 0x74, 0x6f, 0x33,
+	0x6b, 0x61, 0x67, 0x65, 0x22, 0x00, 0x30, 0x01, 0x12, 0x62, 0x0a, 0x12, 0x52, 0x65, 0x67, 0x69,
+	0x73, 0x74, 0x65, 0x72, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x46, 0x6f, 0x75, 0x6e, 0x64, 0x12, 0x23,
+	0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76,
+	0x31, 0x2e, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x61, 0x63, 0x6b,
+	0x61, 0x67, 0x65, 0x1a, 0x23, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61,
+	0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74,
+	0x6f, 0x50, 0x61, 0x63, 0x6b, 0x61, 0x67, 0x65, 0x22, 0x00, 0x30, 0x01, 0x12, 0x5f, 0x0a, 0x11,
+	0x43, 0x61, 0x6e, 0x63, 0x65, 0x6c, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x4d, 0x61, 0x6b, 0x69, 0x6e,
+	0x67, 0x12, 0x23, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65,
+	0x64, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50,
+	0x61, 0x63, 0x6b, 0x61, 0x67, 0x65, 0x1a, 0x23, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e,
+	0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x50,
+	0x72, 0x6f, 0x74, 0x6f, 0x50, 0x61, 0x63, 0x6b, 0x61, 0x67, 0x65, 0x22, 0x00, 0x32, 0xd2, 0x01,
+	0x0a, 0x12, 0x4d, 0x61, 0x74, 0x63, 0x68, 0x48, 0x61, 0x6e, 0x64, 0x6c, 0x65, 0x53, 0x65, 0x72,
+	0x76, 0x69, 0x63, 0x65, 0x12, 0x5c, 0x0a, 0x0f, 0x48, 0x61, 0x6e, 0x64, 0x6c, 0x65, 0x50, 0x6c,
+	0x61, 0x79, 0x41, 0x67, 0x61, 0x69, 0x6e, 0x12, 0x26, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e,
+	0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x44, 0x61, 0x74, 0x61, 0x50,
+	0x6c, 0x61, 0x79, 0x41, 0x67, 0x61, 0x69, 0x6e, 0x53, 0x75, 0x63, 0x63, 0x65, 0x73, 0x73, 0x1a,
+	0x1f, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e,
+	0x76, 0x31, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
+	0x22, 0x00, 0x12, 0x5e, 0x0a, 0x12, 0x48, 0x61, 0x6e, 0x64, 0x6c, 0x65, 0x44, 0x65, 0x6c, 0x65,
+	0x74, 0x65, 0x54, 0x69, 0x63, 0x6b, 0x65, 0x74, 0x12, 0x25, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61,
+	0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x2e, 0x44, 0x65, 0x6c, 0x65,
+	0x74, 0x65, 0x54, 0x69, 0x63, 0x6b, 0x65, 0x74, 0x53, 0x75, 0x63, 0x63, 0x65, 0x73, 0x73, 0x1a,
+	0x1f, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e,
+	0x76, 0x31, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
+	0x22, 0x00, 0x42, 0xb9, 0x01, 0x0a, 0x14, 0x63, 0x6f, 0x6d, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61,
+	0x6e, 0x2e, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x76, 0x31, 0x42, 0x0a, 0x4d, 0x61, 0x74,
+	0x63, 0x68, 0x50, 0x72, 0x6f, 0x74, 0x6f, 0x50, 0x01, 0x5a, 0x33, 0x74, 0x68, 0x65, 0x74, 0x61,
+	0x6e, 0x2d, 0x62, 0x75, 0x66, 0x2f, 0x67, 0x65, 0x6e, 0x2f, 0x67, 0x6f, 0x2f, 0x74, 0x68, 0x65,
+	0x74, 0x61, 0x6e, 0x2f, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2f, 0x76, 0x31, 0x3b, 0x74, 0x68,
+	0x65, 0x74, 0x61, 0x6e, 0x5f, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x5f, 0x76, 0x31, 0xa2, 0x02,
+	0x03, 0x54, 0x53, 0x58, 0xaa, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x53, 0x68,
+	0x61, 0x72, 0x65, 0x64, 0x2e, 0x56, 0x31, 0xca, 0x02, 0x10, 0x54, 0x68, 0x65, 0x74, 0x61, 0x6e,
+	0x5c, 0x53, 0x68, 0x61, 0x72, 0x65, 0x64, 0x5c, 0x56, 0x31, 0xe2, 0x02, 0x1c, 0x54, 0x68, 0x65,
+	0x74, 0x61, 0x6e, 0x5c, 0x53, 0x68, 0x61, 0x72, 0x65, 0x64, 0x5c, 0x56, 0x31, 0x5c, 0x47, 0x50,
+	0x42, 0x4d, 0x65, 0x74, 0x61, 0x64, 0x61, 0x74, 0x61, 0xea, 0x02, 0x12, 0x54, 0x68, 0x65, 0x74,
+	0x61, 0x6e, 0x3a, 0x3a, 0x53, 0x68, 0x61, 0x72, 0x65, 0x64, 0x3a, 0x3a, 0x56, 0x31, 0x62, 0x06,
+	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -3415,100 +3598,107 @@ func file_thetan_shared_v1_match_proto_rawDescGZIP() []byte {
 	return file_thetan_shared_v1_match_proto_rawDescData
 }
 
-var file_thetan_shared_v1_match_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
-var file_thetan_shared_v1_match_proto_msgTypes = make([]protoimpl.MessageInfo, 34)
+var file_thetan_shared_v1_match_proto_enumTypes = make([]protoimpl.EnumInfo, 3)
+var file_thetan_shared_v1_match_proto_msgTypes = make([]protoimpl.MessageInfo, 37)
 var file_thetan_shared_v1_match_proto_goTypes = []interface{}{
 	(MatchErrorCode)(0),                 // 0: thetan.shared.v1.MatchErrorCode
-	(MapDifficultyEnum)(0),              // 1: thetan.shared.v1.MapDifficultyEnum
-	(*TicketData)(nil),                  // 2: thetan.shared.v1.TicketData
-	(*TournamentInfo)(nil),              // 3: thetan.shared.v1.TournamentInfo
-	(*MatchMakingRequestProto)(nil),     // 4: thetan.shared.v1.MatchMakingRequestProto
-	(*MatchMakingDataPlayAgain)(nil),    // 5: thetan.shared.v1.MatchMakingDataPlayAgain
-	(*DataPlayAgainSuccess)(nil),        // 6: thetan.shared.v1.DataPlayAgainSuccess
-	(*MatchFoundResponseProto)(nil),     // 7: thetan.shared.v1.MatchFoundResponseProto
-	(*PlayerStat)(nil),                  // 8: thetan.shared.v1.PlayerStat
-	(*MapDataProto)(nil),                // 9: thetan.shared.v1.MapDataProto
-	(*MatchDataBattleLogProto)(nil),     // 10: thetan.shared.v1.MatchDataBattleLogProto
-	(*MatchStartRequestProto)(nil),      // 11: thetan.shared.v1.MatchStartRequestProto
-	(*MatchEndRequestProto)(nil),        // 12: thetan.shared.v1.MatchEndRequestProto
-	(*PlayerInfoEndMatchProto)(nil),     // 13: thetan.shared.v1.PlayerInfoEndMatchProto
-	(*MatchDataResponseProto)(nil),      // 14: thetan.shared.v1.MatchDataResponseProto
-	(*MatchDataReconnect)(nil),          // 15: thetan.shared.v1.MatchDataReconnect
-	(*PlayerInfoMatchProto)(nil),        // 16: thetan.shared.v1.PlayerInfoMatchProto
-	(*CosmeticUsingProto)(nil),          // 17: thetan.shared.v1.CosmeticUsingProto
-	(*DeleteTicketSuccess)(nil),         // 18: thetan.shared.v1.DeleteTicketSuccess
-	(*MatchProtoPackage)(nil),           // 19: thetan.shared.v1.MatchProtoPackage
-	(*TicketDataCache)(nil),             // 20: thetan.shared.v1.TicketDataCache
-	(*TicketCacheWSOnly)(nil),           // 21: thetan.shared.v1.TicketCacheWSOnly
-	(*ListErrorPlayer)(nil),             // 22: thetan.shared.v1.ListErrorPlayer
-	(*MatchProtoVersionPackage)(nil),    // 23: thetan.shared.v1.MatchProtoVersionPackage
-	(*CancelMatchRequest)(nil),          // 24: thetan.shared.v1.CancelMatchRequest
-	(*MatchExtension)(nil),              // 25: thetan.shared.v1.MatchExtension
-	(*EmptyResponse)(nil),               // 26: thetan.shared.v1.EmptyResponse
-	(*BotsResponse)(nil),                // 27: thetan.shared.v1.BotsResponse
-	(*GetBotsRequest)(nil),              // 28: thetan.shared.v1.GetBotsRequest
-	(*CosmeticUsingProtoV2)(nil),        // 29: thetan.shared.v1.CosmeticUsingProtoV2
-	(*CreateMatchOnboardRequest)(nil),   // 30: thetan.shared.v1.CreateMatchOnboardRequest
-	(*RoundStat)(nil),                   // 31: thetan.shared.v1.RoundStat
-	nil,                                 // 32: thetan.shared.v1.PlayerInfoMatchProto.RoundPlayedEntry
-	(*ListErrorPlayer_ErrorPlayer)(nil), // 33: thetan.shared.v1.ListErrorPlayer.ErrorPlayer
-	nil,                                 // 34: thetan.shared.v1.CosmeticUsingProtoV2.CosmeticInUsedEntry
-	nil,                                 // 35: thetan.shared.v1.CosmeticUsingProtoV2.CustomizedEntry
-	(GameMode)(0),                       // 36: thetan.shared.v1.GameMode
-	(InGameMode)(0),                     // 37: thetan.shared.v1.InGameMode
-	(*Customized)(nil),                  // 38: thetan.shared.v1.Customized
+	(SkillTypeEnum)(0),                  // 1: thetan.shared.v1.SkillTypeEnum
+	(MapDifficultyEnum)(0),              // 2: thetan.shared.v1.MapDifficultyEnum
+	(*TicketData)(nil),                  // 3: thetan.shared.v1.TicketData
+	(*TournamentInfo)(nil),              // 4: thetan.shared.v1.TournamentInfo
+	(*MatchMakingRequestProto)(nil),     // 5: thetan.shared.v1.MatchMakingRequestProto
+	(*MatchMakingDataPlayAgain)(nil),    // 6: thetan.shared.v1.MatchMakingDataPlayAgain
+	(*DataPlayAgainSuccess)(nil),        // 7: thetan.shared.v1.DataPlayAgainSuccess
+	(*MatchFoundResponseProto)(nil),     // 8: thetan.shared.v1.MatchFoundResponseProto
+	(*MapSkills)(nil),                   // 9: thetan.shared.v1.MapSkills
+	(*SkillInfo)(nil),                   // 10: thetan.shared.v1.SkillInfo
+	(*PlayerStat)(nil),                  // 11: thetan.shared.v1.PlayerStat
+	(*MapDataProto)(nil),                // 12: thetan.shared.v1.MapDataProto
+	(*MatchDataBattleLogProto)(nil),     // 13: thetan.shared.v1.MatchDataBattleLogProto
+	(*MatchStartRequestProto)(nil),      // 14: thetan.shared.v1.MatchStartRequestProto
+	(*MatchEndRequestProto)(nil),        // 15: thetan.shared.v1.MatchEndRequestProto
+	(*PlayerInfoEndMatchProto)(nil),     // 16: thetan.shared.v1.PlayerInfoEndMatchProto
+	(*MatchDataResponseProto)(nil),      // 17: thetan.shared.v1.MatchDataResponseProto
+	(*MatchDataReconnect)(nil),          // 18: thetan.shared.v1.MatchDataReconnect
+	(*PlayerInfoMatchProto)(nil),        // 19: thetan.shared.v1.PlayerInfoMatchProto
+	(*CosmeticUsingProto)(nil),          // 20: thetan.shared.v1.CosmeticUsingProto
+	(*DeleteTicketSuccess)(nil),         // 21: thetan.shared.v1.DeleteTicketSuccess
+	(*MatchProtoPackage)(nil),           // 22: thetan.shared.v1.MatchProtoPackage
+	(*TicketDataCache)(nil),             // 23: thetan.shared.v1.TicketDataCache
+	(*TicketCacheWSOnly)(nil),           // 24: thetan.shared.v1.TicketCacheWSOnly
+	(*ListErrorPlayer)(nil),             // 25: thetan.shared.v1.ListErrorPlayer
+	(*MatchProtoVersionPackage)(nil),    // 26: thetan.shared.v1.MatchProtoVersionPackage
+	(*CancelMatchRequest)(nil),          // 27: thetan.shared.v1.CancelMatchRequest
+	(*MatchExtension)(nil),              // 28: thetan.shared.v1.MatchExtension
+	(*EmptyResponse)(nil),               // 29: thetan.shared.v1.EmptyResponse
+	(*BotsResponse)(nil),                // 30: thetan.shared.v1.BotsResponse
+	(*GetBotsRequest)(nil),              // 31: thetan.shared.v1.GetBotsRequest
+	(*CosmeticUsingProtoV2)(nil),        // 32: thetan.shared.v1.CosmeticUsingProtoV2
+	(*CreateMatchOnboardRequest)(nil),   // 33: thetan.shared.v1.CreateMatchOnboardRequest
+	(*RoundStat)(nil),                   // 34: thetan.shared.v1.RoundStat
+	nil,                                 // 35: thetan.shared.v1.MapDataProto.MapSkillsEntry
+	nil,                                 // 36: thetan.shared.v1.PlayerInfoMatchProto.RoundPlayedEntry
+	(*ListErrorPlayer_ErrorPlayer)(nil), // 37: thetan.shared.v1.ListErrorPlayer.ErrorPlayer
+	nil,                                 // 38: thetan.shared.v1.CosmeticUsingProtoV2.CosmeticInUsedEntry
+	nil,                                 // 39: thetan.shared.v1.CosmeticUsingProtoV2.CustomizedEntry
+	(GameMode)(0),                       // 40: thetan.shared.v1.GameMode
+	(InGameMode)(0),                     // 41: thetan.shared.v1.InGameMode
+	(*Customized)(nil),                  // 42: thetan.shared.v1.Customized
 }
 var file_thetan_shared_v1_match_proto_depIdxs = []int32{
-	36, // 0: thetan.shared.v1.TicketData.gameMode:type_name -> thetan.shared.v1.GameMode
-	37, // 1: thetan.shared.v1.TicketData.inGameMode:type_name -> thetan.shared.v1.InGameMode
-	16, // 2: thetan.shared.v1.TicketData.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
-	3,  // 3: thetan.shared.v1.TicketData.tournamentInfo:type_name -> thetan.shared.v1.TournamentInfo
-	9,  // 4: thetan.shared.v1.TournamentInfo.maps:type_name -> thetan.shared.v1.MapDataProto
-	36, // 5: thetan.shared.v1.MatchMakingRequestProto.gameMode:type_name -> thetan.shared.v1.GameMode
-	37, // 6: thetan.shared.v1.MatchMakingRequestProto.inGameMode:type_name -> thetan.shared.v1.InGameMode
-	16, // 7: thetan.shared.v1.MatchMakingRequestProto.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
-	16, // 8: thetan.shared.v1.MatchMakingDataPlayAgain.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
-	37, // 9: thetan.shared.v1.DataPlayAgainSuccess.inGameMode:type_name -> thetan.shared.v1.InGameMode
-	16, // 10: thetan.shared.v1.MatchFoundResponseProto.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
-	36, // 11: thetan.shared.v1.MatchFoundResponseProto.gameMode:type_name -> thetan.shared.v1.GameMode
-	37, // 12: thetan.shared.v1.MatchFoundResponseProto.inGameMode:type_name -> thetan.shared.v1.InGameMode
-	9,  // 13: thetan.shared.v1.MatchFoundResponseProto.mapIds:type_name -> thetan.shared.v1.MapDataProto
-	8,  // 14: thetan.shared.v1.MatchFoundResponseProto.playerStat:type_name -> thetan.shared.v1.PlayerStat
-	1,  // 15: thetan.shared.v1.MapDataProto.mapDifficulty:type_name -> thetan.shared.v1.MapDifficultyEnum
-	13, // 16: thetan.shared.v1.MatchDataBattleLogProto.players:type_name -> thetan.shared.v1.PlayerInfoEndMatchProto
-	13, // 17: thetan.shared.v1.MatchEndRequestProto.players:type_name -> thetan.shared.v1.PlayerInfoEndMatchProto
-	10, // 18: thetan.shared.v1.MatchDataResponseProto.battleLog:type_name -> thetan.shared.v1.MatchDataBattleLogProto
-	15, // 19: thetan.shared.v1.MatchDataResponseProto.dataReconnect:type_name -> thetan.shared.v1.MatchDataReconnect
-	36, // 20: thetan.shared.v1.MatchDataResponseProto.gameMode:type_name -> thetan.shared.v1.GameMode
-	37, // 21: thetan.shared.v1.MatchDataResponseProto.inGameMode:type_name -> thetan.shared.v1.InGameMode
-	17, // 22: thetan.shared.v1.PlayerInfoMatchProto.cosmeticUsing:type_name -> thetan.shared.v1.CosmeticUsingProto
-	29, // 23: thetan.shared.v1.PlayerInfoMatchProto.cosmeticUsingV2:type_name -> thetan.shared.v1.CosmeticUsingProtoV2
-	32, // 24: thetan.shared.v1.PlayerInfoMatchProto.roundPlayed:type_name -> thetan.shared.v1.PlayerInfoMatchProto.RoundPlayedEntry
-	38, // 25: thetan.shared.v1.PlayerInfoMatchProto.customized:type_name -> thetan.shared.v1.Customized
-	22, // 26: thetan.shared.v1.MatchProtoPackage.listErrorPlayer:type_name -> thetan.shared.v1.ListErrorPlayer
-	37, // 27: thetan.shared.v1.TicketDataCache.inGameMode:type_name -> thetan.shared.v1.InGameMode
-	33, // 28: thetan.shared.v1.ListErrorPlayer.errorPlayers:type_name -> thetan.shared.v1.ListErrorPlayer.ErrorPlayer
-	16, // 29: thetan.shared.v1.BotsResponse.bots:type_name -> thetan.shared.v1.PlayerInfoMatchProto
-	34, // 30: thetan.shared.v1.CosmeticUsingProtoV2.cosmeticInUsed:type_name -> thetan.shared.v1.CosmeticUsingProtoV2.CosmeticInUsedEntry
-	35, // 31: thetan.shared.v1.CosmeticUsingProtoV2.customized:type_name -> thetan.shared.v1.CosmeticUsingProtoV2.CustomizedEntry
-	31, // 32: thetan.shared.v1.CreateMatchOnboardRequest.lastRound:type_name -> thetan.shared.v1.RoundStat
-	0,  // 33: thetan.shared.v1.ListErrorPlayer.ErrorPlayer.matchErrorCode:type_name -> thetan.shared.v1.MatchErrorCode
-	38, // 34: thetan.shared.v1.CosmeticUsingProtoV2.CustomizedEntry.value:type_name -> thetan.shared.v1.Customized
-	23, // 35: thetan.shared.v1.MatchService.CreateMatchWithVersion:input_type -> thetan.shared.v1.MatchProtoVersionPackage
-	19, // 36: thetan.shared.v1.MatchService.RegisterMatchFound:input_type -> thetan.shared.v1.MatchProtoPackage
-	19, // 37: thetan.shared.v1.MatchService.CancelMatchMaking:input_type -> thetan.shared.v1.MatchProtoPackage
-	6,  // 38: thetan.shared.v1.MatchHandleService.HandlePlayAgain:input_type -> thetan.shared.v1.DataPlayAgainSuccess
-	18, // 39: thetan.shared.v1.MatchHandleService.HandleDeleteTicket:input_type -> thetan.shared.v1.DeleteTicketSuccess
-	19, // 40: thetan.shared.v1.MatchService.CreateMatchWithVersion:output_type -> thetan.shared.v1.MatchProtoPackage
-	19, // 41: thetan.shared.v1.MatchService.RegisterMatchFound:output_type -> thetan.shared.v1.MatchProtoPackage
-	19, // 42: thetan.shared.v1.MatchService.CancelMatchMaking:output_type -> thetan.shared.v1.MatchProtoPackage
-	26, // 43: thetan.shared.v1.MatchHandleService.HandlePlayAgain:output_type -> thetan.shared.v1.EmptyResponse
-	26, // 44: thetan.shared.v1.MatchHandleService.HandleDeleteTicket:output_type -> thetan.shared.v1.EmptyResponse
-	40, // [40:45] is the sub-list for method output_type
-	35, // [35:40] is the sub-list for method input_type
-	35, // [35:35] is the sub-list for extension type_name
-	35, // [35:35] is the sub-list for extension extendee
-	0,  // [0:35] is the sub-list for field type_name
+	40, // 0: thetan.shared.v1.TicketData.gameMode:type_name -> thetan.shared.v1.GameMode
+	41, // 1: thetan.shared.v1.TicketData.inGameMode:type_name -> thetan.shared.v1.InGameMode
+	19, // 2: thetan.shared.v1.TicketData.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
+	4,  // 3: thetan.shared.v1.TicketData.tournamentInfo:type_name -> thetan.shared.v1.TournamentInfo
+	12, // 4: thetan.shared.v1.TournamentInfo.maps:type_name -> thetan.shared.v1.MapDataProto
+	40, // 5: thetan.shared.v1.MatchMakingRequestProto.gameMode:type_name -> thetan.shared.v1.GameMode
+	41, // 6: thetan.shared.v1.MatchMakingRequestProto.inGameMode:type_name -> thetan.shared.v1.InGameMode
+	19, // 7: thetan.shared.v1.MatchMakingRequestProto.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
+	19, // 8: thetan.shared.v1.MatchMakingDataPlayAgain.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
+	41, // 9: thetan.shared.v1.DataPlayAgainSuccess.inGameMode:type_name -> thetan.shared.v1.InGameMode
+	19, // 10: thetan.shared.v1.MatchFoundResponseProto.players:type_name -> thetan.shared.v1.PlayerInfoMatchProto
+	40, // 11: thetan.shared.v1.MatchFoundResponseProto.gameMode:type_name -> thetan.shared.v1.GameMode
+	41, // 12: thetan.shared.v1.MatchFoundResponseProto.inGameMode:type_name -> thetan.shared.v1.InGameMode
+	12, // 13: thetan.shared.v1.MatchFoundResponseProto.mapIds:type_name -> thetan.shared.v1.MapDataProto
+	11, // 14: thetan.shared.v1.MatchFoundResponseProto.playerStat:type_name -> thetan.shared.v1.PlayerStat
+	10, // 15: thetan.shared.v1.MapSkills.skills:type_name -> thetan.shared.v1.SkillInfo
+	2,  // 16: thetan.shared.v1.MapDataProto.mapDifficulty:type_name -> thetan.shared.v1.MapDifficultyEnum
+	35, // 17: thetan.shared.v1.MapDataProto.mapSkills:type_name -> thetan.shared.v1.MapDataProto.MapSkillsEntry
+	16, // 18: thetan.shared.v1.MatchDataBattleLogProto.players:type_name -> thetan.shared.v1.PlayerInfoEndMatchProto
+	16, // 19: thetan.shared.v1.MatchEndRequestProto.players:type_name -> thetan.shared.v1.PlayerInfoEndMatchProto
+	13, // 20: thetan.shared.v1.MatchDataResponseProto.battleLog:type_name -> thetan.shared.v1.MatchDataBattleLogProto
+	18, // 21: thetan.shared.v1.MatchDataResponseProto.dataReconnect:type_name -> thetan.shared.v1.MatchDataReconnect
+	40, // 22: thetan.shared.v1.MatchDataResponseProto.gameMode:type_name -> thetan.shared.v1.GameMode
+	41, // 23: thetan.shared.v1.MatchDataResponseProto.inGameMode:type_name -> thetan.shared.v1.InGameMode
+	20, // 24: thetan.shared.v1.PlayerInfoMatchProto.cosmeticUsing:type_name -> thetan.shared.v1.CosmeticUsingProto
+	32, // 25: thetan.shared.v1.PlayerInfoMatchProto.cosmeticUsingV2:type_name -> thetan.shared.v1.CosmeticUsingProtoV2
+	36, // 26: thetan.shared.v1.PlayerInfoMatchProto.roundPlayed:type_name -> thetan.shared.v1.PlayerInfoMatchProto.RoundPlayedEntry
+	42, // 27: thetan.shared.v1.PlayerInfoMatchProto.customized:type_name -> thetan.shared.v1.Customized
+	25, // 28: thetan.shared.v1.MatchProtoPackage.listErrorPlayer:type_name -> thetan.shared.v1.ListErrorPlayer
+	41, // 29: thetan.shared.v1.TicketDataCache.inGameMode:type_name -> thetan.shared.v1.InGameMode
+	37, // 30: thetan.shared.v1.ListErrorPlayer.errorPlayers:type_name -> thetan.shared.v1.ListErrorPlayer.ErrorPlayer
+	19, // 31: thetan.shared.v1.BotsResponse.bots:type_name -> thetan.shared.v1.PlayerInfoMatchProto
+	38, // 32: thetan.shared.v1.CosmeticUsingProtoV2.cosmeticInUsed:type_name -> thetan.shared.v1.CosmeticUsingProtoV2.CosmeticInUsedEntry
+	39, // 33: thetan.shared.v1.CosmeticUsingProtoV2.customized:type_name -> thetan.shared.v1.CosmeticUsingProtoV2.CustomizedEntry
+	34, // 34: thetan.shared.v1.CreateMatchOnboardRequest.lastRound:type_name -> thetan.shared.v1.RoundStat
+	9,  // 35: thetan.shared.v1.MapDataProto.MapSkillsEntry.value:type_name -> thetan.shared.v1.MapSkills
+	0,  // 36: thetan.shared.v1.ListErrorPlayer.ErrorPlayer.matchErrorCode:type_name -> thetan.shared.v1.MatchErrorCode
+	42, // 37: thetan.shared.v1.CosmeticUsingProtoV2.CustomizedEntry.value:type_name -> thetan.shared.v1.Customized
+	26, // 38: thetan.shared.v1.MatchService.CreateMatchWithVersion:input_type -> thetan.shared.v1.MatchProtoVersionPackage
+	22, // 39: thetan.shared.v1.MatchService.RegisterMatchFound:input_type -> thetan.shared.v1.MatchProtoPackage
+	22, // 40: thetan.shared.v1.MatchService.CancelMatchMaking:input_type -> thetan.shared.v1.MatchProtoPackage
+	7,  // 41: thetan.shared.v1.MatchHandleService.HandlePlayAgain:input_type -> thetan.shared.v1.DataPlayAgainSuccess
+	21, // 42: thetan.shared.v1.MatchHandleService.HandleDeleteTicket:input_type -> thetan.shared.v1.DeleteTicketSuccess
+	22, // 43: thetan.shared.v1.MatchService.CreateMatchWithVersion:output_type -> thetan.shared.v1.MatchProtoPackage
+	22, // 44: thetan.shared.v1.MatchService.RegisterMatchFound:output_type -> thetan.shared.v1.MatchProtoPackage
+	22, // 45: thetan.shared.v1.MatchService.CancelMatchMaking:output_type -> thetan.shared.v1.MatchProtoPackage
+	29, // 46: thetan.shared.v1.MatchHandleService.HandlePlayAgain:output_type -> thetan.shared.v1.EmptyResponse
+	29, // 47: thetan.shared.v1.MatchHandleService.HandleDeleteTicket:output_type -> thetan.shared.v1.EmptyResponse
+	43, // [43:48] is the sub-list for method output_type
+	38, // [38:43] is the sub-list for method input_type
+	38, // [38:38] is the sub-list for extension type_name
+	38, // [38:38] is the sub-list for extension extendee
+	0,  // [0:38] is the sub-list for field type_name
 }
 
 func init() { file_thetan_shared_v1_match_proto_init() }
@@ -3592,7 +3782,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*PlayerStat); i {
+			switch v := v.(*MapSkills); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3604,7 +3794,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MapDataProto); i {
+			switch v := v.(*SkillInfo); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3616,7 +3806,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MatchDataBattleLogProto); i {
+			switch v := v.(*PlayerStat); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3628,7 +3818,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MatchStartRequestProto); i {
+			switch v := v.(*MapDataProto); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3640,7 +3830,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MatchEndRequestProto); i {
+			switch v := v.(*MatchDataBattleLogProto); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3652,7 +3842,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*PlayerInfoEndMatchProto); i {
+			switch v := v.(*MatchStartRequestProto); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3664,7 +3854,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MatchDataResponseProto); i {
+			switch v := v.(*MatchEndRequestProto); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3676,7 +3866,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MatchDataReconnect); i {
+			switch v := v.(*PlayerInfoEndMatchProto); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3688,7 +3878,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*PlayerInfoMatchProto); i {
+			switch v := v.(*MatchDataResponseProto); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3700,7 +3890,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*CosmeticUsingProto); i {
+			switch v := v.(*MatchDataReconnect); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3712,7 +3902,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*DeleteTicketSuccess); i {
+			switch v := v.(*PlayerInfoMatchProto); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3724,7 +3914,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MatchProtoPackage); i {
+			switch v := v.(*CosmeticUsingProto); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3736,7 +3926,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*TicketDataCache); i {
+			switch v := v.(*DeleteTicketSuccess); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3748,7 +3938,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*TicketCacheWSOnly); i {
+			switch v := v.(*MatchProtoPackage); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3760,7 +3950,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*ListErrorPlayer); i {
+			switch v := v.(*TicketDataCache); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3772,7 +3962,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MatchProtoVersionPackage); i {
+			switch v := v.(*TicketCacheWSOnly); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3784,7 +3974,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*CancelMatchRequest); i {
+			switch v := v.(*ListErrorPlayer); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3796,7 +3986,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MatchExtension); i {
+			switch v := v.(*MatchProtoVersionPackage); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3808,7 +3998,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*EmptyResponse); i {
+			switch v := v.(*CancelMatchRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3820,7 +4010,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*BotsResponse); i {
+			switch v := v.(*MatchExtension); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3832,7 +4022,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetBotsRequest); i {
+			switch v := v.(*EmptyResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3844,7 +4034,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*CosmeticUsingProtoV2); i {
+			switch v := v.(*BotsResponse); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3856,7 +4046,7 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*CreateMatchOnboardRequest); i {
+			switch v := v.(*GetBotsRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3868,7 +4058,19 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*RoundStat); i {
+			switch v := v.(*CosmeticUsingProtoV2); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_shared_v1_match_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*CreateMatchOnboardRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -3880,6 +4082,18 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 		file_thetan_shared_v1_match_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*RoundStat); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_shared_v1_match_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ListErrorPlayer_ErrorPlayer); i {
 			case 0:
 				return &v.state
@@ -3892,28 +4106,28 @@ func file_thetan_shared_v1_match_proto_init() {
 			}
 		}
 	}
-	file_thetan_shared_v1_match_proto_msgTypes[12].OneofWrappers = []interface{}{
+	file_thetan_shared_v1_match_proto_msgTypes[14].OneofWrappers = []interface{}{
 		(*MatchDataResponseProto_BattleLog)(nil),
 		(*MatchDataResponseProto_DataReconnect)(nil),
 		(*MatchDataResponseProto_MatchNotStart)(nil),
 	}
-	file_thetan_shared_v1_match_proto_msgTypes[17].OneofWrappers = []interface{}{
+	file_thetan_shared_v1_match_proto_msgTypes[19].OneofWrappers = []interface{}{
 		(*MatchProtoPackage_Data)(nil),
 		(*MatchProtoPackage_ListErrorPlayer)(nil),
 		(*MatchProtoPackage_ErrorCode)(nil),
 	}
-	file_thetan_shared_v1_match_proto_msgTypes[21].OneofWrappers = []interface{}{
+	file_thetan_shared_v1_match_proto_msgTypes[23].OneofWrappers = []interface{}{
 		(*MatchProtoVersionPackage_Data)(nil),
 		(*MatchProtoVersionPackage_ErrorCode)(nil),
 	}
-	file_thetan_shared_v1_match_proto_msgTypes[28].OneofWrappers = []interface{}{}
+	file_thetan_shared_v1_match_proto_msgTypes[30].OneofWrappers = []interface{}{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_thetan_shared_v1_match_proto_rawDesc,
-			NumEnums:      2,
-			NumMessages:   34,
+			NumEnums:      3,
+			NumMessages:   37,
 			NumExtensions: 0,
 			NumServices:   2,
 		},
