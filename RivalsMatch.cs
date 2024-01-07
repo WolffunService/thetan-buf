@@ -30,33 +30,33 @@ namespace Thetan.Rivals.V1 {
             "YXJlZC92MS9nYW1lX2luZm8ucHJvdG8ibAoYUml2YWxDYW5jZWxUaWNrZXRS",
             "ZXF1ZXN0EhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBIYCgdwYXJ0eUlE",
             "GAIgASgJUgdwYXJ0eUlEEhoKCHRpY2tldElEGAMgASgJUgh0aWNrZXRJRCIb",
-            "ChlSaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlIq4CCh1DcmVhdGVNYXRjaE5v",
+            "ChlSaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlIpYCCh1DcmVhdGVNYXRjaE5v",
             "bk1hdGNoaW5nUmVxdWVzdBI8CgppbkdhbWVNb2RlGAEgASgOMhwudGhldGFu",
             "LnNoYXJlZC52MS5JbkdhbWVNb2RlUgppbkdhbWVNb2RlEkAKB3BsYXllcnMY",
             "AiADKAsyJi50aGV0YW4uc2hhcmVkLnYxLlBsYXllckluZm9NYXRjaFByb3Rv",
             "UgdwbGF5ZXJzEhgKB3JlZ2lvbnMYAyADKAVSB3JlZ2lvbnMSKgoQZmluZE1h",
             "dGNoVmVyc2lvbhgEIAEoBVIQZmluZE1hdGNoVmVyc2lvbhIvCgVhcmVuYRgF",
-            "IAEoDjIZLnRoZXRhbi5zaGFyZWQudjEuVFJBcmVuYVIFYXJlbmESFgoGbW9k",
-            "ZUlkGAYgASgJUgZtb2RlSWQiIAoeQ3JlYXRlTWF0Y2hOb25NYXRjaGluZ1Jl",
-            "c3BvbnNlMu8CChlSaXZhbE1hdGNoRGlyZWN0b3JTZXJ2aWNlEmkKDENhbmNl",
-            "bFRpY2tldBIqLnRoZXRhbi5yaXZhbHMudjEuUml2YWxDYW5jZWxUaWNrZXRS",
-            "ZXF1ZXN0GisudGhldGFuLnJpdmFscy52MS5SaXZhbENhbmNlbFRpY2tldFJl",
-            "c3BvbnNlIgASaAoSQ3JlYXRlTWF0Y2hPbmJvYXJkEiUudGhldGFuLnJpdmFs",
-            "cy52MS5HZXRNYXRjaEluZm9SZXF1ZXN0GikudGhldGFuLnNoYXJlZC52MS5N",
-            "YXRjaEZvdW5kUmVzcG9uc2VQcm90byIAEn0KFkNyZWF0ZU1hdGNoTm9uTWF0",
-            "Y2hpbmcSLy50aGV0YW4ucml2YWxzLnYxLkNyZWF0ZU1hdGNoTm9uTWF0Y2hp",
-            "bmdSZXF1ZXN0GjAudGhldGFuLnJpdmFscy52MS5DcmVhdGVNYXRjaE5vbk1h",
-            "dGNoaW5nUmVzcG9uc2UiAEK/AQoUY29tLnRoZXRhbi5yaXZhbHMudjFCEFJp",
-            "dmFsc01hdGNoUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3Jp",
-            "dmFscy92MTt0aGV0YW5fcml2YWxzX3YxogIDVFJYqgIQVGhldGFuLlJpdmFs",
-            "cy5WMcoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5cUml2YWxzXFYxXEdQ",
-            "Qk1ldGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZwcm90bzM="));
+            "IAEoDjIZLnRoZXRhbi5zaGFyZWQudjEuVFJBcmVuYVIFYXJlbmEiIAoeQ3Jl",
+            "YXRlTWF0Y2hOb25NYXRjaGluZ1Jlc3BvbnNlMu8CChlSaXZhbE1hdGNoRGly",
+            "ZWN0b3JTZXJ2aWNlEmkKDENhbmNlbFRpY2tldBIqLnRoZXRhbi5yaXZhbHMu",
+            "djEuUml2YWxDYW5jZWxUaWNrZXRSZXF1ZXN0GisudGhldGFuLnJpdmFscy52",
+            "MS5SaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlIgASaAoSQ3JlYXRlTWF0Y2hP",
+            "bmJvYXJkEiUudGhldGFuLnJpdmFscy52MS5HZXRNYXRjaEluZm9SZXF1ZXN0",
+            "GikudGhldGFuLnNoYXJlZC52MS5NYXRjaEZvdW5kUmVzcG9uc2VQcm90byIA",
+            "En0KFkNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmcSLy50aGV0YW4ucml2YWxzLnYx",
+            "LkNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXF1ZXN0GjAudGhldGFuLnJpdmFs",
+            "cy52MS5DcmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVzcG9uc2UiAEK/AQoUY29t",
+            "LnRoZXRhbi5yaXZhbHMudjFCEFJpdmFsc01hdGNoUHJvdG9QAVozdGhldGFu",
+            "LWJ1Zi9nZW4vZ28vdGhldGFuL3JpdmFscy92MTt0aGV0YW5fcml2YWxzX3Yx",
+            "ogIDVFJYqgIQVGhldGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNcVjHi",
+            "AhxUaGV0YW5cUml2YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpSaXZh",
+            "bHM6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, global::Thetan.Shared.V1.MatchReflection.Descriptor, global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketRequest), global::Thetan.Rivals.V1.RivalCancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketResponse), global::Thetan.Rivals.V1.RivalCancelTicketResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest), global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest.Parser, new[]{ "InGameMode", "Players", "Regions", "FindMatchVersion", "Arena", "ModeId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest), global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest.Parser, new[]{ "InGameMode", "Players", "Regions", "FindMatchVersion", "Arena" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse), global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse.Parser, null, null, null, null, null)
           }));
     }
@@ -518,7 +518,6 @@ namespace Thetan.Rivals.V1 {
       regions_ = other.regions_.Clone();
       findMatchVersion_ = other.findMatchVersion_;
       arena_ = other.arena_;
-      modeId_ = other.modeId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -586,18 +585,6 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
-    /// <summary>Field number for the "modeId" field.</summary>
-    public const int ModeIdFieldNumber = 6;
-    private string modeId_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ModeId {
-      get { return modeId_; }
-      set {
-        modeId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -618,7 +605,6 @@ namespace Thetan.Rivals.V1 {
       if(!regions_.Equals(other.regions_)) return false;
       if (FindMatchVersion != other.FindMatchVersion) return false;
       if (Arena != other.Arena) return false;
-      if (ModeId != other.ModeId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -631,7 +617,6 @@ namespace Thetan.Rivals.V1 {
       hash ^= regions_.GetHashCode();
       if (FindMatchVersion != 0) hash ^= FindMatchVersion.GetHashCode();
       if (Arena != global::Thetan.Shared.V1.TRArena.None) hash ^= Arena.GetHashCode();
-      if (ModeId.Length != 0) hash ^= ModeId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -664,10 +649,6 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(40);
         output.WriteEnum((int) Arena);
       }
-      if (ModeId.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(ModeId);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -692,10 +673,6 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(40);
         output.WriteEnum((int) Arena);
       }
-      if (ModeId.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(ModeId);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -716,9 +693,6 @@ namespace Thetan.Rivals.V1 {
       }
       if (Arena != global::Thetan.Shared.V1.TRArena.None) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Arena);
-      }
-      if (ModeId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ModeId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -742,9 +716,6 @@ namespace Thetan.Rivals.V1 {
       }
       if (other.Arena != global::Thetan.Shared.V1.TRArena.None) {
         Arena = other.Arena;
-      }
-      if (other.ModeId.Length != 0) {
-        ModeId = other.ModeId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -782,10 +753,6 @@ namespace Thetan.Rivals.V1 {
             Arena = (global::Thetan.Shared.V1.TRArena) input.ReadEnum();
             break;
           }
-          case 50: {
-            ModeId = input.ReadString();
-            break;
-          }
         }
       }
     #endif
@@ -820,10 +787,6 @@ namespace Thetan.Rivals.V1 {
           }
           case 40: {
             Arena = (global::Thetan.Shared.V1.TRArena) input.ReadEnum();
-            break;
-          }
-          case 50: {
-            ModeId = input.ReadString();
             break;
           }
         }
