@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package thetan.world.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/world/v1;thetan_world_v1";
+option csharp_namespace = "Thetan.World.V1";
+
+import "google/protobuf/empty.proto";
+
+service ThetanWorldService {
+    rpc Test(google.protobuf.Empty) returns(google.protobuf.Empty);
+}
