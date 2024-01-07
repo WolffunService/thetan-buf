@@ -484,6 +484,7 @@ message TrackSessionResponse {
 message FindMatchInfoRequest {
   repeated string playersID = 1;
   thetan.shared.v1.InGameMode inGameMode = 2;
+  string modeID = 3;
 }
 
 message FindMatchInfoResponse {
