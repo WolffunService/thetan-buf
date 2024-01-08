@@ -24,7 +24,7 @@ const (
 	ThetanWorldAdapterService_IsValidItems_FullMethodName      = "/thetan.world.v1.ThetanWorldAdapterService/IsValidItems"
 	ThetanWorldAdapterService_SendItems_FullMethodName         = "/thetan.world.v1.ThetanWorldAdapterService/SendItems"
 	ThetanWorldAdapterService_CreateItem_FullMethodName        = "/thetan.world.v1.ThetanWorldAdapterService/CreateItem"
-	ThetanWorldAdapterService_UpdateOwner_FullMethodName       = "/thetan.world.v1.ThetanWorldAdapterService/UpdateOwner"
+	ThetanWorldAdapterService_GetItems_FullMethodName          = "/thetan.world.v1.ThetanWorldAdapterService/GetItems"
 )
 
 // ThetanWorldAdapterServiceClient is the client API for ThetanWorldAdapterService service.
@@ -35,7 +35,7 @@ type ThetanWorldAdapterServiceClient interface {
 	IsValidItems(ctx context.Context, in *IsValidItemsRequest, opts ...grpc.CallOption) (*CheckItemResponse, error)
 	SendItems(ctx context.Context, in *SendItemsRequest, opts ...grpc.CallOption) (*SendItemsResponse, error)
 	CreateItem(ctx context.Context, in *CreateItemRequest, opts ...grpc.CallOption) (*ItemResponse, error)
-	UpdateOwner(ctx context.Context, in *UpdateOwnerRequest, opts ...grpc.CallOption) (*ItemResponse, error)
+	GetItems(ctx context.Context, in *GetItemsRequest, opts ...grpc.CallOption) (*GetItemsResponse, error)
 }
 
 type thetanWorldAdapterServiceClient struct {
@@ -82,9 +82,9 @@ func (c *thetanWorldAdapterServiceClient) CreateItem(ctx context.Context, in *Cr
 	return out, nil
 }
 
-func (c *thetanWorldAdapterServiceClient) UpdateOwner(ctx context.Context, in *UpdateOwnerRequest, opts ...grpc.CallOption) (*ItemResponse, error) {
-	out := new(ItemResponse)
-	err := c.cc.Invoke(ctx, ThetanWorldAdapterService_UpdateOwner_FullMethodName, in, out, opts...)
+func (c *thetanWorldAdapterServiceClient) GetItems(ctx context.Context, in *GetItemsRequest, opts ...grpc.CallOption) (*GetItemsResponse, error) {
+	out := new(GetItemsResponse)
+	err := c.cc.Invoke(ctx, ThetanWorldAdapterService_GetItems_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -99,7 +99,7 @@ type ThetanWorldAdapterServiceServer interface {
 	IsValidItems(context.Context, *IsValidItemsRequest) (*CheckItemResponse, error)
 	SendItems(context.Context, *SendItemsRequest) (*SendItemsResponse, error)
 	CreateItem(context.Context, *CreateItemRequest) (*ItemResponse, error)
-	UpdateOwner(context.Context, *UpdateOwnerRequest) (*ItemResponse, error)
+	GetItems(context.Context, *GetItemsRequest) (*GetItemsResponse, error)
 	mustEmbedUnimplementedThetanWorldAdapterServiceServer()
 }
 
@@ -119,8 +119,8 @@ func (UnimplementedThetanWorldAdapterServiceServer) SendItems(context.Context, *
 func (UnimplementedThetanWorldAdapterServiceServer) CreateItem(context.Context, *CreateItemRequest) (*ItemResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateItem not implemented")
 }
-func (UnimplementedThetanWorldAdapterServiceServer) UpdateOwner(context.Context, *UpdateOwnerRequest) (*ItemResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method UpdateOwner not implemented")
+func (UnimplementedThetanWorldAdapterServiceServer) GetItems(context.Context, *GetItemsRequest) (*GetItemsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetItems not implemented")
 }
 func (UnimplementedThetanWorldAdapterServiceServer) mustEmbedUnimplementedThetanWorldAdapterServiceServer() {
 }
@@ -208,20 +208,20 @@ func _ThetanWorldAdapterService_CreateItem_Handler(srv interface{}, ctx context.
 	return interceptor(ctx, in, info, handler)
 }
 
-func _ThetanWorldAdapterService_UpdateOwner_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(UpdateOwnerRequest)
+func _ThetanWorldAdapterService_GetItems_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetItemsRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ThetanWorldAdapterServiceServer).UpdateOwner(ctx, in)
+		return srv.(ThetanWorldAdapterServiceServer).GetItems(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: ThetanWorldAdapterService_UpdateOwner_FullMethodName,
+		FullMethod: ThetanWorldAdapterService_GetItems_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanWorldAdapterServiceServer).UpdateOwner(ctx, req.(*UpdateOwnerRequest))
+		return srv.(ThetanWorldAdapterServiceServer).GetItems(ctx, req.(*GetItemsRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -250,8 +250,8 @@ var ThetanWorldAdapterService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _ThetanWorldAdapterService_CreateItem_Handler,
 		},
 		{
-			MethodName: "UpdateOwner",
-			Handler:    _ThetanWorldAdapterService_UpdateOwner_Handler,
+			MethodName: "GetItems",
+			Handler:    _ThetanWorldAdapterService_GetItems_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

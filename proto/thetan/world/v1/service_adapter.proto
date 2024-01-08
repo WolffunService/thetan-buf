@@ -15,7 +15,7 @@ service ThetanWorldAdapterService {
     rpc SendItems(SendItemsRequest) returns (SendItemsResponse);
 
     rpc CreateItem(CreateItemRequest) returns (ItemResponse);
-    rpc UpdateOwner(UpdateOwnerRequest) returns (ItemResponse);
+    rpc GetItems(GetItemsRequest) returns(GetItemsResponse);
 }
 
 message ItemResp {
@@ -67,6 +67,20 @@ message ItemResponse {
 message UpdateOwnerRequest {
     string itemID = 1;
     int32 kind = 2;
+    int32 gameID = 3;
 
-    string userID = 3;
+    string userID = 4;
+}
+
+message GetItemsRequest {
+    message Item {
+        string itemID = 1;
+        int32 kind = 2;
+    }
+
+    repeated Item items = 1;
+}
+
+message GetItemsResponse {
+    map<string,ItemResponse> items = 1;
 }
