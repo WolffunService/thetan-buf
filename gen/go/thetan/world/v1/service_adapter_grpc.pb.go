@@ -23,6 +23,8 @@ const (
 	ThetanWorldAdapterService_GetAvailableItems_FullMethodName = "/thetan.world.v1.ThetanWorldAdapterService/GetAvailableItems"
 	ThetanWorldAdapterService_IsValidItems_FullMethodName      = "/thetan.world.v1.ThetanWorldAdapterService/IsValidItems"
 	ThetanWorldAdapterService_SendItems_FullMethodName         = "/thetan.world.v1.ThetanWorldAdapterService/SendItems"
+	ThetanWorldAdapterService_CreateItem_FullMethodName        = "/thetan.world.v1.ThetanWorldAdapterService/CreateItem"
+	ThetanWorldAdapterService_UpdateOwner_FullMethodName       = "/thetan.world.v1.ThetanWorldAdapterService/UpdateOwner"
 )
 
 // ThetanWorldAdapterServiceClient is the client API for ThetanWorldAdapterService service.
@@ -32,6 +34,8 @@ type ThetanWorldAdapterServiceClient interface {
 	GetAvailableItems(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*AvailableItem, error)
 	IsValidItems(ctx context.Context, in *IsValidItemsRequest, opts ...grpc.CallOption) (*CheckItemResponse, error)
 	SendItems(ctx context.Context, in *SendItemsRequest, opts ...grpc.CallOption) (*SendItemsResponse, error)
+	CreateItem(ctx context.Context, in *CreateItemRequest, opts ...grpc.CallOption) (*ItemResponse, error)
+	UpdateOwner(ctx context.Context, in *UpdateOwnerRequest, opts ...grpc.CallOption) (*ItemResponse, error)
 }
 
 type thetanWorldAdapterServiceClient struct {
@@ -69,6 +73,24 @@ func (c *thetanWorldAdapterServiceClient) SendItems(ctx context.Context, in *Sen
 	return out, nil
 }
 
+func (c *thetanWorldAdapterServiceClient) CreateItem(ctx context.Context, in *CreateItemRequest, opts ...grpc.CallOption) (*ItemResponse, error) {
+	out := new(ItemResponse)
+	err := c.cc.Invoke(ctx, ThetanWorldAdapterService_CreateItem_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanWorldAdapterServiceClient) UpdateOwner(ctx context.Context, in *UpdateOwnerRequest, opts ...grpc.CallOption) (*ItemResponse, error) {
+	out := new(ItemResponse)
+	err := c.cc.Invoke(ctx, ThetanWorldAdapterService_UpdateOwner_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanWorldAdapterServiceServer is the server API for ThetanWorldAdapterService service.
 // All implementations must embed UnimplementedThetanWorldAdapterServiceServer
 // for forward compatibility
@@ -76,6 +98,8 @@ type ThetanWorldAdapterServiceServer interface {
 	GetAvailableItems(context.Context, *emptypb.Empty) (*AvailableItem, error)
 	IsValidItems(context.Context, *IsValidItemsRequest) (*CheckItemResponse, error)
 	SendItems(context.Context, *SendItemsRequest) (*SendItemsResponse, error)
+	CreateItem(context.Context, *CreateItemRequest) (*ItemResponse, error)
+	UpdateOwner(context.Context, *UpdateOwnerRequest) (*ItemResponse, error)
 	mustEmbedUnimplementedThetanWorldAdapterServiceServer()
 }
 
@@ -91,6 +115,12 @@ func (UnimplementedThetanWorldAdapterServiceServer) IsValidItems(context.Context
 }
 func (UnimplementedThetanWorldAdapterServiceServer) SendItems(context.Context, *SendItemsRequest) (*SendItemsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SendItems not implemented")
+}
+func (UnimplementedThetanWorldAdapterServiceServer) CreateItem(context.Context, *CreateItemRequest) (*ItemResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateItem not implemented")
+}
+func (UnimplementedThetanWorldAdapterServiceServer) UpdateOwner(context.Context, *UpdateOwnerRequest) (*ItemResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method UpdateOwner not implemented")
 }
 func (UnimplementedThetanWorldAdapterServiceServer) mustEmbedUnimplementedThetanWorldAdapterServiceServer() {
 }
@@ -160,6 +190,42 @@ func _ThetanWorldAdapterService_SendItems_Handler(srv interface{}, ctx context.C
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanWorldAdapterService_CreateItem_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CreateItemRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanWorldAdapterServiceServer).CreateItem(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanWorldAdapterService_CreateItem_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanWorldAdapterServiceServer).CreateItem(ctx, req.(*CreateItemRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanWorldAdapterService_UpdateOwner_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(UpdateOwnerRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanWorldAdapterServiceServer).UpdateOwner(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanWorldAdapterService_UpdateOwner_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanWorldAdapterServiceServer).UpdateOwner(ctx, req.(*UpdateOwnerRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanWorldAdapterService_ServiceDesc is the grpc.ServiceDesc for ThetanWorldAdapterService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -178,6 +244,14 @@ var ThetanWorldAdapterService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "SendItems",
 			Handler:    _ThetanWorldAdapterService_SendItems_Handler,
+		},
+		{
+			MethodName: "CreateItem",
+			Handler:    _ThetanWorldAdapterService_CreateItem_Handler,
+		},
+		{
+			MethodName: "UpdateOwner",
+			Handler:    _ThetanWorldAdapterService_UpdateOwner_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
