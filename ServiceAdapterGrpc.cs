@@ -62,7 +62,9 @@ namespace Thetan.World.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.World.V1.ItemResponse> __Marshaller_thetan_world_v1_ItemResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.ItemResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.World.V1.UpdateOwnerRequest> __Marshaller_thetan_world_v1_UpdateOwnerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.UpdateOwnerRequest.Parser));
+    static readonly grpc::Marshaller<global::Thetan.World.V1.GetItemsRequest> __Marshaller_thetan_world_v1_GetItemsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.GetItemsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.World.V1.GetItemsResponse> __Marshaller_thetan_world_v1_GetItemsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.GetItemsResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Thetan.World.V1.AvailableItem> __Method_GetAvailableItems = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Thetan.World.V1.AvailableItem>(
@@ -97,12 +99,12 @@ namespace Thetan.World.V1 {
         __Marshaller_thetan_world_v1_ItemResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.World.V1.UpdateOwnerRequest, global::Thetan.World.V1.ItemResponse> __Method_UpdateOwner = new grpc::Method<global::Thetan.World.V1.UpdateOwnerRequest, global::Thetan.World.V1.ItemResponse>(
+    static readonly grpc::Method<global::Thetan.World.V1.GetItemsRequest, global::Thetan.World.V1.GetItemsResponse> __Method_GetItems = new grpc::Method<global::Thetan.World.V1.GetItemsRequest, global::Thetan.World.V1.GetItemsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "UpdateOwner",
-        __Marshaller_thetan_world_v1_UpdateOwnerRequest,
-        __Marshaller_thetan_world_v1_ItemResponse);
+        "GetItems",
+        __Marshaller_thetan_world_v1_GetItemsRequest,
+        __Marshaller_thetan_world_v1_GetItemsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -139,7 +141,7 @@ namespace Thetan.World.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.World.V1.ItemResponse> UpdateOwner(global::Thetan.World.V1.UpdateOwnerRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.World.V1.GetItemsResponse> GetItems(global::Thetan.World.V1.GetItemsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -254,24 +256,24 @@ namespace Thetan.World.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_CreateItem, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.World.V1.ItemResponse UpdateOwner(global::Thetan.World.V1.UpdateOwnerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.World.V1.GetItemsResponse GetItems(global::Thetan.World.V1.GetItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return UpdateOwner(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetItems(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.World.V1.ItemResponse UpdateOwner(global::Thetan.World.V1.UpdateOwnerRequest request, grpc::CallOptions options)
+      public virtual global::Thetan.World.V1.GetItemsResponse GetItems(global::Thetan.World.V1.GetItemsRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_UpdateOwner, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetItems, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.ItemResponse> UpdateOwnerAsync(global::Thetan.World.V1.UpdateOwnerRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.GetItemsResponse> GetItemsAsync(global::Thetan.World.V1.GetItemsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return UpdateOwnerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetItemsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.ItemResponse> UpdateOwnerAsync(global::Thetan.World.V1.UpdateOwnerRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.GetItemsResponse> GetItemsAsync(global::Thetan.World.V1.GetItemsRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_UpdateOwner, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetItems, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -291,7 +293,7 @@ namespace Thetan.World.V1 {
           .AddMethod(__Method_IsValidItems, serviceImpl.IsValidItems)
           .AddMethod(__Method_SendItems, serviceImpl.SendItems)
           .AddMethod(__Method_CreateItem, serviceImpl.CreateItem)
-          .AddMethod(__Method_UpdateOwner, serviceImpl.UpdateOwner).Build();
+          .AddMethod(__Method_GetItems, serviceImpl.GetItems).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -305,7 +307,7 @@ namespace Thetan.World.V1 {
       serviceBinder.AddMethod(__Method_IsValidItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.IsValidItemsRequest, global::Thetan.World.V1.CheckItemResponse>(serviceImpl.IsValidItems));
       serviceBinder.AddMethod(__Method_SendItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.SendItemsRequest, global::Thetan.World.V1.SendItemsResponse>(serviceImpl.SendItems));
       serviceBinder.AddMethod(__Method_CreateItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.CreateItemRequest, global::Thetan.World.V1.ItemResponse>(serviceImpl.CreateItem));
-      serviceBinder.AddMethod(__Method_UpdateOwner, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.UpdateOwnerRequest, global::Thetan.World.V1.ItemResponse>(serviceImpl.UpdateOwner));
+      serviceBinder.AddMethod(__Method_GetItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.GetItemsRequest, global::Thetan.World.V1.GetItemsResponse>(serviceImpl.GetItems));
     }
 
   }
