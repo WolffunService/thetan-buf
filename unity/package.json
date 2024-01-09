@@ -2,7 +2,7 @@
   "name": "com.wolffun.thetan-buf",
   "displayName": "Thetan Protocol Buffers",
   "description": "Thetan Protocol Buffers",
-  "version": "1.0.39",
+  "version": "1.0.41",
   "unity": "2021.3",
   "license": "MIT",
   "repository": {
