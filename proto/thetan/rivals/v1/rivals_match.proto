@@ -13,6 +13,7 @@ service RivalMatchDirectorService {
 
   rpc CreateMatchOnboard(thetan.rivals.v1.GetMatchInfoRequest) returns (thetan.shared.v1.MatchFoundResponseProto) {}
   rpc CreateMatchNonMatching(CreateMatchNonMatchingRequest) returns (CreateMatchNonMatchingResponse) {}
+  rpc CreateMatchTutorial(CreateMatchTutorialRequest) returns (thetan.shared.v1.MatchFoundResponseProto) {}
 }
 
 message RivalCancelTicketRequest {
@@ -33,4 +34,13 @@ message CreateMatchNonMatchingRequest {
 }
 
 message CreateMatchNonMatchingResponse {
+}
+
+message CreateMatchTutorialRequest {
+  thetan.shared.v1.InGameMode ingameMode = 1;
+  repeated thetan.shared.v1.PlayerInfoMatchProto players = 2;
+  int32 totalPlayers = 3;
+  repeated int32 qualifiedPlayersPerRound = 4;
+  repeated shared.v1.MapDataProto maps = 5;
+  int64 maxBattleDurationInSec = 6;
 }
