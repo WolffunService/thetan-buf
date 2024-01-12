@@ -11,7 +11,9 @@ option csharp_namespace = "Thetan.rivals.V1";
 service RivalMatchDirectorService {
   rpc CancelTicket(RivalCancelTicketRequest) returns (RivalCancelTicketResponse) {}
 
-  rpc CreateMatchOnboard(thetan.rivals.v1.GetMatchInfoRequest) returns (thetan.shared.v1.MatchFoundResponseProto) {}
+  rpc CreateMatchOnboard(thetan.rivals.v1.GetMatchInfoRequest) returns (thetan.shared.v1.MatchFoundResponseProto) {
+    option deprecated = true;
+  }
   rpc CreateMatchNonMatching(CreateMatchNonMatchingRequest) returns (CreateMatchNonMatchingResponse) {}
   rpc CreateMatchTutorial(CreateMatchTutorialRequest) returns (thetan.shared.v1.MatchFoundResponseProto) {}
 }

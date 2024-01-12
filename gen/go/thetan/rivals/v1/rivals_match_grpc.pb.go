@@ -31,6 +31,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type RivalMatchDirectorServiceClient interface {
 	CancelTicket(ctx context.Context, in *RivalCancelTicketRequest, opts ...grpc.CallOption) (*RivalCancelTicketResponse, error)
+	// Deprecated: Do not use.
 	CreateMatchOnboard(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*v1.MatchFoundResponseProto, error)
 	CreateMatchNonMatching(ctx context.Context, in *CreateMatchNonMatchingRequest, opts ...grpc.CallOption) (*CreateMatchNonMatchingResponse, error)
 	CreateMatchTutorial(ctx context.Context, in *CreateMatchTutorialRequest, opts ...grpc.CallOption) (*v1.MatchFoundResponseProto, error)
@@ -53,6 +54,7 @@ func (c *rivalMatchDirectorServiceClient) CancelTicket(ctx context.Context, in *
 	return out, nil
 }
 
+// Deprecated: Do not use.
 func (c *rivalMatchDirectorServiceClient) CreateMatchOnboard(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*v1.MatchFoundResponseProto, error) {
 	out := new(v1.MatchFoundResponseProto)
 	err := c.cc.Invoke(ctx, RivalMatchDirectorService_CreateMatchOnboard_FullMethodName, in, out, opts...)
@@ -85,6 +87,7 @@ func (c *rivalMatchDirectorServiceClient) CreateMatchTutorial(ctx context.Contex
 // for forward compatibility
 type RivalMatchDirectorServiceServer interface {
 	CancelTicket(context.Context, *RivalCancelTicketRequest) (*RivalCancelTicketResponse, error)
+	// Deprecated: Do not use.
 	CreateMatchOnboard(context.Context, *GetMatchInfoRequest) (*v1.MatchFoundResponseProto, error)
 	CreateMatchNonMatching(context.Context, *CreateMatchNonMatchingRequest) (*CreateMatchNonMatchingResponse, error)
 	CreateMatchTutorial(context.Context, *CreateMatchTutorialRequest) (*v1.MatchFoundResponseProto, error)
