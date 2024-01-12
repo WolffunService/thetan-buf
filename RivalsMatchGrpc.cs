@@ -108,6 +108,7 @@ namespace Thetan.Rivals.V1 {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.ObsoleteAttribute]
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Shared.V1.MatchFoundResponseProto> CreateMatchOnboard(global::Thetan.Rivals.V1.GetMatchInfoRequest request, grpc::ServerCallContext context)
       {
@@ -175,21 +176,25 @@ namespace Thetan.Rivals.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_CancelTicket, null, options, request);
       }
+      [global::System.ObsoleteAttribute]
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Thetan.Shared.V1.MatchFoundResponseProto CreateMatchOnboard(global::Thetan.Rivals.V1.GetMatchInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateMatchOnboard(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.ObsoleteAttribute]
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Thetan.Shared.V1.MatchFoundResponseProto CreateMatchOnboard(global::Thetan.Rivals.V1.GetMatchInfoRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateMatchOnboard, null, options, request);
       }
+      [global::System.ObsoleteAttribute]
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Thetan.Shared.V1.MatchFoundResponseProto> CreateMatchOnboardAsync(global::Thetan.Rivals.V1.GetMatchInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateMatchOnboardAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      [global::System.ObsoleteAttribute]
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Thetan.Shared.V1.MatchFoundResponseProto> CreateMatchOnboardAsync(global::Thetan.Rivals.V1.GetMatchInfoRequest request, grpc::CallOptions options)
       {
