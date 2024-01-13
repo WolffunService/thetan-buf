@@ -11,7 +11,6 @@ import (
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
-	emptypb "google.golang.org/protobuf/types/known/emptypb"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -20,14 +19,14 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ThetanWorldService_Test_FullMethodName = "/thetan.world.v1.ThetanWorldService/Test"
+	ThetanWorldService_IsInMarket_FullMethodName = "/thetan.world.v1.ThetanWorldService/IsInMarket"
 )
 
 // ThetanWorldServiceClient is the client API for ThetanWorldService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ThetanWorldServiceClient interface {
-	Test(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error)
+	IsInMarket(ctx context.Context, in *InMarketRequest, opts ...grpc.CallOption) (*InMarketResponse, error)
 }
 
 type thetanWorldServiceClient struct {
@@ -38,9 +37,9 @@ func NewThetanWorldServiceClient(cc grpc.ClientConnInterface) ThetanWorldService
 	return &thetanWorldServiceClient{cc}
 }
 
-func (c *thetanWorldServiceClient) Test(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error) {
-	out := new(emptypb.Empty)
-	err := c.cc.Invoke(ctx, ThetanWorldService_Test_FullMethodName, in, out, opts...)
+func (c *thetanWorldServiceClient) IsInMarket(ctx context.Context, in *InMarketRequest, opts ...grpc.CallOption) (*InMarketResponse, error) {
+	out := new(InMarketResponse)
+	err := c.cc.Invoke(ctx, ThetanWorldService_IsInMarket_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -51,7 +50,7 @@ func (c *thetanWorldServiceClient) Test(ctx context.Context, in *emptypb.Empty, 
 // All implementations must embed UnimplementedThetanWorldServiceServer
 // for forward compatibility
 type ThetanWorldServiceServer interface {
-	Test(context.Context, *emptypb.Empty) (*emptypb.Empty, error)
+	IsInMarket(context.Context, *InMarketRequest) (*InMarketResponse, error)
 	mustEmbedUnimplementedThetanWorldServiceServer()
 }
 
@@ -59,8 +58,8 @@ type ThetanWorldServiceServer interface {
 type UnimplementedThetanWorldServiceServer struct {
 }
 
-func (UnimplementedThetanWorldServiceServer) Test(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Test not implemented")
+func (UnimplementedThetanWorldServiceServer) IsInMarket(context.Context, *InMarketRequest) (*InMarketResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method IsInMarket not implemented")
 }
 func (UnimplementedThetanWorldServiceServer) mustEmbedUnimplementedThetanWorldServiceServer() {}
 
@@ -75,20 +74,20 @@ func RegisterThetanWorldServiceServer(s grpc.ServiceRegistrar, srv ThetanWorldSe
 	s.RegisterService(&ThetanWorldService_ServiceDesc, srv)
 }
 
-func _ThetanWorldService_Test_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(emptypb.Empty)
+func _ThetanWorldService_IsInMarket_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(InMarketRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ThetanWorldServiceServer).Test(ctx, in)
+		return srv.(ThetanWorldServiceServer).IsInMarket(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: ThetanWorldService_Test_FullMethodName,
+		FullMethod: ThetanWorldService_IsInMarket_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanWorldServiceServer).Test(ctx, req.(*emptypb.Empty))
+		return srv.(ThetanWorldServiceServer).IsInMarket(ctx, req.(*InMarketRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -101,8 +100,8 @@ var ThetanWorldService_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*ThetanWorldServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "Test",
-			Handler:    _ThetanWorldService_Test_Handler,
+			MethodName: "IsInMarket",
+			Handler:    _ThetanWorldService_IsInMarket_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

@@ -14,8 +14,10 @@ service ThetanWorldAdapterService {
     rpc IsValidItems(IsValidItemsRequest) returns (CheckItemResponse);
     rpc SendItems(SendItemsRequest) returns (SendItemsResponse);
 
-    rpc CreateItem(CreateItemRequest) returns (ItemResponse);
+    rpc CreateNFTItem(CreateItemRequest) returns (ItemResponse);
     rpc GetItems(GetItemsRequest) returns(GetItemsResponse);
+
+    rpc IsInUsed(InUsedRequest) returns(InUsedResponse);
 }
 
 message ItemResp {
@@ -83,4 +85,13 @@ message GetItemsRequest {
 
 message GetItemsResponse {
     map<string,ItemResponse> items = 1;
+}
+
+message InUsedRequest {
+    string id = 1;
+    int32 kind = 2;
+}
+
+message InUsedResponse {
+    bool inUsed = 1;
 }
