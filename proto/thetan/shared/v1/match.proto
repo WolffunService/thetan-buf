@@ -97,20 +97,39 @@ message MatchFoundResponseProto {
   GameMode gameMode = 3;
   InGameMode inGameMode = 4;
   int32 bestRegion = 5;
-  repeated MapDataProto mapIds = 6;
+  repeated MapDataProto mapIds = 6 [deprecated=true];
   repeated int32 ListMaxPlayerPerRound = 7;
-  PlayerStat playerStat = 8;
+  PlayerStat playerStat = 8 [deprecated=true];
   bool isOnline = 10;
   bool enableSpectator = 11;
   thetan.shared.v1.TRArena arena = 12;
+  repeated Round rounds = 13;
+}
+
+message Round {
+  int32 mapID = 1;
+  MapDifficultyEnum mapDifficulty = 2;
+  map<int32, SkillData> skillsData = 12; // <SkillTypeEnum, SkillData>
+}
+
+message SkillData {
+  repeated Skill skills = 1;
+  int32 rollLimit = 2;
+}
+
+message Skill {
+  int32 id = 1;
+  int32 level = 2;
 }
 
 message MapSkills {
+  option deprecated = true;
   repeated SkillInfo skills = 1;
   int32 rollLimit = 2;
 }
 
 message SkillInfo {
+  option deprecated = true;
   int32 skillID = 1;
 }
 
@@ -121,6 +140,7 @@ enum SkillTypeEnum {
 }
 
 message PlayerStat {
+  option deprecated = true;
   int32 roundScoreAll = 1;
   float raceScoreAll = 2;
   int32 qualifyScoreAll = 3;
@@ -128,6 +148,7 @@ message PlayerStat {
 }
 
 message MapDataProto {
+  option deprecated = true;
   int32 mapId = 1;
   MapDifficultyEnum mapDifficulty = 2;
   map<int32, MapSkills> mapSkills = 12; // key: SkillTypeEnum
@@ -221,6 +242,12 @@ message PlayerInfoMatchProto {
   Customized customized = 30;
   string countryCode = 31;
   string guildName = 32;
+  repeated Skill skills = 33;
+  repeated SelectedSkillsPerRound selectedSkills = 34;
+}
+
+message SelectedSkillsPerRound {
+  map<int32, Skill> selected = 1; // <SkillTypeEnum, Skill>
 }
 
 message CosmeticUsingProto

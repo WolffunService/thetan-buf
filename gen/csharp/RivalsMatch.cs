@@ -1059,6 +1059,7 @@ namespace Thetan.Rivals.V1 {
     private static readonly pb::FieldCodec<global::Thetan.Shared.V1.MapDataProto> _repeated_maps_codec
         = pb::FieldCodec.ForMessage(42, global::Thetan.Shared.V1.MapDataProto.Parser);
     private readonly pbc::RepeatedField<global::Thetan.Shared.V1.MapDataProto> maps_ = new pbc::RepeatedField<global::Thetan.Shared.V1.MapDataProto>();
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Thetan.Shared.V1.MapDataProto> Maps {
