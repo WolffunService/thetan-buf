@@ -43,6 +43,7 @@ message CheckItemResponse {
 message SendItemsRequest {
     string userID = 1;
     repeated SimpleItem items = 2;
+    int32 mailCode = 3;
 }
 
 message SendItemsResponse {
