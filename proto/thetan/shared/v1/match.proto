@@ -109,15 +109,14 @@ message MatchFoundResponseProto {
 message Round {
   int32 mapID = 1;
   MapDifficultyEnum mapDifficulty = 2;
-  map<int32, SkillData> skillsData = 12; // <SkillTypeEnum, SkillData>
+  map<int32, SkillsData> skillsByType = 3; // <SkillTypeEnum, SkillData>
 }
 
-message SkillData {
-  repeated Skill skills = 1;
-  int32 rollLimit = 2;
+message SkillsData {
+  repeated int32 skillIDs = 1;
 }
 
-message Skill {
+message PlayerSkill {
   int32 id = 1;
   int32 level = 2;
 }
@@ -242,12 +241,16 @@ message PlayerInfoMatchProto {
   Customized customized = 30;
   string countryCode = 31;
   string guildName = 32;
-  repeated Skill skills = 33;
+  map<int32, PlayerSkills> skills = 33;
   repeated SelectedSkillsPerRound selectedSkills = 34;
 }
 
 message SelectedSkillsPerRound {
-  map<int32, Skill> selected = 1; // <SkillTypeEnum, Skill>
+  map<int32, PlayerSkill> selected = 1; // <SkillTypeEnum, PlayerSkill>
+}
+
+message PlayerSkills {
+  repeated PlayerSkill skills = 1;
 }
 
 message CosmeticUsingProto
