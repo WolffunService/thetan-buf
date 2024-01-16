@@ -116,11 +116,6 @@ message SkillsData {
   repeated int32 skillIDs = 1;
 }
 
-message PlayerSkill {
-  int32 id = 1;
-  int32 level = 2;
-}
-
 message MapSkills {
   option deprecated = true;
   repeated SkillInfo skills = 1;
@@ -251,6 +246,10 @@ message SelectedSkillsPerRound {
 
 message PlayerSkills {
   repeated PlayerSkill skills = 1;
+}
+
+message PlayerSkill {
+  int32 id = 1;
 }
 
 message CosmeticUsingProto
