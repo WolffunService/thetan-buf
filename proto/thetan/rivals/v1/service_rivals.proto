@@ -393,7 +393,8 @@ message GetMatchInfoTutorialResponse {
   int32 totalPlayers = 3;
   repeated int32 qualifiedPlayersPerRound = 4;
   int64 maxBattleDurationInSec = 5;
-  repeated thetan.shared.v1.MapDataProto maps = 6;
+  repeated thetan.shared.v1.MapDataProto maps = 6 [deprecated = true];
+  repeated thetan.shared.v1.Round rounds = 7;
 }
 
 message MapData {
