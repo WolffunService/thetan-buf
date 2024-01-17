@@ -25,37 +25,38 @@ namespace Thetan.World.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiB0aGV0YW4vd29ybGQvdjEvc2VydmljZV90dy5wcm90bxIPdGhldGFuLndv",
-            "cmxkLnYxGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8iIQoPSW5NYXJr",
-            "ZXRSZXF1ZXN0Eg4KAmlkGAEgASgJUgJpZCIuChBJbk1hcmtldFJlc3BvbnNl",
-            "EhoKCGluTWFya2V0GAEgASgIUghpbk1hcmtldDJnChJUaGV0YW5Xb3JsZFNl",
-            "cnZpY2USUQoKSXNJbk1hcmtldBIgLnRoZXRhbi53b3JsZC52MS5Jbk1hcmtl",
-            "dFJlcXVlc3QaIS50aGV0YW4ud29ybGQudjEuSW5NYXJrZXRSZXNwb25zZUK2",
-            "AQoTY29tLnRoZXRhbi53b3JsZC52MUIOU2VydmljZVR3UHJvdG9QAVoxdGhl",
-            "dGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3dvcmxkL3YxO3RoZXRhbl93b3JsZF92",
-            "MaICA1RXWKoCD1RoZXRhbi5Xb3JsZC5WMcoCD1RoZXRhblxXb3JsZFxWMeIC",
-            "G1RoZXRhblxXb3JsZFxWMVxHUEJNZXRhZGF0YeoCEVRoZXRhbjo6V29ybGQ6",
-            "OlYxYgZwcm90bzM="));
+            "cmxkLnYxGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8iIwoRTWFya2V0",
+            "SW5mb1JlcXVlc3QSDgoCaWQYASABKAlSAmlkImgKEk1hcmtldEluZm9SZXNw",
+            "b25zZRIaCghpbk1hcmtldBgBIAEoCFIIaW5NYXJrZXQSGAoHb3duZXJJRBgC",
+            "IAEoCVIHb3duZXJJRBIcCglvd25lckFkZHIYAyABKAlSCW93bmVyQWRkcjJr",
+            "ChJUaGV0YW5Xb3JsZFNlcnZpY2USVQoKTWFya2V0SW5mbxIiLnRoZXRhbi53",
+            "b3JsZC52MS5NYXJrZXRJbmZvUmVxdWVzdBojLnRoZXRhbi53b3JsZC52MS5N",
+            "YXJrZXRJbmZvUmVzcG9uc2VCtgEKE2NvbS50aGV0YW4ud29ybGQudjFCDlNl",
+            "cnZpY2VUd1Byb3RvUAFaMXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi93b3Js",
+            "ZC92MTt0aGV0YW5fd29ybGRfdjGiAgNUV1iqAg9UaGV0YW4uV29ybGQuVjHK",
+            "Ag9UaGV0YW5cV29ybGRcVjHiAhtUaGV0YW5cV29ybGRcVjFcR1BCTWV0YWRh",
+            "dGHqAhFUaGV0YW46OldvcmxkOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.InMarketRequest), global::Thetan.World.V1.InMarketRequest.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.InMarketResponse), global::Thetan.World.V1.InMarketResponse.Parser, new[]{ "InMarket" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.MarketInfoRequest), global::Thetan.World.V1.MarketInfoRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.MarketInfoResponse), global::Thetan.World.V1.MarketInfoResponse.Parser, new[]{ "InMarket", "OwnerID", "OwnerAddr" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class InMarketRequest : pb::IMessage<InMarketRequest>
+  public sealed partial class MarketInfoRequest : pb::IMessage<MarketInfoRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<InMarketRequest> _parser = new pb::MessageParser<InMarketRequest>(() => new InMarketRequest());
+    private static readonly pb::MessageParser<MarketInfoRequest> _parser = new pb::MessageParser<MarketInfoRequest>(() => new MarketInfoRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<InMarketRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<MarketInfoRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -71,7 +72,7 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public InMarketRequest() {
+    public MarketInfoRequest() {
       OnConstruction();
     }
 
@@ -79,15 +80,15 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public InMarketRequest(InMarketRequest other) : this() {
+    public MarketInfoRequest(MarketInfoRequest other) : this() {
       id_ = other.id_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public InMarketRequest Clone() {
-      return new InMarketRequest(this);
+    public MarketInfoRequest Clone() {
+      return new MarketInfoRequest(this);
     }
 
     /// <summary>Field number for the "id" field.</summary>
@@ -105,12 +106,12 @@ namespace Thetan.World.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as InMarketRequest);
+      return Equals(other as MarketInfoRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(InMarketRequest other) {
+    public bool Equals(MarketInfoRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -183,7 +184,7 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(InMarketRequest other) {
+    public void MergeFrom(MarketInfoRequest other) {
       if (other == null) {
         return;
       }
@@ -235,16 +236,16 @@ namespace Thetan.World.V1 {
 
   }
 
-  public sealed partial class InMarketResponse : pb::IMessage<InMarketResponse>
+  public sealed partial class MarketInfoResponse : pb::IMessage<MarketInfoResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<InMarketResponse> _parser = new pb::MessageParser<InMarketResponse>(() => new InMarketResponse());
+    private static readonly pb::MessageParser<MarketInfoResponse> _parser = new pb::MessageParser<MarketInfoResponse>(() => new MarketInfoResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<InMarketResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<MarketInfoResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -260,7 +261,7 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public InMarketResponse() {
+    public MarketInfoResponse() {
       OnConstruction();
     }
 
@@ -268,15 +269,17 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public InMarketResponse(InMarketResponse other) : this() {
+    public MarketInfoResponse(MarketInfoResponse other) : this() {
       inMarket_ = other.inMarket_;
+      ownerID_ = other.ownerID_;
+      ownerAddr_ = other.ownerAddr_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public InMarketResponse Clone() {
-      return new InMarketResponse(this);
+    public MarketInfoResponse Clone() {
+      return new MarketInfoResponse(this);
     }
 
     /// <summary>Field number for the "inMarket" field.</summary>
@@ -291,15 +294,39 @@ namespace Thetan.World.V1 {
       }
     }
 
+    /// <summary>Field number for the "ownerID" field.</summary>
+    public const int OwnerIDFieldNumber = 2;
+    private string ownerID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as InMarketResponse);
+    public string OwnerID {
+      get { return ownerID_; }
+      set {
+        ownerID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "ownerAddr" field.</summary>
+    public const int OwnerAddrFieldNumber = 3;
+    private string ownerAddr_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string OwnerAddr {
+      get { return ownerAddr_; }
+      set {
+        ownerAddr_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(InMarketResponse other) {
+    public override bool Equals(object other) {
+      return Equals(other as MarketInfoResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(MarketInfoResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -307,6 +334,8 @@ namespace Thetan.World.V1 {
         return true;
       }
       if (InMarket != other.InMarket) return false;
+      if (OwnerID != other.OwnerID) return false;
+      if (OwnerAddr != other.OwnerAddr) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -315,6 +344,8 @@ namespace Thetan.World.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (InMarket != false) hash ^= InMarket.GetHashCode();
+      if (OwnerID.Length != 0) hash ^= OwnerID.GetHashCode();
+      if (OwnerAddr.Length != 0) hash ^= OwnerAddr.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -337,6 +368,14 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(8);
         output.WriteBool(InMarket);
       }
+      if (OwnerID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(OwnerID);
+      }
+      if (OwnerAddr.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(OwnerAddr);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -351,6 +390,14 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(8);
         output.WriteBool(InMarket);
       }
+      if (OwnerID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(OwnerID);
+      }
+      if (OwnerAddr.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(OwnerAddr);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -364,6 +411,12 @@ namespace Thetan.World.V1 {
       if (InMarket != false) {
         size += 1 + 1;
       }
+      if (OwnerID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OwnerID);
+      }
+      if (OwnerAddr.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OwnerAddr);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -372,12 +425,18 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(InMarketResponse other) {
+    public void MergeFrom(MarketInfoResponse other) {
       if (other == null) {
         return;
       }
       if (other.InMarket != false) {
         InMarket = other.InMarket;
+      }
+      if (other.OwnerID.Length != 0) {
+        OwnerID = other.OwnerID;
+      }
+      if (other.OwnerAddr.Length != 0) {
+        OwnerAddr = other.OwnerAddr;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -398,6 +457,14 @@ namespace Thetan.World.V1 {
             InMarket = input.ReadBool();
             break;
           }
+          case 18: {
+            OwnerID = input.ReadString();
+            break;
+          }
+          case 26: {
+            OwnerAddr = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -415,6 +482,14 @@ namespace Thetan.World.V1 {
             break;
           case 8: {
             InMarket = input.ReadBool();
+            break;
+          }
+          case 18: {
+            OwnerID = input.ReadString();
+            break;
+          }
+          case 26: {
+            OwnerAddr = input.ReadString();
             break;
           }
         }
