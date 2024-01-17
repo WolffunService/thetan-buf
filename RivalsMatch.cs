@@ -38,30 +38,31 @@ namespace Thetan.Rivals.V1 {
             "dGNoVmVyc2lvbhgEIAEoBVIQZmluZE1hdGNoVmVyc2lvbhIvCgVhcmVuYRgF",
             "IAEoDjIZLnRoZXRhbi5zaGFyZWQudjEuVFJBcmVuYVIFYXJlbmESFgoGbW9k",
             "ZUlEGAYgASgJUgZtb2RlSUQiIAoeQ3JlYXRlTWF0Y2hOb25NYXRjaGluZ1Jl",
-            "c3BvbnNlIugCChpDcmVhdGVNYXRjaFR1dG9yaWFsUmVxdWVzdBI8Cgppbmdh",
+            "c3BvbnNlIp0DChpDcmVhdGVNYXRjaFR1dG9yaWFsUmVxdWVzdBI8Cgppbmdh",
             "bWVNb2RlGAEgASgOMhwudGhldGFuLnNoYXJlZC52MS5JbkdhbWVNb2RlUgpp",
             "bmdhbWVNb2RlEkAKB3BsYXllcnMYAiADKAsyJi50aGV0YW4uc2hhcmVkLnYx",
             "LlBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzEiIKDHRvdGFsUGxheWVy",
             "cxgDIAEoBVIMdG90YWxQbGF5ZXJzEjoKGHF1YWxpZmllZFBsYXllcnNQZXJS",
-            "b3VuZBgEIAMoBVIYcXVhbGlmaWVkUGxheWVyc1BlclJvdW5kEjIKBG1hcHMY",
-            "BSADKAsyHi50aGV0YW4uc2hhcmVkLnYxLk1hcERhdGFQcm90b1IEbWFwcxI2",
-            "ChZtYXhCYXR0bGVEdXJhdGlvbkluU2VjGAYgASgDUhZtYXhCYXR0bGVEdXJh",
-            "dGlvbkluU2VjMuQDChlSaXZhbE1hdGNoRGlyZWN0b3JTZXJ2aWNlEmkKDENh",
-            "bmNlbFRpY2tldBIqLnRoZXRhbi5yaXZhbHMudjEuUml2YWxDYW5jZWxUaWNr",
-            "ZXRSZXF1ZXN0GisudGhldGFuLnJpdmFscy52MS5SaXZhbENhbmNlbFRpY2tl",
-            "dFJlc3BvbnNlIgASawoSQ3JlYXRlTWF0Y2hPbmJvYXJkEiUudGhldGFuLnJp",
-            "dmFscy52MS5HZXRNYXRjaEluZm9SZXF1ZXN0GikudGhldGFuLnNoYXJlZC52",
-            "MS5NYXRjaEZvdW5kUmVzcG9uc2VQcm90byIDiAIBEn0KFkNyZWF0ZU1hdGNo",
-            "Tm9uTWF0Y2hpbmcSLy50aGV0YW4ucml2YWxzLnYxLkNyZWF0ZU1hdGNoTm9u",
-            "TWF0Y2hpbmdSZXF1ZXN0GjAudGhldGFuLnJpdmFscy52MS5DcmVhdGVNYXRj",
-            "aE5vbk1hdGNoaW5nUmVzcG9uc2UiABJwChNDcmVhdGVNYXRjaFR1dG9yaWFs",
-            "EiwudGhldGFuLnJpdmFscy52MS5DcmVhdGVNYXRjaFR1dG9yaWFsUmVxdWVz",
-            "dBopLnRoZXRhbi5zaGFyZWQudjEuTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8i",
-            "AEK/AQoUY29tLnRoZXRhbi5yaXZhbHMudjFCEFJpdmFsc01hdGNoUHJvdG9Q",
-            "AVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3JpdmFscy92MTt0aGV0YW5f",
-            "cml2YWxzX3YxogIDVFJYqgIQVGhldGFuLlJpdmFscy5WMcoCEFRoZXRhblxS",
-            "aXZhbHNcVjHiAhxUaGV0YW5cUml2YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhl",
-            "dGFuOjpSaXZhbHM6OlYxYgZwcm90bzM="));
+            "b3VuZBgEIAMoBVIYcXVhbGlmaWVkUGxheWVyc1BlclJvdW5kEjYKBG1hcHMY",
+            "BSADKAsyHi50aGV0YW4uc2hhcmVkLnYxLk1hcERhdGFQcm90b0ICGAFSBG1h",
+            "cHMSNgoWbWF4QmF0dGxlRHVyYXRpb25JblNlYxgGIAEoA1IWbWF4QmF0dGxl",
+            "RHVyYXRpb25JblNlYxIvCgZyb3VuZHMYByADKAsyFy50aGV0YW4uc2hhcmVk",
+            "LnYxLlJvdW5kUgZyb3VuZHMy5AMKGVJpdmFsTWF0Y2hEaXJlY3RvclNlcnZp",
+            "Y2USaQoMQ2FuY2VsVGlja2V0EioudGhldGFuLnJpdmFscy52MS5SaXZhbENh",
+            "bmNlbFRpY2tldFJlcXVlc3QaKy50aGV0YW4ucml2YWxzLnYxLlJpdmFsQ2Fu",
+            "Y2VsVGlja2V0UmVzcG9uc2UiABJrChJDcmVhdGVNYXRjaE9uYm9hcmQSJS50",
+            "aGV0YW4ucml2YWxzLnYxLkdldE1hdGNoSW5mb1JlcXVlc3QaKS50aGV0YW4u",
+            "c2hhcmVkLnYxLk1hdGNoRm91bmRSZXNwb25zZVByb3RvIgOIAgESfQoWQ3Jl",
+            "YXRlTWF0Y2hOb25NYXRjaGluZxIvLnRoZXRhbi5yaXZhbHMudjEuQ3JlYXRl",
+            "TWF0Y2hOb25NYXRjaGluZ1JlcXVlc3QaMC50aGV0YW4ucml2YWxzLnYxLkNy",
+            "ZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXNwb25zZSIAEnAKE0NyZWF0ZU1hdGNo",
+            "VHV0b3JpYWwSLC50aGV0YW4ucml2YWxzLnYxLkNyZWF0ZU1hdGNoVHV0b3Jp",
+            "YWxSZXF1ZXN0GikudGhldGFuLnNoYXJlZC52MS5NYXRjaEZvdW5kUmVzcG9u",
+            "c2VQcm90byIAQr8BChRjb20udGhldGFuLnJpdmFscy52MUIQUml2YWxzTWF0",
+            "Y2hQcm90b1ABWjN0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vcml2YWxzL3Yx",
+            "O3RoZXRhbl9yaXZhbHNfdjGiAgNUUliqAhBUaGV0YW4uUml2YWxzLlYxygIQ",
+            "VGhldGFuXFJpdmFsc1xWMeICHFRoZXRhblxSaXZhbHNcVjFcR1BCTWV0YWRh",
+            "dGHqAhJUaGV0YW46OlJpdmFsczo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, global::Thetan.Shared.V1.MatchReflection.Descriptor, global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -69,7 +70,7 @@ namespace Thetan.Rivals.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketResponse), global::Thetan.Rivals.V1.RivalCancelTicketResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest), global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest.Parser, new[]{ "InGameMode", "Players", "Regions", "FindMatchVersion", "Arena", "ModeID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse), global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchTutorialRequest), global::Thetan.Rivals.V1.CreateMatchTutorialRequest.Parser, new[]{ "IngameMode", "Players", "TotalPlayers", "QualifiedPlayersPerRound", "Maps", "MaxBattleDurationInSec" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchTutorialRequest), global::Thetan.Rivals.V1.CreateMatchTutorialRequest.Parser, new[]{ "IngameMode", "Players", "TotalPlayers", "QualifiedPlayersPerRound", "Maps", "MaxBattleDurationInSec", "Rounds" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1037,6 +1038,7 @@ namespace Thetan.Rivals.V1 {
       qualifiedPlayersPerRound_ = other.qualifiedPlayersPerRound_.Clone();
       maps_ = other.maps_.Clone();
       maxBattleDurationInSec_ = other.maxBattleDurationInSec_;
+      rounds_ = other.rounds_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1116,6 +1118,17 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
+    /// <summary>Field number for the "rounds" field.</summary>
+    public const int RoundsFieldNumber = 7;
+    private static readonly pb::FieldCodec<global::Thetan.Shared.V1.Round> _repeated_rounds_codec
+        = pb::FieldCodec.ForMessage(58, global::Thetan.Shared.V1.Round.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Shared.V1.Round> rounds_ = new pbc::RepeatedField<global::Thetan.Shared.V1.Round>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Thetan.Shared.V1.Round> Rounds {
+      get { return rounds_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1137,6 +1150,7 @@ namespace Thetan.Rivals.V1 {
       if(!qualifiedPlayersPerRound_.Equals(other.qualifiedPlayersPerRound_)) return false;
       if(!maps_.Equals(other.maps_)) return false;
       if (MaxBattleDurationInSec != other.MaxBattleDurationInSec) return false;
+      if(!rounds_.Equals(other.rounds_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1150,6 +1164,7 @@ namespace Thetan.Rivals.V1 {
       hash ^= qualifiedPlayersPerRound_.GetHashCode();
       hash ^= maps_.GetHashCode();
       if (MaxBattleDurationInSec != 0L) hash ^= MaxBattleDurationInSec.GetHashCode();
+      hash ^= rounds_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1183,6 +1198,7 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(48);
         output.WriteInt64(MaxBattleDurationInSec);
       }
+      rounds_.WriteTo(output, _repeated_rounds_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1208,6 +1224,7 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(48);
         output.WriteInt64(MaxBattleDurationInSec);
       }
+      rounds_.WriteTo(ref output, _repeated_rounds_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1230,6 +1247,7 @@ namespace Thetan.Rivals.V1 {
       if (MaxBattleDurationInSec != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(MaxBattleDurationInSec);
       }
+      size += rounds_.CalculateSize(_repeated_rounds_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1254,6 +1272,7 @@ namespace Thetan.Rivals.V1 {
       if (other.MaxBattleDurationInSec != 0L) {
         MaxBattleDurationInSec = other.MaxBattleDurationInSec;
       }
+      rounds_.Add(other.rounds_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1294,6 +1313,10 @@ namespace Thetan.Rivals.V1 {
             MaxBattleDurationInSec = input.ReadInt64();
             break;
           }
+          case 58: {
+            rounds_.AddEntriesFrom(input, _repeated_rounds_codec);
+            break;
+          }
         }
       }
     #endif
@@ -1332,6 +1355,10 @@ namespace Thetan.Rivals.V1 {
           }
           case 48: {
             MaxBattleDurationInSec = input.ReadInt64();
+            break;
+          }
+          case 58: {
+            rounds_.AddEntriesFrom(ref input, _repeated_rounds_codec);
             break;
           }
         }
