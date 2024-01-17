@@ -8,13 +8,15 @@ option csharp_namespace = "Thetan.World.V1";
 import "google/protobuf/empty.proto";
 
 service ThetanWorldService {
-    rpc IsInMarket(InMarketRequest) returns (InMarketResponse);
+    rpc MarketInfo(MarketInfoRequest) returns (MarketInfoResponse);
 }
 
-message InMarketRequest {
+message MarketInfoRequest {
     string id = 1;
 }
 
-message InMarketResponse {
+message MarketInfoResponse {
     bool inMarket = 1;
+    string ownerID = 2;
+    string ownerAddr = 3; 
 }
