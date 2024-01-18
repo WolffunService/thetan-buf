@@ -39,38 +39,39 @@ namespace Thetan.World.V1 {
             "SUQSMQoFaXRlbXMYAiADKAsyGy50aGV0YW4ud29ybGQudjEuU2ltcGxlSXRl",
             "bVIFaXRlbXMSGgoIbWFpbENvZGUYAyABKAVSCG1haWxDb2RlIkQKEVNlbmRJ",
             "dGVtc1Jlc3BvbnNlEi8KBWl0ZW1zGAIgAygLMhkudGhldGFuLndvcmxkLnYx",
-            "Lkl0ZW1SZXNwUgVpdGVtcyI7ChFDcmVhdGVJdGVtUmVxdWVzdBISCgRraW5k",
-            "GAEgASgFUgRraW5kEhIKBHR5cGUYAiABKAVSBHR5cGUiZwoMSXRlbVJlc3Bv",
-            "bnNlEhYKBml0ZW1JRBgBIAEoCVIGaXRlbUlEEhIKBGtpbmQYAiABKAVSBGtp",
-            "bmQSKwoEZGF0YRgDIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RSBGRh",
-            "dGEicAoSVXBkYXRlT3duZXJSZXF1ZXN0EhYKBml0ZW1JRBgBIAEoCVIGaXRl",
-            "bUlEEhIKBGtpbmQYAiABKAVSBGtpbmQSFgoGZ2FtZUlEGAMgASgFUgZnYW1l",
-            "SUQSFgoGdXNlcklEGAQgASgJUgZ1c2VySUQiggEKD0dldEl0ZW1zUmVxdWVz",
-            "dBI7CgVpdGVtcxgBIAMoCzIlLnRoZXRhbi53b3JsZC52MS5HZXRJdGVtc1Jl",
-            "cXVlc3QuSXRlbVIFaXRlbXMaMgoESXRlbRIWCgZpdGVtSUQYASABKAlSBml0",
-            "ZW1JRBISCgRraW5kGAIgASgFUgRraW5kIq8BChBHZXRJdGVtc1Jlc3BvbnNl",
-            "EkIKBWl0ZW1zGAEgAygLMiwudGhldGFuLndvcmxkLnYxLkdldEl0ZW1zUmVz",
-            "cG9uc2UuSXRlbXNFbnRyeVIFaXRlbXMaVwoKSXRlbXNFbnRyeRIQCgNrZXkY",
-            "ASABKAlSA2tleRIzCgV2YWx1ZRgCIAEoCzIdLnRoZXRhbi53b3JsZC52MS5J",
-            "dGVtUmVzcG9uc2VSBXZhbHVlOgI4ASIzCg1JblVzZWRSZXF1ZXN0Eg4KAmlk",
-            "GAEgASgJUgJpZBISCgRraW5kGAIgASgFUgRraW5kIigKDkluVXNlZFJlc3Bv",
-            "bnNlEhYKBmluVXNlZBgBIAEoCFIGaW5Vc2VkMogEChlUaGV0YW5Xb3JsZEFk",
-            "YXB0ZXJTZXJ2aWNlEksKEUdldEF2YWlsYWJsZUl0ZW1zEhYuZ29vZ2xlLnBy",
-            "b3RvYnVmLkVtcHR5Gh4udGhldGFuLndvcmxkLnYxLkF2YWlsYWJsZUl0ZW0S",
-            "WAoMSXNWYWxpZEl0ZW1zEiQudGhldGFuLndvcmxkLnYxLklzVmFsaWRJdGVt",
-            "c1JlcXVlc3QaIi50aGV0YW4ud29ybGQudjEuQ2hlY2tJdGVtUmVzcG9uc2US",
-            "UgoJU2VuZEl0ZW1zEiEudGhldGFuLndvcmxkLnYxLlNlbmRJdGVtc1JlcXVl",
-            "c3QaIi50aGV0YW4ud29ybGQudjEuU2VuZEl0ZW1zUmVzcG9uc2USUgoNQ3Jl",
-            "YXRlTkZUSXRlbRIiLnRoZXRhbi53b3JsZC52MS5DcmVhdGVJdGVtUmVxdWVz",
-            "dBodLnRoZXRhbi53b3JsZC52MS5JdGVtUmVzcG9uc2USTwoIR2V0SXRlbXMS",
-            "IC50aGV0YW4ud29ybGQudjEuR2V0SXRlbXNSZXF1ZXN0GiEudGhldGFuLndv",
-            "cmxkLnYxLkdldEl0ZW1zUmVzcG9uc2USSwoISXNJblVzZWQSHi50aGV0YW4u",
-            "d29ybGQudjEuSW5Vc2VkUmVxdWVzdBofLnRoZXRhbi53b3JsZC52MS5JblVz",
-            "ZWRSZXNwb25zZUK7AQoTY29tLnRoZXRhbi53b3JsZC52MUITU2VydmljZUFk",
-            "YXB0ZXJQcm90b1ABWjF0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vd29ybGQv",
-            "djE7dGhldGFuX3dvcmxkX3YxogIDVFdYqgIPVGhldGFuLldvcmxkLlYxygIP",
-            "VGhldGFuXFdvcmxkXFYx4gIbVGhldGFuXFdvcmxkXFYxXEdQQk1ldGFkYXRh",
-            "6gIRVGhldGFuOjpXb3JsZDo6VjFiBnByb3RvMw=="));
+            "Lkl0ZW1SZXNwUgVpdGVtcyJjChFDcmVhdGVJdGVtUmVxdWVzdBISCgRraW5k",
+            "GAEgASgFUgRraW5kEhIKBHR5cGUYAiABKAVSBHR5cGUSGwoGdXNlcklEGAMg",
+            "ASgJSABSBnVzZXJJRIgBAUIJCgdfdXNlcklEImcKDEl0ZW1SZXNwb25zZRIW",
+            "CgZpdGVtSUQYASABKAlSBml0ZW1JRBISCgRraW5kGAIgASgFUgRraW5kEisK",
+            "BGRhdGEYAyABKAsyFy5nb29nbGUucHJvdG9idWYuU3RydWN0UgRkYXRhInAK",
+            "ElVwZGF0ZU93bmVyUmVxdWVzdBIWCgZpdGVtSUQYASABKAlSBml0ZW1JRBIS",
+            "CgRraW5kGAIgASgFUgRraW5kEhYKBmdhbWVJRBgDIAEoBVIGZ2FtZUlEEhYK",
+            "BnVzZXJJRBgEIAEoCVIGdXNlcklEIoIBCg9HZXRJdGVtc1JlcXVlc3QSOwoF",
+            "aXRlbXMYASADKAsyJS50aGV0YW4ud29ybGQudjEuR2V0SXRlbXNSZXF1ZXN0",
+            "Lkl0ZW1SBWl0ZW1zGjIKBEl0ZW0SFgoGaXRlbUlEGAEgASgJUgZpdGVtSUQS",
+            "EgoEa2luZBgCIAEoBVIEa2luZCKvAQoQR2V0SXRlbXNSZXNwb25zZRJCCgVp",
+            "dGVtcxgBIAMoCzIsLnRoZXRhbi53b3JsZC52MS5HZXRJdGVtc1Jlc3BvbnNl",
+            "Lkl0ZW1zRW50cnlSBWl0ZW1zGlcKCkl0ZW1zRW50cnkSEAoDa2V5GAEgASgJ",
+            "UgNrZXkSMwoFdmFsdWUYAiABKAsyHS50aGV0YW4ud29ybGQudjEuSXRlbVJl",
+            "c3BvbnNlUgV2YWx1ZToCOAEiMwoNSW5Vc2VkUmVxdWVzdBIOCgJpZBgBIAEo",
+            "CVICaWQSEgoEa2luZBgCIAEoBVIEa2luZCIoCg5JblVzZWRSZXNwb25zZRIW",
+            "CgZpblVzZWQYASABKAhSBmluVXNlZDKIBAoZVGhldGFuV29ybGRBZGFwdGVy",
+            "U2VydmljZRJLChFHZXRBdmFpbGFibGVJdGVtcxIWLmdvb2dsZS5wcm90b2J1",
+            "Zi5FbXB0eRoeLnRoZXRhbi53b3JsZC52MS5BdmFpbGFibGVJdGVtElgKDElz",
+            "VmFsaWRJdGVtcxIkLnRoZXRhbi53b3JsZC52MS5Jc1ZhbGlkSXRlbXNSZXF1",
+            "ZXN0GiIudGhldGFuLndvcmxkLnYxLkNoZWNrSXRlbVJlc3BvbnNlElIKCVNl",
+            "bmRJdGVtcxIhLnRoZXRhbi53b3JsZC52MS5TZW5kSXRlbXNSZXF1ZXN0GiIu",
+            "dGhldGFuLndvcmxkLnYxLlNlbmRJdGVtc1Jlc3BvbnNlElIKDUNyZWF0ZU5G",
+            "VEl0ZW0SIi50aGV0YW4ud29ybGQudjEuQ3JlYXRlSXRlbVJlcXVlc3QaHS50",
+            "aGV0YW4ud29ybGQudjEuSXRlbVJlc3BvbnNlEk8KCEdldEl0ZW1zEiAudGhl",
+            "dGFuLndvcmxkLnYxLkdldEl0ZW1zUmVxdWVzdBohLnRoZXRhbi53b3JsZC52",
+            "MS5HZXRJdGVtc1Jlc3BvbnNlEksKCElzSW5Vc2VkEh4udGhldGFuLndvcmxk",
+            "LnYxLkluVXNlZFJlcXVlc3QaHy50aGV0YW4ud29ybGQudjEuSW5Vc2VkUmVz",
+            "cG9uc2VCuwEKE2NvbS50aGV0YW4ud29ybGQudjFCE1NlcnZpY2VBZGFwdGVy",
+            "UHJvdG9QAVoxdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3dvcmxkL3YxO3Ro",
+            "ZXRhbl93b3JsZF92MaICA1RXWKoCD1RoZXRhbi5Xb3JsZC5WMcoCD1RoZXRh",
+            "blxXb3JsZFxWMeICG1RoZXRhblxXb3JsZFxWMVxHUEJNZXRhZGF0YeoCEVRo",
+            "ZXRhbjo6V29ybGQ6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -81,7 +82,7 @@ namespace Thetan.World.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.CheckItemResponse), global::Thetan.World.V1.CheckItemResponse.Parser, new[]{ "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.SendItemsRequest), global::Thetan.World.V1.SendItemsRequest.Parser, new[]{ "UserID", "Items", "MailCode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.SendItemsResponse), global::Thetan.World.V1.SendItemsResponse.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.CreateItemRequest), global::Thetan.World.V1.CreateItemRequest.Parser, new[]{ "Kind", "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.CreateItemRequest), global::Thetan.World.V1.CreateItemRequest.Parser, new[]{ "Kind", "Type", "UserID" }, new[]{ "UserID" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.ItemResponse), global::Thetan.World.V1.ItemResponse.Parser, new[]{ "ItemID", "Kind", "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.UpdateOwnerRequest), global::Thetan.World.V1.UpdateOwnerRequest.Parser, new[]{ "ItemID", "Kind", "GameID", "UserID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.GetItemsRequest), global::Thetan.World.V1.GetItemsRequest.Parser, new[]{ "Items" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.GetItemsRequest.Types.Item), global::Thetan.World.V1.GetItemsRequest.Types.Item.Parser, new[]{ "ItemID", "Kind" }, null, null, null, null)}),
@@ -1705,6 +1706,7 @@ namespace Thetan.World.V1 {
     public CreateItemRequest(CreateItemRequest other) : this() {
       kind_ = other.kind_;
       type_ = other.type_;
+      userID_ = other.userID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1738,6 +1740,30 @@ namespace Thetan.World.V1 {
       }
     }
 
+    /// <summary>Field number for the "userID" field.</summary>
+    public const int UserIDFieldNumber = 3;
+    private string userID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string UserID {
+      get { return userID_ ?? ""; }
+      set {
+        userID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "userID" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasUserID {
+      get { return userID_ != null; }
+    }
+    /// <summary>Clears the value of the "userID" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearUserID() {
+      userID_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1755,6 +1781,7 @@ namespace Thetan.World.V1 {
       }
       if (Kind != other.Kind) return false;
       if (Type != other.Type) return false;
+      if (UserID != other.UserID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1764,6 +1791,7 @@ namespace Thetan.World.V1 {
       int hash = 1;
       if (Kind != 0) hash ^= Kind.GetHashCode();
       if (Type != 0) hash ^= Type.GetHashCode();
+      if (HasUserID) hash ^= UserID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1790,6 +1818,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(Type);
       }
+      if (HasUserID) {
+        output.WriteRawTag(26);
+        output.WriteString(UserID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1808,6 +1840,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(Type);
       }
+      if (HasUserID) {
+        output.WriteRawTag(26);
+        output.WriteString(UserID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1823,6 +1859,9 @@ namespace Thetan.World.V1 {
       }
       if (Type != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
+      }
+      if (HasUserID) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1841,6 +1880,9 @@ namespace Thetan.World.V1 {
       }
       if (other.Type != 0) {
         Type = other.Type;
+      }
+      if (other.HasUserID) {
+        UserID = other.UserID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1865,6 +1907,10 @@ namespace Thetan.World.V1 {
             Type = input.ReadInt32();
             break;
           }
+          case 26: {
+            UserID = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1886,6 +1932,10 @@ namespace Thetan.World.V1 {
           }
           case 16: {
             Type = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            UserID = input.ReadString();
             break;
           }
         }
