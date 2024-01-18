@@ -59,6 +59,7 @@ message SendItemsResponse {
 message CreateItemRequest {
     int32 kind = 1;
     int32 type = 2;
+    optional string userID = 3;
 }
 
 message ItemResponse {
