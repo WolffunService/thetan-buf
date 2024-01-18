@@ -46,15 +46,17 @@ namespace Thetan.World.V1 {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    static readonly grpc::Marshaller<global::Thetan.World.V1.MarketInfoRequest> __Marshaller_thetan_world_v1_MarketInfoRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.MarketInfoRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.World.V1.MarketInfoResponse> __Marshaller_thetan_world_v1_MarketInfoResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.MarketInfoResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty> __Method_Test = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly grpc::Method<global::Thetan.World.V1.MarketInfoRequest, global::Thetan.World.V1.MarketInfoResponse> __Method_MarketInfo = new grpc::Method<global::Thetan.World.V1.MarketInfoRequest, global::Thetan.World.V1.MarketInfoResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "Test",
-        __Marshaller_google_protobuf_Empty,
-        __Marshaller_google_protobuf_Empty);
+        "MarketInfo",
+        __Marshaller_thetan_world_v1_MarketInfoRequest,
+        __Marshaller_thetan_world_v1_MarketInfoResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -67,7 +69,7 @@ namespace Thetan.World.V1 {
     public abstract partial class ThetanWorldServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> Test(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.World.V1.MarketInfoResponse> MarketInfo(global::Thetan.World.V1.MarketInfoRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -102,24 +104,24 @@ namespace Thetan.World.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty Test(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.World.V1.MarketInfoResponse MarketInfo(global::Thetan.World.V1.MarketInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return Test(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return MarketInfo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty Test(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual global::Thetan.World.V1.MarketInfoResponse MarketInfo(global::Thetan.World.V1.MarketInfoRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_Test, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_MarketInfo, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> TestAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.MarketInfoResponse> MarketInfoAsync(global::Thetan.World.V1.MarketInfoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return TestAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return MarketInfoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> TestAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.MarketInfoResponse> MarketInfoAsync(global::Thetan.World.V1.MarketInfoRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_Test, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_MarketInfo, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -135,7 +137,7 @@ namespace Thetan.World.V1 {
     public static grpc::ServerServiceDefinition BindService(ThetanWorldServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_Test, serviceImpl.Test).Build();
+          .AddMethod(__Method_MarketInfo, serviceImpl.MarketInfo).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -145,7 +147,7 @@ namespace Thetan.World.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanWorldServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_Test, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.Test));
+      serviceBinder.AddMethod(__Method_MarketInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.MarketInfoRequest, global::Thetan.World.V1.MarketInfoResponse>(serviceImpl.MarketInfo));
     }
 
   }

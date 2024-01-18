@@ -23,6 +23,9 @@ const (
 	ThetanWorldAdapterService_GetAvailableItems_FullMethodName = "/thetan.world.v1.ThetanWorldAdapterService/GetAvailableItems"
 	ThetanWorldAdapterService_IsValidItems_FullMethodName      = "/thetan.world.v1.ThetanWorldAdapterService/IsValidItems"
 	ThetanWorldAdapterService_SendItems_FullMethodName         = "/thetan.world.v1.ThetanWorldAdapterService/SendItems"
+	ThetanWorldAdapterService_CreateNFTItem_FullMethodName     = "/thetan.world.v1.ThetanWorldAdapterService/CreateNFTItem"
+	ThetanWorldAdapterService_GetItems_FullMethodName          = "/thetan.world.v1.ThetanWorldAdapterService/GetItems"
+	ThetanWorldAdapterService_IsInUsed_FullMethodName          = "/thetan.world.v1.ThetanWorldAdapterService/IsInUsed"
 )
 
 // ThetanWorldAdapterServiceClient is the client API for ThetanWorldAdapterService service.
@@ -32,6 +35,9 @@ type ThetanWorldAdapterServiceClient interface {
 	GetAvailableItems(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*AvailableItem, error)
 	IsValidItems(ctx context.Context, in *IsValidItemsRequest, opts ...grpc.CallOption) (*CheckItemResponse, error)
 	SendItems(ctx context.Context, in *SendItemsRequest, opts ...grpc.CallOption) (*SendItemsResponse, error)
+	CreateNFTItem(ctx context.Context, in *CreateItemRequest, opts ...grpc.CallOption) (*ItemResponse, error)
+	GetItems(ctx context.Context, in *GetItemsRequest, opts ...grpc.CallOption) (*GetItemsResponse, error)
+	IsInUsed(ctx context.Context, in *InUsedRequest, opts ...grpc.CallOption) (*InUsedResponse, error)
 }
 
 type thetanWorldAdapterServiceClient struct {
@@ -69,6 +75,33 @@ func (c *thetanWorldAdapterServiceClient) SendItems(ctx context.Context, in *Sen
 	return out, nil
 }
 
+func (c *thetanWorldAdapterServiceClient) CreateNFTItem(ctx context.Context, in *CreateItemRequest, opts ...grpc.CallOption) (*ItemResponse, error) {
+	out := new(ItemResponse)
+	err := c.cc.Invoke(ctx, ThetanWorldAdapterService_CreateNFTItem_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanWorldAdapterServiceClient) GetItems(ctx context.Context, in *GetItemsRequest, opts ...grpc.CallOption) (*GetItemsResponse, error) {
+	out := new(GetItemsResponse)
+	err := c.cc.Invoke(ctx, ThetanWorldAdapterService_GetItems_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanWorldAdapterServiceClient) IsInUsed(ctx context.Context, in *InUsedRequest, opts ...grpc.CallOption) (*InUsedResponse, error) {
+	out := new(InUsedResponse)
+	err := c.cc.Invoke(ctx, ThetanWorldAdapterService_IsInUsed_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanWorldAdapterServiceServer is the server API for ThetanWorldAdapterService service.
 // All implementations must embed UnimplementedThetanWorldAdapterServiceServer
 // for forward compatibility
@@ -76,6 +109,9 @@ type ThetanWorldAdapterServiceServer interface {
 	GetAvailableItems(context.Context, *emptypb.Empty) (*AvailableItem, error)
 	IsValidItems(context.Context, *IsValidItemsRequest) (*CheckItemResponse, error)
 	SendItems(context.Context, *SendItemsRequest) (*SendItemsResponse, error)
+	CreateNFTItem(context.Context, *CreateItemRequest) (*ItemResponse, error)
+	GetItems(context.Context, *GetItemsRequest) (*GetItemsResponse, error)
+	IsInUsed(context.Context, *InUsedRequest) (*InUsedResponse, error)
 	mustEmbedUnimplementedThetanWorldAdapterServiceServer()
 }
 
@@ -91,6 +127,15 @@ func (UnimplementedThetanWorldAdapterServiceServer) IsValidItems(context.Context
 }
 func (UnimplementedThetanWorldAdapterServiceServer) SendItems(context.Context, *SendItemsRequest) (*SendItemsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SendItems not implemented")
+}
+func (UnimplementedThetanWorldAdapterServiceServer) CreateNFTItem(context.Context, *CreateItemRequest) (*ItemResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateNFTItem not implemented")
+}
+func (UnimplementedThetanWorldAdapterServiceServer) GetItems(context.Context, *GetItemsRequest) (*GetItemsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetItems not implemented")
+}
+func (UnimplementedThetanWorldAdapterServiceServer) IsInUsed(context.Context, *InUsedRequest) (*InUsedResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method IsInUsed not implemented")
 }
 func (UnimplementedThetanWorldAdapterServiceServer) mustEmbedUnimplementedThetanWorldAdapterServiceServer() {
 }
@@ -160,6 +205,60 @@ func _ThetanWorldAdapterService_SendItems_Handler(srv interface{}, ctx context.C
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanWorldAdapterService_CreateNFTItem_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CreateItemRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanWorldAdapterServiceServer).CreateNFTItem(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanWorldAdapterService_CreateNFTItem_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanWorldAdapterServiceServer).CreateNFTItem(ctx, req.(*CreateItemRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanWorldAdapterService_GetItems_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetItemsRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanWorldAdapterServiceServer).GetItems(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanWorldAdapterService_GetItems_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanWorldAdapterServiceServer).GetItems(ctx, req.(*GetItemsRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanWorldAdapterService_IsInUsed_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(InUsedRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanWorldAdapterServiceServer).IsInUsed(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanWorldAdapterService_IsInUsed_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanWorldAdapterServiceServer).IsInUsed(ctx, req.(*InUsedRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanWorldAdapterService_ServiceDesc is the grpc.ServiceDesc for ThetanWorldAdapterService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -178,6 +277,18 @@ var ThetanWorldAdapterService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "SendItems",
 			Handler:    _ThetanWorldAdapterService_SendItems_Handler,
+		},
+		{
+			MethodName: "CreateNFTItem",
+			Handler:    _ThetanWorldAdapterService_CreateNFTItem_Handler,
+		},
+		{
+			MethodName: "GetItems",
+			Handler:    _ThetanWorldAdapterService_GetItems_Handler,
+		},
+		{
+			MethodName: "IsInUsed",
+			Handler:    _ThetanWorldAdapterService_IsInUsed_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
