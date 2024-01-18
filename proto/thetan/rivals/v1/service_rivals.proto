@@ -39,8 +39,11 @@ service ThetanRivalService {
   rpc GetListFriends(GetUserFriendRequest) returns (GetUserFriendResponse) {}
 
   // Onboarding
-  rpc GetMatchInfoOnboarding(GetMatchInfoRequest) returns (GetMatchInfoResponse) {}
+  rpc GetMatchInfoOnboarding(GetMatchInfoRequest) returns (GetMatchInfoResponse) {
+    option deprecated = true;
+  }
   rpc GetOnboardingConfig(GetOnboardingConfigRequest) returns (GetOnboardingConfigResponse) {}
+  rpc GetMatchInfoTutorial(GetMatchInfoTutorialRequest) returns (GetMatchInfoTutorialResponse) {}
 
   // Lobby
   rpc GetLatestLobbyActivityInfo(GetActivityRequest) returns (GetActivityResponse) {}
@@ -53,6 +56,7 @@ service ThetanRivalService {
 
   // GetFindMatchInfo
   rpc GetFindMatchInfo(FindMatchInfoRequest) returns (FindMatchInfoResponse) {}
+  rpc CanChangeMode(CanChangeModeRequest) returns (CanChangeModeResponse) {}
 
   // Get config for bot
   rpc GetConfigForBot(GetConfigForBotRequest) returns (GetConfigForBotResponse) {}
@@ -68,7 +72,9 @@ service ThetanRivalService {
   rpc GetContestDesigns(GetContestDesignsRequest) returns (GetContestDesignsResponse) {}
 
   // Game mode
-  rpc SearchGameMode(SearchGameModeRequest) returns (SearchGameModeResponse) {}
+  rpc SearchGameMode(SearchGameModeRequest) returns (SearchGameModeResponse) {
+    option deprecated = true;
+  }
   rpc CachePlayedMap(CachePlayedMapRequest) returns (CachePlayedMapResponse) {}
 
   // Metric
@@ -83,13 +89,16 @@ message GetMetricConfigResponse {
 }
 
 message SearchGameModeRequest {
+  option deprecated = true;
 }
 
 message SearchGameModeResponse {
+  option deprecated = true;
   repeated GameModeInfo listGameMode = 1;
 }
 
 message GameModeInfo {
+  option deprecated = true;
   thetan.shared.v1.InGameMode inGameMode = 1;
   map<int32, int32> weightByMapID = 2;
 }
@@ -352,6 +361,7 @@ message FriendInfo {
 // ==== Onboarding ====
 
 message GetMatchInfoRequest {
+  option deprecated = true;
   string userID = 1;
 
   optional thetan.shared.v1.RoundStat lastRound = 2;
@@ -362,12 +372,29 @@ message GetMatchInfoRequest {
 }
 
 message GetMatchInfoResponse {
+  option deprecated = true;
   optional thetan.shared.v1.PlayerInfoMatchProto playerInfo = 1;
   string matchID = 2;
   repeated MapData mapIds = 4;
   repeated int32 listMaxPlayerPerRound = 5;
   PlayerStat playerStat = 6;
   int32 numPlayer = 7;
+}
+
+// ==== Tutorial ====
+
+message GetMatchInfoTutorialRequest {
+  string userID = 1;
+}
+
+message GetMatchInfoTutorialResponse {
+  thetan.shared.v1.InGameMode ingameMode = 1;
+  thetan.shared.v1.PlayerInfoMatchProto playerInfo = 2;
+  int32 totalPlayers = 3;
+  repeated int32 qualifiedPlayersPerRound = 4;
+  int64 maxBattleDurationInSec = 5;
+  repeated thetan.shared.v1.MapDataProto maps = 6 [deprecated = true];
+  repeated thetan.shared.v1.Round rounds = 7;
 }
 
 message MapData {
@@ -483,6 +510,7 @@ message TrackSessionResponse {
 message FindMatchInfoRequest {
   repeated string playersID = 1;
   thetan.shared.v1.InGameMode inGameMode = 2;
+  string modeID = 3;
 }
 
 message FindMatchInfoResponse {
@@ -556,4 +584,15 @@ message CachePlayedMapRequest {
 }
 
 message CachePlayedMapResponse {
+}
+
+message CanChangeModeRequest {
+  string userID = 1;
+  thetan.shared.v1.InGameMode inGameMode = 2;
+  thetan.shared.v1.TRArena arena = 3;
+  string modeID = 4;
+}
+
+message CanChangeModeResponse {
+  bool canChange = 1;
 }
