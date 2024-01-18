@@ -49,6 +49,8 @@ message PartyInfoProto {
   PartyStatus status = 5;
   int64 findmatchVersion = 6;
   thetan.shared.v1.InGameMode inGameMode = 7;
+  thetan.shared.v1.TRArena arena = 8;
+  string modeID = 9;
 
   // tùy từng game mà cục nay có thể khác nhau
   bytes gameData = 99;
@@ -150,11 +152,15 @@ enum PlayerStatus {
 
 message SetInGameModeMsg{
   thetan.shared.v1.InGameMode inGameMode = 1;
+  thetan.shared.v1.TRArena arena = 2;
+  string id = 3;
 }
 
 message OtherSetInGameModeMsg{
   string playerID = 1;
   thetan.shared.v1.InGameMode inGameMode = 2;
+  thetan.shared.v1.TRArena arena = 3;
+  string modeID = 4;
 }
 
 message ReadyMsg{
@@ -273,7 +279,6 @@ message OnOtherReady{
 
 message TicketCacheWSOnly {
   string ticketID = 1;
-  int32 inGameMode = 2;
 }
 
 message GuildMail {

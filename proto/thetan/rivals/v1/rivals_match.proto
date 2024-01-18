@@ -11,8 +11,11 @@ option csharp_namespace = "Thetan.rivals.V1";
 service RivalMatchDirectorService {
   rpc CancelTicket(RivalCancelTicketRequest) returns (RivalCancelTicketResponse) {}
 
-  rpc CreateMatchOnboard(thetan.rivals.v1.GetMatchInfoRequest) returns (thetan.shared.v1.MatchFoundResponseProto) {}
+  rpc CreateMatchOnboard(thetan.rivals.v1.GetMatchInfoRequest) returns (thetan.shared.v1.MatchFoundResponseProto) {
+    option deprecated = true;
+  }
   rpc CreateMatchNonMatching(CreateMatchNonMatchingRequest) returns (CreateMatchNonMatchingResponse) {}
+  rpc CreateMatchTutorial(CreateMatchTutorialRequest) returns (thetan.shared.v1.MatchFoundResponseProto) {}
 }
 
 message RivalCancelTicketRequest {
@@ -29,7 +32,19 @@ message CreateMatchNonMatchingRequest {
   repeated thetan.shared.v1.PlayerInfoMatchProto players = 2;
   repeated int32 regions = 3;
   int32 findMatchVersion = 4;
+  thetan.shared.v1.TRArena arena = 5;
+  string modeID = 6;
 }
 
 message CreateMatchNonMatchingResponse {
+}
+
+message CreateMatchTutorialRequest {
+  thetan.shared.v1.InGameMode ingameMode = 1;
+  repeated thetan.shared.v1.PlayerInfoMatchProto players = 2;
+  int32 totalPlayers = 3;
+  repeated int32 qualifiedPlayersPerRound = 4;
+  repeated shared.v1.MapDataProto maps = 5 [deprecated = true];
+  int64 maxBattleDurationInSec = 6;
+  repeated shared.v1.Round rounds = 7;
 }
