@@ -38,31 +38,29 @@ namespace Thetan.Rivals.V1 {
             "dGNoVmVyc2lvbhgEIAEoBVIQZmluZE1hdGNoVmVyc2lvbhIvCgVhcmVuYRgF",
             "IAEoDjIZLnRoZXRhbi5zaGFyZWQudjEuVFJBcmVuYVIFYXJlbmESFgoGbW9k",
             "ZUlEGAYgASgJUgZtb2RlSUQiIAoeQ3JlYXRlTWF0Y2hOb25NYXRjaGluZ1Jl",
-            "c3BvbnNlIp0DChpDcmVhdGVNYXRjaFR1dG9yaWFsUmVxdWVzdBI8Cgppbmdh",
+            "c3BvbnNlIqkCChpDcmVhdGVNYXRjaFR1dG9yaWFsUmVxdWVzdBI8Cgppbmdh",
             "bWVNb2RlGAEgASgOMhwudGhldGFuLnNoYXJlZC52MS5JbkdhbWVNb2RlUgpp",
             "bmdhbWVNb2RlEkAKB3BsYXllcnMYAiADKAsyJi50aGV0YW4uc2hhcmVkLnYx",
             "LlBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzEiIKDHRvdGFsUGxheWVy",
-            "cxgDIAEoBVIMdG90YWxQbGF5ZXJzEjoKGHF1YWxpZmllZFBsYXllcnNQZXJS",
-            "b3VuZBgEIAMoBVIYcXVhbGlmaWVkUGxheWVyc1BlclJvdW5kEjYKBG1hcHMY",
-            "BSADKAsyHi50aGV0YW4uc2hhcmVkLnYxLk1hcERhdGFQcm90b0ICGAFSBG1h",
-            "cHMSNgoWbWF4QmF0dGxlRHVyYXRpb25JblNlYxgGIAEoA1IWbWF4QmF0dGxl",
-            "RHVyYXRpb25JblNlYxIvCgZyb3VuZHMYByADKAsyFy50aGV0YW4uc2hhcmVk",
-            "LnYxLlJvdW5kUgZyb3VuZHMy5AMKGVJpdmFsTWF0Y2hEaXJlY3RvclNlcnZp",
-            "Y2USaQoMQ2FuY2VsVGlja2V0EioudGhldGFuLnJpdmFscy52MS5SaXZhbENh",
-            "bmNlbFRpY2tldFJlcXVlc3QaKy50aGV0YW4ucml2YWxzLnYxLlJpdmFsQ2Fu",
-            "Y2VsVGlja2V0UmVzcG9uc2UiABJrChJDcmVhdGVNYXRjaE9uYm9hcmQSJS50",
-            "aGV0YW4ucml2YWxzLnYxLkdldE1hdGNoSW5mb1JlcXVlc3QaKS50aGV0YW4u",
-            "c2hhcmVkLnYxLk1hdGNoRm91bmRSZXNwb25zZVByb3RvIgOIAgESfQoWQ3Jl",
-            "YXRlTWF0Y2hOb25NYXRjaGluZxIvLnRoZXRhbi5yaXZhbHMudjEuQ3JlYXRl",
-            "TWF0Y2hOb25NYXRjaGluZ1JlcXVlc3QaMC50aGV0YW4ucml2YWxzLnYxLkNy",
-            "ZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXNwb25zZSIAEnAKE0NyZWF0ZU1hdGNo",
-            "VHV0b3JpYWwSLC50aGV0YW4ucml2YWxzLnYxLkNyZWF0ZU1hdGNoVHV0b3Jp",
-            "YWxSZXF1ZXN0GikudGhldGFuLnNoYXJlZC52MS5NYXRjaEZvdW5kUmVzcG9u",
-            "c2VQcm90byIAQr8BChRjb20udGhldGFuLnJpdmFscy52MUIQUml2YWxzTWF0",
-            "Y2hQcm90b1ABWjN0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vcml2YWxzL3Yx",
-            "O3RoZXRhbl9yaXZhbHNfdjGiAgNUUliqAhBUaGV0YW4uUml2YWxzLlYxygIQ",
-            "VGhldGFuXFJpdmFsc1xWMeICHFRoZXRhblxSaXZhbHNcVjFcR1BCTWV0YWRh",
-            "dGHqAhJUaGV0YW46OlJpdmFsczo6VjFiBnByb3RvMw=="));
+            "cxgDIAEoBVIMdG90YWxQbGF5ZXJzEjYKFm1heEJhdHRsZUR1cmF0aW9uSW5T",
+            "ZWMYBCABKANSFm1heEJhdHRsZUR1cmF0aW9uSW5TZWMSLwoGcm91bmRzGAUg",
+            "AygLMhcudGhldGFuLnNoYXJlZC52MS5Sb3VuZFIGcm91bmRzMuQDChlSaXZh",
+            "bE1hdGNoRGlyZWN0b3JTZXJ2aWNlEmkKDENhbmNlbFRpY2tldBIqLnRoZXRh",
+            "bi5yaXZhbHMudjEuUml2YWxDYW5jZWxUaWNrZXRSZXF1ZXN0GisudGhldGFu",
+            "LnJpdmFscy52MS5SaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlIgASawoSQ3Jl",
+            "YXRlTWF0Y2hPbmJvYXJkEiUudGhldGFuLnJpdmFscy52MS5HZXRNYXRjaElu",
+            "Zm9SZXF1ZXN0GikudGhldGFuLnNoYXJlZC52MS5NYXRjaEZvdW5kUmVzcG9u",
+            "c2VQcm90byIDiAIBEn0KFkNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmcSLy50aGV0",
+            "YW4ucml2YWxzLnYxLkNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXF1ZXN0GjAu",
+            "dGhldGFuLnJpdmFscy52MS5DcmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVzcG9u",
+            "c2UiABJwChNDcmVhdGVNYXRjaFR1dG9yaWFsEiwudGhldGFuLnJpdmFscy52",
+            "MS5DcmVhdGVNYXRjaFR1dG9yaWFsUmVxdWVzdBopLnRoZXRhbi5zaGFyZWQu",
+            "djEuTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8iAEK/AQoUY29tLnRoZXRhbi5y",
+            "aXZhbHMudjFCEFJpdmFsc01hdGNoUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4v",
+            "Z28vdGhldGFuL3JpdmFscy92MTt0aGV0YW5fcml2YWxzX3YxogIDVFJYqgIQ",
+            "VGhldGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5c",
+            "Uml2YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, global::Thetan.Shared.V1.MatchReflection.Descriptor, global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -70,7 +68,7 @@ namespace Thetan.Rivals.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketResponse), global::Thetan.Rivals.V1.RivalCancelTicketResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest), global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest.Parser, new[]{ "InGameMode", "Players", "Regions", "FindMatchVersion", "Arena", "ModeID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse), global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchTutorialRequest), global::Thetan.Rivals.V1.CreateMatchTutorialRequest.Parser, new[]{ "IngameMode", "Players", "TotalPlayers", "QualifiedPlayersPerRound", "Maps", "MaxBattleDurationInSec", "Rounds" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchTutorialRequest), global::Thetan.Rivals.V1.CreateMatchTutorialRequest.Parser, new[]{ "IngameMode", "Players", "TotalPlayers", "MaxBattleDurationInSec", "Rounds" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1035,8 +1033,6 @@ namespace Thetan.Rivals.V1 {
       ingameMode_ = other.ingameMode_;
       players_ = other.players_.Clone();
       totalPlayers_ = other.totalPlayers_;
-      qualifiedPlayersPerRound_ = other.qualifiedPlayersPerRound_.Clone();
-      maps_ = other.maps_.Clone();
       maxBattleDurationInSec_ = other.maxBattleDurationInSec_;
       rounds_ = other.rounds_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1083,31 +1079,8 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
-    /// <summary>Field number for the "qualifiedPlayersPerRound" field.</summary>
-    public const int QualifiedPlayersPerRoundFieldNumber = 4;
-    private static readonly pb::FieldCodec<int> _repeated_qualifiedPlayersPerRound_codec
-        = pb::FieldCodec.ForInt32(34);
-    private readonly pbc::RepeatedField<int> qualifiedPlayersPerRound_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<int> QualifiedPlayersPerRound {
-      get { return qualifiedPlayersPerRound_; }
-    }
-
-    /// <summary>Field number for the "maps" field.</summary>
-    public const int MapsFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Thetan.Shared.V1.MapDataProto> _repeated_maps_codec
-        = pb::FieldCodec.ForMessage(42, global::Thetan.Shared.V1.MapDataProto.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Shared.V1.MapDataProto> maps_ = new pbc::RepeatedField<global::Thetan.Shared.V1.MapDataProto>();
-    [global::System.ObsoleteAttribute]
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Shared.V1.MapDataProto> Maps {
-      get { return maps_; }
-    }
-
     /// <summary>Field number for the "maxBattleDurationInSec" field.</summary>
-    public const int MaxBattleDurationInSecFieldNumber = 6;
+    public const int MaxBattleDurationInSecFieldNumber = 4;
     private long maxBattleDurationInSec_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1119,9 +1092,9 @@ namespace Thetan.Rivals.V1 {
     }
 
     /// <summary>Field number for the "rounds" field.</summary>
-    public const int RoundsFieldNumber = 7;
+    public const int RoundsFieldNumber = 5;
     private static readonly pb::FieldCodec<global::Thetan.Shared.V1.Round> _repeated_rounds_codec
-        = pb::FieldCodec.ForMessage(58, global::Thetan.Shared.V1.Round.Parser);
+        = pb::FieldCodec.ForMessage(42, global::Thetan.Shared.V1.Round.Parser);
     private readonly pbc::RepeatedField<global::Thetan.Shared.V1.Round> rounds_ = new pbc::RepeatedField<global::Thetan.Shared.V1.Round>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1147,8 +1120,6 @@ namespace Thetan.Rivals.V1 {
       if (IngameMode != other.IngameMode) return false;
       if(!players_.Equals(other.players_)) return false;
       if (TotalPlayers != other.TotalPlayers) return false;
-      if(!qualifiedPlayersPerRound_.Equals(other.qualifiedPlayersPerRound_)) return false;
-      if(!maps_.Equals(other.maps_)) return false;
       if (MaxBattleDurationInSec != other.MaxBattleDurationInSec) return false;
       if(!rounds_.Equals(other.rounds_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1161,8 +1132,6 @@ namespace Thetan.Rivals.V1 {
       if (IngameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) hash ^= IngameMode.GetHashCode();
       hash ^= players_.GetHashCode();
       if (TotalPlayers != 0) hash ^= TotalPlayers.GetHashCode();
-      hash ^= qualifiedPlayersPerRound_.GetHashCode();
-      hash ^= maps_.GetHashCode();
       if (MaxBattleDurationInSec != 0L) hash ^= MaxBattleDurationInSec.GetHashCode();
       hash ^= rounds_.GetHashCode();
       if (_unknownFields != null) {
@@ -1192,10 +1161,8 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(24);
         output.WriteInt32(TotalPlayers);
       }
-      qualifiedPlayersPerRound_.WriteTo(output, _repeated_qualifiedPlayersPerRound_codec);
-      maps_.WriteTo(output, _repeated_maps_codec);
       if (MaxBattleDurationInSec != 0L) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(32);
         output.WriteInt64(MaxBattleDurationInSec);
       }
       rounds_.WriteTo(output, _repeated_rounds_codec);
@@ -1218,10 +1185,8 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(24);
         output.WriteInt32(TotalPlayers);
       }
-      qualifiedPlayersPerRound_.WriteTo(ref output, _repeated_qualifiedPlayersPerRound_codec);
-      maps_.WriteTo(ref output, _repeated_maps_codec);
       if (MaxBattleDurationInSec != 0L) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(32);
         output.WriteInt64(MaxBattleDurationInSec);
       }
       rounds_.WriteTo(ref output, _repeated_rounds_codec);
@@ -1242,8 +1207,6 @@ namespace Thetan.Rivals.V1 {
       if (TotalPlayers != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalPlayers);
       }
-      size += qualifiedPlayersPerRound_.CalculateSize(_repeated_qualifiedPlayersPerRound_codec);
-      size += maps_.CalculateSize(_repeated_maps_codec);
       if (MaxBattleDurationInSec != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(MaxBattleDurationInSec);
       }
@@ -1267,8 +1230,6 @@ namespace Thetan.Rivals.V1 {
       if (other.TotalPlayers != 0) {
         TotalPlayers = other.TotalPlayers;
       }
-      qualifiedPlayersPerRound_.Add(other.qualifiedPlayersPerRound_);
-      maps_.Add(other.maps_);
       if (other.MaxBattleDurationInSec != 0L) {
         MaxBattleDurationInSec = other.MaxBattleDurationInSec;
       }
@@ -1300,20 +1261,11 @@ namespace Thetan.Rivals.V1 {
             TotalPlayers = input.ReadInt32();
             break;
           }
-          case 34:
           case 32: {
-            qualifiedPlayersPerRound_.AddEntriesFrom(input, _repeated_qualifiedPlayersPerRound_codec);
-            break;
-          }
-          case 42: {
-            maps_.AddEntriesFrom(input, _repeated_maps_codec);
-            break;
-          }
-          case 48: {
             MaxBattleDurationInSec = input.ReadInt64();
             break;
           }
-          case 58: {
+          case 42: {
             rounds_.AddEntriesFrom(input, _repeated_rounds_codec);
             break;
           }
@@ -1344,20 +1296,11 @@ namespace Thetan.Rivals.V1 {
             TotalPlayers = input.ReadInt32();
             break;
           }
-          case 34:
           case 32: {
-            qualifiedPlayersPerRound_.AddEntriesFrom(ref input, _repeated_qualifiedPlayersPerRound_codec);
-            break;
-          }
-          case 42: {
-            maps_.AddEntriesFrom(ref input, _repeated_maps_codec);
-            break;
-          }
-          case 48: {
             MaxBattleDurationInSec = input.ReadInt64();
             break;
           }
-          case 58: {
+          case 42: {
             rounds_.AddEntriesFrom(ref input, _repeated_rounds_codec);
             break;
           }
