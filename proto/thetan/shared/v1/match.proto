@@ -110,6 +110,7 @@ message Round {
   int32 mapID = 1;
   MapDifficultyEnum mapDifficulty = 2;
   map<int32, SkillsData> skillsByType = 3; // <SkillTypeEnum, SkillData>
+  int32 numQualifyingPlayers = 4;
 }
 
 message SkillsData {

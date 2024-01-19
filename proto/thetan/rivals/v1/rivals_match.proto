@@ -43,8 +43,6 @@ message CreateMatchTutorialRequest {
   thetan.shared.v1.InGameMode ingameMode = 1;
   repeated thetan.shared.v1.PlayerInfoMatchProto players = 2;
   int32 totalPlayers = 3;
-  repeated int32 qualifiedPlayersPerRound = 4;
-  repeated shared.v1.MapDataProto maps = 5 [deprecated = true];
-  int64 maxBattleDurationInSec = 6;
-  repeated shared.v1.Round rounds = 7;
+  int64 maxBattleDurationInSec = 4;
+  repeated shared.v1.Round rounds = 5;
 }
