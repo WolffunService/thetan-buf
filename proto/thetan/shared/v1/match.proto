@@ -111,6 +111,7 @@ message Round {
   MapDifficultyEnum mapDifficulty = 2;
   map<int32, SkillsData> skillsByType = 3; // <SkillTypeEnum, SkillData>
   int32 numQualifyingPlayers = 4;
+  int32 rollSkillDurationInSec = 5;
 }
 
 message SkillsData {
