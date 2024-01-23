@@ -26,30 +26,35 @@ namespace Thetan.Shared.V1 {
           string.Concat(
             "CiF0aGV0YW4vc2hhcmVkL3YxL2N1c3RvbWl6ZWQucHJvdG8SEHRoZXRhbi5z",
             "aGFyZWQudjEaHGdvb2dsZS9wcm90b2J1Zi9zdHJ1Y3QucHJvdG8aE3RhZ2dl",
-            "ci90YWdnZXIucHJvdG8ivQIKCkN1c3RvbWl6ZWQSJAoEbmFtZRgBIAEoCUIQ",
-            "moSeAwtic29uOiJuYW1lIlIEbmFtZRI2Cgp0ZXh0dXJlVVJMGAIgASgJQhaa",
-            "hJ4DEWJzb246InRleHR1cmVVUkwiUgp0ZXh0dXJlVVJMEjwKDHRodW1ibmFp",
-            "bFVSTBgFIAEoCUIYmoSeAxNic29uOiJ0aHVtYm5haWxVUkwiUgx0aHVtYm5h",
-            "aWxVUkwSMwoJcHVibGlzaEF0GAMgASgDQhWahJ4DEGJzb246InB1Ymxpc2hB",
-            "dCJSCXB1Ymxpc2hBdBJTCgZzaGFkZXIYBCABKAsyIi50aGV0YW4uc2hhcmVk",
-            "LnYxLkN1c3RvbWl6ZWRTaGFkZXJCEpqEngMNYnNvbjoic2hhZGVyIkgAUgZz",
-            "aGFkZXKIAQFCCQoHX3NoYWRlciKPAQoQQ3VzdG9taXplZFNoYWRlchIwCghz",
-            "aGFkZXJJRBgBIAEoBUIUmoSeAw9ic29uOiJzaGFkZXJJRCJSCHNoYWRlcklE",
-            "EkMKBnBhcmFtcxgDIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RCEpqE",
-            "ngMNYnNvbjoicGFyYW1zIlIGcGFyYW1zSgQIAhADItIBCg5JdGVtQ3VzdG9t",
-            "aXplZBIkCgR0eXBlGAEgASgFQhCahJ4DC2Jzb246InR5cGUiUgR0eXBlEiQK",
-            "BGtpbmQYAiABKAVCEJqEngMLYnNvbjoia2luZCJSBGtpbmQSHgoCaWQYAyAB",
-            "KAlCDpqEngMJYnNvbjoiaWQiUgJpZBJUCgpjdXN0b21pemVkGAQgASgLMhwu",
-            "dGhldGFuLnNoYXJlZC52MS5DdXN0b21pemVkQhaahJ4DEWJzb246ImN1c3Rv",
-            "bWl6ZWQiUgpjdXN0b21pemVkQr4BChRjb20udGhldGFuLnNoYXJlZC52MUIP",
-            "Q3VzdG9taXplZFByb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9z",
-            "aGFyZWQvdjE7dGhldGFuX3NoYXJlZF92MaICA1RTWKoCEFRoZXRhbi5TaGFy",
-            "ZWQuVjHKAhBUaGV0YW5cU2hhcmVkXFYx4gIcVGhldGFuXFNoYXJlZFxWMVxH",
-            "UEJNZXRhZGF0YeoCElRoZXRhbjo6U2hhcmVkOjpWMWIGcHJvdG8z"));
+            "ci90YWdnZXIucHJvdG8i3gMKCkN1c3RvbWl6ZWQSSwoEdHlwZRgGIAEoDjIf",
+            "LnRoZXRhbi5zaGFyZWQudjEuQ3VzdG9taXplVHlwZUIWmoSeAxFic29uOiJj",
+            "dXN0b21UeXBlIlIEdHlwZRIkCgRuYW1lGAEgASgJQhCahJ4DC2Jzb246Im5h",
+            "bWUiUgRuYW1lEjYKCnRleHR1cmVVUkwYAiABKAlCFpqEngMRYnNvbjoidGV4",
+            "dHVyZVVSTCJSCnRleHR1cmVVUkwSPAoMdGh1bWJuYWlsVVJMGAUgASgJQhia",
+            "hJ4DE2Jzb246InRodW1ibmFpbFVSTCJSDHRodW1ibmFpbFVSTBJTCgZzaGFk",
+            "ZXIYBCABKAsyIi50aGV0YW4uc2hhcmVkLnYxLkN1c3RvbWl6ZWRTaGFkZXJC",
+            "EpqEngMNYnNvbjoic2hhZGVyIkgAUgZzaGFkZXKIAQESQQoMYW5pbWF0aW9u",
+            "VVJMGAcgASgJQhiahJ4DE2Jzb246ImFuaW1hdGlvblVSTCJIAVIMYW5pbWF0",
+            "aW9uVVJMiAEBEjMKCXB1Ymxpc2hBdBgDIAEoA0IVmoSeAxBic29uOiJwdWJs",
+            "aXNoQXQiUglwdWJsaXNoQXRCCQoHX3NoYWRlckIPCg1fYW5pbWF0aW9uVVJM",
+            "Io8BChBDdXN0b21pemVkU2hhZGVyEjAKCHNoYWRlcklEGAEgASgFQhSahJ4D",
+            "D2Jzb246InNoYWRlcklEIlIIc2hhZGVySUQSQwoGcGFyYW1zGAMgASgLMhcu",
+            "Z29vZ2xlLnByb3RvYnVmLlN0cnVjdEISmoSeAw1ic29uOiJwYXJhbXMiUgZw",
+            "YXJhbXNKBAgCEAMi0gEKDkl0ZW1DdXN0b21pemVkEiQKBHR5cGUYASABKAVC",
+            "EJqEngMLYnNvbjoidHlwZSJSBHR5cGUSJAoEa2luZBgCIAEoBUIQmoSeAwti",
+            "c29uOiJraW5kIlIEa2luZBIeCgJpZBgDIAEoCUIOmoSeAwlic29uOiJpZCJS",
+            "AmlkElQKCmN1c3RvbWl6ZWQYBCABKAsyHC50aGV0YW4uc2hhcmVkLnYxLkN1",
+            "c3RvbWl6ZWRCFpqEngMRYnNvbjoiY3VzdG9taXplZCJSCmN1c3RvbWl6ZWQq",
+            "KwoNQ3VzdG9taXplVHlwZRILCgdURVhUVVJFEAASDQoJQU5JTUFUSU9OEAFC",
+            "vgEKFGNvbS50aGV0YW4uc2hhcmVkLnYxQg9DdXN0b21pemVkUHJvdG9QAVoz",
+            "dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3NoYXJlZC92MTt0aGV0YW5fc2hh",
+            "cmVkX3YxogIDVFNYqgIQVGhldGFuLlNoYXJlZC5WMcoCEFRoZXRhblxTaGFy",
+            "ZWRcVjHiAhxUaGV0YW5cU2hhcmVkXFYxXEdQQk1ldGFkYXRh6gISVGhldGFu",
+            "OjpTaGFyZWQ6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Tagger.TaggerReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.Customized), global::Thetan.Shared.V1.Customized.Parser, new[]{ "Name", "TextureURL", "ThumbnailURL", "PublishAt", "Shader" }, new[]{ "Shader" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Shared.V1.CustomizeType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.Customized), global::Thetan.Shared.V1.Customized.Parser, new[]{ "Type", "Name", "TextureURL", "ThumbnailURL", "Shader", "AnimationURL", "PublishAt" }, new[]{ "Shader", "AnimationURL" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.CustomizedShader), global::Thetan.Shared.V1.CustomizedShader.Parser, new[]{ "ShaderID", "Params" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.ItemCustomized), global::Thetan.Shared.V1.ItemCustomized.Parser, new[]{ "Type", "Kind", "Id", "Customized" }, null, null, null, null)
           }));
@@ -57,6 +62,14 @@ namespace Thetan.Shared.V1 {
     #endregion
 
   }
+  #region Enums
+  public enum CustomizeType {
+    [pbr::OriginalName("TEXTURE")] Texture = 0,
+    [pbr::OriginalName("ANIMATION")] Animation = 1,
+  }
+
+  #endregion
+
   #region Messages
   /// <summary>
   /// Customized dùng để gắn vào các item để cho phép app Thetan Creator có thể lưu được bản vẽ.
@@ -95,11 +108,13 @@ namespace Thetan.Shared.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Customized(Customized other) : this() {
+      type_ = other.type_;
       name_ = other.name_;
       textureURL_ = other.textureURL_;
       thumbnailURL_ = other.thumbnailURL_;
-      publishAt_ = other.publishAt_;
       shader_ = other.shader_ != null ? other.shader_.Clone() : null;
+      animationURL_ = other.animationURL_;
+      publishAt_ = other.publishAt_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -107,6 +122,18 @@ namespace Thetan.Shared.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Customized Clone() {
       return new Customized(this);
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 6;
+    private global::Thetan.Shared.V1.CustomizeType type_ = global::Thetan.Shared.V1.CustomizeType.Texture;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Shared.V1.CustomizeType Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
     }
 
     /// <summary>Field number for the "name" field.</summary>
@@ -128,6 +155,7 @@ namespace Thetan.Shared.V1 {
     public const int TextureURLFieldNumber = 2;
     private string textureURL_ = "";
     /// <summary>
+    /// ===== TEXTURE ========
     /// TextureURL đường dẫn tuyệt đối đến file texture lưu trên cloud
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -154,21 +182,6 @@ namespace Thetan.Shared.V1 {
       }
     }
 
-    /// <summary>Field number for the "publishAt" field.</summary>
-    public const int PublishAtFieldNumber = 3;
-    private long publishAt_;
-    /// <summary>
-    /// PublishAt thời điểm publish item customized này
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long PublishAt {
-      get { return publishAt_; }
-      set {
-        publishAt_ = value;
-      }
-    }
-
     /// <summary>Field number for the "shader" field.</summary>
     public const int ShaderFieldNumber = 4;
     private global::Thetan.Shared.V1.CustomizedShader shader_;
@@ -181,6 +194,48 @@ namespace Thetan.Shared.V1 {
       get { return shader_; }
       set {
         shader_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "animationURL" field.</summary>
+    public const int AnimationURLFieldNumber = 7;
+    private string animationURL_;
+    /// <summary>
+    /// ===== ANIMATION ========
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AnimationURL {
+      get { return animationURL_ ?? ""; }
+      set {
+        animationURL_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "animationURL" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAnimationURL {
+      get { return animationURL_ != null; }
+    }
+    /// <summary>Clears the value of the "animationURL" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAnimationURL() {
+      animationURL_ = null;
+    }
+
+    /// <summary>Field number for the "publishAt" field.</summary>
+    public const int PublishAtFieldNumber = 3;
+    private long publishAt_;
+    /// <summary>
+    /// PublishAt thời điểm publish item customized này
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long PublishAt {
+      get { return publishAt_; }
+      set {
+        publishAt_ = value;
       }
     }
 
@@ -199,11 +254,13 @@ namespace Thetan.Shared.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Type != other.Type) return false;
       if (Name != other.Name) return false;
       if (TextureURL != other.TextureURL) return false;
       if (ThumbnailURL != other.ThumbnailURL) return false;
-      if (PublishAt != other.PublishAt) return false;
       if (!object.Equals(Shader, other.Shader)) return false;
+      if (AnimationURL != other.AnimationURL) return false;
+      if (PublishAt != other.PublishAt) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -211,11 +268,13 @@ namespace Thetan.Shared.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (Type != global::Thetan.Shared.V1.CustomizeType.Texture) hash ^= Type.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (TextureURL.Length != 0) hash ^= TextureURL.GetHashCode();
       if (ThumbnailURL.Length != 0) hash ^= ThumbnailURL.GetHashCode();
-      if (PublishAt != 0L) hash ^= PublishAt.GetHashCode();
       if (shader_ != null) hash ^= Shader.GetHashCode();
+      if (HasAnimationURL) hash ^= AnimationURL.GetHashCode();
+      if (PublishAt != 0L) hash ^= PublishAt.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -254,6 +313,14 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(42);
         output.WriteString(ThumbnailURL);
       }
+      if (Type != global::Thetan.Shared.V1.CustomizeType.Texture) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) Type);
+      }
+      if (HasAnimationURL) {
+        output.WriteRawTag(58);
+        output.WriteString(AnimationURL);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -284,6 +351,14 @@ namespace Thetan.Shared.V1 {
         output.WriteRawTag(42);
         output.WriteString(ThumbnailURL);
       }
+      if (Type != global::Thetan.Shared.V1.CustomizeType.Texture) {
+        output.WriteRawTag(48);
+        output.WriteEnum((int) Type);
+      }
+      if (HasAnimationURL) {
+        output.WriteRawTag(58);
+        output.WriteString(AnimationURL);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -294,6 +369,9 @@ namespace Thetan.Shared.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (Type != global::Thetan.Shared.V1.CustomizeType.Texture) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
@@ -303,11 +381,14 @@ namespace Thetan.Shared.V1 {
       if (ThumbnailURL.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ThumbnailURL);
       }
-      if (PublishAt != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PublishAt);
-      }
       if (shader_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Shader);
+      }
+      if (HasAnimationURL) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AnimationURL);
+      }
+      if (PublishAt != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PublishAt);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -321,6 +402,9 @@ namespace Thetan.Shared.V1 {
       if (other == null) {
         return;
       }
+      if (other.Type != global::Thetan.Shared.V1.CustomizeType.Texture) {
+        Type = other.Type;
+      }
       if (other.Name.Length != 0) {
         Name = other.Name;
       }
@@ -330,14 +414,17 @@ namespace Thetan.Shared.V1 {
       if (other.ThumbnailURL.Length != 0) {
         ThumbnailURL = other.ThumbnailURL;
       }
-      if (other.PublishAt != 0L) {
-        PublishAt = other.PublishAt;
-      }
       if (other.shader_ != null) {
         if (shader_ == null) {
           Shader = new global::Thetan.Shared.V1.CustomizedShader();
         }
         Shader.MergeFrom(other.Shader);
+      }
+      if (other.HasAnimationURL) {
+        AnimationURL = other.AnimationURL;
+      }
+      if (other.PublishAt != 0L) {
+        PublishAt = other.PublishAt;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -377,6 +464,14 @@ namespace Thetan.Shared.V1 {
             ThumbnailURL = input.ReadString();
             break;
           }
+          case 48: {
+            Type = (global::Thetan.Shared.V1.CustomizeType) input.ReadEnum();
+            break;
+          }
+          case 58: {
+            AnimationURL = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -413,6 +508,14 @@ namespace Thetan.Shared.V1 {
           }
           case 42: {
             ThumbnailURL = input.ReadString();
+            break;
+          }
+          case 48: {
+            Type = (global::Thetan.Shared.V1.CustomizeType) input.ReadEnum();
+            break;
+          }
+          case 58: {
+            AnimationURL = input.ReadString();
             break;
           }
         }
