@@ -8,18 +8,31 @@ import "tagger/tagger.proto";
 option go_package = "thetan-buf/gen/go/thetan/shared/v1;thetan_shared_v1";
 option csharp_namespace = "Thetan.Shared.V1";
 
+enum CustomizeType {
+  TEXTURE = 0;
+  ANIMATION = 1;
+}
+
 // Customized dùng để gắn vào các item để cho phép app Thetan Creator có thể lưu được bản vẽ.
 message Customized {
+  CustomizeType type = 6 [(tagger.tags) = "bson:\"customType\""];
+
   // Name cho phép user tự đặt tên cho item của mình ở Thetan Creator
   string name = 1 [(tagger.tags) = "bson:\"name\""];
+
+  // ===== TEXTURE ========
   // TextureURL đường dẫn tuyệt đối đến file texture lưu trên cloud
   string textureURL = 2 [(tagger.tags) = "bson:\"textureURL\""];
   // ThumbnailURL đường dẫn tuyệt đối đến file thumbnail lưu trên cloud
   string thumbnailURL = 5 [(tagger.tags) = "bson:\"thumbnailURL\""];
-  // PublishAt thời điểm publish item customized này
-  int64 publishAt = 3 [(tagger.tags) = "bson:\"publishAt\""];
   // CustomShader shader và các cấu hình của shader đó
   optional CustomizedShader shader = 4 [(tagger.tags) = "bson:\"shader\""];
+
+  // ===== ANIMATION ========
+  optional string animationURL = 7 [(tagger.tags) = "bson:\"animationURL\""];
+
+  // PublishAt thời điểm publish item customized này
+  int64 publishAt = 3 [(tagger.tags) = "bson:\"publishAt\""];
 }
 
 message CustomizedShader {
