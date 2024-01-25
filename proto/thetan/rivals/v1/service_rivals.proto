@@ -49,6 +49,7 @@ service ThetanRivalService {
   rpc GetLatestLobbyActivityInfo(GetActivityRequest) returns (GetActivityResponse) {}
   rpc GetTownUser(GetTownUserRequest) returns (LobbyTown) {}
   rpc GetTownByID(GetTownRequest) returns (LobbyTown) {}
+  rpc GetLobbyUser(GetLobbyUserRequest) returns (GetLobbyUserResponse) {}
 
   // Track Action
   rpc TrackSession(TrackSessionRequest) returns (TrackSessionResponse) {}
@@ -593,4 +594,12 @@ message CanChangeModeRequest {
 
 message CanChangeModeResponse {
   bool canChange = 1;
+}
+
+message GetLobbyUserRequest {
+  string userID = 1;
+}
+
+message GetLobbyUserResponse {
+  string townID = 1;
 }

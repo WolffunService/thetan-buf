@@ -41,6 +41,7 @@ const (
 	ThetanRivalService_GetLatestLobbyActivityInfo_FullMethodName    = "/thetan.rivals.v1.ThetanRivalService/GetLatestLobbyActivityInfo"
 	ThetanRivalService_GetTownUser_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownUser"
 	ThetanRivalService_GetTownByID_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownByID"
+	ThetanRivalService_GetLobbyUser_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/GetLobbyUser"
 	ThetanRivalService_TrackSession_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/TrackSession"
 	ThetanRivalService_TrackSessionLobby_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/TrackSessionLobby"
 	ThetanRivalService_GetFindMatchInfo_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
@@ -88,6 +89,7 @@ type ThetanRivalServiceClient interface {
 	GetLatestLobbyActivityInfo(ctx context.Context, in *GetActivityRequest, opts ...grpc.CallOption) (*GetActivityResponse, error)
 	GetTownUser(ctx context.Context, in *GetTownUserRequest, opts ...grpc.CallOption) (*LobbyTown, error)
 	GetTownByID(ctx context.Context, in *GetTownRequest, opts ...grpc.CallOption) (*LobbyTown, error)
+	GetLobbyUser(ctx context.Context, in *GetLobbyUserRequest, opts ...grpc.CallOption) (*GetLobbyUserResponse, error)
 	// Track Action
 	TrackSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error)
 	TrackSessionLobby(ctx context.Context, in *TrackSessionLobbyRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
@@ -310,6 +312,15 @@ func (c *thetanRivalServiceClient) GetTownByID(ctx context.Context, in *GetTownR
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) GetLobbyUser(ctx context.Context, in *GetLobbyUserRequest, opts ...grpc.CallOption) (*GetLobbyUserResponse, error) {
+	out := new(GetLobbyUserResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetLobbyUser_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 func (c *thetanRivalServiceClient) TrackSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error) {
 	out := new(TrackSessionResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_TrackSession_FullMethodName, in, out, opts...)
@@ -453,6 +464,7 @@ type ThetanRivalServiceServer interface {
 	GetLatestLobbyActivityInfo(context.Context, *GetActivityRequest) (*GetActivityResponse, error)
 	GetTownUser(context.Context, *GetTownUserRequest) (*LobbyTown, error)
 	GetTownByID(context.Context, *GetTownRequest) (*LobbyTown, error)
+	GetLobbyUser(context.Context, *GetLobbyUserRequest) (*GetLobbyUserResponse, error)
 	// Track Action
 	TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error)
 	TrackSessionLobby(context.Context, *TrackSessionLobbyRequest) (*emptypb.Empty, error)
@@ -543,6 +555,9 @@ func (UnimplementedThetanRivalServiceServer) GetTownUser(context.Context, *GetTo
 }
 func (UnimplementedThetanRivalServiceServer) GetTownByID(context.Context, *GetTownRequest) (*LobbyTown, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTownByID not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetLobbyUser(context.Context, *GetLobbyUserRequest) (*GetLobbyUserResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetLobbyUser not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TrackSession not implemented")
@@ -971,6 +986,24 @@ func _ThetanRivalService_GetTownByID_Handler(srv interface{}, ctx context.Contex
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_GetLobbyUser_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetLobbyUserRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetLobbyUser(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetLobbyUser_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetLobbyUser(ctx, req.(*GetLobbyUserRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _ThetanRivalService_TrackSession_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(TrackSessionRequest)
 	if err := dec(in); err != nil {
@@ -1277,6 +1310,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetTownByID",
 			Handler:    _ThetanRivalService_GetTownByID_Handler,
+		},
+		{
+			MethodName: "GetLobbyUser",
+			Handler:    _ThetanRivalService_GetLobbyUser_Handler,
 		},
 		{
 			MethodName: "TrackSession",
