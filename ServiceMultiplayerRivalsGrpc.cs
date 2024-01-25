@@ -53,6 +53,10 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.NotifyRequest> __Marshaller_thetan_multiplayer_rivals_v1_NotifyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.NotifyRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.NotifyResponse> __Marshaller_thetan_multiplayer_rivals_v1_NotifyResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.NotifyResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersRequest> __Marshaller_thetan_multiplayer_rivals_v1_GetTownOnlineUsersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersResponse> __Marshaller_thetan_multiplayer_rivals_v1_GetTownOnlineUsersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse> __Method_GetOnlineStatus = new grpc::Method<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse>(
@@ -69,6 +73,14 @@ namespace Thetan.Multiplayer.Rivals.V1 {
         "Notify",
         __Marshaller_thetan_multiplayer_rivals_v1_NotifyRequest,
         __Marshaller_thetan_multiplayer_rivals_v1_NotifyResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersRequest, global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersResponse> __Method_GetTownOnlineUsers = new grpc::Method<global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersRequest, global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetTownOnlineUsers",
+        __Marshaller_thetan_multiplayer_rivals_v1_GetTownOnlineUsersRequest,
+        __Marshaller_thetan_multiplayer_rivals_v1_GetTownOnlineUsersResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -95,6 +107,12 @@ namespace Thetan.Multiplayer.Rivals.V1 {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Multiplayer.Rivals.V1.NotifyResponse> Notify(global::Thetan.Multiplayer.Rivals.V1.NotifyRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersResponse> GetTownOnlineUsers(global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -200,6 +218,26 @@ namespace Thetan.Multiplayer.Rivals.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Notify, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersResponse GetTownOnlineUsers(global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTownOnlineUsers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersResponse GetTownOnlineUsers(global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetTownOnlineUsers, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersResponse> GetTownOnlineUsersAsync(global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetTownOnlineUsersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersResponse> GetTownOnlineUsersAsync(global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetTownOnlineUsers, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override RivalsMultiplayerServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -215,7 +253,8 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetOnlineStatus, serviceImpl.GetOnlineStatus)
-          .AddMethod(__Method_Notify, serviceImpl.Notify).Build();
+          .AddMethod(__Method_Notify, serviceImpl.Notify)
+          .AddMethod(__Method_GetTownOnlineUsers, serviceImpl.GetTownOnlineUsers).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -227,6 +266,7 @@ namespace Thetan.Multiplayer.Rivals.V1 {
     {
       serviceBinder.AddMethod(__Method_GetOnlineStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusRequest, global::Thetan.Multiplayer.Rivals.V1.GetOnlineStatusResponse>(serviceImpl.GetOnlineStatus));
       serviceBinder.AddMethod(__Method_Notify, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Multiplayer.Rivals.V1.NotifyRequest, global::Thetan.Multiplayer.Rivals.V1.NotifyResponse>(serviceImpl.Notify));
+      serviceBinder.AddMethod(__Method_GetTownOnlineUsers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersRequest, global::Thetan.Multiplayer.Rivals.V1.GetTownOnlineUsersResponse>(serviceImpl.GetTownOnlineUsers));
     }
 
   }
