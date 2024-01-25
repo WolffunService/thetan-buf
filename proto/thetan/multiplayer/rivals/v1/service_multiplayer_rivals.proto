@@ -43,8 +43,11 @@ message NotifyResponse {
 
 message GetTownOnlineUsersRequest {
     string townID = 1;
+    int32 cursor = 2;
+    int32 count = 3;
 }
 
 message GetTownOnlineUsersResponse {
     repeated string userIDs = 1;
+    int32 newCursor = 2;
 }
