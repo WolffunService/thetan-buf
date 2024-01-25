@@ -7,8 +7,15 @@ import "thetan/shared/v1/customized.proto";
 option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
 option csharp_namespace = "Thetan.Rivals.V1";
 
+// Deprecated
 message MigrateItem {
   string oldItemID = 1;
   string newItemID = 2;
   string newUserID = 3;
+}
+
+message SendItem {
+  string itemID = 1;
+  string fromUserID = 2;
+  string toUserID = 3;
 }
