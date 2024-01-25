@@ -38,7 +38,7 @@ namespace Thetan.Ugc.V1 {
             "c2l6ZRgDIAEoA1IEc2l6ZRIQCgNtZDUYBCABKAlSA21kNRIQCgN1cmwYBSAB",
             "KAlSA3VybBIbCglibHVyX2hhc2gYBiABKAlSCGJsdXJIYXNoIlsKC1NoYWRl",
             "ckF0dHJzEhsKCXNoYWRlcl9pZBgBIAEoBVIIc2hhZGVySWQSLwoGcGFyYW1z",
-            "GAIgASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVjdFIGcGFyYW1zIpcGCgxV",
+            "GAIgASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVjdFIGcGFyYW1zItEHCgxV",
             "c2VyQ29sb3JpbmcSDgoCaWQYASABKAlSAmlkEhcKB3VzZXJfaWQYAiABKAlS",
             "BnVzZXJJZBIXCgdnYW1lX2lkGAMgASgFUgZnYW1lSWQSFwoHa2luZF9pZBgE",
             "IAEoBVIGa2luZElkEhcKB3R5cGVfaWQYBSABKAVSBnR5cGVJZBIjCg1wdWJs",
@@ -54,18 +54,22 @@ namespace Thetan.Ugc.V1 {
             "ckxhc3RQdWJsaXNoZWQYDSABKAsyGi50aGV0YW4udWdjLnYxLlNoYWRlckF0",
             "dHJzUhNzaGFkZXJMYXN0UHVibGlzaGVkEkQKD3NoYWRlckxhc3RTYXZlZBgO",
             "IAEoCzIaLnRoZXRhbi51Z2MudjEuU2hhZGVyQXR0cnNSD3NoYWRlckxhc3RT",
-            "YXZlZBItCgVwcm9wcxgPIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RS",
-            "BXByb3BzEh0KCnVwZGF0ZWRfYXQYECABKANSCXVwZGF0ZWRBdBIdCgpjcmVh",
-            "dGVkX2F0GBEgASgDUgljcmVhdGVkQXQyzQEKEFRoZXRhblVHQ1NlcnZpY2US",
-            "XQoQR2V0VXNlckNvbG9yaW5ncxIiLnRoZXRhbi51Z2MudjEuVXNlckNvbG9y",
-            "aW5nUmVxdWVzdBojLnRoZXRhbi51Z2MudjEuVXNlckNvbG9yaW5nUmVzcG9u",
-            "c2UiABJaChJHZXRPbmVVc2VyQ29sb3JpbmcSJS50aGV0YW4udWdjLnYxLlVz",
-            "ZXJPbmVDb2xvcmluZ1JlcXVlc3QaGy50aGV0YW4udWdjLnYxLlVzZXJDb2xv",
-            "cmluZyIAQqkBChFjb20udGhldGFuLnVnYy52MUIPU2VydmljZVVnY1Byb3Rv",
-            "UAFaLXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi91Z2MvdjE7dGhldGFuX3Vn",
-            "Y192MaICA1RVWKoCDVRoZXRhbi5VZ2MuVjHKAg1UaGV0YW5cVWdjXFYx4gIZ",
-            "VGhldGFuXFVnY1xWMVxHUEJNZXRhZGF0YeoCD1RoZXRhbjo6VWdjOjpWMWIG",
-            "cHJvdG8z"));
+            "YXZlZBJLChFhbmltTGFzdFB1Ymxpc2hlZBgSIAEoCzIYLnRoZXRhbi51Z2Mu",
+            "djEuRmlsZUF0dHJzSABSEWFuaW1MYXN0UHVibGlzaGVkiAEBEkMKDWFuaW1M",
+            "YXN0U2F2ZWQYEyABKAsyGC50aGV0YW4udWdjLnYxLkZpbGVBdHRyc0gBUg1h",
+            "bmltTGFzdFNhdmVkiAEBEi0KBXByb3BzGA8gASgLMhcuZ29vZ2xlLnByb3Rv",
+            "YnVmLlN0cnVjdFIFcHJvcHMSHQoKdXBkYXRlZF9hdBgQIAEoA1IJdXBkYXRl",
+            "ZEF0Eh0KCmNyZWF0ZWRfYXQYESABKANSCWNyZWF0ZWRBdEIUChJfYW5pbUxh",
+            "c3RQdWJsaXNoZWRCEAoOX2FuaW1MYXN0U2F2ZWQyzQEKEFRoZXRhblVHQ1Nl",
+            "cnZpY2USXQoQR2V0VXNlckNvbG9yaW5ncxIiLnRoZXRhbi51Z2MudjEuVXNl",
+            "ckNvbG9yaW5nUmVxdWVzdBojLnRoZXRhbi51Z2MudjEuVXNlckNvbG9yaW5n",
+            "UmVzcG9uc2UiABJaChJHZXRPbmVVc2VyQ29sb3JpbmcSJS50aGV0YW4udWdj",
+            "LnYxLlVzZXJPbmVDb2xvcmluZ1JlcXVlc3QaGy50aGV0YW4udWdjLnYxLlVz",
+            "ZXJDb2xvcmluZyIAQqkBChFjb20udGhldGFuLnVnYy52MUIPU2VydmljZVVn",
+            "Y1Byb3RvUAFaLXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi91Z2MvdjE7dGhl",
+            "dGFuX3VnY192MaICA1RVWKoCDVRoZXRhbi5VZ2MuVjHKAg1UaGV0YW5cVWdj",
+            "XFYx4gIZVGhldGFuXFVnY1xWMVxHUEJNZXRhZGF0YeoCD1RoZXRhbjo6VWdj",
+            "OjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -74,7 +78,7 @@ namespace Thetan.Ugc.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Ugc.V1.UserColoringResponse), global::Thetan.Ugc.V1.UserColoringResponse.Parser, new[]{ "Colorings" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Ugc.V1.FileAttrs), global::Thetan.Ugc.V1.FileAttrs.Parser, new[]{ "Name", "Bucket", "Size", "Md5", "Url", "BlurHash" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Ugc.V1.ShaderAttrs), global::Thetan.Ugc.V1.ShaderAttrs.Parser, new[]{ "ShaderId", "Params" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Ugc.V1.UserColoring), global::Thetan.Ugc.V1.UserColoring.Parser, new[]{ "Id", "UserId", "GameId", "KindId", "TypeId", "PublishCount", "DisplayName", "Revision", "TextureLastPublished", "TextureLastSaved", "ThumbnailLastPublished", "ThumbnailLastSaved", "ShaderLastPublished", "ShaderLastSaved", "Props", "UpdatedAt", "CreatedAt" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Ugc.V1.UserColoring), global::Thetan.Ugc.V1.UserColoring.Parser, new[]{ "Id", "UserId", "GameId", "KindId", "TypeId", "PublishCount", "DisplayName", "Revision", "TextureLastPublished", "TextureLastSaved", "ThumbnailLastPublished", "ThumbnailLastSaved", "ShaderLastPublished", "ShaderLastSaved", "AnimLastPublished", "AnimLastSaved", "Props", "UpdatedAt", "CreatedAt" }, new[]{ "AnimLastPublished", "AnimLastSaved" }, null, null, null)
           }));
     }
     #endregion
@@ -1345,6 +1349,8 @@ namespace Thetan.Ugc.V1 {
       thumbnailLastSaved_ = other.thumbnailLastSaved_ != null ? other.thumbnailLastSaved_.Clone() : null;
       shaderLastPublished_ = other.shaderLastPublished_ != null ? other.shaderLastPublished_.Clone() : null;
       shaderLastSaved_ = other.shaderLastSaved_ != null ? other.shaderLastSaved_.Clone() : null;
+      animLastPublished_ = other.animLastPublished_ != null ? other.animLastPublished_.Clone() : null;
+      animLastSaved_ = other.animLastSaved_ != null ? other.animLastSaved_.Clone() : null;
       props_ = other.props_ != null ? other.props_.Clone() : null;
       updatedAt_ = other.updatedAt_;
       createdAt_ = other.createdAt_;
@@ -1525,6 +1531,30 @@ namespace Thetan.Ugc.V1 {
       }
     }
 
+    /// <summary>Field number for the "animLastPublished" field.</summary>
+    public const int AnimLastPublishedFieldNumber = 18;
+    private global::Thetan.Ugc.V1.FileAttrs animLastPublished_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Ugc.V1.FileAttrs AnimLastPublished {
+      get { return animLastPublished_; }
+      set {
+        animLastPublished_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "animLastSaved" field.</summary>
+    public const int AnimLastSavedFieldNumber = 19;
+    private global::Thetan.Ugc.V1.FileAttrs animLastSaved_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Ugc.V1.FileAttrs AnimLastSaved {
+      get { return animLastSaved_; }
+      set {
+        animLastSaved_ = value;
+      }
+    }
+
     /// <summary>Field number for the "props" field.</summary>
     public const int PropsFieldNumber = 15;
     private global::Google.Protobuf.WellKnownTypes.Struct props_;
@@ -1590,6 +1620,8 @@ namespace Thetan.Ugc.V1 {
       if (!object.Equals(ThumbnailLastSaved, other.ThumbnailLastSaved)) return false;
       if (!object.Equals(ShaderLastPublished, other.ShaderLastPublished)) return false;
       if (!object.Equals(ShaderLastSaved, other.ShaderLastSaved)) return false;
+      if (!object.Equals(AnimLastPublished, other.AnimLastPublished)) return false;
+      if (!object.Equals(AnimLastSaved, other.AnimLastSaved)) return false;
       if (!object.Equals(Props, other.Props)) return false;
       if (UpdatedAt != other.UpdatedAt) return false;
       if (CreatedAt != other.CreatedAt) return false;
@@ -1614,6 +1646,8 @@ namespace Thetan.Ugc.V1 {
       if (thumbnailLastSaved_ != null) hash ^= ThumbnailLastSaved.GetHashCode();
       if (shaderLastPublished_ != null) hash ^= ShaderLastPublished.GetHashCode();
       if (shaderLastSaved_ != null) hash ^= ShaderLastSaved.GetHashCode();
+      if (animLastPublished_ != null) hash ^= AnimLastPublished.GetHashCode();
+      if (animLastSaved_ != null) hash ^= AnimLastSaved.GetHashCode();
       if (props_ != null) hash ^= Props.GetHashCode();
       if (UpdatedAt != 0L) hash ^= UpdatedAt.GetHashCode();
       if (CreatedAt != 0L) hash ^= CreatedAt.GetHashCode();
@@ -1703,6 +1737,14 @@ namespace Thetan.Ugc.V1 {
         output.WriteRawTag(136, 1);
         output.WriteInt64(CreatedAt);
       }
+      if (animLastPublished_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(AnimLastPublished);
+      }
+      if (animLastSaved_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(AnimLastSaved);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1781,6 +1823,14 @@ namespace Thetan.Ugc.V1 {
         output.WriteRawTag(136, 1);
         output.WriteInt64(CreatedAt);
       }
+      if (animLastPublished_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(AnimLastPublished);
+      }
+      if (animLastSaved_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(AnimLastSaved);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1832,6 +1882,12 @@ namespace Thetan.Ugc.V1 {
       }
       if (shaderLastSaved_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ShaderLastSaved);
+      }
+      if (animLastPublished_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AnimLastPublished);
+      }
+      if (animLastSaved_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AnimLastSaved);
       }
       if (props_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Props);
@@ -1913,6 +1969,18 @@ namespace Thetan.Ugc.V1 {
           ShaderLastSaved = new global::Thetan.Ugc.V1.ShaderAttrs();
         }
         ShaderLastSaved.MergeFrom(other.ShaderLastSaved);
+      }
+      if (other.animLastPublished_ != null) {
+        if (animLastPublished_ == null) {
+          AnimLastPublished = new global::Thetan.Ugc.V1.FileAttrs();
+        }
+        AnimLastPublished.MergeFrom(other.AnimLastPublished);
+      }
+      if (other.animLastSaved_ != null) {
+        if (animLastSaved_ == null) {
+          AnimLastSaved = new global::Thetan.Ugc.V1.FileAttrs();
+        }
+        AnimLastSaved.MergeFrom(other.AnimLastSaved);
       }
       if (other.props_ != null) {
         if (props_ == null) {
@@ -2030,6 +2098,20 @@ namespace Thetan.Ugc.V1 {
             CreatedAt = input.ReadInt64();
             break;
           }
+          case 146: {
+            if (animLastPublished_ == null) {
+              AnimLastPublished = new global::Thetan.Ugc.V1.FileAttrs();
+            }
+            input.ReadMessage(AnimLastPublished);
+            break;
+          }
+          case 154: {
+            if (animLastSaved_ == null) {
+              AnimLastSaved = new global::Thetan.Ugc.V1.FileAttrs();
+            }
+            input.ReadMessage(AnimLastSaved);
+            break;
+          }
         }
       }
     #endif
@@ -2132,6 +2214,20 @@ namespace Thetan.Ugc.V1 {
           }
           case 136: {
             CreatedAt = input.ReadInt64();
+            break;
+          }
+          case 146: {
+            if (animLastPublished_ == null) {
+              AnimLastPublished = new global::Thetan.Ugc.V1.FileAttrs();
+            }
+            input.ReadMessage(AnimLastPublished);
+            break;
+          }
+          case 154: {
+            if (animLastSaved_ == null) {
+              AnimLastSaved = new global::Thetan.Ugc.V1.FileAttrs();
+            }
+            input.ReadMessage(AnimLastSaved);
             break;
           }
         }
