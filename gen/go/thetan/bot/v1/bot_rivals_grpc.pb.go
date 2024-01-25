@@ -19,8 +19,10 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	BotRivalsService_FetchLobbyBots_FullMethodName = "/thetan.rivals.v1.BotRivalsService/FetchLobbyBots"
-	BotRivalsService_LobbyBotAction_FullMethodName = "/thetan.rivals.v1.BotRivalsService/LobbyBotAction"
+	BotRivalsService_FetchLobbyBots_FullMethodName            = "/thetan.rivals.v1.BotRivalsService/FetchLobbyBots"
+	BotRivalsService_LobbyBotAction_FullMethodName            = "/thetan.rivals.v1.BotRivalsService/LobbyBotAction"
+	BotRivalsService_SearchSpecialEventPlayers_FullMethodName = "/thetan.rivals.v1.BotRivalsService/SearchSpecialEventPlayers"
+	BotRivalsService_SearchIngamePlayers_FullMethodName       = "/thetan.rivals.v1.BotRivalsService/SearchIngamePlayers"
 )
 
 // BotRivalsServiceClient is the client API for BotRivalsService service.
@@ -29,6 +31,8 @@ const (
 type BotRivalsServiceClient interface {
 	FetchLobbyBots(ctx context.Context, in *FetchLobbyBotsRequest, opts ...grpc.CallOption) (*FetchLobbyBotsResponse, error)
 	LobbyBotAction(ctx context.Context, in *LobbyBotActionRequest, opts ...grpc.CallOption) (*LobbyBotActionResponse, error)
+	SearchSpecialEventPlayers(ctx context.Context, in *SearchSpecialEventPlayersRequest, opts ...grpc.CallOption) (*SearchSpecialEventPlayersResponse, error)
+	SearchIngamePlayers(ctx context.Context, in *SearchIngamePlayersRequest, opts ...grpc.CallOption) (*SearchIngamePlayersResponse, error)
 }
 
 type botRivalsServiceClient struct {
@@ -57,12 +61,32 @@ func (c *botRivalsServiceClient) LobbyBotAction(ctx context.Context, in *LobbyBo
 	return out, nil
 }
 
+func (c *botRivalsServiceClient) SearchSpecialEventPlayers(ctx context.Context, in *SearchSpecialEventPlayersRequest, opts ...grpc.CallOption) (*SearchSpecialEventPlayersResponse, error) {
+	out := new(SearchSpecialEventPlayersResponse)
+	err := c.cc.Invoke(ctx, BotRivalsService_SearchSpecialEventPlayers_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *botRivalsServiceClient) SearchIngamePlayers(ctx context.Context, in *SearchIngamePlayersRequest, opts ...grpc.CallOption) (*SearchIngamePlayersResponse, error) {
+	out := new(SearchIngamePlayersResponse)
+	err := c.cc.Invoke(ctx, BotRivalsService_SearchIngamePlayers_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // BotRivalsServiceServer is the server API for BotRivalsService service.
 // All implementations must embed UnimplementedBotRivalsServiceServer
 // for forward compatibility
 type BotRivalsServiceServer interface {
 	FetchLobbyBots(context.Context, *FetchLobbyBotsRequest) (*FetchLobbyBotsResponse, error)
 	LobbyBotAction(context.Context, *LobbyBotActionRequest) (*LobbyBotActionResponse, error)
+	SearchSpecialEventPlayers(context.Context, *SearchSpecialEventPlayersRequest) (*SearchSpecialEventPlayersResponse, error)
+	SearchIngamePlayers(context.Context, *SearchIngamePlayersRequest) (*SearchIngamePlayersResponse, error)
 	mustEmbedUnimplementedBotRivalsServiceServer()
 }
 
@@ -75,6 +99,12 @@ func (UnimplementedBotRivalsServiceServer) FetchLobbyBots(context.Context, *Fetc
 }
 func (UnimplementedBotRivalsServiceServer) LobbyBotAction(context.Context, *LobbyBotActionRequest) (*LobbyBotActionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method LobbyBotAction not implemented")
+}
+func (UnimplementedBotRivalsServiceServer) SearchSpecialEventPlayers(context.Context, *SearchSpecialEventPlayersRequest) (*SearchSpecialEventPlayersResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SearchSpecialEventPlayers not implemented")
+}
+func (UnimplementedBotRivalsServiceServer) SearchIngamePlayers(context.Context, *SearchIngamePlayersRequest) (*SearchIngamePlayersResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SearchIngamePlayers not implemented")
 }
 func (UnimplementedBotRivalsServiceServer) mustEmbedUnimplementedBotRivalsServiceServer() {}
 
@@ -125,6 +155,42 @@ func _BotRivalsService_LobbyBotAction_Handler(srv interface{}, ctx context.Conte
 	return interceptor(ctx, in, info, handler)
 }
 
+func _BotRivalsService_SearchSpecialEventPlayers_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SearchSpecialEventPlayersRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(BotRivalsServiceServer).SearchSpecialEventPlayers(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: BotRivalsService_SearchSpecialEventPlayers_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(BotRivalsServiceServer).SearchSpecialEventPlayers(ctx, req.(*SearchSpecialEventPlayersRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _BotRivalsService_SearchIngamePlayers_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SearchIngamePlayersRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(BotRivalsServiceServer).SearchIngamePlayers(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: BotRivalsService_SearchIngamePlayers_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(BotRivalsServiceServer).SearchIngamePlayers(ctx, req.(*SearchIngamePlayersRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // BotRivalsService_ServiceDesc is the grpc.ServiceDesc for BotRivalsService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -139,6 +205,14 @@ var BotRivalsService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "LobbyBotAction",
 			Handler:    _BotRivalsService_LobbyBotAction_Handler,
+		},
+		{
+			MethodName: "SearchSpecialEventPlayers",
+			Handler:    _BotRivalsService_SearchSpecialEventPlayers_Handler,
+		},
+		{
+			MethodName: "SearchIngamePlayers",
+			Handler:    _BotRivalsService_SearchIngamePlayers_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
