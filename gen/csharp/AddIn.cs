@@ -25,21 +25,25 @@ namespace Thetan.Rivals.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch10aGV0YW4vcml2YWxzL3YxL2FkZF9pbi5wcm90bxIQdGhldGFuLnJpdmFs",
-            "cy52MRohdGhldGFuL3NoYXJlZC92MS9jdXN0b21pemVkLnByb3RvImcKC01p",
-            "Z3JhdGVJdGVtEhwKCW9sZEl0ZW1JRBgBIAEoCVIJb2xkSXRlbUlEEhwKCW5l",
-            "d0l0ZW1JRBgCIAEoCVIJbmV3SXRlbUlEEhwKCW5ld1VzZXJJRBgDIAEoCVIJ",
-            "bmV3VXNlcklEIl4KCFNlbmRJdGVtEhYKBml0ZW1JRBgBIAEoCVIGaXRlbUlE",
-            "Eh4KCmZyb21Vc2VySUQYAiABKAlSCmZyb21Vc2VySUQSGgoIdG9Vc2VySUQY",
-            "AyABKAlSCHRvVXNlcklEQrkBChRjb20udGhldGFuLnJpdmFscy52MUIKQWRk",
-            "SW5Qcm90b1ABWjN0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vcml2YWxzL3Yx",
-            "O3RoZXRhbl9yaXZhbHNfdjGiAgNUUliqAhBUaGV0YW4uUml2YWxzLlYxygIQ",
-            "VGhldGFuXFJpdmFsc1xWMeICHFRoZXRhblxSaXZhbHNcVjFcR1BCTWV0YWRh",
-            "dGHqAhJUaGV0YW46OlJpdmFsczo6VjFiBnByb3RvMw=="));
+            "cy52MRoZZ29vZ2xlL3Byb3RvYnVmL2FueS5wcm90bxohdGhldGFuL3NoYXJl",
+            "ZC92MS9jdXN0b21pemVkLnByb3RvImcKC01pZ3JhdGVJdGVtEhwKCW9sZEl0",
+            "ZW1JRBgBIAEoCVIJb2xkSXRlbUlEEhwKCW5ld0l0ZW1JRBgCIAEoCVIJbmV3",
+            "SXRlbUlEEhwKCW5ld1VzZXJJRBgDIAEoCVIJbmV3VXNlcklEItsBCgtDaGFu",
+            "Z2VPd25lchIaCghvbGRPd25lchgBIAEoCVIIb2xkT3duZXISGgoIbmV3T3du",
+            "ZXIYAiABKAlSCG5ld093bmVyEhYKBml0ZW1JRBgDIAEoCVIGaXRlbUlEEhIK",
+            "BGdhbWUYBCABKAVSBGdhbWUSEgoEa2luZBgFIAEoBVIEa2luZBISCgR0eXBl",
+            "GAYgASgFUgR0eXBlEhYKBnJlYXNvbhgHIAEoCVIGcmVhc29uEigKBGRhdGEY",
+            "CCABKAsyFC5nb29nbGUucHJvdG9idWYuQW55UgRkYXRhQrkBChRjb20udGhl",
+            "dGFuLnJpdmFscy52MUIKQWRkSW5Qcm90b1ABWjN0aGV0YW4tYnVmL2dlbi9n",
+            "by90aGV0YW4vcml2YWxzL3YxO3RoZXRhbl9yaXZhbHNfdjGiAgNUUliqAhBU",
+            "aGV0YW4uUml2YWxzLlYxygIQVGhldGFuXFJpdmFsc1xWMeICHFRoZXRhblxS",
+            "aXZhbHNcVjFcR1BCTWV0YWRhdGHqAhJUaGV0YW46OlJpdmFsczo6VjFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Thetan.Shared.V1.CustomizedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.MigrateItem), global::Thetan.Rivals.V1.MigrateItem.Parser, new[]{ "OldItemID", "NewItemID", "NewUserID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SendItem), global::Thetan.Rivals.V1.SendItem.Parser, new[]{ "ItemID", "FromUserID", "ToUserID" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.ChangeOwner), global::Thetan.Rivals.V1.ChangeOwner.Parser, new[]{ "OldOwner", "NewOwner", "ItemID", "Game", "Kind", "Type", "Reason", "Data" }, null, null, null, null)
           }));
     }
     #endregion
@@ -312,16 +316,16 @@ namespace Thetan.Rivals.V1 {
 
   }
 
-  public sealed partial class SendItem : pb::IMessage<SendItem>
+  public sealed partial class ChangeOwner : pb::IMessage<ChangeOwner>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<SendItem> _parser = new pb::MessageParser<SendItem>(() => new SendItem());
+    private static readonly pb::MessageParser<ChangeOwner> _parser = new pb::MessageParser<ChangeOwner>(() => new ChangeOwner());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<SendItem> Parser { get { return _parser; } }
+    public static pb::MessageParser<ChangeOwner> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -337,7 +341,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SendItem() {
+    public ChangeOwner() {
       OnConstruction();
     }
 
@@ -345,21 +349,50 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SendItem(SendItem other) : this() {
+    public ChangeOwner(ChangeOwner other) : this() {
+      oldOwner_ = other.oldOwner_;
+      newOwner_ = other.newOwner_;
       itemID_ = other.itemID_;
-      fromUserID_ = other.fromUserID_;
-      toUserID_ = other.toUserID_;
+      game_ = other.game_;
+      kind_ = other.kind_;
+      type_ = other.type_;
+      reason_ = other.reason_;
+      data_ = other.data_ != null ? other.data_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SendItem Clone() {
-      return new SendItem(this);
+    public ChangeOwner Clone() {
+      return new ChangeOwner(this);
+    }
+
+    /// <summary>Field number for the "oldOwner" field.</summary>
+    public const int OldOwnerFieldNumber = 1;
+    private string oldOwner_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string OldOwner {
+      get { return oldOwner_; }
+      set {
+        oldOwner_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "newOwner" field.</summary>
+    public const int NewOwnerFieldNumber = 2;
+    private string newOwner_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string NewOwner {
+      get { return newOwner_; }
+      set {
+        newOwner_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
     }
 
     /// <summary>Field number for the "itemID" field.</summary>
-    public const int ItemIDFieldNumber = 1;
+    public const int ItemIDFieldNumber = 3;
     private string itemID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -370,48 +403,89 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
-    /// <summary>Field number for the "fromUserID" field.</summary>
-    public const int FromUserIDFieldNumber = 2;
-    private string fromUserID_ = "";
+    /// <summary>Field number for the "game" field.</summary>
+    public const int GameFieldNumber = 4;
+    private int game_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string FromUserID {
-      get { return fromUserID_; }
+    public int Game {
+      get { return game_; }
       set {
-        fromUserID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        game_ = value;
       }
     }
 
-    /// <summary>Field number for the "toUserID" field.</summary>
-    public const int ToUserIDFieldNumber = 3;
-    private string toUserID_ = "";
+    /// <summary>Field number for the "kind" field.</summary>
+    public const int KindFieldNumber = 5;
+    private int kind_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ToUserID {
-      get { return toUserID_; }
+    public int Kind {
+      get { return kind_; }
       set {
-        toUserID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        kind_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 6;
+    private int type_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "reason" field.</summary>
+    public const int ReasonFieldNumber = 7;
+    private string reason_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Reason {
+      get { return reason_; }
+      set {
+        reason_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "data" field.</summary>
+    public const int DataFieldNumber = 8;
+    private global::Google.Protobuf.WellKnownTypes.Any data_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Any Data {
+      get { return data_; }
+      set {
+        data_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as SendItem);
+      return Equals(other as ChangeOwner);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(SendItem other) {
+    public bool Equals(ChangeOwner other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (OldOwner != other.OldOwner) return false;
+      if (NewOwner != other.NewOwner) return false;
       if (ItemID != other.ItemID) return false;
-      if (FromUserID != other.FromUserID) return false;
-      if (ToUserID != other.ToUserID) return false;
+      if (Game != other.Game) return false;
+      if (Kind != other.Kind) return false;
+      if (Type != other.Type) return false;
+      if (Reason != other.Reason) return false;
+      if (!object.Equals(Data, other.Data)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -419,9 +493,14 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (OldOwner.Length != 0) hash ^= OldOwner.GetHashCode();
+      if (NewOwner.Length != 0) hash ^= NewOwner.GetHashCode();
       if (ItemID.Length != 0) hash ^= ItemID.GetHashCode();
-      if (FromUserID.Length != 0) hash ^= FromUserID.GetHashCode();
-      if (ToUserID.Length != 0) hash ^= ToUserID.GetHashCode();
+      if (Game != 0) hash ^= Game.GetHashCode();
+      if (Kind != 0) hash ^= Kind.GetHashCode();
+      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Reason.Length != 0) hash ^= Reason.GetHashCode();
+      if (data_ != null) hash ^= Data.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -440,17 +519,37 @@ namespace Thetan.Rivals.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ItemID.Length != 0) {
+      if (OldOwner.Length != 0) {
         output.WriteRawTag(10);
+        output.WriteString(OldOwner);
+      }
+      if (NewOwner.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(NewOwner);
+      }
+      if (ItemID.Length != 0) {
+        output.WriteRawTag(26);
         output.WriteString(ItemID);
       }
-      if (FromUserID.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(FromUserID);
+      if (Game != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(Game);
       }
-      if (ToUserID.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(ToUserID);
+      if (Kind != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(Kind);
+      }
+      if (Type != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(Type);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Reason);
+      }
+      if (data_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Data);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -462,17 +561,37 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ItemID.Length != 0) {
+      if (OldOwner.Length != 0) {
         output.WriteRawTag(10);
+        output.WriteString(OldOwner);
+      }
+      if (NewOwner.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(NewOwner);
+      }
+      if (ItemID.Length != 0) {
+        output.WriteRawTag(26);
         output.WriteString(ItemID);
       }
-      if (FromUserID.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(FromUserID);
+      if (Game != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(Game);
       }
-      if (ToUserID.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(ToUserID);
+      if (Kind != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(Kind);
+      }
+      if (Type != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(Type);
+      }
+      if (Reason.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Reason);
+      }
+      if (data_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Data);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -484,14 +603,29 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (OldOwner.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OldOwner);
+      }
+      if (NewOwner.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NewOwner);
+      }
       if (ItemID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ItemID);
       }
-      if (FromUserID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(FromUserID);
+      if (Game != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Game);
       }
-      if (ToUserID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ToUserID);
+      if (Kind != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Kind);
+      }
+      if (Type != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
+      }
+      if (Reason.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Reason);
+      }
+      if (data_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Data);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -501,18 +635,36 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(SendItem other) {
+    public void MergeFrom(ChangeOwner other) {
       if (other == null) {
         return;
+      }
+      if (other.OldOwner.Length != 0) {
+        OldOwner = other.OldOwner;
+      }
+      if (other.NewOwner.Length != 0) {
+        NewOwner = other.NewOwner;
       }
       if (other.ItemID.Length != 0) {
         ItemID = other.ItemID;
       }
-      if (other.FromUserID.Length != 0) {
-        FromUserID = other.FromUserID;
+      if (other.Game != 0) {
+        Game = other.Game;
       }
-      if (other.ToUserID.Length != 0) {
-        ToUserID = other.ToUserID;
+      if (other.Kind != 0) {
+        Kind = other.Kind;
+      }
+      if (other.Type != 0) {
+        Type = other.Type;
+      }
+      if (other.Reason.Length != 0) {
+        Reason = other.Reason;
+      }
+      if (other.data_ != null) {
+        if (data_ == null) {
+          Data = new global::Google.Protobuf.WellKnownTypes.Any();
+        }
+        Data.MergeFrom(other.Data);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -530,15 +682,38 @@ namespace Thetan.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            ItemID = input.ReadString();
+            OldOwner = input.ReadString();
             break;
           }
           case 18: {
-            FromUserID = input.ReadString();
+            NewOwner = input.ReadString();
             break;
           }
           case 26: {
-            ToUserID = input.ReadString();
+            ItemID = input.ReadString();
+            break;
+          }
+          case 32: {
+            Game = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            Kind = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            Type = input.ReadInt32();
+            break;
+          }
+          case 58: {
+            Reason = input.ReadString();
+            break;
+          }
+          case 66: {
+            if (data_ == null) {
+              Data = new global::Google.Protobuf.WellKnownTypes.Any();
+            }
+            input.ReadMessage(Data);
             break;
           }
         }
@@ -557,15 +732,38 @@ namespace Thetan.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            ItemID = input.ReadString();
+            OldOwner = input.ReadString();
             break;
           }
           case 18: {
-            FromUserID = input.ReadString();
+            NewOwner = input.ReadString();
             break;
           }
           case 26: {
-            ToUserID = input.ReadString();
+            ItemID = input.ReadString();
+            break;
+          }
+          case 32: {
+            Game = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            Kind = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            Type = input.ReadInt32();
+            break;
+          }
+          case 58: {
+            Reason = input.ReadString();
+            break;
+          }
+          case 66: {
+            if (data_ == null) {
+              Data = new global::Google.Protobuf.WellKnownTypes.Any();
+            }
+            input.ReadMessage(Data);
             break;
           }
         }
