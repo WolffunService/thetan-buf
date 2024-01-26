@@ -2,9 +2,6 @@ syntax = "proto3";
 
 package thetan.rivals.v1;
 
-import "google/protobuf/any.proto";
-import "thetan/shared/v1/customized.proto";
-
 option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
 option csharp_namespace = "Thetan.Rivals.V1";
 
@@ -13,15 +10,4 @@ message MigrateItem {
   string oldItemID = 1;
   string newItemID = 2;
   string newUserID = 3;
-}
-
-message ChangeOwner {
-  string oldOwner = 1;
-  string newOwner = 2;
-  string itemID = 3;
-  int32 game = 4;
-  int32 kind = 5;
-  int32 type = 6;
-  string reason = 7;
-  google.protobuf.Any data = 8;
 }
