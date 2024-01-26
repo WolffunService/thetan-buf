@@ -579,7 +579,7 @@ message GetOnboardingConfigResponse {
 message CachePlayedMapRequest {
   repeated string userIDs = 1;
   thetan.shared.v1.InGameMode inGameMode = 2;
-  int32 mapID = 3;
+  repeated int32 mapIDs = 3;
 }
 
 message CachePlayedMapResponse {
