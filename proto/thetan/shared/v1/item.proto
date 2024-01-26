@@ -7,7 +7,7 @@ import "google/protobuf/any.proto";
 option go_package = "thetan-buf/gen/go/thetan/shared/v1;thetan_shared_v1";
 option csharp_namespace = "Thetan.Shared.V1";
 
-message ChangeOwner {
+message ChangeItemOwnerRequest {
   string oldOwner = 1;
   string newOwner = 2;
   string itemID = 3;

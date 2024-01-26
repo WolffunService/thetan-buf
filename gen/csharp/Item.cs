@@ -25,36 +25,37 @@ namespace Thetan.Shared.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cht0aGV0YW4vc2hhcmVkL3YxL2l0ZW0ucHJvdG8SEHRoZXRhbi5zaGFyZWQu",
-            "djEaGWdvb2dsZS9wcm90b2J1Zi9hbnkucHJvdG8i2wEKC0NoYW5nZU93bmVy",
-            "EhoKCG9sZE93bmVyGAEgASgJUghvbGRPd25lchIaCghuZXdPd25lchgCIAEo",
-            "CVIIbmV3T3duZXISFgoGaXRlbUlEGAMgASgJUgZpdGVtSUQSEgoEZ2FtZRgE",
-            "IAEoBVIEZ2FtZRISCgRraW5kGAUgASgFUgRraW5kEhIKBHR5cGUYBiABKAVS",
-            "BHR5cGUSFgoGcmVhc29uGAcgASgJUgZyZWFzb24SKAoEZGF0YRgIIAEoCzIU",
-            "Lmdvb2dsZS5wcm90b2J1Zi5BbnlSBGRhdGFCuAEKFGNvbS50aGV0YW4uc2hh",
-            "cmVkLnYxQglJdGVtUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFu",
-            "L3NoYXJlZC92MTt0aGV0YW5fc2hhcmVkX3YxogIDVFNYqgIQVGhldGFuLlNo",
-            "YXJlZC5WMcoCEFRoZXRhblxTaGFyZWRcVjHiAhxUaGV0YW5cU2hhcmVkXFYx",
-            "XEdQQk1ldGFkYXRh6gISVGhldGFuOjpTaGFyZWQ6OlYxYgZwcm90bzM="));
+            "djEaGWdvb2dsZS9wcm90b2J1Zi9hbnkucHJvdG8i5gEKFkNoYW5nZUl0ZW1P",
+            "d25lclJlcXVlc3QSGgoIb2xkT3duZXIYASABKAlSCG9sZE93bmVyEhoKCG5l",
+            "d093bmVyGAIgASgJUghuZXdPd25lchIWCgZpdGVtSUQYAyABKAlSBml0ZW1J",
+            "RBISCgRnYW1lGAQgASgFUgRnYW1lEhIKBGtpbmQYBSABKAVSBGtpbmQSEgoE",
+            "dHlwZRgGIAEoBVIEdHlwZRIWCgZyZWFzb24YByABKAlSBnJlYXNvbhIoCgRk",
+            "YXRhGAggASgLMhQuZ29vZ2xlLnByb3RvYnVmLkFueVIEZGF0YUK4AQoUY29t",
+            "LnRoZXRhbi5zaGFyZWQudjFCCUl0ZW1Qcm90b1ABWjN0aGV0YW4tYnVmL2dl",
+            "bi9nby90aGV0YW4vc2hhcmVkL3YxO3RoZXRhbl9zaGFyZWRfdjGiAgNUU1iq",
+            "AhBUaGV0YW4uU2hhcmVkLlYxygIQVGhldGFuXFNoYXJlZFxWMeICHFRoZXRh",
+            "blxTaGFyZWRcVjFcR1BCTWV0YWRhdGHqAhJUaGV0YW46OlNoYXJlZDo6VjFi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.ChangeOwner), global::Thetan.Shared.V1.ChangeOwner.Parser, new[]{ "OldOwner", "NewOwner", "ItemID", "Game", "Kind", "Type", "Reason", "Data" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Shared.V1.ChangeItemOwnerRequest), global::Thetan.Shared.V1.ChangeItemOwnerRequest.Parser, new[]{ "OldOwner", "NewOwner", "ItemID", "Game", "Kind", "Type", "Reason", "Data" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class ChangeOwner : pb::IMessage<ChangeOwner>
+  public sealed partial class ChangeItemOwnerRequest : pb::IMessage<ChangeItemOwnerRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ChangeOwner> _parser = new pb::MessageParser<ChangeOwner>(() => new ChangeOwner());
+    private static readonly pb::MessageParser<ChangeItemOwnerRequest> _parser = new pb::MessageParser<ChangeItemOwnerRequest>(() => new ChangeItemOwnerRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ChangeOwner> Parser { get { return _parser; } }
+    public static pb::MessageParser<ChangeItemOwnerRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -70,7 +71,7 @@ namespace Thetan.Shared.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ChangeOwner() {
+    public ChangeItemOwnerRequest() {
       OnConstruction();
     }
 
@@ -78,7 +79,7 @@ namespace Thetan.Shared.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ChangeOwner(ChangeOwner other) : this() {
+    public ChangeItemOwnerRequest(ChangeItemOwnerRequest other) : this() {
       oldOwner_ = other.oldOwner_;
       newOwner_ = other.newOwner_;
       itemID_ = other.itemID_;
@@ -92,8 +93,8 @@ namespace Thetan.Shared.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ChangeOwner Clone() {
-      return new ChangeOwner(this);
+    public ChangeItemOwnerRequest Clone() {
+      return new ChangeItemOwnerRequest(this);
     }
 
     /// <summary>Field number for the "oldOwner" field.</summary>
@@ -195,12 +196,12 @@ namespace Thetan.Shared.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ChangeOwner);
+      return Equals(other as ChangeItemOwnerRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ChangeOwner other) {
+    public bool Equals(ChangeItemOwnerRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -364,7 +365,7 @@ namespace Thetan.Shared.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ChangeOwner other) {
+    public void MergeFrom(ChangeItemOwnerRequest other) {
       if (other == null) {
         return;
       }

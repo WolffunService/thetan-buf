@@ -68,14 +68,6 @@ message ItemResponse {
     google.protobuf.Struct data = 3;
 }
 
-message UpdateOwnerRequest {
-    string itemID = 1;
-    int32 kind = 2;
-    int32 gameID = 3;
-
-    string userID = 4;
-}
-
 message GetItemsRequest {
     message Item {
         string itemID = 1;
