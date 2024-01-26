@@ -25,21 +25,22 @@ namespace Thetan.World.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiB0aGV0YW4vd29ybGQvdjEvc2VydmljZV90dy5wcm90bxIPdGhldGFuLndv",
-            "cmxkLnYxGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8iIwoRTWFya2V0",
-            "SW5mb1JlcXVlc3QSDgoCaWQYASABKAlSAmlkImgKEk1hcmtldEluZm9SZXNw",
-            "b25zZRIaCghpbk1hcmtldBgBIAEoCFIIaW5NYXJrZXQSGAoHb3duZXJJRBgC",
-            "IAEoCVIHb3duZXJJRBIcCglvd25lckFkZHIYAyABKAlSCW93bmVyQWRkcjJr",
-            "ChJUaGV0YW5Xb3JsZFNlcnZpY2USVQoKTWFya2V0SW5mbxIiLnRoZXRhbi53",
-            "b3JsZC52MS5NYXJrZXRJbmZvUmVxdWVzdBojLnRoZXRhbi53b3JsZC52MS5N",
-            "YXJrZXRJbmZvUmVzcG9uc2VCtgEKE2NvbS50aGV0YW4ud29ybGQudjFCDlNl",
-            "cnZpY2VUd1Byb3RvUAFaMXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi93b3Js",
-            "ZC92MTt0aGV0YW5fd29ybGRfdjGiAgNUV1iqAg9UaGV0YW4uV29ybGQuVjHK",
-            "Ag9UaGV0YW5cV29ybGRcVjHiAhtUaGV0YW5cV29ybGRcVjFcR1BCTWV0YWRh",
-            "dGHqAhFUaGV0YW46OldvcmxkOjpWMWIGcHJvdG8z"));
+            "cmxkLnYxGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8iOwoRTWFya2V0",
+            "SW5mb1JlcXVlc3QSDgoCaWQYASABKAlSAmlkEhYKBmdhbWVJRBgCIAEoBVIG",
+            "Z2FtZUlEImgKEk1hcmtldEluZm9SZXNwb25zZRIaCghpbk1hcmtldBgBIAEo",
+            "CFIIaW5NYXJrZXQSGAoHb3duZXJJRBgCIAEoCVIHb3duZXJJRBIcCglvd25l",
+            "ckFkZHIYAyABKAlSCW93bmVyQWRkcjJrChJUaGV0YW5Xb3JsZFNlcnZpY2US",
+            "VQoKTWFya2V0SW5mbxIiLnRoZXRhbi53b3JsZC52MS5NYXJrZXRJbmZvUmVx",
+            "dWVzdBojLnRoZXRhbi53b3JsZC52MS5NYXJrZXRJbmZvUmVzcG9uc2VCtgEK",
+            "E2NvbS50aGV0YW4ud29ybGQudjFCDlNlcnZpY2VUd1Byb3RvUAFaMXRoZXRh",
+            "bi1idWYvZ2VuL2dvL3RoZXRhbi93b3JsZC92MTt0aGV0YW5fd29ybGRfdjGi",
+            "AgNUV1iqAg9UaGV0YW4uV29ybGQuVjHKAg9UaGV0YW5cV29ybGRcVjHiAhtU",
+            "aGV0YW5cV29ybGRcVjFcR1BCTWV0YWRhdGHqAhFUaGV0YW46OldvcmxkOjpW",
+            "MWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.MarketInfoRequest), global::Thetan.World.V1.MarketInfoRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.MarketInfoRequest), global::Thetan.World.V1.MarketInfoRequest.Parser, new[]{ "Id", "GameID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.MarketInfoResponse), global::Thetan.World.V1.MarketInfoResponse.Parser, new[]{ "InMarket", "OwnerID", "OwnerAddr" }, null, null, null, null)
           }));
     }
@@ -82,6 +83,7 @@ namespace Thetan.World.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MarketInfoRequest(MarketInfoRequest other) : this() {
       id_ = other.id_;
+      gameID_ = other.gameID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -103,6 +105,18 @@ namespace Thetan.World.V1 {
       }
     }
 
+    /// <summary>Field number for the "gameID" field.</summary>
+    public const int GameIDFieldNumber = 2;
+    private int gameID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int GameID {
+      get { return gameID_; }
+      set {
+        gameID_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -119,6 +133,7 @@ namespace Thetan.World.V1 {
         return true;
       }
       if (Id != other.Id) return false;
+      if (GameID != other.GameID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -127,6 +142,7 @@ namespace Thetan.World.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (GameID != 0) hash ^= GameID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -149,6 +165,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(10);
         output.WriteString(Id);
       }
+      if (GameID != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(GameID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -163,6 +183,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(10);
         output.WriteString(Id);
       }
+      if (GameID != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(GameID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -175,6 +199,9 @@ namespace Thetan.World.V1 {
       int size = 0;
       if (Id.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (GameID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GameID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -190,6 +217,9 @@ namespace Thetan.World.V1 {
       }
       if (other.Id.Length != 0) {
         Id = other.Id;
+      }
+      if (other.GameID != 0) {
+        GameID = other.GameID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -210,6 +240,10 @@ namespace Thetan.World.V1 {
             Id = input.ReadString();
             break;
           }
+          case 16: {
+            GameID = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -227,6 +261,10 @@ namespace Thetan.World.V1 {
             break;
           case 10: {
             Id = input.ReadString();
+            break;
+          }
+          case 16: {
+            GameID = input.ReadInt32();
             break;
           }
         }
