@@ -514,6 +514,7 @@ message FindMatchInfoRequest {
 
 message FindMatchInfoResponse {
   repeated thetan.shared.v1.PlayerInfoMatchProto players = 1;
+  int32 cantPlayReason = 2;
 }
 
 enum SessionLobby {
