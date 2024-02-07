@@ -65,7 +65,11 @@ message CreateItemRequest {
 message ItemResponse {
     string itemID = 1;
     int32 kind = 2;
-    google.protobuf.Struct data = 3;
+
+    int32 rarity = 3;
+    int32 skinRarity = 4;
+    
+    google.protobuf.Struct data = 5;
 }
 
 message GetItemsRequest {
