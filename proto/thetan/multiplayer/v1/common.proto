@@ -77,6 +77,12 @@ message PlayerInfoProto {
   int64 lastOnline = 8;
   int32 rankingLevel = 9;
   int32 trophy = 10;
+
+  //GuildInfo
+  string guildName = 11;
+  int32 guildBadgeId = 12;
+  int32 guildRole = 13;
+
   // tùy từng game mà cục nay có thể khác nhau
   bytes gameData = 99;
 }
