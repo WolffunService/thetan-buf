@@ -46,6 +46,18 @@ message TicketData {
   string ticketId = 8;
   int64 createTime = 9;
   int32 group = 10;
+  TournamentInfo tournamentInfo = 11;
+  TRArena arena = 12;
+  string modeId = 13;
+}
+
+message TournamentInfo {
+  string tournamentID = 1;
+  string tournamentTag = 2;
+  bool enableSpectator = 3;
+  repeated MapDataProto maps = 4;
+  int32 maxPlayers = 5;
+  int32 maxDurationInMatch = 6;
 }
 
 //message MmfTicketData {
@@ -85,13 +97,46 @@ message MatchFoundResponseProto {
   GameMode gameMode = 3;
   InGameMode inGameMode = 4;
   int32 bestRegion = 5;
-  repeated MapDataProto mapIds = 6;
+  repeated MapDataProto mapIds = 6 [deprecated=true];
   repeated int32 ListMaxPlayerPerRound = 7;
-  PlayerStat playerStat = 8;
+  PlayerStat playerStat = 8 [deprecated=true];
   bool isOnline = 10;
+  bool enableSpectator = 11;
+  thetan.shared.v1.TRArena arena = 12;
+  repeated Round rounds = 13;
+}
+
+message Round {
+  int32 mapID = 1;
+  MapDifficultyEnum mapDifficulty = 2;
+  map<int32, SkillsData> skillsByType = 3; // <SkillTypeEnum, SkillData>
+  int32 numQualifyingPlayers = 4;
+  int32 rollSkillDurationInSec = 5;
+}
+
+message SkillsData {
+  repeated int32 skillIDs = 1;
+}
+
+message MapSkills {
+  option deprecated = true;
+  repeated SkillInfo skills = 1;
+  int32 rollLimit = 2;
+}
+
+message SkillInfo {
+  option deprecated = true;
+  int32 skillID = 1;
+}
+
+enum SkillTypeEnum {
+  SKILLTYPE_NONE = 0;
+  SKILLTYPE_ATTACK = 1;
+  SKILLTYPE_SUPPORT = 2;
 }
 
 message PlayerStat {
+  option deprecated = true;
   int32 roundScoreAll = 1;
   float raceScoreAll = 2;
   int32 qualifyScoreAll = 3;
@@ -99,8 +144,10 @@ message PlayerStat {
 }
 
 message MapDataProto {
+  option deprecated = true;
   int32 mapId = 1;
   MapDifficultyEnum mapDifficulty = 2;
+  map<int32, MapSkills> mapSkills = 12; // key: SkillTypeEnum
 }
 
 enum MapDifficultyEnum {
@@ -189,6 +236,22 @@ message PlayerInfoMatchProto {
   CosmeticUsingProtoV2 cosmeticUsingV2 = 28;
   map<string, int32> roundPlayed = 29;
   Customized customized = 30;
+  string countryCode = 31;
+  string guildName = 32;
+  map<int32, PlayerSkills> skills = 33;
+  repeated SelectedSkillsPerRound selectedSkills = 34;
+}
+
+message SelectedSkillsPerRound {
+  map<int32, PlayerSkill> selected = 1; // <SkillTypeEnum, PlayerSkill>
+}
+
+message PlayerSkills {
+  repeated PlayerSkill skills = 1;
+}
+
+message PlayerSkill {
+  int32 id = 1;
 }
 
 message CosmeticUsingProto

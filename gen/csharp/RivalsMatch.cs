@@ -30,33 +30,45 @@ namespace Thetan.Rivals.V1 {
             "YXJlZC92MS9nYW1lX2luZm8ucHJvdG8ibAoYUml2YWxDYW5jZWxUaWNrZXRS",
             "ZXF1ZXN0EhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBIYCgdwYXJ0eUlE",
             "GAIgASgJUgdwYXJ0eUlEEhoKCHRpY2tldElEGAMgASgJUgh0aWNrZXRJRCIb",
-            "ChlSaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlIuUBCh1DcmVhdGVNYXRjaE5v",
+            "ChlSaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlIq4CCh1DcmVhdGVNYXRjaE5v",
             "bk1hdGNoaW5nUmVxdWVzdBI8CgppbkdhbWVNb2RlGAEgASgOMhwudGhldGFu",
             "LnNoYXJlZC52MS5JbkdhbWVNb2RlUgppbkdhbWVNb2RlEkAKB3BsYXllcnMY",
             "AiADKAsyJi50aGV0YW4uc2hhcmVkLnYxLlBsYXllckluZm9NYXRjaFByb3Rv",
             "UgdwbGF5ZXJzEhgKB3JlZ2lvbnMYAyADKAVSB3JlZ2lvbnMSKgoQZmluZE1h",
-            "dGNoVmVyc2lvbhgEIAEoBVIQZmluZE1hdGNoVmVyc2lvbiIgCh5DcmVhdGVN",
-            "YXRjaE5vbk1hdGNoaW5nUmVzcG9uc2Uy7wIKGVJpdmFsTWF0Y2hEaXJlY3Rv",
-            "clNlcnZpY2USaQoMQ2FuY2VsVGlja2V0EioudGhldGFuLnJpdmFscy52MS5S",
-            "aXZhbENhbmNlbFRpY2tldFJlcXVlc3QaKy50aGV0YW4ucml2YWxzLnYxLlJp",
-            "dmFsQ2FuY2VsVGlja2V0UmVzcG9uc2UiABJoChJDcmVhdGVNYXRjaE9uYm9h",
-            "cmQSJS50aGV0YW4ucml2YWxzLnYxLkdldE1hdGNoSW5mb1JlcXVlc3QaKS50",
-            "aGV0YW4uc2hhcmVkLnYxLk1hdGNoRm91bmRSZXNwb25zZVByb3RvIgASfQoW",
-            "Q3JlYXRlTWF0Y2hOb25NYXRjaGluZxIvLnRoZXRhbi5yaXZhbHMudjEuQ3Jl",
-            "YXRlTWF0Y2hOb25NYXRjaGluZ1JlcXVlc3QaMC50aGV0YW4ucml2YWxzLnYx",
-            "LkNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXNwb25zZSIAQr8BChRjb20udGhl",
-            "dGFuLnJpdmFscy52MUIQUml2YWxzTWF0Y2hQcm90b1ABWjN0aGV0YW4tYnVm",
-            "L2dlbi9nby90aGV0YW4vcml2YWxzL3YxO3RoZXRhbl9yaXZhbHNfdjGiAgNU",
-            "UliqAhBUaGV0YW4uUml2YWxzLlYxygIQVGhldGFuXFJpdmFsc1xWMeICHFRo",
-            "ZXRhblxSaXZhbHNcVjFcR1BCTWV0YWRhdGHqAhJUaGV0YW46OlJpdmFsczo6",
-            "VjFiBnByb3RvMw=="));
+            "dGNoVmVyc2lvbhgEIAEoBVIQZmluZE1hdGNoVmVyc2lvbhIvCgVhcmVuYRgF",
+            "IAEoDjIZLnRoZXRhbi5zaGFyZWQudjEuVFJBcmVuYVIFYXJlbmESFgoGbW9k",
+            "ZUlEGAYgASgJUgZtb2RlSUQiIAoeQ3JlYXRlTWF0Y2hOb25NYXRjaGluZ1Jl",
+            "c3BvbnNlIqkCChpDcmVhdGVNYXRjaFR1dG9yaWFsUmVxdWVzdBI8Cgppbmdh",
+            "bWVNb2RlGAEgASgOMhwudGhldGFuLnNoYXJlZC52MS5JbkdhbWVNb2RlUgpp",
+            "bmdhbWVNb2RlEkAKB3BsYXllcnMYAiADKAsyJi50aGV0YW4uc2hhcmVkLnYx",
+            "LlBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzEiIKDHRvdGFsUGxheWVy",
+            "cxgDIAEoBVIMdG90YWxQbGF5ZXJzEjYKFm1heEJhdHRsZUR1cmF0aW9uSW5T",
+            "ZWMYBCABKANSFm1heEJhdHRsZUR1cmF0aW9uSW5TZWMSLwoGcm91bmRzGAUg",
+            "AygLMhcudGhldGFuLnNoYXJlZC52MS5Sb3VuZFIGcm91bmRzMuQDChlSaXZh",
+            "bE1hdGNoRGlyZWN0b3JTZXJ2aWNlEmkKDENhbmNlbFRpY2tldBIqLnRoZXRh",
+            "bi5yaXZhbHMudjEuUml2YWxDYW5jZWxUaWNrZXRSZXF1ZXN0GisudGhldGFu",
+            "LnJpdmFscy52MS5SaXZhbENhbmNlbFRpY2tldFJlc3BvbnNlIgASawoSQ3Jl",
+            "YXRlTWF0Y2hPbmJvYXJkEiUudGhldGFuLnJpdmFscy52MS5HZXRNYXRjaElu",
+            "Zm9SZXF1ZXN0GikudGhldGFuLnNoYXJlZC52MS5NYXRjaEZvdW5kUmVzcG9u",
+            "c2VQcm90byIDiAIBEn0KFkNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmcSLy50aGV0",
+            "YW4ucml2YWxzLnYxLkNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXF1ZXN0GjAu",
+            "dGhldGFuLnJpdmFscy52MS5DcmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVzcG9u",
+            "c2UiABJwChNDcmVhdGVNYXRjaFR1dG9yaWFsEiwudGhldGFuLnJpdmFscy52",
+            "MS5DcmVhdGVNYXRjaFR1dG9yaWFsUmVxdWVzdBopLnRoZXRhbi5zaGFyZWQu",
+            "djEuTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8iAEK/AQoUY29tLnRoZXRhbi5y",
+            "aXZhbHMudjFCEFJpdmFsc01hdGNoUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4v",
+            "Z28vdGhldGFuL3JpdmFscy92MTt0aGV0YW5fcml2YWxzX3YxogIDVFJYqgIQ",
+            "VGhldGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5c",
+            "Uml2YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, global::Thetan.Shared.V1.MatchReflection.Descriptor, global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketRequest), global::Thetan.Rivals.V1.RivalCancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.RivalCancelTicketResponse), global::Thetan.Rivals.V1.RivalCancelTicketResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest), global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest.Parser, new[]{ "InGameMode", "Players", "Regions", "FindMatchVersion" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse), global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest), global::Thetan.Rivals.V1.CreateMatchNonMatchingRequest.Parser, new[]{ "InGameMode", "Players", "Regions", "FindMatchVersion", "Arena", "ModeID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse), global::Thetan.Rivals.V1.CreateMatchNonMatchingResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.CreateMatchTutorialRequest), global::Thetan.Rivals.V1.CreateMatchTutorialRequest.Parser, new[]{ "IngameMode", "Players", "TotalPlayers", "MaxBattleDurationInSec", "Rounds" }, null, null, null, null)
           }));
     }
     #endregion
@@ -516,6 +528,8 @@ namespace Thetan.Rivals.V1 {
       players_ = other.players_.Clone();
       regions_ = other.regions_.Clone();
       findMatchVersion_ = other.findMatchVersion_;
+      arena_ = other.arena_;
+      modeID_ = other.modeID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -571,6 +585,30 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
+    /// <summary>Field number for the "arena" field.</summary>
+    public const int ArenaFieldNumber = 5;
+    private global::Thetan.Shared.V1.TRArena arena_ = global::Thetan.Shared.V1.TRArena.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Shared.V1.TRArena Arena {
+      get { return arena_; }
+      set {
+        arena_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "modeID" field.</summary>
+    public const int ModeIDFieldNumber = 6;
+    private string modeID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ModeID {
+      get { return modeID_; }
+      set {
+        modeID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -590,6 +628,8 @@ namespace Thetan.Rivals.V1 {
       if(!players_.Equals(other.players_)) return false;
       if(!regions_.Equals(other.regions_)) return false;
       if (FindMatchVersion != other.FindMatchVersion) return false;
+      if (Arena != other.Arena) return false;
+      if (ModeID != other.ModeID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -601,6 +641,8 @@ namespace Thetan.Rivals.V1 {
       hash ^= players_.GetHashCode();
       hash ^= regions_.GetHashCode();
       if (FindMatchVersion != 0) hash ^= FindMatchVersion.GetHashCode();
+      if (Arena != global::Thetan.Shared.V1.TRArena.None) hash ^= Arena.GetHashCode();
+      if (ModeID.Length != 0) hash ^= ModeID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -629,6 +671,14 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(32);
         output.WriteInt32(FindMatchVersion);
       }
+      if (Arena != global::Thetan.Shared.V1.TRArena.None) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Arena);
+      }
+      if (ModeID.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(ModeID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -649,6 +699,14 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(32);
         output.WriteInt32(FindMatchVersion);
       }
+      if (Arena != global::Thetan.Shared.V1.TRArena.None) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) Arena);
+      }
+      if (ModeID.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(ModeID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -666,6 +724,12 @@ namespace Thetan.Rivals.V1 {
       size += regions_.CalculateSize(_repeated_regions_codec);
       if (FindMatchVersion != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FindMatchVersion);
+      }
+      if (Arena != global::Thetan.Shared.V1.TRArena.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Arena);
+      }
+      if (ModeID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ModeID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -686,6 +750,12 @@ namespace Thetan.Rivals.V1 {
       regions_.Add(other.regions_);
       if (other.FindMatchVersion != 0) {
         FindMatchVersion = other.FindMatchVersion;
+      }
+      if (other.Arena != global::Thetan.Shared.V1.TRArena.None) {
+        Arena = other.Arena;
+      }
+      if (other.ModeID.Length != 0) {
+        ModeID = other.ModeID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -719,6 +789,14 @@ namespace Thetan.Rivals.V1 {
             FindMatchVersion = input.ReadInt32();
             break;
           }
+          case 40: {
+            Arena = (global::Thetan.Shared.V1.TRArena) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            ModeID = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -749,6 +827,14 @@ namespace Thetan.Rivals.V1 {
           }
           case 32: {
             FindMatchVersion = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            Arena = (global::Thetan.Shared.V1.TRArena) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            ModeID = input.ReadString();
             break;
           }
         }
@@ -903,6 +989,321 @@ namespace Thetan.Rivals.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CreateMatchTutorialRequest : pb::IMessage<CreateMatchTutorialRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CreateMatchTutorialRequest> _parser = new pb::MessageParser<CreateMatchTutorialRequest>(() => new CreateMatchTutorialRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CreateMatchTutorialRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Rivals.V1.RivalsMatchReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CreateMatchTutorialRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CreateMatchTutorialRequest(CreateMatchTutorialRequest other) : this() {
+      ingameMode_ = other.ingameMode_;
+      players_ = other.players_.Clone();
+      totalPlayers_ = other.totalPlayers_;
+      maxBattleDurationInSec_ = other.maxBattleDurationInSec_;
+      rounds_ = other.rounds_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CreateMatchTutorialRequest Clone() {
+      return new CreateMatchTutorialRequest(this);
+    }
+
+    /// <summary>Field number for the "ingameMode" field.</summary>
+    public const int IngameModeFieldNumber = 1;
+    private global::Thetan.Shared.V1.InGameMode ingameMode_ = global::Thetan.Shared.V1.InGameMode.TeamCollectStar;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Shared.V1.InGameMode IngameMode {
+      get { return ingameMode_; }
+      set {
+        ingameMode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "players" field.</summary>
+    public const int PlayersFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Thetan.Shared.V1.PlayerInfoMatchProto> _repeated_players_codec
+        = pb::FieldCodec.ForMessage(18, global::Thetan.Shared.V1.PlayerInfoMatchProto.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Shared.V1.PlayerInfoMatchProto> players_ = new pbc::RepeatedField<global::Thetan.Shared.V1.PlayerInfoMatchProto>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Thetan.Shared.V1.PlayerInfoMatchProto> Players {
+      get { return players_; }
+    }
+
+    /// <summary>Field number for the "totalPlayers" field.</summary>
+    public const int TotalPlayersFieldNumber = 3;
+    private int totalPlayers_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int TotalPlayers {
+      get { return totalPlayers_; }
+      set {
+        totalPlayers_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "maxBattleDurationInSec" field.</summary>
+    public const int MaxBattleDurationInSecFieldNumber = 4;
+    private long maxBattleDurationInSec_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long MaxBattleDurationInSec {
+      get { return maxBattleDurationInSec_; }
+      set {
+        maxBattleDurationInSec_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rounds" field.</summary>
+    public const int RoundsFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::Thetan.Shared.V1.Round> _repeated_rounds_codec
+        = pb::FieldCodec.ForMessage(42, global::Thetan.Shared.V1.Round.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Shared.V1.Round> rounds_ = new pbc::RepeatedField<global::Thetan.Shared.V1.Round>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Thetan.Shared.V1.Round> Rounds {
+      get { return rounds_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CreateMatchTutorialRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CreateMatchTutorialRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IngameMode != other.IngameMode) return false;
+      if(!players_.Equals(other.players_)) return false;
+      if (TotalPlayers != other.TotalPlayers) return false;
+      if (MaxBattleDurationInSec != other.MaxBattleDurationInSec) return false;
+      if(!rounds_.Equals(other.rounds_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IngameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) hash ^= IngameMode.GetHashCode();
+      hash ^= players_.GetHashCode();
+      if (TotalPlayers != 0) hash ^= TotalPlayers.GetHashCode();
+      if (MaxBattleDurationInSec != 0L) hash ^= MaxBattleDurationInSec.GetHashCode();
+      hash ^= rounds_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (IngameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) IngameMode);
+      }
+      players_.WriteTo(output, _repeated_players_codec);
+      if (TotalPlayers != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(TotalPlayers);
+      }
+      if (MaxBattleDurationInSec != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(MaxBattleDurationInSec);
+      }
+      rounds_.WriteTo(output, _repeated_rounds_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (IngameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) IngameMode);
+      }
+      players_.WriteTo(ref output, _repeated_players_codec);
+      if (TotalPlayers != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(TotalPlayers);
+      }
+      if (MaxBattleDurationInSec != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(MaxBattleDurationInSec);
+      }
+      rounds_.WriteTo(ref output, _repeated_rounds_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (IngameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) IngameMode);
+      }
+      size += players_.CalculateSize(_repeated_players_codec);
+      if (TotalPlayers != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalPlayers);
+      }
+      if (MaxBattleDurationInSec != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MaxBattleDurationInSec);
+      }
+      size += rounds_.CalculateSize(_repeated_rounds_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CreateMatchTutorialRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IngameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        IngameMode = other.IngameMode;
+      }
+      players_.Add(other.players_);
+      if (other.TotalPlayers != 0) {
+        TotalPlayers = other.TotalPlayers;
+      }
+      if (other.MaxBattleDurationInSec != 0L) {
+        MaxBattleDurationInSec = other.MaxBattleDurationInSec;
+      }
+      rounds_.Add(other.rounds_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            IngameMode = (global::Thetan.Shared.V1.InGameMode) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            players_.AddEntriesFrom(input, _repeated_players_codec);
+            break;
+          }
+          case 24: {
+            TotalPlayers = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            MaxBattleDurationInSec = input.ReadInt64();
+            break;
+          }
+          case 42: {
+            rounds_.AddEntriesFrom(input, _repeated_rounds_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            IngameMode = (global::Thetan.Shared.V1.InGameMode) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            players_.AddEntriesFrom(ref input, _repeated_players_codec);
+            break;
+          }
+          case 24: {
+            TotalPlayers = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            MaxBattleDurationInSec = input.ReadInt64();
+            break;
+          }
+          case 42: {
+            rounds_.AddEntriesFrom(ref input, _repeated_rounds_codec);
+            break;
+          }
         }
       }
     }

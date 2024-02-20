@@ -19,8 +19,9 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RivalsMultiplayerService_GetOnlineStatus_FullMethodName = "/thetan.multiplayer.rivals.v1.RivalsMultiplayerService/GetOnlineStatus"
-	RivalsMultiplayerService_Notify_FullMethodName          = "/thetan.multiplayer.rivals.v1.RivalsMultiplayerService/Notify"
+	RivalsMultiplayerService_GetOnlineStatus_FullMethodName    = "/thetan.multiplayer.rivals.v1.RivalsMultiplayerService/GetOnlineStatus"
+	RivalsMultiplayerService_Notify_FullMethodName             = "/thetan.multiplayer.rivals.v1.RivalsMultiplayerService/Notify"
+	RivalsMultiplayerService_GetTownOnlineUsers_FullMethodName = "/thetan.multiplayer.rivals.v1.RivalsMultiplayerService/GetTownOnlineUsers"
 )
 
 // RivalsMultiplayerServiceClient is the client API for RivalsMultiplayerService service.
@@ -31,6 +32,7 @@ type RivalsMultiplayerServiceClient interface {
 	// dùng để bắn event websocket trực tiếp đến user.
 	// nếu cần bắn event thường xuyên, nên để user subscribe vào channel và bắn event vào channel đó.
 	Notify(ctx context.Context, in *NotifyRequest, opts ...grpc.CallOption) (*NotifyResponse, error)
+	GetTownOnlineUsers(ctx context.Context, in *GetTownOnlineUsersRequest, opts ...grpc.CallOption) (*GetTownOnlineUsersResponse, error)
 }
 
 type rivalsMultiplayerServiceClient struct {
@@ -59,6 +61,15 @@ func (c *rivalsMultiplayerServiceClient) Notify(ctx context.Context, in *NotifyR
 	return out, nil
 }
 
+func (c *rivalsMultiplayerServiceClient) GetTownOnlineUsers(ctx context.Context, in *GetTownOnlineUsersRequest, opts ...grpc.CallOption) (*GetTownOnlineUsersResponse, error) {
+	out := new(GetTownOnlineUsersResponse)
+	err := c.cc.Invoke(ctx, RivalsMultiplayerService_GetTownOnlineUsers_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // RivalsMultiplayerServiceServer is the server API for RivalsMultiplayerService service.
 // All implementations must embed UnimplementedRivalsMultiplayerServiceServer
 // for forward compatibility
@@ -67,6 +78,7 @@ type RivalsMultiplayerServiceServer interface {
 	// dùng để bắn event websocket trực tiếp đến user.
 	// nếu cần bắn event thường xuyên, nên để user subscribe vào channel và bắn event vào channel đó.
 	Notify(context.Context, *NotifyRequest) (*NotifyResponse, error)
+	GetTownOnlineUsers(context.Context, *GetTownOnlineUsersRequest) (*GetTownOnlineUsersResponse, error)
 	mustEmbedUnimplementedRivalsMultiplayerServiceServer()
 }
 
@@ -79,6 +91,9 @@ func (UnimplementedRivalsMultiplayerServiceServer) GetOnlineStatus(context.Conte
 }
 func (UnimplementedRivalsMultiplayerServiceServer) Notify(context.Context, *NotifyRequest) (*NotifyResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Notify not implemented")
+}
+func (UnimplementedRivalsMultiplayerServiceServer) GetTownOnlineUsers(context.Context, *GetTownOnlineUsersRequest) (*GetTownOnlineUsersResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetTownOnlineUsers not implemented")
 }
 func (UnimplementedRivalsMultiplayerServiceServer) mustEmbedUnimplementedRivalsMultiplayerServiceServer() {
 }
@@ -130,6 +145,24 @@ func _RivalsMultiplayerService_Notify_Handler(srv interface{}, ctx context.Conte
 	return interceptor(ctx, in, info, handler)
 }
 
+func _RivalsMultiplayerService_GetTownOnlineUsers_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetTownOnlineUsersRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(RivalsMultiplayerServiceServer).GetTownOnlineUsers(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: RivalsMultiplayerService_GetTownOnlineUsers_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(RivalsMultiplayerServiceServer).GetTownOnlineUsers(ctx, req.(*GetTownOnlineUsersRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // RivalsMultiplayerService_ServiceDesc is the grpc.ServiceDesc for RivalsMultiplayerService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -144,6 +177,10 @@ var RivalsMultiplayerService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "Notify",
 			Handler:    _RivalsMultiplayerService_Notify_Handler,
+		},
+		{
+			MethodName: "GetTownOnlineUsers",
+			Handler:    _RivalsMultiplayerService_GetTownOnlineUsers_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

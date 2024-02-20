@@ -1,0 +1,82 @@
+syntax = "proto3";
+
+package thetan.rivals.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
+option csharp_namespace = "Thetan.Rivals.V1";
+
+service ThetanRivalsPlayerService {
+    rpc CreatePlayersInfo(CreatePlayersInfoRequest) returns (CreatePlayersInfoResponse) {}
+    rpc UpdatePlayersInfo(UpdatePlayersInfoRequest) returns (UpdatePlayersInfoResponse) {}
+    rpc FindEligibleGuildForPlayerJoin(FindEligibleGuildForPlayerJoinRequest) returns (FindEligibleGuildForPlayerJoinResponse) {}
+    rpc GuildAction(GuildActionRequest) returns (GuildActionResponse){}
+}
+
+message CreatePlayersInfoRequest {
+    repeated CreatePlayerInfo listPlayerInfo = 1;
+  }
+
+message CreatePlayerInfo {
+    string playerID = 1;
+    int32 trophy = 2;
+}
+
+message CreatePlayersInfoResponse {
+}
+
+message UpdatePlayersInfoRequest {
+    repeated UpdatePlayerInfo listPlayerInfo = 1;
+}
+
+message UpdatePlayerInfo {
+    string playerID = 1;
+    int32 trophy = 2;
+}
+
+message UpdatePlayersInfoResponse {
+}
+
+message FindEligibleGuildForPlayerJoinRequest {
+    string townID = 1;
+    string botID = 2;
+    float botBalanceRate = 3;
+    float botLowGate = 4;
+    int32 limitSize = 5;
+}
+
+message FindEligibleGuildForPlayerJoinResponse {
+    repeated EligibleGuildForPlayerJoin eligibleGuilds = 1;
+}
+message EligibleGuildForPlayerJoin {
+    string guildID = 1;
+    int32 requireTrophy =2;
+}
+
+message GuildActionRequest {
+   string userID = 1;
+   string targetID = 2;
+   int32  value = 3;
+   GuildBotActionType actionType = 4;
+}
+
+message GuildActionResponse{
+    bool isSuccess = 1;
+}
+
+enum GuildBotActionType{
+    G_None                 = 0;
+    DoGuildQuest         = 1;
+    DonateToGuild        = 2;
+    LootForGuild         = 3;
+    GuildLooted          = 4;
+    KickMember           = 5;
+    LeaveGuild           = 6;
+    GuildLotRent         = 7;
+    GuildLotRent_Leader  = 8;
+    BuyDecor_Member      = 9;
+    BuyDecor_Leader      = 10;
+    SendInvite           = 11;
+    AssignLeaderRole     = 12;
+    SendMail             = 13;
+    JoinGuild            = 14;
+}

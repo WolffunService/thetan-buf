@@ -1,0 +1,145 @@
+syntax = "proto3";
+
+package thetan.rivals.v1;
+import "thetan/rivals/v1/service_rivals.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/bot/v1;thetan_bot_v1";
+option csharp_namespace = "Thetan.Bot.V1";
+
+service BotRivalsService {
+    rpc FetchLobbyBots(FetchLobbyBotsRequest) returns (FetchLobbyBotsResponse) {}
+    rpc LobbyBotAction(LobbyBotActionRequest) returns (LobbyBotActionResponse) {}
+
+    rpc SearchSpecialEventPlayers(SearchSpecialEventPlayersRequest) returns (SearchSpecialEventPlayersResponse) {}
+    rpc SearchIngamePlayers(SearchIngamePlayersRequest) returns (SearchIngamePlayersResponse) {}
+}
+
+message FetchLobbyBotsRequest {
+    string townID = 1;
+}
+
+message FetchLobbyBotsResponse{
+    repeated LobbyBotInfo bots = 1;
+    float randomRateSolo =2;
+    float randomRatePair =3;
+    int64 nextFetchTimestamp = 4;
+}
+
+message LobbyBotInfo {
+    UserProfileResponse profile = 1;
+    UserSelectedMinionResponse selectedMinion = 2;
+    int64 expiresAt = 3;
+    bool isSpender = 4;
+    string townId = 5;
+}
+
+enum SpenderType {
+    SPENDER_TYPE_NONE = 0;
+    SPENDER_TYPE_SPENDER = 1;
+}
+
+message BotInfo {
+    string botID = 1;
+    int64 expiresAt = 2;
+    SpenderType spenderType = 3;
+}
+
+enum BotActionType {
+    None = 0;
+    CheckClass = 1;
+    CheckMines = 2;
+    CheckShop= 3;
+    CheckContest= 4;
+
+    HugZone= 5;
+    TalkingBench= 6;
+    RunAround= 7;
+    PushBack= 8;
+    DancePlay= 9;
+    EmotePlay= 10;
+    VehicleRunAround= 11;
+    VehiclePushBack= 12;
+
+    ReactProfile= 13;
+    ReactGuildbook= 14;
+//    WriteGuestbook= 00;
+//    Email= 00;
+    AddFriend= 15;
+
+    UseVehicle= 16;
+    UseFlycraft= 17;
+    UseDance= 18;
+    UseEmoji= 19;
+
+    ChangeThenion= 20;
+    ChangeBackbling= 21;
+    ChangeFootprint= 22;
+    ChangeGlow= 23;
+    ChangeVoice= 24;
+    ChangeFlycraft= 25;
+    ChangeVehicle= 26;
+    CopyThenion= 27;
+    CopyVehicle= 28;
+    CopyFlycraft= 29;
+
+
+    Findmatch= 30;
+    InviteParty= 31;
+    ShareParty= 32;
+
+    StayIdle= 33;
+
+    RollBackThenion = 99;
+}
+
+message LobbyBotActionRequest{
+   string townId = 1;
+   string botId = 2;
+   string targetId = 3;
+   BotActionType action = 4;
+   ActionOptions options = 5;
+   //more
+}
+
+message ActionOptions{
+    optional int32 cacheSeconds = 1;
+}
+
+message LobbyBotActionResponse{
+    oneof data{
+        int64 id = 1;
+        UserSelectedMinionResponse minion = 2;
+    }
+}
+
+message SearchSpecialEventPlayersRequest {
+    int32 amount = 1;
+    repeated string countryCodes = 2;
+    int32 rank = 3;
+    int64 usageDurationInSeconds = 4;
+}
+
+message SearchSpecialEventPlayersResponse {
+    repeated SpecialEventPlayer players = 1;
+}
+
+message SpecialEventPlayer {
+    string playerID = 1;
+}
+
+message SearchIngamePlayersRequest {
+    int32 amount = 1;
+    int32 region = 2;
+    int32 rank = 3;
+}
+
+message SearchIngamePlayersResponse {
+    repeated IngamePlayer players = 1;
+}
+
+message IngamePlayer {
+    string playerID = 1;
+    string playerName = 2;
+    int32 rank = 3;
+    int32 trophy = 4;
+}

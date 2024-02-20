@@ -24,6 +24,8 @@ const (
 	ThetanRivalService_GetManyUserProfiles_FullMethodName           = "/thetan.rivals.v1.ThetanRivalService/GetManyUserProfiles"
 	ThetanRivalService_GetProfile_FullMethodName                    = "/thetan.rivals.v1.ThetanRivalService/GetProfile"
 	ThetanRivalService_TrackFriendlyAct_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/TrackFriendlyAct"
+	ThetanRivalService_ReactUser_FullMethodName                     = "/thetan.rivals.v1.ThetanRivalService/ReactUser"
+	ThetanRivalService_VoteGuild_FullMethodName                     = "/thetan.rivals.v1.ThetanRivalService/VoteGuild"
 	ThetanRivalService_GetUserMinions_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetUserMinions"
 	ThetanRivalService_GetUserSelectedMinion_FullMethodName         = "/thetan.rivals.v1.ThetanRivalService/GetUserSelectedMinion"
 	ThetanRivalService_GetMinion_FullMethodName                     = "/thetan.rivals.v1.ThetanRivalService/GetMinion"
@@ -31,23 +33,27 @@ const (
 	ThetanRivalService_GetAddInsByUserID_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetAddInsByUserID"
 	ThetanRivalService_GetAddInByID_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/GetAddInByID"
 	ThetanRivalService_CreateAddIn_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/CreateAddIn"
+	ThetanRivalService_FilterSystemItems_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/FilterSystemItems"
 	ThetanRivalService_GetListFriends_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/GetListFriends"
 	ThetanRivalService_GetMatchInfoOnboarding_FullMethodName        = "/thetan.rivals.v1.ThetanRivalService/GetMatchInfoOnboarding"
 	ThetanRivalService_GetOnboardingConfig_FullMethodName           = "/thetan.rivals.v1.ThetanRivalService/GetOnboardingConfig"
+	ThetanRivalService_GetMatchInfoTutorial_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/GetMatchInfoTutorial"
 	ThetanRivalService_GetLatestLobbyActivityInfo_FullMethodName    = "/thetan.rivals.v1.ThetanRivalService/GetLatestLobbyActivityInfo"
 	ThetanRivalService_GetTownUser_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownUser"
 	ThetanRivalService_GetTownByID_FullMethodName                   = "/thetan.rivals.v1.ThetanRivalService/GetTownByID"
+	ThetanRivalService_GetLobbyUser_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/GetLobbyUser"
 	ThetanRivalService_TrackSession_FullMethodName                  = "/thetan.rivals.v1.ThetanRivalService/TrackSession"
 	ThetanRivalService_TrackSessionLobby_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/TrackSessionLobby"
 	ThetanRivalService_GetFindMatchInfo_FullMethodName              = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfo"
+	ThetanRivalService_CanChangeMode_FullMethodName                 = "/thetan.rivals.v1.ThetanRivalService/CanChangeMode"
 	ThetanRivalService_GetConfigForBot_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/GetConfigForBot"
-	ThetanRivalService_GetActiveTournaments_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/GetActiveTournaments"
 	ThetanRivalService_GetFindMatchInfoForTournament_FullMethodName = "/thetan.rivals.v1.ThetanRivalService/GetFindMatchInfoForTournament"
 	ThetanRivalService_MatchFoundTournament_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/MatchFoundTournament"
 	ThetanRivalService_PublishDesign_FullMethodName                 = "/thetan.rivals.v1.ThetanRivalService/PublishDesign"
 	ThetanRivalService_GetContestDesigns_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetContestDesigns"
 	ThetanRivalService_SearchGameMode_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/SearchGameMode"
 	ThetanRivalService_CachePlayedMap_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/CachePlayedMap"
+	ThetanRivalService_GetMetricConfig_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/GetMetricConfig"
 )
 
 // ThetanRivalServiceClient is the client API for ThetanRivalService service.
@@ -60,6 +66,8 @@ type ThetanRivalServiceClient interface {
 	GetManyUserProfiles(ctx context.Context, in *ManyUserProfilesRequest, opts ...grpc.CallOption) (*ManyUserProfileResponse, error)
 	GetProfile(ctx context.Context, in *ProfileRequest, opts ...grpc.CallOption) (*ProfileResponse, error)
 	TrackFriendlyAct(ctx context.Context, in *FriendlyActRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
+	ReactUser(ctx context.Context, in *ReactUserRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
+	VoteGuild(ctx context.Context, in *VoteGuildRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	// Minions
 	GetUserMinions(ctx context.Context, in *UserMinionsRequest, opts ...grpc.CallOption) (*UserMinionsResponse, error)
 	GetUserSelectedMinion(ctx context.Context, in *UserSelectedMinionRequest, opts ...grpc.CallOption) (*UserSelectedMinionResponse, error)
@@ -69,32 +77,40 @@ type ThetanRivalServiceClient interface {
 	GetAddInsByUserID(ctx context.Context, in *GetAddInsByUserIDRequest, opts ...grpc.CallOption) (*GetAddInsByUserIDResponse, error)
 	GetAddInByID(ctx context.Context, in *GetAddInByIDRequest, opts ...grpc.CallOption) (*GetAddInByIDResponse, error)
 	CreateAddIn(ctx context.Context, in *CreateAddInRequest, opts ...grpc.CallOption) (*CreateAddInResponse, error)
+	FilterSystemItems(ctx context.Context, in *FilterSystemItemsRequest, opts ...grpc.CallOption) (*FilterSystemItemsResponse, error)
 	// Friends
 	GetListFriends(ctx context.Context, in *GetUserFriendRequest, opts ...grpc.CallOption) (*GetUserFriendResponse, error)
+	// Deprecated: Do not use.
 	// Onboarding
 	GetMatchInfoOnboarding(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*GetMatchInfoResponse, error)
 	GetOnboardingConfig(ctx context.Context, in *GetOnboardingConfigRequest, opts ...grpc.CallOption) (*GetOnboardingConfigResponse, error)
+	GetMatchInfoTutorial(ctx context.Context, in *GetMatchInfoTutorialRequest, opts ...grpc.CallOption) (*GetMatchInfoTutorialResponse, error)
 	// Lobby
 	GetLatestLobbyActivityInfo(ctx context.Context, in *GetActivityRequest, opts ...grpc.CallOption) (*GetActivityResponse, error)
 	GetTownUser(ctx context.Context, in *GetTownUserRequest, opts ...grpc.CallOption) (*LobbyTown, error)
 	GetTownByID(ctx context.Context, in *GetTownRequest, opts ...grpc.CallOption) (*LobbyTown, error)
+	GetLobbyUser(ctx context.Context, in *GetLobbyUserRequest, opts ...grpc.CallOption) (*GetLobbyUserResponse, error)
 	// Track Action
 	TrackSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error)
 	TrackSessionLobby(ctx context.Context, in *TrackSessionLobbyRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	// GetFindMatchInfo
 	GetFindMatchInfo(ctx context.Context, in *FindMatchInfoRequest, opts ...grpc.CallOption) (*FindMatchInfoResponse, error)
+	CanChangeMode(ctx context.Context, in *CanChangeModeRequest, opts ...grpc.CallOption) (*CanChangeModeResponse, error)
 	// Get config for bot
 	GetConfigForBot(ctx context.Context, in *GetConfigForBotRequest, opts ...grpc.CallOption) (*GetConfigForBotResponse, error)
 	// Tournament
-	GetActiveTournaments(ctx context.Context, in *GetActiveTournamentsRequest, opts ...grpc.CallOption) (*GetActiveTournamentsResponse, error)
 	GetFindMatchInfoForTournament(ctx context.Context, in *FindMatchInfoForTournamentRequest, opts ...grpc.CallOption) (*FindMatchInfoForTournamentResponse, error)
+	// Deprecated: Do not use.
 	MatchFoundTournament(ctx context.Context, in *MatchFoundTournamentRequest, opts ...grpc.CallOption) (*MatchFoundTournamentResponse, error)
 	// Design contest
 	PublishDesign(ctx context.Context, in *PublishDesignRequest, opts ...grpc.CallOption) (*PublishDesignResponse, error)
 	GetContestDesigns(ctx context.Context, in *GetContestDesignsRequest, opts ...grpc.CallOption) (*GetContestDesignsResponse, error)
+	// Deprecated: Do not use.
 	// Game mode
 	SearchGameMode(ctx context.Context, in *SearchGameModeRequest, opts ...grpc.CallOption) (*SearchGameModeResponse, error)
 	CachePlayedMap(ctx context.Context, in *CachePlayedMapRequest, opts ...grpc.CallOption) (*CachePlayedMapResponse, error)
+	// Metric
+	GetMetricConfig(ctx context.Context, in *GetMetricConfigRequest, opts ...grpc.CallOption) (*GetMetricConfigResponse, error)
 }
 
 type thetanRivalServiceClient struct {
@@ -136,6 +152,24 @@ func (c *thetanRivalServiceClient) GetProfile(ctx context.Context, in *ProfileRe
 func (c *thetanRivalServiceClient) TrackFriendlyAct(ctx context.Context, in *FriendlyActRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
 	out := new(emptypb.Empty)
 	err := c.cc.Invoke(ctx, ThetanRivalService_TrackFriendlyAct_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) ReactUser(ctx context.Context, in *ReactUserRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+	out := new(emptypb.Empty)
+	err := c.cc.Invoke(ctx, ThetanRivalService_ReactUser_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) VoteGuild(ctx context.Context, in *VoteGuildRequest, opts ...grpc.CallOption) (*emptypb.Empty, error) {
+	out := new(emptypb.Empty)
+	err := c.cc.Invoke(ctx, ThetanRivalService_VoteGuild_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -205,6 +239,15 @@ func (c *thetanRivalServiceClient) CreateAddIn(ctx context.Context, in *CreateAd
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) FilterSystemItems(ctx context.Context, in *FilterSystemItemsRequest, opts ...grpc.CallOption) (*FilterSystemItemsResponse, error) {
+	out := new(FilterSystemItemsResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_FilterSystemItems_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 func (c *thetanRivalServiceClient) GetListFriends(ctx context.Context, in *GetUserFriendRequest, opts ...grpc.CallOption) (*GetUserFriendResponse, error) {
 	out := new(GetUserFriendResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetListFriends_FullMethodName, in, out, opts...)
@@ -214,6 +257,7 @@ func (c *thetanRivalServiceClient) GetListFriends(ctx context.Context, in *GetUs
 	return out, nil
 }
 
+// Deprecated: Do not use.
 func (c *thetanRivalServiceClient) GetMatchInfoOnboarding(ctx context.Context, in *GetMatchInfoRequest, opts ...grpc.CallOption) (*GetMatchInfoResponse, error) {
 	out := new(GetMatchInfoResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetMatchInfoOnboarding_FullMethodName, in, out, opts...)
@@ -226,6 +270,15 @@ func (c *thetanRivalServiceClient) GetMatchInfoOnboarding(ctx context.Context, i
 func (c *thetanRivalServiceClient) GetOnboardingConfig(ctx context.Context, in *GetOnboardingConfigRequest, opts ...grpc.CallOption) (*GetOnboardingConfigResponse, error) {
 	out := new(GetOnboardingConfigResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_GetOnboardingConfig_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *thetanRivalServiceClient) GetMatchInfoTutorial(ctx context.Context, in *GetMatchInfoTutorialRequest, opts ...grpc.CallOption) (*GetMatchInfoTutorialResponse, error) {
+	out := new(GetMatchInfoTutorialResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetMatchInfoTutorial_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -259,6 +312,15 @@ func (c *thetanRivalServiceClient) GetTownByID(ctx context.Context, in *GetTownR
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) GetLobbyUser(ctx context.Context, in *GetLobbyUserRequest, opts ...grpc.CallOption) (*GetLobbyUserResponse, error) {
+	out := new(GetLobbyUserResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetLobbyUser_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 func (c *thetanRivalServiceClient) TrackSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error) {
 	out := new(TrackSessionResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_TrackSession_FullMethodName, in, out, opts...)
@@ -286,18 +348,18 @@ func (c *thetanRivalServiceClient) GetFindMatchInfo(ctx context.Context, in *Fin
 	return out, nil
 }
 
-func (c *thetanRivalServiceClient) GetConfigForBot(ctx context.Context, in *GetConfigForBotRequest, opts ...grpc.CallOption) (*GetConfigForBotResponse, error) {
-	out := new(GetConfigForBotResponse)
-	err := c.cc.Invoke(ctx, ThetanRivalService_GetConfigForBot_FullMethodName, in, out, opts...)
+func (c *thetanRivalServiceClient) CanChangeMode(ctx context.Context, in *CanChangeModeRequest, opts ...grpc.CallOption) (*CanChangeModeResponse, error) {
+	out := new(CanChangeModeResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_CanChangeMode_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *thetanRivalServiceClient) GetActiveTournaments(ctx context.Context, in *GetActiveTournamentsRequest, opts ...grpc.CallOption) (*GetActiveTournamentsResponse, error) {
-	out := new(GetActiveTournamentsResponse)
-	err := c.cc.Invoke(ctx, ThetanRivalService_GetActiveTournaments_FullMethodName, in, out, opts...)
+func (c *thetanRivalServiceClient) GetConfigForBot(ctx context.Context, in *GetConfigForBotRequest, opts ...grpc.CallOption) (*GetConfigForBotResponse, error) {
+	out := new(GetConfigForBotResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetConfigForBot_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -313,6 +375,7 @@ func (c *thetanRivalServiceClient) GetFindMatchInfoForTournament(ctx context.Con
 	return out, nil
 }
 
+// Deprecated: Do not use.
 func (c *thetanRivalServiceClient) MatchFoundTournament(ctx context.Context, in *MatchFoundTournamentRequest, opts ...grpc.CallOption) (*MatchFoundTournamentResponse, error) {
 	out := new(MatchFoundTournamentResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_MatchFoundTournament_FullMethodName, in, out, opts...)
@@ -340,6 +403,7 @@ func (c *thetanRivalServiceClient) GetContestDesigns(ctx context.Context, in *Ge
 	return out, nil
 }
 
+// Deprecated: Do not use.
 func (c *thetanRivalServiceClient) SearchGameMode(ctx context.Context, in *SearchGameModeRequest, opts ...grpc.CallOption) (*SearchGameModeResponse, error) {
 	out := new(SearchGameModeResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_SearchGameMode_FullMethodName, in, out, opts...)
@@ -358,6 +422,15 @@ func (c *thetanRivalServiceClient) CachePlayedMap(ctx context.Context, in *Cache
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) GetMetricConfig(ctx context.Context, in *GetMetricConfigRequest, opts ...grpc.CallOption) (*GetMetricConfigResponse, error) {
+	out := new(GetMetricConfigResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_GetMetricConfig_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanRivalServiceServer is the server API for ThetanRivalService service.
 // All implementations must embed UnimplementedThetanRivalServiceServer
 // for forward compatibility
@@ -368,6 +441,8 @@ type ThetanRivalServiceServer interface {
 	GetManyUserProfiles(context.Context, *ManyUserProfilesRequest) (*ManyUserProfileResponse, error)
 	GetProfile(context.Context, *ProfileRequest) (*ProfileResponse, error)
 	TrackFriendlyAct(context.Context, *FriendlyActRequest) (*emptypb.Empty, error)
+	ReactUser(context.Context, *ReactUserRequest) (*emptypb.Empty, error)
+	VoteGuild(context.Context, *VoteGuildRequest) (*emptypb.Empty, error)
 	// Minions
 	GetUserMinions(context.Context, *UserMinionsRequest) (*UserMinionsResponse, error)
 	GetUserSelectedMinion(context.Context, *UserSelectedMinionRequest) (*UserSelectedMinionResponse, error)
@@ -377,32 +452,40 @@ type ThetanRivalServiceServer interface {
 	GetAddInsByUserID(context.Context, *GetAddInsByUserIDRequest) (*GetAddInsByUserIDResponse, error)
 	GetAddInByID(context.Context, *GetAddInByIDRequest) (*GetAddInByIDResponse, error)
 	CreateAddIn(context.Context, *CreateAddInRequest) (*CreateAddInResponse, error)
+	FilterSystemItems(context.Context, *FilterSystemItemsRequest) (*FilterSystemItemsResponse, error)
 	// Friends
 	GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error)
+	// Deprecated: Do not use.
 	// Onboarding
 	GetMatchInfoOnboarding(context.Context, *GetMatchInfoRequest) (*GetMatchInfoResponse, error)
 	GetOnboardingConfig(context.Context, *GetOnboardingConfigRequest) (*GetOnboardingConfigResponse, error)
+	GetMatchInfoTutorial(context.Context, *GetMatchInfoTutorialRequest) (*GetMatchInfoTutorialResponse, error)
 	// Lobby
 	GetLatestLobbyActivityInfo(context.Context, *GetActivityRequest) (*GetActivityResponse, error)
 	GetTownUser(context.Context, *GetTownUserRequest) (*LobbyTown, error)
 	GetTownByID(context.Context, *GetTownRequest) (*LobbyTown, error)
+	GetLobbyUser(context.Context, *GetLobbyUserRequest) (*GetLobbyUserResponse, error)
 	// Track Action
 	TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error)
 	TrackSessionLobby(context.Context, *TrackSessionLobbyRequest) (*emptypb.Empty, error)
 	// GetFindMatchInfo
 	GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error)
+	CanChangeMode(context.Context, *CanChangeModeRequest) (*CanChangeModeResponse, error)
 	// Get config for bot
 	GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error)
 	// Tournament
-	GetActiveTournaments(context.Context, *GetActiveTournamentsRequest) (*GetActiveTournamentsResponse, error)
 	GetFindMatchInfoForTournament(context.Context, *FindMatchInfoForTournamentRequest) (*FindMatchInfoForTournamentResponse, error)
+	// Deprecated: Do not use.
 	MatchFoundTournament(context.Context, *MatchFoundTournamentRequest) (*MatchFoundTournamentResponse, error)
 	// Design contest
 	PublishDesign(context.Context, *PublishDesignRequest) (*PublishDesignResponse, error)
 	GetContestDesigns(context.Context, *GetContestDesignsRequest) (*GetContestDesignsResponse, error)
+	// Deprecated: Do not use.
 	// Game mode
 	SearchGameMode(context.Context, *SearchGameModeRequest) (*SearchGameModeResponse, error)
 	CachePlayedMap(context.Context, *CachePlayedMapRequest) (*CachePlayedMapResponse, error)
+	// Metric
+	GetMetricConfig(context.Context, *GetMetricConfigRequest) (*GetMetricConfigResponse, error)
 	mustEmbedUnimplementedThetanRivalServiceServer()
 }
 
@@ -421,6 +504,12 @@ func (UnimplementedThetanRivalServiceServer) GetProfile(context.Context, *Profil
 }
 func (UnimplementedThetanRivalServiceServer) TrackFriendlyAct(context.Context, *FriendlyActRequest) (*emptypb.Empty, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TrackFriendlyAct not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) ReactUser(context.Context, *ReactUserRequest) (*emptypb.Empty, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method ReactUser not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) VoteGuild(context.Context, *VoteGuildRequest) (*emptypb.Empty, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method VoteGuild not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetUserMinions(context.Context, *UserMinionsRequest) (*UserMinionsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetUserMinions not implemented")
@@ -443,6 +532,9 @@ func (UnimplementedThetanRivalServiceServer) GetAddInByID(context.Context, *GetA
 func (UnimplementedThetanRivalServiceServer) CreateAddIn(context.Context, *CreateAddInRequest) (*CreateAddInResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateAddIn not implemented")
 }
+func (UnimplementedThetanRivalServiceServer) FilterSystemItems(context.Context, *FilterSystemItemsRequest) (*FilterSystemItemsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method FilterSystemItems not implemented")
+}
 func (UnimplementedThetanRivalServiceServer) GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetListFriends not implemented")
 }
@@ -451,6 +543,9 @@ func (UnimplementedThetanRivalServiceServer) GetMatchInfoOnboarding(context.Cont
 }
 func (UnimplementedThetanRivalServiceServer) GetOnboardingConfig(context.Context, *GetOnboardingConfigRequest) (*GetOnboardingConfigResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetOnboardingConfig not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetMatchInfoTutorial(context.Context, *GetMatchInfoTutorialRequest) (*GetMatchInfoTutorialResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetMatchInfoTutorial not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetLatestLobbyActivityInfo(context.Context, *GetActivityRequest) (*GetActivityResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetLatestLobbyActivityInfo not implemented")
@@ -461,6 +556,9 @@ func (UnimplementedThetanRivalServiceServer) GetTownUser(context.Context, *GetTo
 func (UnimplementedThetanRivalServiceServer) GetTownByID(context.Context, *GetTownRequest) (*LobbyTown, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetTownByID not implemented")
 }
+func (UnimplementedThetanRivalServiceServer) GetLobbyUser(context.Context, *GetLobbyUserRequest) (*GetLobbyUserResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetLobbyUser not implemented")
+}
 func (UnimplementedThetanRivalServiceServer) TrackSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TrackSession not implemented")
 }
@@ -470,11 +568,11 @@ func (UnimplementedThetanRivalServiceServer) TrackSessionLobby(context.Context, 
 func (UnimplementedThetanRivalServiceServer) GetFindMatchInfo(context.Context, *FindMatchInfoRequest) (*FindMatchInfoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetFindMatchInfo not implemented")
 }
+func (UnimplementedThetanRivalServiceServer) CanChangeMode(context.Context, *CanChangeModeRequest) (*CanChangeModeResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CanChangeMode not implemented")
+}
 func (UnimplementedThetanRivalServiceServer) GetConfigForBot(context.Context, *GetConfigForBotRequest) (*GetConfigForBotResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetConfigForBot not implemented")
-}
-func (UnimplementedThetanRivalServiceServer) GetActiveTournaments(context.Context, *GetActiveTournamentsRequest) (*GetActiveTournamentsResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetActiveTournaments not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) GetFindMatchInfoForTournament(context.Context, *FindMatchInfoForTournamentRequest) (*FindMatchInfoForTournamentResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetFindMatchInfoForTournament not implemented")
@@ -493,6 +591,9 @@ func (UnimplementedThetanRivalServiceServer) SearchGameMode(context.Context, *Se
 }
 func (UnimplementedThetanRivalServiceServer) CachePlayedMap(context.Context, *CachePlayedMapRequest) (*CachePlayedMapResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CachePlayedMap not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) GetMetricConfig(context.Context, *GetMetricConfigRequest) (*GetMetricConfigResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetMetricConfig not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) mustEmbedUnimplementedThetanRivalServiceServer() {}
 
@@ -575,6 +676,42 @@ func _ThetanRivalService_TrackFriendlyAct_Handler(srv interface{}, ctx context.C
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ThetanRivalServiceServer).TrackFriendlyAct(ctx, req.(*FriendlyActRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_ReactUser_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(ReactUserRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).ReactUser(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_ReactUser_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).ReactUser(ctx, req.(*ReactUserRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_VoteGuild_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(VoteGuildRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).VoteGuild(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_VoteGuild_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).VoteGuild(ctx, req.(*VoteGuildRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -705,6 +842,24 @@ func _ThetanRivalService_CreateAddIn_Handler(srv interface{}, ctx context.Contex
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_FilterSystemItems_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(FilterSystemItemsRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).FilterSystemItems(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_FilterSystemItems_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).FilterSystemItems(ctx, req.(*FilterSystemItemsRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _ThetanRivalService_GetListFriends_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(GetUserFriendRequest)
 	if err := dec(in); err != nil {
@@ -755,6 +910,24 @@ func _ThetanRivalService_GetOnboardingConfig_Handler(srv interface{}, ctx contex
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ThetanRivalServiceServer).GetOnboardingConfig(ctx, req.(*GetOnboardingConfigRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ThetanRivalService_GetMatchInfoTutorial_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetMatchInfoTutorialRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetMatchInfoTutorial(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetMatchInfoTutorial_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetMatchInfoTutorial(ctx, req.(*GetMatchInfoTutorialRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -813,6 +986,24 @@ func _ThetanRivalService_GetTownByID_Handler(srv interface{}, ctx context.Contex
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_GetLobbyUser_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetLobbyUserRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetLobbyUser(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetLobbyUser_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetLobbyUser(ctx, req.(*GetLobbyUserRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _ThetanRivalService_TrackSession_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(TrackSessionRequest)
 	if err := dec(in); err != nil {
@@ -867,6 +1058,24 @@ func _ThetanRivalService_GetFindMatchInfo_Handler(srv interface{}, ctx context.C
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_CanChangeMode_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CanChangeModeRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).CanChangeMode(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_CanChangeMode_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).CanChangeMode(ctx, req.(*CanChangeModeRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 func _ThetanRivalService_GetConfigForBot_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(GetConfigForBotRequest)
 	if err := dec(in); err != nil {
@@ -881,24 +1090,6 @@ func _ThetanRivalService_GetConfigForBot_Handler(srv interface{}, ctx context.Co
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ThetanRivalServiceServer).GetConfigForBot(ctx, req.(*GetConfigForBotRequest))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
-func _ThetanRivalService_GetActiveTournaments_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(GetActiveTournamentsRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ThetanRivalServiceServer).GetActiveTournaments(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ThetanRivalService_GetActiveTournaments_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanRivalServiceServer).GetActiveTournaments(ctx, req.(*GetActiveTournamentsRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -1011,6 +1202,24 @@ func _ThetanRivalService_CachePlayedMap_Handler(srv interface{}, ctx context.Con
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_GetMetricConfig_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetMetricConfigRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).GetMetricConfig(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_GetMetricConfig_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).GetMetricConfig(ctx, req.(*GetMetricConfigRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanRivalService_ServiceDesc is the grpc.ServiceDesc for ThetanRivalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -1033,6 +1242,14 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "TrackFriendlyAct",
 			Handler:    _ThetanRivalService_TrackFriendlyAct_Handler,
+		},
+		{
+			MethodName: "ReactUser",
+			Handler:    _ThetanRivalService_ReactUser_Handler,
+		},
+		{
+			MethodName: "VoteGuild",
+			Handler:    _ThetanRivalService_VoteGuild_Handler,
 		},
 		{
 			MethodName: "GetUserMinions",
@@ -1063,6 +1280,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _ThetanRivalService_CreateAddIn_Handler,
 		},
 		{
+			MethodName: "FilterSystemItems",
+			Handler:    _ThetanRivalService_FilterSystemItems_Handler,
+		},
+		{
 			MethodName: "GetListFriends",
 			Handler:    _ThetanRivalService_GetListFriends_Handler,
 		},
@@ -1073,6 +1294,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetOnboardingConfig",
 			Handler:    _ThetanRivalService_GetOnboardingConfig_Handler,
+		},
+		{
+			MethodName: "GetMatchInfoTutorial",
+			Handler:    _ThetanRivalService_GetMatchInfoTutorial_Handler,
 		},
 		{
 			MethodName: "GetLatestLobbyActivityInfo",
@@ -1087,6 +1312,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _ThetanRivalService_GetTownByID_Handler,
 		},
 		{
+			MethodName: "GetLobbyUser",
+			Handler:    _ThetanRivalService_GetLobbyUser_Handler,
+		},
+		{
 			MethodName: "TrackSession",
 			Handler:    _ThetanRivalService_TrackSession_Handler,
 		},
@@ -1099,12 +1328,12 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _ThetanRivalService_GetFindMatchInfo_Handler,
 		},
 		{
-			MethodName: "GetConfigForBot",
-			Handler:    _ThetanRivalService_GetConfigForBot_Handler,
+			MethodName: "CanChangeMode",
+			Handler:    _ThetanRivalService_CanChangeMode_Handler,
 		},
 		{
-			MethodName: "GetActiveTournaments",
-			Handler:    _ThetanRivalService_GetActiveTournaments_Handler,
+			MethodName: "GetConfigForBot",
+			Handler:    _ThetanRivalService_GetConfigForBot_Handler,
 		},
 		{
 			MethodName: "GetFindMatchInfoForTournament",
@@ -1129,6 +1358,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "CachePlayedMap",
 			Handler:    _ThetanRivalService_CachePlayedMap_Handler,
+		},
+		{
+			MethodName: "GetMetricConfig",
+			Handler:    _ThetanRivalService_GetMetricConfig_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

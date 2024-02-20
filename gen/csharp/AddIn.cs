@@ -25,16 +25,15 @@ namespace Thetan.Rivals.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch10aGV0YW4vcml2YWxzL3YxL2FkZF9pbi5wcm90bxIQdGhldGFuLnJpdmFs",
-            "cy52MRohdGhldGFuL3NoYXJlZC92MS9jdXN0b21pemVkLnByb3RvImcKC01p",
-            "Z3JhdGVJdGVtEhwKCW9sZEl0ZW1JRBgBIAEoCVIJb2xkSXRlbUlEEhwKCW5l",
-            "d0l0ZW1JRBgCIAEoCVIJbmV3SXRlbUlEEhwKCW5ld1VzZXJJRBgDIAEoCVIJ",
-            "bmV3VXNlcklEQrkBChRjb20udGhldGFuLnJpdmFscy52MUIKQWRkSW5Qcm90",
-            "b1ABWjN0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vcml2YWxzL3YxO3RoZXRh",
-            "bl9yaXZhbHNfdjGiAgNUUliqAhBUaGV0YW4uUml2YWxzLlYxygIQVGhldGFu",
-            "XFJpdmFsc1xWMeICHFRoZXRhblxSaXZhbHNcVjFcR1BCTWV0YWRhdGHqAhJU",
-            "aGV0YW46OlJpdmFsczo6VjFiBnByb3RvMw=="));
+            "cy52MSJnCgtNaWdyYXRlSXRlbRIcCglvbGRJdGVtSUQYASABKAlSCW9sZEl0",
+            "ZW1JRBIcCgluZXdJdGVtSUQYAiABKAlSCW5ld0l0ZW1JRBIcCgluZXdVc2Vy",
+            "SUQYAyABKAlSCW5ld1VzZXJJREK5AQoUY29tLnRoZXRhbi5yaXZhbHMudjFC",
+            "CkFkZEluUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3JpdmFs",
+            "cy92MTt0aGV0YW5fcml2YWxzX3YxogIDVFJYqgIQVGhldGFuLlJpdmFscy5W",
+            "McoCEFRoZXRhblxSaXZhbHNcVjHiAhxUaGV0YW5cUml2YWxzXFYxXEdQQk1l",
+            "dGFkYXRh6gISVGhldGFuOjpSaXZhbHM6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, },
+          new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.MigrateItem), global::Thetan.Rivals.V1.MigrateItem.Parser, new[]{ "OldItemID", "NewItemID", "NewUserID" }, null, null, null, null)
           }));
@@ -43,6 +42,9 @@ namespace Thetan.Rivals.V1 {
 
   }
   #region Messages
+  /// <summary>
+  /// Deprecated
+  /// </summary>
   public sealed partial class MigrateItem : pb::IMessage<MigrateItem>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
