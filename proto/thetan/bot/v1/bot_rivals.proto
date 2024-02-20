@@ -129,8 +129,7 @@ message SpecialEventPlayer {
 
 message SearchIngamePlayersRequest {
     int32 amount = 1;
-    int32 region = 2;
-    int32 rank = 3;
+    repeated string countryCodes = 2;
 }
 
 message SearchIngamePlayersResponse {
@@ -138,8 +137,7 @@ message SearchIngamePlayersResponse {
 }
 
 message IngamePlayer {
-    string playerID = 1;
-    string playerName = 2;
-    int32 rank = 3;
-    int32 trophy = 4;
+    string id = 1;
+    string name = 2;
+    string countryCode = 3;
 }
