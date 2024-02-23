@@ -114,9 +114,14 @@ message LobbyBotActionResponse{
 
 message SearchSpecialEventPlayersRequest {
     int32 amount = 1;
-    repeated string countryCodes = 2;
-    int32 rank = 3;
+    repeated TownInfo townInfos = 2;
+    int32 minRank = 3;
     int64 usageDurationInSeconds = 4;
+}
+
+message TownInfo {
+    string id = 1;
+    string countryCode = 2;
 }
 
 message SearchSpecialEventPlayersResponse {
