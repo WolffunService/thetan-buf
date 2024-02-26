@@ -10,7 +10,7 @@ service BotRivalsService {
     rpc FetchLobbyBots(FetchLobbyBotsRequest) returns (FetchLobbyBotsResponse) {}
     rpc LobbyBotAction(LobbyBotActionRequest) returns (LobbyBotActionResponse) {}
 
-    rpc SearchSpecialEventPlayers(SearchSpecialEventPlayersRequest) returns (SearchSpecialEventPlayersResponse) {}
+    rpc SearchSpecialEventPlayers(stream SearchSpecialEventPlayersRequest) returns (stream SearchSpecialEventPlayersResponse) {}
     rpc SearchIngamePlayers(SearchIngamePlayersRequest) returns (SearchIngamePlayersResponse) {}
 }
 
@@ -125,11 +125,11 @@ message TownInfo {
 }
 
 message SearchSpecialEventPlayersResponse {
-    repeated SpecialEventPlayer players = 1;
+    repeated SpecialEventPlayer players = 2;
 }
 
 message SpecialEventPlayer {
-    string playerID = 1;
+    string id = 1;
 }
 
 message SearchIngamePlayersRequest {
