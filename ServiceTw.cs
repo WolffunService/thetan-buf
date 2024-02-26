@@ -25,39 +25,38 @@ namespace Thetan.World.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiB0aGV0YW4vd29ybGQvdjEvc2VydmljZV90dy5wcm90bxIPdGhldGFuLndv",
-            "cmxkLnYxGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8iOwoRTWFya2V0",
-            "SW5mb1JlcXVlc3QSDgoCaWQYASABKAlSAmlkEhYKBmdhbWVJRBgCIAEoBVIG",
-            "Z2FtZUlEImgKEk1hcmtldEluZm9SZXNwb25zZRIaCghpbk1hcmtldBgBIAEo",
-            "CFIIaW5NYXJrZXQSGAoHb3duZXJJRBgCIAEoCVIHb3duZXJJRBIcCglvd25l",
-            "ckFkZHIYAyABKAlSCW93bmVyQWRkcjJrChJUaGV0YW5Xb3JsZFNlcnZpY2US",
-            "VQoKTWFya2V0SW5mbxIiLnRoZXRhbi53b3JsZC52MS5NYXJrZXRJbmZvUmVx",
-            "dWVzdBojLnRoZXRhbi53b3JsZC52MS5NYXJrZXRJbmZvUmVzcG9uc2VCtgEK",
-            "E2NvbS50aGV0YW4ud29ybGQudjFCDlNlcnZpY2VUd1Byb3RvUAFaMXRoZXRh",
-            "bi1idWYvZ2VuL2dvL3RoZXRhbi93b3JsZC92MTt0aGV0YW5fd29ybGRfdjGi",
-            "AgNUV1iqAg9UaGV0YW4uV29ybGQuVjHKAg9UaGV0YW5cV29ybGRcVjHiAhtU",
-            "aGV0YW5cV29ybGRcVjFcR1BCTWV0YWRhdGHqAhFUaGV0YW46OldvcmxkOjpW",
-            "MWIGcHJvdG8z"));
+            "cmxkLnYxIlYKFFJlcXVlc3RVc2VORlRSZXF1ZXN0Eg4KAmlkGAEgASgJUgJp",
+            "ZBIWCgZnYW1lSUQYAiABKAVSBmdhbWVJRBIWCgZ1c2VySUQYAyABKAlSBnVz",
+            "ZXJJRCIvChVSZXF1ZXN0VXNlTkZUUmVzcG9uc2USFgoGY2FuVXNlGAEgASgI",
+            "UgZjYW5Vc2UydAoSVGhldGFuV29ybGRTZXJ2aWNlEl4KDVJlcXVlc3RVc2VO",
+            "RlQSJS50aGV0YW4ud29ybGQudjEuUmVxdWVzdFVzZU5GVFJlcXVlc3QaJi50",
+            "aGV0YW4ud29ybGQudjEuUmVxdWVzdFVzZU5GVFJlc3BvbnNlQrYBChNjb20u",
+            "dGhldGFuLndvcmxkLnYxQg5TZXJ2aWNlVHdQcm90b1ABWjF0aGV0YW4tYnVm",
+            "L2dlbi9nby90aGV0YW4vd29ybGQvdjE7dGhldGFuX3dvcmxkX3YxogIDVFdY",
+            "qgIPVGhldGFuLldvcmxkLlYxygIPVGhldGFuXFdvcmxkXFYx4gIbVGhldGFu",
+            "XFdvcmxkXFYxXEdQQk1ldGFkYXRh6gIRVGhldGFuOjpXb3JsZDo6VjFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
+          new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.MarketInfoRequest), global::Thetan.World.V1.MarketInfoRequest.Parser, new[]{ "Id", "GameID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.MarketInfoResponse), global::Thetan.World.V1.MarketInfoResponse.Parser, new[]{ "InMarket", "OwnerID", "OwnerAddr" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.RequestUseNFTRequest), global::Thetan.World.V1.RequestUseNFTRequest.Parser, new[]{ "Id", "GameID", "UserID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.RequestUseNFTResponse), global::Thetan.World.V1.RequestUseNFTResponse.Parser, new[]{ "CanUse" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class MarketInfoRequest : pb::IMessage<MarketInfoRequest>
+  public sealed partial class RequestUseNFTRequest : pb::IMessage<RequestUseNFTRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MarketInfoRequest> _parser = new pb::MessageParser<MarketInfoRequest>(() => new MarketInfoRequest());
+    private static readonly pb::MessageParser<RequestUseNFTRequest> _parser = new pb::MessageParser<RequestUseNFTRequest>(() => new RequestUseNFTRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<MarketInfoRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<RequestUseNFTRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -73,7 +72,7 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MarketInfoRequest() {
+    public RequestUseNFTRequest() {
       OnConstruction();
     }
 
@@ -81,16 +80,17 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MarketInfoRequest(MarketInfoRequest other) : this() {
+    public RequestUseNFTRequest(RequestUseNFTRequest other) : this() {
       id_ = other.id_;
       gameID_ = other.gameID_;
+      userID_ = other.userID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MarketInfoRequest Clone() {
-      return new MarketInfoRequest(this);
+    public RequestUseNFTRequest Clone() {
+      return new RequestUseNFTRequest(this);
     }
 
     /// <summary>Field number for the "id" field.</summary>
@@ -117,15 +117,27 @@ namespace Thetan.World.V1 {
       }
     }
 
+    /// <summary>Field number for the "userID" field.</summary>
+    public const int UserIDFieldNumber = 3;
+    private string userID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as MarketInfoRequest);
+    public string UserID {
+      get { return userID_; }
+      set {
+        userID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(MarketInfoRequest other) {
+    public override bool Equals(object other) {
+      return Equals(other as RequestUseNFTRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RequestUseNFTRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -134,6 +146,7 @@ namespace Thetan.World.V1 {
       }
       if (Id != other.Id) return false;
       if (GameID != other.GameID) return false;
+      if (UserID != other.UserID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -143,6 +156,7 @@ namespace Thetan.World.V1 {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (GameID != 0) hash ^= GameID.GetHashCode();
+      if (UserID.Length != 0) hash ^= UserID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -169,6 +183,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(GameID);
       }
+      if (UserID.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(UserID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -186,6 +204,10 @@ namespace Thetan.World.V1 {
       if (GameID != 0) {
         output.WriteRawTag(16);
         output.WriteInt32(GameID);
+      }
+      if (UserID.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(UserID);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -203,6 +225,9 @@ namespace Thetan.World.V1 {
       if (GameID != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(GameID);
       }
+      if (UserID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserID);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -211,7 +236,7 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(MarketInfoRequest other) {
+    public void MergeFrom(RequestUseNFTRequest other) {
       if (other == null) {
         return;
       }
@@ -220,6 +245,9 @@ namespace Thetan.World.V1 {
       }
       if (other.GameID != 0) {
         GameID = other.GameID;
+      }
+      if (other.UserID.Length != 0) {
+        UserID = other.UserID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -242,6 +270,10 @@ namespace Thetan.World.V1 {
           }
           case 16: {
             GameID = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            UserID = input.ReadString();
             break;
           }
         }
@@ -267,6 +299,10 @@ namespace Thetan.World.V1 {
             GameID = input.ReadInt32();
             break;
           }
+          case 26: {
+            UserID = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -274,16 +310,16 @@ namespace Thetan.World.V1 {
 
   }
 
-  public sealed partial class MarketInfoResponse : pb::IMessage<MarketInfoResponse>
+  public sealed partial class RequestUseNFTResponse : pb::IMessage<RequestUseNFTResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MarketInfoResponse> _parser = new pb::MessageParser<MarketInfoResponse>(() => new MarketInfoResponse());
+    private static readonly pb::MessageParser<RequestUseNFTResponse> _parser = new pb::MessageParser<RequestUseNFTResponse>(() => new RequestUseNFTResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<MarketInfoResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<RequestUseNFTResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -299,7 +335,7 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MarketInfoResponse() {
+    public RequestUseNFTResponse() {
       OnConstruction();
     }
 
@@ -307,73 +343,45 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MarketInfoResponse(MarketInfoResponse other) : this() {
-      inMarket_ = other.inMarket_;
-      ownerID_ = other.ownerID_;
-      ownerAddr_ = other.ownerAddr_;
+    public RequestUseNFTResponse(RequestUseNFTResponse other) : this() {
+      canUse_ = other.canUse_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MarketInfoResponse Clone() {
-      return new MarketInfoResponse(this);
+    public RequestUseNFTResponse Clone() {
+      return new RequestUseNFTResponse(this);
     }
 
-    /// <summary>Field number for the "inMarket" field.</summary>
-    public const int InMarketFieldNumber = 1;
-    private bool inMarket_;
+    /// <summary>Field number for the "canUse" field.</summary>
+    public const int CanUseFieldNumber = 1;
+    private bool canUse_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool InMarket {
-      get { return inMarket_; }
+    public bool CanUse {
+      get { return canUse_; }
       set {
-        inMarket_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "ownerID" field.</summary>
-    public const int OwnerIDFieldNumber = 2;
-    private string ownerID_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string OwnerID {
-      get { return ownerID_; }
-      set {
-        ownerID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "ownerAddr" field.</summary>
-    public const int OwnerAddrFieldNumber = 3;
-    private string ownerAddr_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string OwnerAddr {
-      get { return ownerAddr_; }
-      set {
-        ownerAddr_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        canUse_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as MarketInfoResponse);
+      return Equals(other as RequestUseNFTResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(MarketInfoResponse other) {
+    public bool Equals(RequestUseNFTResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (InMarket != other.InMarket) return false;
-      if (OwnerID != other.OwnerID) return false;
-      if (OwnerAddr != other.OwnerAddr) return false;
+      if (CanUse != other.CanUse) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -381,9 +389,7 @@ namespace Thetan.World.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (InMarket != false) hash ^= InMarket.GetHashCode();
-      if (OwnerID.Length != 0) hash ^= OwnerID.GetHashCode();
-      if (OwnerAddr.Length != 0) hash ^= OwnerAddr.GetHashCode();
+      if (CanUse != false) hash ^= CanUse.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -402,17 +408,9 @@ namespace Thetan.World.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (InMarket != false) {
+      if (CanUse != false) {
         output.WriteRawTag(8);
-        output.WriteBool(InMarket);
-      }
-      if (OwnerID.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(OwnerID);
-      }
-      if (OwnerAddr.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(OwnerAddr);
+        output.WriteBool(CanUse);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -424,17 +422,9 @@ namespace Thetan.World.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (InMarket != false) {
+      if (CanUse != false) {
         output.WriteRawTag(8);
-        output.WriteBool(InMarket);
-      }
-      if (OwnerID.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(OwnerID);
-      }
-      if (OwnerAddr.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(OwnerAddr);
+        output.WriteBool(CanUse);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -446,14 +436,8 @@ namespace Thetan.World.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (InMarket != false) {
+      if (CanUse != false) {
         size += 1 + 1;
-      }
-      if (OwnerID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(OwnerID);
-      }
-      if (OwnerAddr.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(OwnerAddr);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -463,18 +447,12 @@ namespace Thetan.World.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(MarketInfoResponse other) {
+    public void MergeFrom(RequestUseNFTResponse other) {
       if (other == null) {
         return;
       }
-      if (other.InMarket != false) {
-        InMarket = other.InMarket;
-      }
-      if (other.OwnerID.Length != 0) {
-        OwnerID = other.OwnerID;
-      }
-      if (other.OwnerAddr.Length != 0) {
-        OwnerAddr = other.OwnerAddr;
+      if (other.CanUse != false) {
+        CanUse = other.CanUse;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -492,15 +470,7 @@ namespace Thetan.World.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            InMarket = input.ReadBool();
-            break;
-          }
-          case 18: {
-            OwnerID = input.ReadString();
-            break;
-          }
-          case 26: {
-            OwnerAddr = input.ReadString();
+            CanUse = input.ReadBool();
             break;
           }
         }
@@ -519,15 +489,7 @@ namespace Thetan.World.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            InMarket = input.ReadBool();
-            break;
-          }
-          case 18: {
-            OwnerID = input.ReadString();
-            break;
-          }
-          case 26: {
-            OwnerAddr = input.ReadString();
+            CanUse = input.ReadBool();
             break;
           }
         }
