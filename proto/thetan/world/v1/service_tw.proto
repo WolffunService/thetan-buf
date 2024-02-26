@@ -5,19 +5,16 @@ package thetan.world.v1;
 option go_package = "thetan-buf/gen/go/thetan/world/v1;thetan_world_v1";
 option csharp_namespace = "Thetan.World.V1";
 
-import "google/protobuf/empty.proto";
-
 service ThetanWorldService {
-    rpc MarketInfo(MarketInfoRequest) returns (MarketInfoResponse);
+    rpc RequestUseNFT(RequestUseNFTRequest) returns (RequestUseNFTResponse);
 }
 
-message MarketInfoRequest {
+message RequestUseNFTRequest {
     string id = 1;
     int32 gameID = 2;
+    string userID = 3;
 }
 
-message MarketInfoResponse {
-    bool inMarket = 1;
-    string ownerID = 2;
-    string ownerAddr = 3; 
+message RequestUseNFTResponse {
+    bool canUse = 1; 
 }

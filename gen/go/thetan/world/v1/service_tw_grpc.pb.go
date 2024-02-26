@@ -19,14 +19,14 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ThetanWorldService_MarketInfo_FullMethodName = "/thetan.world.v1.ThetanWorldService/MarketInfo"
+	ThetanWorldService_RequestUseNFT_FullMethodName = "/thetan.world.v1.ThetanWorldService/RequestUseNFT"
 )
 
 // ThetanWorldServiceClient is the client API for ThetanWorldService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ThetanWorldServiceClient interface {
-	MarketInfo(ctx context.Context, in *MarketInfoRequest, opts ...grpc.CallOption) (*MarketInfoResponse, error)
+	RequestUseNFT(ctx context.Context, in *RequestUseNFTRequest, opts ...grpc.CallOption) (*RequestUseNFTResponse, error)
 }
 
 type thetanWorldServiceClient struct {
@@ -37,9 +37,9 @@ func NewThetanWorldServiceClient(cc grpc.ClientConnInterface) ThetanWorldService
 	return &thetanWorldServiceClient{cc}
 }
 
-func (c *thetanWorldServiceClient) MarketInfo(ctx context.Context, in *MarketInfoRequest, opts ...grpc.CallOption) (*MarketInfoResponse, error) {
-	out := new(MarketInfoResponse)
-	err := c.cc.Invoke(ctx, ThetanWorldService_MarketInfo_FullMethodName, in, out, opts...)
+func (c *thetanWorldServiceClient) RequestUseNFT(ctx context.Context, in *RequestUseNFTRequest, opts ...grpc.CallOption) (*RequestUseNFTResponse, error) {
+	out := new(RequestUseNFTResponse)
+	err := c.cc.Invoke(ctx, ThetanWorldService_RequestUseNFT_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -50,7 +50,7 @@ func (c *thetanWorldServiceClient) MarketInfo(ctx context.Context, in *MarketInf
 // All implementations must embed UnimplementedThetanWorldServiceServer
 // for forward compatibility
 type ThetanWorldServiceServer interface {
-	MarketInfo(context.Context, *MarketInfoRequest) (*MarketInfoResponse, error)
+	RequestUseNFT(context.Context, *RequestUseNFTRequest) (*RequestUseNFTResponse, error)
 	mustEmbedUnimplementedThetanWorldServiceServer()
 }
 
@@ -58,8 +58,8 @@ type ThetanWorldServiceServer interface {
 type UnimplementedThetanWorldServiceServer struct {
 }
 
-func (UnimplementedThetanWorldServiceServer) MarketInfo(context.Context, *MarketInfoRequest) (*MarketInfoResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method MarketInfo not implemented")
+func (UnimplementedThetanWorldServiceServer) RequestUseNFT(context.Context, *RequestUseNFTRequest) (*RequestUseNFTResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method RequestUseNFT not implemented")
 }
 func (UnimplementedThetanWorldServiceServer) mustEmbedUnimplementedThetanWorldServiceServer() {}
 
@@ -74,20 +74,20 @@ func RegisterThetanWorldServiceServer(s grpc.ServiceRegistrar, srv ThetanWorldSe
 	s.RegisterService(&ThetanWorldService_ServiceDesc, srv)
 }
 
-func _ThetanWorldService_MarketInfo_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(MarketInfoRequest)
+func _ThetanWorldService_RequestUseNFT_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(RequestUseNFTRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ThetanWorldServiceServer).MarketInfo(ctx, in)
+		return srv.(ThetanWorldServiceServer).RequestUseNFT(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: ThetanWorldService_MarketInfo_FullMethodName,
+		FullMethod: ThetanWorldService_RequestUseNFT_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanWorldServiceServer).MarketInfo(ctx, req.(*MarketInfoRequest))
+		return srv.(ThetanWorldServiceServer).RequestUseNFT(ctx, req.(*RequestUseNFTRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -100,8 +100,8 @@ var ThetanWorldService_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*ThetanWorldServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "MarketInfo",
-			Handler:    _ThetanWorldService_MarketInfo_Handler,
+			MethodName: "RequestUseNFT",
+			Handler:    _ThetanWorldService_RequestUseNFT_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
