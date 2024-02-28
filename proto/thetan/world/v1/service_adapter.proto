@@ -68,8 +68,9 @@ message ItemResponse {
 
     int32 rarity = 3;
     int32 skinRarity = 4;
+    string itemType = 5;
     
-    google.protobuf.Struct data = 5;
+    google.protobuf.Struct data = 6;
 }
 
 message GetItemsRequest {
