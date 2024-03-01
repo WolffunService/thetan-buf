@@ -51,7 +51,6 @@ const (
 	ThetanRivalService_MatchFoundTournament_FullMethodName          = "/thetan.rivals.v1.ThetanRivalService/MatchFoundTournament"
 	ThetanRivalService_PublishDesign_FullMethodName                 = "/thetan.rivals.v1.ThetanRivalService/PublishDesign"
 	ThetanRivalService_GetContestDesigns_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetContestDesigns"
-	ThetanRivalService_SearchGameMode_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/SearchGameMode"
 	ThetanRivalService_CachePlayedMap_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/CachePlayedMap"
 	ThetanRivalService_GetMetricConfig_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/GetMetricConfig"
 )
@@ -105,9 +104,6 @@ type ThetanRivalServiceClient interface {
 	// Design contest
 	PublishDesign(ctx context.Context, in *PublishDesignRequest, opts ...grpc.CallOption) (*PublishDesignResponse, error)
 	GetContestDesigns(ctx context.Context, in *GetContestDesignsRequest, opts ...grpc.CallOption) (*GetContestDesignsResponse, error)
-	// Deprecated: Do not use.
-	// Game mode
-	SearchGameMode(ctx context.Context, in *SearchGameModeRequest, opts ...grpc.CallOption) (*SearchGameModeResponse, error)
 	CachePlayedMap(ctx context.Context, in *CachePlayedMapRequest, opts ...grpc.CallOption) (*CachePlayedMapResponse, error)
 	// Metric
 	GetMetricConfig(ctx context.Context, in *GetMetricConfigRequest, opts ...grpc.CallOption) (*GetMetricConfigResponse, error)
@@ -403,16 +399,6 @@ func (c *thetanRivalServiceClient) GetContestDesigns(ctx context.Context, in *Ge
 	return out, nil
 }
 
-// Deprecated: Do not use.
-func (c *thetanRivalServiceClient) SearchGameMode(ctx context.Context, in *SearchGameModeRequest, opts ...grpc.CallOption) (*SearchGameModeResponse, error) {
-	out := new(SearchGameModeResponse)
-	err := c.cc.Invoke(ctx, ThetanRivalService_SearchGameMode_FullMethodName, in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
-}
-
 func (c *thetanRivalServiceClient) CachePlayedMap(ctx context.Context, in *CachePlayedMapRequest, opts ...grpc.CallOption) (*CachePlayedMapResponse, error) {
 	out := new(CachePlayedMapResponse)
 	err := c.cc.Invoke(ctx, ThetanRivalService_CachePlayedMap_FullMethodName, in, out, opts...)
@@ -480,9 +466,6 @@ type ThetanRivalServiceServer interface {
 	// Design contest
 	PublishDesign(context.Context, *PublishDesignRequest) (*PublishDesignResponse, error)
 	GetContestDesigns(context.Context, *GetContestDesignsRequest) (*GetContestDesignsResponse, error)
-	// Deprecated: Do not use.
-	// Game mode
-	SearchGameMode(context.Context, *SearchGameModeRequest) (*SearchGameModeResponse, error)
 	CachePlayedMap(context.Context, *CachePlayedMapRequest) (*CachePlayedMapResponse, error)
 	// Metric
 	GetMetricConfig(context.Context, *GetMetricConfigRequest) (*GetMetricConfigResponse, error)
@@ -585,9 +568,6 @@ func (UnimplementedThetanRivalServiceServer) PublishDesign(context.Context, *Pub
 }
 func (UnimplementedThetanRivalServiceServer) GetContestDesigns(context.Context, *GetContestDesignsRequest) (*GetContestDesignsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetContestDesigns not implemented")
-}
-func (UnimplementedThetanRivalServiceServer) SearchGameMode(context.Context, *SearchGameModeRequest) (*SearchGameModeResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method SearchGameMode not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) CachePlayedMap(context.Context, *CachePlayedMapRequest) (*CachePlayedMapResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CachePlayedMap not implemented")
@@ -1166,24 +1146,6 @@ func _ThetanRivalService_GetContestDesigns_Handler(srv interface{}, ctx context.
 	return interceptor(ctx, in, info, handler)
 }
 
-func _ThetanRivalService_SearchGameMode_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(SearchGameModeRequest)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(ThetanRivalServiceServer).SearchGameMode(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: ThetanRivalService_SearchGameMode_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanRivalServiceServer).SearchGameMode(ctx, req.(*SearchGameModeRequest))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
 func _ThetanRivalService_CachePlayedMap_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(CachePlayedMapRequest)
 	if err := dec(in); err != nil {
@@ -1350,10 +1312,6 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetContestDesigns",
 			Handler:    _ThetanRivalService_GetContestDesigns_Handler,
-		},
-		{
-			MethodName: "SearchGameMode",
-			Handler:    _ThetanRivalService_SearchGameMode_Handler,
 		},
 		{
 			MethodName: "CachePlayedMap",

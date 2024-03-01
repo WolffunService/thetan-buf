@@ -72,10 +72,6 @@ service ThetanRivalService {
   rpc PublishDesign(PublishDesignRequest) returns (PublishDesignResponse) {}
   rpc GetContestDesigns(GetContestDesignsRequest) returns (GetContestDesignsResponse) {}
 
-  // Game mode
-  rpc SearchGameMode(SearchGameModeRequest) returns (SearchGameModeResponse) {
-    option deprecated = true;
-  }
   rpc CachePlayedMap(CachePlayedMapRequest) returns (CachePlayedMapResponse) {}
 
   // Metric
@@ -87,15 +83,6 @@ message GetMetricConfigRequest {
 
 message GetMetricConfigResponse {
   double TrophyPerBattle = 1;
-}
-
-message SearchGameModeRequest {
-  option deprecated = true;
-}
-
-message SearchGameModeResponse {
-  option deprecated = true;
-  repeated GameModeInfo listGameMode = 1;
 }
 
 message GameModeInfo {
