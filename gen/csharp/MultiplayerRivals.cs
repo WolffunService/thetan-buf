@@ -26,28 +26,33 @@ namespace Thetan.Multiplayer.V1 {
           string.Concat(
             "Ci50aGV0YW4vbXVsdGlwbGF5ZXIvdjEvbXVsdGlwbGF5ZXJfcml2YWxzLnBy",
             "b3RvEhV0aGV0YW4ubXVsdGlwbGF5ZXIudjEaIXRoZXRhbi9zaGFyZWQvdjEv",
-            "Y3VzdG9taXplZC5wcm90byKBBAoVUml2YWxzUGxheWVySW5mb1Byb3RvEhoK",
-            "CG1pbmlvbklkGAEgASgJUghtaW5pb25JZBISCgRza2luGAIgASgFUgRza2lu",
-            "EmgKDmNvc21ldGljSW5Vc2VkGAMgAygLMkAudGhldGFuLm11bHRpcGxheWVy",
-            "LnYxLlJpdmFsc1BsYXllckluZm9Qcm90by5Db3NtZXRpY0luVXNlZEVudHJ5",
-            "Ug5jb3NtZXRpY0luVXNlZBI8CgpjdXN0b21pemVkGAQgASgLMhwudGhldGFu",
-            "LnNoYXJlZC52MS5DdXN0b21pemVkUgpjdXN0b21pemVkEmsKD2FkZEluQ3Vz",
-            "dG9taXplZBgFIAMoCzJBLnRoZXRhbi5tdWx0aXBsYXllci52MS5SaXZhbHNQ",
-            "bGF5ZXJJbmZvUHJvdG8uQWRkSW5DdXN0b21pemVkRW50cnlSD2FkZEluQ3Vz",
-            "dG9taXplZBpBChNDb3NtZXRpY0luVXNlZEVudHJ5EhAKA2tleRgBIAEoCVID",
-            "a2V5EhQKBXZhbHVlGAIgASgDUgV2YWx1ZToCOAEaYAoUQWRkSW5DdXN0b21p",
-            "emVkRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSMgoFdmFsdWUYAiABKAsyHC50",
-            "aGV0YW4uc2hhcmVkLnYxLkN1c3RvbWl6ZWRSBXZhbHVlOgI4AULoAQoZY29t",
-            "LnRoZXRhbi5tdWx0aXBsYXllci52MUIWTXVsdGlwbGF5ZXJSaXZhbHNQcm90",
-            "b1ABWj10aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vbXVsdGlwbGF5ZXIvdjE7",
-            "dGhldGFuX211bHRpcGxheWVyX3YxogIDVE1YqgIVVGhldGFuLk11bHRpcGxh",
-            "eWVyLlYxygIVVGhldGFuXE11bHRpcGxheWVyXFYx4gIhVGhldGFuXE11bHRp",
-            "cGxheWVyXFYxXEdQQk1ldGFkYXRh6gIXVGhldGFuOjpNdWx0aXBsYXllcjo6",
-            "VjFiBnByb3RvMw=="));
+            "Y3VzdG9taXplZC5wcm90bxogdGhldGFuL3NoYXJlZC92MS9nYW1lX2luZm8u",
+            "cHJvdG8igQQKFVJpdmFsc1BsYXllckluZm9Qcm90bxIaCghtaW5pb25JZBgB",
+            "IAEoCVIIbWluaW9uSWQSEgoEc2tpbhgCIAEoBVIEc2tpbhJoCg5jb3NtZXRp",
+            "Y0luVXNlZBgDIAMoCzJALnRoZXRhbi5tdWx0aXBsYXllci52MS5SaXZhbHNQ",
+            "bGF5ZXJJbmZvUHJvdG8uQ29zbWV0aWNJblVzZWRFbnRyeVIOY29zbWV0aWNJ",
+            "blVzZWQSPAoKY3VzdG9taXplZBgEIAEoCzIcLnRoZXRhbi5zaGFyZWQudjEu",
+            "Q3VzdG9taXplZFIKY3VzdG9taXplZBJrCg9hZGRJbkN1c3RvbWl6ZWQYBSAD",
+            "KAsyQS50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUml2YWxzUGxheWVySW5mb1By",
+            "b3RvLkFkZEluQ3VzdG9taXplZEVudHJ5Ug9hZGRJbkN1c3RvbWl6ZWQaQQoT",
+            "Q29zbWV0aWNJblVzZWRFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1",
+            "ZRgCIAEoA1IFdmFsdWU6AjgBGmAKFEFkZEluQ3VzdG9taXplZEVudHJ5EhAK",
+            "A2tleRgBIAEoCVIDa2V5EjIKBXZhbHVlGAIgASgLMhwudGhldGFuLnNoYXJl",
+            "ZC52MS5DdXN0b21pemVkUgV2YWx1ZToCOAEinAEKE1JpdmFsUGFydHlJbmZv",
+            "UHJvdG8SPAoKaW5HYW1lTW9kZRgHIAEoDjIcLnRoZXRhbi5zaGFyZWQudjEu",
+            "SW5HYW1lTW9kZVIKaW5HYW1lTW9kZRIvCgVhcmVuYRgIIAEoDjIZLnRoZXRh",
+            "bi5zaGFyZWQudjEuVFJBcmVuYVIFYXJlbmESFgoGbW9kZUlEGAkgASgJUgZt",
+            "b2RlSURC6AEKGWNvbS50aGV0YW4ubXVsdGlwbGF5ZXIudjFCFk11bHRpcGxh",
+            "eWVyUml2YWxzUHJvdG9QAVo9dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL211",
+            "bHRpcGxheWVyL3YxO3RoZXRhbl9tdWx0aXBsYXllcl92MaICA1RNWKoCFVRo",
+            "ZXRhbi5NdWx0aXBsYXllci5WMcoCFVRoZXRhblxNdWx0aXBsYXllclxWMeIC",
+            "IVRoZXRhblxNdWx0aXBsYXllclxWMVxHUEJNZXRhZGF0YeoCF1RoZXRhbjo6",
+            "TXVsdGlwbGF5ZXI6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RivalsPlayerInfoProto), global::Thetan.Multiplayer.V1.RivalsPlayerInfoProto.Parser, new[]{ "MinionId", "Skin", "CosmeticInUsed", "Customized", "AddInCustomized" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RivalsPlayerInfoProto), global::Thetan.Multiplayer.V1.RivalsPlayerInfoProto.Parser, new[]{ "MinionId", "Skin", "CosmeticInUsed", "Customized", "AddInCustomized" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RivalPartyInfoProto), global::Thetan.Multiplayer.V1.RivalPartyInfoProto.Parser, new[]{ "InGameMode", "Arena", "ModeID" }, null, null, null, null)
           }));
     }
     #endregion
@@ -369,6 +374,269 @@ namespace Thetan.Multiplayer.V1 {
           }
           case 42: {
             addInCustomized_.AddEntriesFrom(ref input, _map_addInCustomized_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class RivalPartyInfoProto : pb::IMessage<RivalPartyInfoProto>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RivalPartyInfoProto> _parser = new pb::MessageParser<RivalPartyInfoProto>(() => new RivalPartyInfoProto());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RivalPartyInfoProto> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.MultiplayerRivalsReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RivalPartyInfoProto() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RivalPartyInfoProto(RivalPartyInfoProto other) : this() {
+      inGameMode_ = other.inGameMode_;
+      arena_ = other.arena_;
+      modeID_ = other.modeID_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RivalPartyInfoProto Clone() {
+      return new RivalPartyInfoProto(this);
+    }
+
+    /// <summary>Field number for the "inGameMode" field.</summary>
+    public const int InGameModeFieldNumber = 7;
+    private global::Thetan.Shared.V1.InGameMode inGameMode_ = global::Thetan.Shared.V1.InGameMode.TeamCollectStar;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Shared.V1.InGameMode InGameMode {
+      get { return inGameMode_; }
+      set {
+        inGameMode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "arena" field.</summary>
+    public const int ArenaFieldNumber = 8;
+    private global::Thetan.Shared.V1.TRArena arena_ = global::Thetan.Shared.V1.TRArena.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Shared.V1.TRArena Arena {
+      get { return arena_; }
+      set {
+        arena_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "modeID" field.</summary>
+    public const int ModeIDFieldNumber = 9;
+    private string modeID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ModeID {
+      get { return modeID_; }
+      set {
+        modeID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as RivalPartyInfoProto);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RivalPartyInfoProto other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (InGameMode != other.InGameMode) return false;
+      if (Arena != other.Arena) return false;
+      if (ModeID != other.ModeID) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) hash ^= InGameMode.GetHashCode();
+      if (Arena != global::Thetan.Shared.V1.TRArena.None) hash ^= Arena.GetHashCode();
+      if (ModeID.Length != 0) hash ^= ModeID.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) InGameMode);
+      }
+      if (Arena != global::Thetan.Shared.V1.TRArena.None) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) Arena);
+      }
+      if (ModeID.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(ModeID);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) InGameMode);
+      }
+      if (Arena != global::Thetan.Shared.V1.TRArena.None) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) Arena);
+      }
+      if (ModeID.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(ModeID);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InGameMode);
+      }
+      if (Arena != global::Thetan.Shared.V1.TRArena.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Arena);
+      }
+      if (ModeID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ModeID);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(RivalPartyInfoProto other) {
+      if (other == null) {
+        return;
+      }
+      if (other.InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) {
+        InGameMode = other.InGameMode;
+      }
+      if (other.Arena != global::Thetan.Shared.V1.TRArena.None) {
+        Arena = other.Arena;
+      }
+      if (other.ModeID.Length != 0) {
+        ModeID = other.ModeID;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 56: {
+            InGameMode = (global::Thetan.Shared.V1.InGameMode) input.ReadEnum();
+            break;
+          }
+          case 64: {
+            Arena = (global::Thetan.Shared.V1.TRArena) input.ReadEnum();
+            break;
+          }
+          case 74: {
+            ModeID = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 56: {
+            InGameMode = (global::Thetan.Shared.V1.InGameMode) input.ReadEnum();
+            break;
+          }
+          case 64: {
+            Arena = (global::Thetan.Shared.V1.TRArena) input.ReadEnum();
+            break;
+          }
+          case 74: {
+            ModeID = input.ReadString();
             break;
           }
         }
