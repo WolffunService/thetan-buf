@@ -46,7 +46,7 @@ namespace Thetan.Multiplayer.V1 {
             "b1Byb3RvLlRlYW1JbmZvRW50cnlSCHRlYW1JbmZvGlwKDVRlYW1JbmZvRW50",
             "cnkSEAoDa2V5GAEgASgJUgNrZXkSNQoFdmFsdWUYAiABKAsyHy50aGV0YW4u",
             "bXVsdGlwbGF5ZXIudjEuVGVhbUluZm9SBXZhbHVlOgI4ASI4CghUZWFtSW5m",
-            "bxIWCgZ0ZWFtSWQYASABKAlSBnRlYW1JZBIUCgVpc0JvdBgCIAEoCFIFaXNC",
+            "bxIWCgZ0ZWFtSWQYASABKAVSBnRlYW1JZBIUCgVpc0JvdBgCIAEoCFIFaXNC",
             "b3QiLwoPQ2hhbmdlSG9zdFByb3RvEhwKCW5ld0hvc3RJZBgCIAEoCVIJbmV3",
             "SG9zdElkIkQKFlNlYXJjaEN1c3RvbVBhcnR5UHJvdG8SGgoHcGFydHlJZBgB",
             "IAEoCUgAUgdwYXJ0eUlkQg4KDG9wdGlvblNlYXJjaCKQAQoeU2VhcmNoQ3Vz",
@@ -1548,13 +1548,13 @@ namespace Thetan.Multiplayer.V1 {
 
     /// <summary>Field number for the "teamId" field.</summary>
     public const int TeamIdFieldNumber = 1;
-    private string teamId_ = "";
+    private int teamId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TeamId {
+    public int TeamId {
       get { return teamId_; }
       set {
-        teamId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        teamId_ = value;
       }
     }
 
@@ -1594,7 +1594,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (TeamId.Length != 0) hash ^= TeamId.GetHashCode();
+      if (TeamId != 0) hash ^= TeamId.GetHashCode();
       if (IsBot != false) hash ^= IsBot.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1614,9 +1614,9 @@ namespace Thetan.Multiplayer.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (TeamId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TeamId);
+      if (TeamId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(TeamId);
       }
       if (IsBot != false) {
         output.WriteRawTag(16);
@@ -1632,9 +1632,9 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TeamId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(TeamId);
+      if (TeamId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(TeamId);
       }
       if (IsBot != false) {
         output.WriteRawTag(16);
@@ -1650,8 +1650,8 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (TeamId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TeamId);
+      if (TeamId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TeamId);
       }
       if (IsBot != false) {
         size += 1 + 1;
@@ -1668,7 +1668,7 @@ namespace Thetan.Multiplayer.V1 {
       if (other == null) {
         return;
       }
-      if (other.TeamId.Length != 0) {
+      if (other.TeamId != 0) {
         TeamId = other.TeamId;
       }
       if (other.IsBot != false) {
@@ -1689,8 +1689,8 @@ namespace Thetan.Multiplayer.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            TeamId = input.ReadString();
+          case 8: {
+            TeamId = input.ReadInt32();
             break;
           }
           case 16: {
@@ -1712,8 +1712,8 @@ namespace Thetan.Multiplayer.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            TeamId = input.ReadString();
+          case 8: {
+            TeamId = input.ReadInt32();
             break;
           }
           case 16: {

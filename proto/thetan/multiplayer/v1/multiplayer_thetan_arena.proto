@@ -43,7 +43,7 @@ message ThetanArenaPartyInfoProto {
 }
 
 message TeamInfo {
-    string teamId =1;
+    int32 teamId =1;
     bool isBot = 2;
 }
 
