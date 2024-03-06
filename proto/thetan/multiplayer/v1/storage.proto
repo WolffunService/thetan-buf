@@ -17,6 +17,7 @@ message PartyStorageMessage {
   PartyInfoProto partyInfo = 1;
   map<string, bool> playersReadyForRematch = 2;
   map<string, Regions> playersRegions = 3;
+  bytes gameDataStorage = 4;
 }
 
 message Regions {
@@ -27,5 +28,3 @@ message MatchInfo {
   string ticketID = 1;
   string matchID = 2;
 }
-
-///ThetanArena

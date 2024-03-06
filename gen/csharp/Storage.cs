@@ -30,30 +30,31 @@ namespace Thetan.Multiplayer.V1 {
             "GAEgASgLMiYudGhldGFuLm11bHRpcGxheWVyLnYxLlBsYXllckluZm9Qcm90",
             "b1IKcGxheWVySW5mbxIYCgd2ZXJzaW9uGAIgASgFUgd2ZXJzaW9uEj4KCW1h",
             "dGNoSW5mbxgDIAEoCzIgLnRoZXRhbi5tdWx0aXBsYXllci52MS5NYXRjaElu",
-            "Zm9SCW1hdGNoSW5mbyLwAwoTUGFydHlTdG9yYWdlTWVzc2FnZRJDCglwYXJ0",
+            "Zm9SCW1hdGNoSW5mbyKaBAoTUGFydHlTdG9yYWdlTWVzc2FnZRJDCglwYXJ0",
             "eUluZm8YASABKAsyJS50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGFydHlJbmZv",
             "UHJvdG9SCXBhcnR5SW5mbxJ+ChZwbGF5ZXJzUmVhZHlGb3JSZW1hdGNoGAIg",
             "AygLMkYudGhldGFuLm11bHRpcGxheWVyLnYxLlBhcnR5U3RvcmFnZU1lc3Nh",
             "Z2UuUGxheWVyc1JlYWR5Rm9yUmVtYXRjaEVudHJ5UhZwbGF5ZXJzUmVhZHlG",
             "b3JSZW1hdGNoEmYKDnBsYXllcnNSZWdpb25zGAMgAygLMj4udGhldGFuLm11",
             "bHRpcGxheWVyLnYxLlBhcnR5U3RvcmFnZU1lc3NhZ2UuUGxheWVyc1JlZ2lv",
-            "bnNFbnRyeVIOcGxheWVyc1JlZ2lvbnMaSQobUGxheWVyc1JlYWR5Rm9yUmVt",
-            "YXRjaEVudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgIUgV2",
-            "YWx1ZToCOAEaYQoTUGxheWVyc1JlZ2lvbnNFbnRyeRIQCgNrZXkYASABKAlS",
-            "A2tleRI0CgV2YWx1ZRgCIAEoCzIeLnRoZXRhbi5tdWx0aXBsYXllci52MS5S",
-            "ZWdpb25zUgV2YWx1ZToCOAEiIwoHUmVnaW9ucxIYCgdyZWdpb25zGAEgAygF",
-            "UgdyZWdpb25zIkEKCU1hdGNoSW5mbxIaCgh0aWNrZXRJRBgBIAEoCVIIdGlj",
-            "a2V0SUQSGAoHbWF0Y2hJRBgCIAEoCVIHbWF0Y2hJRELeAQoZY29tLnRoZXRh",
-            "bi5tdWx0aXBsYXllci52MUIMU3RvcmFnZVByb3RvUAFaPXRoZXRhbi1idWYv",
-            "Z2VuL2dvL3RoZXRhbi9tdWx0aXBsYXllci92MTt0aGV0YW5fbXVsdGlwbGF5",
-            "ZXJfdjGiAgNUTViqAhVUaGV0YW4uTXVsdGlwbGF5ZXIuVjHKAhVUaGV0YW5c",
-            "TXVsdGlwbGF5ZXJcVjHiAiFUaGV0YW5cTXVsdGlwbGF5ZXJcVjFcR1BCTWV0",
-            "YWRhdGHqAhdUaGV0YW46Ok11bHRpcGxheWVyOjpWMWIGcHJvdG8z"));
+            "bnNFbnRyeVIOcGxheWVyc1JlZ2lvbnMSKAoPZ2FtZURhdGFTdG9yYWdlGAQg",
+            "ASgMUg9nYW1lRGF0YVN0b3JhZ2UaSQobUGxheWVyc1JlYWR5Rm9yUmVtYXRj",
+            "aEVudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgIUgV2YWx1",
+            "ZToCOAEaYQoTUGxheWVyc1JlZ2lvbnNFbnRyeRIQCgNrZXkYASABKAlSA2tl",
+            "eRI0CgV2YWx1ZRgCIAEoCzIeLnRoZXRhbi5tdWx0aXBsYXllci52MS5SZWdp",
+            "b25zUgV2YWx1ZToCOAEiIwoHUmVnaW9ucxIYCgdyZWdpb25zGAEgAygFUgdy",
+            "ZWdpb25zIkEKCU1hdGNoSW5mbxIaCgh0aWNrZXRJRBgBIAEoCVIIdGlja2V0",
+            "SUQSGAoHbWF0Y2hJRBgCIAEoCVIHbWF0Y2hJRELeAQoZY29tLnRoZXRhbi5t",
+            "dWx0aXBsYXllci52MUIMU3RvcmFnZVByb3RvUAFaPXRoZXRhbi1idWYvZ2Vu",
+            "L2dvL3RoZXRhbi9tdWx0aXBsYXllci92MTt0aGV0YW5fbXVsdGlwbGF5ZXJf",
+            "djGiAgNUTViqAhVUaGV0YW4uTXVsdGlwbGF5ZXIuVjHKAhVUaGV0YW5cTXVs",
+            "dGlwbGF5ZXJcVjHiAiFUaGV0YW5cTXVsdGlwbGF5ZXJcVjFcR1BCTWV0YWRh",
+            "dGHqAhdUaGV0YW46Ok11bHRpcGxheWVyOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Multiplayer.V1.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PlayerStorageMessage), global::Thetan.Multiplayer.V1.PlayerStorageMessage.Parser, new[]{ "PlayerInfo", "Version", "MatchInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PartyStorageMessage), global::Thetan.Multiplayer.V1.PartyStorageMessage.Parser, new[]{ "PartyInfo", "PlayersReadyForRematch", "PlayersRegions" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PartyStorageMessage), global::Thetan.Multiplayer.V1.PartyStorageMessage.Parser, new[]{ "PartyInfo", "PlayersReadyForRematch", "PlayersRegions", "GameDataStorage" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.Regions), global::Thetan.Multiplayer.V1.Regions.Parser, new[]{ "Regions_" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.MatchInfo), global::Thetan.Multiplayer.V1.MatchInfo.Parser, new[]{ "TicketID", "MatchID" }, null, null, null, null)
           }));
@@ -380,6 +381,7 @@ namespace Thetan.Multiplayer.V1 {
       partyInfo_ = other.partyInfo_ != null ? other.partyInfo_.Clone() : null;
       playersReadyForRematch_ = other.playersReadyForRematch_.Clone();
       playersRegions_ = other.playersRegions_.Clone();
+      gameDataStorage_ = other.gameDataStorage_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -423,6 +425,18 @@ namespace Thetan.Multiplayer.V1 {
       get { return playersRegions_; }
     }
 
+    /// <summary>Field number for the "gameDataStorage" field.</summary>
+    public const int GameDataStorageFieldNumber = 4;
+    private pb::ByteString gameDataStorage_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString GameDataStorage {
+      get { return gameDataStorage_; }
+      set {
+        gameDataStorage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -441,6 +455,7 @@ namespace Thetan.Multiplayer.V1 {
       if (!object.Equals(PartyInfo, other.PartyInfo)) return false;
       if (!PlayersReadyForRematch.Equals(other.PlayersReadyForRematch)) return false;
       if (!PlayersRegions.Equals(other.PlayersRegions)) return false;
+      if (GameDataStorage != other.GameDataStorage) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -451,6 +466,7 @@ namespace Thetan.Multiplayer.V1 {
       if (partyInfo_ != null) hash ^= PartyInfo.GetHashCode();
       hash ^= PlayersReadyForRematch.GetHashCode();
       hash ^= PlayersRegions.GetHashCode();
+      if (GameDataStorage.Length != 0) hash ^= GameDataStorage.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -475,6 +491,10 @@ namespace Thetan.Multiplayer.V1 {
       }
       playersReadyForRematch_.WriteTo(output, _map_playersReadyForRematch_codec);
       playersRegions_.WriteTo(output, _map_playersRegions_codec);
+      if (GameDataStorage.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteBytes(GameDataStorage);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -491,6 +511,10 @@ namespace Thetan.Multiplayer.V1 {
       }
       playersReadyForRematch_.WriteTo(ref output, _map_playersReadyForRematch_codec);
       playersRegions_.WriteTo(ref output, _map_playersRegions_codec);
+      if (GameDataStorage.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteBytes(GameDataStorage);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -506,6 +530,9 @@ namespace Thetan.Multiplayer.V1 {
       }
       size += playersReadyForRematch_.CalculateSize(_map_playersReadyForRematch_codec);
       size += playersRegions_.CalculateSize(_map_playersRegions_codec);
+      if (GameDataStorage.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(GameDataStorage);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -526,6 +553,9 @@ namespace Thetan.Multiplayer.V1 {
       }
       playersReadyForRematch_.Add(other.playersReadyForRematch_);
       playersRegions_.Add(other.playersRegions_);
+      if (other.GameDataStorage.Length != 0) {
+        GameDataStorage = other.GameDataStorage;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -556,6 +586,10 @@ namespace Thetan.Multiplayer.V1 {
             playersRegions_.AddEntriesFrom(input, _map_playersRegions_codec);
             break;
           }
+          case 34: {
+            GameDataStorage = input.ReadBytes();
+            break;
+          }
         }
       }
     #endif
@@ -584,6 +618,10 @@ namespace Thetan.Multiplayer.V1 {
           }
           case 26: {
             playersRegions_.AddEntriesFrom(ref input, _map_playersRegions_codec);
+            break;
+          }
+          case 34: {
+            GameDataStorage = input.ReadBytes();
             break;
           }
         }

@@ -20,6 +20,7 @@ message ThetanArenaPlayerInfoProto {
 message PartyPlayerInfoProto {
   int32 teamId = 1;
   repeated PlayerRegionInfoProto regions = 2;
+  bool isBot = 3;
 }
 
 message PlayerRegionInfoProto {
@@ -102,13 +103,24 @@ message SearchCustomPartyResponseProto {
   int64 unlockTimeStamp = 2;
 }
 
+message RequestCreatePartyProto {
+  InGameMode ingameMode = 1;
+  int32 mapId = 2;
+}
+
 message RequestCreateCustomPartyProto {
-  string partyName = 1;
-  string password =2;
-  InGameTypeModeProto inGameTypeMode = 3;
+  RequestCreatePartyProto defaultReq = 1;
+  string partyName = 2;
+  string password = 3;
+  InGameTypeModeProto inGameTypeMode = 4;
 }
 
 message RequestJoinPartyProto {
   string partyId = 1;
   string password = 2;
+}
+
+message PartyThetanArenaStorageMessage {
+  string password = 1;//fore custom party
+
 }

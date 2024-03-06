@@ -45,5 +45,5 @@ git add . | git commit -m "????"
 ```
 
 ```sh
-./unity/deploy.sh --semver 0.0.1-preview.12
+./unity/deploy.sh --semver 1.0.44-thetan-arena-multiplayer-2
 ```
