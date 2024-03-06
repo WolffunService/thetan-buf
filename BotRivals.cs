@@ -49,51 +49,52 @@ namespace Thetan.Rivals.V1 {
             "ZWNvbmRziAEBQg8KDV9jYWNoZVNlY29uZHMiegoWTG9iYnlCb3RBY3Rpb25S",
             "ZXNwb25zZRIQCgJpZBgBIAEoA0gAUgJpZBJGCgZtaW5pb24YAiABKAsyLC50",
             "aGV0YW4ucml2YWxzLnYxLlVzZXJTZWxlY3RlZE1pbmlvblJlc3BvbnNlSABS",
-            "Bm1pbmlvbkIGCgRkYXRhIqoBCiBTZWFyY2hTcGVjaWFsRXZlbnRQbGF5ZXJz",
-            "UmVxdWVzdBIWCgZhbW91bnQYASABKAVSBmFtb3VudBIiCgxjb3VudHJ5Q29k",
-            "ZXMYAiADKAlSDGNvdW50cnlDb2RlcxISCgRyYW5rGAMgASgFUgRyYW5rEjYK",
-            "FnVzYWdlRHVyYXRpb25JblNlY29uZHMYBCABKANSFnVzYWdlRHVyYXRpb25J",
-            "blNlY29uZHMiYwohU2VhcmNoU3BlY2lhbEV2ZW50UGxheWVyc1Jlc3BvbnNl",
-            "Ej4KB3BsYXllcnMYASADKAsyJC50aGV0YW4ucml2YWxzLnYxLlNwZWNpYWxF",
-            "dmVudFBsYXllclIHcGxheWVycyIwChJTcGVjaWFsRXZlbnRQbGF5ZXISGgoI",
-            "cGxheWVySUQYASABKAlSCHBsYXllcklEImAKGlNlYXJjaEluZ2FtZVBsYXll",
-            "cnNSZXF1ZXN0EhYKBmFtb3VudBgBIAEoBVIGYW1vdW50EhYKBnJlZ2lvbhgC",
-            "IAEoBVIGcmVnaW9uEhIKBHJhbmsYAyABKAVSBHJhbmsiVwobU2VhcmNoSW5n",
-            "YW1lUGxheWVyc1Jlc3BvbnNlEjgKB3BsYXllcnMYASADKAsyHi50aGV0YW4u",
-            "cml2YWxzLnYxLkluZ2FtZVBsYXllclIHcGxheWVycyJ2CgxJbmdhbWVQbGF5",
-            "ZXISGgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEh4KCnBsYXllck5hbWUY",
-            "AiABKAlSCnBsYXllck5hbWUSEgoEcmFuaxgDIAEoBVIEcmFuaxIWCgZ0cm9w",
-            "aHkYBCABKAVSBnRyb3BoeSo+CgtTcGVuZGVyVHlwZRIVChFTUEVOREVSX1RZ",
-            "UEVfTk9ORRAAEhgKFFNQRU5ERVJfVFlQRV9TUEVOREVSEAEq3QQKDUJvdEFj",
-            "dGlvblR5cGUSCAoETm9uZRAAEg4KCkNoZWNrQ2xhc3MQARIOCgpDaGVja01p",
-            "bmVzEAISDQoJQ2hlY2tTaG9wEAMSEAoMQ2hlY2tDb250ZXN0EAQSCwoHSHVn",
-            "Wm9uZRAFEhAKDFRhbGtpbmdCZW5jaBAGEg0KCVJ1bkFyb3VuZBAHEgwKCFB1",
-            "c2hCYWNrEAgSDQoJRGFuY2VQbGF5EAkSDQoJRW1vdGVQbGF5EAoSFAoQVmVo",
-            "aWNsZVJ1bkFyb3VuZBALEhMKD1ZlaGljbGVQdXNoQmFjaxAMEhAKDFJlYWN0",
-            "UHJvZmlsZRANEhIKDlJlYWN0R3VpbGRib29rEA4SDQoJQWRkRnJpZW5kEA8S",
-            "DgoKVXNlVmVoaWNsZRAQEg8KC1VzZUZseWNyYWZ0EBESDAoIVXNlRGFuY2UQ",
-            "EhIMCghVc2VFbW9qaRATEhEKDUNoYW5nZVRoZW5pb24QFBITCg9DaGFuZ2VC",
-            "YWNrYmxpbmcQFRITCg9DaGFuZ2VGb290cHJpbnQQFhIOCgpDaGFuZ2VHbG93",
-            "EBcSDwoLQ2hhbmdlVm9pY2UQGBISCg5DaGFuZ2VGbHljcmFmdBAZEhEKDUNo",
-            "YW5nZVZlaGljbGUQGhIPCgtDb3B5VGhlbmlvbhAbEg8KC0NvcHlWZWhpY2xl",
-            "EBwSEAoMQ29weUZseWNyYWZ0EB0SDQoJRmluZG1hdGNoEB4SDwoLSW52aXRl",
-            "UGFydHkQHxIOCgpTaGFyZVBhcnR5ECASDAoIU3RheUlkbGUQIRITCg9Sb2xs",
-            "QmFja1RoZW5pb24QYzLfAwoQQm90Uml2YWxzU2VydmljZRJlCg5GZXRjaExv",
-            "YmJ5Qm90cxInLnRoZXRhbi5yaXZhbHMudjEuRmV0Y2hMb2JieUJvdHNSZXF1",
-            "ZXN0GigudGhldGFuLnJpdmFscy52MS5GZXRjaExvYmJ5Qm90c1Jlc3BvbnNl",
-            "IgASZQoOTG9iYnlCb3RBY3Rpb24SJy50aGV0YW4ucml2YWxzLnYxLkxvYmJ5",
-            "Qm90QWN0aW9uUmVxdWVzdBooLnRoZXRhbi5yaXZhbHMudjEuTG9iYnlCb3RB",
-            "Y3Rpb25SZXNwb25zZSIAEoYBChlTZWFyY2hTcGVjaWFsRXZlbnRQbGF5ZXJz",
-            "EjIudGhldGFuLnJpdmFscy52MS5TZWFyY2hTcGVjaWFsRXZlbnRQbGF5ZXJz",
-            "UmVxdWVzdBozLnRoZXRhbi5yaXZhbHMudjEuU2VhcmNoU3BlY2lhbEV2ZW50",
-            "UGxheWVyc1Jlc3BvbnNlIgASdAoTU2VhcmNoSW5nYW1lUGxheWVycxIsLnRo",
-            "ZXRhbi5yaXZhbHMudjEuU2VhcmNoSW5nYW1lUGxheWVyc1JlcXVlc3QaLS50",
-            "aGV0YW4ucml2YWxzLnYxLlNlYXJjaEluZ2FtZVBsYXllcnNSZXNwb25zZSIA",
-            "QrcBChRjb20udGhldGFuLnJpdmFscy52MUIOQm90Uml2YWxzUHJvdG9QAVot",
-            "dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2JvdC92MTt0aGV0YW5fYm90X3Yx",
-            "ogIDVFJYqgIQVGhldGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNcVjHi",
-            "AhxUaGV0YW5cUml2YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpSaXZh",
-            "bHM6OlYxYgZwcm90bzM="));
+            "Bm1pbmlvbkIGCgRkYXRhIsYBCiBTZWFyY2hTcGVjaWFsRXZlbnRQbGF5ZXJz",
+            "UmVxdWVzdBIWCgZhbW91bnQYASABKAVSBmFtb3VudBI4Cgl0b3duSW5mb3MY",
+            "AiADKAsyGi50aGV0YW4ucml2YWxzLnYxLlRvd25JbmZvUgl0b3duSW5mb3MS",
+            "GAoHbWluUmFuaxgDIAEoBVIHbWluUmFuaxI2ChZ1c2FnZUR1cmF0aW9uSW5T",
+            "ZWNvbmRzGAQgASgDUhZ1c2FnZUR1cmF0aW9uSW5TZWNvbmRzIjwKCFRvd25J",
+            "bmZvEg4KAmlkGAEgASgJUgJpZBIgCgtjb3VudHJ5Q29kZRgCIAEoCVILY291",
+            "bnRyeUNvZGUiYwohU2VhcmNoU3BlY2lhbEV2ZW50UGxheWVyc1Jlc3BvbnNl",
+            "Ej4KB3BsYXllcnMYAiADKAsyJC50aGV0YW4ucml2YWxzLnYxLlNwZWNpYWxF",
+            "dmVudFBsYXllclIHcGxheWVycyIkChJTcGVjaWFsRXZlbnRQbGF5ZXISDgoC",
+            "aWQYASABKAlSAmlkIlgKGlNlYXJjaEluZ2FtZVBsYXllcnNSZXF1ZXN0EhYK",
+            "BmFtb3VudBgBIAEoBVIGYW1vdW50EiIKDGNvdW50cnlDb2RlcxgCIAMoCVIM",
+            "Y291bnRyeUNvZGVzIlcKG1NlYXJjaEluZ2FtZVBsYXllcnNSZXNwb25zZRI4",
+            "CgdwbGF5ZXJzGAEgAygLMh4udGhldGFuLnJpdmFscy52MS5JbmdhbWVQbGF5",
+            "ZXJSB3BsYXllcnMiVAoMSW5nYW1lUGxheWVyEg4KAmlkGAEgASgJUgJpZBIS",
+            "CgRuYW1lGAIgASgJUgRuYW1lEiAKC2NvdW50cnlDb2RlGAMgASgJUgtjb3Vu",
+            "dHJ5Q29kZSo+CgtTcGVuZGVyVHlwZRIVChFTUEVOREVSX1RZUEVfTk9ORRAA",
+            "EhgKFFNQRU5ERVJfVFlQRV9TUEVOREVSEAEq3QQKDUJvdEFjdGlvblR5cGUS",
+            "CAoETm9uZRAAEg4KCkNoZWNrQ2xhc3MQARIOCgpDaGVja01pbmVzEAISDQoJ",
+            "Q2hlY2tTaG9wEAMSEAoMQ2hlY2tDb250ZXN0EAQSCwoHSHVnWm9uZRAFEhAK",
+            "DFRhbGtpbmdCZW5jaBAGEg0KCVJ1bkFyb3VuZBAHEgwKCFB1c2hCYWNrEAgS",
+            "DQoJRGFuY2VQbGF5EAkSDQoJRW1vdGVQbGF5EAoSFAoQVmVoaWNsZVJ1bkFy",
+            "b3VuZBALEhMKD1ZlaGljbGVQdXNoQmFjaxAMEhAKDFJlYWN0UHJvZmlsZRAN",
+            "EhIKDlJlYWN0R3VpbGRib29rEA4SDQoJQWRkRnJpZW5kEA8SDgoKVXNlVmVo",
+            "aWNsZRAQEg8KC1VzZUZseWNyYWZ0EBESDAoIVXNlRGFuY2UQEhIMCghVc2VF",
+            "bW9qaRATEhEKDUNoYW5nZVRoZW5pb24QFBITCg9DaGFuZ2VCYWNrYmxpbmcQ",
+            "FRITCg9DaGFuZ2VGb290cHJpbnQQFhIOCgpDaGFuZ2VHbG93EBcSDwoLQ2hh",
+            "bmdlVm9pY2UQGBISCg5DaGFuZ2VGbHljcmFmdBAZEhEKDUNoYW5nZVZlaGlj",
+            "bGUQGhIPCgtDb3B5VGhlbmlvbhAbEg8KC0NvcHlWZWhpY2xlEBwSEAoMQ29w",
+            "eUZseWNyYWZ0EB0SDQoJRmluZG1hdGNoEB4SDwoLSW52aXRlUGFydHkQHxIO",
+            "CgpTaGFyZVBhcnR5ECASDAoIU3RheUlkbGUQIRITCg9Sb2xsQmFja1RoZW5p",
+            "b24QYzLjAwoQQm90Uml2YWxzU2VydmljZRJlCg5GZXRjaExvYmJ5Qm90cxIn",
+            "LnRoZXRhbi5yaXZhbHMudjEuRmV0Y2hMb2JieUJvdHNSZXF1ZXN0GigudGhl",
+            "dGFuLnJpdmFscy52MS5GZXRjaExvYmJ5Qm90c1Jlc3BvbnNlIgASZQoOTG9i",
+            "YnlCb3RBY3Rpb24SJy50aGV0YW4ucml2YWxzLnYxLkxvYmJ5Qm90QWN0aW9u",
+            "UmVxdWVzdBooLnRoZXRhbi5yaXZhbHMudjEuTG9iYnlCb3RBY3Rpb25SZXNw",
+            "b25zZSIAEooBChlTZWFyY2hTcGVjaWFsRXZlbnRQbGF5ZXJzEjIudGhldGFu",
+            "LnJpdmFscy52MS5TZWFyY2hTcGVjaWFsRXZlbnRQbGF5ZXJzUmVxdWVzdBoz",
+            "LnRoZXRhbi5yaXZhbHMudjEuU2VhcmNoU3BlY2lhbEV2ZW50UGxheWVyc1Jl",
+            "c3BvbnNlIgAoATABEnQKE1NlYXJjaEluZ2FtZVBsYXllcnMSLC50aGV0YW4u",
+            "cml2YWxzLnYxLlNlYXJjaEluZ2FtZVBsYXllcnNSZXF1ZXN0Gi0udGhldGFu",
+            "LnJpdmFscy52MS5TZWFyY2hJbmdhbWVQbGF5ZXJzUmVzcG9uc2UiAEK3AQoU",
+            "Y29tLnRoZXRhbi5yaXZhbHMudjFCDkJvdFJpdmFsc1Byb3RvUAFaLXRoZXRh",
+            "bi1idWYvZ2VuL2dvL3RoZXRhbi9ib3QvdjE7dGhldGFuX2JvdF92MaICA1RS",
+            "WKoCEFRoZXRhbi5SaXZhbHMuVjHKAhBUaGV0YW5cUml2YWxzXFYx4gIcVGhl",
+            "dGFuXFJpdmFsc1xWMVxHUEJNZXRhZGF0YeoCElRoZXRhbjo6Uml2YWxzOjpW",
+            "MWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Rivals.V1.ServiceRivalsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Rivals.V1.SpenderType), typeof(global::Thetan.Rivals.V1.BotActionType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -104,12 +105,13 @@ namespace Thetan.Rivals.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.LobbyBotActionRequest), global::Thetan.Rivals.V1.LobbyBotActionRequest.Parser, new[]{ "TownId", "BotId", "TargetId", "Action", "Options" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.ActionOptions), global::Thetan.Rivals.V1.ActionOptions.Parser, new[]{ "CacheSeconds" }, new[]{ "CacheSeconds" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.LobbyBotActionResponse), global::Thetan.Rivals.V1.LobbyBotActionResponse.Parser, new[]{ "Id", "Minion" }, new[]{ "Data" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest), global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest.Parser, new[]{ "Amount", "CountryCodes", "Rank", "UsageDurationInSeconds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest), global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest.Parser, new[]{ "Amount", "TownInfos", "MinRank", "UsageDurationInSeconds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.TownInfo), global::Thetan.Rivals.V1.TownInfo.Parser, new[]{ "Id", "CountryCode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse), global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse.Parser, new[]{ "Players" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SpecialEventPlayer), global::Thetan.Rivals.V1.SpecialEventPlayer.Parser, new[]{ "PlayerID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchIngamePlayersRequest), global::Thetan.Rivals.V1.SearchIngamePlayersRequest.Parser, new[]{ "Amount", "Region", "Rank" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SpecialEventPlayer), global::Thetan.Rivals.V1.SpecialEventPlayer.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchIngamePlayersRequest), global::Thetan.Rivals.V1.SearchIngamePlayersRequest.Parser, new[]{ "Amount", "CountryCodes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.SearchIngamePlayersResponse), global::Thetan.Rivals.V1.SearchIngamePlayersResponse.Parser, new[]{ "Players" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.IngamePlayer), global::Thetan.Rivals.V1.IngamePlayer.Parser, new[]{ "PlayerID", "PlayerName", "Rank", "Trophy" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.IngamePlayer), global::Thetan.Rivals.V1.IngamePlayer.Parser, new[]{ "Id", "Name", "CountryCode" }, null, null, null, null)
           }));
     }
     #endregion
@@ -2122,8 +2124,8 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SearchSpecialEventPlayersRequest(SearchSpecialEventPlayersRequest other) : this() {
       amount_ = other.amount_;
-      countryCodes_ = other.countryCodes_.Clone();
-      rank_ = other.rank_;
+      townInfos_ = other.townInfos_.Clone();
+      minRank_ = other.minRank_;
       usageDurationInSeconds_ = other.usageDurationInSeconds_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -2146,26 +2148,26 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
-    /// <summary>Field number for the "countryCodes" field.</summary>
-    public const int CountryCodesFieldNumber = 2;
-    private static readonly pb::FieldCodec<string> _repeated_countryCodes_codec
-        = pb::FieldCodec.ForString(18);
-    private readonly pbc::RepeatedField<string> countryCodes_ = new pbc::RepeatedField<string>();
+    /// <summary>Field number for the "townInfos" field.</summary>
+    public const int TownInfosFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Thetan.Rivals.V1.TownInfo> _repeated_townInfos_codec
+        = pb::FieldCodec.ForMessage(18, global::Thetan.Rivals.V1.TownInfo.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Rivals.V1.TownInfo> townInfos_ = new pbc::RepeatedField<global::Thetan.Rivals.V1.TownInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<string> CountryCodes {
-      get { return countryCodes_; }
+    public pbc::RepeatedField<global::Thetan.Rivals.V1.TownInfo> TownInfos {
+      get { return townInfos_; }
     }
 
-    /// <summary>Field number for the "rank" field.</summary>
-    public const int RankFieldNumber = 3;
-    private int rank_;
+    /// <summary>Field number for the "minRank" field.</summary>
+    public const int MinRankFieldNumber = 3;
+    private int minRank_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Rank {
-      get { return rank_; }
+    public int MinRank {
+      get { return minRank_; }
       set {
-        rank_ = value;
+        minRank_ = value;
       }
     }
 
@@ -2197,8 +2199,8 @@ namespace Thetan.Rivals.V1 {
         return true;
       }
       if (Amount != other.Amount) return false;
-      if(!countryCodes_.Equals(other.countryCodes_)) return false;
-      if (Rank != other.Rank) return false;
+      if(!townInfos_.Equals(other.townInfos_)) return false;
+      if (MinRank != other.MinRank) return false;
       if (UsageDurationInSeconds != other.UsageDurationInSeconds) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2208,8 +2210,8 @@ namespace Thetan.Rivals.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (Amount != 0) hash ^= Amount.GetHashCode();
-      hash ^= countryCodes_.GetHashCode();
-      if (Rank != 0) hash ^= Rank.GetHashCode();
+      hash ^= townInfos_.GetHashCode();
+      if (MinRank != 0) hash ^= MinRank.GetHashCode();
       if (UsageDurationInSeconds != 0L) hash ^= UsageDurationInSeconds.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2233,10 +2235,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(Amount);
       }
-      countryCodes_.WriteTo(output, _repeated_countryCodes_codec);
-      if (Rank != 0) {
+      townInfos_.WriteTo(output, _repeated_townInfos_codec);
+      if (MinRank != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(Rank);
+        output.WriteInt32(MinRank);
       }
       if (UsageDurationInSeconds != 0L) {
         output.WriteRawTag(32);
@@ -2256,10 +2258,10 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(Amount);
       }
-      countryCodes_.WriteTo(ref output, _repeated_countryCodes_codec);
-      if (Rank != 0) {
+      townInfos_.WriteTo(ref output, _repeated_townInfos_codec);
+      if (MinRank != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(Rank);
+        output.WriteInt32(MinRank);
       }
       if (UsageDurationInSeconds != 0L) {
         output.WriteRawTag(32);
@@ -2278,9 +2280,9 @@ namespace Thetan.Rivals.V1 {
       if (Amount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Amount);
       }
-      size += countryCodes_.CalculateSize(_repeated_countryCodes_codec);
-      if (Rank != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Rank);
+      size += townInfos_.CalculateSize(_repeated_townInfos_codec);
+      if (MinRank != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MinRank);
       }
       if (UsageDurationInSeconds != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(UsageDurationInSeconds);
@@ -2300,9 +2302,9 @@ namespace Thetan.Rivals.V1 {
       if (other.Amount != 0) {
         Amount = other.Amount;
       }
-      countryCodes_.Add(other.countryCodes_);
-      if (other.Rank != 0) {
-        Rank = other.Rank;
+      townInfos_.Add(other.townInfos_);
+      if (other.MinRank != 0) {
+        MinRank = other.MinRank;
       }
       if (other.UsageDurationInSeconds != 0L) {
         UsageDurationInSeconds = other.UsageDurationInSeconds;
@@ -2327,11 +2329,11 @@ namespace Thetan.Rivals.V1 {
             break;
           }
           case 18: {
-            countryCodes_.AddEntriesFrom(input, _repeated_countryCodes_codec);
+            townInfos_.AddEntriesFrom(input, _repeated_townInfos_codec);
             break;
           }
           case 24: {
-            Rank = input.ReadInt32();
+            MinRank = input.ReadInt32();
             break;
           }
           case 32: {
@@ -2358,15 +2360,241 @@ namespace Thetan.Rivals.V1 {
             break;
           }
           case 18: {
-            countryCodes_.AddEntriesFrom(ref input, _repeated_countryCodes_codec);
+            townInfos_.AddEntriesFrom(ref input, _repeated_townInfos_codec);
             break;
           }
           case 24: {
-            Rank = input.ReadInt32();
+            MinRank = input.ReadInt32();
             break;
           }
           case 32: {
             UsageDurationInSeconds = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class TownInfo : pb::IMessage<TownInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TownInfo> _parser = new pb::MessageParser<TownInfo>(() => new TownInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<TownInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TownInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TownInfo(TownInfo other) : this() {
+      id_ = other.id_;
+      countryCode_ = other.countryCode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TownInfo Clone() {
+      return new TownInfo(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "countryCode" field.</summary>
+    public const int CountryCodeFieldNumber = 2;
+    private string countryCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CountryCode {
+      get { return countryCode_; }
+      set {
+        countryCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as TownInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(TownInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (CountryCode != other.CountryCode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (CountryCode.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CountryCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (CountryCode.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CountryCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (CountryCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(TownInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.CountryCode.Length != 0) {
+        CountryCode = other.CountryCode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            CountryCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            CountryCode = input.ReadString();
             break;
           }
         }
@@ -2390,7 +2618,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2421,9 +2649,9 @@ namespace Thetan.Rivals.V1 {
     }
 
     /// <summary>Field number for the "players" field.</summary>
-    public const int PlayersFieldNumber = 1;
+    public const int PlayersFieldNumber = 2;
     private static readonly pb::FieldCodec<global::Thetan.Rivals.V1.SpecialEventPlayer> _repeated_players_codec
-        = pb::FieldCodec.ForMessage(10, global::Thetan.Rivals.V1.SpecialEventPlayer.Parser);
+        = pb::FieldCodec.ForMessage(18, global::Thetan.Rivals.V1.SpecialEventPlayer.Parser);
     private readonly pbc::RepeatedField<global::Thetan.Rivals.V1.SpecialEventPlayer> players_ = new pbc::RepeatedField<global::Thetan.Rivals.V1.SpecialEventPlayer>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2524,7 +2752,7 @@ namespace Thetan.Rivals.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
+          case 18: {
             players_.AddEntriesFrom(input, _repeated_players_codec);
             break;
           }
@@ -2543,7 +2771,7 @@ namespace Thetan.Rivals.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
+          case 18: {
             players_.AddEntriesFrom(ref input, _repeated_players_codec);
             break;
           }
@@ -2568,7 +2796,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2588,7 +2816,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SpecialEventPlayer(SpecialEventPlayer other) : this() {
-      playerID_ = other.playerID_;
+      id_ = other.id_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2598,15 +2826,15 @@ namespace Thetan.Rivals.V1 {
       return new SpecialEventPlayer(this);
     }
 
-    /// <summary>Field number for the "playerID" field.</summary>
-    public const int PlayerIDFieldNumber = 1;
-    private string playerID_ = "";
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string PlayerID {
-      get { return playerID_; }
+    public string Id {
+      get { return id_; }
       set {
-        playerID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -2625,7 +2853,7 @@ namespace Thetan.Rivals.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (PlayerID != other.PlayerID) return false;
+      if (Id != other.Id) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2633,7 +2861,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (PlayerID.Length != 0) hash ^= PlayerID.GetHashCode();
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2652,9 +2880,9 @@ namespace Thetan.Rivals.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (PlayerID.Length != 0) {
+      if (Id.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(PlayerID);
+        output.WriteString(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2666,9 +2894,9 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerID.Length != 0) {
+      if (Id.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(PlayerID);
+        output.WriteString(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2680,8 +2908,8 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (PlayerID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerID);
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2695,8 +2923,8 @@ namespace Thetan.Rivals.V1 {
       if (other == null) {
         return;
       }
-      if (other.PlayerID.Length != 0) {
-        PlayerID = other.PlayerID;
+      if (other.Id.Length != 0) {
+        Id = other.Id;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2714,7 +2942,7 @@ namespace Thetan.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            PlayerID = input.ReadString();
+            Id = input.ReadString();
             break;
           }
         }
@@ -2733,7 +2961,7 @@ namespace Thetan.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            PlayerID = input.ReadString();
+            Id = input.ReadString();
             break;
           }
         }
@@ -2757,7 +2985,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2778,8 +3006,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SearchIngamePlayersRequest(SearchIngamePlayersRequest other) : this() {
       amount_ = other.amount_;
-      region_ = other.region_;
-      rank_ = other.rank_;
+      countryCodes_ = other.countryCodes_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2801,28 +3028,15 @@ namespace Thetan.Rivals.V1 {
       }
     }
 
-    /// <summary>Field number for the "region" field.</summary>
-    public const int RegionFieldNumber = 2;
-    private int region_;
+    /// <summary>Field number for the "countryCodes" field.</summary>
+    public const int CountryCodesFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_countryCodes_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> countryCodes_ = new pbc::RepeatedField<string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Region {
-      get { return region_; }
-      set {
-        region_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "rank" field.</summary>
-    public const int RankFieldNumber = 3;
-    private int rank_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Rank {
-      get { return rank_; }
-      set {
-        rank_ = value;
-      }
+    public pbc::RepeatedField<string> CountryCodes {
+      get { return countryCodes_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2841,8 +3055,7 @@ namespace Thetan.Rivals.V1 {
         return true;
       }
       if (Amount != other.Amount) return false;
-      if (Region != other.Region) return false;
-      if (Rank != other.Rank) return false;
+      if(!countryCodes_.Equals(other.countryCodes_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2851,8 +3064,7 @@ namespace Thetan.Rivals.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (Amount != 0) hash ^= Amount.GetHashCode();
-      if (Region != 0) hash ^= Region.GetHashCode();
-      if (Rank != 0) hash ^= Rank.GetHashCode();
+      hash ^= countryCodes_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2875,14 +3087,7 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(Amount);
       }
-      if (Region != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Region);
-      }
-      if (Rank != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Rank);
-      }
+      countryCodes_.WriteTo(output, _repeated_countryCodes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2897,14 +3102,7 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(Amount);
       }
-      if (Region != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Region);
-      }
-      if (Rank != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Rank);
-      }
+      countryCodes_.WriteTo(ref output, _repeated_countryCodes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2918,12 +3116,7 @@ namespace Thetan.Rivals.V1 {
       if (Amount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Amount);
       }
-      if (Region != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Region);
-      }
-      if (Rank != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Rank);
-      }
+      size += countryCodes_.CalculateSize(_repeated_countryCodes_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2939,12 +3132,7 @@ namespace Thetan.Rivals.V1 {
       if (other.Amount != 0) {
         Amount = other.Amount;
       }
-      if (other.Region != 0) {
-        Region = other.Region;
-      }
-      if (other.Rank != 0) {
-        Rank = other.Rank;
-      }
+      countryCodes_.Add(other.countryCodes_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2964,12 +3152,8 @@ namespace Thetan.Rivals.V1 {
             Amount = input.ReadInt32();
             break;
           }
-          case 16: {
-            Region = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            Rank = input.ReadInt32();
+          case 18: {
+            countryCodes_.AddEntriesFrom(input, _repeated_countryCodes_codec);
             break;
           }
         }
@@ -2991,12 +3175,8 @@ namespace Thetan.Rivals.V1 {
             Amount = input.ReadInt32();
             break;
           }
-          case 16: {
-            Region = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            Rank = input.ReadInt32();
+          case 18: {
+            countryCodes_.AddEntriesFrom(ref input, _repeated_countryCodes_codec);
             break;
           }
         }
@@ -3020,7 +3200,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3198,7 +3378,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Thetan.Rivals.V1.BotRivalsReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3218,10 +3398,9 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public IngamePlayer(IngamePlayer other) : this() {
-      playerID_ = other.playerID_;
-      playerName_ = other.playerName_;
-      rank_ = other.rank_;
-      trophy_ = other.trophy_;
+      id_ = other.id_;
+      name_ = other.name_;
+      countryCode_ = other.countryCode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3231,51 +3410,39 @@ namespace Thetan.Rivals.V1 {
       return new IngamePlayer(this);
     }
 
-    /// <summary>Field number for the "playerID" field.</summary>
-    public const int PlayerIDFieldNumber = 1;
-    private string playerID_ = "";
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string PlayerID {
-      get { return playerID_; }
+    public string Id {
+      get { return id_; }
       set {
-        playerID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "playerName" field.</summary>
-    public const int PlayerNameFieldNumber = 2;
-    private string playerName_ = "";
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 2;
+    private string name_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string PlayerName {
-      get { return playerName_; }
+    public string Name {
+      get { return name_; }
       set {
-        playerName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "rank" field.</summary>
-    public const int RankFieldNumber = 3;
-    private int rank_;
+    /// <summary>Field number for the "countryCode" field.</summary>
+    public const int CountryCodeFieldNumber = 3;
+    private string countryCode_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Rank {
-      get { return rank_; }
+    public string CountryCode {
+      get { return countryCode_; }
       set {
-        rank_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "trophy" field.</summary>
-    public const int TrophyFieldNumber = 4;
-    private int trophy_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Trophy {
-      get { return trophy_; }
-      set {
-        trophy_ = value;
+        countryCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -3294,10 +3461,9 @@ namespace Thetan.Rivals.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (PlayerID != other.PlayerID) return false;
-      if (PlayerName != other.PlayerName) return false;
-      if (Rank != other.Rank) return false;
-      if (Trophy != other.Trophy) return false;
+      if (Id != other.Id) return false;
+      if (Name != other.Name) return false;
+      if (CountryCode != other.CountryCode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3305,10 +3471,9 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (PlayerID.Length != 0) hash ^= PlayerID.GetHashCode();
-      if (PlayerName.Length != 0) hash ^= PlayerName.GetHashCode();
-      if (Rank != 0) hash ^= Rank.GetHashCode();
-      if (Trophy != 0) hash ^= Trophy.GetHashCode();
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3327,21 +3492,17 @@ namespace Thetan.Rivals.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (PlayerID.Length != 0) {
+      if (Id.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(PlayerID);
+        output.WriteString(Id);
       }
-      if (PlayerName.Length != 0) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(PlayerName);
+        output.WriteString(Name);
       }
-      if (Rank != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Rank);
-      }
-      if (Trophy != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(Trophy);
+      if (CountryCode.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CountryCode);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3353,21 +3514,17 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerID.Length != 0) {
+      if (Id.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(PlayerID);
+        output.WriteString(Id);
       }
-      if (PlayerName.Length != 0) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteString(PlayerName);
+        output.WriteString(Name);
       }
-      if (Rank != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Rank);
-      }
-      if (Trophy != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(Trophy);
+      if (CountryCode.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CountryCode);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3379,17 +3536,14 @@ namespace Thetan.Rivals.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (PlayerID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerID);
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
       }
-      if (PlayerName.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerName);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
-      if (Rank != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Rank);
-      }
-      if (Trophy != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Trophy);
+      if (CountryCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3403,17 +3557,14 @@ namespace Thetan.Rivals.V1 {
       if (other == null) {
         return;
       }
-      if (other.PlayerID.Length != 0) {
-        PlayerID = other.PlayerID;
+      if (other.Id.Length != 0) {
+        Id = other.Id;
       }
-      if (other.PlayerName.Length != 0) {
-        PlayerName = other.PlayerName;
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
-      if (other.Rank != 0) {
-        Rank = other.Rank;
-      }
-      if (other.Trophy != 0) {
-        Trophy = other.Trophy;
+      if (other.CountryCode.Length != 0) {
+        CountryCode = other.CountryCode;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3431,19 +3582,15 @@ namespace Thetan.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            PlayerID = input.ReadString();
+            Id = input.ReadString();
             break;
           }
           case 18: {
-            PlayerName = input.ReadString();
+            Name = input.ReadString();
             break;
           }
-          case 24: {
-            Rank = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            Trophy = input.ReadInt32();
+          case 26: {
+            CountryCode = input.ReadString();
             break;
           }
         }
@@ -3462,19 +3609,15 @@ namespace Thetan.Rivals.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            PlayerID = input.ReadString();
+            Id = input.ReadString();
             break;
           }
           case 18: {
-            PlayerName = input.ReadString();
+            Name = input.ReadString();
             break;
           }
-          case 24: {
-            Rank = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            Trophy = input.ReadInt32();
+          case 26: {
+            CountryCode = input.ReadString();
             break;
           }
         }
