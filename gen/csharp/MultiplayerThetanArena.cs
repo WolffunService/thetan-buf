@@ -27,95 +27,82 @@ namespace Thetan.Multiplayer.V1 {
             "CjR0aGV0YW4vbXVsdGlwbGF5ZXIvdjEvbXVsdGlwbGF5ZXJfdGhldGFuX2Fy",
             "ZW5hLnByb3RvEhV0aGV0YW4ubXVsdGlwbGF5ZXIudjEaIXRoZXRhbi9zaGFy",
             "ZWQvdjEvY3VzdG9taXplZC5wcm90bxoidGhldGFuL211bHRpcGxheWVyL3Yx",
-            "L2NvbW1vbi5wcm90byKQAgoaVGhldGFuQXJlbmFQbGF5ZXJJbmZvUHJvdG8S",
+            "L2NvbW1vbi5wcm90byLFAQoaVGhldGFuQXJlbmFQbGF5ZXJJbmZvUHJvdG8S",
             "MwoEaGVybxgBIAEoCzIfLnRoZXRhbi5tdWx0aXBsYXllci52MS5IZXJvSW5m",
             "b1IEaGVybxI4CgZza2lsbDEYAiABKAsyIC50aGV0YW4ubXVsdGlwbGF5ZXIu",
             "djEuU2tpbGxJbmZvUgZza2lsbDESOAoGc2tpbGwyGAMgASgLMiAudGhldGFu",
-            "Lm11bHRpcGxheWVyLnYxLlNraWxsSW5mb1IGc2tpbGwyEkkKCXBhcnR5SW5m",
-            "bxgEIAEoCzIrLnRoZXRhbi5tdWx0aXBsYXllci52MS5QYXJ0eVBsYXllcklu",
-            "Zm9Qcm90b1IJcGFydHlJbmZvIowBChRQYXJ0eVBsYXllckluZm9Qcm90bxIW",
-            "CgZ0ZWFtSWQYASABKAVSBnRlYW1JZBJGCgdyZWdpb25zGAIgAygLMiwudGhl",
-            "dGFuLm11bHRpcGxheWVyLnYxLlBsYXllclJlZ2lvbkluZm9Qcm90b1IHcmVn",
-            "aW9ucxIUCgVpc0JvdBgDIAEoCFIFaXNCb3QiQwoVUGxheWVyUmVnaW9uSW5m",
-            "b1Byb3RvEhYKBnJlZ2lvbhgBIAEoBVIGcmVnaW9uEhIKBHBpbmcYAyABKAVS",
-            "BHBpbmciYAoISGVyb0luZm8SFgoGaGVyb0lkGAEgASgFUgZoZXJvSWQSHgoK",
-            "aGVyb1NraW5JZBgCIAEoBVIKaGVyb1NraW5JZBIcCgloZXJvTGV2ZWwYAyAB",
-            "KAVSCWhlcm9MZXZlbCJFCglTa2lsbEluZm8SGAoHc2tpbGxJZBgBIAEoBVIH",
-            "c2tpbGxJZBIeCgpza2lsbExldmVsGAIgASgFUgpza2lsbExldmVsItYCChlU",
-            "aGV0YW5BcmVuYVBhcnR5SW5mb1Byb3RvEjsKCGdhbWVNb2RlGAEgASgOMh8u",
-            "dGhldGFuLm11bHRpcGxheWVyLnYxLkdhbWVNb2RlUghnYW1lTW9kZRJBCgpp",
-            "bmdhbWVtb2RlGAIgASgOMiEudGhldGFuLm11bHRpcGxheWVyLnYxLkluR2Ft",
-            "ZU1vZGVSCmluZ2FtZW1vZGUSGAoHZXZlbnRJRBgDIAEoCVIHZXZlbnRJRBIU",
-            "CgVtYXBJZBgEIAEoBVIFbWFwSWQSTwoNY3VzdG9tQml0SW5mbxgFIAEoCzIp",
-            "LnRoZXRhbi5tdWx0aXBsYXllci52MS5DdXN0b21Cb3RJbmZvUHJvdG9SDWN1",
-            "c3RvbUJpdEluZm8SFgoGcmVnaW9uGAYgASgFUgZyZWdpb24SIAoLaGFzUGFz",
-            "c3dvcmQYByABKAhSC2hhc1Bhc3N3b3JkIlMKEkN1c3RvbUJvdEluZm9Qcm90",
-            "bxI9Cgdib3RJbmZvGAEgAygLMiMudGhldGFuLm11bHRpcGxheWVyLnYxLkJv",
-            "dEluZm9Qcm90b1IHYm90SW5mbyI8CgxCb3RJbmZvUHJvdG8SFAoFYm90SWQY",
-            "ASABKAlSBWJvdElkEhYKBnRlYW1JZBgCIAEoBVIGdGVhbUlkIi8KD0NoYW5n",
-            "ZUhvc3RQcm90bxIcCgluZXdIb3N0SWQYAiABKAlSCW5ld0hvc3RJZCJEChZT",
-            "ZWFyY2hDdXN0b21QYXJ0eVByb3RvEhoKB3BhcnR5SWQYASABKAlIAFIHcGFy",
-            "dHlJZEIOCgxvcHRpb25TZWFyY2gikAEKHlNlYXJjaEN1c3RvbVBhcnR5UmVz",
-            "cG9uc2VQcm90bxJECglwYXJ0eUluZm8YASABKAsyJi50aGV0YW4ubXVsdGlw",
-            "bGF5ZXIudjEuUGxheWVySW5mb1Byb3RvUglwYXJ0eUluZm8SKAoPdW5sb2Nr",
-            "VGltZVN0YW1wGAIgASgDUg91bmxvY2tUaW1lU3RhbXAicgoXUmVxdWVzdENy",
-            "ZWF0ZVBhcnR5UHJvdG8SQQoKaW5nYW1lTW9kZRgBIAEoDjIhLnRoZXRhbi5t",
-            "dWx0aXBsYXllci52MS5JbkdhbWVNb2RlUgppbmdhbWVNb2RlEhQKBW1hcElk",
-            "GAIgASgFUgVtYXBJZCL9AQodUmVxdWVzdENyZWF0ZUN1c3RvbVBhcnR5UHJv",
-            "dG8STgoKZGVmYXVsdFJlcRgBIAEoCzIuLnRoZXRhbi5tdWx0aXBsYXllci52",
-            "MS5SZXF1ZXN0Q3JlYXRlUGFydHlQcm90b1IKZGVmYXVsdFJlcRIcCglwYXJ0",
-            "eU5hbWUYAiABKAlSCXBhcnR5TmFtZRIaCghwYXNzd29yZBgDIAEoCVIIcGFz",
-            "c3dvcmQSUgoOaW5HYW1lVHlwZU1vZGUYBCABKA4yKi50aGV0YW4ubXVsdGlw",
-            "bGF5ZXIudjEuSW5HYW1lVHlwZU1vZGVQcm90b1IOaW5HYW1lVHlwZU1vZGUi",
-            "TQoVUmVxdWVzdEpvaW5QYXJ0eVByb3RvEhgKB3BhcnR5SWQYASABKAlSB3Bh",
-            "cnR5SWQSGgoIcGFzc3dvcmQYAiABKAlSCHBhc3N3b3JkIjwKHlBhcnR5VGhl",
-            "dGFuQXJlbmFTdG9yYWdlTWVzc2FnZRIaCghwYXNzd29yZBgBIAEoCVIIcGFz",
-            "c3dvcmQqOgoIR2FtZU1vZGUSCgoGUkFOS0VEEAASEQoNU1BFQ0lBTF9FVkVO",
-            "VBABEg8KC0NVU1RPTV9NT0RFEAIqogIKCkluR2FtZU1vZGUSFQoRVEVBTV9D",
-            "T0xMRUNUX1NUQVIQABIRCg1TT0xPX1NVUlZJVkFMEAESEQoNRFVBTF9TVVJW",
-            "SVZBTBACEhwKGFRFQU1fQ09MTEVDVF9TVEFSXzRfVlNfNBADEggKBEtJTkcQ",
-            "BRIPCgtERUFUSF9NQVRDSBAGEhYKEkRFQVRIX01BVENIXzNfVlNfMxAHEggK",
-            "BEZMQUcQCBIJCgVUT1dFUhAJEhEKDUJBVFRMRV9ST1lBTEUQDBIXChNTUVVB",
-            "RF9CQVRUTEVfUk9ZQUxFEA0SFQoRRFVPX0JBVFRMRV9ST1lBTEUQDhIWChJU",
-            "UklPX0JBVFRMRV9ST0FZTEUQDxIWCglOT05FX01PREUQ////////////ASpX",
-            "ChNJbkdhbWVUeXBlTW9kZVByb3RvEhcKE05vbmVfSW5HYW1lVHlwZU1vZGUQ",
-            "ABIMCghUZWFtTW9kZRABEgwKCFNvbG9Nb2RlEAISCwoHRG91TW9kZRADQu0B",
-            "Chljb20udGhldGFuLm11bHRpcGxheWVyLnYxQhtNdWx0aXBsYXllclRoZXRh",
-            "bkFyZW5hUHJvdG9QAVo9dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL211bHRp",
-            "cGxheWVyL3YxO3RoZXRhbl9tdWx0aXBsYXllcl92MaICA1RNWKoCFVRoZXRh",
-            "bi5NdWx0aXBsYXllci5WMcoCFVRoZXRhblxNdWx0aXBsYXllclxWMeICIVRo",
-            "ZXRhblxNdWx0aXBsYXllclxWMVxHUEJNZXRhZGF0YeoCF1RoZXRhbjo6TXVs",
-            "dGlwbGF5ZXI6OlYxYgZwcm90bzM="));
+            "Lm11bHRpcGxheWVyLnYxLlNraWxsSW5mb1IGc2tpbGwyIkMKFVBsYXllclJl",
+            "Z2lvbkluZm9Qcm90bxIWCgZyZWdpb24YASABKAVSBnJlZ2lvbhISCgRwaW5n",
+            "GAMgASgFUgRwaW5nImAKCEhlcm9JbmZvEhYKBmhlcm9JZBgBIAEoBVIGaGVy",
+            "b0lkEh4KCmhlcm9Ta2luSWQYAiABKAVSCmhlcm9Ta2luSWQSHAoJaGVyb0xl",
+            "dmVsGAMgASgFUgloZXJvTGV2ZWwiRQoJU2tpbGxJbmZvEhgKB3NraWxsSWQY",
+            "ASABKAVSB3NraWxsSWQSHgoKc2tpbGxMZXZlbBgCIAEoBVIKc2tpbGxMZXZl",
+            "bCKGAwoZVGhldGFuQXJlbmFQYXJ0eUluZm9Qcm90bxJBCgppbmdhbWVtb2Rl",
+            "GAEgASgOMiEudGhldGFuLm11bHRpcGxheWVyLnYxLkluR2FtZU1vZGVSCmlu",
+            "Z2FtZW1vZGUSFAoFbWFwSWQYAiABKAVSBW1hcElkEhwKCXBhcnR5TmFtZRgD",
+            "IAEoCVIJcGFydHlOYW1lEhYKBnJlZ2lvbhgEIAEoBVIGcmVnaW9uEiAKC2hh",
+            "c1Bhc3N3b3JkGAUgASgIUgtoYXNQYXNzd29yZBJaCgh0ZWFtSW5mbxgGIAMo",
+            "CzI+LnRoZXRhbi5tdWx0aXBsYXllci52MS5UaGV0YW5BcmVuYVBhcnR5SW5m",
+            "b1Byb3RvLlRlYW1JbmZvRW50cnlSCHRlYW1JbmZvGlwKDVRlYW1JbmZvRW50",
+            "cnkSEAoDa2V5GAEgASgJUgNrZXkSNQoFdmFsdWUYAiABKAsyHy50aGV0YW4u",
+            "bXVsdGlwbGF5ZXIudjEuVGVhbUluZm9SBXZhbHVlOgI4ASI4CghUZWFtSW5m",
+            "bxIWCgZ0ZWFtSWQYASABKAlSBnRlYW1JZBIUCgVpc0JvdBgCIAEoCFIFaXNC",
+            "b3QiLwoPQ2hhbmdlSG9zdFByb3RvEhwKCW5ld0hvc3RJZBgCIAEoCVIJbmV3",
+            "SG9zdElkIkQKFlNlYXJjaEN1c3RvbVBhcnR5UHJvdG8SGgoHcGFydHlJZBgB",
+            "IAEoCUgAUgdwYXJ0eUlkQg4KDG9wdGlvblNlYXJjaCKQAQoeU2VhcmNoQ3Vz",
+            "dG9tUGFydHlSZXNwb25zZVByb3RvEkQKCXBhcnR5SW5mbxgBIAEoCzImLnRo",
+            "ZXRhbi5tdWx0aXBsYXllci52MS5QbGF5ZXJJbmZvUHJvdG9SCXBhcnR5SW5m",
+            "bxIoCg91bmxvY2tUaW1lU3RhbXAYAiABKANSD3VubG9ja1RpbWVTdGFtcCJy",
+            "ChdSZXF1ZXN0Q3JlYXRlUGFydHlQcm90bxJBCgppbmdhbWVNb2RlGAEgASgO",
+            "MiEudGhldGFuLm11bHRpcGxheWVyLnYxLkluR2FtZU1vZGVSCmluZ2FtZU1v",
+            "ZGUSFAoFbWFwSWQYAiABKAVSBW1hcElkIv0BCh1SZXF1ZXN0Q3JlYXRlQ3Vz",
+            "dG9tUGFydHlQcm90bxJOCgpkZWZhdWx0UmVxGAEgASgLMi4udGhldGFuLm11",
+            "bHRpcGxheWVyLnYxLlJlcXVlc3RDcmVhdGVQYXJ0eVByb3RvUgpkZWZhdWx0",
+            "UmVxEhwKCXBhcnR5TmFtZRgCIAEoCVIJcGFydHlOYW1lEhoKCHBhc3N3b3Jk",
+            "GAMgASgJUghwYXNzd29yZBJSCg5pbkdhbWVUeXBlTW9kZRgEIAEoDjIqLnRo",
+            "ZXRhbi5tdWx0aXBsYXllci52MS5JbkdhbWVUeXBlTW9kZVByb3RvUg5pbkdh",
+            "bWVUeXBlTW9kZSJNChVSZXF1ZXN0Sm9pblBhcnR5UHJvdG8SGAoHcGFydHlJ",
+            "ZBgBIAEoCVIHcGFydHlJZBIaCghwYXNzd29yZBgCIAEoCVIIcGFzc3dvcmQi",
+            "kAEKHlBhcnR5VGhldGFuQXJlbmFTdG9yYWdlTWVzc2FnZRIaCghwYXNzd29y",
+            "ZBgBIAEoCVIIcGFzc3dvcmQSUgoOaW5nYW1lVHlwZU1vZGUYAiABKA4yKi50",
+            "aGV0YW4ubXVsdGlwbGF5ZXIudjEuSW5HYW1lVHlwZU1vZGVQcm90b1IOaW5n",
+            "YW1lVHlwZU1vZGUqogIKCkluR2FtZU1vZGUSFQoRVEVBTV9DT0xMRUNUX1NU",
+            "QVIQABIRCg1TT0xPX1NVUlZJVkFMEAESEQoNRFVBTF9TVVJWSVZBTBACEhwK",
+            "GFRFQU1fQ09MTEVDVF9TVEFSXzRfVlNfNBADEggKBEtJTkcQBRIPCgtERUFU",
+            "SF9NQVRDSBAGEhYKEkRFQVRIX01BVENIXzNfVlNfMxAHEggKBEZMQUcQCBIJ",
+            "CgVUT1dFUhAJEhEKDUJBVFRMRV9ST1lBTEUQDBIXChNTUVVBRF9CQVRUTEVf",
+            "Uk9ZQUxFEA0SFQoRRFVPX0JBVFRMRV9ST1lBTEUQDhIWChJUUklPX0JBVFRM",
+            "RV9ST0FZTEUQDxIWCglOT05FX01PREUQ////////////ASpXChNJbkdhbWVU",
+            "eXBlTW9kZVByb3RvEhcKE05vbmVfSW5HYW1lVHlwZU1vZGUQABIMCghUZWFt",
+            "TW9kZRABEgwKCFNvbG9Nb2RlEAISCwoHRG91TW9kZRADQu0BChljb20udGhl",
+            "dGFuLm11bHRpcGxheWVyLnYxQhtNdWx0aXBsYXllclRoZXRhbkFyZW5hUHJv",
+            "dG9QAVo9dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL211bHRpcGxheWVyL3Yx",
+            "O3RoZXRhbl9tdWx0aXBsYXllcl92MaICA1RNWKoCFVRoZXRhbi5NdWx0aXBs",
+            "YXllci5WMcoCFVRoZXRhblxNdWx0aXBsYXllclxWMeICIVRoZXRhblxNdWx0",
+            "aXBsYXllclxWMVxHUEJNZXRhZGF0YeoCF1RoZXRhbjo6TXVsdGlwbGF5ZXI6",
+            "OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, global::Thetan.Multiplayer.V1.CommonReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.GameMode), typeof(global::Thetan.Multiplayer.V1.InGameMode), typeof(global::Thetan.Multiplayer.V1.InGameTypeModeProto), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ThetanArenaPlayerInfoProto), global::Thetan.Multiplayer.V1.ThetanArenaPlayerInfoProto.Parser, new[]{ "Hero", "Skill1", "Skill2", "PartyInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PartyPlayerInfoProto), global::Thetan.Multiplayer.V1.PartyPlayerInfoProto.Parser, new[]{ "TeamId", "Regions", "IsBot" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.InGameMode), typeof(global::Thetan.Multiplayer.V1.InGameTypeModeProto), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ThetanArenaPlayerInfoProto), global::Thetan.Multiplayer.V1.ThetanArenaPlayerInfoProto.Parser, new[]{ "Hero", "Skill1", "Skill2" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PlayerRegionInfoProto), global::Thetan.Multiplayer.V1.PlayerRegionInfoProto.Parser, new[]{ "Region", "Ping" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.HeroInfo), global::Thetan.Multiplayer.V1.HeroInfo.Parser, new[]{ "HeroId", "HeroSkinId", "HeroLevel" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SkillInfo), global::Thetan.Multiplayer.V1.SkillInfo.Parser, new[]{ "SkillId", "SkillLevel" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ThetanArenaPartyInfoProto), global::Thetan.Multiplayer.V1.ThetanArenaPartyInfoProto.Parser, new[]{ "GameMode", "Ingamemode", "EventID", "MapId", "CustomBitInfo", "Region", "HasPassword" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.CustomBotInfoProto), global::Thetan.Multiplayer.V1.CustomBotInfoProto.Parser, new[]{ "BotInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.BotInfoProto), global::Thetan.Multiplayer.V1.BotInfoProto.Parser, new[]{ "BotId", "TeamId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ThetanArenaPartyInfoProto), global::Thetan.Multiplayer.V1.ThetanArenaPartyInfoProto.Parser, new[]{ "Ingamemode", "MapId", "PartyName", "Region", "HasPassword", "TeamInfo" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.TeamInfo), global::Thetan.Multiplayer.V1.TeamInfo.Parser, new[]{ "TeamId", "IsBot" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ChangeHostProto), global::Thetan.Multiplayer.V1.ChangeHostProto.Parser, new[]{ "NewHostId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SearchCustomPartyProto), global::Thetan.Multiplayer.V1.SearchCustomPartyProto.Parser, new[]{ "PartyId" }, new[]{ "OptionSearch" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SearchCustomPartyResponseProto), global::Thetan.Multiplayer.V1.SearchCustomPartyResponseProto.Parser, new[]{ "PartyInfo", "UnlockTimeStamp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestCreatePartyProto), global::Thetan.Multiplayer.V1.RequestCreatePartyProto.Parser, new[]{ "IngameMode", "MapId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestCreateCustomPartyProto), global::Thetan.Multiplayer.V1.RequestCreateCustomPartyProto.Parser, new[]{ "DefaultReq", "PartyName", "Password", "InGameTypeMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestJoinPartyProto), global::Thetan.Multiplayer.V1.RequestJoinPartyProto.Parser, new[]{ "PartyId", "Password" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PartyThetanArenaStorageMessage), global::Thetan.Multiplayer.V1.PartyThetanArenaStorageMessage.Parser, new[]{ "Password" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PartyThetanArenaStorageMessage), global::Thetan.Multiplayer.V1.PartyThetanArenaStorageMessage.Parser, new[]{ "Password", "IngameTypeMode" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Enums
-  public enum GameMode {
-    [pbr::OriginalName("RANKED")] Ranked = 0,
-    [pbr::OriginalName("SPECIAL_EVENT")] SpecialEvent = 1,
-    [pbr::OriginalName("CUSTOM_MODE")] CustomMode = 2,
-  }
-
   public enum InGameMode {
     [pbr::OriginalName("TEAM_COLLECT_STAR")] TeamCollectStar = 0,
     [pbr::OriginalName("SOLO_SURVIVAL")] SoloSurvival = 1,
@@ -183,7 +170,6 @@ namespace Thetan.Multiplayer.V1 {
       hero_ = other.hero_ != null ? other.hero_.Clone() : null;
       skill1_ = other.skill1_ != null ? other.skill1_.Clone() : null;
       skill2_ = other.skill2_ != null ? other.skill2_.Clone() : null;
-      partyInfo_ = other.partyInfo_ != null ? other.partyInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -229,21 +215,6 @@ namespace Thetan.Multiplayer.V1 {
       }
     }
 
-    /// <summary>Field number for the "partyInfo" field.</summary>
-    public const int PartyInfoFieldNumber = 4;
-    private global::Thetan.Multiplayer.V1.PartyPlayerInfoProto partyInfo_;
-    /// <summary>
-    ///Thông tin bổ sung của player đó khi ở trong party( nếu không ở trong party thì là null)
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Thetan.Multiplayer.V1.PartyPlayerInfoProto PartyInfo {
-      get { return partyInfo_; }
-      set {
-        partyInfo_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -262,7 +233,6 @@ namespace Thetan.Multiplayer.V1 {
       if (!object.Equals(Hero, other.Hero)) return false;
       if (!object.Equals(Skill1, other.Skill1)) return false;
       if (!object.Equals(Skill2, other.Skill2)) return false;
-      if (!object.Equals(PartyInfo, other.PartyInfo)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -273,7 +243,6 @@ namespace Thetan.Multiplayer.V1 {
       if (hero_ != null) hash ^= Hero.GetHashCode();
       if (skill1_ != null) hash ^= Skill1.GetHashCode();
       if (skill2_ != null) hash ^= Skill2.GetHashCode();
-      if (partyInfo_ != null) hash ^= PartyInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -304,10 +273,6 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(Skill2);
       }
-      if (partyInfo_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(PartyInfo);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -330,10 +295,6 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(Skill2);
       }
-      if (partyInfo_ != null) {
-        output.WriteRawTag(34);
-        output.WriteMessage(PartyInfo);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -352,9 +313,6 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (skill2_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Skill2);
-      }
-      if (partyInfo_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PartyInfo);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -386,12 +344,6 @@ namespace Thetan.Multiplayer.V1 {
         }
         Skill2.MergeFrom(other.Skill2);
       }
-      if (other.partyInfo_ != null) {
-        if (partyInfo_ == null) {
-          PartyInfo = new global::Thetan.Multiplayer.V1.PartyPlayerInfoProto();
-        }
-        PartyInfo.MergeFrom(other.PartyInfo);
-      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -428,13 +380,6 @@ namespace Thetan.Multiplayer.V1 {
             input.ReadMessage(Skill2);
             break;
           }
-          case 34: {
-            if (partyInfo_ == null) {
-              PartyInfo = new global::Thetan.Multiplayer.V1.PartyPlayerInfoProto();
-            }
-            input.ReadMessage(PartyInfo);
-            break;
-          }
         }
       }
     #endif
@@ -469,265 +414,6 @@ namespace Thetan.Multiplayer.V1 {
               Skill2 = new global::Thetan.Multiplayer.V1.SkillInfo();
             }
             input.ReadMessage(Skill2);
-            break;
-          }
-          case 34: {
-            if (partyInfo_ == null) {
-              PartyInfo = new global::Thetan.Multiplayer.V1.PartyPlayerInfoProto();
-            }
-            input.ReadMessage(PartyInfo);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class PartyPlayerInfoProto : pb::IMessage<PartyPlayerInfoProto>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<PartyPlayerInfoProto> _parser = new pb::MessageParser<PartyPlayerInfoProto>(() => new PartyPlayerInfoProto());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<PartyPlayerInfoProto> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[1]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PartyPlayerInfoProto() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PartyPlayerInfoProto(PartyPlayerInfoProto other) : this() {
-      teamId_ = other.teamId_;
-      regions_ = other.regions_.Clone();
-      isBot_ = other.isBot_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PartyPlayerInfoProto Clone() {
-      return new PartyPlayerInfoProto(this);
-    }
-
-    /// <summary>Field number for the "teamId" field.</summary>
-    public const int TeamIdFieldNumber = 1;
-    private int teamId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int TeamId {
-      get { return teamId_; }
-      set {
-        teamId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "regions" field.</summary>
-    public const int RegionsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Thetan.Multiplayer.V1.PlayerRegionInfoProto> _repeated_regions_codec
-        = pb::FieldCodec.ForMessage(18, global::Thetan.Multiplayer.V1.PlayerRegionInfoProto.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Multiplayer.V1.PlayerRegionInfoProto> regions_ = new pbc::RepeatedField<global::Thetan.Multiplayer.V1.PlayerRegionInfoProto>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Multiplayer.V1.PlayerRegionInfoProto> Regions {
-      get { return regions_; }
-    }
-
-    /// <summary>Field number for the "isBot" field.</summary>
-    public const int IsBotFieldNumber = 3;
-    private bool isBot_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsBot {
-      get { return isBot_; }
-      set {
-        isBot_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as PartyPlayerInfoProto);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(PartyPlayerInfoProto other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (TeamId != other.TeamId) return false;
-      if(!regions_.Equals(other.regions_)) return false;
-      if (IsBot != other.IsBot) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (TeamId != 0) hash ^= TeamId.GetHashCode();
-      hash ^= regions_.GetHashCode();
-      if (IsBot != false) hash ^= IsBot.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (TeamId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(TeamId);
-      }
-      regions_.WriteTo(output, _repeated_regions_codec);
-      if (IsBot != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsBot);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TeamId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(TeamId);
-      }
-      regions_.WriteTo(ref output, _repeated_regions_codec);
-      if (IsBot != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsBot);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (TeamId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TeamId);
-      }
-      size += regions_.CalculateSize(_repeated_regions_codec);
-      if (IsBot != false) {
-        size += 1 + 1;
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(PartyPlayerInfoProto other) {
-      if (other == null) {
-        return;
-      }
-      if (other.TeamId != 0) {
-        TeamId = other.TeamId;
-      }
-      regions_.Add(other.regions_);
-      if (other.IsBot != false) {
-        IsBot = other.IsBot;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            TeamId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            regions_.AddEntriesFrom(input, _repeated_regions_codec);
-            break;
-          }
-          case 24: {
-            IsBot = input.ReadBool();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            TeamId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            regions_.AddEntriesFrom(ref input, _repeated_regions_codec);
-            break;
-          }
-          case 24: {
-            IsBot = input.ReadBool();
             break;
           }
         }
@@ -751,7 +437,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -977,7 +663,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1240,7 +926,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1466,7 +1152,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1486,13 +1172,12 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ThetanArenaPartyInfoProto(ThetanArenaPartyInfoProto other) : this() {
-      gameMode_ = other.gameMode_;
       ingamemode_ = other.ingamemode_;
-      eventID_ = other.eventID_;
       mapId_ = other.mapId_;
-      customBitInfo_ = other.customBitInfo_ != null ? other.customBitInfo_.Clone() : null;
+      partyName_ = other.partyName_;
       region_ = other.region_;
       hasPassword_ = other.hasPassword_;
+      teamInfo_ = other.teamInfo_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1502,20 +1187,8 @@ namespace Thetan.Multiplayer.V1 {
       return new ThetanArenaPartyInfoProto(this);
     }
 
-    /// <summary>Field number for the "gameMode" field.</summary>
-    public const int GameModeFieldNumber = 1;
-    private global::Thetan.Multiplayer.V1.GameMode gameMode_ = global::Thetan.Multiplayer.V1.GameMode.Ranked;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Thetan.Multiplayer.V1.GameMode GameMode {
-      get { return gameMode_; }
-      set {
-        gameMode_ = value;
-      }
-    }
-
     /// <summary>Field number for the "ingamemode" field.</summary>
-    public const int IngamemodeFieldNumber = 2;
+    public const int IngamemodeFieldNumber = 1;
     private global::Thetan.Multiplayer.V1.InGameMode ingamemode_ = global::Thetan.Multiplayer.V1.InGameMode.TeamCollectStar;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1526,20 +1199,8 @@ namespace Thetan.Multiplayer.V1 {
       }
     }
 
-    /// <summary>Field number for the "eventID" field.</summary>
-    public const int EventIDFieldNumber = 3;
-    private string eventID_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string EventID {
-      get { return eventID_; }
-      set {
-        eventID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     /// <summary>Field number for the "mapId" field.</summary>
-    public const int MapIdFieldNumber = 4;
+    public const int MapIdFieldNumber = 2;
     private int mapId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1550,20 +1211,20 @@ namespace Thetan.Multiplayer.V1 {
       }
     }
 
-    /// <summary>Field number for the "customBitInfo" field.</summary>
-    public const int CustomBitInfoFieldNumber = 5;
-    private global::Thetan.Multiplayer.V1.CustomBotInfoProto customBitInfo_;
+    /// <summary>Field number for the "partyName" field.</summary>
+    public const int PartyNameFieldNumber = 3;
+    private string partyName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Thetan.Multiplayer.V1.CustomBotInfoProto CustomBitInfo {
-      get { return customBitInfo_; }
+    public string PartyName {
+      get { return partyName_; }
       set {
-        customBitInfo_ = value;
+        partyName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "region" field.</summary>
-    public const int RegionFieldNumber = 6;
+    public const int RegionFieldNumber = 4;
     private int region_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1575,7 +1236,7 @@ namespace Thetan.Multiplayer.V1 {
     }
 
     /// <summary>Field number for the "hasPassword" field.</summary>
-    public const int HasPasswordFieldNumber = 7;
+    public const int HasPasswordFieldNumber = 5;
     private bool hasPassword_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1584,6 +1245,17 @@ namespace Thetan.Multiplayer.V1 {
       set {
         hasPassword_ = value;
       }
+    }
+
+    /// <summary>Field number for the "teamInfo" field.</summary>
+    public const int TeamInfoFieldNumber = 6;
+    private static readonly pbc::MapField<string, global::Thetan.Multiplayer.V1.TeamInfo>.Codec _map_teamInfo_codec
+        = new pbc::MapField<string, global::Thetan.Multiplayer.V1.TeamInfo>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Thetan.Multiplayer.V1.TeamInfo.Parser), 50);
+    private readonly pbc::MapField<string, global::Thetan.Multiplayer.V1.TeamInfo> teamInfo_ = new pbc::MapField<string, global::Thetan.Multiplayer.V1.TeamInfo>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, global::Thetan.Multiplayer.V1.TeamInfo> TeamInfo {
+      get { return teamInfo_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1601,13 +1273,12 @@ namespace Thetan.Multiplayer.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (GameMode != other.GameMode) return false;
       if (Ingamemode != other.Ingamemode) return false;
-      if (EventID != other.EventID) return false;
       if (MapId != other.MapId) return false;
-      if (!object.Equals(CustomBitInfo, other.CustomBitInfo)) return false;
+      if (PartyName != other.PartyName) return false;
       if (Region != other.Region) return false;
       if (HasPassword != other.HasPassword) return false;
+      if (!TeamInfo.Equals(other.TeamInfo)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1615,13 +1286,12 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (GameMode != global::Thetan.Multiplayer.V1.GameMode.Ranked) hash ^= GameMode.GetHashCode();
       if (Ingamemode != global::Thetan.Multiplayer.V1.InGameMode.TeamCollectStar) hash ^= Ingamemode.GetHashCode();
-      if (EventID.Length != 0) hash ^= EventID.GetHashCode();
       if (MapId != 0) hash ^= MapId.GetHashCode();
-      if (customBitInfo_ != null) hash ^= CustomBitInfo.GetHashCode();
+      if (PartyName.Length != 0) hash ^= PartyName.GetHashCode();
       if (Region != 0) hash ^= Region.GetHashCode();
       if (HasPassword != false) hash ^= HasPassword.GetHashCode();
+      hash ^= TeamInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1640,34 +1310,27 @@ namespace Thetan.Multiplayer.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (GameMode != global::Thetan.Multiplayer.V1.GameMode.Ranked) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) GameMode);
-      }
       if (Ingamemode != global::Thetan.Multiplayer.V1.InGameMode.TeamCollectStar) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(8);
         output.WriteEnum((int) Ingamemode);
       }
-      if (EventID.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(EventID);
-      }
       if (MapId != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(16);
         output.WriteInt32(MapId);
       }
-      if (customBitInfo_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(CustomBitInfo);
+      if (PartyName.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(PartyName);
       }
       if (Region != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(32);
         output.WriteInt32(Region);
       }
       if (HasPassword != false) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(40);
         output.WriteBool(HasPassword);
       }
+      teamInfo_.WriteTo(output, _map_teamInfo_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1678,34 +1341,27 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (GameMode != global::Thetan.Multiplayer.V1.GameMode.Ranked) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) GameMode);
-      }
       if (Ingamemode != global::Thetan.Multiplayer.V1.InGameMode.TeamCollectStar) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(8);
         output.WriteEnum((int) Ingamemode);
       }
-      if (EventID.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(EventID);
-      }
       if (MapId != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(16);
         output.WriteInt32(MapId);
       }
-      if (customBitInfo_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(CustomBitInfo);
+      if (PartyName.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(PartyName);
       }
       if (Region != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(32);
         output.WriteInt32(Region);
       }
       if (HasPassword != false) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(40);
         output.WriteBool(HasPassword);
       }
+      teamInfo_.WriteTo(ref output, _map_teamInfo_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1716,20 +1372,14 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (GameMode != global::Thetan.Multiplayer.V1.GameMode.Ranked) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) GameMode);
-      }
       if (Ingamemode != global::Thetan.Multiplayer.V1.InGameMode.TeamCollectStar) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Ingamemode);
-      }
-      if (EventID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(EventID);
       }
       if (MapId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MapId);
       }
-      if (customBitInfo_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CustomBitInfo);
+      if (PartyName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyName);
       }
       if (Region != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Region);
@@ -1737,6 +1387,7 @@ namespace Thetan.Multiplayer.V1 {
       if (HasPassword != false) {
         size += 1 + 1;
       }
+      size += teamInfo_.CalculateSize(_map_teamInfo_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1749,23 +1400,14 @@ namespace Thetan.Multiplayer.V1 {
       if (other == null) {
         return;
       }
-      if (other.GameMode != global::Thetan.Multiplayer.V1.GameMode.Ranked) {
-        GameMode = other.GameMode;
-      }
       if (other.Ingamemode != global::Thetan.Multiplayer.V1.InGameMode.TeamCollectStar) {
         Ingamemode = other.Ingamemode;
-      }
-      if (other.EventID.Length != 0) {
-        EventID = other.EventID;
       }
       if (other.MapId != 0) {
         MapId = other.MapId;
       }
-      if (other.customBitInfo_ != null) {
-        if (customBitInfo_ == null) {
-          CustomBitInfo = new global::Thetan.Multiplayer.V1.CustomBotInfoProto();
-        }
-        CustomBitInfo.MergeFrom(other.CustomBitInfo);
+      if (other.PartyName.Length != 0) {
+        PartyName = other.PartyName;
       }
       if (other.Region != 0) {
         Region = other.Region;
@@ -1773,6 +1415,7 @@ namespace Thetan.Multiplayer.V1 {
       if (other.HasPassword != false) {
         HasPassword = other.HasPassword;
       }
+      teamInfo_.Add(other.teamInfo_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1789,34 +1432,27 @@ namespace Thetan.Multiplayer.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            GameMode = (global::Thetan.Multiplayer.V1.GameMode) input.ReadEnum();
-            break;
-          }
-          case 16: {
             Ingamemode = (global::Thetan.Multiplayer.V1.InGameMode) input.ReadEnum();
             break;
           }
-          case 26: {
-            EventID = input.ReadString();
-            break;
-          }
-          case 32: {
+          case 16: {
             MapId = input.ReadInt32();
             break;
           }
-          case 42: {
-            if (customBitInfo_ == null) {
-              CustomBitInfo = new global::Thetan.Multiplayer.V1.CustomBotInfoProto();
-            }
-            input.ReadMessage(CustomBitInfo);
+          case 26: {
+            PartyName = input.ReadString();
             break;
           }
-          case 48: {
+          case 32: {
             Region = input.ReadInt32();
             break;
           }
-          case 56: {
+          case 40: {
             HasPassword = input.ReadBool();
+            break;
+          }
+          case 50: {
+            teamInfo_.AddEntriesFrom(input, _map_teamInfo_codec);
             break;
           }
         }
@@ -1835,36 +1471,29 @@ namespace Thetan.Multiplayer.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            GameMode = (global::Thetan.Multiplayer.V1.GameMode) input.ReadEnum();
-            break;
-          }
-          case 16: {
             Ingamemode = (global::Thetan.Multiplayer.V1.InGameMode) input.ReadEnum();
             break;
           }
-          case 26: {
-            EventID = input.ReadString();
-            break;
-          }
-          case 32: {
+          case 16: {
             MapId = input.ReadInt32();
             break;
           }
-          case 42: {
-            if (customBitInfo_ == null) {
-              CustomBitInfo = new global::Thetan.Multiplayer.V1.CustomBotInfoProto();
-            }
-            input.ReadMessage(CustomBitInfo);
+          case 26: {
+            PartyName = input.ReadString();
             break;
           }
-          case 48: {
+          case 32: {
             Region = input.ReadInt32();
             break;
           }
-          case 56: {
+          case 40: {
             HasPassword = input.ReadBool();
             break;
           }
+          case 50: {
+            teamInfo_.AddEntriesFrom(ref input, _map_teamInfo_codec);
+            break;
+          }
         }
       }
     }
@@ -1872,21 +1501,21 @@ namespace Thetan.Multiplayer.V1 {
 
   }
 
-  public sealed partial class CustomBotInfoProto : pb::IMessage<CustomBotInfoProto>
+  public sealed partial class TeamInfo : pb::IMessage<TeamInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<CustomBotInfoProto> _parser = new pb::MessageParser<CustomBotInfoProto>(() => new CustomBotInfoProto());
+    private static readonly pb::MessageParser<TeamInfo> _parser = new pb::MessageParser<TeamInfo>(() => new TeamInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<CustomBotInfoProto> Parser { get { return _parser; } }
+    public static pb::MessageParser<TeamInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1897,7 +1526,7 @@ namespace Thetan.Multiplayer.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CustomBotInfoProto() {
+    public TeamInfo() {
       OnConstruction();
     }
 
@@ -1905,237 +1534,59 @@ namespace Thetan.Multiplayer.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CustomBotInfoProto(CustomBotInfoProto other) : this() {
-      botInfo_ = other.botInfo_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CustomBotInfoProto Clone() {
-      return new CustomBotInfoProto(this);
-    }
-
-    /// <summary>Field number for the "botInfo" field.</summary>
-    public const int BotInfoFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Thetan.Multiplayer.V1.BotInfoProto> _repeated_botInfo_codec
-        = pb::FieldCodec.ForMessage(10, global::Thetan.Multiplayer.V1.BotInfoProto.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Multiplayer.V1.BotInfoProto> botInfo_ = new pbc::RepeatedField<global::Thetan.Multiplayer.V1.BotInfoProto>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Multiplayer.V1.BotInfoProto> BotInfo {
-      get { return botInfo_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as CustomBotInfoProto);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(CustomBotInfoProto other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!botInfo_.Equals(other.botInfo_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= botInfo_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      botInfo_.WriteTo(output, _repeated_botInfo_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      botInfo_.WriteTo(ref output, _repeated_botInfo_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      size += botInfo_.CalculateSize(_repeated_botInfo_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(CustomBotInfoProto other) {
-      if (other == null) {
-        return;
-      }
-      botInfo_.Add(other.botInfo_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            botInfo_.AddEntriesFrom(input, _repeated_botInfo_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            botInfo_.AddEntriesFrom(ref input, _repeated_botInfo_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class BotInfoProto : pb::IMessage<BotInfoProto>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<BotInfoProto> _parser = new pb::MessageParser<BotInfoProto>(() => new BotInfoProto());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<BotInfoProto> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[7]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public BotInfoProto() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public BotInfoProto(BotInfoProto other) : this() {
-      botId_ = other.botId_;
+    public TeamInfo(TeamInfo other) : this() {
       teamId_ = other.teamId_;
+      isBot_ = other.isBot_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public BotInfoProto Clone() {
-      return new BotInfoProto(this);
-    }
-
-    /// <summary>Field number for the "botId" field.</summary>
-    public const int BotIdFieldNumber = 1;
-    private string botId_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string BotId {
-      get { return botId_; }
-      set {
-        botId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
+    public TeamInfo Clone() {
+      return new TeamInfo(this);
     }
 
     /// <summary>Field number for the "teamId" field.</summary>
-    public const int TeamIdFieldNumber = 2;
-    private int teamId_;
+    public const int TeamIdFieldNumber = 1;
+    private string teamId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int TeamId {
+    public string TeamId {
       get { return teamId_; }
       set {
-        teamId_ = value;
+        teamId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "isBot" field.</summary>
+    public const int IsBotFieldNumber = 2;
+    private bool isBot_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsBot {
+      get { return isBot_; }
+      set {
+        isBot_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as BotInfoProto);
+      return Equals(other as TeamInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(BotInfoProto other) {
+    public bool Equals(TeamInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (BotId != other.BotId) return false;
       if (TeamId != other.TeamId) return false;
+      if (IsBot != other.IsBot) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2143,8 +1594,8 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (BotId.Length != 0) hash ^= BotId.GetHashCode();
-      if (TeamId != 0) hash ^= TeamId.GetHashCode();
+      if (TeamId.Length != 0) hash ^= TeamId.GetHashCode();
+      if (IsBot != false) hash ^= IsBot.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2163,13 +1614,13 @@ namespace Thetan.Multiplayer.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (BotId.Length != 0) {
+      if (TeamId.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(BotId);
+        output.WriteString(TeamId);
       }
-      if (TeamId != 0) {
+      if (IsBot != false) {
         output.WriteRawTag(16);
-        output.WriteInt32(TeamId);
+        output.WriteBool(IsBot);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2181,13 +1632,13 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (BotId.Length != 0) {
+      if (TeamId.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(BotId);
+        output.WriteString(TeamId);
       }
-      if (TeamId != 0) {
+      if (IsBot != false) {
         output.WriteRawTag(16);
-        output.WriteInt32(TeamId);
+        output.WriteBool(IsBot);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2199,11 +1650,11 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (BotId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(BotId);
+      if (TeamId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TeamId);
       }
-      if (TeamId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TeamId);
+      if (IsBot != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2213,15 +1664,15 @@ namespace Thetan.Multiplayer.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(BotInfoProto other) {
+    public void MergeFrom(TeamInfo other) {
       if (other == null) {
         return;
       }
-      if (other.BotId.Length != 0) {
-        BotId = other.BotId;
-      }
-      if (other.TeamId != 0) {
+      if (other.TeamId.Length != 0) {
         TeamId = other.TeamId;
+      }
+      if (other.IsBot != false) {
+        IsBot = other.IsBot;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2239,11 +1690,11 @@ namespace Thetan.Multiplayer.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            BotId = input.ReadString();
+            TeamId = input.ReadString();
             break;
           }
           case 16: {
-            TeamId = input.ReadInt32();
+            IsBot = input.ReadBool();
             break;
           }
         }
@@ -2262,11 +1713,11 @@ namespace Thetan.Multiplayer.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            BotId = input.ReadString();
+            TeamId = input.ReadString();
             break;
           }
           case 16: {
-            TeamId = input.ReadInt32();
+            IsBot = input.ReadBool();
             break;
           }
         }
@@ -2290,7 +1741,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2479,7 +1930,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2698,7 +2149,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2933,7 +2384,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3159,7 +2610,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3468,7 +2919,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3694,7 +3145,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3715,6 +3166,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PartyThetanArenaStorageMessage(PartyThetanArenaStorageMessage other) : this() {
       password_ = other.password_;
+      ingameTypeMode_ = other.ingameTypeMode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3739,6 +3191,18 @@ namespace Thetan.Multiplayer.V1 {
       }
     }
 
+    /// <summary>Field number for the "ingameTypeMode" field.</summary>
+    public const int IngameTypeModeFieldNumber = 2;
+    private global::Thetan.Multiplayer.V1.InGameTypeModeProto ingameTypeMode_ = global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Multiplayer.V1.InGameTypeModeProto IngameTypeMode {
+      get { return ingameTypeMode_; }
+      set {
+        ingameTypeMode_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -3755,6 +3219,7 @@ namespace Thetan.Multiplayer.V1 {
         return true;
       }
       if (Password != other.Password) return false;
+      if (IngameTypeMode != other.IngameTypeMode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3763,6 +3228,7 @@ namespace Thetan.Multiplayer.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (Password.Length != 0) hash ^= Password.GetHashCode();
+      if (IngameTypeMode != global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode) hash ^= IngameTypeMode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3785,6 +3251,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(10);
         output.WriteString(Password);
       }
+      if (IngameTypeMode != global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) IngameTypeMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3799,6 +3269,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(10);
         output.WriteString(Password);
       }
+      if (IngameTypeMode != global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) IngameTypeMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3811,6 +3285,9 @@ namespace Thetan.Multiplayer.V1 {
       int size = 0;
       if (Password.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
+      }
+      if (IngameTypeMode != global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) IngameTypeMode);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3826,6 +3303,9 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (other.Password.Length != 0) {
         Password = other.Password;
+      }
+      if (other.IngameTypeMode != global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode) {
+        IngameTypeMode = other.IngameTypeMode;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3846,6 +3326,10 @@ namespace Thetan.Multiplayer.V1 {
             Password = input.ReadString();
             break;
           }
+          case 16: {
+            IngameTypeMode = (global::Thetan.Multiplayer.V1.InGameTypeModeProto) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -3863,6 +3347,10 @@ namespace Thetan.Multiplayer.V1 {
             break;
           case 10: {
             Password = input.ReadString();
+            break;
+          }
+          case 16: {
+            IngameTypeMode = (global::Thetan.Multiplayer.V1.InGameTypeModeProto) input.ReadEnum();
             break;
           }
         }
