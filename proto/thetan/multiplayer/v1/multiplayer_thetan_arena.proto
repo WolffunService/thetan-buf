@@ -3,6 +3,7 @@ syntax = "proto3";
 package thetan.multiplayer.v1;
 
 import "thetan/shared/v1/customized.proto";
+import "thetan/multiplayer/v1/common.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/multiplayer/v1;thetan_multiplayer_v1";
 option csharp_namespace = "Thetan.Multiplayer.V1";
@@ -13,6 +14,17 @@ message ThetanArenaPlayerInfoProto {
   HeroInfo hero = 1;
   SkillInfo skill1 = 2;
   SkillInfo skill2 = 3;
+  PartyPlayerInfoProto partyInfo = 4;//Thông tin bổ sung của player đó khi ở trong party( nếu không ở trong party thì là null)
+}
+
+message PartyPlayerInfoProto {
+  int32 teamId = 1;
+  repeated PlayerRegionInfoProto regions = 2;
+}
+
+message PlayerRegionInfoProto {
+  int32 region = 1;
+  int32 ping = 3;
 }
 
 message HeroInfo {
@@ -66,4 +78,37 @@ enum InGameMode {
   DUO_BATTLE_ROYALE = 14;
   TRIO_BATTLE_ROAYLE = 15;
   NONE_MODE = -1;
+}
+
+message ChangeHostProto
+{
+   string newHostId = 2;
+}
+
+message SearchCustomPartyProto {
+  oneof optionSearch {
+    string partyId = 1;
+  }
+}
+enum InGameTypeModeProto {
+  None_InGameTypeMode = 0;
+  TeamMode = 1;
+  SoloMode = 2;
+  DouMode = 3;
+}
+
+message SearchCustomPartyResponseProto {
+  PlayerInfoProto partyInfo = 1;
+  int64 unlockTimeStamp = 2;
+}
+
+message RequestCreateCustomPartyProto {
+  string partyName = 1;
+  string password =2;
+  InGameTypeModeProto inGameTypeMode = 3;
+}
+
+message RequestJoinPartyProto {
+  string partyId = 1;
+  string password = 2;
 }

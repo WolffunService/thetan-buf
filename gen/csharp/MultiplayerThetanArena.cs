@@ -26,48 +26,76 @@ namespace Thetan.Multiplayer.V1 {
           string.Concat(
             "CjR0aGV0YW4vbXVsdGlwbGF5ZXIvdjEvbXVsdGlwbGF5ZXJfdGhldGFuX2Fy",
             "ZW5hLnByb3RvEhV0aGV0YW4ubXVsdGlwbGF5ZXIudjEaIXRoZXRhbi9zaGFy",
-            "ZWQvdjEvY3VzdG9taXplZC5wcm90byLFAQoaVGhldGFuQXJlbmFQbGF5ZXJJ",
-            "bmZvUHJvdG8SMwoEaGVybxgBIAEoCzIfLnRoZXRhbi5tdWx0aXBsYXllci52",
-            "MS5IZXJvSW5mb1IEaGVybxI4CgZza2lsbDEYAiABKAsyIC50aGV0YW4ubXVs",
-            "dGlwbGF5ZXIudjEuU2tpbGxJbmZvUgZza2lsbDESOAoGc2tpbGwyGAMgASgL",
-            "MiAudGhldGFuLm11bHRpcGxheWVyLnYxLlNraWxsSW5mb1IGc2tpbGwyImAK",
-            "CEhlcm9JbmZvEhYKBmhlcm9JZBgBIAEoBVIGaGVyb0lkEh4KCmhlcm9Ta2lu",
-            "SWQYAiABKAVSCmhlcm9Ta2luSWQSHAoJaGVyb0xldmVsGAMgASgFUgloZXJv",
-            "TGV2ZWwiRQoJU2tpbGxJbmZvEhgKB3NraWxsSWQYASABKAVSB3NraWxsSWQS",
-            "HgoKc2tpbGxMZXZlbBgCIAEoBVIKc2tpbGxMZXZlbCLWAgoZVGhldGFuQXJl",
-            "bmFQYXJ0eUluZm9Qcm90bxI7CghnYW1lTW9kZRgBIAEoDjIfLnRoZXRhbi5t",
-            "dWx0aXBsYXllci52MS5HYW1lTW9kZVIIZ2FtZU1vZGUSQQoKaW5nYW1lbW9k",
-            "ZRgCIAEoDjIhLnRoZXRhbi5tdWx0aXBsYXllci52MS5JbkdhbWVNb2RlUgpp",
-            "bmdhbWVtb2RlEhgKB2V2ZW50SUQYAyABKAlSB2V2ZW50SUQSFAoFbWFwSWQY",
-            "BCABKAVSBW1hcElkEk8KDWN1c3RvbUJpdEluZm8YBSABKAsyKS50aGV0YW4u",
-            "bXVsdGlwbGF5ZXIudjEuQ3VzdG9tQm90SW5mb1Byb3RvUg1jdXN0b21CaXRJ",
-            "bmZvEhYKBnJlZ2lvbhgGIAEoBVIGcmVnaW9uEiAKC2hhc1Bhc3N3b3JkGAcg",
-            "ASgIUgtoYXNQYXNzd29yZCJTChJDdXN0b21Cb3RJbmZvUHJvdG8SPQoHYm90",
-            "SW5mbxgBIAMoCzIjLnRoZXRhbi5tdWx0aXBsYXllci52MS5Cb3RJbmZvUHJv",
-            "dG9SB2JvdEluZm8iPAoMQm90SW5mb1Byb3RvEhQKBWJvdElkGAEgASgJUgVi",
-            "b3RJZBIWCgZ0ZWFtSWQYAiABKAVSBnRlYW1JZCo6CghHYW1lTW9kZRIKCgZS",
-            "QU5LRUQQABIRCg1TUEVDSUFMX0VWRU5UEAESDwoLQ1VTVE9NX01PREUQAiqi",
-            "AgoKSW5HYW1lTW9kZRIVChFURUFNX0NPTExFQ1RfU1RBUhAAEhEKDVNPTE9f",
-            "U1VSVklWQUwQARIRCg1EVUFMX1NVUlZJVkFMEAISHAoYVEVBTV9DT0xMRUNU",
-            "X1NUQVJfNF9WU180EAMSCAoES0lORxAFEg8KC0RFQVRIX01BVENIEAYSFgoS",
-            "REVBVEhfTUFUQ0hfM19WU18zEAcSCAoERkxBRxAIEgkKBVRPV0VSEAkSEQoN",
-            "QkFUVExFX1JPWUFMRRAMEhcKE1NRVUFEX0JBVFRMRV9ST1lBTEUQDRIVChFE",
-            "VU9fQkFUVExFX1JPWUFMRRAOEhYKElRSSU9fQkFUVExFX1JPQVlMRRAPEhYK",
-            "CU5PTkVfTU9ERRD///////////8BQu0BChljb20udGhldGFuLm11bHRpcGxh",
-            "eWVyLnYxQhtNdWx0aXBsYXllclRoZXRhbkFyZW5hUHJvdG9QAVo9dGhldGFu",
-            "LWJ1Zi9nZW4vZ28vdGhldGFuL211bHRpcGxheWVyL3YxO3RoZXRhbl9tdWx0",
-            "aXBsYXllcl92MaICA1RNWKoCFVRoZXRhbi5NdWx0aXBsYXllci5WMcoCFVRo",
-            "ZXRhblxNdWx0aXBsYXllclxWMeICIVRoZXRhblxNdWx0aXBsYXllclxWMVxH",
-            "UEJNZXRhZGF0YeoCF1RoZXRhbjo6TXVsdGlwbGF5ZXI6OlYxYgZwcm90bzM="));
+            "ZWQvdjEvY3VzdG9taXplZC5wcm90bxoidGhldGFuL211bHRpcGxheWVyL3Yx",
+            "L2NvbW1vbi5wcm90byKQAgoaVGhldGFuQXJlbmFQbGF5ZXJJbmZvUHJvdG8S",
+            "MwoEaGVybxgBIAEoCzIfLnRoZXRhbi5tdWx0aXBsYXllci52MS5IZXJvSW5m",
+            "b1IEaGVybxI4CgZza2lsbDEYAiABKAsyIC50aGV0YW4ubXVsdGlwbGF5ZXIu",
+            "djEuU2tpbGxJbmZvUgZza2lsbDESOAoGc2tpbGwyGAMgASgLMiAudGhldGFu",
+            "Lm11bHRpcGxheWVyLnYxLlNraWxsSW5mb1IGc2tpbGwyEkkKCXBhcnR5SW5m",
+            "bxgEIAEoCzIrLnRoZXRhbi5tdWx0aXBsYXllci52MS5QYXJ0eVBsYXllcklu",
+            "Zm9Qcm90b1IJcGFydHlJbmZvInYKFFBhcnR5UGxheWVySW5mb1Byb3RvEhYK",
+            "BnRlYW1JZBgBIAEoBVIGdGVhbUlkEkYKB3JlZ2lvbnMYAiADKAsyLC50aGV0",
+            "YW4ubXVsdGlwbGF5ZXIudjEuUGxheWVyUmVnaW9uSW5mb1Byb3RvUgdyZWdp",
+            "b25zIkMKFVBsYXllclJlZ2lvbkluZm9Qcm90bxIWCgZyZWdpb24YASABKAVS",
+            "BnJlZ2lvbhISCgRwaW5nGAMgASgFUgRwaW5nImAKCEhlcm9JbmZvEhYKBmhl",
+            "cm9JZBgBIAEoBVIGaGVyb0lkEh4KCmhlcm9Ta2luSWQYAiABKAVSCmhlcm9T",
+            "a2luSWQSHAoJaGVyb0xldmVsGAMgASgFUgloZXJvTGV2ZWwiRQoJU2tpbGxJ",
+            "bmZvEhgKB3NraWxsSWQYASABKAVSB3NraWxsSWQSHgoKc2tpbGxMZXZlbBgC",
+            "IAEoBVIKc2tpbGxMZXZlbCLWAgoZVGhldGFuQXJlbmFQYXJ0eUluZm9Qcm90",
+            "bxI7CghnYW1lTW9kZRgBIAEoDjIfLnRoZXRhbi5tdWx0aXBsYXllci52MS5H",
+            "YW1lTW9kZVIIZ2FtZU1vZGUSQQoKaW5nYW1lbW9kZRgCIAEoDjIhLnRoZXRh",
+            "bi5tdWx0aXBsYXllci52MS5JbkdhbWVNb2RlUgppbmdhbWVtb2RlEhgKB2V2",
+            "ZW50SUQYAyABKAlSB2V2ZW50SUQSFAoFbWFwSWQYBCABKAVSBW1hcElkEk8K",
+            "DWN1c3RvbUJpdEluZm8YBSABKAsyKS50aGV0YW4ubXVsdGlwbGF5ZXIudjEu",
+            "Q3VzdG9tQm90SW5mb1Byb3RvUg1jdXN0b21CaXRJbmZvEhYKBnJlZ2lvbhgG",
+            "IAEoBVIGcmVnaW9uEiAKC2hhc1Bhc3N3b3JkGAcgASgIUgtoYXNQYXNzd29y",
+            "ZCJTChJDdXN0b21Cb3RJbmZvUHJvdG8SPQoHYm90SW5mbxgBIAMoCzIjLnRo",
+            "ZXRhbi5tdWx0aXBsYXllci52MS5Cb3RJbmZvUHJvdG9SB2JvdEluZm8iPAoM",
+            "Qm90SW5mb1Byb3RvEhQKBWJvdElkGAEgASgJUgVib3RJZBIWCgZ0ZWFtSWQY",
+            "AiABKAVSBnRlYW1JZCIvCg9DaGFuZ2VIb3N0UHJvdG8SHAoJbmV3SG9zdElk",
+            "GAIgASgJUgluZXdIb3N0SWQiRAoWU2VhcmNoQ3VzdG9tUGFydHlQcm90bxIa",
+            "CgdwYXJ0eUlkGAEgASgJSABSB3BhcnR5SWRCDgoMb3B0aW9uU2VhcmNoIpAB",
+            "Ch5TZWFyY2hDdXN0b21QYXJ0eVJlc3BvbnNlUHJvdG8SRAoJcGFydHlJbmZv",
+            "GAEgASgLMiYudGhldGFuLm11bHRpcGxheWVyLnYxLlBsYXllckluZm9Qcm90",
+            "b1IJcGFydHlJbmZvEigKD3VubG9ja1RpbWVTdGFtcBgCIAEoA1IPdW5sb2Nr",
+            "VGltZVN0YW1wIq0BCh1SZXF1ZXN0Q3JlYXRlQ3VzdG9tUGFydHlQcm90bxIc",
+            "CglwYXJ0eU5hbWUYASABKAlSCXBhcnR5TmFtZRIaCghwYXNzd29yZBgCIAEo",
+            "CVIIcGFzc3dvcmQSUgoOaW5HYW1lVHlwZU1vZGUYAyABKA4yKi50aGV0YW4u",
+            "bXVsdGlwbGF5ZXIudjEuSW5HYW1lVHlwZU1vZGVQcm90b1IOaW5HYW1lVHlw",
+            "ZU1vZGUiTQoVUmVxdWVzdEpvaW5QYXJ0eVByb3RvEhgKB3BhcnR5SWQYASAB",
+            "KAlSB3BhcnR5SWQSGgoIcGFzc3dvcmQYAiABKAlSCHBhc3N3b3JkKjoKCEdh",
+            "bWVNb2RlEgoKBlJBTktFRBAAEhEKDVNQRUNJQUxfRVZFTlQQARIPCgtDVVNU",
+            "T01fTU9ERRACKqICCgpJbkdhbWVNb2RlEhUKEVRFQU1fQ09MTEVDVF9TVEFS",
+            "EAASEQoNU09MT19TVVJWSVZBTBABEhEKDURVQUxfU1VSVklWQUwQAhIcChhU",
+            "RUFNX0NPTExFQ1RfU1RBUl80X1ZTXzQQAxIICgRLSU5HEAUSDwoLREVBVEhf",
+            "TUFUQ0gQBhIWChJERUFUSF9NQVRDSF8zX1ZTXzMQBxIICgRGTEFHEAgSCQoF",
+            "VE9XRVIQCRIRCg1CQVRUTEVfUk9ZQUxFEAwSFwoTU1FVQURfQkFUVExFX1JP",
+            "WUFMRRANEhUKEURVT19CQVRUTEVfUk9ZQUxFEA4SFgoSVFJJT19CQVRUTEVf",
+            "Uk9BWUxFEA8SFgoJTk9ORV9NT0RFEP///////////wEqVwoTSW5HYW1lVHlw",
+            "ZU1vZGVQcm90bxIXChNOb25lX0luR2FtZVR5cGVNb2RlEAASDAoIVGVhbU1v",
+            "ZGUQARIMCghTb2xvTW9kZRACEgsKB0RvdU1vZGUQA0LtAQoZY29tLnRoZXRh",
+            "bi5tdWx0aXBsYXllci52MUIbTXVsdGlwbGF5ZXJUaGV0YW5BcmVuYVByb3Rv",
+            "UAFaPXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9tdWx0aXBsYXllci92MTt0",
+            "aGV0YW5fbXVsdGlwbGF5ZXJfdjGiAgNUTViqAhVUaGV0YW4uTXVsdGlwbGF5",
+            "ZXIuVjHKAhVUaGV0YW5cTXVsdGlwbGF5ZXJcVjHiAiFUaGV0YW5cTXVsdGlw",
+            "bGF5ZXJcVjFcR1BCTWV0YWRhdGHqAhdUaGV0YW46Ok11bHRpcGxheWVyOjpW",
+            "MWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.GameMode), typeof(global::Thetan.Multiplayer.V1.InGameMode), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ThetanArenaPlayerInfoProto), global::Thetan.Multiplayer.V1.ThetanArenaPlayerInfoProto.Parser, new[]{ "Hero", "Skill1", "Skill2" }, null, null, null, null),
+          new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, global::Thetan.Multiplayer.V1.CommonReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.GameMode), typeof(global::Thetan.Multiplayer.V1.InGameMode), typeof(global::Thetan.Multiplayer.V1.InGameTypeModeProto), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ThetanArenaPlayerInfoProto), global::Thetan.Multiplayer.V1.ThetanArenaPlayerInfoProto.Parser, new[]{ "Hero", "Skill1", "Skill2", "PartyInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PartyPlayerInfoProto), global::Thetan.Multiplayer.V1.PartyPlayerInfoProto.Parser, new[]{ "TeamId", "Regions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PlayerRegionInfoProto), global::Thetan.Multiplayer.V1.PlayerRegionInfoProto.Parser, new[]{ "Region", "Ping" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.HeroInfo), global::Thetan.Multiplayer.V1.HeroInfo.Parser, new[]{ "HeroId", "HeroSkinId", "HeroLevel" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SkillInfo), global::Thetan.Multiplayer.V1.SkillInfo.Parser, new[]{ "SkillId", "SkillLevel" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ThetanArenaPartyInfoProto), global::Thetan.Multiplayer.V1.ThetanArenaPartyInfoProto.Parser, new[]{ "GameMode", "Ingamemode", "EventID", "MapId", "CustomBitInfo", "Region", "HasPassword" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.CustomBotInfoProto), global::Thetan.Multiplayer.V1.CustomBotInfoProto.Parser, new[]{ "BotInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.BotInfoProto), global::Thetan.Multiplayer.V1.BotInfoProto.Parser, new[]{ "BotId", "TeamId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.BotInfoProto), global::Thetan.Multiplayer.V1.BotInfoProto.Parser, new[]{ "BotId", "TeamId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ChangeHostProto), global::Thetan.Multiplayer.V1.ChangeHostProto.Parser, new[]{ "NewHostId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SearchCustomPartyProto), global::Thetan.Multiplayer.V1.SearchCustomPartyProto.Parser, new[]{ "PartyId" }, new[]{ "OptionSearch" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SearchCustomPartyResponseProto), global::Thetan.Multiplayer.V1.SearchCustomPartyResponseProto.Parser, new[]{ "PartyInfo", "UnlockTimeStamp" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestCreateCustomPartyProto), global::Thetan.Multiplayer.V1.RequestCreateCustomPartyProto.Parser, new[]{ "PartyName", "Password", "InGameTypeMode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestJoinPartyProto), global::Thetan.Multiplayer.V1.RequestJoinPartyProto.Parser, new[]{ "PartyId", "Password" }, null, null, null, null)
           }));
     }
     #endregion
@@ -95,6 +123,13 @@ namespace Thetan.Multiplayer.V1 {
     [pbr::OriginalName("DUO_BATTLE_ROYALE")] DuoBattleRoyale = 14,
     [pbr::OriginalName("TRIO_BATTLE_ROAYLE")] TrioBattleRoayle = 15,
     [pbr::OriginalName("NONE_MODE")] NoneMode = -1,
+  }
+
+  public enum InGameTypeModeProto {
+    [pbr::OriginalName("None_InGameTypeMode")] NoneInGameTypeMode = 0,
+    [pbr::OriginalName("TeamMode")] TeamMode = 1,
+    [pbr::OriginalName("SoloMode")] SoloMode = 2,
+    [pbr::OriginalName("DouMode")] DouMode = 3,
   }
 
   #endregion
@@ -140,6 +175,7 @@ namespace Thetan.Multiplayer.V1 {
       hero_ = other.hero_ != null ? other.hero_.Clone() : null;
       skill1_ = other.skill1_ != null ? other.skill1_.Clone() : null;
       skill2_ = other.skill2_ != null ? other.skill2_.Clone() : null;
+      partyInfo_ = other.partyInfo_ != null ? other.partyInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -185,6 +221,21 @@ namespace Thetan.Multiplayer.V1 {
       }
     }
 
+    /// <summary>Field number for the "partyInfo" field.</summary>
+    public const int PartyInfoFieldNumber = 4;
+    private global::Thetan.Multiplayer.V1.PartyPlayerInfoProto partyInfo_;
+    /// <summary>
+    ///Thông tin bổ sung của player đó khi ở trong party( nếu không ở trong party thì là null)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Multiplayer.V1.PartyPlayerInfoProto PartyInfo {
+      get { return partyInfo_; }
+      set {
+        partyInfo_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -203,6 +254,7 @@ namespace Thetan.Multiplayer.V1 {
       if (!object.Equals(Hero, other.Hero)) return false;
       if (!object.Equals(Skill1, other.Skill1)) return false;
       if (!object.Equals(Skill2, other.Skill2)) return false;
+      if (!object.Equals(PartyInfo, other.PartyInfo)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -213,6 +265,7 @@ namespace Thetan.Multiplayer.V1 {
       if (hero_ != null) hash ^= Hero.GetHashCode();
       if (skill1_ != null) hash ^= Skill1.GetHashCode();
       if (skill2_ != null) hash ^= Skill2.GetHashCode();
+      if (partyInfo_ != null) hash ^= PartyInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -243,6 +296,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(Skill2);
       }
+      if (partyInfo_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(PartyInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -265,6 +322,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(26);
         output.WriteMessage(Skill2);
       }
+      if (partyInfo_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(PartyInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -283,6 +344,9 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (skill2_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Skill2);
+      }
+      if (partyInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PartyInfo);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -313,6 +377,12 @@ namespace Thetan.Multiplayer.V1 {
           Skill2 = new global::Thetan.Multiplayer.V1.SkillInfo();
         }
         Skill2.MergeFrom(other.Skill2);
+      }
+      if (other.partyInfo_ != null) {
+        if (partyInfo_ == null) {
+          PartyInfo = new global::Thetan.Multiplayer.V1.PartyPlayerInfoProto();
+        }
+        PartyInfo.MergeFrom(other.PartyInfo);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -348,6 +418,13 @@ namespace Thetan.Multiplayer.V1 {
               Skill2 = new global::Thetan.Multiplayer.V1.SkillInfo();
             }
             input.ReadMessage(Skill2);
+            break;
+          }
+          case 34: {
+            if (partyInfo_ == null) {
+              PartyInfo = new global::Thetan.Multiplayer.V1.PartyPlayerInfoProto();
+            }
+            input.ReadMessage(PartyInfo);
             break;
           }
         }
@@ -386,6 +463,454 @@ namespace Thetan.Multiplayer.V1 {
             input.ReadMessage(Skill2);
             break;
           }
+          case 34: {
+            if (partyInfo_ == null) {
+              PartyInfo = new global::Thetan.Multiplayer.V1.PartyPlayerInfoProto();
+            }
+            input.ReadMessage(PartyInfo);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class PartyPlayerInfoProto : pb::IMessage<PartyPlayerInfoProto>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PartyPlayerInfoProto> _parser = new pb::MessageParser<PartyPlayerInfoProto>(() => new PartyPlayerInfoProto());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PartyPlayerInfoProto> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PartyPlayerInfoProto() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PartyPlayerInfoProto(PartyPlayerInfoProto other) : this() {
+      teamId_ = other.teamId_;
+      regions_ = other.regions_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PartyPlayerInfoProto Clone() {
+      return new PartyPlayerInfoProto(this);
+    }
+
+    /// <summary>Field number for the "teamId" field.</summary>
+    public const int TeamIdFieldNumber = 1;
+    private int teamId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int TeamId {
+      get { return teamId_; }
+      set {
+        teamId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "regions" field.</summary>
+    public const int RegionsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Thetan.Multiplayer.V1.PlayerRegionInfoProto> _repeated_regions_codec
+        = pb::FieldCodec.ForMessage(18, global::Thetan.Multiplayer.V1.PlayerRegionInfoProto.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Multiplayer.V1.PlayerRegionInfoProto> regions_ = new pbc::RepeatedField<global::Thetan.Multiplayer.V1.PlayerRegionInfoProto>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Thetan.Multiplayer.V1.PlayerRegionInfoProto> Regions {
+      get { return regions_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PartyPlayerInfoProto);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PartyPlayerInfoProto other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (TeamId != other.TeamId) return false;
+      if(!regions_.Equals(other.regions_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (TeamId != 0) hash ^= TeamId.GetHashCode();
+      hash ^= regions_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (TeamId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(TeamId);
+      }
+      regions_.WriteTo(output, _repeated_regions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (TeamId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(TeamId);
+      }
+      regions_.WriteTo(ref output, _repeated_regions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (TeamId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TeamId);
+      }
+      size += regions_.CalculateSize(_repeated_regions_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PartyPlayerInfoProto other) {
+      if (other == null) {
+        return;
+      }
+      if (other.TeamId != 0) {
+        TeamId = other.TeamId;
+      }
+      regions_.Add(other.regions_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            TeamId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            regions_.AddEntriesFrom(input, _repeated_regions_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            TeamId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            regions_.AddEntriesFrom(ref input, _repeated_regions_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class PlayerRegionInfoProto : pb::IMessage<PlayerRegionInfoProto>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PlayerRegionInfoProto> _parser = new pb::MessageParser<PlayerRegionInfoProto>(() => new PlayerRegionInfoProto());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PlayerRegionInfoProto> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PlayerRegionInfoProto() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PlayerRegionInfoProto(PlayerRegionInfoProto other) : this() {
+      region_ = other.region_;
+      ping_ = other.ping_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PlayerRegionInfoProto Clone() {
+      return new PlayerRegionInfoProto(this);
+    }
+
+    /// <summary>Field number for the "region" field.</summary>
+    public const int RegionFieldNumber = 1;
+    private int region_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Region {
+      get { return region_; }
+      set {
+        region_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ping" field.</summary>
+    public const int PingFieldNumber = 3;
+    private int ping_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Ping {
+      get { return ping_; }
+      set {
+        ping_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PlayerRegionInfoProto);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PlayerRegionInfoProto other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Region != other.Region) return false;
+      if (Ping != other.Ping) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Region != 0) hash ^= Region.GetHashCode();
+      if (Ping != 0) hash ^= Ping.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Region != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Region);
+      }
+      if (Ping != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Ping);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Region != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Region);
+      }
+      if (Ping != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Ping);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Region != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Region);
+      }
+      if (Ping != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Ping);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PlayerRegionInfoProto other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Region != 0) {
+        Region = other.Region;
+      }
+      if (other.Ping != 0) {
+        Ping = other.Ping;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Region = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            Ping = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Region = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            Ping = input.ReadInt32();
+            break;
+          }
         }
       }
     }
@@ -407,7 +932,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -670,7 +1195,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -896,7 +1421,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1316,7 +1841,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1494,7 +2019,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1697,6 +2222,1138 @@ namespace Thetan.Multiplayer.V1 {
           }
           case 16: {
             TeamId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ChangeHostProto : pb::IMessage<ChangeHostProto>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ChangeHostProto> _parser = new pb::MessageParser<ChangeHostProto>(() => new ChangeHostProto());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ChangeHostProto> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ChangeHostProto() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ChangeHostProto(ChangeHostProto other) : this() {
+      newHostId_ = other.newHostId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ChangeHostProto Clone() {
+      return new ChangeHostProto(this);
+    }
+
+    /// <summary>Field number for the "newHostId" field.</summary>
+    public const int NewHostIdFieldNumber = 2;
+    private string newHostId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string NewHostId {
+      get { return newHostId_; }
+      set {
+        newHostId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ChangeHostProto);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ChangeHostProto other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (NewHostId != other.NewHostId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (NewHostId.Length != 0) hash ^= NewHostId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (NewHostId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(NewHostId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (NewHostId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(NewHostId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (NewHostId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NewHostId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ChangeHostProto other) {
+      if (other == null) {
+        return;
+      }
+      if (other.NewHostId.Length != 0) {
+        NewHostId = other.NewHostId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 18: {
+            NewHostId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 18: {
+            NewHostId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class SearchCustomPartyProto : pb::IMessage<SearchCustomPartyProto>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SearchCustomPartyProto> _parser = new pb::MessageParser<SearchCustomPartyProto>(() => new SearchCustomPartyProto());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SearchCustomPartyProto> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SearchCustomPartyProto() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SearchCustomPartyProto(SearchCustomPartyProto other) : this() {
+      switch (other.OptionSearchCase) {
+        case OptionSearchOneofCase.PartyId:
+          PartyId = other.PartyId;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SearchCustomPartyProto Clone() {
+      return new SearchCustomPartyProto(this);
+    }
+
+    /// <summary>Field number for the "partyId" field.</summary>
+    public const int PartyIdFieldNumber = 1;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PartyId {
+      get { return optionSearchCase_ == OptionSearchOneofCase.PartyId ? (string) optionSearch_ : ""; }
+      set {
+        optionSearch_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        optionSearchCase_ = OptionSearchOneofCase.PartyId;
+      }
+    }
+
+    private object optionSearch_;
+    /// <summary>Enum of possible cases for the "optionSearch" oneof.</summary>
+    public enum OptionSearchOneofCase {
+      None = 0,
+      PartyId = 1,
+    }
+    private OptionSearchOneofCase optionSearchCase_ = OptionSearchOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OptionSearchOneofCase OptionSearchCase {
+      get { return optionSearchCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOptionSearch() {
+      optionSearchCase_ = OptionSearchOneofCase.None;
+      optionSearch_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SearchCustomPartyProto);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SearchCustomPartyProto other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PartyId != other.PartyId) return false;
+      if (OptionSearchCase != other.OptionSearchCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (optionSearchCase_ == OptionSearchOneofCase.PartyId) hash ^= PartyId.GetHashCode();
+      hash ^= (int) optionSearchCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (optionSearchCase_ == OptionSearchOneofCase.PartyId) {
+        output.WriteRawTag(10);
+        output.WriteString(PartyId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (optionSearchCase_ == OptionSearchOneofCase.PartyId) {
+        output.WriteRawTag(10);
+        output.WriteString(PartyId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (optionSearchCase_ == OptionSearchOneofCase.PartyId) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SearchCustomPartyProto other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.OptionSearchCase) {
+        case OptionSearchOneofCase.PartyId:
+          PartyId = other.PartyId;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            PartyId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            PartyId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class SearchCustomPartyResponseProto : pb::IMessage<SearchCustomPartyResponseProto>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SearchCustomPartyResponseProto> _parser = new pb::MessageParser<SearchCustomPartyResponseProto>(() => new SearchCustomPartyResponseProto());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SearchCustomPartyResponseProto> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SearchCustomPartyResponseProto() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SearchCustomPartyResponseProto(SearchCustomPartyResponseProto other) : this() {
+      partyInfo_ = other.partyInfo_ != null ? other.partyInfo_.Clone() : null;
+      unlockTimeStamp_ = other.unlockTimeStamp_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SearchCustomPartyResponseProto Clone() {
+      return new SearchCustomPartyResponseProto(this);
+    }
+
+    /// <summary>Field number for the "partyInfo" field.</summary>
+    public const int PartyInfoFieldNumber = 1;
+    private global::Thetan.Multiplayer.V1.PlayerInfoProto partyInfo_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Multiplayer.V1.PlayerInfoProto PartyInfo {
+      get { return partyInfo_; }
+      set {
+        partyInfo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "unlockTimeStamp" field.</summary>
+    public const int UnlockTimeStampFieldNumber = 2;
+    private long unlockTimeStamp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long UnlockTimeStamp {
+      get { return unlockTimeStamp_; }
+      set {
+        unlockTimeStamp_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SearchCustomPartyResponseProto);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SearchCustomPartyResponseProto other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(PartyInfo, other.PartyInfo)) return false;
+      if (UnlockTimeStamp != other.UnlockTimeStamp) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (partyInfo_ != null) hash ^= PartyInfo.GetHashCode();
+      if (UnlockTimeStamp != 0L) hash ^= UnlockTimeStamp.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (partyInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(PartyInfo);
+      }
+      if (UnlockTimeStamp != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(UnlockTimeStamp);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (partyInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(PartyInfo);
+      }
+      if (UnlockTimeStamp != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(UnlockTimeStamp);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (partyInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PartyInfo);
+      }
+      if (UnlockTimeStamp != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(UnlockTimeStamp);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SearchCustomPartyResponseProto other) {
+      if (other == null) {
+        return;
+      }
+      if (other.partyInfo_ != null) {
+        if (partyInfo_ == null) {
+          PartyInfo = new global::Thetan.Multiplayer.V1.PlayerInfoProto();
+        }
+        PartyInfo.MergeFrom(other.PartyInfo);
+      }
+      if (other.UnlockTimeStamp != 0L) {
+        UnlockTimeStamp = other.UnlockTimeStamp;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (partyInfo_ == null) {
+              PartyInfo = new global::Thetan.Multiplayer.V1.PlayerInfoProto();
+            }
+            input.ReadMessage(PartyInfo);
+            break;
+          }
+          case 16: {
+            UnlockTimeStamp = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (partyInfo_ == null) {
+              PartyInfo = new global::Thetan.Multiplayer.V1.PlayerInfoProto();
+            }
+            input.ReadMessage(PartyInfo);
+            break;
+          }
+          case 16: {
+            UnlockTimeStamp = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class RequestCreateCustomPartyProto : pb::IMessage<RequestCreateCustomPartyProto>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RequestCreateCustomPartyProto> _parser = new pb::MessageParser<RequestCreateCustomPartyProto>(() => new RequestCreateCustomPartyProto());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RequestCreateCustomPartyProto> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestCreateCustomPartyProto() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestCreateCustomPartyProto(RequestCreateCustomPartyProto other) : this() {
+      partyName_ = other.partyName_;
+      password_ = other.password_;
+      inGameTypeMode_ = other.inGameTypeMode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestCreateCustomPartyProto Clone() {
+      return new RequestCreateCustomPartyProto(this);
+    }
+
+    /// <summary>Field number for the "partyName" field.</summary>
+    public const int PartyNameFieldNumber = 1;
+    private string partyName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PartyName {
+      get { return partyName_; }
+      set {
+        partyName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "password" field.</summary>
+    public const int PasswordFieldNumber = 2;
+    private string password_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Password {
+      get { return password_; }
+      set {
+        password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "inGameTypeMode" field.</summary>
+    public const int InGameTypeModeFieldNumber = 3;
+    private global::Thetan.Multiplayer.V1.InGameTypeModeProto inGameTypeMode_ = global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Multiplayer.V1.InGameTypeModeProto InGameTypeMode {
+      get { return inGameTypeMode_; }
+      set {
+        inGameTypeMode_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as RequestCreateCustomPartyProto);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RequestCreateCustomPartyProto other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PartyName != other.PartyName) return false;
+      if (Password != other.Password) return false;
+      if (InGameTypeMode != other.InGameTypeMode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (PartyName.Length != 0) hash ^= PartyName.GetHashCode();
+      if (Password.Length != 0) hash ^= Password.GetHashCode();
+      if (InGameTypeMode != global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode) hash ^= InGameTypeMode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (PartyName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PartyName);
+      }
+      if (Password.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Password);
+      }
+      if (InGameTypeMode != global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) InGameTypeMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (PartyName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PartyName);
+      }
+      if (Password.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Password);
+      }
+      if (InGameTypeMode != global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) InGameTypeMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (PartyName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyName);
+      }
+      if (Password.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
+      }
+      if (InGameTypeMode != global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InGameTypeMode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(RequestCreateCustomPartyProto other) {
+      if (other == null) {
+        return;
+      }
+      if (other.PartyName.Length != 0) {
+        PartyName = other.PartyName;
+      }
+      if (other.Password.Length != 0) {
+        Password = other.Password;
+      }
+      if (other.InGameTypeMode != global::Thetan.Multiplayer.V1.InGameTypeModeProto.NoneInGameTypeMode) {
+        InGameTypeMode = other.InGameTypeMode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            PartyName = input.ReadString();
+            break;
+          }
+          case 18: {
+            Password = input.ReadString();
+            break;
+          }
+          case 24: {
+            InGameTypeMode = (global::Thetan.Multiplayer.V1.InGameTypeModeProto) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            PartyName = input.ReadString();
+            break;
+          }
+          case 18: {
+            Password = input.ReadString();
+            break;
+          }
+          case 24: {
+            InGameTypeMode = (global::Thetan.Multiplayer.V1.InGameTypeModeProto) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class RequestJoinPartyProto : pb::IMessage<RequestJoinPartyProto>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RequestJoinPartyProto> _parser = new pb::MessageParser<RequestJoinPartyProto>(() => new RequestJoinPartyProto());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RequestJoinPartyProto> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestJoinPartyProto() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestJoinPartyProto(RequestJoinPartyProto other) : this() {
+      partyId_ = other.partyId_;
+      password_ = other.password_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestJoinPartyProto Clone() {
+      return new RequestJoinPartyProto(this);
+    }
+
+    /// <summary>Field number for the "partyId" field.</summary>
+    public const int PartyIdFieldNumber = 1;
+    private string partyId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PartyId {
+      get { return partyId_; }
+      set {
+        partyId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "password" field.</summary>
+    public const int PasswordFieldNumber = 2;
+    private string password_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Password {
+      get { return password_; }
+      set {
+        password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as RequestJoinPartyProto);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RequestJoinPartyProto other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PartyId != other.PartyId) return false;
+      if (Password != other.Password) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (PartyId.Length != 0) hash ^= PartyId.GetHashCode();
+      if (Password.Length != 0) hash ^= Password.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (PartyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PartyId);
+      }
+      if (Password.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Password);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (PartyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PartyId);
+      }
+      if (Password.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Password);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (PartyId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyId);
+      }
+      if (Password.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(RequestJoinPartyProto other) {
+      if (other == null) {
+        return;
+      }
+      if (other.PartyId.Length != 0) {
+        PartyId = other.PartyId;
+      }
+      if (other.Password.Length != 0) {
+        Password = other.Password;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            PartyId = input.ReadString();
+            break;
+          }
+          case 18: {
+            Password = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            PartyId = input.ReadString();
+            break;
+          }
+          case 18: {
+            Password = input.ReadString();
             break;
           }
         }
