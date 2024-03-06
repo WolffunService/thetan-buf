@@ -48,9 +48,6 @@ message PartyInfoProto {
   map<string, PlayerInfoProto> members = 4;
   PartyStatus status = 5;
   int64 findmatchVersion = 6;
-  thetan.shared.v1.InGameMode inGameMode = 7;
-  thetan.shared.v1.TRArena arena = 8;
-  string modeID = 9;
 
   // tùy từng game mà cục nay có thể khác nhau
   bytes gameData = 99;
@@ -86,6 +83,7 @@ message PlayerInfoProto {
   // tùy từng game mà cục nay có thể khác nhau
   bytes gameData = 99;
 }
+
 
 enum ChannelChatRoom{
   Lobby = 0;

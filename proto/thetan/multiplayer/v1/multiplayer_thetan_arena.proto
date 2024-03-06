@@ -1,0 +1,129 @@
+syntax = "proto3";
+
+package thetan.multiplayer.v1;
+
+import "thetan/shared/v1/customized.proto";
+import "thetan/multiplayer/v1/common.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/multiplayer/v1;thetan_multiplayer_v1";
+option csharp_namespace = "Thetan.Multiplayer.V1";
+
+
+//PlayerGameInfoProto
+message ThetanArenaPlayerInfoProto {
+  HeroInfo hero = 1;
+  SkillInfo skill1 = 2;
+  SkillInfo skill2 = 3;
+}
+
+
+message PlayerRegionInfoProto {
+  int32 region = 1;
+  int32 ping = 3;
+}
+
+message HeroInfo {
+  int32 heroId = 1;
+  int32 heroSkinId = 2;
+  int32 heroLevel = 3;
+}
+
+message SkillInfo {
+    int32 skillId =1;
+    int32 skillLevel = 2;
+}
+
+message ThetanArenaPartyInfoProto {
+  InGameMode ingamemode = 1;
+  int32 mapId = 2;
+  string partyName =3;
+  int32 region = 4;
+  bool hasPassword = 5;
+  map<string,TeamInfo> teamInfo = 6;
+}
+
+//Trong này để handle UI team, có chứa cả bot + spectator ( team spectator là 254, concept cũ)
+message TeamInfo {
+    int32 teamId = 1;
+    bool isBot = 2;
+}
+
+enum InGameMode {
+  TEAM_COLLECT_STAR = 0;
+  SOLO_SURVIVAL = 1;
+  DUAL_SURVIVAL = 2;
+  TEAM_COLLECT_STAR_4_VS_4 = 3;
+  KING = 5;
+  DEATH_MATCH = 6;
+  DEATH_MATCH_3_VS_3 = 7;
+  FLAG = 8;
+  TOWER = 9;
+  BATTLE_ROYALE = 12;
+  SQUAD_BATTLE_ROYALE = 13;
+  DUO_BATTLE_ROYALE = 14;
+  TRIO_BATTLE_ROAYLE = 15;
+  NONE_MODE = -1;
+}
+
+message ChangeHostProto
+{
+   string newHostId = 2;
+}
+
+message SearchCustomPartyProto {
+  oneof optionSearch {
+    string partyId = 1;
+  }
+}
+enum InGameTypeModeProto {
+  None_InGameTypeMode = 0;
+  TeamMode = 1;
+  SoloMode = 2;
+  DouMode = 3;
+}
+
+message SearchCustomPartyResponseProto {
+  PlayerInfoProto partyInfo = 1;
+  int64 unlockTimeStamp = 2;
+}
+
+message RequestCreatePartyProto {
+  InGameMode ingameMode = 1;
+  int32 mapId = 2;
+}
+
+message RequestCreateCustomPartyProto {
+  RequestCreatePartyProto defaultReq = 1;
+  string partyName = 2;
+  string password = 3;
+  InGameTypeModeProto inGameTypeMode = 4;
+}
+
+message RequestJoinPartyProto {
+  string partyId = 1;
+  string password = 2;
+}
+
+message PartyThetanArenaStorageMessage {
+  string password = 1;//fore custom party
+  InGameTypeModeProto ingameTypeMode = 2;
+}
+
+//Unity cần gì thì nhắn BE update lại proto này
+message ResponseHostFillBotProto {
+  map<string,TeamInfo> teamInfo = 1;
+}
+
+message ResponseHostSwapTeamProto {
+  map<string,TeamInfo> swapInfo = 1;//length =2
+}
+
+message RequestChangeTeamProto {
+  int32 teamId = 1;
+}
+
+message ResponseChangeTeamProto {
+ string memberId = 1;
+ int32 oldTeamId = 2;
+ int32 newTeamId = 3;
+}
