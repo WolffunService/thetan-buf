@@ -113,3 +113,17 @@ message PartyThetanArenaStorageMessage {
 message ResponseHostFillBotProto {
   map<string,TeamInfo> teamInfo = 1;
 }
+
+message ResponseHostSwapTeamProto {
+  map<string,TeamInfo> swapInfo = 1;//length =2
+}
+
+message RequestChangeTeamProto {
+  int32 teamId = 1;
+}
+
+message ResponseChangeTeamProto {
+ string memberId = 1;
+ int32 oldTeamId = 2;
+ int32 newTeamId = 3;
+}
