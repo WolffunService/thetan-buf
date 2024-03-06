@@ -31,7 +31,7 @@ const (
 type BotRivalsServiceClient interface {
 	FetchLobbyBots(ctx context.Context, in *FetchLobbyBotsRequest, opts ...grpc.CallOption) (*FetchLobbyBotsResponse, error)
 	LobbyBotAction(ctx context.Context, in *LobbyBotActionRequest, opts ...grpc.CallOption) (*LobbyBotActionResponse, error)
-	SearchSpecialEventPlayers(ctx context.Context, in *SearchSpecialEventPlayersRequest, opts ...grpc.CallOption) (*SearchSpecialEventPlayersResponse, error)
+	SearchSpecialEventPlayers(ctx context.Context, opts ...grpc.CallOption) (BotRivalsService_SearchSpecialEventPlayersClient, error)
 	SearchIngamePlayers(ctx context.Context, in *SearchIngamePlayersRequest, opts ...grpc.CallOption) (*SearchIngamePlayersResponse, error)
 }
 
@@ -61,13 +61,35 @@ func (c *botRivalsServiceClient) LobbyBotAction(ctx context.Context, in *LobbyBo
 	return out, nil
 }
 
-func (c *botRivalsServiceClient) SearchSpecialEventPlayers(ctx context.Context, in *SearchSpecialEventPlayersRequest, opts ...grpc.CallOption) (*SearchSpecialEventPlayersResponse, error) {
-	out := new(SearchSpecialEventPlayersResponse)
-	err := c.cc.Invoke(ctx, BotRivalsService_SearchSpecialEventPlayers_FullMethodName, in, out, opts...)
+func (c *botRivalsServiceClient) SearchSpecialEventPlayers(ctx context.Context, opts ...grpc.CallOption) (BotRivalsService_SearchSpecialEventPlayersClient, error) {
+	stream, err := c.cc.NewStream(ctx, &BotRivalsService_ServiceDesc.Streams[0], BotRivalsService_SearchSpecialEventPlayers_FullMethodName, opts...)
 	if err != nil {
 		return nil, err
 	}
-	return out, nil
+	x := &botRivalsServiceSearchSpecialEventPlayersClient{stream}
+	return x, nil
+}
+
+type BotRivalsService_SearchSpecialEventPlayersClient interface {
+	Send(*SearchSpecialEventPlayersRequest) error
+	Recv() (*SearchSpecialEventPlayersResponse, error)
+	grpc.ClientStream
+}
+
+type botRivalsServiceSearchSpecialEventPlayersClient struct {
+	grpc.ClientStream
+}
+
+func (x *botRivalsServiceSearchSpecialEventPlayersClient) Send(m *SearchSpecialEventPlayersRequest) error {
+	return x.ClientStream.SendMsg(m)
+}
+
+func (x *botRivalsServiceSearchSpecialEventPlayersClient) Recv() (*SearchSpecialEventPlayersResponse, error) {
+	m := new(SearchSpecialEventPlayersResponse)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
 }
 
 func (c *botRivalsServiceClient) SearchIngamePlayers(ctx context.Context, in *SearchIngamePlayersRequest, opts ...grpc.CallOption) (*SearchIngamePlayersResponse, error) {
@@ -85,7 +107,7 @@ func (c *botRivalsServiceClient) SearchIngamePlayers(ctx context.Context, in *Se
 type BotRivalsServiceServer interface {
 	FetchLobbyBots(context.Context, *FetchLobbyBotsRequest) (*FetchLobbyBotsResponse, error)
 	LobbyBotAction(context.Context, *LobbyBotActionRequest) (*LobbyBotActionResponse, error)
-	SearchSpecialEventPlayers(context.Context, *SearchSpecialEventPlayersRequest) (*SearchSpecialEventPlayersResponse, error)
+	SearchSpecialEventPlayers(BotRivalsService_SearchSpecialEventPlayersServer) error
 	SearchIngamePlayers(context.Context, *SearchIngamePlayersRequest) (*SearchIngamePlayersResponse, error)
 	mustEmbedUnimplementedBotRivalsServiceServer()
 }
@@ -100,8 +122,8 @@ func (UnimplementedBotRivalsServiceServer) FetchLobbyBots(context.Context, *Fetc
 func (UnimplementedBotRivalsServiceServer) LobbyBotAction(context.Context, *LobbyBotActionRequest) (*LobbyBotActionResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method LobbyBotAction not implemented")
 }
-func (UnimplementedBotRivalsServiceServer) SearchSpecialEventPlayers(context.Context, *SearchSpecialEventPlayersRequest) (*SearchSpecialEventPlayersResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method SearchSpecialEventPlayers not implemented")
+func (UnimplementedBotRivalsServiceServer) SearchSpecialEventPlayers(BotRivalsService_SearchSpecialEventPlayersServer) error {
+	return status.Errorf(codes.Unimplemented, "method SearchSpecialEventPlayers not implemented")
 }
 func (UnimplementedBotRivalsServiceServer) SearchIngamePlayers(context.Context, *SearchIngamePlayersRequest) (*SearchIngamePlayersResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SearchIngamePlayers not implemented")
@@ -155,22 +177,30 @@ func _BotRivalsService_LobbyBotAction_Handler(srv interface{}, ctx context.Conte
 	return interceptor(ctx, in, info, handler)
 }
 
-func _BotRivalsService_SearchSpecialEventPlayers_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(SearchSpecialEventPlayersRequest)
-	if err := dec(in); err != nil {
+func _BotRivalsService_SearchSpecialEventPlayers_Handler(srv interface{}, stream grpc.ServerStream) error {
+	return srv.(BotRivalsServiceServer).SearchSpecialEventPlayers(&botRivalsServiceSearchSpecialEventPlayersServer{stream})
+}
+
+type BotRivalsService_SearchSpecialEventPlayersServer interface {
+	Send(*SearchSpecialEventPlayersResponse) error
+	Recv() (*SearchSpecialEventPlayersRequest, error)
+	grpc.ServerStream
+}
+
+type botRivalsServiceSearchSpecialEventPlayersServer struct {
+	grpc.ServerStream
+}
+
+func (x *botRivalsServiceSearchSpecialEventPlayersServer) Send(m *SearchSpecialEventPlayersResponse) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+func (x *botRivalsServiceSearchSpecialEventPlayersServer) Recv() (*SearchSpecialEventPlayersRequest, error) {
+	m := new(SearchSpecialEventPlayersRequest)
+	if err := x.ServerStream.RecvMsg(m); err != nil {
 		return nil, err
 	}
-	if interceptor == nil {
-		return srv.(BotRivalsServiceServer).SearchSpecialEventPlayers(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: BotRivalsService_SearchSpecialEventPlayers_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(BotRivalsServiceServer).SearchSpecialEventPlayers(ctx, req.(*SearchSpecialEventPlayersRequest))
-	}
-	return interceptor(ctx, in, info, handler)
+	return m, nil
 }
 
 func _BotRivalsService_SearchIngamePlayers_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
@@ -207,14 +237,17 @@ var BotRivalsService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _BotRivalsService_LobbyBotAction_Handler,
 		},
 		{
-			MethodName: "SearchSpecialEventPlayers",
-			Handler:    _BotRivalsService_SearchSpecialEventPlayers_Handler,
-		},
-		{
 			MethodName: "SearchIngamePlayers",
 			Handler:    _BotRivalsService_SearchIngamePlayers_Handler,
 		},
 	},
-	Streams:  []grpc.StreamDesc{},
+	Streams: []grpc.StreamDesc{
+		{
+			StreamName:    "SearchSpecialEventPlayers",
+			Handler:       _BotRivalsService_SearchSpecialEventPlayers_Handler,
+			ServerStreams: true,
+			ClientStreams: true,
+		},
+	},
 	Metadata: "thetan/bot/v1/bot_rivals.proto",
 }

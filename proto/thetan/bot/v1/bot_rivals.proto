@@ -10,7 +10,7 @@ service BotRivalsService {
     rpc FetchLobbyBots(FetchLobbyBotsRequest) returns (FetchLobbyBotsResponse) {}
     rpc LobbyBotAction(LobbyBotActionRequest) returns (LobbyBotActionResponse) {}
 
-    rpc SearchSpecialEventPlayers(SearchSpecialEventPlayersRequest) returns (SearchSpecialEventPlayersResponse) {}
+    rpc SearchSpecialEventPlayers(stream SearchSpecialEventPlayersRequest) returns (stream SearchSpecialEventPlayersResponse) {}
     rpc SearchIngamePlayers(SearchIngamePlayersRequest) returns (SearchIngamePlayersResponse) {}
 }
 
@@ -114,23 +114,27 @@ message LobbyBotActionResponse{
 
 message SearchSpecialEventPlayersRequest {
     int32 amount = 1;
-    repeated string countryCodes = 2;
-    int32 rank = 3;
+    repeated TownInfo townInfos = 2;
+    int32 minRank = 3;
     int64 usageDurationInSeconds = 4;
 }
 
+message TownInfo {
+    string id = 1;
+    string countryCode = 2;
+}
+
 message SearchSpecialEventPlayersResponse {
-    repeated SpecialEventPlayer players = 1;
+    repeated SpecialEventPlayer players = 2;
 }
 
 message SpecialEventPlayer {
-    string playerID = 1;
+    string id = 1;
 }
 
 message SearchIngamePlayersRequest {
     int32 amount = 1;
-    int32 region = 2;
-    int32 rank = 3;
+    repeated string countryCodes = 2;
 }
 
 message SearchIngamePlayersResponse {
@@ -138,8 +142,7 @@ message SearchIngamePlayersResponse {
 }
 
 message IngamePlayer {
-    string playerID = 1;
-    string playerName = 2;
-    int32 rank = 3;
-    int32 trophy = 4;
+    string id = 1;
+    string name = 2;
+    string countryCode = 3;
 }

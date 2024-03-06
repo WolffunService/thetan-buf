@@ -80,7 +80,7 @@ namespace Thetan.Rivals.V1 {
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest, global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse> __Method_SearchSpecialEventPlayers = new grpc::Method<global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest, global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse>(
-        grpc::MethodType.Unary,
+        grpc::MethodType.DuplexStreaming,
         __ServiceName,
         "SearchSpecialEventPlayers",
         __Marshaller_thetan_rivals_v1_SearchSpecialEventPlayersRequest,
@@ -117,7 +117,7 @@ namespace Thetan.Rivals.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse> SearchSpecialEventPlayers(global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task SearchSpecialEventPlayers(grpc::IAsyncStreamReader<global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest> requestStream, grpc::IServerStreamWriter<global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -198,24 +198,14 @@ namespace Thetan.Rivals.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_LobbyBotAction, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse SearchSpecialEventPlayers(global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncDuplexStreamingCall<global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest, global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse> SearchSpecialEventPlayers(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return SearchSpecialEventPlayers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return SearchSpecialEventPlayers(new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse SearchSpecialEventPlayers(global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncDuplexStreamingCall<global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest, global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse> SearchSpecialEventPlayers(grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_SearchSpecialEventPlayers, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse> SearchSpecialEventPlayersAsync(global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return SearchSpecialEventPlayersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse> SearchSpecialEventPlayersAsync(global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_SearchSpecialEventPlayers, null, options, request);
+        return CallInvoker.AsyncDuplexStreamingCall(__Method_SearchSpecialEventPlayers, null, options);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Thetan.Rivals.V1.SearchIngamePlayersResponse SearchIngamePlayers(global::Thetan.Rivals.V1.SearchIngamePlayersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -266,7 +256,7 @@ namespace Thetan.Rivals.V1 {
     {
       serviceBinder.AddMethod(__Method_FetchLobbyBots, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.FetchLobbyBotsRequest, global::Thetan.Rivals.V1.FetchLobbyBotsResponse>(serviceImpl.FetchLobbyBots));
       serviceBinder.AddMethod(__Method_LobbyBotAction, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.LobbyBotActionRequest, global::Thetan.Rivals.V1.LobbyBotActionResponse>(serviceImpl.LobbyBotAction));
-      serviceBinder.AddMethod(__Method_SearchSpecialEventPlayers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest, global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse>(serviceImpl.SearchSpecialEventPlayers));
+      serviceBinder.AddMethod(__Method_SearchSpecialEventPlayers, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::Thetan.Rivals.V1.SearchSpecialEventPlayersRequest, global::Thetan.Rivals.V1.SearchSpecialEventPlayersResponse>(serviceImpl.SearchSpecialEventPlayers));
       serviceBinder.AddMethod(__Method_SearchIngamePlayers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.SearchIngamePlayersRequest, global::Thetan.Rivals.V1.SearchIngamePlayersResponse>(serviceImpl.SearchIngamePlayers));
     }
 
