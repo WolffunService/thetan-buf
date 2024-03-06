@@ -42,8 +42,9 @@ message ThetanArenaPartyInfoProto {
   map<string,TeamInfo> teamInfo = 6;
 }
 
+//Trong này để handle UI team, có chứa cả bot + spectator ( team spectator là 254, concept cũ)
 message TeamInfo {
-    int32 teamId =1;
+    int32 teamId = 1;
     bool isBot = 2;
 }
 
@@ -106,4 +107,9 @@ message RequestJoinPartyProto {
 message PartyThetanArenaStorageMessage {
   string password = 1;//fore custom party
   InGameTypeModeProto ingameTypeMode = 2;
+}
+
+//Unity cần gì thì nhắn BE update lại proto này
+message ResponseHostFillBotProto {
+  map<string,TeamInfo> teamInfo = 1;
 }

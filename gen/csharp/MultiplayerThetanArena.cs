@@ -66,21 +66,25 @@ namespace Thetan.Multiplayer.V1 {
             "kAEKHlBhcnR5VGhldGFuQXJlbmFTdG9yYWdlTWVzc2FnZRIaCghwYXNzd29y",
             "ZBgBIAEoCVIIcGFzc3dvcmQSUgoOaW5nYW1lVHlwZU1vZGUYAiABKA4yKi50",
             "aGV0YW4ubXVsdGlwbGF5ZXIudjEuSW5HYW1lVHlwZU1vZGVQcm90b1IOaW5n",
-            "YW1lVHlwZU1vZGUqogIKCkluR2FtZU1vZGUSFQoRVEVBTV9DT0xMRUNUX1NU",
-            "QVIQABIRCg1TT0xPX1NVUlZJVkFMEAESEQoNRFVBTF9TVVJWSVZBTBACEhwK",
-            "GFRFQU1fQ09MTEVDVF9TVEFSXzRfVlNfNBADEggKBEtJTkcQBRIPCgtERUFU",
-            "SF9NQVRDSBAGEhYKEkRFQVRIX01BVENIXzNfVlNfMxAHEggKBEZMQUcQCBIJ",
-            "CgVUT1dFUhAJEhEKDUJBVFRMRV9ST1lBTEUQDBIXChNTUVVBRF9CQVRUTEVf",
-            "Uk9ZQUxFEA0SFQoRRFVPX0JBVFRMRV9ST1lBTEUQDhIWChJUUklPX0JBVFRM",
-            "RV9ST0FZTEUQDxIWCglOT05FX01PREUQ////////////ASpXChNJbkdhbWVU",
-            "eXBlTW9kZVByb3RvEhcKE05vbmVfSW5HYW1lVHlwZU1vZGUQABIMCghUZWFt",
-            "TW9kZRABEgwKCFNvbG9Nb2RlEAISCwoHRG91TW9kZRADQu0BChljb20udGhl",
-            "dGFuLm11bHRpcGxheWVyLnYxQhtNdWx0aXBsYXllclRoZXRhbkFyZW5hUHJv",
-            "dG9QAVo9dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL211bHRpcGxheWVyL3Yx",
-            "O3RoZXRhbl9tdWx0aXBsYXllcl92MaICA1RNWKoCFVRoZXRhbi5NdWx0aXBs",
-            "YXllci5WMcoCFVRoZXRhblxNdWx0aXBsYXllclxWMeICIVRoZXRhblxNdWx0",
-            "aXBsYXllclxWMVxHUEJNZXRhZGF0YeoCF1RoZXRhbjo6TXVsdGlwbGF5ZXI6",
-            "OlYxYgZwcm90bzM="));
+            "YW1lVHlwZU1vZGUi0wEKGFJlc3BvbnNlSG9zdEZpbGxCb3RQcm90bxJZCgh0",
+            "ZWFtSW5mbxgBIAMoCzI9LnRoZXRhbi5tdWx0aXBsYXllci52MS5SZXNwb25z",
+            "ZUhvc3RGaWxsQm90UHJvdG8uVGVhbUluZm9FbnRyeVIIdGVhbUluZm8aXAoN",
+            "VGVhbUluZm9FbnRyeRIQCgNrZXkYASABKAlSA2tleRI1CgV2YWx1ZRgCIAEo",
+            "CzIfLnRoZXRhbi5tdWx0aXBsYXllci52MS5UZWFtSW5mb1IFdmFsdWU6AjgB",
+            "KqICCgpJbkdhbWVNb2RlEhUKEVRFQU1fQ09MTEVDVF9TVEFSEAASEQoNU09M",
+            "T19TVVJWSVZBTBABEhEKDURVQUxfU1VSVklWQUwQAhIcChhURUFNX0NPTExF",
+            "Q1RfU1RBUl80X1ZTXzQQAxIICgRLSU5HEAUSDwoLREVBVEhfTUFUQ0gQBhIW",
+            "ChJERUFUSF9NQVRDSF8zX1ZTXzMQBxIICgRGTEFHEAgSCQoFVE9XRVIQCRIR",
+            "Cg1CQVRUTEVfUk9ZQUxFEAwSFwoTU1FVQURfQkFUVExFX1JPWUFMRRANEhUK",
+            "EURVT19CQVRUTEVfUk9ZQUxFEA4SFgoSVFJJT19CQVRUTEVfUk9BWUxFEA8S",
+            "FgoJTk9ORV9NT0RFEP///////////wEqVwoTSW5HYW1lVHlwZU1vZGVQcm90",
+            "bxIXChNOb25lX0luR2FtZVR5cGVNb2RlEAASDAoIVGVhbU1vZGUQARIMCghT",
+            "b2xvTW9kZRACEgsKB0RvdU1vZGUQA0LtAQoZY29tLnRoZXRhbi5tdWx0aXBs",
+            "YXllci52MUIbTXVsdGlwbGF5ZXJUaGV0YW5BcmVuYVByb3RvUAFaPXRoZXRh",
+            "bi1idWYvZ2VuL2dvL3RoZXRhbi9tdWx0aXBsYXllci92MTt0aGV0YW5fbXVs",
+            "dGlwbGF5ZXJfdjGiAgNUTViqAhVUaGV0YW4uTXVsdGlwbGF5ZXIuVjHKAhVU",
+            "aGV0YW5cTXVsdGlwbGF5ZXJcVjHiAiFUaGV0YW5cTXVsdGlwbGF5ZXJcVjFc",
+            "R1BCTWV0YWRhdGHqAhdUaGV0YW46Ok11bHRpcGxheWVyOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.CustomizedReflection.Descriptor, global::Thetan.Multiplayer.V1.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.InGameMode), typeof(global::Thetan.Multiplayer.V1.InGameTypeModeProto), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -96,7 +100,8 @@ namespace Thetan.Multiplayer.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestCreatePartyProto), global::Thetan.Multiplayer.V1.RequestCreatePartyProto.Parser, new[]{ "IngameMode", "MapId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestCreateCustomPartyProto), global::Thetan.Multiplayer.V1.RequestCreateCustomPartyProto.Parser, new[]{ "DefaultReq", "PartyName", "Password", "InGameTypeMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestJoinPartyProto), global::Thetan.Multiplayer.V1.RequestJoinPartyProto.Parser, new[]{ "PartyId", "Password" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PartyThetanArenaStorageMessage), global::Thetan.Multiplayer.V1.PartyThetanArenaStorageMessage.Parser, new[]{ "Password", "IngameTypeMode" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PartyThetanArenaStorageMessage), global::Thetan.Multiplayer.V1.PartyThetanArenaStorageMessage.Parser, new[]{ "Password", "IngameTypeMode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ResponseHostFillBotProto), global::Thetan.Multiplayer.V1.ResponseHostFillBotProto.Parser, new[]{ "TeamInfo" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -1501,6 +1506,9 @@ namespace Thetan.Multiplayer.V1 {
 
   }
 
+  /// <summary>
+  ///Trong này để handle UI team, có chứa cả bot + spectator ( team spectator là 254, concept cũ)
+  /// </summary>
   public sealed partial class TeamInfo : pb::IMessage<TeamInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3351,6 +3359,187 @@ namespace Thetan.Multiplayer.V1 {
           }
           case 16: {
             IngameTypeMode = (global::Thetan.Multiplayer.V1.InGameTypeModeProto) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///Unity cần gì thì nhắn BE update lại proto này
+  /// </summary>
+  public sealed partial class ResponseHostFillBotProto : pb::IMessage<ResponseHostFillBotProto>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ResponseHostFillBotProto> _parser = new pb::MessageParser<ResponseHostFillBotProto>(() => new ResponseHostFillBotProto());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ResponseHostFillBotProto> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.MultiplayerThetanArenaReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ResponseHostFillBotProto() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ResponseHostFillBotProto(ResponseHostFillBotProto other) : this() {
+      teamInfo_ = other.teamInfo_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ResponseHostFillBotProto Clone() {
+      return new ResponseHostFillBotProto(this);
+    }
+
+    /// <summary>Field number for the "teamInfo" field.</summary>
+    public const int TeamInfoFieldNumber = 1;
+    private static readonly pbc::MapField<string, global::Thetan.Multiplayer.V1.TeamInfo>.Codec _map_teamInfo_codec
+        = new pbc::MapField<string, global::Thetan.Multiplayer.V1.TeamInfo>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Thetan.Multiplayer.V1.TeamInfo.Parser), 10);
+    private readonly pbc::MapField<string, global::Thetan.Multiplayer.V1.TeamInfo> teamInfo_ = new pbc::MapField<string, global::Thetan.Multiplayer.V1.TeamInfo>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, global::Thetan.Multiplayer.V1.TeamInfo> TeamInfo {
+      get { return teamInfo_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ResponseHostFillBotProto);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ResponseHostFillBotProto other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!TeamInfo.Equals(other.TeamInfo)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= TeamInfo.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      teamInfo_.WriteTo(output, _map_teamInfo_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      teamInfo_.WriteTo(ref output, _map_teamInfo_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += teamInfo_.CalculateSize(_map_teamInfo_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ResponseHostFillBotProto other) {
+      if (other == null) {
+        return;
+      }
+      teamInfo_.Add(other.teamInfo_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            teamInfo_.AddEntriesFrom(input, _map_teamInfo_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            teamInfo_.AddEntriesFrom(ref input, _map_teamInfo_codec);
             break;
           }
         }
