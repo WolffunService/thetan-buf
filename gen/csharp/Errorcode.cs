@@ -26,15 +26,16 @@ namespace Thetan.Multiplayer.V1 {
           string.Concat(
             "CiV0aGV0YW4vbXVsdGlwbGF5ZXIvdjEvZXJyb3Jjb2RlLnByb3RvEhV0aGV0",
             "YW4ubXVsdGlwbGF5ZXIudjEqKAoNQ2hhdEVycm9yQ29kZRIICgROb25lEAAS",
-            "DQoJVGltZUxpbWl0EAEqkgEKDlBhcnR5RXJyb3JDb2RlEgsKB1Vua25vd24Q",
+            "DQoJVGltZUxpbWl0EAEqrQEKDlBhcnR5RXJyb3JDb2RlEgsKB1Vua25vd24Q",
             "ABIaCg1JbnRlcm5hbEVycm9yEJ3//////////wESDwoLUGFydHlJc0Z1bGwQ",
-            "ARIHCgNEbmQQAhIPCgtCbG9ja0ludml0ZRADEhAKDEZpbmRpbmdNYXRjaBAE",
-            "EhoKFkRpZmZlcmVudFZlcnNpb25DbGllbnQQBULgAQoZY29tLnRoZXRhbi5t",
-            "dWx0aXBsYXllci52MUIORXJyb3Jjb2RlUHJvdG9QAVo9dGhldGFuLWJ1Zi9n",
-            "ZW4vZ28vdGhldGFuL211bHRpcGxheWVyL3YxO3RoZXRhbl9tdWx0aXBsYXll",
-            "cl92MaICA1RNWKoCFVRoZXRhbi5NdWx0aXBsYXllci5WMcoCFVRoZXRhblxN",
-            "dWx0aXBsYXllclxWMeICIVRoZXRhblxNdWx0aXBsYXllclxWMVxHUEJNZXRh",
-            "ZGF0YeoCF1RoZXRhbjo6TXVsdGlwbGF5ZXI6OlYxYgZwcm90bzM="));
+            "ARIHCgNEbmQQAhIPCgtCbG9ja0ludml0ZRADEhcKE1BhcnR5QWxyZWFkeVN0",
+            "YXJ0ZWQQBBIaChZEaWZmZXJlbnRWZXJzaW9uQ2xpZW50EAUSEgoOUGFydHlJ",
+            "REludmFsaWQQBkLgAQoZY29tLnRoZXRhbi5tdWx0aXBsYXllci52MUIORXJy",
+            "b3Jjb2RlUHJvdG9QAVo9dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL211bHRp",
+            "cGxheWVyL3YxO3RoZXRhbl9tdWx0aXBsYXllcl92MaICA1RNWKoCFVRoZXRh",
+            "bi5NdWx0aXBsYXllci5WMcoCFVRoZXRhblxNdWx0aXBsYXllclxWMeICIVRo",
+            "ZXRhblxNdWx0aXBsYXllclxWMVxHUEJNZXRhZGF0YeoCF1RoZXRhbjo6TXVs",
+            "dGlwbGF5ZXI6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.ChatErrorCode), typeof(global::Thetan.Multiplayer.V1.PartyErrorCode), }, null, null));
@@ -57,11 +58,12 @@ namespace Thetan.Multiplayer.V1 {
     /// <summary>
     /// Join party when party is finding match
     /// </summary>
-    [pbr::OriginalName("FindingMatch")] FindingMatch = 4,
+    [pbr::OriginalName("PartyAlreadyStarted")] PartyAlreadyStarted = 4,
     /// <summary>
     ///findmatch version
     /// </summary>
     [pbr::OriginalName("DifferentVersionClient")] DifferentVersionClient = 5,
+    [pbr::OriginalName("PartyIDInvalid")] PartyIdinvalid = 6,
   }
 
   #endregion

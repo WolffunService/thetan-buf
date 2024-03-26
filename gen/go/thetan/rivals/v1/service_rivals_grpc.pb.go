@@ -53,6 +53,7 @@ const (
 	ThetanRivalService_GetContestDesigns_FullMethodName             = "/thetan.rivals.v1.ThetanRivalService/GetContestDesigns"
 	ThetanRivalService_CachePlayedMap_FullMethodName                = "/thetan.rivals.v1.ThetanRivalService/CachePlayedMap"
 	ThetanRivalService_GetMetricConfig_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/GetMetricConfig"
+	ThetanRivalService_CreateInventory_FullMethodName               = "/thetan.rivals.v1.ThetanRivalService/CreateInventory"
 )
 
 // ThetanRivalServiceClient is the client API for ThetanRivalService service.
@@ -107,6 +108,7 @@ type ThetanRivalServiceClient interface {
 	CachePlayedMap(ctx context.Context, in *CachePlayedMapRequest, opts ...grpc.CallOption) (*CachePlayedMapResponse, error)
 	// Metric
 	GetMetricConfig(ctx context.Context, in *GetMetricConfigRequest, opts ...grpc.CallOption) (*GetMetricConfigResponse, error)
+	CreateInventory(ctx context.Context, in *CreateInventoryRequest, opts ...grpc.CallOption) (*CreateInventoryResponse, error)
 }
 
 type thetanRivalServiceClient struct {
@@ -417,6 +419,15 @@ func (c *thetanRivalServiceClient) GetMetricConfig(ctx context.Context, in *GetM
 	return out, nil
 }
 
+func (c *thetanRivalServiceClient) CreateInventory(ctx context.Context, in *CreateInventoryRequest, opts ...grpc.CallOption) (*CreateInventoryResponse, error) {
+	out := new(CreateInventoryResponse)
+	err := c.cc.Invoke(ctx, ThetanRivalService_CreateInventory_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanRivalServiceServer is the server API for ThetanRivalService service.
 // All implementations must embed UnimplementedThetanRivalServiceServer
 // for forward compatibility
@@ -469,6 +480,7 @@ type ThetanRivalServiceServer interface {
 	CachePlayedMap(context.Context, *CachePlayedMapRequest) (*CachePlayedMapResponse, error)
 	// Metric
 	GetMetricConfig(context.Context, *GetMetricConfigRequest) (*GetMetricConfigResponse, error)
+	CreateInventory(context.Context, *CreateInventoryRequest) (*CreateInventoryResponse, error)
 	mustEmbedUnimplementedThetanRivalServiceServer()
 }
 
@@ -574,6 +586,9 @@ func (UnimplementedThetanRivalServiceServer) CachePlayedMap(context.Context, *Ca
 }
 func (UnimplementedThetanRivalServiceServer) GetMetricConfig(context.Context, *GetMetricConfigRequest) (*GetMetricConfigResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetMetricConfig not implemented")
+}
+func (UnimplementedThetanRivalServiceServer) CreateInventory(context.Context, *CreateInventoryRequest) (*CreateInventoryResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateInventory not implemented")
 }
 func (UnimplementedThetanRivalServiceServer) mustEmbedUnimplementedThetanRivalServiceServer() {}
 
@@ -1182,6 +1197,24 @@ func _ThetanRivalService_GetMetricConfig_Handler(srv interface{}, ctx context.Co
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanRivalService_CreateInventory_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CreateInventoryRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanRivalServiceServer).CreateInventory(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanRivalService_CreateInventory_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanRivalServiceServer).CreateInventory(ctx, req.(*CreateInventoryRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanRivalService_ServiceDesc is the grpc.ServiceDesc for ThetanRivalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -1320,6 +1353,10 @@ var ThetanRivalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetMetricConfig",
 			Handler:    _ThetanRivalService_GetMetricConfig_Handler,
+		},
+		{
+			MethodName: "CreateInventory",
+			Handler:    _ThetanRivalService_CreateInventory_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

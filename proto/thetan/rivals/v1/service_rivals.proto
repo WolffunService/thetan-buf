@@ -76,6 +76,21 @@ service ThetanRivalService {
 
   // Metric
   rpc GetMetricConfig(GetMetricConfigRequest) returns (GetMetricConfigResponse) {}
+
+  rpc CreateInventory(CreateInventoryRequest) returns (CreateInventoryResponse) {}
+}
+
+message CreateInventoryRequest {
+  string id = 1;
+  string userID = 2;
+  int32 inventoryKind = 3;
+  int32 inventoryType = 4;
+  int32 amount = 5;
+  int32 changeSource = 6;
+}
+
+message CreateInventoryResponse {
+
 }
 
 message GetMetricConfigRequest {
