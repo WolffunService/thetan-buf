@@ -27,7 +27,7 @@ namespace Thetan.Shared.V1 {
             "CiB0aGV0YW4vc2hhcmVkL3YxL2dhbWVfaW5mby5wcm90bxIQdGhldGFuLnNo",
             "YXJlZC52MSpSCghHYW1lTW9kZRIKCgZSQU5LRUQQABIRCg1TUEVDSUFMX0VW",
             "RU5UEAESDwoLQ1VTVE9NX01PREUQAhIWChJUSEVUQU5fUklWQUxTX01PREUQ",
-            "AyrKAwoKSW5HYW1lTW9kZRIVChFURUFNX0NPTExFQ1RfU1RBUhAAEhEKDVNP",
+            "AyrpAwoKSW5HYW1lTW9kZRIVChFURUFNX0NPTExFQ1RfU1RBUhAAEhEKDVNP",
             "TE9fU1VSVklWQUwQARIRCg1EVUFMX1NVUlZJVkFMEAISHAoYVEVBTV9DT0xM",
             "RUNUX1NUQVJfNF9WU180EAMSCAoES0lORxAFEg8KC0RFQVRIX01BVENIEAYS",
             "FgoSREVBVEhfTUFUQ0hfM19WU18zEAcSCAoERkxBRxAIEgkKBVRPV0VSEAkS",
@@ -36,14 +36,15 @@ namespace Thetan.Shared.V1 {
             "EhEKDVRIRVRBTl9SSVZBTFMQFBIcChhUSEVUQU5fUklWQUxTX1RPVVJOQU1F",
             "TlQQFRIcChhUSEVUQU5fUklWQUxTX1FVSUNLX01PREUQFhIaChZUSEVUQU5f",
             "UklWQUxTX0RVT19NT0RFEBcSHwobVEhFVEFOX1JJVkFMU19DTElNQl9VUF9N",
-            "T0RFEBgSGgoWVEhFVEFOX1JJVkFMU19EVU9fRlVMTBAZEhYKCU5PTkVfTU9E",
-            "RRD///////////8BKlAKB1RSQXJlbmESCAoETk9ORRAAEgoKBk5PVklDRRAB",
-            "EgsKB0ZJR0hURVIQAhILCgdXQVJSSU9SEAMSCgoGTUFTVEVSEAQSCQoFRUxJ",
-            "VEUQBUK8AQoUY29tLnRoZXRhbi5zaGFyZWQudjFCDUdhbWVJbmZvUHJvdG9Q",
-            "AVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3NoYXJlZC92MTt0aGV0YW5f",
-            "c2hhcmVkX3YxogIDVFNYqgIQVGhldGFuLlNoYXJlZC5WMcoCEFRoZXRhblxT",
-            "aGFyZWRcVjHiAhxUaGV0YW5cU2hhcmVkXFYxXEdQQk1ldGFkYXRh6gISVGhl",
-            "dGFuOjpTaGFyZWQ6OlYxYgZwcm90bzM="));
+            "T0RFEBgSGgoWVEhFVEFOX1JJVkFMU19EVU9fRlVMTBAZEh0KGVRIRVRBTl9S",
+            "SVZBTFNfREVBVEhfTUFUQ0gQGhIWCglOT05FX01PREUQ////////////ASpQ",
+            "CgdUUkFyZW5hEggKBE5PTkUQABIKCgZOT1ZJQ0UQARILCgdGSUdIVEVSEAIS",
+            "CwoHV0FSUklPUhADEgoKBk1BU1RFUhAEEgkKBUVMSVRFEAVCvAEKFGNvbS50",
+            "aGV0YW4uc2hhcmVkLnYxQg1HYW1lSW5mb1Byb3RvUAFaM3RoZXRhbi1idWYv",
+            "Z2VuL2dvL3RoZXRhbi9zaGFyZWQvdjE7dGhldGFuX3NoYXJlZF92MaICA1RT",
+            "WKoCEFRoZXRhbi5TaGFyZWQuVjHKAhBUaGV0YW5cU2hhcmVkXFYx4gIcVGhl",
+            "dGFuXFNoYXJlZFxWMVxHUEJNZXRhZGF0YeoCElRoZXRhbjo6U2hhcmVkOjpW",
+            "MWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Shared.V1.GameMode), typeof(global::Thetan.Shared.V1.InGameMode), typeof(global::Thetan.Shared.V1.TRArena), }, null, null));
@@ -79,6 +80,7 @@ namespace Thetan.Shared.V1 {
     [pbr::OriginalName("THETAN_RIVALS_DUO_MODE")] ThetanRivalsDuoMode = 23,
     [pbr::OriginalName("THETAN_RIVALS_CLIMB_UP_MODE")] ThetanRivalsClimbUpMode = 24,
     [pbr::OriginalName("THETAN_RIVALS_DUO_FULL")] ThetanRivalsDuoFull = 25,
+    [pbr::OriginalName("THETAN_RIVALS_DEATH_MATCH")] ThetanRivalsDeathMatch = 26,
     [pbr::OriginalName("NONE_MODE")] NoneMode = -1,
   }
 
