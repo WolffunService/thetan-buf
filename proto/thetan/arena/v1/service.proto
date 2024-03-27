@@ -9,8 +9,17 @@ import "google/protobuf/empty.proto";
 
 service ThetanArenaService {
     rpc DisableEarningTHCHero(DisableEarningTHCHeroRequest) returns (google.protobuf.Empty);
+    rpc CountAvailableEarnNFTHero(CountRequest) returns (CountResponse);
 }
 
 message DisableEarningTHCHeroRequest {
     string heroID = 1;
+}
+
+message CountRequest {
+    string userID = 1;
+}
+
+message CountResponse {
+    int64 total = 1;
 }
