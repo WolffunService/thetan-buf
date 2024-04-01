@@ -20,7 +20,8 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ThetanArenaService_DisableEarningTHCHero_FullMethodName = "/thetan.arena.v1.ThetanArenaService/DisableEarningTHCHero"
+	ThetanArenaService_DisableEarningTHCHero_FullMethodName     = "/thetan.arena.v1.ThetanArenaService/DisableEarningTHCHero"
+	ThetanArenaService_CountAvailableEarnNFTHero_FullMethodName = "/thetan.arena.v1.ThetanArenaService/CountAvailableEarnNFTHero"
 )
 
 // ThetanArenaServiceClient is the client API for ThetanArenaService service.
@@ -28,6 +29,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ThetanArenaServiceClient interface {
 	DisableEarningTHCHero(ctx context.Context, in *DisableEarningTHCHeroRequest, opts ...grpc.CallOption) (*emptypb.Empty, error)
+	CountAvailableEarnNFTHero(ctx context.Context, in *CountRequest, opts ...grpc.CallOption) (*CountResponse, error)
 }
 
 type thetanArenaServiceClient struct {
@@ -47,11 +49,21 @@ func (c *thetanArenaServiceClient) DisableEarningTHCHero(ctx context.Context, in
 	return out, nil
 }
 
+func (c *thetanArenaServiceClient) CountAvailableEarnNFTHero(ctx context.Context, in *CountRequest, opts ...grpc.CallOption) (*CountResponse, error) {
+	out := new(CountResponse)
+	err := c.cc.Invoke(ctx, ThetanArenaService_CountAvailableEarnNFTHero_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanArenaServiceServer is the server API for ThetanArenaService service.
 // All implementations must embed UnimplementedThetanArenaServiceServer
 // for forward compatibility
 type ThetanArenaServiceServer interface {
 	DisableEarningTHCHero(context.Context, *DisableEarningTHCHeroRequest) (*emptypb.Empty, error)
+	CountAvailableEarnNFTHero(context.Context, *CountRequest) (*CountResponse, error)
 	mustEmbedUnimplementedThetanArenaServiceServer()
 }
 
@@ -61,6 +73,9 @@ type UnimplementedThetanArenaServiceServer struct {
 
 func (UnimplementedThetanArenaServiceServer) DisableEarningTHCHero(context.Context, *DisableEarningTHCHeroRequest) (*emptypb.Empty, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method DisableEarningTHCHero not implemented")
+}
+func (UnimplementedThetanArenaServiceServer) CountAvailableEarnNFTHero(context.Context, *CountRequest) (*CountResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CountAvailableEarnNFTHero not implemented")
 }
 func (UnimplementedThetanArenaServiceServer) mustEmbedUnimplementedThetanArenaServiceServer() {}
 
@@ -93,6 +108,24 @@ func _ThetanArenaService_DisableEarningTHCHero_Handler(srv interface{}, ctx cont
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanArenaService_CountAvailableEarnNFTHero_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CountRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanArenaServiceServer).CountAvailableEarnNFTHero(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanArenaService_CountAvailableEarnNFTHero_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanArenaServiceServer).CountAvailableEarnNFTHero(ctx, req.(*CountRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanArenaService_ServiceDesc is the grpc.ServiceDesc for ThetanArenaService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -103,6 +136,10 @@ var ThetanArenaService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "DisableEarningTHCHero",
 			Handler:    _ThetanArenaService_DisableEarningTHCHero_Handler,
+		},
+		{
+			MethodName: "CountAvailableEarnNFTHero",
+			Handler:    _ThetanArenaService_CountAvailableEarnNFTHero_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
