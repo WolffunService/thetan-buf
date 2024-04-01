@@ -49,6 +49,10 @@ namespace Thetan.Arena.V1 {
     static readonly grpc::Marshaller<global::Thetan.Arena.V1.DisableEarningTHCHeroRequest> __Marshaller_thetan_arena_v1_DisableEarningTHCHeroRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Arena.V1.DisableEarningTHCHeroRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Arena.V1.CountRequest> __Marshaller_thetan_arena_v1_CountRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Arena.V1.CountRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Arena.V1.CountResponse> __Marshaller_thetan_arena_v1_CountResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Arena.V1.CountResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Arena.V1.DisableEarningTHCHeroRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_DisableEarningTHCHero = new grpc::Method<global::Thetan.Arena.V1.DisableEarningTHCHeroRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -57,6 +61,14 @@ namespace Thetan.Arena.V1 {
         "DisableEarningTHCHero",
         __Marshaller_thetan_arena_v1_DisableEarningTHCHeroRequest,
         __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Arena.V1.CountRequest, global::Thetan.Arena.V1.CountResponse> __Method_CountAvailableEarnNFTHero = new grpc::Method<global::Thetan.Arena.V1.CountRequest, global::Thetan.Arena.V1.CountResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CountAvailableEarnNFTHero",
+        __Marshaller_thetan_arena_v1_CountRequest,
+        __Marshaller_thetan_arena_v1_CountResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -70,6 +82,12 @@ namespace Thetan.Arena.V1 {
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> DisableEarningTHCHero(global::Thetan.Arena.V1.DisableEarningTHCHeroRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Arena.V1.CountResponse> CountAvailableEarnNFTHero(global::Thetan.Arena.V1.CountRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -123,6 +141,26 @@ namespace Thetan.Arena.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DisableEarningTHCHero, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Arena.V1.CountResponse CountAvailableEarnNFTHero(global::Thetan.Arena.V1.CountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CountAvailableEarnNFTHero(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Arena.V1.CountResponse CountAvailableEarnNFTHero(global::Thetan.Arena.V1.CountRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CountAvailableEarnNFTHero, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Arena.V1.CountResponse> CountAvailableEarnNFTHeroAsync(global::Thetan.Arena.V1.CountRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CountAvailableEarnNFTHeroAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Arena.V1.CountResponse> CountAvailableEarnNFTHeroAsync(global::Thetan.Arena.V1.CountRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CountAvailableEarnNFTHero, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ThetanArenaServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -137,7 +175,8 @@ namespace Thetan.Arena.V1 {
     public static grpc::ServerServiceDefinition BindService(ThetanArenaServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_DisableEarningTHCHero, serviceImpl.DisableEarningTHCHero).Build();
+          .AddMethod(__Method_DisableEarningTHCHero, serviceImpl.DisableEarningTHCHero)
+          .AddMethod(__Method_CountAvailableEarnNFTHero, serviceImpl.CountAvailableEarnNFTHero).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -148,6 +187,7 @@ namespace Thetan.Arena.V1 {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanArenaServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_DisableEarningTHCHero, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Arena.V1.DisableEarningTHCHeroRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.DisableEarningTHCHero));
+      serviceBinder.AddMethod(__Method_CountAvailableEarnNFTHero, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Arena.V1.CountRequest, global::Thetan.Arena.V1.CountResponse>(serviceImpl.CountAvailableEarnNFTHero));
     }
 
   }
