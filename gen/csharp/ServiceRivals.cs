@@ -32,7 +32,7 @@ namespace Thetan.Rivals.V1 {
             "E3RhZ2dlci90YWdnZXIucHJvdG8iyAEKFkNyZWF0ZUludmVudG9yeVJlcXVl",
             "c3QSDgoCaWQYASABKAlSAmlkEhYKBnVzZXJJRBgCIAEoCVIGdXNlcklEEiQK",
             "DWludmVudG9yeUtpbmQYAyABKAVSDWludmVudG9yeUtpbmQSJAoNaW52ZW50",
-            "b3J5VHlwZRgEIAEoBVINaW52ZW50b3J5VHlwZRIWCgZhbW91bnQYBSABKAVS",
+            "b3J5VHlwZRgEIAEoBVINaW52ZW50b3J5VHlwZRIWCgZhbW91bnQYBSABKAFS",
             "BmFtb3VudBIiCgxjaGFuZ2VTb3VyY2UYBiABKAVSDGNoYW5nZVNvdXJjZSIZ",
             "ChdDcmVhdGVJbnZlbnRvcnlSZXNwb25zZSIYChZHZXRNZXRyaWNDb25maWdS",
             "ZXF1ZXN0IkMKF0dldE1ldHJpY0NvbmZpZ1Jlc3BvbnNlEigKD1Ryb3BoeVBl",
@@ -574,10 +574,10 @@ namespace Thetan.Rivals.V1 {
 
     /// <summary>Field number for the "amount" field.</summary>
     public const int AmountFieldNumber = 5;
-    private int amount_;
+    private double amount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Amount {
+    public double Amount {
       get { return amount_; }
       set {
         amount_ = value;
@@ -615,7 +615,7 @@ namespace Thetan.Rivals.V1 {
       if (UserID != other.UserID) return false;
       if (InventoryKind != other.InventoryKind) return false;
       if (InventoryType != other.InventoryType) return false;
-      if (Amount != other.Amount) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Amount, other.Amount)) return false;
       if (ChangeSource != other.ChangeSource) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -628,7 +628,7 @@ namespace Thetan.Rivals.V1 {
       if (UserID.Length != 0) hash ^= UserID.GetHashCode();
       if (InventoryKind != 0) hash ^= InventoryKind.GetHashCode();
       if (InventoryType != 0) hash ^= InventoryType.GetHashCode();
-      if (Amount != 0) hash ^= Amount.GetHashCode();
+      if (Amount != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Amount);
       if (ChangeSource != 0) hash ^= ChangeSource.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -664,9 +664,9 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(32);
         output.WriteInt32(InventoryType);
       }
-      if (Amount != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(Amount);
+      if (Amount != 0D) {
+        output.WriteRawTag(41);
+        output.WriteDouble(Amount);
       }
       if (ChangeSource != 0) {
         output.WriteRawTag(48);
@@ -698,9 +698,9 @@ namespace Thetan.Rivals.V1 {
         output.WriteRawTag(32);
         output.WriteInt32(InventoryType);
       }
-      if (Amount != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(Amount);
+      if (Amount != 0D) {
+        output.WriteRawTag(41);
+        output.WriteDouble(Amount);
       }
       if (ChangeSource != 0) {
         output.WriteRawTag(48);
@@ -728,8 +728,8 @@ namespace Thetan.Rivals.V1 {
       if (InventoryType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(InventoryType);
       }
-      if (Amount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Amount);
+      if (Amount != 0D) {
+        size += 1 + 8;
       }
       if (ChangeSource != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChangeSource);
@@ -758,7 +758,7 @@ namespace Thetan.Rivals.V1 {
       if (other.InventoryType != 0) {
         InventoryType = other.InventoryType;
       }
-      if (other.Amount != 0) {
+      if (other.Amount != 0D) {
         Amount = other.Amount;
       }
       if (other.ChangeSource != 0) {
@@ -795,8 +795,8 @@ namespace Thetan.Rivals.V1 {
             InventoryType = input.ReadInt32();
             break;
           }
-          case 40: {
-            Amount = input.ReadInt32();
+          case 41: {
+            Amount = input.ReadDouble();
             break;
           }
           case 48: {
@@ -834,8 +834,8 @@ namespace Thetan.Rivals.V1 {
             InventoryType = input.ReadInt32();
             break;
           }
-          case 40: {
-            Amount = input.ReadInt32();
+          case 41: {
+            Amount = input.ReadDouble();
             break;
           }
           case 48: {

@@ -85,7 +85,7 @@ message CreateInventoryRequest {
   string userID = 2;
   int32 inventoryKind = 3;
   int32 inventoryType = 4;
-  int32 amount = 5;
+  double amount = 5;
   int32 changeSource = 6;
 }
 
