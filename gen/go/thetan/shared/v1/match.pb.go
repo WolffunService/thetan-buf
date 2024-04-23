@@ -703,7 +703,7 @@ type MatchFoundResponseProto struct {
 	EnableSpectator bool             `protobuf:"varint,11,opt,name=enableSpectator,proto3" json:"enableSpectator,omitempty"`
 	Arena           TRArena          `protobuf:"varint,12,opt,name=arena,proto3,enum=thetan.shared.v1.TRArena" json:"arena,omitempty"`
 	Rounds          []*Round         `protobuf:"bytes,13,rep,name=rounds,proto3" json:"rounds,omitempty"`
-	CustomData      *structpb.Struct `protobuf:"bytes,14,opt,name=customData,proto3" json:"customData,omitempty"` // <string, Any>
+	CustomData      *structpb.Struct `protobuf:"bytes,14,opt,name=customData,proto3" json:"customData,omitempty"`
 }
 
 func (x *MatchFoundResponseProto) Reset() {
@@ -1712,7 +1712,7 @@ type PlayerInfoMatchProto struct {
 	GuildName       string                    `protobuf:"bytes,32,opt,name=guildName,proto3" json:"guildName,omitempty"`
 	Skills          map[int32]*PlayerSkills   `protobuf:"bytes,33,rep,name=skills,proto3" json:"skills,omitempty" protobuf_key:"varint,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"`
 	SelectedSkills  []*SelectedSkillsPerRound `protobuf:"bytes,34,rep,name=selectedSkills,proto3" json:"selectedSkills,omitempty"`
-	MatchCustomData *structpb.Struct          `protobuf:"bytes,35,opt,name=matchCustomData,proto3" json:"matchCustomData,omitempty"` // <string, Any>
+	MatchCustomData *structpb.Struct          `protobuf:"bytes,35,opt,name=matchCustomData,proto3" json:"matchCustomData,omitempty"`
 }
 
 func (x *PlayerInfoMatchProto) Reset() {
