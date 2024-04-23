@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package thetan.shared.v1;
 
+import "google/protobuf/struct.proto";
 import "thetan/shared/v1/game_info.proto";
 import "thetan/shared/v1/customized.proto";
 
@@ -104,6 +105,7 @@ message MatchFoundResponseProto {
   bool enableSpectator = 11;
   thetan.shared.v1.TRArena arena = 12;
   repeated Round rounds = 13;
+  google.protobuf.Struct customData = 14;
 }
 
 message Round {
@@ -240,6 +242,7 @@ message PlayerInfoMatchProto {
   string guildName = 32;
   map<int32, PlayerSkills> skills = 33;
   repeated SelectedSkillsPerRound selectedSkills = 34;
+  google.protobuf.Struct matchCustomData = 35;
 }
 
 message SelectedSkillsPerRound {
