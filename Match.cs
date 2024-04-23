@@ -2451,9 +2451,6 @@ namespace Thetan.Shared.V1 {
     /// <summary>Field number for the "customData" field.</summary>
     public const int CustomDataFieldNumber = 14;
     private global::Google.Protobuf.WellKnownTypes.Struct customData_;
-    /// <summary>
-    /// &lt;string, Any>
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Struct CustomData {
@@ -6723,9 +6720,6 @@ namespace Thetan.Shared.V1 {
     /// <summary>Field number for the "matchCustomData" field.</summary>
     public const int MatchCustomDataFieldNumber = 35;
     private global::Google.Protobuf.WellKnownTypes.Struct matchCustomData_;
-    /// <summary>
-    /// &lt;string, Any>
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Struct MatchCustomData {
