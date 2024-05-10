@@ -254,8 +254,7 @@ message PlayerSkills {
 }
 
 message PlayerSkill {
-  int32 id = 1 [deprecated=true];
-  repeated int32 ids = 2;
+  int32 id = 1;
 }
 
 message CosmeticUsingProto
