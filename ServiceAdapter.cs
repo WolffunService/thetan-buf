@@ -26,57 +26,58 @@ namespace Thetan.World.V1 {
           string.Concat(
             "CiV0aGV0YW4vd29ybGQvdjEvc2VydmljZV9hZGFwdGVyLnByb3RvEg90aGV0",
             "YW4ud29ybGQudjEaG2dvb2dsZS9wcm90b2J1Zi9lbXB0eS5wcm90bxocZ29v",
-            "Z2xlL3Byb3RvYnVmL3N0cnVjdC5wcm90byJ6CghJdGVtUmVzcBISCgRraW5k",
-            "GAEgASgFUgRraW5kEhIKBHR5cGUYAiABKAVSBHR5cGUSGgoIaXRlbVR5cGUY",
-            "AyABKAlSCGl0ZW1UeXBlEhIKBG5hbWUYBCABKAlSBG5hbWUSFgoGYW1vdW50",
-            "GAUgASgCUgZhbW91bnQiQAoNQXZhaWxhYmxlSXRlbRIvCgVpdGVtcxgBIAMo",
-            "CzIZLnRoZXRhbi53b3JsZC52MS5JdGVtUmVzcFIFaXRlbXMiTAoKU2ltcGxl",
-            "SXRlbRISCgRraW5kGAEgASgFUgRraW5kEhIKBHR5cGUYAiABKAVSBHR5cGUS",
-            "FgoGYW1vdW50GAMgASgCUgZhbW91bnQiSAoTSXNWYWxpZEl0ZW1zUmVxdWVz",
-            "dBIxCgVpdGVtcxgBIAMoCzIbLnRoZXRhbi53b3JsZC52MS5TaW1wbGVJdGVt",
-            "UgVpdGVtcyInChFDaGVja0l0ZW1SZXNwb25zZRISCgRkYXRhGAEgASgIUgRk",
-            "YXRhInkKEFNlbmRJdGVtc1JlcXVlc3QSFgoGdXNlcklEGAEgASgJUgZ1c2Vy",
-            "SUQSMQoFaXRlbXMYAiADKAsyGy50aGV0YW4ud29ybGQudjEuU2ltcGxlSXRl",
-            "bVIFaXRlbXMSGgoIbWFpbENvZGUYAyABKAVSCG1haWxDb2RlIkQKEVNlbmRJ",
-            "dGVtc1Jlc3BvbnNlEi8KBWl0ZW1zGAIgAygLMhkudGhldGFuLndvcmxkLnYx",
-            "Lkl0ZW1SZXNwUgVpdGVtcyJjChFDcmVhdGVJdGVtUmVxdWVzdBISCgRraW5k",
-            "GAEgASgFUgRraW5kEhIKBHR5cGUYAiABKAVSBHR5cGUSGwoGdXNlcklEGAMg",
-            "ASgJSABSBnVzZXJJRIgBAUIJCgdfdXNlcklEIrsBCgxJdGVtUmVzcG9uc2US",
-            "FgoGaXRlbUlEGAEgASgJUgZpdGVtSUQSEgoEa2luZBgCIAEoBVIEa2luZBIW",
-            "CgZyYXJpdHkYAyABKAVSBnJhcml0eRIeCgpza2luUmFyaXR5GAQgASgFUgpz",
-            "a2luUmFyaXR5EhoKCGl0ZW1UeXBlGAUgASgJUghpdGVtVHlwZRIrCgRkYXRh",
-            "GAYgASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVjdFIEZGF0YSKCAQoPR2V0",
-            "SXRlbXNSZXF1ZXN0EjsKBWl0ZW1zGAEgAygLMiUudGhldGFuLndvcmxkLnYx",
-            "LkdldEl0ZW1zUmVxdWVzdC5JdGVtUgVpdGVtcxoyCgRJdGVtEhYKBml0ZW1J",
-            "RBgBIAEoCVIGaXRlbUlEEhIKBGtpbmQYAiABKAVSBGtpbmQirwEKEEdldEl0",
-            "ZW1zUmVzcG9uc2USQgoFaXRlbXMYASADKAsyLC50aGV0YW4ud29ybGQudjEu",
-            "R2V0SXRlbXNSZXNwb25zZS5JdGVtc0VudHJ5UgVpdGVtcxpXCgpJdGVtc0Vu",
-            "dHJ5EhAKA2tleRgBIAEoCVIDa2V5EjMKBXZhbHVlGAIgASgLMh0udGhldGFu",
-            "LndvcmxkLnYxLkl0ZW1SZXNwb25zZVIFdmFsdWU6AjgBIjMKDUluVXNlZFJl",
-            "cXVlc3QSDgoCaWQYASABKAlSAmlkEhIKBGtpbmQYAiABKAVSBGtpbmQiKAoO",
-            "SW5Vc2VkUmVzcG9uc2USFgoGaW5Vc2VkGAEgASgIUgZpblVzZWQyiAQKGVRo",
-            "ZXRhbldvcmxkQWRhcHRlclNlcnZpY2USSwoRR2V0QXZhaWxhYmxlSXRlbXMS",
-            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkaHi50aGV0YW4ud29ybGQudjEuQXZh",
-            "aWxhYmxlSXRlbRJYCgxJc1ZhbGlkSXRlbXMSJC50aGV0YW4ud29ybGQudjEu",
-            "SXNWYWxpZEl0ZW1zUmVxdWVzdBoiLnRoZXRhbi53b3JsZC52MS5DaGVja0l0",
-            "ZW1SZXNwb25zZRJSCglTZW5kSXRlbXMSIS50aGV0YW4ud29ybGQudjEuU2Vu",
-            "ZEl0ZW1zUmVxdWVzdBoiLnRoZXRhbi53b3JsZC52MS5TZW5kSXRlbXNSZXNw",
-            "b25zZRJSCg1DcmVhdGVORlRJdGVtEiIudGhldGFuLndvcmxkLnYxLkNyZWF0",
-            "ZUl0ZW1SZXF1ZXN0Gh0udGhldGFuLndvcmxkLnYxLkl0ZW1SZXNwb25zZRJP",
-            "CghHZXRJdGVtcxIgLnRoZXRhbi53b3JsZC52MS5HZXRJdGVtc1JlcXVlc3Qa",
-            "IS50aGV0YW4ud29ybGQudjEuR2V0SXRlbXNSZXNwb25zZRJLCghJc0luVXNl",
-            "ZBIeLnRoZXRhbi53b3JsZC52MS5JblVzZWRSZXF1ZXN0Gh8udGhldGFuLndv",
-            "cmxkLnYxLkluVXNlZFJlc3BvbnNlQrsBChNjb20udGhldGFuLndvcmxkLnYx",
-            "QhNTZXJ2aWNlQWRhcHRlclByb3RvUAFaMXRoZXRhbi1idWYvZ2VuL2dvL3Ro",
-            "ZXRhbi93b3JsZC92MTt0aGV0YW5fd29ybGRfdjGiAgNUV1iqAg9UaGV0YW4u",
-            "V29ybGQuVjHKAg9UaGV0YW5cV29ybGRcVjHiAhtUaGV0YW5cV29ybGRcVjFc",
-            "R1BCTWV0YWRhdGHqAhFUaGV0YW46OldvcmxkOjpWMWIGcHJvdG8z"));
+            "Z2xlL3Byb3RvYnVmL3N0cnVjdC5wcm90byKSAQoISXRlbVJlc3ASEgoEa2lu",
+            "ZBgBIAEoBVIEa2luZBISCgR0eXBlGAIgASgFUgR0eXBlEhoKCGl0ZW1UeXBl",
+            "GAMgASgJUghpdGVtVHlwZRISCgRuYW1lGAQgASgJUgRuYW1lEhYKBmFtb3Vu",
+            "dBgFIAEoAlIGYW1vdW50EhYKBmdhbWVJZBgGIAEoBVIGZ2FtZUlkIkAKDUF2",
+            "YWlsYWJsZUl0ZW0SLwoFaXRlbXMYASADKAsyGS50aGV0YW4ud29ybGQudjEu",
+            "SXRlbVJlc3BSBWl0ZW1zImQKClNpbXBsZUl0ZW0SEgoEa2luZBgBIAEoBVIE",
+            "a2luZBISCgR0eXBlGAIgASgFUgR0eXBlEhYKBmFtb3VudBgDIAEoAlIGYW1v",
+            "dW50EhYKBmdhbWVJZBgEIAEoBVIGZ2FtZUlkIkgKE0lzVmFsaWRJdGVtc1Jl",
+            "cXVlc3QSMQoFaXRlbXMYASADKAsyGy50aGV0YW4ud29ybGQudjEuU2ltcGxl",
+            "SXRlbVIFaXRlbXMiJwoRQ2hlY2tJdGVtUmVzcG9uc2USEgoEZGF0YRgBIAEo",
+            "CFIEZGF0YSJ5ChBTZW5kSXRlbXNSZXF1ZXN0EhYKBnVzZXJJRBgBIAEoCVIG",
+            "dXNlcklEEjEKBWl0ZW1zGAIgAygLMhsudGhldGFuLndvcmxkLnYxLlNpbXBs",
+            "ZUl0ZW1SBWl0ZW1zEhoKCG1haWxDb2RlGAMgASgFUghtYWlsQ29kZSJEChFT",
+            "ZW5kSXRlbXNSZXNwb25zZRIvCgVpdGVtcxgCIAMoCzIZLnRoZXRhbi53b3Js",
+            "ZC52MS5JdGVtUmVzcFIFaXRlbXMiYwoRQ3JlYXRlSXRlbVJlcXVlc3QSEgoE",
+            "a2luZBgBIAEoBVIEa2luZBISCgR0eXBlGAIgASgFUgR0eXBlEhsKBnVzZXJJ",
+            "RBgDIAEoCUgAUgZ1c2VySUSIAQFCCQoHX3VzZXJJRCK7AQoMSXRlbVJlc3Bv",
+            "bnNlEhYKBml0ZW1JRBgBIAEoCVIGaXRlbUlEEhIKBGtpbmQYAiABKAVSBGtp",
+            "bmQSFgoGcmFyaXR5GAMgASgFUgZyYXJpdHkSHgoKc2tpblJhcml0eRgEIAEo",
+            "BVIKc2tpblJhcml0eRIaCghpdGVtVHlwZRgFIAEoCVIIaXRlbVR5cGUSKwoE",
+            "ZGF0YRgGIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RSBGRhdGEiggEK",
+            "D0dldEl0ZW1zUmVxdWVzdBI7CgVpdGVtcxgBIAMoCzIlLnRoZXRhbi53b3Js",
+            "ZC52MS5HZXRJdGVtc1JlcXVlc3QuSXRlbVIFaXRlbXMaMgoESXRlbRIWCgZp",
+            "dGVtSUQYASABKAlSBml0ZW1JRBISCgRraW5kGAIgASgFUgRraW5kIq8BChBH",
+            "ZXRJdGVtc1Jlc3BvbnNlEkIKBWl0ZW1zGAEgAygLMiwudGhldGFuLndvcmxk",
+            "LnYxLkdldEl0ZW1zUmVzcG9uc2UuSXRlbXNFbnRyeVIFaXRlbXMaVwoKSXRl",
+            "bXNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIzCgV2YWx1ZRgCIAEoCzIdLnRo",
+            "ZXRhbi53b3JsZC52MS5JdGVtUmVzcG9uc2VSBXZhbHVlOgI4ASIzCg1JblVz",
+            "ZWRSZXF1ZXN0Eg4KAmlkGAEgASgJUgJpZBISCgRraW5kGAIgASgFUgRraW5k",
+            "IigKDkluVXNlZFJlc3BvbnNlEhYKBmluVXNlZBgBIAEoCFIGaW5Vc2VkMogE",
+            "ChlUaGV0YW5Xb3JsZEFkYXB0ZXJTZXJ2aWNlEksKEUdldEF2YWlsYWJsZUl0",
+            "ZW1zEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gh4udGhldGFuLndvcmxkLnYx",
+            "LkF2YWlsYWJsZUl0ZW0SWAoMSXNWYWxpZEl0ZW1zEiQudGhldGFuLndvcmxk",
+            "LnYxLklzVmFsaWRJdGVtc1JlcXVlc3QaIi50aGV0YW4ud29ybGQudjEuQ2hl",
+            "Y2tJdGVtUmVzcG9uc2USUgoJU2VuZEl0ZW1zEiEudGhldGFuLndvcmxkLnYx",
+            "LlNlbmRJdGVtc1JlcXVlc3QaIi50aGV0YW4ud29ybGQudjEuU2VuZEl0ZW1z",
+            "UmVzcG9uc2USUgoNQ3JlYXRlTkZUSXRlbRIiLnRoZXRhbi53b3JsZC52MS5D",
+            "cmVhdGVJdGVtUmVxdWVzdBodLnRoZXRhbi53b3JsZC52MS5JdGVtUmVzcG9u",
+            "c2USTwoIR2V0SXRlbXMSIC50aGV0YW4ud29ybGQudjEuR2V0SXRlbXNSZXF1",
+            "ZXN0GiEudGhldGFuLndvcmxkLnYxLkdldEl0ZW1zUmVzcG9uc2USSwoISXNJ",
+            "blVzZWQSHi50aGV0YW4ud29ybGQudjEuSW5Vc2VkUmVxdWVzdBofLnRoZXRh",
+            "bi53b3JsZC52MS5JblVzZWRSZXNwb25zZUK7AQoTY29tLnRoZXRhbi53b3Js",
+            "ZC52MUITU2VydmljZUFkYXB0ZXJQcm90b1ABWjF0aGV0YW4tYnVmL2dlbi9n",
+            "by90aGV0YW4vd29ybGQvdjE7dGhldGFuX3dvcmxkX3YxogIDVFdYqgIPVGhl",
+            "dGFuLldvcmxkLlYxygIPVGhldGFuXFdvcmxkXFYx4gIbVGhldGFuXFdvcmxk",
+            "XFYxXEdQQk1ldGFkYXRh6gIRVGhldGFuOjpXb3JsZDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.ItemResp), global::Thetan.World.V1.ItemResp.Parser, new[]{ "Kind", "Type", "ItemType", "Name", "Amount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.ItemResp), global::Thetan.World.V1.ItemResp.Parser, new[]{ "Kind", "Type", "ItemType", "Name", "Amount", "GameId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.AvailableItem), global::Thetan.World.V1.AvailableItem.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.SimpleItem), global::Thetan.World.V1.SimpleItem.Parser, new[]{ "Kind", "Type", "Amount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.SimpleItem), global::Thetan.World.V1.SimpleItem.Parser, new[]{ "Kind", "Type", "Amount", "GameId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.IsValidItemsRequest), global::Thetan.World.V1.IsValidItemsRequest.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.CheckItemResponse), global::Thetan.World.V1.CheckItemResponse.Parser, new[]{ "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.SendItemsRequest), global::Thetan.World.V1.SendItemsRequest.Parser, new[]{ "UserID", "Items", "MailCode" }, null, null, null, null),
@@ -132,6 +133,7 @@ namespace Thetan.World.V1 {
       itemType_ = other.itemType_;
       name_ = other.name_;
       amount_ = other.amount_;
+      gameId_ = other.gameId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -201,6 +203,18 @@ namespace Thetan.World.V1 {
       }
     }
 
+    /// <summary>Field number for the "gameId" field.</summary>
+    public const int GameIdFieldNumber = 6;
+    private int gameId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int GameId {
+      get { return gameId_; }
+      set {
+        gameId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -221,6 +235,7 @@ namespace Thetan.World.V1 {
       if (ItemType != other.ItemType) return false;
       if (Name != other.Name) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Amount, other.Amount)) return false;
+      if (GameId != other.GameId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -233,6 +248,7 @@ namespace Thetan.World.V1 {
       if (ItemType.Length != 0) hash ^= ItemType.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Amount != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Amount);
+      if (GameId != 0) hash ^= GameId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -271,6 +287,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(45);
         output.WriteFloat(Amount);
       }
+      if (GameId != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(GameId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -301,6 +321,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(45);
         output.WriteFloat(Amount);
       }
+      if (GameId != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(GameId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -325,6 +349,9 @@ namespace Thetan.World.V1 {
       }
       if (Amount != 0F) {
         size += 1 + 4;
+      }
+      if (GameId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GameId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -352,6 +379,9 @@ namespace Thetan.World.V1 {
       }
       if (other.Amount != 0F) {
         Amount = other.Amount;
+      }
+      if (other.GameId != 0) {
+        GameId = other.GameId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -388,6 +418,10 @@ namespace Thetan.World.V1 {
             Amount = input.ReadFloat();
             break;
           }
+          case 48: {
+            GameId = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -421,6 +455,10 @@ namespace Thetan.World.V1 {
           }
           case 45: {
             Amount = input.ReadFloat();
+            break;
+          }
+          case 48: {
+            GameId = input.ReadInt32();
             break;
           }
         }
@@ -645,6 +683,7 @@ namespace Thetan.World.V1 {
       kind_ = other.kind_;
       type_ = other.type_;
       amount_ = other.amount_;
+      gameId_ = other.gameId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -690,6 +729,18 @@ namespace Thetan.World.V1 {
       }
     }
 
+    /// <summary>Field number for the "gameId" field.</summary>
+    public const int GameIdFieldNumber = 4;
+    private int gameId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int GameId {
+      get { return gameId_; }
+      set {
+        gameId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -708,6 +759,7 @@ namespace Thetan.World.V1 {
       if (Kind != other.Kind) return false;
       if (Type != other.Type) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Amount, other.Amount)) return false;
+      if (GameId != other.GameId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -718,6 +770,7 @@ namespace Thetan.World.V1 {
       if (Kind != 0) hash ^= Kind.GetHashCode();
       if (Type != 0) hash ^= Type.GetHashCode();
       if (Amount != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Amount);
+      if (GameId != 0) hash ^= GameId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -748,6 +801,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(29);
         output.WriteFloat(Amount);
       }
+      if (GameId != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(GameId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -770,6 +827,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(29);
         output.WriteFloat(Amount);
       }
+      if (GameId != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(GameId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -788,6 +849,9 @@ namespace Thetan.World.V1 {
       }
       if (Amount != 0F) {
         size += 1 + 4;
+      }
+      if (GameId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GameId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -809,6 +873,9 @@ namespace Thetan.World.V1 {
       }
       if (other.Amount != 0F) {
         Amount = other.Amount;
+      }
+      if (other.GameId != 0) {
+        GameId = other.GameId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -837,6 +904,10 @@ namespace Thetan.World.V1 {
             Amount = input.ReadFloat();
             break;
           }
+          case 32: {
+            GameId = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -862,6 +933,10 @@ namespace Thetan.World.V1 {
           }
           case 29: {
             Amount = input.ReadFloat();
+            break;
+          }
+          case 32: {
+            GameId = input.ReadInt32();
             break;
           }
         }
