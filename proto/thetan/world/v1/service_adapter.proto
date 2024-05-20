@@ -26,7 +26,7 @@ message ItemResp {
     string itemType = 3;
     string name = 4;
     float amount = 5;
-    int32 gameId = 6; 
+    google.protobuf.Struct props = 6;
 }
 
 message AvailableItem {
@@ -37,7 +37,7 @@ message SimpleItem {
     int32 kind = 1;
     int32 type = 2;
     float amount = 3;
-    int32 gameId = 4;
+    google.protobuf.Struct props = 4;
 }
 
 message IsValidItemsRequest {
