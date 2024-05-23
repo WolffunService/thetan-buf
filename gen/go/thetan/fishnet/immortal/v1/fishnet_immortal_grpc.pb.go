@@ -30,7 +30,7 @@ const (
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ThetanFishNetImmortalClient interface {
-	RoomAllocation(ctx context.Context, in *v1.ImmortalMatchFoundResponseProto, opts ...grpc.CallOption) (*RoomAllocationResp, error)
+	RoomAllocation(ctx context.Context, in *v1.MatchFoundResponseProto, opts ...grpc.CallOption) (*RoomAllocationResp, error)
 	Shutdown(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error)
 	GameServerInfo(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*GameServerInfoResp, error)
 }
@@ -43,7 +43,7 @@ func NewThetanFishNetImmortalClient(cc grpc.ClientConnInterface) ThetanFishNetIm
 	return &thetanFishNetImmortalClient{cc}
 }
 
-func (c *thetanFishNetImmortalClient) RoomAllocation(ctx context.Context, in *v1.ImmortalMatchFoundResponseProto, opts ...grpc.CallOption) (*RoomAllocationResp, error) {
+func (c *thetanFishNetImmortalClient) RoomAllocation(ctx context.Context, in *v1.MatchFoundResponseProto, opts ...grpc.CallOption) (*RoomAllocationResp, error) {
 	out := new(RoomAllocationResp)
 	err := c.cc.Invoke(ctx, ThetanFishNetImmortal_RoomAllocation_FullMethodName, in, out, opts...)
 	if err != nil {
@@ -74,7 +74,7 @@ func (c *thetanFishNetImmortalClient) GameServerInfo(ctx context.Context, in *em
 // All implementations must embed UnimplementedThetanFishNetImmortalServer
 // for forward compatibility
 type ThetanFishNetImmortalServer interface {
-	RoomAllocation(context.Context, *v1.ImmortalMatchFoundResponseProto) (*RoomAllocationResp, error)
+	RoomAllocation(context.Context, *v1.MatchFoundResponseProto) (*RoomAllocationResp, error)
 	Shutdown(context.Context, *emptypb.Empty) (*emptypb.Empty, error)
 	GameServerInfo(context.Context, *emptypb.Empty) (*GameServerInfoResp, error)
 	mustEmbedUnimplementedThetanFishNetImmortalServer()
@@ -84,7 +84,7 @@ type ThetanFishNetImmortalServer interface {
 type UnimplementedThetanFishNetImmortalServer struct {
 }
 
-func (UnimplementedThetanFishNetImmortalServer) RoomAllocation(context.Context, *v1.ImmortalMatchFoundResponseProto) (*RoomAllocationResp, error) {
+func (UnimplementedThetanFishNetImmortalServer) RoomAllocation(context.Context, *v1.MatchFoundResponseProto) (*RoomAllocationResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method RoomAllocation not implemented")
 }
 func (UnimplementedThetanFishNetImmortalServer) Shutdown(context.Context, *emptypb.Empty) (*emptypb.Empty, error) {
@@ -107,7 +107,7 @@ func RegisterThetanFishNetImmortalServer(s grpc.ServiceRegistrar, srv ThetanFish
 }
 
 func _ThetanFishNetImmortal_RoomAllocation_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(v1.ImmortalMatchFoundResponseProto)
+	in := new(v1.MatchFoundResponseProto)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -119,7 +119,7 @@ func _ThetanFishNetImmortal_RoomAllocation_Handler(srv interface{}, ctx context.
 		FullMethod: ThetanFishNetImmortal_RoomAllocation_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanFishNetImmortalServer).RoomAllocation(ctx, req.(*v1.ImmortalMatchFoundResponseProto))
+		return srv.(ThetanFishNetImmortalServer).RoomAllocation(ctx, req.(*v1.MatchFoundResponseProto))
 	}
 	return interceptor(ctx, in, info, handler)
 }

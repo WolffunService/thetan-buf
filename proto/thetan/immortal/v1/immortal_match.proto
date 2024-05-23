@@ -6,24 +6,24 @@ package thetan.immortal.v1;
 option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_immortal_v1";
 option csharp_namespace = "Thetan.Immortal.V1";
 
-message ImmortalMatchFoundResponseProto {
+message MatchFoundResponseProto {
   string matchID = 1;
-  repeated ImmortalPlayerInfoMatchProto players = 2;
+  repeated PlayerInfoMatchProto players = 2;
   int32 bestRegion = 3;
 }
 
 // ImmortalTicketData is used to create ticket
-message ImmortalTicketData {
-  repeated ImmortalPlayerInfoMatchProto players = 1;
+message TicketData {
+  repeated PlayerInfoMatchProto players = 1;
 }
 
-message ImmortalCancelTicketRequest {
+message CancelTicketRequest {
   string playerID = 1;
   string partyID = 2;
   string ticketID = 3;
 }
 
-message ImmortalCancelTicketResponse {
+message CancelTicketResponse {
 }
 
 // CancelTicketSuccess is used to push pub/sub when the ticket is canceled successfully
@@ -33,6 +33,6 @@ message CancelTicketSuccess {
   string ticketID = 3;
 }
 
-service ImmortalMatchDirectorService {
-  rpc CancelTicket(ImmortalCancelTicketRequest) returns (ImmortalCancelTicketResponse) {}
+service MatchDirectorService {
+  rpc CancelTicket(CancelTicketRequest) returns (CancelTicketResponse) {}
 }

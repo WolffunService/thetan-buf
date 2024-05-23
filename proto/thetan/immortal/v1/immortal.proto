@@ -19,7 +19,7 @@ message SearchPlayerInfoRequest {
 }
 
 message SearchPlayerInfoResponse {
-  repeated ImmortalPlayerInfoMatchProto players = 1;
+  repeated PlayerInfoMatchProto players = 1;
 }
 
 message GetUserProfileRequest {
