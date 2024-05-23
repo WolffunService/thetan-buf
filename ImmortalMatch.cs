@@ -26,33 +26,32 @@ namespace Thetan.Immortal.V1 {
           string.Concat(
             "Cid0aGV0YW4vaW1tb3J0YWwvdjEvaW1tb3J0YWxfbWF0Y2gucHJvdG8SEnRo",
             "ZXRhbi5pbW1vcnRhbC52MRoodGhldGFuL2ltbW9ydGFsL3YxL2ltbW9ydGFs",
-            "X3NoYXJlZC5wcm90byKnAQofSW1tb3J0YWxNYXRjaEZvdW5kUmVzcG9uc2VQ",
-            "cm90bxIYCgdtYXRjaElEGAEgASgJUgdtYXRjaElEEkoKB3BsYXllcnMYAiAD",
-            "KAsyMC50aGV0YW4uaW1tb3J0YWwudjEuSW1tb3J0YWxQbGF5ZXJJbmZvTWF0",
-            "Y2hQcm90b1IHcGxheWVycxIeCgpiZXN0UmVnaW9uGAMgASgFUgpiZXN0UmVn",
-            "aW9uImAKEkltbW9ydGFsVGlja2V0RGF0YRJKCgdwbGF5ZXJzGAEgAygLMjAu",
-            "dGhldGFuLmltbW9ydGFsLnYxLkltbW9ydGFsUGxheWVySW5mb01hdGNoUHJv",
-            "dG9SB3BsYXllcnMibwobSW1tb3J0YWxDYW5jZWxUaWNrZXRSZXF1ZXN0EhoK",
-            "CHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBIYCgdwYXJ0eUlEGAIgASgJUgdw",
-            "YXJ0eUlEEhoKCHRpY2tldElEGAMgASgJUgh0aWNrZXRJRCIeChxJbW1vcnRh",
-            "bENhbmNlbFRpY2tldFJlc3BvbnNlImcKE0NhbmNlbFRpY2tldFN1Y2Nlc3MS",
-            "GgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEhgKB3BhcnR5SUQYAiABKAlS",
-            "B3BhcnR5SUQSGgoIdGlja2V0SUQYAyABKAlSCHRpY2tldElEMpMBChxJbW1v",
-            "cnRhbE1hdGNoRGlyZWN0b3JTZXJ2aWNlEnMKDENhbmNlbFRpY2tldBIvLnRo",
-            "ZXRhbi5pbW1vcnRhbC52MS5JbW1vcnRhbENhbmNlbFRpY2tldFJlcXVlc3Qa",
-            "MC50aGV0YW4uaW1tb3J0YWwudjEuSW1tb3J0YWxDYW5jZWxUaWNrZXRSZXNw",
-            "b25zZSIAQs8BChZjb20udGhldGFuLmltbW9ydGFsLnYxQhJJbW1vcnRhbE1h",
-            "dGNoUHJvdG9QAVo3dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2ltbW9ydGFs",
-            "L3YxO3RoZXRhbl9pbW1vcnRhbF92MaICA1RJWKoCElRoZXRhbi5JbW1vcnRh",
-            "bC5WMcoCElRoZXRhblxJbW1vcnRhbFxWMeICHlRoZXRhblxJbW1vcnRhbFxW",
-            "MVxHUEJNZXRhZGF0YeoCFFRoZXRhbjo6SW1tb3J0YWw6OlYxYgZwcm90bzM="));
+            "X3NoYXJlZC5wcm90byKXAQoXTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8SGAoH",
+            "bWF0Y2hJRBgBIAEoCVIHbWF0Y2hJRBJCCgdwbGF5ZXJzGAIgAygLMigudGhl",
+            "dGFuLmltbW9ydGFsLnYxLlBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJz",
+            "Eh4KCmJlc3RSZWdpb24YAyABKAVSCmJlc3RSZWdpb24iUAoKVGlja2V0RGF0",
+            "YRJCCgdwbGF5ZXJzGAEgAygLMigudGhldGFuLmltbW9ydGFsLnYxLlBsYXll",
+            "ckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzImcKE0NhbmNlbFRpY2tldFJlcXVl",
+            "c3QSGgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEhgKB3BhcnR5SUQYAiAB",
+            "KAlSB3BhcnR5SUQSGgoIdGlja2V0SUQYAyABKAlSCHRpY2tldElEIhYKFENh",
+            "bmNlbFRpY2tldFJlc3BvbnNlImcKE0NhbmNlbFRpY2tldFN1Y2Nlc3MSGgoI",
+            "cGxheWVySUQYASABKAlSCHBsYXllcklEEhgKB3BhcnR5SUQYAiABKAlSB3Bh",
+            "cnR5SUQSGgoIdGlja2V0SUQYAyABKAlSCHRpY2tldElEMnsKFE1hdGNoRGly",
+            "ZWN0b3JTZXJ2aWNlEmMKDENhbmNlbFRpY2tldBInLnRoZXRhbi5pbW1vcnRh",
+            "bC52MS5DYW5jZWxUaWNrZXRSZXF1ZXN0GigudGhldGFuLmltbW9ydGFsLnYx",
+            "LkNhbmNlbFRpY2tldFJlc3BvbnNlIgBCzwEKFmNvbS50aGV0YW4uaW1tb3J0",
+            "YWwudjFCEkltbW9ydGFsTWF0Y2hQcm90b1ABWjd0aGV0YW4tYnVmL2dlbi9n",
+            "by90aGV0YW4vaW1tb3J0YWwvdjE7dGhldGFuX2ltbW9ydGFsX3YxogIDVElY",
+            "qgISVGhldGFuLkltbW9ydGFsLlYxygISVGhldGFuXEltbW9ydGFsXFYx4gIe",
+            "VGhldGFuXEltbW9ydGFsXFYxXEdQQk1ldGFkYXRh6gIUVGhldGFuOjpJbW1v",
+            "cnRhbDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto), global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto.Parser, new[]{ "MatchID", "Players", "BestRegion" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.ImmortalTicketData), global::Thetan.Immortal.V1.ImmortalTicketData.Parser, new[]{ "Players" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.ImmortalCancelTicketRequest), global::Thetan.Immortal.V1.ImmortalCancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.ImmortalCancelTicketResponse), global::Thetan.Immortal.V1.ImmortalCancelTicketResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.MatchFoundResponseProto), global::Thetan.Immortal.V1.MatchFoundResponseProto.Parser, new[]{ "MatchID", "Players", "BestRegion" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TicketData), global::Thetan.Immortal.V1.TicketData.Parser, new[]{ "Players" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketRequest), global::Thetan.Immortal.V1.CancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketResponse), global::Thetan.Immortal.V1.CancelTicketResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketSuccess), global::Thetan.Immortal.V1.CancelTicketSuccess.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null)
           }));
     }
@@ -60,16 +59,16 @@ namespace Thetan.Immortal.V1 {
 
   }
   #region Messages
-  public sealed partial class ImmortalMatchFoundResponseProto : pb::IMessage<ImmortalMatchFoundResponseProto>
+  public sealed partial class MatchFoundResponseProto : pb::IMessage<MatchFoundResponseProto>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ImmortalMatchFoundResponseProto> _parser = new pb::MessageParser<ImmortalMatchFoundResponseProto>(() => new ImmortalMatchFoundResponseProto());
+    private static readonly pb::MessageParser<MatchFoundResponseProto> _parser = new pb::MessageParser<MatchFoundResponseProto>(() => new MatchFoundResponseProto());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ImmortalMatchFoundResponseProto> Parser { get { return _parser; } }
+    public static pb::MessageParser<MatchFoundResponseProto> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -85,7 +84,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalMatchFoundResponseProto() {
+    public MatchFoundResponseProto() {
       OnConstruction();
     }
 
@@ -93,7 +92,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalMatchFoundResponseProto(ImmortalMatchFoundResponseProto other) : this() {
+    public MatchFoundResponseProto(MatchFoundResponseProto other) : this() {
       matchID_ = other.matchID_;
       players_ = other.players_.Clone();
       bestRegion_ = other.bestRegion_;
@@ -102,8 +101,8 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalMatchFoundResponseProto Clone() {
-      return new ImmortalMatchFoundResponseProto(this);
+    public MatchFoundResponseProto Clone() {
+      return new MatchFoundResponseProto(this);
     }
 
     /// <summary>Field number for the "matchID" field.</summary>
@@ -120,12 +119,12 @@ namespace Thetan.Immortal.V1 {
 
     /// <summary>Field number for the "players" field.</summary>
     public const int PlayersFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto> _repeated_players_codec
-        = pb::FieldCodec.ForMessage(18, global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto> players_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto>();
+    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.PlayerInfoMatchProto> _repeated_players_codec
+        = pb::FieldCodec.ForMessage(18, global::Thetan.Immortal.V1.PlayerInfoMatchProto.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto> players_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto> Players {
+    public pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto> Players {
       get { return players_; }
     }
 
@@ -144,12 +143,12 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ImmortalMatchFoundResponseProto);
+      return Equals(other as MatchFoundResponseProto);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ImmortalMatchFoundResponseProto other) {
+    public bool Equals(MatchFoundResponseProto other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -240,7 +239,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ImmortalMatchFoundResponseProto other) {
+    public void MergeFrom(MatchFoundResponseProto other) {
       if (other == null) {
         return;
       }
@@ -315,16 +314,16 @@ namespace Thetan.Immortal.V1 {
   /// <summary>
   /// ImmortalTicketData is used to create ticket
   /// </summary>
-  public sealed partial class ImmortalTicketData : pb::IMessage<ImmortalTicketData>
+  public sealed partial class TicketData : pb::IMessage<TicketData>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ImmortalTicketData> _parser = new pb::MessageParser<ImmortalTicketData>(() => new ImmortalTicketData());
+    private static readonly pb::MessageParser<TicketData> _parser = new pb::MessageParser<TicketData>(() => new TicketData());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ImmortalTicketData> Parser { get { return _parser; } }
+    public static pb::MessageParser<TicketData> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -340,7 +339,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalTicketData() {
+    public TicketData() {
       OnConstruction();
     }
 
@@ -348,37 +347,37 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalTicketData(ImmortalTicketData other) : this() {
+    public TicketData(TicketData other) : this() {
       players_ = other.players_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalTicketData Clone() {
-      return new ImmortalTicketData(this);
+    public TicketData Clone() {
+      return new TicketData(this);
     }
 
     /// <summary>Field number for the "players" field.</summary>
     public const int PlayersFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto> _repeated_players_codec
-        = pb::FieldCodec.ForMessage(10, global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto> players_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto>();
+    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.PlayerInfoMatchProto> _repeated_players_codec
+        = pb::FieldCodec.ForMessage(10, global::Thetan.Immortal.V1.PlayerInfoMatchProto.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto> players_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto> Players {
+    public pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto> Players {
       get { return players_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ImmortalTicketData);
+      return Equals(other as TicketData);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ImmortalTicketData other) {
+    public bool Equals(TicketData other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -443,7 +442,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ImmortalTicketData other) {
+    public void MergeFrom(TicketData other) {
       if (other == null) {
         return;
       }
@@ -493,16 +492,16 @@ namespace Thetan.Immortal.V1 {
 
   }
 
-  public sealed partial class ImmortalCancelTicketRequest : pb::IMessage<ImmortalCancelTicketRequest>
+  public sealed partial class CancelTicketRequest : pb::IMessage<CancelTicketRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ImmortalCancelTicketRequest> _parser = new pb::MessageParser<ImmortalCancelTicketRequest>(() => new ImmortalCancelTicketRequest());
+    private static readonly pb::MessageParser<CancelTicketRequest> _parser = new pb::MessageParser<CancelTicketRequest>(() => new CancelTicketRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ImmortalCancelTicketRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<CancelTicketRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -518,7 +517,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalCancelTicketRequest() {
+    public CancelTicketRequest() {
       OnConstruction();
     }
 
@@ -526,7 +525,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalCancelTicketRequest(ImmortalCancelTicketRequest other) : this() {
+    public CancelTicketRequest(CancelTicketRequest other) : this() {
       playerID_ = other.playerID_;
       partyID_ = other.partyID_;
       ticketID_ = other.ticketID_;
@@ -535,8 +534,8 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalCancelTicketRequest Clone() {
-      return new ImmortalCancelTicketRequest(this);
+    public CancelTicketRequest Clone() {
+      return new CancelTicketRequest(this);
     }
 
     /// <summary>Field number for the "playerID" field.</summary>
@@ -578,12 +577,12 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ImmortalCancelTicketRequest);
+      return Equals(other as CancelTicketRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ImmortalCancelTicketRequest other) {
+    public bool Equals(CancelTicketRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -682,7 +681,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ImmortalCancelTicketRequest other) {
+    public void MergeFrom(CancelTicketRequest other) {
       if (other == null) {
         return;
       }
@@ -756,16 +755,16 @@ namespace Thetan.Immortal.V1 {
 
   }
 
-  public sealed partial class ImmortalCancelTicketResponse : pb::IMessage<ImmortalCancelTicketResponse>
+  public sealed partial class CancelTicketResponse : pb::IMessage<CancelTicketResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ImmortalCancelTicketResponse> _parser = new pb::MessageParser<ImmortalCancelTicketResponse>(() => new ImmortalCancelTicketResponse());
+    private static readonly pb::MessageParser<CancelTicketResponse> _parser = new pb::MessageParser<CancelTicketResponse>(() => new CancelTicketResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ImmortalCancelTicketResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<CancelTicketResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -781,7 +780,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalCancelTicketResponse() {
+    public CancelTicketResponse() {
       OnConstruction();
     }
 
@@ -789,25 +788,25 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalCancelTicketResponse(ImmortalCancelTicketResponse other) : this() {
+    public CancelTicketResponse(CancelTicketResponse other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ImmortalCancelTicketResponse Clone() {
-      return new ImmortalCancelTicketResponse(this);
+    public CancelTicketResponse Clone() {
+      return new CancelTicketResponse(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ImmortalCancelTicketResponse);
+      return Equals(other as CancelTicketResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ImmortalCancelTicketResponse other) {
+    public bool Equals(CancelTicketResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -867,7 +866,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ImmortalCancelTicketResponse other) {
+    public void MergeFrom(CancelTicketResponse other) {
       if (other == null) {
         return;
       }
