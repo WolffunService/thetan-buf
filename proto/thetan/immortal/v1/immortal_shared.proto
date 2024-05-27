@@ -31,12 +31,11 @@ message PlayerInfoMatchProto {
   Hero hero = 11;
   repeated Skill skills = 12;
   int32 botBrain = 13 [deprecated=true]; // default value is human
-  repeated int32 regions = 14;
-  Arena arena = 15;
-  double winRate = 16;
-  double rating = 17;
-  double rd = 18;
-  int32 timeZone = 19;
+  Arena arena = 14;
+  double winRate = 15;
+  double rating = 16;
+  double rd = 17;
+  int32 timeZone = 18;
 }
 
 enum Arena
