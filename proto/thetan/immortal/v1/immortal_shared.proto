@@ -34,7 +34,9 @@ message PlayerInfoMatchProto {
   repeated int32 regions = 14;
   Arena arena = 15;
   double winRate = 16;
-  int32 timeZone = 17;
+  double rating = 17;
+  double rd = 18;
+  int32 timeZone = 19;
 }
 
 enum Arena
