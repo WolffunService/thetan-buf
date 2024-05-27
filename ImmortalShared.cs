@@ -28,7 +28,7 @@ namespace Thetan.Immortal.V1 {
             "aGV0YW4uaW1tb3J0YWwudjEiYAoESGVybxIWCgZoZXJvSUQYASABKAlSBmhl",
             "cm9JRBIWCgZza2luSUQYAiABKAVSBnNraW5JRBIUCgVsZXZlbBgDIAEoBVIF",
             "bGV2ZWwSEgoEdHlwZRgEIAEoBVIEdHlwZSI3CgVTa2lsbBIYCgdza2lsbElE",
-            "GAEgASgNUgdza2lsbElEEhQKBWxldmVsGAIgASgFUgVsZXZlbCLMBAoUUGxh",
+            "GAEgASgNUgdza2lsbElEEhQKBWxldmVsGAIgASgFUgVsZXZlbCL0BAoUUGxh",
             "eWVySW5mb01hdGNoUHJvdG8SGgoIcGxheWVySUQYASABKAlSCHBsYXllcklE",
             "Eh4KCnBsYXllck5hbWUYAiABKAlSCnBsYXllck5hbWUSGgoIYXZhdGFySUQY",
             "AyABKAVSCGF2YXRhcklEEhgKB2ZyYW1lSUQYBCABKAVSB2ZyYW1lSUQSIAoL",
@@ -41,22 +41,23 @@ namespace Thetan.Immortal.V1 {
             "LnYxLlNraWxsUgZza2lsbHMSHgoIYm90QnJhaW4YDSABKAVCAhgBUghib3RC",
             "cmFpbhIYCgdyZWdpb25zGA4gAygFUgdyZWdpb25zEi8KBWFyZW5hGA8gASgO",
             "MhkudGhldGFuLmltbW9ydGFsLnYxLkFyZW5hUgVhcmVuYRIYCgd3aW5SYXRl",
-            "GBAgASgBUgd3aW5SYXRlEhoKCHRpbWVab25lGBEgASgFUgh0aW1lWm9uZSqU",
-            "AQoFQXJlbmESCAoETk9ORRAAEgsKB1RSQUlORUUQARIPCgtBUFBFUkVOVElD",
-            "RRACEg4KClBBVEhGSU5ERVIQAxILCgdGSUdIVEVSEAQSCQoFRUxJVEUQBRIK",
-            "CgZNQVNURVIQBhIICgRIRVJPEAcSCgoGTEVHRU5EEAgSDAoISU1NT1JUQUwQ",
-            "CRILCgdERU1JR09EEApC0AEKFmNvbS50aGV0YW4uaW1tb3J0YWwudjFCE0lt",
-            "bW9ydGFsU2hhcmVkUHJvdG9QAVo3dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFu",
-            "L2ltbW9ydGFsL3YxO3RoZXRhbl9pbW1vcnRhbF92MaICA1RJWKoCElRoZXRh",
-            "bi5JbW1vcnRhbC5WMcoCElRoZXRhblxJbW1vcnRhbFxWMeICHlRoZXRhblxJ",
-            "bW1vcnRhbFxWMVxHUEJNZXRhZGF0YeoCFFRoZXRhbjo6SW1tb3J0YWw6OlYx",
-            "YgZwcm90bzM="));
+            "GBAgASgBUgd3aW5SYXRlEhYKBnJhdGluZxgRIAEoAVIGcmF0aW5nEg4KAnJk",
+            "GBIgASgBUgJyZBIaCgh0aW1lWm9uZRgTIAEoBVIIdGltZVpvbmUqlAEKBUFy",
+            "ZW5hEggKBE5PTkUQABILCgdUUkFJTkVFEAESDwoLQVBQRVJFTlRJQ0UQAhIO",
+            "CgpQQVRIRklOREVSEAMSCwoHRklHSFRFUhAEEgkKBUVMSVRFEAUSCgoGTUFT",
+            "VEVSEAYSCAoESEVSTxAHEgoKBkxFR0VORBAIEgwKCElNTU9SVEFMEAkSCwoH",
+            "REVNSUdPRBAKQtABChZjb20udGhldGFuLmltbW9ydGFsLnYxQhNJbW1vcnRh",
+            "bFNoYXJlZFByb3RvUAFaN3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9pbW1v",
+            "cnRhbC92MTt0aGV0YW5faW1tb3J0YWxfdjGiAgNUSViqAhJUaGV0YW4uSW1t",
+            "b3J0YWwuVjHKAhJUaGV0YW5cSW1tb3J0YWxcVjHiAh5UaGV0YW5cSW1tb3J0",
+            "YWxcVjFcR1BCTWV0YWRhdGHqAhRUaGV0YW46OkltbW9ydGFsOjpWMWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Immortal.V1.Arena), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.Hero), global::Thetan.Immortal.V1.Hero.Parser, new[]{ "HeroID", "SkinID", "Level", "Type" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.Skill), global::Thetan.Immortal.V1.Skill.Parser, new[]{ "SkillID", "Level" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.PlayerInfoMatchProto), global::Thetan.Immortal.V1.PlayerInfoMatchProto.Parser, new[]{ "PlayerID", "PlayerName", "AvatarID", "FrameID", "NameColorID", "BattleCount", "PartyID", "TrophyRank", "TrophySearch", "Rank", "Hero", "Skills", "BotBrain", "Regions", "Arena", "WinRate", "TimeZone" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.PlayerInfoMatchProto), global::Thetan.Immortal.V1.PlayerInfoMatchProto.Parser, new[]{ "PlayerID", "PlayerName", "AvatarID", "FrameID", "NameColorID", "BattleCount", "PartyID", "TrophyRank", "TrophySearch", "Rank", "Hero", "Skills", "BotBrain", "Regions", "Arena", "WinRate", "Rating", "Rd", "TimeZone" }, null, null, null, null)
           }));
     }
     #endregion
@@ -656,6 +657,8 @@ namespace Thetan.Immortal.V1 {
       regions_ = other.regions_.Clone();
       arena_ = other.arena_;
       winRate_ = other.winRate_;
+      rating_ = other.rating_;
+      rd_ = other.rd_;
       timeZone_ = other.timeZone_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -863,8 +866,32 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
+    /// <summary>Field number for the "rating" field.</summary>
+    public const int RatingFieldNumber = 17;
+    private double rating_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Rating {
+      get { return rating_; }
+      set {
+        rating_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rd" field.</summary>
+    public const int RdFieldNumber = 18;
+    private double rd_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Rd {
+      get { return rd_; }
+      set {
+        rd_ = value;
+      }
+    }
+
     /// <summary>Field number for the "timeZone" field.</summary>
-    public const int TimeZoneFieldNumber = 17;
+    public const int TimeZoneFieldNumber = 19;
     private int timeZone_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -906,6 +933,8 @@ namespace Thetan.Immortal.V1 {
       if(!regions_.Equals(other.regions_)) return false;
       if (Arena != other.Arena) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(WinRate, other.WinRate)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Rating, other.Rating)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Rd, other.Rd)) return false;
       if (TimeZone != other.TimeZone) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -930,6 +959,8 @@ namespace Thetan.Immortal.V1 {
       hash ^= regions_.GetHashCode();
       if (Arena != global::Thetan.Immortal.V1.Arena.None) hash ^= Arena.GetHashCode();
       if (WinRate != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(WinRate);
+      if (Rating != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Rating);
+      if (Rd != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Rd);
       if (TimeZone != 0) hash ^= TimeZone.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1007,8 +1038,16 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(129, 1);
         output.WriteDouble(WinRate);
       }
+      if (Rating != 0D) {
+        output.WriteRawTag(137, 1);
+        output.WriteDouble(Rating);
+      }
+      if (Rd != 0D) {
+        output.WriteRawTag(145, 1);
+        output.WriteDouble(Rd);
+      }
       if (TimeZone != 0) {
-        output.WriteRawTag(136, 1);
+        output.WriteRawTag(152, 1);
         output.WriteInt32(TimeZone);
       }
       if (_unknownFields != null) {
@@ -1079,8 +1118,16 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(129, 1);
         output.WriteDouble(WinRate);
       }
+      if (Rating != 0D) {
+        output.WriteRawTag(137, 1);
+        output.WriteDouble(Rating);
+      }
+      if (Rd != 0D) {
+        output.WriteRawTag(145, 1);
+        output.WriteDouble(Rd);
+      }
       if (TimeZone != 0) {
-        output.WriteRawTag(136, 1);
+        output.WriteRawTag(152, 1);
         output.WriteInt32(TimeZone);
       }
       if (_unknownFields != null) {
@@ -1135,6 +1182,12 @@ namespace Thetan.Immortal.V1 {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Arena);
       }
       if (WinRate != 0D) {
+        size += 2 + 8;
+      }
+      if (Rating != 0D) {
+        size += 2 + 8;
+      }
+      if (Rd != 0D) {
         size += 2 + 8;
       }
       if (TimeZone != 0) {
@@ -1198,6 +1251,12 @@ namespace Thetan.Immortal.V1 {
       }
       if (other.WinRate != 0D) {
         WinRate = other.WinRate;
+      }
+      if (other.Rating != 0D) {
+        Rating = other.Rating;
+      }
+      if (other.Rd != 0D) {
+        Rd = other.Rd;
       }
       if (other.TimeZone != 0) {
         TimeZone = other.TimeZone;
@@ -1285,7 +1344,15 @@ namespace Thetan.Immortal.V1 {
             WinRate = input.ReadDouble();
             break;
           }
-          case 136: {
+          case 137: {
+            Rating = input.ReadDouble();
+            break;
+          }
+          case 145: {
+            Rd = input.ReadDouble();
+            break;
+          }
+          case 152: {
             TimeZone = input.ReadInt32();
             break;
           }
@@ -1372,7 +1439,15 @@ namespace Thetan.Immortal.V1 {
             WinRate = input.ReadDouble();
             break;
           }
-          case 136: {
+          case 137: {
+            Rating = input.ReadDouble();
+            break;
+          }
+          case 145: {
+            Rd = input.ReadDouble();
+            break;
+          }
+          case 152: {
             TimeZone = input.ReadInt32();
             break;
           }
