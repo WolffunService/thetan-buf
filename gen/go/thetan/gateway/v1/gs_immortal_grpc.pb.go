@@ -155,7 +155,7 @@ const (
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ThetanGatewayImmortalClient interface {
-	AllocateGameServer(ctx context.Context, in *v1.ImmortalMatchFoundResponseProto, opts ...grpc.CallOption) (*ImmortalRoomAllocationResp, error)
+	AllocateGameServer(ctx context.Context, in *v1.MatchFoundResponseProto, opts ...grpc.CallOption) (*ImmortalRoomAllocationResp, error)
 }
 
 type thetanGatewayImmortalClient struct {
@@ -166,7 +166,7 @@ func NewThetanGatewayImmortalClient(cc grpc.ClientConnInterface) ThetanGatewayIm
 	return &thetanGatewayImmortalClient{cc}
 }
 
-func (c *thetanGatewayImmortalClient) AllocateGameServer(ctx context.Context, in *v1.ImmortalMatchFoundResponseProto, opts ...grpc.CallOption) (*ImmortalRoomAllocationResp, error) {
+func (c *thetanGatewayImmortalClient) AllocateGameServer(ctx context.Context, in *v1.MatchFoundResponseProto, opts ...grpc.CallOption) (*ImmortalRoomAllocationResp, error) {
 	out := new(ImmortalRoomAllocationResp)
 	err := c.cc.Invoke(ctx, ThetanGatewayImmortal_AllocateGameServer_FullMethodName, in, out, opts...)
 	if err != nil {
@@ -179,7 +179,7 @@ func (c *thetanGatewayImmortalClient) AllocateGameServer(ctx context.Context, in
 // All implementations must embed UnimplementedThetanGatewayImmortalServer
 // for forward compatibility
 type ThetanGatewayImmortalServer interface {
-	AllocateGameServer(context.Context, *v1.ImmortalMatchFoundResponseProto) (*ImmortalRoomAllocationResp, error)
+	AllocateGameServer(context.Context, *v1.MatchFoundResponseProto) (*ImmortalRoomAllocationResp, error)
 	mustEmbedUnimplementedThetanGatewayImmortalServer()
 }
 
@@ -187,7 +187,7 @@ type ThetanGatewayImmortalServer interface {
 type UnimplementedThetanGatewayImmortalServer struct {
 }
 
-func (UnimplementedThetanGatewayImmortalServer) AllocateGameServer(context.Context, *v1.ImmortalMatchFoundResponseProto) (*ImmortalRoomAllocationResp, error) {
+func (UnimplementedThetanGatewayImmortalServer) AllocateGameServer(context.Context, *v1.MatchFoundResponseProto) (*ImmortalRoomAllocationResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method AllocateGameServer not implemented")
 }
 func (UnimplementedThetanGatewayImmortalServer) mustEmbedUnimplementedThetanGatewayImmortalServer() {}
@@ -204,7 +204,7 @@ func RegisterThetanGatewayImmortalServer(s grpc.ServiceRegistrar, srv ThetanGate
 }
 
 func _ThetanGatewayImmortal_AllocateGameServer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(v1.ImmortalMatchFoundResponseProto)
+	in := new(v1.MatchFoundResponseProto)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
@@ -216,7 +216,7 @@ func _ThetanGatewayImmortal_AllocateGameServer_Handler(srv interface{}, ctx cont
 		FullMethod: ThetanGatewayImmortal_AllocateGameServer_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ThetanGatewayImmortalServer).AllocateGameServer(ctx, req.(*v1.ImmortalMatchFoundResponseProto))
+		return srv.(ThetanGatewayImmortalServer).AllocateGameServer(ctx, req.(*v1.MatchFoundResponseProto))
 	}
 	return interceptor(ctx, in, info, handler)
 }

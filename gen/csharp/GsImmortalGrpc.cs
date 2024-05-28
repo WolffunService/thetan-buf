@@ -225,16 +225,16 @@ namespace Thetan.Gateway.V1 {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto> __Marshaller_thetan_immortal_v1_ImmortalMatchFoundResponseProto = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.MatchFoundResponseProto> __Marshaller_thetan_immortal_v1_MatchFoundResponseProto = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.MatchFoundResponseProto.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> __Marshaller_thetan_gateway_v1_ImmortalRoomAllocationResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Gateway.V1.ImmortalRoomAllocationResp.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> __Method_AllocateGameServer = new grpc::Method<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Gateway.V1.ImmortalRoomAllocationResp>(
+    static readonly grpc::Method<global::Thetan.Immortal.V1.MatchFoundResponseProto, global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> __Method_AllocateGameServer = new grpc::Method<global::Thetan.Immortal.V1.MatchFoundResponseProto, global::Thetan.Gateway.V1.ImmortalRoomAllocationResp>(
         grpc::MethodType.Unary,
         __ServiceName,
         "AllocateGameServer",
-        __Marshaller_thetan_immortal_v1_ImmortalMatchFoundResponseProto,
+        __Marshaller_thetan_immortal_v1_MatchFoundResponseProto,
         __Marshaller_thetan_gateway_v1_ImmortalRoomAllocationResp);
 
     /// <summary>Service descriptor</summary>
@@ -248,7 +248,7 @@ namespace Thetan.Gateway.V1 {
     public abstract partial class ThetanGatewayImmortalBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> AllocateGameServer(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> AllocateGameServer(global::Thetan.Immortal.V1.MatchFoundResponseProto request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -283,22 +283,22 @@ namespace Thetan.Gateway.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Gateway.V1.ImmortalRoomAllocationResp AllocateGameServer(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.Gateway.V1.ImmortalRoomAllocationResp AllocateGameServer(global::Thetan.Immortal.V1.MatchFoundResponseProto request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AllocateGameServer(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Gateway.V1.ImmortalRoomAllocationResp AllocateGameServer(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::CallOptions options)
+      public virtual global::Thetan.Gateway.V1.ImmortalRoomAllocationResp AllocateGameServer(global::Thetan.Immortal.V1.MatchFoundResponseProto request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AllocateGameServer, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> AllocateGameServerAsync(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> AllocateGameServerAsync(global::Thetan.Immortal.V1.MatchFoundResponseProto request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AllocateGameServerAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> AllocateGameServerAsync(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Gateway.V1.ImmortalRoomAllocationResp> AllocateGameServerAsync(global::Thetan.Immortal.V1.MatchFoundResponseProto request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AllocateGameServer, null, options, request);
       }
@@ -326,7 +326,7 @@ namespace Thetan.Gateway.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanGatewayImmortalBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_AllocateGameServer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Gateway.V1.ImmortalRoomAllocationResp>(serviceImpl.AllocateGameServer));
+      serviceBinder.AddMethod(__Method_AllocateGameServer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.MatchFoundResponseProto, global::Thetan.Gateway.V1.ImmortalRoomAllocationResp>(serviceImpl.AllocateGameServer));
     }
 
   }

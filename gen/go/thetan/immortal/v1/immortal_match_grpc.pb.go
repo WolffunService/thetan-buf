@@ -19,90 +19,89 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ImmortalMatchDirectorService_CancelTicket_FullMethodName = "/thetan.immortal.v1.ImmortalMatchDirectorService/CancelTicket"
+	MatchDirectorService_CancelTicket_FullMethodName = "/thetan.immortal.v1.MatchDirectorService/CancelTicket"
 )
 
-// ImmortalMatchDirectorServiceClient is the client API for ImmortalMatchDirectorService service.
+// MatchDirectorServiceClient is the client API for MatchDirectorService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
-type ImmortalMatchDirectorServiceClient interface {
-	CancelTicket(ctx context.Context, in *ImmortalCancelTicketRequest, opts ...grpc.CallOption) (*ImmortalCancelTicketResponse, error)
+type MatchDirectorServiceClient interface {
+	CancelTicket(ctx context.Context, in *CancelTicketRequest, opts ...grpc.CallOption) (*CancelTicketResponse, error)
 }
 
-type immortalMatchDirectorServiceClient struct {
+type matchDirectorServiceClient struct {
 	cc grpc.ClientConnInterface
 }
 
-func NewImmortalMatchDirectorServiceClient(cc grpc.ClientConnInterface) ImmortalMatchDirectorServiceClient {
-	return &immortalMatchDirectorServiceClient{cc}
+func NewMatchDirectorServiceClient(cc grpc.ClientConnInterface) MatchDirectorServiceClient {
+	return &matchDirectorServiceClient{cc}
 }
 
-func (c *immortalMatchDirectorServiceClient) CancelTicket(ctx context.Context, in *ImmortalCancelTicketRequest, opts ...grpc.CallOption) (*ImmortalCancelTicketResponse, error) {
-	out := new(ImmortalCancelTicketResponse)
-	err := c.cc.Invoke(ctx, ImmortalMatchDirectorService_CancelTicket_FullMethodName, in, out, opts...)
+func (c *matchDirectorServiceClient) CancelTicket(ctx context.Context, in *CancelTicketRequest, opts ...grpc.CallOption) (*CancelTicketResponse, error) {
+	out := new(CancelTicketResponse)
+	err := c.cc.Invoke(ctx, MatchDirectorService_CancelTicket_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-// ImmortalMatchDirectorServiceServer is the server API for ImmortalMatchDirectorService service.
-// All implementations must embed UnimplementedImmortalMatchDirectorServiceServer
+// MatchDirectorServiceServer is the server API for MatchDirectorService service.
+// All implementations must embed UnimplementedMatchDirectorServiceServer
 // for forward compatibility
-type ImmortalMatchDirectorServiceServer interface {
-	CancelTicket(context.Context, *ImmortalCancelTicketRequest) (*ImmortalCancelTicketResponse, error)
-	mustEmbedUnimplementedImmortalMatchDirectorServiceServer()
+type MatchDirectorServiceServer interface {
+	CancelTicket(context.Context, *CancelTicketRequest) (*CancelTicketResponse, error)
+	mustEmbedUnimplementedMatchDirectorServiceServer()
 }
 
-// UnimplementedImmortalMatchDirectorServiceServer must be embedded to have forward compatible implementations.
-type UnimplementedImmortalMatchDirectorServiceServer struct {
+// UnimplementedMatchDirectorServiceServer must be embedded to have forward compatible implementations.
+type UnimplementedMatchDirectorServiceServer struct {
 }
 
-func (UnimplementedImmortalMatchDirectorServiceServer) CancelTicket(context.Context, *ImmortalCancelTicketRequest) (*ImmortalCancelTicketResponse, error) {
+func (UnimplementedMatchDirectorServiceServer) CancelTicket(context.Context, *CancelTicketRequest) (*CancelTicketResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CancelTicket not implemented")
 }
-func (UnimplementedImmortalMatchDirectorServiceServer) mustEmbedUnimplementedImmortalMatchDirectorServiceServer() {
-}
+func (UnimplementedMatchDirectorServiceServer) mustEmbedUnimplementedMatchDirectorServiceServer() {}
 
-// UnsafeImmortalMatchDirectorServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to ImmortalMatchDirectorServiceServer will
+// UnsafeMatchDirectorServiceServer may be embedded to opt out of forward compatibility for this service.
+// Use of this interface is not recommended, as added methods to MatchDirectorServiceServer will
 // result in compilation errors.
-type UnsafeImmortalMatchDirectorServiceServer interface {
-	mustEmbedUnimplementedImmortalMatchDirectorServiceServer()
+type UnsafeMatchDirectorServiceServer interface {
+	mustEmbedUnimplementedMatchDirectorServiceServer()
 }
 
-func RegisterImmortalMatchDirectorServiceServer(s grpc.ServiceRegistrar, srv ImmortalMatchDirectorServiceServer) {
-	s.RegisterService(&ImmortalMatchDirectorService_ServiceDesc, srv)
+func RegisterMatchDirectorServiceServer(s grpc.ServiceRegistrar, srv MatchDirectorServiceServer) {
+	s.RegisterService(&MatchDirectorService_ServiceDesc, srv)
 }
 
-func _ImmortalMatchDirectorService_CancelTicket_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(ImmortalCancelTicketRequest)
+func _MatchDirectorService_CancelTicket_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CancelTicketRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ImmortalMatchDirectorServiceServer).CancelTicket(ctx, in)
+		return srv.(MatchDirectorServiceServer).CancelTicket(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: ImmortalMatchDirectorService_CancelTicket_FullMethodName,
+		FullMethod: MatchDirectorService_CancelTicket_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ImmortalMatchDirectorServiceServer).CancelTicket(ctx, req.(*ImmortalCancelTicketRequest))
+		return srv.(MatchDirectorServiceServer).CancelTicket(ctx, req.(*CancelTicketRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-// ImmortalMatchDirectorService_ServiceDesc is the grpc.ServiceDesc for ImmortalMatchDirectorService service.
+// MatchDirectorService_ServiceDesc is the grpc.ServiceDesc for MatchDirectorService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
-var ImmortalMatchDirectorService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "thetan.immortal.v1.ImmortalMatchDirectorService",
-	HandlerType: (*ImmortalMatchDirectorServiceServer)(nil),
+var MatchDirectorService_ServiceDesc = grpc.ServiceDesc{
+	ServiceName: "thetan.immortal.v1.MatchDirectorService",
+	HandlerType: (*MatchDirectorServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
 			MethodName: "CancelTicket",
-			Handler:    _ImmortalMatchDirectorService_CancelTicket_Handler,
+			Handler:    _MatchDirectorService_CancelTicket_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

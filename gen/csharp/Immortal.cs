@@ -27,37 +27,37 @@ namespace Thetan.Immortal.V1 {
             "CiF0aGV0YW4vaW1tb3J0YWwvdjEvaW1tb3J0YWwucHJvdG8SEnRoZXRhbi5p",
             "bW1vcnRhbC52MRoodGhldGFuL2ltbW9ydGFsL3YxL2ltbW9ydGFsX3NoYXJl",
             "ZC5wcm90byI3ChdTZWFyY2hQbGF5ZXJJbmZvUmVxdWVzdBIcCglwbGF5ZXJJ",
-            "RHMYASADKAlSCXBsYXllcklEcyJmChhTZWFyY2hQbGF5ZXJJbmZvUmVzcG9u",
-            "c2USSgoHcGxheWVycxgBIAMoCzIwLnRoZXRhbi5pbW1vcnRhbC52MS5JbW1v",
-            "cnRhbFBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzIi8KFUdldFVzZXJQ",
-            "cm9maWxlUmVxdWVzdBIWCgZ1c2VySUQYASABKAlSBnVzZXJJRCLqAQoWR2V0",
-            "VXNlclByb2ZpbGVSZXNwb25zZRIWCgZ1c2VySUQYASABKAlSBnVzZXJJRBIa",
-            "Cgh1c2VyTmFtZRgCIAEoCVIIdXNlck5hbWUSGAoHY291bnRyeRgDIAEoCVIH",
-            "Y291bnRyeRIaCghhdmF0YXJJRBgEIAEoBVIIYXZhdGFySUQSGAoHZnJhbWVJ",
-            "RBgFIAEoBVIHZnJhbWVJRBIgCgtuYW1lQ29sb3JJRBgGIAEoBVILbmFtZUNv",
-            "bG9ySUQSEgoEcmFuaxgHIAEoBVIEcmFuaxIWCgZ0cm9waHkYCCABKAVSBnRy",
-            "b3BoeSJtChBCYXR0bGVFbmRSZXF1ZXN0EhoKCHJvb21OYW1lGAEgASgJUghy",
-            "b29tTmFtZRI9CgdwbGF5ZXJzGAIgAygLMiMudGhldGFuLmltbW9ydGFsLnYx",
-            "LlBsYXllck1hdGNoSW5mb1IHcGxheWVycyKuAQoPUGxheWVyTWF0Y2hJbmZv",
-            "EhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBIeCgpnYW1lUmVzdWx0GAIg",
-            "ASgFUgpnYW1lUmVzdWx0EiwKBGhlcm8YAyABKAsyGC50aGV0YW4uaW1tb3J0",
-            "YWwudjEuSGVyb1IEaGVybxIxCgZza2lsbHMYBCADKAsyGS50aGV0YW4uaW1t",
-            "b3J0YWwudjEuU2tpbGxSBnNraWxscyJxChFCYXR0bGVFbmRSZXNwb25zZRIa",
-            "CghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSFAoFaXNXaW4YAiABKAhSBWlz",
-            "V2luEhYKBnRyb3BoeRgDIAEoBVIGdHJvcGh5EhIKBGdvbGQYBCABKAVSBGdv",
-            "bGQyywIKD0ltbW9ydGFsU2VydmljZRJvChBTZWFyY2hQbGF5ZXJJbmZvEisu",
-            "dGhldGFuLmltbW9ydGFsLnYxLlNlYXJjaFBsYXllckluZm9SZXF1ZXN0Giwu",
-            "dGhldGFuLmltbW9ydGFsLnYxLlNlYXJjaFBsYXllckluZm9SZXNwb25zZSIA",
-            "EmkKDkdldFVzZXJQcm9maWxlEikudGhldGFuLmltbW9ydGFsLnYxLkdldFVz",
-            "ZXJQcm9maWxlUmVxdWVzdBoqLnRoZXRhbi5pbW1vcnRhbC52MS5HZXRVc2Vy",
-            "UHJvZmlsZVJlc3BvbnNlIgASXAoJQmF0dGxlRW5kEiQudGhldGFuLmltbW9y",
-            "dGFsLnYxLkJhdHRsZUVuZFJlcXVlc3QaJS50aGV0YW4uaW1tb3J0YWwudjEu",
-            "QmF0dGxlRW5kUmVzcG9uc2UiADABQsoBChZjb20udGhldGFuLmltbW9ydGFs",
-            "LnYxQg1JbW1vcnRhbFByb3RvUAFaN3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRh",
-            "bi9pbW1vcnRhbC92MTt0aGV0YW5faW1tb3J0YWxfdjGiAgNUSViqAhJUaGV0",
-            "YW4uSW1tb3J0YWwuVjHKAhJUaGV0YW5cSW1tb3J0YWxcVjHiAh5UaGV0YW5c",
-            "SW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHqAhRUaGV0YW46OkltbW9ydGFsOjpW",
-            "MWIGcHJvdG8z"));
+            "RHMYASADKAlSCXBsYXllcklEcyJeChhTZWFyY2hQbGF5ZXJJbmZvUmVzcG9u",
+            "c2USQgoHcGxheWVycxgBIAMoCzIoLnRoZXRhbi5pbW1vcnRhbC52MS5QbGF5",
+            "ZXJJbmZvTWF0Y2hQcm90b1IHcGxheWVycyIvChVHZXRVc2VyUHJvZmlsZVJl",
+            "cXVlc3QSFgoGdXNlcklEGAEgASgJUgZ1c2VySUQi6gEKFkdldFVzZXJQcm9m",
+            "aWxlUmVzcG9uc2USFgoGdXNlcklEGAEgASgJUgZ1c2VySUQSGgoIdXNlck5h",
+            "bWUYAiABKAlSCHVzZXJOYW1lEhgKB2NvdW50cnkYAyABKAlSB2NvdW50cnkS",
+            "GgoIYXZhdGFySUQYBCABKAVSCGF2YXRhcklEEhgKB2ZyYW1lSUQYBSABKAVS",
+            "B2ZyYW1lSUQSIAoLbmFtZUNvbG9ySUQYBiABKAVSC25hbWVDb2xvcklEEhIK",
+            "BHJhbmsYByABKAVSBHJhbmsSFgoGdHJvcGh5GAggASgFUgZ0cm9waHkibQoQ",
+            "QmF0dGxlRW5kUmVxdWVzdBIaCghyb29tTmFtZRgBIAEoCVIIcm9vbU5hbWUS",
+            "PQoHcGxheWVycxgCIAMoCzIjLnRoZXRhbi5pbW1vcnRhbC52MS5QbGF5ZXJN",
+            "YXRjaEluZm9SB3BsYXllcnMirgEKD1BsYXllck1hdGNoSW5mbxIaCghwbGF5",
+            "ZXJJRBgBIAEoCVIIcGxheWVySUQSHgoKZ2FtZVJlc3VsdBgCIAEoBVIKZ2Ft",
+            "ZVJlc3VsdBIsCgRoZXJvGAMgASgLMhgudGhldGFuLmltbW9ydGFsLnYxLkhl",
+            "cm9SBGhlcm8SMQoGc2tpbGxzGAQgAygLMhkudGhldGFuLmltbW9ydGFsLnYx",
+            "LlNraWxsUgZza2lsbHMicQoRQmF0dGxlRW5kUmVzcG9uc2USGgoIcGxheWVy",
+            "SUQYASABKAlSCHBsYXllcklEEhQKBWlzV2luGAIgASgIUgVpc1dpbhIWCgZ0",
+            "cm9waHkYAyABKAVSBnRyb3BoeRISCgRnb2xkGAQgASgFUgRnb2xkMssCCg9J",
+            "bW1vcnRhbFNlcnZpY2USbwoQU2VhcmNoUGxheWVySW5mbxIrLnRoZXRhbi5p",
+            "bW1vcnRhbC52MS5TZWFyY2hQbGF5ZXJJbmZvUmVxdWVzdBosLnRoZXRhbi5p",
+            "bW1vcnRhbC52MS5TZWFyY2hQbGF5ZXJJbmZvUmVzcG9uc2UiABJpCg5HZXRV",
+            "c2VyUHJvZmlsZRIpLnRoZXRhbi5pbW1vcnRhbC52MS5HZXRVc2VyUHJvZmls",
+            "ZVJlcXVlc3QaKi50aGV0YW4uaW1tb3J0YWwudjEuR2V0VXNlclByb2ZpbGVS",
+            "ZXNwb25zZSIAElwKCUJhdHRsZUVuZBIkLnRoZXRhbi5pbW1vcnRhbC52MS5C",
+            "YXR0bGVFbmRSZXF1ZXN0GiUudGhldGFuLmltbW9ydGFsLnYxLkJhdHRsZUVu",
+            "ZFJlc3BvbnNlIgAwAULKAQoWY29tLnRoZXRhbi5pbW1vcnRhbC52MUINSW1t",
+            "b3J0YWxQcm90b1ABWjd0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vaW1tb3J0",
+            "YWwvdjE7dGhldGFuX2ltbW9ydGFsX3YxogIDVElYqgISVGhldGFuLkltbW9y",
+            "dGFsLlYxygISVGhldGFuXEltbW9ydGFsXFYx4gIeVGhldGFuXEltbW9ydGFs",
+            "XFYxXEdQQk1ldGFkYXRh6gIUVGhldGFuOjpJbW1vcnRhbDo6VjFiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -298,12 +298,12 @@ namespace Thetan.Immortal.V1 {
 
     /// <summary>Field number for the "players" field.</summary>
     public const int PlayersFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto> _repeated_players_codec
-        = pb::FieldCodec.ForMessage(10, global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto> players_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto>();
+    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.PlayerInfoMatchProto> _repeated_players_codec
+        = pb::FieldCodec.ForMessage(10, global::Thetan.Immortal.V1.PlayerInfoMatchProto.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto> players_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Immortal.V1.ImmortalPlayerInfoMatchProto> Players {
+    public pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto> Players {
       get { return players_; }
     }
 
