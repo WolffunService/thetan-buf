@@ -42,22 +42,23 @@ namespace Thetan.Immortal.V1 {
             "EhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBIeCgpnYW1lUmVzdWx0GAIg",
             "ASgFUgpnYW1lUmVzdWx0EiwKBGhlcm8YAyABKAsyGC50aGV0YW4uaW1tb3J0",
             "YWwudjEuSGVyb1IEaGVybxIxCgZza2lsbHMYBCADKAsyGS50aGV0YW4uaW1t",
-            "b3J0YWwudjEuU2tpbGxSBnNraWxscyJxChFCYXR0bGVFbmRSZXNwb25zZRIa",
-            "CghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSFAoFaXNXaW4YAiABKAhSBWlz",
-            "V2luEhYKBnRyb3BoeRgDIAEoBVIGdHJvcGh5EhIKBGdvbGQYBCABKAVSBGdv",
-            "bGQyywIKD0ltbW9ydGFsU2VydmljZRJvChBTZWFyY2hQbGF5ZXJJbmZvEisu",
-            "dGhldGFuLmltbW9ydGFsLnYxLlNlYXJjaFBsYXllckluZm9SZXF1ZXN0Giwu",
-            "dGhldGFuLmltbW9ydGFsLnYxLlNlYXJjaFBsYXllckluZm9SZXNwb25zZSIA",
-            "EmkKDkdldFVzZXJQcm9maWxlEikudGhldGFuLmltbW9ydGFsLnYxLkdldFVz",
-            "ZXJQcm9maWxlUmVxdWVzdBoqLnRoZXRhbi5pbW1vcnRhbC52MS5HZXRVc2Vy",
-            "UHJvZmlsZVJlc3BvbnNlIgASXAoJQmF0dGxlRW5kEiQudGhldGFuLmltbW9y",
-            "dGFsLnYxLkJhdHRsZUVuZFJlcXVlc3QaJS50aGV0YW4uaW1tb3J0YWwudjEu",
-            "QmF0dGxlRW5kUmVzcG9uc2UiADABQsoBChZjb20udGhldGFuLmltbW9ydGFs",
-            "LnYxQg1JbW1vcnRhbFByb3RvUAFaN3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRh",
-            "bi9pbW1vcnRhbC92MTt0aGV0YW5faW1tb3J0YWxfdjGiAgNUSViqAhJUaGV0",
-            "YW4uSW1tb3J0YWwuVjHKAhJUaGV0YW5cSW1tb3J0YWxcVjHiAh5UaGV0YW5c",
-            "SW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHqAhRUaGV0YW46OkltbW9ydGFsOjpW",
-            "MWIGcHJvdG8z"));
+            "b3J0YWwudjEuU2tpbGxSBnNraWxscyKfAQoRQmF0dGxlRW5kUmVzcG9uc2US",
+            "GgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEhQKBWlzV2luGAIgASgIUgVp",
+            "c1dpbhIWCgZ0cm9waHkYAyABKAVSBnRyb3BoeRIgCgtiYXR0bGVQb2ludBgE",
+            "IAEoBVILYmF0dGxlUG9pbnQSHgoKYmF0dGxlU3RhchgFIAEoBVIKYmF0dGxl",
+            "U3RhcjLLAgoPSW1tb3J0YWxTZXJ2aWNlEm8KEFNlYXJjaFBsYXllckluZm8S",
+            "Ky50aGV0YW4uaW1tb3J0YWwudjEuU2VhcmNoUGxheWVySW5mb1JlcXVlc3Qa",
+            "LC50aGV0YW4uaW1tb3J0YWwudjEuU2VhcmNoUGxheWVySW5mb1Jlc3BvbnNl",
+            "IgASaQoOR2V0VXNlclByb2ZpbGUSKS50aGV0YW4uaW1tb3J0YWwudjEuR2V0",
+            "VXNlclByb2ZpbGVSZXF1ZXN0GioudGhldGFuLmltbW9ydGFsLnYxLkdldFVz",
+            "ZXJQcm9maWxlUmVzcG9uc2UiABJcCglCYXR0bGVFbmQSJC50aGV0YW4uaW1t",
+            "b3J0YWwudjEuQmF0dGxlRW5kUmVxdWVzdBolLnRoZXRhbi5pbW1vcnRhbC52",
+            "MS5CYXR0bGVFbmRSZXNwb25zZSIAMAFCygEKFmNvbS50aGV0YW4uaW1tb3J0",
+            "YWwudjFCDUltbW9ydGFsUHJvdG9QAVo3dGhldGFuLWJ1Zi9nZW4vZ28vdGhl",
+            "dGFuL2ltbW9ydGFsL3YxO3RoZXRhbl9pbW1vcnRhbF92MaICA1RJWKoCElRo",
+            "ZXRhbi5JbW1vcnRhbC5WMcoCElRoZXRhblxJbW1vcnRhbFxWMeICHlRoZXRh",
+            "blxJbW1vcnRhbFxWMVxHUEJNZXRhZGF0YeoCFFRoZXRhbjo6SW1tb3J0YWw6",
+            "OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -67,7 +68,7 @@ namespace Thetan.Immortal.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.GetUserProfileResponse), global::Thetan.Immortal.V1.GetUserProfileResponse.Parser, new[]{ "UserID", "UserName", "Country", "AvatarID", "FrameID", "NameColorID", "Rank", "Trophy" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.BattleEndRequest), global::Thetan.Immortal.V1.BattleEndRequest.Parser, new[]{ "RoomName", "Players" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.PlayerMatchInfo), global::Thetan.Immortal.V1.PlayerMatchInfo.Parser, new[]{ "PlayerID", "GameResult", "Hero", "Skills" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.BattleEndResponse), global::Thetan.Immortal.V1.BattleEndResponse.Parser, new[]{ "PlayerID", "IsWin", "Trophy", "Gold" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.BattleEndResponse), global::Thetan.Immortal.V1.BattleEndResponse.Parser, new[]{ "PlayerID", "IsWin", "Trophy", "BattlePoint", "BattleStar" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1620,7 +1621,8 @@ namespace Thetan.Immortal.V1 {
       playerID_ = other.playerID_;
       isWin_ = other.isWin_;
       trophy_ = other.trophy_;
-      gold_ = other.gold_;
+      battlePoint_ = other.battlePoint_;
+      battleStar_ = other.battleStar_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1666,15 +1668,27 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
-    /// <summary>Field number for the "gold" field.</summary>
-    public const int GoldFieldNumber = 4;
-    private int gold_;
+    /// <summary>Field number for the "battlePoint" field.</summary>
+    public const int BattlePointFieldNumber = 4;
+    private int battlePoint_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Gold {
-      get { return gold_; }
+    public int BattlePoint {
+      get { return battlePoint_; }
       set {
-        gold_ = value;
+        battlePoint_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "battleStar" field.</summary>
+    public const int BattleStarFieldNumber = 5;
+    private int battleStar_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int BattleStar {
+      get { return battleStar_; }
+      set {
+        battleStar_ = value;
       }
     }
 
@@ -1696,7 +1710,8 @@ namespace Thetan.Immortal.V1 {
       if (PlayerID != other.PlayerID) return false;
       if (IsWin != other.IsWin) return false;
       if (Trophy != other.Trophy) return false;
-      if (Gold != other.Gold) return false;
+      if (BattlePoint != other.BattlePoint) return false;
+      if (BattleStar != other.BattleStar) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1707,7 +1722,8 @@ namespace Thetan.Immortal.V1 {
       if (PlayerID.Length != 0) hash ^= PlayerID.GetHashCode();
       if (IsWin != false) hash ^= IsWin.GetHashCode();
       if (Trophy != 0) hash ^= Trophy.GetHashCode();
-      if (Gold != 0) hash ^= Gold.GetHashCode();
+      if (BattlePoint != 0) hash ^= BattlePoint.GetHashCode();
+      if (BattleStar != 0) hash ^= BattleStar.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1738,9 +1754,13 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(24);
         output.WriteInt32(Trophy);
       }
-      if (Gold != 0) {
+      if (BattlePoint != 0) {
         output.WriteRawTag(32);
-        output.WriteInt32(Gold);
+        output.WriteInt32(BattlePoint);
+      }
+      if (BattleStar != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(BattleStar);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1764,9 +1784,13 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(24);
         output.WriteInt32(Trophy);
       }
-      if (Gold != 0) {
+      if (BattlePoint != 0) {
         output.WriteRawTag(32);
-        output.WriteInt32(Gold);
+        output.WriteInt32(BattlePoint);
+      }
+      if (BattleStar != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(BattleStar);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1787,8 +1811,11 @@ namespace Thetan.Immortal.V1 {
       if (Trophy != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Trophy);
       }
-      if (Gold != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Gold);
+      if (BattlePoint != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BattlePoint);
+      }
+      if (BattleStar != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BattleStar);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1811,8 +1838,11 @@ namespace Thetan.Immortal.V1 {
       if (other.Trophy != 0) {
         Trophy = other.Trophy;
       }
-      if (other.Gold != 0) {
-        Gold = other.Gold;
+      if (other.BattlePoint != 0) {
+        BattlePoint = other.BattlePoint;
+      }
+      if (other.BattleStar != 0) {
+        BattleStar = other.BattleStar;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1842,7 +1872,11 @@ namespace Thetan.Immortal.V1 {
             break;
           }
           case 32: {
-            Gold = input.ReadInt32();
+            BattlePoint = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            BattleStar = input.ReadInt32();
             break;
           }
         }
@@ -1873,7 +1907,11 @@ namespace Thetan.Immortal.V1 {
             break;
           }
           case 32: {
-            Gold = input.ReadInt32();
+            BattlePoint = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            BattleStar = input.ReadInt32();
             break;
           }
         }
