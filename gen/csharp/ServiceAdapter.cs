@@ -56,27 +56,27 @@ namespace Thetan.World.V1 {
             "ZW1zRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSMwoFdmFsdWUYAiABKAsyHS50",
             "aGV0YW4ud29ybGQudjEuSXRlbVJlc3BvbnNlUgV2YWx1ZToCOAEiMwoNSW5V",
             "c2VkUmVxdWVzdBIOCgJpZBgBIAEoCVICaWQSEgoEa2luZBgCIAEoBVIEa2lu",
-            "ZCIoCg5JblVzZWRSZXNwb25zZRIWCgZpblVzZWQYASABKAhSBmluVXNlZCIi",
-            "ChBSZW1vdmVORlRSZXF1ZXN0Eg4KAmlkGAEgASgJUgJpZCITChFSZW1vdmVO",
-            "RlRSZXNwb25zZTLcBAoZVGhldGFuV29ybGRBZGFwdGVyU2VydmljZRJLChFH",
-            "ZXRBdmFpbGFibGVJdGVtcxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoeLnRo",
-            "ZXRhbi53b3JsZC52MS5BdmFpbGFibGVJdGVtElgKDElzVmFsaWRJdGVtcxIk",
-            "LnRoZXRhbi53b3JsZC52MS5Jc1ZhbGlkSXRlbXNSZXF1ZXN0GiIudGhldGFu",
-            "LndvcmxkLnYxLkNoZWNrSXRlbVJlc3BvbnNlElIKCVNlbmRJdGVtcxIhLnRo",
-            "ZXRhbi53b3JsZC52MS5TZW5kSXRlbXNSZXF1ZXN0GiIudGhldGFuLndvcmxk",
-            "LnYxLlNlbmRJdGVtc1Jlc3BvbnNlElIKDUNyZWF0ZU5GVEl0ZW0SIi50aGV0",
-            "YW4ud29ybGQudjEuQ3JlYXRlSXRlbVJlcXVlc3QaHS50aGV0YW4ud29ybGQu",
-            "djEuSXRlbVJlc3BvbnNlEk8KCEdldEl0ZW1zEiAudGhldGFuLndvcmxkLnYx",
-            "LkdldEl0ZW1zUmVxdWVzdBohLnRoZXRhbi53b3JsZC52MS5HZXRJdGVtc1Jl",
-            "c3BvbnNlEksKCElzSW5Vc2VkEh4udGhldGFuLndvcmxkLnYxLkluVXNlZFJl",
-            "cXVlc3QaHy50aGV0YW4ud29ybGQudjEuSW5Vc2VkUmVzcG9uc2USUgoJUmVt",
-            "b3ZlTkZUEiEudGhldGFuLndvcmxkLnYxLlJlbW92ZU5GVFJlcXVlc3QaIi50",
-            "aGV0YW4ud29ybGQudjEuUmVtb3ZlTkZUUmVzcG9uc2VCuwEKE2NvbS50aGV0",
-            "YW4ud29ybGQudjFCE1NlcnZpY2VBZGFwdGVyUHJvdG9QAVoxdGhldGFuLWJ1",
-            "Zi9nZW4vZ28vdGhldGFuL3dvcmxkL3YxO3RoZXRhbl93b3JsZF92MaICA1RX",
-            "WKoCD1RoZXRhbi5Xb3JsZC5WMcoCD1RoZXRhblxXb3JsZFxWMeICG1RoZXRh",
-            "blxXb3JsZFxWMVxHUEJNZXRhZGF0YeoCEVRoZXRhbjo6V29ybGQ6OlYxYgZw",
-            "cm90bzM="));
+            "ZCIoCg5JblVzZWRSZXNwb25zZRIWCgZpblVzZWQYASABKAhSBmluVXNlZCI2",
+            "ChBSZW1vdmVORlRSZXF1ZXN0Eg4KAmlkGAEgASgJUgJpZBISCgRraW5kGAIg",
+            "ASgFUgRraW5kIhMKEVJlbW92ZU5GVFJlc3BvbnNlMtwEChlUaGV0YW5Xb3Js",
+            "ZEFkYXB0ZXJTZXJ2aWNlEksKEUdldEF2YWlsYWJsZUl0ZW1zEhYuZ29vZ2xl",
+            "LnByb3RvYnVmLkVtcHR5Gh4udGhldGFuLndvcmxkLnYxLkF2YWlsYWJsZUl0",
+            "ZW0SWAoMSXNWYWxpZEl0ZW1zEiQudGhldGFuLndvcmxkLnYxLklzVmFsaWRJ",
+            "dGVtc1JlcXVlc3QaIi50aGV0YW4ud29ybGQudjEuQ2hlY2tJdGVtUmVzcG9u",
+            "c2USUgoJU2VuZEl0ZW1zEiEudGhldGFuLndvcmxkLnYxLlNlbmRJdGVtc1Jl",
+            "cXVlc3QaIi50aGV0YW4ud29ybGQudjEuU2VuZEl0ZW1zUmVzcG9uc2USUgoN",
+            "Q3JlYXRlTkZUSXRlbRIiLnRoZXRhbi53b3JsZC52MS5DcmVhdGVJdGVtUmVx",
+            "dWVzdBodLnRoZXRhbi53b3JsZC52MS5JdGVtUmVzcG9uc2USTwoIR2V0SXRl",
+            "bXMSIC50aGV0YW4ud29ybGQudjEuR2V0SXRlbXNSZXF1ZXN0GiEudGhldGFu",
+            "LndvcmxkLnYxLkdldEl0ZW1zUmVzcG9uc2USSwoISXNJblVzZWQSHi50aGV0",
+            "YW4ud29ybGQudjEuSW5Vc2VkUmVxdWVzdBofLnRoZXRhbi53b3JsZC52MS5J",
+            "blVzZWRSZXNwb25zZRJSCglSZW1vdmVORlQSIS50aGV0YW4ud29ybGQudjEu",
+            "UmVtb3ZlTkZUUmVxdWVzdBoiLnRoZXRhbi53b3JsZC52MS5SZW1vdmVORlRS",
+            "ZXNwb25zZUK7AQoTY29tLnRoZXRhbi53b3JsZC52MUITU2VydmljZUFkYXB0",
+            "ZXJQcm90b1ABWjF0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vd29ybGQvdjE7",
+            "dGhldGFuX3dvcmxkX3YxogIDVFdYqgIPVGhldGFuLldvcmxkLlYxygIPVGhl",
+            "dGFuXFdvcmxkXFYx4gIbVGhldGFuXFdvcmxkXFYxXEdQQk1ldGFkYXRh6gIR",
+            "VGhldGFuOjpXb3JsZDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -93,7 +93,7 @@ namespace Thetan.World.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.GetItemsResponse), global::Thetan.World.V1.GetItemsResponse.Parser, new[]{ "Items" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.InUsedRequest), global::Thetan.World.V1.InUsedRequest.Parser, new[]{ "Id", "Kind" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.InUsedResponse), global::Thetan.World.V1.InUsedResponse.Parser, new[]{ "InUsed" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.RemoveNFTRequest), global::Thetan.World.V1.RemoveNFTRequest.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.RemoveNFTRequest), global::Thetan.World.V1.RemoveNFTRequest.Parser, new[]{ "Id", "Kind" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.World.V1.RemoveNFTResponse), global::Thetan.World.V1.RemoveNFTResponse.Parser, null, null, null, null, null)
           }));
     }
@@ -3466,6 +3466,7 @@ namespace Thetan.World.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RemoveNFTRequest(RemoveNFTRequest other) : this() {
       id_ = other.id_;
+      kind_ = other.kind_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3487,6 +3488,18 @@ namespace Thetan.World.V1 {
       }
     }
 
+    /// <summary>Field number for the "kind" field.</summary>
+    public const int KindFieldNumber = 2;
+    private int kind_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Kind {
+      get { return kind_; }
+      set {
+        kind_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -3503,6 +3516,7 @@ namespace Thetan.World.V1 {
         return true;
       }
       if (Id != other.Id) return false;
+      if (Kind != other.Kind) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3511,6 +3525,7 @@ namespace Thetan.World.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (Kind != 0) hash ^= Kind.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3533,6 +3548,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(10);
         output.WriteString(Id);
       }
+      if (Kind != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Kind);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3547,6 +3566,10 @@ namespace Thetan.World.V1 {
         output.WriteRawTag(10);
         output.WriteString(Id);
       }
+      if (Kind != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Kind);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3559,6 +3582,9 @@ namespace Thetan.World.V1 {
       int size = 0;
       if (Id.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (Kind != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Kind);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3574,6 +3600,9 @@ namespace Thetan.World.V1 {
       }
       if (other.Id.Length != 0) {
         Id = other.Id;
+      }
+      if (other.Kind != 0) {
+        Kind = other.Kind;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3594,6 +3623,10 @@ namespace Thetan.World.V1 {
             Id = input.ReadString();
             break;
           }
+          case 16: {
+            Kind = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -3611,6 +3644,10 @@ namespace Thetan.World.V1 {
             break;
           case 10: {
             Id = input.ReadString();
+            break;
+          }
+          case 16: {
+            Kind = input.ReadInt32();
             break;
           }
         }
