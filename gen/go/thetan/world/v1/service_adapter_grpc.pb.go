@@ -26,6 +26,7 @@ const (
 	ThetanWorldAdapterService_CreateNFTItem_FullMethodName     = "/thetan.world.v1.ThetanWorldAdapterService/CreateNFTItem"
 	ThetanWorldAdapterService_GetItems_FullMethodName          = "/thetan.world.v1.ThetanWorldAdapterService/GetItems"
 	ThetanWorldAdapterService_IsInUsed_FullMethodName          = "/thetan.world.v1.ThetanWorldAdapterService/IsInUsed"
+	ThetanWorldAdapterService_RemoveNFT_FullMethodName         = "/thetan.world.v1.ThetanWorldAdapterService/RemoveNFT"
 )
 
 // ThetanWorldAdapterServiceClient is the client API for ThetanWorldAdapterService service.
@@ -38,6 +39,7 @@ type ThetanWorldAdapterServiceClient interface {
 	CreateNFTItem(ctx context.Context, in *CreateItemRequest, opts ...grpc.CallOption) (*ItemResponse, error)
 	GetItems(ctx context.Context, in *GetItemsRequest, opts ...grpc.CallOption) (*GetItemsResponse, error)
 	IsInUsed(ctx context.Context, in *InUsedRequest, opts ...grpc.CallOption) (*InUsedResponse, error)
+	RemoveNFT(ctx context.Context, in *RemoveNFTRequest, opts ...grpc.CallOption) (*RemoveNFTResponse, error)
 }
 
 type thetanWorldAdapterServiceClient struct {
@@ -102,6 +104,15 @@ func (c *thetanWorldAdapterServiceClient) IsInUsed(ctx context.Context, in *InUs
 	return out, nil
 }
 
+func (c *thetanWorldAdapterServiceClient) RemoveNFT(ctx context.Context, in *RemoveNFTRequest, opts ...grpc.CallOption) (*RemoveNFTResponse, error) {
+	out := new(RemoveNFTResponse)
+	err := c.cc.Invoke(ctx, ThetanWorldAdapterService_RemoveNFT_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ThetanWorldAdapterServiceServer is the server API for ThetanWorldAdapterService service.
 // All implementations must embed UnimplementedThetanWorldAdapterServiceServer
 // for forward compatibility
@@ -112,6 +123,7 @@ type ThetanWorldAdapterServiceServer interface {
 	CreateNFTItem(context.Context, *CreateItemRequest) (*ItemResponse, error)
 	GetItems(context.Context, *GetItemsRequest) (*GetItemsResponse, error)
 	IsInUsed(context.Context, *InUsedRequest) (*InUsedResponse, error)
+	RemoveNFT(context.Context, *RemoveNFTRequest) (*RemoveNFTResponse, error)
 	mustEmbedUnimplementedThetanWorldAdapterServiceServer()
 }
 
@@ -136,6 +148,9 @@ func (UnimplementedThetanWorldAdapterServiceServer) GetItems(context.Context, *G
 }
 func (UnimplementedThetanWorldAdapterServiceServer) IsInUsed(context.Context, *InUsedRequest) (*InUsedResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method IsInUsed not implemented")
+}
+func (UnimplementedThetanWorldAdapterServiceServer) RemoveNFT(context.Context, *RemoveNFTRequest) (*RemoveNFTResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method RemoveNFT not implemented")
 }
 func (UnimplementedThetanWorldAdapterServiceServer) mustEmbedUnimplementedThetanWorldAdapterServiceServer() {
 }
@@ -259,6 +274,24 @@ func _ThetanWorldAdapterService_IsInUsed_Handler(srv interface{}, ctx context.Co
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ThetanWorldAdapterService_RemoveNFT_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(RemoveNFTRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ThetanWorldAdapterServiceServer).RemoveNFT(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ThetanWorldAdapterService_RemoveNFT_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ThetanWorldAdapterServiceServer).RemoveNFT(ctx, req.(*RemoveNFTRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ThetanWorldAdapterService_ServiceDesc is the grpc.ServiceDesc for ThetanWorldAdapterService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -289,6 +322,10 @@ var ThetanWorldAdapterService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "IsInUsed",
 			Handler:    _ThetanWorldAdapterService_IsInUsed_Handler,
+		},
+		{
+			MethodName: "RemoveNFT",
+			Handler:    _ThetanWorldAdapterService_RemoveNFT_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

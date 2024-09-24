@@ -69,6 +69,10 @@ namespace Thetan.World.V1 {
     static readonly grpc::Marshaller<global::Thetan.World.V1.InUsedRequest> __Marshaller_thetan_world_v1_InUsedRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.InUsedRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.World.V1.InUsedResponse> __Marshaller_thetan_world_v1_InUsedResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.InUsedResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.World.V1.RemoveNFTRequest> __Marshaller_thetan_world_v1_RemoveNFTRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.RemoveNFTRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.World.V1.RemoveNFTResponse> __Marshaller_thetan_world_v1_RemoveNFTResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.World.V1.RemoveNFTResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Thetan.World.V1.AvailableItem> __Method_GetAvailableItems = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Thetan.World.V1.AvailableItem>(
@@ -118,6 +122,14 @@ namespace Thetan.World.V1 {
         __Marshaller_thetan_world_v1_InUsedRequest,
         __Marshaller_thetan_world_v1_InUsedResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.World.V1.RemoveNFTRequest, global::Thetan.World.V1.RemoveNFTResponse> __Method_RemoveNFT = new grpc::Method<global::Thetan.World.V1.RemoveNFTRequest, global::Thetan.World.V1.RemoveNFTResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RemoveNFT",
+        __Marshaller_thetan_world_v1_RemoveNFTRequest,
+        __Marshaller_thetan_world_v1_RemoveNFTResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -160,6 +172,12 @@ namespace Thetan.World.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.World.V1.InUsedResponse> IsInUsed(global::Thetan.World.V1.InUsedRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.World.V1.RemoveNFTResponse> RemoveNFT(global::Thetan.World.V1.RemoveNFTRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -313,6 +331,26 @@ namespace Thetan.World.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_IsInUsed, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.World.V1.RemoveNFTResponse RemoveNFT(global::Thetan.World.V1.RemoveNFTRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveNFT(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.World.V1.RemoveNFTResponse RemoveNFT(global::Thetan.World.V1.RemoveNFTRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RemoveNFT, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.RemoveNFTResponse> RemoveNFTAsync(global::Thetan.World.V1.RemoveNFTRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveNFTAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.World.V1.RemoveNFTResponse> RemoveNFTAsync(global::Thetan.World.V1.RemoveNFTRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RemoveNFT, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ThetanWorldAdapterServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -332,7 +370,8 @@ namespace Thetan.World.V1 {
           .AddMethod(__Method_SendItems, serviceImpl.SendItems)
           .AddMethod(__Method_CreateNFTItem, serviceImpl.CreateNFTItem)
           .AddMethod(__Method_GetItems, serviceImpl.GetItems)
-          .AddMethod(__Method_IsInUsed, serviceImpl.IsInUsed).Build();
+          .AddMethod(__Method_IsInUsed, serviceImpl.IsInUsed)
+          .AddMethod(__Method_RemoveNFT, serviceImpl.RemoveNFT).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -348,6 +387,7 @@ namespace Thetan.World.V1 {
       serviceBinder.AddMethod(__Method_CreateNFTItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.CreateItemRequest, global::Thetan.World.V1.ItemResponse>(serviceImpl.CreateNFTItem));
       serviceBinder.AddMethod(__Method_GetItems, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.GetItemsRequest, global::Thetan.World.V1.GetItemsResponse>(serviceImpl.GetItems));
       serviceBinder.AddMethod(__Method_IsInUsed, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.InUsedRequest, global::Thetan.World.V1.InUsedResponse>(serviceImpl.IsInUsed));
+      serviceBinder.AddMethod(__Method_RemoveNFT, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.World.V1.RemoveNFTRequest, global::Thetan.World.V1.RemoveNFTResponse>(serviceImpl.RemoveNFT));
     }
 
   }
