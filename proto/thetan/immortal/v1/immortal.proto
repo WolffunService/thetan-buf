@@ -53,5 +53,6 @@ message BattleEndResponse{
   string playerID = 1;
   bool isWin = 2;
   int32 trophy = 3;
-  int32 gold = 4;
+  int32 battlePoint = 4;
+  int32 battleStar = 5;
 }
