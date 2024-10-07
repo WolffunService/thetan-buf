@@ -9,6 +9,7 @@ option csharp_namespace = "Thetan.FishNet.Immortal.V1";
 
 message RoomAllocationResp {
   bool isSuccess = 1;
+  int32 portServer = 2;
 }
 
 message GameServerInfoResp{
