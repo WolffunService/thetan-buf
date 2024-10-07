@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package thetan.immortal.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_immortal_v1";
+option csharp_namespace = "Thetan.Immortal.V1";
+
+message SearchPlayersRequest {
+  repeated string countries = 1;
+  int32 amount = 2;
+}
+
+message SearchPlayersResponse {
+  repeated Player players = 1;
+}
+
+message Player {
+  string id = 1;
+  string name = 2;
+  string country = 3;
+}
+
+// ImmortalPlayerService is a grpc server for handling player profile.
+// This grpc is implemented in thetan-player-immortal and match-director-immortal calls it.
+service ImmortalPlayerService {
+  rpc SearchPlayers (SearchPlayersRequest) returns (SearchPlayersResponse) {}
+}

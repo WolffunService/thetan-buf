@@ -46,7 +46,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto> __Marshaller_thetan_immortal_v1_ImmortalMatchFoundResponseProto = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.MatchFoundResponseProto> __Marshaller_thetan_immortal_v1_MatchFoundResponseProto = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.MatchFoundResponseProto.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp> __Marshaller_thetan_fishnet_immortal_v1_RoomAllocationResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -55,11 +55,11 @@ namespace Thetan.Fishnet.Immortal.V1 {
     static readonly grpc::Marshaller<global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp> __Marshaller_thetan_fishnet_immortal_v1_GameServerInfoResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp> __Method_RoomAllocation = new grpc::Method<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp>(
+    static readonly grpc::Method<global::Thetan.Immortal.V1.MatchFoundResponseProto, global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp> __Method_RoomAllocation = new grpc::Method<global::Thetan.Immortal.V1.MatchFoundResponseProto, global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp>(
         grpc::MethodType.Unary,
         __ServiceName,
         "RoomAllocation",
-        __Marshaller_thetan_immortal_v1_ImmortalMatchFoundResponseProto,
+        __Marshaller_thetan_immortal_v1_MatchFoundResponseProto,
         __Marshaller_thetan_fishnet_immortal_v1_RoomAllocationResp);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -89,7 +89,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
     public abstract partial class ThetanFishNetImmortalBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp> RoomAllocation(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp> RoomAllocation(global::Thetan.Immortal.V1.MatchFoundResponseProto request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -136,22 +136,22 @@ namespace Thetan.Fishnet.Immortal.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp RoomAllocation(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp RoomAllocation(global::Thetan.Immortal.V1.MatchFoundResponseProto request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RoomAllocation(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp RoomAllocation(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::CallOptions options)
+      public virtual global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp RoomAllocation(global::Thetan.Immortal.V1.MatchFoundResponseProto request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_RoomAllocation, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp> RoomAllocationAsync(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp> RoomAllocationAsync(global::Thetan.Immortal.V1.MatchFoundResponseProto request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RoomAllocationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp> RoomAllocationAsync(global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp> RoomAllocationAsync(global::Thetan.Immortal.V1.MatchFoundResponseProto request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_RoomAllocation, null, options, request);
       }
@@ -221,7 +221,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ThetanFishNetImmortalBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_RoomAllocation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.ImmortalMatchFoundResponseProto, global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp>(serviceImpl.RoomAllocation));
+      serviceBinder.AddMethod(__Method_RoomAllocation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.MatchFoundResponseProto, global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp>(serviceImpl.RoomAllocation));
       serviceBinder.AddMethod(__Method_Shutdown, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.Shutdown));
       serviceBinder.AddMethod(__Method_GameServerInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp>(serviceImpl.GameServerInfo));
     }

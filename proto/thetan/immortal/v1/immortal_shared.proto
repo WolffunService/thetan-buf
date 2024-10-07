@@ -17,7 +17,7 @@ message Skill {
   int32 level = 2;
 }
 
-message ImmortalPlayerInfoMatchProto {
+message PlayerInfoMatchProto {
   string playerID = 1;
   string playerName = 2;
   int32 avatarID = 3;
@@ -25,11 +25,30 @@ message ImmortalPlayerInfoMatchProto {
   int32 nameColorID = 5;
   int32 battleCount = 6;
   string partyID = 7;
-  int32 trophyRank = 8;
-  int32 trophySearch = 9;
-  int32 rank = 10;
+  int32 trophyRank = 8 [deprecated=true];
+  int32 trophySearch = 9 [deprecated=true];
+  int32 rank = 10 [deprecated=true];
   Hero hero = 11;
   repeated Skill skills = 12;
-  int32 botBrain = 13; // default value is human
-  repeated int32 regions = 14;
+  int32 botBrain = 13 [deprecated=true]; // default value is human
+  Arena arena = 14;
+  double winRate = 15;
+  double rating = 16;
+  double rd = 17;
+  int32 timeZone = 18;
+}
+
+enum Arena
+{
+  NONE = 0;
+  TRAINEE = 1;
+  APPERENTICE = 2;
+  PATHFINDER = 3;
+  FIGHTER = 4;
+  ELITE = 5;
+  MASTER = 6;
+  HERO = 7;
+  LEGEND = 8;
+  IMMORTAL = 9;
+  DEMIGOD = 10;
 }
