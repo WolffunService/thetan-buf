@@ -18,6 +18,8 @@ service ThetanWorldAdapterService {
     rpc GetItems(GetItemsRequest) returns(GetItemsResponse);
 
     rpc IsInUsed(InUsedRequest) returns(InUsedResponse);
+
+    rpc RemoveNFT(RemoveNFTRequest) returns(RemoveNFTResponse);
 }
 
 message ItemResp {
@@ -95,4 +97,12 @@ message InUsedRequest {
 
 message InUsedResponse {
     bool inUsed = 1;
+}
+
+message RemoveNFTRequest {
+    string id = 1;
+    int32 kind = 2;
+}
+
+message RemoveNFTResponse {
 }
