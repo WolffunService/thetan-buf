@@ -17,7 +17,7 @@ message GameServerInfoResp{
 }
 
 service ThetanFishNetImmortal {
-  rpc RoomAllocation(thetan.immortal.v1.ImmortalMatchFoundResponseProto) returns (RoomAllocationResp);
+  rpc RoomAllocation(thetan.immortal.v1.MatchFoundResponseProto) returns (RoomAllocationResp);
   rpc Shutdown(google.protobuf.Empty) returns (google.protobuf.Empty);
   rpc GameServerInfo(google.protobuf.Empty) returns (GameServerInfoResp);
 }

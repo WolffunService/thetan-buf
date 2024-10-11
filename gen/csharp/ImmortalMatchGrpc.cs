@@ -8,9 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Thetan.Immortal.V1 {
-  public static partial class ImmortalMatchDirectorService
+  public static partial class MatchDirectorService
   {
-    static readonly string __ServiceName = "thetan.immortal.v1.ImmortalMatchDirectorService";
+    static readonly string __ServiceName = "thetan.immortal.v1.MatchDirectorService";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -46,17 +46,17 @@ namespace Thetan.Immortal.V1 {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.ImmortalCancelTicketRequest> __Marshaller_thetan_immortal_v1_ImmortalCancelTicketRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.ImmortalCancelTicketRequest.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.CancelTicketRequest> __Marshaller_thetan_immortal_v1_CancelTicketRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.CancelTicketRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.ImmortalCancelTicketResponse> __Marshaller_thetan_immortal_v1_ImmortalCancelTicketResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.ImmortalCancelTicketResponse.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.CancelTicketResponse> __Marshaller_thetan_immortal_v1_CancelTicketResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.CancelTicketResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Immortal.V1.ImmortalCancelTicketRequest, global::Thetan.Immortal.V1.ImmortalCancelTicketResponse> __Method_CancelTicket = new grpc::Method<global::Thetan.Immortal.V1.ImmortalCancelTicketRequest, global::Thetan.Immortal.V1.ImmortalCancelTicketResponse>(
+    static readonly grpc::Method<global::Thetan.Immortal.V1.CancelTicketRequest, global::Thetan.Immortal.V1.CancelTicketResponse> __Method_CancelTicket = new grpc::Method<global::Thetan.Immortal.V1.CancelTicketRequest, global::Thetan.Immortal.V1.CancelTicketResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CancelTicket",
-        __Marshaller_thetan_immortal_v1_ImmortalCancelTicketRequest,
-        __Marshaller_thetan_immortal_v1_ImmortalCancelTicketResponse);
+        __Marshaller_thetan_immortal_v1_CancelTicketRequest,
+        __Marshaller_thetan_immortal_v1_CancelTicketResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -64,77 +64,77 @@ namespace Thetan.Immortal.V1 {
       get { return global::Thetan.Immortal.V1.ImmortalMatchReflection.Descriptor.Services[0]; }
     }
 
-    /// <summary>Base class for server-side implementations of ImmortalMatchDirectorService</summary>
-    [grpc::BindServiceMethod(typeof(ImmortalMatchDirectorService), "BindService")]
-    public abstract partial class ImmortalMatchDirectorServiceBase
+    /// <summary>Base class for server-side implementations of MatchDirectorService</summary>
+    [grpc::BindServiceMethod(typeof(MatchDirectorService), "BindService")]
+    public abstract partial class MatchDirectorServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.ImmortalCancelTicketResponse> CancelTicket(global::Thetan.Immortal.V1.ImmortalCancelTicketRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.CancelTicketResponse> CancelTicket(global::Thetan.Immortal.V1.CancelTicketRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
-    /// <summary>Client for ImmortalMatchDirectorService</summary>
-    public partial class ImmortalMatchDirectorServiceClient : grpc::ClientBase<ImmortalMatchDirectorServiceClient>
+    /// <summary>Client for MatchDirectorService</summary>
+    public partial class MatchDirectorServiceClient : grpc::ClientBase<MatchDirectorServiceClient>
     {
-      /// <summary>Creates a new client for ImmortalMatchDirectorService</summary>
+      /// <summary>Creates a new client for MatchDirectorService</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public ImmortalMatchDirectorServiceClient(grpc::ChannelBase channel) : base(channel)
+      public MatchDirectorServiceClient(grpc::ChannelBase channel) : base(channel)
       {
       }
-      /// <summary>Creates a new client for ImmortalMatchDirectorService that uses a custom <c>CallInvoker</c>.</summary>
+      /// <summary>Creates a new client for MatchDirectorService that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public ImmortalMatchDirectorServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      public MatchDirectorServiceClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected ImmortalMatchDirectorServiceClient() : base()
+      protected MatchDirectorServiceClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected ImmortalMatchDirectorServiceClient(ClientBaseConfiguration configuration) : base(configuration)
+      protected MatchDirectorServiceClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Immortal.V1.ImmortalCancelTicketResponse CancelTicket(global::Thetan.Immortal.V1.ImmortalCancelTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.Immortal.V1.CancelTicketResponse CancelTicket(global::Thetan.Immortal.V1.CancelTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CancelTicket(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Immortal.V1.ImmortalCancelTicketResponse CancelTicket(global::Thetan.Immortal.V1.ImmortalCancelTicketRequest request, grpc::CallOptions options)
+      public virtual global::Thetan.Immortal.V1.CancelTicketResponse CancelTicket(global::Thetan.Immortal.V1.CancelTicketRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CancelTicket, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.ImmortalCancelTicketResponse> CancelTicketAsync(global::Thetan.Immortal.V1.ImmortalCancelTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.CancelTicketResponse> CancelTicketAsync(global::Thetan.Immortal.V1.CancelTicketRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CancelTicketAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.ImmortalCancelTicketResponse> CancelTicketAsync(global::Thetan.Immortal.V1.ImmortalCancelTicketRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.CancelTicketResponse> CancelTicketAsync(global::Thetan.Immortal.V1.CancelTicketRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CancelTicket, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      protected override ImmortalMatchDirectorServiceClient NewInstance(ClientBaseConfiguration configuration)
+      protected override MatchDirectorServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
-        return new ImmortalMatchDirectorServiceClient(configuration);
+        return new MatchDirectorServiceClient(configuration);
       }
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public static grpc::ServerServiceDefinition BindService(ImmortalMatchDirectorServiceBase serviceImpl)
+    public static grpc::ServerServiceDefinition BindService(MatchDirectorServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_CancelTicket, serviceImpl.CancelTicket).Build();
@@ -145,9 +145,9 @@ namespace Thetan.Immortal.V1 {
     /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public static void BindService(grpc::ServiceBinderBase serviceBinder, ImmortalMatchDirectorServiceBase serviceImpl)
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, MatchDirectorServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_CancelTicket, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.ImmortalCancelTicketRequest, global::Thetan.Immortal.V1.ImmortalCancelTicketResponse>(serviceImpl.CancelTicket));
+      serviceBinder.AddMethod(__Method_CancelTicket, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.CancelTicketRequest, global::Thetan.Immortal.V1.CancelTicketResponse>(serviceImpl.CancelTicket));
     }
 
   }

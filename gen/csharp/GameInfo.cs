@@ -25,26 +25,28 @@ namespace Thetan.Shared.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiB0aGV0YW4vc2hhcmVkL3YxL2dhbWVfaW5mby5wcm90bxIQdGhldGFuLnNo",
-            "YXJlZC52MSpSCghHYW1lTW9kZRIKCgZSQU5LRUQQABIRCg1TUEVDSUFMX0VW",
+            "YXJlZC52MSpnCghHYW1lTW9kZRIKCgZSQU5LRUQQABIRCg1TUEVDSUFMX0VW",
             "RU5UEAESDwoLQ1VTVE9NX01PREUQAhIWChJUSEVUQU5fUklWQUxTX01PREUQ",
-            "AyqMBAoKSW5HYW1lTW9kZRIVChFURUFNX0NPTExFQ1RfU1RBUhAAEhEKDVNP",
-            "TE9fU1VSVklWQUwQARIRCg1EVUFMX1NVUlZJVkFMEAISHAoYVEVBTV9DT0xM",
-            "RUNUX1NUQVJfNF9WU180EAMSCAoES0lORxAFEg8KC0RFQVRIX01BVENIEAYS",
-            "FgoSREVBVEhfTUFUQ0hfM19WU18zEAcSCAoERkxBRxAIEgkKBVRPV0VSEAkS",
-            "EQoNQkFUVExFX1JPWUFMRRAMEhcKE1NRVUFEX0JBVFRMRV9ST1lBTEUQDRIV",
-            "ChFEVU9fQkFUVExFX1JPWUFMRRAOEhYKElRSSU9fQkFUVExFX1JPQVlMRRAP",
-            "EhEKDVRIRVRBTl9SSVZBTFMQFBIcChhUSEVUQU5fUklWQUxTX1RPVVJOQU1F",
-            "TlQQFRIcChhUSEVUQU5fUklWQUxTX1FVSUNLX01PREUQFhIaChZUSEVUQU5f",
-            "UklWQUxTX0RVT19NT0RFEBcSHwobVEhFVEFOX1JJVkFMU19DTElNQl9VUF9N",
-            "T0RFEBgSGgoWVEhFVEFOX1JJVkFMU19EVU9fRlVMTBAZEh0KGVRIRVRBTl9S",
-            "SVZBTFNfREVBVEhfTUFUQ0gQGhIhCh1USEVUQU5fUklWQUxTX1BST1BfQU5E",
-            "X0hVTlRFUhAbEhYKCU5PTkVfTU9ERRD///////////8BKlAKB1RSQXJlbmES",
-            "CAoETk9ORRAAEgoKBk5PVklDRRABEgsKB0ZJR0hURVIQAhILCgdXQVJSSU9S",
-            "EAMSCgoGTUFTVEVSEAQSCQoFRUxJVEUQBUK8AQoUY29tLnRoZXRhbi5zaGFy",
-            "ZWQudjFCDUdhbWVJbmZvUHJvdG9QAVozdGhldGFuLWJ1Zi9nZW4vZ28vdGhl",
-            "dGFuL3NoYXJlZC92MTt0aGV0YW5fc2hhcmVkX3YxogIDVFNYqgIQVGhldGFu",
-            "LlNoYXJlZC5WMcoCEFRoZXRhblxTaGFyZWRcVjHiAhxUaGV0YW5cU2hhcmVk",
-            "XFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpTaGFyZWQ6OlYxYgZwcm90bzM="));
+            "AxITCg9USEVUQU5fSU1NT1JUQUwQBCqmBAoKSW5HYW1lTW9kZRIVChFURUFN",
+            "X0NPTExFQ1RfU1RBUhAAEhEKDVNPTE9fU1VSVklWQUwQARIRCg1EVUFMX1NV",
+            "UlZJVkFMEAISHAoYVEVBTV9DT0xMRUNUX1NUQVJfNF9WU180EAMSCAoES0lO",
+            "RxAFEg8KC0RFQVRIX01BVENIEAYSFgoSREVBVEhfTUFUQ0hfM19WU18zEAcS",
+            "CAoERkxBRxAIEgkKBVRPV0VSEAkSEQoNQkFUVExFX1JPWUFMRRAMEhcKE1NR",
+            "VUFEX0JBVFRMRV9ST1lBTEUQDRIVChFEVU9fQkFUVExFX1JPWUFMRRAOEhYK",
+            "ElRSSU9fQkFUVExFX1JPQVlMRRAPEhEKDVRIRVRBTl9SSVZBTFMQFBIcChhU",
+            "SEVUQU5fUklWQUxTX1RPVVJOQU1FTlQQFRIcChhUSEVUQU5fUklWQUxTX1FV",
+            "SUNLX01PREUQFhIaChZUSEVUQU5fUklWQUxTX0RVT19NT0RFEBcSHwobVEhF",
+            "VEFOX1JJVkFMU19DTElNQl9VUF9NT0RFEBgSGgoWVEhFVEFOX1JJVkFMU19E",
+            "VU9fRlVMTBAZEh0KGVRIRVRBTl9SSVZBTFNfREVBVEhfTUFUQ0gQGhIhCh1U",
+            "SEVUQU5fUklWQUxTX1BST1BfQU5EX0hVTlRFUhAbEhgKFFRIRVRBTl9JTU1P",
+            "UlRBTF9TT0xPEGQSFgoJTk9ORV9NT0RFEP///////////wEqUAoHVFJBcmVu",
+            "YRIICgROT05FEAASCgoGTk9WSUNFEAESCwoHRklHSFRFUhACEgsKB1dBUlJJ",
+            "T1IQAxIKCgZNQVNURVIQBBIJCgVFTElURRAFQrwBChRjb20udGhldGFuLnNo",
+            "YXJlZC52MUINR2FtZUluZm9Qcm90b1ABWjN0aGV0YW4tYnVmL2dlbi9nby90",
+            "aGV0YW4vc2hhcmVkL3YxO3RoZXRhbl9zaGFyZWRfdjGiAgNUU1iqAhBUaGV0",
+            "YW4uU2hhcmVkLlYxygIQVGhldGFuXFNoYXJlZFxWMeICHFRoZXRhblxTaGFy",
+            "ZWRcVjFcR1BCTWV0YWRhdGHqAhJUaGV0YW46OlNoYXJlZDo6VjFiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Shared.V1.GameMode), typeof(global::Thetan.Shared.V1.InGameMode), typeof(global::Thetan.Shared.V1.TRArena), }, null, null));
@@ -58,6 +60,7 @@ namespace Thetan.Shared.V1 {
     [pbr::OriginalName("SPECIAL_EVENT")] SpecialEvent = 1,
     [pbr::OriginalName("CUSTOM_MODE")] CustomMode = 2,
     [pbr::OriginalName("THETAN_RIVALS_MODE")] ThetanRivalsMode = 3,
+    [pbr::OriginalName("THETAN_IMMORTAL")] ThetanImmortal = 4,
   }
 
   public enum InGameMode {
@@ -82,6 +85,7 @@ namespace Thetan.Shared.V1 {
     [pbr::OriginalName("THETAN_RIVALS_DUO_FULL")] ThetanRivalsDuoFull = 25,
     [pbr::OriginalName("THETAN_RIVALS_DEATH_MATCH")] ThetanRivalsDeathMatch = 26,
     [pbr::OriginalName("THETAN_RIVALS_PROP_AND_HUNTER")] ThetanRivalsPropAndHunter = 27,
+    [pbr::OriginalName("THETAN_IMMORTAL_SOLO")] ThetanImmortalSolo = 100,
     [pbr::OriginalName("NONE_MODE")] NoneMode = -1,
   }
 
