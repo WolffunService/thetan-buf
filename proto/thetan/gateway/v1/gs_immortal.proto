@@ -40,4 +40,5 @@ message ImmortalRoomAllocationResp {
 message ImmortalMatchFoundForMultiplayer {
   ImmortalRoomAllocationResp roomAlloc = 1;
   repeated string partyIDs = 2;
+  thetan.immortal.v1.MatchFoundResponseProto matchFound = 3;
 }
