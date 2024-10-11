@@ -27,26 +27,27 @@ namespace Thetan.Fishnet.Immortal.V1 {
             "CjF0aGV0YW4vZmlzaG5ldC9pbW1vcnRhbC92MS9maXNobmV0X2ltbW9ydGFs",
             "LnByb3RvEhp0aGV0YW4uZmlzaG5ldC5pbW1vcnRhbC52MRobZ29vZ2xlL3By",
             "b3RvYnVmL2VtcHR5LnByb3RvGid0aGV0YW4vaW1tb3J0YWwvdjEvaW1tb3J0",
-            "YWxfbWF0Y2gucHJvdG8iMgoSUm9vbUFsbG9jYXRpb25SZXNwEhwKCWlzU3Vj",
-            "Y2VzcxgBIAEoCFIJaXNTdWNjZXNzIjgKEkdhbWVTZXJ2ZXJJbmZvUmVzcBIi",
-            "Cgxyb29tQWxsb2NhdGUYASABKAVSDHJvb21BbGxvY2F0ZTKcAgoVVGhldGFu",
-            "RmlzaE5ldEltbW9ydGFsEm0KDlJvb21BbGxvY2F0aW9uEisudGhldGFuLmlt",
-            "bW9ydGFsLnYxLk1hdGNoRm91bmRSZXNwb25zZVByb3RvGi4udGhldGFuLmZp",
-            "c2huZXQuaW1tb3J0YWwudjEuUm9vbUFsbG9jYXRpb25SZXNwEjoKCFNodXRk",
-            "b3duEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhYuZ29vZ2xlLnByb3RvYnVm",
-            "LkVtcHR5ElgKDkdhbWVTZXJ2ZXJJbmZvEhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5Gi4udGhldGFuLmZpc2huZXQuaW1tb3J0YWwudjEuR2FtZVNlcnZlcklu",
-            "Zm9SZXNwQooCCh5jb20udGhldGFuLmZpc2huZXQuaW1tb3J0YWwudjFCFEZp",
-            "c2huZXRJbW1vcnRhbFByb3RvUAFaR3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRh",
-            "bi9maXNobmV0L2ltbW9ydGFsL3YxL3RoZXRhbl9maXNobmV0X2ltbW9ydGFs",
-            "X3YxogIDVEZJqgIaVGhldGFuLkZpc2huZXQuSW1tb3J0YWwuVjHKAhpUaGV0",
-            "YW5cRmlzaG5ldFxJbW1vcnRhbFxWMeICJlRoZXRhblxGaXNobmV0XEltbW9y",
-            "dGFsXFYxXEdQQk1ldGFkYXRh6gIdVGhldGFuOjpGaXNobmV0OjpJbW1vcnRh",
-            "bDo6VjFiBnByb3RvMw=="));
+            "YWxfbWF0Y2gucHJvdG8iUgoSUm9vbUFsbG9jYXRpb25SZXNwEhwKCWlzU3Vj",
+            "Y2VzcxgBIAEoCFIJaXNTdWNjZXNzEh4KCnBvcnRTZXJ2ZXIYAiABKAVSCnBv",
+            "cnRTZXJ2ZXIiOAoSR2FtZVNlcnZlckluZm9SZXNwEiIKDHJvb21BbGxvY2F0",
+            "ZRgBIAEoBVIMcm9vbUFsbG9jYXRlMqQCChVUaGV0YW5GaXNoTmV0SW1tb3J0",
+            "YWwSdQoOUm9vbUFsbG9jYXRpb24SMy50aGV0YW4uaW1tb3J0YWwudjEuSW1t",
+            "b3J0YWxNYXRjaEZvdW5kUmVzcG9uc2VQcm90bxouLnRoZXRhbi5maXNobmV0",
+            "LmltbW9ydGFsLnYxLlJvb21BbGxvY2F0aW9uUmVzcBI6CghTaHV0ZG93bhIW",
+            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
+            "eRJYCg5HYW1lU2VydmVySW5mbxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRou",
+            "LnRoZXRhbi5maXNobmV0LmltbW9ydGFsLnYxLkdhbWVTZXJ2ZXJJbmZvUmVz",
+            "cEKKAgoeY29tLnRoZXRhbi5maXNobmV0LmltbW9ydGFsLnYxQhRGaXNobmV0",
+            "SW1tb3J0YWxQcm90b1ABWkd0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vZmlz",
+            "aG5ldC9pbW1vcnRhbC92MS90aGV0YW5fZmlzaG5ldF9pbW1vcnRhbF92MaIC",
+            "A1RGSaoCGlRoZXRhbi5GaXNobmV0LkltbW9ydGFsLlYxygIaVGhldGFuXEZp",
+            "c2huZXRcSW1tb3J0YWxcVjHiAiZUaGV0YW5cRmlzaG5ldFxJbW1vcnRhbFxW",
+            "MVxHUEJNZXRhZGF0YeoCHVRoZXRhbjo6RmlzaG5ldDo6SW1tb3J0YWw6OlYx",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Thetan.Immortal.V1.ImmortalMatchReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp), global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp.Parser, new[]{ "IsSuccess" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp), global::Thetan.Fishnet.Immortal.V1.RoomAllocationResp.Parser, new[]{ "IsSuccess", "PortServer" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp), global::Thetan.Fishnet.Immortal.V1.GameServerInfoResp.Parser, new[]{ "RoomAllocate" }, null, null, null, null)
           }));
     }
@@ -89,6 +90,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RoomAllocationResp(RoomAllocationResp other) : this() {
       isSuccess_ = other.isSuccess_;
+      portServer_ = other.portServer_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -110,6 +112,18 @@ namespace Thetan.Fishnet.Immortal.V1 {
       }
     }
 
+    /// <summary>Field number for the "portServer" field.</summary>
+    public const int PortServerFieldNumber = 2;
+    private int portServer_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int PortServer {
+      get { return portServer_; }
+      set {
+        portServer_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -126,6 +140,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
         return true;
       }
       if (IsSuccess != other.IsSuccess) return false;
+      if (PortServer != other.PortServer) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -134,6 +149,7 @@ namespace Thetan.Fishnet.Immortal.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (IsSuccess != false) hash ^= IsSuccess.GetHashCode();
+      if (PortServer != 0) hash ^= PortServer.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -156,6 +172,10 @@ namespace Thetan.Fishnet.Immortal.V1 {
         output.WriteRawTag(8);
         output.WriteBool(IsSuccess);
       }
+      if (PortServer != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(PortServer);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -170,6 +190,10 @@ namespace Thetan.Fishnet.Immortal.V1 {
         output.WriteRawTag(8);
         output.WriteBool(IsSuccess);
       }
+      if (PortServer != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(PortServer);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -182,6 +206,9 @@ namespace Thetan.Fishnet.Immortal.V1 {
       int size = 0;
       if (IsSuccess != false) {
         size += 1 + 1;
+      }
+      if (PortServer != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PortServer);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -197,6 +224,9 @@ namespace Thetan.Fishnet.Immortal.V1 {
       }
       if (other.IsSuccess != false) {
         IsSuccess = other.IsSuccess;
+      }
+      if (other.PortServer != 0) {
+        PortServer = other.PortServer;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -217,6 +247,10 @@ namespace Thetan.Fishnet.Immortal.V1 {
             IsSuccess = input.ReadBool();
             break;
           }
+          case 16: {
+            PortServer = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -234,6 +268,10 @@ namespace Thetan.Fishnet.Immortal.V1 {
             break;
           case 8: {
             IsSuccess = input.ReadBool();
+            break;
+          }
+          case 16: {
+            PortServer = input.ReadInt32();
             break;
           }
         }
