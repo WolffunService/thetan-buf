@@ -35,7 +35,6 @@ message PlayerInfoMatchProto {
   double winRate = 15;
   double rating = 16;
   double rd = 17;
-  int32 timeZone = 18;
 }
 
 enum Arena
@@ -48,7 +47,8 @@ enum Arena
   ELITE = 5;
   MASTER = 6;
   HERO = 7;
-  LEGEND = 8;
-  IMMORTAL = 9;
-  DEMIGOD = 10;
+  CHAMPION = 8;
+  LEGEND = 9;
+  IMMORTAL = 10;
+  DEMIGOD = 11;
 }
