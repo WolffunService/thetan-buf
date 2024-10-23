@@ -12,9 +12,22 @@ message Hero {
   int32 type = 4;
 }
 
+message HeroFull {
+  string name = 1;
+  int32 rarity = 2;
+  int32 heroID = 3;
+  int32 defaultSkinID = 4;
+}
+
 message Skill {
   uint32 skillID = 1;
   int32 level = 2;
+}
+
+message SkillFull {
+  string name = 1;
+  int32 rarity = 2;
+  int32 skillID = 3;
 }
 
 message PlayerInfoMatchProto {
