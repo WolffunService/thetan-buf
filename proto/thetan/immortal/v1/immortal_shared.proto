@@ -28,6 +28,7 @@ message SkillFull {
   string name = 1;
   int32 rarity = 2;
   int32 skillID = 3;
+  int32 class = 4;
 }
 
 message PlayerInfoMatchProto {
