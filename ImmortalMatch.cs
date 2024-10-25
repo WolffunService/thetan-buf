@@ -29,27 +29,28 @@ namespace Thetan.Immortal.V1 {
             "X3NoYXJlZC5wcm90byKXAQoXTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8SGAoH",
             "bWF0Y2hJRBgBIAEoCVIHbWF0Y2hJRBJCCgdwbGF5ZXJzGAIgAygLMigudGhl",
             "dGFuLmltbW9ydGFsLnYxLlBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJz",
-            "Eh4KCmJlc3RSZWdpb24YAyABKAVSCmJlc3RSZWdpb24iagoKVGlja2V0RGF0",
-            "YRJCCgdwbGF5ZXJzGAEgAygLMigudGhldGFuLmltbW9ydGFsLnYxLlBsYXll",
-            "ckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzEhgKB3JlZ2lvbnMYAiADKAVSB3Jl",
-            "Z2lvbnMiZwoTQ2FuY2VsVGlja2V0UmVxdWVzdBIaCghwbGF5ZXJJRBgBIAEo",
-            "CVIIcGxheWVySUQSGAoHcGFydHlJRBgCIAEoCVIHcGFydHlJRBIaCgh0aWNr",
-            "ZXRJRBgDIAEoCVIIdGlja2V0SUQiFgoUQ2FuY2VsVGlja2V0UmVzcG9uc2Ui",
-            "ZwoTQ2FuY2VsVGlja2V0U3VjY2VzcxIaCghwbGF5ZXJJRBgBIAEoCVIIcGxh",
-            "eWVySUQSGAoHcGFydHlJRBgCIAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgD",
-            "IAEoCVIIdGlja2V0SUQyewoUTWF0Y2hEaXJlY3RvclNlcnZpY2USYwoMQ2Fu",
-            "Y2VsVGlja2V0EicudGhldGFuLmltbW9ydGFsLnYxLkNhbmNlbFRpY2tldFJl",
-            "cXVlc3QaKC50aGV0YW4uaW1tb3J0YWwudjEuQ2FuY2VsVGlja2V0UmVzcG9u",
-            "c2UiAELPAQoWY29tLnRoZXRhbi5pbW1vcnRhbC52MUISSW1tb3J0YWxNYXRj",
-            "aFByb3RvUAFaN3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9pbW1vcnRhbC92",
-            "MTt0aGV0YW5faW1tb3J0YWxfdjGiAgNUSViqAhJUaGV0YW4uSW1tb3J0YWwu",
-            "VjHKAhJUaGV0YW5cSW1tb3J0YWxcVjHiAh5UaGV0YW5cSW1tb3J0YWxcVjFc",
-            "R1BCTWV0YWRhdGHqAhRUaGV0YW46OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
+            "Eh4KCmJlc3RSZWdpb24YAyABKAVSCmJlc3RSZWdpb24ihAEKClRpY2tldERh",
+            "dGESQgoHcGxheWVycxgBIAMoCzIoLnRoZXRhbi5pbW1vcnRhbC52MS5QbGF5",
+            "ZXJJbmZvTWF0Y2hQcm90b1IHcGxheWVycxIYCgdyZWdpb25zGAIgAygFUgdy",
+            "ZWdpb25zEhgKB2NvdW50cnkYAyABKAlSB2NvdW50cnkiZwoTQ2FuY2VsVGlj",
+            "a2V0UmVxdWVzdBIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSGAoHcGFy",
+            "dHlJRBgCIAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0",
+            "SUQiFgoUQ2FuY2VsVGlja2V0UmVzcG9uc2UiZwoTQ2FuY2VsVGlja2V0U3Vj",
+            "Y2VzcxIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSGAoHcGFydHlJRBgC",
+            "IAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0SUQyewoU",
+            "TWF0Y2hEaXJlY3RvclNlcnZpY2USYwoMQ2FuY2VsVGlja2V0EicudGhldGFu",
+            "LmltbW9ydGFsLnYxLkNhbmNlbFRpY2tldFJlcXVlc3QaKC50aGV0YW4uaW1t",
+            "b3J0YWwudjEuQ2FuY2VsVGlja2V0UmVzcG9uc2UiAELPAQoWY29tLnRoZXRh",
+            "bi5pbW1vcnRhbC52MUISSW1tb3J0YWxNYXRjaFByb3RvUAFaN3RoZXRhbi1i",
+            "dWYvZ2VuL2dvL3RoZXRhbi9pbW1vcnRhbC92MTt0aGV0YW5faW1tb3J0YWxf",
+            "djGiAgNUSViqAhJUaGV0YW4uSW1tb3J0YWwuVjHKAhJUaGV0YW5cSW1tb3J0",
+            "YWxcVjHiAh5UaGV0YW5cSW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHqAhRUaGV0",
+            "YW46OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.MatchFoundResponseProto), global::Thetan.Immortal.V1.MatchFoundResponseProto.Parser, new[]{ "MatchID", "Players", "BestRegion" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TicketData), global::Thetan.Immortal.V1.TicketData.Parser, new[]{ "Players", "Regions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TicketData), global::Thetan.Immortal.V1.TicketData.Parser, new[]{ "Players", "Regions", "Country" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketRequest), global::Thetan.Immortal.V1.CancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketResponse), global::Thetan.Immortal.V1.CancelTicketResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketSuccess), global::Thetan.Immortal.V1.CancelTicketSuccess.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null)
@@ -350,6 +351,7 @@ namespace Thetan.Immortal.V1 {
     public TicketData(TicketData other) : this() {
       players_ = other.players_.Clone();
       regions_ = other.regions_.Clone();
+      country_ = other.country_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -381,6 +383,21 @@ namespace Thetan.Immortal.V1 {
       get { return regions_; }
     }
 
+    /// <summary>Field number for the "country" field.</summary>
+    public const int CountryFieldNumber = 3;
+    private string country_ = "";
+    /// <summary>
+    ///using for get bot
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Country {
+      get { return country_; }
+      set {
+        country_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -398,6 +415,7 @@ namespace Thetan.Immortal.V1 {
       }
       if(!players_.Equals(other.players_)) return false;
       if(!regions_.Equals(other.regions_)) return false;
+      if (Country != other.Country) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -407,6 +425,7 @@ namespace Thetan.Immortal.V1 {
       int hash = 1;
       hash ^= players_.GetHashCode();
       hash ^= regions_.GetHashCode();
+      if (Country.Length != 0) hash ^= Country.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -427,6 +446,10 @@ namespace Thetan.Immortal.V1 {
     #else
       players_.WriteTo(output, _repeated_players_codec);
       regions_.WriteTo(output, _repeated_regions_codec);
+      if (Country.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Country);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -439,6 +462,10 @@ namespace Thetan.Immortal.V1 {
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       players_.WriteTo(ref output, _repeated_players_codec);
       regions_.WriteTo(ref output, _repeated_regions_codec);
+      if (Country.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Country);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -451,6 +478,9 @@ namespace Thetan.Immortal.V1 {
       int size = 0;
       size += players_.CalculateSize(_repeated_players_codec);
       size += regions_.CalculateSize(_repeated_regions_codec);
+      if (Country.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Country);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -465,6 +495,9 @@ namespace Thetan.Immortal.V1 {
       }
       players_.Add(other.players_);
       regions_.Add(other.regions_);
+      if (other.Country.Length != 0) {
+        Country = other.Country;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -489,6 +522,10 @@ namespace Thetan.Immortal.V1 {
             regions_.AddEntriesFrom(input, _repeated_regions_codec);
             break;
           }
+          case 26: {
+            Country = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -511,6 +548,10 @@ namespace Thetan.Immortal.V1 {
           case 18:
           case 16: {
             regions_.AddEntriesFrom(ref input, _repeated_regions_codec);
+            break;
+          }
+          case 26: {
+            Country = input.ReadString();
             break;
           }
         }
