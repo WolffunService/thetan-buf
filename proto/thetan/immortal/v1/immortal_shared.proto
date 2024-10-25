@@ -12,9 +12,23 @@ message Hero {
   int32 type = 4;
 }
 
+message HeroFull {
+  string name = 1;
+  int32 rarity = 2;
+  int32 heroID = 3;
+  int32 defaultSkinID = 4;
+}
+
 message Skill {
   uint32 skillID = 1;
   int32 level = 2;
+}
+
+message SkillFull {
+  string name = 1;
+  int32 rarity = 2;
+  int32 skillID = 3;
+  int32 class = 4;
 }
 
 message PlayerInfoMatchProto {
@@ -30,12 +44,11 @@ message PlayerInfoMatchProto {
   int32 rank = 10 [deprecated=true];
   Hero hero = 11;
   repeated Skill skills = 12;
-  int32 botBrain = 13 [deprecated=true]; // default value is human
+  int32 botBrain = 13; // default value is human
   Arena arena = 14;
   double winRate = 15;
   double rating = 16;
   double rd = 17;
-  int32 timeZone = 18;
 }
 
 enum Arena
@@ -48,7 +61,8 @@ enum Arena
   ELITE = 5;
   MASTER = 6;
   HERO = 7;
-  LEGEND = 8;
-  IMMORTAL = 9;
-  DEMIGOD = 10;
+  CHAMPION = 8;
+  LEGEND = 9;
+  IMMORTAL = 10;
+  DEMIGOD = 11;
 }

@@ -22,6 +22,8 @@ const (
 	ImmortalService_SearchPlayerInfo_FullMethodName = "/thetan.immortal.v1.ImmortalService/SearchPlayerInfo"
 	ImmortalService_GetUserProfile_FullMethodName   = "/thetan.immortal.v1.ImmortalService/GetUserProfile"
 	ImmortalService_BattleEnd_FullMethodName        = "/thetan.immortal.v1.ImmortalService/BattleEnd"
+	ImmortalService_GetHeroes_FullMethodName        = "/thetan.immortal.v1.ImmortalService/GetHeroes"
+	ImmortalService_GetSkills_FullMethodName        = "/thetan.immortal.v1.ImmortalService/GetSkills"
 )
 
 // ImmortalServiceClient is the client API for ImmortalService service.
@@ -31,6 +33,8 @@ type ImmortalServiceClient interface {
 	SearchPlayerInfo(ctx context.Context, in *SearchPlayerInfoRequest, opts ...grpc.CallOption) (*SearchPlayerInfoResponse, error)
 	GetUserProfile(ctx context.Context, in *GetUserProfileRequest, opts ...grpc.CallOption) (*GetUserProfileResponse, error)
 	BattleEnd(ctx context.Context, in *BattleEndRequest, opts ...grpc.CallOption) (ImmortalService_BattleEndClient, error)
+	GetHeroes(ctx context.Context, in *GetHeroesRequest, opts ...grpc.CallOption) (*GetHeroesResponse, error)
+	GetSkills(ctx context.Context, in *GetSkillsRequest, opts ...grpc.CallOption) (*GetSkillsResponse, error)
 }
 
 type immortalServiceClient struct {
@@ -91,6 +95,24 @@ func (x *immortalServiceBattleEndClient) Recv() (*BattleEndResponse, error) {
 	return m, nil
 }
 
+func (c *immortalServiceClient) GetHeroes(ctx context.Context, in *GetHeroesRequest, opts ...grpc.CallOption) (*GetHeroesResponse, error) {
+	out := new(GetHeroesResponse)
+	err := c.cc.Invoke(ctx, ImmortalService_GetHeroes_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *immortalServiceClient) GetSkills(ctx context.Context, in *GetSkillsRequest, opts ...grpc.CallOption) (*GetSkillsResponse, error) {
+	out := new(GetSkillsResponse)
+	err := c.cc.Invoke(ctx, ImmortalService_GetSkills_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ImmortalServiceServer is the server API for ImmortalService service.
 // All implementations must embed UnimplementedImmortalServiceServer
 // for forward compatibility
@@ -98,6 +120,8 @@ type ImmortalServiceServer interface {
 	SearchPlayerInfo(context.Context, *SearchPlayerInfoRequest) (*SearchPlayerInfoResponse, error)
 	GetUserProfile(context.Context, *GetUserProfileRequest) (*GetUserProfileResponse, error)
 	BattleEnd(*BattleEndRequest, ImmortalService_BattleEndServer) error
+	GetHeroes(context.Context, *GetHeroesRequest) (*GetHeroesResponse, error)
+	GetSkills(context.Context, *GetSkillsRequest) (*GetSkillsResponse, error)
 	mustEmbedUnimplementedImmortalServiceServer()
 }
 
@@ -113,6 +137,12 @@ func (UnimplementedImmortalServiceServer) GetUserProfile(context.Context, *GetUs
 }
 func (UnimplementedImmortalServiceServer) BattleEnd(*BattleEndRequest, ImmortalService_BattleEndServer) error {
 	return status.Errorf(codes.Unimplemented, "method BattleEnd not implemented")
+}
+func (UnimplementedImmortalServiceServer) GetHeroes(context.Context, *GetHeroesRequest) (*GetHeroesResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetHeroes not implemented")
+}
+func (UnimplementedImmortalServiceServer) GetSkills(context.Context, *GetSkillsRequest) (*GetSkillsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetSkills not implemented")
 }
 func (UnimplementedImmortalServiceServer) mustEmbedUnimplementedImmortalServiceServer() {}
 
@@ -184,6 +214,42 @@ func (x *immortalServiceBattleEndServer) Send(m *BattleEndResponse) error {
 	return x.ServerStream.SendMsg(m)
 }
 
+func _ImmortalService_GetHeroes_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetHeroesRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ImmortalServiceServer).GetHeroes(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ImmortalService_GetHeroes_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ImmortalServiceServer).GetHeroes(ctx, req.(*GetHeroesRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ImmortalService_GetSkills_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetSkillsRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ImmortalServiceServer).GetSkills(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ImmortalService_GetSkills_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ImmortalServiceServer).GetSkills(ctx, req.(*GetSkillsRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ImmortalService_ServiceDesc is the grpc.ServiceDesc for ImmortalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -198,6 +264,14 @@ var ImmortalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetUserProfile",
 			Handler:    _ImmortalService_GetUserProfile_Handler,
+		},
+		{
+			MethodName: "GetHeroes",
+			Handler:    _ImmortalService_GetHeroes_Handler,
+		},
+		{
+			MethodName: "GetSkills",
+			Handler:    _ImmortalService_GetSkills_Handler,
 		},
 	},
 	Streams: []grpc.StreamDesc{
