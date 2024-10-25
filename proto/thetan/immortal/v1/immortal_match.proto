@@ -16,6 +16,7 @@ message MatchFoundResponseProto {
 message TicketData {
   repeated PlayerInfoMatchProto players = 1;
   repeated int32 regions = 2;
+  string country = 3; //using for get bot
 }
 
 message CancelTicketRequest {
