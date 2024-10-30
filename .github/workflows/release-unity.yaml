@@ -27,7 +27,6 @@ jobs:
         id: build
         run: | 
           ./unity/increment_version.sh
-          echo $VERSION >> $GITHUB_OUTPUT
           
           go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest
           go install github.com/srikrsna/protoc-gen-gotag@latest
