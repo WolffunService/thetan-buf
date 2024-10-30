@@ -1,7 +1,11 @@
 name: Release Unity
-
 on:
   workflow_dispatch:
+    inputs:
+      semver:
+        description: 'Semantic version (e.g. 1.2.0, 1.2.0-preview.1)'
+        required: true
+        type: string
 
 permissions:
   contents: "write"
@@ -13,7 +17,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          fetch-depth: 0  # Required for git subtree operations
           ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
       - uses: bufbuild/buf-setup-action@v1
         with:
@@ -27,36 +37,52 @@ jobs:
         id: build
         run: | 
           ./unity/increment_version.sh
-
           go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest
           go install github.com/srikrsna/protoc-gen-gotag@latest
-
           export PATH=${PATH}:`go env GOPATH`/bin
-
           buf generate proto
           buf generate --template buf.gen.tag.yaml proto
-
           cp ./unity/package.json ./gen/csharp/package.json
           cp ./unity/Wolffun.Protobuf.asmdef ./gen/csharp/Wolffun.Protobuf.asmdef
         shell: bash
-
-      - name: Push tag
-        uses: EndBug/add-and-commit@v9
-        with:
-          push: false
 
       - name: Fix Unity meta files
         run: |
           ./unity/fix_meta.sh
         shell: bash
-      
-      - name: Make color
+
+      - name: Generate UUID
         run: |
           uuid=$(cat /proc/sys/kernel/random/uuid)
           echo "$uuid" > "uuid.txt"
         shell: bash
 
-      - uses: EndBug/add-and-commit@v9
+      - name: Stage changes
+        uses: EndBug/add-and-commit@v9
         with:
-          tag: '${{ steps.build.outputs.version }}'
+          push: false
+
+      - name: Deploy Package
+        run: |
+          PREFIX="gen/csharp"
+          BRANCH="upm"
+          SEMVER="${{ github.event.inputs.semver }}"
+          
+          # Create and switch to temporary branch for subtree
+          git subtree split --prefix="$PREFIX" --branch $BRANCH
+          
+          # Tag the branch
+          git tag $SEMVER $BRANCH
+          
+          # Push branch and tags
+          git push origin $BRANCH --tags
+          
+          # Cleanup
+          git push origin --delete $BRANCH
+          git branch -D $BRANCH
+
+      - name: Final Commit and Tag
+        uses: EndBug/add-and-commit@v9
+        with:
+          tag: '${{ github.event.inputs.semver }}'
           tag_push: '--force'
