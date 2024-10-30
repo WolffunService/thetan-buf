@@ -2304,7 +2304,7 @@ type BulkUpsertScoresRequest_MemberScore struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	// TODO: use json_name on variables like this to respect .proto naming format.
+	//TODO: use json_name on variables like this to respect .proto naming format.
 	PublicID string `protobuf:"bytes,1,opt,name=publicID,proto3" json:"publicID,omitempty"`
 	// Score can store integer values from -9007199254740992 and 9007199254740992.
 	// Although the score type is double, internally the service converts this number to a int64 format.

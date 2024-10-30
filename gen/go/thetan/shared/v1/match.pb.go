@@ -1373,7 +1373,7 @@ type PlayerInfoEndMatchProto struct {
 	Score        int32   `protobuf:"varint,5,opt,name=score,proto3" json:"score,omitempty"`
 	Rank         int32   `protobuf:"varint,6,opt,name=rank,proto3" json:"rank,omitempty"`
 	Collections  []int32 `protobuf:"varint,7,rep,packed,name=collections,proto3" json:"collections,omitempty"` //MVP - team MVP
-	// for battle log
+	//for battle log
 	Hero       int32  `protobuf:"varint,8,opt,name=hero,proto3" json:"hero,omitempty"`
 	Skill1     int32  `protobuf:"varint,9,opt,name=skill1,proto3" json:"skill1,omitempty"`
 	Skill2     int32  `protobuf:"varint,10,opt,name=skill2,proto3" json:"skill2,omitempty"`
