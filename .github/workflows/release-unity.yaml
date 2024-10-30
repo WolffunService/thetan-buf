@@ -49,6 +49,12 @@ jobs:
         run: |
           ./unity/fix_meta.sh
         shell: bash
+      
+      - name: Make color
+        run: |
+          uuid=$(cat /proc/sys/kernel/random/uuid)
+          echo "$uuid" > "uuid.txt"
+        shell: bash
 
       - uses: EndBug/add-and-commit@v9
         with:
