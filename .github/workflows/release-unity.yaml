@@ -40,7 +40,8 @@ jobs:
           cp ./unity/Wolffun.Protobuf.asmdef ./gen/csharp/Wolffun.Protobuf.asmdef
         shell: bash
 
-      - uses: EndBug/add-and-commit@v9
+      - name: Push tag
+        uses: EndBug/add-and-commit@v9
         with:
           tag: '${{ steps.build.outputs.version }}'
           tag_push: '--force'
