@@ -54,9 +54,26 @@ message PlayerMatchInfo{
 message BattleEndResponse{
   string playerID = 1;
   bool isWin = 2;
-  int32 trophy = 3;
-  int32 battlePoint = 4;
-  int32 battleStar = 5;
+  double playerScore = 3;
+  int32 trophy = 4;
+  int32 battlePoint = 5;
+  int32 battleStar = 6;
+  int32  cumulativeBattlePoint = 7;
+  Arena arena = 8;
+  repeated BattleEndPlayer players = 9;
+  BattleEndHero hero = 10;
+  repeated Skill skills = 11;
+}
+
+message BattleEndPlayer {
+   string playerID = 1;
+   SkillRating skillRating = 2;
+}
+
+message BattleEndHero {
+  int32 heroID = 1;
+  int32 rarity = 2;
+  int32 level = 3;
 }
 
 message GetHeroesRequest {}
