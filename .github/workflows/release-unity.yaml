@@ -1,11 +1,6 @@
 name: Release Unity
 on:
   workflow_dispatch:
-    inputs:
-      semver:
-        description: 'Semantic version (e.g. 1.2.0, 1.2.0-preview.1)'
-        required: true
-        type: string
 
 permissions:
   contents: "write"
@@ -66,7 +61,7 @@ jobs:
         run: |
           PREFIX="gen/csharp"
           BRANCH="upm"
-          SEMVER="${{ github.event.inputs.semver }}"
+          SEMVER='${{ steps.build.outputs.version }}'
           
           # Create and switch to temporary branch for subtree
           git subtree split --prefix="$PREFIX" --branch $BRANCH
@@ -84,5 +79,5 @@ jobs:
       - name: Final Commit and Tag
         uses: EndBug/add-and-commit@v9
         with:
-          tag: '${{ github.event.inputs.semver }}'
+          tag: '${{ steps.build.outputs.version }}'
           tag_push: '--force'
