@@ -12,5 +12,4 @@ new_version=$(echo "$current_version" | awk -F. -v OFS=. '{$NF++;print}')
 jq --arg new_version "$new_version" '.version = $new_version' package.json > tmp.json && mv tmp.json package.json
 
 echo "Version incremented to $new_version"
-export VERSION="$new_version"
-
+echo "version=${VERSION}" >> $GITHUB_OUTPUT
