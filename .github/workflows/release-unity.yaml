@@ -61,7 +61,7 @@ jobs:
         run: |
           PREFIX="gen/csharp"
           BRANCH="upm"
-          SEMVER='${{ steps.build.outputs.version }}'
+          SEMVER='${{ steps.build.outputs.version }}-test'
           
           # Create and switch to temporary branch for subtree
           git subtree split --prefix="$PREFIX" --branch $BRANCH
@@ -79,5 +79,5 @@ jobs:
       - name: Final Commit and Tag
         uses: EndBug/add-and-commit@v9
         with:
-          tag: '${{ steps.build.outputs.version }}'
+          tag: '${{ steps.build.outputs.version }}-test'
           tag_push: '--force'
