@@ -24,9 +24,10 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run build script
+        id: build
         run: | 
           ./unity/increment_version.sh
-          
+
           go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest
           go install github.com/srikrsna/protoc-gen-gotag@latest
 
@@ -34,15 +35,28 @@ jobs:
 
           buf generate proto
           buf generate --template buf.gen.tag.yaml proto
-          
+
           cp ./unity/package.json ./gen/csharp/package.json
           cp ./unity/Wolffun.Protobuf.asmdef ./gen/csharp/Wolffun.Protobuf.asmdef
         shell: bash
 
-      - uses: EndBug/add-and-commit@v9
+      - name: Push tag
+        uses: EndBug/add-and-commit@v9
+        with:
+          push: false
 
-      - name: Run build script
+      - name: Fix Unity meta files
         run: |
           ./unity/fix_meta.sh
         shell: bash
+      
+      - name: Make color
+        run: |
+          uuid=$(cat /proc/sys/kernel/random/uuid)
+          echo "$uuid" > "uuid.txt"
+        shell: bash
+
       - uses: EndBug/add-and-commit@v9
+        with:
+          tag: '${{ steps.build.outputs.version }}'
+          tag_push: '--force'
