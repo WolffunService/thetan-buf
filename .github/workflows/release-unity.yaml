@@ -46,3 +46,5 @@ jobs:
           ./unity/fix_meta.sh
         shell: bash
       - uses: EndBug/add-and-commit@v9
+        with:
+          tag: $VERSION
