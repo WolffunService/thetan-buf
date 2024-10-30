@@ -40,11 +40,12 @@ jobs:
         shell: bash
 
       - uses: EndBug/add-and-commit@v9
+        with:
+          tag: $VERSION
+          tag_push: '--force'
 
       - name: Run build script
         run: |
           ./unity/fix_meta.sh
         shell: bash
       - uses: EndBug/add-and-commit@v9
-        with:
-          tag: $VERSION
