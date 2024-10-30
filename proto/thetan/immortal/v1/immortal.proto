@@ -37,6 +37,7 @@ message GetUserProfileResponse {
   int32 nameColorID = 6;
   int32 rank = 7;
   int32 trophy = 8;
+  int32 battlePassID = 9;
 }
 
 message BattleEndRequest{
