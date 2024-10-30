@@ -24,8 +24,10 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run build script
+        id: build
         run: | 
           ./unity/increment_version.sh
+          echo $VERSION >> $GITHUB_OUTPUT
           
           go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest
           go install github.com/srikrsna/protoc-gen-gotag@latest
@@ -41,7 +43,7 @@ jobs:
 
       - uses: EndBug/add-and-commit@v9
         with:
-          tag: $VERSION
+          tag: '${{ steps.build.outputs.version }}'
           tag_push: '--force'
 
       - name: Run build script
