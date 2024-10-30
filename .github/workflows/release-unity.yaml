@@ -57,6 +57,9 @@ jobs:
         with:
           push: false
 
+      - name: Final Commit and Tag
+        uses: EndBug/add-and-commit@v9
+
       - name: Deploy Package
         run: |
           PREFIX="gen/csharp"
@@ -75,9 +78,3 @@ jobs:
           # Cleanup
           git push origin --delete $BRANCH
           git branch -D $BRANCH
-
-      - name: Final Commit and Tag
-        uses: EndBug/add-and-commit@v9
-        with:
-          tag: '${{ steps.build.outputs.version }}-test'
-          tag_push: '--force'
