@@ -46,12 +46,6 @@ jobs:
           ./unity/fix_meta.sh
         shell: bash
 
-      - name: Generate UUID
-        run: |
-          uuid=$(cat /proc/sys/kernel/random/uuid)
-          echo "$uuid" > "uuid.txt"
-        shell: bash
-
       - name: Final Commit and Tag
         uses: EndBug/add-and-commit@v9
 
@@ -59,7 +53,7 @@ jobs:
         run: |
           PREFIX="gen/csharp"
           BRANCH="upm"
-          SEMVER='${{ steps.build.outputs.version }}-test'
+          SEMVER='${{ steps.build.outputs.version }}'
           
           # Create and switch to temporary branch for subtree
           git subtree split --prefix="$PREFIX" --branch $BRANCH
