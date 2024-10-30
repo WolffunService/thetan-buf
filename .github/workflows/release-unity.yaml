@@ -45,7 +45,7 @@ jobs:
           tag: '${{ steps.build.outputs.version }}'
           tag_push: '--force'
 
-      - name: Run build script
+      - name: Fix Unity meta files
         run: |
           ./unity/fix_meta.sh
         shell: bash
