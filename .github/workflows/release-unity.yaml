@@ -42,6 +42,8 @@ jobs:
 
       - name: Push tag
         uses: EndBug/add-and-commit@v9
+        with:
+          push: false
 
       - name: Fix Unity meta files
         run: |
