@@ -52,11 +52,6 @@ jobs:
           echo "$uuid" > "uuid.txt"
         shell: bash
 
-      - name: Stage changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          push: false
-
       - name: Final Commit and Tag
         uses: EndBug/add-and-commit@v9
 
