@@ -10,6 +10,7 @@ message Hero {
   int32 skinID = 2;
   int32 level = 3;
   int32 type = 4;
+  int32 rarity = 5;
 }
 
 message HeroFull {
@@ -31,6 +32,13 @@ message SkillFull {
   int32 class = 4;
 }
 
+message SkillRating {
+  double rating = 1;
+  double rd = 2;
+  double volatility = 3;
+}
+
+
 message PlayerInfoMatchProto {
   string playerID = 1;
   string playerName = 2;
@@ -49,6 +57,7 @@ message PlayerInfoMatchProto {
   double winRate = 15;
   double rating = 16;
   double rd = 17;
+  double volatility = 18;
 }
 
 enum Arena
