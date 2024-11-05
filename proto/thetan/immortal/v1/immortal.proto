@@ -64,6 +64,7 @@ message BattleEndResponse{
   repeated BattleEndPlayer players = 9;
   BattleEndHero hero = 10;
   repeated Skill skills = 11;
+  int32 bonusPoint = 12;
 }
 
 message BattleEndPlayer {
