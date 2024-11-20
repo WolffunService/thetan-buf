@@ -41,11 +41,7 @@ message MatchBotRequest {
   string country = 3; //using for get bot
 }
 
-message MatchBotResponse {
-  string matchID = 1;
-  repeated PlayerInfoMatchProto players = 2;
-  int32 bestRegion = 3;
-}
+message MatchBotResponse {}
 
 service MatchDirectorService {
   rpc CancelTicket(CancelTicketRequest) returns (CancelTicketResponse) {}
