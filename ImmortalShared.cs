@@ -36,7 +36,7 @@ namespace Thetan.Immortal.V1 {
             "ASgFUgZyYXJpdHkSGAoHc2tpbGxJRBgDIAEoBVIHc2tpbGxJRBIUCgVjbGFz",
             "cxgEIAEoBVIFY2xhc3MiVQoLU2tpbGxSYXRpbmcSFgoGcmF0aW5nGAEgASgB",
             "UgZyYXRpbmcSDgoCcmQYAiABKAFSAnJkEh4KCnZvbGF0aWxpdHkYAyABKAFS",
-            "CnZvbGF0aWxpdHkiqgUKFFBsYXllckluZm9NYXRjaFByb3RvEhoKCHBsYXll",
+            "CnZvbGF0aWxpdHkipgUKFFBsYXllckluZm9NYXRjaFByb3RvEhoKCHBsYXll",
             "cklEGAEgASgJUghwbGF5ZXJJRBIeCgpwbGF5ZXJOYW1lGAIgASgJUgpwbGF5",
             "ZXJOYW1lEhoKCGF2YXRhcklEGAMgASgFUghhdmF0YXJJRBIYCgdmcmFtZUlE",
             "GAQgASgFUgdmcmFtZUlEEiAKC25hbWVDb2xvcklEGAUgASgFUgtuYW1lQ29s",
@@ -45,21 +45,21 @@ namespace Thetan.Immortal.V1 {
             "dHJvcGh5UmFuaxImCgx0cm9waHlTZWFyY2gYCSABKAVCAhgBUgx0cm9waHlT",
             "ZWFyY2gSFgoEcmFuaxgKIAEoBUICGAFSBHJhbmsSLAoEaGVybxgLIAEoCzIY",
             "LnRoZXRhbi5pbW1vcnRhbC52MS5IZXJvUgRoZXJvEjEKBnNraWxscxgMIAMo",
-            "CzIZLnRoZXRhbi5pbW1vcnRhbC52MS5Ta2lsbFIGc2tpbGxzEh4KCGJvdEJy",
-            "YWluGA0gASgFQgIYAVIIYm90QnJhaW4SLwoFYXJlbmEYDiABKA4yGS50aGV0",
-            "YW4uaW1tb3J0YWwudjEuQXJlbmFSBWFyZW5hEhgKB3dpblJhdGUYDyABKAFS",
-            "B3dpblJhdGUSFgoGcmF0aW5nGBAgASgBUgZyYXRpbmcSDgoCcmQYESABKAFS",
-            "AnJkEh4KCnZvbGF0aWxpdHkYEiABKAFSCnZvbGF0aWxpdHkSGgoId2luQ291",
-            "bnQYEyABKAVSCHdpbkNvdW50Ei4KEnJlY2VudFBsYXllZEhlcm9lcxgUIAMo",
-            "BVIScmVjZW50UGxheWVkSGVyb2VzKqIBCgVBcmVuYRIICgROT05FEAASCwoH",
-            "VFJBSU5FRRABEg8KC0FQUEVSRU5USUNFEAISDgoKUEFUSEZJTkRFUhADEgsK",
-            "B0ZJR0hURVIQBBIJCgVFTElURRAFEgoKBk1BU1RFUhAGEggKBEhFUk8QBxIM",
-            "CghDSEFNUElPThAIEgoKBkxFR0VORBAJEgwKCElNTU9SVEFMEAoSCwoHREVN",
-            "SUdPRBALQtABChZjb20udGhldGFuLmltbW9ydGFsLnYxQhNJbW1vcnRhbFNo",
-            "YXJlZFByb3RvUAFaN3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9pbW1vcnRh",
-            "bC92MTt0aGV0YW5faW1tb3J0YWxfdjGiAgNUSViqAhJUaGV0YW4uSW1tb3J0",
-            "YWwuVjHKAhJUaGV0YW5cSW1tb3J0YWxcVjHiAh5UaGV0YW5cSW1tb3J0YWxc",
-            "VjFcR1BCTWV0YWRhdGHqAhRUaGV0YW46OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
+            "CzIZLnRoZXRhbi5pbW1vcnRhbC52MS5Ta2lsbFIGc2tpbGxzEhoKCGJvdEJy",
+            "YWluGA0gASgFUghib3RCcmFpbhIvCgVhcmVuYRgOIAEoDjIZLnRoZXRhbi5p",
+            "bW1vcnRhbC52MS5BcmVuYVIFYXJlbmESGAoHd2luUmF0ZRgPIAEoAVIHd2lu",
+            "UmF0ZRIWCgZyYXRpbmcYECABKAFSBnJhdGluZxIOCgJyZBgRIAEoAVICcmQS",
+            "HgoKdm9sYXRpbGl0eRgSIAEoAVIKdm9sYXRpbGl0eRIaCgh3aW5Db3VudBgT",
+            "IAEoBVIId2luQ291bnQSLgoScmVjZW50UGxheWVkSGVyb2VzGBQgAygFUhJy",
+            "ZWNlbnRQbGF5ZWRIZXJvZXMqogEKBUFyZW5hEggKBE5PTkUQABILCgdUUkFJ",
+            "TkVFEAESDwoLQVBQRVJFTlRJQ0UQAhIOCgpQQVRIRklOREVSEAMSCwoHRklH",
+            "SFRFUhAEEgkKBUVMSVRFEAUSCgoGTUFTVEVSEAYSCAoESEVSTxAHEgwKCENI",
+            "QU1QSU9OEAgSCgoGTEVHRU5EEAkSDAoISU1NT1JUQUwQChILCgdERU1JR09E",
+            "EAtC0AEKFmNvbS50aGV0YW4uaW1tb3J0YWwudjFCE0ltbW9ydGFsU2hhcmVk",
+            "UHJvdG9QAVo3dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2ltbW9ydGFsL3Yx",
+            "O3RoZXRhbl9pbW1vcnRhbF92MaICA1RJWKoCElRoZXRhbi5JbW1vcnRhbC5W",
+            "McoCElRoZXRhblxJbW1vcnRhbFxWMeICHlRoZXRhblxJbW1vcnRhbFxWMVxH",
+            "UEJNZXRhZGF0YeoCFFRoZXRhbjo6SW1tb3J0YWw6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Immortal.V1.Arena), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1731,7 +1731,6 @@ namespace Thetan.Immortal.V1 {
     /// <summary>Field number for the "botBrain" field.</summary>
     public const int BotBrainFieldNumber = 13;
     private int botBrain_;
-    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int BotBrain {
