@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package thetan.immortal.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_immortal_v1";
+option csharp_namespace = "Thetan.Immortal.V1";
+
+message GetBotNamesRequest {
+  int32 amount = 1;
+  repeated string countries = 2;
+}
+
+message GetBotNamesResponse {
+  repeated string botNames = 1;
+}
+
+// ImmortalBotService is a grpc server for handling bot names.
+// This grpc is implemented in thetan-player-immortal and match-director-immortal calls it.
+service ImmortalBotService {
+  rpc GetBotNames (GetBotNamesRequest) returns (GetBotNamesResponse) {}
+}
+
+
