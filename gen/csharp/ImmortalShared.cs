@@ -36,7 +36,7 @@ namespace Thetan.Immortal.V1 {
             "ASgFUgZyYXJpdHkSGAoHc2tpbGxJRBgDIAEoBVIHc2tpbGxJRBIUCgVjbGFz",
             "cxgEIAEoBVIFY2xhc3MiVQoLU2tpbGxSYXRpbmcSFgoGcmF0aW5nGAEgASgB",
             "UgZyYXRpbmcSDgoCcmQYAiABKAFSAnJkEh4KCnZvbGF0aWxpdHkYAyABKAFS",
-            "CnZvbGF0aWxpdHki2gQKFFBsYXllckluZm9NYXRjaFByb3RvEhoKCHBsYXll",
+            "CnZvbGF0aWxpdHkiqgUKFFBsYXllckluZm9NYXRjaFByb3RvEhoKCHBsYXll",
             "cklEGAEgASgJUghwbGF5ZXJJRBIeCgpwbGF5ZXJOYW1lGAIgASgJUgpwbGF5",
             "ZXJOYW1lEhoKCGF2YXRhcklEGAMgASgFUghhdmF0YXJJRBIYCgdmcmFtZUlE",
             "GAQgASgFUgdmcmFtZUlEEiAKC25hbWVDb2xvcklEGAUgASgFUgtuYW1lQ29s",
@@ -45,20 +45,21 @@ namespace Thetan.Immortal.V1 {
             "dHJvcGh5UmFuaxImCgx0cm9waHlTZWFyY2gYCSABKAVCAhgBUgx0cm9waHlT",
             "ZWFyY2gSFgoEcmFuaxgKIAEoBUICGAFSBHJhbmsSLAoEaGVybxgLIAEoCzIY",
             "LnRoZXRhbi5pbW1vcnRhbC52MS5IZXJvUgRoZXJvEjEKBnNraWxscxgMIAMo",
-            "CzIZLnRoZXRhbi5pbW1vcnRhbC52MS5Ta2lsbFIGc2tpbGxzEhoKCGJvdEJy",
-            "YWluGA0gASgFUghib3RCcmFpbhIvCgVhcmVuYRgOIAEoDjIZLnRoZXRhbi5p",
-            "bW1vcnRhbC52MS5BcmVuYVIFYXJlbmESGAoHd2luUmF0ZRgPIAEoAVIHd2lu",
-            "UmF0ZRIWCgZyYXRpbmcYECABKAFSBnJhdGluZxIOCgJyZBgRIAEoAVICcmQS",
-            "HgoKdm9sYXRpbGl0eRgSIAEoAVIKdm9sYXRpbGl0eSqiAQoFQXJlbmESCAoE",
-            "Tk9ORRAAEgsKB1RSQUlORUUQARIPCgtBUFBFUkVOVElDRRACEg4KClBBVEhG",
-            "SU5ERVIQAxILCgdGSUdIVEVSEAQSCQoFRUxJVEUQBRIKCgZNQVNURVIQBhII",
-            "CgRIRVJPEAcSDAoIQ0hBTVBJT04QCBIKCgZMRUdFTkQQCRIMCghJTU1PUlRB",
-            "TBAKEgsKB0RFTUlHT0QQC0LQAQoWY29tLnRoZXRhbi5pbW1vcnRhbC52MUIT",
-            "SW1tb3J0YWxTaGFyZWRQcm90b1ABWjd0aGV0YW4tYnVmL2dlbi9nby90aGV0",
-            "YW4vaW1tb3J0YWwvdjE7dGhldGFuX2ltbW9ydGFsX3YxogIDVElYqgISVGhl",
-            "dGFuLkltbW9ydGFsLlYxygISVGhldGFuXEltbW9ydGFsXFYx4gIeVGhldGFu",
-            "XEltbW9ydGFsXFYxXEdQQk1ldGFkYXRh6gIUVGhldGFuOjpJbW1vcnRhbDo6",
-            "VjFiBnByb3RvMw=="));
+            "CzIZLnRoZXRhbi5pbW1vcnRhbC52MS5Ta2lsbFIGc2tpbGxzEh4KCGJvdEJy",
+            "YWluGA0gASgFQgIYAVIIYm90QnJhaW4SLwoFYXJlbmEYDiABKA4yGS50aGV0",
+            "YW4uaW1tb3J0YWwudjEuQXJlbmFSBWFyZW5hEhgKB3dpblJhdGUYDyABKAFS",
+            "B3dpblJhdGUSFgoGcmF0aW5nGBAgASgBUgZyYXRpbmcSDgoCcmQYESABKAFS",
+            "AnJkEh4KCnZvbGF0aWxpdHkYEiABKAFSCnZvbGF0aWxpdHkSGgoId2luQ291",
+            "bnQYEyABKAVSCHdpbkNvdW50Ei4KEnJlY2VudFBsYXllZEhlcm9lcxgUIAMo",
+            "BVIScmVjZW50UGxheWVkSGVyb2VzKqIBCgVBcmVuYRIICgROT05FEAASCwoH",
+            "VFJBSU5FRRABEg8KC0FQUEVSRU5USUNFEAISDgoKUEFUSEZJTkRFUhADEgsK",
+            "B0ZJR0hURVIQBBIJCgVFTElURRAFEgoKBk1BU1RFUhAGEggKBEhFUk8QBxIM",
+            "CghDSEFNUElPThAIEgoKBkxFR0VORBAJEgwKCElNTU9SVEFMEAoSCwoHREVN",
+            "SUdPRBALQtABChZjb20udGhldGFuLmltbW9ydGFsLnYxQhNJbW1vcnRhbFNo",
+            "YXJlZFByb3RvUAFaN3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9pbW1vcnRh",
+            "bC92MTt0aGV0YW5faW1tb3J0YWxfdjGiAgNUSViqAhJUaGV0YW4uSW1tb3J0",
+            "YWwuVjHKAhJUaGV0YW5cSW1tb3J0YWxcVjHiAh5UaGV0YW5cSW1tb3J0YWxc",
+            "VjFcR1BCTWV0YWRhdGHqAhRUaGV0YW46OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Immortal.V1.Arena), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -67,7 +68,7 @@ namespace Thetan.Immortal.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.Skill), global::Thetan.Immortal.V1.Skill.Parser, new[]{ "SkillID", "Level" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SkillFull), global::Thetan.Immortal.V1.SkillFull.Parser, new[]{ "Name", "Rarity", "SkillID", "Class" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SkillRating), global::Thetan.Immortal.V1.SkillRating.Parser, new[]{ "Rating", "Rd", "Volatility" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.PlayerInfoMatchProto), global::Thetan.Immortal.V1.PlayerInfoMatchProto.Parser, new[]{ "PlayerID", "PlayerName", "AvatarID", "FrameID", "NameColorID", "BattleCount", "PartyID", "TrophyRank", "TrophySearch", "Rank", "Hero", "Skills", "BotBrain", "Arena", "WinRate", "Rating", "Rd", "Volatility" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.PlayerInfoMatchProto), global::Thetan.Immortal.V1.PlayerInfoMatchProto.Parser, new[]{ "PlayerID", "PlayerName", "AvatarID", "FrameID", "NameColorID", "BattleCount", "PartyID", "TrophyRank", "TrophySearch", "Rank", "Hero", "Skills", "BotBrain", "Arena", "WinRate", "Rating", "Rd", "Volatility", "WinCount", "RecentPlayedHeroes" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1570,6 +1571,8 @@ namespace Thetan.Immortal.V1 {
       rating_ = other.rating_;
       rd_ = other.rd_;
       volatility_ = other.volatility_;
+      winCount_ = other.winCount_;
+      recentPlayedHeroes_ = other.recentPlayedHeroes_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1728,9 +1731,7 @@ namespace Thetan.Immortal.V1 {
     /// <summary>Field number for the "botBrain" field.</summary>
     public const int BotBrainFieldNumber = 13;
     private int botBrain_;
-    /// <summary>
-    /// default value is human
-    /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int BotBrain {
@@ -1800,6 +1801,29 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
+    /// <summary>Field number for the "winCount" field.</summary>
+    public const int WinCountFieldNumber = 19;
+    private int winCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int WinCount {
+      get { return winCount_; }
+      set {
+        winCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "recentPlayedHeroes" field.</summary>
+    public const int RecentPlayedHeroesFieldNumber = 20;
+    private static readonly pb::FieldCodec<int> _repeated_recentPlayedHeroes_codec
+        = pb::FieldCodec.ForInt32(162);
+    private readonly pbc::RepeatedField<int> recentPlayedHeroes_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<int> RecentPlayedHeroes {
+      get { return recentPlayedHeroes_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1833,6 +1857,8 @@ namespace Thetan.Immortal.V1 {
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Rating, other.Rating)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Rd, other.Rd)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Volatility, other.Volatility)) return false;
+      if (WinCount != other.WinCount) return false;
+      if(!recentPlayedHeroes_.Equals(other.recentPlayedHeroes_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1858,6 +1884,8 @@ namespace Thetan.Immortal.V1 {
       if (Rating != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Rating);
       if (Rd != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Rd);
       if (Volatility != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Volatility);
+      if (WinCount != 0) hash ^= WinCount.GetHashCode();
+      hash ^= recentPlayedHeroes_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1945,6 +1973,11 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(145, 1);
         output.WriteDouble(Volatility);
       }
+      if (WinCount != 0) {
+        output.WriteRawTag(152, 1);
+        output.WriteInt32(WinCount);
+      }
+      recentPlayedHeroes_.WriteTo(output, _repeated_recentPlayedHeroes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2024,6 +2057,11 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(145, 1);
         output.WriteDouble(Volatility);
       }
+      if (WinCount != 0) {
+        output.WriteRawTag(152, 1);
+        output.WriteInt32(WinCount);
+      }
+      recentPlayedHeroes_.WriteTo(ref output, _repeated_recentPlayedHeroes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2086,6 +2124,10 @@ namespace Thetan.Immortal.V1 {
       if (Volatility != 0D) {
         size += 2 + 8;
       }
+      if (WinCount != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(WinCount);
+      }
+      size += recentPlayedHeroes_.CalculateSize(_repeated_recentPlayedHeroes_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2153,6 +2195,10 @@ namespace Thetan.Immortal.V1 {
       if (other.Volatility != 0D) {
         Volatility = other.Volatility;
       }
+      if (other.WinCount != 0) {
+        WinCount = other.WinCount;
+      }
+      recentPlayedHeroes_.Add(other.recentPlayedHeroes_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2243,6 +2289,15 @@ namespace Thetan.Immortal.V1 {
             Volatility = input.ReadDouble();
             break;
           }
+          case 152: {
+            WinCount = input.ReadInt32();
+            break;
+          }
+          case 162:
+          case 160: {
+            recentPlayedHeroes_.AddEntriesFrom(input, _repeated_recentPlayedHeroes_codec);
+            break;
+          }
         }
       }
     #endif
@@ -2331,6 +2386,15 @@ namespace Thetan.Immortal.V1 {
           }
           case 145: {
             Volatility = input.ReadDouble();
+            break;
+          }
+          case 152: {
+            WinCount = input.ReadInt32();
+            break;
+          }
+          case 162:
+          case 160: {
+            recentPlayedHeroes_.AddEntriesFrom(ref input, _repeated_recentPlayedHeroes_codec);
             break;
           }
         }
