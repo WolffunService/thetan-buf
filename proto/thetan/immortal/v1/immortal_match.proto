@@ -35,6 +35,18 @@ message CancelTicketSuccess {
   string ticketID = 3;
 }
 
+message MatchBotRequest {
+  string country = 1;
+  int32 amount = 2;
+}
+
+message MatchBotResponse {
+  string matchID = 1;
+  repeated PlayerInfoMatchProto players = 2;
+  int32 bestRegion = 3;
+}
+
 service MatchDirectorService {
   rpc CancelTicket(CancelTicketRequest) returns (CancelTicketResponse) {}
+  rpc MatchBot(MatchBotRequest) returns (MatchBotResponse) {}
 }

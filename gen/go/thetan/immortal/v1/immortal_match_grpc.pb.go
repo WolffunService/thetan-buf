@@ -20,6 +20,7 @@ const _ = grpc.SupportPackageIsVersion7
 
 const (
 	MatchDirectorService_CancelTicket_FullMethodName = "/thetan.immortal.v1.MatchDirectorService/CancelTicket"
+	MatchDirectorService_MatchBot_FullMethodName     = "/thetan.immortal.v1.MatchDirectorService/MatchBot"
 )
 
 // MatchDirectorServiceClient is the client API for MatchDirectorService service.
@@ -27,6 +28,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type MatchDirectorServiceClient interface {
 	CancelTicket(ctx context.Context, in *CancelTicketRequest, opts ...grpc.CallOption) (*CancelTicketResponse, error)
+	MatchBot(ctx context.Context, in *MatchBotRequest, opts ...grpc.CallOption) (*MatchBotResponse, error)
 }
 
 type matchDirectorServiceClient struct {
@@ -46,11 +48,21 @@ func (c *matchDirectorServiceClient) CancelTicket(ctx context.Context, in *Cance
 	return out, nil
 }
 
+func (c *matchDirectorServiceClient) MatchBot(ctx context.Context, in *MatchBotRequest, opts ...grpc.CallOption) (*MatchBotResponse, error) {
+	out := new(MatchBotResponse)
+	err := c.cc.Invoke(ctx, MatchDirectorService_MatchBot_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // MatchDirectorServiceServer is the server API for MatchDirectorService service.
 // All implementations must embed UnimplementedMatchDirectorServiceServer
 // for forward compatibility
 type MatchDirectorServiceServer interface {
 	CancelTicket(context.Context, *CancelTicketRequest) (*CancelTicketResponse, error)
+	MatchBot(context.Context, *MatchBotRequest) (*MatchBotResponse, error)
 	mustEmbedUnimplementedMatchDirectorServiceServer()
 }
 
@@ -60,6 +72,9 @@ type UnimplementedMatchDirectorServiceServer struct {
 
 func (UnimplementedMatchDirectorServiceServer) CancelTicket(context.Context, *CancelTicketRequest) (*CancelTicketResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CancelTicket not implemented")
+}
+func (UnimplementedMatchDirectorServiceServer) MatchBot(context.Context, *MatchBotRequest) (*MatchBotResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method MatchBot not implemented")
 }
 func (UnimplementedMatchDirectorServiceServer) mustEmbedUnimplementedMatchDirectorServiceServer() {}
 
@@ -92,6 +107,24 @@ func _MatchDirectorService_CancelTicket_Handler(srv interface{}, ctx context.Con
 	return interceptor(ctx, in, info, handler)
 }
 
+func _MatchDirectorService_MatchBot_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(MatchBotRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(MatchDirectorServiceServer).MatchBot(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: MatchDirectorService_MatchBot_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(MatchDirectorServiceServer).MatchBot(ctx, req.(*MatchBotRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // MatchDirectorService_ServiceDesc is the grpc.ServiceDesc for MatchDirectorService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -102,6 +135,10 @@ var MatchDirectorService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "CancelTicket",
 			Handler:    _MatchDirectorService_CancelTicket_Handler,
+		},
+		{
+			MethodName: "MatchBot",
+			Handler:    _MatchDirectorService_MatchBot_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
