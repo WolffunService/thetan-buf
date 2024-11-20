@@ -37,22 +37,23 @@ namespace Thetan.Immortal.V1 {
             "dHlJRBgCIAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0",
             "SUQiFgoUQ2FuY2VsVGlja2V0UmVzcG9uc2UiZwoTQ2FuY2VsVGlja2V0U3Vj",
             "Y2VzcxIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSGAoHcGFydHlJRBgC",
-            "IAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0SUQiQwoP",
-            "TWF0Y2hCb3RSZXF1ZXN0EhgKB2NvdW50cnkYASABKAlSB2NvdW50cnkSFgoG",
-            "YW1vdW50GAIgASgFUgZhbW91bnQikAEKEE1hdGNoQm90UmVzcG9uc2USGAoH",
-            "bWF0Y2hJRBgBIAEoCVIHbWF0Y2hJRBJCCgdwbGF5ZXJzGAIgAygLMigudGhl",
-            "dGFuLmltbW9ydGFsLnYxLlBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJz",
-            "Eh4KCmJlc3RSZWdpb24YAyABKAVSCmJlc3RSZWdpb24y1AEKFE1hdGNoRGly",
-            "ZWN0b3JTZXJ2aWNlEmMKDENhbmNlbFRpY2tldBInLnRoZXRhbi5pbW1vcnRh",
-            "bC52MS5DYW5jZWxUaWNrZXRSZXF1ZXN0GigudGhldGFuLmltbW9ydGFsLnYx",
-            "LkNhbmNlbFRpY2tldFJlc3BvbnNlIgASVwoITWF0Y2hCb3QSIy50aGV0YW4u",
-            "aW1tb3J0YWwudjEuTWF0Y2hCb3RSZXF1ZXN0GiQudGhldGFuLmltbW9ydGFs",
-            "LnYxLk1hdGNoQm90UmVzcG9uc2UiAELPAQoWY29tLnRoZXRhbi5pbW1vcnRh",
-            "bC52MUISSW1tb3J0YWxNYXRjaFByb3RvUAFaN3RoZXRhbi1idWYvZ2VuL2dv",
-            "L3RoZXRhbi9pbW1vcnRhbC92MTt0aGV0YW5faW1tb3J0YWxfdjGiAgNUSViq",
-            "AhJUaGV0YW4uSW1tb3J0YWwuVjHKAhJUaGV0YW5cSW1tb3J0YWxcVjHiAh5U",
-            "aGV0YW5cSW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHqAhRUaGV0YW46OkltbW9y",
-            "dGFsOjpWMWIGcHJvdG8z"));
+            "IAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0SUQiiQEK",
+            "D01hdGNoQm90UmVxdWVzdBJCCgdwbGF5ZXJzGAEgAygLMigudGhldGFuLmlt",
+            "bW9ydGFsLnYxLlBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzEhgKB3Jl",
+            "Z2lvbnMYAiADKAVSB3JlZ2lvbnMSGAoHY291bnRyeRgDIAEoCVIHY291bnRy",
+            "eSKQAQoQTWF0Y2hCb3RSZXNwb25zZRIYCgdtYXRjaElEGAEgASgJUgdtYXRj",
+            "aElEEkIKB3BsYXllcnMYAiADKAsyKC50aGV0YW4uaW1tb3J0YWwudjEuUGxh",
+            "eWVySW5mb01hdGNoUHJvdG9SB3BsYXllcnMSHgoKYmVzdFJlZ2lvbhgDIAEo",
+            "BVIKYmVzdFJlZ2lvbjLUAQoUTWF0Y2hEaXJlY3RvclNlcnZpY2USYwoMQ2Fu",
+            "Y2VsVGlja2V0EicudGhldGFuLmltbW9ydGFsLnYxLkNhbmNlbFRpY2tldFJl",
+            "cXVlc3QaKC50aGV0YW4uaW1tb3J0YWwudjEuQ2FuY2VsVGlja2V0UmVzcG9u",
+            "c2UiABJXCghNYXRjaEJvdBIjLnRoZXRhbi5pbW1vcnRhbC52MS5NYXRjaEJv",
+            "dFJlcXVlc3QaJC50aGV0YW4uaW1tb3J0YWwudjEuTWF0Y2hCb3RSZXNwb25z",
+            "ZSIAQs8BChZjb20udGhldGFuLmltbW9ydGFsLnYxQhJJbW1vcnRhbE1hdGNo",
+            "UHJvdG9QAVo3dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2ltbW9ydGFsL3Yx",
+            "O3RoZXRhbl9pbW1vcnRhbF92MaICA1RJWKoCElRoZXRhbi5JbW1vcnRhbC5W",
+            "McoCElRoZXRhblxJbW1vcnRhbFxWMeICHlRoZXRhblxJbW1vcnRhbFxWMVxH",
+            "UEJNZXRhZGF0YeoCFFRoZXRhbjo6SW1tb3J0YWw6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -61,7 +62,7 @@ namespace Thetan.Immortal.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketRequest), global::Thetan.Immortal.V1.CancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketResponse), global::Thetan.Immortal.V1.CancelTicketResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketSuccess), global::Thetan.Immortal.V1.CancelTicketSuccess.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.MatchBotRequest), global::Thetan.Immortal.V1.MatchBotRequest.Parser, new[]{ "Country", "Amount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.MatchBotRequest), global::Thetan.Immortal.V1.MatchBotRequest.Parser, new[]{ "Players", "Regions", "Country" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.MatchBotResponse), global::Thetan.Immortal.V1.MatchBotResponse.Parser, new[]{ "MatchID", "Players", "BestRegion" }, null, null, null, null)
           }));
     }
@@ -1285,8 +1286,9 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MatchBotRequest(MatchBotRequest other) : this() {
+      players_ = other.players_.Clone();
+      regions_ = other.regions_.Clone();
       country_ = other.country_;
-      amount_ = other.amount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1296,27 +1298,40 @@ namespace Thetan.Immortal.V1 {
       return new MatchBotRequest(this);
     }
 
+    /// <summary>Field number for the "players" field.</summary>
+    public const int PlayersFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.PlayerInfoMatchProto> _repeated_players_codec
+        = pb::FieldCodec.ForMessage(10, global::Thetan.Immortal.V1.PlayerInfoMatchProto.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto> players_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Thetan.Immortal.V1.PlayerInfoMatchProto> Players {
+      get { return players_; }
+    }
+
+    /// <summary>Field number for the "regions" field.</summary>
+    public const int RegionsFieldNumber = 2;
+    private static readonly pb::FieldCodec<int> _repeated_regions_codec
+        = pb::FieldCodec.ForInt32(18);
+    private readonly pbc::RepeatedField<int> regions_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<int> Regions {
+      get { return regions_; }
+    }
+
     /// <summary>Field number for the "country" field.</summary>
-    public const int CountryFieldNumber = 1;
+    public const int CountryFieldNumber = 3;
     private string country_ = "";
+    /// <summary>
+    ///using for get bot
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Country {
       get { return country_; }
       set {
         country_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "amount" field.</summary>
-    public const int AmountFieldNumber = 2;
-    private int amount_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Amount {
-      get { return amount_; }
-      set {
-        amount_ = value;
       }
     }
 
@@ -1335,8 +1350,9 @@ namespace Thetan.Immortal.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if(!players_.Equals(other.players_)) return false;
+      if(!regions_.Equals(other.regions_)) return false;
       if (Country != other.Country) return false;
-      if (Amount != other.Amount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1344,8 +1360,9 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      hash ^= players_.GetHashCode();
+      hash ^= regions_.GetHashCode();
       if (Country.Length != 0) hash ^= Country.GetHashCode();
-      if (Amount != 0) hash ^= Amount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1364,13 +1381,11 @@ namespace Thetan.Immortal.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      players_.WriteTo(output, _repeated_players_codec);
+      regions_.WriteTo(output, _repeated_regions_codec);
       if (Country.Length != 0) {
-        output.WriteRawTag(10);
+        output.WriteRawTag(26);
         output.WriteString(Country);
-      }
-      if (Amount != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Amount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1382,13 +1397,11 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      players_.WriteTo(ref output, _repeated_players_codec);
+      regions_.WriteTo(ref output, _repeated_regions_codec);
       if (Country.Length != 0) {
-        output.WriteRawTag(10);
+        output.WriteRawTag(26);
         output.WriteString(Country);
-      }
-      if (Amount != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Amount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1400,11 +1413,10 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      size += players_.CalculateSize(_repeated_players_codec);
+      size += regions_.CalculateSize(_repeated_regions_codec);
       if (Country.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Country);
-      }
-      if (Amount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Amount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1418,11 +1430,10 @@ namespace Thetan.Immortal.V1 {
       if (other == null) {
         return;
       }
+      players_.Add(other.players_);
+      regions_.Add(other.regions_);
       if (other.Country.Length != 0) {
         Country = other.Country;
-      }
-      if (other.Amount != 0) {
-        Amount = other.Amount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1440,11 +1451,16 @@ namespace Thetan.Immortal.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            Country = input.ReadString();
+            players_.AddEntriesFrom(input, _repeated_players_codec);
             break;
           }
+          case 18:
           case 16: {
-            Amount = input.ReadInt32();
+            regions_.AddEntriesFrom(input, _repeated_regions_codec);
+            break;
+          }
+          case 26: {
+            Country = input.ReadString();
             break;
           }
         }
@@ -1463,11 +1479,16 @@ namespace Thetan.Immortal.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            Country = input.ReadString();
+            players_.AddEntriesFrom(ref input, _repeated_players_codec);
             break;
           }
+          case 18:
           case 16: {
-            Amount = input.ReadInt32();
+            regions_.AddEntriesFrom(ref input, _repeated_regions_codec);
+            break;
+          }
+          case 26: {
+            Country = input.ReadString();
             break;
           }
         }
