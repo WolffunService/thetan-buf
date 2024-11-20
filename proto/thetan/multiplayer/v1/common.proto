@@ -83,6 +83,9 @@ message PlayerInfoProto {
   int32 guildBadgeId = 12;
   int32 guildRole = 13;
 
+  //premium user
+  int32 battlePassID = 20;
+
   // tùy từng game mà cục nay có thể khác nhau
   bytes gameData = 99;
 }

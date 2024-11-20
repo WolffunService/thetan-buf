@@ -1,5 +1,4 @@
 name: Release Unity
-
 on:
   workflow_dispatch:
 
@@ -13,7 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          fetch-depth: 0  # Required for git subtree operations
           ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
       - uses: bufbuild/buf-setup-action@v1
         with:
@@ -24,25 +29,41 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run build script
+        id: build
         run: | 
           ./unity/increment_version.sh
-          
           go install github.com/sorcererxw/protoc-gen-go-grpc-mock@latest
           go install github.com/srikrsna/protoc-gen-gotag@latest
-
           export PATH=${PATH}:`go env GOPATH`/bin
-
           buf generate proto
           buf generate --template buf.gen.tag.yaml proto
-          
           cp ./unity/package.json ./gen/csharp/package.json
           cp ./unity/Wolffun.Protobuf.asmdef ./gen/csharp/Wolffun.Protobuf.asmdef
         shell: bash
 
-      - uses: EndBug/add-and-commit@v9
-
-      - name: Run build script
+      - name: Fix Unity meta files
         run: |
           ./unity/fix_meta.sh
         shell: bash
-      - uses: EndBug/add-and-commit@v9
+
+      - name: Final Commit and Tag
+        uses: EndBug/add-and-commit@v9
+
+      - name: Deploy Package
+        run: |
+          PREFIX="gen/csharp"
+          BRANCH="upm"
+          SEMVER='${{ steps.build.outputs.version }}'
+          
+          # Create and switch to temporary branch for subtree
+          git subtree split --prefix="$PREFIX" --branch $BRANCH
+          
+          # Tag the branch
+          git tag $SEMVER $BRANCH
+          
+          # Push branch and tags
+          git push origin $BRANCH --tags
+          
+          # Cleanup
+          git push origin --delete $BRANCH
+          git branch -D $BRANCH
