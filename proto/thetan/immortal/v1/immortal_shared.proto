@@ -52,7 +52,7 @@ message PlayerInfoMatchProto {
   int32 rank = 10 [deprecated=true];
   Hero hero = 11;
   repeated Skill skills = 12;
-  int32 botBrain = 13 [deprecated=true];
+  int32 botBrain = 13;
   Arena arena = 14;
   double winRate = 15;
   double rating = 16;
