@@ -36,8 +36,9 @@ message CancelTicketSuccess {
 }
 
 message MatchBotRequest {
-  string country = 1;
-  int32 amount = 2;
+  repeated PlayerInfoMatchProto players = 1;
+  repeated int32 regions = 2;
+  string country = 3; //using for get bot
 }
 
 message MatchBotResponse {
