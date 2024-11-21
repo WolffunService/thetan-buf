@@ -59,7 +59,7 @@ message PlayerInfoMatchProto {
   double rd = 17;
   double volatility = 18;
   int32 winCount = 19;
-  repeated int32 recentPlayedHeroes = 20;
+  repeated int32 recentMatchedHeroes = 20;
 }
 
 enum Arena
