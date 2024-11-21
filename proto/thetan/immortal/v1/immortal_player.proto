@@ -20,8 +20,18 @@ message Player {
   string country = 3;
 }
 
+message GetBotNamesRequest {
+  int32 amount = 1;
+  repeated string countries = 2;
+}
+
+message GetBotNamesResponse {
+  repeated string botNames = 1;
+}
+
 // ImmortalPlayerService is a grpc server for handling player profile.
 // This grpc is implemented in thetan-player-immortal and match-director-immortal calls it.
 service ImmortalPlayerService {
   rpc SearchPlayers (SearchPlayersRequest) returns (SearchPlayersResponse) {}
+  rpc GetBotNames (GetBotNamesRequest) returns (GetBotNamesResponse) {}
 }
