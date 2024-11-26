@@ -95,12 +95,14 @@ enum ChannelChatRoom{
   Party = 1;
   Country = 2;
   Private = 3;
+  Global = 4;
 
 }
 
 message RequestChatMessageProto{
   string message = 1;
   ChannelChatRoom channel = 2;
+  optional string channelID = 3;
 }
 
 //response data
