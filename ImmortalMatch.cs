@@ -37,21 +37,22 @@ namespace Thetan.Immortal.V1 {
             "dHlJRBgCIAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0",
             "SUQiFgoUQ2FuY2VsVGlja2V0UmVzcG9uc2UiZwoTQ2FuY2VsVGlja2V0U3Vj",
             "Y2VzcxIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSGAoHcGFydHlJRBgC",
-            "IAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0SUQiiQEK",
-            "D01hdGNoQm90UmVxdWVzdBJCCgdwbGF5ZXJzGAEgAygLMigudGhldGFuLmlt",
-            "bW9ydGFsLnYxLlBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzEhgKB3Jl",
-            "Z2lvbnMYAiADKAVSB3JlZ2lvbnMSGAoHY291bnRyeRgDIAEoCVIHY291bnRy",
-            "eSISChBNYXRjaEJvdFJlc3BvbnNlMtQBChRNYXRjaERpcmVjdG9yU2Vydmlj",
-            "ZRJjCgxDYW5jZWxUaWNrZXQSJy50aGV0YW4uaW1tb3J0YWwudjEuQ2FuY2Vs",
-            "VGlja2V0UmVxdWVzdBooLnRoZXRhbi5pbW1vcnRhbC52MS5DYW5jZWxUaWNr",
-            "ZXRSZXNwb25zZSIAElcKCE1hdGNoQm90EiMudGhldGFuLmltbW9ydGFsLnYx",
-            "Lk1hdGNoQm90UmVxdWVzdBokLnRoZXRhbi5pbW1vcnRhbC52MS5NYXRjaEJv",
-            "dFJlc3BvbnNlIgBCzwEKFmNvbS50aGV0YW4uaW1tb3J0YWwudjFCEkltbW9y",
-            "dGFsTWF0Y2hQcm90b1ABWjd0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vaW1t",
-            "b3J0YWwvdjE7dGhldGFuX2ltbW9ydGFsX3YxogIDVElYqgISVGhldGFuLklt",
-            "bW9ydGFsLlYxygISVGhldGFuXEltbW9ydGFsXFYx4gIeVGhldGFuXEltbW9y",
-            "dGFsXFYxXEdQQk1ldGFkYXRh6gIUVGhldGFuOjpJbW1vcnRhbDo6VjFiBnBy",
-            "b3RvMw=="));
+            "IAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0SUQilwEK",
+            "HUNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXF1ZXN0EkIKB3BsYXllcnMYASAD",
+            "KAsyKC50aGV0YW4uaW1tb3J0YWwudjEuUGxheWVySW5mb01hdGNoUHJvdG9S",
+            "B3BsYXllcnMSGAoHcmVnaW9ucxgCIAMoBVIHcmVnaW9ucxIYCgdjb3VudHJ5",
+            "GAMgASgJUgdjb3VudHJ5IiAKHkNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXNw",
+            "b25zZTL/AQoUTWF0Y2hEaXJlY3RvclNlcnZpY2USYwoMQ2FuY2VsVGlja2V0",
+            "EicudGhldGFuLmltbW9ydGFsLnYxLkNhbmNlbFRpY2tldFJlcXVlc3QaKC50",
+            "aGV0YW4uaW1tb3J0YWwudjEuQ2FuY2VsVGlja2V0UmVzcG9uc2UiABKBAQoW",
+            "Q3JlYXRlTWF0Y2hOb25NYXRjaGluZxIxLnRoZXRhbi5pbW1vcnRhbC52MS5D",
+            "cmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVxdWVzdBoyLnRoZXRhbi5pbW1vcnRh",
+            "bC52MS5DcmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVzcG9uc2UiAELPAQoWY29t",
+            "LnRoZXRhbi5pbW1vcnRhbC52MUISSW1tb3J0YWxNYXRjaFByb3RvUAFaN3Ro",
+            "ZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9pbW1vcnRhbC92MTt0aGV0YW5faW1t",
+            "b3J0YWxfdjGiAgNUSViqAhJUaGV0YW4uSW1tb3J0YWwuVjHKAhJUaGV0YW5c",
+            "SW1tb3J0YWxcVjHiAh5UaGV0YW5cSW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHq",
+            "AhRUaGV0YW46OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -60,8 +61,8 @@ namespace Thetan.Immortal.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketRequest), global::Thetan.Immortal.V1.CancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketResponse), global::Thetan.Immortal.V1.CancelTicketResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketSuccess), global::Thetan.Immortal.V1.CancelTicketSuccess.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.MatchBotRequest), global::Thetan.Immortal.V1.MatchBotRequest.Parser, new[]{ "Players", "Regions", "Country" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.MatchBotResponse), global::Thetan.Immortal.V1.MatchBotResponse.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest), global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest.Parser, new[]{ "Players", "Regions", "Country" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse), global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse.Parser, null, null, null, null, null)
           }));
     }
     #endregion
@@ -1250,16 +1251,16 @@ namespace Thetan.Immortal.V1 {
 
   }
 
-  public sealed partial class MatchBotRequest : pb::IMessage<MatchBotRequest>
+  public sealed partial class CreateMatchNonMatchingRequest : pb::IMessage<CreateMatchNonMatchingRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MatchBotRequest> _parser = new pb::MessageParser<MatchBotRequest>(() => new MatchBotRequest());
+    private static readonly pb::MessageParser<CreateMatchNonMatchingRequest> _parser = new pb::MessageParser<CreateMatchNonMatchingRequest>(() => new CreateMatchNonMatchingRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<MatchBotRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<CreateMatchNonMatchingRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1275,7 +1276,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MatchBotRequest() {
+    public CreateMatchNonMatchingRequest() {
       OnConstruction();
     }
 
@@ -1283,7 +1284,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MatchBotRequest(MatchBotRequest other) : this() {
+    public CreateMatchNonMatchingRequest(CreateMatchNonMatchingRequest other) : this() {
       players_ = other.players_.Clone();
       regions_ = other.regions_.Clone();
       country_ = other.country_;
@@ -1292,8 +1293,8 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MatchBotRequest Clone() {
-      return new MatchBotRequest(this);
+    public CreateMatchNonMatchingRequest Clone() {
+      return new CreateMatchNonMatchingRequest(this);
     }
 
     /// <summary>Field number for the "players" field.</summary>
@@ -1321,9 +1322,6 @@ namespace Thetan.Immortal.V1 {
     /// <summary>Field number for the "country" field.</summary>
     public const int CountryFieldNumber = 3;
     private string country_ = "";
-    /// <summary>
-    ///using for get bot
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Country {
@@ -1336,12 +1334,12 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as MatchBotRequest);
+      return Equals(other as CreateMatchNonMatchingRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(MatchBotRequest other) {
+    public bool Equals(CreateMatchNonMatchingRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1424,7 +1422,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(MatchBotRequest other) {
+    public void MergeFrom(CreateMatchNonMatchingRequest other) {
       if (other == null) {
         return;
       }
@@ -1496,16 +1494,16 @@ namespace Thetan.Immortal.V1 {
 
   }
 
-  public sealed partial class MatchBotResponse : pb::IMessage<MatchBotResponse>
+  public sealed partial class CreateMatchNonMatchingResponse : pb::IMessage<CreateMatchNonMatchingResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MatchBotResponse> _parser = new pb::MessageParser<MatchBotResponse>(() => new MatchBotResponse());
+    private static readonly pb::MessageParser<CreateMatchNonMatchingResponse> _parser = new pb::MessageParser<CreateMatchNonMatchingResponse>(() => new CreateMatchNonMatchingResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<MatchBotResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<CreateMatchNonMatchingResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1521,7 +1519,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MatchBotResponse() {
+    public CreateMatchNonMatchingResponse() {
       OnConstruction();
     }
 
@@ -1529,25 +1527,25 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MatchBotResponse(MatchBotResponse other) : this() {
+    public CreateMatchNonMatchingResponse(CreateMatchNonMatchingResponse other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MatchBotResponse Clone() {
-      return new MatchBotResponse(this);
+    public CreateMatchNonMatchingResponse Clone() {
+      return new CreateMatchNonMatchingResponse(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as MatchBotResponse);
+      return Equals(other as CreateMatchNonMatchingResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(MatchBotResponse other) {
+    public bool Equals(CreateMatchNonMatchingResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1607,7 +1605,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(MatchBotResponse other) {
+    public void MergeFrom(CreateMatchNonMatchingResponse other) {
       if (other == null) {
         return;
       }
