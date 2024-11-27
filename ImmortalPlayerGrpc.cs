@@ -53,6 +53,10 @@ namespace Thetan.Immortal.V1 {
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.SearchPlayersRequest> __Marshaller_thetan_immortal_v1_SearchPlayersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.SearchPlayersRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.SearchPlayersResponse> __Marshaller_thetan_immortal_v1_SearchPlayersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.SearchPlayersResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetBotNamesRequest> __Marshaller_thetan_immortal_v1_GetBotNamesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetBotNamesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetBotNamesResponse> __Marshaller_thetan_immortal_v1_GetBotNamesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetBotNamesResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Immortal.V1.SearchPlayersRequest, global::Thetan.Immortal.V1.SearchPlayersResponse> __Method_SearchPlayers = new grpc::Method<global::Thetan.Immortal.V1.SearchPlayersRequest, global::Thetan.Immortal.V1.SearchPlayersResponse>(
@@ -61,6 +65,14 @@ namespace Thetan.Immortal.V1 {
         "SearchPlayers",
         __Marshaller_thetan_immortal_v1_SearchPlayersRequest,
         __Marshaller_thetan_immortal_v1_SearchPlayersResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Immortal.V1.GetBotNamesRequest, global::Thetan.Immortal.V1.GetBotNamesResponse> __Method_GetBotNames = new grpc::Method<global::Thetan.Immortal.V1.GetBotNamesRequest, global::Thetan.Immortal.V1.GetBotNamesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetBotNames",
+        __Marshaller_thetan_immortal_v1_GetBotNamesRequest,
+        __Marshaller_thetan_immortal_v1_GetBotNamesResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -74,6 +86,12 @@ namespace Thetan.Immortal.V1 {
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.SearchPlayersResponse> SearchPlayers(global::Thetan.Immortal.V1.SearchPlayersRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetBotNamesResponse> GetBotNames(global::Thetan.Immortal.V1.GetBotNamesRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -127,6 +145,26 @@ namespace Thetan.Immortal.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SearchPlayers, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Immortal.V1.GetBotNamesResponse GetBotNames(global::Thetan.Immortal.V1.GetBotNamesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBotNames(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Immortal.V1.GetBotNamesResponse GetBotNames(global::Thetan.Immortal.V1.GetBotNamesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetBotNames, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetBotNamesResponse> GetBotNamesAsync(global::Thetan.Immortal.V1.GetBotNamesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBotNamesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetBotNamesResponse> GetBotNamesAsync(global::Thetan.Immortal.V1.GetBotNamesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetBotNames, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ImmortalPlayerServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -141,7 +179,8 @@ namespace Thetan.Immortal.V1 {
     public static grpc::ServerServiceDefinition BindService(ImmortalPlayerServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_SearchPlayers, serviceImpl.SearchPlayers).Build();
+          .AddMethod(__Method_SearchPlayers, serviceImpl.SearchPlayers)
+          .AddMethod(__Method_GetBotNames, serviceImpl.GetBotNames).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -152,6 +191,7 @@ namespace Thetan.Immortal.V1 {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ImmortalPlayerServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_SearchPlayers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.SearchPlayersRequest, global::Thetan.Immortal.V1.SearchPlayersResponse>(serviceImpl.SearchPlayers));
+      serviceBinder.AddMethod(__Method_GetBotNames, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetBotNamesRequest, global::Thetan.Immortal.V1.GetBotNamesResponse>(serviceImpl.GetBotNames));
     }
 
   }
