@@ -50,9 +50,9 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.CancelTicketResponse> __Marshaller_thetan_immortal_v1_CancelTicketResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.CancelTicketResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.MatchBotRequest> __Marshaller_thetan_immortal_v1_MatchBotRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.MatchBotRequest.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest> __Marshaller_thetan_immortal_v1_CreateMatchNonMatchingRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.MatchBotResponse> __Marshaller_thetan_immortal_v1_MatchBotResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.MatchBotResponse.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse> __Marshaller_thetan_immortal_v1_CreateMatchNonMatchingResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Immortal.V1.CancelTicketRequest, global::Thetan.Immortal.V1.CancelTicketResponse> __Method_CancelTicket = new grpc::Method<global::Thetan.Immortal.V1.CancelTicketRequest, global::Thetan.Immortal.V1.CancelTicketResponse>(
@@ -63,12 +63,12 @@ namespace Thetan.Immortal.V1 {
         __Marshaller_thetan_immortal_v1_CancelTicketResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Immortal.V1.MatchBotRequest, global::Thetan.Immortal.V1.MatchBotResponse> __Method_MatchBot = new grpc::Method<global::Thetan.Immortal.V1.MatchBotRequest, global::Thetan.Immortal.V1.MatchBotResponse>(
+    static readonly grpc::Method<global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest, global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse> __Method_CreateMatchNonMatching = new grpc::Method<global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest, global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "MatchBot",
-        __Marshaller_thetan_immortal_v1_MatchBotRequest,
-        __Marshaller_thetan_immortal_v1_MatchBotResponse);
+        "CreateMatchNonMatching",
+        __Marshaller_thetan_immortal_v1_CreateMatchNonMatchingRequest,
+        __Marshaller_thetan_immortal_v1_CreateMatchNonMatchingResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -87,7 +87,7 @@ namespace Thetan.Immortal.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.MatchBotResponse> MatchBot(global::Thetan.Immortal.V1.MatchBotRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse> CreateMatchNonMatching(global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -142,24 +142,24 @@ namespace Thetan.Immortal.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_CancelTicket, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Immortal.V1.MatchBotResponse MatchBot(global::Thetan.Immortal.V1.MatchBotRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse CreateMatchNonMatching(global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return MatchBot(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return CreateMatchNonMatching(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Immortal.V1.MatchBotResponse MatchBot(global::Thetan.Immortal.V1.MatchBotRequest request, grpc::CallOptions options)
+      public virtual global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse CreateMatchNonMatching(global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_MatchBot, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_CreateMatchNonMatching, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.MatchBotResponse> MatchBotAsync(global::Thetan.Immortal.V1.MatchBotRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse> CreateMatchNonMatchingAsync(global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return MatchBotAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return CreateMatchNonMatchingAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.MatchBotResponse> MatchBotAsync(global::Thetan.Immortal.V1.MatchBotRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse> CreateMatchNonMatchingAsync(global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_MatchBot, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_CreateMatchNonMatching, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -176,7 +176,7 @@ namespace Thetan.Immortal.V1 {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_CancelTicket, serviceImpl.CancelTicket)
-          .AddMethod(__Method_MatchBot, serviceImpl.MatchBot).Build();
+          .AddMethod(__Method_CreateMatchNonMatching, serviceImpl.CreateMatchNonMatching).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -187,7 +187,7 @@ namespace Thetan.Immortal.V1 {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MatchDirectorServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_CancelTicket, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.CancelTicketRequest, global::Thetan.Immortal.V1.CancelTicketResponse>(serviceImpl.CancelTicket));
-      serviceBinder.AddMethod(__Method_MatchBot, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.MatchBotRequest, global::Thetan.Immortal.V1.MatchBotResponse>(serviceImpl.MatchBot));
+      serviceBinder.AddMethod(__Method_CreateMatchNonMatching, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest, global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse>(serviceImpl.CreateMatchNonMatching));
     }
 
   }
