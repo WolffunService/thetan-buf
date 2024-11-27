@@ -19,8 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	MatchDirectorService_CancelTicket_FullMethodName = "/thetan.immortal.v1.MatchDirectorService/CancelTicket"
-	MatchDirectorService_MatchBot_FullMethodName     = "/thetan.immortal.v1.MatchDirectorService/MatchBot"
+	MatchDirectorService_CancelTicket_FullMethodName           = "/thetan.immortal.v1.MatchDirectorService/CancelTicket"
+	MatchDirectorService_CreateMatchNonMatching_FullMethodName = "/thetan.immortal.v1.MatchDirectorService/CreateMatchNonMatching"
 )
 
 // MatchDirectorServiceClient is the client API for MatchDirectorService service.
@@ -28,7 +28,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type MatchDirectorServiceClient interface {
 	CancelTicket(ctx context.Context, in *CancelTicketRequest, opts ...grpc.CallOption) (*CancelTicketResponse, error)
-	MatchBot(ctx context.Context, in *MatchBotRequest, opts ...grpc.CallOption) (*MatchBotResponse, error)
+	CreateMatchNonMatching(ctx context.Context, in *CreateMatchNonMatchingRequest, opts ...grpc.CallOption) (*CreateMatchNonMatchingResponse, error)
 }
 
 type matchDirectorServiceClient struct {
@@ -48,9 +48,9 @@ func (c *matchDirectorServiceClient) CancelTicket(ctx context.Context, in *Cance
 	return out, nil
 }
 
-func (c *matchDirectorServiceClient) MatchBot(ctx context.Context, in *MatchBotRequest, opts ...grpc.CallOption) (*MatchBotResponse, error) {
-	out := new(MatchBotResponse)
-	err := c.cc.Invoke(ctx, MatchDirectorService_MatchBot_FullMethodName, in, out, opts...)
+func (c *matchDirectorServiceClient) CreateMatchNonMatching(ctx context.Context, in *CreateMatchNonMatchingRequest, opts ...grpc.CallOption) (*CreateMatchNonMatchingResponse, error) {
+	out := new(CreateMatchNonMatchingResponse)
+	err := c.cc.Invoke(ctx, MatchDirectorService_CreateMatchNonMatching_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -62,7 +62,7 @@ func (c *matchDirectorServiceClient) MatchBot(ctx context.Context, in *MatchBotR
 // for forward compatibility
 type MatchDirectorServiceServer interface {
 	CancelTicket(context.Context, *CancelTicketRequest) (*CancelTicketResponse, error)
-	MatchBot(context.Context, *MatchBotRequest) (*MatchBotResponse, error)
+	CreateMatchNonMatching(context.Context, *CreateMatchNonMatchingRequest) (*CreateMatchNonMatchingResponse, error)
 	mustEmbedUnimplementedMatchDirectorServiceServer()
 }
 
@@ -73,8 +73,8 @@ type UnimplementedMatchDirectorServiceServer struct {
 func (UnimplementedMatchDirectorServiceServer) CancelTicket(context.Context, *CancelTicketRequest) (*CancelTicketResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CancelTicket not implemented")
 }
-func (UnimplementedMatchDirectorServiceServer) MatchBot(context.Context, *MatchBotRequest) (*MatchBotResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method MatchBot not implemented")
+func (UnimplementedMatchDirectorServiceServer) CreateMatchNonMatching(context.Context, *CreateMatchNonMatchingRequest) (*CreateMatchNonMatchingResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateMatchNonMatching not implemented")
 }
 func (UnimplementedMatchDirectorServiceServer) mustEmbedUnimplementedMatchDirectorServiceServer() {}
 
@@ -107,20 +107,20 @@ func _MatchDirectorService_CancelTicket_Handler(srv interface{}, ctx context.Con
 	return interceptor(ctx, in, info, handler)
 }
 
-func _MatchDirectorService_MatchBot_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(MatchBotRequest)
+func _MatchDirectorService_CreateMatchNonMatching_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(CreateMatchNonMatchingRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(MatchDirectorServiceServer).MatchBot(ctx, in)
+		return srv.(MatchDirectorServiceServer).CreateMatchNonMatching(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: MatchDirectorService_MatchBot_FullMethodName,
+		FullMethod: MatchDirectorService_CreateMatchNonMatching_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(MatchDirectorServiceServer).MatchBot(ctx, req.(*MatchBotRequest))
+		return srv.(MatchDirectorServiceServer).CreateMatchNonMatching(ctx, req.(*CreateMatchNonMatchingRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -137,8 +137,8 @@ var MatchDirectorService_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _MatchDirectorService_CancelTicket_Handler,
 		},
 		{
-			MethodName: "MatchBot",
-			Handler:    _MatchDirectorService_MatchBot_Handler,
+			MethodName: "CreateMatchNonMatching",
+			Handler:    _MatchDirectorService_CreateMatchNonMatching_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

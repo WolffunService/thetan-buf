@@ -35,15 +35,17 @@ message CancelTicketSuccess {
   string ticketID = 3;
 }
 
-message MatchBotRequest {
+message CreateMatchNonMatchingRequest {
   repeated PlayerInfoMatchProto players = 1;
   repeated int32 regions = 2;
-  string country = 3; //using for get bot
+  string country = 3;
 }
 
-message MatchBotResponse {}
+message CreateMatchNonMatchingResponse {
+}
+
 
 service MatchDirectorService {
   rpc CancelTicket(CancelTicketRequest) returns (CancelTicketResponse) {}
-  rpc MatchBot(MatchBotRequest) returns (MatchBotResponse) {}
+  rpc CreateMatchNonMatching(CreateMatchNonMatchingRequest) returns (CreateMatchNonMatchingResponse) {}
 }
