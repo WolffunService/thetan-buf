@@ -43,6 +43,7 @@ message GetUserProfileResponse {
 message BattleEndRequest{
   string roomName = 1;//matchID
   repeated PlayerMatchInfo players = 2;
+  int32 battleType = 3;
 }
 
 message PlayerMatchInfo{
