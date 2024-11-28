@@ -82,6 +82,12 @@ message GetHeroesRequest {}
 
 message GetHeroesResponse {
   repeated HeroFull heroes = 1;
+  map<int32, HeroRarity> heroRarities = 2;
+}
+
+message HeroRarity {
+  int32 defaultLevel = 1;
+  int32 maxLevel = 2;
 }
 
 
@@ -89,4 +95,11 @@ message GetSkillsRequest {}
 
 message GetSkillsResponse {
   repeated SkillFull skills = 1;
+  map<int32, SkillRarity> skillRarities = 2;
+}
+
+
+message SkillRarity {
+  int32 defaultLevel = 1;
+  int32 maxLevel = 2;
 }

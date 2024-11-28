@@ -694,7 +694,8 @@ type GetHeroesResponse struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Heroes []*HeroFull `protobuf:"bytes,1,rep,name=heroes,proto3" json:"heroes,omitempty"`
+	Heroes       []*HeroFull           `protobuf:"bytes,1,rep,name=heroes,proto3" json:"heroes,omitempty"`
+	HeroRarities map[int32]*HeroRarity `protobuf:"bytes,2,rep,name=heroRarities,proto3" json:"heroRarities,omitempty" protobuf_key:"varint,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"`
 }
 
 func (x *GetHeroesResponse) Reset() {
@@ -736,6 +737,68 @@ func (x *GetHeroesResponse) GetHeroes() []*HeroFull {
 	return nil
 }
 
+func (x *GetHeroesResponse) GetHeroRarities() map[int32]*HeroRarity {
+	if x != nil {
+		return x.HeroRarities
+	}
+	return nil
+}
+
+type HeroRarity struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	DefaultLevel int32 `protobuf:"varint,1,opt,name=defaultLevel,proto3" json:"defaultLevel,omitempty"`
+	MaxLevel     int32 `protobuf:"varint,2,opt,name=maxLevel,proto3" json:"maxLevel,omitempty"`
+}
+
+func (x *HeroRarity) Reset() {
+	*x = HeroRarity{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[11]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *HeroRarity) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*HeroRarity) ProtoMessage() {}
+
+func (x *HeroRarity) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[11]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use HeroRarity.ProtoReflect.Descriptor instead.
+func (*HeroRarity) Descriptor() ([]byte, []int) {
+	return file_thetan_immortal_v1_immortal_proto_rawDescGZIP(), []int{11}
+}
+
+func (x *HeroRarity) GetDefaultLevel() int32 {
+	if x != nil {
+		return x.DefaultLevel
+	}
+	return 0
+}
+
+func (x *HeroRarity) GetMaxLevel() int32 {
+	if x != nil {
+		return x.MaxLevel
+	}
+	return 0
+}
+
 type GetSkillsRequest struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -745,7 +808,7 @@ type GetSkillsRequest struct {
 func (x *GetSkillsRequest) Reset() {
 	*x = GetSkillsRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[11]
+		mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[12]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -758,7 +821,7 @@ func (x *GetSkillsRequest) String() string {
 func (*GetSkillsRequest) ProtoMessage() {}
 
 func (x *GetSkillsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[11]
+	mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[12]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -771,7 +834,7 @@ func (x *GetSkillsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetSkillsRequest.ProtoReflect.Descriptor instead.
 func (*GetSkillsRequest) Descriptor() ([]byte, []int) {
-	return file_thetan_immortal_v1_immortal_proto_rawDescGZIP(), []int{11}
+	return file_thetan_immortal_v1_immortal_proto_rawDescGZIP(), []int{12}
 }
 
 type GetSkillsResponse struct {
@@ -779,13 +842,14 @@ type GetSkillsResponse struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Skills []*SkillFull `protobuf:"bytes,1,rep,name=skills,proto3" json:"skills,omitempty"`
+	Skills        []*SkillFull           `protobuf:"bytes,1,rep,name=skills,proto3" json:"skills,omitempty"`
+	SkillRarities map[int32]*SkillRarity `protobuf:"bytes,2,rep,name=skillRarities,proto3" json:"skillRarities,omitempty" protobuf_key:"varint,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"`
 }
 
 func (x *GetSkillsResponse) Reset() {
 	*x = GetSkillsResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[12]
+		mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[13]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -798,7 +862,7 @@ func (x *GetSkillsResponse) String() string {
 func (*GetSkillsResponse) ProtoMessage() {}
 
 func (x *GetSkillsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[12]
+	mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[13]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -811,7 +875,7 @@ func (x *GetSkillsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetSkillsResponse.ProtoReflect.Descriptor instead.
 func (*GetSkillsResponse) Descriptor() ([]byte, []int) {
-	return file_thetan_immortal_v1_immortal_proto_rawDescGZIP(), []int{12}
+	return file_thetan_immortal_v1_immortal_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *GetSkillsResponse) GetSkills() []*SkillFull {
@@ -819,6 +883,68 @@ func (x *GetSkillsResponse) GetSkills() []*SkillFull {
 		return x.Skills
 	}
 	return nil
+}
+
+func (x *GetSkillsResponse) GetSkillRarities() map[int32]*SkillRarity {
+	if x != nil {
+		return x.SkillRarities
+	}
+	return nil
+}
+
+type SkillRarity struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	DefaultLevel int32 `protobuf:"varint,1,opt,name=defaultLevel,proto3" json:"defaultLevel,omitempty"`
+	MaxLevel     int32 `protobuf:"varint,2,opt,name=maxLevel,proto3" json:"maxLevel,omitempty"`
+}
+
+func (x *SkillRarity) Reset() {
+	*x = SkillRarity{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[14]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *SkillRarity) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*SkillRarity) ProtoMessage() {}
+
+func (x *SkillRarity) ProtoReflect() protoreflect.Message {
+	mi := &file_thetan_immortal_v1_immortal_proto_msgTypes[14]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use SkillRarity.ProtoReflect.Descriptor instead.
+func (*SkillRarity) Descriptor() ([]byte, []int) {
+	return file_thetan_immortal_v1_immortal_proto_rawDescGZIP(), []int{14}
+}
+
+func (x *SkillRarity) GetDefaultLevel() int32 {
+	if x != nil {
+		return x.DefaultLevel
+	}
+	return 0
+}
+
+func (x *SkillRarity) GetMaxLevel() int32 {
+	if x != nil {
+		return x.MaxLevel
+	}
+	return 0
 }
 
 var File_thetan_immortal_v1_immortal_proto protoreflect.FileDescriptor
@@ -922,18 +1048,52 @@ var file_thetan_immortal_v1_immortal_proto_rawDesc = []byte{
 	0x72, 0x61, 0x72, 0x69, 0x74, 0x79, 0x18, 0x02, 0x20, 0x01, 0x28, 0x05, 0x52, 0x06, 0x72, 0x61,
 	0x72, 0x69, 0x74, 0x79, 0x12, 0x14, 0x0a, 0x05, 0x6c, 0x65, 0x76, 0x65, 0x6c, 0x18, 0x03, 0x20,
 	0x01, 0x28, 0x05, 0x52, 0x05, 0x6c, 0x65, 0x76, 0x65, 0x6c, 0x22, 0x12, 0x0a, 0x10, 0x47, 0x65,
-	0x74, 0x48, 0x65, 0x72, 0x6f, 0x65, 0x73, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x22, 0x49,
-	0x0a, 0x11, 0x47, 0x65, 0x74, 0x48, 0x65, 0x72, 0x6f, 0x65, 0x73, 0x52, 0x65, 0x73, 0x70, 0x6f,
-	0x6e, 0x73, 0x65, 0x12, 0x34, 0x0a, 0x06, 0x68, 0x65, 0x72, 0x6f, 0x65, 0x73, 0x18, 0x01, 0x20,
-	0x03, 0x28, 0x0b, 0x32, 0x1c, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x69, 0x6d, 0x6d,
-	0x6f, 0x72, 0x74, 0x61, 0x6c, 0x2e, 0x76, 0x31, 0x2e, 0x48, 0x65, 0x72, 0x6f, 0x46, 0x75, 0x6c,
-	0x6c, 0x52, 0x06, 0x68, 0x65, 0x72, 0x6f, 0x65, 0x73, 0x22, 0x12, 0x0a, 0x10, 0x47, 0x65, 0x74,
-	0x53, 0x6b, 0x69, 0x6c, 0x6c, 0x73, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x22, 0x4a, 0x0a,
-	0x11, 0x47, 0x65, 0x74, 0x53, 0x6b, 0x69, 0x6c, 0x6c, 0x73, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e,
-	0x73, 0x65, 0x12, 0x35, 0x0a, 0x06, 0x73, 0x6b, 0x69, 0x6c, 0x6c, 0x73, 0x18, 0x01, 0x20, 0x03,
-	0x28, 0x0b, 0x32, 0x1d, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x69, 0x6d, 0x6d, 0x6f,
-	0x72, 0x74, 0x61, 0x6c, 0x2e, 0x76, 0x31, 0x2e, 0x53, 0x6b, 0x69, 0x6c, 0x6c, 0x46, 0x75, 0x6c,
-	0x6c, 0x52, 0x06, 0x73, 0x6b, 0x69, 0x6c, 0x6c, 0x73, 0x32, 0x83, 0x04, 0x0a, 0x0f, 0x49, 0x6d,
+	0x74, 0x48, 0x65, 0x72, 0x6f, 0x65, 0x73, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x22, 0x87,
+	0x02, 0x0a, 0x11, 0x47, 0x65, 0x74, 0x48, 0x65, 0x72, 0x6f, 0x65, 0x73, 0x52, 0x65, 0x73, 0x70,
+	0x6f, 0x6e, 0x73, 0x65, 0x12, 0x34, 0x0a, 0x06, 0x68, 0x65, 0x72, 0x6f, 0x65, 0x73, 0x18, 0x01,
+	0x20, 0x03, 0x28, 0x0b, 0x32, 0x1c, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x69, 0x6d,
+	0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x2e, 0x76, 0x31, 0x2e, 0x48, 0x65, 0x72, 0x6f, 0x46, 0x75,
+	0x6c, 0x6c, 0x52, 0x06, 0x68, 0x65, 0x72, 0x6f, 0x65, 0x73, 0x12, 0x5b, 0x0a, 0x0c, 0x68, 0x65,
+	0x72, 0x6f, 0x52, 0x61, 0x72, 0x69, 0x74, 0x69, 0x65, 0x73, 0x18, 0x02, 0x20, 0x03, 0x28, 0x0b,
+	0x32, 0x37, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74,
+	0x61, 0x6c, 0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x48, 0x65, 0x72, 0x6f, 0x65, 0x73, 0x52,
+	0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x2e, 0x48, 0x65, 0x72, 0x6f, 0x52, 0x61, 0x72, 0x69,
+	0x74, 0x69, 0x65, 0x73, 0x45, 0x6e, 0x74, 0x72, 0x79, 0x52, 0x0c, 0x68, 0x65, 0x72, 0x6f, 0x52,
+	0x61, 0x72, 0x69, 0x74, 0x69, 0x65, 0x73, 0x1a, 0x5f, 0x0a, 0x11, 0x48, 0x65, 0x72, 0x6f, 0x52,
+	0x61, 0x72, 0x69, 0x74, 0x69, 0x65, 0x73, 0x45, 0x6e, 0x74, 0x72, 0x79, 0x12, 0x10, 0x0a, 0x03,
+	0x6b, 0x65, 0x79, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x03, 0x6b, 0x65, 0x79, 0x12, 0x34,
+	0x0a, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x1e, 0x2e,
+	0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x2e,
+	0x76, 0x31, 0x2e, 0x48, 0x65, 0x72, 0x6f, 0x52, 0x61, 0x72, 0x69, 0x74, 0x79, 0x52, 0x05, 0x76,
+	0x61, 0x6c, 0x75, 0x65, 0x3a, 0x02, 0x38, 0x01, 0x22, 0x4c, 0x0a, 0x0a, 0x48, 0x65, 0x72, 0x6f,
+	0x52, 0x61, 0x72, 0x69, 0x74, 0x79, 0x12, 0x22, 0x0a, 0x0c, 0x64, 0x65, 0x66, 0x61, 0x75, 0x6c,
+	0x74, 0x4c, 0x65, 0x76, 0x65, 0x6c, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0c, 0x64, 0x65,
+	0x66, 0x61, 0x75, 0x6c, 0x74, 0x4c, 0x65, 0x76, 0x65, 0x6c, 0x12, 0x1a, 0x0a, 0x08, 0x6d, 0x61,
+	0x78, 0x4c, 0x65, 0x76, 0x65, 0x6c, 0x18, 0x02, 0x20, 0x01, 0x28, 0x05, 0x52, 0x08, 0x6d, 0x61,
+	0x78, 0x4c, 0x65, 0x76, 0x65, 0x6c, 0x22, 0x12, 0x0a, 0x10, 0x47, 0x65, 0x74, 0x53, 0x6b, 0x69,
+	0x6c, 0x6c, 0x73, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x22, 0x8d, 0x02, 0x0a, 0x11, 0x47,
+	0x65, 0x74, 0x53, 0x6b, 0x69, 0x6c, 0x6c, 0x73, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
+	0x12, 0x35, 0x0a, 0x06, 0x73, 0x6b, 0x69, 0x6c, 0x6c, 0x73, 0x18, 0x01, 0x20, 0x03, 0x28, 0x0b,
+	0x32, 0x1d, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74,
+	0x61, 0x6c, 0x2e, 0x76, 0x31, 0x2e, 0x53, 0x6b, 0x69, 0x6c, 0x6c, 0x46, 0x75, 0x6c, 0x6c, 0x52,
+	0x06, 0x73, 0x6b, 0x69, 0x6c, 0x6c, 0x73, 0x12, 0x5e, 0x0a, 0x0d, 0x73, 0x6b, 0x69, 0x6c, 0x6c,
+	0x52, 0x61, 0x72, 0x69, 0x74, 0x69, 0x65, 0x73, 0x18, 0x02, 0x20, 0x03, 0x28, 0x0b, 0x32, 0x38,
+	0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c,
+	0x2e, 0x76, 0x31, 0x2e, 0x47, 0x65, 0x74, 0x53, 0x6b, 0x69, 0x6c, 0x6c, 0x73, 0x52, 0x65, 0x73,
+	0x70, 0x6f, 0x6e, 0x73, 0x65, 0x2e, 0x53, 0x6b, 0x69, 0x6c, 0x6c, 0x52, 0x61, 0x72, 0x69, 0x74,
+	0x69, 0x65, 0x73, 0x45, 0x6e, 0x74, 0x72, 0x79, 0x52, 0x0d, 0x73, 0x6b, 0x69, 0x6c, 0x6c, 0x52,
+	0x61, 0x72, 0x69, 0x74, 0x69, 0x65, 0x73, 0x1a, 0x61, 0x0a, 0x12, 0x53, 0x6b, 0x69, 0x6c, 0x6c,
+	0x52, 0x61, 0x72, 0x69, 0x74, 0x69, 0x65, 0x73, 0x45, 0x6e, 0x74, 0x72, 0x79, 0x12, 0x10, 0x0a,
+	0x03, 0x6b, 0x65, 0x79, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x03, 0x6b, 0x65, 0x79, 0x12,
+	0x35, 0x0a, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x1f,
+	0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c,
+	0x2e, 0x76, 0x31, 0x2e, 0x53, 0x6b, 0x69, 0x6c, 0x6c, 0x52, 0x61, 0x72, 0x69, 0x74, 0x79, 0x52,
+	0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x3a, 0x02, 0x38, 0x01, 0x22, 0x4d, 0x0a, 0x0b, 0x53, 0x6b,
+	0x69, 0x6c, 0x6c, 0x52, 0x61, 0x72, 0x69, 0x74, 0x79, 0x12, 0x22, 0x0a, 0x0c, 0x64, 0x65, 0x66,
+	0x61, 0x75, 0x6c, 0x74, 0x4c, 0x65, 0x76, 0x65, 0x6c, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52,
+	0x0c, 0x64, 0x65, 0x66, 0x61, 0x75, 0x6c, 0x74, 0x4c, 0x65, 0x76, 0x65, 0x6c, 0x12, 0x1a, 0x0a,
+	0x08, 0x6d, 0x61, 0x78, 0x4c, 0x65, 0x76, 0x65, 0x6c, 0x18, 0x02, 0x20, 0x01, 0x28, 0x05, 0x52,
+	0x08, 0x6d, 0x61, 0x78, 0x4c, 0x65, 0x76, 0x65, 0x6c, 0x32, 0x83, 0x04, 0x0a, 0x0f, 0x49, 0x6d,
 	0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x6f, 0x0a,
 	0x10, 0x53, 0x65, 0x61, 0x72, 0x63, 0x68, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x49, 0x6e, 0x66,
 	0x6f, 0x12, 0x2b, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x69, 0x6d, 0x6d, 0x6f, 0x72,
@@ -994,7 +1154,7 @@ func file_thetan_immortal_v1_immortal_proto_rawDescGZIP() []byte {
 	return file_thetan_immortal_v1_immortal_proto_rawDescData
 }
 
-var file_thetan_immortal_v1_immortal_proto_msgTypes = make([]protoimpl.MessageInfo, 13)
+var file_thetan_immortal_v1_immortal_proto_msgTypes = make([]protoimpl.MessageInfo, 17)
 var file_thetan_immortal_v1_immortal_proto_goTypes = []interface{}{
 	(*SearchPlayerInfoRequest)(nil),  // 0: thetan.immortal.v1.SearchPlayerInfoRequest
 	(*SearchPlayerInfoResponse)(nil), // 1: thetan.immortal.v1.SearchPlayerInfoResponse
@@ -1007,43 +1167,51 @@ var file_thetan_immortal_v1_immortal_proto_goTypes = []interface{}{
 	(*BattleEndHero)(nil),            // 8: thetan.immortal.v1.BattleEndHero
 	(*GetHeroesRequest)(nil),         // 9: thetan.immortal.v1.GetHeroesRequest
 	(*GetHeroesResponse)(nil),        // 10: thetan.immortal.v1.GetHeroesResponse
-	(*GetSkillsRequest)(nil),         // 11: thetan.immortal.v1.GetSkillsRequest
-	(*GetSkillsResponse)(nil),        // 12: thetan.immortal.v1.GetSkillsResponse
-	(*PlayerInfoMatchProto)(nil),     // 13: thetan.immortal.v1.PlayerInfoMatchProto
-	(*Hero)(nil),                     // 14: thetan.immortal.v1.Hero
-	(*Skill)(nil),                    // 15: thetan.immortal.v1.Skill
-	(Arena)(0),                       // 16: thetan.immortal.v1.Arena
-	(*SkillRating)(nil),              // 17: thetan.immortal.v1.SkillRating
-	(*HeroFull)(nil),                 // 18: thetan.immortal.v1.HeroFull
-	(*SkillFull)(nil),                // 19: thetan.immortal.v1.SkillFull
+	(*HeroRarity)(nil),               // 11: thetan.immortal.v1.HeroRarity
+	(*GetSkillsRequest)(nil),         // 12: thetan.immortal.v1.GetSkillsRequest
+	(*GetSkillsResponse)(nil),        // 13: thetan.immortal.v1.GetSkillsResponse
+	(*SkillRarity)(nil),              // 14: thetan.immortal.v1.SkillRarity
+	nil,                              // 15: thetan.immortal.v1.GetHeroesResponse.HeroRaritiesEntry
+	nil,                              // 16: thetan.immortal.v1.GetSkillsResponse.SkillRaritiesEntry
+	(*PlayerInfoMatchProto)(nil),     // 17: thetan.immortal.v1.PlayerInfoMatchProto
+	(*Hero)(nil),                     // 18: thetan.immortal.v1.Hero
+	(*Skill)(nil),                    // 19: thetan.immortal.v1.Skill
+	(Arena)(0),                       // 20: thetan.immortal.v1.Arena
+	(*SkillRating)(nil),              // 21: thetan.immortal.v1.SkillRating
+	(*HeroFull)(nil),                 // 22: thetan.immortal.v1.HeroFull
+	(*SkillFull)(nil),                // 23: thetan.immortal.v1.SkillFull
 }
 var file_thetan_immortal_v1_immortal_proto_depIdxs = []int32{
-	13, // 0: thetan.immortal.v1.SearchPlayerInfoResponse.players:type_name -> thetan.immortal.v1.PlayerInfoMatchProto
+	17, // 0: thetan.immortal.v1.SearchPlayerInfoResponse.players:type_name -> thetan.immortal.v1.PlayerInfoMatchProto
 	5,  // 1: thetan.immortal.v1.BattleEndRequest.players:type_name -> thetan.immortal.v1.PlayerMatchInfo
-	14, // 2: thetan.immortal.v1.PlayerMatchInfo.hero:type_name -> thetan.immortal.v1.Hero
-	15, // 3: thetan.immortal.v1.PlayerMatchInfo.skills:type_name -> thetan.immortal.v1.Skill
-	16, // 4: thetan.immortal.v1.BattleEndResponse.arena:type_name -> thetan.immortal.v1.Arena
+	18, // 2: thetan.immortal.v1.PlayerMatchInfo.hero:type_name -> thetan.immortal.v1.Hero
+	19, // 3: thetan.immortal.v1.PlayerMatchInfo.skills:type_name -> thetan.immortal.v1.Skill
+	20, // 4: thetan.immortal.v1.BattleEndResponse.arena:type_name -> thetan.immortal.v1.Arena
 	7,  // 5: thetan.immortal.v1.BattleEndResponse.players:type_name -> thetan.immortal.v1.BattleEndPlayer
 	8,  // 6: thetan.immortal.v1.BattleEndResponse.hero:type_name -> thetan.immortal.v1.BattleEndHero
-	15, // 7: thetan.immortal.v1.BattleEndResponse.skills:type_name -> thetan.immortal.v1.Skill
-	17, // 8: thetan.immortal.v1.BattleEndPlayer.skillRating:type_name -> thetan.immortal.v1.SkillRating
-	18, // 9: thetan.immortal.v1.GetHeroesResponse.heroes:type_name -> thetan.immortal.v1.HeroFull
-	19, // 10: thetan.immortal.v1.GetSkillsResponse.skills:type_name -> thetan.immortal.v1.SkillFull
-	0,  // 11: thetan.immortal.v1.ImmortalService.SearchPlayerInfo:input_type -> thetan.immortal.v1.SearchPlayerInfoRequest
-	2,  // 12: thetan.immortal.v1.ImmortalService.GetUserProfile:input_type -> thetan.immortal.v1.GetUserProfileRequest
-	4,  // 13: thetan.immortal.v1.ImmortalService.BattleEnd:input_type -> thetan.immortal.v1.BattleEndRequest
-	9,  // 14: thetan.immortal.v1.ImmortalService.GetHeroes:input_type -> thetan.immortal.v1.GetHeroesRequest
-	11, // 15: thetan.immortal.v1.ImmortalService.GetSkills:input_type -> thetan.immortal.v1.GetSkillsRequest
-	1,  // 16: thetan.immortal.v1.ImmortalService.SearchPlayerInfo:output_type -> thetan.immortal.v1.SearchPlayerInfoResponse
-	3,  // 17: thetan.immortal.v1.ImmortalService.GetUserProfile:output_type -> thetan.immortal.v1.GetUserProfileResponse
-	6,  // 18: thetan.immortal.v1.ImmortalService.BattleEnd:output_type -> thetan.immortal.v1.BattleEndResponse
-	10, // 19: thetan.immortal.v1.ImmortalService.GetHeroes:output_type -> thetan.immortal.v1.GetHeroesResponse
-	12, // 20: thetan.immortal.v1.ImmortalService.GetSkills:output_type -> thetan.immortal.v1.GetSkillsResponse
-	16, // [16:21] is the sub-list for method output_type
-	11, // [11:16] is the sub-list for method input_type
-	11, // [11:11] is the sub-list for extension type_name
-	11, // [11:11] is the sub-list for extension extendee
-	0,  // [0:11] is the sub-list for field type_name
+	19, // 7: thetan.immortal.v1.BattleEndResponse.skills:type_name -> thetan.immortal.v1.Skill
+	21, // 8: thetan.immortal.v1.BattleEndPlayer.skillRating:type_name -> thetan.immortal.v1.SkillRating
+	22, // 9: thetan.immortal.v1.GetHeroesResponse.heroes:type_name -> thetan.immortal.v1.HeroFull
+	15, // 10: thetan.immortal.v1.GetHeroesResponse.heroRarities:type_name -> thetan.immortal.v1.GetHeroesResponse.HeroRaritiesEntry
+	23, // 11: thetan.immortal.v1.GetSkillsResponse.skills:type_name -> thetan.immortal.v1.SkillFull
+	16, // 12: thetan.immortal.v1.GetSkillsResponse.skillRarities:type_name -> thetan.immortal.v1.GetSkillsResponse.SkillRaritiesEntry
+	11, // 13: thetan.immortal.v1.GetHeroesResponse.HeroRaritiesEntry.value:type_name -> thetan.immortal.v1.HeroRarity
+	14, // 14: thetan.immortal.v1.GetSkillsResponse.SkillRaritiesEntry.value:type_name -> thetan.immortal.v1.SkillRarity
+	0,  // 15: thetan.immortal.v1.ImmortalService.SearchPlayerInfo:input_type -> thetan.immortal.v1.SearchPlayerInfoRequest
+	2,  // 16: thetan.immortal.v1.ImmortalService.GetUserProfile:input_type -> thetan.immortal.v1.GetUserProfileRequest
+	4,  // 17: thetan.immortal.v1.ImmortalService.BattleEnd:input_type -> thetan.immortal.v1.BattleEndRequest
+	9,  // 18: thetan.immortal.v1.ImmortalService.GetHeroes:input_type -> thetan.immortal.v1.GetHeroesRequest
+	12, // 19: thetan.immortal.v1.ImmortalService.GetSkills:input_type -> thetan.immortal.v1.GetSkillsRequest
+	1,  // 20: thetan.immortal.v1.ImmortalService.SearchPlayerInfo:output_type -> thetan.immortal.v1.SearchPlayerInfoResponse
+	3,  // 21: thetan.immortal.v1.ImmortalService.GetUserProfile:output_type -> thetan.immortal.v1.GetUserProfileResponse
+	6,  // 22: thetan.immortal.v1.ImmortalService.BattleEnd:output_type -> thetan.immortal.v1.BattleEndResponse
+	10, // 23: thetan.immortal.v1.ImmortalService.GetHeroes:output_type -> thetan.immortal.v1.GetHeroesResponse
+	13, // 24: thetan.immortal.v1.ImmortalService.GetSkills:output_type -> thetan.immortal.v1.GetSkillsResponse
+	20, // [20:25] is the sub-list for method output_type
+	15, // [15:20] is the sub-list for method input_type
+	15, // [15:15] is the sub-list for extension type_name
+	15, // [15:15] is the sub-list for extension extendee
+	0,  // [0:15] is the sub-list for field type_name
 }
 
 func init() { file_thetan_immortal_v1_immortal_proto_init() }
@@ -1186,7 +1354,7 @@ func file_thetan_immortal_v1_immortal_proto_init() {
 			}
 		}
 		file_thetan_immortal_v1_immortal_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*GetSkillsRequest); i {
+			switch v := v.(*HeroRarity); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -1198,7 +1366,31 @@ func file_thetan_immortal_v1_immortal_proto_init() {
 			}
 		}
 		file_thetan_immortal_v1_immortal_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*GetSkillsRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_immortal_v1_immortal_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GetSkillsResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_thetan_immortal_v1_immortal_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*SkillRarity); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -1216,7 +1408,7 @@ func file_thetan_immortal_v1_immortal_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_thetan_immortal_v1_immortal_proto_rawDesc,
 			NumEnums:      0,
-			NumMessages:   13,
+			NumMessages:   17,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
