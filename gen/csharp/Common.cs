@@ -32,7 +32,7 @@ namespace Thetan.Multiplayer.V1 {
             "aWVuZHNQcm90b1IHZnJpZW5kcxIYCgdsb2JieUlEGAMgASgJUgdsb2JieUlE",
             "IlAKDEZyaWVuZHNQcm90bxJACgdmcmllbmRzGAEgAygLMiYudGhldGFuLm11",
             "bHRpcGxheWVyLnYxLlBsYXllckluZm9Qcm90b1IHZnJpZW5kcyIZCgdJRFBy",
-            "b3RvEg4KAklEGAEgASgJUgJJRCKdBAoOUGFydHlJbmZvUHJvdG8SGAoHcGFy",
+            "b3RvEg4KAklEGAEgASgJUgJJRCLdBAoOUGFydHlJbmZvUHJvdG8SGAoHcGFy",
             "dHlJRBgBIAEoCVIHcGFydHlJRBIcCglwYXJ0eVNpemUYAiABKA1SCXBhcnR5",
             "U2l6ZRIWCgZob3N0SUQYAyABKAlSBmhvc3RJRBJMCgdtZW1iZXJzGAQgAygL",
             "MjIudGhldGFuLm11bHRpcGxheWVyLnYxLlBhcnR5SW5mb1Byb3RvLk1lbWJl",
@@ -41,116 +41,125 @@ namespace Thetan.Multiplayer.V1 {
             "ZXJzaW9uGAYgASgDUhBmaW5kbWF0Y2hWZXJzaW9uEjwKCmluR2FtZU1vZGUY",
             "ByABKA4yHC50aGV0YW4uc2hhcmVkLnYxLkluR2FtZU1vZGVSCmluR2FtZU1v",
             "ZGUSLwoFYXJlbmEYCCABKA4yGS50aGV0YW4uc2hhcmVkLnYxLlRSQXJlbmFS",
-            "BWFyZW5hEhYKBm1vZGVJRBgJIAEoCVIGbW9kZUlEEhoKCGdhbWVEYXRhGGMg",
-            "ASgMUghnYW1lRGF0YRpiCgxNZW1iZXJzRW50cnkSEAoDa2V5GAEgASgJUgNr",
-            "ZXkSPAoFdmFsdWUYAiABKAsyJi50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGxh",
-            "eWVySW5mb1Byb3RvUgV2YWx1ZToCOAEijwEKEVNpbXBsaWZ5UGFydHlJbmZv",
-            "EhgKB3BhcnR5SUQYASABKAlSB3BhcnR5SUQSJgoOY3VycmVudE1lbWJlcnMY",
-            "AiABKA1SDmN1cnJlbnRNZW1iZXJzEhwKCXBhcnR5U2l6ZRgDIAEoDVIJcGFy",
-            "dHlTaXplEhoKCGdhbWVEYXRhGGMgASgMUghnYW1lRGF0YSLqAwoPUGxheWVy",
-            "SW5mb1Byb3RvEhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBIeCgpwbGF5",
-            "ZXJOYW1lGAIgASgJUgpwbGF5ZXJOYW1lEhYKBmNvdW50eRgDIAEoCVIGY291",
-            "bnR5EhYKBmF2YXRhchgEIAEoBVIGYXZhdGFyEhQKBWZyYW1lGAUgASgFUgVm",
-            "cmFtZRIcCgluYW1lQ29sb3IYBiABKAVSCW5hbWVDb2xvchI7CgZzdGF0dXMY",
-            "ByABKA4yIy50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGxheWVyU3RhdHVzUgZz",
-            "dGF0dXMSHgoKbGFzdE9ubGluZRgIIAEoA1IKbGFzdE9ubGluZRIiCgxyYW5r",
-            "aW5nTGV2ZWwYCSABKAVSDHJhbmtpbmdMZXZlbBIWCgZ0cm9waHkYCiABKAVS",
-            "BnRyb3BoeRIcCglndWlsZE5hbWUYCyABKAlSCWd1aWxkTmFtZRIiCgxndWls",
-            "ZEJhZGdlSWQYDCABKAVSDGd1aWxkQmFkZ2VJZBIcCglndWlsZFJvbGUYDSAB",
-            "KAVSCWd1aWxkUm9sZRIiCgxiYXR0bGVQYXNzSUQYFCABKAVSDGJhdHRsZVBh",
-            "c3NJRBIaCghnYW1lRGF0YRhjIAEoDFIIZ2FtZURhdGEipgEKF1JlcXVlc3RD",
-            "aGF0TWVzc2FnZVByb3RvEhgKB21lc3NhZ2UYASABKAlSB21lc3NhZ2USQAoH",
-            "Y2hhbm5lbBgCIAEoDjImLnRoZXRhbi5tdWx0aXBsYXllci52MS5DaGFubmVs",
-            "Q2hhdFJvb21SB2NoYW5uZWwSIQoJY2hhbm5lbElEGAMgASgJSABSCWNoYW5u",
-            "ZWxJRIgBAUIMCgpfY2hhbm5lbElEItADChhSZXNwb25zZUNoYXRNZXNzYWdl",
-            "UHJvdG8SPgoGc2VuZGVyGAEgASgLMiYudGhldGFuLm11bHRpcGxheWVyLnYx",
-            "LlBsYXllckluZm9Qcm90b1IGc2VuZGVyEhwKB21lc3NhZ2UYAiABKAlCAhgB",
-            "UgdtZXNzYWdlEhwKCXRpbWVzdGFtcBgDIAEoA1IJdGltZXN0YW1wEkAKB2No",
-            "YW5uZWwYBCABKA4yJi50aGV0YW4ubXVsdGlwbGF5ZXIudjEuQ2hhbm5lbENo",
-            "YXRSb29tUgdjaGFubmVsEjwKB21zZ1R5cGUYBSABKA4yHi50aGV0YW4ubXVs",
-            "dGlwbGF5ZXIudjEuTXNnVHlwZUICGAFSB21zZ1R5cGUSHgoJbXNnU3RyaW5n",
-            "GAYgASgJSABSCW1zZ1N0cmluZxJPCg5zaGFyZVBhcnR5SW5mbxgHIAEoCzIl",
-            "LnRoZXRhbi5tdWx0aXBsYXllci52MS5TaGFyZVBhcnR5SW5mb0gAUg5zaGFy",
-            "ZVBhcnR5SW5mbxIaCgdlbW90ZUlkGAggASgFSABSB2Vtb3RlSWQSHAoIcHJv",
-            "bXB0SWQYCSABKAVIAFIIcHJvbXB0SWRCDQoLbWVzc2FnZURhdGEijAEKDlNo",
-            "YXJlUGFydHlJbmZvEhgKB3BhcnR5SUQYASABKAlSB3BhcnR5SUQSRgoGc3Rh",
-            "dHVzGAIgASgOMi4udGhldGFuLm11bHRpcGxheWVyLnYxLlBhcnR5QXZhaWxh",
-            "YmlsaXR5U3RhdHVzUgZzdGF0dXMSGAoHaXNTaGFyZRgDIAEoCFIHaXNTaGFy",
-            "ZSJfChtSZXF1ZXN0TG9hZENoYXRNZXNzYWdlUHJvdG8SQAoHY2hhbm5lbBgB",
+            "BWFyZW5hEhYKBm1vZGVJRBgJIAEoCVIGbW9kZUlEEj4KCXBhcnR5VHlwZRgK",
+            "IAEoDjIgLnRoZXRhbi5tdWx0aXBsYXllci52MS5QYXJ0eVR5cGVSCXBhcnR5",
+            "VHlwZRIaCghnYW1lRGF0YRhjIAEoDFIIZ2FtZURhdGEaYgoMTWVtYmVyc0Vu",
+            "dHJ5EhAKA2tleRgBIAEoCVIDa2V5EjwKBXZhbHVlGAIgASgLMiYudGhldGFu",
+            "Lm11bHRpcGxheWVyLnYxLlBsYXllckluZm9Qcm90b1IFdmFsdWU6AjgBIs8B",
+            "ChFTaW1wbGlmeVBhcnR5SW5mbxIYCgdwYXJ0eUlEGAEgASgJUgdwYXJ0eUlE",
+            "EiYKDmN1cnJlbnRNZW1iZXJzGAIgASgNUg5jdXJyZW50TWVtYmVycxIcCglw",
+            "YXJ0eVNpemUYAyABKA1SCXBhcnR5U2l6ZRI+CglwYXJ0eVR5cGUYBCABKA4y",
+            "IC50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGFydHlUeXBlUglwYXJ0eVR5cGUS",
+            "GgoIZ2FtZURhdGEYYyABKAxSCGdhbWVEYXRhIuoDCg9QbGF5ZXJJbmZvUHJv",
+            "dG8SGgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEh4KCnBsYXllck5hbWUY",
+            "AiABKAlSCnBsYXllck5hbWUSFgoGY291bnR5GAMgASgJUgZjb3VudHkSFgoG",
+            "YXZhdGFyGAQgASgFUgZhdmF0YXISFAoFZnJhbWUYBSABKAVSBWZyYW1lEhwK",
+            "CW5hbWVDb2xvchgGIAEoBVIJbmFtZUNvbG9yEjsKBnN0YXR1cxgHIAEoDjIj",
+            "LnRoZXRhbi5tdWx0aXBsYXllci52MS5QbGF5ZXJTdGF0dXNSBnN0YXR1cxIe",
+            "CgpsYXN0T25saW5lGAggASgDUgpsYXN0T25saW5lEiIKDHJhbmtpbmdMZXZl",
+            "bBgJIAEoBVIMcmFua2luZ0xldmVsEhYKBnRyb3BoeRgKIAEoBVIGdHJvcGh5",
+            "EhwKCWd1aWxkTmFtZRgLIAEoCVIJZ3VpbGROYW1lEiIKDGd1aWxkQmFkZ2VJ",
+            "ZBgMIAEoBVIMZ3VpbGRCYWRnZUlkEhwKCWd1aWxkUm9sZRgNIAEoBVIJZ3Vp",
+            "bGRSb2xlEiIKDGJhdHRsZVBhc3NJRBgUIAEoBVIMYmF0dGxlUGFzc0lEEhoK",
+            "CGdhbWVEYXRhGGMgASgMUghnYW1lRGF0YSKmAQoXUmVxdWVzdENoYXRNZXNz",
+            "YWdlUHJvdG8SGAoHbWVzc2FnZRgBIAEoCVIHbWVzc2FnZRJACgdjaGFubmVs",
+            "GAIgASgOMiYudGhldGFuLm11bHRpcGxheWVyLnYxLkNoYW5uZWxDaGF0Um9v",
+            "bVIHY2hhbm5lbBIhCgljaGFubmVsSUQYAyABKAlIAFIJY2hhbm5lbElEiAEB",
+            "QgwKCl9jaGFubmVsSUQi0AMKGFJlc3BvbnNlQ2hhdE1lc3NhZ2VQcm90bxI+",
+            "CgZzZW5kZXIYASABKAsyJi50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGxheWVy",
+            "SW5mb1Byb3RvUgZzZW5kZXISHAoHbWVzc2FnZRgCIAEoCUICGAFSB21lc3Nh",
+            "Z2USHAoJdGltZXN0YW1wGAMgASgDUgl0aW1lc3RhbXASQAoHY2hhbm5lbBgE",
             "IAEoDjImLnRoZXRhbi5tdWx0aXBsYXllci52MS5DaGFubmVsQ2hhdFJvb21S",
-            "B2NoYW5uZWwiYgobUmVzcG9uc2VBbGxDaGF0TWVzc2FnZVByb3RvEkMKBG1z",
-            "Z3MYASADKAsyLy50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUmVzcG9uc2VDaGF0",
-            "TWVzc2FnZVByb3RvUgRtc2dzIpEBChBTZXRJbkdhbWVNb2RlTXNnEjwKCmlu",
-            "R2FtZU1vZGUYASABKA4yHC50aGV0YW4uc2hhcmVkLnYxLkluR2FtZU1vZGVS",
-            "CmluR2FtZU1vZGUSLwoFYXJlbmEYAiABKA4yGS50aGV0YW4uc2hhcmVkLnYx",
-            "LlRSQXJlbmFSBWFyZW5hEg4KAmlkGAMgASgJUgJpZCK6AQoVT3RoZXJTZXRJ",
-            "bkdhbWVNb2RlTXNnEhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBI8Cgpp",
-            "bkdhbWVNb2RlGAIgASgOMhwudGhldGFuLnNoYXJlZC52MS5JbkdhbWVNb2Rl",
-            "UgppbkdhbWVNb2RlEi8KBWFyZW5hGAMgASgOMhkudGhldGFuLnNoYXJlZC52",
-            "MS5UUkFyZW5hUgVhcmVuYRIWCgZtb2RlSUQYBCABKAlSBm1vZGVJRCJiCghS",
-            "ZWFkeU1zZxIYCgdpc1JlYWR5GAEgASgIUgdpc1JlYWR5EiIKDHRvdXJuYW1l",
-            "bnRJRBgCIAEoCVIMdG91cm5hbWVudElEEhgKB3JlZ2lvbnMYAyADKAVSB3Jl",
-            "Z2lvbnMiIQoJU2V0RE5ETXNnEhQKBWlzRG5kGAEgASgIUgVpc0RuZCJKCg5T",
-            "b21lb25lTGVmdE1zZxIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSHAoJ",
-            "bmV3SG9zdElEGAIgASgJUgluZXdIb3N0SUQicAoRU2VuZEludml0YXRpb25N",
-            "c2cSGgoIcGxheWVySWQYASABKAlSCHBsYXllcklkEj8KBmFjdGlvbhgCIAEo",
-            "DjInLnRoZXRhbi5tdWx0aXBsYXllci52MS5JbnZpdGF0aW9uQWN0aW9uUgZh",
-            "Y3Rpb24ioAEKFFJlY2VpdmVJbnZpdGF0aW9uTXNnEkAKB2ludml0ZXIYASAB",
-            "KAsyJi50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGxheWVySW5mb1Byb3RvUgdp",
-            "bnZpdGVyEkYKCXBhcnR5SW5mbxgCIAEoCzIoLnRoZXRhbi5tdWx0aXBsYXll",
-            "ci52MS5TaW1wbGlmeVBhcnR5SW5mb1IJcGFydHlJbmZvIpQBChJSZXBseUlu",
-            "dml0YXRpb25Nc2cSPQoDbXNnGAEgASgLMisudGhldGFuLm11bHRpcGxheWVy",
-            "LnYxLlJlY2VpdmVJbnZpdGF0aW9uTXNnUgNtc2cSPwoGYWN0aW9uGAIgASgO",
-            "MicudGhldGFuLm11bHRpcGxheWVyLnYxLkludml0YXRpb25BY3Rpb25SBmFj",
-            "dGlvbiJ0ChVSZWNlaXZlUmVwbHlJbnZpdGVNc2cSGgoIcGxheWVySWQYASAB",
-            "KAlSCHBsYXllcklkEj8KBmFjdGlvbhgCIAEoDjInLnRoZXRhbi5tdWx0aXBs",
-            "YXllci52MS5JbnZpdGF0aW9uQWN0aW9uUgZhY3Rpb24idQoUT3RoZXJDaGFu",
-            "Z2VTdGF0dXNNc2cSGgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEkEKCW5l",
-            "d1N0YXR1cxgCIAEoDjIjLnRoZXRhbi5tdWx0aXBsYXllci52MS5QbGF5ZXJT",
-            "dGF0dXNSCW5ld1N0YXR1cyIsCg5SZWNlaXZlTXNnS2ljaxIaCghwbGF5ZXJJ",
-            "RBgBIAEoCVIIcGxheWVySUQiTAoQUmVxdWVzdFBsYXlBZ2FpbhI4CgVzdGFn",
-            "ZRgBIAEoDjIiLnRoZXRhbi5tdWx0aXBsYXllci52MS5TdGFnZUluR2FtZVIF",
-            "c3RhZ2UiUgoWUmVxdWVzdENhbmNlbFBsYXlBZ2FpbhI4CgVzdGFnZRgBIAEo",
-            "DjIiLnRoZXRhbi5tdWx0aXBsYXllci52MS5TdGFnZUluR2FtZVIFc3RhZ2Ui",
-            "aAoQT25PdGhlclBsYXlBZ2FpbhIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVy",
-            "SUQSOAoFc3RhZ2UYAiABKA4yIi50aGV0YW4ubXVsdGlwbGF5ZXIudjEuU3Rh",
-            "Z2VJbkdhbWVSBXN0YWdlIm4KFk9uT3RoZXJDYW5jZWxQbGF5QWdhaW4SGgoI",
-            "cGxheWVySUQYASABKAlSCHBsYXllcklEEjgKBXN0YWdlGAIgASgOMiIudGhl",
-            "dGFuLm11bHRpcGxheWVyLnYxLlN0YWdlSW5HYW1lUgVzdGFnZSI3ChNPblNi",
-            "Q2FuY2VsRmluZE1hdGNoEiAKC0NhbmNlbGxlcklEGAEgASgJUgtDYW5jZWxs",
-            "ZXJJRCIvChFSZXFDaGFuZ2VHYW1lSW5mbxIaCghnYW1lRGF0YRgBIAEoDFII",
-            "Z2FtZURhdGEiXAoSUmVzT3RoZXJDaGFuZ2VJbmZvEkYKCnBsYXllckluZm8Y",
-            "ASABKAsyJi50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGxheWVySW5mb1Byb3Rv",
-            "UgpwbGF5ZXJJbmZvIkAKDE9uT3RoZXJSZWFkeRIaCghwbGF5ZXJJRBgBIAEo",
-            "CVIIcGxheWVySUQSFAoFcmVhZHkYAiABKAhSBXJlYWR5Ii8KEVRpY2tldENh",
-            "Y2hlV1NPbmx5EhoKCHRpY2tldElEGAEgASgJUgh0aWNrZXRJRCIfCglHdWls",
-            "ZE1haWwSEgoEY29kZRgBIAEoBVIEY29kZSI0ChZUcmVhc3VyZUJhbGFuY2VD",
-            "aGFuZ2VkEhoKCGRvTm90aWZ5GAEgASgIUghkb05vdGlmeSo4CgtQYXJ0eVN0",
-            "YXR1cxIMCghQUGVuZGluZxAAEgwKCFBGaW5kaW5nEAESDQoJUEluQmF0dGxl",
-            "EAIqfgoXUGFydHlBdmFpbGFiaWxpdHlTdGF0dXMSDQoJUEFVbmtub3duEAAS",
-            "DQoJUEFFeHBpcmVkEAESDwoLUEFEaXNiYW5kZWQQAhIKCgZQQU9wZW4QAxIK",
-            "CgZQQUZ1bGwQBBIOCgpQQUluQmF0dGxlEAUSDAoIUEFKb2luZWQQBipNCg9D",
-            "aGFubmVsQ2hhdFJvb20SCQoFTG9iYnkQABIJCgVQYXJ0eRABEgsKB0NvdW50",
-            "cnkQAhILCgdQcml2YXRlEAMSCgoGR2xvYmFsEAQqIwoHTXNnVHlwZRIICgRD",
-            "aGF0EAASDgoKU2hhcmVQYXJ0eRABKloKDFBsYXllclN0YXR1cxIKCgZPbmxp",
-            "bmUQABILCgdPZmZsaW5lEAESCwoHSW5QYXJ0eRACEgkKBVJlYWR5EAMSCwoH",
-            "RmluZGluZxAEEgwKCEluQmF0dGxlEAUqQwoQSW52aXRhdGlvbkFjdGlvbhIK",
-            "CgZBY2NlcHQQABIKCgZDYW5jZWwQARILCgdEZWNsaW5lEAISCgoGSW52aXRl",
-            "EAMqKwoLU3RhZ2VJbkdhbWUSDQoJU3BlY3RhdG9yEAASDQoJRW5kQmF0dGxl",
-            "EAFC3QEKGWNvbS50aGV0YW4ubXVsdGlwbGF5ZXIudjFCC0NvbW1vblByb3Rv",
-            "UAFaPXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9tdWx0aXBsYXllci92MTt0",
-            "aGV0YW5fbXVsdGlwbGF5ZXJfdjGiAgNUTViqAhVUaGV0YW4uTXVsdGlwbGF5",
-            "ZXIuVjHKAhVUaGV0YW5cTXVsdGlwbGF5ZXJcVjHiAiFUaGV0YW5cTXVsdGlw",
-            "bGF5ZXJcVjFcR1BCTWV0YWRhdGHqAhdUaGV0YW46Ok11bHRpcGxheWVyOjpW",
-            "MWIGcHJvdG8z"));
+            "B2NoYW5uZWwSPAoHbXNnVHlwZRgFIAEoDjIeLnRoZXRhbi5tdWx0aXBsYXll",
+            "ci52MS5Nc2dUeXBlQgIYAVIHbXNnVHlwZRIeCgltc2dTdHJpbmcYBiABKAlI",
+            "AFIJbXNnU3RyaW5nEk8KDnNoYXJlUGFydHlJbmZvGAcgASgLMiUudGhldGFu",
+            "Lm11bHRpcGxheWVyLnYxLlNoYXJlUGFydHlJbmZvSABSDnNoYXJlUGFydHlJ",
+            "bmZvEhoKB2Vtb3RlSWQYCCABKAVIAFIHZW1vdGVJZBIcCghwcm9tcHRJZBgJ",
+            "IAEoBUgAUghwcm9tcHRJZEINCgttZXNzYWdlRGF0YSKMAQoOU2hhcmVQYXJ0",
+            "eUluZm8SGAoHcGFydHlJRBgBIAEoCVIHcGFydHlJRBJGCgZzdGF0dXMYAiAB",
+            "KA4yLi50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGFydHlBdmFpbGFiaWxpdHlT",
+            "dGF0dXNSBnN0YXR1cxIYCgdpc1NoYXJlGAMgASgIUgdpc1NoYXJlIl8KG1Jl",
+            "cXVlc3RMb2FkQ2hhdE1lc3NhZ2VQcm90bxJACgdjaGFubmVsGAEgASgOMiYu",
+            "dGhldGFuLm11bHRpcGxheWVyLnYxLkNoYW5uZWxDaGF0Um9vbVIHY2hhbm5l",
+            "bCJiChtSZXNwb25zZUFsbENoYXRNZXNzYWdlUHJvdG8SQwoEbXNncxgBIAMo",
+            "CzIvLnRoZXRhbi5tdWx0aXBsYXllci52MS5SZXNwb25zZUNoYXRNZXNzYWdl",
+            "UHJvdG9SBG1zZ3MikQEKEFNldEluR2FtZU1vZGVNc2cSPAoKaW5HYW1lTW9k",
+            "ZRgBIAEoDjIcLnRoZXRhbi5zaGFyZWQudjEuSW5HYW1lTW9kZVIKaW5HYW1l",
+            "TW9kZRIvCgVhcmVuYRgCIAEoDjIZLnRoZXRhbi5zaGFyZWQudjEuVFJBcmVu",
+            "YVIFYXJlbmESDgoCaWQYAyABKAlSAmlkIroBChVPdGhlclNldEluR2FtZU1v",
+            "ZGVNc2cSGgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEjwKCmluR2FtZU1v",
+            "ZGUYAiABKA4yHC50aGV0YW4uc2hhcmVkLnYxLkluR2FtZU1vZGVSCmluR2Ft",
+            "ZU1vZGUSLwoFYXJlbmEYAyABKA4yGS50aGV0YW4uc2hhcmVkLnYxLlRSQXJl",
+            "bmFSBWFyZW5hEhYKBm1vZGVJRBgEIAEoCVIGbW9kZUlEImIKCFJlYWR5TXNn",
+            "EhgKB2lzUmVhZHkYASABKAhSB2lzUmVhZHkSIgoMdG91cm5hbWVudElEGAIg",
+            "ASgJUgx0b3VybmFtZW50SUQSGAoHcmVnaW9ucxgDIAMoBVIHcmVnaW9ucyIh",
+            "CglTZXRETkRNc2cSFAoFaXNEbmQYASABKAhSBWlzRG5kIkoKDlNvbWVvbmVM",
+            "ZWZ0TXNnEhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBIcCgluZXdIb3N0",
+            "SUQYAiABKAlSCW5ld0hvc3RJRCLKAQoRU2VuZEludml0YXRpb25Nc2cSGgoI",
+            "cGxheWVySWQYASABKAlSCHBsYXllcklkEj8KBmFjdGlvbhgCIAEoDjInLnRo",
+            "ZXRhbi5tdWx0aXBsYXllci52MS5JbnZpdGF0aW9uQWN0aW9uUgZhY3Rpb24S",
+            "GAoHcmVnaW9ucxgDIAMoBVIHcmVnaW9ucxI+CglwYXJ0eVR5cGUYBCABKA4y",
+            "IC50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGFydHlUeXBlUglwYXJ0eVR5cGUi",
+            "oAEKFFJlY2VpdmVJbnZpdGF0aW9uTXNnEkAKB2ludml0ZXIYASABKAsyJi50",
+            "aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGxheWVySW5mb1Byb3RvUgdpbnZpdGVy",
+            "EkYKCXBhcnR5SW5mbxgCIAEoCzIoLnRoZXRhbi5tdWx0aXBsYXllci52MS5T",
+            "aW1wbGlmeVBhcnR5SW5mb1IJcGFydHlJbmZvIq4BChJSZXBseUludml0YXRp",
+            "b25Nc2cSPQoDbXNnGAEgASgLMisudGhldGFuLm11bHRpcGxheWVyLnYxLlJl",
+            "Y2VpdmVJbnZpdGF0aW9uTXNnUgNtc2cSPwoGYWN0aW9uGAIgASgOMicudGhl",
+            "dGFuLm11bHRpcGxheWVyLnYxLkludml0YXRpb25BY3Rpb25SBmFjdGlvbhIY",
+            "CgdyZWdpb25zGAMgAygFUgdyZWdpb25zInQKFVJlY2VpdmVSZXBseUludml0",
+            "ZU1zZxIaCghwbGF5ZXJJZBgBIAEoCVIIcGxheWVySWQSPwoGYWN0aW9uGAIg",
+            "ASgOMicudGhldGFuLm11bHRpcGxheWVyLnYxLkludml0YXRpb25BY3Rpb25S",
+            "BmFjdGlvbiJ1ChRPdGhlckNoYW5nZVN0YXR1c01zZxIaCghwbGF5ZXJJRBgB",
+            "IAEoCVIIcGxheWVySUQSQQoJbmV3U3RhdHVzGAIgASgOMiMudGhldGFuLm11",
+            "bHRpcGxheWVyLnYxLlBsYXllclN0YXR1c1IJbmV3U3RhdHVzIiwKDlJlY2Vp",
+            "dmVNc2dLaWNrEhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRCJMChBSZXF1",
+            "ZXN0UGxheUFnYWluEjgKBXN0YWdlGAEgASgOMiIudGhldGFuLm11bHRpcGxh",
+            "eWVyLnYxLlN0YWdlSW5HYW1lUgVzdGFnZSJSChZSZXF1ZXN0Q2FuY2VsUGxh",
+            "eUFnYWluEjgKBXN0YWdlGAEgASgOMiIudGhldGFuLm11bHRpcGxheWVyLnYx",
+            "LlN0YWdlSW5HYW1lUgVzdGFnZSJoChBPbk90aGVyUGxheUFnYWluEhoKCHBs",
+            "YXllcklEGAEgASgJUghwbGF5ZXJJRBI4CgVzdGFnZRgCIAEoDjIiLnRoZXRh",
+            "bi5tdWx0aXBsYXllci52MS5TdGFnZUluR2FtZVIFc3RhZ2UibgoWT25PdGhl",
+            "ckNhbmNlbFBsYXlBZ2FpbhIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQS",
+            "OAoFc3RhZ2UYAiABKA4yIi50aGV0YW4ubXVsdGlwbGF5ZXIudjEuU3RhZ2VJ",
+            "bkdhbWVSBXN0YWdlIjcKE09uU2JDYW5jZWxGaW5kTWF0Y2gSIAoLQ2FuY2Vs",
+            "bGVySUQYASABKAlSC0NhbmNlbGxlcklEIi8KEVJlcUNoYW5nZUdhbWVJbmZv",
+            "EhoKCGdhbWVEYXRhGAEgASgMUghnYW1lRGF0YSJcChJSZXNPdGhlckNoYW5n",
+            "ZUluZm8SRgoKcGxheWVySW5mbxgBIAEoCzImLnRoZXRhbi5tdWx0aXBsYXll",
+            "ci52MS5QbGF5ZXJJbmZvUHJvdG9SCnBsYXllckluZm8iQAoMT25PdGhlclJl",
+            "YWR5EhoKCHBsYXllcklEGAEgASgJUghwbGF5ZXJJRBIUCgVyZWFkeRgCIAEo",
+            "CFIFcmVhZHkiLwoRVGlja2V0Q2FjaGVXU09ubHkSGgoIdGlja2V0SUQYASAB",
+            "KAlSCHRpY2tldElEIh8KCUd1aWxkTWFpbBISCgRjb2RlGAEgASgFUgRjb2Rl",
+            "IjQKFlRyZWFzdXJlQmFsYW5jZUNoYW5nZWQSGgoIZG9Ob3RpZnkYASABKAhS",
+            "CGRvTm90aWZ5IlcKFVJlcXVlc3RDcmVhdGVQYXJ0eU1zZxI+CglwYXJ0eVR5",
+            "cGUYASABKA4yIC50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGFydHlUeXBlUglw",
+            "YXJ0eVR5cGUqOAoLUGFydHlTdGF0dXMSDAoIUFBlbmRpbmcQABIMCghQRmlu",
+            "ZGluZxABEg0KCVBJbkJhdHRsZRACKn4KF1BhcnR5QXZhaWxhYmlsaXR5U3Rh",
+            "dHVzEg0KCVBBVW5rbm93bhAAEg0KCVBBRXhwaXJlZBABEg8KC1BBRGlzYmFu",
+            "ZGVkEAISCgoGUEFPcGVuEAMSCgoGUEFGdWxsEAQSDgoKUEFJbkJhdHRsZRAF",
+            "EgwKCFBBSm9pbmVkEAYqTQoPQ2hhbm5lbENoYXRSb29tEgkKBUxvYmJ5EAAS",
+            "CQoFUGFydHkQARILCgdDb3VudHJ5EAISCwoHUHJpdmF0ZRADEgoKBkdsb2Jh",
+            "bBAEKiMKB01zZ1R5cGUSCAoEQ2hhdBAAEg4KClNoYXJlUGFydHkQASpaCgxQ",
+            "bGF5ZXJTdGF0dXMSCgoGT25saW5lEAASCwoHT2ZmbGluZRABEgsKB0luUGFy",
+            "dHkQAhIJCgVSZWFkeRADEgsKB0ZpbmRpbmcQBBIMCghJbkJhdHRsZRAFKkMK",
+            "EEludml0YXRpb25BY3Rpb24SCgoGQWNjZXB0EAASCgoGQ2FuY2VsEAESCwoH",
+            "RGVjbGluZRACEgoKBkludml0ZRADKisKC1N0YWdlSW5HYW1lEg0KCVNwZWN0",
+            "YXRvchAAEg0KCUVuZEJhdHRsZRABKk0KCVBhcnR5VHlwZRIKCgZSYW5rZWQQ",
+            "ABIQCgxDdXN0b21CYXR0bGUQARIOCgpUb3VybmFtZW50EAISEgoORnJpZW5k",
+            "bHlCYXR0bGUQA0LdAQoZY29tLnRoZXRhbi5tdWx0aXBsYXllci52MUILQ29t",
+            "bW9uUHJvdG9QAVo9dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL211bHRpcGxh",
+            "eWVyL3YxO3RoZXRhbl9tdWx0aXBsYXllcl92MaICA1RNWKoCFVRoZXRhbi5N",
+            "dWx0aXBsYXllci5WMcoCFVRoZXRhblxNdWx0aXBsYXllclxWMeICIVRoZXRh",
+            "blxNdWx0aXBsYXllclxWMVxHUEJNZXRhZGF0YeoCF1RoZXRhbjo6TXVsdGlw",
+            "bGF5ZXI6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.PartyStatus), typeof(global::Thetan.Multiplayer.V1.PartyAvailabilityStatus), typeof(global::Thetan.Multiplayer.V1.ChannelChatRoom), typeof(global::Thetan.Multiplayer.V1.MsgType), typeof(global::Thetan.Multiplayer.V1.PlayerStatus), typeof(global::Thetan.Multiplayer.V1.InvitationAction), typeof(global::Thetan.Multiplayer.V1.StageInGame), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.PartyStatus), typeof(global::Thetan.Multiplayer.V1.PartyAvailabilityStatus), typeof(global::Thetan.Multiplayer.V1.ChannelChatRoom), typeof(global::Thetan.Multiplayer.V1.MsgType), typeof(global::Thetan.Multiplayer.V1.PlayerStatus), typeof(global::Thetan.Multiplayer.V1.InvitationAction), typeof(global::Thetan.Multiplayer.V1.StageInGame), typeof(global::Thetan.Multiplayer.V1.PartyType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PlayerProto), global::Thetan.Multiplayer.V1.PlayerProto.Parser, new[]{ "PlayerInfo", "Friends", "LobbyID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.FriendsProto), global::Thetan.Multiplayer.V1.FriendsProto.Parser, new[]{ "Friends" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.IDProto), global::Thetan.Multiplayer.V1.IDProto.Parser, new[]{ "ID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PartyInfoProto), global::Thetan.Multiplayer.V1.PartyInfoProto.Parser, new[]{ "PartyID", "PartySize", "HostID", "Members", "Status", "FindmatchVersion", "InGameMode", "Arena", "ModeID", "GameData" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SimplifyPartyInfo), global::Thetan.Multiplayer.V1.SimplifyPartyInfo.Parser, new[]{ "PartyID", "CurrentMembers", "PartySize", "GameData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PartyInfoProto), global::Thetan.Multiplayer.V1.PartyInfoProto.Parser, new[]{ "PartyID", "PartySize", "HostID", "Members", "Status", "FindmatchVersion", "InGameMode", "Arena", "ModeID", "PartyType", "GameData" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SimplifyPartyInfo), global::Thetan.Multiplayer.V1.SimplifyPartyInfo.Parser, new[]{ "PartyID", "CurrentMembers", "PartySize", "PartyType", "GameData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.PlayerInfoProto), global::Thetan.Multiplayer.V1.PlayerInfoProto.Parser, new[]{ "PlayerID", "PlayerName", "County", "Avatar", "Frame", "NameColor", "Status", "LastOnline", "RankingLevel", "Trophy", "GuildName", "GuildBadgeId", "GuildRole", "BattlePassID", "GameData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestChatMessageProto), global::Thetan.Multiplayer.V1.RequestChatMessageProto.Parser, new[]{ "Message", "Channel", "ChannelID" }, new[]{ "ChannelID" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ResponseChatMessageProto), global::Thetan.Multiplayer.V1.ResponseChatMessageProto.Parser, new[]{ "Sender", "Message", "Timestamp", "Channel", "MsgType", "MsgString", "SharePartyInfo", "EmoteId", "PromptId" }, new[]{ "MessageData" }, null, null, null),
@@ -162,9 +171,9 @@ namespace Thetan.Multiplayer.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ReadyMsg), global::Thetan.Multiplayer.V1.ReadyMsg.Parser, new[]{ "IsReady", "TournamentID", "Regions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SetDNDMsg), global::Thetan.Multiplayer.V1.SetDNDMsg.Parser, new[]{ "IsDnd" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SomeoneLeftMsg), global::Thetan.Multiplayer.V1.SomeoneLeftMsg.Parser, new[]{ "PlayerID", "NewHostID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SendInvitationMsg), global::Thetan.Multiplayer.V1.SendInvitationMsg.Parser, new[]{ "PlayerId", "Action" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.SendInvitationMsg), global::Thetan.Multiplayer.V1.SendInvitationMsg.Parser, new[]{ "PlayerId", "Action", "Regions", "PartyType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ReceiveInvitationMsg), global::Thetan.Multiplayer.V1.ReceiveInvitationMsg.Parser, new[]{ "Inviter", "PartyInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ReplyInvitationMsg), global::Thetan.Multiplayer.V1.ReplyInvitationMsg.Parser, new[]{ "Msg", "Action" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ReplyInvitationMsg), global::Thetan.Multiplayer.V1.ReplyInvitationMsg.Parser, new[]{ "Msg", "Action", "Regions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ReceiveReplyInviteMsg), global::Thetan.Multiplayer.V1.ReceiveReplyInviteMsg.Parser, new[]{ "PlayerId", "Action" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OtherChangeStatusMsg), global::Thetan.Multiplayer.V1.OtherChangeStatusMsg.Parser, new[]{ "PlayerID", "NewStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ReceiveMsgKick), global::Thetan.Multiplayer.V1.ReceiveMsgKick.Parser, new[]{ "PlayerID" }, null, null, null, null),
@@ -178,7 +187,8 @@ namespace Thetan.Multiplayer.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OnOtherReady), global::Thetan.Multiplayer.V1.OnOtherReady.Parser, new[]{ "PlayerID", "Ready" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.TicketCacheWSOnly), global::Thetan.Multiplayer.V1.TicketCacheWSOnly.Parser, new[]{ "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.GuildMail), global::Thetan.Multiplayer.V1.GuildMail.Parser, new[]{ "Code" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.TreasureBalanceChanged), global::Thetan.Multiplayer.V1.TreasureBalanceChanged.Parser, new[]{ "DoNotify" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.TreasureBalanceChanged), global::Thetan.Multiplayer.V1.TreasureBalanceChanged.Parser, new[]{ "DoNotify" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestCreatePartyMsg), global::Thetan.Multiplayer.V1.RequestCreatePartyMsg.Parser, new[]{ "PartyType" }, null, null, null, null)
           }));
     }
     #endregion
@@ -285,6 +295,19 @@ namespace Thetan.Multiplayer.V1 {
     ///in battle_end_reward_view
     /// </summary>
     [pbr::OriginalName("EndBattle")] EndBattle = 1,
+  }
+
+  public enum PartyType {
+    /// <summary>
+    /// rank solo/duals/trios/squads
+    /// </summary>
+    [pbr::OriginalName("Ranked")] Ranked = 0,
+    [pbr::OriginalName("CustomBattle")] CustomBattle = 1,
+    [pbr::OriginalName("Tournament")] Tournament = 2,
+    /// <summary>
+    ///1vs1
+    /// </summary>
+    [pbr::OriginalName("FriendlyBattle")] FriendlyBattle = 3,
   }
 
   #endregion
@@ -987,6 +1010,7 @@ namespace Thetan.Multiplayer.V1 {
       inGameMode_ = other.inGameMode_;
       arena_ = other.arena_;
       modeID_ = other.modeID_;
+      partyType_ = other.partyType_;
       gameData_ = other.gameData_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1104,6 +1128,18 @@ namespace Thetan.Multiplayer.V1 {
       }
     }
 
+    /// <summary>Field number for the "partyType" field.</summary>
+    public const int PartyTypeFieldNumber = 10;
+    private global::Thetan.Multiplayer.V1.PartyType partyType_ = global::Thetan.Multiplayer.V1.PartyType.Ranked;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Multiplayer.V1.PartyType PartyType {
+      get { return partyType_; }
+      set {
+        partyType_ = value;
+      }
+    }
+
     /// <summary>Field number for the "gameData" field.</summary>
     public const int GameDataFieldNumber = 99;
     private pb::ByteString gameData_ = pb::ByteString.Empty;
@@ -1143,6 +1179,7 @@ namespace Thetan.Multiplayer.V1 {
       if (InGameMode != other.InGameMode) return false;
       if (Arena != other.Arena) return false;
       if (ModeID != other.ModeID) return false;
+      if (PartyType != other.PartyType) return false;
       if (GameData != other.GameData) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1160,6 +1197,7 @@ namespace Thetan.Multiplayer.V1 {
       if (InGameMode != global::Thetan.Shared.V1.InGameMode.TeamCollectStar) hash ^= InGameMode.GetHashCode();
       if (Arena != global::Thetan.Shared.V1.TRArena.None) hash ^= Arena.GetHashCode();
       if (ModeID.Length != 0) hash ^= ModeID.GetHashCode();
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) hash ^= PartyType.GetHashCode();
       if (GameData.Length != 0) hash ^= GameData.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1212,6 +1250,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(74);
         output.WriteString(ModeID);
       }
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) PartyType);
+      }
       if (GameData.Length != 0) {
         output.WriteRawTag(154, 6);
         output.WriteBytes(GameData);
@@ -1259,6 +1301,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(74);
         output.WriteString(ModeID);
       }
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) PartyType);
+      }
       if (GameData.Length != 0) {
         output.WriteRawTag(154, 6);
         output.WriteBytes(GameData);
@@ -1297,6 +1343,9 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (ModeID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ModeID);
+      }
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PartyType);
       }
       if (GameData.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeBytesSize(GameData);
@@ -1337,6 +1386,9 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (other.ModeID.Length != 0) {
         ModeID = other.ModeID;
+      }
+      if (other.PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        PartyType = other.PartyType;
       }
       if (other.GameData.Length != 0) {
         GameData = other.GameData;
@@ -1390,6 +1442,10 @@ namespace Thetan.Multiplayer.V1 {
           }
           case 74: {
             ModeID = input.ReadString();
+            break;
+          }
+          case 80: {
+            PartyType = (global::Thetan.Multiplayer.V1.PartyType) input.ReadEnum();
             break;
           }
           case 794: {
@@ -1447,6 +1503,10 @@ namespace Thetan.Multiplayer.V1 {
             ModeID = input.ReadString();
             break;
           }
+          case 80: {
+            PartyType = (global::Thetan.Multiplayer.V1.PartyType) input.ReadEnum();
+            break;
+          }
           case 794: {
             GameData = input.ReadBytes();
             break;
@@ -1495,6 +1555,7 @@ namespace Thetan.Multiplayer.V1 {
       partyID_ = other.partyID_;
       currentMembers_ = other.currentMembers_;
       partySize_ = other.partySize_;
+      partyType_ = other.partyType_;
       gameData_ = other.gameData_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1544,6 +1605,18 @@ namespace Thetan.Multiplayer.V1 {
       }
     }
 
+    /// <summary>Field number for the "partyType" field.</summary>
+    public const int PartyTypeFieldNumber = 4;
+    private global::Thetan.Multiplayer.V1.PartyType partyType_ = global::Thetan.Multiplayer.V1.PartyType.Ranked;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Multiplayer.V1.PartyType PartyType {
+      get { return partyType_; }
+      set {
+        partyType_ = value;
+      }
+    }
+
     /// <summary>Field number for the "gameData" field.</summary>
     public const int GameDataFieldNumber = 99;
     private pb::ByteString gameData_ = pb::ByteString.Empty;
@@ -1574,6 +1647,7 @@ namespace Thetan.Multiplayer.V1 {
       if (PartyID != other.PartyID) return false;
       if (CurrentMembers != other.CurrentMembers) return false;
       if (PartySize != other.PartySize) return false;
+      if (PartyType != other.PartyType) return false;
       if (GameData != other.GameData) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1585,6 +1659,7 @@ namespace Thetan.Multiplayer.V1 {
       if (PartyID.Length != 0) hash ^= PartyID.GetHashCode();
       if (CurrentMembers != 0) hash ^= CurrentMembers.GetHashCode();
       if (PartySize != 0) hash ^= PartySize.GetHashCode();
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) hash ^= PartyType.GetHashCode();
       if (GameData.Length != 0) hash ^= GameData.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1616,6 +1691,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(24);
         output.WriteUInt32(PartySize);
       }
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) PartyType);
+      }
       if (GameData.Length != 0) {
         output.WriteRawTag(154, 6);
         output.WriteBytes(GameData);
@@ -1642,6 +1721,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(24);
         output.WriteUInt32(PartySize);
       }
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) PartyType);
+      }
       if (GameData.Length != 0) {
         output.WriteRawTag(154, 6);
         output.WriteBytes(GameData);
@@ -1664,6 +1747,9 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (PartySize != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PartySize);
+      }
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PartyType);
       }
       if (GameData.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeBytesSize(GameData);
@@ -1688,6 +1774,9 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (other.PartySize != 0) {
         PartySize = other.PartySize;
+      }
+      if (other.PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        PartyType = other.PartyType;
       }
       if (other.GameData.Length != 0) {
         GameData = other.GameData;
@@ -1719,6 +1808,10 @@ namespace Thetan.Multiplayer.V1 {
             PartySize = input.ReadUInt32();
             break;
           }
+          case 32: {
+            PartyType = (global::Thetan.Multiplayer.V1.PartyType) input.ReadEnum();
+            break;
+          }
           case 794: {
             GameData = input.ReadBytes();
             break;
@@ -1748,6 +1841,10 @@ namespace Thetan.Multiplayer.V1 {
           }
           case 24: {
             PartySize = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            PartyType = (global::Thetan.Multiplayer.V1.PartyType) input.ReadEnum();
             break;
           }
           case 794: {
@@ -5216,6 +5313,8 @@ namespace Thetan.Multiplayer.V1 {
     public SendInvitationMsg(SendInvitationMsg other) : this() {
       playerId_ = other.playerId_;
       action_ = other.action_;
+      regions_ = other.regions_.Clone();
+      partyType_ = other.partyType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5249,6 +5348,29 @@ namespace Thetan.Multiplayer.V1 {
       }
     }
 
+    /// <summary>Field number for the "regions" field.</summary>
+    public const int RegionsFieldNumber = 3;
+    private static readonly pb::FieldCodec<int> _repeated_regions_codec
+        = pb::FieldCodec.ForInt32(26);
+    private readonly pbc::RepeatedField<int> regions_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<int> Regions {
+      get { return regions_; }
+    }
+
+    /// <summary>Field number for the "partyType" field.</summary>
+    public const int PartyTypeFieldNumber = 4;
+    private global::Thetan.Multiplayer.V1.PartyType partyType_ = global::Thetan.Multiplayer.V1.PartyType.Ranked;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Multiplayer.V1.PartyType PartyType {
+      get { return partyType_; }
+      set {
+        partyType_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -5266,6 +5388,8 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (PlayerId != other.PlayerId) return false;
       if (Action != other.Action) return false;
+      if(!regions_.Equals(other.regions_)) return false;
+      if (PartyType != other.PartyType) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5275,6 +5399,8 @@ namespace Thetan.Multiplayer.V1 {
       int hash = 1;
       if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (Action != global::Thetan.Multiplayer.V1.InvitationAction.Accept) hash ^= Action.GetHashCode();
+      hash ^= regions_.GetHashCode();
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) hash ^= PartyType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5301,6 +5427,11 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) Action);
       }
+      regions_.WriteTo(output, _repeated_regions_codec);
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) PartyType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5319,6 +5450,11 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) Action);
       }
+      regions_.WriteTo(ref output, _repeated_regions_codec);
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) PartyType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5334,6 +5470,10 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (Action != global::Thetan.Multiplayer.V1.InvitationAction.Accept) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Action);
+      }
+      size += regions_.CalculateSize(_repeated_regions_codec);
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PartyType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5352,6 +5492,10 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (other.Action != global::Thetan.Multiplayer.V1.InvitationAction.Accept) {
         Action = other.Action;
+      }
+      regions_.Add(other.regions_);
+      if (other.PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        PartyType = other.PartyType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5376,6 +5520,15 @@ namespace Thetan.Multiplayer.V1 {
             Action = (global::Thetan.Multiplayer.V1.InvitationAction) input.ReadEnum();
             break;
           }
+          case 26:
+          case 24: {
+            regions_.AddEntriesFrom(input, _repeated_regions_codec);
+            break;
+          }
+          case 32: {
+            PartyType = (global::Thetan.Multiplayer.V1.PartyType) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -5397,6 +5550,15 @@ namespace Thetan.Multiplayer.V1 {
           }
           case 16: {
             Action = (global::Thetan.Multiplayer.V1.InvitationAction) input.ReadEnum();
+            break;
+          }
+          case 26:
+          case 24: {
+            regions_.AddEntriesFrom(ref input, _repeated_regions_codec);
+            break;
+          }
+          case 32: {
+            PartyType = (global::Thetan.Multiplayer.V1.PartyType) input.ReadEnum();
             break;
           }
         }
@@ -5692,6 +5854,7 @@ namespace Thetan.Multiplayer.V1 {
     public ReplyInvitationMsg(ReplyInvitationMsg other) : this() {
       msg_ = other.msg_ != null ? other.msg_.Clone() : null;
       action_ = other.action_;
+      regions_ = other.regions_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5728,6 +5891,17 @@ namespace Thetan.Multiplayer.V1 {
       }
     }
 
+    /// <summary>Field number for the "regions" field.</summary>
+    public const int RegionsFieldNumber = 3;
+    private static readonly pb::FieldCodec<int> _repeated_regions_codec
+        = pb::FieldCodec.ForInt32(26);
+    private readonly pbc::RepeatedField<int> regions_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<int> Regions {
+      get { return regions_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -5745,6 +5919,7 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (!object.Equals(Msg, other.Msg)) return false;
       if (Action != other.Action) return false;
+      if(!regions_.Equals(other.regions_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5754,6 +5929,7 @@ namespace Thetan.Multiplayer.V1 {
       int hash = 1;
       if (msg_ != null) hash ^= Msg.GetHashCode();
       if (Action != global::Thetan.Multiplayer.V1.InvitationAction.Accept) hash ^= Action.GetHashCode();
+      hash ^= regions_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5780,6 +5956,7 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) Action);
       }
+      regions_.WriteTo(output, _repeated_regions_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5798,6 +5975,7 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(16);
         output.WriteEnum((int) Action);
       }
+      regions_.WriteTo(ref output, _repeated_regions_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5814,6 +5992,7 @@ namespace Thetan.Multiplayer.V1 {
       if (Action != global::Thetan.Multiplayer.V1.InvitationAction.Accept) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Action);
       }
+      size += regions_.CalculateSize(_repeated_regions_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -5835,6 +6014,7 @@ namespace Thetan.Multiplayer.V1 {
       if (other.Action != global::Thetan.Multiplayer.V1.InvitationAction.Accept) {
         Action = other.Action;
       }
+      regions_.Add(other.regions_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -5861,6 +6041,11 @@ namespace Thetan.Multiplayer.V1 {
             Action = (global::Thetan.Multiplayer.V1.InvitationAction) input.ReadEnum();
             break;
           }
+          case 26:
+          case 24: {
+            regions_.AddEntriesFrom(input, _repeated_regions_codec);
+            break;
+          }
         }
       }
     #endif
@@ -5885,6 +6070,11 @@ namespace Thetan.Multiplayer.V1 {
           }
           case 16: {
             Action = (global::Thetan.Multiplayer.V1.InvitationAction) input.ReadEnum();
+            break;
+          }
+          case 26:
+          case 24: {
+            regions_.AddEntriesFrom(ref input, _repeated_regions_codec);
             break;
           }
         }
@@ -8725,6 +8915,195 @@ namespace Thetan.Multiplayer.V1 {
             break;
           case 8: {
             DoNotify = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class RequestCreatePartyMsg : pb::IMessage<RequestCreatePartyMsg>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RequestCreatePartyMsg> _parser = new pb::MessageParser<RequestCreatePartyMsg>(() => new RequestCreatePartyMsg());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RequestCreatePartyMsg> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Multiplayer.V1.CommonReflection.Descriptor.MessageTypes[33]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestCreatePartyMsg() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestCreatePartyMsg(RequestCreatePartyMsg other) : this() {
+      partyType_ = other.partyType_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestCreatePartyMsg Clone() {
+      return new RequestCreatePartyMsg(this);
+    }
+
+    /// <summary>Field number for the "partyType" field.</summary>
+    public const int PartyTypeFieldNumber = 1;
+    private global::Thetan.Multiplayer.V1.PartyType partyType_ = global::Thetan.Multiplayer.V1.PartyType.Ranked;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Multiplayer.V1.PartyType PartyType {
+      get { return partyType_; }
+      set {
+        partyType_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as RequestCreatePartyMsg);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RequestCreatePartyMsg other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PartyType != other.PartyType) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) hash ^= PartyType.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) PartyType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) PartyType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PartyType);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(RequestCreatePartyMsg other) {
+      if (other == null) {
+        return;
+      }
+      if (other.PartyType != global::Thetan.Multiplayer.V1.PartyType.Ranked) {
+        PartyType = other.PartyType;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            PartyType = (global::Thetan.Multiplayer.V1.PartyType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            PartyType = (global::Thetan.Multiplayer.V1.PartyType) input.ReadEnum();
             break;
           }
         }

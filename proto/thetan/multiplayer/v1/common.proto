@@ -51,6 +51,7 @@ message PartyInfoProto {
   thetan.shared.v1.InGameMode inGameMode = 7;
   thetan.shared.v1.TRArena arena = 8;
   string modeID = 9;
+  PartyType partyType = 10;
 
   // tùy từng game mà cục nay có thể khác nhau
   bytes gameData = 99;
@@ -61,6 +62,7 @@ message SimplifyPartyInfo{
   string partyID = 1;
   uint32 currentMembers = 2;//size
   uint32 partySize = 3;
+  PartyType partyType = 4;
 
 
   bytes gameData = 99;
@@ -195,6 +197,8 @@ message SendInvitationMsg
 {
   string playerId = 1;
   InvitationAction action = 2;
+  repeated int32 regions = 3;
+  PartyType partyType = 4;
 }
 
 //    Nhận message invite từ party nao do
@@ -208,6 +212,7 @@ message ReplyInvitationMsg
 {
   ReceiveInvitationMsg msg = 1; //(gưi lại data lúc nhận, ở phía trên)
   InvitationAction action = 2;
+  repeated int32 regions = 3;
 }
 
 message ReceiveReplyInviteMsg
@@ -298,4 +303,15 @@ message GuildMail {
 
 message TreasureBalanceChanged {
   bool doNotify = 1;
+}
+
+enum PartyType {
+  Ranked = 0;// rank solo/duals/trios/squads
+  CustomBattle = 1;
+  Tournament = 2;
+  FriendlyBattle = 3; //1vs1
+}
+
+message RequestCreatePartyMsg{
+  PartyType partyType = 1;
 }
