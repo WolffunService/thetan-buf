@@ -61,13 +61,13 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.BattleEndResponse> __Marshaller_thetan_immortal_v1_BattleEndResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.BattleEndResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetHeroesRequest> __Marshaller_thetan_immortal_v1_GetHeroesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetHeroesRequest.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetHeroConfigRequest> __Marshaller_thetan_immortal_v1_GetHeroConfigRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetHeroConfigRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetHeroesResponse> __Marshaller_thetan_immortal_v1_GetHeroesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetHeroesResponse.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetHeroConfigResponse> __Marshaller_thetan_immortal_v1_GetHeroConfigResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetHeroConfigResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetSkillsRequest> __Marshaller_thetan_immortal_v1_GetSkillsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetSkillsRequest.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetSkillConfigRequest> __Marshaller_thetan_immortal_v1_GetSkillConfigRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetSkillConfigRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetSkillsResponse> __Marshaller_thetan_immortal_v1_GetSkillsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetSkillsResponse.Parser));
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetSkillConfigResponse> __Marshaller_thetan_immortal_v1_GetSkillConfigResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetSkillConfigResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse> __Method_SearchPlayerInfo = new grpc::Method<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse>(
@@ -94,20 +94,20 @@ namespace Thetan.Immortal.V1 {
         __Marshaller_thetan_immortal_v1_BattleEndResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Immortal.V1.GetHeroesRequest, global::Thetan.Immortal.V1.GetHeroesResponse> __Method_GetHeroes = new grpc::Method<global::Thetan.Immortal.V1.GetHeroesRequest, global::Thetan.Immortal.V1.GetHeroesResponse>(
+    static readonly grpc::Method<global::Thetan.Immortal.V1.GetHeroConfigRequest, global::Thetan.Immortal.V1.GetHeroConfigResponse> __Method_GetHeroConfig = new grpc::Method<global::Thetan.Immortal.V1.GetHeroConfigRequest, global::Thetan.Immortal.V1.GetHeroConfigResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetHeroes",
-        __Marshaller_thetan_immortal_v1_GetHeroesRequest,
-        __Marshaller_thetan_immortal_v1_GetHeroesResponse);
+        "GetHeroConfig",
+        __Marshaller_thetan_immortal_v1_GetHeroConfigRequest,
+        __Marshaller_thetan_immortal_v1_GetHeroConfigResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Thetan.Immortal.V1.GetSkillsRequest, global::Thetan.Immortal.V1.GetSkillsResponse> __Method_GetSkills = new grpc::Method<global::Thetan.Immortal.V1.GetSkillsRequest, global::Thetan.Immortal.V1.GetSkillsResponse>(
+    static readonly grpc::Method<global::Thetan.Immortal.V1.GetSkillConfigRequest, global::Thetan.Immortal.V1.GetSkillConfigResponse> __Method_GetSkillConfig = new grpc::Method<global::Thetan.Immortal.V1.GetSkillConfigRequest, global::Thetan.Immortal.V1.GetSkillConfigResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetSkills",
-        __Marshaller_thetan_immortal_v1_GetSkillsRequest,
-        __Marshaller_thetan_immortal_v1_GetSkillsResponse);
+        "GetSkillConfig",
+        __Marshaller_thetan_immortal_v1_GetSkillConfigRequest,
+        __Marshaller_thetan_immortal_v1_GetSkillConfigResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -138,13 +138,13 @@ namespace Thetan.Immortal.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetHeroesResponse> GetHeroes(global::Thetan.Immortal.V1.GetHeroesRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetHeroConfigResponse> GetHeroConfig(global::Thetan.Immortal.V1.GetHeroConfigRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetSkillsResponse> GetSkills(global::Thetan.Immortal.V1.GetSkillsRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetSkillConfigResponse> GetSkillConfig(global::Thetan.Immortal.V1.GetSkillConfigRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -229,44 +229,44 @@ namespace Thetan.Immortal.V1 {
         return CallInvoker.AsyncServerStreamingCall(__Method_BattleEnd, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Immortal.V1.GetHeroesResponse GetHeroes(global::Thetan.Immortal.V1.GetHeroesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.Immortal.V1.GetHeroConfigResponse GetHeroConfig(global::Thetan.Immortal.V1.GetHeroConfigRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetHeroes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetHeroConfig(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Immortal.V1.GetHeroesResponse GetHeroes(global::Thetan.Immortal.V1.GetHeroesRequest request, grpc::CallOptions options)
+      public virtual global::Thetan.Immortal.V1.GetHeroConfigResponse GetHeroConfig(global::Thetan.Immortal.V1.GetHeroConfigRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetHeroes, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetHeroConfig, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetHeroesResponse> GetHeroesAsync(global::Thetan.Immortal.V1.GetHeroesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetHeroConfigResponse> GetHeroConfigAsync(global::Thetan.Immortal.V1.GetHeroConfigRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetHeroesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetHeroConfigAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetHeroesResponse> GetHeroesAsync(global::Thetan.Immortal.V1.GetHeroesRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetHeroConfigResponse> GetHeroConfigAsync(global::Thetan.Immortal.V1.GetHeroConfigRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetHeroes, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetHeroConfig, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Immortal.V1.GetSkillsResponse GetSkills(global::Thetan.Immortal.V1.GetSkillsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Thetan.Immortal.V1.GetSkillConfigResponse GetSkillConfig(global::Thetan.Immortal.V1.GetSkillConfigRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetSkills(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetSkillConfig(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Thetan.Immortal.V1.GetSkillsResponse GetSkills(global::Thetan.Immortal.V1.GetSkillsRequest request, grpc::CallOptions options)
+      public virtual global::Thetan.Immortal.V1.GetSkillConfigResponse GetSkillConfig(global::Thetan.Immortal.V1.GetSkillConfigRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetSkills, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetSkillConfig, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetSkillsResponse> GetSkillsAsync(global::Thetan.Immortal.V1.GetSkillsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetSkillConfigResponse> GetSkillConfigAsync(global::Thetan.Immortal.V1.GetSkillConfigRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetSkillsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetSkillConfigAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetSkillsResponse> GetSkillsAsync(global::Thetan.Immortal.V1.GetSkillsRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetSkillConfigResponse> GetSkillConfigAsync(global::Thetan.Immortal.V1.GetSkillConfigRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetSkills, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetSkillConfig, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -285,8 +285,8 @@ namespace Thetan.Immortal.V1 {
           .AddMethod(__Method_SearchPlayerInfo, serviceImpl.SearchPlayerInfo)
           .AddMethod(__Method_GetUserProfile, serviceImpl.GetUserProfile)
           .AddMethod(__Method_BattleEnd, serviceImpl.BattleEnd)
-          .AddMethod(__Method_GetHeroes, serviceImpl.GetHeroes)
-          .AddMethod(__Method_GetSkills, serviceImpl.GetSkills).Build();
+          .AddMethod(__Method_GetHeroConfig, serviceImpl.GetHeroConfig)
+          .AddMethod(__Method_GetSkillConfig, serviceImpl.GetSkillConfig).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -299,8 +299,8 @@ namespace Thetan.Immortal.V1 {
       serviceBinder.AddMethod(__Method_SearchPlayerInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse>(serviceImpl.SearchPlayerInfo));
       serviceBinder.AddMethod(__Method_GetUserProfile, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetUserProfileRequest, global::Thetan.Immortal.V1.GetUserProfileResponse>(serviceImpl.GetUserProfile));
       serviceBinder.AddMethod(__Method_BattleEnd, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Thetan.Immortal.V1.BattleEndRequest, global::Thetan.Immortal.V1.BattleEndResponse>(serviceImpl.BattleEnd));
-      serviceBinder.AddMethod(__Method_GetHeroes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetHeroesRequest, global::Thetan.Immortal.V1.GetHeroesResponse>(serviceImpl.GetHeroes));
-      serviceBinder.AddMethod(__Method_GetSkills, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetSkillsRequest, global::Thetan.Immortal.V1.GetSkillsResponse>(serviceImpl.GetSkills));
+      serviceBinder.AddMethod(__Method_GetHeroConfig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetHeroConfigRequest, global::Thetan.Immortal.V1.GetHeroConfigResponse>(serviceImpl.GetHeroConfig));
+      serviceBinder.AddMethod(__Method_GetSkillConfig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetSkillConfigRequest, global::Thetan.Immortal.V1.GetSkillConfigResponse>(serviceImpl.GetSkillConfig));
     }
 
   }
