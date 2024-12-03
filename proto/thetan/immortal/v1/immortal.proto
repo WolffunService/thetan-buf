@@ -12,8 +12,8 @@ service ImmortalService {
   rpc SearchPlayerInfo(SearchPlayerInfoRequest) returns (SearchPlayerInfoResponse) {}
   rpc GetUserProfile(GetUserProfileRequest) returns (GetUserProfileResponse) {}
   rpc BattleEnd(BattleEndRequest) returns (stream BattleEndResponse) {}
-  rpc GetHeroes(GetHeroesRequest) returns (GetHeroesResponse) {}
-  rpc GetSkills(GetSkillsRequest) returns (GetSkillsResponse) {}
+  rpc GetHeroConfig(GetHeroConfigRequest) returns (GetHeroConfigResponse) {}
+  rpc GetSkillConfig(GetSkillConfigRequest) returns (GetSkillConfigResponse) {}
 }
 
 message SearchPlayerInfoRequest {
@@ -78,15 +78,28 @@ message BattleEndHero {
   int32 level = 3;
 }
 
-message GetHeroesRequest {}
+message GetHeroConfigRequest {}
 
-message GetHeroesResponse {
+message GetHeroConfigResponse {
   repeated HeroFull heroes = 1;
+  map<int32, HeroRarity> heroRarities = 2;
+}
+
+message HeroRarity {
+  int32 defaultLevel = 1;
+  int32 maxLevel = 2;
 }
 
 
-message GetSkillsRequest {}
+message GetSkillConfigRequest {}
 
-message GetSkillsResponse {
+message GetSkillConfigResponse {
   repeated SkillFull skills = 1;
+  map<int32, SkillRarity> skillRarities = 2;
+}
+
+
+message SkillRarity {
+  int32 defaultLevel = 1;
+  int32 maxLevel = 2;
 }
