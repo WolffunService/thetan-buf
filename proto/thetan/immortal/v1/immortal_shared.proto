@@ -62,6 +62,8 @@ message PlayerInfoMatchProto {
   repeated int32 recentMatchedHeroes = 20;
   int32 maxHeroLevel = 21;
   int32 maxSkillLevel = 22;
+  //premium user
+  int32 battlePassID = 23;
 }
 
 enum Arena
