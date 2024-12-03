@@ -14,6 +14,8 @@ service ImmortalService {
   rpc BattleEnd(BattleEndRequest) returns (stream BattleEndResponse) {}
   rpc GetHeroConfig(GetHeroConfigRequest) returns (GetHeroConfigResponse) {}
   rpc GetSkillConfig(GetSkillConfigRequest) returns (GetSkillConfigResponse) {}
+  // Friends
+  rpc GetListFriends(GetUserFriendRequest) returns (GetUserFriendResponse) {}
 }
 
 message SearchPlayerInfoRequest {
@@ -102,4 +104,26 @@ message GetSkillConfigResponse {
 message SkillRarity {
   int32 defaultLevel = 1;
   int32 maxLevel = 2;
+}
+
+
+message GetUserFriendRequest {
+  string userId = 1;
+}
+
+message GetUserFriendResponse {
+  repeated FriendInfo friends = 1;
+}
+
+message FriendInfo {
+  enum FRIEND_STATUS {
+    REQUESTED = 0;
+    REQUESTING = 1;
+    CONFIRMED = 2;
+  }
+
+  string friendId = 1;
+  FRIEND_STATUS status = 2;
+  GetUserProfileResponse profile = 3;
+  int64 requestedAt = 4;
 }

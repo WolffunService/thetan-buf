@@ -24,6 +24,7 @@ const (
 	ImmortalService_BattleEnd_FullMethodName        = "/thetan.immortal.v1.ImmortalService/BattleEnd"
 	ImmortalService_GetHeroConfig_FullMethodName    = "/thetan.immortal.v1.ImmortalService/GetHeroConfig"
 	ImmortalService_GetSkillConfig_FullMethodName   = "/thetan.immortal.v1.ImmortalService/GetSkillConfig"
+	ImmortalService_GetListFriends_FullMethodName   = "/thetan.immortal.v1.ImmortalService/GetListFriends"
 )
 
 // ImmortalServiceClient is the client API for ImmortalService service.
@@ -35,6 +36,8 @@ type ImmortalServiceClient interface {
 	BattleEnd(ctx context.Context, in *BattleEndRequest, opts ...grpc.CallOption) (ImmortalService_BattleEndClient, error)
 	GetHeroConfig(ctx context.Context, in *GetHeroConfigRequest, opts ...grpc.CallOption) (*GetHeroConfigResponse, error)
 	GetSkillConfig(ctx context.Context, in *GetSkillConfigRequest, opts ...grpc.CallOption) (*GetSkillConfigResponse, error)
+	// Friends
+	GetListFriends(ctx context.Context, in *GetUserFriendRequest, opts ...grpc.CallOption) (*GetUserFriendResponse, error)
 }
 
 type immortalServiceClient struct {
@@ -113,6 +116,15 @@ func (c *immortalServiceClient) GetSkillConfig(ctx context.Context, in *GetSkill
 	return out, nil
 }
 
+func (c *immortalServiceClient) GetListFriends(ctx context.Context, in *GetUserFriendRequest, opts ...grpc.CallOption) (*GetUserFriendResponse, error) {
+	out := new(GetUserFriendResponse)
+	err := c.cc.Invoke(ctx, ImmortalService_GetListFriends_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ImmortalServiceServer is the server API for ImmortalService service.
 // All implementations must embed UnimplementedImmortalServiceServer
 // for forward compatibility
@@ -122,6 +134,8 @@ type ImmortalServiceServer interface {
 	BattleEnd(*BattleEndRequest, ImmortalService_BattleEndServer) error
 	GetHeroConfig(context.Context, *GetHeroConfigRequest) (*GetHeroConfigResponse, error)
 	GetSkillConfig(context.Context, *GetSkillConfigRequest) (*GetSkillConfigResponse, error)
+	// Friends
+	GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error)
 	mustEmbedUnimplementedImmortalServiceServer()
 }
 
@@ -143,6 +157,9 @@ func (UnimplementedImmortalServiceServer) GetHeroConfig(context.Context, *GetHer
 }
 func (UnimplementedImmortalServiceServer) GetSkillConfig(context.Context, *GetSkillConfigRequest) (*GetSkillConfigResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetSkillConfig not implemented")
+}
+func (UnimplementedImmortalServiceServer) GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetListFriends not implemented")
 }
 func (UnimplementedImmortalServiceServer) mustEmbedUnimplementedImmortalServiceServer() {}
 
@@ -250,6 +267,24 @@ func _ImmortalService_GetSkillConfig_Handler(srv interface{}, ctx context.Contex
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ImmortalService_GetListFriends_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetUserFriendRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ImmortalServiceServer).GetListFriends(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ImmortalService_GetListFriends_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ImmortalServiceServer).GetListFriends(ctx, req.(*GetUserFriendRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ImmortalService_ServiceDesc is the grpc.ServiceDesc for ImmortalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -272,6 +307,10 @@ var ImmortalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetSkillConfig",
 			Handler:    _ImmortalService_GetSkillConfig_Handler,
+		},
+		{
+			MethodName: "GetListFriends",
+			Handler:    _ImmortalService_GetListFriends_Handler,
 		},
 	},
 	Streams: []grpc.StreamDesc{

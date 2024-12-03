@@ -68,6 +68,10 @@ namespace Thetan.Immortal.V1 {
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetSkillConfigRequest> __Marshaller_thetan_immortal_v1_GetSkillConfigRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetSkillConfigRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetSkillConfigResponse> __Marshaller_thetan_immortal_v1_GetSkillConfigResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetSkillConfigResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetUserFriendRequest> __Marshaller_thetan_immortal_v1_GetUserFriendRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetUserFriendRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetUserFriendResponse> __Marshaller_thetan_immortal_v1_GetUserFriendResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetUserFriendResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse> __Method_SearchPlayerInfo = new grpc::Method<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse>(
@@ -109,6 +113,14 @@ namespace Thetan.Immortal.V1 {
         __Marshaller_thetan_immortal_v1_GetSkillConfigRequest,
         __Marshaller_thetan_immortal_v1_GetSkillConfigResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Immortal.V1.GetUserFriendRequest, global::Thetan.Immortal.V1.GetUserFriendResponse> __Method_GetListFriends = new grpc::Method<global::Thetan.Immortal.V1.GetUserFriendRequest, global::Thetan.Immortal.V1.GetUserFriendResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetListFriends",
+        __Marshaller_thetan_immortal_v1_GetUserFriendRequest,
+        __Marshaller_thetan_immortal_v1_GetUserFriendResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -145,6 +157,18 @@ namespace Thetan.Immortal.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetSkillConfigResponse> GetSkillConfig(global::Thetan.Immortal.V1.GetSkillConfigRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Friends
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetUserFriendResponse> GetListFriends(global::Thetan.Immortal.V1.GetUserFriendRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -268,6 +292,54 @@ namespace Thetan.Immortal.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetSkillConfig, null, options, request);
       }
+      /// <summary>
+      /// Friends
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Immortal.V1.GetUserFriendResponse GetListFriends(global::Thetan.Immortal.V1.GetUserFriendRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetListFriends(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Friends
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Immortal.V1.GetUserFriendResponse GetListFriends(global::Thetan.Immortal.V1.GetUserFriendRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetListFriends, null, options, request);
+      }
+      /// <summary>
+      /// Friends
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetUserFriendResponse> GetListFriendsAsync(global::Thetan.Immortal.V1.GetUserFriendRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetListFriendsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Friends
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetUserFriendResponse> GetListFriendsAsync(global::Thetan.Immortal.V1.GetUserFriendRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetListFriends, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ImmortalServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -286,7 +358,8 @@ namespace Thetan.Immortal.V1 {
           .AddMethod(__Method_GetUserProfile, serviceImpl.GetUserProfile)
           .AddMethod(__Method_BattleEnd, serviceImpl.BattleEnd)
           .AddMethod(__Method_GetHeroConfig, serviceImpl.GetHeroConfig)
-          .AddMethod(__Method_GetSkillConfig, serviceImpl.GetSkillConfig).Build();
+          .AddMethod(__Method_GetSkillConfig, serviceImpl.GetSkillConfig)
+          .AddMethod(__Method_GetListFriends, serviceImpl.GetListFriends).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -301,6 +374,7 @@ namespace Thetan.Immortal.V1 {
       serviceBinder.AddMethod(__Method_BattleEnd, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Thetan.Immortal.V1.BattleEndRequest, global::Thetan.Immortal.V1.BattleEndResponse>(serviceImpl.BattleEnd));
       serviceBinder.AddMethod(__Method_GetHeroConfig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetHeroConfigRequest, global::Thetan.Immortal.V1.GetHeroConfigResponse>(serviceImpl.GetHeroConfig));
       serviceBinder.AddMethod(__Method_GetSkillConfig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetSkillConfigRequest, global::Thetan.Immortal.V1.GetSkillConfigResponse>(serviceImpl.GetSkillConfig));
+      serviceBinder.AddMethod(__Method_GetListFriends, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetUserFriendRequest, global::Thetan.Immortal.V1.GetUserFriendResponse>(serviceImpl.GetListFriends));
     }
 
   }
