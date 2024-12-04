@@ -16,6 +16,8 @@ service ImmortalService {
   rpc GetSkillConfig(GetSkillConfigRequest) returns (GetSkillConfigResponse) {}
   // Friends
   rpc GetListFriends(GetUserFriendRequest) returns (GetUserFriendResponse) {}
+  // Seasonal
+  rpc GetSeasonal(GetSeasonalRequest) returns (GetSeasonalResponse) {}
 }
 
 message SearchPlayerInfoRequest {
@@ -126,4 +128,11 @@ message FriendInfo {
   FRIEND_STATUS status = 2;
   GetUserProfileResponse profile = 3;
   int64 requestedAt = 4;
+}
+
+message GetSeasonalRequest {
+}
+
+message GetSeasonalResponse {
+  int32 seasonID = 1;
 }

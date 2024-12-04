@@ -72,6 +72,10 @@ namespace Thetan.Immortal.V1 {
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetUserFriendRequest> __Marshaller_thetan_immortal_v1_GetUserFriendRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetUserFriendRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetUserFriendResponse> __Marshaller_thetan_immortal_v1_GetUserFriendResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetUserFriendResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetSeasonalRequest> __Marshaller_thetan_immortal_v1_GetSeasonalRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetSeasonalRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetSeasonalResponse> __Marshaller_thetan_immortal_v1_GetSeasonalResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetSeasonalResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse> __Method_SearchPlayerInfo = new grpc::Method<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse>(
@@ -121,6 +125,14 @@ namespace Thetan.Immortal.V1 {
         __Marshaller_thetan_immortal_v1_GetUserFriendRequest,
         __Marshaller_thetan_immortal_v1_GetUserFriendResponse);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Immortal.V1.GetSeasonalRequest, global::Thetan.Immortal.V1.GetSeasonalResponse> __Method_GetSeasonal = new grpc::Method<global::Thetan.Immortal.V1.GetSeasonalRequest, global::Thetan.Immortal.V1.GetSeasonalResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetSeasonal",
+        __Marshaller_thetan_immortal_v1_GetSeasonalRequest,
+        __Marshaller_thetan_immortal_v1_GetSeasonalResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -169,6 +181,18 @@ namespace Thetan.Immortal.V1 {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetUserFriendResponse> GetListFriends(global::Thetan.Immortal.V1.GetUserFriendRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Seasonal
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetSeasonalResponse> GetSeasonal(global::Thetan.Immortal.V1.GetSeasonalRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -340,6 +364,54 @@ namespace Thetan.Immortal.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetListFriends, null, options, request);
       }
+      /// <summary>
+      /// Seasonal
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Immortal.V1.GetSeasonalResponse GetSeasonal(global::Thetan.Immortal.V1.GetSeasonalRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetSeasonal(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Seasonal
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Immortal.V1.GetSeasonalResponse GetSeasonal(global::Thetan.Immortal.V1.GetSeasonalRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetSeasonal, null, options, request);
+      }
+      /// <summary>
+      /// Seasonal
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetSeasonalResponse> GetSeasonalAsync(global::Thetan.Immortal.V1.GetSeasonalRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetSeasonalAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Seasonal
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetSeasonalResponse> GetSeasonalAsync(global::Thetan.Immortal.V1.GetSeasonalRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetSeasonal, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ImmortalServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -359,7 +431,8 @@ namespace Thetan.Immortal.V1 {
           .AddMethod(__Method_BattleEnd, serviceImpl.BattleEnd)
           .AddMethod(__Method_GetHeroConfig, serviceImpl.GetHeroConfig)
           .AddMethod(__Method_GetSkillConfig, serviceImpl.GetSkillConfig)
-          .AddMethod(__Method_GetListFriends, serviceImpl.GetListFriends).Build();
+          .AddMethod(__Method_GetListFriends, serviceImpl.GetListFriends)
+          .AddMethod(__Method_GetSeasonal, serviceImpl.GetSeasonal).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -375,6 +448,7 @@ namespace Thetan.Immortal.V1 {
       serviceBinder.AddMethod(__Method_GetHeroConfig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetHeroConfigRequest, global::Thetan.Immortal.V1.GetHeroConfigResponse>(serviceImpl.GetHeroConfig));
       serviceBinder.AddMethod(__Method_GetSkillConfig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetSkillConfigRequest, global::Thetan.Immortal.V1.GetSkillConfigResponse>(serviceImpl.GetSkillConfig));
       serviceBinder.AddMethod(__Method_GetListFriends, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetUserFriendRequest, global::Thetan.Immortal.V1.GetUserFriendResponse>(serviceImpl.GetListFriends));
+      serviceBinder.AddMethod(__Method_GetSeasonal, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetSeasonalRequest, global::Thetan.Immortal.V1.GetSeasonalResponse>(serviceImpl.GetSeasonal));
     }
 
   }

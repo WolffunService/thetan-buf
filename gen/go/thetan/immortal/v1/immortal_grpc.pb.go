@@ -25,6 +25,7 @@ const (
 	ImmortalService_GetHeroConfig_FullMethodName    = "/thetan.immortal.v1.ImmortalService/GetHeroConfig"
 	ImmortalService_GetSkillConfig_FullMethodName   = "/thetan.immortal.v1.ImmortalService/GetSkillConfig"
 	ImmortalService_GetListFriends_FullMethodName   = "/thetan.immortal.v1.ImmortalService/GetListFriends"
+	ImmortalService_GetSeasonal_FullMethodName      = "/thetan.immortal.v1.ImmortalService/GetSeasonal"
 )
 
 // ImmortalServiceClient is the client API for ImmortalService service.
@@ -38,6 +39,8 @@ type ImmortalServiceClient interface {
 	GetSkillConfig(ctx context.Context, in *GetSkillConfigRequest, opts ...grpc.CallOption) (*GetSkillConfigResponse, error)
 	// Friends
 	GetListFriends(ctx context.Context, in *GetUserFriendRequest, opts ...grpc.CallOption) (*GetUserFriendResponse, error)
+	// Seasonal
+	GetSeasonal(ctx context.Context, in *GetSeasonalRequest, opts ...grpc.CallOption) (*GetSeasonalResponse, error)
 }
 
 type immortalServiceClient struct {
@@ -125,6 +128,15 @@ func (c *immortalServiceClient) GetListFriends(ctx context.Context, in *GetUserF
 	return out, nil
 }
 
+func (c *immortalServiceClient) GetSeasonal(ctx context.Context, in *GetSeasonalRequest, opts ...grpc.CallOption) (*GetSeasonalResponse, error) {
+	out := new(GetSeasonalResponse)
+	err := c.cc.Invoke(ctx, ImmortalService_GetSeasonal_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ImmortalServiceServer is the server API for ImmortalService service.
 // All implementations must embed UnimplementedImmortalServiceServer
 // for forward compatibility
@@ -136,6 +148,8 @@ type ImmortalServiceServer interface {
 	GetSkillConfig(context.Context, *GetSkillConfigRequest) (*GetSkillConfigResponse, error)
 	// Friends
 	GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error)
+	// Seasonal
+	GetSeasonal(context.Context, *GetSeasonalRequest) (*GetSeasonalResponse, error)
 	mustEmbedUnimplementedImmortalServiceServer()
 }
 
@@ -160,6 +174,9 @@ func (UnimplementedImmortalServiceServer) GetSkillConfig(context.Context, *GetSk
 }
 func (UnimplementedImmortalServiceServer) GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetListFriends not implemented")
+}
+func (UnimplementedImmortalServiceServer) GetSeasonal(context.Context, *GetSeasonalRequest) (*GetSeasonalResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetSeasonal not implemented")
 }
 func (UnimplementedImmortalServiceServer) mustEmbedUnimplementedImmortalServiceServer() {}
 
@@ -285,6 +302,24 @@ func _ImmortalService_GetListFriends_Handler(srv interface{}, ctx context.Contex
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ImmortalService_GetSeasonal_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetSeasonalRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ImmortalServiceServer).GetSeasonal(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ImmortalService_GetSeasonal_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ImmortalServiceServer).GetSeasonal(ctx, req.(*GetSeasonalRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ImmortalService_ServiceDesc is the grpc.ServiceDesc for ImmortalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -311,6 +346,10 @@ var ImmortalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetListFriends",
 			Handler:    _ImmortalService_GetListFriends_Handler,
+		},
+		{
+			MethodName: "GetSeasonal",
+			Handler:    _ImmortalService_GetSeasonal_Handler,
 		},
 	},
 	Streams: []grpc.StreamDesc{
