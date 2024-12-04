@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "thetan/immortal/v1/immortal_shared.proto";
+import "thetan/immortal/v1/immortal_game_info.proto";
 package thetan.immortal.v1;
 
 option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_immortal_v1";
@@ -10,6 +11,8 @@ message MatchFoundResponseProto {
   string matchID = 1;
   repeated PlayerInfoMatchProto players = 2;
   int32 bestRegion = 3;
+  GameMode gameMode = 4;
+  InGameMode inGameMode = 5;
 }
 
 // ImmortalTicketData is used to create ticket
@@ -17,6 +20,8 @@ message TicketData {
   repeated PlayerInfoMatchProto players = 1;
   repeated int32 regions = 2;
   string country = 3; //using for get bot
+  GameMode gameMode = 4;
+  InGameMode inGameMode = 5;
 }
 
 message CancelTicketRequest {
@@ -39,6 +44,8 @@ message CreateMatchNonMatchingRequest {
   repeated PlayerInfoMatchProto players = 1;
   repeated int32 regions = 2;
   string country = 3;
+  GameMode gameMode = 4;
+  InGameMode inGameMode = 5;
 }
 
 message CreateMatchNonMatchingResponse {

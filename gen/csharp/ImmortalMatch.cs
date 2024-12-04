@@ -26,42 +26,51 @@ namespace Thetan.Immortal.V1 {
           string.Concat(
             "Cid0aGV0YW4vaW1tb3J0YWwvdjEvaW1tb3J0YWxfbWF0Y2gucHJvdG8SEnRo",
             "ZXRhbi5pbW1vcnRhbC52MRoodGhldGFuL2ltbW9ydGFsL3YxL2ltbW9ydGFs",
-            "X3NoYXJlZC5wcm90byKXAQoXTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8SGAoH",
+            "X3NoYXJlZC5wcm90bxordGhldGFuL2ltbW9ydGFsL3YxL2ltbW9ydGFsX2dh",
+            "bWVfaW5mby5wcm90byKRAgoXTWF0Y2hGb3VuZFJlc3BvbnNlUHJvdG8SGAoH",
             "bWF0Y2hJRBgBIAEoCVIHbWF0Y2hJRBJCCgdwbGF5ZXJzGAIgAygLMigudGhl",
             "dGFuLmltbW9ydGFsLnYxLlBsYXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJz",
-            "Eh4KCmJlc3RSZWdpb24YAyABKAVSCmJlc3RSZWdpb24ihAEKClRpY2tldERh",
-            "dGESQgoHcGxheWVycxgBIAMoCzIoLnRoZXRhbi5pbW1vcnRhbC52MS5QbGF5",
-            "ZXJJbmZvTWF0Y2hQcm90b1IHcGxheWVycxIYCgdyZWdpb25zGAIgAygFUgdy",
-            "ZWdpb25zEhgKB2NvdW50cnkYAyABKAlSB2NvdW50cnkiZwoTQ2FuY2VsVGlj",
-            "a2V0UmVxdWVzdBIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSGAoHcGFy",
-            "dHlJRBgCIAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0",
-            "SUQiFgoUQ2FuY2VsVGlja2V0UmVzcG9uc2UiZwoTQ2FuY2VsVGlja2V0U3Vj",
-            "Y2VzcxIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSGAoHcGFydHlJRBgC",
-            "IAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0SUQilwEK",
-            "HUNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXF1ZXN0EkIKB3BsYXllcnMYASAD",
-            "KAsyKC50aGV0YW4uaW1tb3J0YWwudjEuUGxheWVySW5mb01hdGNoUHJvdG9S",
-            "B3BsYXllcnMSGAoHcmVnaW9ucxgCIAMoBVIHcmVnaW9ucxIYCgdjb3VudHJ5",
-            "GAMgASgJUgdjb3VudHJ5IiAKHkNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXNw",
-            "b25zZTL/AQoUTWF0Y2hEaXJlY3RvclNlcnZpY2USYwoMQ2FuY2VsVGlja2V0",
-            "EicudGhldGFuLmltbW9ydGFsLnYxLkNhbmNlbFRpY2tldFJlcXVlc3QaKC50",
-            "aGV0YW4uaW1tb3J0YWwudjEuQ2FuY2VsVGlja2V0UmVzcG9uc2UiABKBAQoW",
-            "Q3JlYXRlTWF0Y2hOb25NYXRjaGluZxIxLnRoZXRhbi5pbW1vcnRhbC52MS5D",
-            "cmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVxdWVzdBoyLnRoZXRhbi5pbW1vcnRh",
-            "bC52MS5DcmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVzcG9uc2UiAELPAQoWY29t",
-            "LnRoZXRhbi5pbW1vcnRhbC52MUISSW1tb3J0YWxNYXRjaFByb3RvUAFaN3Ro",
-            "ZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9pbW1vcnRhbC92MTt0aGV0YW5faW1t",
-            "b3J0YWxfdjGiAgNUSViqAhJUaGV0YW4uSW1tb3J0YWwuVjHKAhJUaGV0YW5c",
-            "SW1tb3J0YWxcVjHiAh5UaGV0YW5cSW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHq",
-            "AhRUaGV0YW46OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
+            "Eh4KCmJlc3RSZWdpb24YAyABKAVSCmJlc3RSZWdpb24SOAoIZ2FtZU1vZGUY",
+            "BCABKA4yHC50aGV0YW4uaW1tb3J0YWwudjEuR2FtZU1vZGVSCGdhbWVNb2Rl",
+            "Ej4KCmluR2FtZU1vZGUYBSABKA4yHi50aGV0YW4uaW1tb3J0YWwudjEuSW5H",
+            "YW1lTW9kZVIKaW5HYW1lTW9kZSL+AQoKVGlja2V0RGF0YRJCCgdwbGF5ZXJz",
+            "GAEgAygLMigudGhldGFuLmltbW9ydGFsLnYxLlBsYXllckluZm9NYXRjaFBy",
+            "b3RvUgdwbGF5ZXJzEhgKB3JlZ2lvbnMYAiADKAVSB3JlZ2lvbnMSGAoHY291",
+            "bnRyeRgDIAEoCVIHY291bnRyeRI4CghnYW1lTW9kZRgEIAEoDjIcLnRoZXRh",
+            "bi5pbW1vcnRhbC52MS5HYW1lTW9kZVIIZ2FtZU1vZGUSPgoKaW5HYW1lTW9k",
+            "ZRgFIAEoDjIeLnRoZXRhbi5pbW1vcnRhbC52MS5JbkdhbWVNb2RlUgppbkdh",
+            "bWVNb2RlImcKE0NhbmNlbFRpY2tldFJlcXVlc3QSGgoIcGxheWVySUQYASAB",
+            "KAlSCHBsYXllcklEEhgKB3BhcnR5SUQYAiABKAlSB3BhcnR5SUQSGgoIdGlj",
+            "a2V0SUQYAyABKAlSCHRpY2tldElEIhYKFENhbmNlbFRpY2tldFJlc3BvbnNl",
+            "ImcKE0NhbmNlbFRpY2tldFN1Y2Nlc3MSGgoIcGxheWVySUQYASABKAlSCHBs",
+            "YXllcklEEhgKB3BhcnR5SUQYAiABKAlSB3BhcnR5SUQSGgoIdGlja2V0SUQY",
+            "AyABKAlSCHRpY2tldElEIpECCh1DcmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVx",
+            "dWVzdBJCCgdwbGF5ZXJzGAEgAygLMigudGhldGFuLmltbW9ydGFsLnYxLlBs",
+            "YXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzEhgKB3JlZ2lvbnMYAiADKAVS",
+            "B3JlZ2lvbnMSGAoHY291bnRyeRgDIAEoCVIHY291bnRyeRI4CghnYW1lTW9k",
+            "ZRgEIAEoDjIcLnRoZXRhbi5pbW1vcnRhbC52MS5HYW1lTW9kZVIIZ2FtZU1v",
+            "ZGUSPgoKaW5HYW1lTW9kZRgFIAEoDjIeLnRoZXRhbi5pbW1vcnRhbC52MS5J",
+            "bkdhbWVNb2RlUgppbkdhbWVNb2RlIiAKHkNyZWF0ZU1hdGNoTm9uTWF0Y2hp",
+            "bmdSZXNwb25zZTL/AQoUTWF0Y2hEaXJlY3RvclNlcnZpY2USYwoMQ2FuY2Vs",
+            "VGlja2V0EicudGhldGFuLmltbW9ydGFsLnYxLkNhbmNlbFRpY2tldFJlcXVl",
+            "c3QaKC50aGV0YW4uaW1tb3J0YWwudjEuQ2FuY2VsVGlja2V0UmVzcG9uc2Ui",
+            "ABKBAQoWQ3JlYXRlTWF0Y2hOb25NYXRjaGluZxIxLnRoZXRhbi5pbW1vcnRh",
+            "bC52MS5DcmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVxdWVzdBoyLnRoZXRhbi5p",
+            "bW1vcnRhbC52MS5DcmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVzcG9uc2UiAELP",
+            "AQoWY29tLnRoZXRhbi5pbW1vcnRhbC52MUISSW1tb3J0YWxNYXRjaFByb3Rv",
+            "UAFaN3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9pbW1vcnRhbC92MTt0aGV0",
+            "YW5faW1tb3J0YWxfdjGiAgNUSViqAhJUaGV0YW4uSW1tb3J0YWwuVjHKAhJU",
+            "aGV0YW5cSW1tb3J0YWxcVjHiAh5UaGV0YW5cSW1tb3J0YWxcVjFcR1BCTWV0",
+            "YWRhdGHqAhRUaGV0YW46OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor, global::Thetan.Immortal.V1.ImmortalGameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.MatchFoundResponseProto), global::Thetan.Immortal.V1.MatchFoundResponseProto.Parser, new[]{ "MatchID", "Players", "BestRegion" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TicketData), global::Thetan.Immortal.V1.TicketData.Parser, new[]{ "Players", "Regions", "Country" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.MatchFoundResponseProto), global::Thetan.Immortal.V1.MatchFoundResponseProto.Parser, new[]{ "MatchID", "Players", "BestRegion", "GameMode", "InGameMode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TicketData), global::Thetan.Immortal.V1.TicketData.Parser, new[]{ "Players", "Regions", "Country", "GameMode", "InGameMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketRequest), global::Thetan.Immortal.V1.CancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketResponse), global::Thetan.Immortal.V1.CancelTicketResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketSuccess), global::Thetan.Immortal.V1.CancelTicketSuccess.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest), global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest.Parser, new[]{ "Players", "Regions", "Country" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest), global::Thetan.Immortal.V1.CreateMatchNonMatchingRequest.Parser, new[]{ "Players", "Regions", "Country", "GameMode", "InGameMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse), global::Thetan.Immortal.V1.CreateMatchNonMatchingResponse.Parser, null, null, null, null, null)
           }));
     }
@@ -106,6 +115,8 @@ namespace Thetan.Immortal.V1 {
       matchID_ = other.matchID_;
       players_ = other.players_.Clone();
       bestRegion_ = other.bestRegion_;
+      gameMode_ = other.gameMode_;
+      inGameMode_ = other.inGameMode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -150,6 +161,30 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
+    /// <summary>Field number for the "gameMode" field.</summary>
+    public const int GameModeFieldNumber = 4;
+    private global::Thetan.Immortal.V1.GameMode gameMode_ = global::Thetan.Immortal.V1.GameMode.NoneMode;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Immortal.V1.GameMode GameMode {
+      get { return gameMode_; }
+      set {
+        gameMode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "inGameMode" field.</summary>
+    public const int InGameModeFieldNumber = 5;
+    private global::Thetan.Immortal.V1.InGameMode inGameMode_ = global::Thetan.Immortal.V1.InGameMode.Solo;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Immortal.V1.InGameMode InGameMode {
+      get { return inGameMode_; }
+      set {
+        inGameMode_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -168,6 +203,8 @@ namespace Thetan.Immortal.V1 {
       if (MatchID != other.MatchID) return false;
       if(!players_.Equals(other.players_)) return false;
       if (BestRegion != other.BestRegion) return false;
+      if (GameMode != other.GameMode) return false;
+      if (InGameMode != other.InGameMode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -178,6 +215,8 @@ namespace Thetan.Immortal.V1 {
       if (MatchID.Length != 0) hash ^= MatchID.GetHashCode();
       hash ^= players_.GetHashCode();
       if (BestRegion != 0) hash ^= BestRegion.GetHashCode();
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) hash ^= GameMode.GetHashCode();
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) hash ^= InGameMode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -205,6 +244,14 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(24);
         output.WriteInt32(BestRegion);
       }
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) GameMode);
+      }
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) InGameMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -224,6 +271,14 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(24);
         output.WriteInt32(BestRegion);
       }
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) GameMode);
+      }
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) InGameMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -240,6 +295,12 @@ namespace Thetan.Immortal.V1 {
       size += players_.CalculateSize(_repeated_players_codec);
       if (BestRegion != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BestRegion);
+      }
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) GameMode);
+      }
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InGameMode);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -259,6 +320,12 @@ namespace Thetan.Immortal.V1 {
       players_.Add(other.players_);
       if (other.BestRegion != 0) {
         BestRegion = other.BestRegion;
+      }
+      if (other.GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        GameMode = other.GameMode;
+      }
+      if (other.InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        InGameMode = other.InGameMode;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -287,6 +354,14 @@ namespace Thetan.Immortal.V1 {
             BestRegion = input.ReadInt32();
             break;
           }
+          case 32: {
+            GameMode = (global::Thetan.Immortal.V1.GameMode) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            InGameMode = (global::Thetan.Immortal.V1.InGameMode) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -312,6 +387,14 @@ namespace Thetan.Immortal.V1 {
           }
           case 24: {
             BestRegion = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            GameMode = (global::Thetan.Immortal.V1.GameMode) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            InGameMode = (global::Thetan.Immortal.V1.InGameMode) input.ReadEnum();
             break;
           }
         }
@@ -361,6 +444,8 @@ namespace Thetan.Immortal.V1 {
       players_ = other.players_.Clone();
       regions_ = other.regions_.Clone();
       country_ = other.country_;
+      gameMode_ = other.gameMode_;
+      inGameMode_ = other.inGameMode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -407,6 +492,30 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
+    /// <summary>Field number for the "gameMode" field.</summary>
+    public const int GameModeFieldNumber = 4;
+    private global::Thetan.Immortal.V1.GameMode gameMode_ = global::Thetan.Immortal.V1.GameMode.NoneMode;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Immortal.V1.GameMode GameMode {
+      get { return gameMode_; }
+      set {
+        gameMode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "inGameMode" field.</summary>
+    public const int InGameModeFieldNumber = 5;
+    private global::Thetan.Immortal.V1.InGameMode inGameMode_ = global::Thetan.Immortal.V1.InGameMode.Solo;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Immortal.V1.InGameMode InGameMode {
+      get { return inGameMode_; }
+      set {
+        inGameMode_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -425,6 +534,8 @@ namespace Thetan.Immortal.V1 {
       if(!players_.Equals(other.players_)) return false;
       if(!regions_.Equals(other.regions_)) return false;
       if (Country != other.Country) return false;
+      if (GameMode != other.GameMode) return false;
+      if (InGameMode != other.InGameMode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -435,6 +546,8 @@ namespace Thetan.Immortal.V1 {
       hash ^= players_.GetHashCode();
       hash ^= regions_.GetHashCode();
       if (Country.Length != 0) hash ^= Country.GetHashCode();
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) hash ^= GameMode.GetHashCode();
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) hash ^= InGameMode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -459,6 +572,14 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(26);
         output.WriteString(Country);
       }
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) GameMode);
+      }
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) InGameMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -475,6 +596,14 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(26);
         output.WriteString(Country);
       }
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) GameMode);
+      }
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) InGameMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -489,6 +618,12 @@ namespace Thetan.Immortal.V1 {
       size += regions_.CalculateSize(_repeated_regions_codec);
       if (Country.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Country);
+      }
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) GameMode);
+      }
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InGameMode);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -506,6 +641,12 @@ namespace Thetan.Immortal.V1 {
       regions_.Add(other.regions_);
       if (other.Country.Length != 0) {
         Country = other.Country;
+      }
+      if (other.GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        GameMode = other.GameMode;
+      }
+      if (other.InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        InGameMode = other.InGameMode;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -535,6 +676,14 @@ namespace Thetan.Immortal.V1 {
             Country = input.ReadString();
             break;
           }
+          case 32: {
+            GameMode = (global::Thetan.Immortal.V1.GameMode) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            InGameMode = (global::Thetan.Immortal.V1.InGameMode) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -561,6 +710,14 @@ namespace Thetan.Immortal.V1 {
           }
           case 26: {
             Country = input.ReadString();
+            break;
+          }
+          case 32: {
+            GameMode = (global::Thetan.Immortal.V1.GameMode) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            InGameMode = (global::Thetan.Immortal.V1.InGameMode) input.ReadEnum();
             break;
           }
         }
@@ -1288,6 +1445,8 @@ namespace Thetan.Immortal.V1 {
       players_ = other.players_.Clone();
       regions_ = other.regions_.Clone();
       country_ = other.country_;
+      gameMode_ = other.gameMode_;
+      inGameMode_ = other.inGameMode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1331,6 +1490,30 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
+    /// <summary>Field number for the "gameMode" field.</summary>
+    public const int GameModeFieldNumber = 4;
+    private global::Thetan.Immortal.V1.GameMode gameMode_ = global::Thetan.Immortal.V1.GameMode.NoneMode;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Immortal.V1.GameMode GameMode {
+      get { return gameMode_; }
+      set {
+        gameMode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "inGameMode" field.</summary>
+    public const int InGameModeFieldNumber = 5;
+    private global::Thetan.Immortal.V1.InGameMode inGameMode_ = global::Thetan.Immortal.V1.InGameMode.Solo;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Immortal.V1.InGameMode InGameMode {
+      get { return inGameMode_; }
+      set {
+        inGameMode_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1349,6 +1532,8 @@ namespace Thetan.Immortal.V1 {
       if(!players_.Equals(other.players_)) return false;
       if(!regions_.Equals(other.regions_)) return false;
       if (Country != other.Country) return false;
+      if (GameMode != other.GameMode) return false;
+      if (InGameMode != other.InGameMode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1359,6 +1544,8 @@ namespace Thetan.Immortal.V1 {
       hash ^= players_.GetHashCode();
       hash ^= regions_.GetHashCode();
       if (Country.Length != 0) hash ^= Country.GetHashCode();
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) hash ^= GameMode.GetHashCode();
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) hash ^= InGameMode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1383,6 +1570,14 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(26);
         output.WriteString(Country);
       }
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) GameMode);
+      }
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) InGameMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1399,6 +1594,14 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(26);
         output.WriteString(Country);
       }
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) GameMode);
+      }
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) InGameMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1413,6 +1616,12 @@ namespace Thetan.Immortal.V1 {
       size += regions_.CalculateSize(_repeated_regions_codec);
       if (Country.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Country);
+      }
+      if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) GameMode);
+      }
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InGameMode);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1430,6 +1639,12 @@ namespace Thetan.Immortal.V1 {
       regions_.Add(other.regions_);
       if (other.Country.Length != 0) {
         Country = other.Country;
+      }
+      if (other.GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) {
+        GameMode = other.GameMode;
+      }
+      if (other.InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        InGameMode = other.InGameMode;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1459,6 +1674,14 @@ namespace Thetan.Immortal.V1 {
             Country = input.ReadString();
             break;
           }
+          case 32: {
+            GameMode = (global::Thetan.Immortal.V1.GameMode) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            InGameMode = (global::Thetan.Immortal.V1.InGameMode) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -1485,6 +1708,14 @@ namespace Thetan.Immortal.V1 {
           }
           case 26: {
             Country = input.ReadString();
+            break;
+          }
+          case 32: {
+            GameMode = (global::Thetan.Immortal.V1.GameMode) input.ReadEnum();
+            break;
+          }
+          case 40: {
+            InGameMode = (global::Thetan.Immortal.V1.InGameMode) input.ReadEnum();
             break;
           }
         }

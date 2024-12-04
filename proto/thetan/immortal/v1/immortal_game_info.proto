@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package thetan.immortal.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_immortal_v1";
+option csharp_namespace = "Thetan.Immortal.V1";
+
+enum GameMode {
+  NONE_MODE = 0;
+  RANKED = 1;
+  ONBOARDING = 2;
+  FRIENDLY = 3;
+}
+
+enum InGameMode {
+  SOLO = 0;
+}
