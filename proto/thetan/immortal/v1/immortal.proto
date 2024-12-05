@@ -3,6 +3,7 @@ syntax = "proto3";
 package thetan.immortal.v1;
 
 import "thetan/immortal/v1/immortal_shared.proto";
+import "thetan/immortal/v1/immortal_game_info.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_immortal_v1";
 option csharp_namespace = "Thetan.Immortal.V1";
@@ -47,7 +48,7 @@ message GetUserProfileResponse {
 message BattleEndRequest{
   string roomName = 1;//matchID
   repeated PlayerMatchInfo players = 2;
-  int32 battleType = 3;
+  GameMode gameMode = 3;
 }
 
 message PlayerMatchInfo{
