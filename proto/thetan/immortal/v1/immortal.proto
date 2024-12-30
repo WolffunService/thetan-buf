@@ -19,6 +19,8 @@ service ImmortalService {
   rpc GetListFriends(GetUserFriendRequest) returns (GetUserFriendResponse) {}
   // Seasonal
   rpc GetSeasonal(GetSeasonalRequest) returns (GetSeasonalResponse) {}
+
+  rpc TrackStartSession(TrackSessionRequest) returns (TrackSessionResponse) {}
 }
 
 message SearchPlayerInfoRequest {
@@ -136,4 +138,11 @@ message GetSeasonalRequest {
 
 message GetSeasonalResponse {
   int32 seasonID = 1;
+}
+
+message TrackSessionRequest {
+  string userID = 1;
+}
+
+message TrackSessionResponse {
 }

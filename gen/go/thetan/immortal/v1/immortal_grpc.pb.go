@@ -19,13 +19,14 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	ImmortalService_SearchPlayerInfo_FullMethodName = "/thetan.immortal.v1.ImmortalService/SearchPlayerInfo"
-	ImmortalService_GetUserProfile_FullMethodName   = "/thetan.immortal.v1.ImmortalService/GetUserProfile"
-	ImmortalService_BattleEnd_FullMethodName        = "/thetan.immortal.v1.ImmortalService/BattleEnd"
-	ImmortalService_GetHeroConfig_FullMethodName    = "/thetan.immortal.v1.ImmortalService/GetHeroConfig"
-	ImmortalService_GetSkillConfig_FullMethodName   = "/thetan.immortal.v1.ImmortalService/GetSkillConfig"
-	ImmortalService_GetListFriends_FullMethodName   = "/thetan.immortal.v1.ImmortalService/GetListFriends"
-	ImmortalService_GetSeasonal_FullMethodName      = "/thetan.immortal.v1.ImmortalService/GetSeasonal"
+	ImmortalService_SearchPlayerInfo_FullMethodName  = "/thetan.immortal.v1.ImmortalService/SearchPlayerInfo"
+	ImmortalService_GetUserProfile_FullMethodName    = "/thetan.immortal.v1.ImmortalService/GetUserProfile"
+	ImmortalService_BattleEnd_FullMethodName         = "/thetan.immortal.v1.ImmortalService/BattleEnd"
+	ImmortalService_GetHeroConfig_FullMethodName     = "/thetan.immortal.v1.ImmortalService/GetHeroConfig"
+	ImmortalService_GetSkillConfig_FullMethodName    = "/thetan.immortal.v1.ImmortalService/GetSkillConfig"
+	ImmortalService_GetListFriends_FullMethodName    = "/thetan.immortal.v1.ImmortalService/GetListFriends"
+	ImmortalService_GetSeasonal_FullMethodName       = "/thetan.immortal.v1.ImmortalService/GetSeasonal"
+	ImmortalService_TrackStartSession_FullMethodName = "/thetan.immortal.v1.ImmortalService/TrackStartSession"
 )
 
 // ImmortalServiceClient is the client API for ImmortalService service.
@@ -41,6 +42,7 @@ type ImmortalServiceClient interface {
 	GetListFriends(ctx context.Context, in *GetUserFriendRequest, opts ...grpc.CallOption) (*GetUserFriendResponse, error)
 	// Seasonal
 	GetSeasonal(ctx context.Context, in *GetSeasonalRequest, opts ...grpc.CallOption) (*GetSeasonalResponse, error)
+	TrackStartSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error)
 }
 
 type immortalServiceClient struct {
@@ -137,6 +139,15 @@ func (c *immortalServiceClient) GetSeasonal(ctx context.Context, in *GetSeasonal
 	return out, nil
 }
 
+func (c *immortalServiceClient) TrackStartSession(ctx context.Context, in *TrackSessionRequest, opts ...grpc.CallOption) (*TrackSessionResponse, error) {
+	out := new(TrackSessionResponse)
+	err := c.cc.Invoke(ctx, ImmortalService_TrackStartSession_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ImmortalServiceServer is the server API for ImmortalService service.
 // All implementations must embed UnimplementedImmortalServiceServer
 // for forward compatibility
@@ -150,6 +161,7 @@ type ImmortalServiceServer interface {
 	GetListFriends(context.Context, *GetUserFriendRequest) (*GetUserFriendResponse, error)
 	// Seasonal
 	GetSeasonal(context.Context, *GetSeasonalRequest) (*GetSeasonalResponse, error)
+	TrackStartSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error)
 	mustEmbedUnimplementedImmortalServiceServer()
 }
 
@@ -177,6 +189,9 @@ func (UnimplementedImmortalServiceServer) GetListFriends(context.Context, *GetUs
 }
 func (UnimplementedImmortalServiceServer) GetSeasonal(context.Context, *GetSeasonalRequest) (*GetSeasonalResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetSeasonal not implemented")
+}
+func (UnimplementedImmortalServiceServer) TrackStartSession(context.Context, *TrackSessionRequest) (*TrackSessionResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method TrackStartSession not implemented")
 }
 func (UnimplementedImmortalServiceServer) mustEmbedUnimplementedImmortalServiceServer() {}
 
@@ -320,6 +335,24 @@ func _ImmortalService_GetSeasonal_Handler(srv interface{}, ctx context.Context, 
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ImmortalService_TrackStartSession_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(TrackSessionRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ImmortalServiceServer).TrackStartSession(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: ImmortalService_TrackStartSession_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ImmortalServiceServer).TrackStartSession(ctx, req.(*TrackSessionRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ImmortalService_ServiceDesc is the grpc.ServiceDesc for ImmortalService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -350,6 +383,10 @@ var ImmortalService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetSeasonal",
 			Handler:    _ImmortalService_GetSeasonal_Handler,
+		},
+		{
+			MethodName: "TrackStartSession",
+			Handler:    _ImmortalService_TrackStartSession_Handler,
 		},
 	},
 	Streams: []grpc.StreamDesc{
