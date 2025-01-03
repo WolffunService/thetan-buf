@@ -36,7 +36,7 @@ namespace Thetan.Immortal.V1 {
             "ASgFUgZyYXJpdHkSGAoHc2tpbGxJRBgDIAEoBVIHc2tpbGxJRBIUCgVjbGFz",
             "cxgEIAEoBVIFY2xhc3MiVQoLU2tpbGxSYXRpbmcSFgoGcmF0aW5nGAEgASgB",
             "UgZyYXRpbmcSDgoCcmQYAiABKAFSAnJkEh4KCnZvbGF0aWxpdHkYAyABKAFS",
-            "CnZvbGF0aWxpdHkizAYKFFBsYXllckluZm9NYXRjaFByb3RvEhoKCHBsYXll",
+            "CnZvbGF0aWxpdHki0AYKFFBsYXllckluZm9NYXRjaFByb3RvEhoKCHBsYXll",
             "cklEGAEgASgJUghwbGF5ZXJJRBIeCgpwbGF5ZXJOYW1lGAIgASgJUgpwbGF5",
             "ZXJOYW1lEhoKCGF2YXRhcklEGAMgASgFUghhdmF0YXJJRBIYCgdmcmFtZUlE",
             "GAQgASgFUgdmcmFtZUlEEiAKC25hbWVDb2xvcklEGAUgASgFUgtuYW1lQ29s",
@@ -53,17 +53,17 @@ namespace Thetan.Immortal.V1 {
             "IAEoBVIId2luQ291bnQSMAoTcmVjZW50TWF0Y2hlZEhlcm9lcxgUIAMoBVIT",
             "cmVjZW50TWF0Y2hlZEhlcm9lcxIiCgxtYXhIZXJvTGV2ZWwYFSABKAVSDG1h",
             "eEhlcm9MZXZlbBIkCg1tYXhTa2lsbExldmVsGBYgASgFUg1tYXhTa2lsbExl",
-            "dmVsEiIKDGJhdHRsZVBhc3NJRBgXIAEoBVIMYmF0dGxlUGFzc0lEEjQKCGxp",
-            "c3RIZXJvGBggAygLMhgudGhldGFuLmltbW9ydGFsLnYxLkhlcm9SCGxpc3RI",
-            "ZXJvKqIBCgVBcmVuYRIICgROT05FEAASCwoHVFJBSU5FRRABEg8KC0FQUEVS",
-            "RU5USUNFEAISDgoKUEFUSEZJTkRFUhADEgsKB0ZJR0hURVIQBBIJCgVFTElU",
-            "RRAFEgoKBk1BU1RFUhAGEggKBEhFUk8QBxIMCghDSEFNUElPThAIEgoKBkxF",
-            "R0VORBAJEgwKCElNTU9SVEFMEAoSCwoHREVNSUdPRBALQtABChZjb20udGhl",
-            "dGFuLmltbW9ydGFsLnYxQhNJbW1vcnRhbFNoYXJlZFByb3RvUAFaN3RoZXRh",
-            "bi1idWYvZ2VuL2dvL3RoZXRhbi9pbW1vcnRhbC92MTt0aGV0YW5faW1tb3J0",
-            "YWxfdjGiAgNUSViqAhJUaGV0YW4uSW1tb3J0YWwuVjHKAhJUaGV0YW5cSW1t",
-            "b3J0YWxcVjHiAh5UaGV0YW5cSW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHqAhRU",
-            "aGV0YW46OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
+            "dmVsEiIKDGJhdHRsZVBhc3NJRBgXIAEoBVIMYmF0dGxlUGFzc0lEEjgKCmxp",
+            "c3RIZXJvZXMYGCADKAsyGC50aGV0YW4uaW1tb3J0YWwudjEuSGVyb1IKbGlz",
+            "dEhlcm9lcyqiAQoFQXJlbmESCAoETk9ORRAAEgsKB1RSQUlORUUQARIPCgtB",
+            "UFBFUkVOVElDRRACEg4KClBBVEhGSU5ERVIQAxILCgdGSUdIVEVSEAQSCQoF",
+            "RUxJVEUQBRIKCgZNQVNURVIQBhIICgRIRVJPEAcSDAoIQ0hBTVBJT04QCBIK",
+            "CgZMRUdFTkQQCRIMCghJTU1PUlRBTBAKEgsKB0RFTUlHT0QQC0LQAQoWY29t",
+            "LnRoZXRhbi5pbW1vcnRhbC52MUITSW1tb3J0YWxTaGFyZWRQcm90b1ABWjd0",
+            "aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vaW1tb3J0YWwvdjE7dGhldGFuX2lt",
+            "bW9ydGFsX3YxogIDVElYqgISVGhldGFuLkltbW9ydGFsLlYxygISVGhldGFu",
+            "XEltbW9ydGFsXFYx4gIeVGhldGFuXEltbW9ydGFsXFYxXEdQQk1ldGFkYXRh",
+            "6gIUVGhldGFuOjpJbW1vcnRhbDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Immortal.V1.Arena), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -72,7 +72,7 @@ namespace Thetan.Immortal.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.Skill), global::Thetan.Immortal.V1.Skill.Parser, new[]{ "SkillID", "Level" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SkillFull), global::Thetan.Immortal.V1.SkillFull.Parser, new[]{ "Name", "Rarity", "SkillID", "Class" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SkillRating), global::Thetan.Immortal.V1.SkillRating.Parser, new[]{ "Rating", "Rd", "Volatility" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.PlayerInfoMatchProto), global::Thetan.Immortal.V1.PlayerInfoMatchProto.Parser, new[]{ "PlayerID", "PlayerName", "AvatarID", "FrameID", "NameColorID", "BattleCount", "PartyID", "TrophyRank", "TrophySearch", "Rank", "Hero", "Skills", "BotBrain", "Arena", "WinRate", "Rating", "Rd", "Volatility", "WinCount", "RecentMatchedHeroes", "MaxHeroLevel", "MaxSkillLevel", "BattlePassID", "ListHero" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.PlayerInfoMatchProto), global::Thetan.Immortal.V1.PlayerInfoMatchProto.Parser, new[]{ "PlayerID", "PlayerName", "AvatarID", "FrameID", "NameColorID", "BattleCount", "PartyID", "TrophyRank", "TrophySearch", "Rank", "Hero", "Skills", "BotBrain", "Arena", "WinRate", "Rating", "Rd", "Volatility", "WinCount", "RecentMatchedHeroes", "MaxHeroLevel", "MaxSkillLevel", "BattlePassID", "ListHeroes" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1580,7 +1580,7 @@ namespace Thetan.Immortal.V1 {
       maxHeroLevel_ = other.maxHeroLevel_;
       maxSkillLevel_ = other.maxSkillLevel_;
       battlePassID_ = other.battlePassID_;
-      listHero_ = other.listHero_.Clone();
+      listHeroes_ = other.listHeroes_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1870,15 +1870,15 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
-    /// <summary>Field number for the "listHero" field.</summary>
-    public const int ListHeroFieldNumber = 24;
-    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.Hero> _repeated_listHero_codec
+    /// <summary>Field number for the "listHeroes" field.</summary>
+    public const int ListHeroesFieldNumber = 24;
+    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.Hero> _repeated_listHeroes_codec
         = pb::FieldCodec.ForMessage(194, global::Thetan.Immortal.V1.Hero.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.Hero> listHero_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.Hero>();
+    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.Hero> listHeroes_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.Hero>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Immortal.V1.Hero> ListHero {
-      get { return listHero_; }
+    public pbc::RepeatedField<global::Thetan.Immortal.V1.Hero> ListHeroes {
+      get { return listHeroes_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1919,7 +1919,7 @@ namespace Thetan.Immortal.V1 {
       if (MaxHeroLevel != other.MaxHeroLevel) return false;
       if (MaxSkillLevel != other.MaxSkillLevel) return false;
       if (BattlePassID != other.BattlePassID) return false;
-      if(!listHero_.Equals(other.listHero_)) return false;
+      if(!listHeroes_.Equals(other.listHeroes_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1950,7 +1950,7 @@ namespace Thetan.Immortal.V1 {
       if (MaxHeroLevel != 0) hash ^= MaxHeroLevel.GetHashCode();
       if (MaxSkillLevel != 0) hash ^= MaxSkillLevel.GetHashCode();
       if (BattlePassID != 0) hash ^= BattlePassID.GetHashCode();
-      hash ^= listHero_.GetHashCode();
+      hash ^= listHeroes_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2055,7 +2055,7 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(184, 1);
         output.WriteInt32(BattlePassID);
       }
-      listHero_.WriteTo(output, _repeated_listHero_codec);
+      listHeroes_.WriteTo(output, _repeated_listHeroes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2152,7 +2152,7 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(184, 1);
         output.WriteInt32(BattlePassID);
       }
-      listHero_.WriteTo(ref output, _repeated_listHero_codec);
+      listHeroes_.WriteTo(ref output, _repeated_listHeroes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2228,7 +2228,7 @@ namespace Thetan.Immortal.V1 {
       if (BattlePassID != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(BattlePassID);
       }
-      size += listHero_.CalculateSize(_repeated_listHero_codec);
+      size += listHeroes_.CalculateSize(_repeated_listHeroes_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2309,7 +2309,7 @@ namespace Thetan.Immortal.V1 {
       if (other.BattlePassID != 0) {
         BattlePassID = other.BattlePassID;
       }
-      listHero_.Add(other.listHero_);
+      listHeroes_.Add(other.listHeroes_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2422,7 +2422,7 @@ namespace Thetan.Immortal.V1 {
             break;
           }
           case 194: {
-            listHero_.AddEntriesFrom(input, _repeated_listHero_codec);
+            listHeroes_.AddEntriesFrom(input, _repeated_listHeroes_codec);
             break;
           }
         }
@@ -2537,7 +2537,7 @@ namespace Thetan.Immortal.V1 {
             break;
           }
           case 194: {
-            listHero_.AddEntriesFrom(ref input, _repeated_listHero_codec);
+            listHeroes_.AddEntriesFrom(ref input, _repeated_listHeroes_codec);
             break;
           }
         }
