@@ -25,17 +25,21 @@ namespace Thetan.Immortal.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cit0aGV0YW4vaW1tb3J0YWwvdjEvaW1tb3J0YWxfZ2FtZV9pbmZvLnByb3Rv",
-            "EhJ0aGV0YW4uaW1tb3J0YWwudjEqQwoIR2FtZU1vZGUSDQoJTk9ORV9NT0RF",
-            "EAASCgoGUkFOS0VEEAESDgoKT05CT0FSRElORxACEgwKCEZSSUVORExZEAMq",
-            "FgoKSW5HYW1lTW9kZRIICgRTT0xPEABC0gEKFmNvbS50aGV0YW4uaW1tb3J0",
-            "YWwudjFCFUltbW9ydGFsR2FtZUluZm9Qcm90b1ABWjd0aGV0YW4tYnVmL2dl",
-            "bi9nby90aGV0YW4vaW1tb3J0YWwvdjE7dGhldGFuX2ltbW9ydGFsX3YxogID",
-            "VElYqgISVGhldGFuLkltbW9ydGFsLlYxygISVGhldGFuXEltbW9ydGFsXFYx",
-            "4gIeVGhldGFuXEltbW9ydGFsXFYxXEdQQk1ldGFkYXRh6gIUVGhldGFuOjpJ",
-            "bW1vcnRhbDo6VjFiBnByb3RvMw=="));
+            "EhJ0aGV0YW4uaW1tb3J0YWwudjEiUgoQU2V0SW5HYW1lTW9kZU1zZxI+Cgpp",
+            "bkdhbWVNb2RlGAEgASgOMh4udGhldGFuLmltbW9ydGFsLnYxLkluR2FtZU1v",
+            "ZGVSCmluR2FtZU1vZGUqQwoIR2FtZU1vZGUSDQoJTk9ORV9NT0RFEAASCgoG",
+            "UkFOS0VEEAESDgoKT05CT0FSRElORxACEgwKCEZSSUVORExZEAMqHgoKSW5H",
+            "YW1lTW9kZRIICgRTT0xPEAASBgoCS08QAULSAQoWY29tLnRoZXRhbi5pbW1v",
+            "cnRhbC52MUIVSW1tb3J0YWxHYW1lSW5mb1Byb3RvUAFaN3RoZXRhbi1idWYv",
+            "Z2VuL2dvL3RoZXRhbi9pbW1vcnRhbC92MTt0aGV0YW5faW1tb3J0YWxfdjGi",
+            "AgNUSViqAhJUaGV0YW4uSW1tb3J0YWwuVjHKAhJUaGV0YW5cSW1tb3J0YWxc",
+            "VjHiAh5UaGV0YW5cSW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHqAhRUaGV0YW46",
+            "OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Immortal.V1.GameMode), typeof(global::Thetan.Immortal.V1.InGameMode), }, null, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Immortal.V1.GameMode), typeof(global::Thetan.Immortal.V1.InGameMode), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SetInGameModeMsg), global::Thetan.Immortal.V1.SetInGameModeMsg.Parser, new[]{ "InGameMode" }, null, null, null, null)
+          }));
     }
     #endregion
 
@@ -50,6 +54,199 @@ namespace Thetan.Immortal.V1 {
 
   public enum InGameMode {
     [pbr::OriginalName("SOLO")] Solo = 0,
+    [pbr::OriginalName("KO")] Ko = 1,
+  }
+
+  #endregion
+
+  #region Messages
+  public sealed partial class SetInGameModeMsg : pb::IMessage<SetInGameModeMsg>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SetInGameModeMsg> _parser = new pb::MessageParser<SetInGameModeMsg>(() => new SetInGameModeMsg());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SetInGameModeMsg> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Immortal.V1.ImmortalGameInfoReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetInGameModeMsg() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetInGameModeMsg(SetInGameModeMsg other) : this() {
+      inGameMode_ = other.inGameMode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SetInGameModeMsg Clone() {
+      return new SetInGameModeMsg(this);
+    }
+
+    /// <summary>Field number for the "inGameMode" field.</summary>
+    public const int InGameModeFieldNumber = 1;
+    private global::Thetan.Immortal.V1.InGameMode inGameMode_ = global::Thetan.Immortal.V1.InGameMode.Solo;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Immortal.V1.InGameMode InGameMode {
+      get { return inGameMode_; }
+      set {
+        inGameMode_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SetInGameModeMsg);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SetInGameModeMsg other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (InGameMode != other.InGameMode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) hash ^= InGameMode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) InGameMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) InGameMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InGameMode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SetInGameModeMsg other) {
+      if (other == null) {
+        return;
+      }
+      if (other.InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
+        InGameMode = other.InGameMode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            InGameMode = (global::Thetan.Immortal.V1.InGameMode) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            InGameMode = (global::Thetan.Immortal.V1.InGameMode) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
   }
 
   #endregion
