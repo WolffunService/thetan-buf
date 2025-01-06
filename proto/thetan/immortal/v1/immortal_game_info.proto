@@ -14,4 +14,9 @@ enum GameMode {
 
 enum InGameMode {
   SOLO = 0;
+  KO = 1;
+}
+
+message SetInGameModeMsg{
+  InGameMode inGameMode = 1;
 }
