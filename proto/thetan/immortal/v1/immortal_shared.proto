@@ -6,7 +6,7 @@ option go_package = "thetan-buf/gen/go/thetan/immortal/v1;thetan_immortal_v1";
 option csharp_namespace = "Thetan.Immortal.V1";
 
 message Hero {
-  string heroID = 1;
+  string heroID = 1 [deprecated=true];
   int32 skinID = 2;
   int32 level = 3;
   int32 type = 4;
@@ -43,7 +43,6 @@ message SkillRating {
   double rd = 2;
   double volatility = 3;
 }
-
 
 message PlayerInfoMatchProto {
   string playerID = 1;

@@ -51,13 +51,17 @@ message BattleEndRequest{
   string roomName = 1;//matchID
   repeated PlayerMatchInfo players = 2;
   GameMode gameMode = 3;
+  InGameMode inGameMode = 4;
 }
 
 message PlayerMatchInfo{
   string playerID = 1;
   int32 gameResult = 2;
-  Hero hero = 3;
+  Hero hero = 3 [deprecated=true];
   repeated Skill skills = 4;
+  repeated BattleEndHero heroes = 5;
+  int32 botBrain = 6;
+  int32 lastUsedHeroID = 7;
 }
 
 message BattleEndResponse{
@@ -70,8 +74,11 @@ message BattleEndResponse{
   int32  cumulativeBattlePoint = 7;
   Arena arena = 8;
   repeated BattleEndPlayer players = 9;
-  BattleEndHero hero = 10;
+  BattleEndHero hero = 10 [deprecated=true];
   repeated Skill skills = 11;
+  repeated BattleEndHero heroes = 12;
+  int32 x2BattlePoint = 13;
+  int32 lastUsedHeroID = 14;
 }
 
 message BattleEndPlayer {
@@ -80,9 +87,11 @@ message BattleEndPlayer {
 }
 
 message BattleEndHero {
-  int32 heroID = 1;
-  int32 rarity = 2;
-  int32 level = 3;
+  int32 skinID = 1;
+  int32 level = 2;
+  int32 type = 3;
+  int32 rarity = 4;
+  bool isAlive = 5;
 }
 
 message GetHeroConfigRequest {}
