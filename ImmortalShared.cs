@@ -28,47 +28,50 @@ namespace Thetan.Immortal.V1 {
             "aGV0YW4uaW1tb3J0YWwudjEieAoESGVybxIWCgZoZXJvSUQYASABKAlSBmhl",
             "cm9JRBIWCgZza2luSUQYAiABKAVSBnNraW5JRBIUCgVsZXZlbBgDIAEoBVIF",
             "bGV2ZWwSEgoEdHlwZRgEIAEoBVIEdHlwZRIWCgZyYXJpdHkYBSABKAVSBnJh",
-            "cml0eSJ0CghIZXJvRnVsbBISCgRuYW1lGAEgASgJUgRuYW1lEhYKBnJhcml0",
-            "eRgCIAEoBVIGcmFyaXR5EhYKBmhlcm9JRBgDIAEoBVIGaGVyb0lEEiQKDWRl",
-            "ZmF1bHRTa2luSUQYBCABKAVSDWRlZmF1bHRTa2luSUQiNwoFU2tpbGwSGAoH",
-            "c2tpbGxJRBgBIAEoDVIHc2tpbGxJRBIUCgVsZXZlbBgCIAEoBVIFbGV2ZWwi",
-            "ZwoJU2tpbGxGdWxsEhIKBG5hbWUYASABKAlSBG5hbWUSFgoGcmFyaXR5GAIg",
-            "ASgFUgZyYXJpdHkSGAoHc2tpbGxJRBgDIAEoBVIHc2tpbGxJRBIUCgVjbGFz",
-            "cxgEIAEoBVIFY2xhc3MiVQoLU2tpbGxSYXRpbmcSFgoGcmF0aW5nGAEgASgB",
-            "UgZyYXRpbmcSDgoCcmQYAiABKAFSAnJkEh4KCnZvbGF0aWxpdHkYAyABKAFS",
-            "CnZvbGF0aWxpdHki0AYKFFBsYXllckluZm9NYXRjaFByb3RvEhoKCHBsYXll",
-            "cklEGAEgASgJUghwbGF5ZXJJRBIeCgpwbGF5ZXJOYW1lGAIgASgJUgpwbGF5",
-            "ZXJOYW1lEhoKCGF2YXRhcklEGAMgASgFUghhdmF0YXJJRBIYCgdmcmFtZUlE",
-            "GAQgASgFUgdmcmFtZUlEEiAKC25hbWVDb2xvcklEGAUgASgFUgtuYW1lQ29s",
-            "b3JJRBIgCgtiYXR0bGVDb3VudBgGIAEoBVILYmF0dGxlQ291bnQSGAoHcGFy",
-            "dHlJRBgHIAEoCVIHcGFydHlJRBIiCgp0cm9waHlSYW5rGAggASgFQgIYAVIK",
-            "dHJvcGh5UmFuaxImCgx0cm9waHlTZWFyY2gYCSABKAVCAhgBUgx0cm9waHlT",
-            "ZWFyY2gSFgoEcmFuaxgKIAEoBUICGAFSBHJhbmsSLAoEaGVybxgLIAEoCzIY",
-            "LnRoZXRhbi5pbW1vcnRhbC52MS5IZXJvUgRoZXJvEjEKBnNraWxscxgMIAMo",
-            "CzIZLnRoZXRhbi5pbW1vcnRhbC52MS5Ta2lsbFIGc2tpbGxzEhoKCGJvdEJy",
-            "YWluGA0gASgFUghib3RCcmFpbhIvCgVhcmVuYRgOIAEoDjIZLnRoZXRhbi5p",
-            "bW1vcnRhbC52MS5BcmVuYVIFYXJlbmESGAoHd2luUmF0ZRgPIAEoAVIHd2lu",
-            "UmF0ZRIWCgZyYXRpbmcYECABKAFSBnJhdGluZxIOCgJyZBgRIAEoAVICcmQS",
-            "HgoKdm9sYXRpbGl0eRgSIAEoAVIKdm9sYXRpbGl0eRIaCgh3aW5Db3VudBgT",
-            "IAEoBVIId2luQ291bnQSMAoTcmVjZW50TWF0Y2hlZEhlcm9lcxgUIAMoBVIT",
-            "cmVjZW50TWF0Y2hlZEhlcm9lcxIiCgxtYXhIZXJvTGV2ZWwYFSABKAVSDG1h",
-            "eEhlcm9MZXZlbBIkCg1tYXhTa2lsbExldmVsGBYgASgFUg1tYXhTa2lsbExl",
-            "dmVsEiIKDGJhdHRsZVBhc3NJRBgXIAEoBVIMYmF0dGxlUGFzc0lEEjgKCmxp",
-            "c3RIZXJvZXMYGCADKAsyGC50aGV0YW4uaW1tb3J0YWwudjEuSGVyb1IKbGlz",
-            "dEhlcm9lcyqiAQoFQXJlbmESCAoETk9ORRAAEgsKB1RSQUlORUUQARIPCgtB",
-            "UFBFUkVOVElDRRACEg4KClBBVEhGSU5ERVIQAxILCgdGSUdIVEVSEAQSCQoF",
-            "RUxJVEUQBRIKCgZNQVNURVIQBhIICgRIRVJPEAcSDAoIQ0hBTVBJT04QCBIK",
-            "CgZMRUdFTkQQCRIMCghJTU1PUlRBTBAKEgsKB0RFTUlHT0QQC0LQAQoWY29t",
-            "LnRoZXRhbi5pbW1vcnRhbC52MUITSW1tb3J0YWxTaGFyZWRQcm90b1ABWjd0",
-            "aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vaW1tb3J0YWwvdjE7dGhldGFuX2lt",
-            "bW9ydGFsX3YxogIDVElYqgISVGhldGFuLkltbW9ydGFsLlYxygISVGhldGFu",
-            "XEltbW9ydGFsXFYx4gIeVGhldGFuXEltbW9ydGFsXFYxXEdQQk1ldGFkYXRh",
-            "6gIUVGhldGFuOjpJbW1vcnRhbDo6VjFiBnByb3RvMw=="));
+            "cml0eSKkAQoISGVyb0Z1bGwSEgoEbmFtZRgBIAEoCVIEbmFtZRIWCgZyYXJp",
+            "dHkYAiABKAVSBnJhcml0eRIWCgZoZXJvSUQYAyABKAVSBmhlcm9JRBIkCg1k",
+            "ZWZhdWx0U2tpbklEGAQgASgFUg1kZWZhdWx0U2tpbklEEi4KBXNraW5zGAUg",
+            "AygLMhgudGhldGFuLmltbW9ydGFsLnYxLlNraW5SBXNraW5zIi4KBFNraW4S",
+            "DgoCSUQYASABKAVSAklEEhYKBnJhcml0eRgCIAEoBVIGcmFyaXR5IjcKBVNr",
+            "aWxsEhgKB3NraWxsSUQYASABKA1SB3NraWxsSUQSFAoFbGV2ZWwYAiABKAVS",
+            "BWxldmVsImcKCVNraWxsRnVsbBISCgRuYW1lGAEgASgJUgRuYW1lEhYKBnJh",
+            "cml0eRgCIAEoBVIGcmFyaXR5EhgKB3NraWxsSUQYAyABKAVSB3NraWxsSUQS",
+            "FAoFY2xhc3MYBCABKAVSBWNsYXNzIlUKC1NraWxsUmF0aW5nEhYKBnJhdGlu",
+            "ZxgBIAEoAVIGcmF0aW5nEg4KAnJkGAIgASgBUgJyZBIeCgp2b2xhdGlsaXR5",
+            "GAMgASgBUgp2b2xhdGlsaXR5ItAGChRQbGF5ZXJJbmZvTWF0Y2hQcm90bxIa",
+            "CghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSHgoKcGxheWVyTmFtZRgCIAEo",
+            "CVIKcGxheWVyTmFtZRIaCghhdmF0YXJJRBgDIAEoBVIIYXZhdGFySUQSGAoH",
+            "ZnJhbWVJRBgEIAEoBVIHZnJhbWVJRBIgCgtuYW1lQ29sb3JJRBgFIAEoBVIL",
+            "bmFtZUNvbG9ySUQSIAoLYmF0dGxlQ291bnQYBiABKAVSC2JhdHRsZUNvdW50",
+            "EhgKB3BhcnR5SUQYByABKAlSB3BhcnR5SUQSIgoKdHJvcGh5UmFuaxgIIAEo",
+            "BUICGAFSCnRyb3BoeVJhbmsSJgoMdHJvcGh5U2VhcmNoGAkgASgFQgIYAVIM",
+            "dHJvcGh5U2VhcmNoEhYKBHJhbmsYCiABKAVCAhgBUgRyYW5rEiwKBGhlcm8Y",
+            "CyABKAsyGC50aGV0YW4uaW1tb3J0YWwudjEuSGVyb1IEaGVybxIxCgZza2ls",
+            "bHMYDCADKAsyGS50aGV0YW4uaW1tb3J0YWwudjEuU2tpbGxSBnNraWxscxIa",
+            "Cghib3RCcmFpbhgNIAEoBVIIYm90QnJhaW4SLwoFYXJlbmEYDiABKA4yGS50",
+            "aGV0YW4uaW1tb3J0YWwudjEuQXJlbmFSBWFyZW5hEhgKB3dpblJhdGUYDyAB",
+            "KAFSB3dpblJhdGUSFgoGcmF0aW5nGBAgASgBUgZyYXRpbmcSDgoCcmQYESAB",
+            "KAFSAnJkEh4KCnZvbGF0aWxpdHkYEiABKAFSCnZvbGF0aWxpdHkSGgoId2lu",
+            "Q291bnQYEyABKAVSCHdpbkNvdW50EjAKE3JlY2VudE1hdGNoZWRIZXJvZXMY",
+            "FCADKAVSE3JlY2VudE1hdGNoZWRIZXJvZXMSIgoMbWF4SGVyb0xldmVsGBUg",
+            "ASgFUgxtYXhIZXJvTGV2ZWwSJAoNbWF4U2tpbGxMZXZlbBgWIAEoBVINbWF4",
+            "U2tpbGxMZXZlbBIiCgxiYXR0bGVQYXNzSUQYFyABKAVSDGJhdHRsZVBhc3NJ",
+            "RBI4CgpsaXN0SGVyb2VzGBggAygLMhgudGhldGFuLmltbW9ydGFsLnYxLkhl",
+            "cm9SCmxpc3RIZXJvZXMqogEKBUFyZW5hEggKBE5PTkUQABILCgdUUkFJTkVF",
+            "EAESDwoLQVBQRVJFTlRJQ0UQAhIOCgpQQVRIRklOREVSEAMSCwoHRklHSFRF",
+            "UhAEEgkKBUVMSVRFEAUSCgoGTUFTVEVSEAYSCAoESEVSTxAHEgwKCENIQU1Q",
+            "SU9OEAgSCgoGTEVHRU5EEAkSDAoISU1NT1JUQUwQChILCgdERU1JR09EEAtC",
+            "0AEKFmNvbS50aGV0YW4uaW1tb3J0YWwudjFCE0ltbW9ydGFsU2hhcmVkUHJv",
+            "dG9QAVo3dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2ltbW9ydGFsL3YxO3Ro",
+            "ZXRhbl9pbW1vcnRhbF92MaICA1RJWKoCElRoZXRhbi5JbW1vcnRhbC5WMcoC",
+            "ElRoZXRhblxJbW1vcnRhbFxWMeICHlRoZXRhblxJbW1vcnRhbFxWMVxHUEJN",
+            "ZXRhZGF0YeoCFFRoZXRhbjo6SW1tb3J0YWw6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Immortal.V1.Arena), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.Hero), global::Thetan.Immortal.V1.Hero.Parser, new[]{ "HeroID", "SkinID", "Level", "Type", "Rarity" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.HeroFull), global::Thetan.Immortal.V1.HeroFull.Parser, new[]{ "Name", "Rarity", "HeroID", "DefaultSkinID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.HeroFull), global::Thetan.Immortal.V1.HeroFull.Parser, new[]{ "Name", "Rarity", "HeroID", "DefaultSkinID", "Skins" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.Skin), global::Thetan.Immortal.V1.Skin.Parser, new[]{ "ID", "Rarity" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.Skill), global::Thetan.Immortal.V1.Skill.Parser, new[]{ "SkillID", "Level" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SkillFull), global::Thetan.Immortal.V1.SkillFull.Parser, new[]{ "Name", "Rarity", "SkillID", "Class" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SkillRating), global::Thetan.Immortal.V1.SkillRating.Parser, new[]{ "Rating", "Rd", "Volatility" }, null, null, null, null),
@@ -472,6 +475,7 @@ namespace Thetan.Immortal.V1 {
       rarity_ = other.rarity_;
       heroID_ = other.heroID_;
       defaultSkinID_ = other.defaultSkinID_;
+      skins_ = other.skins_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -529,6 +533,17 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
+    /// <summary>Field number for the "skins" field.</summary>
+    public const int SkinsFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.Skin> _repeated_skins_codec
+        = pb::FieldCodec.ForMessage(42, global::Thetan.Immortal.V1.Skin.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.Skin> skins_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.Skin>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Thetan.Immortal.V1.Skin> Skins {
+      get { return skins_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -548,6 +563,7 @@ namespace Thetan.Immortal.V1 {
       if (Rarity != other.Rarity) return false;
       if (HeroID != other.HeroID) return false;
       if (DefaultSkinID != other.DefaultSkinID) return false;
+      if(!skins_.Equals(other.skins_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -559,6 +575,7 @@ namespace Thetan.Immortal.V1 {
       if (Rarity != 0) hash ^= Rarity.GetHashCode();
       if (HeroID != 0) hash ^= HeroID.GetHashCode();
       if (DefaultSkinID != 0) hash ^= DefaultSkinID.GetHashCode();
+      hash ^= skins_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -593,6 +610,7 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(32);
         output.WriteInt32(DefaultSkinID);
       }
+      skins_.WriteTo(output, _repeated_skins_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -619,6 +637,7 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(32);
         output.WriteInt32(DefaultSkinID);
       }
+      skins_.WriteTo(ref output, _repeated_skins_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -641,6 +660,7 @@ namespace Thetan.Immortal.V1 {
       if (DefaultSkinID != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(DefaultSkinID);
       }
+      size += skins_.CalculateSize(_repeated_skins_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -665,6 +685,7 @@ namespace Thetan.Immortal.V1 {
       if (other.DefaultSkinID != 0) {
         DefaultSkinID = other.DefaultSkinID;
       }
+      skins_.Add(other.skins_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -694,6 +715,10 @@ namespace Thetan.Immortal.V1 {
           }
           case 32: {
             DefaultSkinID = input.ReadInt32();
+            break;
+          }
+          case 42: {
+            skins_.AddEntriesFrom(input, _repeated_skins_codec);
             break;
           }
         }
@@ -727,6 +752,236 @@ namespace Thetan.Immortal.V1 {
             DefaultSkinID = input.ReadInt32();
             break;
           }
+          case 42: {
+            skins_.AddEntriesFrom(ref input, _repeated_skins_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class Skin : pb::IMessage<Skin>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Skin> _parser = new pb::MessageParser<Skin>(() => new Skin());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<Skin> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Skin() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Skin(Skin other) : this() {
+      iD_ = other.iD_;
+      rarity_ = other.rarity_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Skin Clone() {
+      return new Skin(this);
+    }
+
+    /// <summary>Field number for the "ID" field.</summary>
+    public const int IDFieldNumber = 1;
+    private int iD_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ID {
+      get { return iD_; }
+      set {
+        iD_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rarity" field.</summary>
+    public const int RarityFieldNumber = 2;
+    private int rarity_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Rarity {
+      get { return rarity_; }
+      set {
+        rarity_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as Skin);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(Skin other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ID != other.ID) return false;
+      if (Rarity != other.Rarity) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ID != 0) hash ^= ID.GetHashCode();
+      if (Rarity != 0) hash ^= Rarity.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ID != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ID);
+      }
+      if (Rarity != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Rarity);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ID != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ID);
+      }
+      if (Rarity != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Rarity);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ID);
+      }
+      if (Rarity != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Rarity);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(Skin other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ID != 0) {
+        ID = other.ID;
+      }
+      if (other.Rarity != 0) {
+        Rarity = other.Rarity;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ID = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Rarity = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ID = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Rarity = input.ReadInt32();
+            break;
+          }
         }
       }
     }
@@ -748,7 +1003,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -974,7 +1229,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1274,7 +1529,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1537,7 +1792,7 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
