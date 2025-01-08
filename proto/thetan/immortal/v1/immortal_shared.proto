@@ -18,6 +18,12 @@ message HeroFull {
   int32 rarity = 2;
   int32 heroID = 3;
   int32 defaultSkinID = 4;
+  repeated Skin skins = 5;
+}
+
+message Skin {
+  int32 ID = 1;
+  int32 rarity = 2;
 }
 
 message Skill {
