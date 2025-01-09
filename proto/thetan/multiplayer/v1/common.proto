@@ -315,3 +315,12 @@ enum PartyType {
 message RequestCreatePartyMsg{
   PartyType partyType = 1;
 }
+
+
+message ReconnectMatchMsg
+{
+  string serverIP = 1;
+  uint32 serverPort = 2;
+  string roomID = 3;
+}
+
