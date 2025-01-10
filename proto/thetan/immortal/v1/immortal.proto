@@ -59,7 +59,7 @@ message PlayerMatchInfo{
   int32 gameResult = 2;
   Hero hero = 3 [deprecated=true];
   repeated Skill skills = 4;
-  repeated BattleEndHero heroes = 5;
+  repeated Hero heroes = 5;
   int32 botBrain = 6;
   int32 lastUsedHeroID = 7;
 }

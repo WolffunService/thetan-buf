@@ -530,7 +530,7 @@ type PlayerInfoMatchProto struct {
 	RecentMatchedHeroes []int32  `protobuf:"varint,20,rep,packed,name=recentMatchedHeroes,proto3" json:"recentMatchedHeroes,omitempty"`
 	MaxHeroLevel        int32    `protobuf:"varint,21,opt,name=maxHeroLevel,proto3" json:"maxHeroLevel,omitempty"`
 	MaxSkillLevel       int32    `protobuf:"varint,22,opt,name=maxSkillLevel,proto3" json:"maxSkillLevel,omitempty"`
-	// premium user
+	//premium user
 	BattlePassID int32   `protobuf:"varint,23,opt,name=battlePassID,proto3" json:"battlePassID,omitempty"`
 	ListHeroes   []*Hero `protobuf:"bytes,24,rep,name=listHeroes,proto3" json:"listHeroes,omitempty"`
 }
