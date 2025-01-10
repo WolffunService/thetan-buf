@@ -78,7 +78,7 @@ message BattleEndResponse{
   repeated Skill skills = 11;
   repeated BattleEndHero heroes = 12;
   int32 x2BattlePoint = 13;
-  int32 lastUsedHeroID = 14;
+  BattleEndHero lastUsedHero = 14;
 }
 
 message BattleEndPlayer {
