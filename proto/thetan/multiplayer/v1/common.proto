@@ -123,6 +123,17 @@ message ResponseChatMessageProto{
   }
 }
 
+enum ChatStatus{
+  ChatStatusNormal = 0;
+  ChatStatusWarning = 1;
+  ChatStatusBanned = 2;
+}
+
+message ReceiveUpdateChatStatusProto{
+  ChatStatus chatStatus = 1;
+  int64  UnbanTime      = 2;
+}
+
 message SharePartyInfo {
   string partyID =1;
   PartyAvailabilityStatus status = 2;
