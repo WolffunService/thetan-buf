@@ -121,6 +121,8 @@ message ResponseChatMessageProto{
     int32 emoteId = 8;
     int32 promptId = 9;
   }
+
+  string msgId = 20;
 }
 
 enum ChatStatus{
