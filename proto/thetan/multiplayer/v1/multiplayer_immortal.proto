@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package thetan.multiplayer.v1;
+
+import "thetan/shared/v1/customized.proto";
+
+option go_package = "thetan-buf/gen/go/thetan/multiplayer/v1;thetan_multiplayer_v1";
+option csharp_namespace = "Thetan.Multiplayer.V1";
+
+message ImmortalPlayerInfoProto {
+  int32 skinId = 1;//todo update neu cho nhieu hon 1 hero, hien thi dev chi nghi toi case choi 1 nen code 1
+  repeated int32 skillIds = 2;
+}
