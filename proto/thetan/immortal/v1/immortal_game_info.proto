@@ -15,6 +15,7 @@ enum GameMode {
 enum InGameMode {
   SOLO = 0;
   KO = 1;
+  DUAL = 2;
 }
 
 message SetInGameModeMsg{
