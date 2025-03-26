@@ -21,6 +21,7 @@ service ImmortalService {
   rpc GetSeasonal(GetSeasonalRequest) returns (GetSeasonalResponse) {}
 
   rpc TrackStartSession(TrackSessionRequest) returns (TrackSessionResponse) {}
+  rpc GetGameData(GetGameDataRequest) returns (GetGameDataResponse) {}
 }
 
 message SearchPlayerInfoRequest {

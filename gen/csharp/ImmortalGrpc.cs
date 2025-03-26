@@ -80,6 +80,10 @@ namespace Thetan.Immortal.V1 {
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.TrackSessionRequest> __Marshaller_thetan_immortal_v1_TrackSessionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.TrackSessionRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Immortal.V1.TrackSessionResponse> __Marshaller_thetan_immortal_v1_TrackSessionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.TrackSessionResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetGameDataRequest> __Marshaller_thetan_immortal_v1_GetGameDataRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetGameDataRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Immortal.V1.GetGameDataResponse> __Marshaller_thetan_immortal_v1_GetGameDataResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Immortal.V1.GetGameDataResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse> __Method_SearchPlayerInfo = new grpc::Method<global::Thetan.Immortal.V1.SearchPlayerInfoRequest, global::Thetan.Immortal.V1.SearchPlayerInfoResponse>(
@@ -144,6 +148,14 @@ namespace Thetan.Immortal.V1 {
         "TrackStartSession",
         __Marshaller_thetan_immortal_v1_TrackSessionRequest,
         __Marshaller_thetan_immortal_v1_TrackSessionResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Immortal.V1.GetGameDataRequest, global::Thetan.Immortal.V1.GetGameDataResponse> __Method_GetGameData = new grpc::Method<global::Thetan.Immortal.V1.GetGameDataRequest, global::Thetan.Immortal.V1.GetGameDataResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetGameData",
+        __Marshaller_thetan_immortal_v1_GetGameDataRequest,
+        __Marshaller_thetan_immortal_v1_GetGameDataResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -211,6 +223,12 @@ namespace Thetan.Immortal.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.TrackSessionResponse> TrackStartSession(global::Thetan.Immortal.V1.TrackSessionRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Immortal.V1.GetGameDataResponse> GetGameData(global::Thetan.Immortal.V1.GetGameDataRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -450,6 +468,26 @@ namespace Thetan.Immortal.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_TrackStartSession, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Immortal.V1.GetGameDataResponse GetGameData(global::Thetan.Immortal.V1.GetGameDataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetGameData(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Immortal.V1.GetGameDataResponse GetGameData(global::Thetan.Immortal.V1.GetGameDataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetGameData, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetGameDataResponse> GetGameDataAsync(global::Thetan.Immortal.V1.GetGameDataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetGameDataAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Immortal.V1.GetGameDataResponse> GetGameDataAsync(global::Thetan.Immortal.V1.GetGameDataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetGameData, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ImmortalServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -471,7 +509,8 @@ namespace Thetan.Immortal.V1 {
           .AddMethod(__Method_GetSkillConfig, serviceImpl.GetSkillConfig)
           .AddMethod(__Method_GetListFriends, serviceImpl.GetListFriends)
           .AddMethod(__Method_GetSeasonal, serviceImpl.GetSeasonal)
-          .AddMethod(__Method_TrackStartSession, serviceImpl.TrackStartSession).Build();
+          .AddMethod(__Method_TrackStartSession, serviceImpl.TrackStartSession)
+          .AddMethod(__Method_GetGameData, serviceImpl.GetGameData).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -489,6 +528,7 @@ namespace Thetan.Immortal.V1 {
       serviceBinder.AddMethod(__Method_GetListFriends, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetUserFriendRequest, global::Thetan.Immortal.V1.GetUserFriendResponse>(serviceImpl.GetListFriends));
       serviceBinder.AddMethod(__Method_GetSeasonal, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetSeasonalRequest, global::Thetan.Immortal.V1.GetSeasonalResponse>(serviceImpl.GetSeasonal));
       serviceBinder.AddMethod(__Method_TrackStartSession, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.TrackSessionRequest, global::Thetan.Immortal.V1.TrackSessionResponse>(serviceImpl.TrackStartSession));
+      serviceBinder.AddMethod(__Method_GetGameData, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Immortal.V1.GetGameDataRequest, global::Thetan.Immortal.V1.GetGameDataResponse>(serviceImpl.GetGameData));
     }
 
   }
