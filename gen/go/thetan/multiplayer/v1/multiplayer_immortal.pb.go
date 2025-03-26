@@ -26,7 +26,7 @@ type ImmortalPlayerInfoProto struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	SkinId   int32   `protobuf:"varint,1,opt,name=skinId,proto3" json:"skinId,omitempty"`
+	SkinId   int32   `protobuf:"varint,1,opt,name=skinId,proto3" json:"skinId,omitempty"` //todo update neu cho nhieu hon 1 hero, hien thi dev chi nghi toi case choi 1 nen code 1
 	SkillIds []int32 `protobuf:"varint,2,rep,packed,name=skillIds,proto3" json:"skillIds,omitempty"`
 }
 

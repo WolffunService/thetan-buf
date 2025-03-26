@@ -92,6 +92,9 @@ namespace Thetan.Multiplayer.V1 {
     /// <summary>Field number for the "skinId" field.</summary>
     public const int SkinIdFieldNumber = 1;
     private int skinId_;
+    /// <summary>
+    ///todo update neu cho nhieu hon 1 hero, hien thi dev chi nghi toi case choi 1 nen code 1
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int SkinId {
