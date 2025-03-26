@@ -98,31 +98,35 @@ namespace Thetan.Immortal.V1 {
             "ARINCglDT05GSVJNRUQQAiIUChJHZXRTZWFzb25hbFJlcXVlc3QiMQoTR2V0",
             "U2Vhc29uYWxSZXNwb25zZRIaCghzZWFzb25JRBgBIAEoBVIIc2Vhc29uSUQi",
             "LQoTVHJhY2tTZXNzaW9uUmVxdWVzdBIWCgZ1c2VySUQYASABKAlSBnVzZXJJ",
-            "RCIWChRUcmFja1Nlc3Npb25SZXNwb25zZTLTBgoPSW1tb3J0YWxTZXJ2aWNl",
-            "Em8KEFNlYXJjaFBsYXllckluZm8SKy50aGV0YW4uaW1tb3J0YWwudjEuU2Vh",
-            "cmNoUGxheWVySW5mb1JlcXVlc3QaLC50aGV0YW4uaW1tb3J0YWwudjEuU2Vh",
-            "cmNoUGxheWVySW5mb1Jlc3BvbnNlIgASaQoOR2V0VXNlclByb2ZpbGUSKS50",
-            "aGV0YW4uaW1tb3J0YWwudjEuR2V0VXNlclByb2ZpbGVSZXF1ZXN0GioudGhl",
-            "dGFuLmltbW9ydGFsLnYxLkdldFVzZXJQcm9maWxlUmVzcG9uc2UiABJcCglC",
-            "YXR0bGVFbmQSJC50aGV0YW4uaW1tb3J0YWwudjEuQmF0dGxlRW5kUmVxdWVz",
-            "dBolLnRoZXRhbi5pbW1vcnRhbC52MS5CYXR0bGVFbmRSZXNwb25zZSIAMAES",
-            "ZgoNR2V0SGVyb0NvbmZpZxIoLnRoZXRhbi5pbW1vcnRhbC52MS5HZXRIZXJv",
-            "Q29uZmlnUmVxdWVzdBopLnRoZXRhbi5pbW1vcnRhbC52MS5HZXRIZXJvQ29u",
-            "ZmlnUmVzcG9uc2UiABJpCg5HZXRTa2lsbENvbmZpZxIpLnRoZXRhbi5pbW1v",
-            "cnRhbC52MS5HZXRTa2lsbENvbmZpZ1JlcXVlc3QaKi50aGV0YW4uaW1tb3J0",
-            "YWwudjEuR2V0U2tpbGxDb25maWdSZXNwb25zZSIAEmcKDkdldExpc3RGcmll",
-            "bmRzEigudGhldGFuLmltbW9ydGFsLnYxLkdldFVzZXJGcmllbmRSZXF1ZXN0",
-            "GikudGhldGFuLmltbW9ydGFsLnYxLkdldFVzZXJGcmllbmRSZXNwb25zZSIA",
-            "EmAKC0dldFNlYXNvbmFsEiYudGhldGFuLmltbW9ydGFsLnYxLkdldFNlYXNv",
-            "bmFsUmVxdWVzdBonLnRoZXRhbi5pbW1vcnRhbC52MS5HZXRTZWFzb25hbFJl",
-            "c3BvbnNlIgASaAoRVHJhY2tTdGFydFNlc3Npb24SJy50aGV0YW4uaW1tb3J0",
-            "YWwudjEuVHJhY2tTZXNzaW9uUmVxdWVzdBooLnRoZXRhbi5pbW1vcnRhbC52",
-            "MS5UcmFja1Nlc3Npb25SZXNwb25zZSIAQsoBChZjb20udGhldGFuLmltbW9y",
-            "dGFsLnYxQg1JbW1vcnRhbFByb3RvUAFaN3RoZXRhbi1idWYvZ2VuL2dvL3Ro",
-            "ZXRhbi9pbW1vcnRhbC92MTt0aGV0YW5faW1tb3J0YWxfdjGiAgNUSViqAhJU",
-            "aGV0YW4uSW1tb3J0YWwuVjHKAhJUaGV0YW5cSW1tb3J0YWxcVjHiAh5UaGV0",
-            "YW5cSW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHqAhRUaGV0YW46OkltbW9ydGFs",
-            "OjpWMWIGcHJvdG8z"));
+            "RCIWChRUcmFja1Nlc3Npb25SZXNwb25zZSIsChJHZXRHYW1lRGF0YVJlcXVl",
+            "c3QSFgoGdXNlcklkGAEgASgJUgZ1c2VySWQiigEKE0dldEdhbWVEYXRhUmVz",
+            "cG9uc2USOAoKbGlzdEhlcm9lcxgBIAMoCzIYLnRoZXRhbi5pbW1vcnRhbC52",
+            "MS5IZXJvUgpsaXN0SGVyb2VzEjkKCmxpc3RTa2lsbHMYAiADKAsyGS50aGV0",
+            "YW4uaW1tb3J0YWwudjEuU2tpbGxSCmxpc3RTa2lsbHMy0wYKD0ltbW9ydGFs",
+            "U2VydmljZRJvChBTZWFyY2hQbGF5ZXJJbmZvEisudGhldGFuLmltbW9ydGFs",
+            "LnYxLlNlYXJjaFBsYXllckluZm9SZXF1ZXN0GiwudGhldGFuLmltbW9ydGFs",
+            "LnYxLlNlYXJjaFBsYXllckluZm9SZXNwb25zZSIAEmkKDkdldFVzZXJQcm9m",
+            "aWxlEikudGhldGFuLmltbW9ydGFsLnYxLkdldFVzZXJQcm9maWxlUmVxdWVz",
+            "dBoqLnRoZXRhbi5pbW1vcnRhbC52MS5HZXRVc2VyUHJvZmlsZVJlc3BvbnNl",
+            "IgASXAoJQmF0dGxlRW5kEiQudGhldGFuLmltbW9ydGFsLnYxLkJhdHRsZUVu",
+            "ZFJlcXVlc3QaJS50aGV0YW4uaW1tb3J0YWwudjEuQmF0dGxlRW5kUmVzcG9u",
+            "c2UiADABEmYKDUdldEhlcm9Db25maWcSKC50aGV0YW4uaW1tb3J0YWwudjEu",
+            "R2V0SGVyb0NvbmZpZ1JlcXVlc3QaKS50aGV0YW4uaW1tb3J0YWwudjEuR2V0",
+            "SGVyb0NvbmZpZ1Jlc3BvbnNlIgASaQoOR2V0U2tpbGxDb25maWcSKS50aGV0",
+            "YW4uaW1tb3J0YWwudjEuR2V0U2tpbGxDb25maWdSZXF1ZXN0GioudGhldGFu",
+            "LmltbW9ydGFsLnYxLkdldFNraWxsQ29uZmlnUmVzcG9uc2UiABJnCg5HZXRM",
+            "aXN0RnJpZW5kcxIoLnRoZXRhbi5pbW1vcnRhbC52MS5HZXRVc2VyRnJpZW5k",
+            "UmVxdWVzdBopLnRoZXRhbi5pbW1vcnRhbC52MS5HZXRVc2VyRnJpZW5kUmVz",
+            "cG9uc2UiABJgCgtHZXRTZWFzb25hbBImLnRoZXRhbi5pbW1vcnRhbC52MS5H",
+            "ZXRTZWFzb25hbFJlcXVlc3QaJy50aGV0YW4uaW1tb3J0YWwudjEuR2V0U2Vh",
+            "c29uYWxSZXNwb25zZSIAEmgKEVRyYWNrU3RhcnRTZXNzaW9uEicudGhldGFu",
+            "LmltbW9ydGFsLnYxLlRyYWNrU2Vzc2lvblJlcXVlc3QaKC50aGV0YW4uaW1t",
+            "b3J0YWwudjEuVHJhY2tTZXNzaW9uUmVzcG9uc2UiAELKAQoWY29tLnRoZXRh",
+            "bi5pbW1vcnRhbC52MUINSW1tb3J0YWxQcm90b1ABWjd0aGV0YW4tYnVmL2dl",
+            "bi9nby90aGV0YW4vaW1tb3J0YWwvdjE7dGhldGFuX2ltbW9ydGFsX3YxogID",
+            "VElYqgISVGhldGFuLkltbW9ydGFsLlYxygISVGhldGFuXEltbW9ydGFsXFYx",
+            "4gIeVGhldGFuXEltbW9ydGFsXFYxXEdQQk1ldGFkYXRh6gIUVGhldGFuOjpJ",
+            "bW1vcnRhbDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor, global::Thetan.Immortal.V1.ImmortalGameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -147,7 +151,9 @@ namespace Thetan.Immortal.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.GetSeasonalRequest), global::Thetan.Immortal.V1.GetSeasonalRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.GetSeasonalResponse), global::Thetan.Immortal.V1.GetSeasonalResponse.Parser, new[]{ "SeasonID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TrackSessionRequest), global::Thetan.Immortal.V1.TrackSessionRequest.Parser, new[]{ "UserID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TrackSessionResponse), global::Thetan.Immortal.V1.TrackSessionResponse.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TrackSessionResponse), global::Thetan.Immortal.V1.TrackSessionResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.GetGameDataRequest), global::Thetan.Immortal.V1.GetGameDataRequest.Parser, new[]{ "UserId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.GetGameDataResponse), global::Thetan.Immortal.V1.GetGameDataResponse.Parser, new[]{ "ListHeroes", "ListSkills" }, null, null, null, null)
           }));
     }
     #endregion
@@ -5632,6 +5638,399 @@ namespace Thetan.Immortal.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetGameDataRequest : pb::IMessage<GetGameDataRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetGameDataRequest> _parser = new pb::MessageParser<GetGameDataRequest>(() => new GetGameDataRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetGameDataRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Immortal.V1.ImmortalReflection.Descriptor.MessageTypes[22]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGameDataRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGameDataRequest(GetGameDataRequest other) : this() {
+      userId_ = other.userId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGameDataRequest Clone() {
+      return new GetGameDataRequest(this);
+    }
+
+    /// <summary>Field number for the "userId" field.</summary>
+    public const int UserIdFieldNumber = 1;
+    private string userId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string UserId {
+      get { return userId_; }
+      set {
+        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetGameDataRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetGameDataRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (UserId != other.UserId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (UserId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(UserId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (UserId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(UserId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (UserId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetGameDataRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.UserId.Length != 0) {
+        UserId = other.UserId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            UserId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            UserId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetGameDataResponse : pb::IMessage<GetGameDataResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetGameDataResponse> _parser = new pb::MessageParser<GetGameDataResponse>(() => new GetGameDataResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetGameDataResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Immortal.V1.ImmortalReflection.Descriptor.MessageTypes[23]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGameDataResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGameDataResponse(GetGameDataResponse other) : this() {
+      listHeroes_ = other.listHeroes_.Clone();
+      listSkills_ = other.listSkills_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGameDataResponse Clone() {
+      return new GetGameDataResponse(this);
+    }
+
+    /// <summary>Field number for the "listHeroes" field.</summary>
+    public const int ListHeroesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.Hero> _repeated_listHeroes_codec
+        = pb::FieldCodec.ForMessage(10, global::Thetan.Immortal.V1.Hero.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.Hero> listHeroes_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.Hero>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Thetan.Immortal.V1.Hero> ListHeroes {
+      get { return listHeroes_; }
+    }
+
+    /// <summary>Field number for the "listSkills" field.</summary>
+    public const int ListSkillsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.Skill> _repeated_listSkills_codec
+        = pb::FieldCodec.ForMessage(18, global::Thetan.Immortal.V1.Skill.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.Skill> listSkills_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.Skill>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Thetan.Immortal.V1.Skill> ListSkills {
+      get { return listSkills_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetGameDataResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetGameDataResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!listHeroes_.Equals(other.listHeroes_)) return false;
+      if(!listSkills_.Equals(other.listSkills_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= listHeroes_.GetHashCode();
+      hash ^= listSkills_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      listHeroes_.WriteTo(output, _repeated_listHeroes_codec);
+      listSkills_.WriteTo(output, _repeated_listSkills_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      listHeroes_.WriteTo(ref output, _repeated_listHeroes_codec);
+      listSkills_.WriteTo(ref output, _repeated_listSkills_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += listHeroes_.CalculateSize(_repeated_listHeroes_codec);
+      size += listSkills_.CalculateSize(_repeated_listSkills_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetGameDataResponse other) {
+      if (other == null) {
+        return;
+      }
+      listHeroes_.Add(other.listHeroes_);
+      listSkills_.Add(other.listSkills_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            listHeroes_.AddEntriesFrom(input, _repeated_listHeroes_codec);
+            break;
+          }
+          case 18: {
+            listSkills_.AddEntriesFrom(input, _repeated_listSkills_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            listHeroes_.AddEntriesFrom(ref input, _repeated_listHeroes_codec);
+            break;
+          }
+          case 18: {
+            listSkills_.AddEntriesFrom(ref input, _repeated_listSkills_codec);
+            break;
+          }
         }
       }
     }

@@ -155,3 +155,12 @@ message TrackSessionRequest {
 
 message TrackSessionResponse {
 }
+
+message GetGameDataRequest {
+  string userId = 1;
+}
+
+message GetGameDataResponse {
+  repeated Hero listHeroes = 1;
+  repeated Skill listSkills = 2;
+}
