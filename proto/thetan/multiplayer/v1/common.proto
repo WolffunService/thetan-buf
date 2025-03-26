@@ -52,6 +52,7 @@ message PartyInfoProto {
   thetan.shared.v1.TRArena arena = 8;
   string modeID = 9;
   PartyType partyType = 10;
+  int32 partyRegion = 11;
 
   // tùy từng game mà cục nay có thể khác nhau
   bytes gameData = 99;
@@ -140,7 +141,7 @@ message SharePartyInfo {
   string partyID =1;
   PartyAvailabilityStatus status = 2;
   bool isShare = 3; //msg share or update status
-  //
+  int32 region = 4;
 }
 
 
