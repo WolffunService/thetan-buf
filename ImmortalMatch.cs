@@ -33,40 +33,41 @@ namespace Thetan.Immortal.V1 {
             "Eh4KCmJlc3RSZWdpb24YAyABKAVSCmJlc3RSZWdpb24SOAoIZ2FtZU1vZGUY",
             "BCABKA4yHC50aGV0YW4uaW1tb3J0YWwudjEuR2FtZU1vZGVSCGdhbWVNb2Rl",
             "Ej4KCmluR2FtZU1vZGUYBSABKA4yHi50aGV0YW4uaW1tb3J0YWwudjEuSW5H",
-            "YW1lTW9kZVIKaW5HYW1lTW9kZSL+AQoKVGlja2V0RGF0YRJCCgdwbGF5ZXJz",
+            "YW1lTW9kZVIKaW5HYW1lTW9kZSKYAgoKVGlja2V0RGF0YRJCCgdwbGF5ZXJz",
             "GAEgAygLMigudGhldGFuLmltbW9ydGFsLnYxLlBsYXllckluZm9NYXRjaFBy",
             "b3RvUgdwbGF5ZXJzEhgKB3JlZ2lvbnMYAiADKAVSB3JlZ2lvbnMSGAoHY291",
             "bnRyeRgDIAEoCVIHY291bnRyeRI4CghnYW1lTW9kZRgEIAEoDjIcLnRoZXRh",
             "bi5pbW1vcnRhbC52MS5HYW1lTW9kZVIIZ2FtZU1vZGUSPgoKaW5HYW1lTW9k",
             "ZRgFIAEoDjIeLnRoZXRhbi5pbW1vcnRhbC52MS5JbkdhbWVNb2RlUgppbkdh",
-            "bWVNb2RlImcKE0NhbmNlbFRpY2tldFJlcXVlc3QSGgoIcGxheWVySUQYASAB",
-            "KAlSCHBsYXllcklEEhgKB3BhcnR5SUQYAiABKAlSB3BhcnR5SUQSGgoIdGlj",
-            "a2V0SUQYAyABKAlSCHRpY2tldElEIhYKFENhbmNlbFRpY2tldFJlc3BvbnNl",
-            "ImcKE0NhbmNlbFRpY2tldFN1Y2Nlc3MSGgoIcGxheWVySUQYASABKAlSCHBs",
-            "YXllcklEEhgKB3BhcnR5SUQYAiABKAlSB3BhcnR5SUQSGgoIdGlja2V0SUQY",
-            "AyABKAlSCHRpY2tldElEIpECCh1DcmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVx",
-            "dWVzdBJCCgdwbGF5ZXJzGAEgAygLMigudGhldGFuLmltbW9ydGFsLnYxLlBs",
-            "YXllckluZm9NYXRjaFByb3RvUgdwbGF5ZXJzEhgKB3JlZ2lvbnMYAiADKAVS",
-            "B3JlZ2lvbnMSGAoHY291bnRyeRgDIAEoCVIHY291bnRyeRI4CghnYW1lTW9k",
-            "ZRgEIAEoDjIcLnRoZXRhbi5pbW1vcnRhbC52MS5HYW1lTW9kZVIIZ2FtZU1v",
-            "ZGUSPgoKaW5HYW1lTW9kZRgFIAEoDjIeLnRoZXRhbi5pbW1vcnRhbC52MS5J",
-            "bkdhbWVNb2RlUgppbkdhbWVNb2RlIiAKHkNyZWF0ZU1hdGNoTm9uTWF0Y2hp",
-            "bmdSZXNwb25zZTL/AQoUTWF0Y2hEaXJlY3RvclNlcnZpY2USYwoMQ2FuY2Vs",
-            "VGlja2V0EicudGhldGFuLmltbW9ydGFsLnYxLkNhbmNlbFRpY2tldFJlcXVl",
-            "c3QaKC50aGV0YW4uaW1tb3J0YWwudjEuQ2FuY2VsVGlja2V0UmVzcG9uc2Ui",
-            "ABKBAQoWQ3JlYXRlTWF0Y2hOb25NYXRjaGluZxIxLnRoZXRhbi5pbW1vcnRh",
-            "bC52MS5DcmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVxdWVzdBoyLnRoZXRhbi5p",
-            "bW1vcnRhbC52MS5DcmVhdGVNYXRjaE5vbk1hdGNoaW5nUmVzcG9uc2UiAELP",
-            "AQoWY29tLnRoZXRhbi5pbW1vcnRhbC52MUISSW1tb3J0YWxNYXRjaFByb3Rv",
-            "UAFaN3RoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9pbW1vcnRhbC92MTt0aGV0",
-            "YW5faW1tb3J0YWxfdjGiAgNUSViqAhJUaGV0YW4uSW1tb3J0YWwuVjHKAhJU",
-            "aGV0YW5cSW1tb3J0YWxcVjHiAh5UaGV0YW5cSW1tb3J0YWxcVjFcR1BCTWV0",
-            "YWRhdGHqAhRUaGV0YW46OkltbW9ydGFsOjpWMWIGcHJvdG8z"));
+            "bWVNb2RlEhgKB3BhcnR5SUQYBiABKAlSB3BhcnR5SUQiZwoTQ2FuY2VsVGlj",
+            "a2V0UmVxdWVzdBIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSGAoHcGFy",
+            "dHlJRBgCIAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0",
+            "SUQiFgoUQ2FuY2VsVGlja2V0UmVzcG9uc2UiZwoTQ2FuY2VsVGlja2V0U3Vj",
+            "Y2VzcxIaCghwbGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSGAoHcGFydHlJRBgC",
+            "IAEoCVIHcGFydHlJRBIaCgh0aWNrZXRJRBgDIAEoCVIIdGlja2V0SUQikQIK",
+            "HUNyZWF0ZU1hdGNoTm9uTWF0Y2hpbmdSZXF1ZXN0EkIKB3BsYXllcnMYASAD",
+            "KAsyKC50aGV0YW4uaW1tb3J0YWwudjEuUGxheWVySW5mb01hdGNoUHJvdG9S",
+            "B3BsYXllcnMSGAoHcmVnaW9ucxgCIAMoBVIHcmVnaW9ucxIYCgdjb3VudHJ5",
+            "GAMgASgJUgdjb3VudHJ5EjgKCGdhbWVNb2RlGAQgASgOMhwudGhldGFuLmlt",
+            "bW9ydGFsLnYxLkdhbWVNb2RlUghnYW1lTW9kZRI+CgppbkdhbWVNb2RlGAUg",
+            "ASgOMh4udGhldGFuLmltbW9ydGFsLnYxLkluR2FtZU1vZGVSCmluR2FtZU1v",
+            "ZGUiIAoeQ3JlYXRlTWF0Y2hOb25NYXRjaGluZ1Jlc3BvbnNlMv8BChRNYXRj",
+            "aERpcmVjdG9yU2VydmljZRJjCgxDYW5jZWxUaWNrZXQSJy50aGV0YW4uaW1t",
+            "b3J0YWwudjEuQ2FuY2VsVGlja2V0UmVxdWVzdBooLnRoZXRhbi5pbW1vcnRh",
+            "bC52MS5DYW5jZWxUaWNrZXRSZXNwb25zZSIAEoEBChZDcmVhdGVNYXRjaE5v",
+            "bk1hdGNoaW5nEjEudGhldGFuLmltbW9ydGFsLnYxLkNyZWF0ZU1hdGNoTm9u",
+            "TWF0Y2hpbmdSZXF1ZXN0GjIudGhldGFuLmltbW9ydGFsLnYxLkNyZWF0ZU1h",
+            "dGNoTm9uTWF0Y2hpbmdSZXNwb25zZSIAQs8BChZjb20udGhldGFuLmltbW9y",
+            "dGFsLnYxQhJJbW1vcnRhbE1hdGNoUHJvdG9QAVo3dGhldGFuLWJ1Zi9nZW4v",
+            "Z28vdGhldGFuL2ltbW9ydGFsL3YxO3RoZXRhbl9pbW1vcnRhbF92MaICA1RJ",
+            "WKoCElRoZXRhbi5JbW1vcnRhbC5WMcoCElRoZXRhblxJbW1vcnRhbFxWMeIC",
+            "HlRoZXRhblxJbW1vcnRhbFxWMVxHUEJNZXRhZGF0YeoCFFRoZXRhbjo6SW1t",
+            "b3J0YWw6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor, global::Thetan.Immortal.V1.ImmortalGameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.MatchFoundResponseProto), global::Thetan.Immortal.V1.MatchFoundResponseProto.Parser, new[]{ "MatchID", "Players", "BestRegion", "GameMode", "InGameMode" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TicketData), global::Thetan.Immortal.V1.TicketData.Parser, new[]{ "Players", "Regions", "Country", "GameMode", "InGameMode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TicketData), global::Thetan.Immortal.V1.TicketData.Parser, new[]{ "Players", "Regions", "Country", "GameMode", "InGameMode", "PartyID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketRequest), global::Thetan.Immortal.V1.CancelTicketRequest.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketResponse), global::Thetan.Immortal.V1.CancelTicketResponse.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.CancelTicketSuccess), global::Thetan.Immortal.V1.CancelTicketSuccess.Parser, new[]{ "PlayerID", "PartyID", "TicketID" }, null, null, null, null),
@@ -446,6 +447,7 @@ namespace Thetan.Immortal.V1 {
       country_ = other.country_;
       gameMode_ = other.gameMode_;
       inGameMode_ = other.inGameMode_;
+      partyID_ = other.partyID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -516,6 +518,18 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
+    /// <summary>Field number for the "partyID" field.</summary>
+    public const int PartyIDFieldNumber = 6;
+    private string partyID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PartyID {
+      get { return partyID_; }
+      set {
+        partyID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -536,6 +550,7 @@ namespace Thetan.Immortal.V1 {
       if (Country != other.Country) return false;
       if (GameMode != other.GameMode) return false;
       if (InGameMode != other.InGameMode) return false;
+      if (PartyID != other.PartyID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -548,6 +563,7 @@ namespace Thetan.Immortal.V1 {
       if (Country.Length != 0) hash ^= Country.GetHashCode();
       if (GameMode != global::Thetan.Immortal.V1.GameMode.NoneMode) hash ^= GameMode.GetHashCode();
       if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) hash ^= InGameMode.GetHashCode();
+      if (PartyID.Length != 0) hash ^= PartyID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -580,6 +596,10 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(40);
         output.WriteEnum((int) InGameMode);
       }
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(PartyID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -604,6 +624,10 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(40);
         output.WriteEnum((int) InGameMode);
       }
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(PartyID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -624,6 +648,9 @@ namespace Thetan.Immortal.V1 {
       }
       if (InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InGameMode);
+      }
+      if (PartyID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -647,6 +674,9 @@ namespace Thetan.Immortal.V1 {
       }
       if (other.InGameMode != global::Thetan.Immortal.V1.InGameMode.Solo) {
         InGameMode = other.InGameMode;
+      }
+      if (other.PartyID.Length != 0) {
+        PartyID = other.PartyID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -684,6 +714,10 @@ namespace Thetan.Immortal.V1 {
             InGameMode = (global::Thetan.Immortal.V1.InGameMode) input.ReadEnum();
             break;
           }
+          case 50: {
+            PartyID = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -718,6 +752,10 @@ namespace Thetan.Immortal.V1 {
           }
           case 40: {
             InGameMode = (global::Thetan.Immortal.V1.InGameMode) input.ReadEnum();
+            break;
+          }
+          case 50: {
+            PartyID = input.ReadString();
             break;
           }
         }
