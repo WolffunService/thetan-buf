@@ -22,6 +22,7 @@ message TicketData {
   string country = 3; //using for get bot
   GameMode gameMode = 4;
   InGameMode inGameMode = 5;
+  string partyID = 6;
 }
 
 message CancelTicketRequest {
