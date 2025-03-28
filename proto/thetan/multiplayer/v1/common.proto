@@ -324,7 +324,6 @@ enum PartyType {
   CustomBattle = 1;
   Tournament = 2;
   FriendlyBattle = 3; //1vs1
-  Party2vs2 = 4; //2vs2
 }
 
 message RequestCreatePartyMsg{

@@ -154,14 +154,14 @@ namespace Thetan.Multiplayer.V1 {
             "EAISCQoFUmVhZHkQAxILCgdGaW5kaW5nEAQSDAoISW5CYXR0bGUQBSpDChBJ",
             "bnZpdGF0aW9uQWN0aW9uEgoKBkFjY2VwdBAAEgoKBkNhbmNlbBABEgsKB0Rl",
             "Y2xpbmUQAhIKCgZJbnZpdGUQAyorCgtTdGFnZUluR2FtZRINCglTcGVjdGF0",
-            "b3IQABINCglFbmRCYXR0bGUQASpcCglQYXJ0eVR5cGUSCgoGUmFua2VkEAAS",
+            "b3IQABINCglFbmRCYXR0bGUQASpNCglQYXJ0eVR5cGUSCgoGUmFua2VkEAAS",
             "EAoMQ3VzdG9tQmF0dGxlEAESDgoKVG91cm5hbWVudBACEhIKDkZyaWVuZGx5",
-            "QmF0dGxlEAMSDQoJUGFydHkydnMyEARC3QEKGWNvbS50aGV0YW4ubXVsdGlw",
-            "bGF5ZXIudjFCC0NvbW1vblByb3RvUAFaPXRoZXRhbi1idWYvZ2VuL2dvL3Ro",
-            "ZXRhbi9tdWx0aXBsYXllci92MTt0aGV0YW5fbXVsdGlwbGF5ZXJfdjGiAgNU",
-            "TViqAhVUaGV0YW4uTXVsdGlwbGF5ZXIuVjHKAhVUaGV0YW5cTXVsdGlwbGF5",
-            "ZXJcVjHiAiFUaGV0YW5cTXVsdGlwbGF5ZXJcVjFcR1BCTWV0YWRhdGHqAhdU",
-            "aGV0YW46Ok11bHRpcGxheWVyOjpWMWIGcHJvdG8z"));
+            "QmF0dGxlEANC3QEKGWNvbS50aGV0YW4ubXVsdGlwbGF5ZXIudjFCC0NvbW1v",
+            "blByb3RvUAFaPXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9tdWx0aXBsYXll",
+            "ci92MTt0aGV0YW5fbXVsdGlwbGF5ZXJfdjGiAgNUTViqAhVUaGV0YW4uTXVs",
+            "dGlwbGF5ZXIuVjHKAhVUaGV0YW5cTXVsdGlwbGF5ZXJcVjHiAiFUaGV0YW5c",
+            "TXVsdGlwbGF5ZXJcVjFcR1BCTWV0YWRhdGHqAhdUaGV0YW46Ok11bHRpcGxh",
+            "eWVyOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.PartyStatus), typeof(global::Thetan.Multiplayer.V1.PartyAvailabilityStatus), typeof(global::Thetan.Multiplayer.V1.ChannelChatRoom), typeof(global::Thetan.Multiplayer.V1.ChatStatus), typeof(global::Thetan.Multiplayer.V1.MsgType), typeof(global::Thetan.Multiplayer.V1.PlayerStatus), typeof(global::Thetan.Multiplayer.V1.InvitationAction), typeof(global::Thetan.Multiplayer.V1.StageInGame), typeof(global::Thetan.Multiplayer.V1.PartyType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -326,10 +326,6 @@ namespace Thetan.Multiplayer.V1 {
     ///1vs1
     /// </summary>
     [pbr::OriginalName("FriendlyBattle")] FriendlyBattle = 3,
-    /// <summary>
-    ///2vs2
-    /// </summary>
-    [pbr::OriginalName("Party2vs2")] Party2Vs2 = 4,
   }
 
   #endregion
