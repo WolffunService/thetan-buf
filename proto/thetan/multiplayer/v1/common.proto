@@ -64,6 +64,7 @@ message SimplifyPartyInfo{
   uint32 currentMembers = 2;//size
   uint32 partySize = 3;
   PartyType partyType = 4;
+  thetan.shared.v1.InGameMode inGameMode = 5;
 
 
   bytes gameData = 99;
@@ -142,6 +143,8 @@ message SharePartyInfo {
   PartyAvailabilityStatus status = 2;
   bool isShare = 3; //msg share or update status
   int32 region = 4;
+  PartyType partyType = 5;
+  thetan.shared.v1.InGameMode inGameMode = 6;
 }
 
 
