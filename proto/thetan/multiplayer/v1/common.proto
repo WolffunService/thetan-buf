@@ -312,6 +312,7 @@ message OnOtherReady{
 
 message TicketCacheWSOnly {
   string ticketID = 1;
+  string userID = 2;
 }
 
 message GuildMail {

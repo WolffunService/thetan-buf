@@ -137,35 +137,36 @@ namespace Thetan.Multiplayer.V1 {
             "CnBsYXllckluZm8YASABKAsyJi50aGV0YW4ubXVsdGlwbGF5ZXIudjEuUGxh",
             "eWVySW5mb1Byb3RvUgpwbGF5ZXJJbmZvIkAKDE9uT3RoZXJSZWFkeRIaCghw",
             "bGF5ZXJJRBgBIAEoCVIIcGxheWVySUQSFAoFcmVhZHkYAiABKAhSBXJlYWR5",
-            "Ii8KEVRpY2tldENhY2hlV1NPbmx5EhoKCHRpY2tldElEGAEgASgJUgh0aWNr",
-            "ZXRJRCIfCglHdWlsZE1haWwSEgoEY29kZRgBIAEoBVIEY29kZSI0ChZUcmVh",
-            "c3VyZUJhbGFuY2VDaGFuZ2VkEhoKCGRvTm90aWZ5GAEgASgIUghkb05vdGlm",
-            "eSKLAQoVUmVxdWVzdENyZWF0ZVBhcnR5TXNnEj4KCXBhcnR5VHlwZRgBIAEo",
-            "DjIgLnRoZXRhbi5tdWx0aXBsYXllci52MS5QYXJ0eVR5cGVSCXBhcnR5VHlw",
-            "ZRIjCgpiZXN0UmVnaW9uGAIgASgFSABSCmJlc3RSZWdpb26IAQFCDQoLX2Jl",
-            "c3RSZWdpb24iZwoRUmVjb25uZWN0TWF0Y2hNc2cSGgoIc2VydmVySVAYASAB",
-            "KAlSCHNlcnZlcklQEh4KCnNlcnZlclBvcnQYAiABKA1SCnNlcnZlclBvcnQS",
-            "FgoGcm9vbUlEGAMgASgJUgZyb29tSUQqOAoLUGFydHlTdGF0dXMSDAoIUFBl",
-            "bmRpbmcQABIMCghQRmluZGluZxABEg0KCVBJbkJhdHRsZRACKn4KF1BhcnR5",
-            "QXZhaWxhYmlsaXR5U3RhdHVzEg0KCVBBVW5rbm93bhAAEg0KCVBBRXhwaXJl",
-            "ZBABEg8KC1BBRGlzYmFuZGVkEAISCgoGUEFPcGVuEAMSCgoGUEFGdWxsEAQS",
-            "DgoKUEFJbkJhdHRsZRAFEgwKCFBBSm9pbmVkEAYqTQoPQ2hhbm5lbENoYXRS",
-            "b29tEgkKBUxvYmJ5EAASCQoFUGFydHkQARILCgdDb3VudHJ5EAISCwoHUHJp",
-            "dmF0ZRADEgoKBkdsb2JhbBAEKk8KCkNoYXRTdGF0dXMSFAoQQ2hhdFN0YXR1",
-            "c05vcm1hbBAAEhUKEUNoYXRTdGF0dXNXYXJuaW5nEAESFAoQQ2hhdFN0YXR1",
-            "c0Jhbm5lZBACKiMKB01zZ1R5cGUSCAoEQ2hhdBAAEg4KClNoYXJlUGFydHkQ",
-            "ASpaCgxQbGF5ZXJTdGF0dXMSCgoGT25saW5lEAASCwoHT2ZmbGluZRABEgsK",
-            "B0luUGFydHkQAhIJCgVSZWFkeRADEgsKB0ZpbmRpbmcQBBIMCghJbkJhdHRs",
-            "ZRAFKkMKEEludml0YXRpb25BY3Rpb24SCgoGQWNjZXB0EAASCgoGQ2FuY2Vs",
-            "EAESCwoHRGVjbGluZRACEgoKBkludml0ZRADKisKC1N0YWdlSW5HYW1lEg0K",
-            "CVNwZWN0YXRvchAAEg0KCUVuZEJhdHRsZRABKk0KCVBhcnR5VHlwZRIKCgZS",
-            "YW5rZWQQABIQCgxDdXN0b21CYXR0bGUQARIOCgpUb3VybmFtZW50EAISEgoO",
-            "RnJpZW5kbHlCYXR0bGUQA0LdAQoZY29tLnRoZXRhbi5tdWx0aXBsYXllci52",
-            "MUILQ29tbW9uUHJvdG9QAVo9dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL211",
-            "bHRpcGxheWVyL3YxO3RoZXRhbl9tdWx0aXBsYXllcl92MaICA1RNWKoCFVRo",
-            "ZXRhbi5NdWx0aXBsYXllci5WMcoCFVRoZXRhblxNdWx0aXBsYXllclxWMeIC",
-            "IVRoZXRhblxNdWx0aXBsYXllclxWMVxHUEJNZXRhZGF0YeoCF1RoZXRhbjo6",
-            "TXVsdGlwbGF5ZXI6OlYxYgZwcm90bzM="));
+            "IkcKEVRpY2tldENhY2hlV1NPbmx5EhoKCHRpY2tldElEGAEgASgJUgh0aWNr",
+            "ZXRJRBIWCgZ1c2VySUQYAiABKAlSBnVzZXJJRCIfCglHdWlsZE1haWwSEgoE",
+            "Y29kZRgBIAEoBVIEY29kZSI0ChZUcmVhc3VyZUJhbGFuY2VDaGFuZ2VkEhoK",
+            "CGRvTm90aWZ5GAEgASgIUghkb05vdGlmeSKLAQoVUmVxdWVzdENyZWF0ZVBh",
+            "cnR5TXNnEj4KCXBhcnR5VHlwZRgBIAEoDjIgLnRoZXRhbi5tdWx0aXBsYXll",
+            "ci52MS5QYXJ0eVR5cGVSCXBhcnR5VHlwZRIjCgpiZXN0UmVnaW9uGAIgASgF",
+            "SABSCmJlc3RSZWdpb26IAQFCDQoLX2Jlc3RSZWdpb24iZwoRUmVjb25uZWN0",
+            "TWF0Y2hNc2cSGgoIc2VydmVySVAYASABKAlSCHNlcnZlcklQEh4KCnNlcnZl",
+            "clBvcnQYAiABKA1SCnNlcnZlclBvcnQSFgoGcm9vbUlEGAMgASgJUgZyb29t",
+            "SUQqOAoLUGFydHlTdGF0dXMSDAoIUFBlbmRpbmcQABIMCghQRmluZGluZxAB",
+            "Eg0KCVBJbkJhdHRsZRACKn4KF1BhcnR5QXZhaWxhYmlsaXR5U3RhdHVzEg0K",
+            "CVBBVW5rbm93bhAAEg0KCVBBRXhwaXJlZBABEg8KC1BBRGlzYmFuZGVkEAIS",
+            "CgoGUEFPcGVuEAMSCgoGUEFGdWxsEAQSDgoKUEFJbkJhdHRsZRAFEgwKCFBB",
+            "Sm9pbmVkEAYqTQoPQ2hhbm5lbENoYXRSb29tEgkKBUxvYmJ5EAASCQoFUGFy",
+            "dHkQARILCgdDb3VudHJ5EAISCwoHUHJpdmF0ZRADEgoKBkdsb2JhbBAEKk8K",
+            "CkNoYXRTdGF0dXMSFAoQQ2hhdFN0YXR1c05vcm1hbBAAEhUKEUNoYXRTdGF0",
+            "dXNXYXJuaW5nEAESFAoQQ2hhdFN0YXR1c0Jhbm5lZBACKiMKB01zZ1R5cGUS",
+            "CAoEQ2hhdBAAEg4KClNoYXJlUGFydHkQASpaCgxQbGF5ZXJTdGF0dXMSCgoG",
+            "T25saW5lEAASCwoHT2ZmbGluZRABEgsKB0luUGFydHkQAhIJCgVSZWFkeRAD",
+            "EgsKB0ZpbmRpbmcQBBIMCghJbkJhdHRsZRAFKkMKEEludml0YXRpb25BY3Rp",
+            "b24SCgoGQWNjZXB0EAASCgoGQ2FuY2VsEAESCwoHRGVjbGluZRACEgoKBklu",
+            "dml0ZRADKisKC1N0YWdlSW5HYW1lEg0KCVNwZWN0YXRvchAAEg0KCUVuZEJh",
+            "dHRsZRABKk0KCVBhcnR5VHlwZRIKCgZSYW5rZWQQABIQCgxDdXN0b21CYXR0",
+            "bGUQARIOCgpUb3VybmFtZW50EAISEgoORnJpZW5kbHlCYXR0bGUQA0LdAQoZ",
+            "Y29tLnRoZXRhbi5tdWx0aXBsYXllci52MUILQ29tbW9uUHJvdG9QAVo9dGhl",
+            "dGFuLWJ1Zi9nZW4vZ28vdGhldGFuL211bHRpcGxheWVyL3YxO3RoZXRhbl9t",
+            "dWx0aXBsYXllcl92MaICA1RNWKoCFVRoZXRhbi5NdWx0aXBsYXllci5WMcoC",
+            "FVRoZXRhblxNdWx0aXBsYXllclxWMeICIVRoZXRhblxNdWx0aXBsYXllclxW",
+            "MVxHUEJNZXRhZGF0YeoCF1RoZXRhbjo6TXVsdGlwbGF5ZXI6OlYxYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.GameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.PartyStatus), typeof(global::Thetan.Multiplayer.V1.PartyAvailabilityStatus), typeof(global::Thetan.Multiplayer.V1.ChannelChatRoom), typeof(global::Thetan.Multiplayer.V1.ChatStatus), typeof(global::Thetan.Multiplayer.V1.MsgType), typeof(global::Thetan.Multiplayer.V1.PlayerStatus), typeof(global::Thetan.Multiplayer.V1.InvitationAction), typeof(global::Thetan.Multiplayer.V1.StageInGame), typeof(global::Thetan.Multiplayer.V1.PartyType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -200,7 +201,7 @@ namespace Thetan.Multiplayer.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ReqChangeGameInfo), global::Thetan.Multiplayer.V1.ReqChangeGameInfo.Parser, new[]{ "GameData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ResOtherChangeInfo), global::Thetan.Multiplayer.V1.ResOtherChangeInfo.Parser, new[]{ "PlayerInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OnOtherReady), global::Thetan.Multiplayer.V1.OnOtherReady.Parser, new[]{ "PlayerID", "Ready" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.TicketCacheWSOnly), global::Thetan.Multiplayer.V1.TicketCacheWSOnly.Parser, new[]{ "TicketID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.TicketCacheWSOnly), global::Thetan.Multiplayer.V1.TicketCacheWSOnly.Parser, new[]{ "TicketID", "UserID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.GuildMail), global::Thetan.Multiplayer.V1.GuildMail.Parser, new[]{ "Code" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.TreasureBalanceChanged), global::Thetan.Multiplayer.V1.TreasureBalanceChanged.Parser, new[]{ "DoNotify" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestCreatePartyMsg), global::Thetan.Multiplayer.V1.RequestCreatePartyMsg.Parser, new[]{ "PartyType", "BestRegion" }, new[]{ "BestRegion" }, null, null, null),
@@ -8862,6 +8863,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TicketCacheWSOnly(TicketCacheWSOnly other) : this() {
       ticketID_ = other.ticketID_;
+      userID_ = other.userID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -8883,6 +8885,18 @@ namespace Thetan.Multiplayer.V1 {
       }
     }
 
+    /// <summary>Field number for the "userID" field.</summary>
+    public const int UserIDFieldNumber = 2;
+    private string userID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string UserID {
+      get { return userID_; }
+      set {
+        userID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -8899,6 +8913,7 @@ namespace Thetan.Multiplayer.V1 {
         return true;
       }
       if (TicketID != other.TicketID) return false;
+      if (UserID != other.UserID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -8907,6 +8922,7 @@ namespace Thetan.Multiplayer.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (TicketID.Length != 0) hash ^= TicketID.GetHashCode();
+      if (UserID.Length != 0) hash ^= UserID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8929,6 +8945,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(10);
         output.WriteString(TicketID);
       }
+      if (UserID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(UserID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -8943,6 +8963,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(10);
         output.WriteString(TicketID);
       }
+      if (UserID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(UserID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -8955,6 +8979,9 @@ namespace Thetan.Multiplayer.V1 {
       int size = 0;
       if (TicketID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(TicketID);
+      }
+      if (UserID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8970,6 +8997,9 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (other.TicketID.Length != 0) {
         TicketID = other.TicketID;
+      }
+      if (other.UserID.Length != 0) {
+        UserID = other.UserID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -8990,6 +9020,10 @@ namespace Thetan.Multiplayer.V1 {
             TicketID = input.ReadString();
             break;
           }
+          case 18: {
+            UserID = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -9007,6 +9041,10 @@ namespace Thetan.Multiplayer.V1 {
             break;
           case 10: {
             TicketID = input.ReadString();
+            break;
+          }
+          case 18: {
+            UserID = input.ReadString();
             break;
           }
         }
