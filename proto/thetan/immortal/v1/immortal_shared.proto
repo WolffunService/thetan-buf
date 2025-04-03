@@ -11,6 +11,9 @@ message Hero {
   int32 level = 3;
   int32 type = 4;
   int32 rarity = 5;
+  bool isFuryUnlock = 6;
+  bool isSpecialSkillUnlock = 7;
+  bool isPassiveUnlock = 8;
 }
 
 message HeroFull {
