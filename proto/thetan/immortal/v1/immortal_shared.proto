@@ -74,6 +74,7 @@ message PlayerInfoMatchProto {
   int32 battlePassID = 23;
   repeated Hero listHeroes = 24;
   int32 teamID = 25;
+  int32 challengeTitleID = 26;
 }
 
 enum Arena
