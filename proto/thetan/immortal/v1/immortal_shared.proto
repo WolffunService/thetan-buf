@@ -92,3 +92,60 @@ enum Arena
   IMMORTAL = 10;
   DEMIGOD = 11;
 }
+
+// Battle analysis data structures
+message PlayerAnalysis {
+  repeated HeroAnalysis listHeroAnalysis = 2;
+  repeated SkillAnalysis listSkillAnalysis = 3;
+}
+
+message HeroAnalysis {
+  int32 heroId = 1;
+  SkillAnalysis furyAnalysis = 2;
+  SkillAnalysis passiveAnalysis = 3;
+  int32 totalDmgToHero = 4;
+  int32 totalDmgToUnit = 5;
+  int32 totalDmgToStatue = 6;
+  repeated Target targetKilledByHero = 7;
+}
+
+message SkillAnalysis {
+  int32 skillId = 1;
+  repeated TargetInfo targetsInfo = 2;
+  int32 totalDmgToUnit = 3;
+  int32 totalDmgToStatue = 4;
+  repeated Target targetKilledBySkill = 5;
+}
+
+message TargetInfo {
+  string userId = 1;
+  int32 heroId = 2;
+  int32 dmgTaken = 3;
+}
+
+message Target {
+  string userId = 1;
+  int32 heroId = 2;
+}
+
+// Quest progress models
+message QuestProgressUpdate {
+  int32 questId = 1;
+  int32 previousProgress = 2;
+  int32 currentProgress = 3;
+  int32 targetProgress = 4;
+  bool wasCompleted = 5;
+  bool isCompleted = 6;
+  QuestObjective objective = 7;
+  string taskType = 8;
+}
+
+message QuestObjective {
+  string objectiveType = 1;
+  repeated int32 heroIds = 2;
+  repeated int32 skillIds = 3;
+  repeated int32 opponentIds = 4;
+  repeated int32 gameModes = 5;
+  repeated int32 inGameModes = 6;
+}
+
