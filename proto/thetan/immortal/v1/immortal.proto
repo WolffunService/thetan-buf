@@ -53,6 +53,7 @@ message BattleEndRequest{
   repeated PlayerMatchInfo players = 2;
   GameMode gameMode = 3;
   InGameMode inGameMode = 4;
+  PlayerAnalysis playerAnalysis = 5; // Added player analysis data
 }
 
 message PlayerMatchInfo{
@@ -80,6 +81,7 @@ message BattleEndResponse{
   repeated BattleEndHero heroes = 12;
   int32 x2BattlePoint = 13;
   BattleEndHero lastUsedHero = 14;
+  repeated QuestProgressUpdate questProgressUpdates = 15;
 }
 
 message BattleEndPlayer {
