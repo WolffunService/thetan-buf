@@ -131,21 +131,7 @@ message Target {
 // Quest progress models
 message QuestProgressUpdate {
   int32 questId = 1;
-  int32 previousProgress = 2;
-  int32 currentProgress = 3;
-  int32 targetProgress = 4;
-  bool wasCompleted = 5;
-  bool isCompleted = 6;
-  QuestObjective objective = 7;
-  string taskType = 8;
-}
-
-message QuestObjective {
-  string objectiveType = 1;
-  repeated int32 heroIds = 2;
-  repeated int32 skillIds = 3;
-  repeated int32 opponentIds = 4;
-  repeated int32 gameModes = 5;
-  repeated int32 inGameModes = 6;
+  int32 afterCount = 2;
+  int32 targetCount = 3;
 }
 

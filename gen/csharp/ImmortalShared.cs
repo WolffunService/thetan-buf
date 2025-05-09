@@ -83,28 +83,18 @@ namespace Thetan.Immortal.V1 {
             "UhN0YXJnZXRLaWxsZWRCeVNraWxsIlgKClRhcmdldEluZm8SFgoGdXNlcklk",
             "GAEgASgJUgZ1c2VySWQSFgoGaGVyb0lkGAIgASgFUgZoZXJvSWQSGgoIZG1n",
             "VGFrZW4YAyABKAVSCGRtZ1Rha2VuIjgKBlRhcmdldBIWCgZ1c2VySWQYASAB",
-            "KAlSBnVzZXJJZBIWCgZoZXJvSWQYAiABKAVSBmhlcm9JZCLRAgoTUXVlc3RQ",
-            "cm9ncmVzc1VwZGF0ZRIYCgdxdWVzdElkGAEgASgFUgdxdWVzdElkEioKEHBy",
-            "ZXZpb3VzUHJvZ3Jlc3MYAiABKAVSEHByZXZpb3VzUHJvZ3Jlc3MSKAoPY3Vy",
-            "cmVudFByb2dyZXNzGAMgASgFUg9jdXJyZW50UHJvZ3Jlc3MSJgoOdGFyZ2V0",
-            "UHJvZ3Jlc3MYBCABKAVSDnRhcmdldFByb2dyZXNzEiIKDHdhc0NvbXBsZXRl",
-            "ZBgFIAEoCFIMd2FzQ29tcGxldGVkEiAKC2lzQ29tcGxldGVkGAYgASgIUgtp",
-            "c0NvbXBsZXRlZBJACglvYmplY3RpdmUYByABKAsyIi50aGV0YW4uaW1tb3J0",
-            "YWwudjEuUXVlc3RPYmplY3RpdmVSCW9iamVjdGl2ZRIaCgh0YXNrVHlwZRgI",
-            "IAEoCVIIdGFza1R5cGUizgEKDlF1ZXN0T2JqZWN0aXZlEiQKDW9iamVjdGl2",
-            "ZVR5cGUYASABKAlSDW9iamVjdGl2ZVR5cGUSGAoHaGVyb0lkcxgCIAMoBVIH",
-            "aGVyb0lkcxIaCghza2lsbElkcxgDIAMoBVIIc2tpbGxJZHMSIAoLb3Bwb25l",
-            "bnRJZHMYBCADKAVSC29wcG9uZW50SWRzEhwKCWdhbWVNb2RlcxgFIAMoBVIJ",
-            "Z2FtZU1vZGVzEiAKC2luR2FtZU1vZGVzGAYgAygFUgtpbkdhbWVNb2Rlcyqi",
-            "AQoFQXJlbmESCAoETk9ORRAAEgsKB1RSQUlORUUQARIPCgtBUFBFUkVOVElD",
-            "RRACEg4KClBBVEhGSU5ERVIQAxILCgdGSUdIVEVSEAQSCQoFRUxJVEUQBRIK",
-            "CgZNQVNURVIQBhIICgRIRVJPEAcSDAoIQ0hBTVBJT04QCBIKCgZMRUdFTkQQ",
-            "CRIMCghJTU1PUlRBTBAKEgsKB0RFTUlHT0QQC0LQAQoWY29tLnRoZXRhbi5p",
-            "bW1vcnRhbC52MUITSW1tb3J0YWxTaGFyZWRQcm90b1ABWjd0aGV0YW4tYnVm",
-            "L2dlbi9nby90aGV0YW4vaW1tb3J0YWwvdjE7dGhldGFuX2ltbW9ydGFsX3Yx",
-            "ogIDVElYqgISVGhldGFuLkltbW9ydGFsLlYxygISVGhldGFuXEltbW9ydGFs",
-            "XFYx4gIeVGhldGFuXEltbW9ydGFsXFYxXEdQQk1ldGFkYXRh6gIUVGhldGFu",
-            "OjpJbW1vcnRhbDo6VjFiBnByb3RvMw=="));
+            "KAlSBnVzZXJJZBIWCgZoZXJvSWQYAiABKAVSBmhlcm9JZCJxChNRdWVzdFBy",
+            "b2dyZXNzVXBkYXRlEhgKB3F1ZXN0SWQYASABKAVSB3F1ZXN0SWQSHgoKYWZ0",
+            "ZXJDb3VudBgCIAEoBVIKYWZ0ZXJDb3VudBIgCgt0YXJnZXRDb3VudBgDIAEo",
+            "BVILdGFyZ2V0Q291bnQqogEKBUFyZW5hEggKBE5PTkUQABILCgdUUkFJTkVF",
+            "EAESDwoLQVBQRVJFTlRJQ0UQAhIOCgpQQVRIRklOREVSEAMSCwoHRklHSFRF",
+            "UhAEEgkKBUVMSVRFEAUSCgoGTUFTVEVSEAYSCAoESEVSTxAHEgwKCENIQU1Q",
+            "SU9OEAgSCgoGTEVHRU5EEAkSDAoISU1NT1JUQUwQChILCgdERU1JR09EEAtC",
+            "0AEKFmNvbS50aGV0YW4uaW1tb3J0YWwudjFCE0ltbW9ydGFsU2hhcmVkUHJv",
+            "dG9QAVo3dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2ltbW9ydGFsL3YxO3Ro",
+            "ZXRhbl9pbW1vcnRhbF92MaICA1RJWKoCElRoZXRhbi5JbW1vcnRhbC5WMcoC",
+            "ElRoZXRhblxJbW1vcnRhbFxWMeICHlRoZXRhblxJbW1vcnRhbFxWMVxHUEJN",
+            "ZXRhZGF0YeoCFFRoZXRhbjo6SW1tb3J0YWw6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Immortal.V1.Arena), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -120,8 +110,7 @@ namespace Thetan.Immortal.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SkillAnalysis), global::Thetan.Immortal.V1.SkillAnalysis.Parser, new[]{ "SkillId", "TargetsInfo", "TotalDmgToUnit", "TotalDmgToStatue", "TargetKilledBySkill" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TargetInfo), global::Thetan.Immortal.V1.TargetInfo.Parser, new[]{ "UserId", "HeroId", "DmgTaken" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.Target), global::Thetan.Immortal.V1.Target.Parser, new[]{ "UserId", "HeroId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.QuestProgressUpdate), global::Thetan.Immortal.V1.QuestProgressUpdate.Parser, new[]{ "QuestId", "PreviousProgress", "CurrentProgress", "TargetProgress", "WasCompleted", "IsCompleted", "Objective", "TaskType" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.QuestObjective), global::Thetan.Immortal.V1.QuestObjective.Parser, new[]{ "ObjectiveType", "HeroIds", "SkillIds", "OpponentIds", "GameModes", "InGameModes" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.QuestProgressUpdate), global::Thetan.Immortal.V1.QuestProgressUpdate.Parser, new[]{ "QuestId", "AfterCount", "TargetCount" }, null, null, null, null)
           }));
     }
     #endregion
@@ -4501,13 +4490,8 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public QuestProgressUpdate(QuestProgressUpdate other) : this() {
       questId_ = other.questId_;
-      previousProgress_ = other.previousProgress_;
-      currentProgress_ = other.currentProgress_;
-      targetProgress_ = other.targetProgress_;
-      wasCompleted_ = other.wasCompleted_;
-      isCompleted_ = other.isCompleted_;
-      objective_ = other.objective_ != null ? other.objective_.Clone() : null;
-      taskType_ = other.taskType_;
+      afterCount_ = other.afterCount_;
+      targetCount_ = other.targetCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4529,87 +4513,27 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
-    /// <summary>Field number for the "previousProgress" field.</summary>
-    public const int PreviousProgressFieldNumber = 2;
-    private int previousProgress_;
+    /// <summary>Field number for the "afterCount" field.</summary>
+    public const int AfterCountFieldNumber = 2;
+    private int afterCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PreviousProgress {
-      get { return previousProgress_; }
+    public int AfterCount {
+      get { return afterCount_; }
       set {
-        previousProgress_ = value;
+        afterCount_ = value;
       }
     }
 
-    /// <summary>Field number for the "currentProgress" field.</summary>
-    public const int CurrentProgressFieldNumber = 3;
-    private int currentProgress_;
+    /// <summary>Field number for the "targetCount" field.</summary>
+    public const int TargetCountFieldNumber = 3;
+    private int targetCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CurrentProgress {
-      get { return currentProgress_; }
+    public int TargetCount {
+      get { return targetCount_; }
       set {
-        currentProgress_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "targetProgress" field.</summary>
-    public const int TargetProgressFieldNumber = 4;
-    private int targetProgress_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int TargetProgress {
-      get { return targetProgress_; }
-      set {
-        targetProgress_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "wasCompleted" field.</summary>
-    public const int WasCompletedFieldNumber = 5;
-    private bool wasCompleted_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool WasCompleted {
-      get { return wasCompleted_; }
-      set {
-        wasCompleted_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "isCompleted" field.</summary>
-    public const int IsCompletedFieldNumber = 6;
-    private bool isCompleted_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsCompleted {
-      get { return isCompleted_; }
-      set {
-        isCompleted_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "objective" field.</summary>
-    public const int ObjectiveFieldNumber = 7;
-    private global::Thetan.Immortal.V1.QuestObjective objective_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Thetan.Immortal.V1.QuestObjective Objective {
-      get { return objective_; }
-      set {
-        objective_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "taskType" field.</summary>
-    public const int TaskTypeFieldNumber = 8;
-    private string taskType_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TaskType {
-      get { return taskType_; }
-      set {
-        taskType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        targetCount_ = value;
       }
     }
 
@@ -4629,13 +4553,8 @@ namespace Thetan.Immortal.V1 {
         return true;
       }
       if (QuestId != other.QuestId) return false;
-      if (PreviousProgress != other.PreviousProgress) return false;
-      if (CurrentProgress != other.CurrentProgress) return false;
-      if (TargetProgress != other.TargetProgress) return false;
-      if (WasCompleted != other.WasCompleted) return false;
-      if (IsCompleted != other.IsCompleted) return false;
-      if (!object.Equals(Objective, other.Objective)) return false;
-      if (TaskType != other.TaskType) return false;
+      if (AfterCount != other.AfterCount) return false;
+      if (TargetCount != other.TargetCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4644,13 +4563,8 @@ namespace Thetan.Immortal.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (QuestId != 0) hash ^= QuestId.GetHashCode();
-      if (PreviousProgress != 0) hash ^= PreviousProgress.GetHashCode();
-      if (CurrentProgress != 0) hash ^= CurrentProgress.GetHashCode();
-      if (TargetProgress != 0) hash ^= TargetProgress.GetHashCode();
-      if (WasCompleted != false) hash ^= WasCompleted.GetHashCode();
-      if (IsCompleted != false) hash ^= IsCompleted.GetHashCode();
-      if (objective_ != null) hash ^= Objective.GetHashCode();
-      if (TaskType.Length != 0) hash ^= TaskType.GetHashCode();
+      if (AfterCount != 0) hash ^= AfterCount.GetHashCode();
+      if (TargetCount != 0) hash ^= TargetCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4673,33 +4587,13 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(QuestId);
       }
-      if (PreviousProgress != 0) {
+      if (AfterCount != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(PreviousProgress);
+        output.WriteInt32(AfterCount);
       }
-      if (CurrentProgress != 0) {
+      if (TargetCount != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(CurrentProgress);
-      }
-      if (TargetProgress != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(TargetProgress);
-      }
-      if (WasCompleted != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(WasCompleted);
-      }
-      if (IsCompleted != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(IsCompleted);
-      }
-      if (objective_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(Objective);
-      }
-      if (TaskType.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(TaskType);
+        output.WriteInt32(TargetCount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -4715,33 +4609,13 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(QuestId);
       }
-      if (PreviousProgress != 0) {
+      if (AfterCount != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(PreviousProgress);
+        output.WriteInt32(AfterCount);
       }
-      if (CurrentProgress != 0) {
+      if (TargetCount != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(CurrentProgress);
-      }
-      if (TargetProgress != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(TargetProgress);
-      }
-      if (WasCompleted != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(WasCompleted);
-      }
-      if (IsCompleted != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(IsCompleted);
-      }
-      if (objective_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(Objective);
-      }
-      if (TaskType.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(TaskType);
+        output.WriteInt32(TargetCount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -4756,26 +4630,11 @@ namespace Thetan.Immortal.V1 {
       if (QuestId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(QuestId);
       }
-      if (PreviousProgress != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PreviousProgress);
+      if (AfterCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AfterCount);
       }
-      if (CurrentProgress != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurrentProgress);
-      }
-      if (TargetProgress != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TargetProgress);
-      }
-      if (WasCompleted != false) {
-        size += 1 + 1;
-      }
-      if (IsCompleted != false) {
-        size += 1 + 1;
-      }
-      if (objective_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Objective);
-      }
-      if (TaskType.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(TaskType);
+      if (TargetCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TargetCount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4792,29 +4651,11 @@ namespace Thetan.Immortal.V1 {
       if (other.QuestId != 0) {
         QuestId = other.QuestId;
       }
-      if (other.PreviousProgress != 0) {
-        PreviousProgress = other.PreviousProgress;
+      if (other.AfterCount != 0) {
+        AfterCount = other.AfterCount;
       }
-      if (other.CurrentProgress != 0) {
-        CurrentProgress = other.CurrentProgress;
-      }
-      if (other.TargetProgress != 0) {
-        TargetProgress = other.TargetProgress;
-      }
-      if (other.WasCompleted != false) {
-        WasCompleted = other.WasCompleted;
-      }
-      if (other.IsCompleted != false) {
-        IsCompleted = other.IsCompleted;
-      }
-      if (other.objective_ != null) {
-        if (objective_ == null) {
-          Objective = new global::Thetan.Immortal.V1.QuestObjective();
-        }
-        Objective.MergeFrom(other.Objective);
-      }
-      if (other.TaskType.Length != 0) {
-        TaskType = other.TaskType;
+      if (other.TargetCount != 0) {
+        TargetCount = other.TargetCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4836,34 +4677,11 @@ namespace Thetan.Immortal.V1 {
             break;
           }
           case 16: {
-            PreviousProgress = input.ReadInt32();
+            AfterCount = input.ReadInt32();
             break;
           }
           case 24: {
-            CurrentProgress = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            TargetProgress = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            WasCompleted = input.ReadBool();
-            break;
-          }
-          case 48: {
-            IsCompleted = input.ReadBool();
-            break;
-          }
-          case 58: {
-            if (objective_ == null) {
-              Objective = new global::Thetan.Immortal.V1.QuestObjective();
-            }
-            input.ReadMessage(Objective);
-            break;
-          }
-          case 66: {
-            TaskType = input.ReadString();
+            TargetCount = input.ReadInt32();
             break;
           }
         }
@@ -4886,363 +4704,11 @@ namespace Thetan.Immortal.V1 {
             break;
           }
           case 16: {
-            PreviousProgress = input.ReadInt32();
+            AfterCount = input.ReadInt32();
             break;
           }
           case 24: {
-            CurrentProgress = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            TargetProgress = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            WasCompleted = input.ReadBool();
-            break;
-          }
-          case 48: {
-            IsCompleted = input.ReadBool();
-            break;
-          }
-          case 58: {
-            if (objective_ == null) {
-              Objective = new global::Thetan.Immortal.V1.QuestObjective();
-            }
-            input.ReadMessage(Objective);
-            break;
-          }
-          case 66: {
-            TaskType = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class QuestObjective : pb::IMessage<QuestObjective>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<QuestObjective> _parser = new pb::MessageParser<QuestObjective>(() => new QuestObjective());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<QuestObjective> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Immortal.V1.ImmortalSharedReflection.Descriptor.MessageTypes[13]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public QuestObjective() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public QuestObjective(QuestObjective other) : this() {
-      objectiveType_ = other.objectiveType_;
-      heroIds_ = other.heroIds_.Clone();
-      skillIds_ = other.skillIds_.Clone();
-      opponentIds_ = other.opponentIds_.Clone();
-      gameModes_ = other.gameModes_.Clone();
-      inGameModes_ = other.inGameModes_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public QuestObjective Clone() {
-      return new QuestObjective(this);
-    }
-
-    /// <summary>Field number for the "objectiveType" field.</summary>
-    public const int ObjectiveTypeFieldNumber = 1;
-    private string objectiveType_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ObjectiveType {
-      get { return objectiveType_; }
-      set {
-        objectiveType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "heroIds" field.</summary>
-    public const int HeroIdsFieldNumber = 2;
-    private static readonly pb::FieldCodec<int> _repeated_heroIds_codec
-        = pb::FieldCodec.ForInt32(18);
-    private readonly pbc::RepeatedField<int> heroIds_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<int> HeroIds {
-      get { return heroIds_; }
-    }
-
-    /// <summary>Field number for the "skillIds" field.</summary>
-    public const int SkillIdsFieldNumber = 3;
-    private static readonly pb::FieldCodec<int> _repeated_skillIds_codec
-        = pb::FieldCodec.ForInt32(26);
-    private readonly pbc::RepeatedField<int> skillIds_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<int> SkillIds {
-      get { return skillIds_; }
-    }
-
-    /// <summary>Field number for the "opponentIds" field.</summary>
-    public const int OpponentIdsFieldNumber = 4;
-    private static readonly pb::FieldCodec<int> _repeated_opponentIds_codec
-        = pb::FieldCodec.ForInt32(34);
-    private readonly pbc::RepeatedField<int> opponentIds_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<int> OpponentIds {
-      get { return opponentIds_; }
-    }
-
-    /// <summary>Field number for the "gameModes" field.</summary>
-    public const int GameModesFieldNumber = 5;
-    private static readonly pb::FieldCodec<int> _repeated_gameModes_codec
-        = pb::FieldCodec.ForInt32(42);
-    private readonly pbc::RepeatedField<int> gameModes_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<int> GameModes {
-      get { return gameModes_; }
-    }
-
-    /// <summary>Field number for the "inGameModes" field.</summary>
-    public const int InGameModesFieldNumber = 6;
-    private static readonly pb::FieldCodec<int> _repeated_inGameModes_codec
-        = pb::FieldCodec.ForInt32(50);
-    private readonly pbc::RepeatedField<int> inGameModes_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<int> InGameModes {
-      get { return inGameModes_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as QuestObjective);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(QuestObjective other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (ObjectiveType != other.ObjectiveType) return false;
-      if(!heroIds_.Equals(other.heroIds_)) return false;
-      if(!skillIds_.Equals(other.skillIds_)) return false;
-      if(!opponentIds_.Equals(other.opponentIds_)) return false;
-      if(!gameModes_.Equals(other.gameModes_)) return false;
-      if(!inGameModes_.Equals(other.inGameModes_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (ObjectiveType.Length != 0) hash ^= ObjectiveType.GetHashCode();
-      hash ^= heroIds_.GetHashCode();
-      hash ^= skillIds_.GetHashCode();
-      hash ^= opponentIds_.GetHashCode();
-      hash ^= gameModes_.GetHashCode();
-      hash ^= inGameModes_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (ObjectiveType.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(ObjectiveType);
-      }
-      heroIds_.WriteTo(output, _repeated_heroIds_codec);
-      skillIds_.WriteTo(output, _repeated_skillIds_codec);
-      opponentIds_.WriteTo(output, _repeated_opponentIds_codec);
-      gameModes_.WriteTo(output, _repeated_gameModes_codec);
-      inGameModes_.WriteTo(output, _repeated_inGameModes_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ObjectiveType.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(ObjectiveType);
-      }
-      heroIds_.WriteTo(ref output, _repeated_heroIds_codec);
-      skillIds_.WriteTo(ref output, _repeated_skillIds_codec);
-      opponentIds_.WriteTo(ref output, _repeated_opponentIds_codec);
-      gameModes_.WriteTo(ref output, _repeated_gameModes_codec);
-      inGameModes_.WriteTo(ref output, _repeated_inGameModes_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (ObjectiveType.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ObjectiveType);
-      }
-      size += heroIds_.CalculateSize(_repeated_heroIds_codec);
-      size += skillIds_.CalculateSize(_repeated_skillIds_codec);
-      size += opponentIds_.CalculateSize(_repeated_opponentIds_codec);
-      size += gameModes_.CalculateSize(_repeated_gameModes_codec);
-      size += inGameModes_.CalculateSize(_repeated_inGameModes_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(QuestObjective other) {
-      if (other == null) {
-        return;
-      }
-      if (other.ObjectiveType.Length != 0) {
-        ObjectiveType = other.ObjectiveType;
-      }
-      heroIds_.Add(other.heroIds_);
-      skillIds_.Add(other.skillIds_);
-      opponentIds_.Add(other.opponentIds_);
-      gameModes_.Add(other.gameModes_);
-      inGameModes_.Add(other.inGameModes_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            ObjectiveType = input.ReadString();
-            break;
-          }
-          case 18:
-          case 16: {
-            heroIds_.AddEntriesFrom(input, _repeated_heroIds_codec);
-            break;
-          }
-          case 26:
-          case 24: {
-            skillIds_.AddEntriesFrom(input, _repeated_skillIds_codec);
-            break;
-          }
-          case 34:
-          case 32: {
-            opponentIds_.AddEntriesFrom(input, _repeated_opponentIds_codec);
-            break;
-          }
-          case 42:
-          case 40: {
-            gameModes_.AddEntriesFrom(input, _repeated_gameModes_codec);
-            break;
-          }
-          case 50:
-          case 48: {
-            inGameModes_.AddEntriesFrom(input, _repeated_inGameModes_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            ObjectiveType = input.ReadString();
-            break;
-          }
-          case 18:
-          case 16: {
-            heroIds_.AddEntriesFrom(ref input, _repeated_heroIds_codec);
-            break;
-          }
-          case 26:
-          case 24: {
-            skillIds_.AddEntriesFrom(ref input, _repeated_skillIds_codec);
-            break;
-          }
-          case 34:
-          case 32: {
-            opponentIds_.AddEntriesFrom(ref input, _repeated_opponentIds_codec);
-            break;
-          }
-          case 42:
-          case 40: {
-            gameModes_.AddEntriesFrom(ref input, _repeated_gameModes_codec);
-            break;
-          }
-          case 50:
-          case 48: {
-            inGameModes_.AddEntriesFrom(ref input, _repeated_inGameModes_codec);
+            TargetCount = input.ReadInt32();
             break;
           }
         }
