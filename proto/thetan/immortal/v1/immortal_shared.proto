@@ -101,31 +101,35 @@ message PlayerAnalysis {
 
 message HeroAnalysis {
   int32 heroId = 1;
-  SkillAnalysis furyAnalysis = 2;
-  SkillAnalysis passiveAnalysis = 3;
-  int32 totalDmgToHero = 4;
-  int32 totalDmgToUnit = 5;
-  int32 totalDmgToStatue = 6;
-  repeated Target targetKilledByHero = 7;
+  int32 skinId = 2;
+  int32 totalDmgToHero = 3;
+  int32 totalDmgToUnit = 4;
+  int32 totalDmgToStatue = 5;
+  repeated DamageDealToHeroInfo listDamageDealToHeroInfos = 6;
+  SkillAnalysis furyAnalysis = 7;
+  SkillAnalysis passiveAnalysis = 8;
+  repeated TargetKilledInfo targetKilledByHero = 9;
 }
 
 message SkillAnalysis {
   int32 skillId = 1;
-  repeated TargetInfo targetsInfo = 2;
+  int32 totalDmgToHero = 2;
   int32 totalDmgToUnit = 3;
   int32 totalDmgToStatue = 4;
-  repeated Target targetKilledBySkill = 5;
+  int32 totalTimeUsed = 5;
+  repeated TargetKilledInfo targetsKilledBySkill = 6;
 }
 
-message TargetInfo {
-  string userId = 1;
-  int32 heroId = 2;
-  int32 dmgTaken = 3;
+message DamageDealToHeroInfo {
+  int32 heroTypeId = 1;
+  int32 skinId = 2;
+  int32 totalDmgDeal = 3;
 }
 
-message Target {
+message TargetKilledInfo {
   string userId = 1;
-  int32 heroId = 2;
+  int32 heroTypeId = 2;
+  int32 skinId = 3;
 }
 
 // Quest progress models
@@ -134,4 +138,3 @@ message QuestProgressUpdate {
   int32 afterCount = 2;
   int32 targetCount = 3;
 }
-

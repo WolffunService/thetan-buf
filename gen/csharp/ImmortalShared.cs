@@ -65,36 +65,41 @@ namespace Thetan.Immortal.V1 {
             "eWVyQW5hbHlzaXMSTAoQbGlzdEhlcm9BbmFseXNpcxgCIAMoCzIgLnRoZXRh",
             "bi5pbW1vcnRhbC52MS5IZXJvQW5hbHlzaXNSEGxpc3RIZXJvQW5hbHlzaXMS",
             "TwoRbGlzdFNraWxsQW5hbHlzaXMYAyADKAsyIS50aGV0YW4uaW1tb3J0YWwu",
-            "djEuU2tpbGxBbmFseXNpc1IRbGlzdFNraWxsQW5hbHlzaXMiggMKDEhlcm9B",
-            "bmFseXNpcxIWCgZoZXJvSWQYASABKAVSBmhlcm9JZBJFCgxmdXJ5QW5hbHlz",
-            "aXMYAiABKAsyIS50aGV0YW4uaW1tb3J0YWwudjEuU2tpbGxBbmFseXNpc1IM",
-            "ZnVyeUFuYWx5c2lzEksKD3Bhc3NpdmVBbmFseXNpcxgDIAEoCzIhLnRoZXRh",
-            "bi5pbW1vcnRhbC52MS5Ta2lsbEFuYWx5c2lzUg9wYXNzaXZlQW5hbHlzaXMS",
-            "JgoOdG90YWxEbWdUb0hlcm8YBCABKAVSDnRvdGFsRG1nVG9IZXJvEiYKDnRv",
-            "dGFsRG1nVG9Vbml0GAUgASgFUg50b3RhbERtZ1RvVW5pdBIqChB0b3RhbERt",
-            "Z1RvU3RhdHVlGAYgASgFUhB0b3RhbERtZ1RvU3RhdHVlEkoKEnRhcmdldEtp",
-            "bGxlZEJ5SGVybxgHIAMoCzIaLnRoZXRhbi5pbW1vcnRhbC52MS5UYXJnZXRS",
-            "EnRhcmdldEtpbGxlZEJ5SGVybyKNAgoNU2tpbGxBbmFseXNpcxIYCgdza2ls",
-            "bElkGAEgASgFUgdza2lsbElkEkAKC3RhcmdldHNJbmZvGAIgAygLMh4udGhl",
-            "dGFuLmltbW9ydGFsLnYxLlRhcmdldEluZm9SC3RhcmdldHNJbmZvEiYKDnRv",
-            "dGFsRG1nVG9Vbml0GAMgASgFUg50b3RhbERtZ1RvVW5pdBIqChB0b3RhbERt",
-            "Z1RvU3RhdHVlGAQgASgFUhB0b3RhbERtZ1RvU3RhdHVlEkwKE3RhcmdldEtp",
-            "bGxlZEJ5U2tpbGwYBSADKAsyGi50aGV0YW4uaW1tb3J0YWwudjEuVGFyZ2V0",
-            "UhN0YXJnZXRLaWxsZWRCeVNraWxsIlgKClRhcmdldEluZm8SFgoGdXNlcklk",
-            "GAEgASgJUgZ1c2VySWQSFgoGaGVyb0lkGAIgASgFUgZoZXJvSWQSGgoIZG1n",
-            "VGFrZW4YAyABKAVSCGRtZ1Rha2VuIjgKBlRhcmdldBIWCgZ1c2VySWQYASAB",
-            "KAlSBnVzZXJJZBIWCgZoZXJvSWQYAiABKAVSBmhlcm9JZCJxChNRdWVzdFBy",
-            "b2dyZXNzVXBkYXRlEhgKB3F1ZXN0SWQYASABKAVSB3F1ZXN0SWQSHgoKYWZ0",
-            "ZXJDb3VudBgCIAEoBVIKYWZ0ZXJDb3VudBIgCgt0YXJnZXRDb3VudBgDIAEo",
-            "BVILdGFyZ2V0Q291bnQqogEKBUFyZW5hEggKBE5PTkUQABILCgdUUkFJTkVF",
-            "EAESDwoLQVBQRVJFTlRJQ0UQAhIOCgpQQVRIRklOREVSEAMSCwoHRklHSFRF",
-            "UhAEEgkKBUVMSVRFEAUSCgoGTUFTVEVSEAYSCAoESEVSTxAHEgwKCENIQU1Q",
-            "SU9OEAgSCgoGTEVHRU5EEAkSDAoISU1NT1JUQUwQChILCgdERU1JR09EEAtC",
-            "0AEKFmNvbS50aGV0YW4uaW1tb3J0YWwudjFCE0ltbW9ydGFsU2hhcmVkUHJv",
-            "dG9QAVo3dGhldGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2ltbW9ydGFsL3YxO3Ro",
-            "ZXRhbl9pbW1vcnRhbF92MaICA1RJWKoCElRoZXRhbi5JbW1vcnRhbC5WMcoC",
-            "ElRoZXRhblxJbW1vcnRhbFxWMeICHlRoZXRhblxJbW1vcnRhbFxWMVxHUEJN",
-            "ZXRhZGF0YeoCFFRoZXRhbjo6SW1tb3J0YWw6OlYxYgZwcm90bzM="));
+            "djEuU2tpbGxBbmFseXNpc1IRbGlzdFNraWxsQW5hbHlzaXMijAQKDEhlcm9B",
+            "bmFseXNpcxIWCgZoZXJvSWQYASABKAVSBmhlcm9JZBIWCgZza2luSWQYAiAB",
+            "KAVSBnNraW5JZBImCg50b3RhbERtZ1RvSGVybxgDIAEoBVIOdG90YWxEbWdU",
+            "b0hlcm8SJgoOdG90YWxEbWdUb1VuaXQYBCABKAVSDnRvdGFsRG1nVG9Vbml0",
+            "EioKEHRvdGFsRG1nVG9TdGF0dWUYBSABKAVSEHRvdGFsRG1nVG9TdGF0dWUS",
+            "ZgoZbGlzdERhbWFnZURlYWxUb0hlcm9JbmZvcxgGIAMoCzIoLnRoZXRhbi5p",
+            "bW1vcnRhbC52MS5EYW1hZ2VEZWFsVG9IZXJvSW5mb1IZbGlzdERhbWFnZURl",
+            "YWxUb0hlcm9JbmZvcxJFCgxmdXJ5QW5hbHlzaXMYByABKAsyIS50aGV0YW4u",
+            "aW1tb3J0YWwudjEuU2tpbGxBbmFseXNpc1IMZnVyeUFuYWx5c2lzEksKD3Bh",
+            "c3NpdmVBbmFseXNpcxgIIAEoCzIhLnRoZXRhbi5pbW1vcnRhbC52MS5Ta2ls",
+            "bEFuYWx5c2lzUg9wYXNzaXZlQW5hbHlzaXMSVAoSdGFyZ2V0S2lsbGVkQnlI",
+            "ZXJvGAkgAygLMiQudGhldGFuLmltbW9ydGFsLnYxLlRhcmdldEtpbGxlZElu",
+            "Zm9SEnRhcmdldEtpbGxlZEJ5SGVybyKlAgoNU2tpbGxBbmFseXNpcxIYCgdz",
+            "a2lsbElkGAEgASgFUgdza2lsbElkEiYKDnRvdGFsRG1nVG9IZXJvGAIgASgF",
+            "Ug50b3RhbERtZ1RvSGVybxImCg50b3RhbERtZ1RvVW5pdBgDIAEoBVIOdG90",
+            "YWxEbWdUb1VuaXQSKgoQdG90YWxEbWdUb1N0YXR1ZRgEIAEoBVIQdG90YWxE",
+            "bWdUb1N0YXR1ZRIkCg10b3RhbFRpbWVVc2VkGAUgASgFUg10b3RhbFRpbWVV",
+            "c2VkElgKFHRhcmdldHNLaWxsZWRCeVNraWxsGAYgAygLMiQudGhldGFuLmlt",
+            "bW9ydGFsLnYxLlRhcmdldEtpbGxlZEluZm9SFHRhcmdldHNLaWxsZWRCeVNr",
+            "aWxsInIKFERhbWFnZURlYWxUb0hlcm9JbmZvEh4KCmhlcm9UeXBlSWQYASAB",
+            "KAVSCmhlcm9UeXBlSWQSFgoGc2tpbklkGAIgASgFUgZza2luSWQSIgoMdG90",
+            "YWxEbWdEZWFsGAMgASgFUgx0b3RhbERtZ0RlYWwiYgoQVGFyZ2V0S2lsbGVk",
+            "SW5mbxIWCgZ1c2VySWQYASABKAlSBnVzZXJJZBIeCgpoZXJvVHlwZUlkGAIg",
+            "ASgFUgpoZXJvVHlwZUlkEhYKBnNraW5JZBgDIAEoBVIGc2tpbklkInEKE1F1",
+            "ZXN0UHJvZ3Jlc3NVcGRhdGUSGAoHcXVlc3RJZBgBIAEoBVIHcXVlc3RJZBIe",
+            "CgphZnRlckNvdW50GAIgASgFUgphZnRlckNvdW50EiAKC3RhcmdldENvdW50",
+            "GAMgASgFUgt0YXJnZXRDb3VudCqiAQoFQXJlbmESCAoETk9ORRAAEgsKB1RS",
+            "QUlORUUQARIPCgtBUFBFUkVOVElDRRACEg4KClBBVEhGSU5ERVIQAxILCgdG",
+            "SUdIVEVSEAQSCQoFRUxJVEUQBRIKCgZNQVNURVIQBhIICgRIRVJPEAcSDAoI",
+            "Q0hBTVBJT04QCBIKCgZMRUdFTkQQCRIMCghJTU1PUlRBTBAKEgsKB0RFTUlH",
+            "T0QQC0LQAQoWY29tLnRoZXRhbi5pbW1vcnRhbC52MUITSW1tb3J0YWxTaGFy",
+            "ZWRQcm90b1ABWjd0aGV0YW4tYnVmL2dlbi9nby90aGV0YW4vaW1tb3J0YWwv",
+            "djE7dGhldGFuX2ltbW9ydGFsX3YxogIDVElYqgISVGhldGFuLkltbW9ydGFs",
+            "LlYxygISVGhldGFuXEltbW9ydGFsXFYx4gIeVGhldGFuXEltbW9ydGFsXFYx",
+            "XEdQQk1ldGFkYXRh6gIUVGhldGFuOjpJbW1vcnRhbDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Immortal.V1.Arena), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -106,10 +111,10 @@ namespace Thetan.Immortal.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SkillRating), global::Thetan.Immortal.V1.SkillRating.Parser, new[]{ "Rating", "Rd", "Volatility" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.PlayerInfoMatchProto), global::Thetan.Immortal.V1.PlayerInfoMatchProto.Parser, new[]{ "PlayerID", "PlayerName", "AvatarID", "FrameID", "NameColorID", "BattleCount", "PartyID", "TrophyRank", "TrophySearch", "Rank", "Hero", "Skills", "BotBrain", "Arena", "WinRate", "Rating", "Rd", "Volatility", "WinCount", "RecentMatchedHeroes", "MaxHeroLevel", "MaxSkillLevel", "BattlePassID", "ListHeroes", "TeamID", "ChallengeTitleID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.PlayerAnalysis), global::Thetan.Immortal.V1.PlayerAnalysis.Parser, new[]{ "ListHeroAnalysis", "ListSkillAnalysis" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.HeroAnalysis), global::Thetan.Immortal.V1.HeroAnalysis.Parser, new[]{ "HeroId", "FuryAnalysis", "PassiveAnalysis", "TotalDmgToHero", "TotalDmgToUnit", "TotalDmgToStatue", "TargetKilledByHero" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SkillAnalysis), global::Thetan.Immortal.V1.SkillAnalysis.Parser, new[]{ "SkillId", "TargetsInfo", "TotalDmgToUnit", "TotalDmgToStatue", "TargetKilledBySkill" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TargetInfo), global::Thetan.Immortal.V1.TargetInfo.Parser, new[]{ "UserId", "HeroId", "DmgTaken" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.Target), global::Thetan.Immortal.V1.Target.Parser, new[]{ "UserId", "HeroId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.HeroAnalysis), global::Thetan.Immortal.V1.HeroAnalysis.Parser, new[]{ "HeroId", "SkinId", "TotalDmgToHero", "TotalDmgToUnit", "TotalDmgToStatue", "ListDamageDealToHeroInfos", "FuryAnalysis", "PassiveAnalysis", "TargetKilledByHero" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.SkillAnalysis), global::Thetan.Immortal.V1.SkillAnalysis.Parser, new[]{ "SkillId", "TotalDmgToHero", "TotalDmgToUnit", "TotalDmgToStatue", "TotalTimeUsed", "TargetsKilledBySkill" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.DamageDealToHeroInfo), global::Thetan.Immortal.V1.DamageDealToHeroInfo.Parser, new[]{ "HeroTypeId", "SkinId", "TotalDmgDeal" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.TargetKilledInfo), global::Thetan.Immortal.V1.TargetKilledInfo.Parser, new[]{ "UserId", "HeroTypeId", "SkinId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Immortal.V1.QuestProgressUpdate), global::Thetan.Immortal.V1.QuestProgressUpdate.Parser, new[]{ "QuestId", "AfterCount", "TargetCount" }, null, null, null, null)
           }));
     }
@@ -3265,11 +3270,13 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public HeroAnalysis(HeroAnalysis other) : this() {
       heroId_ = other.heroId_;
-      furyAnalysis_ = other.furyAnalysis_ != null ? other.furyAnalysis_.Clone() : null;
-      passiveAnalysis_ = other.passiveAnalysis_ != null ? other.passiveAnalysis_.Clone() : null;
+      skinId_ = other.skinId_;
       totalDmgToHero_ = other.totalDmgToHero_;
       totalDmgToUnit_ = other.totalDmgToUnit_;
       totalDmgToStatue_ = other.totalDmgToStatue_;
+      listDamageDealToHeroInfos_ = other.listDamageDealToHeroInfos_.Clone();
+      furyAnalysis_ = other.furyAnalysis_ != null ? other.furyAnalysis_.Clone() : null;
+      passiveAnalysis_ = other.passiveAnalysis_ != null ? other.passiveAnalysis_.Clone() : null;
       targetKilledByHero_ = other.targetKilledByHero_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3292,32 +3299,20 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
-    /// <summary>Field number for the "furyAnalysis" field.</summary>
-    public const int FuryAnalysisFieldNumber = 2;
-    private global::Thetan.Immortal.V1.SkillAnalysis furyAnalysis_;
+    /// <summary>Field number for the "skinId" field.</summary>
+    public const int SkinIdFieldNumber = 2;
+    private int skinId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Thetan.Immortal.V1.SkillAnalysis FuryAnalysis {
-      get { return furyAnalysis_; }
+    public int SkinId {
+      get { return skinId_; }
       set {
-        furyAnalysis_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "passiveAnalysis" field.</summary>
-    public const int PassiveAnalysisFieldNumber = 3;
-    private global::Thetan.Immortal.V1.SkillAnalysis passiveAnalysis_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Thetan.Immortal.V1.SkillAnalysis PassiveAnalysis {
-      get { return passiveAnalysis_; }
-      set {
-        passiveAnalysis_ = value;
+        skinId_ = value;
       }
     }
 
     /// <summary>Field number for the "totalDmgToHero" field.</summary>
-    public const int TotalDmgToHeroFieldNumber = 4;
+    public const int TotalDmgToHeroFieldNumber = 3;
     private int totalDmgToHero_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3329,7 +3324,7 @@ namespace Thetan.Immortal.V1 {
     }
 
     /// <summary>Field number for the "totalDmgToUnit" field.</summary>
-    public const int TotalDmgToUnitFieldNumber = 5;
+    public const int TotalDmgToUnitFieldNumber = 4;
     private int totalDmgToUnit_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3341,7 +3336,7 @@ namespace Thetan.Immortal.V1 {
     }
 
     /// <summary>Field number for the "totalDmgToStatue" field.</summary>
-    public const int TotalDmgToStatueFieldNumber = 6;
+    public const int TotalDmgToStatueFieldNumber = 5;
     private int totalDmgToStatue_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3352,14 +3347,49 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
-    /// <summary>Field number for the "targetKilledByHero" field.</summary>
-    public const int TargetKilledByHeroFieldNumber = 7;
-    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.Target> _repeated_targetKilledByHero_codec
-        = pb::FieldCodec.ForMessage(58, global::Thetan.Immortal.V1.Target.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.Target> targetKilledByHero_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.Target>();
+    /// <summary>Field number for the "listDamageDealToHeroInfos" field.</summary>
+    public const int ListDamageDealToHeroInfosFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.DamageDealToHeroInfo> _repeated_listDamageDealToHeroInfos_codec
+        = pb::FieldCodec.ForMessage(50, global::Thetan.Immortal.V1.DamageDealToHeroInfo.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.DamageDealToHeroInfo> listDamageDealToHeroInfos_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.DamageDealToHeroInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Immortal.V1.Target> TargetKilledByHero {
+    public pbc::RepeatedField<global::Thetan.Immortal.V1.DamageDealToHeroInfo> ListDamageDealToHeroInfos {
+      get { return listDamageDealToHeroInfos_; }
+    }
+
+    /// <summary>Field number for the "furyAnalysis" field.</summary>
+    public const int FuryAnalysisFieldNumber = 7;
+    private global::Thetan.Immortal.V1.SkillAnalysis furyAnalysis_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Immortal.V1.SkillAnalysis FuryAnalysis {
+      get { return furyAnalysis_; }
+      set {
+        furyAnalysis_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "passiveAnalysis" field.</summary>
+    public const int PassiveAnalysisFieldNumber = 8;
+    private global::Thetan.Immortal.V1.SkillAnalysis passiveAnalysis_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Thetan.Immortal.V1.SkillAnalysis PassiveAnalysis {
+      get { return passiveAnalysis_; }
+      set {
+        passiveAnalysis_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "targetKilledByHero" field.</summary>
+    public const int TargetKilledByHeroFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.TargetKilledInfo> _repeated_targetKilledByHero_codec
+        = pb::FieldCodec.ForMessage(74, global::Thetan.Immortal.V1.TargetKilledInfo.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.TargetKilledInfo> targetKilledByHero_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.TargetKilledInfo>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Thetan.Immortal.V1.TargetKilledInfo> TargetKilledByHero {
       get { return targetKilledByHero_; }
     }
 
@@ -3379,11 +3409,13 @@ namespace Thetan.Immortal.V1 {
         return true;
       }
       if (HeroId != other.HeroId) return false;
-      if (!object.Equals(FuryAnalysis, other.FuryAnalysis)) return false;
-      if (!object.Equals(PassiveAnalysis, other.PassiveAnalysis)) return false;
+      if (SkinId != other.SkinId) return false;
       if (TotalDmgToHero != other.TotalDmgToHero) return false;
       if (TotalDmgToUnit != other.TotalDmgToUnit) return false;
       if (TotalDmgToStatue != other.TotalDmgToStatue) return false;
+      if(!listDamageDealToHeroInfos_.Equals(other.listDamageDealToHeroInfos_)) return false;
+      if (!object.Equals(FuryAnalysis, other.FuryAnalysis)) return false;
+      if (!object.Equals(PassiveAnalysis, other.PassiveAnalysis)) return false;
       if(!targetKilledByHero_.Equals(other.targetKilledByHero_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3393,11 +3425,13 @@ namespace Thetan.Immortal.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (HeroId != 0) hash ^= HeroId.GetHashCode();
-      if (furyAnalysis_ != null) hash ^= FuryAnalysis.GetHashCode();
-      if (passiveAnalysis_ != null) hash ^= PassiveAnalysis.GetHashCode();
+      if (SkinId != 0) hash ^= SkinId.GetHashCode();
       if (TotalDmgToHero != 0) hash ^= TotalDmgToHero.GetHashCode();
       if (TotalDmgToUnit != 0) hash ^= TotalDmgToUnit.GetHashCode();
       if (TotalDmgToStatue != 0) hash ^= TotalDmgToStatue.GetHashCode();
+      hash ^= listDamageDealToHeroInfos_.GetHashCode();
+      if (furyAnalysis_ != null) hash ^= FuryAnalysis.GetHashCode();
+      if (passiveAnalysis_ != null) hash ^= PassiveAnalysis.GetHashCode();
       hash ^= targetKilledByHero_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3421,25 +3455,30 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(HeroId);
       }
-      if (furyAnalysis_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(FuryAnalysis);
-      }
-      if (passiveAnalysis_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(PassiveAnalysis);
+      if (SkinId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SkinId);
       }
       if (TotalDmgToHero != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteInt32(TotalDmgToHero);
       }
       if (TotalDmgToUnit != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(32);
         output.WriteInt32(TotalDmgToUnit);
       }
       if (TotalDmgToStatue != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(40);
         output.WriteInt32(TotalDmgToStatue);
+      }
+      listDamageDealToHeroInfos_.WriteTo(output, _repeated_listDamageDealToHeroInfos_codec);
+      if (furyAnalysis_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(FuryAnalysis);
+      }
+      if (passiveAnalysis_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(PassiveAnalysis);
       }
       targetKilledByHero_.WriteTo(output, _repeated_targetKilledByHero_codec);
       if (_unknownFields != null) {
@@ -3456,25 +3495,30 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(HeroId);
       }
-      if (furyAnalysis_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(FuryAnalysis);
-      }
-      if (passiveAnalysis_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(PassiveAnalysis);
+      if (SkinId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SkinId);
       }
       if (TotalDmgToHero != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteInt32(TotalDmgToHero);
       }
       if (TotalDmgToUnit != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(32);
         output.WriteInt32(TotalDmgToUnit);
       }
       if (TotalDmgToStatue != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(40);
         output.WriteInt32(TotalDmgToStatue);
+      }
+      listDamageDealToHeroInfos_.WriteTo(ref output, _repeated_listDamageDealToHeroInfos_codec);
+      if (furyAnalysis_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(FuryAnalysis);
+      }
+      if (passiveAnalysis_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(PassiveAnalysis);
       }
       targetKilledByHero_.WriteTo(ref output, _repeated_targetKilledByHero_codec);
       if (_unknownFields != null) {
@@ -3490,11 +3534,8 @@ namespace Thetan.Immortal.V1 {
       if (HeroId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroId);
       }
-      if (furyAnalysis_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(FuryAnalysis);
-      }
-      if (passiveAnalysis_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PassiveAnalysis);
+      if (SkinId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SkinId);
       }
       if (TotalDmgToHero != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalDmgToHero);
@@ -3504,6 +3545,13 @@ namespace Thetan.Immortal.V1 {
       }
       if (TotalDmgToStatue != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalDmgToStatue);
+      }
+      size += listDamageDealToHeroInfos_.CalculateSize(_repeated_listDamageDealToHeroInfos_codec);
+      if (furyAnalysis_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(FuryAnalysis);
+      }
+      if (passiveAnalysis_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PassiveAnalysis);
       }
       size += targetKilledByHero_.CalculateSize(_repeated_targetKilledByHero_codec);
       if (_unknownFields != null) {
@@ -3521,6 +3569,19 @@ namespace Thetan.Immortal.V1 {
       if (other.HeroId != 0) {
         HeroId = other.HeroId;
       }
+      if (other.SkinId != 0) {
+        SkinId = other.SkinId;
+      }
+      if (other.TotalDmgToHero != 0) {
+        TotalDmgToHero = other.TotalDmgToHero;
+      }
+      if (other.TotalDmgToUnit != 0) {
+        TotalDmgToUnit = other.TotalDmgToUnit;
+      }
+      if (other.TotalDmgToStatue != 0) {
+        TotalDmgToStatue = other.TotalDmgToStatue;
+      }
+      listDamageDealToHeroInfos_.Add(other.listDamageDealToHeroInfos_);
       if (other.furyAnalysis_ != null) {
         if (furyAnalysis_ == null) {
           FuryAnalysis = new global::Thetan.Immortal.V1.SkillAnalysis();
@@ -3532,15 +3593,6 @@ namespace Thetan.Immortal.V1 {
           PassiveAnalysis = new global::Thetan.Immortal.V1.SkillAnalysis();
         }
         PassiveAnalysis.MergeFrom(other.PassiveAnalysis);
-      }
-      if (other.TotalDmgToHero != 0) {
-        TotalDmgToHero = other.TotalDmgToHero;
-      }
-      if (other.TotalDmgToUnit != 0) {
-        TotalDmgToUnit = other.TotalDmgToUnit;
-      }
-      if (other.TotalDmgToStatue != 0) {
-        TotalDmgToStatue = other.TotalDmgToStatue;
       }
       targetKilledByHero_.Add(other.targetKilledByHero_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3562,33 +3614,41 @@ namespace Thetan.Immortal.V1 {
             HeroId = input.ReadInt32();
             break;
           }
-          case 18: {
+          case 16: {
+            SkinId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            TotalDmgToHero = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            TotalDmgToUnit = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            TotalDmgToStatue = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            listDamageDealToHeroInfos_.AddEntriesFrom(input, _repeated_listDamageDealToHeroInfos_codec);
+            break;
+          }
+          case 58: {
             if (furyAnalysis_ == null) {
               FuryAnalysis = new global::Thetan.Immortal.V1.SkillAnalysis();
             }
             input.ReadMessage(FuryAnalysis);
             break;
           }
-          case 26: {
+          case 66: {
             if (passiveAnalysis_ == null) {
               PassiveAnalysis = new global::Thetan.Immortal.V1.SkillAnalysis();
             }
             input.ReadMessage(PassiveAnalysis);
             break;
           }
-          case 32: {
-            TotalDmgToHero = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            TotalDmgToUnit = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            TotalDmgToStatue = input.ReadInt32();
-            break;
-          }
-          case 58: {
+          case 74: {
             targetKilledByHero_.AddEntriesFrom(input, _repeated_targetKilledByHero_codec);
             break;
           }
@@ -3611,33 +3671,41 @@ namespace Thetan.Immortal.V1 {
             HeroId = input.ReadInt32();
             break;
           }
-          case 18: {
+          case 16: {
+            SkinId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            TotalDmgToHero = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            TotalDmgToUnit = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            TotalDmgToStatue = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            listDamageDealToHeroInfos_.AddEntriesFrom(ref input, _repeated_listDamageDealToHeroInfos_codec);
+            break;
+          }
+          case 58: {
             if (furyAnalysis_ == null) {
               FuryAnalysis = new global::Thetan.Immortal.V1.SkillAnalysis();
             }
             input.ReadMessage(FuryAnalysis);
             break;
           }
-          case 26: {
+          case 66: {
             if (passiveAnalysis_ == null) {
               PassiveAnalysis = new global::Thetan.Immortal.V1.SkillAnalysis();
             }
             input.ReadMessage(PassiveAnalysis);
             break;
           }
-          case 32: {
-            TotalDmgToHero = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            TotalDmgToUnit = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            TotalDmgToStatue = input.ReadInt32();
-            break;
-          }
-          case 58: {
+          case 74: {
             targetKilledByHero_.AddEntriesFrom(ref input, _repeated_targetKilledByHero_codec);
             break;
           }
@@ -3683,10 +3751,11 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SkillAnalysis(SkillAnalysis other) : this() {
       skillId_ = other.skillId_;
-      targetsInfo_ = other.targetsInfo_.Clone();
+      totalDmgToHero_ = other.totalDmgToHero_;
       totalDmgToUnit_ = other.totalDmgToUnit_;
       totalDmgToStatue_ = other.totalDmgToStatue_;
-      targetKilledBySkill_ = other.targetKilledBySkill_.Clone();
+      totalTimeUsed_ = other.totalTimeUsed_;
+      targetsKilledBySkill_ = other.targetsKilledBySkill_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3708,15 +3777,16 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
-    /// <summary>Field number for the "targetsInfo" field.</summary>
-    public const int TargetsInfoFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.TargetInfo> _repeated_targetsInfo_codec
-        = pb::FieldCodec.ForMessage(18, global::Thetan.Immortal.V1.TargetInfo.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.TargetInfo> targetsInfo_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.TargetInfo>();
+    /// <summary>Field number for the "totalDmgToHero" field.</summary>
+    public const int TotalDmgToHeroFieldNumber = 2;
+    private int totalDmgToHero_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Immortal.V1.TargetInfo> TargetsInfo {
-      get { return targetsInfo_; }
+    public int TotalDmgToHero {
+      get { return totalDmgToHero_; }
+      set {
+        totalDmgToHero_ = value;
+      }
     }
 
     /// <summary>Field number for the "totalDmgToUnit" field.</summary>
@@ -3743,15 +3813,27 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
-    /// <summary>Field number for the "targetKilledBySkill" field.</summary>
-    public const int TargetKilledBySkillFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.Target> _repeated_targetKilledBySkill_codec
-        = pb::FieldCodec.ForMessage(42, global::Thetan.Immortal.V1.Target.Parser);
-    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.Target> targetKilledBySkill_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.Target>();
+    /// <summary>Field number for the "totalTimeUsed" field.</summary>
+    public const int TotalTimeUsedFieldNumber = 5;
+    private int totalTimeUsed_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Thetan.Immortal.V1.Target> TargetKilledBySkill {
-      get { return targetKilledBySkill_; }
+    public int TotalTimeUsed {
+      get { return totalTimeUsed_; }
+      set {
+        totalTimeUsed_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "targetsKilledBySkill" field.</summary>
+    public const int TargetsKilledBySkillFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::Thetan.Immortal.V1.TargetKilledInfo> _repeated_targetsKilledBySkill_codec
+        = pb::FieldCodec.ForMessage(50, global::Thetan.Immortal.V1.TargetKilledInfo.Parser);
+    private readonly pbc::RepeatedField<global::Thetan.Immortal.V1.TargetKilledInfo> targetsKilledBySkill_ = new pbc::RepeatedField<global::Thetan.Immortal.V1.TargetKilledInfo>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Thetan.Immortal.V1.TargetKilledInfo> TargetsKilledBySkill {
+      get { return targetsKilledBySkill_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3770,10 +3852,11 @@ namespace Thetan.Immortal.V1 {
         return true;
       }
       if (SkillId != other.SkillId) return false;
-      if(!targetsInfo_.Equals(other.targetsInfo_)) return false;
+      if (TotalDmgToHero != other.TotalDmgToHero) return false;
       if (TotalDmgToUnit != other.TotalDmgToUnit) return false;
       if (TotalDmgToStatue != other.TotalDmgToStatue) return false;
-      if(!targetKilledBySkill_.Equals(other.targetKilledBySkill_)) return false;
+      if (TotalTimeUsed != other.TotalTimeUsed) return false;
+      if(!targetsKilledBySkill_.Equals(other.targetsKilledBySkill_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3782,10 +3865,11 @@ namespace Thetan.Immortal.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (SkillId != 0) hash ^= SkillId.GetHashCode();
-      hash ^= targetsInfo_.GetHashCode();
+      if (TotalDmgToHero != 0) hash ^= TotalDmgToHero.GetHashCode();
       if (TotalDmgToUnit != 0) hash ^= TotalDmgToUnit.GetHashCode();
       if (TotalDmgToStatue != 0) hash ^= TotalDmgToStatue.GetHashCode();
-      hash ^= targetKilledBySkill_.GetHashCode();
+      if (TotalTimeUsed != 0) hash ^= TotalTimeUsed.GetHashCode();
+      hash ^= targetsKilledBySkill_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3808,7 +3892,10 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(SkillId);
       }
-      targetsInfo_.WriteTo(output, _repeated_targetsInfo_codec);
+      if (TotalDmgToHero != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(TotalDmgToHero);
+      }
       if (TotalDmgToUnit != 0) {
         output.WriteRawTag(24);
         output.WriteInt32(TotalDmgToUnit);
@@ -3817,7 +3904,11 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(32);
         output.WriteInt32(TotalDmgToStatue);
       }
-      targetKilledBySkill_.WriteTo(output, _repeated_targetKilledBySkill_codec);
+      if (TotalTimeUsed != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(TotalTimeUsed);
+      }
+      targetsKilledBySkill_.WriteTo(output, _repeated_targetsKilledBySkill_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3832,7 +3923,10 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(SkillId);
       }
-      targetsInfo_.WriteTo(ref output, _repeated_targetsInfo_codec);
+      if (TotalDmgToHero != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(TotalDmgToHero);
+      }
       if (TotalDmgToUnit != 0) {
         output.WriteRawTag(24);
         output.WriteInt32(TotalDmgToUnit);
@@ -3841,7 +3935,11 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(32);
         output.WriteInt32(TotalDmgToStatue);
       }
-      targetKilledBySkill_.WriteTo(ref output, _repeated_targetKilledBySkill_codec);
+      if (TotalTimeUsed != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(TotalTimeUsed);
+      }
+      targetsKilledBySkill_.WriteTo(ref output, _repeated_targetsKilledBySkill_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3855,14 +3953,19 @@ namespace Thetan.Immortal.V1 {
       if (SkillId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(SkillId);
       }
-      size += targetsInfo_.CalculateSize(_repeated_targetsInfo_codec);
+      if (TotalDmgToHero != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalDmgToHero);
+      }
       if (TotalDmgToUnit != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalDmgToUnit);
       }
       if (TotalDmgToStatue != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalDmgToStatue);
       }
-      size += targetKilledBySkill_.CalculateSize(_repeated_targetKilledBySkill_codec);
+      if (TotalTimeUsed != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalTimeUsed);
+      }
+      size += targetsKilledBySkill_.CalculateSize(_repeated_targetsKilledBySkill_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3878,14 +3981,19 @@ namespace Thetan.Immortal.V1 {
       if (other.SkillId != 0) {
         SkillId = other.SkillId;
       }
-      targetsInfo_.Add(other.targetsInfo_);
+      if (other.TotalDmgToHero != 0) {
+        TotalDmgToHero = other.TotalDmgToHero;
+      }
       if (other.TotalDmgToUnit != 0) {
         TotalDmgToUnit = other.TotalDmgToUnit;
       }
       if (other.TotalDmgToStatue != 0) {
         TotalDmgToStatue = other.TotalDmgToStatue;
       }
-      targetKilledBySkill_.Add(other.targetKilledBySkill_);
+      if (other.TotalTimeUsed != 0) {
+        TotalTimeUsed = other.TotalTimeUsed;
+      }
+      targetsKilledBySkill_.Add(other.targetsKilledBySkill_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3905,8 +4013,8 @@ namespace Thetan.Immortal.V1 {
             SkillId = input.ReadInt32();
             break;
           }
-          case 18: {
-            targetsInfo_.AddEntriesFrom(input, _repeated_targetsInfo_codec);
+          case 16: {
+            TotalDmgToHero = input.ReadInt32();
             break;
           }
           case 24: {
@@ -3917,8 +4025,12 @@ namespace Thetan.Immortal.V1 {
             TotalDmgToStatue = input.ReadInt32();
             break;
           }
-          case 42: {
-            targetKilledBySkill_.AddEntriesFrom(input, _repeated_targetKilledBySkill_codec);
+          case 40: {
+            TotalTimeUsed = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            targetsKilledBySkill_.AddEntriesFrom(input, _repeated_targetsKilledBySkill_codec);
             break;
           }
         }
@@ -3940,8 +4052,8 @@ namespace Thetan.Immortal.V1 {
             SkillId = input.ReadInt32();
             break;
           }
-          case 18: {
-            targetsInfo_.AddEntriesFrom(ref input, _repeated_targetsInfo_codec);
+          case 16: {
+            TotalDmgToHero = input.ReadInt32();
             break;
           }
           case 24: {
@@ -3952,8 +4064,12 @@ namespace Thetan.Immortal.V1 {
             TotalDmgToStatue = input.ReadInt32();
             break;
           }
-          case 42: {
-            targetKilledBySkill_.AddEntriesFrom(ref input, _repeated_targetKilledBySkill_codec);
+          case 40: {
+            TotalTimeUsed = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            targetsKilledBySkill_.AddEntriesFrom(ref input, _repeated_targetsKilledBySkill_codec);
             break;
           }
         }
@@ -3963,16 +4079,16 @@ namespace Thetan.Immortal.V1 {
 
   }
 
-  public sealed partial class TargetInfo : pb::IMessage<TargetInfo>
+  public sealed partial class DamageDealToHeroInfo : pb::IMessage<DamageDealToHeroInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<TargetInfo> _parser = new pb::MessageParser<TargetInfo>(() => new TargetInfo());
+    private static readonly pb::MessageParser<DamageDealToHeroInfo> _parser = new pb::MessageParser<DamageDealToHeroInfo>(() => new DamageDealToHeroInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<TargetInfo> Parser { get { return _parser; } }
+    public static pb::MessageParser<DamageDealToHeroInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3988,7 +4104,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TargetInfo() {
+    public DamageDealToHeroInfo() {
       OnConstruction();
     }
 
@@ -3996,73 +4112,73 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TargetInfo(TargetInfo other) : this() {
-      userId_ = other.userId_;
-      heroId_ = other.heroId_;
-      dmgTaken_ = other.dmgTaken_;
+    public DamageDealToHeroInfo(DamageDealToHeroInfo other) : this() {
+      heroTypeId_ = other.heroTypeId_;
+      skinId_ = other.skinId_;
+      totalDmgDeal_ = other.totalDmgDeal_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TargetInfo Clone() {
-      return new TargetInfo(this);
+    public DamageDealToHeroInfo Clone() {
+      return new DamageDealToHeroInfo(this);
     }
 
-    /// <summary>Field number for the "userId" field.</summary>
-    public const int UserIdFieldNumber = 1;
-    private string userId_ = "";
+    /// <summary>Field number for the "heroTypeId" field.</summary>
+    public const int HeroTypeIdFieldNumber = 1;
+    private int heroTypeId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string UserId {
-      get { return userId_; }
+    public int HeroTypeId {
+      get { return heroTypeId_; }
       set {
-        userId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        heroTypeId_ = value;
       }
     }
 
-    /// <summary>Field number for the "heroId" field.</summary>
-    public const int HeroIdFieldNumber = 2;
-    private int heroId_;
+    /// <summary>Field number for the "skinId" field.</summary>
+    public const int SkinIdFieldNumber = 2;
+    private int skinId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HeroId {
-      get { return heroId_; }
+    public int SkinId {
+      get { return skinId_; }
       set {
-        heroId_ = value;
+        skinId_ = value;
       }
     }
 
-    /// <summary>Field number for the "dmgTaken" field.</summary>
-    public const int DmgTakenFieldNumber = 3;
-    private int dmgTaken_;
+    /// <summary>Field number for the "totalDmgDeal" field.</summary>
+    public const int TotalDmgDealFieldNumber = 3;
+    private int totalDmgDeal_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int DmgTaken {
-      get { return dmgTaken_; }
+    public int TotalDmgDeal {
+      get { return totalDmgDeal_; }
       set {
-        dmgTaken_ = value;
+        totalDmgDeal_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as TargetInfo);
+      return Equals(other as DamageDealToHeroInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(TargetInfo other) {
+    public bool Equals(DamageDealToHeroInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (UserId != other.UserId) return false;
-      if (HeroId != other.HeroId) return false;
-      if (DmgTaken != other.DmgTaken) return false;
+      if (HeroTypeId != other.HeroTypeId) return false;
+      if (SkinId != other.SkinId) return false;
+      if (TotalDmgDeal != other.TotalDmgDeal) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4070,9 +4186,9 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (UserId.Length != 0) hash ^= UserId.GetHashCode();
-      if (HeroId != 0) hash ^= HeroId.GetHashCode();
-      if (DmgTaken != 0) hash ^= DmgTaken.GetHashCode();
+      if (HeroTypeId != 0) hash ^= HeroTypeId.GetHashCode();
+      if (SkinId != 0) hash ^= SkinId.GetHashCode();
+      if (TotalDmgDeal != 0) hash ^= TotalDmgDeal.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4091,17 +4207,17 @@ namespace Thetan.Immortal.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (UserId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(UserId);
+      if (HeroTypeId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(HeroTypeId);
       }
-      if (HeroId != 0) {
+      if (SkinId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(HeroId);
+        output.WriteInt32(SkinId);
       }
-      if (DmgTaken != 0) {
+      if (TotalDmgDeal != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(DmgTaken);
+        output.WriteInt32(TotalDmgDeal);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -4113,17 +4229,17 @@ namespace Thetan.Immortal.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (UserId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(UserId);
+      if (HeroTypeId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(HeroTypeId);
       }
-      if (HeroId != 0) {
+      if (SkinId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(HeroId);
+        output.WriteInt32(SkinId);
       }
-      if (DmgTaken != 0) {
+      if (TotalDmgDeal != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(DmgTaken);
+        output.WriteInt32(TotalDmgDeal);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -4135,14 +4251,14 @@ namespace Thetan.Immortal.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (UserId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
+      if (HeroTypeId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroTypeId);
       }
-      if (HeroId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroId);
+      if (SkinId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SkinId);
       }
-      if (DmgTaken != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DmgTaken);
+      if (TotalDmgDeal != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalDmgDeal);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4152,18 +4268,18 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(TargetInfo other) {
+    public void MergeFrom(DamageDealToHeroInfo other) {
       if (other == null) {
         return;
       }
-      if (other.UserId.Length != 0) {
-        UserId = other.UserId;
+      if (other.HeroTypeId != 0) {
+        HeroTypeId = other.HeroTypeId;
       }
-      if (other.HeroId != 0) {
-        HeroId = other.HeroId;
+      if (other.SkinId != 0) {
+        SkinId = other.SkinId;
       }
-      if (other.DmgTaken != 0) {
-        DmgTaken = other.DmgTaken;
+      if (other.TotalDmgDeal != 0) {
+        TotalDmgDeal = other.TotalDmgDeal;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4180,16 +4296,16 @@ namespace Thetan.Immortal.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            UserId = input.ReadString();
+          case 8: {
+            HeroTypeId = input.ReadInt32();
             break;
           }
           case 16: {
-            HeroId = input.ReadInt32();
+            SkinId = input.ReadInt32();
             break;
           }
           case 24: {
-            DmgTaken = input.ReadInt32();
+            TotalDmgDeal = input.ReadInt32();
             break;
           }
         }
@@ -4207,16 +4323,16 @@ namespace Thetan.Immortal.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            UserId = input.ReadString();
+          case 8: {
+            HeroTypeId = input.ReadInt32();
             break;
           }
           case 16: {
-            HeroId = input.ReadInt32();
+            SkinId = input.ReadInt32();
             break;
           }
           case 24: {
-            DmgTaken = input.ReadInt32();
+            TotalDmgDeal = input.ReadInt32();
             break;
           }
         }
@@ -4226,16 +4342,16 @@ namespace Thetan.Immortal.V1 {
 
   }
 
-  public sealed partial class Target : pb::IMessage<Target>
+  public sealed partial class TargetKilledInfo : pb::IMessage<TargetKilledInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<Target> _parser = new pb::MessageParser<Target>(() => new Target());
+    private static readonly pb::MessageParser<TargetKilledInfo> _parser = new pb::MessageParser<TargetKilledInfo>(() => new TargetKilledInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<Target> Parser { get { return _parser; } }
+    public static pb::MessageParser<TargetKilledInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4251,7 +4367,7 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Target() {
+    public TargetKilledInfo() {
       OnConstruction();
     }
 
@@ -4259,16 +4375,17 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Target(Target other) : this() {
+    public TargetKilledInfo(TargetKilledInfo other) : this() {
       userId_ = other.userId_;
-      heroId_ = other.heroId_;
+      heroTypeId_ = other.heroTypeId_;
+      skinId_ = other.skinId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Target Clone() {
-      return new Target(this);
+    public TargetKilledInfo Clone() {
+      return new TargetKilledInfo(this);
     }
 
     /// <summary>Field number for the "userId" field.</summary>
@@ -4283,27 +4400,39 @@ namespace Thetan.Immortal.V1 {
       }
     }
 
-    /// <summary>Field number for the "heroId" field.</summary>
-    public const int HeroIdFieldNumber = 2;
-    private int heroId_;
+    /// <summary>Field number for the "heroTypeId" field.</summary>
+    public const int HeroTypeIdFieldNumber = 2;
+    private int heroTypeId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int HeroId {
-      get { return heroId_; }
+    public int HeroTypeId {
+      get { return heroTypeId_; }
       set {
-        heroId_ = value;
+        heroTypeId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "skinId" field.</summary>
+    public const int SkinIdFieldNumber = 3;
+    private int skinId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int SkinId {
+      get { return skinId_; }
+      set {
+        skinId_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as Target);
+      return Equals(other as TargetKilledInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(Target other) {
+    public bool Equals(TargetKilledInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -4311,7 +4440,8 @@ namespace Thetan.Immortal.V1 {
         return true;
       }
       if (UserId != other.UserId) return false;
-      if (HeroId != other.HeroId) return false;
+      if (HeroTypeId != other.HeroTypeId) return false;
+      if (SkinId != other.SkinId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4320,7 +4450,8 @@ namespace Thetan.Immortal.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (UserId.Length != 0) hash ^= UserId.GetHashCode();
-      if (HeroId != 0) hash ^= HeroId.GetHashCode();
+      if (HeroTypeId != 0) hash ^= HeroTypeId.GetHashCode();
+      if (SkinId != 0) hash ^= SkinId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4343,9 +4474,13 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(10);
         output.WriteString(UserId);
       }
-      if (HeroId != 0) {
+      if (HeroTypeId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(HeroId);
+        output.WriteInt32(HeroTypeId);
+      }
+      if (SkinId != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(SkinId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -4361,9 +4496,13 @@ namespace Thetan.Immortal.V1 {
         output.WriteRawTag(10);
         output.WriteString(UserId);
       }
-      if (HeroId != 0) {
+      if (HeroTypeId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(HeroId);
+        output.WriteInt32(HeroTypeId);
+      }
+      if (SkinId != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(SkinId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -4378,8 +4517,11 @@ namespace Thetan.Immortal.V1 {
       if (UserId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(UserId);
       }
-      if (HeroId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroId);
+      if (HeroTypeId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(HeroTypeId);
+      }
+      if (SkinId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SkinId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4389,15 +4531,18 @@ namespace Thetan.Immortal.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(Target other) {
+    public void MergeFrom(TargetKilledInfo other) {
       if (other == null) {
         return;
       }
       if (other.UserId.Length != 0) {
         UserId = other.UserId;
       }
-      if (other.HeroId != 0) {
-        HeroId = other.HeroId;
+      if (other.HeroTypeId != 0) {
+        HeroTypeId = other.HeroTypeId;
+      }
+      if (other.SkinId != 0) {
+        SkinId = other.SkinId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4419,7 +4564,11 @@ namespace Thetan.Immortal.V1 {
             break;
           }
           case 16: {
-            HeroId = input.ReadInt32();
+            HeroTypeId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            SkinId = input.ReadInt32();
             break;
           }
         }
@@ -4442,7 +4591,11 @@ namespace Thetan.Immortal.V1 {
             break;
           }
           case 16: {
-            HeroId = input.ReadInt32();
+            HeroTypeId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            SkinId = input.ReadInt32();
             break;
           }
         }

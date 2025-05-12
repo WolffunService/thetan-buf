@@ -53,7 +53,6 @@ message BattleEndRequest{
   repeated PlayerMatchInfo players = 2;
   GameMode gameMode = 3;
   InGameMode inGameMode = 4;
-  PlayerAnalysis playerAnalysis = 5; // Added player analysis data
 }
 
 message PlayerMatchInfo{
@@ -64,6 +63,7 @@ message PlayerMatchInfo{
   repeated Hero heroes = 5;
   int32 botBrain = 6;
   int32 lastUsedHeroID = 7;
+  PlayerAnalysis analysis = 8;
 }
 
 message BattleEndResponse{

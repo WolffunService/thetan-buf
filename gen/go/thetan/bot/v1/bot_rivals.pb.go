@@ -85,8 +85,8 @@ const (
 	BotActionType_VehiclePushBack  BotActionType = 12
 	BotActionType_ReactProfile     BotActionType = 13
 	BotActionType_ReactGuildbook   BotActionType = 14
-	// WriteGuestbook= 00;
-	// Email= 00;
+	//    WriteGuestbook= 00;
+	//    Email= 00;
 	BotActionType_AddFriend       BotActionType = 15
 	BotActionType_UseVehicle      BotActionType = 16
 	BotActionType_UseFlycraft     BotActionType = 17
