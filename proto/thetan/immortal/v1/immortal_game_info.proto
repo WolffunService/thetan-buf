@@ -10,6 +10,7 @@ enum GameMode {
   RANKED = 1;
   ONBOARDING = 2;
   FRIENDLY = 3;
+  RANKED_BOT = 4;
 }
 
 enum InGameMode {
