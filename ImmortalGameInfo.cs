@@ -29,15 +29,15 @@ namespace Thetan.Immortal.V1 {
             "bkdhbWVNb2RlGAEgASgOMh4udGhldGFuLmltbW9ydGFsLnYxLkluR2FtZU1v",
             "ZGVSCmluR2FtZU1vZGUicwoVT3RoZXJTZXRJbkdhbWVNb2RlTXNnEhoKCHBs",
             "YXllcklEGAEgASgJUghwbGF5ZXJJRBI+CgppbkdhbWVNb2RlGAIgASgOMh4u",
-            "dGhldGFuLmltbW9ydGFsLnYxLkluR2FtZU1vZGVSCmluR2FtZU1vZGUqQwoI",
+            "dGhldGFuLmltbW9ydGFsLnYxLkluR2FtZU1vZGVSCmluR2FtZU1vZGUqUwoI",
             "R2FtZU1vZGUSDQoJTk9ORV9NT0RFEAASCgoGUkFOS0VEEAESDgoKT05CT0FS",
-            "RElORxACEgwKCEZSSUVORExZEAMqKAoKSW5HYW1lTW9kZRIICgRTT0xPEAAS",
-            "BgoCS08QARIICgREVUFMEAJC0gEKFmNvbS50aGV0YW4uaW1tb3J0YWwudjFC",
-            "FUltbW9ydGFsR2FtZUluZm9Qcm90b1ABWjd0aGV0YW4tYnVmL2dlbi9nby90",
-            "aGV0YW4vaW1tb3J0YWwvdjE7dGhldGFuX2ltbW9ydGFsX3YxogIDVElYqgIS",
-            "VGhldGFuLkltbW9ydGFsLlYxygISVGhldGFuXEltbW9ydGFsXFYx4gIeVGhl",
-            "dGFuXEltbW9ydGFsXFYxXEdQQk1ldGFkYXRh6gIUVGhldGFuOjpJbW1vcnRh",
-            "bDo6VjFiBnByb3RvMw=="));
+            "RElORxACEgwKCEZSSUVORExZEAMSDgoKUkFOS0VEX0JPVBAEKigKCkluR2Ft",
+            "ZU1vZGUSCAoEU09MTxAAEgYKAktPEAESCAoERFVBTBACQtIBChZjb20udGhl",
+            "dGFuLmltbW9ydGFsLnYxQhVJbW1vcnRhbEdhbWVJbmZvUHJvdG9QAVo3dGhl",
+            "dGFuLWJ1Zi9nZW4vZ28vdGhldGFuL2ltbW9ydGFsL3YxO3RoZXRhbl9pbW1v",
+            "cnRhbF92MaICA1RJWKoCElRoZXRhbi5JbW1vcnRhbC5WMcoCElRoZXRhblxJ",
+            "bW1vcnRhbFxWMeICHlRoZXRhblxJbW1vcnRhbFxWMVxHUEJNZXRhZGF0YeoC",
+            "FFRoZXRhbjo6SW1tb3J0YWw6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Immortal.V1.GameMode), typeof(global::Thetan.Immortal.V1.InGameMode), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -54,6 +54,7 @@ namespace Thetan.Immortal.V1 {
     [pbr::OriginalName("RANKED")] Ranked = 1,
     [pbr::OriginalName("ONBOARDING")] Onboarding = 2,
     [pbr::OriginalName("FRIENDLY")] Friendly = 3,
+    [pbr::OriginalName("RANKED_BOT")] RankedBot = 4,
   }
 
   public enum InGameMode {
