@@ -21,9 +21,11 @@ enum InGameMode {
 
 message SetInGameModeMsg{
   InGameMode inGameMode = 1;
+  GameMode gameMode = 2;
 }
 
 message OtherSetInGameModeMsg{
   string playerID = 1;
   InGameMode inGameMode = 2;
+  GameMode gameMode = 3;
 }
