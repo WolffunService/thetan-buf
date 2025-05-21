@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package thetan.multiplayer.v1;
 import "thetan/shared/v1/game_info.proto";
+import "thetan/immortal/v1/immortal_game_info.proto";
 
 option go_package = "thetan-buf/gen/go/thetan/multiplayer/v1;thetan_multiplayer_v1";
 option csharp_namespace = "Thetan.Multiplayer.V1";
@@ -53,6 +54,7 @@ message PartyInfoProto {
   string modeID = 9;
   PartyType partyType = 10;
   int32 partyRegion = 11;
+  thetan.immortal.v1.GameMode gameMode = 12;
 
   // tùy từng game mà cục nay có thể khác nhau
   bytes gameData = 99;
