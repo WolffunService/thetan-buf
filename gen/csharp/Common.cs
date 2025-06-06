@@ -134,42 +134,43 @@ namespace Thetan.Multiplayer.V1 {
             "dGFnZRgCIAEoDjIiLnRoZXRhbi5tdWx0aXBsYXllci52MS5TdGFnZUluR2Ft",
             "ZVIFc3RhZ2UibgoWT25PdGhlckNhbmNlbFBsYXlBZ2FpbhIaCghwbGF5ZXJJ",
             "RBgBIAEoCVIIcGxheWVySUQSOAoFc3RhZ2UYAiABKA4yIi50aGV0YW4ubXVs",
-            "dGlwbGF5ZXIudjEuU3RhZ2VJbkdhbWVSBXN0YWdlIjcKE09uU2JDYW5jZWxG",
-            "aW5kTWF0Y2gSIAoLQ2FuY2VsbGVySUQYASABKAlSC0NhbmNlbGxlcklEIi8K",
-            "EVJlcUNoYW5nZUdhbWVJbmZvEhoKCGdhbWVEYXRhGAEgASgMUghnYW1lRGF0",
-            "YSJcChJSZXNPdGhlckNoYW5nZUluZm8SRgoKcGxheWVySW5mbxgBIAEoCzIm",
-            "LnRoZXRhbi5tdWx0aXBsYXllci52MS5QbGF5ZXJJbmZvUHJvdG9SCnBsYXll",
-            "ckluZm8iQAoMT25PdGhlclJlYWR5EhoKCHBsYXllcklEGAEgASgJUghwbGF5",
-            "ZXJJRBIUCgVyZWFkeRgCIAEoCFIFcmVhZHkiRwoRVGlja2V0Q2FjaGVXU09u",
-            "bHkSGgoIdGlja2V0SUQYASABKAlSCHRpY2tldElEEhYKBnVzZXJJRBgCIAEo",
-            "CVIGdXNlcklEIh8KCUd1aWxkTWFpbBISCgRjb2RlGAEgASgFUgRjb2RlIjQK",
-            "FlRyZWFzdXJlQmFsYW5jZUNoYW5nZWQSGgoIZG9Ob3RpZnkYASABKAhSCGRv",
-            "Tm90aWZ5IosBChVSZXF1ZXN0Q3JlYXRlUGFydHlNc2cSPgoJcGFydHlUeXBl",
-            "GAEgASgOMiAudGhldGFuLm11bHRpcGxheWVyLnYxLlBhcnR5VHlwZVIJcGFy",
-            "dHlUeXBlEiMKCmJlc3RSZWdpb24YAiABKAVIAFIKYmVzdFJlZ2lvbogBAUIN",
-            "CgtfYmVzdFJlZ2lvbiJnChFSZWNvbm5lY3RNYXRjaE1zZxIaCghzZXJ2ZXJJ",
-            "UBgBIAEoCVIIc2VydmVySVASHgoKc2VydmVyUG9ydBgCIAEoDVIKc2VydmVy",
-            "UG9ydBIWCgZyb29tSUQYAyABKAlSBnJvb21JRCo4CgtQYXJ0eVN0YXR1cxIM",
-            "CghQUGVuZGluZxAAEgwKCFBGaW5kaW5nEAESDQoJUEluQmF0dGxlEAIqfgoX",
-            "UGFydHlBdmFpbGFiaWxpdHlTdGF0dXMSDQoJUEFVbmtub3duEAASDQoJUEFF",
-            "eHBpcmVkEAESDwoLUEFEaXNiYW5kZWQQAhIKCgZQQU9wZW4QAxIKCgZQQUZ1",
-            "bGwQBBIOCgpQQUluQmF0dGxlEAUSDAoIUEFKb2luZWQQBipNCg9DaGFubmVs",
-            "Q2hhdFJvb20SCQoFTG9iYnkQABIJCgVQYXJ0eRABEgsKB0NvdW50cnkQAhIL",
-            "CgdQcml2YXRlEAMSCgoGR2xvYmFsEAQqTwoKQ2hhdFN0YXR1cxIUChBDaGF0",
-            "U3RhdHVzTm9ybWFsEAASFQoRQ2hhdFN0YXR1c1dhcm5pbmcQARIUChBDaGF0",
-            "U3RhdHVzQmFubmVkEAIqIwoHTXNnVHlwZRIICgRDaGF0EAASDgoKU2hhcmVQ",
-            "YXJ0eRABKloKDFBsYXllclN0YXR1cxIKCgZPbmxpbmUQABILCgdPZmZsaW5l",
-            "EAESCwoHSW5QYXJ0eRACEgkKBVJlYWR5EAMSCwoHRmluZGluZxAEEgwKCElu",
-            "QmF0dGxlEAUqQwoQSW52aXRhdGlvbkFjdGlvbhIKCgZBY2NlcHQQABIKCgZD",
-            "YW5jZWwQARILCgdEZWNsaW5lEAISCgoGSW52aXRlEAMqKwoLU3RhZ2VJbkdh",
-            "bWUSDQoJU3BlY3RhdG9yEAASDQoJRW5kQmF0dGxlEAEqTQoJUGFydHlUeXBl",
-            "EgoKBlJhbmtlZBAAEhAKDEN1c3RvbUJhdHRsZRABEg4KClRvdXJuYW1lbnQQ",
-            "AhISCg5GcmllbmRseUJhdHRsZRADQt0BChljb20udGhldGFuLm11bHRpcGxh",
-            "eWVyLnYxQgtDb21tb25Qcm90b1ABWj10aGV0YW4tYnVmL2dlbi9nby90aGV0",
-            "YW4vbXVsdGlwbGF5ZXIvdjE7dGhldGFuX211bHRpcGxheWVyX3YxogIDVE1Y",
-            "qgIVVGhldGFuLk11bHRpcGxheWVyLlYxygIVVGhldGFuXE11bHRpcGxheWVy",
-            "XFYx4gIhVGhldGFuXE11bHRpcGxheWVyXFYxXEdQQk1ldGFkYXRh6gIXVGhl",
-            "dGFuOjpNdWx0aXBsYXllcjo6VjFiBnByb3RvMw=="));
+            "dGlwbGF5ZXIudjEuU3RhZ2VJbkdhbWVSBXN0YWdlIlEKE09uU2JDYW5jZWxG",
+            "aW5kTWF0Y2gSIAoLQ2FuY2VsbGVySUQYASABKAlSC0NhbmNlbGxlcklEEhgK",
+            "B1BhcnR5SUQYAiABKAlSB1BhcnR5SUQiLwoRUmVxQ2hhbmdlR2FtZUluZm8S",
+            "GgoIZ2FtZURhdGEYASABKAxSCGdhbWVEYXRhIlwKElJlc090aGVyQ2hhbmdl",
+            "SW5mbxJGCgpwbGF5ZXJJbmZvGAEgASgLMiYudGhldGFuLm11bHRpcGxheWVy",
+            "LnYxLlBsYXllckluZm9Qcm90b1IKcGxheWVySW5mbyJACgxPbk90aGVyUmVh",
+            "ZHkSGgoIcGxheWVySUQYASABKAlSCHBsYXllcklEEhQKBXJlYWR5GAIgASgI",
+            "UgVyZWFkeSJHChFUaWNrZXRDYWNoZVdTT25seRIaCgh0aWNrZXRJRBgBIAEo",
+            "CVIIdGlja2V0SUQSFgoGdXNlcklEGAIgASgJUgZ1c2VySUQiHwoJR3VpbGRN",
+            "YWlsEhIKBGNvZGUYASABKAVSBGNvZGUiNAoWVHJlYXN1cmVCYWxhbmNlQ2hh",
+            "bmdlZBIaCghkb05vdGlmeRgBIAEoCFIIZG9Ob3RpZnkiiwEKFVJlcXVlc3RD",
+            "cmVhdGVQYXJ0eU1zZxI+CglwYXJ0eVR5cGUYASABKA4yIC50aGV0YW4ubXVs",
+            "dGlwbGF5ZXIudjEuUGFydHlUeXBlUglwYXJ0eVR5cGUSIwoKYmVzdFJlZ2lv",
+            "bhgCIAEoBUgAUgpiZXN0UmVnaW9uiAEBQg0KC19iZXN0UmVnaW9uImcKEVJl",
+            "Y29ubmVjdE1hdGNoTXNnEhoKCHNlcnZlcklQGAEgASgJUghzZXJ2ZXJJUBIe",
+            "CgpzZXJ2ZXJQb3J0GAIgASgNUgpzZXJ2ZXJQb3J0EhYKBnJvb21JRBgDIAEo",
+            "CVIGcm9vbUlEKjgKC1BhcnR5U3RhdHVzEgwKCFBQZW5kaW5nEAASDAoIUEZp",
+            "bmRpbmcQARINCglQSW5CYXR0bGUQAip+ChdQYXJ0eUF2YWlsYWJpbGl0eVN0",
+            "YXR1cxINCglQQVVua25vd24QABINCglQQUV4cGlyZWQQARIPCgtQQURpc2Jh",
+            "bmRlZBACEgoKBlBBT3BlbhADEgoKBlBBRnVsbBAEEg4KClBBSW5CYXR0bGUQ",
+            "BRIMCghQQUpvaW5lZBAGKk0KD0NoYW5uZWxDaGF0Um9vbRIJCgVMb2JieRAA",
+            "EgkKBVBhcnR5EAESCwoHQ291bnRyeRACEgsKB1ByaXZhdGUQAxIKCgZHbG9i",
+            "YWwQBCpPCgpDaGF0U3RhdHVzEhQKEENoYXRTdGF0dXNOb3JtYWwQABIVChFD",
+            "aGF0U3RhdHVzV2FybmluZxABEhQKEENoYXRTdGF0dXNCYW5uZWQQAiojCgdN",
+            "c2dUeXBlEggKBENoYXQQABIOCgpTaGFyZVBhcnR5EAEqWgoMUGxheWVyU3Rh",
+            "dHVzEgoKBk9ubGluZRAAEgsKB09mZmxpbmUQARILCgdJblBhcnR5EAISCQoF",
+            "UmVhZHkQAxILCgdGaW5kaW5nEAQSDAoISW5CYXR0bGUQBSpDChBJbnZpdGF0",
+            "aW9uQWN0aW9uEgoKBkFjY2VwdBAAEgoKBkNhbmNlbBABEgsKB0RlY2xpbmUQ",
+            "AhIKCgZJbnZpdGUQAyorCgtTdGFnZUluR2FtZRINCglTcGVjdGF0b3IQABIN",
+            "CglFbmRCYXR0bGUQASpNCglQYXJ0eVR5cGUSCgoGUmFua2VkEAASEAoMQ3Vz",
+            "dG9tQmF0dGxlEAESDgoKVG91cm5hbWVudBACEhIKDkZyaWVuZGx5QmF0dGxl",
+            "EANC3QEKGWNvbS50aGV0YW4ubXVsdGlwbGF5ZXIudjFCC0NvbW1vblByb3Rv",
+            "UAFaPXRoZXRhbi1idWYvZ2VuL2dvL3RoZXRhbi9tdWx0aXBsYXllci92MTt0",
+            "aGV0YW5fbXVsdGlwbGF5ZXJfdjGiAgNUTViqAhVUaGV0YW4uTXVsdGlwbGF5",
+            "ZXIuVjHKAhVUaGV0YW5cTXVsdGlwbGF5ZXJcVjHiAiFUaGV0YW5cTXVsdGlw",
+            "bGF5ZXJcVjFcR1BCTWV0YWRhdGHqAhdUaGV0YW46Ok11bHRpcGxheWVyOjpW",
+            "MWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Thetan.Shared.V1.GameInfoReflection.Descriptor, global::Thetan.Immortal.V1.ImmortalGameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Multiplayer.V1.PartyStatus), typeof(global::Thetan.Multiplayer.V1.PartyAvailabilityStatus), typeof(global::Thetan.Multiplayer.V1.ChannelChatRoom), typeof(global::Thetan.Multiplayer.V1.ChatStatus), typeof(global::Thetan.Multiplayer.V1.MsgType), typeof(global::Thetan.Multiplayer.V1.PlayerStatus), typeof(global::Thetan.Multiplayer.V1.InvitationAction), typeof(global::Thetan.Multiplayer.V1.StageInGame), typeof(global::Thetan.Multiplayer.V1.PartyType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -200,7 +201,7 @@ namespace Thetan.Multiplayer.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.RequestCancelPlayAgain), global::Thetan.Multiplayer.V1.RequestCancelPlayAgain.Parser, new[]{ "Stage" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OnOtherPlayAgain), global::Thetan.Multiplayer.V1.OnOtherPlayAgain.Parser, new[]{ "PlayerID", "Stage" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OnOtherCancelPlayAgain), global::Thetan.Multiplayer.V1.OnOtherCancelPlayAgain.Parser, new[]{ "PlayerID", "Stage" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OnSbCancelFindMatch), global::Thetan.Multiplayer.V1.OnSbCancelFindMatch.Parser, new[]{ "CancellerID" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OnSbCancelFindMatch), global::Thetan.Multiplayer.V1.OnSbCancelFindMatch.Parser, new[]{ "CancellerID", "PartyID" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ReqChangeGameInfo), global::Thetan.Multiplayer.V1.ReqChangeGameInfo.Parser, new[]{ "GameData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.ResOtherChangeInfo), global::Thetan.Multiplayer.V1.ResOtherChangeInfo.Parser, new[]{ "PlayerInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Multiplayer.V1.OnOtherReady), global::Thetan.Multiplayer.V1.OnOtherReady.Parser, new[]{ "PlayerID", "Ready" }, null, null, null, null),
@@ -8138,6 +8139,7 @@ namespace Thetan.Multiplayer.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OnSbCancelFindMatch(OnSbCancelFindMatch other) : this() {
       cancellerID_ = other.cancellerID_;
+      partyID_ = other.partyID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -8159,6 +8161,18 @@ namespace Thetan.Multiplayer.V1 {
       }
     }
 
+    /// <summary>Field number for the "PartyID" field.</summary>
+    public const int PartyIDFieldNumber = 2;
+    private string partyID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PartyID {
+      get { return partyID_; }
+      set {
+        partyID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -8175,6 +8189,7 @@ namespace Thetan.Multiplayer.V1 {
         return true;
       }
       if (CancellerID != other.CancellerID) return false;
+      if (PartyID != other.PartyID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -8183,6 +8198,7 @@ namespace Thetan.Multiplayer.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (CancellerID.Length != 0) hash ^= CancellerID.GetHashCode();
+      if (PartyID.Length != 0) hash ^= PartyID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8205,6 +8221,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(10);
         output.WriteString(CancellerID);
       }
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -8219,6 +8239,10 @@ namespace Thetan.Multiplayer.V1 {
         output.WriteRawTag(10);
         output.WriteString(CancellerID);
       }
+      if (PartyID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PartyID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -8231,6 +8255,9 @@ namespace Thetan.Multiplayer.V1 {
       int size = 0;
       if (CancellerID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CancellerID);
+      }
+      if (PartyID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PartyID);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8246,6 +8273,9 @@ namespace Thetan.Multiplayer.V1 {
       }
       if (other.CancellerID.Length != 0) {
         CancellerID = other.CancellerID;
+      }
+      if (other.PartyID.Length != 0) {
+        PartyID = other.PartyID;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -8266,6 +8296,10 @@ namespace Thetan.Multiplayer.V1 {
             CancellerID = input.ReadString();
             break;
           }
+          case 18: {
+            PartyID = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -8283,6 +8317,10 @@ namespace Thetan.Multiplayer.V1 {
             break;
           case 10: {
             CancellerID = input.ReadString();
+            break;
+          }
+          case 18: {
+            PartyID = input.ReadString();
             break;
           }
         }

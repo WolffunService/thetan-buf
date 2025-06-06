@@ -298,6 +298,7 @@ enum StageInGame {
 
 message OnSbCancelFindMatch {
   string CancellerID = 1;
+  string PartyID = 2;
 }
 
 message ReqChangeGameInfo {
