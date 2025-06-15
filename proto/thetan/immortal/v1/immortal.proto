@@ -82,6 +82,7 @@ message BattleEndResponse{
   int32 x2BattlePoint = 13;
   BattleEndHero lastUsedHero = 14;
   repeated QuestProgressUpdate questProgressUpdates = 15;
+  repeated EventPointsUpdateInfo eventPointsUpdates = 16;
 }
 
 message BattleEndPlayer {
@@ -166,4 +167,9 @@ message GetGameDataRequest {
 message GetGameDataResponse {
   repeated Hero listHeroes = 1;
   repeated Skill listSkills = 2;
+}
+
+message EventPointsUpdateInfo {
+  int64 eventId = 1;
+  int32 pointsAdded = 2;
 }
