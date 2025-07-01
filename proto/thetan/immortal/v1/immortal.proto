@@ -64,6 +64,9 @@ message PlayerMatchInfo{
   int32 botBrain = 6;
   int32 lastUsedHeroID = 7;
   PlayerAnalysis analysis = 8;
+  int32 avatarID = 9;
+  int32 frameID = 10;
+  int32 nameColorID = 11;
 }
 
 message BattleEndResponse{
