@@ -53,6 +53,7 @@ message BattleEndRequest{
   repeated PlayerMatchInfo players = 2;
   GameMode gameMode = 3;
   InGameMode inGameMode = 4;
+  int32 durationSec = 5;
 }
 
 message PlayerMatchInfo{
@@ -67,6 +68,7 @@ message PlayerMatchInfo{
   int32 avatarID = 9;
   int32 frameID = 10;
   int32 nameColorID = 11;
+  int32 challengeTitleID = 12;
 }
 
 message BattleEndResponse{
