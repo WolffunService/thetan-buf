@@ -74,7 +74,8 @@ type SearchPlayerInfoRequest struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	PlayerIDs []string `protobuf:"bytes,1,rep,name=playerIDs,proto3" json:"playerIDs,omitempty"`
+	PlayerIDs  []string   `protobuf:"bytes,1,rep,name=playerIDs,proto3" json:"playerIDs,omitempty"`
+	InGameMode InGameMode `protobuf:"varint,2,opt,name=inGameMode,proto3,enum=thetan.immortal.v1.InGameMode" json:"inGameMode,omitempty"`
 }
 
 func (x *SearchPlayerInfoRequest) Reset() {
@@ -114,6 +115,13 @@ func (x *SearchPlayerInfoRequest) GetPlayerIDs() []string {
 		return x.PlayerIDs
 	}
 	return nil
+}
+
+func (x *SearchPlayerInfoRequest) GetInGameMode() InGameMode {
+	if x != nil {
+		return x.InGameMode
+	}
+	return InGameMode_SOLO
 }
 
 type SearchPlayerInfoResponse struct {
@@ -1647,11 +1655,15 @@ var file_thetan_immortal_v1_immortal_proto_rawDesc = []byte{
 	0x72, 0x74, 0x61, 0x6c, 0x5f, 0x73, 0x68, 0x61, 0x72, 0x65, 0x64, 0x2e, 0x70, 0x72, 0x6f, 0x74,
 	0x6f, 0x1a, 0x2b, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2f, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74,
 	0x61, 0x6c, 0x2f, 0x76, 0x31, 0x2f, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x5f, 0x67,
-	0x61, 0x6d, 0x65, 0x5f, 0x69, 0x6e, 0x66, 0x6f, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0x37,
+	0x61, 0x6d, 0x65, 0x5f, 0x69, 0x6e, 0x66, 0x6f, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0x77,
 	0x0a, 0x17, 0x53, 0x65, 0x61, 0x72, 0x63, 0x68, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x49, 0x6e,
 	0x66, 0x6f, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x1c, 0x0a, 0x09, 0x70, 0x6c, 0x61,
 	0x79, 0x65, 0x72, 0x49, 0x44, 0x73, 0x18, 0x01, 0x20, 0x03, 0x28, 0x09, 0x52, 0x09, 0x70, 0x6c,
-	0x61, 0x79, 0x65, 0x72, 0x49, 0x44, 0x73, 0x22, 0x5e, 0x0a, 0x18, 0x53, 0x65, 0x61, 0x72, 0x63,
+	0x61, 0x79, 0x65, 0x72, 0x49, 0x44, 0x73, 0x12, 0x3e, 0x0a, 0x0a, 0x69, 0x6e, 0x47, 0x61, 0x6d,
+	0x65, 0x4d, 0x6f, 0x64, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x0e, 0x32, 0x1e, 0x2e, 0x74, 0x68,
+	0x65, 0x74, 0x61, 0x6e, 0x2e, 0x69, 0x6d, 0x6d, 0x6f, 0x72, 0x74, 0x61, 0x6c, 0x2e, 0x76, 0x31,
+	0x2e, 0x49, 0x6e, 0x47, 0x61, 0x6d, 0x65, 0x4d, 0x6f, 0x64, 0x65, 0x52, 0x0a, 0x69, 0x6e, 0x47,
+	0x61, 0x6d, 0x65, 0x4d, 0x6f, 0x64, 0x65, 0x22, 0x5e, 0x0a, 0x18, 0x53, 0x65, 0x61, 0x72, 0x63,
 	0x68, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x49, 0x6e, 0x66, 0x6f, 0x52, 0x65, 0x73, 0x70, 0x6f,
 	0x6e, 0x73, 0x65, 0x12, 0x42, 0x0a, 0x07, 0x70, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x73, 0x18, 0x01,
 	0x20, 0x03, 0x28, 0x0b, 0x32, 0x28, 0x2e, 0x74, 0x68, 0x65, 0x74, 0x61, 0x6e, 0x2e, 0x69, 0x6d,
@@ -2011,9 +2023,9 @@ var file_thetan_immortal_v1_immortal_proto_goTypes = []interface{}{
 	(*EventPointsUpdateInfo)(nil),    // 25: thetan.immortal.v1.EventPointsUpdateInfo
 	nil,                              // 26: thetan.immortal.v1.GetHeroConfigResponse.HeroRaritiesEntry
 	nil,                              // 27: thetan.immortal.v1.GetSkillConfigResponse.SkillRaritiesEntry
-	(*PlayerInfoMatchProto)(nil),     // 28: thetan.immortal.v1.PlayerInfoMatchProto
-	(GameMode)(0),                    // 29: thetan.immortal.v1.GameMode
-	(InGameMode)(0),                  // 30: thetan.immortal.v1.InGameMode
+	(InGameMode)(0),                  // 28: thetan.immortal.v1.InGameMode
+	(*PlayerInfoMatchProto)(nil),     // 29: thetan.immortal.v1.PlayerInfoMatchProto
+	(GameMode)(0),                    // 30: thetan.immortal.v1.GameMode
 	(*Hero)(nil),                     // 31: thetan.immortal.v1.Hero
 	(*Skill)(nil),                    // 32: thetan.immortal.v1.Skill
 	(*PlayerAnalysis)(nil),           // 33: thetan.immortal.v1.PlayerAnalysis
@@ -2024,57 +2036,58 @@ var file_thetan_immortal_v1_immortal_proto_goTypes = []interface{}{
 	(*SkillFull)(nil),                // 38: thetan.immortal.v1.SkillFull
 }
 var file_thetan_immortal_v1_immortal_proto_depIdxs = []int32{
-	28, // 0: thetan.immortal.v1.SearchPlayerInfoResponse.players:type_name -> thetan.immortal.v1.PlayerInfoMatchProto
-	6,  // 1: thetan.immortal.v1.BattleEndRequest.players:type_name -> thetan.immortal.v1.PlayerMatchInfo
-	29, // 2: thetan.immortal.v1.BattleEndRequest.gameMode:type_name -> thetan.immortal.v1.GameMode
-	30, // 3: thetan.immortal.v1.BattleEndRequest.inGameMode:type_name -> thetan.immortal.v1.InGameMode
-	31, // 4: thetan.immortal.v1.PlayerMatchInfo.hero:type_name -> thetan.immortal.v1.Hero
-	32, // 5: thetan.immortal.v1.PlayerMatchInfo.skills:type_name -> thetan.immortal.v1.Skill
-	31, // 6: thetan.immortal.v1.PlayerMatchInfo.heroes:type_name -> thetan.immortal.v1.Hero
-	33, // 7: thetan.immortal.v1.PlayerMatchInfo.analysis:type_name -> thetan.immortal.v1.PlayerAnalysis
-	34, // 8: thetan.immortal.v1.BattleEndResponse.arena:type_name -> thetan.immortal.v1.Arena
-	8,  // 9: thetan.immortal.v1.BattleEndResponse.players:type_name -> thetan.immortal.v1.BattleEndPlayer
-	9,  // 10: thetan.immortal.v1.BattleEndResponse.hero:type_name -> thetan.immortal.v1.BattleEndHero
-	32, // 11: thetan.immortal.v1.BattleEndResponse.skills:type_name -> thetan.immortal.v1.Skill
-	9,  // 12: thetan.immortal.v1.BattleEndResponse.heroes:type_name -> thetan.immortal.v1.BattleEndHero
-	9,  // 13: thetan.immortal.v1.BattleEndResponse.lastUsedHero:type_name -> thetan.immortal.v1.BattleEndHero
-	35, // 14: thetan.immortal.v1.BattleEndResponse.questProgressUpdates:type_name -> thetan.immortal.v1.QuestProgressUpdate
-	25, // 15: thetan.immortal.v1.BattleEndResponse.eventPointsUpdates:type_name -> thetan.immortal.v1.EventPointsUpdateInfo
-	36, // 16: thetan.immortal.v1.BattleEndPlayer.skillRating:type_name -> thetan.immortal.v1.SkillRating
-	37, // 17: thetan.immortal.v1.GetHeroConfigResponse.heroes:type_name -> thetan.immortal.v1.HeroFull
-	26, // 18: thetan.immortal.v1.GetHeroConfigResponse.heroRarities:type_name -> thetan.immortal.v1.GetHeroConfigResponse.HeroRaritiesEntry
-	38, // 19: thetan.immortal.v1.GetSkillConfigResponse.skills:type_name -> thetan.immortal.v1.SkillFull
-	27, // 20: thetan.immortal.v1.GetSkillConfigResponse.skillRarities:type_name -> thetan.immortal.v1.GetSkillConfigResponse.SkillRaritiesEntry
-	18, // 21: thetan.immortal.v1.GetUserFriendResponse.friends:type_name -> thetan.immortal.v1.FriendInfo
-	0,  // 22: thetan.immortal.v1.FriendInfo.status:type_name -> thetan.immortal.v1.FriendInfo.FRIEND_STATUS
-	4,  // 23: thetan.immortal.v1.FriendInfo.profile:type_name -> thetan.immortal.v1.GetUserProfileResponse
-	31, // 24: thetan.immortal.v1.GetGameDataResponse.listHeroes:type_name -> thetan.immortal.v1.Hero
-	32, // 25: thetan.immortal.v1.GetGameDataResponse.listSkills:type_name -> thetan.immortal.v1.Skill
-	12, // 26: thetan.immortal.v1.GetHeroConfigResponse.HeroRaritiesEntry.value:type_name -> thetan.immortal.v1.HeroRarity
-	15, // 27: thetan.immortal.v1.GetSkillConfigResponse.SkillRaritiesEntry.value:type_name -> thetan.immortal.v1.SkillRarity
-	1,  // 28: thetan.immortal.v1.ImmortalService.SearchPlayerInfo:input_type -> thetan.immortal.v1.SearchPlayerInfoRequest
-	3,  // 29: thetan.immortal.v1.ImmortalService.GetUserProfile:input_type -> thetan.immortal.v1.GetUserProfileRequest
-	5,  // 30: thetan.immortal.v1.ImmortalService.BattleEnd:input_type -> thetan.immortal.v1.BattleEndRequest
-	10, // 31: thetan.immortal.v1.ImmortalService.GetHeroConfig:input_type -> thetan.immortal.v1.GetHeroConfigRequest
-	13, // 32: thetan.immortal.v1.ImmortalService.GetSkillConfig:input_type -> thetan.immortal.v1.GetSkillConfigRequest
-	16, // 33: thetan.immortal.v1.ImmortalService.GetListFriends:input_type -> thetan.immortal.v1.GetUserFriendRequest
-	19, // 34: thetan.immortal.v1.ImmortalService.GetSeasonal:input_type -> thetan.immortal.v1.GetSeasonalRequest
-	21, // 35: thetan.immortal.v1.ImmortalService.TrackStartSession:input_type -> thetan.immortal.v1.TrackSessionRequest
-	23, // 36: thetan.immortal.v1.ImmortalService.GetGameData:input_type -> thetan.immortal.v1.GetGameDataRequest
-	2,  // 37: thetan.immortal.v1.ImmortalService.SearchPlayerInfo:output_type -> thetan.immortal.v1.SearchPlayerInfoResponse
-	4,  // 38: thetan.immortal.v1.ImmortalService.GetUserProfile:output_type -> thetan.immortal.v1.GetUserProfileResponse
-	7,  // 39: thetan.immortal.v1.ImmortalService.BattleEnd:output_type -> thetan.immortal.v1.BattleEndResponse
-	11, // 40: thetan.immortal.v1.ImmortalService.GetHeroConfig:output_type -> thetan.immortal.v1.GetHeroConfigResponse
-	14, // 41: thetan.immortal.v1.ImmortalService.GetSkillConfig:output_type -> thetan.immortal.v1.GetSkillConfigResponse
-	17, // 42: thetan.immortal.v1.ImmortalService.GetListFriends:output_type -> thetan.immortal.v1.GetUserFriendResponse
-	20, // 43: thetan.immortal.v1.ImmortalService.GetSeasonal:output_type -> thetan.immortal.v1.GetSeasonalResponse
-	22, // 44: thetan.immortal.v1.ImmortalService.TrackStartSession:output_type -> thetan.immortal.v1.TrackSessionResponse
-	24, // 45: thetan.immortal.v1.ImmortalService.GetGameData:output_type -> thetan.immortal.v1.GetGameDataResponse
-	37, // [37:46] is the sub-list for method output_type
-	28, // [28:37] is the sub-list for method input_type
-	28, // [28:28] is the sub-list for extension type_name
-	28, // [28:28] is the sub-list for extension extendee
-	0,  // [0:28] is the sub-list for field type_name
+	28, // 0: thetan.immortal.v1.SearchPlayerInfoRequest.inGameMode:type_name -> thetan.immortal.v1.InGameMode
+	29, // 1: thetan.immortal.v1.SearchPlayerInfoResponse.players:type_name -> thetan.immortal.v1.PlayerInfoMatchProto
+	6,  // 2: thetan.immortal.v1.BattleEndRequest.players:type_name -> thetan.immortal.v1.PlayerMatchInfo
+	30, // 3: thetan.immortal.v1.BattleEndRequest.gameMode:type_name -> thetan.immortal.v1.GameMode
+	28, // 4: thetan.immortal.v1.BattleEndRequest.inGameMode:type_name -> thetan.immortal.v1.InGameMode
+	31, // 5: thetan.immortal.v1.PlayerMatchInfo.hero:type_name -> thetan.immortal.v1.Hero
+	32, // 6: thetan.immortal.v1.PlayerMatchInfo.skills:type_name -> thetan.immortal.v1.Skill
+	31, // 7: thetan.immortal.v1.PlayerMatchInfo.heroes:type_name -> thetan.immortal.v1.Hero
+	33, // 8: thetan.immortal.v1.PlayerMatchInfo.analysis:type_name -> thetan.immortal.v1.PlayerAnalysis
+	34, // 9: thetan.immortal.v1.BattleEndResponse.arena:type_name -> thetan.immortal.v1.Arena
+	8,  // 10: thetan.immortal.v1.BattleEndResponse.players:type_name -> thetan.immortal.v1.BattleEndPlayer
+	9,  // 11: thetan.immortal.v1.BattleEndResponse.hero:type_name -> thetan.immortal.v1.BattleEndHero
+	32, // 12: thetan.immortal.v1.BattleEndResponse.skills:type_name -> thetan.immortal.v1.Skill
+	9,  // 13: thetan.immortal.v1.BattleEndResponse.heroes:type_name -> thetan.immortal.v1.BattleEndHero
+	9,  // 14: thetan.immortal.v1.BattleEndResponse.lastUsedHero:type_name -> thetan.immortal.v1.BattleEndHero
+	35, // 15: thetan.immortal.v1.BattleEndResponse.questProgressUpdates:type_name -> thetan.immortal.v1.QuestProgressUpdate
+	25, // 16: thetan.immortal.v1.BattleEndResponse.eventPointsUpdates:type_name -> thetan.immortal.v1.EventPointsUpdateInfo
+	36, // 17: thetan.immortal.v1.BattleEndPlayer.skillRating:type_name -> thetan.immortal.v1.SkillRating
+	37, // 18: thetan.immortal.v1.GetHeroConfigResponse.heroes:type_name -> thetan.immortal.v1.HeroFull
+	26, // 19: thetan.immortal.v1.GetHeroConfigResponse.heroRarities:type_name -> thetan.immortal.v1.GetHeroConfigResponse.HeroRaritiesEntry
+	38, // 20: thetan.immortal.v1.GetSkillConfigResponse.skills:type_name -> thetan.immortal.v1.SkillFull
+	27, // 21: thetan.immortal.v1.GetSkillConfigResponse.skillRarities:type_name -> thetan.immortal.v1.GetSkillConfigResponse.SkillRaritiesEntry
+	18, // 22: thetan.immortal.v1.GetUserFriendResponse.friends:type_name -> thetan.immortal.v1.FriendInfo
+	0,  // 23: thetan.immortal.v1.FriendInfo.status:type_name -> thetan.immortal.v1.FriendInfo.FRIEND_STATUS
+	4,  // 24: thetan.immortal.v1.FriendInfo.profile:type_name -> thetan.immortal.v1.GetUserProfileResponse
+	31, // 25: thetan.immortal.v1.GetGameDataResponse.listHeroes:type_name -> thetan.immortal.v1.Hero
+	32, // 26: thetan.immortal.v1.GetGameDataResponse.listSkills:type_name -> thetan.immortal.v1.Skill
+	12, // 27: thetan.immortal.v1.GetHeroConfigResponse.HeroRaritiesEntry.value:type_name -> thetan.immortal.v1.HeroRarity
+	15, // 28: thetan.immortal.v1.GetSkillConfigResponse.SkillRaritiesEntry.value:type_name -> thetan.immortal.v1.SkillRarity
+	1,  // 29: thetan.immortal.v1.ImmortalService.SearchPlayerInfo:input_type -> thetan.immortal.v1.SearchPlayerInfoRequest
+	3,  // 30: thetan.immortal.v1.ImmortalService.GetUserProfile:input_type -> thetan.immortal.v1.GetUserProfileRequest
+	5,  // 31: thetan.immortal.v1.ImmortalService.BattleEnd:input_type -> thetan.immortal.v1.BattleEndRequest
+	10, // 32: thetan.immortal.v1.ImmortalService.GetHeroConfig:input_type -> thetan.immortal.v1.GetHeroConfigRequest
+	13, // 33: thetan.immortal.v1.ImmortalService.GetSkillConfig:input_type -> thetan.immortal.v1.GetSkillConfigRequest
+	16, // 34: thetan.immortal.v1.ImmortalService.GetListFriends:input_type -> thetan.immortal.v1.GetUserFriendRequest
+	19, // 35: thetan.immortal.v1.ImmortalService.GetSeasonal:input_type -> thetan.immortal.v1.GetSeasonalRequest
+	21, // 36: thetan.immortal.v1.ImmortalService.TrackStartSession:input_type -> thetan.immortal.v1.TrackSessionRequest
+	23, // 37: thetan.immortal.v1.ImmortalService.GetGameData:input_type -> thetan.immortal.v1.GetGameDataRequest
+	2,  // 38: thetan.immortal.v1.ImmortalService.SearchPlayerInfo:output_type -> thetan.immortal.v1.SearchPlayerInfoResponse
+	4,  // 39: thetan.immortal.v1.ImmortalService.GetUserProfile:output_type -> thetan.immortal.v1.GetUserProfileResponse
+	7,  // 40: thetan.immortal.v1.ImmortalService.BattleEnd:output_type -> thetan.immortal.v1.BattleEndResponse
+	11, // 41: thetan.immortal.v1.ImmortalService.GetHeroConfig:output_type -> thetan.immortal.v1.GetHeroConfigResponse
+	14, // 42: thetan.immortal.v1.ImmortalService.GetSkillConfig:output_type -> thetan.immortal.v1.GetSkillConfigResponse
+	17, // 43: thetan.immortal.v1.ImmortalService.GetListFriends:output_type -> thetan.immortal.v1.GetUserFriendResponse
+	20, // 44: thetan.immortal.v1.ImmortalService.GetSeasonal:output_type -> thetan.immortal.v1.GetSeasonalResponse
+	22, // 45: thetan.immortal.v1.ImmortalService.TrackStartSession:output_type -> thetan.immortal.v1.TrackSessionResponse
+	24, // 46: thetan.immortal.v1.ImmortalService.GetGameData:output_type -> thetan.immortal.v1.GetGameDataResponse
+	38, // [38:47] is the sub-list for method output_type
+	29, // [29:38] is the sub-list for method input_type
+	29, // [29:29] is the sub-list for extension type_name
+	29, // [29:29] is the sub-list for extension extendee
+	0,  // [0:29] is the sub-list for field type_name
 }
 
 func init() { file_thetan_immortal_v1_immortal_proto_init() }

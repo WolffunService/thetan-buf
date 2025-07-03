@@ -26,6 +26,7 @@ service ImmortalService {
 
 message SearchPlayerInfoRequest {
   repeated string playerIDs = 1;
+  InGameMode inGameMode = 2;
 }
 
 message SearchPlayerInfoResponse {
