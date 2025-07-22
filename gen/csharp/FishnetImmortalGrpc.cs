@@ -4,9 +4,8 @@
 // </auto-generated>
 #pragma warning disable 0414, 1591, 8981, 0612
 #region Designer generated code
-
+#if !UNITY_ANDROID && !UNITY_IOS
 using grpc = global::Grpc.Core;
-
 namespace Thetan.Fishnet.Immortal.V1 {
   public static partial class ThetanFishNetImmortal
   {
@@ -228,4 +227,5 @@ namespace Thetan.Fishnet.Immortal.V1 {
 
   }
 }
+#endif
 #endregion
