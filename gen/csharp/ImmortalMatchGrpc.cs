@@ -4,7 +4,7 @@
 // </auto-generated>
 #pragma warning disable 0414, 1591, 8981, 0612
 #region Designer generated code
-#if !UNITY_IOS && !UNITY_ANDROID
+
 using grpc = global::Grpc.Core;
 
 namespace Thetan.Immortal.V1 {
@@ -192,5 +192,4 @@ namespace Thetan.Immortal.V1 {
 
   }
 }
-#endif
 #endregion
