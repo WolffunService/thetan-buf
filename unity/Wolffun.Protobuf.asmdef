@@ -18,7 +18,6 @@
     "VisionOS",
     "WebGL",
     "WindowsStandalone32",
-    "WindowsStandalone64",
-    "XboxOne"
+    "WindowsStandalone64"
   ]
 }
