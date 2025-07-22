@@ -4,7 +4,7 @@
 // </auto-generated>
 #pragma warning disable 0414, 1591, 8981, 0612
 #region Designer generated code
-
+#if !UNITY_ANDROID && !UNITY_IOS
 using grpc = global::Grpc.Core;
 
 namespace Thetan.Fishnet.Rivalslobby.V1 {
@@ -298,4 +298,5 @@ namespace Thetan.Fishnet.Rivalslobby.V1 {
 
   }
 }
+#endif
 #endregion
