@@ -3,6 +3,7 @@
 //     source: thetan/gateway/v1/gs_rivalslobby.proto
 // </auto-generated>
 #pragma warning disable 0414, 1591, 8981, 0612
+#if !UNITY_ANDROID && !UNITY_IOS
 #region Designer generated code
 
 using grpc = global::Grpc.Core;
@@ -193,3 +194,4 @@ namespace Thetan.Gateway.V1 {
   }
 }
 #endregion
+#endif

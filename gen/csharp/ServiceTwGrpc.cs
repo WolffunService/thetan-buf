@@ -3,6 +3,7 @@
 //     source: thetan/world/v1/service_tw.proto
 // </auto-generated>
 #pragma warning disable 0414, 1591, 8981, 0612
+#if !UNITY_ANDROID && !UNITY_IOS
 #region Designer generated code
 
 using grpc = global::Grpc.Core;
@@ -153,3 +154,4 @@ namespace Thetan.World.V1 {
   }
 }
 #endregion
+#endif

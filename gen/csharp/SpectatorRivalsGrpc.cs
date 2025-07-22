@@ -3,6 +3,7 @@
 //     source: thetan/fishnet/rivals/v1/spectator_rivals.proto
 // </auto-generated>
 #pragma warning disable 0414, 1591, 8981, 0612
+#if !UNITY_ANDROID && !UNITY_IOS
 #region Designer generated code
 
 using grpc = global::Grpc.Core;
@@ -229,3 +230,4 @@ namespace Thetan.Fishnet.SpectatorRivals.V1 {
   }
 }
 #endregion
+#endif
