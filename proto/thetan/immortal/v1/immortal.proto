@@ -92,6 +92,7 @@ message BattleEndResponse{
   BattleEndHero lastUsedHero = 14;
   repeated QuestProgressUpdate questProgressUpdates = 15;
   repeated EventPointsUpdateInfo eventPointsUpdates = 16;
+  GloryRushEventPointUpdate gloryRushEventPointUpdate = 17;
 }
 
 message BattleEndPlayer {
@@ -180,5 +181,9 @@ message GetGameDataResponse {
 
 message EventPointsUpdateInfo {
   int64 eventId = 1;
+  int32 pointsAdded = 2;
+}
+message GloryRushEventPointUpdate {
+  string eventId = 1;
   int32 pointsAdded = 2;
 }
