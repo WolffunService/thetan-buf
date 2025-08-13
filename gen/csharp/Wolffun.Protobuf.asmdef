@@ -1,24 +1,3 @@
 {
-  "name": "Wolffun.Protobuf",
-  "includePlatforms": [
-    "Editor",
-    "EmbeddedLinux",
-    "GameCoreScarlett",
-    "GameCoreXboxOne",
-    "LinuxStandalone64",
-    "CloudRendering",
-    "macOSStandalone",
-    "PS4",
-    "PS5",
-    "QNX",
-    "Stadia",
-    "Switch",
-    "tvOS",
-    "WSA",
-    "VisionOS",
-    "WebGL",
-    "WindowsStandalone32",
-    "WindowsStandalone64",
-    "XboxOne"
-  ]
+  "name": "Wolffun.Protobuf"
 }
