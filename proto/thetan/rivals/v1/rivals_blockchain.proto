@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package thetan.rivals.v1;
+
+option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
+
+service RivalsBlockchainService {
+  rpc GetCheckInSig (GetCheckInSigRequest) returns (GetCheckInSigResponse);
+}
+
+message GetCheckInSigRequest {
+  string caller_address = 1;
+}
+
+message GetCheckInSigResponse {
+  string id = 1;
+  string caller_address = 2;
+  int64 expired_at = 3;
+  string signature = 4;
+}
+
+message BlockchainCheckInEvent {
+  string id = 1;
+  string txHash = 2;
+}
+
+message BlockchainTimeoutEvent {
+  string id = 1;
+}
