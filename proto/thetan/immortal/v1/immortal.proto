@@ -73,7 +73,7 @@ message PlayerMatchInfo{
   int32 teamID = 13;
   string playerName = 14;
   int32 battlePassID = 15;
-  int32 arena = 16;
+  Arena arena = 16;
 }
 
 message BattleEndResponse{
