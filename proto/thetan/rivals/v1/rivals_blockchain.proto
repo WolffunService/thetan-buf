@@ -6,6 +6,8 @@ option go_package = "thetan-buf/gen/go/thetan/rivals/v1;thetan_rivals_v1";
 
 service RivalsBlockchainService {
   rpc GetCheckInSig (GetCheckInSigRequest) returns (GetCheckInSigResponse);
+  rpc GetDirectSaleSig (GetDirectSaleSigRequest) returns (GetDirectSaleSigResponse);
+  rpc GetPeerSaleSig (GetPeerSaleSigRequest) returns (GetPeerSaleSigResponse);
 }
 
 message GetCheckInSigRequest {
@@ -16,6 +18,35 @@ message GetCheckInSigResponse {
   string id = 1;
   string caller_address = 2;
   int64 expired_at = 3;
+  string signature = 4;
+}
+
+message GetDirectSaleSigRequest {
+  optional string id = 1;
+  string caller_address = 2;
+  string token_address = 3;
+  string fee_in_wei = 4;
+}
+
+message GetDirectSaleSigResponse {
+  string id = 1;
+  uint32 version = 2;
+  int64 expire_at = 3;
+  string signature = 4;
+}
+
+message GetPeerSaleSigRequest {
+  optional string id = 1;
+  string buyer_address = 2;
+  string seller_address = 3;
+  string token_address = 4;
+  string fee_in_wei = 5;
+}
+
+message GetPeerSaleSigResponse {
+  string id = 1;
+  uint32 version = 2;
+  int64 expire_at = 3;
   string signature = 4;
 }
 

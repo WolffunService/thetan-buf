@@ -19,7 +19,9 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	RivalsBlockchainService_GetCheckInSig_FullMethodName = "/thetan.rivals.v1.RivalsBlockchainService/GetCheckInSig"
+	RivalsBlockchainService_GetCheckInSig_FullMethodName    = "/thetan.rivals.v1.RivalsBlockchainService/GetCheckInSig"
+	RivalsBlockchainService_GetDirectSaleSig_FullMethodName = "/thetan.rivals.v1.RivalsBlockchainService/GetDirectSaleSig"
+	RivalsBlockchainService_GetPeerSaleSig_FullMethodName   = "/thetan.rivals.v1.RivalsBlockchainService/GetPeerSaleSig"
 )
 
 // RivalsBlockchainServiceClient is the client API for RivalsBlockchainService service.
@@ -27,6 +29,8 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type RivalsBlockchainServiceClient interface {
 	GetCheckInSig(ctx context.Context, in *GetCheckInSigRequest, opts ...grpc.CallOption) (*GetCheckInSigResponse, error)
+	GetDirectSaleSig(ctx context.Context, in *GetDirectSaleSigRequest, opts ...grpc.CallOption) (*GetDirectSaleSigResponse, error)
+	GetPeerSaleSig(ctx context.Context, in *GetPeerSaleSigRequest, opts ...grpc.CallOption) (*GetPeerSaleSigResponse, error)
 }
 
 type rivalsBlockchainServiceClient struct {
@@ -46,11 +50,31 @@ func (c *rivalsBlockchainServiceClient) GetCheckInSig(ctx context.Context, in *G
 	return out, nil
 }
 
+func (c *rivalsBlockchainServiceClient) GetDirectSaleSig(ctx context.Context, in *GetDirectSaleSigRequest, opts ...grpc.CallOption) (*GetDirectSaleSigResponse, error) {
+	out := new(GetDirectSaleSigResponse)
+	err := c.cc.Invoke(ctx, RivalsBlockchainService_GetDirectSaleSig_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *rivalsBlockchainServiceClient) GetPeerSaleSig(ctx context.Context, in *GetPeerSaleSigRequest, opts ...grpc.CallOption) (*GetPeerSaleSigResponse, error) {
+	out := new(GetPeerSaleSigResponse)
+	err := c.cc.Invoke(ctx, RivalsBlockchainService_GetPeerSaleSig_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // RivalsBlockchainServiceServer is the server API for RivalsBlockchainService service.
 // All implementations must embed UnimplementedRivalsBlockchainServiceServer
 // for forward compatibility
 type RivalsBlockchainServiceServer interface {
 	GetCheckInSig(context.Context, *GetCheckInSigRequest) (*GetCheckInSigResponse, error)
+	GetDirectSaleSig(context.Context, *GetDirectSaleSigRequest) (*GetDirectSaleSigResponse, error)
+	GetPeerSaleSig(context.Context, *GetPeerSaleSigRequest) (*GetPeerSaleSigResponse, error)
 	mustEmbedUnimplementedRivalsBlockchainServiceServer()
 }
 
@@ -60,6 +84,12 @@ type UnimplementedRivalsBlockchainServiceServer struct {
 
 func (UnimplementedRivalsBlockchainServiceServer) GetCheckInSig(context.Context, *GetCheckInSigRequest) (*GetCheckInSigResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetCheckInSig not implemented")
+}
+func (UnimplementedRivalsBlockchainServiceServer) GetDirectSaleSig(context.Context, *GetDirectSaleSigRequest) (*GetDirectSaleSigResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetDirectSaleSig not implemented")
+}
+func (UnimplementedRivalsBlockchainServiceServer) GetPeerSaleSig(context.Context, *GetPeerSaleSigRequest) (*GetPeerSaleSigResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetPeerSaleSig not implemented")
 }
 func (UnimplementedRivalsBlockchainServiceServer) mustEmbedUnimplementedRivalsBlockchainServiceServer() {
 }
@@ -93,6 +123,42 @@ func _RivalsBlockchainService_GetCheckInSig_Handler(srv interface{}, ctx context
 	return interceptor(ctx, in, info, handler)
 }
 
+func _RivalsBlockchainService_GetDirectSaleSig_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetDirectSaleSigRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(RivalsBlockchainServiceServer).GetDirectSaleSig(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: RivalsBlockchainService_GetDirectSaleSig_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(RivalsBlockchainServiceServer).GetDirectSaleSig(ctx, req.(*GetDirectSaleSigRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _RivalsBlockchainService_GetPeerSaleSig_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetPeerSaleSigRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(RivalsBlockchainServiceServer).GetPeerSaleSig(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: RivalsBlockchainService_GetPeerSaleSig_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(RivalsBlockchainServiceServer).GetPeerSaleSig(ctx, req.(*GetPeerSaleSigRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // RivalsBlockchainService_ServiceDesc is the grpc.ServiceDesc for RivalsBlockchainService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -103,6 +169,14 @@ var RivalsBlockchainService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetCheckInSig",
 			Handler:    _RivalsBlockchainService_GetCheckInSig_Handler,
+		},
+		{
+			MethodName: "GetDirectSaleSig",
+			Handler:    _RivalsBlockchainService_GetDirectSaleSig_Handler,
+		},
+		{
+			MethodName: "GetPeerSaleSig",
+			Handler:    _RivalsBlockchainService_GetPeerSaleSig_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
