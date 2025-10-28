@@ -49,6 +49,14 @@ namespace Thetan.Rivals.V1 {
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetCheckInSigRequest> __Marshaller_thetan_rivals_v1_GetCheckInSigRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetCheckInSigRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetCheckInSigResponse> __Marshaller_thetan_rivals_v1_GetCheckInSigResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetCheckInSigResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetDirectSaleSigRequest> __Marshaller_thetan_rivals_v1_GetDirectSaleSigRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetDirectSaleSigRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetDirectSaleSigResponse> __Marshaller_thetan_rivals_v1_GetDirectSaleSigResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetDirectSaleSigResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetPeerSaleSigRequest> __Marshaller_thetan_rivals_v1_GetPeerSaleSigRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetPeerSaleSigRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Thetan.Rivals.V1.GetPeerSaleSigResponse> __Marshaller_thetan_rivals_v1_GetPeerSaleSigResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Thetan.Rivals.V1.GetPeerSaleSigResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Thetan.Rivals.V1.GetCheckInSigRequest, global::Thetan.Rivals.V1.GetCheckInSigResponse> __Method_GetCheckInSig = new grpc::Method<global::Thetan.Rivals.V1.GetCheckInSigRequest, global::Thetan.Rivals.V1.GetCheckInSigResponse>(
@@ -57,6 +65,22 @@ namespace Thetan.Rivals.V1 {
         "GetCheckInSig",
         __Marshaller_thetan_rivals_v1_GetCheckInSigRequest,
         __Marshaller_thetan_rivals_v1_GetCheckInSigResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.GetDirectSaleSigRequest, global::Thetan.Rivals.V1.GetDirectSaleSigResponse> __Method_GetDirectSaleSig = new grpc::Method<global::Thetan.Rivals.V1.GetDirectSaleSigRequest, global::Thetan.Rivals.V1.GetDirectSaleSigResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetDirectSaleSig",
+        __Marshaller_thetan_rivals_v1_GetDirectSaleSigRequest,
+        __Marshaller_thetan_rivals_v1_GetDirectSaleSigResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Thetan.Rivals.V1.GetPeerSaleSigRequest, global::Thetan.Rivals.V1.GetPeerSaleSigResponse> __Method_GetPeerSaleSig = new grpc::Method<global::Thetan.Rivals.V1.GetPeerSaleSigRequest, global::Thetan.Rivals.V1.GetPeerSaleSigResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetPeerSaleSig",
+        __Marshaller_thetan_rivals_v1_GetPeerSaleSigRequest,
+        __Marshaller_thetan_rivals_v1_GetPeerSaleSigResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -70,6 +94,18 @@ namespace Thetan.Rivals.V1 {
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.GetCheckInSigResponse> GetCheckInSig(global::Thetan.Rivals.V1.GetCheckInSigRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.GetDirectSaleSigResponse> GetDirectSaleSig(global::Thetan.Rivals.V1.GetDirectSaleSigRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Thetan.Rivals.V1.GetPeerSaleSigResponse> GetPeerSaleSig(global::Thetan.Rivals.V1.GetPeerSaleSigRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -123,6 +159,46 @@ namespace Thetan.Rivals.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetCheckInSig, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GetDirectSaleSigResponse GetDirectSaleSig(global::Thetan.Rivals.V1.GetDirectSaleSigRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDirectSaleSig(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GetDirectSaleSigResponse GetDirectSaleSig(global::Thetan.Rivals.V1.GetDirectSaleSigRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetDirectSaleSig, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GetDirectSaleSigResponse> GetDirectSaleSigAsync(global::Thetan.Rivals.V1.GetDirectSaleSigRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDirectSaleSigAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GetDirectSaleSigResponse> GetDirectSaleSigAsync(global::Thetan.Rivals.V1.GetDirectSaleSigRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetDirectSaleSig, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GetPeerSaleSigResponse GetPeerSaleSig(global::Thetan.Rivals.V1.GetPeerSaleSigRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPeerSaleSig(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Thetan.Rivals.V1.GetPeerSaleSigResponse GetPeerSaleSig(global::Thetan.Rivals.V1.GetPeerSaleSigRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetPeerSaleSig, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GetPeerSaleSigResponse> GetPeerSaleSigAsync(global::Thetan.Rivals.V1.GetPeerSaleSigRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPeerSaleSigAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Thetan.Rivals.V1.GetPeerSaleSigResponse> GetPeerSaleSigAsync(global::Thetan.Rivals.V1.GetPeerSaleSigRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetPeerSaleSig, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override RivalsBlockchainServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -137,7 +213,9 @@ namespace Thetan.Rivals.V1 {
     public static grpc::ServerServiceDefinition BindService(RivalsBlockchainServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetCheckInSig, serviceImpl.GetCheckInSig).Build();
+          .AddMethod(__Method_GetCheckInSig, serviceImpl.GetCheckInSig)
+          .AddMethod(__Method_GetDirectSaleSig, serviceImpl.GetDirectSaleSig)
+          .AddMethod(__Method_GetPeerSaleSig, serviceImpl.GetPeerSaleSig).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -148,6 +226,8 @@ namespace Thetan.Rivals.V1 {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, RivalsBlockchainServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetCheckInSig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetCheckInSigRequest, global::Thetan.Rivals.V1.GetCheckInSigResponse>(serviceImpl.GetCheckInSig));
+      serviceBinder.AddMethod(__Method_GetDirectSaleSig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetDirectSaleSigRequest, global::Thetan.Rivals.V1.GetDirectSaleSigResponse>(serviceImpl.GetDirectSaleSig));
+      serviceBinder.AddMethod(__Method_GetPeerSaleSig, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Thetan.Rivals.V1.GetPeerSaleSigRequest, global::Thetan.Rivals.V1.GetPeerSaleSigResponse>(serviceImpl.GetPeerSaleSig));
     }
 
   }

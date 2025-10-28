@@ -29,24 +29,46 @@ namespace Thetan.Rivals.V1 {
             "bGxlcl9hZGRyZXNzGAEgASgJUg1jYWxsZXJBZGRyZXNzIosBChVHZXRDaGVj",
             "a0luU2lnUmVzcG9uc2USDgoCaWQYASABKAlSAmlkEiUKDmNhbGxlcl9hZGRy",
             "ZXNzGAIgASgJUg1jYWxsZXJBZGRyZXNzEh0KCmV4cGlyZWRfYXQYAyABKANS",
-            "CWV4cGlyZWRBdBIcCglzaWduYXR1cmUYBCABKAlSCXNpZ25hdHVyZSJAChZC",
-            "bG9ja2NoYWluQ2hlY2tJbkV2ZW50Eg4KAmlkGAEgASgJUgJpZBIWCgZ0eEhh",
-            "c2gYAiABKAlSBnR4SGFzaCIoChZCbG9ja2NoYWluVGltZW91dEV2ZW50Eg4K",
-            "AmlkGAEgASgJUgJpZCI9ChNCbG9ja2NoYWluU2FsZUV2ZW50Eg4KAmlkGAEg",
-            "ASgJUgJpZBIWCgZ0eEhhc2gYAiABKAlSBnR4SGFzaDJ7ChdSaXZhbHNCbG9j",
-            "a2NoYWluU2VydmljZRJgCg1HZXRDaGVja0luU2lnEiYudGhldGFuLnJpdmFs",
-            "cy52MS5HZXRDaGVja0luU2lnUmVxdWVzdBonLnRoZXRhbi5yaXZhbHMudjEu",
-            "R2V0Q2hlY2tJblNpZ1Jlc3BvbnNlQsQBChRjb20udGhldGFuLnJpdmFscy52",
-            "MUIVUml2YWxzQmxvY2tjaGFpblByb3RvUAFaM3RoZXRhbi1idWYvZ2VuL2dv",
-            "L3RoZXRhbi9yaXZhbHMvdjE7dGhldGFuX3JpdmFsc192MaICA1RSWKoCEFRo",
-            "ZXRhbi5SaXZhbHMuVjHKAhBUaGV0YW5cUml2YWxzXFYx4gIcVGhldGFuXFJp",
-            "dmFsc1xWMVxHUEJNZXRhZGF0YeoCElRoZXRhbjo6Uml2YWxzOjpWMWIGcHJv",
-            "dG8z"));
+            "CWV4cGlyZWRBdBIcCglzaWduYXR1cmUYBCABKAlSCXNpZ25hdHVyZSKfAQoX",
+            "R2V0RGlyZWN0U2FsZVNpZ1JlcXVlc3QSEwoCaWQYASABKAlIAFICaWSIAQES",
+            "JQoOY2FsbGVyX2FkZHJlc3MYAiABKAlSDWNhbGxlckFkZHJlc3MSIwoNdG9r",
+            "ZW5fYWRkcmVzcxgDIAEoCVIMdG9rZW5BZGRyZXNzEhwKCmZlZV9pbl93ZWkY",
+            "BCABKAlSCGZlZUluV2VpQgUKA19pZCJ/ChhHZXREaXJlY3RTYWxlU2lnUmVz",
+            "cG9uc2USDgoCaWQYASABKAlSAmlkEhgKB3ZlcnNpb24YAiABKA1SB3ZlcnNp",
+            "b24SGwoJZXhwaXJlX2F0GAMgASgDUghleHBpcmVBdBIcCglzaWduYXR1cmUY",
+            "BCABKAlSCXNpZ25hdHVyZSLCAQoVR2V0UGVlclNhbGVTaWdSZXF1ZXN0EhMK",
+            "AmlkGAEgASgJSABSAmlkiAEBEiMKDWJ1eWVyX2FkZHJlc3MYAiABKAlSDGJ1",
+            "eWVyQWRkcmVzcxIlCg5zZWxsZXJfYWRkcmVzcxgDIAEoCVINc2VsbGVyQWRk",
+            "cmVzcxIjCg10b2tlbl9hZGRyZXNzGAQgASgJUgx0b2tlbkFkZHJlc3MSHAoK",
+            "ZmVlX2luX3dlaRgFIAEoCVIIZmVlSW5XZWlCBQoDX2lkIn0KFkdldFBlZXJT",
+            "YWxlU2lnUmVzcG9uc2USDgoCaWQYASABKAlSAmlkEhgKB3ZlcnNpb24YAiAB",
+            "KA1SB3ZlcnNpb24SGwoJZXhwaXJlX2F0GAMgASgDUghleHBpcmVBdBIcCglz",
+            "aWduYXR1cmUYBCABKAlSCXNpZ25hdHVyZSJAChZCbG9ja2NoYWluQ2hlY2tJ",
+            "bkV2ZW50Eg4KAmlkGAEgASgJUgJpZBIWCgZ0eEhhc2gYAiABKAlSBnR4SGFz",
+            "aCIoChZCbG9ja2NoYWluVGltZW91dEV2ZW50Eg4KAmlkGAEgASgJUgJpZCI9",
+            "ChNCbG9ja2NoYWluU2FsZUV2ZW50Eg4KAmlkGAEgASgJUgJpZBIWCgZ0eEhh",
+            "c2gYAiABKAlSBnR4SGFzaDLLAgoXUml2YWxzQmxvY2tjaGFpblNlcnZpY2US",
+            "YAoNR2V0Q2hlY2tJblNpZxImLnRoZXRhbi5yaXZhbHMudjEuR2V0Q2hlY2tJ",
+            "blNpZ1JlcXVlc3QaJy50aGV0YW4ucml2YWxzLnYxLkdldENoZWNrSW5TaWdS",
+            "ZXNwb25zZRJpChBHZXREaXJlY3RTYWxlU2lnEikudGhldGFuLnJpdmFscy52",
+            "MS5HZXREaXJlY3RTYWxlU2lnUmVxdWVzdBoqLnRoZXRhbi5yaXZhbHMudjEu",
+            "R2V0RGlyZWN0U2FsZVNpZ1Jlc3BvbnNlEmMKDkdldFBlZXJTYWxlU2lnEicu",
+            "dGhldGFuLnJpdmFscy52MS5HZXRQZWVyU2FsZVNpZ1JlcXVlc3QaKC50aGV0",
+            "YW4ucml2YWxzLnYxLkdldFBlZXJTYWxlU2lnUmVzcG9uc2VCxAEKFGNvbS50",
+            "aGV0YW4ucml2YWxzLnYxQhVSaXZhbHNCbG9ja2NoYWluUHJvdG9QAVozdGhl",
+            "dGFuLWJ1Zi9nZW4vZ28vdGhldGFuL3JpdmFscy92MTt0aGV0YW5fcml2YWxz",
+            "X3YxogIDVFJYqgIQVGhldGFuLlJpdmFscy5WMcoCEFRoZXRhblxSaXZhbHNc",
+            "VjHiAhxUaGV0YW5cUml2YWxzXFYxXEdQQk1ldGFkYXRh6gISVGhldGFuOjpS",
+            "aXZhbHM6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetCheckInSigRequest), global::Thetan.Rivals.V1.GetCheckInSigRequest.Parser, new[]{ "CallerAddress" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetCheckInSigResponse), global::Thetan.Rivals.V1.GetCheckInSigResponse.Parser, new[]{ "Id", "CallerAddress", "ExpiredAt", "Signature" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetDirectSaleSigRequest), global::Thetan.Rivals.V1.GetDirectSaleSigRequest.Parser, new[]{ "Id", "CallerAddress", "TokenAddress", "FeeInWei" }, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetDirectSaleSigResponse), global::Thetan.Rivals.V1.GetDirectSaleSigResponse.Parser, new[]{ "Id", "Version", "ExpireAt", "Signature" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetPeerSaleSigRequest), global::Thetan.Rivals.V1.GetPeerSaleSigRequest.Parser, new[]{ "Id", "BuyerAddress", "SellerAddress", "TokenAddress", "FeeInWei" }, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.GetPeerSaleSigResponse), global::Thetan.Rivals.V1.GetPeerSaleSigResponse.Parser, new[]{ "Id", "Version", "ExpireAt", "Signature" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.BlockchainCheckInEvent), global::Thetan.Rivals.V1.BlockchainCheckInEvent.Parser, new[]{ "Id", "TxHash" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.BlockchainTimeoutEvent), global::Thetan.Rivals.V1.BlockchainTimeoutEvent.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Thetan.Rivals.V1.BlockchainSaleEvent), global::Thetan.Rivals.V1.BlockchainSaleEvent.Parser, new[]{ "Id", "TxHash" }, null, null, null, null)
@@ -545,6 +567,1267 @@ namespace Thetan.Rivals.V1 {
 
   }
 
+  public sealed partial class GetDirectSaleSigRequest : pb::IMessage<GetDirectSaleSigRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetDirectSaleSigRequest> _parser = new pb::MessageParser<GetDirectSaleSigRequest>(() => new GetDirectSaleSigRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetDirectSaleSigRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Rivals.V1.RivalsBlockchainReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetDirectSaleSigRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetDirectSaleSigRequest(GetDirectSaleSigRequest other) : this() {
+      id_ = other.id_;
+      callerAddress_ = other.callerAddress_;
+      tokenAddress_ = other.tokenAddress_;
+      feeInWei_ = other.feeInWei_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetDirectSaleSigRequest Clone() {
+      return new GetDirectSaleSigRequest(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_ ?? ""; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasId {
+      get { return id_ != null; }
+    }
+    /// <summary>Clears the value of the "id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearId() {
+      id_ = null;
+    }
+
+    /// <summary>Field number for the "caller_address" field.</summary>
+    public const int CallerAddressFieldNumber = 2;
+    private string callerAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CallerAddress {
+      get { return callerAddress_; }
+      set {
+        callerAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "token_address" field.</summary>
+    public const int TokenAddressFieldNumber = 3;
+    private string tokenAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TokenAddress {
+      get { return tokenAddress_; }
+      set {
+        tokenAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "fee_in_wei" field.</summary>
+    public const int FeeInWeiFieldNumber = 4;
+    private string feeInWei_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string FeeInWei {
+      get { return feeInWei_; }
+      set {
+        feeInWei_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetDirectSaleSigRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetDirectSaleSigRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (CallerAddress != other.CallerAddress) return false;
+      if (TokenAddress != other.TokenAddress) return false;
+      if (FeeInWei != other.FeeInWei) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasId) hash ^= Id.GetHashCode();
+      if (CallerAddress.Length != 0) hash ^= CallerAddress.GetHashCode();
+      if (TokenAddress.Length != 0) hash ^= TokenAddress.GetHashCode();
+      if (FeeInWei.Length != 0) hash ^= FeeInWei.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasId) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (CallerAddress.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CallerAddress);
+      }
+      if (TokenAddress.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TokenAddress);
+      }
+      if (FeeInWei.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(FeeInWei);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasId) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (CallerAddress.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CallerAddress);
+      }
+      if (TokenAddress.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(TokenAddress);
+      }
+      if (FeeInWei.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(FeeInWei);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasId) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (CallerAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CallerAddress);
+      }
+      if (TokenAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TokenAddress);
+      }
+      if (FeeInWei.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FeeInWei);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetDirectSaleSigRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasId) {
+        Id = other.Id;
+      }
+      if (other.CallerAddress.Length != 0) {
+        CallerAddress = other.CallerAddress;
+      }
+      if (other.TokenAddress.Length != 0) {
+        TokenAddress = other.TokenAddress;
+      }
+      if (other.FeeInWei.Length != 0) {
+        FeeInWei = other.FeeInWei;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            CallerAddress = input.ReadString();
+            break;
+          }
+          case 26: {
+            TokenAddress = input.ReadString();
+            break;
+          }
+          case 34: {
+            FeeInWei = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            CallerAddress = input.ReadString();
+            break;
+          }
+          case 26: {
+            TokenAddress = input.ReadString();
+            break;
+          }
+          case 34: {
+            FeeInWei = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetDirectSaleSigResponse : pb::IMessage<GetDirectSaleSigResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetDirectSaleSigResponse> _parser = new pb::MessageParser<GetDirectSaleSigResponse>(() => new GetDirectSaleSigResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetDirectSaleSigResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Rivals.V1.RivalsBlockchainReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetDirectSaleSigResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetDirectSaleSigResponse(GetDirectSaleSigResponse other) : this() {
+      id_ = other.id_;
+      version_ = other.version_;
+      expireAt_ = other.expireAt_;
+      signature_ = other.signature_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetDirectSaleSigResponse Clone() {
+      return new GetDirectSaleSigResponse(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "version" field.</summary>
+    public const int VersionFieldNumber = 2;
+    private uint version_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Version {
+      get { return version_; }
+      set {
+        version_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "expire_at" field.</summary>
+    public const int ExpireAtFieldNumber = 3;
+    private long expireAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long ExpireAt {
+      get { return expireAt_; }
+      set {
+        expireAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "signature" field.</summary>
+    public const int SignatureFieldNumber = 4;
+    private string signature_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Signature {
+      get { return signature_; }
+      set {
+        signature_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetDirectSaleSigResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetDirectSaleSigResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Version != other.Version) return false;
+      if (ExpireAt != other.ExpireAt) return false;
+      if (Signature != other.Signature) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (Version != 0) hash ^= Version.GetHashCode();
+      if (ExpireAt != 0L) hash ^= ExpireAt.GetHashCode();
+      if (Signature.Length != 0) hash ^= Signature.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Version != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Version);
+      }
+      if (ExpireAt != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(ExpireAt);
+      }
+      if (Signature.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Signature);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Version != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Version);
+      }
+      if (ExpireAt != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(ExpireAt);
+      }
+      if (Signature.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Signature);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (Version != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Version);
+      }
+      if (ExpireAt != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ExpireAt);
+      }
+      if (Signature.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Signature);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetDirectSaleSigResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.Version != 0) {
+        Version = other.Version;
+      }
+      if (other.ExpireAt != 0L) {
+        ExpireAt = other.ExpireAt;
+      }
+      if (other.Signature.Length != 0) {
+        Signature = other.Signature;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 16: {
+            Version = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            ExpireAt = input.ReadInt64();
+            break;
+          }
+          case 34: {
+            Signature = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 16: {
+            Version = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            ExpireAt = input.ReadInt64();
+            break;
+          }
+          case 34: {
+            Signature = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetPeerSaleSigRequest : pb::IMessage<GetPeerSaleSigRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetPeerSaleSigRequest> _parser = new pb::MessageParser<GetPeerSaleSigRequest>(() => new GetPeerSaleSigRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetPeerSaleSigRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Rivals.V1.RivalsBlockchainReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPeerSaleSigRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPeerSaleSigRequest(GetPeerSaleSigRequest other) : this() {
+      id_ = other.id_;
+      buyerAddress_ = other.buyerAddress_;
+      sellerAddress_ = other.sellerAddress_;
+      tokenAddress_ = other.tokenAddress_;
+      feeInWei_ = other.feeInWei_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPeerSaleSigRequest Clone() {
+      return new GetPeerSaleSigRequest(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_ ?? ""; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasId {
+      get { return id_ != null; }
+    }
+    /// <summary>Clears the value of the "id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearId() {
+      id_ = null;
+    }
+
+    /// <summary>Field number for the "buyer_address" field.</summary>
+    public const int BuyerAddressFieldNumber = 2;
+    private string buyerAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string BuyerAddress {
+      get { return buyerAddress_; }
+      set {
+        buyerAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "seller_address" field.</summary>
+    public const int SellerAddressFieldNumber = 3;
+    private string sellerAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string SellerAddress {
+      get { return sellerAddress_; }
+      set {
+        sellerAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "token_address" field.</summary>
+    public const int TokenAddressFieldNumber = 4;
+    private string tokenAddress_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TokenAddress {
+      get { return tokenAddress_; }
+      set {
+        tokenAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "fee_in_wei" field.</summary>
+    public const int FeeInWeiFieldNumber = 5;
+    private string feeInWei_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string FeeInWei {
+      get { return feeInWei_; }
+      set {
+        feeInWei_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetPeerSaleSigRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetPeerSaleSigRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (BuyerAddress != other.BuyerAddress) return false;
+      if (SellerAddress != other.SellerAddress) return false;
+      if (TokenAddress != other.TokenAddress) return false;
+      if (FeeInWei != other.FeeInWei) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasId) hash ^= Id.GetHashCode();
+      if (BuyerAddress.Length != 0) hash ^= BuyerAddress.GetHashCode();
+      if (SellerAddress.Length != 0) hash ^= SellerAddress.GetHashCode();
+      if (TokenAddress.Length != 0) hash ^= TokenAddress.GetHashCode();
+      if (FeeInWei.Length != 0) hash ^= FeeInWei.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasId) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (BuyerAddress.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(BuyerAddress);
+      }
+      if (SellerAddress.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(SellerAddress);
+      }
+      if (TokenAddress.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(TokenAddress);
+      }
+      if (FeeInWei.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(FeeInWei);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasId) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (BuyerAddress.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(BuyerAddress);
+      }
+      if (SellerAddress.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(SellerAddress);
+      }
+      if (TokenAddress.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(TokenAddress);
+      }
+      if (FeeInWei.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(FeeInWei);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasId) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (BuyerAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BuyerAddress);
+      }
+      if (SellerAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SellerAddress);
+      }
+      if (TokenAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TokenAddress);
+      }
+      if (FeeInWei.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FeeInWei);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetPeerSaleSigRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasId) {
+        Id = other.Id;
+      }
+      if (other.BuyerAddress.Length != 0) {
+        BuyerAddress = other.BuyerAddress;
+      }
+      if (other.SellerAddress.Length != 0) {
+        SellerAddress = other.SellerAddress;
+      }
+      if (other.TokenAddress.Length != 0) {
+        TokenAddress = other.TokenAddress;
+      }
+      if (other.FeeInWei.Length != 0) {
+        FeeInWei = other.FeeInWei;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            BuyerAddress = input.ReadString();
+            break;
+          }
+          case 26: {
+            SellerAddress = input.ReadString();
+            break;
+          }
+          case 34: {
+            TokenAddress = input.ReadString();
+            break;
+          }
+          case 42: {
+            FeeInWei = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            BuyerAddress = input.ReadString();
+            break;
+          }
+          case 26: {
+            SellerAddress = input.ReadString();
+            break;
+          }
+          case 34: {
+            TokenAddress = input.ReadString();
+            break;
+          }
+          case 42: {
+            FeeInWei = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetPeerSaleSigResponse : pb::IMessage<GetPeerSaleSigResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetPeerSaleSigResponse> _parser = new pb::MessageParser<GetPeerSaleSigResponse>(() => new GetPeerSaleSigResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetPeerSaleSigResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Thetan.Rivals.V1.RivalsBlockchainReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPeerSaleSigResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPeerSaleSigResponse(GetPeerSaleSigResponse other) : this() {
+      id_ = other.id_;
+      version_ = other.version_;
+      expireAt_ = other.expireAt_;
+      signature_ = other.signature_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPeerSaleSigResponse Clone() {
+      return new GetPeerSaleSigResponse(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "version" field.</summary>
+    public const int VersionFieldNumber = 2;
+    private uint version_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Version {
+      get { return version_; }
+      set {
+        version_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "expire_at" field.</summary>
+    public const int ExpireAtFieldNumber = 3;
+    private long expireAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long ExpireAt {
+      get { return expireAt_; }
+      set {
+        expireAt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "signature" field.</summary>
+    public const int SignatureFieldNumber = 4;
+    private string signature_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Signature {
+      get { return signature_; }
+      set {
+        signature_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetPeerSaleSigResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetPeerSaleSigResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (Version != other.Version) return false;
+      if (ExpireAt != other.ExpireAt) return false;
+      if (Signature != other.Signature) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (Version != 0) hash ^= Version.GetHashCode();
+      if (ExpireAt != 0L) hash ^= ExpireAt.GetHashCode();
+      if (Signature.Length != 0) hash ^= Signature.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Version != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Version);
+      }
+      if (ExpireAt != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(ExpireAt);
+      }
+      if (Signature.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Signature);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (Version != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Version);
+      }
+      if (ExpireAt != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(ExpireAt);
+      }
+      if (Signature.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Signature);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (Version != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Version);
+      }
+      if (ExpireAt != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ExpireAt);
+      }
+      if (Signature.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Signature);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetPeerSaleSigResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.Version != 0) {
+        Version = other.Version;
+      }
+      if (other.ExpireAt != 0L) {
+        ExpireAt = other.ExpireAt;
+      }
+      if (other.Signature.Length != 0) {
+        Signature = other.Signature;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 16: {
+            Version = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            ExpireAt = input.ReadInt64();
+            break;
+          }
+          case 34: {
+            Signature = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 16: {
+            Version = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            ExpireAt = input.ReadInt64();
+            break;
+          }
+          case 34: {
+            Signature = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class BlockchainCheckInEvent : pb::IMessage<BlockchainCheckInEvent>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -559,7 +1842,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.RivalsBlockchainReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Thetan.Rivals.V1.RivalsBlockchainReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -785,7 +2068,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.RivalsBlockchainReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Thetan.Rivals.V1.RivalsBlockchainReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -974,7 +2257,7 @@ namespace Thetan.Rivals.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Thetan.Rivals.V1.RivalsBlockchainReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Thetan.Rivals.V1.RivalsBlockchainReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
