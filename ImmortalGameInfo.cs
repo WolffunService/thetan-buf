@@ -34,13 +34,13 @@ namespace Thetan.Immortal.V1 {
             "CmluR2FtZU1vZGUSOAoIZ2FtZU1vZGUYAyABKA4yHC50aGV0YW4uaW1tb3J0",
             "YWwudjEuR2FtZU1vZGVSCGdhbWVNb2RlKlMKCEdhbWVNb2RlEg0KCU5PTkVf",
             "TU9ERRAAEgoKBlJBTktFRBABEg4KCk9OQk9BUkRJTkcQAhIMCghGUklFTkRM",
-            "WRADEg4KClJBTktFRF9CT1QQBCooCgpJbkdhbWVNb2RlEggKBFNPTE8QABIG",
-            "CgJLTxABEggKBERVQUwQAkLSAQoWY29tLnRoZXRhbi5pbW1vcnRhbC52MUIV",
-            "SW1tb3J0YWxHYW1lSW5mb1Byb3RvUAFaN3RoZXRhbi1idWYvZ2VuL2dvL3Ro",
-            "ZXRhbi9pbW1vcnRhbC92MTt0aGV0YW5faW1tb3J0YWxfdjGiAgNUSViqAhJU",
-            "aGV0YW4uSW1tb3J0YWwuVjHKAhJUaGV0YW5cSW1tb3J0YWxcVjHiAh5UaGV0",
-            "YW5cSW1tb3J0YWxcVjFcR1BCTWV0YWRhdGHqAhRUaGV0YW46OkltbW9ydGFs",
-            "OjpWMWIGcHJvdG8z"));
+            "WRADEg4KClJBTktFRF9CT1QQBCo1CgpJbkdhbWVNb2RlEggKBFNPTE8QABIG",
+            "CgJLTxABEggKBERVQUwQAhILCgdXQVJSSU9SEANC0gEKFmNvbS50aGV0YW4u",
+            "aW1tb3J0YWwudjFCFUltbW9ydGFsR2FtZUluZm9Qcm90b1ABWjd0aGV0YW4t",
+            "YnVmL2dlbi9nby90aGV0YW4vaW1tb3J0YWwvdjE7dGhldGFuX2ltbW9ydGFs",
+            "X3YxogIDVElYqgISVGhldGFuLkltbW9ydGFsLlYxygISVGhldGFuXEltbW9y",
+            "dGFsXFYx4gIeVGhldGFuXEltbW9ydGFsXFYxXEdQQk1ldGFkYXRh6gIUVGhl",
+            "dGFuOjpJbW1vcnRhbDo6VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Thetan.Immortal.V1.GameMode), typeof(global::Thetan.Immortal.V1.InGameMode), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -64,6 +64,7 @@ namespace Thetan.Immortal.V1 {
     [pbr::OriginalName("SOLO")] Solo = 0,
     [pbr::OriginalName("KO")] Ko = 1,
     [pbr::OriginalName("DUAL")] Dual = 2,
+    [pbr::OriginalName("WARRIOR")] Warrior = 3,
   }
 
   #endregion
