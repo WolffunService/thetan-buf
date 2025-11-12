@@ -75,6 +75,7 @@ message PlayerMatchInfo{
   int32 battlePassID = 15;
   Arena arena = 16;
   int32 rank = 17;
+  int32 trophyRank = 18;
 }
 
 message BattleEndResponse{
