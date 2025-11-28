@@ -103,7 +103,8 @@ enum ChannelChatRoom{
   Country = 2;
   Private = 3;
   Global = 4;
-
+  Offline_Global = 5;
+  Offline_Country = 6;
 }
 
 message RequestChatMessageProto{
