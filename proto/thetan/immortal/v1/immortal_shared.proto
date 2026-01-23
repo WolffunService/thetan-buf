@@ -75,6 +75,7 @@ message PlayerInfoMatchProto {
   repeated Hero listHeroes = 24;
   int32 teamID = 25;
   int32 challengeTitleID = 26;
+  bool botMatchQualified = 27;
 }
 
 enum Arena
